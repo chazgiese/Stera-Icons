@@ -9,6 +9,9 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     if: ${{ !contains(github.event.head_commit.message, 'skip ci') }}
+    permissions:
+      contents: write
+      pull-requests: write
     
     steps:
       - name: Checkout
@@ -46,6 +49,7 @@ jobs:
           version: pnpm changeset version
           title: "Version Packages"
           commit: "chore: version packages"
+          add: "."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
