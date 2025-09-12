@@ -1,5 +1,5 @@
-var _reactJsxRuntime = require("react/jsx-runtime");
-import React, { forwardRef, memo } from "react";
+import { forwardRef, memo } from "react";
+const _reactJsxRuntime = require("react/jsx-runtime");
 import type { IconProps } from "../types";
 const CursorTextAlt = memo(
   forwardRef < SVGSVGElement,

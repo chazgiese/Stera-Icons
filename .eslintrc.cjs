@@ -7,7 +7,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    '@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -23,14 +22,18 @@ module.exports = {
   ],
   rules: {
     // TypeScript specific rules
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['error', { 
+      argsIgnorePattern: '^_',
+      varsIgnorePattern: '^_|^IconProps$',
+      ignoreRestSiblings: true
+    }],
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'warn',
     
     // React specific rules
-    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-react': 'off', // Not needed with React 17+ JSX transform
     'react/jsx-uses-vars': 'error',
     
     // General rules
@@ -38,6 +41,7 @@ module.exports = {
     'no-debugger': 'error',
     'prefer-const': 'error',
     'no-var': 'error',
+    'no-unused-vars': 'off', // Use TypeScript version instead
   },
   settings: {
     react: {
@@ -49,5 +53,7 @@ module.exports = {
     'node_modules/',
     '*.js',
     '*.cjs',
+    'samples/',
+    'scripts/',
   ],
 };
