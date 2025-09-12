@@ -33,4 +33,3 @@ const ArrowsExpandFilled = memo(
 );
 ArrowsExpandFilled.displayName = "ArrowsExpandFilled";
 export { ArrowsExpandFilled };
-export default ArrowsExpandFilled;

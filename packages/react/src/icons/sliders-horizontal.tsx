@@ -35,4 +35,3 @@ const SlidersHorizontal = memo(
 );
 SlidersHorizontal.displayName = "SlidersHorizontal";
 export { SlidersHorizontal };
-export default SlidersHorizontal;

@@ -35,4 +35,3 @@ const Cursor = memo(
 );
 Cursor.displayName = "Cursor";
 export { Cursor };
-export default Cursor;

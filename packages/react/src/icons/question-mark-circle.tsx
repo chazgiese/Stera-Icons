@@ -41,4 +41,3 @@ const QuestionMarkCircle = memo(
 );
 QuestionMarkCircle.displayName = "QuestionMarkCircle";
 export { QuestionMarkCircle };
-export default QuestionMarkCircle;

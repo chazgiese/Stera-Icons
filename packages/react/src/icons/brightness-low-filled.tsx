@@ -33,4 +33,3 @@ const BrightnessLowFilled = memo(
 );
 BrightnessLowFilled.displayName = "BrightnessLowFilled";
 export { BrightnessLowFilled };
-export default BrightnessLowFilled;

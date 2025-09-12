@@ -39,4 +39,3 @@ const Duplicate = memo(
 );
 Duplicate.displayName = "Duplicate";
 export { Duplicate };
-export default Duplicate;

@@ -33,4 +33,3 @@ const Menu = memo(
 );
 Menu.displayName = "Menu";
 export { Menu };
-export default Menu;

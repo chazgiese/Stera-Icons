@@ -35,4 +35,3 @@ const Sparkle = memo(
 );
 Sparkle.displayName = "Sparkle";
 export { Sparkle };
-export default Sparkle;

@@ -35,4 +35,3 @@ const BoltFilled = memo(
 );
 BoltFilled.displayName = "BoltFilled";
 export { BoltFilled };
-export default BoltFilled;

@@ -43,4 +43,3 @@ const AtomAi = memo(
 );
 AtomAi.displayName = "AtomAi";
 export { AtomAi };
-export default AtomAi;

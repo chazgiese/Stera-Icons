@@ -35,4 +35,3 @@ const Star = memo(
 );
 Star.displayName = "Star";
 export { Star };
-export default Star;

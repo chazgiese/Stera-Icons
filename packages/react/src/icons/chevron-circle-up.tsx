@@ -41,4 +41,3 @@ const ChevronCircleUp = memo(
 );
 ChevronCircleUp.displayName = "ChevronCircleUp";
 export { ChevronCircleUp };
-export default ChevronCircleUp;

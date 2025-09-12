@@ -33,4 +33,3 @@ const SquareFourPlusFilled = memo(
 );
 SquareFourPlusFilled.displayName = "SquareFourPlusFilled";
 export { SquareFourPlusFilled };
-export default SquareFourPlusFilled;

@@ -33,4 +33,3 @@ const VideoOffFilled = memo(
 );
 VideoOffFilled.displayName = "VideoOffFilled";
 export { VideoOffFilled };
-export default VideoOffFilled;

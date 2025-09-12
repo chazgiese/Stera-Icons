@@ -39,4 +39,3 @@ const AlertHexagon = memo(
 );
 AlertHexagon.displayName = "AlertHexagon";
 export { AlertHexagon };
-export default AlertHexagon;

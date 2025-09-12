@@ -33,4 +33,3 @@ const CursorFilled = memo(
 );
 CursorFilled.displayName = "CursorFilled";
 export { CursorFilled };
-export default CursorFilled;

@@ -33,4 +33,3 @@ const ListCheckTwoFilled = memo(
 );
 ListCheckTwoFilled.displayName = "ListCheckTwoFilled";
 export { ListCheckTwoFilled };
-export default ListCheckTwoFilled;

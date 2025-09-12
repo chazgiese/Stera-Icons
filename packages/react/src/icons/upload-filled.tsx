@@ -39,4 +39,3 @@ const UploadFilled = memo(
 );
 UploadFilled.displayName = "UploadFilled";
 export { UploadFilled };
-export default UploadFilled;

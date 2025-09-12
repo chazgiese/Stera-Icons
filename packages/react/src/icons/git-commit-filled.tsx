@@ -33,4 +33,3 @@ const GitCommitFilled = memo(
 );
 GitCommitFilled.displayName = "GitCommitFilled";
 export { GitCommitFilled };
-export default GitCommitFilled;

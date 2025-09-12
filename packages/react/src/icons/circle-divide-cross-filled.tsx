@@ -33,4 +33,3 @@ const CircleDivideCrossFilled = memo(
 );
 CircleDivideCrossFilled.displayName = "CircleDivideCrossFilled";
 export { CircleDivideCrossFilled };
-export default CircleDivideCrossFilled;

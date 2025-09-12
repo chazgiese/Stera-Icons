@@ -35,4 +35,3 @@ const BagFilled = memo(
 );
 BagFilled.displayName = "BagFilled";
 export { BagFilled };
-export default BagFilled;

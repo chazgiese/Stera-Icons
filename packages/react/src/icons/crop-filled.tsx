@@ -33,4 +33,3 @@ const CropFilled = memo(
 );
 CropFilled.displayName = "CropFilled";
 export { CropFilled };
-export default CropFilled;

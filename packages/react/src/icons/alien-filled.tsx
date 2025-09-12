@@ -35,4 +35,3 @@ const AlienFilled = memo(
 );
 AlienFilled.displayName = "AlienFilled";
 export { AlienFilled };
-export default AlienFilled;

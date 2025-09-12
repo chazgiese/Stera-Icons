@@ -35,4 +35,3 @@ const GitBranch = memo(
 );
 GitBranch.displayName = "GitBranch";
 export { GitBranch };
-export default GitBranch;

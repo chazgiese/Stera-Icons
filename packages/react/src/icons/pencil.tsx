@@ -35,4 +35,3 @@ const Pencil = memo(
 );
 Pencil.displayName = "Pencil";
 export { Pencil };
-export default Pencil;

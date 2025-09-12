@@ -33,4 +33,3 @@ const TextUnderline = memo(
 );
 TextUnderline.displayName = "TextUnderline";
 export { TextUnderline };
-export default TextUnderline;

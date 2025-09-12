@@ -49,4 +49,3 @@ const PhoneOff = memo(
 );
 PhoneOff.displayName = "PhoneOff";
 export { PhoneOff };
-export default PhoneOff;

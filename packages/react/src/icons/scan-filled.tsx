@@ -33,4 +33,3 @@ const ScanFilled = memo(
 );
 ScanFilled.displayName = "ScanFilled";
 export { ScanFilled };
-export default ScanFilled;

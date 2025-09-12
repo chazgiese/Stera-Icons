@@ -41,4 +41,3 @@ const FlowerFilled = memo(
 );
 FlowerFilled.displayName = "FlowerFilled";
 export { FlowerFilled };
-export default FlowerFilled;

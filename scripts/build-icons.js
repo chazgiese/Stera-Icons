@@ -122,7 +122,6 @@ async function buildIcons(iconsExportPath) {
       
       // Add to exports
       exports.push(`export { ${componentName} } from './icons/${fileName}';`);
-      exports.push(`export { default as ${componentName}Default } from './icons/${fileName}';`);
       
       // Add to metadata
       metadata.push({

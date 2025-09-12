@@ -52,4 +52,3 @@ const LayersFilled = memo(
 );
 LayersFilled.displayName = "LayersFilled";
 export { LayersFilled };
-export default LayersFilled;

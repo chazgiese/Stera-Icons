@@ -35,4 +35,3 @@ const HomeFilled = memo(
 );
 HomeFilled.displayName = "HomeFilled";
 export { HomeFilled };
-export default HomeFilled;

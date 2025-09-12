@@ -45,4 +45,3 @@ const ImagePile = memo(
 );
 ImagePile.displayName = "ImagePile";
 export { ImagePile };
-export default ImagePile;

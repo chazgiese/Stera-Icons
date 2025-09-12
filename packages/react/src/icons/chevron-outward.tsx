@@ -33,4 +33,3 @@ const ChevronOutward = memo(
 );
 ChevronOutward.displayName = "ChevronOutward";
 export { ChevronOutward };
-export default ChevronOutward;

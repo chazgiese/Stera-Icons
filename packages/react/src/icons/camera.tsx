@@ -43,4 +43,3 @@ const Camera = memo(
 );
 Camera.displayName = "Camera";
 export { Camera };
-export default Camera;

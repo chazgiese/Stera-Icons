@@ -35,4 +35,3 @@ const BellFilled = memo(
 );
 BellFilled.displayName = "BellFilled";
 export { BellFilled };
-export default BellFilled;

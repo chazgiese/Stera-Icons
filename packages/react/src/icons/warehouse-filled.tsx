@@ -41,4 +41,3 @@ const WarehouseFilled = memo(
 );
 WarehouseFilled.displayName = "WarehouseFilled";
 export { WarehouseFilled };
-export default WarehouseFilled;

@@ -33,4 +33,3 @@ const LabelFilled = memo(
 );
 LabelFilled.displayName = "LabelFilled";
 export { LabelFilled };
-export default LabelFilled;

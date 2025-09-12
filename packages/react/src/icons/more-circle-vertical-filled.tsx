@@ -35,4 +35,3 @@ const MoreCircleVerticalFilled = memo(
 );
 MoreCircleVerticalFilled.displayName = "MoreCircleVerticalFilled";
 export { MoreCircleVerticalFilled };
-export default MoreCircleVerticalFilled;

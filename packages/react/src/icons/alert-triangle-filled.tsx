@@ -35,4 +35,3 @@ const AlertTriangleFilled = memo(
 );
 AlertTriangleFilled.displayName = "AlertTriangleFilled";
 export { AlertTriangleFilled };
-export default AlertTriangleFilled;

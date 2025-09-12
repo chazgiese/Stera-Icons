@@ -41,4 +41,3 @@ const PlayCircle = memo(
 );
 PlayCircle.displayName = "PlayCircle";
 export { PlayCircle };
-export default PlayCircle;

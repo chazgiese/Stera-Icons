@@ -41,4 +41,3 @@ const Clock = memo(
 );
 Clock.displayName = "Clock";
 export { Clock };
-export default Clock;

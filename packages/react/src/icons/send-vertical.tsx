@@ -35,4 +35,3 @@ const SendVertical = memo(
 );
 SendVertical.displayName = "SendVertical";
 export { SendVertical };
-export default SendVertical;

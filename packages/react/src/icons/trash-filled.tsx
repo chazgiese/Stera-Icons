@@ -35,4 +35,3 @@ const TrashFilled = memo(
 );
 TrashFilled.displayName = "TrashFilled";
 export { TrashFilled };
-export default TrashFilled;

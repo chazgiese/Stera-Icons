@@ -41,4 +41,3 @@ const EmoteGrin = memo(
 );
 EmoteGrin.displayName = "EmoteGrin";
 export { EmoteGrin };
-export default EmoteGrin;

@@ -43,4 +43,3 @@ const BarcodeScan = memo(
 );
 BarcodeScan.displayName = "BarcodeScan";
 export { BarcodeScan };
-export default BarcodeScan;

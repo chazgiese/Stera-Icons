@@ -33,4 +33,3 @@ const BookmarkFilled = memo(
 );
 BookmarkFilled.displayName = "BookmarkFilled";
 export { BookmarkFilled };
-export default BookmarkFilled;

@@ -33,4 +33,3 @@ const ListBulletTwoFilled = memo(
 );
 ListBulletTwoFilled.displayName = "ListBulletTwoFilled";
 export { ListBulletTwoFilled };
-export default ListBulletTwoFilled;

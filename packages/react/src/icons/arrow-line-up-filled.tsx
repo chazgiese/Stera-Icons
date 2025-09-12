@@ -33,4 +33,3 @@ const ArrowLineUpFilled = memo(
 );
 ArrowLineUpFilled.displayName = "ArrowLineUpFilled";
 export { ArrowLineUpFilled };
-export default ArrowLineUpFilled;

@@ -33,4 +33,3 @@ const DiamondFilled = memo(
 );
 DiamondFilled.displayName = "DiamondFilled";
 export { DiamondFilled };
-export default DiamondFilled;

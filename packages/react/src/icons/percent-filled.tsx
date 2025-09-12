@@ -33,4 +33,3 @@ const PercentFilled = memo(
 );
 PercentFilled.displayName = "PercentFilled";
 export { PercentFilled };
-export default PercentFilled;

@@ -35,4 +35,3 @@ const Flag = memo(
 );
 Flag.displayName = "Flag";
 export { Flag };
-export default Flag;

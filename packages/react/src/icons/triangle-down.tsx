@@ -35,4 +35,3 @@ const TriangleDown = memo(
 );
 TriangleDown.displayName = "TriangleDown";
 export { TriangleDown };
-export default TriangleDown;

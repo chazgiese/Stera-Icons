@@ -35,4 +35,3 @@ const OverlappingCircles = memo(
 );
 OverlappingCircles.displayName = "OverlappingCircles";
 export { OverlappingCircles };
-export default OverlappingCircles;

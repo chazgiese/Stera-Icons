@@ -41,4 +41,3 @@ const ToggleOff = memo(
 );
 ToggleOff.displayName = "ToggleOff";
 export { ToggleOff };
-export default ToggleOff;

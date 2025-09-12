@@ -33,4 +33,3 @@ const PenFilled = memo(
 );
 PenFilled.displayName = "PenFilled";
 export { PenFilled };
-export default PenFilled;

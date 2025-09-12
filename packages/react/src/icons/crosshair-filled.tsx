@@ -33,4 +33,3 @@ const CrosshairFilled = memo(
 );
 CrosshairFilled.displayName = "CrosshairFilled";
 export { CrosshairFilled };
-export default CrosshairFilled;

@@ -35,4 +35,3 @@ const BasketFilled = memo(
 );
 BasketFilled.displayName = "BasketFilled";
 export { BasketFilled };
-export default BasketFilled;

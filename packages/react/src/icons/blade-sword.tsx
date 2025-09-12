@@ -35,4 +35,3 @@ const BladeSword = memo(
 );
 BladeSword.displayName = "BladeSword";
 export { BladeSword };
-export default BladeSword;

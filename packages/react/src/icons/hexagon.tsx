@@ -33,4 +33,3 @@ const Hexagon = memo(
 );
 Hexagon.displayName = "Hexagon";
 export { Hexagon };
-export default Hexagon;

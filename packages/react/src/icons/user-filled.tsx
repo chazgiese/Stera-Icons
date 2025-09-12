@@ -33,4 +33,3 @@ const UserFilled = memo(
 );
 UserFilled.displayName = "UserFilled";
 export { UserFilled };
-export default UserFilled;

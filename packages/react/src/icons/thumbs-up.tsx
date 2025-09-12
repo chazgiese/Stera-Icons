@@ -35,4 +35,3 @@ const ThumbsUp = memo(
 );
 ThumbsUp.displayName = "ThumbsUp";
 export { ThumbsUp };
-export default ThumbsUp;

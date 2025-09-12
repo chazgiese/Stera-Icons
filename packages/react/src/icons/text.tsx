@@ -33,4 +33,3 @@ const Text = memo(
 );
 Text.displayName = "Text";
 export { Text };
-export default Text;

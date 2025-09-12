@@ -33,4 +33,3 @@ const MoreVertical = memo(
 );
 MoreVertical.displayName = "MoreVertical";
 export { MoreVertical };
-export default MoreVertical;

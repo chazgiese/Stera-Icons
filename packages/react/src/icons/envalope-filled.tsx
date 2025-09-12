@@ -39,4 +39,3 @@ const EnvalopeFilled = memo(
 );
 EnvalopeFilled.displayName = "EnvalopeFilled";
 export { EnvalopeFilled };
-export default EnvalopeFilled;

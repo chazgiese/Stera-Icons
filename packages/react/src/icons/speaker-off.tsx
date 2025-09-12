@@ -36,4 +36,3 @@ const SpeakerOff = memo(
 );
 SpeakerOff.displayName = "SpeakerOff";
 export { SpeakerOff };
-export default SpeakerOff;

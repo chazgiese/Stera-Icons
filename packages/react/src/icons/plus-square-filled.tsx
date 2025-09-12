@@ -35,4 +35,3 @@ const PlusSquareFilled = memo(
 );
 PlusSquareFilled.displayName = "PlusSquareFilled";
 export { PlusSquareFilled };
-export default PlusSquareFilled;

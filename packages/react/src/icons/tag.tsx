@@ -41,4 +41,3 @@ const Tag = memo(
 );
 Tag.displayName = "Tag";
 export { Tag };
-export default Tag;

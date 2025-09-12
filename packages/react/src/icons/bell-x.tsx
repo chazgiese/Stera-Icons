@@ -41,4 +41,3 @@ const BellX = memo(
 );
 BellX.displayName = "BellX";
 export { BellX };
-export default BellX;

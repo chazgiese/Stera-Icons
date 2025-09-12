@@ -35,4 +35,3 @@ const VideoOff = memo(
 );
 VideoOff.displayName = "VideoOff";
 export { VideoOff };
-export default VideoOff;

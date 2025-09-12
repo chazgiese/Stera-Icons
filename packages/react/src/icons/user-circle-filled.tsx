@@ -35,4 +35,3 @@ const UserCircleFilled = memo(
 );
 UserCircleFilled.displayName = "UserCircleFilled";
 export { UserCircleFilled };
-export default UserCircleFilled;

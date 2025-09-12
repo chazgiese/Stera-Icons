@@ -35,4 +35,3 @@ const SidebarLeft = memo(
 );
 SidebarLeft.displayName = "SidebarLeft";
 export { SidebarLeft };
-export default SidebarLeft;

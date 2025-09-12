@@ -35,4 +35,3 @@ const AudioBarsSquareFilled = memo(
 );
 AudioBarsSquareFilled.displayName = "AudioBarsSquareFilled";
 export { AudioBarsSquareFilled };
-export default AudioBarsSquareFilled;

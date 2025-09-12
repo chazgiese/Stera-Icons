@@ -41,4 +41,3 @@ const CalendarX = memo(
 );
 CalendarX.displayName = "CalendarX";
 export { CalendarX };
-export default CalendarX;

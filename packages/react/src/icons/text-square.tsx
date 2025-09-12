@@ -41,4 +41,3 @@ const TextSquare = memo(
 );
 TextSquare.displayName = "TextSquare";
 export { TextSquare };
-export default TextSquare;

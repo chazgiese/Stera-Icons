@@ -33,4 +33,3 @@ const ExclamationPoint = memo(
 );
 ExclamationPoint.displayName = "ExclamationPoint";
 export { ExclamationPoint };
-export default ExclamationPoint;

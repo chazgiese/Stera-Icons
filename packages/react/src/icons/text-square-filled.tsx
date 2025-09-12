@@ -35,4 +35,3 @@ const TextSquareFilled = memo(
 );
 TextSquareFilled.displayName = "TextSquareFilled";
 export { TextSquareFilled };
-export default TextSquareFilled;

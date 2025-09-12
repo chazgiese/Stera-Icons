@@ -41,4 +41,3 @@ const AlertCircle = memo(
 );
 AlertCircle.displayName = "AlertCircle";
 export { AlertCircle };
-export default AlertCircle;

@@ -35,4 +35,3 @@ const ChatBubble = memo(
 );
 ChatBubble.displayName = "ChatBubble";
 export { ChatBubble };
-export default ChatBubble;

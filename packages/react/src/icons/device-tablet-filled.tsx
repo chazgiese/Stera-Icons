@@ -35,4 +35,3 @@ const DeviceTabletFilled = memo(
 );
 DeviceTabletFilled.displayName = "DeviceTabletFilled";
 export { DeviceTabletFilled };
-export default DeviceTabletFilled;

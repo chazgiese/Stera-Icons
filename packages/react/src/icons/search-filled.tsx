@@ -33,4 +33,3 @@ const SearchFilled = memo(
 );
 SearchFilled.displayName = "SearchFilled";
 export { SearchFilled };
-export default SearchFilled;

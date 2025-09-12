@@ -47,4 +47,3 @@ const Ai = memo(
 );
 Ai.displayName = "Ai";
 export { Ai };
-export default Ai;

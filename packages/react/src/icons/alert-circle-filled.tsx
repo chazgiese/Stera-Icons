@@ -35,4 +35,3 @@ const AlertCircleFilled = memo(
 );
 AlertCircleFilled.displayName = "AlertCircleFilled";
 export { AlertCircleFilled };
-export default AlertCircleFilled;

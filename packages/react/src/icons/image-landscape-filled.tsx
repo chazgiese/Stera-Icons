@@ -35,4 +35,3 @@ const ImageLandscapeFilled = memo(
 );
 ImageLandscapeFilled.displayName = "ImageLandscapeFilled";
 export { ImageLandscapeFilled };
-export default ImageLandscapeFilled;

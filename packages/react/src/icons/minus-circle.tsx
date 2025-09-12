@@ -41,4 +41,3 @@ const MinusCircle = memo(
 );
 MinusCircle.displayName = "MinusCircle";
 export { MinusCircle };
-export default MinusCircle;

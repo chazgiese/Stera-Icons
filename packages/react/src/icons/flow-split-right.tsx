@@ -35,4 +35,3 @@ const FlowSplitRight = memo(
 );
 FlowSplitRight.displayName = "FlowSplitRight";
 export { FlowSplitRight };
-export default FlowSplitRight;

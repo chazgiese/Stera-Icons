@@ -33,4 +33,3 @@ const ArrowUpLeftDownRight = memo(
 );
 ArrowUpLeftDownRight.displayName = "ArrowUpLeftDownRight";
 export { ArrowUpLeftDownRight };
-export default ArrowUpLeftDownRight;

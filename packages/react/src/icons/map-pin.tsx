@@ -43,4 +43,3 @@ const MapPin = memo(
 );
 MapPin.displayName = "MapPin";
 export { MapPin };
-export default MapPin;

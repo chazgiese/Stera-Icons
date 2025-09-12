@@ -35,4 +35,3 @@ const Search = memo(
 );
 Search.displayName = "Search";
 export { Search };
-export default Search;

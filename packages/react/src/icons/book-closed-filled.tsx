@@ -35,4 +35,3 @@ const BookClosedFilled = memo(
 );
 BookClosedFilled.displayName = "BookClosedFilled";
 export { BookClosedFilled };
-export default BookClosedFilled;

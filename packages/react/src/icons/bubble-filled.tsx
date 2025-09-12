@@ -49,4 +49,3 @@ const BubbleFilled = memo(
 );
 BubbleFilled.displayName = "BubbleFilled";
 export { BubbleFilled };
-export default BubbleFilled;

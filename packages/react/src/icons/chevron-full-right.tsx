@@ -35,4 +35,3 @@ const ChevronFullRight = memo(
 );
 ChevronFullRight.displayName = "ChevronFullRight";
 export { ChevronFullRight };
-export default ChevronFullRight;

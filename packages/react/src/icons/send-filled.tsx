@@ -33,4 +33,3 @@ const SendFilled = memo(
 );
 SendFilled.displayName = "SendFilled";
 export { SendFilled };
-export default SendFilled;

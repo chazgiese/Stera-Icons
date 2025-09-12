@@ -35,4 +35,3 @@ const Label = memo(
 );
 Label.displayName = "Label";
 export { Label };
-export default Label;

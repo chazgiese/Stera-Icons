@@ -33,4 +33,3 @@ const SquareFilled = memo(
 );
 SquareFilled.displayName = "SquareFilled";
 export { SquareFilled };
-export default SquareFilled;

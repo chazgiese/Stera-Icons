@@ -35,4 +35,3 @@ const Component = memo(
 );
 Component.displayName = "Component";
 export { Component };
-export default Component;

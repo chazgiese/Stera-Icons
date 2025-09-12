@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src/index.ts', 'src/icons/*.tsx'],
-  format: ['cjs', 'esm'],
+  format: ['esm', 'cjs'],
   dts: true,
   splitting: false,
   sourcemap: true,
@@ -11,4 +11,11 @@ export default defineConfig({
   treeshake: true,
   minify: true,
   outDir: 'dist',
+  esbuildOptions: (options, context) => {
+    if (context.format === 'cjs') {
+      options.banner = {
+        js: '"use strict";',
+      };
+    }
+  },
 });

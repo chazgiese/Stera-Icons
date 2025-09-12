@@ -33,4 +33,3 @@ const PhoneOffFilled = memo(
 );
 PhoneOffFilled.displayName = "PhoneOffFilled";
 export { PhoneOffFilled };
-export default PhoneOffFilled;

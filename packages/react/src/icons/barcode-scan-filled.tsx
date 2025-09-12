@@ -45,4 +45,3 @@ const BarcodeScanFilled = memo(
 );
 BarcodeScanFilled.displayName = "BarcodeScanFilled";
 export { BarcodeScanFilled };
-export default BarcodeScanFilled;

@@ -41,4 +41,3 @@ const PhoneIncoming = memo(
 );
 PhoneIncoming.displayName = "PhoneIncoming";
 export { PhoneIncoming };
-export default PhoneIncoming;

@@ -35,4 +35,3 @@ const Pause = memo(
 );
 Pause.displayName = "Pause";
 export { Pause };
-export default Pause;

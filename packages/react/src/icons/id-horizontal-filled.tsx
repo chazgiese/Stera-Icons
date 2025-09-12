@@ -35,4 +35,3 @@ const IdHorizontalFilled = memo(
 );
 IdHorizontalFilled.displayName = "IdHorizontalFilled";
 export { IdHorizontalFilled };
-export default IdHorizontalFilled;

@@ -41,4 +41,3 @@ const ImagePileFilled = memo(
 );
 ImagePileFilled.displayName = "ImagePileFilled";
 export { ImagePileFilled };
-export default ImagePileFilled;

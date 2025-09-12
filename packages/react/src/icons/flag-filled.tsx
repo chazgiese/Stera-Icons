@@ -33,4 +33,3 @@ const FlagFilled = memo(
 );
 FlagFilled.displayName = "FlagFilled";
 export { FlagFilled };
-export default FlagFilled;

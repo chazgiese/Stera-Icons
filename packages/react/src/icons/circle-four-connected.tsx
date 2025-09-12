@@ -49,4 +49,3 @@ const CircleFourConnected = memo(
 );
 CircleFourConnected.displayName = "CircleFourConnected";
 export { CircleFourConnected };
-export default CircleFourConnected;

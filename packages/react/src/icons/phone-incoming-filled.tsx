@@ -39,4 +39,3 @@ const PhoneIncomingFilled = memo(
 );
 PhoneIncomingFilled.displayName = "PhoneIncomingFilled";
 export { PhoneIncomingFilled };
-export default PhoneIncomingFilled;

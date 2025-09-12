@@ -35,4 +35,3 @@ const Arch = memo(
 );
 Arch.displayName = "Arch";
 export { Arch };
-export default Arch;

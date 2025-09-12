@@ -41,4 +41,3 @@ const PauseCircle = memo(
 );
 PauseCircle.displayName = "PauseCircle";
 export { PauseCircle };
-export default PauseCircle;

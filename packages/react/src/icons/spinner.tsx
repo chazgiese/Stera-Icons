@@ -33,4 +33,3 @@ const Spinner = memo(
 );
 Spinner.displayName = "Spinner";
 export { Spinner };
-export default Spinner;

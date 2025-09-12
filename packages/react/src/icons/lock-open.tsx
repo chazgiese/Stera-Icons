@@ -41,4 +41,3 @@ const LockOpen = memo(
 );
 LockOpen.displayName = "LockOpen";
 export { LockOpen };
-export default LockOpen;

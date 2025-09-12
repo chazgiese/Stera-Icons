@@ -35,4 +35,3 @@ const DragHandleFilled = memo(
 );
 DragHandleFilled.displayName = "DragHandleFilled";
 export { DragHandleFilled };
-export default DragHandleFilled;

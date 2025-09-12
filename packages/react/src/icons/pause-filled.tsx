@@ -33,4 +33,3 @@ const PauseFilled = memo(
 );
 PauseFilled.displayName = "PauseFilled";
 export { PauseFilled };
-export default PauseFilled;

@@ -33,4 +33,3 @@ const DragHandle = memo(
 );
 DragHandle.displayName = "DragHandle";
 export { DragHandle };
-export default DragHandle;

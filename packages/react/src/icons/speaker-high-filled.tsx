@@ -43,4 +43,3 @@ const SpeakerHighFilled = memo(
 );
 SpeakerHighFilled.displayName = "SpeakerHighFilled";
 export { SpeakerHighFilled };
-export default SpeakerHighFilled;

@@ -35,4 +35,3 @@ const DevicePhoneIosFilled = memo(
 );
 DevicePhoneIosFilled.displayName = "DevicePhoneIosFilled";
 export { DevicePhoneIosFilled };
-export default DevicePhoneIosFilled;

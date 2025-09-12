@@ -54,4 +54,3 @@ const Bubble = memo(
 );
 Bubble.displayName = "Bubble";
 export { Bubble };
-export default Bubble;

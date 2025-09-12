@@ -41,4 +41,3 @@ const GitPullRequestClosed = memo(
 );
 GitPullRequestClosed.displayName = "GitPullRequestClosed";
 export { GitPullRequestClosed };
-export default GitPullRequestClosed;

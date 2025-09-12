@@ -33,4 +33,3 @@ const Checkmark = memo(
 );
 Checkmark.displayName = "Checkmark";
 export { Checkmark };
-export default Checkmark;

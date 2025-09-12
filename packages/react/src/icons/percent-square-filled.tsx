@@ -35,4 +35,3 @@ const PercentSquareFilled = memo(
 );
 PercentSquareFilled.displayName = "PercentSquareFilled";
 export { PercentSquareFilled };
-export default PercentSquareFilled;

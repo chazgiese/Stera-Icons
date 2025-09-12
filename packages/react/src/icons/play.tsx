@@ -35,4 +35,3 @@ const Play = memo(
 );
 Play.displayName = "Play";
 export { Play };
-export default Play;

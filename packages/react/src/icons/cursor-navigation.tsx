@@ -35,4 +35,3 @@ const CursorNavigation = memo(
 );
 CursorNavigation.displayName = "CursorNavigation";
 export { CursorNavigation };
-export default CursorNavigation;

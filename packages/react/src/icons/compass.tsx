@@ -43,4 +43,3 @@ const Compass = memo(
 );
 Compass.displayName = "Compass";
 export { Compass };
-export default Compass;

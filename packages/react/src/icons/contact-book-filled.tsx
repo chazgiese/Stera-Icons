@@ -35,4 +35,3 @@ const ContactBookFilled = memo(
 );
 ContactBookFilled.displayName = "ContactBookFilled";
 export { ContactBookFilled };
-export default ContactBookFilled;

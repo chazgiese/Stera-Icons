@@ -33,4 +33,3 @@ const TextAlignRightFilled = memo(
 );
 TextAlignRightFilled.displayName = "TextAlignRightFilled";
 export { TextAlignRightFilled };
-export default TextAlignRightFilled;

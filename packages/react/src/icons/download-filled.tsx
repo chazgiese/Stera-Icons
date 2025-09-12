@@ -39,4 +39,3 @@ const DownloadFilled = memo(
 );
 DownloadFilled.displayName = "DownloadFilled";
 export { DownloadFilled };
-export default DownloadFilled;

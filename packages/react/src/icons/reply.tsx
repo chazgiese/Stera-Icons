@@ -35,4 +35,3 @@ const Reply = memo(
 );
 Reply.displayName = "Reply";
 export { Reply };
-export default Reply;

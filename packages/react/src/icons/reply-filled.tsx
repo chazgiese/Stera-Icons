@@ -33,4 +33,3 @@ const ReplyFilled = memo(
 );
 ReplyFilled.displayName = "ReplyFilled";
 export { ReplyFilled };
-export default ReplyFilled;

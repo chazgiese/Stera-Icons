@@ -35,4 +35,3 @@ const Bookmark = memo(
 );
 Bookmark.displayName = "Bookmark";
 export { Bookmark };
-export default Bookmark;

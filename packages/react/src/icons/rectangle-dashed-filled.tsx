@@ -33,4 +33,3 @@ const RectangleDashedFilled = memo(
 );
 RectangleDashedFilled.displayName = "RectangleDashedFilled";
 export { RectangleDashedFilled };
-export default RectangleDashedFilled;

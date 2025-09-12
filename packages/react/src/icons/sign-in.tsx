@@ -39,4 +39,3 @@ const SignIn = memo(
 );
 SignIn.displayName = "SignIn";
 export { SignIn };
-export default SignIn;

@@ -35,4 +35,3 @@ const MoonCrescent = memo(
 );
 MoonCrescent.displayName = "MoonCrescent";
 export { MoonCrescent };
-export default MoonCrescent;

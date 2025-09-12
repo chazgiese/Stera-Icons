@@ -41,4 +41,3 @@ const ChevronFullSquareUp = memo(
 );
 ChevronFullSquareUp.displayName = "ChevronFullSquareUp";
 export { ChevronFullSquareUp };
-export default ChevronFullSquareUp;

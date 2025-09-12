@@ -47,4 +47,3 @@ const IdHorizontal = memo(
 );
 IdHorizontal.displayName = "IdHorizontal";
 export { IdHorizontal };
-export default IdHorizontal;

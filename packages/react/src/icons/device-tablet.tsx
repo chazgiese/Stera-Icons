@@ -41,4 +41,3 @@ const DeviceTablet = memo(
 );
 DeviceTablet.displayName = "DeviceTablet";
 export { DeviceTablet };
-export default DeviceTablet;

@@ -35,4 +35,3 @@ const ChartBar = memo(
 );
 ChartBar.displayName = "ChartBar";
 export { ChartBar };
-export default ChartBar;

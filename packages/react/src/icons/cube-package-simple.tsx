@@ -35,4 +35,3 @@ const CubePackageSimple = memo(
 );
 CubePackageSimple.displayName = "CubePackageSimple";
 export { CubePackageSimple };
-export default CubePackageSimple;

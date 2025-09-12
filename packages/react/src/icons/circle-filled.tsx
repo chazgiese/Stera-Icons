@@ -33,4 +33,3 @@ const CircleFilled = memo(
 );
 CircleFilled.displayName = "CircleFilled";
 export { CircleFilled };
-export default CircleFilled;

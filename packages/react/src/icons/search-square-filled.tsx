@@ -41,4 +41,3 @@ const SearchSquareFilled = memo(
 );
 SearchSquareFilled.displayName = "SearchSquareFilled";
 export { SearchSquareFilled };
-export default SearchSquareFilled;

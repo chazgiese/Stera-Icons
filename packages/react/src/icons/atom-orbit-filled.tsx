@@ -33,4 +33,3 @@ const AtomOrbitFilled = memo(
 );
 AtomOrbitFilled.displayName = "AtomOrbitFilled";
 export { AtomOrbitFilled };
-export default AtomOrbitFilled;

@@ -35,4 +35,3 @@ const Keyhole = memo(
 );
 Keyhole.displayName = "Keyhole";
 export { Keyhole };
-export default Keyhole;

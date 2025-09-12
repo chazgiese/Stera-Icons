@@ -49,4 +49,3 @@ const WifiFilled = memo(
 );
 WifiFilled.displayName = "WifiFilled";
 export { WifiFilled };
-export default WifiFilled;

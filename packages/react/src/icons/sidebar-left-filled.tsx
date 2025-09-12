@@ -35,4 +35,3 @@ const SidebarLeftFilled = memo(
 );
 SidebarLeftFilled.displayName = "SidebarLeftFilled";
 export { SidebarLeftFilled };
-export default SidebarLeftFilled;

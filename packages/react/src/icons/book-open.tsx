@@ -41,4 +41,3 @@ const BookOpen = memo(
 );
 BookOpen.displayName = "BookOpen";
 export { BookOpen };
-export default BookOpen;

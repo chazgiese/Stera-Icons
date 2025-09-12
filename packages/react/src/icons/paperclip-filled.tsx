@@ -33,4 +33,3 @@ const PaperclipFilled = memo(
 );
 PaperclipFilled.displayName = "PaperclipFilled";
 export { PaperclipFilled };
-export default PaperclipFilled;

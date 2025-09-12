@@ -33,4 +33,3 @@ const CircleDivideVerticalFilled = memo(
 );
 CircleDivideVerticalFilled.displayName = "CircleDivideVerticalFilled";
 export { CircleDivideVerticalFilled };
-export default CircleDivideVerticalFilled;

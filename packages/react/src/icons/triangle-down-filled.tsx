@@ -33,4 +33,3 @@ const TriangleDownFilled = memo(
 );
 TriangleDownFilled.displayName = "TriangleDownFilled";
 export { TriangleDownFilled };
-export default TriangleDownFilled;

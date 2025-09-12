@@ -33,4 +33,3 @@ const SignOutFilled = memo(
 );
 SignOutFilled.displayName = "SignOutFilled";
 export { SignOutFilled };
-export default SignOutFilled;

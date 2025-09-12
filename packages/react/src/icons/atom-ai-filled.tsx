@@ -47,4 +47,3 @@ const AtomAiFilled = memo(
 );
 AtomAiFilled.displayName = "AtomAiFilled";
 export { AtomAiFilled };
-export default AtomAiFilled;

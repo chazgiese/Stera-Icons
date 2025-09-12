@@ -35,4 +35,3 @@ const LabelAlt = memo(
 );
 LabelAlt.displayName = "LabelAlt";
 export { LabelAlt };
-export default LabelAlt;

@@ -41,4 +41,3 @@ const Percent = memo(
 );
 Percent.displayName = "Percent";
 export { Percent };
-export default Percent;

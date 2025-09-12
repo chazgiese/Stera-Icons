@@ -33,4 +33,3 @@ const SendHorizontalFilled = memo(
 );
 SendHorizontalFilled.displayName = "SendHorizontalFilled";
 export { SendHorizontalFilled };
-export default SendHorizontalFilled;

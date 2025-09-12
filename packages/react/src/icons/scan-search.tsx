@@ -45,4 +45,3 @@ const ScanSearch = memo(
 );
 ScanSearch.displayName = "ScanSearch";
 export { ScanSearch };
-export default ScanSearch;

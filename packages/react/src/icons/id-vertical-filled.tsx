@@ -35,4 +35,3 @@ const IdVerticalFilled = memo(
 );
 IdVerticalFilled.displayName = "IdVerticalFilled";
 export { IdVerticalFilled };
-export default IdVerticalFilled;

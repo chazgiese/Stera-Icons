@@ -35,4 +35,3 @@ const AlertDiamondFilled = memo(
 );
 AlertDiamondFilled.displayName = "AlertDiamondFilled";
 export { AlertDiamondFilled };
-export default AlertDiamondFilled;

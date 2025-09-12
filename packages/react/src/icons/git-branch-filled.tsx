@@ -33,4 +33,3 @@ const GitBranchFilled = memo(
 );
 GitBranchFilled.displayName = "GitBranchFilled";
 export { GitBranchFilled };
-export default GitBranchFilled;

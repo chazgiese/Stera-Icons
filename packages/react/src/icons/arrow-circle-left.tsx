@@ -41,4 +41,3 @@ const ArrowCircleLeft = memo(
 );
 ArrowCircleLeft.displayName = "ArrowCircleLeft";
 export { ArrowCircleLeft };
-export default ArrowCircleLeft;

@@ -41,4 +41,3 @@ const CameraOff = memo(
 );
 CameraOff.displayName = "CameraOff";
 export { CameraOff };
-export default CameraOff;

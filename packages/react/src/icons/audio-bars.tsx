@@ -33,4 +33,3 @@ const AudioBars = memo(
 );
 AudioBars.displayName = "AudioBars";
 export { AudioBars };
-export default AudioBars;

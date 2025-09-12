@@ -35,4 +35,3 @@ const HashItalicFilled = memo(
 );
 HashItalicFilled.displayName = "HashItalicFilled";
 export { HashItalicFilled };
-export default HashItalicFilled;

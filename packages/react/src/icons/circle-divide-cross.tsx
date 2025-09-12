@@ -35,4 +35,3 @@ const CircleDivideCross = memo(
 );
 CircleDivideCross.displayName = "CircleDivideCross";
 export { CircleDivideCross };
-export default CircleDivideCross;

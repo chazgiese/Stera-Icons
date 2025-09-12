@@ -33,4 +33,3 @@ const Cloud = memo(
 );
 Cloud.displayName = "Cloud";
 export { Cloud };
-export default Cloud;

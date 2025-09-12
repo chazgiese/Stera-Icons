@@ -33,4 +33,3 @@ const TextAlignLeft = memo(
 );
 TextAlignLeft.displayName = "TextAlignLeft";
 export { TextAlignLeft };
-export default TextAlignLeft;

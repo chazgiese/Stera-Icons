@@ -35,4 +35,3 @@ const Hash = memo(
 );
 Hash.displayName = "Hash";
 export { Hash };
-export default Hash;

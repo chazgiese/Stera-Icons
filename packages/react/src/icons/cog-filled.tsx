@@ -35,4 +35,3 @@ const CogFilled = memo(
 );
 CogFilled.displayName = "CogFilled";
 export { CogFilled };
-export default CogFilled;

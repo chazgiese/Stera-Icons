@@ -41,4 +41,3 @@ const ContactBook = memo(
 );
 ContactBook.displayName = "ContactBook";
 export { ContactBook };
-export default ContactBook;

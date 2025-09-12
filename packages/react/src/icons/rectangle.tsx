@@ -35,4 +35,3 @@ const Rectangle = memo(
 );
 Rectangle.displayName = "Rectangle";
 export { Rectangle };
-export default Rectangle;

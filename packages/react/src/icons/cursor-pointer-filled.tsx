@@ -33,4 +33,3 @@ const CursorPointerFilled = memo(
 );
 CursorPointerFilled.displayName = "CursorPointerFilled";
 export { CursorPointerFilled };
-export default CursorPointerFilled;

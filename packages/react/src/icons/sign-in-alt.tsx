@@ -39,4 +39,3 @@ const SignInAlt = memo(
 );
 SignInAlt.displayName = "SignInAlt";
 export { SignInAlt };
-export default SignInAlt;

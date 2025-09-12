@@ -45,4 +45,3 @@ const DuplicateFilled = memo(
 );
 DuplicateFilled.displayName = "DuplicateFilled";
 export { DuplicateFilled };
-export default DuplicateFilled;

@@ -35,4 +35,3 @@ const ChevronFullInward = memo(
 );
 ChevronFullInward.displayName = "ChevronFullInward";
 export { ChevronFullInward };
-export default ChevronFullInward;

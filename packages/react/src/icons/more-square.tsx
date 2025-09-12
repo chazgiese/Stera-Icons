@@ -41,4 +41,3 @@ const MoreSquare = memo(
 );
 MoreSquare.displayName = "MoreSquare";
 export { MoreSquare };
-export default MoreSquare;

@@ -41,4 +41,3 @@ const Pedestal = memo(
 );
 Pedestal.displayName = "Pedestal";
 export { Pedestal };
-export default Pedestal;

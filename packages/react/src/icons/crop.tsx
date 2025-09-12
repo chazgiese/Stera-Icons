@@ -35,4 +35,3 @@ const Crop = memo(
 );
 Crop.displayName = "Crop";
 export { Crop };
-export default Crop;

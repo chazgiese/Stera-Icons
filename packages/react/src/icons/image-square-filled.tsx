@@ -35,4 +35,3 @@ const ImageSquareFilled = memo(
 );
 ImageSquareFilled.displayName = "ImageSquareFilled";
 export { ImageSquareFilled };
-export default ImageSquareFilled;

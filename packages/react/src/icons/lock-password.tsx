@@ -41,4 +41,3 @@ const LockPassword = memo(
 );
 LockPassword.displayName = "LockPassword";
 export { LockPassword };
-export default LockPassword;

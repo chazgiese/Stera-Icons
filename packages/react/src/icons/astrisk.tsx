@@ -33,4 +33,3 @@ const Astrisk = memo(
 );
 Astrisk.displayName = "Astrisk";
 export { Astrisk };
-export default Astrisk;

@@ -35,4 +35,3 @@ const SpinnerFilled = memo(
 );
 SpinnerFilled.displayName = "SpinnerFilled";
 export { SpinnerFilled };
-export default SpinnerFilled;

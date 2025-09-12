@@ -35,4 +35,3 @@ const PlayCircleFilled = memo(
 );
 PlayCircleFilled.displayName = "PlayCircleFilled";
 export { PlayCircleFilled };
-export default PlayCircleFilled;

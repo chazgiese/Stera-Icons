@@ -33,4 +33,3 @@ const UserCircleDashedFilled = memo(
 );
 UserCircleDashedFilled.displayName = "UserCircleDashedFilled";
 export { UserCircleDashedFilled };
-export default UserCircleDashedFilled;

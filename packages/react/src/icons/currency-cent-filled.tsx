@@ -35,4 +35,3 @@ const CurrencyCentFilled = memo(
 );
 CurrencyCentFilled.displayName = "CurrencyCentFilled";
 export { CurrencyCentFilled };
-export default CurrencyCentFilled;

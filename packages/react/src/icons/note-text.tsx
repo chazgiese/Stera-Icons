@@ -41,4 +41,3 @@ const NoteText = memo(
 );
 NoteText.displayName = "NoteText";
 export { NoteText };
-export default NoteText;

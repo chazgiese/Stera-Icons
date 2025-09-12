@@ -43,4 +43,3 @@ const SearchCircle = memo(
 );
 SearchCircle.displayName = "SearchCircle";
 export { SearchCircle };
-export default SearchCircle;

@@ -39,4 +39,3 @@ const MicFilled = memo(
 );
 MicFilled.displayName = "MicFilled";
 export { MicFilled };
-export default MicFilled;

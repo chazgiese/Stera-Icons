@@ -33,4 +33,3 @@ const SendVerticalFilled = memo(
 );
 SendVerticalFilled.displayName = "SendVerticalFilled";
 export { SendVerticalFilled };
-export default SendVerticalFilled;

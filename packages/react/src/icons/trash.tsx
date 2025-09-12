@@ -41,4 +41,3 @@ const Trash = memo(
 );
 Trash.displayName = "Trash";
 export { Trash };
-export default Trash;

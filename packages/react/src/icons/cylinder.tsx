@@ -33,4 +33,3 @@ const Cylinder = memo(
 );
 Cylinder.displayName = "Cylinder";
 export { Cylinder };
-export default Cylinder;

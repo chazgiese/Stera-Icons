@@ -33,4 +33,3 @@ const Code = memo(
 );
 Code.displayName = "Code";
 export { Code };
-export default Code;

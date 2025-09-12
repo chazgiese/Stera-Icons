@@ -21,7 +21,6 @@ const ${componentName} = memo(forwardRef<SVGSVGElement, IconProps>(({
 ${componentName}.displayName = '${componentName}';
 
 export { ${componentName} };
-export default ${componentName};
 `;
 };
 

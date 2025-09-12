@@ -35,4 +35,3 @@ const Pen = memo(
 );
 Pen.displayName = "Pen";
 export { Pen };
-export default Pen;

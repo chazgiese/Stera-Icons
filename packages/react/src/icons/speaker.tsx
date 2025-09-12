@@ -35,4 +35,3 @@ const Speaker = memo(
 );
 Speaker.displayName = "Speaker";
 export { Speaker };
-export default Speaker;

@@ -39,4 +39,3 @@ const MicOffFilled = memo(
 );
 MicOffFilled.displayName = "MicOffFilled";
 export { MicOffFilled };
-export default MicOffFilled;

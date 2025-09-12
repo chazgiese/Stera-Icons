@@ -35,4 +35,3 @@ const CircleSlash = memo(
 );
 CircleSlash.displayName = "CircleSlash";
 export { CircleSlash };
-export default CircleSlash;

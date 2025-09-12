@@ -35,4 +35,3 @@ const DeviceLaptop = memo(
 );
 DeviceLaptop.displayName = "DeviceLaptop";
 export { DeviceLaptop };
-export default DeviceLaptop;

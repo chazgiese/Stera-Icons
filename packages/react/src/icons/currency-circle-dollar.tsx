@@ -41,4 +41,3 @@ const CurrencyCircleDollar = memo(
 );
 CurrencyCircleDollar.displayName = "CurrencyCircleDollar";
 export { CurrencyCircleDollar };
-export default CurrencyCircleDollar;

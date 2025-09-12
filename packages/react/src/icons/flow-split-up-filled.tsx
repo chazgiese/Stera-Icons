@@ -33,4 +33,3 @@ const FlowSplitUpFilled = memo(
 );
 FlowSplitUpFilled.displayName = "FlowSplitUpFilled";
 export { FlowSplitUpFilled };
-export default FlowSplitUpFilled;

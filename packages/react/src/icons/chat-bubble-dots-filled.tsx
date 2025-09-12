@@ -35,4 +35,3 @@ const ChatBubbleDotsFilled = memo(
 );
 ChatBubbleDotsFilled.displayName = "ChatBubbleDotsFilled";
 export { ChatBubbleDotsFilled };
-export default ChatBubbleDotsFilled;

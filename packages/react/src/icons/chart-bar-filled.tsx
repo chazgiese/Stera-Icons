@@ -33,4 +33,3 @@ const ChartBarFilled = memo(
 );
 ChartBarFilled.displayName = "ChartBarFilled";
 export { ChartBarFilled };
-export default ChartBarFilled;

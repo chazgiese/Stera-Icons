@@ -33,4 +33,3 @@ const FlowRightArrowFilled = memo(
 );
 FlowRightArrowFilled.displayName = "FlowRightArrowFilled";
 export { FlowRightArrowFilled };
-export default FlowRightArrowFilled;

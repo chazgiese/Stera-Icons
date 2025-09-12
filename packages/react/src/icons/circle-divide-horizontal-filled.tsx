@@ -33,4 +33,3 @@ const CircleDivideHorizontalFilled = memo(
 );
 CircleDivideHorizontalFilled.displayName = "CircleDivideHorizontalFilled";
 export { CircleDivideHorizontalFilled };
-export default CircleDivideHorizontalFilled;

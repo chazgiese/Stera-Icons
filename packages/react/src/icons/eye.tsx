@@ -43,4 +43,3 @@ const Eye = memo(
 );
 Eye.displayName = "Eye";
 export { Eye };
-export default Eye;

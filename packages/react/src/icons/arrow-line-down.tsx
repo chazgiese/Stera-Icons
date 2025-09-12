@@ -33,4 +33,3 @@ const ArrowLineDown = memo(
 );
 ArrowLineDown.displayName = "ArrowLineDown";
 export { ArrowLineDown };
-export default ArrowLineDown;

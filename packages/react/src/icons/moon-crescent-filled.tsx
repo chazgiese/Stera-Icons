@@ -33,4 +33,3 @@ const MoonCrescentFilled = memo(
 );
 MoonCrescentFilled.displayName = "MoonCrescentFilled";
 export { MoonCrescentFilled };
-export default MoonCrescentFilled;

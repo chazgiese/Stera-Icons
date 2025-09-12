@@ -35,4 +35,3 @@ const MenuFilled = memo(
 );
 MenuFilled.displayName = "MenuFilled";
 export { MenuFilled };
-export default MenuFilled;

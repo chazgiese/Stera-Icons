@@ -33,4 +33,3 @@ const TextAlignJustify = memo(
 );
 TextAlignJustify.displayName = "TextAlignJustify";
 export { TextAlignJustify };
-export default TextAlignJustify;

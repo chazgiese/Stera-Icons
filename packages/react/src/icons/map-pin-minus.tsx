@@ -41,4 +41,3 @@ const MapPinMinus = memo(
 );
 MapPinMinus.displayName = "MapPinMinus";
 export { MapPinMinus };
-export default MapPinMinus;

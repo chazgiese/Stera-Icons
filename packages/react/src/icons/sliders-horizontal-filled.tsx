@@ -33,4 +33,3 @@ const SlidersHorizontalFilled = memo(
 );
 SlidersHorizontalFilled.displayName = "SlidersHorizontalFilled";
 export { SlidersHorizontalFilled };
-export default SlidersHorizontalFilled;

@@ -35,4 +35,3 @@ const ArrowCircleRightFilled = memo(
 );
 ArrowCircleRightFilled.displayName = "ArrowCircleRightFilled";
 export { ArrowCircleRightFilled };
-export default ArrowCircleRightFilled;

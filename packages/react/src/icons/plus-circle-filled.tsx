@@ -35,4 +35,3 @@ const PlusCircleFilled = memo(
 );
 PlusCircleFilled.displayName = "PlusCircleFilled";
 export { PlusCircleFilled };
-export default PlusCircleFilled;

@@ -41,4 +41,3 @@ const Delete = memo(
 );
 Delete.displayName = "Delete";
 export { Delete };
-export default Delete;

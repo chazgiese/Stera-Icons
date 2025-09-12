@@ -41,4 +41,3 @@ const ChevronSquareUp = memo(
 );
 ChevronSquareUp.displayName = "ChevronSquareUp";
 export { ChevronSquareUp };
-export default ChevronSquareUp;

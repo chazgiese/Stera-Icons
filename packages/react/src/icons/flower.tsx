@@ -35,4 +35,3 @@ const Flower = memo(
 );
 Flower.displayName = "Flower";
 export { Flower };
-export default Flower;

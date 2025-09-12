@@ -41,4 +41,3 @@ const EmoteNeutral = memo(
 );
 EmoteNeutral.displayName = "EmoteNeutral";
 export { EmoteNeutral };
-export default EmoteNeutral;

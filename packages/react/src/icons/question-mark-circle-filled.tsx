@@ -35,4 +35,3 @@ const QuestionMarkCircleFilled = memo(
 );
 QuestionMarkCircleFilled.displayName = "QuestionMarkCircleFilled";
 export { QuestionMarkCircleFilled };
-export default QuestionMarkCircleFilled;

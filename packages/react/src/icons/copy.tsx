@@ -35,4 +35,3 @@ const Copy = memo(
 );
 Copy.displayName = "Copy";
 export { Copy };
-export default Copy;

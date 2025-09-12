@@ -35,4 +35,3 @@ const CircleContrastFilled = memo(
 );
 CircleContrastFilled.displayName = "CircleContrastFilled";
 export { CircleContrastFilled };
-export default CircleContrastFilled;

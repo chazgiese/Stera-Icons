@@ -33,4 +33,3 @@ const CircleDashFilled = memo(
 );
 CircleDashFilled.displayName = "CircleDashFilled";
 export { CircleDashFilled };
-export default CircleDashFilled;

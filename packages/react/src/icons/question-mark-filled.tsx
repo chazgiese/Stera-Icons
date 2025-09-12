@@ -33,4 +33,3 @@ const QuestionMarkFilled = memo(
 );
 QuestionMarkFilled.displayName = "QuestionMarkFilled";
 export { QuestionMarkFilled };
-export default QuestionMarkFilled;

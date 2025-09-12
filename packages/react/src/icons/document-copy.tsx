@@ -35,4 +35,3 @@ const DocumentCopy = memo(
 );
 DocumentCopy.displayName = "DocumentCopy";
 export { DocumentCopy };
-export default DocumentCopy;

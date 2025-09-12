@@ -33,4 +33,3 @@ const ArrowRegularDownRightFilled = memo(
 );
 ArrowRegularDownRightFilled.displayName = "ArrowRegularDownRightFilled";
 export { ArrowRegularDownRightFilled };
-export default ArrowRegularDownRightFilled;

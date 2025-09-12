@@ -41,4 +41,3 @@ const ImageStackFilled = memo(
 );
 ImageStackFilled.displayName = "ImageStackFilled";
 export { ImageStackFilled };
-export default ImageStackFilled;

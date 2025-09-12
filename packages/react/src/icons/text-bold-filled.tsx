@@ -35,4 +35,3 @@ const TextBoldFilled = memo(
 );
 TextBoldFilled.displayName = "TextBoldFilled";
 export { TextBoldFilled };
-export default TextBoldFilled;

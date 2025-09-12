@@ -33,4 +33,3 @@ const ArrowRotationLeft = memo(
 );
 ArrowRotationLeft.displayName = "ArrowRotationLeft";
 export { ArrowRotationLeft };
-export default ArrowRotationLeft;

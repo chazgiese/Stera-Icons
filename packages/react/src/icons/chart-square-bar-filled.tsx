@@ -35,4 +35,3 @@ const ChartSquareBarFilled = memo(
 );
 ChartSquareBarFilled.displayName = "ChartSquareBarFilled";
 export { ChartSquareBarFilled };
-export default ChartSquareBarFilled;

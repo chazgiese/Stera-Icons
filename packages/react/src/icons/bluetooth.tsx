@@ -35,4 +35,3 @@ const Bluetooth = memo(
 );
 Bluetooth.displayName = "Bluetooth";
 export { Bluetooth };
-export default Bluetooth;

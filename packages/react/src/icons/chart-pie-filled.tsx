@@ -39,4 +39,3 @@ const ChartPieFilled = memo(
 );
 ChartPieFilled.displayName = "ChartPieFilled";
 export { ChartPieFilled };
-export default ChartPieFilled;

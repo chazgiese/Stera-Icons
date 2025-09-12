@@ -35,4 +35,3 @@ const MoreSquareVerticalFilled = memo(
 );
 MoreSquareVerticalFilled.displayName = "MoreSquareVerticalFilled";
 export { MoreSquareVerticalFilled };
-export default MoreSquareVerticalFilled;

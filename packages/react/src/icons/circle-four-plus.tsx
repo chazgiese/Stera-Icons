@@ -47,4 +47,3 @@ const CircleFourPlus = memo(
 );
 CircleFourPlus.displayName = "CircleFourPlus";
 export { CircleFourPlus };
-export default CircleFourPlus;

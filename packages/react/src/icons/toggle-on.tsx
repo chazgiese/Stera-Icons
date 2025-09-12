@@ -41,4 +41,3 @@ const ToggleOn = memo(
 );
 ToggleOn.displayName = "ToggleOn";
 export { ToggleOn };
-export default ToggleOn;

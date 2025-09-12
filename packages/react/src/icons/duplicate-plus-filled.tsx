@@ -41,4 +41,3 @@ const DuplicatePlusFilled = memo(
 );
 DuplicatePlusFilled.displayName = "DuplicatePlusFilled";
 export { DuplicatePlusFilled };
-export default DuplicatePlusFilled;

@@ -35,4 +35,3 @@ const Document = memo(
 );
 Document.displayName = "Document";
 export { Document };
-export default Document;

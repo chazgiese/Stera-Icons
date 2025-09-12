@@ -33,4 +33,3 @@ const SignInAltFilled = memo(
 );
 SignInAltFilled.displayName = "SignInAltFilled";
 export { SignInAltFilled };
-export default SignInAltFilled;

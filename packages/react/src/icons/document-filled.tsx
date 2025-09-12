@@ -35,4 +35,3 @@ const DocumentFilled = memo(
 );
 DocumentFilled.displayName = "DocumentFilled";
 export { DocumentFilled };
-export default DocumentFilled;

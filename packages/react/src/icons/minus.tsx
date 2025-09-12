@@ -33,4 +33,3 @@ const Minus = memo(
 );
 Minus.displayName = "Minus";
 export { Minus };
-export default Minus;

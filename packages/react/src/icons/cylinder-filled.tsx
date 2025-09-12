@@ -35,4 +35,3 @@ const CylinderFilled = memo(
 );
 CylinderFilled.displayName = "CylinderFilled";
 export { CylinderFilled };
-export default CylinderFilled;

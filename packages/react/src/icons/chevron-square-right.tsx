@@ -41,4 +41,3 @@ const ChevronSquareRight = memo(
 );
 ChevronSquareRight.displayName = "ChevronSquareRight";
 export { ChevronSquareRight };
-export default ChevronSquareRight;

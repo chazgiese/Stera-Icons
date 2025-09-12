@@ -41,4 +41,3 @@ const InfoCircle = memo(
 );
 InfoCircle.displayName = "InfoCircle";
 export { InfoCircle };
-export default InfoCircle;

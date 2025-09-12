@@ -41,4 +41,3 @@ const ChartPie = memo(
 );
 ChartPie.displayName = "ChartPie";
 export { ChartPie };
-export default ChartPie;

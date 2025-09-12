@@ -41,4 +41,3 @@ const XSquare = memo(
 );
 XSquare.displayName = "XSquare";
 export { XSquare };
-export default XSquare;

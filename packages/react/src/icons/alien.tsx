@@ -41,4 +41,3 @@ const Alien = memo(
 );
 Alien.displayName = "Alien";
 export { Alien };
-export default Alien;

@@ -33,4 +33,3 @@ const ArrowLineRightFilled = memo(
 );
 ArrowLineRightFilled.displayName = "ArrowLineRightFilled";
 export { ArrowLineRightFilled };
-export default ArrowLineRightFilled;

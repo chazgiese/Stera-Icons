@@ -41,4 +41,3 @@ const ThermometerLow = memo(
 );
 ThermometerLow.displayName = "ThermometerLow";
 export { ThermometerLow };
-export default ThermometerLow;

@@ -41,4 +41,3 @@ const EmoteSurprised = memo(
 );
 EmoteSurprised.displayName = "EmoteSurprised";
 export { EmoteSurprised };
-export default EmoteSurprised;

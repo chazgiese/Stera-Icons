@@ -41,4 +41,3 @@ const AiFilled = memo(
 );
 AiFilled.displayName = "AiFilled";
 export { AiFilled };
-export default AiFilled;

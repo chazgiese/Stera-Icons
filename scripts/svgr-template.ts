@@ -1,21 +1,4 @@
-import pkg from '@svgr/core';
-const { Template } = pkg;
-
-const template: Template = (variables, { tpl }) => {
-  return tpl`
-${variables.imports};
-
-${variables.interfaces};
-
-const ${variables.componentName} = (${variables.props}) => (
-  ${variables.jsx}
-);
-
-${variables.exports};
-`;
-};
-
-const svgrTemplate: Template = (variables, { tpl }) => {
+const svgrTemplate = (variables, { tpl }) => {
   const { componentName, props, jsx, interfaces, imports, exports } = variables;
   
   return tpl`
@@ -38,7 +21,6 @@ const ${componentName} = memo(forwardRef<SVGSVGElement, IconProps>(({
 ${componentName}.displayName = '${componentName}';
 
 export { ${componentName} };
-export default ${componentName};
 `;
 };
 

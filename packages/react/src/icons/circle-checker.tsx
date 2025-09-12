@@ -35,4 +35,3 @@ const CircleChecker = memo(
 );
 CircleChecker.displayName = "CircleChecker";
 export { CircleChecker };
-export default CircleChecker;

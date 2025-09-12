@@ -33,4 +33,3 @@ const ListBullet = memo(
 );
 ListBullet.displayName = "ListBullet";
 export { ListBullet };
-export default ListBullet;

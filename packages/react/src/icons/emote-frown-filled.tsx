@@ -35,4 +35,3 @@ const EmoteFrownFilled = memo(
 );
 EmoteFrownFilled.displayName = "EmoteFrownFilled";
 export { EmoteFrownFilled };
-export default EmoteFrownFilled;

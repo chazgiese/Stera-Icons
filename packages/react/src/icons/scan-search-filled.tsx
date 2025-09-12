@@ -33,4 +33,3 @@ const ScanSearchFilled = memo(
 );
 ScanSearchFilled.displayName = "ScanSearchFilled";
 export { ScanSearchFilled };
-export default ScanSearchFilled;

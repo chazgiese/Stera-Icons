@@ -35,4 +35,3 @@ const FolderOpen = memo(
 );
 FolderOpen.displayName = "FolderOpen";
 export { FolderOpen };
-export default FolderOpen;

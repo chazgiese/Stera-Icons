@@ -35,4 +35,3 @@ const ArrowRotateCircleLeftFilled = memo(
 );
 ArrowRotateCircleLeftFilled.displayName = "ArrowRotateCircleLeftFilled";
 export { ArrowRotateCircleLeftFilled };
-export default ArrowRotateCircleLeftFilled;

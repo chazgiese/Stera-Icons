@@ -39,4 +39,3 @@ const CloudX = memo(
 );
 CloudX.displayName = "CloudX";
 export { CloudX };
-export default CloudX;

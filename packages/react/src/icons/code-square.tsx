@@ -41,4 +41,3 @@ const CodeSquare = memo(
 );
 CodeSquare.displayName = "CodeSquare";
 export { CodeSquare };
-export default CodeSquare;

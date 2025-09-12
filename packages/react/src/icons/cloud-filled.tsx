@@ -33,4 +33,3 @@ const CloudFilled = memo(
 );
 CloudFilled.displayName = "CloudFilled";
 export { CloudFilled };
-export default CloudFilled;

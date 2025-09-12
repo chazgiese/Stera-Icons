@@ -33,4 +33,3 @@ const TextUnderlineFilled = memo(
 );
 TextUnderlineFilled.displayName = "TextUnderlineFilled";
 export { TextUnderlineFilled };
-export default TextUnderlineFilled;

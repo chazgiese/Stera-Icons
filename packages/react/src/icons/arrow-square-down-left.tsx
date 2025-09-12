@@ -41,4 +41,3 @@ const ArrowSquareDownLeft = memo(
 );
 ArrowSquareDownLeft.displayName = "ArrowSquareDownLeft";
 export { ArrowSquareDownLeft };
-export default ArrowSquareDownLeft;

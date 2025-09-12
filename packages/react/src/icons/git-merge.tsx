@@ -35,4 +35,3 @@ const GitMerge = memo(
 );
 GitMerge.displayName = "GitMerge";
 export { GitMerge };
-export default GitMerge;

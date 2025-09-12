@@ -35,4 +35,3 @@ const BellXFilled = memo(
 );
 BellXFilled.displayName = "BellXFilled";
 export { BellXFilled };
-export default BellXFilled;

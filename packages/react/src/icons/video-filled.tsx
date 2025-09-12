@@ -33,4 +33,3 @@ const VideoFilled = memo(
 );
 VideoFilled.displayName = "VideoFilled";
 export { VideoFilled };
-export default VideoFilled;

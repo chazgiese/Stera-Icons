@@ -41,4 +41,3 @@ const ImageLandscape = memo(
 );
 ImageLandscape.displayName = "ImageLandscape";
 export { ImageLandscape };
-export default ImageLandscape;

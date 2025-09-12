@@ -33,4 +33,3 @@ const TextItalic = memo(
 );
 TextItalic.displayName = "TextItalic";
 export { TextItalic };
-export default TextItalic;

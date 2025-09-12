@@ -35,4 +35,3 @@ const Warehouse = memo(
 );
 Warehouse.displayName = "Warehouse";
 export { Warehouse };
-export default Warehouse;

@@ -35,4 +35,3 @@ const DeviceDesktop = memo(
 );
 DeviceDesktop.displayName = "DeviceDesktop";
 export { DeviceDesktop };
-export default DeviceDesktop;

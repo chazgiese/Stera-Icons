@@ -35,4 +35,3 @@ const CircleContrast = memo(
 );
 CircleContrast.displayName = "CircleContrast";
 export { CircleContrast };
-export default CircleContrast;

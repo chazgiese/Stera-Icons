@@ -33,4 +33,3 @@ const Note = memo(
 );
 Note.displayName = "Note";
 export { Note };
-export default Note;

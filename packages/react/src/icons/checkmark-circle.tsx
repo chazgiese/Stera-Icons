@@ -41,4 +41,3 @@ const CheckmarkCircle = memo(
 );
 CheckmarkCircle.displayName = "CheckmarkCircle";
 export { CheckmarkCircle };
-export default CheckmarkCircle;

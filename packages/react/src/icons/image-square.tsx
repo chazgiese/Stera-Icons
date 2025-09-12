@@ -41,4 +41,3 @@ const ImageSquare = memo(
 );
 ImageSquare.displayName = "ImageSquare";
 export { ImageSquare };
-export default ImageSquare;

@@ -33,4 +33,3 @@ const GitCompareFilled = memo(
 );
 GitCompareFilled.displayName = "GitCompareFilled";
 export { GitCompareFilled };
-export default GitCompareFilled;

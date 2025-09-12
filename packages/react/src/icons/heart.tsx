@@ -33,4 +33,3 @@ const Heart = memo(
 );
 Heart.displayName = "Heart";
 export { Heart };
-export default Heart;

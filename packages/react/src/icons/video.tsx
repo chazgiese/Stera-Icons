@@ -35,4 +35,3 @@ const Video = memo(
 );
 Video.displayName = "Video";
 export { Video };
-export default Video;

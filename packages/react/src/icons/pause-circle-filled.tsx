@@ -35,4 +35,3 @@ const PauseCircleFilled = memo(
 );
 PauseCircleFilled.displayName = "PauseCircleFilled";
 export { PauseCircleFilled };
-export default PauseCircleFilled;

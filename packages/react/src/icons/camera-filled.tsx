@@ -35,4 +35,3 @@ const CameraFilled = memo(
 );
 CameraFilled.displayName = "CameraFilled";
 export { CameraFilled };
-export default CameraFilled;

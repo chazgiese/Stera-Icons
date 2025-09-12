@@ -45,4 +45,3 @@ const SpeakerMedium = memo(
 );
 SpeakerMedium.displayName = "SpeakerMedium";
 export { SpeakerMedium };
-export default SpeakerMedium;

@@ -33,4 +33,3 @@ const TextStrikethrough = memo(
 );
 TextStrikethrough.displayName = "TextStrikethrough";
 export { TextStrikethrough };
-export default TextStrikethrough;

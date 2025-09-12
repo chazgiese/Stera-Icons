@@ -41,4 +41,3 @@ const IdVertical = memo(
 );
 IdVertical.displayName = "IdVertical";
 export { IdVertical };
-export default IdVertical;

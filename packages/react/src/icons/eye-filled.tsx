@@ -35,4 +35,3 @@ const EyeFilled = memo(
 );
 EyeFilled.displayName = "EyeFilled";
 export { EyeFilled };
-export default EyeFilled;

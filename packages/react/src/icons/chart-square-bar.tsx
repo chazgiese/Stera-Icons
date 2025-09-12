@@ -41,4 +41,3 @@ const ChartSquareBar = memo(
 );
 ChartSquareBar.displayName = "ChartSquareBar";
 export { ChartSquareBar };
-export default ChartSquareBar;

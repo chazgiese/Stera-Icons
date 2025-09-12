@@ -39,4 +39,3 @@ const AlertTriangle = memo(
 );
 AlertTriangle.displayName = "AlertTriangle";
 export { AlertTriangle };
-export default AlertTriangle;

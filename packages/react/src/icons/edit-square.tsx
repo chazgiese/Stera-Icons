@@ -41,4 +41,3 @@ const EditSquare = memo(
 );
 EditSquare.displayName = "EditSquare";
 export { EditSquare };
-export default EditSquare;

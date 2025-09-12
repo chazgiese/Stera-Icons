@@ -33,4 +33,3 @@ const ArrowsMove = memo(
 );
 ArrowsMove.displayName = "ArrowsMove";
 export { ArrowsMove };
-export default ArrowsMove;

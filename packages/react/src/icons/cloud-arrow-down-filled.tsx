@@ -35,4 +35,3 @@ const CloudArrowDownFilled = memo(
 );
 CloudArrowDownFilled.displayName = "CloudArrowDownFilled";
 export { CloudArrowDownFilled };
-export default CloudArrowDownFilled;

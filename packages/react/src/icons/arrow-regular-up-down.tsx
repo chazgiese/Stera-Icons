@@ -33,4 +33,3 @@ const ArrowRegularUpDown = memo(
 );
 ArrowRegularUpDown.displayName = "ArrowRegularUpDown";
 export { ArrowRegularUpDown };
-export default ArrowRegularUpDown;

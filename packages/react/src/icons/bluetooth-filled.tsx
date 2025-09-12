@@ -35,4 +35,3 @@ const BluetoothFilled = memo(
 );
 BluetoothFilled.displayName = "BluetoothFilled";
 export { BluetoothFilled };
-export default BluetoothFilled;

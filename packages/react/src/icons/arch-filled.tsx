@@ -33,4 +33,3 @@ const ArchFilled = memo(
 );
 ArchFilled.displayName = "ArchFilled";
 export { ArchFilled };
-export default ArchFilled;

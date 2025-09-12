@@ -33,4 +33,3 @@ const ArrowRight = memo(
 );
 ArrowRight.displayName = "ArrowRight";
 export { ArrowRight };
-export default ArrowRight;

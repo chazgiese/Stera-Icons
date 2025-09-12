@@ -33,4 +33,3 @@ const EyeClosedFilled = memo(
 );
 EyeClosedFilled.displayName = "EyeClosedFilled";
 export { EyeClosedFilled };
-export default EyeClosedFilled;

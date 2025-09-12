@@ -39,4 +39,3 @@ const LinkFilled = memo(
 );
 LinkFilled.displayName = "LinkFilled";
 export { LinkFilled };
-export default LinkFilled;

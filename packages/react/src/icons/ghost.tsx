@@ -41,4 +41,3 @@ const Ghost = memo(
 );
 Ghost.displayName = "Ghost";
 export { Ghost };
-export default Ghost;

@@ -41,4 +41,3 @@ const MapPinPlus = memo(
 );
 MapPinPlus.displayName = "MapPinPlus";
 export { MapPinPlus };
-export default MapPinPlus;

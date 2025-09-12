@@ -49,4 +49,3 @@ const FolderOpenFilled = memo(
 );
 FolderOpenFilled.displayName = "FolderOpenFilled";
 export { FolderOpenFilled };
-export default FolderOpenFilled;

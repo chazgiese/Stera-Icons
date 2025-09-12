@@ -33,4 +33,3 @@ const GlobeFilled = memo(
 );
 GlobeFilled.displayName = "GlobeFilled";
 export { GlobeFilled };
-export default GlobeFilled;

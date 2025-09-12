@@ -41,4 +41,3 @@ const Lock = memo(
 );
 Lock.displayName = "Lock";
 export { Lock };
-export default Lock;

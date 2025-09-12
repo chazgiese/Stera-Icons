@@ -33,4 +33,3 @@ const CursorNavigationFilled = memo(
 );
 CursorNavigationFilled.displayName = "CursorNavigationFilled";
 export { CursorNavigationFilled };
-export default CursorNavigationFilled;

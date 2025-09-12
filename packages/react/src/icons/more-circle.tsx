@@ -41,4 +41,3 @@ const MoreCircle = memo(
 );
 MoreCircle.displayName = "MoreCircle";
 export { MoreCircle };
-export default MoreCircle;

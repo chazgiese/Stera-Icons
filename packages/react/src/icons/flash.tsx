@@ -35,4 +35,3 @@ const Flash = memo(
 );
 Flash.displayName = "Flash";
 export { Flash };
-export default Flash;

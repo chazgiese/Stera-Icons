@@ -35,4 +35,3 @@ const FlowSplitDown = memo(
 );
 FlowSplitDown.displayName = "FlowSplitDown";
 export { FlowSplitDown };
-export default FlowSplitDown;

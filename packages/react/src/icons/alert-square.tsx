@@ -41,4 +41,3 @@ const AlertSquare = memo(
 );
 AlertSquare.displayName = "AlertSquare";
 export { AlertSquare };
-export default AlertSquare;

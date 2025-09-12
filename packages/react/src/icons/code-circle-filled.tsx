@@ -35,4 +35,3 @@ const CodeCircleFilled = memo(
 );
 CodeCircleFilled.displayName = "CodeCircleFilled";
 export { CodeCircleFilled };
-export default CodeCircleFilled;

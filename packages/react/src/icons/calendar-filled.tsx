@@ -35,4 +35,3 @@ const CalendarFilled = memo(
 );
 CalendarFilled.displayName = "CalendarFilled";
 export { CalendarFilled };
-export default CalendarFilled;

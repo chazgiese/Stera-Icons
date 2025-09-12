@@ -35,4 +35,3 @@ const Crosshair = memo(
 );
 Crosshair.displayName = "Crosshair";
 export { Crosshair };
-export default Crosshair;

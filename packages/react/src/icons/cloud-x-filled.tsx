@@ -35,4 +35,3 @@ const CloudXFilled = memo(
 );
 CloudXFilled.displayName = "CloudXFilled";
 export { CloudXFilled };
-export default CloudXFilled;

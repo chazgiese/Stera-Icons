@@ -33,4 +33,3 @@ const ArrowsDiagonal = memo(
 );
 ArrowsDiagonal.displayName = "ArrowsDiagonal";
 export { ArrowsDiagonal };
-export default ArrowsDiagonal;

@@ -33,4 +33,3 @@ const BladeKunaiFilled = memo(
 );
 BladeKunaiFilled.displayName = "BladeKunaiFilled";
 export { BladeKunaiFilled };
-export default BladeKunaiFilled;

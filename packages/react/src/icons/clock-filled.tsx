@@ -35,4 +35,3 @@ const ClockFilled = memo(
 );
 ClockFilled.displayName = "ClockFilled";
 export { ClockFilled };
-export default ClockFilled;

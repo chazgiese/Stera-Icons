@@ -33,4 +33,3 @@ const GitPullRequest = memo(
 );
 GitPullRequest.displayName = "GitPullRequest";
 export { GitPullRequest };
-export default GitPullRequest;

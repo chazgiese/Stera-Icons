@@ -35,4 +35,3 @@ const LockFilled = memo(
 );
 LockFilled.displayName = "LockFilled";
 export { LockFilled };
-export default LockFilled;

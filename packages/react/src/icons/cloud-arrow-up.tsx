@@ -39,4 +39,3 @@ const CloudArrowUp = memo(
 );
 CloudArrowUp.displayName = "CloudArrowUp";
 export { CloudArrowUp };
-export default CloudArrowUp;

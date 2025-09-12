@@ -35,4 +35,3 @@ const NoteFilled = memo(
 );
 NoteFilled.displayName = "NoteFilled";
 export { NoteFilled };
-export default NoteFilled;

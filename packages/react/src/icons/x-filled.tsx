@@ -33,4 +33,3 @@ const XFilled = memo(
 );
 XFilled.displayName = "XFilled";
 export { XFilled };
-export default XFilled;

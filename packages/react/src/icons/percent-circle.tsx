@@ -41,4 +41,3 @@ const PercentCircle = memo(
 );
 PercentCircle.displayName = "PercentCircle";
 export { PercentCircle };
-export default PercentCircle;

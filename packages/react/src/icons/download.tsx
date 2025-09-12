@@ -39,4 +39,3 @@ const Download = memo(
 );
 Download.displayName = "Download";
 export { Download };
-export default Download;

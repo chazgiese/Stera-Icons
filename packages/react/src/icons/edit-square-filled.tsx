@@ -35,4 +35,3 @@ const EditSquareFilled = memo(
 );
 EditSquareFilled.displayName = "EditSquareFilled";
 export { EditSquareFilled };
-export default EditSquareFilled;

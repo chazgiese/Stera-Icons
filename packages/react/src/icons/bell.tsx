@@ -35,4 +35,3 @@ const Bell = memo(
 );
 Bell.displayName = "Bell";
 export { Bell };
-export default Bell;

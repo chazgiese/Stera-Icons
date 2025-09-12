@@ -35,4 +35,3 @@ const StarHalfFilled = memo(
 );
 StarHalfFilled.displayName = "StarHalfFilled";
 export { StarHalfFilled };
-export default StarHalfFilled;

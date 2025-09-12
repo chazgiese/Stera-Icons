@@ -33,4 +33,3 @@ const PlayFilled = memo(
 );
 PlayFilled.displayName = "PlayFilled";
 export { PlayFilled };
-export default PlayFilled;

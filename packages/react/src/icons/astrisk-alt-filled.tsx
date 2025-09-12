@@ -33,4 +33,3 @@ const AstriskAltFilled = memo(
 );
 AstriskAltFilled.displayName = "AstriskAltFilled";
 export { AstriskAltFilled };
-export default AstriskAltFilled;

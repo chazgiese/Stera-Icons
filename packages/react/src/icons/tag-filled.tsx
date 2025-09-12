@@ -35,4 +35,3 @@ const TagFilled = memo(
 );
 TagFilled.displayName = "TagFilled";
 export { TagFilled };
-export default TagFilled;

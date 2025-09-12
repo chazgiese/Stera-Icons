@@ -45,4 +45,3 @@ const AtomOrbit = memo(
 );
 AtomOrbit.displayName = "AtomOrbit";
 export { AtomOrbit };
-export default AtomOrbit;

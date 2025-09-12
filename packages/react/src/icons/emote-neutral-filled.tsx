@@ -35,4 +35,3 @@ const EmoteNeutralFilled = memo(
 );
 EmoteNeutralFilled.displayName = "EmoteNeutralFilled";
 export { EmoteNeutralFilled };
-export default EmoteNeutralFilled;

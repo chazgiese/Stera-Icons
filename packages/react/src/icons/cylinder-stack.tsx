@@ -35,4 +35,3 @@ const CylinderStack = memo(
 );
 CylinderStack.displayName = "CylinderStack";
 export { CylinderStack };
-export default CylinderStack;

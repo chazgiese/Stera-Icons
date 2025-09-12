@@ -33,4 +33,3 @@ const ArrowsExpand = memo(
 );
 ArrowsExpand.displayName = "ArrowsExpand";
 export { ArrowsExpand };
-export default ArrowsExpand;

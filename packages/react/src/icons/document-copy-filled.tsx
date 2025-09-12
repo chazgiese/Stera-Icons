@@ -43,4 +43,3 @@ const DocumentCopyFilled = memo(
 );
 DocumentCopyFilled.displayName = "DocumentCopyFilled";
 export { DocumentCopyFilled };
-export default DocumentCopyFilled;

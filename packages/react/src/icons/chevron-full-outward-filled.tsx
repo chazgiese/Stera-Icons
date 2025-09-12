@@ -33,4 +33,3 @@ const ChevronFullOutwardFilled = memo(
 );
 ChevronFullOutwardFilled.displayName = "ChevronFullOutwardFilled";
 export { ChevronFullOutwardFilled };
-export default ChevronFullOutwardFilled;

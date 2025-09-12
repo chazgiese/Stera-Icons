@@ -41,4 +41,3 @@ const ArrowCircleDown = memo(
 );
 ArrowCircleDown.displayName = "ArrowCircleDown";
 export { ArrowCircleDown };
-export default ArrowCircleDown;

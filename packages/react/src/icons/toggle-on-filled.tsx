@@ -35,4 +35,3 @@ const ToggleOnFilled = memo(
 );
 ToggleOnFilled.displayName = "ToggleOnFilled";
 export { ToggleOnFilled };
-export default ToggleOnFilled;

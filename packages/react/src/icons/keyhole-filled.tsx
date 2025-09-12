@@ -33,4 +33,3 @@ const KeyholeFilled = memo(
 );
 KeyholeFilled.displayName = "KeyholeFilled";
 export { KeyholeFilled };
-export default KeyholeFilled;

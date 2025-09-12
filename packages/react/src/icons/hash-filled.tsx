@@ -35,4 +35,3 @@ const HashFilled = memo(
 );
 HashFilled.displayName = "HashFilled";
 export { HashFilled };
-export default HashFilled;

@@ -35,4 +35,3 @@ const MoreFilled = memo(
 );
 MoreFilled.displayName = "MoreFilled";
 export { MoreFilled };
-export default MoreFilled;

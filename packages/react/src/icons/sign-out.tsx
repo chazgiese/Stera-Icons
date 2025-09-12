@@ -39,4 +39,3 @@ const SignOut = memo(
 );
 SignOut.displayName = "SignOut";
 export { SignOut };
-export default SignOut;

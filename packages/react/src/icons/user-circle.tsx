@@ -35,4 +35,3 @@ const UserCircle = memo(
 );
 UserCircle.displayName = "UserCircle";
 export { UserCircle };
-export default UserCircle;

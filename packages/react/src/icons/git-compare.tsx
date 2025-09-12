@@ -35,4 +35,3 @@ const GitCompare = memo(
 );
 GitCompare.displayName = "GitCompare";
 export { GitCompare };
-export default GitCompare;

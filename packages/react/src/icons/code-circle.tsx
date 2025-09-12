@@ -41,4 +41,3 @@ const CodeCircle = memo(
 );
 CodeCircle.displayName = "CodeCircle";
 export { CodeCircle };
-export default CodeCircle;

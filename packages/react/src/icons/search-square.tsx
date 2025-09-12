@@ -43,4 +43,3 @@ const SearchSquare = memo(
 );
 SearchSquare.displayName = "SearchSquare";
 export { SearchSquare };
-export default SearchSquare;

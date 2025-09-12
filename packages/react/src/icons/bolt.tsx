@@ -43,4 +43,3 @@ const Bolt = memo(
 );
 Bolt.displayName = "Bolt";
 export { Bolt };
-export default Bolt;

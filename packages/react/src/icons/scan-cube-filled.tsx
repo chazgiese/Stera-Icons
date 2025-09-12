@@ -33,4 +33,3 @@ const ScanCubeFilled = memo(
 );
 ScanCubeFilled.displayName = "ScanCubeFilled";
 export { ScanCubeFilled };
-export default ScanCubeFilled;

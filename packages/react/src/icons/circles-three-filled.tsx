@@ -33,4 +33,3 @@ const CirclesThreeFilled = memo(
 );
 CirclesThreeFilled.displayName = "CirclesThreeFilled";
 export { CirclesThreeFilled };
-export default CirclesThreeFilled;

@@ -35,4 +35,3 @@ const ChatBoxDotsFilled = memo(
 );
 ChatBoxDotsFilled.displayName = "ChatBoxDotsFilled";
 export { ChatBoxDotsFilled };
-export default ChatBoxDotsFilled;

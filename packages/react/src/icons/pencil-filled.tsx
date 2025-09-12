@@ -33,4 +33,3 @@ const PencilFilled = memo(
 );
 PencilFilled.displayName = "PencilFilled";
 export { PencilFilled };
-export default PencilFilled;

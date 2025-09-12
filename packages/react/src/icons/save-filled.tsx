@@ -33,4 +33,3 @@ const SaveFilled = memo(
 );
 SaveFilled.displayName = "SaveFilled";
 export { SaveFilled };
-export default SaveFilled;

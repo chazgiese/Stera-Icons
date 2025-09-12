@@ -41,4 +41,3 @@ const Basket = memo(
 );
 Basket.displayName = "Basket";
 export { Basket };
-export default Basket;

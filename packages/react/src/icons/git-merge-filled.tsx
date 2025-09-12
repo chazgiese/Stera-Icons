@@ -33,4 +33,3 @@ const GitMergeFilled = memo(
 );
 GitMergeFilled.displayName = "GitMergeFilled";
 export { GitMergeFilled };
-export default GitMergeFilled;

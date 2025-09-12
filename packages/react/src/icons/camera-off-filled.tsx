@@ -33,4 +33,3 @@ const CameraOffFilled = memo(
 );
 CameraOffFilled.displayName = "CameraOffFilled";
 export { CameraOffFilled };
-export default CameraOffFilled;

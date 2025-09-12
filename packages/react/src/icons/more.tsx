@@ -33,4 +33,3 @@ const More = memo(
 );
 More.displayName = "More";
 export { More };
-export default More;

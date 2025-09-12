@@ -35,4 +35,3 @@ const ThermometerHighFilled = memo(
 );
 ThermometerHighFilled.displayName = "ThermometerHighFilled";
 export { ThermometerHighFilled };
-export default ThermometerHighFilled;

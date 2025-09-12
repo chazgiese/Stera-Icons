@@ -33,4 +33,3 @@ const ListCheckFilled = memo(
 );
 ListCheckFilled.displayName = "ListCheckFilled";
 export { ListCheckFilled };
-export default ListCheckFilled;

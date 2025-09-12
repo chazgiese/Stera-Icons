@@ -35,4 +35,3 @@ const ChevronFullCircleUpFilled = memo(
 );
 ChevronFullCircleUpFilled.displayName = "ChevronFullCircleUpFilled";
 export { ChevronFullCircleUpFilled };
-export default ChevronFullCircleUpFilled;

@@ -45,4 +45,3 @@ const ScanCube = memo(
 );
 ScanCube.displayName = "ScanCube";
 export { ScanCube };
-export default ScanCube;

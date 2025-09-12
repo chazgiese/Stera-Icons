@@ -35,4 +35,3 @@ const CodeSquareFilled = memo(
 );
 CodeSquareFilled.displayName = "CodeSquareFilled";
 export { CodeSquareFilled };
-export default CodeSquareFilled;

@@ -35,4 +35,3 @@ const MapPinMinusFilled = memo(
 );
 MapPinMinusFilled.displayName = "MapPinMinusFilled";
 export { MapPinMinusFilled };
-export default MapPinMinusFilled;

@@ -33,4 +33,3 @@ const ListTwo = memo(
 );
 ListTwo.displayName = "ListTwo";
 export { ListTwo };
-export default ListTwo;

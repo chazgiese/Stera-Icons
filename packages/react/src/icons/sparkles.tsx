@@ -41,4 +41,3 @@ const Sparkles = memo(
 );
 Sparkles.displayName = "Sparkles";
 export { Sparkles };
-export default Sparkles;

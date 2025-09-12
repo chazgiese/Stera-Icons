@@ -35,4 +35,3 @@ const FolderFilled = memo(
 );
 FolderFilled.displayName = "FolderFilled";
 export { FolderFilled };
-export default FolderFilled;

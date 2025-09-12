@@ -49,4 +49,3 @@ const SpeakerHigh = memo(
 );
 SpeakerHigh.displayName = "SpeakerHigh";
 export { SpeakerHigh };
-export default SpeakerHigh;

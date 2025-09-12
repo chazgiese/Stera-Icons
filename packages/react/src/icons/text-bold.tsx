@@ -35,4 +35,3 @@ const TextBold = memo(
 );
 TextBold.displayName = "TextBold";
 export { TextBold };
-export default TextBold;

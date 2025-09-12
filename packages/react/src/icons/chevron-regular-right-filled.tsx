@@ -33,4 +33,3 @@ const ChevronRegularRightFilled = memo(
 );
 ChevronRegularRightFilled.displayName = "ChevronRegularRightFilled";
 export { ChevronRegularRightFilled };
-export default ChevronRegularRightFilled;

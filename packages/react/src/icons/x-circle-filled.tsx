@@ -35,4 +35,3 @@ const XCircleFilled = memo(
 );
 XCircleFilled.displayName = "XCircleFilled";
 export { XCircleFilled };
-export default XCircleFilled;

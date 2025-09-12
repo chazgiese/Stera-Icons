@@ -33,4 +33,3 @@ const ThumbsDownFilled = memo(
 );
 ThumbsDownFilled.displayName = "ThumbsDownFilled";
 export { ThumbsDownFilled };
-export default ThumbsDownFilled;

@@ -41,4 +41,3 @@ const BellOff = memo(
 );
 BellOff.displayName = "BellOff";
 export { BellOff };
-export default BellOff;

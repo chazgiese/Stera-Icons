@@ -35,4 +35,3 @@ const PercentCircleFilled = memo(
 );
 PercentCircleFilled.displayName = "PercentCircleFilled";
 export { PercentCircleFilled };
-export default PercentCircleFilled;

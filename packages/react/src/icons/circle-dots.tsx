@@ -33,4 +33,3 @@ const CircleDots = memo(
 );
 CircleDots.displayName = "CircleDots";
 export { CircleDots };
-export default CircleDots;

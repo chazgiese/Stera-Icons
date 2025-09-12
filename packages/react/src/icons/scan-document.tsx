@@ -45,4 +45,3 @@ const ScanDocument = memo(
 );
 ScanDocument.displayName = "ScanDocument";
 export { ScanDocument };
-export default ScanDocument;

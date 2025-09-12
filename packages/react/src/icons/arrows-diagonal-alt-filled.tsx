@@ -33,4 +33,3 @@ const ArrowsDiagonalAltFilled = memo(
 );
 ArrowsDiagonalAltFilled.displayName = "ArrowsDiagonalAltFilled";
 export { ArrowsDiagonalAltFilled };
-export default ArrowsDiagonalAltFilled;

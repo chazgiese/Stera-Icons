@@ -41,4 +41,3 @@ const FolderPlus = memo(
 );
 FolderPlus.displayName = "FolderPlus";
 export { FolderPlus };
-export default FolderPlus;

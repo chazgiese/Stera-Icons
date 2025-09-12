@@ -33,4 +33,3 @@ const TextFilled = memo(
 );
 TextFilled.displayName = "TextFilled";
 export { TextFilled };
-export default TextFilled;

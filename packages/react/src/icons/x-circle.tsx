@@ -41,4 +41,3 @@ const XCircle = memo(
 );
 XCircle.displayName = "XCircle";
 export { XCircle };
-export default XCircle;

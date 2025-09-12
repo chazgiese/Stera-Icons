@@ -35,4 +35,3 @@ const DeleteFilled = memo(
 );
 DeleteFilled.displayName = "DeleteFilled";
 export { DeleteFilled };
-export default DeleteFilled;

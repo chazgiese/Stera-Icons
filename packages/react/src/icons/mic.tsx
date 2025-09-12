@@ -41,4 +41,3 @@ const Mic = memo(
 );
 Mic.displayName = "Mic";
 export { Mic };
-export default Mic;

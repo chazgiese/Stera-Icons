@@ -45,4 +45,3 @@ const BrightnessMedium = memo(
 );
 BrightnessMedium.displayName = "BrightnessMedium";
 export { BrightnessMedium };
-export default BrightnessMedium;

@@ -33,4 +33,3 @@ const ArrowRegularUpFilled = memo(
 );
 ArrowRegularUpFilled.displayName = "ArrowRegularUpFilled";
 export { ArrowRegularUpFilled };
-export default ArrowRegularUpFilled;

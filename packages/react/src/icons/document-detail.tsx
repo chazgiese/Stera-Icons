@@ -41,4 +41,3 @@ const DocumentDetail = memo(
 );
 DocumentDetail.displayName = "DocumentDetail";
 export { DocumentDetail };
-export default DocumentDetail;

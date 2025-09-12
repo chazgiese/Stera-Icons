@@ -33,4 +33,3 @@ const DeviceLaptopFilled = memo(
 );
 DeviceLaptopFilled.displayName = "DeviceLaptopFilled";
 export { DeviceLaptopFilled };
-export default DeviceLaptopFilled;

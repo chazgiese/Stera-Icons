@@ -39,4 +39,3 @@ const Link = memo(
 );
 Link.displayName = "Link";
 export { Link };
-export default Link;

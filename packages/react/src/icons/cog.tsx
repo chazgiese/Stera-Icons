@@ -43,4 +43,3 @@ const Cog = memo(
 );
 Cog.displayName = "Cog";
 export { Cog };
-export default Cog;

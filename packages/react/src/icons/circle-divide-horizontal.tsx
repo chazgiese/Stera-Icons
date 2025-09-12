@@ -35,4 +35,3 @@ const CircleDivideHorizontal = memo(
 );
 CircleDivideHorizontal.displayName = "CircleDivideHorizontal";
 export { CircleDivideHorizontal };
-export default CircleDivideHorizontal;

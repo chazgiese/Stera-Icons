@@ -35,4 +35,3 @@ const CircleDivideVertical = memo(
 );
 CircleDivideVertical.displayName = "CircleDivideVertical";
 export { CircleDivideVertical };
-export default CircleDivideVertical;

@@ -33,4 +33,3 @@ const ArrowsCollapseAlt = memo(
 );
 ArrowsCollapseAlt.displayName = "ArrowsCollapseAlt";
 export { ArrowsCollapseAlt };
-export default ArrowsCollapseAlt;

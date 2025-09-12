@@ -39,4 +39,3 @@ const Save = memo(
 );
 Save.displayName = "Save";
 export { Save };
-export default Save;

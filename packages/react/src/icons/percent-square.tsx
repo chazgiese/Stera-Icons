@@ -41,4 +41,3 @@ const PercentSquare = memo(
 );
 PercentSquare.displayName = "PercentSquare";
 export { PercentSquare };
-export default PercentSquare;

@@ -35,4 +35,3 @@ const FlowDiagram = memo(
 );
 FlowDiagram.displayName = "FlowDiagram";
 export { FlowDiagram };
-export default FlowDiagram;

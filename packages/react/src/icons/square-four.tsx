@@ -35,4 +35,3 @@ const SquareFour = memo(
 );
 SquareFour.displayName = "SquareFour";
 export { SquareFour };
-export default SquareFour;

@@ -35,4 +35,3 @@ const Envalope = memo(
 );
 Envalope.displayName = "Envalope";
 export { Envalope };
-export default Envalope;

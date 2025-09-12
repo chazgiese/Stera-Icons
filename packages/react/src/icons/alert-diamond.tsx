@@ -41,4 +41,3 @@ const AlertDiamond = memo(
 );
 AlertDiamond.displayName = "AlertDiamond";
 export { AlertDiamond };
-export default AlertDiamond;

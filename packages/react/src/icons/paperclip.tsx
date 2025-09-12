@@ -33,4 +33,3 @@ const Paperclip = memo(
 );
 Paperclip.displayName = "Paperclip";
 export { Paperclip };
-export default Paperclip;

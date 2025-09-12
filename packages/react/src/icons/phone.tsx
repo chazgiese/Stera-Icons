@@ -35,4 +35,3 @@ const Phone = memo(
 );
 Phone.displayName = "Phone";
 export { Phone };
-export default Phone;

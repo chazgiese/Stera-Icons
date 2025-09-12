@@ -33,4 +33,3 @@ const CodeFilled = memo(
 );
 CodeFilled.displayName = "CodeFilled";
 export { CodeFilled };
-export default CodeFilled;

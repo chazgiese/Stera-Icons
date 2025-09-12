@@ -41,4 +41,3 @@ const PlusCircle = memo(
 );
 PlusCircle.displayName = "PlusCircle";
 export { PlusCircle };
-export default PlusCircle;

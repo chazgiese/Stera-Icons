@@ -35,4 +35,3 @@ const ChevronFullDown = memo(
 );
 ChevronFullDown.displayName = "ChevronFullDown";
 export { ChevronFullDown };
-export default ChevronFullDown;

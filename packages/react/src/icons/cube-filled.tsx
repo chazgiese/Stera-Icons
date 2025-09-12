@@ -33,4 +33,3 @@ const CubeFilled = memo(
 );
 CubeFilled.displayName = "CubeFilled";
 export { CubeFilled };
-export default CubeFilled;

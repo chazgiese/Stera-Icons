@@ -35,4 +35,3 @@ const Droplet = memo(
 );
 Droplet.displayName = "Droplet";
 export { Droplet };
-export default Droplet;

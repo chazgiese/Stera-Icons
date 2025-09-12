@@ -35,4 +35,3 @@ const StopCircleFilled = memo(
 );
 StopCircleFilled.displayName = "StopCircleFilled";
 export { StopCircleFilled };
-export default StopCircleFilled;

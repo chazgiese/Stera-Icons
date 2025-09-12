@@ -41,4 +41,3 @@ const EmoteSad = memo(
 );
 EmoteSad.displayName = "EmoteSad";
 export { EmoteSad };
-export default EmoteSad;

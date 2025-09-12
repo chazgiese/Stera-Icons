@@ -36,4 +36,3 @@ const SendHorizontal = memo(
 );
 SendHorizontal.displayName = "SendHorizontal";
 export { SendHorizontal };
-export default SendHorizontal;

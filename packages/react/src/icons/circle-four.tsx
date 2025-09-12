@@ -35,4 +35,3 @@ const CircleFour = memo(
 );
 CircleFour.displayName = "CircleFour";
 export { CircleFour };
-export default CircleFour;

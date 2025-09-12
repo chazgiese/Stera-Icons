@@ -49,4 +49,3 @@ const Wifi = memo(
 );
 Wifi.displayName = "Wifi";
 export { Wifi };
-export default Wifi;

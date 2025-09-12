@@ -39,4 +39,3 @@ const SignOutAlt = memo(
 );
 SignOutAlt.displayName = "SignOutAlt";
 export { SignOutAlt };
-export default SignOutAlt;

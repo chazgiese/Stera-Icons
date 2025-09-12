@@ -33,4 +33,3 @@ const GhostFilled = memo(
 );
 GhostFilled.displayName = "GhostFilled";
 export { GhostFilled };
-export default GhostFilled;

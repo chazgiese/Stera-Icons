@@ -33,4 +33,3 @@ const FlashFilled = memo(
 );
 FlashFilled.displayName = "FlashFilled";
 export { FlashFilled };
-export default FlashFilled;

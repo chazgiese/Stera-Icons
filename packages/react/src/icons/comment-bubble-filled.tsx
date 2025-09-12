@@ -33,4 +33,3 @@ const CommentBubbleFilled = memo(
 );
 CommentBubbleFilled.displayName = "CommentBubbleFilled";
 export { CommentBubbleFilled };
-export default CommentBubbleFilled;

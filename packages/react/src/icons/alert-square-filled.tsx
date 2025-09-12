@@ -35,4 +35,3 @@ const AlertSquareFilled = memo(
 );
 AlertSquareFilled.displayName = "AlertSquareFilled";
 export { AlertSquareFilled };
-export default AlertSquareFilled;

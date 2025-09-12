@@ -41,4 +41,3 @@ const MicOff = memo(
 );
 MicOff.displayName = "MicOff";
 export { MicOff };
-export default MicOff;

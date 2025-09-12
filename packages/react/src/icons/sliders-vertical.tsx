@@ -35,4 +35,3 @@ const SlidersVertical = memo(
 );
 SlidersVertical.displayName = "SlidersVertical";
 export { SlidersVertical };
-export default SlidersVertical;

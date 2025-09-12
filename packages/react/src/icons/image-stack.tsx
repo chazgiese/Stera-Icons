@@ -41,4 +41,3 @@ const ImageStack = memo(
 );
 ImageStack.displayName = "ImageStack";
 export { ImageStack };
-export default ImageStack;

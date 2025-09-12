@@ -35,4 +35,3 @@ const PedestalFilled = memo(
 );
 PedestalFilled.displayName = "PedestalFilled";
 export { PedestalFilled };
-export default PedestalFilled;

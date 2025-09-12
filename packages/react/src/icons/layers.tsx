@@ -35,4 +35,3 @@ const Layers = memo(
 );
 Layers.displayName = "Layers";
 export { Layers };
-export default Layers;

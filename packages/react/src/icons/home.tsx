@@ -41,4 +41,3 @@ const Home = memo(
 );
 Home.displayName = "Home";
 export { Home };
-export default Home;

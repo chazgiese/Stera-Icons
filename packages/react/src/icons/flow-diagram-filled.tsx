@@ -33,4 +33,3 @@ const FlowDiagramFilled = memo(
 );
 FlowDiagramFilled.displayName = "FlowDiagramFilled";
 export { FlowDiagramFilled };
-export default FlowDiagramFilled;

@@ -33,4 +33,3 @@ const CheckmarkFilled = memo(
 );
 CheckmarkFilled.displayName = "CheckmarkFilled";
 export { CheckmarkFilled };
-export default CheckmarkFilled;

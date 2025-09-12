@@ -33,4 +33,3 @@ const StairsFilled = memo(
 );
 StairsFilled.displayName = "StairsFilled";
 export { StairsFilled };
-export default StairsFilled;

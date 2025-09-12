@@ -33,4 +33,3 @@ const GridFilled = memo(
 );
 GridFilled.displayName = "GridFilled";
 export { GridFilled };
-export default GridFilled;

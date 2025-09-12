@@ -35,4 +35,3 @@ const Send = memo(
 );
 Send.displayName = "Send";
 export { Send };
-export default Send;

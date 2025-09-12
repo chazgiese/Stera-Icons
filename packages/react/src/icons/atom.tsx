@@ -41,4 +41,3 @@ const Atom = memo(
 );
 Atom.displayName = "Atom";
 export { Atom };
-export default Atom;

@@ -33,4 +33,3 @@ const FlowBranch = memo(
 );
 FlowBranch.displayName = "FlowBranch";
 export { FlowBranch };
-export default FlowBranch;

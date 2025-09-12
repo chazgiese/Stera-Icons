@@ -35,4 +35,3 @@ const Grid = memo(
 );
 Grid.displayName = "Grid";
 export { Grid };
-export default Grid;

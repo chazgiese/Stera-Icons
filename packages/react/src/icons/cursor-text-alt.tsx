@@ -33,4 +33,3 @@ const CursorTextAlt = memo(
 );
 CursorTextAlt.displayName = "CursorTextAlt";
 export { CursorTextAlt };
-export default CursorTextAlt;

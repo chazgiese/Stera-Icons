@@ -35,4 +35,3 @@ const InfoCircleFilled = memo(
 );
 InfoCircleFilled.displayName = "InfoCircleFilled";
 export { InfoCircleFilled };
-export default InfoCircleFilled;

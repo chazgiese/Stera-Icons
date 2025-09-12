@@ -39,4 +39,3 @@ const CopyFilled = memo(
 );
 CopyFilled.displayName = "CopyFilled";
 export { CopyFilled };
-export default CopyFilled;

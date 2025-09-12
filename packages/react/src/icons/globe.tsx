@@ -35,4 +35,3 @@ const Globe = memo(
 );
 Globe.displayName = "Globe";
 export { Globe };
-export default Globe;

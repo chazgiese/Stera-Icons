@@ -33,4 +33,3 @@ const SquareDashedFilled = memo(
 );
 SquareDashedFilled.displayName = "SquareDashedFilled";
 export { SquareDashedFilled };
-export default SquareDashedFilled;

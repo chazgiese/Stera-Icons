@@ -33,4 +33,3 @@ const PlusFilled = memo(
 );
 PlusFilled.displayName = "PlusFilled";
 export { PlusFilled };
-export default PlusFilled;

@@ -35,4 +35,3 @@ const Folder = memo(
 );
 Folder.displayName = "Folder";
 export { Folder };
-export default Folder;

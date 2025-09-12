@@ -35,4 +35,3 @@ const ArrowSquareUpFilled = memo(
 );
 ArrowSquareUpFilled.displayName = "ArrowSquareUpFilled";
 export { ArrowSquareUpFilled };
-export default ArrowSquareUpFilled;

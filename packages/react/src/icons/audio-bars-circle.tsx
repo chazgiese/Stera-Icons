@@ -41,4 +41,3 @@ const AudioBarsCircle = memo(
 );
 AudioBarsCircle.displayName = "AudioBarsCircle";
 export { AudioBarsCircle };
-export default AudioBarsCircle;

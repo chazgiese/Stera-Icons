@@ -35,4 +35,3 @@ const XSquareFilled = memo(
 );
 XSquareFilled.displayName = "XSquareFilled";
 export { XSquareFilled };
-export default XSquareFilled;

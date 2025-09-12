@@ -33,4 +33,3 @@ const ArrowsCollapse = memo(
 );
 ArrowsCollapse.displayName = "ArrowsCollapse";
 export { ArrowsCollapse };
-export default ArrowsCollapse;

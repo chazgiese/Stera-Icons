@@ -35,4 +35,3 @@ const FlowDownArrow = memo(
 );
 FlowDownArrow.displayName = "FlowDownArrow";
 export { FlowDownArrow };
-export default FlowDownArrow;

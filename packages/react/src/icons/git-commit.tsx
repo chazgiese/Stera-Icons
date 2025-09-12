@@ -35,4 +35,3 @@ const GitCommit = memo(
 );
 GitCommit.displayName = "GitCommit";
 export { GitCommit };
-export default GitCommit;

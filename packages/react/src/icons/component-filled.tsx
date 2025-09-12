@@ -33,4 +33,3 @@ const ComponentFilled = memo(
 );
 ComponentFilled.displayName = "ComponentFilled";
 export { ComponentFilled };
-export default ComponentFilled;

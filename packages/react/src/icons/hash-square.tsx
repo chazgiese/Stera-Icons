@@ -43,4 +43,3 @@ const HashSquare = memo(
 );
 HashSquare.displayName = "HashSquare";
 export { HashSquare };
-export default HashSquare;

@@ -41,4 +41,3 @@ const StopCircle = memo(
 );
 StopCircle.displayName = "StopCircle";
 export { StopCircle };
-export default StopCircle;

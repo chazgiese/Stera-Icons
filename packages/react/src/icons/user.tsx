@@ -35,4 +35,3 @@ const User = memo(
 );
 User.displayName = "User";
 export { User };
-export default User;

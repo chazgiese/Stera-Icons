@@ -47,4 +47,3 @@ const SquareFourPlus = memo(
 );
 SquareFourPlus.displayName = "SquareFourPlus";
 export { SquareFourPlus };
-export default SquareFourPlus;
