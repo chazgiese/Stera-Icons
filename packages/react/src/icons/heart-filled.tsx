@@ -1,5 +1,5 @@
-import { forwardRef, memo } from "react";
-const _reactJsxRuntime = require("react/jsx-runtime");
+var _reactJsxRuntime = require("react/jsx-runtime");
+import React, { forwardRef, memo } from "react";
 import type { IconProps } from "../types";
 const HeartFilled = memo(
   forwardRef < SVGSVGElement,

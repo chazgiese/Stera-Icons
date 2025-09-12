@@ -36,6 +36,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         
+      - name: Build icons (if icons-export.json exists)
+        run: |
+          if [ -f "icons-export.json" ]; then
+            pnpm build:icons icons-export.json
+          else
+            echo "No icons-export.json found, skipping icon build"
+          fi
+        continue-on-error: true
+        
       - name: Lint
         run: pnpm lint
         
