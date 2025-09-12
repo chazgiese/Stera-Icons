@@ -9,12 +9,6 @@ describe('Simple Validation', () => {
     const metadataPath = join(distDir, 'icons.meta.json');
     const mappingPath = join(distDir, 'name_map.json');
     
-    console.log('Checking metadata file at:', metadataPath);
-    console.log('Metadata exists:', existsSync(metadataPath));
-    
-    console.log('Checking mapping file at:', mappingPath);
-    console.log('Mapping exists:', existsSync(mappingPath));
-    
     expect(existsSync(metadataPath)).toBe(true);
     expect(existsSync(mappingPath)).toBe(true);
   });

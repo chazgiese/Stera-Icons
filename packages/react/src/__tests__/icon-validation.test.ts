@@ -11,7 +11,7 @@ describe('Icon Validation', () => {
     expect(Array.isArray(metadata)).toBe(true);
     
     // Validate metadata structure
-    metadata.forEach((icon: any) => {
+    metadata.forEach((icon: { name: string; variant: string; tags: string[]; componentName: string; fileName: string }) => {
       expect(icon).toHaveProperty('name');
       expect(icon).toHaveProperty('variant');
       expect(icon).toHaveProperty('tags');
