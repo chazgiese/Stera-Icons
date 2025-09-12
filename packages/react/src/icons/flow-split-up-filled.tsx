@@ -1,4 +1,4 @@
-var _reactJsxRuntime = require("react/jsx-runtime");
+const _reactJsxRuntime = require("react/jsx-runtime");
 import React, { forwardRef, memo } from "react";
 import type { IconProps } from "../types";
 const FlowSplitUpFilled = memo(

@@ -77,8 +77,30 @@ async function buildIcons(iconsExportPath) {
           jsx: {
             babelConfig: {
               plugins: [
-                ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]
-              ]
+                ['@babel/plugin-transform-react-jsx', { 
+                  runtime: 'automatic',
+                  importSource: 'react'
+                }],
+                // Custom plugin to convert var to const
+                function() {
+                  return {
+                    visitor: {
+                      VariableDeclaration(path) {
+                        if (path.node.kind === 'var') {
+                          path.node.kind = 'const';
+                        }
+                      }
+                    }
+                  };
+                }
+              ],
+              generatorOpts: {
+                jsescOption: {
+                  quotes: 'single'
+                },
+                compact: false,
+                minified: false
+              }
             }
           },
           svgProps: {
