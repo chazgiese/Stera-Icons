@@ -1,6 +1,6 @@
 {
   "name": "@stera/icons",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A lightweight, tree-shakeable React icon library",
   "type": "module",
   "main": "./dist/index.js",
