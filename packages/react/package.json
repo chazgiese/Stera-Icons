@@ -34,10 +34,13 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "@testing-library/jest-dom": "^6.1.0",
     "@testing-library/react": "^14.1.0",
     "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.0",
     "jsdom": "^23.0.0",
     "react": "^18.2.0",
     "tsup": "^8.0.0",
