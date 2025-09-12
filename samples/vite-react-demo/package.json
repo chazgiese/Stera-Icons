@@ -1,6 +1,7 @@
 {
-  "name": "@stera/icons-react-demo",
+  "name": "stera-icons-react-demo",
   "version": "1.0.2",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@stera/icons": "workspace:*"
+    "stera-icons": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",

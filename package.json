@@ -1,5 +1,5 @@
 {
-  "name": "@stera/icons",
+  "name": "stera-icons",
   "version": "1.0.0",
   "description": "A lightweight, tree-shakeable React icon library built from Figma",
   "private": true,
@@ -8,9 +8,9 @@
     "samples/*"
   ],
   "scripts": {
-    "build": "pnpm --filter @stera/icons build && pnpm --filter @stera/icons-react-demo build",
+    "build": "pnpm --filter stera-icons build && pnpm --filter stera-icons-react-demo build",
     "build:icons": "node scripts/build-icons.js icons-export.json",
-    "dev": "pnpm -F @stera/icons-react-demo dev",
+    "dev": "pnpm -F stera-icons-react-demo dev",
     "test": "pnpm -r test",
     "lint": "eslint packages/react/src --ext .ts,.tsx",
     "changeset": "changeset",
