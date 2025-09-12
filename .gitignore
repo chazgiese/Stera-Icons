@@ -87,4 +87,4 @@ tmp/
 temp/
 
 # Changeset
-.changeset/
+# .changeset/ - This should be committed to track changes
