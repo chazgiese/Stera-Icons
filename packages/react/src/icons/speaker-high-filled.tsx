@@ -1,0 +1,46 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+import React, { forwardRef, memo } from "react";
+import type { IconProps } from "../types";
+const SpeakerHighFilled = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) =>
+      /*#__PURE__*/ _reactJsxRuntime.jsxs("svg", {
+        fill: color,
+        viewBox: "0 0 24 24",
+        width: size,
+        height: size,
+        className: className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ref: ref,
+        ...props,
+        children: [
+          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
+            fill: "currentColor",
+            d: "M19.772 3.222a1 1 0 0 1 1.399.2A14.28 14.28 0 0 1 24 12c0 3.227-1.054 6.204-2.83 8.576a1 1 0 0 1-1.6-1.198A12.28 12.28 0 0 0 22 12c0-2.786-.91-5.345-2.43-7.378-.331-.442-.24-1.07.201-1.4M8.586 4C9.846 2.74 12 3.632 12 5.414v13.172C12 20.368 9.846 21.26 8.586 20l-4-4H2a2 2 0 0 1-1.99-1.796L0 14v-4a2 2 0 0 1 2-2h2.586z",
+          }),
+          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
+            fill: "currentColor",
+            d: "M17.004 5.35a1 1 0 0 1 1.401.19 10.2 10.2 0 0 1 2.095 6.21c0 2.491-.89 4.778-2.368 6.554a1 1 0 0 1-1.538-1.28A8.2 8.2 0 0 0 18.5 11.75c0-1.88-.628-3.611-1.686-4.998a1 1 0 0 1 .19-1.401",
+          }),
+          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
+            fill: "currentColor",
+            d: "M14.146 7.549a1 1 0 0 1 1.402.182A6.98 6.98 0 0 1 17 12a6.97 6.97 0 0 1-1.452 4.269 1 1 0 0 1-1.584-1.221A4.97 4.97 0 0 0 15 12a4.98 4.98 0 0 0-1.036-3.049 1 1 0 0 1 .181-1.402",
+          }),
+        ],
+      }))
+);
+SpeakerHighFilled.displayName = "SpeakerHighFilled";
+export { SpeakerHighFilled };
+export default SpeakerHighFilled;

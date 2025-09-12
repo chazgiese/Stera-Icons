@@ -1,0 +1,38 @@
+var _reactJsxRuntime = require("react/jsx-runtime");
+import React, { forwardRef, memo } from "react";
+import type { IconProps } from "../types";
+const CodeSquareFilled = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) =>
+      /*#__PURE__*/ _reactJsxRuntime.jsx("svg", {
+        fill: color,
+        viewBox: "0 0 24 24",
+        width: size,
+        height: size,
+        className: className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ref: ref,
+        ...props,
+        children: /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
+          fill: "currentColor",
+          fillRule: "evenodd",
+          d: "M13 2c1.383 0 2.481 0 3.365.071.896.073 1.66.227 2.359.583a6 6 0 0 1 2.622 2.622c.356.7.51 1.463.583 2.359C22 8.519 22 9.616 22 11v2c0 1.383 0 2.481-.071 3.365-.073.896-.227 1.66-.583 2.359a6 6 0 0 1-2.622 2.622c-.7.356-1.463.51-2.359.583C15.481 22 14.384 22 13 22h-2c-1.384 0-2.481 0-3.365-.071-.896-.073-1.66-.227-2.359-.583a6 6 0 0 1-2.622-2.622c-.356-.7-.51-1.463-.583-2.359C2 15.481 2 14.384 2 13v-2c0-1.384 0-2.481.071-3.365.073-.896.227-1.66.583-2.359a6 6 0 0 1 2.622-2.622c.7-.356 1.463-.51 2.359-.583C8.519 2 9.616 2 11 2zm.816 4.552a1 1 0 0 0-1.264.632l-3 9a1 1 0 1 0 1.896.632l3-9a1 1 0 0 0-.632-1.264M8.707 9.293a1 1 0 0 0-1.414 0l-2 2a1 1 0 0 0 0 1.414l2 2a1 1 0 1 0 1.414-1.414L7.414 12l1.293-1.293a1 1 0 0 0 0-1.414m8 0a1 1 0 1 0-1.414 1.414L16.586 12l-1.293 1.293a1 1 0 1 0 1.414 1.414l2-2a1 1 0 0 0 0-1.414z",
+          clipRule: "evenodd",
+        }),
+      }))
+);
+CodeSquareFilled.displayName = "CodeSquareFilled";
+export { CodeSquareFilled };
+export default CodeSquareFilled;

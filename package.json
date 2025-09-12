@@ -1,0 +1,38 @@
+{
+  "name": "@stera/icons",
+  "version": "1.0.0",
+  "description": "A lightweight, tree-shakeable React icon library built from Figma",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "samples/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter @stera/icons build && pnpm --filter @stera/icons-react-demo build",
+    "build:icons": "node scripts/build-icons.js",
+    "dev": "pnpm -F @stera/icons-react-demo dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "svgo": "^3.0.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@babel/plugin-transform-react-jsx": "^7.23.0"
+  },
+  "packageManager": "pnpm@8.10.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
