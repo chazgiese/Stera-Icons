@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 1.1.2
+
+### Patch Changes
+
+- added readme
+
 ## 1.1.1
 
 ### Patch Changes

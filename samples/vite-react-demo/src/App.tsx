@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Search, Heart, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from '@stera/icons';
+import { Search, Heart, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from 'stera-icons';
 
 // Mock data for demonstration - in real usage, this would come from icons.meta.json
 const mockIcons = [
@@ -100,14 +100,14 @@ function App() {
         <h2>Usage Examples</h2>
         <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', fontFamily: 'monospace' }}>
           <pre>{`// Import individual icons
-import { Search, Heart, Star } from '@stera/icons';
+import { Search, Heart, Star } from 'stera-icons';
 
 // Use with props
 <Search size={24} color="#646cff" aria-label="Search" />
 
 // Tree-shakeable imports
-import SearchIcon from '@stera/icons/search';
-import HeartFilled from '@stera/icons/heart-filled';
+import SearchIcon from 'stera-icons/search';
+import HeartFilled from 'stera-icons/heart-filled';
 
 // Accessibility
 <SearchIcon aria-hidden="true" /> // Decorative
