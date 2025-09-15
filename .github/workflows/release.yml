@@ -35,11 +35,21 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+      - name: Configure npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          npm config set registry https://registry.npmjs.org/
+          
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         
       - name: Build
         run: pnpm build
+        
+      - name: Verify npm authentication
+        run: |
+          npm whoami
+          npm view stera-icons --json || echo "Package not found or access denied"
         
       - name: Create Release Pull Request or Publish to npm
         id: changesets
