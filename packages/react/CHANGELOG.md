@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 1.2.0
+
+### Minor Changes
+
+- Optimized package size
+
 ## 1.1.2
 
 ### Patch Changes
