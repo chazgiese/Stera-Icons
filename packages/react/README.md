@@ -5,10 +5,11 @@ A lightweight, tree-shakeable React icon library with TypeScript support and acc
 ## Features
 
 - 📦 **Tree-shakeable**: Import only the icons you need
-- ⚡ **Lightweight**: Optimized SVGs with minimal bundle impact
+- ⚡ **Lightweight**: Optimized SVGs with minimal bundle impact (~3.8MB package size)
 - 🔧 **TypeScript**: Full type safety and IntelliSense support
 - ♿ **Accessible**: Built-in ARIA support for screen readers
 - 🎯 **Per-icon imports**: Import individual icons for maximum optimization
+- 🚀 **Optimized builds**: Production-ready with no development overhead
 
 ## Installation
 
@@ -19,6 +20,17 @@ yarn add stera-icons
 # or
 pnpm add stera-icons
 ```
+
+## Package Size
+
+Stera Icons is optimized for production use:
+
+- **Package size**: ~3.8MB (unpacked)
+- **Bundle size**: Each icon adds only ~1-2KB to your bundle
+- **Tree-shaking**: Import only what you use for minimal impact
+- **No source maps**: Production builds exclude development files for optimal size
+
+The package includes 728+ icons across outline and filled variants, but thanks to tree-shaking, you only pay for what you import.
 
 ## Usage
 
@@ -158,6 +170,24 @@ function IconSelector() {
   );
 }
 ```
+
+## Development
+
+For contributors and development:
+
+### Build Scripts
+
+- `pnpm build` - Production build (optimized, no source maps)
+- `pnpm build:dev` - Development build (with source maps for debugging)
+- `pnpm dev` - Watch mode for development
+- `pnpm test` - Run test suite
+
+### Build Configuration
+
+- **Production builds**: Optimized for size and performance
+- **Development builds**: Include source maps for debugging
+- **Tree-shaking**: Enabled for optimal bundle sizes
+- **TypeScript**: Full type safety and IntelliSense
 
 ## License
 

@@ -5,11 +5,11 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: true,
   splitting: false,
-  sourcemap: false, // Disable source maps for production
+  sourcemap: true, // Keep source maps for development
   clean: true,
   external: ['react'],
   treeshake: true,
-  minify: true,
+  minify: false, // No minification for development
   outDir: 'dist',
   esbuildOptions: (options, context) => {
     if (context.format === 'cjs') {

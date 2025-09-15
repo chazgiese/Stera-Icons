@@ -1,0 +1,24 @@
+# Source files
+src/
+*.tsx
+*.ts
+
+# Development files
+tsup.config.dev.ts
+tsconfig.json
+vitest.config.ts
+tsup.config.ts
+
+# Test files
+__tests__/
+test-setup.ts
+
+# Development dependencies
+node_modules/
+
+# Git files
+.git/
+.gitignore
+
+# Documentation (keep README.md)
+CHANGELOG.md

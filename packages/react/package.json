@@ -25,8 +25,9 @@
   ],
   "scripts": {
     "build": "tsup && pnpm build:metadata",
+    "build:dev": "tsup --config tsup.config.dev.ts && pnpm build:metadata",
     "build:metadata": "node ../../scripts/build-icons.js ../../icons-export.json",
-    "dev": "tsup --watch",
+    "dev": "tsup --watch --config tsup.config.dev.ts",
     "test": "vitest",
     "lint": "eslint src --ext .ts,.tsx"
   },
