@@ -1,5 +1,5 @@
-const _reactJsxRuntime = require("react/jsx-runtime");
 import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
 const ArrowCircleUpLeft = memo(
   forwardRef < SVGSVGElement,
@@ -14,30 +14,30 @@ const ArrowCircleUpLeft = memo(
         ...props
       },
       ref
-    ) =>
-      /*#__PURE__*/ _reactJsxRuntime.jsxs("svg", {
-        fill: color,
-        viewBox: "0 0 24 24",
-        width: size,
-        height: size,
-        className: className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ref: ref,
-        ...props,
-        children: [
-          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-            fill: "currentColor",
-            d: "M15.536 7.465a1 1 0 0 1 0 2H10.88l5.364 5.364a1 1 0 0 1-1.414 1.414L9.465 10.88v4.657a1 1 0 0 1-2 0V8.465a1 1 0 0 1 1-1z",
-          }),
-          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-            fill: "currentColor",
-            fillRule: "evenodd",
-            d: "M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18",
-            clipRule: "evenodd",
-          }),
-        ],
-      }))
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M15.536 7.465a1 1 0 0 1 0 2H10.88l5.364 5.364a1 1 0 0 1-1.414 1.414L9.465 10.88v4.657a1 1 0 0 1-2 0V8.465a1 1 0 0 1 1-1z"
+        />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
 );
 ArrowCircleUpLeft.displayName = "ArrowCircleUpLeft";
 export { ArrowCircleUpLeft };

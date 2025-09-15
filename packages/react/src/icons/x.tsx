@@ -1,5 +1,5 @@
-const _reactJsxRuntime = require("react/jsx-runtime");
 import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
 const X = memo(
   forwardRef < SVGSVGElement,
@@ -14,22 +14,24 @@ const X = memo(
         ...props
       },
       ref
-    ) =>
-      /*#__PURE__*/ _reactJsxRuntime.jsx("svg", {
-        fill: color,
-        viewBox: "0 0 24 24",
-        width: size,
-        height: size,
-        className: className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ref: ref,
-        ...props,
-        children: /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-          fill: "currentColor",
-          d: "M18.293 4.293a1 1 0 0 1 1.414 1.414L13.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L10.586 12 4.293 5.707a1 1 0 1 1 1.414-1.414L12 10.586z",
-        }),
-      }))
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M18.293 4.293a1 1 0 0 1 1.414 1.414L13.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L10.586 12 4.293 5.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+        />
+      </svg>
+    ))
 );
 X.displayName = "X";
 export { X };

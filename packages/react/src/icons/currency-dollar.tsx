@@ -1,5 +1,5 @@
-const _reactJsxRuntime = require("react/jsx-runtime");
 import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
 const CurrencyDollar = memo(
   forwardRef < SVGSVGElement,
@@ -14,24 +14,26 @@ const CurrencyDollar = memo(
         ...props
       },
       ref
-    ) =>
-      /*#__PURE__*/ _reactJsxRuntime.jsx("svg", {
-        fill: color,
-        viewBox: "0 0 24 24",
-        width: size,
-        height: size,
-        className: className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ref: ref,
-        ...props,
-        children: /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-          fill: "currentColor",
-          fillRule: "evenodd",
-          d: "M12 1a1 1 0 0 1 1 1v3h4a1 1 0 1 1 0 2h-4v4h2a4 4 0 0 1 0 8h-2v3a1 1 0 1 1-2 0v-3H7a1 1 0 1 1 0-2h4v-4h-1a4 4 0 0 1 0-8h1V2a1 1 0 0 1 1-1m1 16h2a2 2 0 1 0 0-4h-2zM10 7a2 2 0 1 0 0 4h1V7z",
-          clipRule: "evenodd",
-        }),
-      }))
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M12 1a1 1 0 0 1 1 1v3h4a1 1 0 1 1 0 2h-4v4h2a4 4 0 0 1 0 8h-2v3a1 1 0 1 1-2 0v-3H7a1 1 0 1 1 0-2h4v-4h-1a4 4 0 0 1 0-8h1V2a1 1 0 0 1 1-1m1 16h2a2 2 0 1 0 0-4h-2zM10 7a2 2 0 1 0 0 4h1V7z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
 );
 CurrencyDollar.displayName = "CurrencyDollar";
 export { CurrencyDollar };

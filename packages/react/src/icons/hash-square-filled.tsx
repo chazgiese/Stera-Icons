@@ -1,5 +1,5 @@
-const _reactJsxRuntime = require("react/jsx-runtime");
 import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
 const HashSquareFilled = memo(
   forwardRef < SVGSVGElement,
@@ -14,30 +14,27 @@ const HashSquareFilled = memo(
         ...props
       },
       ref
-    ) =>
-      /*#__PURE__*/ _reactJsxRuntime.jsxs("svg", {
-        fill: color,
-        viewBox: "0 0 24 24",
-        width: size,
-        height: size,
-        className: className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ref: ref,
-        ...props,
-        children: [
-          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-            fill: "currentColor",
-            d: "M13 13h-2v-2h2z",
-          }),
-          /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-            fill: "currentColor",
-            fillRule: "evenodd",
-            d: "M13 2c1.383 0 2.481 0 3.365.071.896.073 1.66.227 2.359.583a6 6 0 0 1 2.622 2.622c.356.7.51 1.463.583 2.359C22 8.519 22 9.616 22 11v2c0 1.383 0 2.481-.071 3.365-.073.896-.227 1.66-.583 2.359a6 6 0 0 1-2.622 2.622c-.7.356-1.463.51-2.359.583C15.481 22 14.384 22 13 22h-2c-1.384 0-2.481 0-3.365-.071-.896-.073-1.66-.227-2.359-.583a6 6 0 0 1-2.622-2.622c-.356-.7-.51-1.463-.583-2.359C2 15.481 2 14.384 2 13v-2c0-1.384 0-2.481.071-3.365.073-.896.227-1.66.583-2.359a6 6 0 0 1 2.622-2.622c.7-.356 1.463-.51 2.359-.583C8.519 2 9.616 2 11 2zm1 4a1 1 0 0 0-1 1v2h-2V7a1 1 0 1 0-2 0v2H7a1 1 0 0 0 0 2h2v2H7a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-2h2a1 1 0 1 0 0-2h-2V7a1 1 0 0 0-1-1",
-            clipRule: "evenodd",
-          }),
-        ],
-      }))
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path fill="currentColor" d="M13 13h-2v-2h2z" />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M13 2c1.383 0 2.481 0 3.365.071.896.073 1.66.227 2.359.583a6 6 0 0 1 2.622 2.622c.356.7.51 1.463.583 2.359C22 8.519 22 9.616 22 11v2c0 1.383 0 2.481-.071 3.365-.073.896-.227 1.66-.583 2.359a6 6 0 0 1-2.622 2.622c-.7.356-1.463.51-2.359.583C15.481 22 14.384 22 13 22h-2c-1.384 0-2.481 0-3.365-.071-.896-.073-1.66-.227-2.359-.583a6 6 0 0 1-2.622-2.622c-.356-.7-.51-1.463-.583-2.359C2 15.481 2 14.384 2 13v-2c0-1.384 0-2.481.071-3.365.073-.896.227-1.66.583-2.359a6 6 0 0 1 2.622-2.622c.7-.356 1.463-.51 2.359-.583C8.519 2 9.616 2 11 2zm1 4a1 1 0 0 0-1 1v2h-2V7a1 1 0 1 0-2 0v2H7a1 1 0 0 0 0 2h2v2H7a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-2h2a1 1 0 1 0 0-2h-2V7a1 1 0 0 0-1-1"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
 );
 HashSquareFilled.displayName = "HashSquareFilled";
 export { HashSquareFilled };

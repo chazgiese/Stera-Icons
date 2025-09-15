@@ -2,20 +2,15 @@
   "name": "stera-icons",
   "version": "1.2.0",
   "description": "A lightweight, tree-shakeable React icon library",
-  "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
   "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./*": {
-      "types": "./dist/*.d.ts",
-      "import": "./dist/*.js",
-      "require": "./dist/*.cjs"
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./package.json": "./package.json"
   },
@@ -36,13 +31,13 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
     "@testing-library/jest-dom": "^6.1.0",
     "@testing-library/react": "^14.1.0",
     "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.0",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react": "^7.37.5",
     "jsdom": "^23.0.0",
     "react": "^18.2.0",
     "tsup": "^8.0.0",

@@ -74,35 +74,6 @@ async function buildIcons(iconsExportPath) {
           template: svgrTemplate,
           typescript: true,
           plugins: ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
-          jsx: {
-            babelConfig: {
-              plugins: [
-                ['@babel/plugin-transform-react-jsx', { 
-                  runtime: 'automatic',
-                  importSource: 'react'
-                }],
-                // Custom plugin to convert var to const
-                function() {
-                  return {
-                    visitor: {
-                      VariableDeclaration(path) {
-                        if (path.node.kind === 'var') {
-                          path.node.kind = 'const';
-                        }
-                      }
-                    }
-                  };
-                }
-              ],
-              generatorOpts: {
-                jsescOption: {
-                  quotes: 'single'
-                },
-                compact: false,
-                minified: false
-              }
-            }
-          },
           svgProps: {
             width: '{size}',
             height: '{size}',

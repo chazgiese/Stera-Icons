@@ -60,13 +60,13 @@ function App() {
 ### Per-icon Imports (Recommended)
 
 ```tsx
-import SearchIcon from 'stera-icons/search';
+import Search from 'stera-icons/search';
 import HeartFilled from 'stera-icons/heart-filled';
 
 function App() {
   return (
     <div>
-      <SearchIcon size={24} />
+      <Search size={24} />
       <HeartFilled size={20} color="red" />
     </div>
   );
@@ -77,11 +77,11 @@ function App() {
 
 ```tsx
 // Decorative icons (hidden from screen readers)
-<SearchIcon aria-hidden="true" />
+<Search aria-hidden="true" />
 
 // Meaningful icons (provide context)
-<SearchIcon aria-label="Search products" />
-<HeartIcon aria-label="Add to favorites" />
+<Search aria-label="Search products" />
+<Heart aria-label="Add to favorites" />
 ```
 
 ## Icon Naming

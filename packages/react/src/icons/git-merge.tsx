@@ -1,5 +1,5 @@
-const _reactJsxRuntime = require("react/jsx-runtime");
 import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
 const GitMerge = memo(
   forwardRef < SVGSVGElement,
@@ -14,24 +14,26 @@ const GitMerge = memo(
         ...props
       },
       ref
-    ) =>
-      /*#__PURE__*/ _reactJsxRuntime.jsx("svg", {
-        fill: color,
-        viewBox: "0 0 24 24",
-        width: size,
-        height: size,
-        className: className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ref: ref,
-        ...props,
-        children: /*#__PURE__*/ _reactJsxRuntime.jsx("path", {
-          fill: "currentColor",
-          fillRule: "evenodd",
-          d: "M5.5 2a3.5 3.5 0 0 1 1.115 6.817A3 3 0 0 0 9.5 11h5.646a3.501 3.501 0 1 1 0 2H9.5a4.98 4.98 0 0 1-3-1.001v3.146a3.501 3.501 0 1 1-2 0V8.855A3.5 3.5 0 0 1 5.5 2m0 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m13-6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M5.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3",
-          clipRule: "evenodd",
-        }),
-      }))
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M5.5 2a3.5 3.5 0 0 1 1.115 6.817A3 3 0 0 0 9.5 11h5.646a3.501 3.501 0 1 1 0 2H9.5a4.98 4.98 0 0 1-3-1.001v3.146a3.501 3.501 0 1 1-2 0V8.855A3.5 3.5 0 0 1 5.5 2m0 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m13-6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M5.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
 );
 GitMerge.displayName = "GitMerge";
 export { GitMerge };
