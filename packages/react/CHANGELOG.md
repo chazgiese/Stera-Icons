@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 1.4.0
+
+### Minor Changes
+
+- 65ff3b0: the "types" condition is now placed first
+
 ## 1.3.0
 
 ### Minor Changes
