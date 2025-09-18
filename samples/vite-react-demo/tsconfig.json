@@ -19,8 +19,8 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "stera-icons": ["../../packages/react/src/index.ts"],
-      "stera-icons/*": ["../../packages/react/src/*"]
+      "stera-icons": ["../../packages/react/dist/index.d.ts"],
+      "stera-icons/*": ["../../packages/react/dist/*"]
     }
   },
   "include": ["src"],
