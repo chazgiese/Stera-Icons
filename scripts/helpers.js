@@ -36,11 +36,15 @@ export function toPascalCase(slug) {
 
 export function getComponentName(slug, variant) {
   const baseName = toPascalCase(slug);
-  return variant === 'filled' ? `${baseName}Filled` : baseName;
+  if (variant === 'filled') return `${baseName}Filled`;
+  if (variant === 'bold') return `${baseName}Bold`;
+  return baseName; // regular variant gets no suffix
 }
 
 export function getFileName(slug, variant) {
-  return variant === 'filled' ? `${slug}-filled` : slug;
+  if (variant === 'filled') return `${slug}-filled`;
+  if (variant === 'bold') return `${slug}-bold`;
+  return slug; // regular variant gets no suffix
 }
 
 export function parseTags(tagsString) {

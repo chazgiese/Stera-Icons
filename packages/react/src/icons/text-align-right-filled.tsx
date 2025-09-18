@@ -28,7 +28,7 @@ const TextAlignRightFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M7 17a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zM11 11a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2zM3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2z"
+          d="M21 16.5a1.5 1.5 0 0 1 0 3H7a1.5 1.5 0 0 1 0-3zM21 10.5a1.5 1.5 0 0 1 0 3H11a1.5 1.5 0 0 1 0-3zM21 4.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 1 1 0-3z"
         />
       </svg>
     ))

@@ -26,11 +26,14 @@ const ToggleOn = memo(
         ref={ref}
         {...props}
       >
-        <path fill="currentColor" d="M15 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8" />
+        <path
+          fill="currentColor"
+          d="M15 8.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5"
+        />
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M9 4a8 8 0 1 0 0 16h6a8 8 0 1 0 0-16zm6 2a6 6 0 0 1 0 12H9A6 6 0 0 1 9 6z"
+          d="M15.398 4.26A7.75 7.75 0 0 1 15 19.75H9a7.75 7.75 0 0 1 0-15.5h6zM9 5.75a6.25 6.25 0 1 0 0 12.5h6a6.25 6.25 0 0 0 .321-12.492L15 5.75z"
           clipRule="evenodd"
         />
       </svg>

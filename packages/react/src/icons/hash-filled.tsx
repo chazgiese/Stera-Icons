@@ -28,9 +28,7 @@ const HashFilled = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M15 2a1 1 0 0 1 1 1v5h5a1 1 0 1 1 0 2h-5v4h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5h-4v5a1 1 0 1 1-2 0v-5H3a1 1 0 1 1 0-2h5v-4H3a1 1 0 0 1 0-2h5V3a1 1 0 0 1 2 0v5h4V3a1 1 0 0 1 1-1m-5 12h4v-4h-4z"
-          clipRule="evenodd"
+          d="M15 2a1.5 1.5 0 0 1 1.5 1.5v4h4a1.5 1.5 0 0 1 0 3h-4v3h4a1.5 1.5 0 0 1 0 3h-4v4a1.5 1.5 0 0 1-3 0v-4h-3v4a1.5 1.5 0 0 1-3 0v-4h-4a1.5 1.5 0 0 1 0-3h4v-3h-4a1.5 1.5 0 0 1 0-3h4v-4a1.5 1.5 0 1 1 3 0v4h3v-4A1.5 1.5 0 0 1 15 2m-4.5 11.5h3v-3h-3z"
         />
       </svg>
     ))

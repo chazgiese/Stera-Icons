@@ -28,9 +28,7 @@ const CurrencyDollarFilled = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1a1 1 0 0 1 1 1v3h4a1 1 0 1 1 0 2h-4v4h2a4 4 0 0 1 0 8h-2v3a1 1 0 1 1-2 0v-3H7a1 1 0 1 1 0-2h4v-4h-1a4 4 0 0 1 0-8h1V2a1 1 0 0 1 1-1m1 16h2a2 2 0 1 0 0-4h-2zM10 7a2 2 0 1 0 0 4h1V7z"
-          clipRule="evenodd"
+          d="M12 .5A1.5 1.5 0 0 1 13.5 2v2.5H17a1.5 1.5 0 0 1 0 3h-3.5v3H15a4.5 4.5 0 1 1 0 9h-1.5V22a1.5 1.5 0 0 1-3 0v-2.5H7a1.5 1.5 0 0 1 0-3h3.5v-3H10a4.5 4.5 0 1 1 0-9h.5V2A1.5 1.5 0 0 1 12 .5m1.5 16H15a1.5 1.5 0 0 0 0-3h-1.5zm-3.5-9a1.5 1.5 0 1 0 0 3h.5v-3z"
         />
       </svg>
     ))

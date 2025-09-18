@@ -54,11 +54,12 @@ async function buildIcons(iconsExportPath) {
     // Store the mapping
     nameMapping[originalName] = uniqueSlug;
     
-    // Process each variant (only Outline and Fill for v1)
+    // Process each variant (Bold, Fill, Regular)
     for (const variantData of icon.variants) {
       if (variantData.variant === 'Stroke') continue; // Skip Stroke variants for v1
       
-      const variant = variantData.variant === 'Fill' ? 'filled' : 'outline';
+      const variant = variantData.variant === 'Fill' ? 'filled' : 
+                     variantData.variant === 'Bold' ? 'bold' : 'regular';
       const componentName = getComponentName(uniqueSlug, variant);
       const fileName = getFileName(uniqueSlug, variant);
       

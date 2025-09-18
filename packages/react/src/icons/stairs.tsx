@@ -27,8 +27,11 @@ const Stairs = memo(
         {...props}
       >
         <path
-          fill="currentColor"
-          d="M22.5 2.5a1 1 0 1 1 0 2h-4.667v5.667a1 1 0 0 1-1 1h-5.666v5.666a1 1 0 0 1-1 1H4.5V22.5a1 1 0 1 1-2 0v-5.667a1 1 0 0 1 1-1h5.667v-5.666a1 1 0 0 1 1-1h5.666V3.5a1 1 0 0 1 1-1z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M3.5 22.5v-5.667h6.667v-6.666h6.666V3.5H22.5"
         />
       </svg>
     ))

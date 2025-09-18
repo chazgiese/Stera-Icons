@@ -10,6 +10,7 @@ A lightweight, tree-shakeable React icon library with TypeScript support and acc
 - ♿ **Accessible**: Built-in ARIA support for screen readers
 - 🎯 **Per-icon imports**: Import individual icons for maximum optimization
 - 🚀 **Optimized builds**: Production-ready with no development overhead
+- 🎨 **Multiple variants**: Regular, Bold, and Filled variants for every icon
 
 ## Installation
 
@@ -30,7 +31,7 @@ Stera Icons is optimized for production use:
 - **Tree-shaking**: Import only what you use for minimal impact
 - **No source maps**: Production builds exclude development files for optimal size
 
-The package includes 728+ icons across outline and filled variants, but thanks to tree-shaking, you only pay for what you import.
+The package includes 1000+ icons across Regular, Bold, and Filled variants, but thanks to tree-shaking, you only pay for what you import.
 
 ## Usage
 
@@ -62,12 +63,14 @@ function App() {
 ```tsx
 import Search from 'stera-icons/search';
 import HeartFilled from 'stera-icons/heart-filled';
+import SearchBold from 'stera-icons/search-bold';
 
 function App() {
   return (
     <div>
       <Search size={24} />
       <HeartFilled size={20} color="red" />
+      <SearchBold size={24} />
     </div>
   );
 }
@@ -91,7 +94,32 @@ Icons follow these naming patterns:
 - **Settings**: `Cog` (gear icon)
 - **Mail/Email**: `Envalope` (envelope icon)
 - **Filled variants**: Add `Filled` suffix (e.g., `HeartFilled`, `StarFilled`)
-- **Default variants**: Use the base name (e.g., `Heart`, `Star`)
+- **Bold variants**: Add `Bold` suffix (e.g., `HeartBold`, `StarBold`)
+- **Regular variants**: Use the base name (e.g., `Heart`, `Star`)
+
+## Icon Variants
+
+Stera Icons provides three distinct variants for maximum design flexibility:
+
+- **Regular**: Clean, outlined icons perfect for general use
+- **Bold**: Thicker strokes for emphasis and better visibility at small sizes
+- **Filled**: Solid icons for high contrast and modern designs
+
+### Example Usage
+
+```tsx
+import { Heart, HeartBold, HeartFilled } from 'stera-icons';
+
+function IconVariants() {
+  return (
+    <div>
+      <Heart size={24} />        {/* Regular variant */}
+      <HeartBold size={24} />    {/* Bold variant */}
+      <HeartFilled size={24} />  {/* Filled variant */}
+    </div>
+  );
+}
+```
 
 ## API
 

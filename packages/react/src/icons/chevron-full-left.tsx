@@ -29,7 +29,7 @@ const ChevronFullLeft = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M14.293 4.293A1 1 0 0 1 16 5v14a1 1 0 0 1-1.707.707l-7-7a1 1 0 0 1 0-1.414zM9.414 12 14 16.586V7.414z"
+          d="M14.47 4.47a.75.75 0 0 1 1.28.53v14a.75.75 0 0 1-1.28.53l-7-7a.75.75 0 0 1 0-1.06zM9.06 12l5.19 5.19V6.81z"
           clipRule="evenodd"
         />
       </svg>

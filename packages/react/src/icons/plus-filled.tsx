@@ -28,7 +28,7 @@ const PlusFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M12 2a1 1 0 0 1 1 1v8h8a1 1 0 1 1 0 2h-8v8a1 1 0 1 1-2 0v-8H3a1 1 0 1 1 0-2h8V3a1 1 0 0 1 1-1"
+          d="M12 2a1.5 1.5 0 0 1 1.5 1.5v7h7a1.5 1.5 0 0 1 0 3h-7v7a1.5 1.5 0 0 1-3 0v-7h-7a1.5 1.5 0 0 1 0-3h7v-7A1.5 1.5 0 0 1 12 2"
         />
       </svg>
     ))

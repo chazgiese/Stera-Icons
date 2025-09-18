@@ -1,0 +1,43 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const TrashBold = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M9.25 10.002a1 1 0 0 1 1.06.935l.375 6a1 1 0 0 1-1.996.125l-.375-6a1 1 0 0 1 .936-1.06M14.75 10.002a1 1 0 0 1 .935 1.06l-.375 6a1 1 0 0 1-1.995-.125l.375-6a1 1 0 0 1 1.06-.935"
+        />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M13.439 1a3 3 0 0 1 2.91 2.272L16.78 5H22a1 1 0 1 1 0 2h-1.06l-.567 9.061c-.065 1.04-.116 1.88-.213 2.556-.098.689-.253 1.291-.566 1.845a5 5 0 0 1-2.165 2.035c-.572.278-1.183.394-1.877.45C14.87 23 14.03 23 12.987 23h-1.974c-1.043 0-1.883 0-2.565-.054-.693-.055-1.305-.17-1.877-.449a5 5 0 0 1-2.165-2.035c-.313-.553-.468-1.156-.566-1.845-.097-.677-.148-1.515-.213-2.556L3.061 7H2a1 1 0 0 1 0-2h5.22l.431-1.728A3 3 0 0 1 10.561 1zM5.623 15.937c.067 1.072.115 1.818.197 2.398.081.568.186.895.326 1.142a3 3 0 0 0 1.3 1.221c.256.125.589.21 1.16.255C9.19 21 9.938 21 11.013 21h1.974c1.075 0 1.823 0 2.407-.047.571-.045.904-.13 1.16-.255a3 3 0 0 0 1.3-1.22c.14-.248.245-.575.326-1.143.082-.58.13-1.326.197-2.399L18.936 7H5.064zM10.562 3a1 1 0 0 0-.97.758L9.28 5h5.44l-.312-1.242a1 1 0 0 0-.97-.758z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
+);
+TrashBold.displayName = "TrashBold";
+export { TrashBold };

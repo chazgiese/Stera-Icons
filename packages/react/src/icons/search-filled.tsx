@@ -26,10 +26,19 @@ const SearchFilled = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M10.5 1.5a9 9 0 0 1 7.334 14.213l5.227 5.227a1.5 1.5 0 1 1-2.122 2.12l-5.226-5.226A9 9 0 1 1 10.5 1.5"
-        />
+        <g clipPath="url(#a)">
+          <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M10.5.5c5.523 0 10 4.477 10 10a9.95 9.95 0 0 1-1.66 5.513l4.574 4.573a2 2 0 1 1-2.828 2.828l-4.573-4.573A9.95 9.95 0 0 1 10.5 20.5c-5.523 0-10-4.477-10-10s4.477-10 10-10m0 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14"
+            clipRule="evenodd"
+          />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="currentColor" d="M0 0h24v24H0z" />
+          </clipPath>
+        </defs>
       </svg>
     ))
 );

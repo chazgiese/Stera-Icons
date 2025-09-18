@@ -26,10 +26,19 @@ const CrosshairFilled = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M12 1a1 1 0 0 1 1 1v2.063A8 8 0 0 1 19.936 11H22a1 1 0 1 1 0 2h-2.064A8 8 0 0 1 13 19.936V22a1 1 0 1 1-2 0v-2.064A8 8 0 0 1 4.064 13H2a1 1 0 1 1 0-2h2.064A8 8 0 0 1 11 4.063V2a1 1 0 0 1 1-1"
-        />
+        <g clipPath="url(#a)">
+          <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M12 .5A1.5 1.5 0 0 1 13.5 2v1.634a8.5 8.5 0 0 1 6.865 6.866H22a1.5 1.5 0 0 1 0 3h-1.635a8.5 8.5 0 0 1-6.865 6.865V22a1.5 1.5 0 0 1-3 0v-1.635A8.5 8.5 0 0 1 3.635 13.5H2a1.5 1.5 0 0 1 0-3h1.635A8.5 8.5 0 0 1 10.5 3.634V2A1.5 1.5 0 0 1 12 .5m-5.292 13a5.51 5.51 0 0 0 3.792 3.791V13.5zm6.792 0v3.791a5.51 5.51 0 0 0 3.792-3.791zm0-3h3.792A5.51 5.51 0 0 0 13.5 6.708zm-3-3.792A5.51 5.51 0 0 0 6.708 10.5H10.5z"
+            clipRule="evenodd"
+          />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="currentColor" d="M0 0h24v24H0z" />
+          </clipPath>
+        </defs>
       </svg>
     ))
 );

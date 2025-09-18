@@ -26,7 +26,10 @@ const Minus = memo(
         ref={ref}
         {...props}
       >
-        <path fill="currentColor" d="M21 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
+        <path
+          fill="currentColor"
+          d="M21 11.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z"
+        />
       </svg>
     ))
 );

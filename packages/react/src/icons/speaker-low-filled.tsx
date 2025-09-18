@@ -1,0 +1,37 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const SpeakerLowFilled = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M12.086 4c1.26-1.26 3.414-.367 3.414 1.414v13.172c0 1.782-2.154 2.674-3.414 1.414l-3.927-3.927A.25.25 0 0 0 7.982 16H5.75a2.25 2.25 0 0 1-2.25-2.25v-3.5A2.25 2.25 0 0 1 5.75 8h2.232a.25.25 0 0 0 .177-.073zM17.646 7.55a1 1 0 0 1 1.402.182A6.98 6.98 0 0 1 20.5 12a6.98 6.98 0 0 1-1.452 4.269 1 1 0 0 1-1.584-1.22A4.98 4.98 0 0 0 18.5 12a4.98 4.98 0 0 0-1.036-3.048 1 1 0 0 1 .181-1.402"
+        />
+      </svg>
+    ))
+);
+SpeakerLowFilled.displayName = "SpeakerLowFilled";
+export { SpeakerLowFilled };
