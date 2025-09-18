@@ -1,5 +1,17 @@
 # @stera/icons
 
+## 2.1.0
+
+### Minor Changes
+
+- 2176a3a: fix: update icon designs and regenerate components
+
+  - Fix SVG path issues in multiple icons
+  - Rename text-bolden to text-b for consistency
+  - Add missing arrow direction icons (up, down, left, right, diagonal)
+  - Regenerate all React components from updated source
+  - Update metadata and name mapping files
+
 ## 2.0.1
 
 ### Patch Changes
