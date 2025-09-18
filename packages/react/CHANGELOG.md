@@ -1,5 +1,16 @@
 # @stera/icons
 
+## 2.0.1
+
+### Patch Changes
+
+- 2f1bb2a: feat: rebuild icons from updated icons-export.json
+
+  - Regenerated all 1,098 icon components from updated source data
+  - Added missing bold variants for emote-surprised and sliders-horizontal
+  - Updated icon metadata and name mappings
+  - Fixed icon generation issues from source data
+
 ## 2.0.0
 
 ### Major Changes
