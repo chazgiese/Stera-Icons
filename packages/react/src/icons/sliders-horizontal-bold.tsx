@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SlidersHorizontal = memo(
+const SlidersHorizontalBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -29,11 +29,11 @@ const SlidersHorizontal = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M15 13.25a3.75 3.75 0 0 1 3.675 3H22a.75.75 0 0 1 0 1.5h-3.325a3.751 3.751 0 0 1-7.35 0H2a.75.75 0 0 1 0-1.5h9.325c.348-1.712 1.86-3 3.675-3m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5M9 3.25a3.75 3.75 0 0 1 3.675 3H22a.75.75 0 0 1 0 1.5h-9.325a3.751 3.751 0 0 1-7.35 0H2a.75.75 0 0 1 0-1.5h3.325c.348-1.712 1.86-3 3.675-3m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5"
+          d="M15 13a4 4 0 0 1 3.874 3H22a1 1 0 1 1 0 2h-3.126a4.002 4.002 0 0 1-7.748 0H2a1 1 0 1 1 0-2h9.126c.444-1.725 2.01-3 3.874-3m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4M9 3a4 4 0 0 1 3.874 3H22a1 1 0 1 1 0 2h-9.126a4.002 4.002 0 0 1-7.748 0H2a1 1 0 0 1 0-2h3.126C5.57 4.275 7.136 3 9 3m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
           clipRule="evenodd"
         />
       </svg>
     ))
 );
-SlidersHorizontal.displayName = "SlidersHorizontal";
-export { SlidersHorizontal };
+SlidersHorizontalBold.displayName = "SlidersHorizontalBold";
+export { SlidersHorizontalBold };

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Search, Heart, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from 'stera-icons';
+import { SearchFilled, HeartFilled, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from 'stera-icons';
 
 // Mock data for demonstration - in real usage, this would come from icons.meta.json
 const mockIcons = [
-  { name: 'search', variant: 'outline', component: Search, tags: ['search', 'find', 'magnify'] },
-  { name: 'heart', variant: 'outline', component: Heart, tags: ['heart', 'love', 'favorite'] },
+  { name: 'search', variant: 'outline', component: SearchFilled, tags: ['search', 'find', 'magnify'] },
+  { name: 'heart', variant: 'outline', component: HeartFilled, tags: ['heart', 'love', 'favorite'] },
   { name: 'star', variant: 'outline', component: Star, tags: ['star', 'rating', 'favorite'] },
   { name: 'cog', variant: 'outline', component: Cog, tags: ['settings', 'gear', 'preferences'] },
   { name: 'user', variant: 'outline', component: User, tags: ['user', 'person', 'profile'] },
