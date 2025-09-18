@@ -53,9 +53,14 @@ jobs:
         
       - name: Build
         run: |
+          # Build the stera-icons package first
           pnpm --filter stera-icons build
+          # Ensure workspace dependencies are properly linked
           pnpm install --frozen-lockfile
-          pnpm build
+          # Verify the built package exists
+          ls -la packages/react/dist/
+          # Build the demo
+          pnpm --filter stera-icons-react-demo build
 
   build-icons:
     name: Build Icons
