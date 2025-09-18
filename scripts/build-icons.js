@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { optimize } from 'svgo';
@@ -32,13 +32,18 @@ async function buildIcons(iconsExportPath) {
   const iconsDir = join(__dirname, '..', 'packages', 'react', 'src', 'icons');
   const distDir = join(__dirname, '..', 'packages', 'react', 'dist');
   
-  // Ensure directories exist
-  if (!existsSync(iconsDir)) {
-    mkdirSync(iconsDir, { recursive: true });
+  // Clean up existing files to ensure only current icons are present
+  console.log('🧹 Cleaning up existing icon files...');
+  if (existsSync(iconsDir)) {
+    rmSync(iconsDir, { recursive: true, force: true });
   }
-  if (!existsSync(distDir)) {
-    mkdirSync(distDir, { recursive: true });
+  if (existsSync(distDir)) {
+    rmSync(distDir, { recursive: true, force: true });
   }
+  
+  // Create fresh directories
+  mkdirSync(iconsDir, { recursive: true });
+  mkdirSync(distDir, { recursive: true });
   
   const nameMapping = {};
   const takenSlugs = new Set();
@@ -56,7 +61,6 @@ async function buildIcons(iconsExportPath) {
     
     // Process each variant (Bold, Fill, Regular)
     for (const variantData of icon.variants) {
-      if (variantData.variant === 'Stroke') continue; // Skip Stroke variants for v1
       
       const variant = variantData.variant === 'Fill' ? 'filled' : 
                      variantData.variant === 'Bold' ? 'bold' : 'regular';
