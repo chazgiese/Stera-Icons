@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 2.1.2
+
+### Patch Changes
+
+- 35a1f45: Fix minor design bugs in thumbs-up regular and arrow-square-right regular icons
+
 ## 2.1.1
 
 ### Patch Changes
