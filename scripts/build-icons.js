@@ -37,13 +37,12 @@ async function buildIcons(iconsExportPath) {
   if (existsSync(iconsDir)) {
     rmSync(iconsDir, { recursive: true, force: true });
   }
-  if (existsSync(distDir)) {
-    rmSync(distDir, { recursive: true, force: true });
-  }
   
   // Create fresh directories
   mkdirSync(iconsDir, { recursive: true });
-  mkdirSync(distDir, { recursive: true });
+  if (!existsSync(distDir)) {
+    mkdirSync(distDir, { recursive: true });
+  }
   
   const nameMapping = {};
   const takenSlugs = new Set();
