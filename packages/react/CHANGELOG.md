@@ -1,5 +1,16 @@
 # @stera/icons
 
+## 2.2.1
+
+### Patch Changes
+
+- 1d03a48: Fix icon rename backward compatibility issue
+
+  - Updated build process to handle icon name changes gracefully
+  - Added backward compatibility exports for renamed icons (e.g., checkmark → check)
+  - Prevents TypeScript errors when icons are renamed in icons-export.json
+  - Maintains existing imports while allowing new naming conventions
+
 ## 2.2.0
 
 ### Minor Changes
