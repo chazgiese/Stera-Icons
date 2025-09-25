@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HourglassEmptyFilled = memo(
+const CurrencyEuroCircleFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -29,11 +29,11 @@ const HourglassEmptyFilled = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M17 1a3 3 0 0 1 3 3v1.116a7 7 0 0 1-2.627 5.466l-1.284 1.027a.5.5 0 0 0 0 .782l1.284 1.027A7 7 0 0 1 20 18.884V20a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1.116a7 7 0 0 1 2.627-5.466l1.284-1.027a.5.5 0 0 0 0-.782l-1.284-1.027A7 7 0 0 1 4 5.116V4a3 3 0 0 1 3-3zm-5 12.911c-.383 0-.814.129-1.15.44l-.14.146c-.496.592-1.123 1.035-1.897 1.653a3.5 3.5 0 0 0-1.271 2.197A1 1 0 0 0 8.53 19.5h6.94a1 1 0 0 0 .988-1.153 3.5 3.5 0 0 0-1.271-2.197c-.677-.541-1.242-.948-1.706-1.438l-.192-.215-.139-.145a1.7 1.7 0 0 0-1.15-.44"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m1.5 5c-1.512 0-2.948.341-3.993 1.388-.613.614-1.024 1.406-1.26 2.362H7.5a.75.75 0 0 0 0 1.5h.523a12 12 0 0 0 0 1.5H7.5a.75.75 0 0 0 0 1.5h.747c.236.956.647 1.748 1.26 2.362C10.552 17.66 11.988 18 13.5 18H15a1 1 0 1 0 0-2h-1.5c-1.25 0-2.063-.284-2.578-.8a2.64 2.64 0 0 1-.588-.95H13a.75.75 0 0 0 0-1.5h-2.97a9.6 9.6 0 0 1 0-1.5H13a.75.75 0 0 0 0-1.5h-2.666c.159-.418.363-.724.588-.95.515-.516 1.329-.8 2.578-.8H15a1 1 0 1 0 0-2z"
           clipRule="evenodd"
         />
       </svg>
     ))
 );
-HourglassEmptyFilled.displayName = "HourglassEmptyFilled";
-export { HourglassEmptyFilled };
+CurrencyEuroCircleFilled.displayName = "CurrencyEuroCircleFilled";
+export { CurrencyEuroCircleFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HourglassEmpty2 = memo(
+const HourglassFull = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,7 +28,7 @@ const HourglassEmpty2 = memo(
       >
         <path
           fill="currentColor"
-          d="M12 14.165c.335 0 .701.116.981.385l.115.124.146.17q.228.253.504.474l1.284 1.028a3.25 3.25 0 0 1 1.18 2.039.75.75 0 0 1-.74.865H8.53a.75.75 0 0 1-.74-.865 3.25 3.25 0 0 1 1.18-2.04l1.284-1.027q.369-.296.65-.644l.115-.124c.28-.269.646-.385.981-.385"
+          d="M15.47 4.75a.75.75 0 0 1 .74.865 3.25 3.25 0 0 1-1.18 2.04l-1.284 1.027a4.2 4.2 0 0 0-1.086 1.297.75.75 0 0 1-1.32 0 4.2 4.2 0 0 0-1.086-1.297L8.97 7.654a3.25 3.25 0 0 1-1.18-2.039.75.75 0 0 1 .74-.865z"
         />
         <path
           fill="currentColor"
@@ -39,5 +39,5 @@ const HourglassEmpty2 = memo(
       </svg>
     ))
 );
-HourglassEmpty2.displayName = "HourglassEmpty2";
-export { HourglassEmpty2 };
+HourglassFull.displayName = "HourglassFull";
+export { HourglassFull };

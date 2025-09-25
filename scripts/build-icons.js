@@ -49,6 +49,30 @@ async function buildIcons(iconsExportPath) {
   const metadata = [];
   const exports = [];
   
+  // Load previous name mapping to maintain backward compatibility
+  const previousNameMappingPath = join(distDir, 'name_map.json');
+  let previousNameMapping = {};
+  if (existsSync(previousNameMappingPath)) {
+    try {
+      previousNameMapping = JSON.parse(readFileSync(previousNameMappingPath, 'utf8'));
+      console.log('📋 Loaded previous name mapping for backward compatibility');
+    } catch (error) {
+      console.log('⚠️  Could not load previous name mapping, starting fresh');
+    }
+  }
+  
+  // Add known backward compatibility mappings for renamed icons
+  const knownRenames = {
+    'checkmark': 'check'  // checkmark was renamed to check
+  };
+  
+  // Merge known renames into previous mapping
+  for (const [oldName, newName] of Object.entries(knownRenames)) {
+    if (!previousNameMapping[oldName]) {
+      previousNameMapping[oldName] = oldName; // Assume it was previously named as itself
+    }
+  }
+  
   // Process each icon
   for (const icon of iconsExport.icons) {
     const originalName = icon.name;
@@ -57,6 +81,24 @@ async function buildIcons(iconsExportPath) {
     
     // Store the mapping
     nameMapping[originalName] = uniqueSlug;
+    
+    // Check if this icon was renamed and add backward compatibility mapping
+    const previousSlug = previousNameMapping[originalName];
+    if (previousSlug && previousSlug !== uniqueSlug) {
+      console.log(`🔄 Icon renamed: ${originalName} (was ${previousSlug}, now ${uniqueSlug})`);
+      // Keep the old mapping for backward compatibility
+      nameMapping[previousSlug] = uniqueSlug;
+    }
+    
+    // Check for known renames (old name -> current name)
+    for (const [oldName, newName] of Object.entries(knownRenames)) {
+      if (originalName === newName) {
+        console.log(`🔄 Known rename detected: ${oldName} -> ${originalName}`);
+        // Add backward compatibility mapping
+        const oldSlug = normalizeSlug(oldName);
+        nameMapping[oldSlug] = uniqueSlug;
+      }
+    }
     
     // Process each variant (Bold, Fill, Regular)
     for (const variantData of icon.variants) {
@@ -97,6 +139,25 @@ async function buildIcons(iconsExportPath) {
       
       // Add to exports
       exports.push(`export { ${componentName} } from './icons/${fileName}';`);
+      
+      // Add backward compatibility exports for renamed icons
+      const previousSlug = previousNameMapping[originalName];
+      if (previousSlug && previousSlug !== uniqueSlug) {
+        const oldComponentName = getComponentName(previousSlug, variant);
+        const oldFileName = getFileName(previousSlug, variant);
+        exports.push(`export { ${componentName} as ${oldComponentName} } from './icons/${fileName}';`);
+        console.log(`  📦 Added backward compatibility export: ${oldComponentName} -> ${componentName}`);
+      }
+      
+      // Add backward compatibility exports for known renames
+      for (const [oldName, newName] of Object.entries(knownRenames)) {
+        if (originalName === newName) {
+          const oldSlug = normalizeSlug(oldName);
+          const oldComponentName = getComponentName(oldSlug, variant);
+          exports.push(`export { ${componentName} as ${oldComponentName} } from './icons/${fileName}';`);
+          console.log(`  📦 Added known rename export: ${oldComponentName} -> ${componentName}`);
+        }
+      }
       
       // Add to metadata
       metadata.push({
