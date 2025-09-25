@@ -1,5 +1,12 @@
 # @stera/icons-react-demo
 
+## 1.0.14
+
+### Patch Changes
+
+- Updated dependencies [e0e431d]
+  - stera-icons@2.2.2
+
 ## 1.0.13
 
 ### Patch Changes
