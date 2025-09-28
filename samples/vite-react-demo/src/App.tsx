@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { SearchFilled, HeartFilled, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from 'stera-icons';
+import { SearchFilled, HeartFilled, Star, Cog, User, Home, Mail, Phone, Calendar, Download } from 'stera-icons';
 
 // Mock data for demonstration - in real usage, this would come from icons.meta.json
 const mockIcons = [
@@ -9,7 +9,7 @@ const mockIcons = [
   { name: 'cog', variant: 'outline', component: Cog, tags: ['settings', 'gear', 'preferences'] },
   { name: 'user', variant: 'outline', component: User, tags: ['user', 'person', 'profile'] },
   { name: 'home', variant: 'outline', component: Home, tags: ['home', 'house', 'main'] },
-  { name: 'envalope', variant: 'outline', component: Envalope, tags: ['mail', 'email', 'message'] },
+  { name: 'mail', variant: 'outline', component: Mail, tags: ['mail', 'email', 'message'] },
   { name: 'phone', variant: 'outline', component: Phone, tags: ['phone', 'call', 'contact'] },
   { name: 'calendar', variant: 'outline', component: Calendar, tags: ['calendar', 'date', 'schedule'] },
   { name: 'download', variant: 'outline', component: Download, tags: ['download', 'save', 'get'] },
