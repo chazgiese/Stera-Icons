@@ -1,5 +1,28 @@
 # @stera/icons
 
+## 3.1.0
+
+### Minor Changes
+
+- ff55d16: ## Icon Updates and Improvements
+
+  ### Added
+
+  - New chart axis icons with improved naming convention (chart-bar-x-axis, chart-bar-y-axis, chart-bar-x-y-axis)
+
+  ### Changed
+
+  - Updated icon naming convention for chart-related icons to use hyphens (e.g., chart-bar-xaxis → chart-bar-x-axis)
+  - Improved SVG paths for various icons including globe, hand-right, image-pile, link, pencil, send, trophy, and x icons
+
+  ### Removed
+
+  - Deprecated flask-full-2 icons
+  - Deprecated rulers-2 icons
+  - Old chart axis icons with previous naming convention
+
+  This update improves icon consistency and adds new chart visualization icons with better naming conventions.
+
 ## 3.0.3
 
 ### Patch Changes
