@@ -1,5 +1,281 @@
 # @stera/icons
 
+## 3.0.3
+
+### Patch Changes
+
+- ## New Icons Added
+
+  ### Annotation & Communication
+
+  - `annotation` (regular, bold, filled)
+  - `bubble` (regular, bold, filled)
+  - `comment-bubble`
+  - `reply` (regular, bold)
+
+  ### Arrow & Navigation
+
+  - `arrow-corner-down-left` (regular, bold, filled)
+  - `arrow-corner-down-right` (regular, bold, filled)
+  - `arrow-corner-up-left` (regular, bold, filled)
+  - `arrow-corner-up-right` (regular, bold, filled)
+  - `arrow-line-right` (bold, filled)
+  - `arrow-up-down` (bold)
+
+  ### Building & Architecture
+
+  - `building` (regular, bold, filled)
+  - `city` (regular, bold, filled)
+
+  ### Chart & Data Visualization
+
+  - `chart-bar-big` (regular, bold, filled)
+  - `chart-bar-x-yaxis` (regular, bold, filled)
+  - `chart-bar-xaxis-2` (regular, bold, filled)
+  - `chart-bar-xaxis-big` (regular, bold, filled)
+  - `chart-bar-xaxis` (regular, bold, filled)
+  - `chart-bar-y-big` (regular, bold, filled)
+  - `chart-bar-y` (regular, bold, filled)
+  - `chart-bar-yaxis-big` (regular, bold, filled)
+  - `chart-donut` (regular, bold, filled)
+  - `chart-line` (regular, bold, filled)
+  - `chart-pie-alt` (regular, bold, filled)
+
+  ### Science & Laboratory
+
+  - `flask` (regular, bold, filled)
+  - `flask-full` (regular, bold, filled)
+  - `flask-full-2` (regular, bold, filled)
+  - `microscope` (regular, bold, filled)
+  - `test-tube` (regular, bold, filled)
+  - `test-tube-full` (regular, bold, filled)
+
+  ### Tools & Measurement
+
+  - `bounding-box` (regular, bold, filled)
+  - `ruler` (regular, bold, filled)
+  - `rulers` (regular, bold, filled)
+  - `rulers-2` (regular, bold, filled)
+
+  ### Space & Technology
+
+  - `rocket` (regular, bold, filled)
+
+  ### Nature & Growth
+
+  - `seedling` (regular, bold, filled)
+
+  ### Additional Icons
+
+  - `astrisk` (regular, bold, filled)
+  - `astrisk-alt`
+  - `bell-x`
+  - `check-badge` (regular, bold)
+  - `check-filled`
+  - `chevrons-right-filled`
+  - `circle-divide-horizontal-filled`
+  - `circle-slash`
+  - `cli-bold`
+  - `code` (regular, bold, filled)
+  - `cog`
+  - `cube` (regular, bold, filled)
+  - `cube-package` (regular, bold)
+  - `cube-package-simple-bold`
+  - `currency-cent`
+  - `cursor-click` (regular, bold, filled)
+  - `cursor-pointer-bold`
+  - `cursor`
+  - `delete` (bold, filled)
+  - `device-laptop` (regular, bold, filled)
+  - `diamond` (regular, bold, filled)
+  - `eye` (regular, bold, filled)
+  - `eye-closed` (regular, bold)
+  - `eye-off`
+  - `flow-merge` (bold, filled)
+  - `globe-filled`
+  - `hand-right-bold`
+  - `headphones`
+  - `image-pile` (regular, bold, filled)
+  - `keyhole` (regular, filled)
+  - `label-alt`
+  - `layers-filled`
+  - `link-filled`
+  - `list-check-two-filled`
+  - `medal` (regular, bold)
+  - `medal-star` (regular, filled)
+  - `mic-off` (bold, filled)
+  - `moon-crescent` (regular, bold, filled)
+  - `paw-print-filled`
+  - `pen` (regular, bold, filled)
+  - `pen-nib` (regular, bold, filled)
+  - `pencil` (regular, bold, filled)
+  - `plug` (regular, bold, filled)
+  - `receipt-alt-bold`
+  - `save-bold`
+  - `scissors` (regular, filled)
+  - `send` (regular, bold, filled)
+  - `send-horizontal` (regular, filled)
+  - `send-vertical` (regular, bold, filled)
+  - `shield-slash` (regular, bold, filled)
+  - `sort` (regular, bold)
+  - `sort-ascending` (regular, bold)
+  - `sort-ascending-narrow-bold`
+  - `sort-narrow-bold`
+  - `speaker-off` (regular, bold)
+  - `star` (regular, filled)
+  - `star-half`
+  - `tag` (regular, bold, filled)
+  - `trophy` (regular, bold, filled)
+  - `wave-sine-filled`
+  - `wave-triangle`
+  - `wifi` (regular, bold, filled)
+  - `wifi-slash` (regular, bold, filled)
+  - `x-filled`
+
+  ## Changes
+
+  - Renamed `chart-square-bar` to `chart-bar-square` for consistency
+  - Updated 532 icons with latest designs
+  - All tests passing, no linting errors
+
+## 3.0.2
+
+### Patch Changes
+
+- ## New Icons Added
+
+  ### Annotation & Communication
+
+  - `annotation` (regular, bold, filled)
+  - `bubble` (regular, bold, filled)
+  - `comment-bubble`
+  - `reply` (regular, bold)
+
+  ### Arrow & Navigation
+
+  - `arrow-corner-down-left` (regular, bold, filled)
+  - `arrow-corner-down-right` (regular, bold, filled)
+  - `arrow-corner-up-left` (regular, bold, filled)
+  - `arrow-corner-up-right` (regular, bold, filled)
+  - `arrow-line-right` (bold, filled)
+  - `arrow-up-down` (bold)
+
+  ### Building & Architecture
+
+  - `building` (regular, bold, filled)
+  - `city` (regular, bold, filled)
+
+  ### Chart & Data Visualization
+
+  - `chart-bar-big` (regular, bold, filled)
+  - `chart-bar-x-yaxis` (regular, bold, filled)
+  - `chart-bar-xaxis-2` (regular, bold, filled)
+  - `chart-bar-xaxis-big` (regular, bold, filled)
+  - `chart-bar-xaxis` (regular, bold, filled)
+  - `chart-bar-y-big` (regular, bold, filled)
+  - `chart-bar-y` (regular, bold, filled)
+  - `chart-bar-yaxis-big` (regular, bold, filled)
+  - `chart-donut` (regular, bold, filled)
+  - `chart-line` (regular, bold, filled)
+  - `chart-pie-alt` (regular, bold, filled)
+
+  ### Science & Laboratory
+
+  - `flask` (regular, bold, filled)
+  - `flask-full` (regular, bold, filled)
+  - `flask-full-2` (regular, bold, filled)
+  - `microscope` (regular, bold, filled)
+  - `test-tube` (regular, bold, filled)
+  - `test-tube-full` (regular, bold, filled)
+
+  ### Tools & Measurement
+
+  - `bounding-box` (regular, bold, filled)
+  - `ruler` (regular, bold, filled)
+  - `rulers` (regular, bold, filled)
+  - `rulers-2` (regular, bold, filled)
+
+  ### Space & Technology
+
+  - `rocket` (regular, bold, filled)
+
+  ### Nature & Growth
+
+  - `seedling` (regular, bold, filled)
+
+  ### Additional Icons
+
+  - `astrisk` (regular, bold, filled)
+  - `astrisk-alt`
+  - `bell-x`
+  - `check-badge` (regular, bold)
+  - `check-filled`
+  - `chevrons-right-filled`
+  - `circle-divide-horizontal-filled`
+  - `circle-slash`
+  - `cli-bold`
+  - `code` (regular, bold, filled)
+  - `cog`
+  - `cube` (regular, bold, filled)
+  - `cube-package` (regular, bold)
+  - `cube-package-simple-bold`
+  - `currency-cent`
+  - `cursor-click` (regular, bold, filled)
+  - `cursor-pointer-bold`
+  - `cursor`
+  - `delete` (bold, filled)
+  - `device-laptop` (regular, bold, filled)
+  - `diamond` (regular, bold, filled)
+  - `eye` (regular, bold, filled)
+  - `eye-closed` (regular, bold)
+  - `eye-off`
+  - `flow-merge` (bold, filled)
+  - `globe-filled`
+  - `hand-right-bold`
+  - `headphones`
+  - `image-pile` (regular, bold, filled)
+  - `keyhole` (regular, filled)
+  - `label-alt`
+  - `layers-filled`
+  - `link-filled`
+  - `list-check-two-filled`
+  - `medal` (regular, bold)
+  - `medal-star` (regular, filled)
+  - `mic-off` (bold, filled)
+  - `moon-crescent` (regular, bold, filled)
+  - `paw-print-filled`
+  - `pen` (regular, bold, filled)
+  - `pen-nib` (regular, bold, filled)
+  - `pencil` (regular, bold, filled)
+  - `plug` (regular, bold, filled)
+  - `receipt-alt-bold`
+  - `save-bold`
+  - `scissors` (regular, filled)
+  - `send` (regular, bold, filled)
+  - `send-horizontal` (regular, filled)
+  - `send-vertical` (regular, bold, filled)
+  - `shield-slash` (regular, bold, filled)
+  - `sort` (regular, bold)
+  - `sort-ascending` (regular, bold)
+  - `sort-ascending-narrow-bold`
+  - `sort-narrow-bold`
+  - `speaker-off` (regular, bold)
+  - `star` (regular, filled)
+  - `star-half`
+  - `tag` (regular, bold, filled)
+  - `trophy` (regular, bold, filled)
+  - `wave-sine-filled`
+  - `wave-triangle`
+  - `wifi` (regular, bold, filled)
+  - `wifi-slash` (regular, bold, filled)
+  - `x-filled`
+
+  ## Changes
+
+  - Renamed `chart-square-bar` to `chart-bar-square` for consistency
+  - Updated 532 icons with latest designs
+  - All tests passing, no linting errors
+
 ## 3.0.0
 
 ### Major Changes
