@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChartBarXaxisBig = memo(
+const ChartBarXAxisBig = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const ChartBarXaxisBig = memo(
       </svg>
     ))
 );
-ChartBarXaxisBig.displayName = "ChartBarXaxisBig";
-export { ChartBarXaxisBig };
+ChartBarXAxisBig.displayName = "ChartBarXAxisBig";
+export { ChartBarXAxisBig };

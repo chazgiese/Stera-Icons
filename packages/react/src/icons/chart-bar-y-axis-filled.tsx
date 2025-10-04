@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Rulers2 = memo(
+const ChartBarYAxisFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,12 +28,10 @@ const Rulers2 = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M19.75 2.25a2 2 0 0 1 2 2v3.5a2 2 0 0 1-2 2h-10v10a2 2 0 0 1-2 2h-3.5a2 2 0 0 1-2-2V4.25a2 2 0 0 1 2-2zm-16 17.5a.5.5 0 0 0 .5.5h3.5a.5.5 0 0 0 .5-.5v-2H7a.75.75 0 0 1 0-1.5h1.25v-2.5H7a.75.75 0 0 1 0-1.5h1.25v-2.5h-4.5zm.4-15.99a.5.5 0 0 0-.4.49v4h4.5v-4.5h-4a.5.5 0 0 0-.1.01m5.6 4.49h2.5V7a.75.75 0 0 1 1.5 0v1.25h2.5V7a.75.75 0 0 1 1.5 0v1.25h2a.5.5 0 0 0 .5-.5v-3.5a.5.5 0 0 0-.5-.5h-10z"
-          clipRule="evenodd"
+          d="M4.5 21a1.5 1.5 0 0 1-3 0V3a1.5 1.5 0 1 1 3 0zM16.5 4A1.5 1.5 0 0 1 15 5.5H7.5a1.5 1.5 0 0 1 0-3H15A1.5 1.5 0 0 1 16.5 4M22.5 9.333a1.5 1.5 0 0 1-1.5 1.5H7.5a1.5 1.5 0 0 1 0-3H21a1.5 1.5 0 0 1 1.5 1.5M14.5 14.667a1.5 1.5 0 0 1-1.5 1.5H7.5a1.5 1.5 0 0 1 0-3H13a1.5 1.5 0 0 1 1.5 1.5M18.5 20a1.5 1.5 0 0 1-1.5 1.5H7.5a1.5 1.5 0 0 1 0-3H17a1.5 1.5 0 0 1 1.5 1.5"
         />
       </svg>
     ))
 );
-Rulers2.displayName = "Rulers2";
-export { Rulers2 };
+ChartBarYAxisFilled.displayName = "ChartBarYAxisFilled";
+export { ChartBarYAxisFilled };

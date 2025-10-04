@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChartBarYaxisBigFilled = memo(
+const ChartBarXAxisBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,10 +28,10 @@ const ChartBarYaxisBigFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M3 2a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1M15 16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7.5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zM20 9a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7.5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zM17 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7.5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
+          d="M21 20a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM4 8a1 1 0 0 1 1 1v8.5a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1M9.333 2a1 1 0 0 1 1 1v14.5a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1M14.667 10a1 1 0 0 1 1 1v6.5a1 1 0 0 1-2 0V11a1 1 0 0 1 1-1M20 6a1 1 0 0 1 1 1v10.5a1 1 0 0 1-2 0V7a1 1 0 0 1 1-1"
         />
       </svg>
     ))
 );
-ChartBarYaxisBigFilled.displayName = "ChartBarYaxisBigFilled";
-export { ChartBarYaxisBigFilled };
+ChartBarXAxisBold.displayName = "ChartBarXAxisBold";
+export { ChartBarXAxisBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChartBarXaxis2 = memo(
+const ChartBarXYAxisBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,10 +28,14 @@ const ChartBarXaxis2 = memo(
       >
         <path
           fill="currentColor"
-          d="M21 20.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM4 8.25a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V9A.75.75 0 0 1 4 8.25M9.333 2.25a.75.75 0 0 1 .75.75v15a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75M14.667 10.25a.75.75 0 0 1 .75.75v7a.75.75 0 0 1-1.5 0v-7a.75.75 0 0 1 .75-.75M20 6.25a.75.75 0 0 1 .75.75v11a.75.75 0 0 1-1.5 0V7a.75.75 0 0 1 .75-.75"
+          d="M3 2a1 1 0 0 1 1 1v14.8c0 .576.001.949.024 1.232.023.272.06.373.085.422.096.188.249.34.437.437.05.025.15.062.422.085.283.023.656.024 1.232.024H21a1 1 0 1 1 0 2H6.2c-.543 0-1.012.001-1.395-.03-.396-.033-.789-.104-1.167-.297a3 3 0 0 1-1.31-1.31c-.194-.379-.265-.772-.298-1.168C2 18.812 2 18.343 2 17.8V3a1 1 0 0 1 1-1"
+        />
+        <path
+          fill="currentColor"
+          d="M7 11a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1M12 4a1 1 0 0 1 1 1v12l-.005.102a1 1 0 0 1-1.99 0L11 17V5a1 1 0 0 1 1-1M17 8a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1"
         />
       </svg>
     ))
 );
-ChartBarXaxis2.displayName = "ChartBarXaxis2";
-export { ChartBarXaxis2 };
+ChartBarXYAxisBold.displayName = "ChartBarXYAxisBold";
+export { ChartBarXYAxisBold };

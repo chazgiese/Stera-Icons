@@ -48,6 +48,7 @@ async function buildIcons(iconsExportPath) {
   const takenSlugs = new Set();
   const metadata = [];
   const exports = [];
+  const namingConflicts = [];
   
   // Load previous name mapping to maintain backward compatibility
   const previousNameMappingPath = join(distDir, 'name_map.json');
@@ -77,6 +78,18 @@ async function buildIcons(iconsExportPath) {
   for (const icon of iconsExport.icons) {
     const originalName = icon.name;
     const normalizedSlug = normalizeSlug(originalName);
+    
+    // Check for naming conflicts before processing
+    if (takenSlugs.has(normalizedSlug)) {
+      namingConflicts.push({
+        originalName,
+        normalizedSlug,
+        conflictWith: Array.from(takenSlugs).find(slug => slug === normalizedSlug)
+      });
+      console.error(`❌ NAMING CONFLICT: Icon "${originalName}" normalizes to "${normalizedSlug}" which conflicts with an existing icon`);
+      continue; // Skip this icon to avoid further conflicts
+    }
+    
     const uniqueSlug = ensureUnique(normalizedSlug, takenSlugs);
     
     // Store the mapping
@@ -192,6 +205,18 @@ export type { IconProps } from './types';
     join(distDir, 'name_map.json'), 
     JSON.stringify(nameMapping, null, 2)
   );
+  
+  // Check for naming conflicts and exit with error if any found
+  if (namingConflicts.length > 0) {
+    console.error(`\n❌ BUILD FAILED: Found ${namingConflicts.length} naming conflict(s):`);
+    namingConflicts.forEach((conflict, index) => {
+      console.error(`  ${index + 1}. Icon "${conflict.originalName}" normalizes to "${conflict.normalizedSlug}"`);
+      console.error(`     Conflicts with existing icon: "${conflict.conflictWith}"`);
+    });
+    console.error(`\n💡 To fix naming conflicts, ensure all icon names in icons-export.json normalize to unique slugs.`);
+    console.error(`   Consider renaming conflicting icons to have distinct names.`);
+    process.exit(1);
+  }
   
   console.log(`✅ Generated ${metadata.length} icon components`);
   console.log(`📁 Components written to: ${iconsDir}`);

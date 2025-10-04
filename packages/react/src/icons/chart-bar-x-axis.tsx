@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChartBarXaxis = memo(
+const ChartBarXAxis = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,10 +28,10 @@ const ChartBarXaxis = memo(
       >
         <path
           fill="currentColor"
-          d="M3.75 21a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 1.5 0zM15.75 4a.75.75 0 0 1-.75.75H6a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75M21.75 9.333a.75.75 0 0 1-.75.75H6a.75.75 0 0 1 0-1.5h15a.75.75 0 0 1 .75.75M13.75 14.667a.75.75 0 0 1-.75.75H6a.75.75 0 0 1 0-1.5h7a.75.75 0 0 1 .75.75M17.75 20a.75.75 0 0 1-.75.75H6a.75.75 0 0 1 0-1.5h11a.75.75 0 0 1 .75.75"
+          d="M21 20.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM4 8.25a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V9A.75.75 0 0 1 4 8.25M9.333 2.25a.75.75 0 0 1 .75.75v15a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75M14.667 10.25a.75.75 0 0 1 .75.75v7a.75.75 0 0 1-1.5 0v-7a.75.75 0 0 1 .75-.75M20 6.25a.75.75 0 0 1 .75.75v11a.75.75 0 0 1-1.5 0V7a.75.75 0 0 1 .75-.75"
         />
       </svg>
     ))
 );
-ChartBarXaxis.displayName = "ChartBarXaxis";
-export { ChartBarXaxis };
+ChartBarXAxis.displayName = "ChartBarXAxis";
+export { ChartBarXAxis };
