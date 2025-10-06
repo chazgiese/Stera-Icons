@@ -26,7 +26,10 @@ const BookClosedBold = memo(
         ref={ref}
         {...props}
       >
-        <path fill="currentColor" d="M16 7a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z" />
+        <path
+          fill="currentColor"
+          d="M13 10a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 6a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z"
+        />
         <path
           fill="currentColor"
           fillRule="evenodd"

@@ -28,7 +28,7 @@ const ArrowLineRightFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M20 20a1 1 0 1 0 2 0V4a1 1 0 1 0-2 0zM2 12a1 1 0 0 0 1 1h7v5a1 1 0 0 0 1.707.707l6-6a1 1 0 0 0 0-1.414l-6-6A1 1 0 0 0 10 6v5H3a1 1 0 0 0-1 1"
+          d="M20 20a1 1 0 1 0 2 0V4a1 1 0 0 0-2 0zM2 12a1 1 0 0 0 1 1h7v5a1 1 0 0 0 1.707.707l6-6a1 1 0 0 0 0-1.414l-6-6A1 1 0 0 0 10 6v5H3a1 1 0 0 0-1 1"
         />
       </svg>
     ))

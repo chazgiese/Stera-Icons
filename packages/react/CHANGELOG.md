@@ -1,5 +1,53 @@
 # @stera/icons
 
+## 3.2.0
+
+### Minor Changes
+
+- Add comprehensive chart and visualization icon set plus alignment and business icons
+
+  ## New Icons Added (105 total)
+
+  ### Chart & Data Visualization Icons
+
+  - **Area Chart**: AreaChart, AreaChartBold, AreaChartFilled
+  - **Bar Charts**: BarChart, BarChartAsc, BarChartDesc, BarChartRow, BarChartRowAsc, BarChartRowDesc, BarChartXY (with Bold/Filled variants)
+  - **Line Charts**: LineChart, LineChartDesc, LineChartXY, LineChartXYDesc (with Bold/Filled variants)
+  - **Specialized Charts**: CandleChart, ScatterChart, WaterfallChart, WaterfallChartX, WaterfallChartXY (with Bold/Filled variants)
+  - **Trend Icons**: TrendUp, TrendDown (with Bold/Filled variants)
+  - **3D Visualization**: CubicGraph (with Bold/Filled variants)
+
+  ### Alignment & Layout Icons
+
+  - **Horizontal Alignment**: AlignHorizontalLeft, AlignHorizontalCenter, AlignHorizontalRight (with Bold/Filled variants)
+  - **Vertical Alignment**: AlignVerticalTop, AlignVerticalCenter, AlignVerticalBottom (with Bold/Filled variants)
+  - **Grid & Layout**: GridShapes (with Bold/Filled variants)
+
+  ### Business & Commerce Icons
+
+  - **Business**: Briefcase, Store (with Bold/Filled variants)
+  - **Gifts**: Gift, GiftBox (with Bold/Filled variants)
+  - **Card Management**: CardHolder (with Bold/Filled variants)
+
+  ### Label & Container Icons
+
+  - **Container Labels**: CanLabel, BottleLabel, WineBottleLabel (with Bold/Filled variants)
+
+  ## Modified Icons (192 total)
+
+  Various existing icons have been updated with improved designs and consistency improvements.
+
+  ## Total Impact
+
+  - **1,665 total icon components** (up from 1,590)
+  - **105 new icons** added
+  - **192 existing icons** modified/improved
+  - **1,368 unchanged icons** maintained
+
+  This release significantly expands the chart and data visualization capabilities while adding essential business and alignment tools for modern UI development.
+
+- Add new icons for testing version detection
+
 ## 3.1.0
 
 ### Minor Changes

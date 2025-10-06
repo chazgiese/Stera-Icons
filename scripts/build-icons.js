@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { createHash } from 'crypto';
 import { optimize } from 'svgo';
 import { transform } from '@svgr/core';
 import { 
@@ -12,6 +13,7 @@ import {
   getFileName, 
   parseTags 
 } from './helpers.js';
+import { VersionUtils } from './version-utils.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,6 +30,18 @@ async function buildIcons(iconsExportPath) {
   // Read the icons export JSON
   const iconsExport = JSON.parse(readFileSync(iconsExportPath, 'utf8'));
   console.log(`📦 Processing ${iconsExport.totalIcons} icons from ${iconsExport.exportedAt}`);
+  
+  // Get version information using the version utils
+  const versionUtils = new VersionUtils(join(__dirname, '..'));
+  const versionInfo = versionUtils.getVersionForNewIcons();
+  const currentVersion = versionInfo.version;
+  const currentDate = new Date().toISOString();
+  
+  console.log(`📅 Version for new icons: ${currentVersion} (${versionInfo.source})`);
+  if (versionInfo.isEstimated) {
+    console.log(`⚠️  Note: This is an estimated version based on pending changesets`);
+  }
+  console.log(`📅 Build date: ${currentDate}`);
   
   const iconsDir = join(__dirname, '..', 'packages', 'react', 'src', 'icons');
   const distDir = join(__dirname, '..', 'packages', 'react', 'dist');
@@ -49,6 +63,24 @@ async function buildIcons(iconsExportPath) {
   const metadata = [];
   const exports = [];
   const namingConflicts = [];
+  
+  // Load existing metadata to track version history
+  const existingMetadataPath = join(distDir, 'icons.meta.json');
+  let existingMetadata = [];
+  if (existsSync(existingMetadataPath)) {
+    try {
+      existingMetadata = JSON.parse(readFileSync(existingMetadataPath, 'utf8'));
+      console.log(`📋 Loaded existing metadata for ${existingMetadata.length} icon variants`);
+    } catch (error) {
+      console.log('⚠️  Could not load existing metadata, starting fresh');
+    }
+  }
+  
+  // Create a map of existing metadata by component name for quick lookup
+  const existingMetadataMap = new Map();
+  existingMetadata.forEach(item => {
+    existingMetadataMap.set(item.componentName, item);
+  });
   
   // Load previous name mapping to maintain backward compatibility
   const previousNameMappingPath = join(distDir, 'name_map.json');
@@ -172,13 +204,47 @@ async function buildIcons(iconsExportPath) {
         }
       }
       
+      // Check if this is a new icon or an existing one
+      const existingItem = existingMetadataMap.get(componentName);
+      const isNewIcon = !existingItem;
+      
+      // Determine version and date information
+      let versionAdded, dateAdded, lastModified;
+      
+      if (isNewIcon) {
+        // New icon - use current version and date
+        versionAdded = currentVersion;
+        dateAdded = currentDate;
+        lastModified = currentDate;
+        console.log(`  🆕 New icon: ${componentName} (v${currentVersion})`);
+      } else {
+        // Existing icon - preserve original version/date, update last modified
+        versionAdded = existingItem.versionAdded || currentVersion;
+        dateAdded = existingItem.dateAdded || currentDate;
+        lastModified = currentDate;
+        
+        // Check if the icon was actually modified (compare SVG content)
+        const currentSvgHash = createHash('md5').update(optimizedSvg).digest('hex');
+        const existingSvgHash = existingItem.svgHash;
+        
+        if (existingSvgHash && currentSvgHash !== existingSvgHash) {
+          console.log(`  🔄 Modified icon: ${componentName} (last modified: v${currentVersion})`);
+        } else {
+          console.log(`  ✅ Unchanged icon: ${componentName}`);
+        }
+      }
+      
       // Add to metadata
       metadata.push({
         name: uniqueSlug,
         variant,
         tags: parseTags(icon.tags),
         componentName,
-        fileName: `${fileName}.tsx`
+        fileName: `${fileName}.tsx`,
+        versionAdded,
+        dateAdded,
+        lastModified,
+        svgHash: createHash('md5').update(optimizedSvg).digest('hex')
       });
     }
   }
@@ -218,10 +284,22 @@ export type { IconProps } from './types';
     process.exit(1);
   }
   
-  console.log(`✅ Generated ${metadata.length} icon components`);
-  console.log(`📁 Components written to: ${iconsDir}`);
-  console.log(`📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`🗺️  Name mapping written to: ${join(distDir, 'name_map.json')}`);
+  // Calculate summary statistics
+  const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
+  const modifiedIcons = metadata.filter(item => {
+    const existing = existingMetadataMap.get(item.componentName);
+    return existing && existing.svgHash && item.svgHash !== existing.svgHash;
+  }).length;
+  const unchangedIcons = metadata.length - newIcons - modifiedIcons;
+  
+  console.log(`\n📊 Build Summary:`);
+  console.log(`  ✅ Generated ${metadata.length} icon components`);
+  console.log(`  🆕 New icons: ${newIcons}`);
+  console.log(`  🔄 Modified icons: ${modifiedIcons}`);
+  console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
+  console.log(`  📁 Components written to: ${iconsDir}`);
+  console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
+  console.log(`  🗺️  Name mapping written to: ${join(distDir, 'name_map.json')}`);
 }
 
 // Main execution

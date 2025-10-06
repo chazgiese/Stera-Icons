@@ -217,6 +217,32 @@ For contributors and development:
 - **Tree-shaking**: Enabled for optimal bundle sizes
 - **TypeScript**: Full type safety and IntelliSense
 
+### Adding New Icons
+
+When adding new icons, follow the **changeset-first workflow** to ensure proper version metadata:
+
+1. **Create changeset first**: `pnpm changeset`
+2. **Add icons** to `icons-export.json`
+3. **Build icons**: `node scripts/build-icons.js icons-export.json`
+4. **Process changeset**: `pnpm changeset version` (when ready to release)
+
+📖 **Detailed workflow**: See [`docs/CHANGESET_WORKFLOW.md`](docs/CHANGESET_WORKFLOW.md) for complete instructions.
+📋 **Quick reference**: See [`docs/QUICK_REFERENCE.md`](docs/QUICK_REFERENCE.md) for essential commands.
+
+### Version Metadata
+
+Each icon includes comprehensive metadata:
+- **Version added**: When the icon was first introduced
+- **Date added**: Exact timestamp of addition
+- **Last modified**: When the icon was last updated
+- **SVG hash**: For detecting actual changes
+
+Use the metadata utilities to explore icon history:
+```bash
+node scripts/metadata-utils.js summary
+node scripts/version-utils.js info
+```
+
 ## License
 
 MIT © [Chaz Giese](https://github.com/chazgiese)

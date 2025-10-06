@@ -1,0 +1,37 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const TrendDownBold = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M22.5 20a1 1 0 0 0 .942-.667l.014-.04.016-.062A1 1 0 0 0 23.5 19v-6a1 1 0 1 0-2 0v3.586l-7.793-7.793a1 1 0 0 0-1.414 0L9.5 11.586 2.207 4.293A1 1 0 1 0 .793 5.707l8 8 .073.066a1 1 0 0 0 1.341-.066L13 10.914 20.086 18H16.5a1 1 0 0 0 0 2z"
+        />
+      </svg>
+    ))
+);
+TrendDownBold.displayName = "TrendDownBold";
+export { TrendDownBold };
