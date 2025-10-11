@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.0.1
+
+### Patch Changes
+
+- 5b13d1a: Fix icon version metadata for more accurate version tracking history
+
 ## 5.0.0
 
 ### Major Changes
