@@ -219,10 +219,11 @@ async function buildIcons(iconsExportPath) {
       }
       
       // Check if this is a new icon or an existing one
-      // Look up by the old componentName format for backward compatibility, but also try name+variant
+      // Primary lookup by name+variant (current metadata structure uses wrapper componentName for all variants)
+      // Fallback to componentName lookup for backward compatibility with old metadata structure
       const lookupKey = `${uniqueSlug}-${variant}`;
-      const existingItem = existingMetadataMap.get(componentName) || 
-                          existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant);
+      const existingItem = existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant) ||
+                          existingMetadataMap.get(componentName);
       const isNewIcon = !existingItem;
       
       // Determine version and date information
