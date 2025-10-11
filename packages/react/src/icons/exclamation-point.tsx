@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ExclamationPoint = memo(
+const ExclamationPointIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ExclamationPoint = memo(
       </svg>
     ))
 );
-ExclamationPoint.displayName = "ExclamationPoint";
-export { ExclamationPoint };
+ExclamationPointIcon.displayName = "ExclamationPointIcon";
+export { ExclamationPointIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Matcha = memo(
+const MatchaIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const Matcha = memo(
       </svg>
     ))
 );
-Matcha.displayName = "Matcha";
-export { Matcha };
+MatchaIcon.displayName = "MatchaIcon";
+export { MatchaIcon };

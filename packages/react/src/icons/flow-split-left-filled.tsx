@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FlowSplitLeftFilled = memo(
+const FlowSplitLeftIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const FlowSplitLeftFilled = memo(
       </svg>
     ))
 );
-FlowSplitLeftFilled.displayName = "FlowSplitLeftFilled";
-export { FlowSplitLeftFilled };
+FlowSplitLeftIconFilled.displayName = "FlowSplitLeftIconFilled";
+export { FlowSplitLeftIconFilled };

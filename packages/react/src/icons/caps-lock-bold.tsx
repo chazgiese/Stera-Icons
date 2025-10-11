@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CapsLockBold = memo(
+const CapsLockIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CapsLockBold = memo(
       </svg>
     ))
 );
-CapsLockBold.displayName = "CapsLockBold";
-export { CapsLockBold };
+CapsLockIconBold.displayName = "CapsLockIconBold";
+export { CapsLockIconBold };

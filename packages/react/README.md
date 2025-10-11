@@ -37,37 +37,43 @@ The package includes 728+ icons across outline and filled variants, but thanks t
 ### Basic Usage
 
 ```tsx
-import { Search, Heart, Star, Cog, User, Home, Envalope, Phone, Calendar, Download } from 'stera-icons';
+import { SearchIcon, HeartIcon, StarIcon, CogIcon, UserIcon, HomeIcon, MailIcon, PhoneIcon, CalendarIcon, DownloadIcon } from 'stera-icons';
 
 function App() {
   return (
     <div>
-      <Search size={24} color="#646cff" aria-label="Search" />
-      <Heart size={20} color="red" />
-      <Star size={32} />
-      <Cog size={24} aria-label="Settings" />
-      <User size={20} />
-      <Home size={24} />
-      <Envalope size={20} aria-label="Email" />
-      <Phone size={24} />
-      <Calendar size={20} />
-      <Download size={24} />
+      <SearchIcon size={24} color="#646cff" aria-label="Search" />
+      <HeartIcon size={20} color="red" />
+      <StarIcon size={32} />
+      <CogIcon size={24} aria-label="Settings" />
+      <UserIcon size={20} />
+      <HomeIcon size={24} />
+      <MailIcon size={20} aria-label="Email" />
+      <PhoneIcon size={24} />
+      <CalendarIcon size={20} />
+      <DownloadIcon size={24} />
     </div>
   );
 }
 ```
 
-### Per-icon Imports (Recommended)
+### With Variants
 
 ```tsx
-import SearchIcon from 'stera-icons/search';
-import HeartFilled from 'stera-icons/heart-filled';
+import { SearchIcon, HeartIcon } from 'stera-icons';
 
 function App() {
   return (
     <div>
-      <SearchIcon size={24} />
-      <HeartFilled size={20} color="red" />
+      {/* Use variant prop on wrapper component */}
+      <SearchIcon variant="regular" size={24} />
+      <SearchIcon variant="bold" size={24} />
+      <SearchIcon variant="filled" size={24} />
+      
+      {/* Or import specific variants directly */}
+      <HeartIcon size={20} />         {/* Regular variant */}
+      <HeartIconBold size={20} />     {/* Bold variant */}
+      <HeartIconFilled size={20} />   {/* Filled variant */}
     </div>
   );
 }
@@ -86,12 +92,12 @@ function App() {
 
 ## Icon Naming
 
-Icons follow these naming patterns:
+All icon components are suffixed with "Icon" to prevent naming conflicts with your existing components:
 
-- **Settings**: `Cog` (gear icon)
-- **Mail/Email**: `Envalope` (envelope icon)
-- **Filled variants**: Add `Filled` suffix (e.g., `HeartFilled`, `StarFilled`)
-- **Default variants**: Use the base name (e.g., `Heart`, `Star`)
+- **Pattern**: `{Name}Icon` (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`)
+- **Bold variants**: `{Name}IconBold` (e.g., `SearchIconBold`, `HeartIconBold`)
+- **Filled variants**: `{Name}IconFilled` (e.g., `SearchIconFilled`, `HeartIconFilled`)
+- **Regular variants**: `{Name}Icon` (e.g., `SearchIcon`, `HeartIcon`)
 
 ## API
 
@@ -113,12 +119,12 @@ All icons accept these props:
 ### Styling with CSS
 
 ```tsx
-import { Search } from 'stera-icons';
+import { SearchIcon } from 'stera-icons';
 
 function SearchButton() {
   return (
     <button className="search-btn">
-      <Search size={20} className="search-icon" />
+      <SearchIcon size={20} className="search-icon" />
       Search
     </button>
   );
@@ -151,10 +157,10 @@ function SearchButton() {
 import { useState } from 'react';
 import * as Icons from 'stera-icons';
 
-const iconNames = ['Search', 'Heart', 'Star', 'Cog', 'User'] as const;
+const iconNames = ['SearchIcon', 'HeartIcon', 'StarIcon', 'CogIcon', 'UserIcon'] as const;
 
 function IconSelector() {
-  const [selectedIcon, setSelectedIcon] = useState('Search');
+  const [selectedIcon, setSelectedIcon] = useState('SearchIcon');
   
   const IconComponent = Icons[selectedIcon as keyof typeof Icons];
   

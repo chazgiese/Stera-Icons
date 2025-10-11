@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const KeyBold = memo(
+const KeyIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const KeyBold = memo(
       </svg>
     ))
 );
-KeyBold.displayName = "KeyBold";
-export { KeyBold };
+KeyIconBold.displayName = "KeyIconBold";
+export { KeyIconBold };

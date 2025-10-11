@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ImageLandscape = memo(
+const ImageLandscapeIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -36,5 +36,5 @@ const ImageLandscape = memo(
       </svg>
     ))
 );
-ImageLandscape.displayName = "ImageLandscape";
-export { ImageLandscape };
+ImageLandscapeIcon.displayName = "ImageLandscapeIcon";
+export { ImageLandscapeIcon };

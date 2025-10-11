@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BladeSword = memo(
+const BladeSwordIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BladeSword = memo(
       </svg>
     ))
 );
-BladeSword.displayName = "BladeSword";
-export { BladeSword };
+BladeSwordIcon.displayName = "BladeSwordIcon";
+export { BladeSwordIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PercentSquareBold = memo(
+const PercentSquareIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const PercentSquareBold = memo(
       </svg>
     ))
 );
-PercentSquareBold.displayName = "PercentSquareBold";
-export { PercentSquareBold };
+PercentSquareIconBold.displayName = "PercentSquareIconBold";
+export { PercentSquareIconBold };

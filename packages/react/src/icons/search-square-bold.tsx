@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SearchSquareBold = memo(
+const SearchSquareIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const SearchSquareBold = memo(
       </svg>
     ))
 );
-SearchSquareBold.displayName = "SearchSquareBold";
-export { SearchSquareBold };
+SearchSquareIconBold.displayName = "SearchSquareIconBold";
+export { SearchSquareIconBold };

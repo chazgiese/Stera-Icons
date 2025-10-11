@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PawPrint = memo(
+const PawPrintIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const PawPrint = memo(
       </svg>
     ))
 );
-PawPrint.displayName = "PawPrint";
-export { PawPrint };
+PawPrintIcon.displayName = "PawPrintIcon";
+export { PawPrintIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CompassFilled = memo(
+const CompassIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CompassFilled = memo(
       </svg>
     ))
 );
-CompassFilled.displayName = "CompassFilled";
-export { CompassFilled };
+CompassIconFilled.displayName = "CompassIconFilled";
+export { CompassIconFilled };

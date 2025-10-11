@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GitCommitFilled = memo(
+const GitCommitIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const GitCommitFilled = memo(
       </svg>
     ))
 );
-GitCommitFilled.displayName = "GitCommitFilled";
-export { GitCommitFilled };
+GitCommitIconFilled.displayName = "GitCommitIconFilled";
+export { GitCommitIconFilled };

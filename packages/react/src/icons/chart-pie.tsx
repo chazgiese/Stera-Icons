@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChartPie = memo(
+const ChartPieIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const ChartPie = memo(
       </svg>
     ))
 );
-ChartPie.displayName = "ChartPie";
-export { ChartPie };
+ChartPieIcon.displayName = "ChartPieIcon";
+export { ChartPieIcon };

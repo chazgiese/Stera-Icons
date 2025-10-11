@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CircleFourPlusBold = memo(
+const CircleFourPlusIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -45,5 +45,5 @@ const CircleFourPlusBold = memo(
       </svg>
     ))
 );
-CircleFourPlusBold.displayName = "CircleFourPlusBold";
-export { CircleFourPlusBold };
+CircleFourPlusIconBold.displayName = "CircleFourPlusIconBold";
+export { CircleFourPlusIconBold };

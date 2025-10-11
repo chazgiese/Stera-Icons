@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FolderOpenFilled = memo(
+const FolderOpenIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -42,5 +42,5 @@ const FolderOpenFilled = memo(
       </svg>
     ))
 );
-FolderOpenFilled.displayName = "FolderOpenFilled";
-export { FolderOpenFilled };
+FolderOpenIconFilled.displayName = "FolderOpenIconFilled";
+export { FolderOpenIconFilled };

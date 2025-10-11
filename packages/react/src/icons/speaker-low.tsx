@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SpeakerLow = memo(
+const SpeakerLowIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const SpeakerLow = memo(
       </svg>
     ))
 );
-SpeakerLow.displayName = "SpeakerLow";
-export { SpeakerLow };
+SpeakerLowIcon.displayName = "SpeakerLowIcon";
+export { SpeakerLowIcon };

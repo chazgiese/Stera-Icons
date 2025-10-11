@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SpeakerMediumBold = memo(
+const SpeakerMediumIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const SpeakerMediumBold = memo(
       </svg>
     ))
 );
-SpeakerMediumBold.displayName = "SpeakerMediumBold";
-export { SpeakerMediumBold };
+SpeakerMediumIconBold.displayName = "SpeakerMediumIconBold";
+export { SpeakerMediumIconBold };

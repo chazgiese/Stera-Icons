@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CurrencyCircleDollar = memo(
+const CurrencyCircleDollarIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CurrencyCircleDollar = memo(
       </svg>
     ))
 );
-CurrencyCircleDollar.displayName = "CurrencyCircleDollar";
-export { CurrencyCircleDollar };
+CurrencyCircleDollarIcon.displayName = "CurrencyCircleDollarIcon";
+export { CurrencyCircleDollarIcon };

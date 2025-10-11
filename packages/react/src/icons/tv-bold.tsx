@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TvBold = memo(
+const TvIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const TvBold = memo(
       </svg>
     ))
 );
-TvBold.displayName = "TvBold";
-export { TvBold };
+TvIconBold.displayName = "TvIconBold";
+export { TvIconBold };

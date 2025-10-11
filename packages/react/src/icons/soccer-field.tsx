@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SoccerField = memo(
+const SoccerFieldIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const SoccerField = memo(
       </svg>
     ))
 );
-SoccerField.displayName = "SoccerField";
-export { SoccerField };
+SoccerFieldIcon.displayName = "SoccerFieldIcon";
+export { SoccerFieldIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HeartBold = memo(
+const HeartIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const HeartBold = memo(
       </svg>
     ))
 );
-HeartBold.displayName = "HeartBold";
-export { HeartBold };
+HeartIconBold.displayName = "HeartIconBold";
+export { HeartIconBold };

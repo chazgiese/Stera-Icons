@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MoonCrescent = memo(
+const MoonCrescentIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const MoonCrescent = memo(
       </svg>
     ))
 );
-MoonCrescent.displayName = "MoonCrescent";
-export { MoonCrescent };
+MoonCrescentIcon.displayName = "MoonCrescentIcon";
+export { MoonCrescentIcon };

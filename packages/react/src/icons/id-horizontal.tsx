@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const IdHorizontal = memo(
+const IdHorizontalIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -45,5 +45,5 @@ const IdHorizontal = memo(
       </svg>
     ))
 );
-IdHorizontal.displayName = "IdHorizontal";
-export { IdHorizontal };
+IdHorizontalIcon.displayName = "IdHorizontalIcon";
+export { IdHorizontalIcon };

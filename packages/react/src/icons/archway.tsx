@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Archway = memo(
+const ArchwayIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const Archway = memo(
       </svg>
     ))
 );
-Archway.displayName = "Archway";
-export { Archway };
+ArchwayIcon.displayName = "ArchwayIcon";
+export { ArchwayIcon };

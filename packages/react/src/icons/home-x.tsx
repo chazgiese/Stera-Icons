@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HomeX = memo(
+const HomeXIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const HomeX = memo(
       </svg>
     ))
 );
-HomeX.displayName = "HomeX";
-export { HomeX };
+HomeXIcon.displayName = "HomeXIcon";
+export { HomeXIcon };

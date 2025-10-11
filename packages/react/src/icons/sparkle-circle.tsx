@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SparkleCircle = memo(
+const SparkleCircleIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const SparkleCircle = memo(
       </svg>
     ))
 );
-SparkleCircle.displayName = "SparkleCircle";
-export { SparkleCircle };
+SparkleCircleIcon.displayName = "SparkleCircleIcon";
+export { SparkleCircleIcon };

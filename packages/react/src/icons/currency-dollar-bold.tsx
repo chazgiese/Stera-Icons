@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CurrencyDollarBold = memo(
+const CurrencyDollarIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const CurrencyDollarBold = memo(
       </svg>
     ))
 );
-CurrencyDollarBold.displayName = "CurrencyDollarBold";
-export { CurrencyDollarBold };
+CurrencyDollarIconBold.displayName = "CurrencyDollarIconBold";
+export { CurrencyDollarIconBold };

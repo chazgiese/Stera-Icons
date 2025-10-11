@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AlignHorizontalLeftBold = memo(
+const AlignHorizontalLeftIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const AlignHorizontalLeftBold = memo(
       </svg>
     ))
 );
-AlignHorizontalLeftBold.displayName = "AlignHorizontalLeftBold";
-export { AlignHorizontalLeftBold };
+AlignHorizontalLeftIconBold.displayName = "AlignHorizontalLeftIconBold";
+export { AlignHorizontalLeftIconBold };

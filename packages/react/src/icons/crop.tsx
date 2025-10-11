@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Crop = memo(
+const CropIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const Crop = memo(
       </svg>
     ))
 );
-Crop.displayName = "Crop";
-export { Crop };
+CropIcon.displayName = "CropIcon";
+export { CropIcon };

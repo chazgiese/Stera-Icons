@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ThermometerMediumFilled = memo(
+const ThermometerMediumIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const ThermometerMediumFilled = memo(
       </svg>
     ))
 );
-ThermometerMediumFilled.displayName = "ThermometerMediumFilled";
-export { ThermometerMediumFilled };
+ThermometerMediumIconFilled.displayName = "ThermometerMediumIconFilled";
+export { ThermometerMediumIconFilled };

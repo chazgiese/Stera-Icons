@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const WatchBold = memo(
+const WatchIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const WatchBold = memo(
       </svg>
     ))
 );
-WatchBold.displayName = "WatchBold";
-export { WatchBold };
+WatchIconBold.displayName = "WatchIconBold";
+export { WatchIconBold };

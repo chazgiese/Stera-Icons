@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Wand = memo(
+const WandIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const Wand = memo(
       </svg>
     ))
 );
-Wand.displayName = "Wand";
-export { Wand };
+WandIcon.displayName = "WandIcon";
+export { WandIcon };

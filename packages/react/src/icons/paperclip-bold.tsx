@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PaperclipBold = memo(
+const PaperclipIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const PaperclipBold = memo(
       </svg>
     ))
 );
-PaperclipBold.displayName = "PaperclipBold";
-export { PaperclipBold };
+PaperclipIconBold.displayName = "PaperclipIconBold";
+export { PaperclipIconBold };

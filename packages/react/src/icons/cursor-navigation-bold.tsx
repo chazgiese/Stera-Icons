@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CursorNavigationBold = memo(
+const CursorNavigationIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CursorNavigationBold = memo(
       </svg>
     ))
 );
-CursorNavigationBold.displayName = "CursorNavigationBold";
-export { CursorNavigationBold };
+CursorNavigationIconBold.displayName = "CursorNavigationIconBold";
+export { CursorNavigationIconBold };

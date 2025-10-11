@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CameraBold = memo(
+const CameraIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const CameraBold = memo(
       </svg>
     ))
 );
-CameraBold.displayName = "CameraBold";
-export { CameraBold };
+CameraIconBold.displayName = "CameraIconBold";
+export { CameraIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MailOpenFilled = memo(
+const MailOpenIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const MailOpenFilled = memo(
       </svg>
     ))
 );
-MailOpenFilled.displayName = "MailOpenFilled";
-export { MailOpenFilled };
+MailOpenIconFilled.displayName = "MailOpenIconFilled";
+export { MailOpenIconFilled };

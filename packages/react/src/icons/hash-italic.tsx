@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HashItalic = memo(
+const HashItalicIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const HashItalic = memo(
       </svg>
     ))
 );
-HashItalic.displayName = "HashItalic";
-export { HashItalic };
+HashItalicIcon.displayName = "HashItalicIcon";
+export { HashItalicIcon };

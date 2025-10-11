@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HandWaveFilled = memo(
+const HandWaveIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const HandWaveFilled = memo(
       </svg>
     ))
 );
-HandWaveFilled.displayName = "HandWaveFilled";
-export { HandWaveFilled };
+HandWaveIconFilled.displayName = "HandWaveIconFilled";
+export { HandWaveIconFilled };

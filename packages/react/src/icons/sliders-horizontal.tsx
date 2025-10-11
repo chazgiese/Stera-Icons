@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SlidersHorizontal = memo(
+const SlidersHorizontalIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const SlidersHorizontal = memo(
       </svg>
     ))
 );
-SlidersHorizontal.displayName = "SlidersHorizontal";
-export { SlidersHorizontal };
+SlidersHorizontalIcon.displayName = "SlidersHorizontalIcon";
+export { SlidersHorizontalIcon };

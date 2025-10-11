@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CubicGraphFilled = memo(
+const CubicGraphIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const CubicGraphFilled = memo(
       </svg>
     ))
 );
-CubicGraphFilled.displayName = "CubicGraphFilled";
-export { CubicGraphFilled };
+CubicGraphIconFilled.displayName = "CubicGraphIconFilled";
+export { CubicGraphIconFilled };

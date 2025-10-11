@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ShieldSlashBold = memo(
+const ShieldSlashIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ShieldSlashBold = memo(
       </svg>
     ))
 );
-ShieldSlashBold.displayName = "ShieldSlashBold";
-export { ShieldSlashBold };
+ShieldSlashIconBold.displayName = "ShieldSlashIconBold";
+export { ShieldSlashIconBold };

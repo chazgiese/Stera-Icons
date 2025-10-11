@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Microscope = memo(
+const MicroscopeIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const Microscope = memo(
       </svg>
     ))
 );
-Microscope.displayName = "Microscope";
-export { Microscope };
+MicroscopeIcon.displayName = "MicroscopeIcon";
+export { MicroscopeIcon };

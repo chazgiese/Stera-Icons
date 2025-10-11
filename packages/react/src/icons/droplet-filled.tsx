@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DropletFilled = memo(
+const DropletIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const DropletFilled = memo(
       </svg>
     ))
 );
-DropletFilled.displayName = "DropletFilled";
-export { DropletFilled };
+DropletIconFilled.displayName = "DropletIconFilled";
+export { DropletIconFilled };

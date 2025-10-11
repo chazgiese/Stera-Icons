@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
-import { SearchFilled, HeartFilled, Star, Cog, User, Home, Mail, Phone, Calendar, Download } from 'stera-icons';
+import { SearchIcon, HeartIcon, StarIcon, CogIcon, UserIcon, HomeIcon, MailIcon, PhoneIcon, CalendarIcon, DownloadIcon } from 'stera-icons';
 
 // Mock data for demonstration - in real usage, this would come from icons.meta.json
 const mockIcons = [
-  { name: 'search', variant: 'outline', component: SearchFilled, tags: ['search', 'find', 'magnify'] },
-  { name: 'heart', variant: 'outline', component: HeartFilled, tags: ['heart', 'love', 'favorite'] },
-  { name: 'star', variant: 'outline', component: Star, tags: ['star', 'rating', 'favorite'] },
-  { name: 'cog', variant: 'outline', component: Cog, tags: ['settings', 'gear', 'preferences'] },
-  { name: 'user', variant: 'outline', component: User, tags: ['user', 'person', 'profile'] },
-  { name: 'home', variant: 'outline', component: Home, tags: ['home', 'house', 'main'] },
-  { name: 'mail', variant: 'outline', component: Mail, tags: ['mail', 'email', 'message'] },
-  { name: 'phone', variant: 'outline', component: Phone, tags: ['phone', 'call', 'contact'] },
-  { name: 'calendar', variant: 'outline', component: Calendar, tags: ['calendar', 'date', 'schedule'] },
-  { name: 'download', variant: 'outline', component: Download, tags: ['download', 'save', 'get'] },
+  { name: 'search', variant: 'outline', component: SearchIcon, tags: ['search', 'find', 'magnify'] },
+  { name: 'heart', variant: 'outline', component: HeartIcon, tags: ['heart', 'love', 'favorite'] },
+  { name: 'star', variant: 'outline', component: StarIcon, tags: ['star', 'rating', 'favorite'] },
+  { name: 'cog', variant: 'outline', component: CogIcon, tags: ['settings', 'gear', 'preferences'] },
+  { name: 'user', variant: 'outline', component: UserIcon, tags: ['user', 'person', 'profile'] },
+  { name: 'home', variant: 'outline', component: HomeIcon, tags: ['home', 'house', 'main'] },
+  { name: 'mail', variant: 'outline', component: MailIcon, tags: ['mail', 'email', 'message'] },
+  { name: 'phone', variant: 'outline', component: PhoneIcon, tags: ['phone', 'call', 'contact'] },
+  { name: 'calendar', variant: 'outline', component: CalendarIcon, tags: ['calendar', 'date', 'schedule'] },
+  { name: 'download', variant: 'outline', component: DownloadIcon, tags: ['download', 'save', 'get'] },
 ];
 
 function App() {
@@ -100,14 +100,17 @@ function App() {
         <h2>Usage Examples</h2>
         <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', fontFamily: 'monospace' }}>
           <pre>{`// Import individual icons
-import { Search, Heart, Star } from 'stera-icons';
+import { SearchIcon, HeartIcon, StarIcon } from 'stera-icons';
 
 // Use with props
-<Search size={24} color="#646cff" aria-label="Search" />
+<SearchIcon size={24} color="#646cff" aria-label="Search" />
 
-// Tree-shakeable imports
-import SearchIcon from 'stera-icons/search';
-import HeartFilled from 'stera-icons/heart-filled';
+// With variant prop (wrapper component)
+<SearchIcon variant="filled" size={24} />
+<SearchIcon variant="bold" size={24} />
+
+// Or import specific variants directly
+import { SearchIconFilled, HeartIconBold } from 'stera-icons';
 
 // Accessibility
 <SearchIcon aria-hidden="true" /> // Decorative

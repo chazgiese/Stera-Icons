@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TrendDown = memo(
+const TrendDownIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TrendDown = memo(
       </svg>
     ))
 );
-TrendDown.displayName = "TrendDown";
-export { TrendDown };
+TrendDownIcon.displayName = "TrendDownIcon";
+export { TrendDownIcon };

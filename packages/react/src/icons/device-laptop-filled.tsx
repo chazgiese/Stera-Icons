@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DeviceLaptopFilled = memo(
+const DeviceLaptopIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const DeviceLaptopFilled = memo(
       </svg>
     ))
 );
-DeviceLaptopFilled.displayName = "DeviceLaptopFilled";
-export { DeviceLaptopFilled };
+DeviceLaptopIconFilled.displayName = "DeviceLaptopIconFilled";
+export { DeviceLaptopIconFilled };

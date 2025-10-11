@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const StopCircleFilled = memo(
+const StopCircleIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const StopCircleFilled = memo(
       </svg>
     ))
 );
-StopCircleFilled.displayName = "StopCircleFilled";
-export { StopCircleFilled };
+StopCircleIconFilled.displayName = "StopCircleIconFilled";
+export { StopCircleIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CurveBezierBold = memo(
+const CurveBezierIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CurveBezierBold = memo(
       </svg>
     ))
 );
-CurveBezierBold.displayName = "CurveBezierBold";
-export { CurveBezierBold };
+CurveBezierIconBold.displayName = "CurveBezierIconBold";
+export { CurveBezierIconBold };

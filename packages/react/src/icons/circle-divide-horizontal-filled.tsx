@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CircleDivideHorizontalFilled = memo(
+const CircleDivideHorizontalIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,6 @@ const CircleDivideHorizontalFilled = memo(
       </svg>
     ))
 );
-CircleDivideHorizontalFilled.displayName = "CircleDivideHorizontalFilled";
-export { CircleDivideHorizontalFilled };
+CircleDivideHorizontalIconFilled.displayName =
+  "CircleDivideHorizontalIconFilled";
+export { CircleDivideHorizontalIconFilled };

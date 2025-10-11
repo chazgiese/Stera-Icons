@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const KeyholeBold = memo(
+const KeyholeIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const KeyholeBold = memo(
       </svg>
     ))
 );
-KeyholeBold.displayName = "KeyholeBold";
-export { KeyholeBold };
+KeyholeIconBold.displayName = "KeyholeIconBold";
+export { KeyholeIconBold };

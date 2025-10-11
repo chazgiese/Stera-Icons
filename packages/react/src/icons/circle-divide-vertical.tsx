@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CircleDivideVertical = memo(
+const CircleDivideVerticalIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CircleDivideVertical = memo(
       </svg>
     ))
 );
-CircleDivideVertical.displayName = "CircleDivideVertical";
-export { CircleDivideVertical };
+CircleDivideVerticalIcon.displayName = "CircleDivideVerticalIcon";
+export { CircleDivideVerticalIcon };

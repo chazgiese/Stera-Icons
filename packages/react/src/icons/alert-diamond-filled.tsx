@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AlertDiamondFilled = memo(
+const AlertDiamondIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const AlertDiamondFilled = memo(
       </svg>
     ))
 );
-AlertDiamondFilled.displayName = "AlertDiamondFilled";
-export { AlertDiamondFilled };
+AlertDiamondIconFilled.displayName = "AlertDiamondIconFilled";
+export { AlertDiamondIconFilled };

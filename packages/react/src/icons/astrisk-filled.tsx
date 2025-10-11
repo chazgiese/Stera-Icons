@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AstriskFilled = memo(
+const AstriskIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const AstriskFilled = memo(
       </svg>
     ))
 );
-AstriskFilled.displayName = "AstriskFilled";
-export { AstriskFilled };
+AstriskIconFilled.displayName = "AstriskIconFilled";
+export { AstriskIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DragHandleBold = memo(
+const DragHandleIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const DragHandleBold = memo(
       </svg>
     ))
 );
-DragHandleBold.displayName = "DragHandleBold";
-export { DragHandleBold };
+DragHandleIconBold.displayName = "DragHandleIconBold";
+export { DragHandleIconBold };

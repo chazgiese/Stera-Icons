@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const QuestionMarkCircle = memo(
+const QuestionMarkCircleIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const QuestionMarkCircle = memo(
       </svg>
     ))
 );
-QuestionMarkCircle.displayName = "QuestionMarkCircle";
-export { QuestionMarkCircle };
+QuestionMarkCircleIcon.displayName = "QuestionMarkCircleIcon";
+export { QuestionMarkCircleIcon };

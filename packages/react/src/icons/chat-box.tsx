@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChatBox = memo(
+const ChatBoxIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const ChatBox = memo(
       </svg>
     ))
 );
-ChatBox.displayName = "ChatBox";
-export { ChatBox };
+ChatBoxIcon.displayName = "ChatBoxIcon";
+export { ChatBoxIcon };

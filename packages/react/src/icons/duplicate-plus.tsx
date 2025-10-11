@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DuplicatePlus = memo(
+const DuplicatePlusIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const DuplicatePlus = memo(
       </svg>
     ))
 );
-DuplicatePlus.displayName = "DuplicatePlus";
-export { DuplicatePlus };
+DuplicatePlusIcon.displayName = "DuplicatePlusIcon";
+export { DuplicatePlusIcon };

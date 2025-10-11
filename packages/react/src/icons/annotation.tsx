@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Annotation = memo(
+const AnnotationIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const Annotation = memo(
       </svg>
     ))
 );
-Annotation.displayName = "Annotation";
-export { Annotation };
+AnnotationIcon.displayName = "AnnotationIcon";
+export { AnnotationIcon };

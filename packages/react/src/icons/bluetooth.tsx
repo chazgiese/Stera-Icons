@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Bluetooth = memo(
+const BluetoothIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const Bluetooth = memo(
       </svg>
     ))
 );
-Bluetooth.displayName = "Bluetooth";
-export { Bluetooth };
+BluetoothIcon.displayName = "BluetoothIcon";
+export { BluetoothIcon };

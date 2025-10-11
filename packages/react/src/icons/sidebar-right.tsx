@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SidebarRight = memo(
+const SidebarRightIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const SidebarRight = memo(
       </svg>
     ))
 );
-SidebarRight.displayName = "SidebarRight";
-export { SidebarRight };
+SidebarRightIcon.displayName = "SidebarRightIcon";
+export { SidebarRightIcon };

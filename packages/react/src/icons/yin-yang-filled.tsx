@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const YinYangFilled = memo(
+const YinYangIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const YinYangFilled = memo(
       </svg>
     ))
 );
-YinYangFilled.displayName = "YinYangFilled";
-export { YinYangFilled };
+YinYangIconFilled.displayName = "YinYangIconFilled";
+export { YinYangIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ThumbsDownBold = memo(
+const ThumbsDownIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const ThumbsDownBold = memo(
       </svg>
     ))
 );
-ThumbsDownBold.displayName = "ThumbsDownBold";
-export { ThumbsDownBold };
+ThumbsDownIconBold.displayName = "ThumbsDownIconBold";
+export { ThumbsDownIconBold };

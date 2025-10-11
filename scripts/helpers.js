@@ -36,9 +36,10 @@ export function toPascalCase(slug) {
 
 export function getComponentName(slug, variant) {
   const baseName = toPascalCase(slug);
-  if (variant === 'filled') return `${baseName}Filled`;
-  if (variant === 'bold') return `${baseName}Bold`;
-  return baseName; // regular variant gets no suffix
+  const iconName = `${baseName}Icon`;
+  if (variant === 'filled') return `${iconName}Filled`;
+  if (variant === 'bold') return `${iconName}Bold`;
+  return iconName; // regular variant with Icon suffix
 }
 
 export function getFileName(slug, variant) {

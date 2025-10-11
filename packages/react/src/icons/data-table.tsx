@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DataTable = memo(
+const DataTableIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const DataTable = memo(
       </svg>
     ))
 );
-DataTable.displayName = "DataTable";
-export { DataTable };
+DataTableIcon.displayName = "DataTableIcon";
+export { DataTableIcon };

@@ -1,0 +1,30 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CapsLockIcon as CapsLockIconRegular } from './caps-lock';
+import { CapsLockIconBold } from './caps-lock-bold';
+import { CapsLockIconFilled } from './caps-lock-filled';
+
+export type IconVariant = 'regular' | 'bold' | 'filled';
+
+export interface CapsLockIconProps extends IconProps {
+  variant?: IconVariant;
+}
+
+const CapsLockIcon = memo(forwardRef<SVGSVGElement, CapsLockIconProps>(({ 
+  variant = 'regular',
+  ...props 
+}, ref) => {
+  switch (variant) {
+    case 'filled':
+      return <CapsLockIconFilled ref={ref} {...props} />;
+    case 'bold':
+      return <CapsLockIconBold ref={ref} {...props} />;
+    case 'regular':
+    default:
+      return <CapsLockIconRegular ref={ref} {...props} />;
+  }
+}));
+
+CapsLockIcon.displayName = 'CapsLockIcon';
+
+export { CapsLockIcon };

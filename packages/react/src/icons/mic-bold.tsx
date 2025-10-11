@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MicBold = memo(
+const MicIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const MicBold = memo(
       </svg>
     ))
 );
-MicBold.displayName = "MicBold";
-export { MicBold };
+MicIconBold.displayName = "MicIconBold";
+export { MicIconBold };

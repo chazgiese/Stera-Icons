@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Browser = memo(
+const BrowserIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const Browser = memo(
       </svg>
     ))
 );
-Browser.displayName = "Browser";
-export { Browser };
+BrowserIcon.displayName = "BrowserIcon";
+export { BrowserIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CompassBold = memo(
+const CompassIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const CompassBold = memo(
       </svg>
     ))
 );
-CompassBold.displayName = "CompassBold";
-export { CompassBold };
+CompassIconBold.displayName = "CompassIconBold";
+export { CompassIconBold };

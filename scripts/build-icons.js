@@ -25,7 +25,7 @@ const svgoConfig = (await import('./svgo.config.js')).default;
 const svgrTemplate = (await import('./svgr-template.js')).default;
 
 async function buildIcons(iconsExportPath) {
-  console.log('🚀 Building Stera Icons...');
+  console.log('🚀 Building Stera Icons with wrapper components...');
   
   // Read the icons export JSON
   const iconsExport = JSON.parse(readFileSync(iconsExportPath, 'utf8'));
@@ -62,6 +62,7 @@ async function buildIcons(iconsExportPath) {
   const takenSlugs = new Set();
   const metadata = [];
   const exports = [];
+  const wrapperExports = [];
   const namingConflicts = [];
   
   // Load existing metadata to track version history
@@ -106,6 +107,9 @@ async function buildIcons(iconsExportPath) {
     }
   }
   
+  // Track icons by base name for wrapper generation
+  const iconsByBaseName = new Map();
+  
   // Process each icon
   for (const icon of iconsExport.icons) {
     const originalName = icon.name;
@@ -145,6 +149,9 @@ async function buildIcons(iconsExportPath) {
       }
     }
     
+    // Track variants for this icon
+    const iconVariants = [];
+    
     // Process each variant (Bold, Fill, Regular)
     for (const variantData of icon.variants) {
       
@@ -182,8 +189,12 @@ async function buildIcons(iconsExportPath) {
       const componentPath = join(iconsDir, `${fileName}.tsx`);
       writeFileSync(componentPath, componentCode);
       
-      // Add to exports
-      exports.push(`export { ${componentName} } from './icons/${fileName}';`);
+      // Add to exports with variant suffix to avoid conflicts with wrapper components
+      const individualComponentName = variant === 'regular' ? `${componentName}Regular` : componentName;
+      exports.push(`export { ${componentName} as ${individualComponentName} } from './icons/${fileName}';`);
+      
+      // Track variant for wrapper generation
+      iconVariants.push({ variant, componentName, fileName });
       
       // Add backward compatibility exports for renamed icons
       const previousSlug = previousNameMapping[originalName];
@@ -247,12 +258,71 @@ async function buildIcons(iconsExportPath) {
         svgHash: createHash('md5').update(optimizedSvg).digest('hex')
       });
     }
+    
+    // Store icon variants for wrapper generation
+    iconsByBaseName.set(uniqueSlug, {
+      baseName: uniqueSlug,
+      variants: iconVariants,
+      tags: parseTags(icon.tags)
+    });
+  }
+  
+  // Generate wrapper components
+  console.log('🔗 Generating wrapper components...');
+  for (const [baseName, iconData] of iconsByBaseName) {
+    const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
+    
+    console.log(`  📦 Creating wrapper for ${baseComponentName}`);
+    
+    // Generate wrapper component code
+    const wrapperCode = `import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ${baseComponentName} as ${baseComponentName}Regular } from './${baseName}';
+import { ${baseComponentName}Bold } from './${baseName}-bold';
+import { ${baseComponentName}Filled } from './${baseName}-filled';
+
+export type IconVariant = 'regular' | 'bold' | 'filled';
+
+export interface ${baseComponentName}Props extends IconProps {
+  variant?: IconVariant;
+}
+
+const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
+  variant = 'regular',
+  ...props 
+}, ref) => {
+  switch (variant) {
+    case 'filled':
+      return <${baseComponentName}Filled ref={ref} {...props} />;
+    case 'bold':
+      return <${baseComponentName}Bold ref={ref} {...props} />;
+    case 'regular':
+    default:
+      return <${baseComponentName}Regular ref={ref} {...props} />;
+  }
+}));
+
+${baseComponentName}.displayName = '${baseComponentName}';
+
+export { ${baseComponentName} };
+`;
+    
+    // Write wrapper component file
+    const wrapperPath = join(iconsDir, `${baseName}-wrapper.tsx`);
+    writeFileSync(wrapperPath, wrapperCode);
+    
+    // Add to wrapper exports
+    wrapperExports.push(`export { ${baseComponentName} } from './icons/${baseName}-wrapper';`);
   }
   
   // Generate main index file
   const indexContent = `// Auto-generated file - do not edit manually
 import type { IconProps } from './types';
 
+// Primary API: Wrapper components with variant props
+${wrapperExports.join('\n')}
+
+// Secondary API: Individual variant components (for advanced use cases)
 ${exports.join('\n')}
 
 export type { IconProps } from './types';
@@ -293,7 +363,8 @@ export type { IconProps } from './types';
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;
   
   console.log(`\n📊 Build Summary:`);
-  console.log(`  ✅ Generated ${metadata.length} icon components`);
+  console.log(`  ✅ Generated ${metadata.length} individual icon components`);
+  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);

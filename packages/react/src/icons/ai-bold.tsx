@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AiBold = memo(
+const AiIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -45,5 +45,5 @@ const AiBold = memo(
       </svg>
     ))
 );
-AiBold.displayName = "AiBold";
-export { AiBold };
+AiIconBold.displayName = "AiIconBold";
+export { AiIconBold };

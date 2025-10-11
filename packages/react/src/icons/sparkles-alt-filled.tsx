@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SparklesAltFilled = memo(
+const SparklesAltIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const SparklesAltFilled = memo(
       </svg>
     ))
 );
-SparklesAltFilled.displayName = "SparklesAltFilled";
-export { SparklesAltFilled };
+SparklesAltIconFilled.displayName = "SparklesAltIconFilled";
+export { SparklesAltIconFilled };

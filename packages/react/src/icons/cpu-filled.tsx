@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CpuFilled = memo(
+const CpuIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CpuFilled = memo(
       </svg>
     ))
 );
-CpuFilled.displayName = "CpuFilled";
-export { CpuFilled };
+CpuIconFilled.displayName = "CpuIconFilled";
+export { CpuIconFilled };

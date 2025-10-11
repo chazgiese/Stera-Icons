@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PaintPalette = memo(
+const PaintPaletteIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const PaintPalette = memo(
       </svg>
     ))
 );
-PaintPalette.displayName = "PaintPalette";
-export { PaintPalette };
+PaintPaletteIcon.displayName = "PaintPaletteIcon";
+export { PaintPaletteIcon };

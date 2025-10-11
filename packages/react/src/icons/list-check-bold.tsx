@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ListCheckBold = memo(
+const ListCheckIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ListCheckBold = memo(
       </svg>
     ))
 );
-ListCheckBold.displayName = "ListCheckBold";
-export { ListCheckBold };
+ListCheckIconBold.displayName = "ListCheckIconBold";
+export { ListCheckIconBold };

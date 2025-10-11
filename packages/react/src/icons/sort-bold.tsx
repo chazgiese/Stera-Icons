@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SortBold = memo(
+const SortIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const SortBold = memo(
       </svg>
     ))
 );
-SortBold.displayName = "SortBold";
-export { SortBold };
+SortIconBold.displayName = "SortIconBold";
+export { SortIconBold };

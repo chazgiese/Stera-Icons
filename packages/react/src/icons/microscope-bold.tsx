@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MicroscopeBold = memo(
+const MicroscopeIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -36,5 +36,5 @@ const MicroscopeBold = memo(
       </svg>
     ))
 );
-MicroscopeBold.displayName = "MicroscopeBold";
-export { MicroscopeBold };
+MicroscopeIconBold.displayName = "MicroscopeIconBold";
+export { MicroscopeIconBold };

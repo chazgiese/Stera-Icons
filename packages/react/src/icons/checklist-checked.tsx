@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChecklistChecked = memo(
+const ChecklistCheckedIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -49,5 +49,5 @@ const ChecklistChecked = memo(
       </svg>
     ))
 );
-ChecklistChecked.displayName = "ChecklistChecked";
-export { ChecklistChecked };
+ChecklistCheckedIcon.displayName = "ChecklistCheckedIcon";
+export { ChecklistCheckedIcon };

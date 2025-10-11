@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BellBold = memo(
+const BellIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BellBold = memo(
       </svg>
     ))
 );
-BellBold.displayName = "BellBold";
-export { BellBold };
+BellIconBold.displayName = "BellIconBold";
+export { BellIconBold };

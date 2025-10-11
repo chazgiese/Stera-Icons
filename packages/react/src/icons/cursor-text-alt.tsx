@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CursorTextAlt = memo(
+const CursorTextAltIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const CursorTextAlt = memo(
       </svg>
     ))
 );
-CursorTextAlt.displayName = "CursorTextAlt";
-export { CursorTextAlt };
+CursorTextAltIcon.displayName = "CursorTextAltIcon";
+export { CursorTextAltIcon };

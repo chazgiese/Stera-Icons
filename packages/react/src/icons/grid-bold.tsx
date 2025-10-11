@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GridBold = memo(
+const GridIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const GridBold = memo(
       </svg>
     ))
 );
-GridBold.displayName = "GridBold";
-export { GridBold };
+GridIconBold.displayName = "GridIconBold";
+export { GridIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GitCompare = memo(
+const GitCompareIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const GitCompare = memo(
       </svg>
     ))
 );
-GitCompare.displayName = "GitCompare";
-export { GitCompare };
+GitCompareIcon.displayName = "GitCompareIcon";
+export { GitCompareIcon };

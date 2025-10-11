@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MenuBold = memo(
+const MenuIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const MenuBold = memo(
       </svg>
     ))
 );
-MenuBold.displayName = "MenuBold";
-export { MenuBold };
+MenuIconBold.displayName = "MenuIconBold";
+export { MenuIconBold };

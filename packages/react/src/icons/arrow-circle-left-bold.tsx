@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ArrowCircleLeftBold = memo(
+const ArrowCircleLeftIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const ArrowCircleLeftBold = memo(
       </svg>
     ))
 );
-ArrowCircleLeftBold.displayName = "ArrowCircleLeftBold";
-export { ArrowCircleLeftBold };
+ArrowCircleLeftIconBold.displayName = "ArrowCircleLeftIconBold";
+export { ArrowCircleLeftIconBold };

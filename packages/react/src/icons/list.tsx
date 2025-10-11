@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const List = memo(
+const ListIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const List = memo(
       </svg>
     ))
 );
-List.displayName = "List";
-export { List };
+ListIcon.displayName = "ListIcon";
+export { ListIcon };

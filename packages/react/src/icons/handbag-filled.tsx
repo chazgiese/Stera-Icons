@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HandbagFilled = memo(
+const HandbagIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const HandbagFilled = memo(
       </svg>
     ))
 );
-HandbagFilled.displayName = "HandbagFilled";
-export { HandbagFilled };
+HandbagIconFilled.displayName = "HandbagIconFilled";
+export { HandbagIconFilled };

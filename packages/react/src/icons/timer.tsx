@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Timer = memo(
+const TimerIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const Timer = memo(
       </svg>
     ))
 );
-Timer.displayName = "Timer";
-export { Timer };
+TimerIcon.displayName = "TimerIcon";
+export { TimerIcon };

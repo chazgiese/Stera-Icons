@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BarcodeScanFilled = memo(
+const BarcodeScanIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const BarcodeScanFilled = memo(
       </svg>
     ))
 );
-BarcodeScanFilled.displayName = "BarcodeScanFilled";
-export { BarcodeScanFilled };
+BarcodeScanIconFilled.displayName = "BarcodeScanIconFilled";
+export { BarcodeScanIconFilled };

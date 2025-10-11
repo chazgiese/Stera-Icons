@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CircleContrastFilled = memo(
+const CircleContrastIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CircleContrastFilled = memo(
       </svg>
     ))
 );
-CircleContrastFilled.displayName = "CircleContrastFilled";
-export { CircleContrastFilled };
+CircleContrastIconFilled.displayName = "CircleContrastIconFilled";
+export { CircleContrastIconFilled };

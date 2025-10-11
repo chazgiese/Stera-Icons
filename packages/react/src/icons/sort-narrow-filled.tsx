@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SortNarrowFilled = memo(
+const SortNarrowIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const SortNarrowFilled = memo(
       </svg>
     ))
 );
-SortNarrowFilled.displayName = "SortNarrowFilled";
-export { SortNarrowFilled };
+SortNarrowIconFilled.displayName = "SortNarrowIconFilled";
+export { SortNarrowIconFilled };

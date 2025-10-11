@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const WifiFilled = memo(
+const WifiIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const WifiFilled = memo(
       </svg>
     ))
 );
-WifiFilled.displayName = "WifiFilled";
-export { WifiFilled };
+WifiIconFilled.displayName = "WifiIconFilled";
+export { WifiIconFilled };

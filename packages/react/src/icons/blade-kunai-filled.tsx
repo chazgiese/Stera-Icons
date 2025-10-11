@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BladeKunaiFilled = memo(
+const BladeKunaiIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const BladeKunaiFilled = memo(
       </svg>
     ))
 );
-BladeKunaiFilled.displayName = "BladeKunaiFilled";
-export { BladeKunaiFilled };
+BladeKunaiIconFilled.displayName = "BladeKunaiIconFilled";
+export { BladeKunaiIconFilled };

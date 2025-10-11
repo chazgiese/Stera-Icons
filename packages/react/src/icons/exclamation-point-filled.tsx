@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ExclamationPointFilled = memo(
+const ExclamationPointIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ExclamationPointFilled = memo(
       </svg>
     ))
 );
-ExclamationPointFilled.displayName = "ExclamationPointFilled";
-export { ExclamationPointFilled };
+ExclamationPointIconFilled.displayName = "ExclamationPointIconFilled";
+export { ExclamationPointIconFilled };

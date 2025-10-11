@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BarChartRowDesc = memo(
+const BarChartRowDescIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BarChartRowDesc = memo(
       </svg>
     ))
 );
-BarChartRowDesc.displayName = "BarChartRowDesc";
-export { BarChartRowDesc };
+BarChartRowDescIcon.displayName = "BarChartRowDescIcon";
+export { BarChartRowDescIcon };

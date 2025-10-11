@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CloudArrowUpBold = memo(
+const CloudArrowUpIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const CloudArrowUpBold = memo(
       </svg>
     ))
 );
-CloudArrowUpBold.displayName = "CloudArrowUpBold";
-export { CloudArrowUpBold };
+CloudArrowUpIconBold.displayName = "CloudArrowUpIconBold";
+export { CloudArrowUpIconBold };

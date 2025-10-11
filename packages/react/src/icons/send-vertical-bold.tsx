@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SendVerticalBold = memo(
+const SendVerticalIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const SendVerticalBold = memo(
       </svg>
     ))
 );
-SendVerticalBold.displayName = "SendVerticalBold";
-export { SendVerticalBold };
+SendVerticalIconBold.displayName = "SendVerticalIconBold";
+export { SendVerticalIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CursorClickFilled = memo(
+const CursorClickIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const CursorClickFilled = memo(
       </svg>
     ))
 );
-CursorClickFilled.displayName = "CursorClickFilled";
-export { CursorClickFilled };
+CursorClickIconFilled.displayName = "CursorClickIconFilled";
+export { CursorClickIconFilled };

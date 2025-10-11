@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GitBranch = memo(
+const GitBranchIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const GitBranch = memo(
       </svg>
     ))
 );
-GitBranch.displayName = "GitBranch";
-export { GitBranch };
+GitBranchIcon.displayName = "GitBranchIcon";
+export { GitBranchIcon };

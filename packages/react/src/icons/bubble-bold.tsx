@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BubbleBold = memo(
+const BubbleIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const BubbleBold = memo(
       </svg>
     ))
 );
-BubbleBold.displayName = "BubbleBold";
-export { BubbleBold };
+BubbleIconBold.displayName = "BubbleIconBold";
+export { BubbleIconBold };

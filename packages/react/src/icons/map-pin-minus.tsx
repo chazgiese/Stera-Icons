@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MapPinMinus = memo(
+const MapPinMinusIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const MapPinMinus = memo(
       </svg>
     ))
 );
-MapPinMinus.displayName = "MapPinMinus";
-export { MapPinMinus };
+MapPinMinusIcon.displayName = "MapPinMinusIcon";
+export { MapPinMinusIcon };

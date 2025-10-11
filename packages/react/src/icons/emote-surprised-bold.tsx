@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const EmoteSurprisedBold = memo(
+const EmoteSurprisedIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const EmoteSurprisedBold = memo(
       </svg>
     ))
 );
-EmoteSurprisedBold.displayName = "EmoteSurprisedBold";
-export { EmoteSurprisedBold };
+EmoteSurprisedIconBold.displayName = "EmoteSurprisedIconBold";
+export { EmoteSurprisedIconBold };

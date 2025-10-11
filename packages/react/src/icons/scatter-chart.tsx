@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ScatterChart = memo(
+const ScatterChartIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const ScatterChart = memo(
       </svg>
     ))
 );
-ScatterChart.displayName = "ScatterChart";
-export { ScatterChart };
+ScatterChartIcon.displayName = "ScatterChartIcon";
+export { ScatterChartIcon };

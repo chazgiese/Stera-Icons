@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PencilBold = memo(
+const PencilIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const PencilBold = memo(
       </svg>
     ))
 );
-PencilBold.displayName = "PencilBold";
-export { PencilBold };
+PencilIconBold.displayName = "PencilIconBold";
+export { PencilIconBold };

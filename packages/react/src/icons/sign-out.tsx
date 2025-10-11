@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SignOut = memo(
+const SignOutIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const SignOut = memo(
       </svg>
     ))
 );
-SignOut.displayName = "SignOut";
-export { SignOut };
+SignOutIcon.displayName = "SignOutIcon";
+export { SignOutIcon };

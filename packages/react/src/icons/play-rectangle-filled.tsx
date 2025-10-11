@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PlayRectangleFilled = memo(
+const PlayRectangleIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const PlayRectangleFilled = memo(
       </svg>
     ))
 );
-PlayRectangleFilled.displayName = "PlayRectangleFilled";
-export { PlayRectangleFilled };
+PlayRectangleIconFilled.displayName = "PlayRectangleIconFilled";
+export { PlayRectangleIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DocumentCopy = memo(
+const DocumentCopyIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const DocumentCopy = memo(
       </svg>
     ))
 );
-DocumentCopy.displayName = "DocumentCopy";
-export { DocumentCopy };
+DocumentCopyIcon.displayName = "DocumentCopyIcon";
+export { DocumentCopyIcon };

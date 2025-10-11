@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChevronFullRightBold = memo(
+const ChevronFullRightIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const ChevronFullRightBold = memo(
       </svg>
     ))
 );
-ChevronFullRightBold.displayName = "ChevronFullRightBold";
-export { ChevronFullRightBold };
+ChevronFullRightIconBold.displayName = "ChevronFullRightIconBold";
+export { ChevronFullRightIconBold };

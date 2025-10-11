@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const OverlappingCirclesAltFilled = memo(
+const OverlappingCirclesAltIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const OverlappingCirclesAltFilled = memo(
       </svg>
     ))
 );
-OverlappingCirclesAltFilled.displayName = "OverlappingCirclesAltFilled";
-export { OverlappingCirclesAltFilled };
+OverlappingCirclesAltIconFilled.displayName = "OverlappingCirclesAltIconFilled";
+export { OverlappingCirclesAltIconFilled };

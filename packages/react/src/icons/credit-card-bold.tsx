@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CreditCardBold = memo(
+const CreditCardIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CreditCardBold = memo(
       </svg>
     ))
 );
-CreditCardBold.displayName = "CreditCardBold";
-export { CreditCardBold };
+CreditCardIconBold.displayName = "CreditCardIconBold";
+export { CreditCardIconBold };

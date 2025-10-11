@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BriefcaseFilled = memo(
+const BriefcaseIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const BriefcaseFilled = memo(
       </svg>
     ))
 );
-BriefcaseFilled.displayName = "BriefcaseFilled";
-export { BriefcaseFilled };
+BriefcaseIconFilled.displayName = "BriefcaseIconFilled";
+export { BriefcaseIconFilled };

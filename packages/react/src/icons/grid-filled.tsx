@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GridFilled = memo(
+const GridIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const GridFilled = memo(
       </svg>
     ))
 );
-GridFilled.displayName = "GridFilled";
-export { GridFilled };
+GridIconFilled.displayName = "GridIconFilled";
+export { GridIconFilled };

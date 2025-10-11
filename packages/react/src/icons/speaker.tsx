@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Speaker = memo(
+const SpeakerIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const Speaker = memo(
       </svg>
     ))
 );
-Speaker.displayName = "Speaker";
-export { Speaker };
+SpeakerIcon.displayName = "SpeakerIcon";
+export { SpeakerIcon };

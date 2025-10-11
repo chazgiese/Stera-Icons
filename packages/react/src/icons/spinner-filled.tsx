@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SpinnerFilled = memo(
+const SpinnerIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const SpinnerFilled = memo(
       </svg>
     ))
 );
-SpinnerFilled.displayName = "SpinnerFilled";
-export { SpinnerFilled };
+SpinnerIconFilled.displayName = "SpinnerIconFilled";
+export { SpinnerIconFilled };

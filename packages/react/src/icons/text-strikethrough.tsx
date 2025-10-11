@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextStrikethrough = memo(
+const TextStrikethroughIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TextStrikethrough = memo(
       </svg>
     ))
 );
-TextStrikethrough.displayName = "TextStrikethrough";
-export { TextStrikethrough };
+TextStrikethroughIcon.displayName = "TextStrikethroughIcon";
+export { TextStrikethroughIcon };

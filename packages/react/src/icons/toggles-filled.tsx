@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TogglesFilled = memo(
+const TogglesIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -36,5 +36,5 @@ const TogglesFilled = memo(
       </svg>
     ))
 );
-TogglesFilled.displayName = "TogglesFilled";
-export { TogglesFilled };
+TogglesIconFilled.displayName = "TogglesIconFilled";
+export { TogglesIconFilled };

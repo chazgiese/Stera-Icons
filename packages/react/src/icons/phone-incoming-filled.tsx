@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PhoneIncomingFilled = memo(
+const PhoneIncomingIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const PhoneIncomingFilled = memo(
       </svg>
     ))
 );
-PhoneIncomingFilled.displayName = "PhoneIncomingFilled";
-export { PhoneIncomingFilled };
+PhoneIncomingIconFilled.displayName = "PhoneIncomingIconFilled";
+export { PhoneIncomingIconFilled };

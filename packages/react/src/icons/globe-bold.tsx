@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GlobeBold = memo(
+const GlobeIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const GlobeBold = memo(
       </svg>
     ))
 );
-GlobeBold.displayName = "GlobeBold";
-export { GlobeBold };
+GlobeIconBold.displayName = "GlobeIconBold";
+export { GlobeIconBold };

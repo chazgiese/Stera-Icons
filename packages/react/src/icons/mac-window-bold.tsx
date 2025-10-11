@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MacWindowBold = memo(
+const MacWindowIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const MacWindowBold = memo(
       </svg>
     ))
 );
-MacWindowBold.displayName = "MacWindowBold";
-export { MacWindowBold };
+MacWindowIconBold.displayName = "MacWindowIconBold";
+export { MacWindowIconBold };

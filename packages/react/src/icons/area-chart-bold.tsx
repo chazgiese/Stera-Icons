@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AreaChartBold = memo(
+const AreaChartIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const AreaChartBold = memo(
       </svg>
     ))
 );
-AreaChartBold.displayName = "AreaChartBold";
-export { AreaChartBold };
+AreaChartIconBold.displayName = "AreaChartIconBold";
+export { AreaChartIconBold };

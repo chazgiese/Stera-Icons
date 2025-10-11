@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const LockPasswordOpenFilled = memo(
+const LockPasswordOpenIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const LockPasswordOpenFilled = memo(
       </svg>
     ))
 );
-LockPasswordOpenFilled.displayName = "LockPasswordOpenFilled";
-export { LockPasswordOpenFilled };
+LockPasswordOpenIconFilled.displayName = "LockPasswordOpenIconFilled";
+export { LockPasswordOpenIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CopyBold = memo(
+const CopyIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CopyBold = memo(
       </svg>
     ))
 );
-CopyBold.displayName = "CopyBold";
-export { CopyBold };
+CopyIconBold.displayName = "CopyIconBold";
+export { CopyIconBold };

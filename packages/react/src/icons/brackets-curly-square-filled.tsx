@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BracketsCurlySquareFilled = memo(
+const BracketsCurlySquareIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BracketsCurlySquareFilled = memo(
       </svg>
     ))
 );
-BracketsCurlySquareFilled.displayName = "BracketsCurlySquareFilled";
-export { BracketsCurlySquareFilled };
+BracketsCurlySquareIconFilled.displayName = "BracketsCurlySquareIconFilled";
+export { BracketsCurlySquareIconFilled };

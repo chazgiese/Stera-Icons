@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CurveEase = memo(
+const CurveEaseIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -49,5 +49,5 @@ const CurveEase = memo(
       </svg>
     ))
 );
-CurveEase.displayName = "CurveEase";
-export { CurveEase };
+CurveEaseIcon.displayName = "CurveEaseIcon";
+export { CurveEaseIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AwardStar = memo(
+const AwardStarIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const AwardStar = memo(
       </svg>
     ))
 );
-AwardStar.displayName = "AwardStar";
-export { AwardStar };
+AwardStarIcon.displayName = "AwardStarIcon";
+export { AwardStarIcon };

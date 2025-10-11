@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const UploadBold = memo(
+const UploadIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const UploadBold = memo(
       </svg>
     ))
 );
-UploadBold.displayName = "UploadBold";
-export { UploadBold };
+UploadIconBold.displayName = "UploadIconBold";
+export { UploadIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ScanCamera = memo(
+const ScanCameraIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const ScanCamera = memo(
       </svg>
     ))
 );
-ScanCamera.displayName = "ScanCamera";
-export { ScanCamera };
+ScanCameraIcon.displayName = "ScanCameraIcon";
+export { ScanCameraIcon };

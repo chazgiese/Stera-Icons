@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TrophyFilled = memo(
+const TrophyIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const TrophyFilled = memo(
       </svg>
     ))
 );
-TrophyFilled.displayName = "TrophyFilled";
-export { TrophyFilled };
+TrophyIconFilled.displayName = "TrophyIconFilled";
+export { TrophyIconFilled };

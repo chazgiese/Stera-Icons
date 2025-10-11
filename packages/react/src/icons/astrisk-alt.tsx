@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AstriskAlt = memo(
+const AstriskAltIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const AstriskAlt = memo(
       </svg>
     ))
 );
-AstriskAlt.displayName = "AstriskAlt";
-export { AstriskAlt };
+AstriskAltIcon.displayName = "AstriskAltIcon";
+export { AstriskAltIcon };

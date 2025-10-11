@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const EmoteNeutralBold = memo(
+const EmoteNeutralIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const EmoteNeutralBold = memo(
       </svg>
     ))
 );
-EmoteNeutralBold.displayName = "EmoteNeutralBold";
-export { EmoteNeutralBold };
+EmoteNeutralIconBold.displayName = "EmoteNeutralIconBold";
+export { EmoteNeutralIconBold };

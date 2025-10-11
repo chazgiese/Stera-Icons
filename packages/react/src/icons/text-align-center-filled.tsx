@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextAlignCenterFilled = memo(
+const TextAlignCenterIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TextAlignCenterFilled = memo(
       </svg>
     ))
 );
-TextAlignCenterFilled.displayName = "TextAlignCenterFilled";
-export { TextAlignCenterFilled };
+TextAlignCenterIconFilled.displayName = "TextAlignCenterIconFilled";
+export { TextAlignCenterIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ImagePileFilled = memo(
+const ImagePileIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const ImagePileFilled = memo(
       </svg>
     ))
 );
-ImagePileFilled.displayName = "ImagePileFilled";
-export { ImagePileFilled };
+ImagePileIconFilled.displayName = "ImagePileIconFilled";
+export { ImagePileIconFilled };

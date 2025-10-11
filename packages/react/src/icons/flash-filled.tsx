@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FlashFilled = memo(
+const FlashIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const FlashFilled = memo(
       </svg>
     ))
 );
-FlashFilled.displayName = "FlashFilled";
-export { FlashFilled };
+FlashIconFilled.displayName = "FlashIconFilled";
+export { FlashIconFilled };

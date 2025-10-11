@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const GitPullRequestDraftBold = memo(
+const GitPullRequestDraftIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const GitPullRequestDraftBold = memo(
       </svg>
     ))
 );
-GitPullRequestDraftBold.displayName = "GitPullRequestDraftBold";
-export { GitPullRequestDraftBold };
+GitPullRequestDraftIconBold.displayName = "GitPullRequestDraftIconBold";
+export { GitPullRequestDraftIconBold };

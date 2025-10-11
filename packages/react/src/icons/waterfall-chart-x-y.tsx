@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const WaterfallChartXY = memo(
+const WaterfallChartXYIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const WaterfallChartXY = memo(
       </svg>
     ))
 );
-WaterfallChartXY.displayName = "WaterfallChartXY";
-export { WaterfallChartXY };
+WaterfallChartXYIcon.displayName = "WaterfallChartXYIcon";
+export { WaterfallChartXYIcon };

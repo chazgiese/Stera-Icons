@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BracketsCurlyCircleBold = memo(
+const BracketsCurlyCircleIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const BracketsCurlyCircleBold = memo(
       </svg>
     ))
 );
-BracketsCurlyCircleBold.displayName = "BracketsCurlyCircleBold";
-export { BracketsCurlyCircleBold };
+BracketsCurlyCircleIconBold.displayName = "BracketsCurlyCircleIconBold";
+export { BracketsCurlyCircleIconBold };

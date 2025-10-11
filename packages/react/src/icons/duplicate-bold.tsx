@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DuplicateBold = memo(
+const DuplicateIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const DuplicateBold = memo(
       </svg>
     ))
 );
-DuplicateBold.displayName = "DuplicateBold";
-export { DuplicateBold };
+DuplicateIconBold.displayName = "DuplicateIconBold";
+export { DuplicateIconBold };

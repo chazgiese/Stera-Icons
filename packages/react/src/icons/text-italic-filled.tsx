@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextItalicFilled = memo(
+const TextItalicIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TextItalicFilled = memo(
       </svg>
     ))
 );
-TextItalicFilled.displayName = "TextItalicFilled";
-export { TextItalicFilled };
+TextItalicIconFilled.displayName = "TextItalicIconFilled";
+export { TextItalicIconFilled };

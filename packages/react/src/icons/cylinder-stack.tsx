@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CylinderStack = memo(
+const CylinderStackIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CylinderStack = memo(
       </svg>
     ))
 );
-CylinderStack.displayName = "CylinderStack";
-export { CylinderStack };
+CylinderStackIcon.displayName = "CylinderStackIcon";
+export { CylinderStackIcon };

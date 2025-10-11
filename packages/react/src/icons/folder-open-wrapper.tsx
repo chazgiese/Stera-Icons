@@ -1,0 +1,30 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { FolderOpenIcon as FolderOpenIconRegular } from './folder-open';
+import { FolderOpenIconBold } from './folder-open-bold';
+import { FolderOpenIconFilled } from './folder-open-filled';
+
+export type IconVariant = 'regular' | 'bold' | 'filled';
+
+export interface FolderOpenIconProps extends IconProps {
+  variant?: IconVariant;
+}
+
+const FolderOpenIcon = memo(forwardRef<SVGSVGElement, FolderOpenIconProps>(({ 
+  variant = 'regular',
+  ...props 
+}, ref) => {
+  switch (variant) {
+    case 'filled':
+      return <FolderOpenIconFilled ref={ref} {...props} />;
+    case 'bold':
+      return <FolderOpenIconBold ref={ref} {...props} />;
+    case 'regular':
+    default:
+      return <FolderOpenIconRegular ref={ref} {...props} />;
+  }
+}));
+
+FolderOpenIcon.displayName = 'FolderOpenIcon';
+
+export { FolderOpenIcon };

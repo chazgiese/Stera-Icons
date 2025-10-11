@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const StarHalfBold = memo(
+const StarHalfIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const StarHalfBold = memo(
       </svg>
     ))
 );
-StarHalfBold.displayName = "StarHalfBold";
-export { StarHalfBold };
+StarHalfIconBold.displayName = "StarHalfIconBold";
+export { StarHalfIconBold };

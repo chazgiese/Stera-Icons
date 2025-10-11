@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ArchiveFilled = memo(
+const ArchiveIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const ArchiveFilled = memo(
       </svg>
     ))
 );
-ArchiveFilled.displayName = "ArchiveFilled";
-export { ArchiveFilled };
+ArchiveIconFilled.displayName = "ArchiveIconFilled";
+export { ArchiveIconFilled };

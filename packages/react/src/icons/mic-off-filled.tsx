@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MicOffFilled = memo(
+const MicOffIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const MicOffFilled = memo(
       </svg>
     ))
 );
-MicOffFilled.displayName = "MicOffFilled";
-export { MicOffFilled };
+MicOffIconFilled.displayName = "MicOffIconFilled";
+export { MicOffIconFilled };

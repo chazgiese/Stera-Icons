@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AtomOrbitFilled = memo(
+const AtomOrbitIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const AtomOrbitFilled = memo(
       </svg>
     ))
 );
-AtomOrbitFilled.displayName = "AtomOrbitFilled";
-export { AtomOrbitFilled };
+AtomOrbitIconFilled.displayName = "AtomOrbitIconFilled";
+export { AtomOrbitIconFilled };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const EyeOffFilled = memo(
+const EyeOffIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const EyeOffFilled = memo(
       </svg>
     ))
 );
-EyeOffFilled.displayName = "EyeOffFilled";
-export { EyeOffFilled };
+EyeOffIconFilled.displayName = "EyeOffIconFilled";
+export { EyeOffIconFilled };

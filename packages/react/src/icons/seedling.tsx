@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Seedling = memo(
+const SeedlingIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const Seedling = memo(
       </svg>
     ))
 );
-Seedling.displayName = "Seedling";
-export { Seedling };
+SeedlingIcon.displayName = "SeedlingIcon";
+export { SeedlingIcon };

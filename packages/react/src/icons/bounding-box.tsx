@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BoundingBox = memo(
+const BoundingBoxIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BoundingBox = memo(
       </svg>
     ))
 );
-BoundingBox.displayName = "BoundingBox";
-export { BoundingBox };
+BoundingBoxIcon.displayName = "BoundingBoxIcon";
+export { BoundingBoxIcon };

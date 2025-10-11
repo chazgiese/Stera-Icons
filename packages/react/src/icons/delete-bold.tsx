@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DeleteBold = memo(
+const DeleteIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const DeleteBold = memo(
       </svg>
     ))
 );
-DeleteBold.displayName = "DeleteBold";
-export { DeleteBold };
+DeleteIconBold.displayName = "DeleteIconBold";
+export { DeleteIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const WifiSlashBold = memo(
+const WifiSlashIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const WifiSlashBold = memo(
       </svg>
     ))
 );
-WifiSlashBold.displayName = "WifiSlashBold";
-export { WifiSlashBold };
+WifiSlashIconBold.displayName = "WifiSlashIconBold";
+export { WifiSlashIconBold };

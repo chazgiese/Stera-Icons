@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const DeviceTabletBold = memo(
+const DeviceTabletIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const DeviceTabletBold = memo(
       </svg>
     ))
 );
-DeviceTabletBold.displayName = "DeviceTabletBold";
-export { DeviceTabletBold };
+DeviceTabletIconBold.displayName = "DeviceTabletIconBold";
+export { DeviceTabletIconBold };

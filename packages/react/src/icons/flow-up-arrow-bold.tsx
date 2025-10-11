@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FlowUpArrowBold = memo(
+const FlowUpArrowIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const FlowUpArrowBold = memo(
       </svg>
     ))
 );
-FlowUpArrowBold.displayName = "FlowUpArrowBold";
-export { FlowUpArrowBold };
+FlowUpArrowIconBold.displayName = "FlowUpArrowIconBold";
+export { FlowUpArrowIconBold };

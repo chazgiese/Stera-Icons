@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Fortress = memo(
+const FortressIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const Fortress = memo(
       </svg>
     ))
 );
-Fortress.displayName = "Fortress";
-export { Fortress };
+FortressIcon.displayName = "FortressIcon";
+export { FortressIcon };

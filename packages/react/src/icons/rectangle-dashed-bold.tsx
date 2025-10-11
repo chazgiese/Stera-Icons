@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const RectangleDashedBold = memo(
+const RectangleDashedIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const RectangleDashedBold = memo(
       </svg>
     ))
 );
-RectangleDashedBold.displayName = "RectangleDashedBold";
-export { RectangleDashedBold };
+RectangleDashedIconBold.displayName = "RectangleDashedIconBold";
+export { RectangleDashedIconBold };

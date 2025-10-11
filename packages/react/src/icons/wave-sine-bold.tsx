@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const WaveSineBold = memo(
+const WaveSineIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const WaveSineBold = memo(
       </svg>
     ))
 );
-WaveSineBold.displayName = "WaveSineBold";
-export { WaveSineBold };
+WaveSineIconBold.displayName = "WaveSineIconBold";
+export { WaveSineIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CalendarSlashBold = memo(
+const CalendarSlashIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -41,5 +41,5 @@ const CalendarSlashBold = memo(
       </svg>
     ))
 );
-CalendarSlashBold.displayName = "CalendarSlashBold";
-export { CalendarSlashBold };
+CalendarSlashIconBold.displayName = "CalendarSlashIconBold";
+export { CalendarSlashIconBold };

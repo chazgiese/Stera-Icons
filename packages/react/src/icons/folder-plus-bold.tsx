@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FolderPlusBold = memo(
+const FolderPlusIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const FolderPlusBold = memo(
       </svg>
     ))
 );
-FolderPlusBold.displayName = "FolderPlusBold";
-export { FolderPlusBold };
+FolderPlusIconBold.displayName = "FolderPlusIconBold";
+export { FolderPlusIconBold };

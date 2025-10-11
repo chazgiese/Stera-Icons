@@ -1,6 +1,7 @@
 {
   "name": "stera-icons",
   "version": "1.0.0",
+  "type": "module",
   "description": "A lightweight, tree-shakeable React icon library built from Figma",
   "private": true,
   "workspaces": [
@@ -18,24 +19,22 @@
     "release": "changeset publish"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.23.0",
     "@changesets/cli": "^2.27.1",
     "@eslint/js": "^9.35.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
+    "svgo": "^3.0.0",
     "typescript": "^5.3.0",
     "typescript-eslint": "^8.43.0",
     "vitest": "^1.0.0"
-  },
-  "dependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.23.0",
-    "@svgr/core": "^8.1.0",
-    "@svgr/plugin-jsx": "^8.1.0",
-    "@svgr/plugin-prettier": "^8.1.0",
-    "svgo": "^3.0.0"
   },
   "packageManager": "pnpm@8.10.0",
   "engines": {

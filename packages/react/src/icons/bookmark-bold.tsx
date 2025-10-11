@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BookmarkBold = memo(
+const BookmarkIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const BookmarkBold = memo(
       </svg>
     ))
 );
-BookmarkBold.displayName = "BookmarkBold";
-export { BookmarkBold };
+BookmarkIconBold.displayName = "BookmarkIconBold";
+export { BookmarkIconBold };

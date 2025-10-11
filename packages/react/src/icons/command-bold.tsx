@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CommandBold = memo(
+const CommandIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CommandBold = memo(
       </svg>
     ))
 );
-CommandBold.displayName = "CommandBold";
-export { CommandBold };
+CommandIconBold.displayName = "CommandIconBold";
+export { CommandIconBold };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BrightnessHigh = memo(
+const BrightnessHighIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const BrightnessHigh = memo(
       </svg>
     ))
 );
-BrightnessHigh.displayName = "BrightnessHigh";
-export { BrightnessHigh };
+BrightnessHighIcon.displayName = "BrightnessHighIcon";
+export { BrightnessHighIcon };

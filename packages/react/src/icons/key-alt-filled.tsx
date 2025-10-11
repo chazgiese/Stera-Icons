@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const KeyAltFilled = memo(
+const KeyAltIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const KeyAltFilled = memo(
       </svg>
     ))
 );
-KeyAltFilled.displayName = "KeyAltFilled";
-export { KeyAltFilled };
+KeyAltIconFilled.displayName = "KeyAltIconFilled";
+export { KeyAltIconFilled };

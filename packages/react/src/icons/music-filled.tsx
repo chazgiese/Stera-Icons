@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const MusicFilled = memo(
+const MusicIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const MusicFilled = memo(
       </svg>
     ))
 );
-MusicFilled.displayName = "MusicFilled";
-export { MusicFilled };
+MusicIconFilled.displayName = "MusicIconFilled";
+export { MusicIconFilled };

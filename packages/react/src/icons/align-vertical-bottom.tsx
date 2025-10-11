@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AlignVerticalBottom = memo(
+const AlignVerticalBottomIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const AlignVerticalBottom = memo(
       </svg>
     ))
 );
-AlignVerticalBottom.displayName = "AlignVerticalBottom";
-export { AlignVerticalBottom };
+AlignVerticalBottomIcon.displayName = "AlignVerticalBottomIcon";
+export { AlignVerticalBottomIcon };

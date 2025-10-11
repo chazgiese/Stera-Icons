@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ScanDocument = memo(
+const ScanDocumentIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const ScanDocument = memo(
       </svg>
     ))
 );
-ScanDocument.displayName = "ScanDocument";
-export { ScanDocument };
+ScanDocumentIcon.displayName = "ScanDocumentIcon";
+export { ScanDocumentIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CrosshairBold = memo(
+const CrosshairIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CrosshairBold = memo(
       </svg>
     ))
 );
-CrosshairBold.displayName = "CrosshairBold";
-export { CrosshairBold };
+CrosshairIconBold.displayName = "CrosshairIconBold";
+export { CrosshairIconBold };

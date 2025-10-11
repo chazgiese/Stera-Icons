@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextAlignRightBold = memo(
+const TextAlignRightIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TextAlignRightBold = memo(
       </svg>
     ))
 );
-TextAlignRightBold.displayName = "TextAlignRightBold";
-export { TextAlignRightBold };
+TextAlignRightIconBold.displayName = "TextAlignRightIconBold";
+export { TextAlignRightIconBold };

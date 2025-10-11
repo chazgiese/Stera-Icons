@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const HourglassEmptyFilled = memo(
+const HourglassEmptyIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const HourglassEmptyFilled = memo(
       </svg>
     ))
 );
-HourglassEmptyFilled.displayName = "HourglassEmptyFilled";
-export { HourglassEmptyFilled };
+HourglassEmptyIconFilled.displayName = "HourglassEmptyIconFilled";
+export { HourglassEmptyIconFilled };

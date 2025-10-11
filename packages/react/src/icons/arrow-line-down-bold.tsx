@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ArrowLineDownBold = memo(
+const ArrowLineDownIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ArrowLineDownBold = memo(
       </svg>
     ))
 );
-ArrowLineDownBold.displayName = "ArrowLineDownBold";
-export { ArrowLineDownBold };
+ArrowLineDownIconBold.displayName = "ArrowLineDownIconBold";
+export { ArrowLineDownIconBold };

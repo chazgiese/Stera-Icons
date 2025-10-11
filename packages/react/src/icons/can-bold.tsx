@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CanBold = memo(
+const CanIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const CanBold = memo(
       </svg>
     ))
 );
-CanBold.displayName = "CanBold";
-export { CanBold };
+CanIconBold.displayName = "CanIconBold";
+export { CanIconBold };

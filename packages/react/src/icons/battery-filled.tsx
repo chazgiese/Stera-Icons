@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const BatteryFilled = memo(
+const BatteryIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -42,5 +42,5 @@ const BatteryFilled = memo(
       </svg>
     ))
 );
-BatteryFilled.displayName = "BatteryFilled";
-export { BatteryFilled };
+BatteryIconFilled.displayName = "BatteryIconFilled";
+export { BatteryIconFilled };

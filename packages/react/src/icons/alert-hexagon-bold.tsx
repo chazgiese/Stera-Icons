@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const AlertHexagonBold = memo(
+const AlertHexagonIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const AlertHexagonBold = memo(
       </svg>
     ))
 );
-AlertHexagonBold.displayName = "AlertHexagonBold";
-export { AlertHexagonBold };
+AlertHexagonIconBold.displayName = "AlertHexagonIconBold";
+export { AlertHexagonIconBold };

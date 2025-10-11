@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ChecklistBold = memo(
+const ChecklistIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -43,5 +43,5 @@ const ChecklistBold = memo(
       </svg>
     ))
 );
-ChecklistBold.displayName = "ChecklistBold";
-export { ChecklistBold };
+ChecklistIconBold.displayName = "ChecklistIconBold";
+export { ChecklistIconBold };

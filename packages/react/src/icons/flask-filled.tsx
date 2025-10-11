@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FlaskFilled = memo(
+const FlaskIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const FlaskFilled = memo(
       </svg>
     ))
 );
-FlaskFilled.displayName = "FlaskFilled";
-export { FlaskFilled };
+FlaskIconFilled.displayName = "FlaskIconFilled";
+export { FlaskIconFilled };

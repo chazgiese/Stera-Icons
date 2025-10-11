@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ArrowULeftTop = memo(
+const ArrowULeftTopIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ArrowULeftTop = memo(
       </svg>
     ))
 );
-ArrowULeftTop.displayName = "ArrowULeftTop";
-export { ArrowULeftTop };
+ArrowULeftTopIcon.displayName = "ArrowULeftTopIcon";
+export { ArrowULeftTopIcon };

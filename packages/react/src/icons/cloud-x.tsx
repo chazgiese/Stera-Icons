@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CloudX = memo(
+const CloudXIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CloudX = memo(
       </svg>
     ))
 );
-CloudX.displayName = "CloudX";
-export { CloudX };
+CloudXIcon.displayName = "CloudXIcon";
+export { CloudXIcon };

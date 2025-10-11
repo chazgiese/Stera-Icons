@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CliSquareBold = memo(
+const CliSquareIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const CliSquareBold = memo(
       </svg>
     ))
 );
-CliSquareBold.displayName = "CliSquareBold";
-export { CliSquareBold };
+CliSquareIconBold.displayName = "CliSquareIconBold";
+export { CliSquareIconBold };

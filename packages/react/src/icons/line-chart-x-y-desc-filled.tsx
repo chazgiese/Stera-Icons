@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const LineChartXYDescFilled = memo(
+const LineChartXYDescIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const LineChartXYDescFilled = memo(
       </svg>
     ))
 );
-LineChartXYDescFilled.displayName = "LineChartXYDescFilled";
-export { LineChartXYDescFilled };
+LineChartXYDescIconFilled.displayName = "LineChartXYDescIconFilled";
+export { LineChartXYDescIconFilled };

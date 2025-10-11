@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const SortAscending = memo(
+const SortAscendingIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -37,5 +37,5 @@ const SortAscending = memo(
       </svg>
     ))
 );
-SortAscending.displayName = "SortAscending";
-export { SortAscending };
+SortAscendingIcon.displayName = "SortAscendingIcon";
+export { SortAscendingIcon };

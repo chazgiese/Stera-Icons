@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FileCabinet = memo(
+const FileCabinetIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const FileCabinet = memo(
       </svg>
     ))
 );
-FileCabinet.displayName = "FileCabinet";
-export { FileCabinet };
+FileCabinetIcon.displayName = "FileCabinetIcon";
+export { FileCabinetIcon };

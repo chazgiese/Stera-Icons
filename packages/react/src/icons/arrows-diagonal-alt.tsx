@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ArrowsDiagonalAlt = memo(
+const ArrowsDiagonalAltIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const ArrowsDiagonalAlt = memo(
       </svg>
     ))
 );
-ArrowsDiagonalAlt.displayName = "ArrowsDiagonalAlt";
-export { ArrowsDiagonalAlt };
+ArrowsDiagonalAltIcon.displayName = "ArrowsDiagonalAltIcon";
+export { ArrowsDiagonalAltIcon };

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const LineSegmentVBold = memo(
+const LineSegmentVIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const LineSegmentVBold = memo(
       </svg>
     ))
 );
-LineSegmentVBold.displayName = "LineSegmentVBold";
-export { LineSegmentVBold };
+LineSegmentVIconBold.displayName = "LineSegmentVIconBold";
+export { LineSegmentVIconBold };

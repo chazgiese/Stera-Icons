@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const RulerBold = memo(
+const RulerIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const RulerBold = memo(
       </svg>
     ))
 );
-RulerBold.displayName = "RulerBold";
-export { RulerBold };
+RulerIconBold.displayName = "RulerIconBold";
+export { RulerIconBold };

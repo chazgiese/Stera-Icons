@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const PauseCircle = memo(
+const PauseCircleIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const PauseCircle = memo(
       </svg>
     ))
 );
-PauseCircle.displayName = "PauseCircle";
-export { PauseCircle };
+PauseCircleIcon.displayName = "PauseCircleIcon";
+export { PauseCircleIcon };

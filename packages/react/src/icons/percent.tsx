@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const Percent = memo(
+const PercentIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -39,5 +39,5 @@ const Percent = memo(
       </svg>
     ))
 );
-Percent.displayName = "Percent";
-export { Percent };
+PercentIcon.displayName = "PercentIcon";
+export { PercentIcon };

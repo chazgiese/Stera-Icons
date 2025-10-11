@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const FlashBold = memo(
+const FlashIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const FlashBold = memo(
       </svg>
     ))
 );
-FlashBold.displayName = "FlashBold";
-export { FlashBold };
+FlashIconBold.displayName = "FlashIconBold";
+export { FlashIconBold };

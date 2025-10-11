@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextUnderline = memo(
+const TextUnderlineIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -33,5 +33,5 @@ const TextUnderline = memo(
       </svg>
     ))
 );
-TextUnderline.displayName = "TextUnderline";
-export { TextUnderline };
+TextUnderlineIcon.displayName = "TextUnderlineIcon";
+export { TextUnderlineIcon };
