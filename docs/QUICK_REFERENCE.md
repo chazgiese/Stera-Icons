@@ -15,8 +15,15 @@ node scripts/version-utils.js info
 # 4. Build icons
 node scripts/build-icons.js icons-export.json
 
-# 5. Process changeset when ready
-pnpm changeset version
+# 5. Commit and push
+git add .
+git commit -m "feat: add new icons"
+git push
+
+# 6. GitHub Actions takes over
+# - Creates "Version Packages" PR
+# - Review and merge PR
+# - Auto-publishes to npm
 ```
 
 ## 📋 Essential Commands
@@ -79,6 +86,40 @@ pnpm build
 - **Patch** (3.1.0 → 3.1.1): Bug fixes, minor updates
 - **Minor** (3.1.0 → 3.2.0): **New icons** (most common)
 - **Major** (3.1.0 → 4.0.0): Breaking changes
+
+## 🚢 Release Checklist (GitHub Actions)
+
+```bash
+# ✅ Step 1: Create changeset
+pnpm changeset
+# Select package, bump type, description
+
+# ✅ Step 2: Build icons (if applicable)
+node scripts/build-icons.js icons-export.json
+
+# ✅ Step 3: Commit & push changeset
+git add .
+git commit -m "feat: add new icons"
+git push
+
+# ✅ Step 4: Wait for "Version Packages" PR
+# GitHub Action automatically creates it
+
+# ✅ Step 5: Review and merge PR
+# Review CHANGELOG and version bump
+
+# ✅ Step 6: GitHub Action publishes
+# Automatically: version + build + publish + tag
+```
+
+### ⚠️ CRITICAL: Never Run Manual Versioning
+
+**NEVER run `pnpm changeset version` manually!**
+
+This bypasses GitHub Actions and causes version skips (e.g., 3.2 → 5.0, skipping 4.0).
+
+**Only use:** `pnpm changeset` (create changesets)
+**Never use:** `pnpm changeset version` (GitHub Action does this)
 
 ## 📖 Full Documentation
 

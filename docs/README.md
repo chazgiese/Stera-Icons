@@ -4,66 +4,62 @@ This directory contains documentation for contributing to and maintaining the St
 
 ## 📚 Documentation Files
 
-### Workflow Documentation
-- **[CHANGESET_WORKFLOW.md](CHANGESET_WORKFLOW.md)** - Complete guide to the changeset-first workflow for adding new icons
+### For Contributors
+- **[CHANGESET_WORKFLOW.md](CHANGESET_WORKFLOW.md)** - Complete guide for adding new icons with proper version tracking
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick reference card with essential commands
 
-### Setup Documentation
-- **[SETUP.md](../SETUP.md)** - Project setup and installation instructions
+### For Maintainers
+- **[ICON_VERSIONING.md](ICON_VERSIONING.md)** - Deep dive into how icon versioning works, troubleshooting, and maintenance
 
-## 🎯 Key Concepts
+### Setup
+- **[../SETUP.md](../SETUP.md)** - Project setup and installation instructions (root level)
 
-### Changeset-First Workflow
-The recommended approach for adding new icons:
-1. **Create changeset first** - Defines version bump
-2. **Add icons** - System assigns correct version automatically
-3. **Build and verify** - Ensure metadata is accurate
-4. **Process changeset** - Official version bump when ready
+## 🎯 Quick Navigation
 
-### Version Metadata
-Each icon tracks:
-- **Version added** - When first introduced
-- **Date added** - Exact timestamp
-- **Last modified** - When last updated
-- **SVG hash** - For change detection
+### Adding New Icons
+**Start here:** [CHANGESET_WORKFLOW.md](CHANGESET_WORKFLOW.md)
 
-## 🛠️ Utility Scripts
+The workflow is simple:
+1. Create changeset first → `pnpm changeset`
+2. Add icons to `icons-export.json`
+3. Build → `node scripts/build-icons.js icons-export.json`
+4. Verify → `node scripts/metadata-utils.js summary`
+5. Commit everything including metadata files
 
-### Version Management
+### Quick Commands
+**Need commands fast?** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
+
+### Version Tracking Issues
+**Something wrong with versions?** [ICON_VERSIONING.md](ICON_VERSIONING.md) - Troubleshooting section
+
+## 🛠️ Essential Commands
+
+### Version Information
 ```bash
-node scripts/version-utils.js info    # Version information
-node scripts/version-utils.js next    # Next version from changesets
-node scripts/version-utils.js current # Current package version
-```
-
-### Icon Metadata
-```bash
-node scripts/metadata-utils.js summary        # Overall summary
-node scripts/metadata-utils.js version 3.2.0  # Icons by version
-node scripts/metadata-utils.js search "chart" # Search icons
-node scripts/metadata-utils.js recent 7       # Recent additions
+node scripts/version-utils.js info    # Check version status
+node scripts/metadata-utils.js summary # Icon statistics
 ```
 
 ### Build Process
 ```bash
-node scripts/build-icons.js icons-export.json # Build all icons
+node scripts/build-icons.js icons-export.json # Build icons
 pnpm build                                     # Production build
-pnpm build:dev                                 # Development build
 ```
 
-## 📖 Getting Started
+## 📖 Documentation Philosophy
 
-1. **Read the workflow**: Start with [CHANGESET_WORKFLOW.md](CHANGESET_WORKFLOW.md)
-2. **Use quick reference**: Keep [QUICK_REFERENCE.md](QUICK_REFERENCE.md) handy
-3. **Follow the process**: Always changeset first, then icons
-4. **Verify results**: Use utility scripts to check metadata
+Each document serves a specific purpose:
 
-## 🤝 Contributing
+- **CHANGESET_WORKFLOW.md**: Step-by-step workflow for adding icons
+- **QUICK_REFERENCE.md**: Fast lookup of commands
+- **ICON_VERSIONING.md**: Technical details for maintainers
 
-When contributing new icons:
-- Follow the changeset-first workflow
-- Use descriptive changeset summaries
-- Test the build process
-- Verify metadata accuracy
+Keep docs focused, avoid duplication, and update as the system evolves.
 
-For questions or issues, refer to the troubleshooting sections in the workflow documentation.
+## 🤝 Contributing to Docs
+
+When updating documentation:
+1. Keep information current with actual implementation
+2. Remove outdated content immediately
+3. Use examples that match current version
+4. Test all commands before documenting them

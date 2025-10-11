@@ -117,34 +117,31 @@ node scripts/metadata-utils.js version 3.2.0
 node scripts/metadata-utils.js search "twitter"
 ```
 
-### Step 6: Process Changeset
+### Step 6: Commit and Push
 
-When ready to release, process the changeset:
-
-```bash
-# Process changesets (updates package.json version)
-pnpm changeset version
-```
-
-**This will:**
-- Update `packages/react/package.json` version to 3.2.0
-- Update CHANGELOG.md with the changeset summary
-- Remove processed changeset files
-
-### Step 7: Final Build
-
-Build one final time to confirm everything is correct:
+Commit your changes including the changeset:
 
 ```bash
-# Build with the official new version
-node scripts/build-icons.js icons-export.json
+git add .
+git commit -m "feat: add new social media icons"
+git push
 ```
 
-**Expected output:**
-```
-📅 Version for new icons: 3.2.0 (package.json)
-📅 Build date: 2025-10-04T12:15:30.123Z
-```
+### Step 7: GitHub Actions Takes Over
+
+**Automated Release Process:**
+
+1. **GitHub Action detects changeset** → Creates a "Version Packages" PR
+2. **Review the PR** → Check CHANGELOG and version bump are correct
+3. **Merge the PR** → GitHub Action automatically:
+   - Runs `pnpm changeset version` (updates package.json)
+   - Builds the package
+   - Publishes to npm
+   - Creates git tags
+
+**You don't need to run `pnpm changeset version` manually!**
+
+The GitHub Action at `.github/workflows/release.yml` handles everything.
 
 ## Version Bump Types
 
@@ -250,6 +247,31 @@ Next version (from changesets): 3.1.1  # Expected 3.2.0
 2. Ensure it specifies "minor" not "patch"
 3. Recreate changeset if needed
 
+### Problem: Version skip (e.g., 3.2.0 → 5.0.0, skipping 4.0.0)
+
+**Symptoms:**
+- CHANGELOG has version 4.0.0 with content
+- package.json shows 5.0.0
+- Version 4.0.0 was never published to npm
+
+**What happened (with GitHub Actions):**
+1. Changesets pushed → "Version Packages" PR created (v4.0.0)
+2. Someone ran `pnpm changeset version` locally and pushed (bypassing the PR)
+3. OR multiple changesets accumulated before merging the PR
+4. GitHub Action published v5.0.0, skipping v4.0.0
+
+**Prevention:**
+- **NEVER run `pnpm changeset version` manually**
+- Always let GitHub Actions handle versioning via the "Version Packages" PR
+- Merge "Version Packages" PRs promptly (don't let changesets accumulate)
+- See Best Practice #5 above
+
+**If it already happened:**
+- The damage is done - version 4.0.0 is now a "phantom version"
+- Users can never install v4.0.0
+- Best practice: Document it and move forward with 5.0.0
+- Do NOT try to republish as 4.0.0 (will confuse users on 5.0.0)
+
 ## Best Practices
 
 ### 1. Always Changeset First
@@ -272,6 +294,39 @@ Next version (from changesets): 3.1.1  # Expected 3.2.0
 - Group related icons in same changeset
 - Use clear, descriptive summaries
 
+### 5. NEVER Run `pnpm changeset version` Manually
+
+**CRITICAL: Use GitHub Actions for Versioning**
+
+This project uses GitHub Actions to automate versioning and publishing. **NEVER run `pnpm changeset version` locally!**
+
+**Wrong (causes version skips):**
+```bash
+# ❌ DON'T DO THIS
+pnpm changeset version  # Manual versioning
+git push               # Pushes version bump without publishing
+```
+
+**Correct workflow:**
+```bash
+# ✅ DO THIS
+pnpm changeset         # Create changeset
+git add .
+git commit -m "feat: add new icons"
+git push               # GitHub Action handles the rest
+```
+
+**What happens automatically:**
+1. Push changeset → GitHub Action creates "Version Packages" PR
+2. Merge PR → GitHub Action runs version + publish in one atomic operation
+3. Package published to npm with correct version
+
+**Why manual versioning causes problems:**
+- Running `pnpm changeset version` locally bypasses the automated flow
+- Creates version bumps without corresponding npm publishes
+- Can cause version skips if done multiple times
+- Breaks the atomic version+publish guarantee
+
 ## Example Workflow Session
 
 ```bash
@@ -293,13 +348,15 @@ node scripts/build-icons.js icons-export.json
 node scripts/metadata-utils.js version 3.2.0
 # Output: Shows new icons with v3.2.0
 
-# 6. Process changeset when ready to release
-pnpm changeset version
-# Updates package.json to 3.2.0
+# 6. Commit and push
+git add .
+git commit -m "feat: add social media icons"
+git push
 
-# 7. Final build
-node scripts/build-icons.js icons-export.json
-# Output: Version for new icons: 3.2.0 (package.json)
+# 7. GitHub Actions takes over
+# - Creates "Version Packages" PR with v3.2.0 bump
+# - You review and merge the PR
+# - GitHub Action automatically publishes to npm
 ```
 
 ## Integration with CI/CD
