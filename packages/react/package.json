@@ -1,6 +1,6 @@
 {
   "name": "stera-icons",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "type": "module",
   "description": "A lightweight, tree-shakeable React icon library",
   "main": "./dist/index.cjs",
