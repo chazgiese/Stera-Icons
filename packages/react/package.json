@@ -20,7 +20,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup && pnpm build:metadata",
+    "build": "rm -f dist/*.{cjs,mjs,d.ts,d.cts} && tsup && pnpm build:metadata",
     "build:dev": "tsup --config tsup.config.dev.ts && pnpm build:metadata",
     "build:metadata": "node ../../scripts/build-icons.js ../../icons-export.json",
     "dev": "tsup --watch --config tsup.config.dev.ts",

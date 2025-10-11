@@ -6,7 +6,7 @@ export default defineConfig({
   dts: true,
   splitting: false,
   sourcemap: false,
-  clean: true,
+  clean: false, // Don't clean dist to preserve metadata files
   external: ['react'],
   treeshake: true,
   minify: true,
