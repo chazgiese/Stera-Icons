@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.0.2
+
+### Patch Changes
+
+- cdb1905: Fix metadata component names to reflect wrapper component API. The icons.meta.json now correctly shows the wrapper component name (e.g., "AiIcon") instead of variant-specific names (e.g., "AiIconBold"), since users access icons via the variant prop like `<AiIcon variant="bold">`.
+
 ## 5.0.1
 
 ### Patch Changes
