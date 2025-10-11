@@ -152,6 +152,9 @@ async function buildIcons(iconsExportPath) {
     // Track variants for this icon
     const iconVariants = [];
     
+    // Generate the wrapper component name (user-facing API)
+    const baseComponentName = uniqueSlug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
+    
     // Process each variant (Bold, Fill, Regular)
     for (const variantData of icon.variants) {
       
@@ -216,7 +219,10 @@ async function buildIcons(iconsExportPath) {
       }
       
       // Check if this is a new icon or an existing one
-      const existingItem = existingMetadataMap.get(componentName);
+      // Look up by the old componentName format for backward compatibility, but also try name+variant
+      const lookupKey = `${uniqueSlug}-${variant}`;
+      const existingItem = existingMetadataMap.get(componentName) || 
+                          existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant);
       const isNewIcon = !existingItem;
       
       // Determine version and date information
@@ -227,7 +233,7 @@ async function buildIcons(iconsExportPath) {
         versionAdded = currentVersion;
         dateAdded = currentDate;
         lastModified = currentDate;
-        console.log(`  🆕 New icon: ${componentName} (v${currentVersion})`);
+        console.log(`  🆕 New icon: ${baseComponentName} ${variant} (v${currentVersion})`);
       } else {
         // Existing icon - preserve original version/date, update last modified
         versionAdded = existingItem.versionAdded || currentVersion;
@@ -239,18 +245,18 @@ async function buildIcons(iconsExportPath) {
         const existingSvgHash = existingItem.svgHash;
         
         if (existingSvgHash && currentSvgHash !== existingSvgHash) {
-          console.log(`  🔄 Modified icon: ${componentName} (last modified: v${currentVersion})`);
+          console.log(`  🔄 Modified icon: ${baseComponentName} ${variant} (last modified: v${currentVersion})`);
         } else {
-          console.log(`  ✅ Unchanged icon: ${componentName}`);
+          console.log(`  ✅ Unchanged icon: ${baseComponentName} ${variant}`);
         }
       }
       
-      // Add to metadata
+      // Add to metadata with the wrapper component name (user-facing API)
       metadata.push({
         name: uniqueSlug,
         variant,
         tags: parseTags(icon.tags),
-        componentName,
+        componentName: baseComponentName,
         fileName: `${fileName}.tsx`,
         versionAdded,
         dateAdded,
