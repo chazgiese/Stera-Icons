@@ -58,7 +58,6 @@ async function buildIcons(iconsExportPath) {
     mkdirSync(distDir, { recursive: true });
   }
   
-  const nameMapping = {};
   const takenSlugs = new Set();
   const metadata = [];
   const exports = [];
@@ -83,29 +82,6 @@ async function buildIcons(iconsExportPath) {
     existingMetadataMap.set(item.componentName, item);
   });
   
-  // Load previous name mapping to maintain backward compatibility
-  const previousNameMappingPath = join(distDir, 'name_map.json');
-  let previousNameMapping = {};
-  if (existsSync(previousNameMappingPath)) {
-    try {
-      previousNameMapping = JSON.parse(readFileSync(previousNameMappingPath, 'utf8'));
-      console.log('📋 Loaded previous name mapping for backward compatibility');
-    } catch (error) {
-      console.log('⚠️  Could not load previous name mapping, starting fresh');
-    }
-  }
-  
-  // Add known backward compatibility mappings for renamed icons
-  const knownRenames = {
-    'checkmark': 'check'  // checkmark was renamed to check
-  };
-  
-  // Merge known renames into previous mapping
-  for (const [oldName, newName] of Object.entries(knownRenames)) {
-    if (!previousNameMapping[oldName]) {
-      previousNameMapping[oldName] = oldName; // Assume it was previously named as itself
-    }
-  }
   
   // Track icons by base name for wrapper generation
   const iconsByBaseName = new Map();
@@ -128,26 +104,6 @@ async function buildIcons(iconsExportPath) {
     
     const uniqueSlug = ensureUnique(normalizedSlug, takenSlugs);
     
-    // Store the mapping
-    nameMapping[originalName] = uniqueSlug;
-    
-    // Check if this icon was renamed and add backward compatibility mapping
-    const previousSlug = previousNameMapping[originalName];
-    if (previousSlug && previousSlug !== uniqueSlug) {
-      console.log(`🔄 Icon renamed: ${originalName} (was ${previousSlug}, now ${uniqueSlug})`);
-      // Keep the old mapping for backward compatibility
-      nameMapping[previousSlug] = uniqueSlug;
-    }
-    
-    // Check for known renames (old name -> current name)
-    for (const [oldName, newName] of Object.entries(knownRenames)) {
-      if (originalName === newName) {
-        console.log(`🔄 Known rename detected: ${oldName} -> ${originalName}`);
-        // Add backward compatibility mapping
-        const oldSlug = normalizeSlug(oldName);
-        nameMapping[oldSlug] = uniqueSlug;
-      }
-    }
     
     // Track variants for this icon
     const iconVariants = [];
@@ -199,31 +155,9 @@ async function buildIcons(iconsExportPath) {
       // Track variant for wrapper generation
       iconVariants.push({ variant, componentName, fileName });
       
-      // Add backward compatibility exports for renamed icons
-      const previousSlug = previousNameMapping[originalName];
-      if (previousSlug && previousSlug !== uniqueSlug) {
-        const oldComponentName = getComponentName(previousSlug, variant);
-        const oldFileName = getFileName(previousSlug, variant);
-        exports.push(`export { ${componentName} as ${oldComponentName} } from './icons/${fileName}';`);
-        console.log(`  📦 Added backward compatibility export: ${oldComponentName} -> ${componentName}`);
-      }
-      
-      // Add backward compatibility exports for known renames
-      for (const [oldName, newName] of Object.entries(knownRenames)) {
-        if (originalName === newName) {
-          const oldSlug = normalizeSlug(oldName);
-          const oldComponentName = getComponentName(oldSlug, variant);
-          exports.push(`export { ${componentName} as ${oldComponentName} } from './icons/${fileName}';`);
-          console.log(`  📦 Added known rename export: ${oldComponentName} -> ${componentName}`);
-        }
-      }
       
       // Check if this is a new icon or an existing one
-      // Primary lookup by name+variant (current metadata structure uses wrapper componentName for all variants)
-      // Fallback to componentName lookup for backward compatibility with old metadata structure
-      const lookupKey = `${uniqueSlug}-${variant}`;
-      const existingItem = existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant) ||
-                          existingMetadataMap.get(componentName);
+      const existingItem = existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant);
       const isNewIcon = !existingItem;
       
       // Determine version and date information
@@ -343,11 +277,6 @@ export type { IconProps } from './types';
     JSON.stringify(metadata, null, 2)
   );
   
-  // Generate name mapping JSON
-  writeFileSync(
-    join(distDir, 'name_map.json'), 
-    JSON.stringify(nameMapping, null, 2)
-  );
   
   // Check for naming conflicts and exit with error if any found
   if (namingConflicts.length > 0) {
@@ -377,7 +306,6 @@ export type { IconProps } from './types';
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`  🗺️  Name mapping written to: ${join(distDir, 'name_map.json')}`);
 }
 
 // Main execution

@@ -99,7 +99,6 @@ node scripts/build-icons.js icons-export.json
 # This generates:
 # - React components in packages/react/src/icons/
 # - Metadata in packages/react/dist/icons.meta.json
-# - Name mapping in packages/react/dist/name_map.json
 ```
 
 ### Library Building
@@ -163,7 +162,6 @@ node scripts/metadata-utils.js recent 7
 
 **Critical files that MUST be committed:**
 - `packages/react/dist/icons.meta.json` - Version history
-- `packages/react/dist/name_map.json` - Backward compatibility
 
 These files are tracked in git (despite being in `dist/`) to preserve version history.
 

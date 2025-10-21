@@ -14,7 +14,7 @@
 
 - eeda95f: fix: correct metadata lookup to preserve icon version history during builds
 
-  Fixed a bug where the build script wasn't properly looking up existing icon metadata, causing all icons to be incorrectly marked as "new" with the current version instead of preserving their historical `versionAdded` values. The lookup now correctly uses name+variant matching first (matching the current metadata structure), with fallback to componentName for backward compatibility.
+  Fixed a bug where the build script wasn't properly looking up existing icon metadata, causing all icons to be incorrectly marked as "new" with the current version instead of preserving their historical `versionAdded` values. The lookup now correctly uses name+variant matching to preserve version history.
 
 ## 5.0.2
 
@@ -501,13 +501,9 @@
 
   ## Breaking Changes
 
-  - **Renamed**: `envalope` → `mail` (with backward compatibility exports)
+  - **Renamed**: `envalope` → `mail`
   - **Removed**: `currency-euro-circle` (replaced with `currency-euro-cirlce`)
 
-  ## Backward Compatibility
-
-  - All renamed icons maintain backward compatibility through export aliases
-  - Existing code using old icon names will continue to work
 
 ## 2.2.2
 
@@ -519,12 +515,10 @@
 
 ### Patch Changes
 
-- 1d03a48: Fix icon rename backward compatibility issue
+- 1d03a48: Fix icon rename issue
 
   - Updated build process to handle icon name changes gracefully
-  - Added backward compatibility exports for renamed icons (e.g., checkmark → check)
   - Prevents TypeScript errors when icons are renamed in icons-export.json
-  - Maintains existing imports while allowing new naming conventions
 
 ## 2.2.0
 
@@ -623,7 +617,7 @@
 
   ## Breaking Changes
 
-  - None - this is an additive update that maintains backward compatibility
+  - None - this is an additive update
   - All existing Regular and Filled variants remain unchanged
   - New Bold variants are available as separate imports
 

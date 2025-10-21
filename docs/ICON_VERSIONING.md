@@ -16,7 +16,6 @@ Each icon variant (regular, bold, filled) has metadata tracking:
 
 **Files:**
 - `packages/react/dist/icons.meta.json` - Version history for all icons
-- `packages/react/dist/name_map.json` - Backward compatibility mappings
 
 ### Why Git Tracking is Critical
 
@@ -51,10 +50,8 @@ The `.gitignore` is configured to track metadata while ignoring other build arti
 dist/                                    # Ignore all dist files
 !packages/react/dist/                    # But allow this directory
 !packages/react/dist/icons.meta.json     # Track metadata
-!packages/react/dist/name_map.json       # Track name mapping
 packages/react/dist/*                    # Re-ignore other files
 !packages/react/dist/icons.meta.json     # Re-allow metadata
-!packages/react/dist/name_map.json       # Re-allow name mapping
 ```
 
 ## Version Detection Algorithm

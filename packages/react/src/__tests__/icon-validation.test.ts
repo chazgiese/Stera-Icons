@@ -26,18 +26,4 @@ describe('Icon Validation', () => {
     });
   });
 
-  it('should have valid name mapping file', () => {
-    const mappingPath = join(__dirname, '../../dist/name_map.json');
-    expect(existsSync(mappingPath)).toBe(true);
-    
-    const mapping = JSON.parse(readFileSync(mappingPath, 'utf8'));
-    expect(typeof mapping).toBe('object');
-    
-    // Validate mapping structure
-    Object.entries(mapping).forEach(([original, normalized]) => {
-      expect(typeof original).toBe('string');
-      expect(typeof normalized).toBe('string');
-      expect(normalized).toMatch(/^[a-z0-9-]+$/); // Should be normalized slug
-    });
-  });
 });

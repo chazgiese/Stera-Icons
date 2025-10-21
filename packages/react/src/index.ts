@@ -1010,11 +1010,8 @@ export { ChatBubbleDotsIconBold as ChatBubbleDotsIconBold } from './icons/chat-b
 export { ChatBubbleDotsIconFilled as ChatBubbleDotsIconFilled } from './icons/chat-bubble-dots-filled';
 export { ChatBubbleDotsIcon as ChatBubbleDotsIconRegular } from './icons/chat-bubble-dots';
 export { CheckIconBold as CheckIconBold } from './icons/check-bold';
-export { CheckIconBold as CheckmarkIconBold } from './icons/check-bold';
 export { CheckIconFilled as CheckIconFilled } from './icons/check-filled';
-export { CheckIconFilled as CheckmarkIconFilled } from './icons/check-filled';
 export { CheckIcon as CheckIconRegular } from './icons/check';
-export { CheckIcon as CheckmarkIcon } from './icons/check';
 export { CheckBadgeIconBold as CheckBadgeIconBold } from './icons/check-badge-bold';
 export { CheckBadgeIconFilled as CheckBadgeIconFilled } from './icons/check-badge-filled';
 export { CheckBadgeIcon as CheckBadgeIconRegular } from './icons/check-badge';

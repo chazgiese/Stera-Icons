@@ -7,10 +7,8 @@ describe('Simple Validation', () => {
     // Check if metadata files exist in the dist directory
     const distDir = join(__dirname, '../../dist');
     const metadataPath = join(distDir, 'icons.meta.json');
-    const mappingPath = join(distDir, 'name_map.json');
     
     expect(existsSync(metadataPath)).toBe(true);
-    expect(existsSync(mappingPath)).toBe(true);
   });
 
   it('should have valid metadata content', () => {
@@ -29,17 +27,4 @@ describe('Simple Validation', () => {
     expect(firstIcon).toHaveProperty('fileName');
   });
 
-  it('should have valid name mapping content', () => {
-    const mappingPath = join(__dirname, '../../dist/name_map.json');
-    const mapping = JSON.parse(readFileSync(mappingPath, 'utf8'));
-    
-    expect(typeof mapping).toBe('object');
-    expect(Object.keys(mapping).length).toBeGreaterThan(0);
-    
-    // Check first mapping entry
-    const [original, normalized] = Object.entries(mapping)[0];
-    expect(typeof original).toBe('string');
-    expect(typeof normalized).toBe('string');
-    expect(normalized).toMatch(/^[a-z0-9-]+$/);
-  });
 });
