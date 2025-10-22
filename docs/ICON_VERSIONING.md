@@ -225,9 +225,9 @@ git ls-files packages/react/dist/icons.meta.json
    # Should show: (no output, meaning it's not ignored)
    ```
 
-4. **Fresh clone without metadata**: Run version fix script
+4. **Fresh clone without metadata**: Restore from git history
    ```bash
-   node scripts/fix-icon-versions.js
+   git checkout HEAD -- packages/react/dist/icons.meta.json
    ```
 
 ### Problem: Wrong version assigned to new icons
@@ -315,18 +315,7 @@ When per-icon versioning was first added:
 
 ### Migration (Version History Restoration)
 
-A migration script (`scripts/fix-icon-versions.js`) restored approximate history:
-
-```javascript
-// Known icons by version from CHANGELOG
-const KNOWN_ICONS_BY_VERSION = {
-  '3.2.0': ['area-chart', 'bar-chart', 'align-horizontal-left', ...],
-  '2.1.0': ['wifi-slash', 'wine-bottle', 'wine-glass']
-};
-
-// Default to v3.0.0 for unknown older icons
-const defaultVersion = '3.0.0';
-```
+The version history was restored based on CHANGELOG analysis, with older icons defaulting to v3.0.0 and known icons from specific versions properly categorized.
 
 **Result:**
 - v2.1.0: 3 variants

@@ -32,7 +32,6 @@ stera-icons/
 │   ├── build-icons.js         # Icon generation from JSON
 │   ├── version-utils.js       # Version detection
 │   ├── metadata-utils.js      # Metadata utilities
-│   ├── fix-icon-versions.js   # Version history migration
 │   ├── svgo.config.js         # SVG optimization
 │   ├── svgr-template.js       # React component template
 │   └── helpers.js             # Utility functions
