@@ -1,5 +1,17 @@
 # @stera/icons
 
+## 5.1.0
+
+### Minor Changes
+
+- 482411e: Add new icon variants and update existing icons
+
+  - Add filltone and linetone variants for existing icons
+  - Add new icons: scan-barcode, scribble, signature, signature-x, sliders, sliders-v, square-grid, square-grid-plus, tv-play-alt, wrist-watch
+  - Add new variants: more-circle-v, more-square-v, more-v, send-h, send-v, settings, text-bold
+  - Remove deprecated icons: list-bullet-two, list-check-two, list-two, mail-check, mail-minus, mail-plus, mail-slash, mail-x, more-circle-vertical, more-square-vertical, more-vertical, pencil, send-horizontal, send-vertical, sliders-horizontal, sliders-vertical, square-four, square-four-plus, text-b, tv-play
+  - Update icon components with consistent styling and structure
+
 ## 5.0.4
 
 ### Patch Changes
@@ -503,7 +515,6 @@
 
   - **Renamed**: `envalope` → `mail`
   - **Removed**: `currency-euro-circle` (replaced with `currency-euro-cirlce`)
-
 
 ## 2.2.2
 
