@@ -10,6 +10,7 @@ A lightweight, tree-shakeable React icon library with TypeScript support and acc
 - ♿ **Accessible**: Built-in ARIA support for screen readers
 - 🎯 **Per-icon imports**: Import individual icons for maximum optimization
 - 🚀 **Optimized builds**: Production-ready with no development overhead
+- 🎨 **Multiple variants**: 5 variants (regular, bold, filled, filltone, linetone) for every icon
 
 ## Installation
 
@@ -30,7 +31,7 @@ Stera Icons is optimized for production use:
 - **Tree-shaking**: Import only what you use for minimal impact
 - **No source maps**: Production builds exclude development files for optimal size
 
-The package includes 552+ icons with 5 variants each (regular, bold, filled, filltone, linetone), but thanks to tree-shaking, you only pay for what you import.
+The package includes 552 icons with 5 variants each (regular, bold, filled, filltone, linetone), but thanks to tree-shaking, you only pay for what you import.
 
 ## Usage
 
@@ -76,6 +77,8 @@ function App() {
       <HeartIcon size={20} />
       <HeartIcon variant="bold" size={20} />
       <HeartIcon variant="filled" size={20} />
+      <HeartIcon variant="filltone" size={20} />
+      <HeartIcon variant="linetone" size={20} />
     </div>
   );
 }
@@ -99,6 +102,34 @@ All icon components are suffixed with "Icon" to prevent naming conflicts with yo
 - **Pattern**: `{Name}Icon` (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`)
 - **Variants**: Use the `variant` prop to switch between styles (regular, bold, filled, filltone, linetone)
 
+## Icon Variants
+
+Stera Icons provides five distinct variants for maximum design flexibility:
+
+- **Regular**: Clean, outlined icons perfect for general use
+- **Bold**: Thicker strokes for emphasis and better visibility at small sizes
+- **Filled**: Solid icons for high contrast and modern designs
+- **Filltone**: Filled icons with subtle transparency effects
+- **Linetone**: Outlined icons with subtle transparency effects
+
+### Example Usage
+
+```tsx
+import { HeartIcon } from 'stera-icons';
+
+function IconVariants() {
+  return (
+    <div>
+      <HeartIcon variant="regular" size={24} />   {/* Regular variant */}
+      <HeartIcon variant="bold" size={24} />      {/* Bold variant */}
+      <HeartIcon variant="filled" size={24} />    {/* Filled variant */}
+      <HeartIcon variant="filltone" size={24} />  {/* Filltone variant */}
+      <HeartIcon variant="linetone" size={24} />  {/* Linetone variant */}
+    </div>
+  );
+}
+```
+
 ## API
 
 ### IconProps
@@ -107,6 +138,7 @@ All icons accept these props:
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
+| `variant` | `'regular' \| 'bold' \| 'filled' \| 'filltone' \| 'linetone'` | `'regular'` | Icon variant style |
 | `size` | `number \| string` | `24` | Icon size in pixels |
 | `color` | `string` | `'currentColor'` | Icon color (inherits text color by default) |
 | `className` | `string` | - | Additional CSS class |

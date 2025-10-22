@@ -193,7 +193,7 @@ const unchangedIcons = metadata.length - newIcons - modifiedIcons;
 
 **Symptoms:**
 ```
-🆕 New icons: 1665
+🆕 New icons: 2760
 ```
 
 **Diagnosis:**
@@ -310,7 +310,7 @@ node scripts/hash-versioning.js info
 
 When per-icon versioning was first added:
 - No existing metadata file
-- All 1,665 icons marked as v4.0.0
+- All 2,760 icon variants marked as v4.0.0
 - Version history lost
 
 ### Migration (Version History Restoration)
@@ -330,8 +330,10 @@ const defaultVersion = '3.0.0';
 
 **Result:**
 - v2.1.0: 3 variants
-- v3.0.0: 1,627 variants (default for older icons)
-- v3.2.0: 35 variants (known from CHANGELOG)
+- v3.0.0: 1,466 variants (default for older icons)
+- v3.2.0: 34 variants (known from CHANGELOG)
+- v5.0.4: 1,247 variants (migration)
+- v5.1.0: 10 variants (recent additions)
 
 ## Maintenance Tasks
 
