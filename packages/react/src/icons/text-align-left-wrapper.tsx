@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextAlignLeftIcon as TextAlignLeftIconRegular } from './text-align-left';
+import { TextAlignLeftIcon as RegularTextAlignLeftIcon } from './text-align-left';
 import { TextAlignLeftIconBold } from './text-align-left-bold';
 import { TextAlignLeftIconFilled } from './text-align-left-filled';
 import { TextAlignLeftIconFilltone } from './text-align-left-filltone';
@@ -25,7 +25,7 @@ const TextAlignLeftIcon = memo(forwardRef<SVGSVGElement, TextAlignLeftIconProps>
       return <TextAlignLeftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextAlignLeftIconRegular ref={ref} {...props} />;
+      return <RegularTextAlignLeftIcon ref={ref} {...props} />;
   }
 }));
 

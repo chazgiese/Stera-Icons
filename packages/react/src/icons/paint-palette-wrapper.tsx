@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PaintPaletteIcon as PaintPaletteIconRegular } from './paint-palette';
+import { PaintPaletteIcon as RegularPaintPaletteIcon } from './paint-palette';
 import { PaintPaletteIconBold } from './paint-palette-bold';
 import { PaintPaletteIconFilled } from './paint-palette-filled';
 import { PaintPaletteIconFilltone } from './paint-palette-filltone';
@@ -25,7 +25,7 @@ const PaintPaletteIcon = memo(forwardRef<SVGSVGElement, PaintPaletteIconProps>((
       return <PaintPaletteIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PaintPaletteIconRegular ref={ref} {...props} />;
+      return <RegularPaintPaletteIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WifiIcon as WifiIconRegular } from './wifi';
+import { WifiIcon as RegularWifiIcon } from './wifi';
 import { WifiIconBold } from './wifi-bold';
 import { WifiIconFilled } from './wifi-filled';
 import { WifiIconFilltone } from './wifi-filltone';
@@ -25,7 +25,7 @@ const WifiIcon = memo(forwardRef<SVGSVGElement, WifiIconProps>(({
       return <WifiIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WifiIconRegular ref={ref} {...props} />;
+      return <RegularWifiIcon ref={ref} {...props} />;
   }
 }));
 

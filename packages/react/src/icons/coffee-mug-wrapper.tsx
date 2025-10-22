@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CoffeeMugIcon as CoffeeMugIconRegular } from './coffee-mug';
+import { CoffeeMugIcon as RegularCoffeeMugIcon } from './coffee-mug';
 import { CoffeeMugIconBold } from './coffee-mug-bold';
 import { CoffeeMugIconFilled } from './coffee-mug-filled';
 import { CoffeeMugIconFilltone } from './coffee-mug-filltone';
@@ -25,7 +25,7 @@ const CoffeeMugIcon = memo(forwardRef<SVGSVGElement, CoffeeMugIconProps>(({
       return <CoffeeMugIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CoffeeMugIconRegular ref={ref} {...props} />;
+      return <RegularCoffeeMugIcon ref={ref} {...props} />;
   }
 }));
 

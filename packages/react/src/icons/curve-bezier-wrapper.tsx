@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CurveBezierIcon as CurveBezierIconRegular } from './curve-bezier';
+import { CurveBezierIcon as RegularCurveBezierIcon } from './curve-bezier';
 import { CurveBezierIconBold } from './curve-bezier-bold';
 import { CurveBezierIconFilled } from './curve-bezier-filled';
 import { CurveBezierIconFilltone } from './curve-bezier-filltone';
@@ -25,7 +25,7 @@ const CurveBezierIcon = memo(forwardRef<SVGSVGElement, CurveBezierIconProps>(({
       return <CurveBezierIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CurveBezierIconRegular ref={ref} {...props} />;
+      return <RegularCurveBezierIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArrowBigUpIcon as ArrowBigUpIconRegular } from './arrow-big-up';
+import { ArrowBigUpIcon as RegularArrowBigUpIcon } from './arrow-big-up';
 import { ArrowBigUpIconBold } from './arrow-big-up-bold';
 import { ArrowBigUpIconFilled } from './arrow-big-up-filled';
 import { ArrowBigUpIconFilltone } from './arrow-big-up-filltone';
@@ -25,7 +25,7 @@ const ArrowBigUpIcon = memo(forwardRef<SVGSVGElement, ArrowBigUpIconProps>(({
       return <ArrowBigUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArrowBigUpIconRegular ref={ref} {...props} />;
+      return <RegularArrowBigUpIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChevronFullSquareUpIcon as ChevronFullSquareUpIconRegular } from './chevron-full-square-up';
+import { ChevronFullSquareUpIcon as RegularChevronFullSquareUpIcon } from './chevron-full-square-up';
 import { ChevronFullSquareUpIconBold } from './chevron-full-square-up-bold';
 import { ChevronFullSquareUpIconFilled } from './chevron-full-square-up-filled';
 import { ChevronFullSquareUpIconFilltone } from './chevron-full-square-up-filltone';
@@ -25,7 +25,7 @@ const ChevronFullSquareUpIcon = memo(forwardRef<SVGSVGElement, ChevronFullSquare
       return <ChevronFullSquareUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChevronFullSquareUpIconRegular ref={ref} {...props} />;
+      return <RegularChevronFullSquareUpIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CurrencyEuroIcon as CurrencyEuroIconRegular } from './currency-euro';
+import { CurrencyEuroIcon as RegularCurrencyEuroIcon } from './currency-euro';
 import { CurrencyEuroIconBold } from './currency-euro-bold';
 import { CurrencyEuroIconFilled } from './currency-euro-filled';
 import { CurrencyEuroIconFilltone } from './currency-euro-filltone';
@@ -25,7 +25,7 @@ const CurrencyEuroIcon = memo(forwardRef<SVGSVGElement, CurrencyEuroIconProps>((
       return <CurrencyEuroIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CurrencyEuroIconRegular ref={ref} {...props} />;
+      return <RegularCurrencyEuroIcon ref={ref} {...props} />;
   }
 }));
 

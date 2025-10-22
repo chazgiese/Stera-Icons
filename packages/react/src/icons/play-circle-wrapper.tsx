@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlayCircleIcon as PlayCircleIconRegular } from './play-circle';
+import { PlayCircleIcon as RegularPlayCircleIcon } from './play-circle';
 import { PlayCircleIconBold } from './play-circle-bold';
 import { PlayCircleIconFilled } from './play-circle-filled';
 import { PlayCircleIconFilltone } from './play-circle-filltone';
@@ -25,7 +25,7 @@ const PlayCircleIcon = memo(forwardRef<SVGSVGElement, PlayCircleIconProps>(({
       return <PlayCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlayCircleIconRegular ref={ref} {...props} />;
+      return <RegularPlayCircleIcon ref={ref} {...props} />;
   }
 }));
 

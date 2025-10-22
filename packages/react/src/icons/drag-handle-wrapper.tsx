@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DragHandleIcon as DragHandleIconRegular } from './drag-handle';
+import { DragHandleIcon as RegularDragHandleIcon } from './drag-handle';
 import { DragHandleIconBold } from './drag-handle-bold';
 import { DragHandleIconFilled } from './drag-handle-filled';
 import { DragHandleIconFilltone } from './drag-handle-filltone';
@@ -25,7 +25,7 @@ const DragHandleIcon = memo(forwardRef<SVGSVGElement, DragHandleIconProps>(({
       return <DragHandleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DragHandleIconRegular ref={ref} {...props} />;
+      return <RegularDragHandleIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlashlightIcon as FlashlightIconRegular } from './flashlight';
+import { FlashlightIcon as RegularFlashlightIcon } from './flashlight';
 import { FlashlightIconBold } from './flashlight-bold';
 import { FlashlightIconFilled } from './flashlight-filled';
 import { FlashlightIconFilltone } from './flashlight-filltone';
@@ -25,7 +25,7 @@ const FlashlightIcon = memo(forwardRef<SVGSVGElement, FlashlightIconProps>(({
       return <FlashlightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlashlightIconRegular ref={ref} {...props} />;
+      return <RegularFlashlightIcon ref={ref} {...props} />;
   }
 }));
 

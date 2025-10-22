@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { IdHIcon as IdHIconRegular } from './id-h';
+import { IdHIcon as RegularIdHIcon } from './id-h';
 import { IdHIconBold } from './id-h-bold';
 import { IdHIconFilled } from './id-h-filled';
 import { IdHIconFilltone } from './id-h-filltone';
@@ -25,7 +25,7 @@ const IdHIcon = memo(forwardRef<SVGSVGElement, IdHIconProps>(({
       return <IdHIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <IdHIconRegular ref={ref} {...props} />;
+      return <RegularIdHIcon ref={ref} {...props} />;
   }
 }));
 

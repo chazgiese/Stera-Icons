@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ImageStackIcon as ImageStackIconRegular } from './image-stack';
+import { ImageStackIcon as RegularImageStackIcon } from './image-stack';
 import { ImageStackIconBold } from './image-stack-bold';
 import { ImageStackIconFilled } from './image-stack-filled';
 import { ImageStackIconFilltone } from './image-stack-filltone';
@@ -25,7 +25,7 @@ const ImageStackIcon = memo(forwardRef<SVGSVGElement, ImageStackIconProps>(({
       return <ImageStackIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ImageStackIconRegular ref={ref} {...props} />;
+      return <RegularImageStackIcon ref={ref} {...props} />;
   }
 }));
 

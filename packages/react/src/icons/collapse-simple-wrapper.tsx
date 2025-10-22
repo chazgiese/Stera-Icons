@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CollapseSimpleIcon as CollapseSimpleIconRegular } from './collapse-simple';
+import { CollapseSimpleIcon as RegularCollapseSimpleIcon } from './collapse-simple';
 import { CollapseSimpleIconBold } from './collapse-simple-bold';
 import { CollapseSimpleIconFilled } from './collapse-simple-filled';
 import { CollapseSimpleIconFilltone } from './collapse-simple-filltone';
@@ -25,7 +25,7 @@ const CollapseSimpleIcon = memo(forwardRef<SVGSVGElement, CollapseSimpleIconProp
       return <CollapseSimpleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CollapseSimpleIconRegular ref={ref} {...props} />;
+      return <RegularCollapseSimpleIcon ref={ref} {...props} />;
   }
 }));
 

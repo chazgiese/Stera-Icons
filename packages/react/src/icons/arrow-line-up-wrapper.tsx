@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArrowLineUpIcon as ArrowLineUpIconRegular } from './arrow-line-up';
+import { ArrowLineUpIcon as RegularArrowLineUpIcon } from './arrow-line-up';
 import { ArrowLineUpIconBold } from './arrow-line-up-bold';
 import { ArrowLineUpIconFilled } from './arrow-line-up-filled';
 import { ArrowLineUpIconFilltone } from './arrow-line-up-filltone';
@@ -25,7 +25,7 @@ const ArrowLineUpIcon = memo(forwardRef<SVGSVGElement, ArrowLineUpIconProps>(({
       return <ArrowLineUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArrowLineUpIconRegular ref={ref} {...props} />;
+      return <RegularArrowLineUpIcon ref={ref} {...props} />;
   }
 }));
 

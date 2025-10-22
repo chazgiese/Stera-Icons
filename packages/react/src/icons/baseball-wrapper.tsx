@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BaseballIcon as BaseballIconRegular } from './baseball';
+import { BaseballIcon as RegularBaseballIcon } from './baseball';
 import { BaseballIconBold } from './baseball-bold';
 import { BaseballIconFilled } from './baseball-filled';
 import { BaseballIconFilltone } from './baseball-filltone';
@@ -25,7 +25,7 @@ const BaseballIcon = memo(forwardRef<SVGSVGElement, BaseballIconProps>(({
       return <BaseballIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BaseballIconRegular ref={ref} {...props} />;
+      return <RegularBaseballIcon ref={ref} {...props} />;
   }
 }));
 

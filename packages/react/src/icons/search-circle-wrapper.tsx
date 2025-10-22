@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SearchCircleIcon as SearchCircleIconRegular } from './search-circle';
+import { SearchCircleIcon as RegularSearchCircleIcon } from './search-circle';
 import { SearchCircleIconBold } from './search-circle-bold';
 import { SearchCircleIconFilled } from './search-circle-filled';
 import { SearchCircleIconFilltone } from './search-circle-filltone';
@@ -25,7 +25,7 @@ const SearchCircleIcon = memo(forwardRef<SVGSVGElement, SearchCircleIconProps>((
       return <SearchCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SearchCircleIconRegular ref={ref} {...props} />;
+      return <RegularSearchCircleIcon ref={ref} {...props} />;
   }
 }));
 

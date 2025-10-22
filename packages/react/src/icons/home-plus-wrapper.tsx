@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HomePlusIcon as HomePlusIconRegular } from './home-plus';
+import { HomePlusIcon as RegularHomePlusIcon } from './home-plus';
 import { HomePlusIconBold } from './home-plus-bold';
 import { HomePlusIconFilled } from './home-plus-filled';
 import { HomePlusIconFilltone } from './home-plus-filltone';
@@ -25,7 +25,7 @@ const HomePlusIcon = memo(forwardRef<SVGSVGElement, HomePlusIconProps>(({
       return <HomePlusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HomePlusIconRegular ref={ref} {...props} />;
+      return <RegularHomePlusIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BarChartRowDescIcon as BarChartRowDescIconRegular } from './bar-chart-row-desc';
+import { BarChartRowDescIcon as RegularBarChartRowDescIcon } from './bar-chart-row-desc';
 import { BarChartRowDescIconBold } from './bar-chart-row-desc-bold';
 import { BarChartRowDescIconFilled } from './bar-chart-row-desc-filled';
 import { BarChartRowDescIconFilltone } from './bar-chart-row-desc-filltone';
@@ -25,7 +25,7 @@ const BarChartRowDescIcon = memo(forwardRef<SVGSVGElement, BarChartRowDescIconPr
       return <BarChartRowDescIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BarChartRowDescIconRegular ref={ref} {...props} />;
+      return <RegularBarChartRowDescIcon ref={ref} {...props} />;
   }
 }));
 

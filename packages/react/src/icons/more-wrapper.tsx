@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MoreIcon as MoreIconRegular } from './more';
+import { MoreIcon as RegularMoreIcon } from './more';
 import { MoreIconBold } from './more-bold';
 import { MoreIconFilled } from './more-filled';
 import { MoreIconFilltone } from './more-filltone';
@@ -25,7 +25,7 @@ const MoreIcon = memo(forwardRef<SVGSVGElement, MoreIconProps>(({
       return <MoreIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MoreIconRegular ref={ref} {...props} />;
+      return <RegularMoreIcon ref={ref} {...props} />;
   }
 }));
 

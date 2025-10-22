@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BubbleIcon as BubbleIconRegular } from './bubble';
+import { BubbleIcon as RegularBubbleIcon } from './bubble';
 import { BubbleIconBold } from './bubble-bold';
 import { BubbleIconFilled } from './bubble-filled';
 import { BubbleIconFilltone } from './bubble-filltone';
@@ -25,7 +25,7 @@ const BubbleIcon = memo(forwardRef<SVGSVGElement, BubbleIconProps>(({
       return <BubbleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BubbleIconRegular ref={ref} {...props} />;
+      return <RegularBubbleIcon ref={ref} {...props} />;
   }
 }));
 

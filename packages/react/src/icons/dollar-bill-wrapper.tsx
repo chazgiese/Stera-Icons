@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DollarBillIcon as DollarBillIconRegular } from './dollar-bill';
+import { DollarBillIcon as RegularDollarBillIcon } from './dollar-bill';
 import { DollarBillIconBold } from './dollar-bill-bold';
 import { DollarBillIconFilled } from './dollar-bill-filled';
 import { DollarBillIconFilltone } from './dollar-bill-filltone';
@@ -25,7 +25,7 @@ const DollarBillIcon = memo(forwardRef<SVGSVGElement, DollarBillIconProps>(({
       return <DollarBillIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DollarBillIconRegular ref={ref} {...props} />;
+      return <RegularDollarBillIcon ref={ref} {...props} />;
   }
 }));
 

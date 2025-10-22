@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SignOutAltIcon as SignOutAltIconRegular } from './sign-out-alt';
+import { SignOutAltIcon as RegularSignOutAltIcon } from './sign-out-alt';
 import { SignOutAltIconBold } from './sign-out-alt-bold';
 import { SignOutAltIconFilled } from './sign-out-alt-filled';
 import { SignOutAltIconFilltone } from './sign-out-alt-filltone';
@@ -25,7 +25,7 @@ const SignOutAltIcon = memo(forwardRef<SVGSVGElement, SignOutAltIconProps>(({
       return <SignOutAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SignOutAltIconRegular ref={ref} {...props} />;
+      return <RegularSignOutAltIcon ref={ref} {...props} />;
   }
 }));
 

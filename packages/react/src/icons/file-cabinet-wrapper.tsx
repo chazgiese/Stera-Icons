@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FileCabinetIcon as FileCabinetIconRegular } from './file-cabinet';
+import { FileCabinetIcon as RegularFileCabinetIcon } from './file-cabinet';
 import { FileCabinetIconBold } from './file-cabinet-bold';
 import { FileCabinetIconFilled } from './file-cabinet-filled';
 import { FileCabinetIconFilltone } from './file-cabinet-filltone';
@@ -25,7 +25,7 @@ const FileCabinetIcon = memo(forwardRef<SVGSVGElement, FileCabinetIconProps>(({
       return <FileCabinetIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FileCabinetIconRegular ref={ref} {...props} />;
+      return <RegularFileCabinetIcon ref={ref} {...props} />;
   }
 }));
 

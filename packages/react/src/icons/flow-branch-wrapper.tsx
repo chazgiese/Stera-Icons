@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlowBranchIcon as FlowBranchIconRegular } from './flow-branch';
+import { FlowBranchIcon as RegularFlowBranchIcon } from './flow-branch';
 import { FlowBranchIconBold } from './flow-branch-bold';
 import { FlowBranchIconFilled } from './flow-branch-filled';
 import { FlowBranchIconFilltone } from './flow-branch-filltone';
@@ -25,7 +25,7 @@ const FlowBranchIcon = memo(forwardRef<SVGSVGElement, FlowBranchIconProps>(({
       return <FlowBranchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlowBranchIconRegular ref={ref} {...props} />;
+      return <RegularFlowBranchIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CurveEaseIcon as CurveEaseIconRegular } from './curve-ease';
+import { CurveEaseIcon as RegularCurveEaseIcon } from './curve-ease';
 import { CurveEaseIconBold } from './curve-ease-bold';
 import { CurveEaseIconFilled } from './curve-ease-filled';
 import { CurveEaseIconFilltone } from './curve-ease-filltone';
@@ -25,7 +25,7 @@ const CurveEaseIcon = memo(forwardRef<SVGSVGElement, CurveEaseIconProps>(({
       return <CurveEaseIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CurveEaseIconRegular ref={ref} {...props} />;
+      return <RegularCurveEaseIcon ref={ref} {...props} />;
   }
 }));
 

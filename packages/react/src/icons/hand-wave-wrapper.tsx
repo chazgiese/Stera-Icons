@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HandWaveIcon as HandWaveIconRegular } from './hand-wave';
+import { HandWaveIcon as RegularHandWaveIcon } from './hand-wave';
 import { HandWaveIconBold } from './hand-wave-bold';
 import { HandWaveIconFilled } from './hand-wave-filled';
 import { HandWaveIconFilltone } from './hand-wave-filltone';
@@ -25,7 +25,7 @@ const HandWaveIcon = memo(forwardRef<SVGSVGElement, HandWaveIconProps>(({
       return <HandWaveIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HandWaveIconRegular ref={ref} {...props} />;
+      return <RegularHandWaveIcon ref={ref} {...props} />;
   }
 }));
 

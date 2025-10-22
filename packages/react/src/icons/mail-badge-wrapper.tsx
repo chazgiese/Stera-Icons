@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MailBadgeIcon as MailBadgeIconRegular } from './mail-badge';
+import { MailBadgeIcon as RegularMailBadgeIcon } from './mail-badge';
 import { MailBadgeIconBold } from './mail-badge-bold';
 import { MailBadgeIconFilled } from './mail-badge-filled';
 import { MailBadgeIconFilltone } from './mail-badge-filltone';
@@ -25,7 +25,7 @@ const MailBadgeIcon = memo(forwardRef<SVGSVGElement, MailBadgeIconProps>(({
       return <MailBadgeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MailBadgeIconRegular ref={ref} {...props} />;
+      return <RegularMailBadgeIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { UploadIcon as UploadIconRegular } from './upload';
+import { UploadIcon as RegularUploadIcon } from './upload';
 import { UploadIconBold } from './upload-bold';
 import { UploadIconFilled } from './upload-filled';
 import { UploadIconFilltone } from './upload-filltone';
@@ -25,7 +25,7 @@ const UploadIcon = memo(forwardRef<SVGSVGElement, UploadIconProps>(({
       return <UploadIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <UploadIconRegular ref={ref} {...props} />;
+      return <RegularUploadIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HomeHeartIcon as HomeHeartIconRegular } from './home-heart';
+import { HomeHeartIcon as RegularHomeHeartIcon } from './home-heart';
 import { HomeHeartIconBold } from './home-heart-bold';
 import { HomeHeartIconFilled } from './home-heart-filled';
 import { HomeHeartIconFilltone } from './home-heart-filltone';
@@ -25,7 +25,7 @@ const HomeHeartIcon = memo(forwardRef<SVGSVGElement, HomeHeartIconProps>(({
       return <HomeHeartIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HomeHeartIconRegular ref={ref} {...props} />;
+      return <RegularHomeHeartIcon ref={ref} {...props} />;
   }
 }));
 

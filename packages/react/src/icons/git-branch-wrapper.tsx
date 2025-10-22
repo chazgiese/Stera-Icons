@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitBranchIcon as GitBranchIconRegular } from './git-branch';
+import { GitBranchIcon as RegularGitBranchIcon } from './git-branch';
 import { GitBranchIconBold } from './git-branch-bold';
 import { GitBranchIconFilled } from './git-branch-filled';
 import { GitBranchIconFilltone } from './git-branch-filltone';
@@ -25,7 +25,7 @@ const GitBranchIcon = memo(forwardRef<SVGSVGElement, GitBranchIconProps>(({
       return <GitBranchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitBranchIconRegular ref={ref} {...props} />;
+      return <RegularGitBranchIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AtomOrbitIcon as AtomOrbitIconRegular } from './atom-orbit';
+import { AtomOrbitIcon as RegularAtomOrbitIcon } from './atom-orbit';
 import { AtomOrbitIconBold } from './atom-orbit-bold';
 import { AtomOrbitIconFilled } from './atom-orbit-filled';
 import { AtomOrbitIconFilltone } from './atom-orbit-filltone';
@@ -25,7 +25,7 @@ const AtomOrbitIcon = memo(forwardRef<SVGSVGElement, AtomOrbitIconProps>(({
       return <AtomOrbitIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AtomOrbitIconRegular ref={ref} {...props} />;
+      return <RegularAtomOrbitIcon ref={ref} {...props} />;
   }
 }));
 

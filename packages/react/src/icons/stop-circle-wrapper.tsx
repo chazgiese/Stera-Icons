@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { StopCircleIcon as StopCircleIconRegular } from './stop-circle';
+import { StopCircleIcon as RegularStopCircleIcon } from './stop-circle';
 import { StopCircleIconBold } from './stop-circle-bold';
 import { StopCircleIconFilled } from './stop-circle-filled';
 import { StopCircleIconFilltone } from './stop-circle-filltone';
@@ -25,7 +25,7 @@ const StopCircleIcon = memo(forwardRef<SVGSVGElement, StopCircleIconProps>(({
       return <StopCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <StopCircleIconRegular ref={ref} {...props} />;
+      return <RegularStopCircleIcon ref={ref} {...props} />;
   }
 }));
 

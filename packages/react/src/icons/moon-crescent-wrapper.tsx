@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MoonCrescentIcon as MoonCrescentIconRegular } from './moon-crescent';
+import { MoonCrescentIcon as RegularMoonCrescentIcon } from './moon-crescent';
 import { MoonCrescentIconBold } from './moon-crescent-bold';
 import { MoonCrescentIconFilled } from './moon-crescent-filled';
 import { MoonCrescentIconFilltone } from './moon-crescent-filltone';
@@ -25,7 +25,7 @@ const MoonCrescentIcon = memo(forwardRef<SVGSVGElement, MoonCrescentIconProps>((
       return <MoonCrescentIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MoonCrescentIconRegular ref={ref} {...props} />;
+      return <RegularMoonCrescentIcon ref={ref} {...props} />;
   }
 }));
 

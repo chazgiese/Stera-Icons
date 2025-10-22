@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BookClosedIcon as BookClosedIconRegular } from './book-closed';
+import { BookClosedIcon as RegularBookClosedIcon } from './book-closed';
 import { BookClosedIconBold } from './book-closed-bold';
 import { BookClosedIconFilled } from './book-closed-filled';
 import { BookClosedIconFilltone } from './book-closed-filltone';
@@ -25,7 +25,7 @@ const BookClosedIcon = memo(forwardRef<SVGSVGElement, BookClosedIconProps>(({
       return <BookClosedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BookClosedIconRegular ref={ref} {...props} />;
+      return <RegularBookClosedIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ThumbsDownIcon as ThumbsDownIconRegular } from './thumbs-down';
+import { ThumbsDownIcon as RegularThumbsDownIcon } from './thumbs-down';
 import { ThumbsDownIconBold } from './thumbs-down-bold';
 import { ThumbsDownIconFilled } from './thumbs-down-filled';
 import { ThumbsDownIconFilltone } from './thumbs-down-filltone';
@@ -25,7 +25,7 @@ const ThumbsDownIcon = memo(forwardRef<SVGSVGElement, ThumbsDownIconProps>(({
       return <ThumbsDownIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ThumbsDownIconRegular ref={ref} {...props} />;
+      return <RegularThumbsDownIcon ref={ref} {...props} />;
   }
 }));
 

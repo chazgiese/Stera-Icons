@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ListIcon as ListIconRegular } from './list';
+import { ListIcon as RegularListIcon } from './list';
 import { ListIconBold } from './list-bold';
 import { ListIconFilled } from './list-filled';
 import { ListIconFilltone } from './list-filltone';
@@ -25,7 +25,7 @@ const ListIcon = memo(forwardRef<SVGSVGElement, ListIconProps>(({
       return <ListIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ListIconRegular ref={ref} {...props} />;
+      return <RegularListIcon ref={ref} {...props} />;
   }
 }));
 

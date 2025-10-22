@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlignVerticalTopIcon as AlignVerticalTopIconRegular } from './align-vertical-top';
+import { AlignVerticalTopIcon as RegularAlignVerticalTopIcon } from './align-vertical-top';
 import { AlignVerticalTopIconBold } from './align-vertical-top-bold';
 import { AlignVerticalTopIconFilled } from './align-vertical-top-filled';
 import { AlignVerticalTopIconFilltone } from './align-vertical-top-filltone';
@@ -25,7 +25,7 @@ const AlignVerticalTopIcon = memo(forwardRef<SVGSVGElement, AlignVerticalTopIcon
       return <AlignVerticalTopIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlignVerticalTopIconRegular ref={ref} {...props} />;
+      return <RegularAlignVerticalTopIcon ref={ref} {...props} />;
   }
 }));
 

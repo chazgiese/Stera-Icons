@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DuplicatePlusIcon as DuplicatePlusIconRegular } from './duplicate-plus';
+import { DuplicatePlusIcon as RegularDuplicatePlusIcon } from './duplicate-plus';
 import { DuplicatePlusIconBold } from './duplicate-plus-bold';
 import { DuplicatePlusIconFilled } from './duplicate-plus-filled';
 import { DuplicatePlusIconFilltone } from './duplicate-plus-filltone';
@@ -25,7 +25,7 @@ const DuplicatePlusIcon = memo(forwardRef<SVGSVGElement, DuplicatePlusIconProps>
       return <DuplicatePlusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DuplicatePlusIconRegular ref={ref} {...props} />;
+      return <RegularDuplicatePlusIcon ref={ref} {...props} />;
   }
 }));
 

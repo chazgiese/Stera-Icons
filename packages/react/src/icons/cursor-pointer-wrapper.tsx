@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CursorPointerIcon as CursorPointerIconRegular } from './cursor-pointer';
+import { CursorPointerIcon as RegularCursorPointerIcon } from './cursor-pointer';
 import { CursorPointerIconBold } from './cursor-pointer-bold';
 import { CursorPointerIconFilled } from './cursor-pointer-filled';
 import { CursorPointerIconFilltone } from './cursor-pointer-filltone';
@@ -25,7 +25,7 @@ const CursorPointerIcon = memo(forwardRef<SVGSVGElement, CursorPointerIconProps>
       return <CursorPointerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CursorPointerIconRegular ref={ref} {...props} />;
+      return <RegularCursorPointerIcon ref={ref} {...props} />;
   }
 }));
 

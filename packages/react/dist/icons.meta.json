@@ -8791,8 +8791,8 @@
     "fileName": "battery-half-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.213Z",
-    "lastModified": "2025-10-21T09:00:36.213Z",
-    "svgHash": "10e20a2d"
+    "lastModified": "2025-10-22T05:44:12.556Z",
+    "svgHash": "59c56b80"
   },
   {
     "name": "battery-half",
@@ -8811,8 +8811,8 @@
     "fileName": "battery-half-linetone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.217Z",
-    "lastModified": "2025-10-21T09:00:36.217Z",
-    "svgHash": "50531ea0"
+    "lastModified": "2025-10-22T05:44:12.561Z",
+    "svgHash": "1aef2c7f"
   },
   {
     "name": "battery-half",
@@ -8891,8 +8891,8 @@
     "fileName": "battery-low-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.231Z",
-    "lastModified": "2025-10-21T09:00:36.231Z",
-    "svgHash": "7afbeba0"
+    "lastModified": "2025-10-22T05:44:12.591Z",
+    "svgHash": "31af4419"
   },
   {
     "name": "battery-low",
@@ -8911,8 +8911,8 @@
     "fileName": "battery-low-linetone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.237Z",
-    "lastModified": "2025-10-21T09:00:36.237Z",
-    "svgHash": "374bfc55"
+    "lastModified": "2025-10-22T05:44:12.595Z",
+    "svgHash": "111283ef"
   },
   {
     "name": "battery-low",
@@ -11689,8 +11689,8 @@
     "fileName": "building-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.925Z",
-    "lastModified": "2025-10-21T09:00:36.925Z",
-    "svgHash": "573f9ecb"
+    "lastModified": "2025-10-22T05:44:13.101Z",
+    "svgHash": "5d2dd78e"
   },
   {
     "name": "building",
@@ -11710,8 +11710,8 @@
     "fileName": "building-linetone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:36.929Z",
-    "lastModified": "2025-10-22T03:50:27.200Z",
-    "svgHash": "73505e32"
+    "lastModified": "2025-10-22T05:44:13.106Z",
+    "svgHash": "49d88454"
   },
   {
     "name": "building",
@@ -13711,8 +13711,8 @@
     "fileName": "check-badge-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:37.421Z",
-    "lastModified": "2025-10-21T09:00:37.421Z",
-    "svgHash": "0d65e824"
+    "lastModified": "2025-10-22T05:44:13.429Z",
+    "svgHash": "2cda0231"
   },
   {
     "name": "check-badge",
@@ -13731,8 +13731,8 @@
     "fileName": "check-badge-linetone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:37.425Z",
-    "lastModified": "2025-10-21T09:00:37.425Z",
-    "svgHash": "10b340ca"
+    "lastModified": "2025-10-22T05:44:13.433Z",
+    "svgHash": "3aa22632"
   },
   {
     "name": "check-badge",
@@ -21513,8 +21513,8 @@
     "fileName": "crop-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:38.961Z",
-    "lastModified": "2025-10-22T03:50:28.529Z",
-    "svgHash": "061fc4f2"
+    "lastModified": "2025-10-22T05:44:14.656Z",
+    "svgHash": "07939e7c"
   },
   {
     "name": "crop",
@@ -21602,8 +21602,8 @@
     "fileName": "crosshair-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:38.980Z",
-    "lastModified": "2025-10-21T09:00:38.980Z",
-    "svgHash": "7be57cc9"
+    "lastModified": "2025-10-22T05:44:14.672Z",
+    "svgHash": "17ab4c67"
   },
   {
     "name": "crosshair",
@@ -31449,6 +31449,44 @@
   },
   {
     "name": "hand-wave",
+    "variant": "filltone",
+    "tags": [
+      "gesture",
+      "goodbye",
+      "greeting",
+      "hand",
+      "hello",
+      "motion",
+      "wave"
+    ],
+    "componentName": "HandWaveIcon",
+    "fileName": "hand-wave-filltone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:44:16.300Z",
+    "lastModified": "2025-10-22T05:44:16.300Z",
+    "svgHash": "2f85afd8"
+  },
+  {
+    "name": "hand-wave",
+    "variant": "linetone",
+    "tags": [
+      "gesture",
+      "goodbye",
+      "greeting",
+      "hand",
+      "hello",
+      "motion",
+      "wave"
+    ],
+    "componentName": "HandWaveIcon",
+    "fileName": "hand-wave-linetone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:44:16.303Z",
+    "lastModified": "2025-10-22T05:44:16.303Z",
+    "svgHash": "326eae7c"
+  },
+  {
+    "name": "hand-wave",
     "variant": "regular",
     "tags": [
       "gesture",
@@ -34955,8 +34993,8 @@
     "fileName": "link-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:43.394Z",
-    "lastModified": "2025-10-22T03:50:30.464Z",
-    "svgHash": "69a23b1a"
+    "lastModified": "2025-10-22T05:44:16.810Z",
+    "svgHash": "479eb32a"
   },
   {
     "name": "link",
@@ -40752,8 +40790,8 @@
     "fileName": "phone-off-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:44.685Z",
-    "lastModified": "2025-10-21T09:00:44.685Z",
-    "svgHash": "48dbd8b1"
+    "lastModified": "2025-10-22T05:44:17.761Z",
+    "svgHash": "7c2fc214"
   },
   {
     "name": "phone-off",
@@ -40770,8 +40808,8 @@
     "fileName": "phone-off-linetone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:44.690Z",
-    "lastModified": "2025-10-22T03:50:31.231Z",
-    "svgHash": "027ccf13"
+    "lastModified": "2025-10-22T05:44:17.763Z",
+    "svgHash": "65c2edf3"
   },
   {
     "name": "phone-off",
@@ -44514,8 +44552,8 @@
     "fileName": "search-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:45.907Z",
-    "lastModified": "2025-10-21T09:00:45.907Z",
-    "svgHash": "50ded575"
+    "lastModified": "2025-10-22T05:44:18.338Z",
+    "svgHash": "425108ab"
   },
   {
     "name": "search",
@@ -47973,6 +48011,46 @@
   },
   {
     "name": "speaker-high",
+    "variant": "filltone",
+    "tags": [
+      "audio",
+      "loud",
+      "media",
+      "output",
+      "sound",
+      "speaker",
+      "unmute",
+      "volume"
+    ],
+    "componentName": "SpeakerHighIcon",
+    "fileName": "speaker-high-filltone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:44:18.837Z",
+    "lastModified": "2025-10-22T05:44:18.837Z",
+    "svgHash": "01110fa7"
+  },
+  {
+    "name": "speaker-high",
+    "variant": "linetone",
+    "tags": [
+      "audio",
+      "loud",
+      "media",
+      "output",
+      "sound",
+      "speaker",
+      "unmute",
+      "volume"
+    ],
+    "componentName": "SpeakerHighIcon",
+    "fileName": "speaker-high-linetone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:44:18.841Z",
+    "lastModified": "2025-10-22T05:44:18.841Z",
+    "svgHash": "36a6f2d2"
+  },
+  {
+    "name": "speaker-high",
     "variant": "regular",
     "tags": [
       "audio",
@@ -48333,6 +48411,25 @@
     "dateAdded": "2024-08-01T00:00:00.000Z",
     "lastModified": "2025-10-21T09:00:47.223Z",
     "svgHash": "0a494c2b"
+  },
+  {
+    "name": "spinner",
+    "variant": "filltone",
+    "tags": [
+      "loading",
+      "pending",
+      "processing",
+      "progress",
+      "refresh",
+      "spinner",
+      "wait"
+    ],
+    "componentName": "SpinnerIcon",
+    "fileName": "spinner-filltone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:44:18.901Z",
+    "lastModified": "2025-10-22T05:44:18.901Z",
+    "svgHash": "6d37d9f0"
   },
   {
     "name": "spinner",
@@ -50313,7 +50410,7 @@
     "svgHash": "3cd378da"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "bold",
     "tags": [
       "bold",
@@ -50324,15 +50421,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-bold.tsx",
-    "versionAdded": "5.0.4",
-    "dateAdded": "2025-10-21T09:00:48.773Z",
-    "lastModified": "2025-10-21T09:00:48.773Z",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-bold.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:49:48.204Z",
+    "lastModified": "2025-10-22T05:49:48.204Z",
     "svgHash": "237cdefb"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "filled",
     "tags": [
       "bold",
@@ -50343,15 +50440,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-filled.tsx",
-    "versionAdded": "5.0.4",
-    "dateAdded": "2025-10-21T09:00:48.781Z",
-    "lastModified": "2025-10-22T03:50:32.568Z",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-filled.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:49:48.207Z",
+    "lastModified": "2025-10-22T05:49:48.207Z",
     "svgHash": "37e8e3fe"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "filltone",
     "tags": [
       "bold",
@@ -50362,15 +50459,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-filltone.tsx",
-    "versionAdded": "5.0.4",
-    "dateAdded": "2025-10-21T09:00:48.790Z",
-    "lastModified": "2025-10-21T09:00:48.790Z",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-filltone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:49:48.209Z",
+    "lastModified": "2025-10-22T05:49:48.209Z",
     "svgHash": "6d462b46"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "linetone",
     "tags": [
       "bold",
@@ -50381,15 +50478,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-linetone.tsx",
-    "versionAdded": "5.0.4",
-    "dateAdded": "2025-10-21T09:00:48.797Z",
-    "lastModified": "2025-10-21T09:00:48.797Z",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-linetone.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:49:48.212Z",
+    "lastModified": "2025-10-22T05:49:48.212Z",
     "svgHash": "212d4dbc"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "regular",
     "tags": [
       "bold",
@@ -50400,11 +50497,11 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold.tsx",
-    "versionAdded": "5.0.4",
-    "dateAdded": "2025-10-21T09:00:48.802Z",
-    "lastModified": "2025-10-21T09:00:48.802Z",
+    "componentName": "TextBIcon",
+    "fileName": "text-b.tsx",
+    "versionAdded": "5.1.0",
+    "dateAdded": "2025-10-22T05:49:48.216Z",
+    "lastModified": "2025-10-22T05:49:48.216Z",
     "svgHash": "76298c1a"
   },
   {
@@ -51316,8 +51413,8 @@
     "fileName": "timer-filltone.tsx",
     "versionAdded": "5.0.4",
     "dateAdded": "2025-10-21T09:00:49.097Z",
-    "lastModified": "2025-10-22T03:50:32.696Z",
-    "svgHash": "07b7a128"
+    "lastModified": "2025-10-22T05:44:19.329Z",
+    "svgHash": "76dc15b6"
   },
   {
     "name": "timer",

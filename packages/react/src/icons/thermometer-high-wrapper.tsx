@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ThermometerHighIcon as ThermometerHighIconRegular } from './thermometer-high';
+import { ThermometerHighIcon as RegularThermometerHighIcon } from './thermometer-high';
 import { ThermometerHighIconBold } from './thermometer-high-bold';
 import { ThermometerHighIconFilled } from './thermometer-high-filled';
 import { ThermometerHighIconFilltone } from './thermometer-high-filltone';
@@ -25,7 +25,7 @@ const ThermometerHighIcon = memo(forwardRef<SVGSVGElement, ThermometerHighIconPr
       return <ThermometerHighIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ThermometerHighIconRegular ref={ref} {...props} />;
+      return <RegularThermometerHighIcon ref={ref} {...props} />;
   }
 }));
 

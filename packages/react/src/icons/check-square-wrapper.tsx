@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CheckSquareIcon as CheckSquareIconRegular } from './check-square';
+import { CheckSquareIcon as RegularCheckSquareIcon } from './check-square';
 import { CheckSquareIconBold } from './check-square-bold';
 import { CheckSquareIconFilled } from './check-square-filled';
 import { CheckSquareIconFilltone } from './check-square-filltone';
@@ -25,7 +25,7 @@ const CheckSquareIcon = memo(forwardRef<SVGSVGElement, CheckSquareIconProps>(({
       return <CheckSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CheckSquareIconRegular ref={ref} {...props} />;
+      return <RegularCheckSquareIcon ref={ref} {...props} />;
   }
 }));
 

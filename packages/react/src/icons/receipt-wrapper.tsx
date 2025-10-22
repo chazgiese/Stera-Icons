@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ReceiptIcon as ReceiptIconRegular } from './receipt';
+import { ReceiptIcon as RegularReceiptIcon } from './receipt';
 import { ReceiptIconBold } from './receipt-bold';
 import { ReceiptIconFilled } from './receipt-filled';
 import { ReceiptIconFilltone } from './receipt-filltone';
@@ -25,7 +25,7 @@ const ReceiptIcon = memo(forwardRef<SVGSVGElement, ReceiptIconProps>(({
       return <ReceiptIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ReceiptIconRegular ref={ref} {...props} />;
+      return <RegularReceiptIcon ref={ref} {...props} />;
   }
 }));
 

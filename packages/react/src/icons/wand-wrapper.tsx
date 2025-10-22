@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WandIcon as WandIconRegular } from './wand';
+import { WandIcon as RegularWandIcon } from './wand';
 import { WandIconBold } from './wand-bold';
 import { WandIconFilled } from './wand-filled';
 import { WandIconFilltone } from './wand-filltone';
@@ -25,7 +25,7 @@ const WandIcon = memo(forwardRef<SVGSVGElement, WandIconProps>(({
       return <WandIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WandIconRegular ref={ref} {...props} />;
+      return <RegularWandIcon ref={ref} {...props} />;
   }
 }));
 

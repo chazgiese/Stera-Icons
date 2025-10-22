@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SignatureIcon as SignatureIconRegular } from './signature';
+import { SignatureIcon as RegularSignatureIcon } from './signature';
 import { SignatureIconBold } from './signature-bold';
 import { SignatureIconFilled } from './signature-filled';
 import { SignatureIconFilltone } from './signature-filltone';
@@ -25,7 +25,7 @@ const SignatureIcon = memo(forwardRef<SVGSVGElement, SignatureIconProps>(({
       return <SignatureIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SignatureIconRegular ref={ref} {...props} />;
+      return <RegularSignatureIcon ref={ref} {...props} />;
   }
 }));
 

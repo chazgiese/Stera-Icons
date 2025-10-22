@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WaveTriangleIcon as WaveTriangleIconRegular } from './wave-triangle';
+import { WaveTriangleIcon as RegularWaveTriangleIcon } from './wave-triangle';
 import { WaveTriangleIconBold } from './wave-triangle-bold';
 import { WaveTriangleIconFilled } from './wave-triangle-filled';
 import { WaveTriangleIconFilltone } from './wave-triangle-filltone';
@@ -25,7 +25,7 @@ const WaveTriangleIcon = memo(forwardRef<SVGSVGElement, WaveTriangleIconProps>((
       return <WaveTriangleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WaveTriangleIconRegular ref={ref} {...props} />;
+      return <RegularWaveTriangleIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { YinYangIcon as YinYangIconRegular } from './yin-yang';
+import { YinYangIcon as RegularYinYangIcon } from './yin-yang';
 import { YinYangIconBold } from './yin-yang-bold';
 import { YinYangIconFilled } from './yin-yang-filled';
 import { YinYangIconFilltone } from './yin-yang-filltone';
@@ -25,7 +25,7 @@ const YinYangIcon = memo(forwardRef<SVGSVGElement, YinYangIconProps>(({
       return <YinYangIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <YinYangIconRegular ref={ref} {...props} />;
+      return <RegularYinYangIcon ref={ref} {...props} />;
   }
 }));
 

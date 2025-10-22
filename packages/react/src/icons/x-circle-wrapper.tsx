@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { XCircleIcon as XCircleIconRegular } from './x-circle';
+import { XCircleIcon as RegularXCircleIcon } from './x-circle';
 import { XCircleIconBold } from './x-circle-bold';
 import { XCircleIconFilled } from './x-circle-filled';
 import { XCircleIconFilltone } from './x-circle-filltone';
@@ -25,7 +25,7 @@ const XCircleIcon = memo(forwardRef<SVGSVGElement, XCircleIconProps>(({
       return <XCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <XCircleIconRegular ref={ref} {...props} />;
+      return <RegularXCircleIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SaveIcon as SaveIconRegular } from './save';
+import { SaveIcon as RegularSaveIcon } from './save';
 import { SaveIconBold } from './save-bold';
 import { SaveIconFilled } from './save-filled';
 import { SaveIconFilltone } from './save-filltone';
@@ -25,7 +25,7 @@ const SaveIcon = memo(forwardRef<SVGSVGElement, SaveIconProps>(({
       return <SaveIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SaveIconRegular ref={ref} {...props} />;
+      return <RegularSaveIcon ref={ref} {...props} />;
   }
 }));
 

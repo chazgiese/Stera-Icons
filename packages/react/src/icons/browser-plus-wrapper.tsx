@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BrowserPlusIcon as BrowserPlusIconRegular } from './browser-plus';
+import { BrowserPlusIcon as RegularBrowserPlusIcon } from './browser-plus';
 import { BrowserPlusIconBold } from './browser-plus-bold';
 import { BrowserPlusIconFilled } from './browser-plus-filled';
 import { BrowserPlusIconFilltone } from './browser-plus-filltone';
@@ -25,7 +25,7 @@ const BrowserPlusIcon = memo(forwardRef<SVGSVGElement, BrowserPlusIconProps>(({
       return <BrowserPlusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BrowserPlusIconRegular ref={ref} {...props} />;
+      return <RegularBrowserPlusIcon ref={ref} {...props} />;
   }
 }));
 

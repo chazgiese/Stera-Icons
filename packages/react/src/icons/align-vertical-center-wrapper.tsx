@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlignVerticalCenterIcon as AlignVerticalCenterIconRegular } from './align-vertical-center';
+import { AlignVerticalCenterIcon as RegularAlignVerticalCenterIcon } from './align-vertical-center';
 import { AlignVerticalCenterIconBold } from './align-vertical-center-bold';
 import { AlignVerticalCenterIconFilled } from './align-vertical-center-filled';
 import { AlignVerticalCenterIconFilltone } from './align-vertical-center-filltone';
@@ -25,7 +25,7 @@ const AlignVerticalCenterIcon = memo(forwardRef<SVGSVGElement, AlignVerticalCent
       return <AlignVerticalCenterIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlignVerticalCenterIconRegular ref={ref} {...props} />;
+      return <RegularAlignVerticalCenterIcon ref={ref} {...props} />;
   }
 }));
 

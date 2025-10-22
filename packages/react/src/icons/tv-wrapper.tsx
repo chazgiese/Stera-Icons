@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TvIcon as TvIconRegular } from './tv';
+import { TvIcon as RegularTvIcon } from './tv';
 import { TvIconBold } from './tv-bold';
 import { TvIconFilled } from './tv-filled';
 import { TvIconFilltone } from './tv-filltone';
@@ -25,7 +25,7 @@ const TvIcon = memo(forwardRef<SVGSVGElement, TvIconProps>(({
       return <TvIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TvIconRegular ref={ref} {...props} />;
+      return <RegularTvIcon ref={ref} {...props} />;
   }
 }));
 

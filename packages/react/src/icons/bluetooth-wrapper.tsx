@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BluetoothIcon as BluetoothIconRegular } from './bluetooth';
+import { BluetoothIcon as RegularBluetoothIcon } from './bluetooth';
 import { BluetoothIconBold } from './bluetooth-bold';
 import { BluetoothIconFilled } from './bluetooth-filled';
 import { BluetoothIconFilltone } from './bluetooth-filltone';
@@ -25,7 +25,7 @@ const BluetoothIcon = memo(forwardRef<SVGSVGElement, BluetoothIconProps>(({
       return <BluetoothIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BluetoothIconRegular ref={ref} {...props} />;
+      return <RegularBluetoothIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DocumentCopyIcon as DocumentCopyIconRegular } from './document-copy';
+import { DocumentCopyIcon as RegularDocumentCopyIcon } from './document-copy';
 import { DocumentCopyIconBold } from './document-copy-bold';
 import { DocumentCopyIconFilled } from './document-copy-filled';
 import { DocumentCopyIconFilltone } from './document-copy-filltone';
@@ -25,7 +25,7 @@ const DocumentCopyIcon = memo(forwardRef<SVGSVGElement, DocumentCopyIconProps>((
       return <DocumentCopyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DocumentCopyIconRegular ref={ref} {...props} />;
+      return <RegularDocumentCopyIcon ref={ref} {...props} />;
   }
 }));
 

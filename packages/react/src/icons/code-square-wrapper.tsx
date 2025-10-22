@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CodeSquareIcon as CodeSquareIconRegular } from './code-square';
+import { CodeSquareIcon as RegularCodeSquareIcon } from './code-square';
 import { CodeSquareIconBold } from './code-square-bold';
 import { CodeSquareIconFilled } from './code-square-filled';
 import { CodeSquareIconFilltone } from './code-square-filltone';
@@ -25,7 +25,7 @@ const CodeSquareIcon = memo(forwardRef<SVGSVGElement, CodeSquareIconProps>(({
       return <CodeSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CodeSquareIconRegular ref={ref} {...props} />;
+      return <RegularCodeSquareIcon ref={ref} {...props} />;
   }
 }));
 

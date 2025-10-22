@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanDocumentIcon as ScanDocumentIconRegular } from './scan-document';
+import { ScanDocumentIcon as RegularScanDocumentIcon } from './scan-document';
 import { ScanDocumentIconBold } from './scan-document-bold';
 import { ScanDocumentIconFilled } from './scan-document-filled';
 import { ScanDocumentIconFilltone } from './scan-document-filltone';
@@ -25,7 +25,7 @@ const ScanDocumentIcon = memo(forwardRef<SVGSVGElement, ScanDocumentIconProps>((
       return <ScanDocumentIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanDocumentIconRegular ref={ref} {...props} />;
+      return <RegularScanDocumentIcon ref={ref} {...props} />;
   }
 }));
 

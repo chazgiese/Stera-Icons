@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChartDonutIcon as ChartDonutIconRegular } from './chart-donut';
+import { ChartDonutIcon as RegularChartDonutIcon } from './chart-donut';
 import { ChartDonutIconBold } from './chart-donut-bold';
 import { ChartDonutIconFilled } from './chart-donut-filled';
 import { ChartDonutIconFilltone } from './chart-donut-filltone';
@@ -25,7 +25,7 @@ const ChartDonutIcon = memo(forwardRef<SVGSVGElement, ChartDonutIconProps>(({
       return <ChartDonutIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChartDonutIconRegular ref={ref} {...props} />;
+      return <RegularChartDonutIcon ref={ref} {...props} />;
   }
 }));
 

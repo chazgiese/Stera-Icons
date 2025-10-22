@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WristWatchIcon as WristWatchIconRegular } from './wrist-watch';
+import { WristWatchIcon as RegularWristWatchIcon } from './wrist-watch';
 import { WristWatchIconBold } from './wrist-watch-bold';
 import { WristWatchIconFilled } from './wrist-watch-filled';
 import { WristWatchIconFilltone } from './wrist-watch-filltone';
@@ -25,7 +25,7 @@ const WristWatchIcon = memo(forwardRef<SVGSVGElement, WristWatchIconProps>(({
       return <WristWatchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WristWatchIconRegular ref={ref} {...props} />;
+      return <RegularWristWatchIcon ref={ref} {...props} />;
   }
 }));
 

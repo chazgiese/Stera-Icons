@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { StairsIcon as StairsIconRegular } from './stairs';
+import { StairsIcon as RegularStairsIcon } from './stairs';
 import { StairsIconBold } from './stairs-bold';
 import { StairsIconFilled } from './stairs-filled';
 import { StairsIconFilltone } from './stairs-filltone';
@@ -25,7 +25,7 @@ const StairsIcon = memo(forwardRef<SVGSVGElement, StairsIconProps>(({
       return <StairsIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <StairsIconRegular ref={ref} {...props} />;
+      return <RegularStairsIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MapPinMinusIcon as MapPinMinusIconRegular } from './map-pin-minus';
+import { MapPinMinusIcon as RegularMapPinMinusIcon } from './map-pin-minus';
 import { MapPinMinusIconBold } from './map-pin-minus-bold';
 import { MapPinMinusIconFilled } from './map-pin-minus-filled';
 import { MapPinMinusIconFilltone } from './map-pin-minus-filltone';
@@ -25,7 +25,7 @@ const MapPinMinusIcon = memo(forwardRef<SVGSVGElement, MapPinMinusIconProps>(({
       return <MapPinMinusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MapPinMinusIconRegular ref={ref} {...props} />;
+      return <RegularMapPinMinusIcon ref={ref} {...props} />;
   }
 }));
 

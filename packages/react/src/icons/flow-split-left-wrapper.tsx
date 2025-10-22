@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlowSplitLeftIcon as FlowSplitLeftIconRegular } from './flow-split-left';
+import { FlowSplitLeftIcon as RegularFlowSplitLeftIcon } from './flow-split-left';
 import { FlowSplitLeftIconBold } from './flow-split-left-bold';
 import { FlowSplitLeftIconFilled } from './flow-split-left-filled';
 import { FlowSplitLeftIconFilltone } from './flow-split-left-filltone';
@@ -25,7 +25,7 @@ const FlowSplitLeftIcon = memo(forwardRef<SVGSVGElement, FlowSplitLeftIconProps>
       return <FlowSplitLeftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlowSplitLeftIconRegular ref={ref} {...props} />;
+      return <RegularFlowSplitLeftIcon ref={ref} {...props} />;
   }
 }));
 

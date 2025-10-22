@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WarehouseIcon as WarehouseIconRegular } from './warehouse';
+import { WarehouseIcon as RegularWarehouseIcon } from './warehouse';
 import { WarehouseIconBold } from './warehouse-bold';
 import { WarehouseIconFilled } from './warehouse-filled';
 import { WarehouseIconFilltone } from './warehouse-filltone';
@@ -25,7 +25,7 @@ const WarehouseIcon = memo(forwardRef<SVGSVGElement, WarehouseIconProps>(({
       return <WarehouseIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WarehouseIconRegular ref={ref} {...props} />;
+      return <RegularWarehouseIcon ref={ref} {...props} />;
   }
 }));
 

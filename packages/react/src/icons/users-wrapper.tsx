@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { UsersIcon as UsersIconRegular } from './users';
+import { UsersIcon as RegularUsersIcon } from './users';
 import { UsersIconBold } from './users-bold';
 import { UsersIconFilled } from './users-filled';
 import { UsersIconFilltone } from './users-filltone';
@@ -25,7 +25,7 @@ const UsersIcon = memo(forwardRef<SVGSVGElement, UsersIconProps>(({
       return <UsersIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <UsersIconRegular ref={ref} {...props} />;
+      return <RegularUsersIcon ref={ref} {...props} />;
   }
 }));
 

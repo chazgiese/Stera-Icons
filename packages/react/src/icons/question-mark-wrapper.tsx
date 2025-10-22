@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { QuestionMarkIcon as QuestionMarkIconRegular } from './question-mark';
+import { QuestionMarkIcon as RegularQuestionMarkIcon } from './question-mark';
 import { QuestionMarkIconBold } from './question-mark-bold';
 import { QuestionMarkIconFilled } from './question-mark-filled';
 import { QuestionMarkIconFilltone } from './question-mark-filltone';
@@ -25,7 +25,7 @@ const QuestionMarkIcon = memo(forwardRef<SVGSVGElement, QuestionMarkIconProps>((
       return <QuestionMarkIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <QuestionMarkIconRegular ref={ref} {...props} />;
+      return <RegularQuestionMarkIcon ref={ref} {...props} />;
   }
 }));
 

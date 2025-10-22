@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ExpandSimpleAltIcon as ExpandSimpleAltIconRegular } from './expand-simple-alt';
+import { ExpandSimpleAltIcon as RegularExpandSimpleAltIcon } from './expand-simple-alt';
 import { ExpandSimpleAltIconBold } from './expand-simple-alt-bold';
 import { ExpandSimpleAltIconFilled } from './expand-simple-alt-filled';
 import { ExpandSimpleAltIconFilltone } from './expand-simple-alt-filltone';
@@ -25,7 +25,7 @@ const ExpandSimpleAltIcon = memo(forwardRef<SVGSVGElement, ExpandSimpleAltIconPr
       return <ExpandSimpleAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ExpandSimpleAltIconRegular ref={ref} {...props} />;
+      return <RegularExpandSimpleAltIcon ref={ref} {...props} />;
   }
 }));
 

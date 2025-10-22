@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CliIcon as CliIconRegular } from './cli';
+import { CliIcon as RegularCliIcon } from './cli';
 import { CliIconBold } from './cli-bold';
 import { CliIconFilled } from './cli-filled';
 import { CliIconFilltone } from './cli-filltone';
@@ -25,7 +25,7 @@ const CliIcon = memo(forwardRef<SVGSVGElement, CliIconProps>(({
       return <CliIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CliIconRegular ref={ref} {...props} />;
+      return <RegularCliIcon ref={ref} {...props} />;
   }
 }));
 

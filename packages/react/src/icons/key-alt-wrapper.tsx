@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { KeyAltIcon as KeyAltIconRegular } from './key-alt';
+import { KeyAltIcon as RegularKeyAltIcon } from './key-alt';
 import { KeyAltIconBold } from './key-alt-bold';
 import { KeyAltIconFilled } from './key-alt-filled';
 import { KeyAltIconFilltone } from './key-alt-filltone';
@@ -25,7 +25,7 @@ const KeyAltIcon = memo(forwardRef<SVGSVGElement, KeyAltIconProps>(({
       return <KeyAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <KeyAltIconRegular ref={ref} {...props} />;
+      return <RegularKeyAltIcon ref={ref} {...props} />;
   }
 }));
 

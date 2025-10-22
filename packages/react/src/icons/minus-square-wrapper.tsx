@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MinusSquareIcon as MinusSquareIconRegular } from './minus-square';
+import { MinusSquareIcon as RegularMinusSquareIcon } from './minus-square';
 import { MinusSquareIconBold } from './minus-square-bold';
 import { MinusSquareIconFilled } from './minus-square-filled';
 import { MinusSquareIconFilltone } from './minus-square-filltone';
@@ -25,7 +25,7 @@ const MinusSquareIcon = memo(forwardRef<SVGSVGElement, MinusSquareIconProps>(({
       return <MinusSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MinusSquareIconRegular ref={ref} {...props} />;
+      return <RegularMinusSquareIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlowDiagramIcon as FlowDiagramIconRegular } from './flow-diagram';
+import { FlowDiagramIcon as RegularFlowDiagramIcon } from './flow-diagram';
 import { FlowDiagramIconBold } from './flow-diagram-bold';
 import { FlowDiagramIconFilled } from './flow-diagram-filled';
 import { FlowDiagramIconFilltone } from './flow-diagram-filltone';
@@ -25,7 +25,7 @@ const FlowDiagramIcon = memo(forwardRef<SVGSVGElement, FlowDiagramIconProps>(({
       return <FlowDiagramIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlowDiagramIconRegular ref={ref} {...props} />;
+      return <RegularFlowDiagramIcon ref={ref} {...props} />;
   }
 }));
 

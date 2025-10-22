@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MinusIcon as MinusIconRegular } from './minus';
+import { MinusIcon as RegularMinusIcon } from './minus';
 import { MinusIconBold } from './minus-bold';
 import { MinusIconFilled } from './minus-filled';
 import { MinusIconFilltone } from './minus-filltone';
@@ -25,7 +25,7 @@ const MinusIcon = memo(forwardRef<SVGSVGElement, MinusIconProps>(({
       return <MinusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MinusIconRegular ref={ref} {...props} />;
+      return <RegularMinusIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,0 +1,44 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const SpeakerHighIconLinetone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <g fill="currentColor" opacity={0.32}>
+          <path d="M19.772 3.223a1 1 0 0 1 1.399.2 14.28 14.28 0 0 1 2.83 8.578c-.001 3.227-1.055 6.204-2.83 8.576a1 1 0 0 1-1.602-1.198A12.28 12.28 0 0 0 22 12c0-2.786-.91-5.345-2.43-7.378a1 1 0 0 1 .202-1.4" />
+          <path d="M17.004 5.352a1 1 0 0 1 1.401.189 10.2 10.2 0 0 1 2.095 6.21c0 2.491-.89 4.778-2.368 6.554a1.001 1.001 0 0 1-1.538-1.28A8.2 8.2 0 0 0 18.5 11.75c0-1.88-.628-3.611-1.686-4.998a1 1 0 0 1 .19-1.401" />
+          <path d="M14.146 7.55a1 1 0 0 1 1.402.182A6.97 6.97 0 0 1 17 12.001a6.98 6.98 0 0 1-1.452 4.269 1 1 0 0 1-1.584-1.221A4.97 4.97 0 0 0 15 12a4.98 4.98 0 0 0-1.036-3.049 1 1 0 0 1 .182-1.402" />
+        </g>
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M8.16 4.427C9.576 3.01 12 4.014 12 6.017v11.966c0 2.004-2.423 3.008-3.84 1.59l-3.5-3.5A.25.25 0 0 0 4.481 16H2.25a2.25 2.25 0 0 1-2.238-2.02L0 13.75v-3.5A2.25 2.25 0 0 1 2.25 8h2.232a.25.25 0 0 0 .177-.073zM10 6.017a.25.25 0 0 0-.427-.176l-3.5 3.5a2.25 2.25 0 0 1-1.59.66H2.25a.25.25 0 0 0-.25.25v3.5l.005.05a.25.25 0 0 0 .245.2h2.232c.597 0 1.17.237 1.591.658l3.5 3.5a.25.25 0 0 0 .427-.176z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
+);
+SpeakerHighIconLinetone.displayName = "SpeakerHighIconLinetone";
+export { SpeakerHighIconLinetone };

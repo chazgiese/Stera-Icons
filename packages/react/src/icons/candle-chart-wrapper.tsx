@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CandleChartIcon as CandleChartIconRegular } from './candle-chart';
+import { CandleChartIcon as RegularCandleChartIcon } from './candle-chart';
 import { CandleChartIconBold } from './candle-chart-bold';
 import { CandleChartIconFilled } from './candle-chart-filled';
 import { CandleChartIconFilltone } from './candle-chart-filltone';
@@ -25,7 +25,7 @@ const CandleChartIcon = memo(forwardRef<SVGSVGElement, CandleChartIconProps>(({
       return <CandleChartIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CandleChartIconRegular ref={ref} {...props} />;
+      return <RegularCandleChartIcon ref={ref} {...props} />;
   }
 }));
 

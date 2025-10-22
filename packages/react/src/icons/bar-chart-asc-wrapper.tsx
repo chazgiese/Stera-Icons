@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BarChartAscIcon as BarChartAscIconRegular } from './bar-chart-asc';
+import { BarChartAscIcon as RegularBarChartAscIcon } from './bar-chart-asc';
 import { BarChartAscIconBold } from './bar-chart-asc-bold';
 import { BarChartAscIconFilled } from './bar-chart-asc-filled';
 import { BarChartAscIconFilltone } from './bar-chart-asc-filltone';
@@ -25,7 +25,7 @@ const BarChartAscIcon = memo(forwardRef<SVGSVGElement, BarChartAscIconProps>(({
       return <BarChartAscIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BarChartAscIconRegular ref={ref} {...props} />;
+      return <RegularBarChartAscIcon ref={ref} {...props} />;
   }
 }));
 

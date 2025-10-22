@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SpeakerLowIcon as SpeakerLowIconRegular } from './speaker-low';
+import { SpeakerLowIcon as RegularSpeakerLowIcon } from './speaker-low';
 import { SpeakerLowIconBold } from './speaker-low-bold';
 import { SpeakerLowIconFilled } from './speaker-low-filled';
 import { SpeakerLowIconFilltone } from './speaker-low-filltone';
@@ -25,7 +25,7 @@ const SpeakerLowIcon = memo(forwardRef<SVGSVGElement, SpeakerLowIconProps>(({
       return <SpeakerLowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SpeakerLowIconRegular ref={ref} {...props} />;
+      return <RegularSpeakerLowIcon ref={ref} {...props} />;
   }
 }));
 

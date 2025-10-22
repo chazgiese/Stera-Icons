@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChartBarSquareIcon as ChartBarSquareIconRegular } from './chart-bar-square';
+import { ChartBarSquareIcon as RegularChartBarSquareIcon } from './chart-bar-square';
 import { ChartBarSquareIconBold } from './chart-bar-square-bold';
 import { ChartBarSquareIconFilled } from './chart-bar-square-filled';
 import { ChartBarSquareIconFilltone } from './chart-bar-square-filltone';
@@ -25,7 +25,7 @@ const ChartBarSquareIcon = memo(forwardRef<SVGSVGElement, ChartBarSquareIconProp
       return <ChartBarSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChartBarSquareIconRegular ref={ref} {...props} />;
+      return <RegularChartBarSquareIcon ref={ref} {...props} />;
   }
 }));
 

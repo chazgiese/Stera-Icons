@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlignHorizontalRightIcon as AlignHorizontalRightIconRegular } from './align-horizontal-right';
+import { AlignHorizontalRightIcon as RegularAlignHorizontalRightIcon } from './align-horizontal-right';
 import { AlignHorizontalRightIconBold } from './align-horizontal-right-bold';
 import { AlignHorizontalRightIconFilled } from './align-horizontal-right-filled';
 import { AlignHorizontalRightIconFilltone } from './align-horizontal-right-filltone';
@@ -25,7 +25,7 @@ const AlignHorizontalRightIcon = memo(forwardRef<SVGSVGElement, AlignHorizontalR
       return <AlignHorizontalRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlignHorizontalRightIconRegular ref={ref} {...props} />;
+      return <RegularAlignHorizontalRightIcon ref={ref} {...props} />;
   }
 }));
 

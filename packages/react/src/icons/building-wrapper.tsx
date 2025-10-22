@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BuildingIcon as BuildingIconRegular } from './building';
+import { BuildingIcon as RegularBuildingIcon } from './building';
 import { BuildingIconBold } from './building-bold';
 import { BuildingIconFilled } from './building-filled';
 import { BuildingIconFilltone } from './building-filltone';
@@ -25,7 +25,7 @@ const BuildingIcon = memo(forwardRef<SVGSVGElement, BuildingIconProps>(({
       return <BuildingIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BuildingIconRegular ref={ref} {...props} />;
+      return <RegularBuildingIcon ref={ref} {...props} />;
   }
 }));
 

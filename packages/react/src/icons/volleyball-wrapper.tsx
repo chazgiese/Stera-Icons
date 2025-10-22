@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { VolleyballIcon as VolleyballIconRegular } from './volleyball';
+import { VolleyballIcon as RegularVolleyballIcon } from './volleyball';
 import { VolleyballIconBold } from './volleyball-bold';
 import { VolleyballIconFilled } from './volleyball-filled';
 import { VolleyballIconFilltone } from './volleyball-filltone';
@@ -25,7 +25,7 @@ const VolleyballIcon = memo(forwardRef<SVGSVGElement, VolleyballIconProps>(({
       return <VolleyballIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <VolleyballIconRegular ref={ref} {...props} />;
+      return <RegularVolleyballIcon ref={ref} {...props} />;
   }
 }));
 

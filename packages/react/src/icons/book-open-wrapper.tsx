@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BookOpenIcon as BookOpenIconRegular } from './book-open';
+import { BookOpenIcon as RegularBookOpenIcon } from './book-open';
 import { BookOpenIconBold } from './book-open-bold';
 import { BookOpenIconFilled } from './book-open-filled';
 import { BookOpenIconFilltone } from './book-open-filltone';
@@ -25,7 +25,7 @@ const BookOpenIcon = memo(forwardRef<SVGSVGElement, BookOpenIconProps>(({
       return <BookOpenIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BookOpenIconRegular ref={ref} {...props} />;
+      return <RegularBookOpenIcon ref={ref} {...props} />;
   }
 }));
 

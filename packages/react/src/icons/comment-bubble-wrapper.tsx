@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CommentBubbleIcon as CommentBubbleIconRegular } from './comment-bubble';
+import { CommentBubbleIcon as RegularCommentBubbleIcon } from './comment-bubble';
 import { CommentBubbleIconBold } from './comment-bubble-bold';
 import { CommentBubbleIconFilled } from './comment-bubble-filled';
 import { CommentBubbleIconFilltone } from './comment-bubble-filltone';
@@ -25,7 +25,7 @@ const CommentBubbleIcon = memo(forwardRef<SVGSVGElement, CommentBubbleIconProps>
       return <CommentBubbleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CommentBubbleIconRegular ref={ref} {...props} />;
+      return <RegularCommentBubbleIcon ref={ref} {...props} />;
   }
 }));
 

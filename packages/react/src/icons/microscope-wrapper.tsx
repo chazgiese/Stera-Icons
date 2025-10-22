@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MicroscopeIcon as MicroscopeIconRegular } from './microscope';
+import { MicroscopeIcon as RegularMicroscopeIcon } from './microscope';
 import { MicroscopeIconBold } from './microscope-bold';
 import { MicroscopeIconFilled } from './microscope-filled';
 import { MicroscopeIconFilltone } from './microscope-filltone';
@@ -25,7 +25,7 @@ const MicroscopeIcon = memo(forwardRef<SVGSVGElement, MicroscopeIconProps>(({
       return <MicroscopeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MicroscopeIconRegular ref={ref} {...props} />;
+      return <RegularMicroscopeIcon ref={ref} {...props} />;
   }
 }));
 

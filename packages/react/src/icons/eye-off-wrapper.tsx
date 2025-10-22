@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EyeOffIcon as EyeOffIconRegular } from './eye-off';
+import { EyeOffIcon as RegularEyeOffIcon } from './eye-off';
 import { EyeOffIconBold } from './eye-off-bold';
 import { EyeOffIconFilled } from './eye-off-filled';
 import { EyeOffIconFilltone } from './eye-off-filltone';
@@ -25,7 +25,7 @@ const EyeOffIcon = memo(forwardRef<SVGSVGElement, EyeOffIconProps>(({
       return <EyeOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EyeOffIconRegular ref={ref} {...props} />;
+      return <RegularEyeOffIcon ref={ref} {...props} />;
   }
 }));
 

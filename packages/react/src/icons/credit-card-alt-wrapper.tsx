@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CreditCardAltIcon as CreditCardAltIconRegular } from './credit-card-alt';
+import { CreditCardAltIcon as RegularCreditCardAltIcon } from './credit-card-alt';
 import { CreditCardAltIconBold } from './credit-card-alt-bold';
 import { CreditCardAltIconFilled } from './credit-card-alt-filled';
 import { CreditCardAltIconFilltone } from './credit-card-alt-filltone';
@@ -25,7 +25,7 @@ const CreditCardAltIcon = memo(forwardRef<SVGSVGElement, CreditCardAltIconProps>
       return <CreditCardAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CreditCardAltIconRegular ref={ref} {...props} />;
+      return <RegularCreditCardAltIcon ref={ref} {...props} />;
   }
 }));
 

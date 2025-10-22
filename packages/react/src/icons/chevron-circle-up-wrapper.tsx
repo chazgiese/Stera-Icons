@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChevronCircleUpIcon as ChevronCircleUpIconRegular } from './chevron-circle-up';
+import { ChevronCircleUpIcon as RegularChevronCircleUpIcon } from './chevron-circle-up';
 import { ChevronCircleUpIconBold } from './chevron-circle-up-bold';
 import { ChevronCircleUpIconFilled } from './chevron-circle-up-filled';
 import { ChevronCircleUpIconFilltone } from './chevron-circle-up-filltone';
@@ -25,7 +25,7 @@ const ChevronCircleUpIcon = memo(forwardRef<SVGSVGElement, ChevronCircleUpIconPr
       return <ChevronCircleUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChevronCircleUpIconRegular ref={ref} {...props} />;
+      return <RegularChevronCircleUpIcon ref={ref} {...props} />;
   }
 }));
 

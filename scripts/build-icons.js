@@ -11,7 +11,11 @@ import {
   ensureUnique, 
   getComponentName, 
   getFileName, 
-  parseTags 
+  parseTags,
+  parseIconName,
+  mapVariantName,
+  validateVariantData,
+  isValidVariant
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
 
@@ -89,7 +93,8 @@ async function buildIcons(iconsExportPath) {
   // Process each icon
   for (const icon of iconsExport.icons) {
     const originalName = icon.name;
-    const normalizedSlug = normalizeSlug(originalName);
+    const parsedIconName = parseIconName(originalName);
+    const normalizedSlug = normalizeSlug(parsedIconName);
     
     // Check for naming conflicts before processing
     if (takenSlugs.has(normalizedSlug)) {
@@ -113,11 +118,20 @@ async function buildIcons(iconsExportPath) {
     
     // Process each variant (Bold, Fill, Filltone, Linetone, Regular)
     for (const variantData of icon.variants) {
+      // Validate variant data structure
+      if (!validateVariantData(variantData)) {
+        console.error(`  ❌ Invalid variant data for ${originalName}: ${JSON.stringify(variantData)}`);
+        continue; // Skip this variant
+      }
       
-      const variant = variantData.variant === 'Fill' ? 'filled' : 
-                     variantData.variant === 'Bold' ? 'bold' : 
-                     variantData.variant === 'Filltone' ? 'filltone' :
-                     variantData.variant === 'Linetone' ? 'linetone' : 'regular';
+      // Map export variant name to internal variant name
+      const variant = mapVariantName(variantData.variant);
+      
+      // Validate that this is a recognized variant type
+      if (!isValidVariant(variant)) {
+        console.error(`  ❌ Unknown variant type "${variantData.variant}" for ${originalName}`);
+        continue; // Skip this variant
+      }
       const componentName = getComponentName(uniqueSlug, variant);
       const fileName = getFileName(uniqueSlug, variant);
       
@@ -157,9 +171,7 @@ async function buildIcons(iconsExportPath) {
       const componentPath = join(iconsDir, `${fileName}.tsx`);
       writeFileSync(componentPath, componentCode);
       
-      // Add to exports with variant suffix to avoid conflicts with wrapper components
-      const individualComponentName = variant === 'regular' ? `${componentName}Regular` : componentName;
-      exports.push(`export { ${componentName} as ${individualComponentName} } from './icons/${fileName}';`);
+      // Individual variant components are no longer exported - only wrapper components are used
       
       // Track variant for wrapper generation
       iconVariants.push({ variant, componentName, fileName });
@@ -186,7 +198,7 @@ async function buildIcons(iconsExportPath) {
       
       // Add to metadata with the wrapper component name (user-facing API)
       metadata.push({
-        name: uniqueSlug,
+        name: parsedIconName,
         variant,
         tags: parseTags(icon.tags),
         componentName: baseComponentName,
@@ -216,7 +228,7 @@ async function buildIcons(iconsExportPath) {
     // Generate wrapper component code
     const wrapperCode = `import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ${baseComponentName} as ${baseComponentName}Regular } from './${baseName}';
+import { ${baseComponentName} as Regular${baseComponentName} } from './${baseName}';
 import { ${baseComponentName}Bold } from './${baseName}-bold';
 import { ${baseComponentName}Filled } from './${baseName}-filled';
 import { ${baseComponentName}Filltone } from './${baseName}-filltone';
@@ -241,7 +253,7 @@ const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}
       return <${baseComponentName}Linetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <${baseComponentName}Regular ref={ref} {...props} />;
+      return <Regular${baseComponentName} ref={ref} {...props} />;
   }
 }));
 
@@ -262,11 +274,8 @@ export { ${baseComponentName} };
   const indexContent = `// Auto-generated file - do not edit manually
 import type { IconProps } from './types';
 
-// Primary API: Wrapper components with variant props
+// Wrapper components with variant props
 ${wrapperExports.join('\n')}
-
-// Secondary API: Individual variant components (for advanced use cases)
-${exports.join('\n')}
 
 export type { IconProps } from './types';
 `;
@@ -301,13 +310,14 @@ export type { IconProps } from './types';
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;
   
   console.log(`\n📊 Build Summary:`);
-  console.log(`  ✅ Generated ${metadata.length} individual icon components`);
-  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components`);
+  console.log(`  ✅ Generated ${metadata.length} individual icon components (internal use only)`);
+  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components (public API)`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
+  console.log(`  🎯 Public API: Only wrapper components with variant props are exported`);
 }
 
 // Main execution

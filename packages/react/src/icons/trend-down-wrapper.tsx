@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TrendDownIcon as TrendDownIconRegular } from './trend-down';
+import { TrendDownIcon as RegularTrendDownIcon } from './trend-down';
 import { TrendDownIconBold } from './trend-down-bold';
 import { TrendDownIconFilled } from './trend-down-filled';
 import { TrendDownIconFilltone } from './trend-down-filltone';
@@ -25,7 +25,7 @@ const TrendDownIcon = memo(forwardRef<SVGSVGElement, TrendDownIconProps>(({
       return <TrendDownIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TrendDownIconRegular ref={ref} {...props} />;
+      return <RegularTrendDownIcon ref={ref} {...props} />;
   }
 }));
 

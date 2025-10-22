@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WaterfallChartXIcon as WaterfallChartXIconRegular } from './waterfall-chart-x';
+import { WaterfallChartXIcon as RegularWaterfallChartXIcon } from './waterfall-chart-x';
 import { WaterfallChartXIconBold } from './waterfall-chart-x-bold';
 import { WaterfallChartXIconFilled } from './waterfall-chart-x-filled';
 import { WaterfallChartXIconFilltone } from './waterfall-chart-x-filltone';
@@ -25,7 +25,7 @@ const WaterfallChartXIcon = memo(forwardRef<SVGSVGElement, WaterfallChartXIconPr
       return <WaterfallChartXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WaterfallChartXIconRegular ref={ref} {...props} />;
+      return <RegularWaterfallChartXIcon ref={ref} {...props} />;
   }
 }));
 

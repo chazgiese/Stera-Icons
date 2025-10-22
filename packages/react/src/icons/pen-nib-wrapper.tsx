@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PenNibIcon as PenNibIconRegular } from './pen-nib';
+import { PenNibIcon as RegularPenNibIcon } from './pen-nib';
 import { PenNibIconBold } from './pen-nib-bold';
 import { PenNibIconFilled } from './pen-nib-filled';
 import { PenNibIconFilltone } from './pen-nib-filltone';
@@ -25,7 +25,7 @@ const PenNibIcon = memo(forwardRef<SVGSVGElement, PenNibIconProps>(({
       return <PenNibIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PenNibIconRegular ref={ref} {...props} />;
+      return <RegularPenNibIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { RocketIcon as RocketIconRegular } from './rocket';
+import { RocketIcon as RegularRocketIcon } from './rocket';
 import { RocketIconBold } from './rocket-bold';
 import { RocketIconFilled } from './rocket-filled';
 import { RocketIconFilltone } from './rocket-filltone';
@@ -25,7 +25,7 @@ const RocketIcon = memo(forwardRef<SVGSVGElement, RocketIconProps>(({
       return <RocketIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <RocketIconRegular ref={ref} {...props} />;
+      return <RegularRocketIcon ref={ref} {...props} />;
   }
 }));
 

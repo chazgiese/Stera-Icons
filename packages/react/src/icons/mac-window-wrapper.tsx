@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MacWindowIcon as MacWindowIconRegular } from './mac-window';
+import { MacWindowIcon as RegularMacWindowIcon } from './mac-window';
 import { MacWindowIconBold } from './mac-window-bold';
 import { MacWindowIconFilled } from './mac-window-filled';
 import { MacWindowIconFilltone } from './mac-window-filltone';
@@ -25,7 +25,7 @@ const MacWindowIcon = memo(forwardRef<SVGSVGElement, MacWindowIconProps>(({
       return <MacWindowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MacWindowIconRegular ref={ref} {...props} />;
+      return <RegularMacWindowIcon ref={ref} {...props} />;
   }
 }));
 

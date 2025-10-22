@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CircleDashSimpleIcon as CircleDashSimpleIconRegular } from './circle-dash-simple';
+import { CircleDashSimpleIcon as RegularCircleDashSimpleIcon } from './circle-dash-simple';
 import { CircleDashSimpleIconBold } from './circle-dash-simple-bold';
 import { CircleDashSimpleIconFilled } from './circle-dash-simple-filled';
 import { CircleDashSimpleIconFilltone } from './circle-dash-simple-filltone';
@@ -25,7 +25,7 @@ const CircleDashSimpleIcon = memo(forwardRef<SVGSVGElement, CircleDashSimpleIcon
       return <CircleDashSimpleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CircleDashSimpleIconRegular ref={ref} {...props} />;
+      return <RegularCircleDashSimpleIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanFaceIcon as ScanFaceIconRegular } from './scan-face';
+import { ScanFaceIcon as RegularScanFaceIcon } from './scan-face';
 import { ScanFaceIconBold } from './scan-face-bold';
 import { ScanFaceIconFilled } from './scan-face-filled';
 import { ScanFaceIconFilltone } from './scan-face-filltone';
@@ -25,7 +25,7 @@ const ScanFaceIcon = memo(forwardRef<SVGSVGElement, ScanFaceIconProps>(({
       return <ScanFaceIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanFaceIconRegular ref={ref} {...props} />;
+      return <RegularScanFaceIcon ref={ref} {...props} />;
   }
 }));
 

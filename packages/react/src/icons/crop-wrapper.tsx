@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CropIcon as CropIconRegular } from './crop';
+import { CropIcon as RegularCropIcon } from './crop';
 import { CropIconBold } from './crop-bold';
 import { CropIconFilled } from './crop-filled';
 import { CropIconFilltone } from './crop-filltone';
@@ -25,7 +25,7 @@ const CropIcon = memo(forwardRef<SVGSVGElement, CropIconProps>(({
       return <CropIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CropIconRegular ref={ref} {...props} />;
+      return <RegularCropIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GridIcon as GridIconRegular } from './grid';
+import { GridIcon as RegularGridIcon } from './grid';
 import { GridIconBold } from './grid-bold';
 import { GridIconFilled } from './grid-filled';
 import { GridIconFilltone } from './grid-filltone';
@@ -25,7 +25,7 @@ const GridIcon = memo(forwardRef<SVGSVGElement, GridIconProps>(({
       return <GridIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GridIconRegular ref={ref} {...props} />;
+      return <RegularGridIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitCompareIcon as GitCompareIconRegular } from './git-compare';
+import { GitCompareIcon as RegularGitCompareIcon } from './git-compare';
 import { GitCompareIconBold } from './git-compare-bold';
 import { GitCompareIconFilled } from './git-compare-filled';
 import { GitCompareIconFilltone } from './git-compare-filltone';
@@ -25,7 +25,7 @@ const GitCompareIcon = memo(forwardRef<SVGSVGElement, GitCompareIconProps>(({
       return <GitCompareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitCompareIconRegular ref={ref} {...props} />;
+      return <RegularGitCompareIcon ref={ref} {...props} />;
   }
 }));
 

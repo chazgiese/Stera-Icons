@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanBarcodeIcon as ScanBarcodeIconRegular } from './scan-barcode';
+import { ScanBarcodeIcon as RegularScanBarcodeIcon } from './scan-barcode';
 import { ScanBarcodeIconBold } from './scan-barcode-bold';
 import { ScanBarcodeIconFilled } from './scan-barcode-filled';
 import { ScanBarcodeIconFilltone } from './scan-barcode-filltone';
@@ -25,7 +25,7 @@ const ScanBarcodeIcon = memo(forwardRef<SVGSVGElement, ScanBarcodeIconProps>(({
       return <ScanBarcodeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanBarcodeIconRegular ref={ref} {...props} />;
+      return <RegularScanBarcodeIcon ref={ref} {...props} />;
   }
 }));
 

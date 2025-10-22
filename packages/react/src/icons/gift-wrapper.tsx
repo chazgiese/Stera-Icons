@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GiftIcon as GiftIconRegular } from './gift';
+import { GiftIcon as RegularGiftIcon } from './gift';
 import { GiftIconBold } from './gift-bold';
 import { GiftIconFilled } from './gift-filled';
 import { GiftIconFilltone } from './gift-filltone';
@@ -25,7 +25,7 @@ const GiftIcon = memo(forwardRef<SVGSVGElement, GiftIconProps>(({
       return <GiftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GiftIconRegular ref={ref} {...props} />;
+      return <RegularGiftIcon ref={ref} {...props} />;
   }
 }));
 

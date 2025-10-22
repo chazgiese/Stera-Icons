@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChartPieIcon as ChartPieIconRegular } from './chart-pie';
+import { ChartPieIcon as RegularChartPieIcon } from './chart-pie';
 import { ChartPieIconBold } from './chart-pie-bold';
 import { ChartPieIconFilled } from './chart-pie-filled';
 import { ChartPieIconFilltone } from './chart-pie-filltone';
@@ -25,7 +25,7 @@ const ChartPieIcon = memo(forwardRef<SVGSVGElement, ChartPieIconProps>(({
       return <ChartPieIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChartPieIconRegular ref={ref} {...props} />;
+      return <RegularChartPieIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitPullRequestDraftIcon as GitPullRequestDraftIconRegular } from './git-pull-request-draft';
+import { GitPullRequestDraftIcon as RegularGitPullRequestDraftIcon } from './git-pull-request-draft';
 import { GitPullRequestDraftIconBold } from './git-pull-request-draft-bold';
 import { GitPullRequestDraftIconFilled } from './git-pull-request-draft-filled';
 import { GitPullRequestDraftIconFilltone } from './git-pull-request-draft-filltone';
@@ -25,7 +25,7 @@ const GitPullRequestDraftIcon = memo(forwardRef<SVGSVGElement, GitPullRequestDra
       return <GitPullRequestDraftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitPullRequestDraftIconRegular ref={ref} {...props} />;
+      return <RegularGitPullRequestDraftIcon ref={ref} {...props} />;
   }
 }));
 

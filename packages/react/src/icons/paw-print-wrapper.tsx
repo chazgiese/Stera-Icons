@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PawPrintIcon as PawPrintIconRegular } from './paw-print';
+import { PawPrintIcon as RegularPawPrintIcon } from './paw-print';
 import { PawPrintIconBold } from './paw-print-bold';
 import { PawPrintIconFilled } from './paw-print-filled';
 import { PawPrintIconFilltone } from './paw-print-filltone';
@@ -25,7 +25,7 @@ const PawPrintIcon = memo(forwardRef<SVGSVGElement, PawPrintIconProps>(({
       return <PawPrintIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PawPrintIconRegular ref={ref} {...props} />;
+      return <RegularPawPrintIcon ref={ref} {...props} />;
   }
 }));
 

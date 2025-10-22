@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HomeIcon as HomeIconRegular } from './home';
+import { HomeIcon as RegularHomeIcon } from './home';
 import { HomeIconBold } from './home-bold';
 import { HomeIconFilled } from './home-filled';
 import { HomeIconFilltone } from './home-filltone';
@@ -25,7 +25,7 @@ const HomeIcon = memo(forwardRef<SVGSVGElement, HomeIconProps>(({
       return <HomeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HomeIconRegular ref={ref} {...props} />;
+      return <RegularHomeIcon ref={ref} {...props} />;
   }
 }));
 

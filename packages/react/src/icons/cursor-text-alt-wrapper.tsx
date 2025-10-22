@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CursorTextAltIcon as CursorTextAltIconRegular } from './cursor-text-alt';
+import { CursorTextAltIcon as RegularCursorTextAltIcon } from './cursor-text-alt';
 import { CursorTextAltIconBold } from './cursor-text-alt-bold';
 import { CursorTextAltIconFilled } from './cursor-text-alt-filled';
 import { CursorTextAltIconFilltone } from './cursor-text-alt-filltone';
@@ -25,7 +25,7 @@ const CursorTextAltIcon = memo(forwardRef<SVGSVGElement, CursorTextAltIconProps>
       return <CursorTextAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CursorTextAltIconRegular ref={ref} {...props} />;
+      return <RegularCursorTextAltIcon ref={ref} {...props} />;
   }
 }));
 

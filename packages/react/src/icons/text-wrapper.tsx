@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextIcon as TextIconRegular } from './text';
+import { TextIcon as RegularTextIcon } from './text';
 import { TextIconBold } from './text-bold';
 import { TextIconFilled } from './text-filled';
 import { TextIconFilltone } from './text-filltone';
@@ -25,7 +25,7 @@ const TextIcon = memo(forwardRef<SVGSVGElement, TextIconProps>(({
       return <TextIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextIconRegular ref={ref} {...props} />;
+      return <RegularTextIcon ref={ref} {...props} />;
   }
 }));
 

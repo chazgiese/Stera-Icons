@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ContrastIcon as ContrastIconRegular } from './contrast';
+import { ContrastIcon as RegularContrastIcon } from './contrast';
 import { ContrastIconBold } from './contrast-bold';
 import { ContrastIconFilled } from './contrast-filled';
 import { ContrastIconFilltone } from './contrast-filltone';
@@ -25,7 +25,7 @@ const ContrastIcon = memo(forwardRef<SVGSVGElement, ContrastIconProps>(({
       return <ContrastIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ContrastIconRegular ref={ref} {...props} />;
+      return <RegularContrastIcon ref={ref} {...props} />;
   }
 }));
 

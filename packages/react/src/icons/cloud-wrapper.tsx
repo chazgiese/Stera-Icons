@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CloudIcon as CloudIconRegular } from './cloud';
+import { CloudIcon as RegularCloudIcon } from './cloud';
 import { CloudIconBold } from './cloud-bold';
 import { CloudIconFilled } from './cloud-filled';
 import { CloudIconFilltone } from './cloud-filltone';
@@ -25,7 +25,7 @@ const CloudIcon = memo(forwardRef<SVGSVGElement, CloudIconProps>(({
       return <CloudIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CloudIconRegular ref={ref} {...props} />;
+      return <RegularCloudIcon ref={ref} {...props} />;
   }
 }));
 

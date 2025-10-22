@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DiamondIcon as DiamondIconRegular } from './diamond';
+import { DiamondIcon as RegularDiamondIcon } from './diamond';
 import { DiamondIconBold } from './diamond-bold';
 import { DiamondIconFilled } from './diamond-filled';
 import { DiamondIconFilltone } from './diamond-filltone';
@@ -25,7 +25,7 @@ const DiamondIcon = memo(forwardRef<SVGSVGElement, DiamondIconProps>(({
       return <DiamondIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DiamondIconRegular ref={ref} {...props} />;
+      return <RegularDiamondIcon ref={ref} {...props} />;
   }
 }));
 

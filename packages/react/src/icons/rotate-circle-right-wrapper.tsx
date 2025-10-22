@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { RotateCircleRightIcon as RotateCircleRightIconRegular } from './rotate-circle-right';
+import { RotateCircleRightIcon as RegularRotateCircleRightIcon } from './rotate-circle-right';
 import { RotateCircleRightIconBold } from './rotate-circle-right-bold';
 import { RotateCircleRightIconFilled } from './rotate-circle-right-filled';
 import { RotateCircleRightIconFilltone } from './rotate-circle-right-filltone';
@@ -25,7 +25,7 @@ const RotateCircleRightIcon = memo(forwardRef<SVGSVGElement, RotateCircleRightIc
       return <RotateCircleRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <RotateCircleRightIconRegular ref={ref} {...props} />;
+      return <RegularRotateCircleRightIcon ref={ref} {...props} />;
   }
 }));
 

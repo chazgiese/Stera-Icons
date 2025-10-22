@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CubePackageIcon as CubePackageIconRegular } from './cube-package';
+import { CubePackageIcon as RegularCubePackageIcon } from './cube-package';
 import { CubePackageIconBold } from './cube-package-bold';
 import { CubePackageIconFilled } from './cube-package-filled';
 import { CubePackageIconFilltone } from './cube-package-filltone';
@@ -25,7 +25,7 @@ const CubePackageIcon = memo(forwardRef<SVGSVGElement, CubePackageIconProps>(({
       return <CubePackageIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CubePackageIconRegular ref={ref} {...props} />;
+      return <RegularCubePackageIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DeviceDesktopIcon as DeviceDesktopIconRegular } from './device-desktop';
+import { DeviceDesktopIcon as RegularDeviceDesktopIcon } from './device-desktop';
 import { DeviceDesktopIconBold } from './device-desktop-bold';
 import { DeviceDesktopIconFilled } from './device-desktop-filled';
 import { DeviceDesktopIconFilltone } from './device-desktop-filltone';
@@ -25,7 +25,7 @@ const DeviceDesktopIcon = memo(forwardRef<SVGSVGElement, DeviceDesktopIconProps>
       return <DeviceDesktopIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DeviceDesktopIconRegular ref={ref} {...props} />;
+      return <RegularDeviceDesktopIcon ref={ref} {...props} />;
   }
 }));
 

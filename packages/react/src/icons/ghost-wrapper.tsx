@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GhostIcon as GhostIconRegular } from './ghost';
+import { GhostIcon as RegularGhostIcon } from './ghost';
 import { GhostIconBold } from './ghost-bold';
 import { GhostIconFilled } from './ghost-filled';
 import { GhostIconFilltone } from './ghost-filltone';
@@ -25,7 +25,7 @@ const GhostIcon = memo(forwardRef<SVGSVGElement, GhostIconProps>(({
       return <GhostIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GhostIconRegular ref={ref} {...props} />;
+      return <RegularGhostIcon ref={ref} {...props} />;
   }
 }));
 

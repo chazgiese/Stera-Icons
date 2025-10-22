@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArrowUpDownIcon as ArrowUpDownIconRegular } from './arrow-up-down';
+import { ArrowUpDownIcon as RegularArrowUpDownIcon } from './arrow-up-down';
 import { ArrowUpDownIconBold } from './arrow-up-down-bold';
 import { ArrowUpDownIconFilled } from './arrow-up-down-filled';
 import { ArrowUpDownIconFilltone } from './arrow-up-down-filltone';
@@ -25,7 +25,7 @@ const ArrowUpDownIcon = memo(forwardRef<SVGSVGElement, ArrowUpDownIconProps>(({
       return <ArrowUpDownIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArrowUpDownIconRegular ref={ref} {...props} />;
+      return <RegularArrowUpDownIcon ref={ref} {...props} />;
   }
 }));
 

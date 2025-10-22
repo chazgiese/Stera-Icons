@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlarmClockIcon as AlarmClockIconRegular } from './alarm-clock';
+import { AlarmClockIcon as RegularAlarmClockIcon } from './alarm-clock';
 import { AlarmClockIconBold } from './alarm-clock-bold';
 import { AlarmClockIconFilled } from './alarm-clock-filled';
 import { AlarmClockIconFilltone } from './alarm-clock-filltone';
@@ -25,7 +25,7 @@ const AlarmClockIcon = memo(forwardRef<SVGSVGElement, AlarmClockIconProps>(({
       return <AlarmClockIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlarmClockIconRegular ref={ref} {...props} />;
+      return <RegularAlarmClockIcon ref={ref} {...props} />;
   }
 }));
 

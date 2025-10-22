@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TvPlayAltIcon as TvPlayAltIconRegular } from './tv-play-alt';
+import { TvPlayAltIcon as RegularTvPlayAltIcon } from './tv-play-alt';
 import { TvPlayAltIconBold } from './tv-play-alt-bold';
 import { TvPlayAltIconFilled } from './tv-play-alt-filled';
 import { TvPlayAltIconFilltone } from './tv-play-alt-filltone';
@@ -25,7 +25,7 @@ const TvPlayAltIcon = memo(forwardRef<SVGSVGElement, TvPlayAltIconProps>(({
       return <TvPlayAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TvPlayAltIconRegular ref={ref} {...props} />;
+      return <RegularTvPlayAltIcon ref={ref} {...props} />;
   }
 }));
 

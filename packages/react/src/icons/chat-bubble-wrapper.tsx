@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChatBubbleIcon as ChatBubbleIconRegular } from './chat-bubble';
+import { ChatBubbleIcon as RegularChatBubbleIcon } from './chat-bubble';
 import { ChatBubbleIconBold } from './chat-bubble-bold';
 import { ChatBubbleIconFilled } from './chat-bubble-filled';
 import { ChatBubbleIconFilltone } from './chat-bubble-filltone';
@@ -25,7 +25,7 @@ const ChatBubbleIcon = memo(forwardRef<SVGSVGElement, ChatBubbleIconProps>(({
       return <ChatBubbleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChatBubbleIconRegular ref={ref} {...props} />;
+      return <RegularChatBubbleIcon ref={ref} {...props} />;
   }
 }));
 

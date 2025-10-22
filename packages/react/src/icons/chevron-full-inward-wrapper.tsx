@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChevronFullInwardIcon as ChevronFullInwardIconRegular } from './chevron-full-inward';
+import { ChevronFullInwardIcon as RegularChevronFullInwardIcon } from './chevron-full-inward';
 import { ChevronFullInwardIconBold } from './chevron-full-inward-bold';
 import { ChevronFullInwardIconFilled } from './chevron-full-inward-filled';
 import { ChevronFullInwardIconFilltone } from './chevron-full-inward-filltone';
@@ -25,7 +25,7 @@ const ChevronFullInwardIcon = memo(forwardRef<SVGSVGElement, ChevronFullInwardIc
       return <ChevronFullInwardIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChevronFullInwardIconRegular ref={ref} {...props} />;
+      return <RegularChevronFullInwardIcon ref={ref} {...props} />;
   }
 }));
 

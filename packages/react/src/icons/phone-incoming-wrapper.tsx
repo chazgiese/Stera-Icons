@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PhoneIncomingIcon as PhoneIncomingIconRegular } from './phone-incoming';
+import { PhoneIncomingIcon as RegularPhoneIncomingIcon } from './phone-incoming';
 import { PhoneIncomingIconBold } from './phone-incoming-bold';
 import { PhoneIncomingIconFilled } from './phone-incoming-filled';
 import { PhoneIncomingIconFilltone } from './phone-incoming-filltone';
@@ -25,7 +25,7 @@ const PhoneIncomingIcon = memo(forwardRef<SVGSVGElement, PhoneIncomingIconProps>
       return <PhoneIncomingIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PhoneIncomingIconRegular ref={ref} {...props} />;
+      return <RegularPhoneIncomingIcon ref={ref} {...props} />;
   }
 }));
 

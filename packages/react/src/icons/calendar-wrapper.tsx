@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CalendarIcon as CalendarIconRegular } from './calendar';
+import { CalendarIcon as RegularCalendarIcon } from './calendar';
 import { CalendarIconBold } from './calendar-bold';
 import { CalendarIconFilled } from './calendar-filled';
 import { CalendarIconFilltone } from './calendar-filltone';
@@ -25,7 +25,7 @@ const CalendarIcon = memo(forwardRef<SVGSVGElement, CalendarIconProps>(({
       return <CalendarIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CalendarIconRegular ref={ref} {...props} />;
+      return <RegularCalendarIcon ref={ref} {...props} />;
   }
 }));
 

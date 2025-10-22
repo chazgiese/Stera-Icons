@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LineChartXYIcon as LineChartXYIconRegular } from './line-chart-x-y';
+import { LineChartXYIcon as RegularLineChartXYIcon } from './line-chart-x-y';
 import { LineChartXYIconBold } from './line-chart-x-y-bold';
 import { LineChartXYIconFilled } from './line-chart-x-y-filled';
 import { LineChartXYIconFilltone } from './line-chart-x-y-filltone';
@@ -25,7 +25,7 @@ const LineChartXYIcon = memo(forwardRef<SVGSVGElement, LineChartXYIconProps>(({
       return <LineChartXYIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LineChartXYIconRegular ref={ref} {...props} />;
+      return <RegularLineChartXYIcon ref={ref} {...props} />;
   }
 }));
 

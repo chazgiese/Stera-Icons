@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ImageLandscapeIcon as ImageLandscapeIconRegular } from './image-landscape';
+import { ImageLandscapeIcon as RegularImageLandscapeIcon } from './image-landscape';
 import { ImageLandscapeIconBold } from './image-landscape-bold';
 import { ImageLandscapeIconFilled } from './image-landscape-filled';
 import { ImageLandscapeIconFilltone } from './image-landscape-filltone';
@@ -25,7 +25,7 @@ const ImageLandscapeIcon = memo(forwardRef<SVGSVGElement, ImageLandscapeIconProp
       return <ImageLandscapeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ImageLandscapeIconRegular ref={ref} {...props} />;
+      return <RegularImageLandscapeIcon ref={ref} {...props} />;
   }
 }));
 

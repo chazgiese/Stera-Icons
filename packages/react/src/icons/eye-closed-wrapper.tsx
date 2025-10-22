@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EyeClosedIcon as EyeClosedIconRegular } from './eye-closed';
+import { EyeClosedIcon as RegularEyeClosedIcon } from './eye-closed';
 import { EyeClosedIconBold } from './eye-closed-bold';
 import { EyeClosedIconFilled } from './eye-closed-filled';
 import { EyeClosedIconFilltone } from './eye-closed-filltone';
@@ -25,7 +25,7 @@ const EyeClosedIcon = memo(forwardRef<SVGSVGElement, EyeClosedIconProps>(({
       return <EyeClosedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EyeClosedIconRegular ref={ref} {...props} />;
+      return <RegularEyeClosedIcon ref={ref} {...props} />;
   }
 }));
 

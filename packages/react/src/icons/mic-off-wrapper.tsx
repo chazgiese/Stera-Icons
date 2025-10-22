@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MicOffIcon as MicOffIconRegular } from './mic-off';
+import { MicOffIcon as RegularMicOffIcon } from './mic-off';
 import { MicOffIconBold } from './mic-off-bold';
 import { MicOffIconFilled } from './mic-off-filled';
 import { MicOffIconFilltone } from './mic-off-filltone';
@@ -25,7 +25,7 @@ const MicOffIcon = memo(forwardRef<SVGSVGElement, MicOffIconProps>(({
       return <MicOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MicOffIconRegular ref={ref} {...props} />;
+      return <RegularMicOffIcon ref={ref} {...props} />;
   }
 }));
 

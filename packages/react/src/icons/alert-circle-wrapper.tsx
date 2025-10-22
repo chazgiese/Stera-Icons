@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlertCircleIcon as AlertCircleIconRegular } from './alert-circle';
+import { AlertCircleIcon as RegularAlertCircleIcon } from './alert-circle';
 import { AlertCircleIconBold } from './alert-circle-bold';
 import { AlertCircleIconFilled } from './alert-circle-filled';
 import { AlertCircleIconFilltone } from './alert-circle-filltone';
@@ -25,7 +25,7 @@ const AlertCircleIcon = memo(forwardRef<SVGSVGElement, AlertCircleIconProps>(({
       return <AlertCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlertCircleIconRegular ref={ref} {...props} />;
+      return <RegularAlertCircleIcon ref={ref} {...props} />;
   }
 }));
 

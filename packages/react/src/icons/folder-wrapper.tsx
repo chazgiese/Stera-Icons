@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FolderIcon as FolderIconRegular } from './folder';
+import { FolderIcon as RegularFolderIcon } from './folder';
 import { FolderIconBold } from './folder-bold';
 import { FolderIconFilled } from './folder-filled';
 import { FolderIconFilltone } from './folder-filltone';
@@ -25,7 +25,7 @@ const FolderIcon = memo(forwardRef<SVGSVGElement, FolderIconProps>(({
       return <FolderIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FolderIconRegular ref={ref} {...props} />;
+      return <RegularFolderIcon ref={ref} {...props} />;
   }
 }));
 

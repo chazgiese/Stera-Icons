@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { RulerIcon as RulerIconRegular } from './ruler';
+import { RulerIcon as RegularRulerIcon } from './ruler';
 import { RulerIconBold } from './ruler-bold';
 import { RulerIconFilled } from './ruler-filled';
 import { RulerIconFilltone } from './ruler-filltone';
@@ -25,7 +25,7 @@ const RulerIcon = memo(forwardRef<SVGSVGElement, RulerIconProps>(({
       return <RulerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <RulerIconRegular ref={ref} {...props} />;
+      return <RegularRulerIcon ref={ref} {...props} />;
   }
 }));
 

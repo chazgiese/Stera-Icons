@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CursorNavigationIcon as CursorNavigationIconRegular } from './cursor-navigation';
+import { CursorNavigationIcon as RegularCursorNavigationIcon } from './cursor-navigation';
 import { CursorNavigationIconBold } from './cursor-navigation-bold';
 import { CursorNavigationIconFilled } from './cursor-navigation-filled';
 import { CursorNavigationIconFilltone } from './cursor-navigation-filltone';
@@ -25,7 +25,7 @@ const CursorNavigationIcon = memo(forwardRef<SVGSVGElement, CursorNavigationIcon
       return <CursorNavigationIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CursorNavigationIconRegular ref={ref} {...props} />;
+      return <RegularCursorNavigationIcon ref={ref} {...props} />;
   }
 }));
 

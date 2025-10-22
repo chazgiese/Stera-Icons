@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DocumentDetailIcon as DocumentDetailIconRegular } from './document-detail';
+import { DocumentDetailIcon as RegularDocumentDetailIcon } from './document-detail';
 import { DocumentDetailIconBold } from './document-detail-bold';
 import { DocumentDetailIconFilled } from './document-detail-filled';
 import { DocumentDetailIconFilltone } from './document-detail-filltone';
@@ -25,7 +25,7 @@ const DocumentDetailIcon = memo(forwardRef<SVGSVGElement, DocumentDetailIconProp
       return <DocumentDetailIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DocumentDetailIconRegular ref={ref} {...props} />;
+      return <RegularDocumentDetailIcon ref={ref} {...props} />;
   }
 }));
 

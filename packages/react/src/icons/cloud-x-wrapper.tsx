@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CloudXIcon as CloudXIconRegular } from './cloud-x';
+import { CloudXIcon as RegularCloudXIcon } from './cloud-x';
 import { CloudXIconBold } from './cloud-x-bold';
 import { CloudXIconFilled } from './cloud-x-filled';
 import { CloudXIconFilltone } from './cloud-x-filltone';
@@ -25,7 +25,7 @@ const CloudXIcon = memo(forwardRef<SVGSVGElement, CloudXIconProps>(({
       return <CloudXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CloudXIconRegular ref={ref} {...props} />;
+      return <RegularCloudXIcon ref={ref} {...props} />;
   }
 }));
 

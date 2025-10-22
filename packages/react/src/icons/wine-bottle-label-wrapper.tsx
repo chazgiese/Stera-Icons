@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WineBottleLabelIcon as WineBottleLabelIconRegular } from './wine-bottle-label';
+import { WineBottleLabelIcon as RegularWineBottleLabelIcon } from './wine-bottle-label';
 import { WineBottleLabelIconBold } from './wine-bottle-label-bold';
 import { WineBottleLabelIconFilled } from './wine-bottle-label-filled';
 import { WineBottleLabelIconFilltone } from './wine-bottle-label-filltone';
@@ -25,7 +25,7 @@ const WineBottleLabelIcon = memo(forwardRef<SVGSVGElement, WineBottleLabelIconPr
       return <WineBottleLabelIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WineBottleLabelIconRegular ref={ref} {...props} />;
+      return <RegularWineBottleLabelIcon ref={ref} {...props} />;
   }
 }));
 

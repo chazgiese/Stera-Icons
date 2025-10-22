@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CursorClickIcon as CursorClickIconRegular } from './cursor-click';
+import { CursorClickIcon as RegularCursorClickIcon } from './cursor-click';
 import { CursorClickIconBold } from './cursor-click-bold';
 import { CursorClickIconFilled } from './cursor-click-filled';
 import { CursorClickIconFilltone } from './cursor-click-filltone';
@@ -25,7 +25,7 @@ const CursorClickIcon = memo(forwardRef<SVGSVGElement, CursorClickIconProps>(({
       return <CursorClickIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CursorClickIconRegular ref={ref} {...props} />;
+      return <RegularCursorClickIcon ref={ref} {...props} />;
   }
 }));
 

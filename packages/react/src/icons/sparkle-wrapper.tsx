@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SparkleIcon as SparkleIconRegular } from './sparkle';
+import { SparkleIcon as RegularSparkleIcon } from './sparkle';
 import { SparkleIconBold } from './sparkle-bold';
 import { SparkleIconFilled } from './sparkle-filled';
 import { SparkleIconFilltone } from './sparkle-filltone';
@@ -25,7 +25,7 @@ const SparkleIcon = memo(forwardRef<SVGSVGElement, SparkleIconProps>(({
       return <SparkleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SparkleIconRegular ref={ref} {...props} />;
+      return <RegularSparkleIcon ref={ref} {...props} />;
   }
 }));
 

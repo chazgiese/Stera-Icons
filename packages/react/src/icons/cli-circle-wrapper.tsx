@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CliCircleIcon as CliCircleIconRegular } from './cli-circle';
+import { CliCircleIcon as RegularCliCircleIcon } from './cli-circle';
 import { CliCircleIconBold } from './cli-circle-bold';
 import { CliCircleIconFilled } from './cli-circle-filled';
 import { CliCircleIconFilltone } from './cli-circle-filltone';
@@ -25,7 +25,7 @@ const CliCircleIcon = memo(forwardRef<SVGSVGElement, CliCircleIconProps>(({
       return <CliCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CliCircleIconRegular ref={ref} {...props} />;
+      return <RegularCliCircleIcon ref={ref} {...props} />;
   }
 }));
 

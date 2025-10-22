@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HeadphonesIcon as HeadphonesIconRegular } from './headphones';
+import { HeadphonesIcon as RegularHeadphonesIcon } from './headphones';
 import { HeadphonesIconBold } from './headphones-bold';
 import { HeadphonesIconFilled } from './headphones-filled';
 import { HeadphonesIconFilltone } from './headphones-filltone';
@@ -25,7 +25,7 @@ const HeadphonesIcon = memo(forwardRef<SVGSVGElement, HeadphonesIconProps>(({
       return <HeadphonesIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HeadphonesIconRegular ref={ref} {...props} />;
+      return <RegularHeadphonesIcon ref={ref} {...props} />;
   }
 }));
 

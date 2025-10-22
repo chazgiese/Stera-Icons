@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FootballIcon as FootballIconRegular } from './football';
+import { FootballIcon as RegularFootballIcon } from './football';
 import { FootballIconBold } from './football-bold';
 import { FootballIconFilled } from './football-filled';
 import { FootballIconFilltone } from './football-filltone';
@@ -25,7 +25,7 @@ const FootballIcon = memo(forwardRef<SVGSVGElement, FootballIconProps>(({
       return <FootballIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FootballIconRegular ref={ref} {...props} />;
+      return <RegularFootballIcon ref={ref} {...props} />;
   }
 }));
 

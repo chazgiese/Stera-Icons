@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AstriskIcon as AstriskIconRegular } from './astrisk';
+import { AstriskIcon as RegularAstriskIcon } from './astrisk';
 import { AstriskIconBold } from './astrisk-bold';
 import { AstriskIconFilled } from './astrisk-filled';
 import { AstriskIconFilltone } from './astrisk-filltone';
@@ -25,7 +25,7 @@ const AstriskIcon = memo(forwardRef<SVGSVGElement, AstriskIconProps>(({
       return <AstriskIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AstriskIconRegular ref={ref} {...props} />;
+      return <RegularAstriskIcon ref={ref} {...props} />;
   }
 }));
 

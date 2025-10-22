@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MenuIcon as MenuIconRegular } from './menu';
+import { MenuIcon as RegularMenuIcon } from './menu';
 import { MenuIconBold } from './menu-bold';
 import { MenuIconFilled } from './menu-filled';
 import { MenuIconFilltone } from './menu-filltone';
@@ -25,7 +25,7 @@ const MenuIcon = memo(forwardRef<SVGSVGElement, MenuIconProps>(({
       return <MenuIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MenuIconRegular ref={ref} {...props} />;
+      return <RegularMenuIcon ref={ref} {...props} />;
   }
 }));
 

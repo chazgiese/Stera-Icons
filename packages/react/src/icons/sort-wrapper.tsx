@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SortIcon as SortIconRegular } from './sort';
+import { SortIcon as RegularSortIcon } from './sort';
 import { SortIconBold } from './sort-bold';
 import { SortIconFilled } from './sort-filled';
 import { SortIconFilltone } from './sort-filltone';
@@ -25,7 +25,7 @@ const SortIcon = memo(forwardRef<SVGSVGElement, SortIconProps>(({
       return <SortIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SortIconRegular ref={ref} {...props} />;
+      return <RegularSortIcon ref={ref} {...props} />;
   }
 }));
 

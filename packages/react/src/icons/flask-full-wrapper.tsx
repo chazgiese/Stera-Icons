@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlaskFullIcon as FlaskFullIconRegular } from './flask-full';
+import { FlaskFullIcon as RegularFlaskFullIcon } from './flask-full';
 import { FlaskFullIconBold } from './flask-full-bold';
 import { FlaskFullIconFilled } from './flask-full-filled';
 import { FlaskFullIconFilltone } from './flask-full-filltone';
@@ -25,7 +25,7 @@ const FlaskFullIcon = memo(forwardRef<SVGSVGElement, FlaskFullIconProps>(({
       return <FlaskFullIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlaskFullIconRegular ref={ref} {...props} />;
+      return <RegularFlaskFullIcon ref={ref} {...props} />;
   }
 }));
 

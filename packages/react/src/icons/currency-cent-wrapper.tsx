@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CurrencyCentIcon as CurrencyCentIconRegular } from './currency-cent';
+import { CurrencyCentIcon as RegularCurrencyCentIcon } from './currency-cent';
 import { CurrencyCentIconBold } from './currency-cent-bold';
 import { CurrencyCentIconFilled } from './currency-cent-filled';
 import { CurrencyCentIconFilltone } from './currency-cent-filltone';
@@ -25,7 +25,7 @@ const CurrencyCentIcon = memo(forwardRef<SVGSVGElement, CurrencyCentIconProps>((
       return <CurrencyCentIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CurrencyCentIconRegular ref={ref} {...props} />;
+      return <RegularCurrencyCentIcon ref={ref} {...props} />;
   }
 }));
 

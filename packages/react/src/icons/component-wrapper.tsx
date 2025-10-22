@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ComponentIcon as ComponentIconRegular } from './component';
+import { ComponentIcon as RegularComponentIcon } from './component';
 import { ComponentIconBold } from './component-bold';
 import { ComponentIconFilled } from './component-filled';
 import { ComponentIconFilltone } from './component-filltone';
@@ -25,7 +25,7 @@ const ComponentIcon = memo(forwardRef<SVGSVGElement, ComponentIconProps>(({
       return <ComponentIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ComponentIconRegular ref={ref} {...props} />;
+      return <RegularComponentIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CanIcon as CanIconRegular } from './can';
+import { CanIcon as RegularCanIcon } from './can';
 import { CanIconBold } from './can-bold';
 import { CanIconFilled } from './can-filled';
 import { CanIconFilltone } from './can-filltone';
@@ -25,7 +25,7 @@ const CanIcon = memo(forwardRef<SVGSVGElement, CanIconProps>(({
       return <CanIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CanIconRegular ref={ref} {...props} />;
+      return <RegularCanIcon ref={ref} {...props} />;
   }
 }));
 

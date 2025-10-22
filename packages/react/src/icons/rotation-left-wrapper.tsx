@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { RotationLeftIcon as RotationLeftIconRegular } from './rotation-left';
+import { RotationLeftIcon as RegularRotationLeftIcon } from './rotation-left';
 import { RotationLeftIconBold } from './rotation-left-bold';
 import { RotationLeftIconFilled } from './rotation-left-filled';
 import { RotationLeftIconFilltone } from './rotation-left-filltone';
@@ -25,7 +25,7 @@ const RotationLeftIcon = memo(forwardRef<SVGSVGElement, RotationLeftIconProps>((
       return <RotationLeftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <RotationLeftIconRegular ref={ref} {...props} />;
+      return <RegularRotationLeftIcon ref={ref} {...props} />;
   }
 }));
 

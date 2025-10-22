@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TestTubeFullIcon as TestTubeFullIconRegular } from './test-tube-full';
+import { TestTubeFullIcon as RegularTestTubeFullIcon } from './test-tube-full';
 import { TestTubeFullIconBold } from './test-tube-full-bold';
 import { TestTubeFullIconFilled } from './test-tube-full-filled';
 import { TestTubeFullIconFilltone } from './test-tube-full-filltone';
@@ -25,7 +25,7 @@ const TestTubeFullIcon = memo(forwardRef<SVGSVGElement, TestTubeFullIconProps>((
       return <TestTubeFullIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TestTubeFullIconRegular ref={ref} {...props} />;
+      return <RegularTestTubeFullIcon ref={ref} {...props} />;
   }
 }));
 

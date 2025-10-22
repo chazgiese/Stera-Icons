@@ -30,7 +30,7 @@ Stera Icons is optimized for production use:
 - **Tree-shaking**: Import only what you use for minimal impact
 - **No source maps**: Production builds exclude development files for optimal size
 
-The package includes 728+ icons across outline and filled variants, but thanks to tree-shaking, you only pay for what you import.
+The package includes 552+ icons with 5 variants each (regular, bold, filled, filltone, linetone), but thanks to tree-shaking, you only pay for what you import.
 
 ## Usage
 
@@ -65,15 +65,17 @@ import { SearchIcon, HeartIcon } from 'stera-icons';
 function App() {
   return (
     <div>
-      {/* Use variant prop on wrapper component */}
+      {/* Use variant prop to switch between icon styles */}
       <SearchIcon variant="regular" size={24} />
       <SearchIcon variant="bold" size={24} />
       <SearchIcon variant="filled" size={24} />
+      <SearchIcon variant="filltone" size={24} />
+      <SearchIcon variant="linetone" size={24} />
       
-      {/* Or import specific variants directly */}
-      <HeartIcon size={20} />         {/* Regular variant */}
-      <HeartIconBold size={20} />     {/* Bold variant */}
-      <HeartIconFilled size={20} />   {/* Filled variant */}
+      {/* Regular variant is the default */}
+      <HeartIcon size={20} />
+      <HeartIcon variant="bold" size={20} />
+      <HeartIcon variant="filled" size={20} />
     </div>
   );
 }
@@ -95,9 +97,7 @@ function App() {
 All icon components are suffixed with "Icon" to prevent naming conflicts with your existing components:
 
 - **Pattern**: `{Name}Icon` (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`)
-- **Bold variants**: `{Name}IconBold` (e.g., `SearchIconBold`, `HeartIconBold`)
-- **Filled variants**: `{Name}IconFilled` (e.g., `SearchIconFilled`, `HeartIconFilled`)
-- **Regular variants**: `{Name}Icon` (e.g., `SearchIcon`, `HeartIcon`)
+- **Variants**: Use the `variant` prop to switch between styles (regular, bold, filled, filltone, linetone)
 
 ## API
 

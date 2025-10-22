@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChecklistUncheckedIcon as ChecklistUncheckedIconRegular } from './checklist-unchecked';
+import { ChecklistUncheckedIcon as RegularChecklistUncheckedIcon } from './checklist-unchecked';
 import { ChecklistUncheckedIconBold } from './checklist-unchecked-bold';
 import { ChecklistUncheckedIconFilled } from './checklist-unchecked-filled';
 import { ChecklistUncheckedIconFilltone } from './checklist-unchecked-filltone';
@@ -25,7 +25,7 @@ const ChecklistUncheckedIcon = memo(forwardRef<SVGSVGElement, ChecklistUnchecked
       return <ChecklistUncheckedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChecklistUncheckedIconRegular ref={ref} {...props} />;
+      return <RegularChecklistUncheckedIcon ref={ref} {...props} />;
   }
 }));
 

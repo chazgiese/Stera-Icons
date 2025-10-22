@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BatteryHalfIcon as BatteryHalfIconRegular } from './battery-half';
+import { BatteryHalfIcon as RegularBatteryHalfIcon } from './battery-half';
 import { BatteryHalfIconBold } from './battery-half-bold';
 import { BatteryHalfIconFilled } from './battery-half-filled';
 import { BatteryHalfIconFilltone } from './battery-half-filltone';
@@ -25,7 +25,7 @@ const BatteryHalfIcon = memo(forwardRef<SVGSVGElement, BatteryHalfIconProps>(({
       return <BatteryHalfIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BatteryHalfIconRegular ref={ref} {...props} />;
+      return <RegularBatteryHalfIcon ref={ref} {...props} />;
   }
 }));
 

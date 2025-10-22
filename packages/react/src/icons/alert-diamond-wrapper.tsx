@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlertDiamondIcon as AlertDiamondIconRegular } from './alert-diamond';
+import { AlertDiamondIcon as RegularAlertDiamondIcon } from './alert-diamond';
 import { AlertDiamondIconBold } from './alert-diamond-bold';
 import { AlertDiamondIconFilled } from './alert-diamond-filled';
 import { AlertDiamondIconFilltone } from './alert-diamond-filltone';
@@ -25,7 +25,7 @@ const AlertDiamondIcon = memo(forwardRef<SVGSVGElement, AlertDiamondIconProps>((
       return <AlertDiamondIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlertDiamondIconRegular ref={ref} {...props} />;
+      return <RegularAlertDiamondIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CpuIcon as CpuIconRegular } from './cpu';
+import { CpuIcon as RegularCpuIcon } from './cpu';
 import { CpuIconBold } from './cpu-bold';
 import { CpuIconFilled } from './cpu-filled';
 import { CpuIconFilltone } from './cpu-filltone';
@@ -25,7 +25,7 @@ const CpuIcon = memo(forwardRef<SVGSVGElement, CpuIconProps>(({
       return <CpuIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CpuIconRegular ref={ref} {...props} />;
+      return <RegularCpuIcon ref={ref} {...props} />;
   }
 }));
 

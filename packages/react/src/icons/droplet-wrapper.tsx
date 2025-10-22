@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DropletIcon as DropletIconRegular } from './droplet';
+import { DropletIcon as RegularDropletIcon } from './droplet';
 import { DropletIconBold } from './droplet-bold';
 import { DropletIconFilled } from './droplet-filled';
 import { DropletIconFilltone } from './droplet-filltone';
@@ -25,7 +25,7 @@ const DropletIcon = memo(forwardRef<SVGSVGElement, DropletIconProps>(({
       return <DropletIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DropletIconRegular ref={ref} {...props} />;
+      return <RegularDropletIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CircleSlashIcon as CircleSlashIconRegular } from './circle-slash';
+import { CircleSlashIcon as RegularCircleSlashIcon } from './circle-slash';
 import { CircleSlashIconBold } from './circle-slash-bold';
 import { CircleSlashIconFilled } from './circle-slash-filled';
 import { CircleSlashIconFilltone } from './circle-slash-filltone';
@@ -25,7 +25,7 @@ const CircleSlashIcon = memo(forwardRef<SVGSVGElement, CircleSlashIconProps>(({
       return <CircleSlashIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CircleSlashIconRegular ref={ref} {...props} />;
+      return <RegularCircleSlashIcon ref={ref} {...props} />;
   }
 }));
 

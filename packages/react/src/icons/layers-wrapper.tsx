@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LayersIcon as LayersIconRegular } from './layers';
+import { LayersIcon as RegularLayersIcon } from './layers';
 import { LayersIconBold } from './layers-bold';
 import { LayersIconFilled } from './layers-filled';
 import { LayersIconFilltone } from './layers-filltone';
@@ -25,7 +25,7 @@ const LayersIcon = memo(forwardRef<SVGSVGElement, LayersIconProps>(({
       return <LayersIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LayersIconRegular ref={ref} {...props} />;
+      return <RegularLayersIcon ref={ref} {...props} />;
   }
 }));
 

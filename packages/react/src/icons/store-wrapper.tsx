@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { StoreIcon as StoreIconRegular } from './store';
+import { StoreIcon as RegularStoreIcon } from './store';
 import { StoreIconBold } from './store-bold';
 import { StoreIconFilled } from './store-filled';
 import { StoreIconFilltone } from './store-filltone';
@@ -25,7 +25,7 @@ const StoreIcon = memo(forwardRef<SVGSVGElement, StoreIconProps>(({
       return <StoreIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <StoreIconRegular ref={ref} {...props} />;
+      return <RegularStoreIcon ref={ref} {...props} />;
   }
 }));
 

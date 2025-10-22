@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CircleDotsIcon as CircleDotsIconRegular } from './circle-dots';
+import { CircleDotsIcon as RegularCircleDotsIcon } from './circle-dots';
 import { CircleDotsIconBold } from './circle-dots-bold';
 import { CircleDotsIconFilled } from './circle-dots-filled';
 import { CircleDotsIconFilltone } from './circle-dots-filltone';
@@ -25,7 +25,7 @@ const CircleDotsIcon = memo(forwardRef<SVGSVGElement, CircleDotsIconProps>(({
       return <CircleDotsIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CircleDotsIconRegular ref={ref} {...props} />;
+      return <RegularCircleDotsIcon ref={ref} {...props} />;
   }
 }));
 

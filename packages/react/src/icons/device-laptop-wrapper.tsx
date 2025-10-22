@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DeviceLaptopIcon as DeviceLaptopIconRegular } from './device-laptop';
+import { DeviceLaptopIcon as RegularDeviceLaptopIcon } from './device-laptop';
 import { DeviceLaptopIconBold } from './device-laptop-bold';
 import { DeviceLaptopIconFilled } from './device-laptop-filled';
 import { DeviceLaptopIconFilltone } from './device-laptop-filltone';
@@ -25,7 +25,7 @@ const DeviceLaptopIcon = memo(forwardRef<SVGSVGElement, DeviceLaptopIconProps>((
       return <DeviceLaptopIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DeviceLaptopIconRegular ref={ref} {...props} />;
+      return <RegularDeviceLaptopIcon ref={ref} {...props} />;
   }
 }));
 

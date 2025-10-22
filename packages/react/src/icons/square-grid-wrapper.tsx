@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SquareGridIcon as SquareGridIconRegular } from './square-grid';
+import { SquareGridIcon as RegularSquareGridIcon } from './square-grid';
 import { SquareGridIconBold } from './square-grid-bold';
 import { SquareGridIconFilled } from './square-grid-filled';
 import { SquareGridIconFilltone } from './square-grid-filltone';
@@ -25,7 +25,7 @@ const SquareGridIcon = memo(forwardRef<SVGSVGElement, SquareGridIconProps>(({
       return <SquareGridIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SquareGridIconRegular ref={ref} {...props} />;
+      return <RegularSquareGridIcon ref={ref} {...props} />;
   }
 }));
 

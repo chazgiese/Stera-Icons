@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TargetIcon as TargetIconRegular } from './target';
+import { TargetIcon as RegularTargetIcon } from './target';
 import { TargetIconBold } from './target-bold';
 import { TargetIconFilled } from './target-filled';
 import { TargetIconFilltone } from './target-filltone';
@@ -25,7 +25,7 @@ const TargetIcon = memo(forwardRef<SVGSVGElement, TargetIconProps>(({
       return <TargetIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TargetIconRegular ref={ref} {...props} />;
+      return <RegularTargetIcon ref={ref} {...props} />;
   }
 }));
 

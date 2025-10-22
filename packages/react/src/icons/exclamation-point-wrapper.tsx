@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ExclamationPointIcon as ExclamationPointIconRegular } from './exclamation-point';
+import { ExclamationPointIcon as RegularExclamationPointIcon } from './exclamation-point';
 import { ExclamationPointIconBold } from './exclamation-point-bold';
 import { ExclamationPointIconFilled } from './exclamation-point-filled';
 import { ExclamationPointIconFilltone } from './exclamation-point-filltone';
@@ -25,7 +25,7 @@ const ExclamationPointIcon = memo(forwardRef<SVGSVGElement, ExclamationPointIcon
       return <ExclamationPointIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ExclamationPointIconRegular ref={ref} {...props} />;
+      return <RegularExclamationPointIcon ref={ref} {...props} />;
   }
 }));
 

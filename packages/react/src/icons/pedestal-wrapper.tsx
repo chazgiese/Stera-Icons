@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PedestalIcon as PedestalIconRegular } from './pedestal';
+import { PedestalIcon as RegularPedestalIcon } from './pedestal';
 import { PedestalIconBold } from './pedestal-bold';
 import { PedestalIconFilled } from './pedestal-filled';
 import { PedestalIconFilltone } from './pedestal-filltone';
@@ -25,7 +25,7 @@ const PedestalIcon = memo(forwardRef<SVGSVGElement, PedestalIconProps>(({
       return <PedestalIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PedestalIconRegular ref={ref} {...props} />;
+      return <RegularPedestalIcon ref={ref} {...props} />;
   }
 }));
 

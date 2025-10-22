@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SidebarRightIcon as SidebarRightIconRegular } from './sidebar-right';
+import { SidebarRightIcon as RegularSidebarRightIcon } from './sidebar-right';
 import { SidebarRightIconBold } from './sidebar-right-bold';
 import { SidebarRightIconFilled } from './sidebar-right-filled';
 import { SidebarRightIconFilltone } from './sidebar-right-filltone';
@@ -25,7 +25,7 @@ const SidebarRightIcon = memo(forwardRef<SVGSVGElement, SidebarRightIconProps>((
       return <SidebarRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SidebarRightIconRegular ref={ref} {...props} />;
+      return <RegularSidebarRightIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BladeSwordIcon as BladeSwordIconRegular } from './blade-sword';
+import { BladeSwordIcon as RegularBladeSwordIcon } from './blade-sword';
 import { BladeSwordIconBold } from './blade-sword-bold';
 import { BladeSwordIconFilled } from './blade-sword-filled';
 import { BladeSwordIconFilltone } from './blade-sword-filltone';
@@ -25,7 +25,7 @@ const BladeSwordIcon = memo(forwardRef<SVGSVGElement, BladeSwordIconProps>(({
       return <BladeSwordIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BladeSwordIconRegular ref={ref} {...props} />;
+      return <RegularBladeSwordIcon ref={ref} {...props} />;
   }
 }));
 

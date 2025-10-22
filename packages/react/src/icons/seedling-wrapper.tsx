@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SeedlingIcon as SeedlingIconRegular } from './seedling';
+import { SeedlingIcon as RegularSeedlingIcon } from './seedling';
 import { SeedlingIconBold } from './seedling-bold';
 import { SeedlingIconFilled } from './seedling-filled';
 import { SeedlingIconFilltone } from './seedling-filltone';
@@ -25,7 +25,7 @@ const SeedlingIcon = memo(forwardRef<SVGSVGElement, SeedlingIconProps>(({
       return <SeedlingIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SeedlingIconRegular ref={ref} {...props} />;
+      return <RegularSeedlingIcon ref={ref} {...props} />;
   }
 }));
 

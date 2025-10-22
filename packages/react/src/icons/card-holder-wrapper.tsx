@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CardHolderIcon as CardHolderIconRegular } from './card-holder';
+import { CardHolderIcon as RegularCardHolderIcon } from './card-holder';
 import { CardHolderIconBold } from './card-holder-bold';
 import { CardHolderIconFilled } from './card-holder-filled';
 import { CardHolderIconFilltone } from './card-holder-filltone';
@@ -25,7 +25,7 @@ const CardHolderIcon = memo(forwardRef<SVGSVGElement, CardHolderIconProps>(({
       return <CardHolderIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CardHolderIconRegular ref={ref} {...props} />;
+      return <RegularCardHolderIcon ref={ref} {...props} />;
   }
 }));
 

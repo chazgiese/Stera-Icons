@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanCameraIcon as ScanCameraIconRegular } from './scan-camera';
+import { ScanCameraIcon as RegularScanCameraIcon } from './scan-camera';
 import { ScanCameraIconBold } from './scan-camera-bold';
 import { ScanCameraIconFilled } from './scan-camera-filled';
 import { ScanCameraIconFilltone } from './scan-camera-filltone';
@@ -25,7 +25,7 @@ const ScanCameraIcon = memo(forwardRef<SVGSVGElement, ScanCameraIconProps>(({
       return <ScanCameraIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanCameraIconRegular ref={ref} {...props} />;
+      return <RegularScanCameraIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlertTriangleIcon as AlertTriangleIconRegular } from './alert-triangle';
+import { AlertTriangleIcon as RegularAlertTriangleIcon } from './alert-triangle';
 import { AlertTriangleIconBold } from './alert-triangle-bold';
 import { AlertTriangleIconFilled } from './alert-triangle-filled';
 import { AlertTriangleIconFilltone } from './alert-triangle-filltone';
@@ -25,7 +25,7 @@ const AlertTriangleIcon = memo(forwardRef<SVGSVGElement, AlertTriangleIconProps>
       return <AlertTriangleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlertTriangleIconRegular ref={ref} {...props} />;
+      return <RegularAlertTriangleIcon ref={ref} {...props} />;
   }
 }));
 

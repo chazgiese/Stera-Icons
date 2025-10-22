@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ClockIcon as ClockIconRegular } from './clock';
+import { ClockIcon as RegularClockIcon } from './clock';
 import { ClockIconBold } from './clock-bold';
 import { ClockIconFilled } from './clock-filled';
 import { ClockIconFilltone } from './clock-filltone';
@@ -25,7 +25,7 @@ const ClockIcon = memo(forwardRef<SVGSVGElement, ClockIconProps>(({
       return <ClockIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ClockIconRegular ref={ref} {...props} />;
+      return <RegularClockIcon ref={ref} {...props} />;
   }
 }));
 

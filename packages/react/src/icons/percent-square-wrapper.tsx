@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PercentSquareIcon as PercentSquareIconRegular } from './percent-square';
+import { PercentSquareIcon as RegularPercentSquareIcon } from './percent-square';
 import { PercentSquareIconBold } from './percent-square-bold';
 import { PercentSquareIconFilled } from './percent-square-filled';
 import { PercentSquareIconFilltone } from './percent-square-filltone';
@@ -25,7 +25,7 @@ const PercentSquareIcon = memo(forwardRef<SVGSVGElement, PercentSquareIconProps>
       return <PercentSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PercentSquareIconRegular ref={ref} {...props} />;
+      return <RegularPercentSquareIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlertOctagonIcon as AlertOctagonIconRegular } from './alert-octagon';
+import { AlertOctagonIcon as RegularAlertOctagonIcon } from './alert-octagon';
 import { AlertOctagonIconBold } from './alert-octagon-bold';
 import { AlertOctagonIconFilled } from './alert-octagon-filled';
 import { AlertOctagonIconFilltone } from './alert-octagon-filltone';
@@ -25,7 +25,7 @@ const AlertOctagonIcon = memo(forwardRef<SVGSVGElement, AlertOctagonIconProps>((
       return <AlertOctagonIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlertOctagonIconRegular ref={ref} {...props} />;
+      return <RegularAlertOctagonIcon ref={ref} {...props} />;
   }
 }));
 

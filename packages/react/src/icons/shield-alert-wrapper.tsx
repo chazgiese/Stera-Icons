@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ShieldAlertIcon as ShieldAlertIconRegular } from './shield-alert';
+import { ShieldAlertIcon as RegularShieldAlertIcon } from './shield-alert';
 import { ShieldAlertIconBold } from './shield-alert-bold';
 import { ShieldAlertIconFilled } from './shield-alert-filled';
 import { ShieldAlertIconFilltone } from './shield-alert-filltone';
@@ -25,7 +25,7 @@ const ShieldAlertIcon = memo(forwardRef<SVGSVGElement, ShieldAlertIconProps>(({
       return <ShieldAlertIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ShieldAlertIconRegular ref={ref} {...props} />;
+      return <RegularShieldAlertIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlusSquareIcon as PlusSquareIconRegular } from './plus-square';
+import { PlusSquareIcon as RegularPlusSquareIcon } from './plus-square';
 import { PlusSquareIconBold } from './plus-square-bold';
 import { PlusSquareIconFilled } from './plus-square-filled';
 import { PlusSquareIconFilltone } from './plus-square-filltone';
@@ -25,7 +25,7 @@ const PlusSquareIcon = memo(forwardRef<SVGSVGElement, PlusSquareIconProps>(({
       return <PlusSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlusSquareIconRegular ref={ref} {...props} />;
+      return <RegularPlusSquareIcon ref={ref} {...props} />;
   }
 }));
 

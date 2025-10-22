@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlienIcon as AlienIconRegular } from './alien';
+import { AlienIcon as RegularAlienIcon } from './alien';
 import { AlienIconBold } from './alien-bold';
 import { AlienIconFilled } from './alien-filled';
 import { AlienIconFilltone } from './alien-filltone';
@@ -25,7 +25,7 @@ const AlienIcon = memo(forwardRef<SVGSVGElement, AlienIconProps>(({
       return <AlienIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlienIconRegular ref={ref} {...props} />;
+      return <RegularAlienIcon ref={ref} {...props} />;
   }
 }));
 

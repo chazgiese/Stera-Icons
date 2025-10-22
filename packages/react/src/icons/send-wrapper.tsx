@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SendIcon as SendIconRegular } from './send';
+import { SendIcon as RegularSendIcon } from './send';
 import { SendIconBold } from './send-bold';
 import { SendIconFilled } from './send-filled';
 import { SendIconFilltone } from './send-filltone';
@@ -25,7 +25,7 @@ const SendIcon = memo(forwardRef<SVGSVGElement, SendIconProps>(({
       return <SendIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SendIconRegular ref={ref} {...props} />;
+      return <RegularSendIcon ref={ref} {...props} />;
   }
 }));
 

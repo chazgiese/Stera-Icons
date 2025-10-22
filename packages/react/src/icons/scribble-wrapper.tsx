@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScribbleIcon as ScribbleIconRegular } from './scribble';
+import { ScribbleIcon as RegularScribbleIcon } from './scribble';
 import { ScribbleIconBold } from './scribble-bold';
 import { ScribbleIconFilled } from './scribble-filled';
 import { ScribbleIconFilltone } from './scribble-filltone';
@@ -25,7 +25,7 @@ const ScribbleIcon = memo(forwardRef<SVGSVGElement, ScribbleIconProps>(({
       return <ScribbleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScribbleIconRegular ref={ref} {...props} />;
+      return <RegularScribbleIcon ref={ref} {...props} />;
   }
 }));
 

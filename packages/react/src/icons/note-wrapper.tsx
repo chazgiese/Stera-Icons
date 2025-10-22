@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { NoteIcon as NoteIconRegular } from './note';
+import { NoteIcon as RegularNoteIcon } from './note';
 import { NoteIconBold } from './note-bold';
 import { NoteIconFilled } from './note-filled';
 import { NoteIconFilltone } from './note-filltone';
@@ -25,7 +25,7 @@ const NoteIcon = memo(forwardRef<SVGSVGElement, NoteIconProps>(({
       return <NoteIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <NoteIconRegular ref={ref} {...props} />;
+      return <RegularNoteIcon ref={ref} {...props} />;
   }
 }));
 

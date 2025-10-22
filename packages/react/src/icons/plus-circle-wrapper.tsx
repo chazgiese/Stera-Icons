@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlusCircleIcon as PlusCircleIconRegular } from './plus-circle';
+import { PlusCircleIcon as RegularPlusCircleIcon } from './plus-circle';
 import { PlusCircleIconBold } from './plus-circle-bold';
 import { PlusCircleIconFilled } from './plus-circle-filled';
 import { PlusCircleIconFilltone } from './plus-circle-filltone';
@@ -25,7 +25,7 @@ const PlusCircleIcon = memo(forwardRef<SVGSVGElement, PlusCircleIconProps>(({
       return <PlusCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlusCircleIconRegular ref={ref} {...props} />;
+      return <RegularPlusCircleIcon ref={ref} {...props} />;
   }
 }));
 

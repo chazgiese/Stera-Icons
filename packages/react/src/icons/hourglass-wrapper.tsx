@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HourglassIcon as HourglassIconRegular } from './hourglass';
+import { HourglassIcon as RegularHourglassIcon } from './hourglass';
 import { HourglassIconBold } from './hourglass-bold';
 import { HourglassIconFilled } from './hourglass-filled';
 import { HourglassIconFilltone } from './hourglass-filltone';
@@ -25,7 +25,7 @@ const HourglassIcon = memo(forwardRef<SVGSVGElement, HourglassIconProps>(({
       return <HourglassIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HourglassIconRegular ref={ref} {...props} />;
+      return <RegularHourglassIcon ref={ref} {...props} />;
   }
 }));
 

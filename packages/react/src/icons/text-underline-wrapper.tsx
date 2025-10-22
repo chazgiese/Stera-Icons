@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextUnderlineIcon as TextUnderlineIconRegular } from './text-underline';
+import { TextUnderlineIcon as RegularTextUnderlineIcon } from './text-underline';
 import { TextUnderlineIconBold } from './text-underline-bold';
 import { TextUnderlineIconFilled } from './text-underline-filled';
 import { TextUnderlineIconFilltone } from './text-underline-filltone';
@@ -25,7 +25,7 @@ const TextUnderlineIcon = memo(forwardRef<SVGSVGElement, TextUnderlineIconProps>
       return <TextUnderlineIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextUnderlineIconRegular ref={ref} {...props} />;
+      return <RegularTextUnderlineIcon ref={ref} {...props} />;
   }
 }));
 

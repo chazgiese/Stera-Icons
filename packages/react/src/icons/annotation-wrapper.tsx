@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AnnotationIcon as AnnotationIconRegular } from './annotation';
+import { AnnotationIcon as RegularAnnotationIcon } from './annotation';
 import { AnnotationIconBold } from './annotation-bold';
 import { AnnotationIconFilled } from './annotation-filled';
 import { AnnotationIconFilltone } from './annotation-filltone';
@@ -25,7 +25,7 @@ const AnnotationIcon = memo(forwardRef<SVGSVGElement, AnnotationIconProps>(({
       return <AnnotationIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AnnotationIconRegular ref={ref} {...props} />;
+      return <RegularAnnotationIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextBoldIconLinetone = memo(
+const TextBIconFilltone = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,17 +28,15 @@ const TextBoldIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M7 22H6a1 1 0 0 1-.995-.898L5 21V3a1 1 0 0 1 1-1c.552 0 1 .002 1 .002z"
-          clipRule="evenodd"
+          d="M6 1.5h1.5v21H6A1.5 1.5 0 0 1 4.5 21V3A1.5 1.5 0 0 1 6 1.5"
           opacity={0.32}
         />
         <path
           fill="currentColor"
-          d="M12.5 2a5.5 5.5 0 0 1 3.927 9.348A5.501 5.501 0 0 1 14.5 22H7v-2h7.5a3.5 3.5 0 1 0 0-7H7v-2h5.5a3.5 3.5 0 1 0 0-7H7V2z"
+          d="M12.5 1.5a6 6 0 0 1 4.747 9.666A6 6 0 0 1 14.5 22.5h-7v-3h7a3 3 0 1 0 0-6h-7v-3h5a3 3 0 1 0 0-6h-5v-3z"
         />
       </svg>
     ))
 );
-TextBoldIconLinetone.displayName = "TextBoldIconLinetone";
-export { TextBoldIconLinetone };
+TextBIconFilltone.displayName = "TextBIconFilltone";
+export { TextBIconFilltone };

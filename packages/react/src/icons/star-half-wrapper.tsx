@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { StarHalfIcon as StarHalfIconRegular } from './star-half';
+import { StarHalfIcon as RegularStarHalfIcon } from './star-half';
 import { StarHalfIconBold } from './star-half-bold';
 import { StarHalfIconFilled } from './star-half-filled';
 import { StarHalfIconFilltone } from './star-half-filltone';
@@ -25,7 +25,7 @@ const StarHalfIcon = memo(forwardRef<SVGSVGElement, StarHalfIconProps>(({
       return <StarHalfIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <StarHalfIconRegular ref={ref} {...props} />;
+      return <RegularStarHalfIcon ref={ref} {...props} />;
   }
 }));
 

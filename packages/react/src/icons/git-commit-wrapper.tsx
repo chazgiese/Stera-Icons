@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitCommitIcon as GitCommitIconRegular } from './git-commit';
+import { GitCommitIcon as RegularGitCommitIcon } from './git-commit';
 import { GitCommitIconBold } from './git-commit-bold';
 import { GitCommitIconFilled } from './git-commit-filled';
 import { GitCommitIconFilltone } from './git-commit-filltone';
@@ -25,7 +25,7 @@ const GitCommitIcon = memo(forwardRef<SVGSVGElement, GitCommitIconProps>(({
       return <GitCommitIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitCommitIconRegular ref={ref} {...props} />;
+      return <RegularGitCommitIcon ref={ref} {...props} />;
   }
 }));
 

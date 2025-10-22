@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SquareDashedIcon as SquareDashedIconRegular } from './square-dashed';
+import { SquareDashedIcon as RegularSquareDashedIcon } from './square-dashed';
 import { SquareDashedIconBold } from './square-dashed-bold';
 import { SquareDashedIconFilled } from './square-dashed-filled';
 import { SquareDashedIconFilltone } from './square-dashed-filltone';
@@ -25,7 +25,7 @@ const SquareDashedIcon = memo(forwardRef<SVGSVGElement, SquareDashedIconProps>((
       return <SquareDashedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SquareDashedIconRegular ref={ref} {...props} />;
+      return <RegularSquareDashedIcon ref={ref} {...props} />;
   }
 }));
 

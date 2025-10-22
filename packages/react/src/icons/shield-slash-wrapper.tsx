@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ShieldSlashIcon as ShieldSlashIconRegular } from './shield-slash';
+import { ShieldSlashIcon as RegularShieldSlashIcon } from './shield-slash';
 import { ShieldSlashIconBold } from './shield-slash-bold';
 import { ShieldSlashIconFilled } from './shield-slash-filled';
 import { ShieldSlashIconFilltone } from './shield-slash-filltone';
@@ -25,7 +25,7 @@ const ShieldSlashIcon = memo(forwardRef<SVGSVGElement, ShieldSlashIconProps>(({
       return <ShieldSlashIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ShieldSlashIconRegular ref={ref} {...props} />;
+      return <RegularShieldSlashIcon ref={ref} {...props} />;
   }
 }));
 

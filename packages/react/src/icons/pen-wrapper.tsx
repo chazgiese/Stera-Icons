@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PenIcon as PenIconRegular } from './pen';
+import { PenIcon as RegularPenIcon } from './pen';
 import { PenIconBold } from './pen-bold';
 import { PenIconFilled } from './pen-filled';
 import { PenIconFilltone } from './pen-filltone';
@@ -25,7 +25,7 @@ const PenIcon = memo(forwardRef<SVGSVGElement, PenIconProps>(({
       return <PenIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PenIconRegular ref={ref} {...props} />;
+      return <RegularPenIcon ref={ref} {...props} />;
   }
 }));
 

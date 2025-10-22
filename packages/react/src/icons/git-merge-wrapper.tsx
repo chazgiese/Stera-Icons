@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitMergeIcon as GitMergeIconRegular } from './git-merge';
+import { GitMergeIcon as RegularGitMergeIcon } from './git-merge';
 import { GitMergeIconBold } from './git-merge-bold';
 import { GitMergeIconFilled } from './git-merge-filled';
 import { GitMergeIconFilltone } from './git-merge-filltone';
@@ -25,7 +25,7 @@ const GitMergeIcon = memo(forwardRef<SVGSVGElement, GitMergeIconProps>(({
       return <GitMergeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitMergeIconRegular ref={ref} {...props} />;
+      return <RegularGitMergeIcon ref={ref} {...props} />;
   }
 }));
 

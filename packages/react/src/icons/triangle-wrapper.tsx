@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TriangleIcon as TriangleIconRegular } from './triangle';
+import { TriangleIcon as RegularTriangleIcon } from './triangle';
 import { TriangleIconBold } from './triangle-bold';
 import { TriangleIconFilled } from './triangle-filled';
 import { TriangleIconFilltone } from './triangle-filltone';
@@ -25,7 +25,7 @@ const TriangleIcon = memo(forwardRef<SVGSVGElement, TriangleIconProps>(({
       return <TriangleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TriangleIconRegular ref={ref} {...props} />;
+      return <RegularTriangleIcon ref={ref} {...props} />;
   }
 }));
 

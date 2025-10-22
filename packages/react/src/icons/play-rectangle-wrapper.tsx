@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlayRectangleIcon as PlayRectangleIconRegular } from './play-rectangle';
+import { PlayRectangleIcon as RegularPlayRectangleIcon } from './play-rectangle';
 import { PlayRectangleIconBold } from './play-rectangle-bold';
 import { PlayRectangleIconFilled } from './play-rectangle-filled';
 import { PlayRectangleIconFilltone } from './play-rectangle-filltone';
@@ -25,7 +25,7 @@ const PlayRectangleIcon = memo(forwardRef<SVGSVGElement, PlayRectangleIconProps>
       return <PlayRectangleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlayRectangleIconRegular ref={ref} {...props} />;
+      return <RegularPlayRectangleIcon ref={ref} {...props} />;
   }
 }));
 

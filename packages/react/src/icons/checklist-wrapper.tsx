@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChecklistIcon as ChecklistIconRegular } from './checklist';
+import { ChecklistIcon as RegularChecklistIcon } from './checklist';
 import { ChecklistIconBold } from './checklist-bold';
 import { ChecklistIconFilled } from './checklist-filled';
 import { ChecklistIconFilltone } from './checklist-filltone';
@@ -25,7 +25,7 @@ const ChecklistIcon = memo(forwardRef<SVGSVGElement, ChecklistIconProps>(({
       return <ChecklistIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChecklistIconRegular ref={ref} {...props} />;
+      return <RegularChecklistIcon ref={ref} {...props} />;
   }
 }));
 

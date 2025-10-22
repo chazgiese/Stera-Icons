@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlignVerticalBottomIcon as AlignVerticalBottomIconRegular } from './align-vertical-bottom';
+import { AlignVerticalBottomIcon as RegularAlignVerticalBottomIcon } from './align-vertical-bottom';
 import { AlignVerticalBottomIconBold } from './align-vertical-bottom-bold';
 import { AlignVerticalBottomIconFilled } from './align-vertical-bottom-filled';
 import { AlignVerticalBottomIconFilltone } from './align-vertical-bottom-filltone';
@@ -25,7 +25,7 @@ const AlignVerticalBottomIcon = memo(forwardRef<SVGSVGElement, AlignVerticalBott
       return <AlignVerticalBottomIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlignVerticalBottomIconRegular ref={ref} {...props} />;
+      return <RegularAlignVerticalBottomIcon ref={ref} {...props} />;
   }
 }));
 

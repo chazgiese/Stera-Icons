@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextAlignCenterIcon as TextAlignCenterIconRegular } from './text-align-center';
+import { TextAlignCenterIcon as RegularTextAlignCenterIcon } from './text-align-center';
 import { TextAlignCenterIconBold } from './text-align-center-bold';
 import { TextAlignCenterIconFilled } from './text-align-center-filled';
 import { TextAlignCenterIconFilltone } from './text-align-center-filltone';
@@ -25,7 +25,7 @@ const TextAlignCenterIcon = memo(forwardRef<SVGSVGElement, TextAlignCenterIconPr
       return <TextAlignCenterIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextAlignCenterIconRegular ref={ref} {...props} />;
+      return <RegularTextAlignCenterIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ReceiptAltIcon as ReceiptAltIconRegular } from './receipt-alt';
+import { ReceiptAltIcon as RegularReceiptAltIcon } from './receipt-alt';
 import { ReceiptAltIconBold } from './receipt-alt-bold';
 import { ReceiptAltIconFilled } from './receipt-alt-filled';
 import { ReceiptAltIconFilltone } from './receipt-alt-filltone';
@@ -25,7 +25,7 @@ const ReceiptAltIcon = memo(forwardRef<SVGSVGElement, ReceiptAltIconProps>(({
       return <ReceiptAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ReceiptAltIconRegular ref={ref} {...props} />;
+      return <RegularReceiptAltIcon ref={ref} {...props} />;
   }
 }));
 

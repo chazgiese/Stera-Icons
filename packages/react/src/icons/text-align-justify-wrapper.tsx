@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextAlignJustifyIcon as TextAlignJustifyIconRegular } from './text-align-justify';
+import { TextAlignJustifyIcon as RegularTextAlignJustifyIcon } from './text-align-justify';
 import { TextAlignJustifyIconBold } from './text-align-justify-bold';
 import { TextAlignJustifyIconFilled } from './text-align-justify-filled';
 import { TextAlignJustifyIconFilltone } from './text-align-justify-filltone';
@@ -25,7 +25,7 @@ const TextAlignJustifyIcon = memo(forwardRef<SVGSVGElement, TextAlignJustifyIcon
       return <TextAlignJustifyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextAlignJustifyIconRegular ref={ref} {...props} />;
+      return <RegularTextAlignJustifyIcon ref={ref} {...props} />;
   }
 }));
 

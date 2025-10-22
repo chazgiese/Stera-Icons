@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { OptionKeyIcon as OptionKeyIconRegular } from './option-key';
+import { OptionKeyIcon as RegularOptionKeyIcon } from './option-key';
 import { OptionKeyIconBold } from './option-key-bold';
 import { OptionKeyIconFilled } from './option-key-filled';
 import { OptionKeyIconFilltone } from './option-key-filltone';
@@ -25,7 +25,7 @@ const OptionKeyIcon = memo(forwardRef<SVGSVGElement, OptionKeyIconProps>(({
       return <OptionKeyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <OptionKeyIconRegular ref={ref} {...props} />;
+      return <RegularOptionKeyIcon ref={ref} {...props} />;
   }
 }));
 

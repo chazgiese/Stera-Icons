@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { RectangleDashedIcon as RectangleDashedIconRegular } from './rectangle-dashed';
+import { RectangleDashedIcon as RegularRectangleDashedIcon } from './rectangle-dashed';
 import { RectangleDashedIconBold } from './rectangle-dashed-bold';
 import { RectangleDashedIconFilled } from './rectangle-dashed-filled';
 import { RectangleDashedIconFilltone } from './rectangle-dashed-filltone';
@@ -25,7 +25,7 @@ const RectangleDashedIcon = memo(forwardRef<SVGSVGElement, RectangleDashedIconPr
       return <RectangleDashedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <RectangleDashedIconRegular ref={ref} {...props} />;
+      return <RegularRectangleDashedIcon ref={ref} {...props} />;
   }
 }));
 

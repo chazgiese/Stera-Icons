@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CircleCheckerIcon as CircleCheckerIconRegular } from './circle-checker';
+import { CircleCheckerIcon as RegularCircleCheckerIcon } from './circle-checker';
 import { CircleCheckerIconBold } from './circle-checker-bold';
 import { CircleCheckerIconFilled } from './circle-checker-filled';
 import { CircleCheckerIconFilltone } from './circle-checker-filltone';
@@ -25,7 +25,7 @@ const CircleCheckerIcon = memo(forwardRef<SVGSVGElement, CircleCheckerIconProps>
       return <CircleCheckerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CircleCheckerIconRegular ref={ref} {...props} />;
+      return <RegularCircleCheckerIcon ref={ref} {...props} />;
   }
 }));
 

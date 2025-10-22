@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MoveIcon as MoveIconRegular } from './move';
+import { MoveIcon as RegularMoveIcon } from './move';
 import { MoveIconBold } from './move-bold';
 import { MoveIconFilled } from './move-filled';
 import { MoveIconFilltone } from './move-filltone';
@@ -25,7 +25,7 @@ const MoveIcon = memo(forwardRef<SVGSVGElement, MoveIconProps>(({
       return <MoveIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MoveIconRegular ref={ref} {...props} />;
+      return <RegularMoveIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChartPieAltIcon as ChartPieAltIconRegular } from './chart-pie-alt';
+import { ChartPieAltIcon as RegularChartPieAltIcon } from './chart-pie-alt';
 import { ChartPieAltIconBold } from './chart-pie-alt-bold';
 import { ChartPieAltIconFilled } from './chart-pie-alt-filled';
 import { ChartPieAltIconFilltone } from './chart-pie-alt-filltone';
@@ -25,7 +25,7 @@ const ChartPieAltIcon = memo(forwardRef<SVGSVGElement, ChartPieAltIconProps>(({
       return <ChartPieAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChartPieAltIconRegular ref={ref} {...props} />;
+      return <RegularChartPieAltIcon ref={ref} {...props} />;
   }
 }));
 

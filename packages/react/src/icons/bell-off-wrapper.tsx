@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BellOffIcon as BellOffIconRegular } from './bell-off';
+import { BellOffIcon as RegularBellOffIcon } from './bell-off';
 import { BellOffIconBold } from './bell-off-bold';
 import { BellOffIconFilled } from './bell-off-filled';
 import { BellOffIconFilltone } from './bell-off-filltone';
@@ -25,7 +25,7 @@ const BellOffIcon = memo(forwardRef<SVGSVGElement, BellOffIconProps>(({
       return <BellOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BellOffIconRegular ref={ref} {...props} />;
+      return <RegularBellOffIcon ref={ref} {...props} />;
   }
 }));
 

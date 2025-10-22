@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CubicGraphIcon as CubicGraphIconRegular } from './cubic-graph';
+import { CubicGraphIcon as RegularCubicGraphIcon } from './cubic-graph';
 import { CubicGraphIconBold } from './cubic-graph-bold';
 import { CubicGraphIconFilled } from './cubic-graph-filled';
 import { CubicGraphIconFilltone } from './cubic-graph-filltone';
@@ -25,7 +25,7 @@ const CubicGraphIcon = memo(forwardRef<SVGSVGElement, CubicGraphIconProps>(({
       return <CubicGraphIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CubicGraphIconRegular ref={ref} {...props} />;
+      return <RegularCubicGraphIcon ref={ref} {...props} />;
   }
 }));
 

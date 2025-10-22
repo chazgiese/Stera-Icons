@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LineSegmentHIcon as LineSegmentHIconRegular } from './line-segment-h';
+import { LineSegmentHIcon as RegularLineSegmentHIcon } from './line-segment-h';
 import { LineSegmentHIconBold } from './line-segment-h-bold';
 import { LineSegmentHIconFilled } from './line-segment-h-filled';
 import { LineSegmentHIconFilltone } from './line-segment-h-filltone';
@@ -25,7 +25,7 @@ const LineSegmentHIcon = memo(forwardRef<SVGSVGElement, LineSegmentHIconProps>((
       return <LineSegmentHIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LineSegmentHIconRegular ref={ref} {...props} />;
+      return <RegularLineSegmentHIcon ref={ref} {...props} />;
   }
 }));
 

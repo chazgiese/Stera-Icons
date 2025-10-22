@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScatterChartIcon as ScatterChartIconRegular } from './scatter-chart';
+import { ScatterChartIcon as RegularScatterChartIcon } from './scatter-chart';
 import { ScatterChartIconBold } from './scatter-chart-bold';
 import { ScatterChartIconFilled } from './scatter-chart-filled';
 import { ScatterChartIconFilltone } from './scatter-chart-filltone';
@@ -25,7 +25,7 @@ const ScatterChartIcon = memo(forwardRef<SVGSVGElement, ScatterChartIconProps>((
       return <ScatterChartIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScatterChartIconRegular ref={ref} {...props} />;
+      return <RegularScatterChartIcon ref={ref} {...props} />;
   }
 }));
 

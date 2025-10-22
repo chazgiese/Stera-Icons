@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TagIcon as TagIconRegular } from './tag';
+import { TagIcon as RegularTagIcon } from './tag';
 import { TagIconBold } from './tag-bold';
 import { TagIconFilled } from './tag-filled';
 import { TagIconFilltone } from './tag-filltone';
@@ -25,7 +25,7 @@ const TagIcon = memo(forwardRef<SVGSVGElement, TagIconProps>(({
       return <TagIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TagIconRegular ref={ref} {...props} />;
+      return <RegularTagIcon ref={ref} {...props} />;
   }
 }));
 

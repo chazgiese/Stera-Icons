@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BellXIcon as BellXIconRegular } from './bell-x';
+import { BellXIcon as RegularBellXIcon } from './bell-x';
 import { BellXIconBold } from './bell-x-bold';
 import { BellXIconFilled } from './bell-x-filled';
 import { BellXIconFilltone } from './bell-x-filltone';
@@ -25,7 +25,7 @@ const BellXIcon = memo(forwardRef<SVGSVGElement, BellXIconProps>(({
       return <BellXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BellXIconRegular ref={ref} {...props} />;
+      return <RegularBellXIcon ref={ref} {...props} />;
   }
 }));
 

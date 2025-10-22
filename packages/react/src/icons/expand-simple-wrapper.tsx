@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ExpandSimpleIcon as ExpandSimpleIconRegular } from './expand-simple';
+import { ExpandSimpleIcon as RegularExpandSimpleIcon } from './expand-simple';
 import { ExpandSimpleIconBold } from './expand-simple-bold';
 import { ExpandSimpleIconFilled } from './expand-simple-filled';
 import { ExpandSimpleIconFilltone } from './expand-simple-filltone';
@@ -25,7 +25,7 @@ const ExpandSimpleIcon = memo(forwardRef<SVGSVGElement, ExpandSimpleIconProps>((
       return <ExpandSimpleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ExpandSimpleIconRegular ref={ref} {...props} />;
+      return <RegularExpandSimpleIcon ref={ref} {...props} />;
   }
 }));
 

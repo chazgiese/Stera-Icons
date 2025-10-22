@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EmoteNeutralIcon as EmoteNeutralIconRegular } from './emote-neutral';
+import { EmoteNeutralIcon as RegularEmoteNeutralIcon } from './emote-neutral';
 import { EmoteNeutralIconBold } from './emote-neutral-bold';
 import { EmoteNeutralIconFilled } from './emote-neutral-filled';
 import { EmoteNeutralIconFilltone } from './emote-neutral-filltone';
@@ -25,7 +25,7 @@ const EmoteNeutralIcon = memo(forwardRef<SVGSVGElement, EmoteNeutralIconProps>((
       return <EmoteNeutralIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EmoteNeutralIconRegular ref={ref} {...props} />;
+      return <RegularEmoteNeutralIcon ref={ref} {...props} />;
   }
 }));
 

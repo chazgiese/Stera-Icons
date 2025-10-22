@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BracketsSquareSquareIcon as BracketsSquareSquareIconRegular } from './brackets-square-square';
+import { BracketsSquareSquareIcon as RegularBracketsSquareSquareIcon } from './brackets-square-square';
 import { BracketsSquareSquareIconBold } from './brackets-square-square-bold';
 import { BracketsSquareSquareIconFilled } from './brackets-square-square-filled';
 import { BracketsSquareSquareIconFilltone } from './brackets-square-square-filltone';
@@ -25,7 +25,7 @@ const BracketsSquareSquareIcon = memo(forwardRef<SVGSVGElement, BracketsSquareSq
       return <BracketsSquareSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BracketsSquareSquareIconRegular ref={ref} {...props} />;
+      return <RegularBracketsSquareSquareIcon ref={ref} {...props} />;
   }
 }));
 

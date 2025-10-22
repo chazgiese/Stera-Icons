@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SortAscendingIcon as SortAscendingIconRegular } from './sort-ascending';
+import { SortAscendingIcon as RegularSortAscendingIcon } from './sort-ascending';
 import { SortAscendingIconBold } from './sort-ascending-bold';
 import { SortAscendingIconFilled } from './sort-ascending-filled';
 import { SortAscendingIconFilltone } from './sort-ascending-filltone';
@@ -25,7 +25,7 @@ const SortAscendingIcon = memo(forwardRef<SVGSVGElement, SortAscendingIconProps>
       return <SortAscendingIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SortAscendingIconRegular ref={ref} {...props} />;
+      return <RegularSortAscendingIcon ref={ref} {...props} />;
   }
 }));
 

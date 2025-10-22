@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChatBoxIcon as ChatBoxIconRegular } from './chat-box';
+import { ChatBoxIcon as RegularChatBoxIcon } from './chat-box';
 import { ChatBoxIconBold } from './chat-box-bold';
 import { ChatBoxIconFilled } from './chat-box-filled';
 import { ChatBoxIconFilltone } from './chat-box-filltone';
@@ -25,7 +25,7 @@ const ChatBoxIcon = memo(forwardRef<SVGSVGElement, ChatBoxIconProps>(({
       return <ChatBoxIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChatBoxIconRegular ref={ref} {...props} />;
+      return <RegularChatBoxIcon ref={ref} {...props} />;
   }
 }));
 

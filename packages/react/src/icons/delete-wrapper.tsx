@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { DeleteIcon as DeleteIconRegular } from './delete';
+import { DeleteIcon as RegularDeleteIcon } from './delete';
 import { DeleteIconBold } from './delete-bold';
 import { DeleteIconFilled } from './delete-filled';
 import { DeleteIconFilltone } from './delete-filltone';
@@ -25,7 +25,7 @@ const DeleteIcon = memo(forwardRef<SVGSVGElement, DeleteIconProps>(({
       return <DeleteIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <DeleteIconRegular ref={ref} {...props} />;
+      return <RegularDeleteIcon ref={ref} {...props} />;
   }
 }));
 

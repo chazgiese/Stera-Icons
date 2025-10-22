@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlaylistIcon as PlaylistIconRegular } from './playlist';
+import { PlaylistIcon as RegularPlaylistIcon } from './playlist';
 import { PlaylistIconBold } from './playlist-bold';
 import { PlaylistIconFilled } from './playlist-filled';
 import { PlaylistIconFilltone } from './playlist-filltone';
@@ -25,7 +25,7 @@ const PlaylistIcon = memo(forwardRef<SVGSVGElement, PlaylistIconProps>(({
       return <PlaylistIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlaylistIconRegular ref={ref} {...props} />;
+      return <RegularPlaylistIcon ref={ref} {...props} />;
   }
 }));
 

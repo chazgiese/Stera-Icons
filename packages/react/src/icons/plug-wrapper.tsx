@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PlugIcon as PlugIconRegular } from './plug';
+import { PlugIcon as RegularPlugIcon } from './plug';
 import { PlugIconBold } from './plug-bold';
 import { PlugIconFilled } from './plug-filled';
 import { PlugIconFilltone } from './plug-filltone';
@@ -25,7 +25,7 @@ const PlugIcon = memo(forwardRef<SVGSVGElement, PlugIconProps>(({
       return <PlugIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PlugIconRegular ref={ref} {...props} />;
+      return <RegularPlugIcon ref={ref} {...props} />;
   }
 }));
 

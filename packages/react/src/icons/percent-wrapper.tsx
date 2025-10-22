@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PercentIcon as PercentIconRegular } from './percent';
+import { PercentIcon as RegularPercentIcon } from './percent';
 import { PercentIconBold } from './percent-bold';
 import { PercentIconFilled } from './percent-filled';
 import { PercentIconFilltone } from './percent-filltone';
@@ -25,7 +25,7 @@ const PercentIcon = memo(forwardRef<SVGSVGElement, PercentIconProps>(({
       return <PercentIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PercentIconRegular ref={ref} {...props} />;
+      return <RegularPercentIcon ref={ref} {...props} />;
   }
 }));
 

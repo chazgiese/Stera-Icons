@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LineChartDescIcon as LineChartDescIconRegular } from './line-chart-desc';
+import { LineChartDescIcon as RegularLineChartDescIcon } from './line-chart-desc';
 import { LineChartDescIconBold } from './line-chart-desc-bold';
 import { LineChartDescIconFilled } from './line-chart-desc-filled';
 import { LineChartDescIconFilltone } from './line-chart-desc-filltone';
@@ -25,7 +25,7 @@ const LineChartDescIcon = memo(forwardRef<SVGSVGElement, LineChartDescIconProps>
       return <LineChartDescIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LineChartDescIconRegular ref={ref} {...props} />;
+      return <RegularLineChartDescIcon ref={ref} {...props} />;
   }
 }));
 

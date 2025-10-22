@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { InfoCircleIcon as InfoCircleIconRegular } from './info-circle';
+import { InfoCircleIcon as RegularInfoCircleIcon } from './info-circle';
 import { InfoCircleIconBold } from './info-circle-bold';
 import { InfoCircleIconFilled } from './info-circle-filled';
 import { InfoCircleIconFilltone } from './info-circle-filltone';
@@ -25,7 +25,7 @@ const InfoCircleIcon = memo(forwardRef<SVGSVGElement, InfoCircleIconProps>(({
       return <InfoCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <InfoCircleIconRegular ref={ref} {...props} />;
+      return <RegularInfoCircleIcon ref={ref} {...props} />;
   }
 }));
 

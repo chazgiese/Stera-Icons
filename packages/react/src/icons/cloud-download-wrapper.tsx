@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CloudDownloadIcon as CloudDownloadIconRegular } from './cloud-download';
+import { CloudDownloadIcon as RegularCloudDownloadIcon } from './cloud-download';
 import { CloudDownloadIconBold } from './cloud-download-bold';
 import { CloudDownloadIconFilled } from './cloud-download-filled';
 import { CloudDownloadIconFilltone } from './cloud-download-filltone';
@@ -25,7 +25,7 @@ const CloudDownloadIcon = memo(forwardRef<SVGSVGElement, CloudDownloadIconProps>
       return <CloudDownloadIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CloudDownloadIconRegular ref={ref} {...props} />;
+      return <RegularCloudDownloadIcon ref={ref} {...props} />;
   }
 }));
 

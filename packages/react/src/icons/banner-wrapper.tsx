@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BannerIcon as BannerIconRegular } from './banner';
+import { BannerIcon as RegularBannerIcon } from './banner';
 import { BannerIconBold } from './banner-bold';
 import { BannerIconFilled } from './banner-filled';
 import { BannerIconFilltone } from './banner-filltone';
@@ -25,7 +25,7 @@ const BannerIcon = memo(forwardRef<SVGSVGElement, BannerIconProps>(({
       return <BannerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BannerIconRegular ref={ref} {...props} />;
+      return <RegularBannerIcon ref={ref} {...props} />;
   }
 }));
 

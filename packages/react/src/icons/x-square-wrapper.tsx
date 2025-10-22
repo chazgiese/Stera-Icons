@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { XSquareIcon as XSquareIconRegular } from './x-square';
+import { XSquareIcon as RegularXSquareIcon } from './x-square';
 import { XSquareIconBold } from './x-square-bold';
 import { XSquareIconFilled } from './x-square-filled';
 import { XSquareIconFilltone } from './x-square-filltone';
@@ -25,7 +25,7 @@ const XSquareIcon = memo(forwardRef<SVGSVGElement, XSquareIconProps>(({
       return <XSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <XSquareIconRegular ref={ref} {...props} />;
+      return <RegularXSquareIcon ref={ref} {...props} />;
   }
 }));
 

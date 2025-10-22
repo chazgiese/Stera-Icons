@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TrashIcon as TrashIconRegular } from './trash';
+import { TrashIcon as RegularTrashIcon } from './trash';
 import { TrashIconBold } from './trash-bold';
 import { TrashIconFilled } from './trash-filled';
 import { TrashIconFilltone } from './trash-filltone';
@@ -25,7 +25,7 @@ const TrashIcon = memo(forwardRef<SVGSVGElement, TrashIconProps>(({
       return <TrashIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TrashIconRegular ref={ref} {...props} />;
+      return <RegularTrashIcon ref={ref} {...props} />;
   }
 }));
 

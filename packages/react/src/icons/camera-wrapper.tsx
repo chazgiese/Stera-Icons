@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CameraIcon as CameraIconRegular } from './camera';
+import { CameraIcon as RegularCameraIcon } from './camera';
 import { CameraIconBold } from './camera-bold';
 import { CameraIconFilled } from './camera-filled';
 import { CameraIconFilltone } from './camera-filltone';
@@ -25,7 +25,7 @@ const CameraIcon = memo(forwardRef<SVGSVGElement, CameraIconProps>(({
       return <CameraIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CameraIconRegular ref={ref} {...props} />;
+      return <RegularCameraIcon ref={ref} {...props} />;
   }
 }));
 

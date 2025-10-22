@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SpeakerMediumIcon as SpeakerMediumIconRegular } from './speaker-medium';
+import { SpeakerMediumIcon as RegularSpeakerMediumIcon } from './speaker-medium';
 import { SpeakerMediumIconBold } from './speaker-medium-bold';
 import { SpeakerMediumIconFilled } from './speaker-medium-filled';
 import { SpeakerMediumIconFilltone } from './speaker-medium-filltone';
@@ -25,7 +25,7 @@ const SpeakerMediumIcon = memo(forwardRef<SVGSVGElement, SpeakerMediumIconProps>
       return <SpeakerMediumIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SpeakerMediumIconRegular ref={ref} {...props} />;
+      return <RegularSpeakerMediumIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SearchIcon as SearchIconRegular } from './search';
+import { SearchIcon as RegularSearchIcon } from './search';
 import { SearchIconBold } from './search-bold';
 import { SearchIconFilled } from './search-filled';
 import { SearchIconFilltone } from './search-filltone';
@@ -25,7 +25,7 @@ const SearchIcon = memo(forwardRef<SVGSVGElement, SearchIconProps>(({
       return <SearchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SearchIconRegular ref={ref} {...props} />;
+      return <RegularSearchIcon ref={ref} {...props} />;
   }
 }));
 

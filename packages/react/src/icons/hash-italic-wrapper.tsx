@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HashItalicIcon as HashItalicIconRegular } from './hash-italic';
+import { HashItalicIcon as RegularHashItalicIcon } from './hash-italic';
 import { HashItalicIconBold } from './hash-italic-bold';
 import { HashItalicIconFilled } from './hash-italic-filled';
 import { HashItalicIconFilltone } from './hash-italic-filltone';
@@ -25,7 +25,7 @@ const HashItalicIcon = memo(forwardRef<SVGSVGElement, HashItalicIconProps>(({
       return <HashItalicIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HashItalicIconRegular ref={ref} {...props} />;
+      return <RegularHashItalicIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ListCheckSimpleIcon as ListCheckSimpleIconRegular } from './list-check-simple';
+import { ListCheckSimpleIcon as RegularListCheckSimpleIcon } from './list-check-simple';
 import { ListCheckSimpleIconBold } from './list-check-simple-bold';
 import { ListCheckSimpleIconFilled } from './list-check-simple-filled';
 import { ListCheckSimpleIconFilltone } from './list-check-simple-filltone';
@@ -25,7 +25,7 @@ const ListCheckSimpleIcon = memo(forwardRef<SVGSVGElement, ListCheckSimpleIconPr
       return <ListCheckSimpleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ListCheckSimpleIconRegular ref={ref} {...props} />;
+      return <RegularListCheckSimpleIcon ref={ref} {...props} />;
   }
 }));
 

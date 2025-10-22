@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AreaChartIcon as AreaChartIconRegular } from './area-chart';
+import { AreaChartIcon as RegularAreaChartIcon } from './area-chart';
 import { AreaChartIconBold } from './area-chart-bold';
 import { AreaChartIconFilled } from './area-chart-filled';
 import { AreaChartIconFilltone } from './area-chart-filltone';
@@ -25,7 +25,7 @@ const AreaChartIcon = memo(forwardRef<SVGSVGElement, AreaChartIconProps>(({
       return <AreaChartIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AreaChartIconRegular ref={ref} {...props} />;
+      return <RegularAreaChartIcon ref={ref} {...props} />;
   }
 }));
 

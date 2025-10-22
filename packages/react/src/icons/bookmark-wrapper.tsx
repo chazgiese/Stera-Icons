@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BookmarkIcon as BookmarkIconRegular } from './bookmark';
+import { BookmarkIcon as RegularBookmarkIcon } from './bookmark';
 import { BookmarkIconBold } from './bookmark-bold';
 import { BookmarkIconFilled } from './bookmark-filled';
 import { BookmarkIconFilltone } from './bookmark-filltone';
@@ -25,7 +25,7 @@ const BookmarkIcon = memo(forwardRef<SVGSVGElement, BookmarkIconProps>(({
       return <BookmarkIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BookmarkIconRegular ref={ref} {...props} />;
+      return <RegularBookmarkIcon ref={ref} {...props} />;
   }
 }));
 

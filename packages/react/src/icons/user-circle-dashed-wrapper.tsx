@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { UserCircleDashedIcon as UserCircleDashedIconRegular } from './user-circle-dashed';
+import { UserCircleDashedIcon as RegularUserCircleDashedIcon } from './user-circle-dashed';
 import { UserCircleDashedIconBold } from './user-circle-dashed-bold';
 import { UserCircleDashedIconFilled } from './user-circle-dashed-filled';
 import { UserCircleDashedIconFilltone } from './user-circle-dashed-filltone';
@@ -25,7 +25,7 @@ const UserCircleDashedIcon = memo(forwardRef<SVGSVGElement, UserCircleDashedIcon
       return <UserCircleDashedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <UserCircleDashedIconRegular ref={ref} {...props} />;
+      return <RegularUserCircleDashedIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BottleLabelIcon as BottleLabelIconRegular } from './bottle-label';
+import { BottleLabelIcon as RegularBottleLabelIcon } from './bottle-label';
 import { BottleLabelIconBold } from './bottle-label-bold';
 import { BottleLabelIconFilled } from './bottle-label-filled';
 import { BottleLabelIconFilltone } from './bottle-label-filltone';
@@ -25,7 +25,7 @@ const BottleLabelIcon = memo(forwardRef<SVGSVGElement, BottleLabelIconProps>(({
       return <BottleLabelIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BottleLabelIconRegular ref={ref} {...props} />;
+      return <RegularBottleLabelIcon ref={ref} {...props} />;
   }
 }));
 

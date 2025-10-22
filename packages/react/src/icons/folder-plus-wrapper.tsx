@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FolderPlusIcon as FolderPlusIconRegular } from './folder-plus';
+import { FolderPlusIcon as RegularFolderPlusIcon } from './folder-plus';
 import { FolderPlusIconBold } from './folder-plus-bold';
 import { FolderPlusIconFilled } from './folder-plus-filled';
 import { FolderPlusIconFilltone } from './folder-plus-filltone';
@@ -25,7 +25,7 @@ const FolderPlusIcon = memo(forwardRef<SVGSVGElement, FolderPlusIconProps>(({
       return <FolderPlusIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FolderPlusIconRegular ref={ref} {...props} />;
+      return <RegularFolderPlusIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BladeKunaiIcon as BladeKunaiIconRegular } from './blade-kunai';
+import { BladeKunaiIcon as RegularBladeKunaiIcon } from './blade-kunai';
 import { BladeKunaiIconBold } from './blade-kunai-bold';
 import { BladeKunaiIconFilled } from './blade-kunai-filled';
 import { BladeKunaiIconFilltone } from './blade-kunai-filltone';
@@ -25,7 +25,7 @@ const BladeKunaiIcon = memo(forwardRef<SVGSVGElement, BladeKunaiIconProps>(({
       return <BladeKunaiIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BladeKunaiIconRegular ref={ref} {...props} />;
+      return <RegularBladeKunaiIcon ref={ref} {...props} />;
   }
 }));
 

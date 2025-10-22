@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArchiveIcon as ArchiveIconRegular } from './archive';
+import { ArchiveIcon as RegularArchiveIcon } from './archive';
 import { ArchiveIconBold } from './archive-bold';
 import { ArchiveIconFilled } from './archive-filled';
 import { ArchiveIconFilltone } from './archive-filltone';
@@ -25,7 +25,7 @@ const ArchiveIcon = memo(forwardRef<SVGSVGElement, ArchiveIconProps>(({
       return <ArchiveIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArchiveIconRegular ref={ref} {...props} />;
+      return <RegularArchiveIcon ref={ref} {...props} />;
   }
 }));
 

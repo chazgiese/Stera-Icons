@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TimerIcon as TimerIconRegular } from './timer';
+import { TimerIcon as RegularTimerIcon } from './timer';
 import { TimerIconBold } from './timer-bold';
 import { TimerIconFilled } from './timer-filled';
 import { TimerIconFilltone } from './timer-filltone';
@@ -25,7 +25,7 @@ const TimerIcon = memo(forwardRef<SVGSVGElement, TimerIconProps>(({
       return <TimerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TimerIconRegular ref={ref} {...props} />;
+      return <RegularTimerIcon ref={ref} {...props} />;
   }
 }));
 

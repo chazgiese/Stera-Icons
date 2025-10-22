@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { QuestionMarkCircleIcon as QuestionMarkCircleIconRegular } from './question-mark-circle';
+import { QuestionMarkCircleIcon as RegularQuestionMarkCircleIcon } from './question-mark-circle';
 import { QuestionMarkCircleIconBold } from './question-mark-circle-bold';
 import { QuestionMarkCircleIconFilled } from './question-mark-circle-filled';
 import { QuestionMarkCircleIconFilltone } from './question-mark-circle-filltone';
@@ -25,7 +25,7 @@ const QuestionMarkCircleIcon = memo(forwardRef<SVGSVGElement, QuestionMarkCircle
       return <QuestionMarkCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <QuestionMarkCircleIconRegular ref={ref} {...props} />;
+      return <RegularQuestionMarkCircleIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FortressIcon as FortressIconRegular } from './fortress';
+import { FortressIcon as RegularFortressIcon } from './fortress';
 import { FortressIconBold } from './fortress-bold';
 import { FortressIconFilled } from './fortress-filled';
 import { FortressIconFilltone } from './fortress-filltone';
@@ -25,7 +25,7 @@ const FortressIcon = memo(forwardRef<SVGSVGElement, FortressIconProps>(({
       return <FortressIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FortressIconRegular ref={ref} {...props} />;
+      return <RegularFortressIcon ref={ref} {...props} />;
   }
 }));
 

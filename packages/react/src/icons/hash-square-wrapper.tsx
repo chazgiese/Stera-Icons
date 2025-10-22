@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HashSquareIcon as HashSquareIconRegular } from './hash-square';
+import { HashSquareIcon as RegularHashSquareIcon } from './hash-square';
 import { HashSquareIconBold } from './hash-square-bold';
 import { HashSquareIconFilled } from './hash-square-filled';
 import { HashSquareIconFilltone } from './hash-square-filltone';
@@ -25,7 +25,7 @@ const HashSquareIcon = memo(forwardRef<SVGSVGElement, HashSquareIconProps>(({
       return <HashSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HashSquareIconRegular ref={ref} {...props} />;
+      return <RegularHashSquareIcon ref={ref} {...props} />;
   }
 }));
 

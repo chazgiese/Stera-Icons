@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScissorsIcon as ScissorsIconRegular } from './scissors';
+import { ScissorsIcon as RegularScissorsIcon } from './scissors';
 import { ScissorsIconBold } from './scissors-bold';
 import { ScissorsIconFilled } from './scissors-filled';
 import { ScissorsIconFilltone } from './scissors-filltone';
@@ -25,7 +25,7 @@ const ScissorsIcon = memo(forwardRef<SVGSVGElement, ScissorsIconProps>(({
       return <ScissorsIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScissorsIconRegular ref={ref} {...props} />;
+      return <RegularScissorsIcon ref={ref} {...props} />;
   }
 }));
 

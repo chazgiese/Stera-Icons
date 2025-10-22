@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BracketsCurlyIcon as BracketsCurlyIconRegular } from './brackets-curly';
+import { BracketsCurlyIcon as RegularBracketsCurlyIcon } from './brackets-curly';
 import { BracketsCurlyIconBold } from './brackets-curly-bold';
 import { BracketsCurlyIconFilled } from './brackets-curly-filled';
 import { BracketsCurlyIconFilltone } from './brackets-curly-filltone';
@@ -25,7 +25,7 @@ const BracketsCurlyIcon = memo(forwardRef<SVGSVGElement, BracketsCurlyIconProps>
       return <BracketsCurlyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BracketsCurlyIconRegular ref={ref} {...props} />;
+      return <RegularBracketsCurlyIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CircleDivideAltIcon as CircleDivideAltIconRegular } from './circle-divide-alt';
+import { CircleDivideAltIcon as RegularCircleDivideAltIcon } from './circle-divide-alt';
 import { CircleDivideAltIconBold } from './circle-divide-alt-bold';
 import { CircleDivideAltIconFilled } from './circle-divide-alt-filled';
 import { CircleDivideAltIconFilltone } from './circle-divide-alt-filltone';
@@ -25,7 +25,7 @@ const CircleDivideAltIcon = memo(forwardRef<SVGSVGElement, CircleDivideAltIconPr
       return <CircleDivideAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CircleDivideAltIconRegular ref={ref} {...props} />;
+      return <RegularCircleDivideAltIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TennisBallIcon as TennisBallIconRegular } from './tennis-ball';
+import { TennisBallIcon as RegularTennisBallIcon } from './tennis-ball';
 import { TennisBallIconBold } from './tennis-ball-bold';
 import { TennisBallIconFilled } from './tennis-ball-filled';
 import { TennisBallIconFilltone } from './tennis-ball-filltone';
@@ -25,7 +25,7 @@ const TennisBallIcon = memo(forwardRef<SVGSVGElement, TennisBallIconProps>(({
       return <TennisBallIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TennisBallIconRegular ref={ref} {...props} />;
+      return <RegularTennisBallIcon ref={ref} {...props} />;
   }
 }));
 

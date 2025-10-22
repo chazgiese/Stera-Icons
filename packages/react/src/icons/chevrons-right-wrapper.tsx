@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChevronsRightIcon as ChevronsRightIconRegular } from './chevrons-right';
+import { ChevronsRightIcon as RegularChevronsRightIcon } from './chevrons-right';
 import { ChevronsRightIconBold } from './chevrons-right-bold';
 import { ChevronsRightIconFilled } from './chevrons-right-filled';
 import { ChevronsRightIconFilltone } from './chevrons-right-filltone';
@@ -25,7 +25,7 @@ const ChevronsRightIcon = memo(forwardRef<SVGSVGElement, ChevronsRightIconProps>
       return <ChevronsRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChevronsRightIconRegular ref={ref} {...props} />;
+      return <RegularChevronsRightIcon ref={ref} {...props} />;
   }
 }));
 

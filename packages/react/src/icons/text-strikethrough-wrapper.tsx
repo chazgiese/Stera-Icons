@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextStrikethroughIcon as TextStrikethroughIconRegular } from './text-strikethrough';
+import { TextStrikethroughIcon as RegularTextStrikethroughIcon } from './text-strikethrough';
 import { TextStrikethroughIconBold } from './text-strikethrough-bold';
 import { TextStrikethroughIconFilled } from './text-strikethrough-filled';
 import { TextStrikethroughIconFilltone } from './text-strikethrough-filltone';
@@ -25,7 +25,7 @@ const TextStrikethroughIcon = memo(forwardRef<SVGSVGElement, TextStrikethroughIc
       return <TextStrikethroughIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextStrikethroughIconRegular ref={ref} {...props} />;
+      return <RegularTextStrikethroughIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BoundingBoxIcon as BoundingBoxIconRegular } from './bounding-box';
+import { BoundingBoxIcon as RegularBoundingBoxIcon } from './bounding-box';
 import { BoundingBoxIconBold } from './bounding-box-bold';
 import { BoundingBoxIconFilled } from './bounding-box-filled';
 import { BoundingBoxIconFilltone } from './bounding-box-filltone';
@@ -25,7 +25,7 @@ const BoundingBoxIcon = memo(forwardRef<SVGSVGElement, BoundingBoxIconProps>(({
       return <BoundingBoxIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BoundingBoxIconRegular ref={ref} {...props} />;
+      return <RegularBoundingBoxIcon ref={ref} {...props} />;
   }
 }));
 

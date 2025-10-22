@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EyeIcon as EyeIconRegular } from './eye';
+import { EyeIcon as RegularEyeIcon } from './eye';
 import { EyeIconBold } from './eye-bold';
 import { EyeIconFilled } from './eye-filled';
 import { EyeIconFilltone } from './eye-filltone';
@@ -25,7 +25,7 @@ const EyeIcon = memo(forwardRef<SVGSVGElement, EyeIconProps>(({
       return <EyeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EyeIconRegular ref={ref} {...props} />;
+      return <RegularEyeIcon ref={ref} {...props} />;
   }
 }));
 

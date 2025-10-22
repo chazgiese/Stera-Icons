@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SlidersVIcon as SlidersVIconRegular } from './sliders-v';
+import { SlidersVIcon as RegularSlidersVIcon } from './sliders-v';
 import { SlidersVIconBold } from './sliders-v-bold';
 import { SlidersVIconFilled } from './sliders-v-filled';
 import { SlidersVIconFilltone } from './sliders-v-filltone';
@@ -25,7 +25,7 @@ const SlidersVIcon = memo(forwardRef<SVGSVGElement, SlidersVIconProps>(({
       return <SlidersVIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SlidersVIconRegular ref={ref} {...props} />;
+      return <RegularSlidersVIcon ref={ref} {...props} />;
   }
 }));
 

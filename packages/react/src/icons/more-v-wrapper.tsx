@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MoreVIcon as MoreVIconRegular } from './more-v';
+import { MoreVIcon as RegularMoreVIcon } from './more-v';
 import { MoreVIconBold } from './more-v-bold';
 import { MoreVIconFilled } from './more-v-filled';
 import { MoreVIconFilltone } from './more-v-filltone';
@@ -25,7 +25,7 @@ const MoreVIcon = memo(forwardRef<SVGSVGElement, MoreVIconProps>(({
       return <MoreVIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MoreVIconRegular ref={ref} {...props} />;
+      return <RegularMoreVIcon ref={ref} {...props} />;
   }
 }));
 

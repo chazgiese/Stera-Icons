@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GlobeIcon as GlobeIconRegular } from './globe';
+import { GlobeIcon as RegularGlobeIcon } from './globe';
 import { GlobeIconBold } from './globe-bold';
 import { GlobeIconFilled } from './globe-filled';
 import { GlobeIconFilltone } from './globe-filltone';
@@ -25,7 +25,7 @@ const GlobeIcon = memo(forwardRef<SVGSVGElement, GlobeIconProps>(({
       return <GlobeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GlobeIconRegular ref={ref} {...props} />;
+      return <RegularGlobeIcon ref={ref} {...props} />;
   }
 }));
 

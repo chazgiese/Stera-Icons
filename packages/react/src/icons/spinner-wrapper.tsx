@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SpinnerIcon as SpinnerIconRegular } from './spinner';
+import { SpinnerIcon as RegularSpinnerIcon } from './spinner';
 import { SpinnerIconBold } from './spinner-bold';
 import { SpinnerIconFilled } from './spinner-filled';
 import { SpinnerIconFilltone } from './spinner-filltone';
@@ -25,7 +25,7 @@ const SpinnerIcon = memo(forwardRef<SVGSVGElement, SpinnerIconProps>(({
       return <SpinnerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SpinnerIconRegular ref={ref} {...props} />;
+      return <RegularSpinnerIcon ref={ref} {...props} />;
   }
 }));
 

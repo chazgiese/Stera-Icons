@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CheckBadgeIcon as CheckBadgeIconRegular } from './check-badge';
+import { CheckBadgeIcon as RegularCheckBadgeIcon } from './check-badge';
 import { CheckBadgeIconBold } from './check-badge-bold';
 import { CheckBadgeIconFilled } from './check-badge-filled';
 import { CheckBadgeIconFilltone } from './check-badge-filltone';
@@ -25,7 +25,7 @@ const CheckBadgeIcon = memo(forwardRef<SVGSVGElement, CheckBadgeIconProps>(({
       return <CheckBadgeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CheckBadgeIconRegular ref={ref} {...props} />;
+      return <RegularCheckBadgeIcon ref={ref} {...props} />;
   }
 }));
 

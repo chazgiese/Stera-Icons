@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArchwayIcon as ArchwayIconRegular } from './archway';
+import { ArchwayIcon as RegularArchwayIcon } from './archway';
 import { ArchwayIconBold } from './archway-bold';
 import { ArchwayIconFilled } from './archway-filled';
 import { ArchwayIconFilltone } from './archway-filltone';
@@ -25,7 +25,7 @@ const ArchwayIcon = memo(forwardRef<SVGSVGElement, ArchwayIconProps>(({
       return <ArchwayIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArchwayIconRegular ref={ref} {...props} />;
+      return <RegularArchwayIcon ref={ref} {...props} />;
   }
 }));
 

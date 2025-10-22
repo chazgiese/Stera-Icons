@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MedalStarIcon as MedalStarIconRegular } from './medal-star';
+import { MedalStarIcon as RegularMedalStarIcon } from './medal-star';
 import { MedalStarIconBold } from './medal-star-bold';
 import { MedalStarIconFilled } from './medal-star-filled';
 import { MedalStarIconFilltone } from './medal-star-filltone';
@@ -25,7 +25,7 @@ const MedalStarIcon = memo(forwardRef<SVGSVGElement, MedalStarIconProps>(({
       return <MedalStarIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MedalStarIconRegular ref={ref} {...props} />;
+      return <RegularMedalStarIcon ref={ref} {...props} />;
   }
 }));
 

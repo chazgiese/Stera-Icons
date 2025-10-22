@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { HandbagIcon as HandbagIconRegular } from './handbag';
+import { HandbagIcon as RegularHandbagIcon } from './handbag';
 import { HandbagIconBold } from './handbag-bold';
 import { HandbagIconFilled } from './handbag-filled';
 import { HandbagIconFilltone } from './handbag-filltone';
@@ -25,7 +25,7 @@ const HandbagIcon = memo(forwardRef<SVGSVGElement, HandbagIconProps>(({
       return <HandbagIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <HandbagIconRegular ref={ref} {...props} />;
+      return <RegularHandbagIcon ref={ref} {...props} />;
   }
 }));
 

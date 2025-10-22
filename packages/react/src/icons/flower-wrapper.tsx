@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlowerIcon as FlowerIconRegular } from './flower';
+import { FlowerIcon as RegularFlowerIcon } from './flower';
 import { FlowerIconBold } from './flower-bold';
 import { FlowerIconFilled } from './flower-filled';
 import { FlowerIconFilltone } from './flower-filltone';
@@ -25,7 +25,7 @@ const FlowerIcon = memo(forwardRef<SVGSVGElement, FlowerIconProps>(({
       return <FlowerIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlowerIconRegular ref={ref} {...props} />;
+      return <RegularFlowerIcon ref={ref} {...props} />;
   }
 }));
 

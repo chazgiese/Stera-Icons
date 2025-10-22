@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { VideoIcon as VideoIconRegular } from './video';
+import { VideoIcon as RegularVideoIcon } from './video';
 import { VideoIconBold } from './video-bold';
 import { VideoIconFilled } from './video-filled';
 import { VideoIconFilltone } from './video-filltone';
@@ -25,7 +25,7 @@ const VideoIcon = memo(forwardRef<SVGSVGElement, VideoIconProps>(({
       return <VideoIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <VideoIconRegular ref={ref} {...props} />;
+      return <RegularVideoIcon ref={ref} {...props} />;
   }
 }));
 

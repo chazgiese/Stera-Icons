@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TextItalicIcon as TextItalicIconRegular } from './text-italic';
+import { TextItalicIcon as RegularTextItalicIcon } from './text-italic';
 import { TextItalicIconBold } from './text-italic-bold';
 import { TextItalicIconFilled } from './text-italic-filled';
 import { TextItalicIconFilltone } from './text-italic-filltone';
@@ -25,7 +25,7 @@ const TextItalicIcon = memo(forwardRef<SVGSVGElement, TextItalicIconProps>(({
       return <TextItalicIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TextItalicIconRegular ref={ref} {...props} />;
+      return <RegularTextItalicIcon ref={ref} {...props} />;
   }
 }));
 

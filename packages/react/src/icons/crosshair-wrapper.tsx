@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CrosshairIcon as CrosshairIconRegular } from './crosshair';
+import { CrosshairIcon as RegularCrosshairIcon } from './crosshair';
 import { CrosshairIconBold } from './crosshair-bold';
 import { CrosshairIconFilled } from './crosshair-filled';
 import { CrosshairIconFilltone } from './crosshair-filltone';
@@ -25,7 +25,7 @@ const CrosshairIcon = memo(forwardRef<SVGSVGElement, CrosshairIconProps>(({
       return <CrosshairIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CrosshairIconRegular ref={ref} {...props} />;
+      return <RegularCrosshairIcon ref={ref} {...props} />;
   }
 }));
 

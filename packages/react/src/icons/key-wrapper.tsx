@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { KeyIcon as KeyIconRegular } from './key';
+import { KeyIcon as RegularKeyIcon } from './key';
 import { KeyIconBold } from './key-bold';
 import { KeyIconFilled } from './key-filled';
 import { KeyIconFilltone } from './key-filltone';
@@ -25,7 +25,7 @@ const KeyIcon = memo(forwardRef<SVGSVGElement, KeyIconProps>(({
       return <KeyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <KeyIconRegular ref={ref} {...props} />;
+      return <RegularKeyIcon ref={ref} {...props} />;
   }
 }));
 

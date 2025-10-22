@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BrowserXIcon as BrowserXIconRegular } from './browser-x';
+import { BrowserXIcon as RegularBrowserXIcon } from './browser-x';
 import { BrowserXIconBold } from './browser-x-bold';
 import { BrowserXIconFilled } from './browser-x-filled';
 import { BrowserXIconFilltone } from './browser-x-filltone';
@@ -25,7 +25,7 @@ const BrowserXIcon = memo(forwardRef<SVGSVGElement, BrowserXIconProps>(({
       return <BrowserXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BrowserXIconRegular ref={ref} {...props} />;
+      return <RegularBrowserXIcon ref={ref} {...props} />;
   }
 }));
 

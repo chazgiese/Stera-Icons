@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TrophyIcon as TrophyIconRegular } from './trophy';
+import { TrophyIcon as RegularTrophyIcon } from './trophy';
 import { TrophyIconBold } from './trophy-bold';
 import { TrophyIconFilled } from './trophy-filled';
 import { TrophyIconFilltone } from './trophy-filltone';
@@ -25,7 +25,7 @@ const TrophyIcon = memo(forwardRef<SVGSVGElement, TrophyIconProps>(({
       return <TrophyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TrophyIconRegular ref={ref} {...props} />;
+      return <RegularTrophyIcon ref={ref} {...props} />;
   }
 }));
 

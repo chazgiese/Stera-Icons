@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArrowURightTopIcon as ArrowURightTopIconRegular } from './arrow-u-right-top';
+import { ArrowURightTopIcon as RegularArrowURightTopIcon } from './arrow-u-right-top';
 import { ArrowURightTopIconBold } from './arrow-u-right-top-bold';
 import { ArrowURightTopIconFilled } from './arrow-u-right-top-filled';
 import { ArrowURightTopIconFilltone } from './arrow-u-right-top-filltone';
@@ -25,7 +25,7 @@ const ArrowURightTopIcon = memo(forwardRef<SVGSVGElement, ArrowURightTopIconProp
       return <ArrowURightTopIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArrowURightTopIconRegular ref={ref} {...props} />;
+      return <RegularArrowURightTopIcon ref={ref} {...props} />;
   }
 }));
 

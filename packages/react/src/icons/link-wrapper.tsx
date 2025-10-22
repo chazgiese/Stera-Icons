@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LinkIcon as LinkIconRegular } from './link';
+import { LinkIcon as RegularLinkIcon } from './link';
 import { LinkIconBold } from './link-bold';
 import { LinkIconFilled } from './link-filled';
 import { LinkIconFilltone } from './link-filltone';
@@ -25,7 +25,7 @@ const LinkIcon = memo(forwardRef<SVGSVGElement, LinkIconProps>(({
       return <LinkIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LinkIconRegular ref={ref} {...props} />;
+      return <RegularLinkIcon ref={ref} {...props} />;
   }
 }));
 

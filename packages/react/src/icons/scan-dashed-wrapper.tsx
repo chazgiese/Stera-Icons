@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanDashedIcon as ScanDashedIconRegular } from './scan-dashed';
+import { ScanDashedIcon as RegularScanDashedIcon } from './scan-dashed';
 import { ScanDashedIconBold } from './scan-dashed-bold';
 import { ScanDashedIconFilled } from './scan-dashed-filled';
 import { ScanDashedIconFilltone } from './scan-dashed-filltone';
@@ -25,7 +25,7 @@ const ScanDashedIcon = memo(forwardRef<SVGSVGElement, ScanDashedIconProps>(({
       return <ScanDashedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanDashedIconRegular ref={ref} {...props} />;
+      return <RegularScanDashedIcon ref={ref} {...props} />;
   }
 }));
 

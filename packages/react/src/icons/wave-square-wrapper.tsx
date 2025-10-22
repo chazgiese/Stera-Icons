@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { WaveSquareIcon as WaveSquareIconRegular } from './wave-square';
+import { WaveSquareIcon as RegularWaveSquareIcon } from './wave-square';
 import { WaveSquareIconBold } from './wave-square-bold';
 import { WaveSquareIconFilled } from './wave-square-filled';
 import { WaveSquareIconFilltone } from './wave-square-filltone';
@@ -25,7 +25,7 @@ const WaveSquareIcon = memo(forwardRef<SVGSVGElement, WaveSquareIconProps>(({
       return <WaveSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <WaveSquareIconRegular ref={ref} {...props} />;
+      return <RegularWaveSquareIcon ref={ref} {...props} />;
   }
 }));
 

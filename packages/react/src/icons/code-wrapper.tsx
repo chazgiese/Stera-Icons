@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CodeIcon as CodeIconRegular } from './code';
+import { CodeIcon as RegularCodeIcon } from './code';
 import { CodeIconBold } from './code-bold';
 import { CodeIconFilled } from './code-filled';
 import { CodeIconFilltone } from './code-filltone';
@@ -25,7 +25,7 @@ const CodeIcon = memo(forwardRef<SVGSVGElement, CodeIconProps>(({
       return <CodeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CodeIconRegular ref={ref} {...props} />;
+      return <RegularCodeIcon ref={ref} {...props} />;
   }
 }));
 

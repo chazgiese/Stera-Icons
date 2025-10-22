@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { NotebookIcon as NotebookIconRegular } from './notebook';
+import { NotebookIcon as RegularNotebookIcon } from './notebook';
 import { NotebookIconBold } from './notebook-bold';
 import { NotebookIconFilled } from './notebook-filled';
 import { NotebookIconFilltone } from './notebook-filltone';
@@ -25,7 +25,7 @@ const NotebookIcon = memo(forwardRef<SVGSVGElement, NotebookIconProps>(({
       return <NotebookIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <NotebookIconRegular ref={ref} {...props} />;
+      return <RegularNotebookIcon ref={ref} {...props} />;
   }
 }));
 

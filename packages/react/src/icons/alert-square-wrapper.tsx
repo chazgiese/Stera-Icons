@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AlertSquareIcon as AlertSquareIconRegular } from './alert-square';
+import { AlertSquareIcon as RegularAlertSquareIcon } from './alert-square';
 import { AlertSquareIconBold } from './alert-square-bold';
 import { AlertSquareIconFilled } from './alert-square-filled';
 import { AlertSquareIconFilltone } from './alert-square-filltone';
@@ -25,7 +25,7 @@ const AlertSquareIcon = memo(forwardRef<SVGSVGElement, AlertSquareIconProps>(({
       return <AlertSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AlertSquareIconRegular ref={ref} {...props} />;
+      return <RegularAlertSquareIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ChevronUpIcon as ChevronUpIconRegular } from './chevron-up';
+import { ChevronUpIcon as RegularChevronUpIcon } from './chevron-up';
 import { ChevronUpIconBold } from './chevron-up-bold';
 import { ChevronUpIconFilled } from './chevron-up-filled';
 import { ChevronUpIconFilltone } from './chevron-up-filltone';
@@ -25,7 +25,7 @@ const ChevronUpIcon = memo(forwardRef<SVGSVGElement, ChevronUpIconProps>(({
       return <ChevronUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ChevronUpIconRegular ref={ref} {...props} />;
+      return <RegularChevronUpIcon ref={ref} {...props} />;
   }
 }));
 

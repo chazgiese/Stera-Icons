@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SettingsIcon as SettingsIconRegular } from './settings';
+import { SettingsIcon as RegularSettingsIcon } from './settings';
 import { SettingsIconBold } from './settings-bold';
 import { SettingsIconFilled } from './settings-filled';
 import { SettingsIconFilltone } from './settings-filltone';
@@ -25,7 +25,7 @@ const SettingsIcon = memo(forwardRef<SVGSVGElement, SettingsIconProps>(({
       return <SettingsIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SettingsIconRegular ref={ref} {...props} />;
+      return <RegularSettingsIcon ref={ref} {...props} />;
   }
 }));
 

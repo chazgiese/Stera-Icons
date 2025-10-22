@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MusicIcon as MusicIconRegular } from './music';
+import { MusicIcon as RegularMusicIcon } from './music';
 import { MusicIconBold } from './music-bold';
 import { MusicIconFilled } from './music-filled';
 import { MusicIconFilltone } from './music-filltone';
@@ -25,7 +25,7 @@ const MusicIcon = memo(forwardRef<SVGSVGElement, MusicIconProps>(({
       return <MusicIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MusicIconRegular ref={ref} {...props} />;
+      return <RegularMusicIcon ref={ref} {...props} />;
   }
 }));
 

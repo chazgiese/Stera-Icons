@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CreditCardIcon as CreditCardIconRegular } from './credit-card';
+import { CreditCardIcon as RegularCreditCardIcon } from './credit-card';
 import { CreditCardIconBold } from './credit-card-bold';
 import { CreditCardIconFilled } from './credit-card-filled';
 import { CreditCardIconFilltone } from './credit-card-filltone';
@@ -25,7 +25,7 @@ const CreditCardIcon = memo(forwardRef<SVGSVGElement, CreditCardIconProps>(({
       return <CreditCardIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CreditCardIconRegular ref={ref} {...props} />;
+      return <RegularCreditCardIcon ref={ref} {...props} />;
   }
 }));
 

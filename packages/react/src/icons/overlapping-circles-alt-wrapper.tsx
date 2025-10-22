@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { OverlappingCirclesAltIcon as OverlappingCirclesAltIconRegular } from './overlapping-circles-alt';
+import { OverlappingCirclesAltIcon as RegularOverlappingCirclesAltIcon } from './overlapping-circles-alt';
 import { OverlappingCirclesAltIconBold } from './overlapping-circles-alt-bold';
 import { OverlappingCirclesAltIconFilled } from './overlapping-circles-alt-filled';
 import { OverlappingCirclesAltIconFilltone } from './overlapping-circles-alt-filltone';
@@ -25,7 +25,7 @@ const OverlappingCirclesAltIcon = memo(forwardRef<SVGSVGElement, OverlappingCirc
       return <OverlappingCirclesAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <OverlappingCirclesAltIconRegular ref={ref} {...props} />;
+      return <RegularOverlappingCirclesAltIcon ref={ref} {...props} />;
   }
 }));
 

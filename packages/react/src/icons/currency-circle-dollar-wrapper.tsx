@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CurrencyCircleDollarIcon as CurrencyCircleDollarIconRegular } from './currency-circle-dollar';
+import { CurrencyCircleDollarIcon as RegularCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { CurrencyCircleDollarIconBold } from './currency-circle-dollar-bold';
 import { CurrencyCircleDollarIconFilled } from './currency-circle-dollar-filled';
 import { CurrencyCircleDollarIconFilltone } from './currency-circle-dollar-filltone';
@@ -25,7 +25,7 @@ const CurrencyCircleDollarIcon = memo(forwardRef<SVGSVGElement, CurrencyCircleDo
       return <CurrencyCircleDollarIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CurrencyCircleDollarIconRegular ref={ref} {...props} />;
+      return <RegularCurrencyCircleDollarIcon ref={ref} {...props} />;
   }
 }));
 

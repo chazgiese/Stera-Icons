@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CompassIcon as CompassIconRegular } from './compass';
+import { CompassIcon as RegularCompassIcon } from './compass';
 import { CompassIconBold } from './compass-bold';
 import { CompassIconFilled } from './compass-filled';
 import { CompassIconFilltone } from './compass-filltone';
@@ -25,7 +25,7 @@ const CompassIcon = memo(forwardRef<SVGSVGElement, CompassIconProps>(({
       return <CompassIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CompassIconRegular ref={ref} {...props} />;
+      return <RegularCompassIcon ref={ref} {...props} />;
   }
 }));
 

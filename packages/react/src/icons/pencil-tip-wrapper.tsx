@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PencilTipIcon as PencilTipIconRegular } from './pencil-tip';
+import { PencilTipIcon as RegularPencilTipIcon } from './pencil-tip';
 import { PencilTipIconBold } from './pencil-tip-bold';
 import { PencilTipIconFilled } from './pencil-tip-filled';
 import { PencilTipIconFilltone } from './pencil-tip-filltone';
@@ -25,7 +25,7 @@ const PencilTipIcon = memo(forwardRef<SVGSVGElement, PencilTipIconProps>(({
       return <PencilTipIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PencilTipIconRegular ref={ref} {...props} />;
+      return <RegularPencilTipIcon ref={ref} {...props} />;
   }
 }));
 

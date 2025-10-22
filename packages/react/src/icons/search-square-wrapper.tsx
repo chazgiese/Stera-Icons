@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SearchSquareIcon as SearchSquareIconRegular } from './search-square';
+import { SearchSquareIcon as RegularSearchSquareIcon } from './search-square';
 import { SearchSquareIconBold } from './search-square-bold';
 import { SearchSquareIconFilled } from './search-square-filled';
 import { SearchSquareIconFilltone } from './search-square-filltone';
@@ -25,7 +25,7 @@ const SearchSquareIcon = memo(forwardRef<SVGSVGElement, SearchSquareIconProps>((
       return <SearchSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SearchSquareIconRegular ref={ref} {...props} />;
+      return <RegularSearchSquareIcon ref={ref} {...props} />;
   }
 }));
 

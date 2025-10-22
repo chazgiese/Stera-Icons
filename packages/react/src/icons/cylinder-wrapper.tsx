@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CylinderIcon as CylinderIconRegular } from './cylinder';
+import { CylinderIcon as RegularCylinderIcon } from './cylinder';
 import { CylinderIconBold } from './cylinder-bold';
 import { CylinderIconFilled } from './cylinder-filled';
 import { CylinderIconFilltone } from './cylinder-filltone';
@@ -25,7 +25,7 @@ const CylinderIcon = memo(forwardRef<SVGSVGElement, CylinderIconProps>(({
       return <CylinderIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CylinderIconRegular ref={ref} {...props} />;
+      return <RegularCylinderIcon ref={ref} {...props} />;
   }
 }));
 

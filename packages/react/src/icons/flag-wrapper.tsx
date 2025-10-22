@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlagIcon as FlagIconRegular } from './flag';
+import { FlagIcon as RegularFlagIcon } from './flag';
 import { FlagIconBold } from './flag-bold';
 import { FlagIconFilled } from './flag-filled';
 import { FlagIconFilltone } from './flag-filltone';
@@ -25,7 +25,7 @@ const FlagIcon = memo(forwardRef<SVGSVGElement, FlagIconProps>(({
       return <FlagIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlagIconRegular ref={ref} {...props} />;
+      return <RegularFlagIcon ref={ref} {...props} />;
   }
 }));
 

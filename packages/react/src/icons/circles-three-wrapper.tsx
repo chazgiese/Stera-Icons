@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CirclesThreeIcon as CirclesThreeIconRegular } from './circles-three';
+import { CirclesThreeIcon as RegularCirclesThreeIcon } from './circles-three';
 import { CirclesThreeIconBold } from './circles-three-bold';
 import { CirclesThreeIconFilled } from './circles-three-filled';
 import { CirclesThreeIconFilltone } from './circles-three-filltone';
@@ -25,7 +25,7 @@ const CirclesThreeIcon = memo(forwardRef<SVGSVGElement, CirclesThreeIconProps>((
       return <CirclesThreeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CirclesThreeIconRegular ref={ref} {...props} />;
+      return <RegularCirclesThreeIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BoltIcon as BoltIconRegular } from './bolt';
+import { BoltIcon as RegularBoltIcon } from './bolt';
 import { BoltIconBold } from './bolt-bold';
 import { BoltIconFilled } from './bolt-filled';
 import { BoltIconFilltone } from './bolt-filltone';
@@ -25,7 +25,7 @@ const BoltIcon = memo(forwardRef<SVGSVGElement, BoltIconProps>(({
       return <BoltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BoltIconRegular ref={ref} {...props} />;
+      return <RegularBoltIcon ref={ref} {...props} />;
   }
 }));
 

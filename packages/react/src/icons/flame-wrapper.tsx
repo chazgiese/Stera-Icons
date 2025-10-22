@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { FlameIcon as FlameIconRegular } from './flame';
+import { FlameIcon as RegularFlameIcon } from './flame';
 import { FlameIconBold } from './flame-bold';
 import { FlameIconFilled } from './flame-filled';
 import { FlameIconFilltone } from './flame-filltone';
@@ -25,7 +25,7 @@ const FlameIcon = memo(forwardRef<SVGSVGElement, FlameIconProps>(({
       return <FlameIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <FlameIconRegular ref={ref} {...props} />;
+      return <RegularFlameIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { AudioBarsSquareIcon as AudioBarsSquareIconRegular } from './audio-bars-square';
+import { AudioBarsSquareIcon as RegularAudioBarsSquareIcon } from './audio-bars-square';
 import { AudioBarsSquareIconBold } from './audio-bars-square-bold';
 import { AudioBarsSquareIconFilled } from './audio-bars-square-filled';
 import { AudioBarsSquareIconFilltone } from './audio-bars-square-filltone';
@@ -25,7 +25,7 @@ const AudioBarsSquareIcon = memo(forwardRef<SVGSVGElement, AudioBarsSquareIconPr
       return <AudioBarsSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <AudioBarsSquareIconRegular ref={ref} {...props} />;
+      return <RegularAudioBarsSquareIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LockIcon as LockIconRegular } from './lock';
+import { LockIcon as RegularLockIcon } from './lock';
 import { LockIconBold } from './lock-bold';
 import { LockIconFilled } from './lock-filled';
 import { LockIconFilltone } from './lock-filltone';
@@ -25,7 +25,7 @@ const LockIcon = memo(forwardRef<SVGSVGElement, LockIconProps>(({
       return <LockIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LockIconRegular ref={ref} {...props} />;
+      return <RegularLockIcon ref={ref} {...props} />;
   }
 }));
 

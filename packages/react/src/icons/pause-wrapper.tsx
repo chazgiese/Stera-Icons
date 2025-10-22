@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PauseIcon as PauseIconRegular } from './pause';
+import { PauseIcon as RegularPauseIcon } from './pause';
 import { PauseIconBold } from './pause-bold';
 import { PauseIconFilled } from './pause-filled';
 import { PauseIconFilltone } from './pause-filltone';
@@ -25,7 +25,7 @@ const PauseIcon = memo(forwardRef<SVGSVGElement, PauseIconProps>(({
       return <PauseIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PauseIconRegular ref={ref} {...props} />;
+      return <RegularPauseIcon ref={ref} {...props} />;
   }
 }));
 

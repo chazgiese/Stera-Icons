@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { PaperclipIcon as PaperclipIconRegular } from './paperclip';
+import { PaperclipIcon as RegularPaperclipIcon } from './paperclip';
 import { PaperclipIconBold } from './paperclip-bold';
 import { PaperclipIconFilled } from './paperclip-filled';
 import { PaperclipIconFilltone } from './paperclip-filltone';
@@ -25,7 +25,7 @@ const PaperclipIcon = memo(forwardRef<SVGSVGElement, PaperclipIconProps>(({
       return <PaperclipIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <PaperclipIconRegular ref={ref} {...props} />;
+      return <RegularPaperclipIcon ref={ref} {...props} />;
   }
 }));
 

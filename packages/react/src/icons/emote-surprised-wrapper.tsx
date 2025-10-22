@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EmoteSurprisedIcon as EmoteSurprisedIconRegular } from './emote-surprised';
+import { EmoteSurprisedIcon as RegularEmoteSurprisedIcon } from './emote-surprised';
 import { EmoteSurprisedIconBold } from './emote-surprised-bold';
 import { EmoteSurprisedIconFilled } from './emote-surprised-filled';
 import { EmoteSurprisedIconFilltone } from './emote-surprised-filltone';
@@ -25,7 +25,7 @@ const EmoteSurprisedIcon = memo(forwardRef<SVGSVGElement, EmoteSurprisedIconProp
       return <EmoteSurprisedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EmoteSurprisedIconRegular ref={ref} {...props} />;
+      return <RegularEmoteSurprisedIcon ref={ref} {...props} />;
   }
 }));
 

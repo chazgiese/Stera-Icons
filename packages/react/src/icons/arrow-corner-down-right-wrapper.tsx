@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ArrowCornerDownRightIcon as ArrowCornerDownRightIconRegular } from './arrow-corner-down-right';
+import { ArrowCornerDownRightIcon as RegularArrowCornerDownRightIcon } from './arrow-corner-down-right';
 import { ArrowCornerDownRightIconBold } from './arrow-corner-down-right-bold';
 import { ArrowCornerDownRightIconFilled } from './arrow-corner-down-right-filled';
 import { ArrowCornerDownRightIconFilltone } from './arrow-corner-down-right-filltone';
@@ -25,7 +25,7 @@ const ArrowCornerDownRightIcon = memo(forwardRef<SVGSVGElement, ArrowCornerDownR
       return <ArrowCornerDownRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ArrowCornerDownRightIconRegular ref={ref} {...props} />;
+      return <RegularArrowCornerDownRightIcon ref={ref} {...props} />;
   }
 }));
 

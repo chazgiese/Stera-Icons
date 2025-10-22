@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ReplyIcon as ReplyIconRegular } from './reply';
+import { ReplyIcon as RegularReplyIcon } from './reply';
 import { ReplyIconBold } from './reply-bold';
 import { ReplyIconFilled } from './reply-filled';
 import { ReplyIconFilltone } from './reply-filltone';
@@ -25,7 +25,7 @@ const ReplyIcon = memo(forwardRef<SVGSVGElement, ReplyIconProps>(({
       return <ReplyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ReplyIconRegular ref={ref} {...props} />;
+      return <RegularReplyIcon ref={ref} {...props} />;
   }
 }));
 

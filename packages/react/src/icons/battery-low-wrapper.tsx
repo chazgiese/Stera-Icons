@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BatteryLowIcon as BatteryLowIconRegular } from './battery-low';
+import { BatteryLowIcon as RegularBatteryLowIcon } from './battery-low';
 import { BatteryLowIconBold } from './battery-low-bold';
 import { BatteryLowIconFilled } from './battery-low-filled';
 import { BatteryLowIconFilltone } from './battery-low-filltone';
@@ -25,7 +25,7 @@ const BatteryLowIcon = memo(forwardRef<SVGSVGElement, BatteryLowIconProps>(({
       return <BatteryLowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BatteryLowIconRegular ref={ref} {...props} />;
+      return <RegularBatteryLowIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ListBulletSimpleIcon as ListBulletSimpleIconRegular } from './list-bullet-simple';
+import { ListBulletSimpleIcon as RegularListBulletSimpleIcon } from './list-bullet-simple';
 import { ListBulletSimpleIconBold } from './list-bullet-simple-bold';
 import { ListBulletSimpleIconFilled } from './list-bullet-simple-filled';
 import { ListBulletSimpleIconFilltone } from './list-bullet-simple-filltone';
@@ -25,7 +25,7 @@ const ListBulletSimpleIcon = memo(forwardRef<SVGSVGElement, ListBulletSimpleIcon
       return <ListBulletSimpleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ListBulletSimpleIconRegular ref={ref} {...props} />;
+      return <RegularListBulletSimpleIcon ref={ref} {...props} />;
   }
 }));
 

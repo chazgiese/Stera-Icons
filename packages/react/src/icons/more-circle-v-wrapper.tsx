@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MoreCircleVIcon as MoreCircleVIconRegular } from './more-circle-v';
+import { MoreCircleVIcon as RegularMoreCircleVIcon } from './more-circle-v';
 import { MoreCircleVIconBold } from './more-circle-v-bold';
 import { MoreCircleVIconFilled } from './more-circle-v-filled';
 import { MoreCircleVIconFilltone } from './more-circle-v-filltone';
@@ -25,7 +25,7 @@ const MoreCircleVIcon = memo(forwardRef<SVGSVGElement, MoreCircleVIconProps>(({
       return <MoreCircleVIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MoreCircleVIconRegular ref={ref} {...props} />;
+      return <RegularMoreCircleVIcon ref={ref} {...props} />;
   }
 }));
 

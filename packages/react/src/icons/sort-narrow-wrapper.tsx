@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SortNarrowIcon as SortNarrowIconRegular } from './sort-narrow';
+import { SortNarrowIcon as RegularSortNarrowIcon } from './sort-narrow';
 import { SortNarrowIconBold } from './sort-narrow-bold';
 import { SortNarrowIconFilled } from './sort-narrow-filled';
 import { SortNarrowIconFilltone } from './sort-narrow-filltone';
@@ -25,7 +25,7 @@ const SortNarrowIcon = memo(forwardRef<SVGSVGElement, SortNarrowIconProps>(({
       return <SortNarrowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SortNarrowIconRegular ref={ref} {...props} />;
+      return <RegularSortNarrowIcon ref={ref} {...props} />;
   }
 }));
 

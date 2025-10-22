@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { CoinIcon as CoinIconRegular } from './coin';
+import { CoinIcon as RegularCoinIcon } from './coin';
 import { CoinIconBold } from './coin-bold';
 import { CoinIconFilled } from './coin-filled';
 import { CoinIconFilltone } from './coin-filltone';
@@ -25,7 +25,7 @@ const CoinIcon = memo(forwardRef<SVGSVGElement, CoinIconProps>(({
       return <CoinIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <CoinIconRegular ref={ref} {...props} />;
+      return <RegularCoinIcon ref={ref} {...props} />;
   }
 }));
 

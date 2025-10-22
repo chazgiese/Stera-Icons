@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { BriefcaseIcon as BriefcaseIconRegular } from './briefcase';
+import { BriefcaseIcon as RegularBriefcaseIcon } from './briefcase';
 import { BriefcaseIconBold } from './briefcase-bold';
 import { BriefcaseIconFilled } from './briefcase-filled';
 import { BriefcaseIconFilltone } from './briefcase-filltone';
@@ -25,7 +25,7 @@ const BriefcaseIcon = memo(forwardRef<SVGSVGElement, BriefcaseIconProps>(({
       return <BriefcaseIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <BriefcaseIconRegular ref={ref} {...props} />;
+      return <RegularBriefcaseIcon ref={ref} {...props} />;
   }
 }));
 

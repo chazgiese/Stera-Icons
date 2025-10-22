@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { TogglesIcon as TogglesIconRegular } from './toggles';
+import { TogglesIcon as RegularTogglesIcon } from './toggles';
 import { TogglesIconBold } from './toggles-bold';
 import { TogglesIconFilled } from './toggles-filled';
 import { TogglesIconFilltone } from './toggles-filltone';
@@ -25,7 +25,7 @@ const TogglesIcon = memo(forwardRef<SVGSVGElement, TogglesIconProps>(({
       return <TogglesIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <TogglesIconRegular ref={ref} {...props} />;
+      return <RegularTogglesIcon ref={ref} {...props} />;
   }
 }));
 

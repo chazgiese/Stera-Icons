@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { ScanCubeIcon as ScanCubeIconRegular } from './scan-cube';
+import { ScanCubeIcon as RegularScanCubeIcon } from './scan-cube';
 import { ScanCubeIconBold } from './scan-cube-bold';
 import { ScanCubeIconFilled } from './scan-cube-filled';
 import { ScanCubeIconFilltone } from './scan-cube-filltone';
@@ -25,7 +25,7 @@ const ScanCubeIcon = memo(forwardRef<SVGSVGElement, ScanCubeIconProps>(({
       return <ScanCubeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <ScanCubeIconRegular ref={ref} {...props} />;
+      return <RegularScanCubeIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { GitPullRequestClosedIcon as GitPullRequestClosedIconRegular } from './git-pull-request-closed';
+import { GitPullRequestClosedIcon as RegularGitPullRequestClosedIcon } from './git-pull-request-closed';
 import { GitPullRequestClosedIconBold } from './git-pull-request-closed-bold';
 import { GitPullRequestClosedIconFilled } from './git-pull-request-closed-filled';
 import { GitPullRequestClosedIconFilltone } from './git-pull-request-closed-filltone';
@@ -25,7 +25,7 @@ const GitPullRequestClosedIcon = memo(forwardRef<SVGSVGElement, GitPullRequestCl
       return <GitPullRequestClosedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <GitPullRequestClosedIconRegular ref={ref} {...props} />;
+      return <RegularGitPullRequestClosedIcon ref={ref} {...props} />;
   }
 }));
 

@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { VideoOffIcon as VideoOffIconRegular } from './video-off';
+import { VideoOffIcon as RegularVideoOffIcon } from './video-off';
 import { VideoOffIconBold } from './video-off-bold';
 import { VideoOffIconFilled } from './video-off-filled';
 import { VideoOffIconFilltone } from './video-off-filltone';
@@ -25,7 +25,7 @@ const VideoOffIcon = memo(forwardRef<SVGSVGElement, VideoOffIconProps>(({
       return <VideoOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <VideoOffIconRegular ref={ref} {...props} />;
+      return <RegularVideoOffIcon ref={ref} {...props} />;
   }
 }));
 

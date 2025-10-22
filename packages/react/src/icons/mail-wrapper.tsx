@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { MailIcon as MailIconRegular } from './mail';
+import { MailIcon as RegularMailIcon } from './mail';
 import { MailIconBold } from './mail-bold';
 import { MailIconFilled } from './mail-filled';
 import { MailIconFilltone } from './mail-filltone';
@@ -25,7 +25,7 @@ const MailIcon = memo(forwardRef<SVGSVGElement, MailIconProps>(({
       return <MailIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <MailIconRegular ref={ref} {...props} />;
+      return <RegularMailIcon ref={ref} {...props} />;
   }
 }));
 

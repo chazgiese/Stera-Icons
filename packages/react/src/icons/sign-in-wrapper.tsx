@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { SignInIcon as SignInIconRegular } from './sign-in';
+import { SignInIcon as RegularSignInIcon } from './sign-in';
 import { SignInIconBold } from './sign-in-bold';
 import { SignInIconFilled } from './sign-in-filled';
 import { SignInIconFilltone } from './sign-in-filltone';
@@ -25,7 +25,7 @@ const SignInIcon = memo(forwardRef<SVGSVGElement, SignInIconProps>(({
       return <SignInIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <SignInIconRegular ref={ref} {...props} />;
+      return <RegularSignInIcon ref={ref} {...props} />;
   }
 }));
 

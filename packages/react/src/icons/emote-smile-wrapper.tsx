@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { EmoteSmileIcon as EmoteSmileIconRegular } from './emote-smile';
+import { EmoteSmileIcon as RegularEmoteSmileIcon } from './emote-smile';
 import { EmoteSmileIconBold } from './emote-smile-bold';
 import { EmoteSmileIconFilled } from './emote-smile-filled';
 import { EmoteSmileIconFilltone } from './emote-smile-filltone';
@@ -25,7 +25,7 @@ const EmoteSmileIcon = memo(forwardRef<SVGSVGElement, EmoteSmileIconProps>(({
       return <EmoteSmileIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <EmoteSmileIconRegular ref={ref} {...props} />;
+      return <RegularEmoteSmileIcon ref={ref} {...props} />;
   }
 }));
 

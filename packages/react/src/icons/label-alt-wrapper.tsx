@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { LabelAltIcon as LabelAltIconRegular } from './label-alt';
+import { LabelAltIcon as RegularLabelAltIcon } from './label-alt';
 import { LabelAltIconBold } from './label-alt-bold';
 import { LabelAltIconFilled } from './label-alt-filled';
 import { LabelAltIconFilltone } from './label-alt-filltone';
@@ -25,7 +25,7 @@ const LabelAltIcon = memo(forwardRef<SVGSVGElement, LabelAltIconProps>(({
       return <LabelAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <LabelAltIconRegular ref={ref} {...props} />;
+      return <RegularLabelAltIcon ref={ref} {...props} />;
   }
 }));
 

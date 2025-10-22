@@ -1,6 +1,6 @@
 import { forwardRef, memo } from 'react';
 import type { IconProps, IconVariant } from '../types';
-import { KeyholeIcon as KeyholeIconRegular } from './keyhole';
+import { KeyholeIcon as RegularKeyholeIcon } from './keyhole';
 import { KeyholeIconBold } from './keyhole-bold';
 import { KeyholeIconFilled } from './keyhole-filled';
 import { KeyholeIconFilltone } from './keyhole-filltone';
@@ -25,7 +25,7 @@ const KeyholeIcon = memo(forwardRef<SVGSVGElement, KeyholeIconProps>(({
       return <KeyholeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
-      return <KeyholeIconRegular ref={ref} {...props} />;
+      return <RegularKeyholeIcon ref={ref} {...props} />;
   }
 }));
 
