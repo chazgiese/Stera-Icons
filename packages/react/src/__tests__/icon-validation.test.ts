@@ -18,7 +18,7 @@ describe('Icon Validation', () => {
       expect(icon).toHaveProperty('componentName');
       expect(icon).toHaveProperty('fileName');
       
-      expect(['bold', 'filled', 'regular']).toContain(icon.variant);
+      expect(['bold', 'filled', 'regular', 'filltone', 'linetone']).toContain(icon.variant);
       expect(Array.isArray(icon.tags)).toBe(true);
       expect(typeof icon.name).toBe('string');
       expect(typeof icon.componentName).toBe('string');
