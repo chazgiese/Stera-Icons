@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ArrowSquareLeftIcon as ArrowSquareLeftIconRegular } from './arrow-square-left';
 import { ArrowSquareLeftIconBold } from './arrow-square-left-bold';
 import { ArrowSquareLeftIconFilled } from './arrow-square-left-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ArrowSquareLeftIconFilltone } from './arrow-square-left-filltone';
+import { ArrowSquareLeftIconLinetone } from './arrow-square-left-linetone';
 
 export interface ArrowSquareLeftIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ArrowSquareLeftIcon = memo(forwardRef<SVGSVGElement, ArrowSquareLeftIconPr
       return <ArrowSquareLeftIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ArrowSquareLeftIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ArrowSquareLeftIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ArrowSquareLeftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ArrowSquareLeftIconRegular ref={ref} {...props} />;

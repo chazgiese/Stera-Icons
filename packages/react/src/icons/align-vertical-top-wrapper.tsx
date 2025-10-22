@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { AlignVerticalTopIcon as AlignVerticalTopIconRegular } from './align-vertical-top';
 import { AlignVerticalTopIconBold } from './align-vertical-top-bold';
 import { AlignVerticalTopIconFilled } from './align-vertical-top-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { AlignVerticalTopIconFilltone } from './align-vertical-top-filltone';
+import { AlignVerticalTopIconLinetone } from './align-vertical-top-linetone';
 
 export interface AlignVerticalTopIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const AlignVerticalTopIcon = memo(forwardRef<SVGSVGElement, AlignVerticalTopIcon
       return <AlignVerticalTopIconFilled ref={ref} {...props} />;
     case 'bold':
       return <AlignVerticalTopIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <AlignVerticalTopIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <AlignVerticalTopIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <AlignVerticalTopIconRegular ref={ref} {...props} />;

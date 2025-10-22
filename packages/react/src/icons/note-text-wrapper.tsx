@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { NoteTextIcon as NoteTextIconRegular } from './note-text';
 import { NoteTextIconBold } from './note-text-bold';
 import { NoteTextIconFilled } from './note-text-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { NoteTextIconFilltone } from './note-text-filltone';
+import { NoteTextIconLinetone } from './note-text-linetone';
 
 export interface NoteTextIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const NoteTextIcon = memo(forwardRef<SVGSVGElement, NoteTextIconProps>(({
       return <NoteTextIconFilled ref={ref} {...props} />;
     case 'bold':
       return <NoteTextIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <NoteTextIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <NoteTextIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <NoteTextIconRegular ref={ref} {...props} />;

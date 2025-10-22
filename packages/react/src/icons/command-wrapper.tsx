@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CommandIcon as CommandIconRegular } from './command';
 import { CommandIconBold } from './command-bold';
 import { CommandIconFilled } from './command-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CommandIconFilltone } from './command-filltone';
+import { CommandIconLinetone } from './command-linetone';
 
 export interface CommandIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CommandIcon = memo(forwardRef<SVGSVGElement, CommandIconProps>(({
       return <CommandIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CommandIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CommandIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CommandIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CommandIconRegular ref={ref} {...props} />;

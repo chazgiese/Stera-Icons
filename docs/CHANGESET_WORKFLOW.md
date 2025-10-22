@@ -64,13 +64,13 @@ Check that the system detects your pending changeset:
 
 ```bash
 # Check version information
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 ```
 
 **Expected output:**
 ```
-📋 Version Information
-=====================
+📋 Hash-based Version Information
+==================================
 Current version: 3.1.0
 Has pending changesets: true
 Next version (from changesets): 3.2.0
@@ -186,13 +186,13 @@ pnpm changeset
 ### Version Information
 ```bash
 # Show current version info
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 
 # Show next version from changesets
-node scripts/version-utils.js next
+node scripts/hash-versioning.js next
 
 # Show current package version
-node scripts/version-utils.js current
+node scripts/hash-versioning.js current
 ```
 
 ### Icon Metadata
@@ -335,7 +335,7 @@ pnpm changeset
 # Select: stera-icons, minor, "Add new social media icons"
 
 # 2. Verify changeset detected
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 # Output: Next version (from changesets): 3.2.0
 
 # 3. Add icons to icons-export.json (external process)

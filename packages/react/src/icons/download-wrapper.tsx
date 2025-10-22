@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { DownloadIcon as DownloadIconRegular } from './download';
 import { DownloadIconBold } from './download-bold';
 import { DownloadIconFilled } from './download-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { DownloadIconFilltone } from './download-filltone';
+import { DownloadIconLinetone } from './download-linetone';
 
 export interface DownloadIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const DownloadIcon = memo(forwardRef<SVGSVGElement, DownloadIconProps>(({
       return <DownloadIconFilled ref={ref} {...props} />;
     case 'bold':
       return <DownloadIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <DownloadIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <DownloadIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <DownloadIconRegular ref={ref} {...props} />;

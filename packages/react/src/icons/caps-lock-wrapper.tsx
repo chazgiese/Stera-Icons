@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CapsLockIcon as CapsLockIconRegular } from './caps-lock';
 import { CapsLockIconBold } from './caps-lock-bold';
 import { CapsLockIconFilled } from './caps-lock-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CapsLockIconFilltone } from './caps-lock-filltone';
+import { CapsLockIconLinetone } from './caps-lock-linetone';
 
 export interface CapsLockIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CapsLockIcon = memo(forwardRef<SVGSVGElement, CapsLockIconProps>(({
       return <CapsLockIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CapsLockIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CapsLockIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CapsLockIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CapsLockIconRegular ref={ref} {...props} />;

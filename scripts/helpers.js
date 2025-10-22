@@ -39,17 +39,27 @@ export function getComponentName(slug, variant) {
   const iconName = `${baseName}Icon`;
   if (variant === 'filled') return `${iconName}Filled`;
   if (variant === 'bold') return `${iconName}Bold`;
+  if (variant === 'filltone') return `${iconName}Filltone`;
+  if (variant === 'linetone') return `${iconName}Linetone`;
   return iconName; // regular variant with Icon suffix
 }
 
 export function getFileName(slug, variant) {
   if (variant === 'filled') return `${slug}-filled`;
   if (variant === 'bold') return `${slug}-bold`;
+  if (variant === 'filltone') return `${slug}-filltone`;
+  if (variant === 'linetone') return `${slug}-linetone`;
   return slug; // regular variant gets no suffix
 }
 
-export function parseTags(tagsString) {
-  return tagsString
+export function parseTags(tags) {
+  // Handle both array format (new) and string format (legacy)
+  if (Array.isArray(tags)) {
+    return tags.map(tag => tag.trim().toLowerCase()).filter(tag => tag.length > 0);
+  }
+  
+  // Legacy string format
+  return tags
     .split(',')
     .map(tag => tag.trim().toLowerCase())
     .filter(tag => tag.length > 0);

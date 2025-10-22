@@ -1,0 +1,42 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const AreaChartIconFilltone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M21.97 4.47a.751.751 0 0 1 1.28.53v12.75a2 2 0 0 1-2 2H1.5a.75.75 0 0 1-.53-1.28l8-8 .114-.094a.75.75 0 0 1 .946.094L13 13.44z"
+          opacity={0.32}
+        />
+        <path
+          fill="currentColor"
+          d="M21.97 4.47a.75.75 0 1 1 1.06 1.06l-9.5 9.5a.75.75 0 0 1-1.06 0L9.5 12.06l-7.47 7.47a.75.75 0 0 1-1.06-1.06l8-8 .114-.094a.75.75 0 0 1 .946.094L13 13.44z"
+        />
+      </svg>
+    ))
+);
+AreaChartIconFilltone.displayName = "AreaChartIconFilltone";
+export { AreaChartIconFilltone };

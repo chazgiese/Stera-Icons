@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CityIcon as CityIconRegular } from './city';
 import { CityIconBold } from './city-bold';
 import { CityIconFilled } from './city-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CityIconFilltone } from './city-filltone';
+import { CityIconLinetone } from './city-linetone';
 
 export interface CityIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CityIcon = memo(forwardRef<SVGSVGElement, CityIconProps>(({
       return <CityIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CityIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CityIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CityIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CityIconRegular ref={ref} {...props} />;

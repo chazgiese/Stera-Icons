@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { WifiSlashIcon as WifiSlashIconRegular } from './wifi-slash';
 import { WifiSlashIconBold } from './wifi-slash-bold';
 import { WifiSlashIconFilled } from './wifi-slash-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { WifiSlashIconFilltone } from './wifi-slash-filltone';
+import { WifiSlashIconLinetone } from './wifi-slash-linetone';
 
 export interface WifiSlashIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const WifiSlashIcon = memo(forwardRef<SVGSVGElement, WifiSlashIconProps>(({
       return <WifiSlashIconFilled ref={ref} {...props} />;
     case 'bold':
       return <WifiSlashIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <WifiSlashIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <WifiSlashIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <WifiSlashIconRegular ref={ref} {...props} />;

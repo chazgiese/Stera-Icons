@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { BrightnessLowIcon as BrightnessLowIconRegular } from './brightness-low';
 import { BrightnessLowIconBold } from './brightness-low-bold';
 import { BrightnessLowIconFilled } from './brightness-low-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { BrightnessLowIconFilltone } from './brightness-low-filltone';
+import { BrightnessLowIconLinetone } from './brightness-low-linetone';
 
 export interface BrightnessLowIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const BrightnessLowIcon = memo(forwardRef<SVGSVGElement, BrightnessLowIconProps>
       return <BrightnessLowIconFilled ref={ref} {...props} />;
     case 'bold':
       return <BrightnessLowIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <BrightnessLowIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <BrightnessLowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <BrightnessLowIconRegular ref={ref} {...props} />;

@@ -28,13 +28,13 @@ const ArrowCircleDownIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12 6a1 1 0 0 1 1 1v7.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L11 14.586V7a1 1 0 0 1 1-1"
-        />
-        <path
-          fill="currentColor"
           fillRule="evenodd"
           d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18"
           clipRule="evenodd"
+        />
+        <path
+          fill="currentColor"
+          d="M12 6a1 1 0 0 1 1 1v7.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L11 14.586V7a1 1 0 0 1 1-1"
         />
       </svg>
     ))

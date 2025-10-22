@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { RectangleIcon as RectangleIconRegular } from './rectangle';
 import { RectangleIconBold } from './rectangle-bold';
 import { RectangleIconFilled } from './rectangle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { RectangleIconFilltone } from './rectangle-filltone';
+import { RectangleIconLinetone } from './rectangle-linetone';
 
 export interface RectangleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const RectangleIcon = memo(forwardRef<SVGSVGElement, RectangleIconProps>(({
       return <RectangleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <RectangleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <RectangleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <RectangleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <RectangleIconRegular ref={ref} {...props} />;

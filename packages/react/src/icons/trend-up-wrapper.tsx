@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { TrendUpIcon as TrendUpIconRegular } from './trend-up';
 import { TrendUpIconBold } from './trend-up-bold';
 import { TrendUpIconFilled } from './trend-up-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { TrendUpIconFilltone } from './trend-up-filltone';
+import { TrendUpIconLinetone } from './trend-up-linetone';
 
 export interface TrendUpIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const TrendUpIcon = memo(forwardRef<SVGSVGElement, TrendUpIconProps>(({
       return <TrendUpIconFilled ref={ref} {...props} />;
     case 'bold':
       return <TrendUpIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <TrendUpIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <TrendUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <TrendUpIconRegular ref={ref} {...props} />;

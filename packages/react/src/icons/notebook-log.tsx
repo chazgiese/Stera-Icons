@@ -28,7 +28,7 @@ const NotebookLogIcon = memo(
       >
         <path
           fill="currentColor"
-          d="M12 10.25a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM15 6.25a.75.75 0 0 1 0 1.5H9a.75.75 0 1 1 0-1.5z"
+          d="M12 12.25a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM15 8.25a.75.75 0 0 1 0 1.5H9a.75.75 0 1 1 0-1.5z"
         />
         <path
           fill="currentColor"

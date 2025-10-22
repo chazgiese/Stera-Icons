@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FlowLeftArrowIcon as FlowLeftArrowIconRegular } from './flow-left-arrow';
 import { FlowLeftArrowIconBold } from './flow-left-arrow-bold';
 import { FlowLeftArrowIconFilled } from './flow-left-arrow-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FlowLeftArrowIconFilltone } from './flow-left-arrow-filltone';
+import { FlowLeftArrowIconLinetone } from './flow-left-arrow-linetone';
 
 export interface FlowLeftArrowIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FlowLeftArrowIcon = memo(forwardRef<SVGSVGElement, FlowLeftArrowIconProps>
       return <FlowLeftArrowIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FlowLeftArrowIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FlowLeftArrowIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FlowLeftArrowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FlowLeftArrowIconRegular ref={ref} {...props} />;

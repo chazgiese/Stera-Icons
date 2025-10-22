@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { SearchIcon as SearchIconRegular } from './search';
 import { SearchIconBold } from './search-bold';
 import { SearchIconFilled } from './search-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { SearchIconFilltone } from './search-filltone';
+import { SearchIconLinetone } from './search-linetone';
 
 export interface SearchIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const SearchIcon = memo(forwardRef<SVGSVGElement, SearchIconProps>(({
       return <SearchIconFilled ref={ref} {...props} />;
     case 'bold':
       return <SearchIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <SearchIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <SearchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <SearchIconRegular ref={ref} {...props} />;

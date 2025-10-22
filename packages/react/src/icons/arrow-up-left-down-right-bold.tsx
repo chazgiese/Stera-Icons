@@ -28,7 +28,7 @@ const ArrowUpLeftDownRightIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M4 3a1 1 0 0 0-1 1v7a1 1 0 1 0 2 0V6.414L17.586 19H13a1 1 0 1 0 0 2h7a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v4.586L6.414 5H11a1 1 0 1 0 0-2z"
+          d="M10.5 3a1 1 0 1 1 0 2H6.414L19 17.586V13.5a1 1 0 1 1 2 0V20a1 1 0 0 1-1 1h-6.5a1 1 0 1 1 0-2h4.086L5 6.414V10.5a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1z"
         />
       </svg>
     ))

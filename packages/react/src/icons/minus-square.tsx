@@ -28,7 +28,7 @@ const MinusSquareIcon = memo(
       >
         <path
           fill="currentColor"
-          d="M16.001 11.25a.75.75 0 0 1-.002 1.5l-8-.01a.75.75 0 0 1 .002-1.5z"
+          d="M16.001 11.249a.75.75 0 0 1-.002 1.5l-8-.01a.75.75 0 0 1 .002-1.5z"
         />
         <path
           fill="currentColor"

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FlowMergeIcon as FlowMergeIconRegular } from './flow-merge';
 import { FlowMergeIconBold } from './flow-merge-bold';
 import { FlowMergeIconFilled } from './flow-merge-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FlowMergeIconFilltone } from './flow-merge-filltone';
+import { FlowMergeIconLinetone } from './flow-merge-linetone';
 
 export interface FlowMergeIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FlowMergeIcon = memo(forwardRef<SVGSVGElement, FlowMergeIconProps>(({
       return <FlowMergeIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FlowMergeIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FlowMergeIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FlowMergeIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FlowMergeIconRegular ref={ref} {...props} />;

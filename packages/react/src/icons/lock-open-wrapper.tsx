@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { LockOpenIcon as LockOpenIconRegular } from './lock-open';
 import { LockOpenIconBold } from './lock-open-bold';
 import { LockOpenIconFilled } from './lock-open-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { LockOpenIconFilltone } from './lock-open-filltone';
+import { LockOpenIconLinetone } from './lock-open-linetone';
 
 export interface LockOpenIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const LockOpenIcon = memo(forwardRef<SVGSVGElement, LockOpenIconProps>(({
       return <LockOpenIconFilled ref={ref} {...props} />;
     case 'bold':
       return <LockOpenIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <LockOpenIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <LockOpenIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <LockOpenIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { TextAlignRightIcon as TextAlignRightIconRegular } from './text-align-right';
 import { TextAlignRightIconBold } from './text-align-right-bold';
 import { TextAlignRightIconFilled } from './text-align-right-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { TextAlignRightIconFilltone } from './text-align-right-filltone';
+import { TextAlignRightIconLinetone } from './text-align-right-linetone';
 
 export interface TextAlignRightIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const TextAlignRightIcon = memo(forwardRef<SVGSVGElement, TextAlignRightIconProp
       return <TextAlignRightIconFilled ref={ref} {...props} />;
     case 'bold':
       return <TextAlignRightIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <TextAlignRightIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <TextAlignRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <TextAlignRightIconRegular ref={ref} {...props} />;

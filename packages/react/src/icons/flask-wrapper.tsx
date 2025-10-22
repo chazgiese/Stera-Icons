@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FlaskIcon as FlaskIconRegular } from './flask';
 import { FlaskIconBold } from './flask-bold';
 import { FlaskIconFilled } from './flask-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FlaskIconFilltone } from './flask-filltone';
+import { FlaskIconLinetone } from './flask-linetone';
 
 export interface FlaskIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FlaskIcon = memo(forwardRef<SVGSVGElement, FlaskIconProps>(({
       return <FlaskIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FlaskIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FlaskIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FlaskIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FlaskIconRegular ref={ref} {...props} />;

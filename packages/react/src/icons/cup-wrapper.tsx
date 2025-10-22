@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CupIcon as CupIconRegular } from './cup';
 import { CupIconBold } from './cup-bold';
 import { CupIconFilled } from './cup-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CupIconFilltone } from './cup-filltone';
+import { CupIconLinetone } from './cup-linetone';
 
 export interface CupIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CupIcon = memo(forwardRef<SVGSVGElement, CupIconProps>(({
       return <CupIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CupIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CupIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CupIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CupIconRegular ref={ref} {...props} />;

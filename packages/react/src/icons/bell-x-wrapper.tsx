@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { BellXIcon as BellXIconRegular } from './bell-x';
 import { BellXIconBold } from './bell-x-bold';
 import { BellXIconFilled } from './bell-x-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { BellXIconFilltone } from './bell-x-filltone';
+import { BellXIconLinetone } from './bell-x-linetone';
 
 export interface BellXIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const BellXIcon = memo(forwardRef<SVGSVGElement, BellXIconProps>(({
       return <BellXIconFilled ref={ref} {...props} />;
     case 'bold':
       return <BellXIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <BellXIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <BellXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <BellXIconRegular ref={ref} {...props} />;

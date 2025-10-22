@@ -13,7 +13,7 @@ import {
   getFileName, 
   parseTags 
 } from './helpers.js';
-import { VersionUtils } from './version-utils.js';
+import { HashVersioning } from './hash-versioning.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -31,9 +31,9 @@ async function buildIcons(iconsExportPath) {
   const iconsExport = JSON.parse(readFileSync(iconsExportPath, 'utf8'));
   console.log(`📦 Processing ${iconsExport.totalIcons} icons from ${iconsExport.exportedAt}`);
   
-  // Get version information using the version utils
-  const versionUtils = new VersionUtils(join(__dirname, '..'));
-  const versionInfo = versionUtils.getVersionForNewIcons();
+  // Get version information using the hash-based versioning
+  const hashVersioning = new HashVersioning(join(__dirname, '..'));
+  const versionInfo = hashVersioning.getVersionForIcons();
   const currentVersion = versionInfo.version;
   const currentDate = new Date().toISOString();
   
@@ -111,18 +111,27 @@ async function buildIcons(iconsExportPath) {
     // Generate the wrapper component name (user-facing API)
     const baseComponentName = uniqueSlug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
     
-    // Process each variant (Bold, Fill, Regular)
+    // Process each variant (Bold, Fill, Filltone, Linetone, Regular)
     for (const variantData of icon.variants) {
       
       const variant = variantData.variant === 'Fill' ? 'filled' : 
-                     variantData.variant === 'Bold' ? 'bold' : 'regular';
+                     variantData.variant === 'Bold' ? 'bold' : 
+                     variantData.variant === 'Filltone' ? 'filltone' :
+                     variantData.variant === 'Linetone' ? 'linetone' : 'regular';
       const componentName = getComponentName(uniqueSlug, variant);
       const fileName = getFileName(uniqueSlug, variant);
       
       console.log(`  📝 Processing ${componentName} (${variant})`);
       
       // Optimize SVG with SVGO
-      const optimizedSvg = optimize(variantData.svg, svgoConfig).data;
+      let optimizedSvg;
+      try {
+        optimizedSvg = optimize(variantData.svg, svgoConfig).data;
+      } catch (error) {
+        console.error(`  ❌ Failed to optimize SVG for ${componentName} (${variant}): ${error.message}`);
+        console.error(`  ⚠️  Skipping this variant due to malformed SVG`);
+        continue; // Skip this variant and continue with the next one
+      }
       
       // Generate React component with SVGR
       const componentCode = await transform(
@@ -156,34 +165,23 @@ async function buildIcons(iconsExportPath) {
       iconVariants.push({ variant, componentName, fileName });
       
       
-      // Check if this is a new icon or an existing one
-      const existingItem = existingMetadata.find(item => item.name === uniqueSlug && item.variant === variant);
-      const isNewIcon = !existingItem;
+      // Use hash-based versioning to determine icon status
+      const currentSvgHash = variantData.hash; // Use SHA-256 hash from export
+      const changeAnalysis = hashVersioning.analyzeIconChange(uniqueSlug, variant, currentSvgHash, existingMetadata);
       
-      // Determine version and date information
-      let versionAdded, dateAdded, lastModified;
+      const { versionAdded, dateAdded, lastModified } = changeAnalysis;
       
-      if (isNewIcon) {
-        // New icon - use current version and date
-        versionAdded = currentVersion;
-        dateAdded = currentDate;
-        lastModified = currentDate;
-        console.log(`  🆕 New icon: ${baseComponentName} ${variant} (v${currentVersion})`);
-      } else {
-        // Existing icon - preserve original version/date, update last modified
-        versionAdded = existingItem.versionAdded || currentVersion;
-        dateAdded = existingItem.dateAdded || currentDate;
-        lastModified = currentDate;
-        
-        // Check if the icon was actually modified (compare SVG content)
-        const currentSvgHash = createHash('md5').update(optimizedSvg).digest('hex');
-        const existingSvgHash = existingItem.svgHash;
-        
-        if (existingSvgHash && currentSvgHash !== existingSvgHash) {
+      // Log the status
+      switch (changeAnalysis.status) {
+        case 'new':
+          console.log(`  🆕 New icon: ${baseComponentName} ${variant} (v${versionAdded})`);
+          break;
+        case 'modified':
           console.log(`  🔄 Modified icon: ${baseComponentName} ${variant} (last modified: v${currentVersion})`);
-        } else {
+          break;
+        case 'unchanged':
           console.log(`  ✅ Unchanged icon: ${baseComponentName} ${variant}`);
-        }
+          break;
       }
       
       // Add to metadata with the wrapper component name (user-facing API)
@@ -196,7 +194,7 @@ async function buildIcons(iconsExportPath) {
         versionAdded,
         dateAdded,
         lastModified,
-        svgHash: createHash('md5').update(optimizedSvg).digest('hex')
+        svgHash: variantData.hash // Use SHA-256 hash from export
       });
     }
     
@@ -217,12 +215,12 @@ async function buildIcons(iconsExportPath) {
     
     // Generate wrapper component code
     const wrapperCode = `import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ${baseComponentName} as ${baseComponentName}Regular } from './${baseName}';
 import { ${baseComponentName}Bold } from './${baseName}-bold';
 import { ${baseComponentName}Filled } from './${baseName}-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ${baseComponentName}Filltone } from './${baseName}-filltone';
+import { ${baseComponentName}Linetone } from './${baseName}-linetone';
 
 export interface ${baseComponentName}Props extends IconProps {
   variant?: IconVariant;
@@ -237,6 +235,10 @@ const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}
       return <${baseComponentName}Filled ref={ref} {...props} />;
     case 'bold':
       return <${baseComponentName}Bold ref={ref} {...props} />;
+    case 'filltone':
+      return <${baseComponentName}Filltone ref={ref} {...props} />;
+    case 'linetone':
+      return <${baseComponentName}Linetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <${baseComponentName}Regular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { HourglassEmptyIcon as HourglassEmptyIconRegular } from './hourglass-empty';
 import { HourglassEmptyIconBold } from './hourglass-empty-bold';
 import { HourglassEmptyIconFilled } from './hourglass-empty-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { HourglassEmptyIconFilltone } from './hourglass-empty-filltone';
+import { HourglassEmptyIconLinetone } from './hourglass-empty-linetone';
 
 export interface HourglassEmptyIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const HourglassEmptyIcon = memo(forwardRef<SVGSVGElement, HourglassEmptyIconProp
       return <HourglassEmptyIconFilled ref={ref} {...props} />;
     case 'bold':
       return <HourglassEmptyIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <HourglassEmptyIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <HourglassEmptyIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <HourglassEmptyIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { AstriskAltIcon as AstriskAltIconRegular } from './astrisk-alt';
 import { AstriskAltIconBold } from './astrisk-alt-bold';
 import { AstriskAltIconFilled } from './astrisk-alt-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { AstriskAltIconFilltone } from './astrisk-alt-filltone';
+import { AstriskAltIconLinetone } from './astrisk-alt-linetone';
 
 export interface AstriskAltIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const AstriskAltIcon = memo(forwardRef<SVGSVGElement, AstriskAltIconProps>(({
       return <AstriskAltIconFilled ref={ref} {...props} />;
     case 'bold':
       return <AstriskAltIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <AstriskAltIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <AstriskAltIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <AstriskAltIconRegular ref={ref} {...props} />;

@@ -1,0 +1,44 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const PaintPaletteIconLinetone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M11.467 3.138c3.399-.335 6.212.336 8.208 1.427.995.544 1.806 1.203 2.378 1.912.563.698.947 1.514.947 2.35 0 2.276-1.556 3.453-2.816 4.173-.32.182-.64.346-.924.493-.294.15-.544.28-.762.408-.491.288-.553.424-.55.414-.069.207-.052.308-.036.367.025.094.082.206.236.439.291.442.852 1.182.852 2.378 0 1.517-1.277 2.45-2.605 2.927-1.397.5-3.27.68-5.353.496-2.18-.193-4.639-1.118-6.57-2.57C2.546 16.901 1 14.806 1 12.241c0-2.399.89-4.546 2.704-6.163 1.793-1.598 4.409-2.61 7.763-2.94m7.249 3.182c-1.613-.881-4.018-1.49-7.053-1.191-3.08.303-5.246 1.212-6.628 2.443C3.675 8.784 3 10.375 3 12.242c0 1.705 1.03 3.275 2.674 4.512 1.638 1.232 3.744 2.016 5.545 2.175 1.897.168 3.46-.013 4.502-.386 1.11-.399 1.279-.854 1.279-1.044 0-.511-.19-.772-.523-1.278-.158-.24-.383-.59-.498-1.026-.125-.47-.108-.97.073-1.513.254-.762.946-1.22 1.434-1.507.274-.16.575-.315.858-.46.291-.15.573-.295.847-.452C20.306 10.627 21 9.967 21 8.828c0-.23-.116-.614-.504-1.095-.379-.47-.971-.97-1.78-1.413"
+          clipRule="evenodd"
+          opacity={0.32}
+        />
+        <path
+          fill="currentColor"
+          d="M12 13.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4M7.5 9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16 8a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M11.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3"
+        />
+      </svg>
+    ))
+);
+PaintPaletteIconLinetone.displayName = "PaintPaletteIconLinetone";
+export { PaintPaletteIconLinetone };

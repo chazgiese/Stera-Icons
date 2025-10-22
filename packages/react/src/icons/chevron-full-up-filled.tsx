@@ -28,7 +28,7 @@ const ChevronFullUpIconFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M11.293 7.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 19 16H5a1 1 0 0 1-.707-1.707z"
+          d="M12 7a1 1 0 0 1 .707.293l7 7A1 1 0 0 1 19 16H5l-.15-.01a1 1 0 0 1-.557-1.697l7-7A1 1 0 0 1 12 7"
         />
       </svg>
     ))

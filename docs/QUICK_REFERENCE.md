@@ -8,7 +8,7 @@ pnpm changeset
 # Select: stera-icons → minor → "Add new icons"
 
 # 2. Verify version detection
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 
 # 3. Add icons to icons-export.json (external)
 
@@ -31,13 +31,13 @@ git push
 ### Version Management
 ```bash
 # Check version info
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 
 # Check next version
-node scripts/version-utils.js next
+node scripts/hash-versioning.js next
 
 # Current version
-node scripts/version-utils.js current
+node scripts/hash-versioning.js current
 ```
 
 ### Icon Metadata

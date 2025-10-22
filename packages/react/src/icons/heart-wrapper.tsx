@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { HeartIcon as HeartIconRegular } from './heart';
 import { HeartIconBold } from './heart-bold';
 import { HeartIconFilled } from './heart-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { HeartIconFilltone } from './heart-filltone';
+import { HeartIconLinetone } from './heart-linetone';
 
 export interface HeartIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const HeartIcon = memo(forwardRef<SVGSVGElement, HeartIconProps>(({
       return <HeartIconFilled ref={ref} {...props} />;
     case 'bold':
       return <HeartIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <HeartIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <HeartIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <HeartIconRegular ref={ref} {...props} />;

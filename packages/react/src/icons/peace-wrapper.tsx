@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { PeaceIcon as PeaceIconRegular } from './peace';
 import { PeaceIconBold } from './peace-bold';
 import { PeaceIconFilled } from './peace-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { PeaceIconFilltone } from './peace-filltone';
+import { PeaceIconLinetone } from './peace-linetone';
 
 export interface PeaceIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const PeaceIcon = memo(forwardRef<SVGSVGElement, PeaceIconProps>(({
       return <PeaceIconFilled ref={ref} {...props} />;
     case 'bold':
       return <PeaceIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <PeaceIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <PeaceIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <PeaceIconRegular ref={ref} {...props} />;

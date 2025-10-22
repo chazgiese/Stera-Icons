@@ -28,7 +28,7 @@ const MinusCircleIcon = memo(
       >
         <path
           fill="currentColor"
-          d="M16 11.244a.75.75 0 0 1 0 1.5H8a.75.75 0 1 1 0-1.5z"
+          d="M16 11.246a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5z"
         />
         <path
           fill="currentColor"

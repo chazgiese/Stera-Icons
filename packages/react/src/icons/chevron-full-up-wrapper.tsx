@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ChevronFullUpIcon as ChevronFullUpIconRegular } from './chevron-full-up';
 import { ChevronFullUpIconBold } from './chevron-full-up-bold';
 import { ChevronFullUpIconFilled } from './chevron-full-up-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ChevronFullUpIconFilltone } from './chevron-full-up-filltone';
+import { ChevronFullUpIconLinetone } from './chevron-full-up-linetone';
 
 export interface ChevronFullUpIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ChevronFullUpIcon = memo(forwardRef<SVGSVGElement, ChevronFullUpIconProps>
       return <ChevronFullUpIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ChevronFullUpIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ChevronFullUpIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ChevronFullUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ChevronFullUpIconRegular ref={ref} {...props} />;

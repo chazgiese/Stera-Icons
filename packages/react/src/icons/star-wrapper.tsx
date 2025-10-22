@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { StarIcon as StarIconRegular } from './star';
 import { StarIconBold } from './star-bold';
 import { StarIconFilled } from './star-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { StarIconFilltone } from './star-filltone';
+import { StarIconLinetone } from './star-linetone';
 
 export interface StarIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const StarIcon = memo(forwardRef<SVGSVGElement, StarIconProps>(({
       return <StarIconFilled ref={ref} {...props} />;
     case 'bold':
       return <StarIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <StarIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <StarIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <StarIconRegular ref={ref} {...props} />;

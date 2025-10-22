@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CylinderStackIcon as CylinderStackIconRegular } from './cylinder-stack';
 import { CylinderStackIconBold } from './cylinder-stack-bold';
 import { CylinderStackIconFilled } from './cylinder-stack-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CylinderStackIconFilltone } from './cylinder-stack-filltone';
+import { CylinderStackIconLinetone } from './cylinder-stack-linetone';
 
 export interface CylinderStackIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CylinderStackIcon = memo(forwardRef<SVGSVGElement, CylinderStackIconProps>
       return <CylinderStackIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CylinderStackIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CylinderStackIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CylinderStackIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CylinderStackIconRegular ref={ref} {...props} />;

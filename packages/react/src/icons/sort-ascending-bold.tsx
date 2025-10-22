@@ -27,10 +27,12 @@ const SortAscendingIconBold = memo(
         {...props}
       >
         <path
-          fill="currentColor"
-          d="m6.102 3.005.052.008a1 1 0 0 1 .333.114l.014.009a1 1 0 0 1 .125.085l.008.006.073.066 4 4a1 1 0 0 1-1.414 1.414L7 6.414V20a1 1 0 0 1-2 0V6.414L2.707 8.707a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 .413-.25q.023-.007.047-.012L5.8 3.02q.017-.003.035-.005Q5.916 3 6 3zM16 19a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2zM19 15a1 1 0 1 1 0 2h-9a1 1 0 1 1 0-2z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="m2 8 4-4 4 4M6 4v16M22 12H10M19 16h-9M16 20h-6"
         />
-        <path fill="currentColor" d="M22 11a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2z" />
       </svg>
     ))
 );

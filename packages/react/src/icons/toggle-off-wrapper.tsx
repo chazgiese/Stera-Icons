@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ToggleOffIcon as ToggleOffIconRegular } from './toggle-off';
 import { ToggleOffIconBold } from './toggle-off-bold';
 import { ToggleOffIconFilled } from './toggle-off-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ToggleOffIconFilltone } from './toggle-off-filltone';
+import { ToggleOffIconLinetone } from './toggle-off-linetone';
 
 export interface ToggleOffIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ToggleOffIcon = memo(forwardRef<SVGSVGElement, ToggleOffIconProps>(({
       return <ToggleOffIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ToggleOffIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ToggleOffIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ToggleOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ToggleOffIconRegular ref={ref} {...props} />;

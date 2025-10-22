@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { MapPinIcon as MapPinIconRegular } from './map-pin';
 import { MapPinIconBold } from './map-pin-bold';
 import { MapPinIconFilled } from './map-pin-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { MapPinIconFilltone } from './map-pin-filltone';
+import { MapPinIconLinetone } from './map-pin-linetone';
 
 export interface MapPinIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const MapPinIcon = memo(forwardRef<SVGSVGElement, MapPinIconProps>(({
       return <MapPinIconFilled ref={ref} {...props} />;
     case 'bold':
       return <MapPinIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <MapPinIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <MapPinIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <MapPinIconRegular ref={ref} {...props} />;

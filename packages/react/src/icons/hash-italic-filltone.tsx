@@ -1,0 +1,40 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const HashItalicIconFilltone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <g fill="currentColor" opacity={0.32}>
+          <path d="M9.536 2.675a1.5 1.5 0 1 1 2.928.65l-4 18a1.5 1.5 0 1 1-2.928-.65zM15.536 2.675a1.5 1.5 0 1 1 2.928.65l-4 18a1.5 1.5 0 1 1-2.928-.65z" />
+        </g>
+        <path
+          fill="currentColor"
+          d="M19 13.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3zM21 7.5a1.5 1.5 0 0 1 0 3H5a1.5 1.5 0 1 1 0-3z"
+        />
+      </svg>
+    ))
+);
+HashItalicIconFilltone.displayName = "HashItalicIconFilltone";
+export { HashItalicIconFilltone };

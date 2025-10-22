@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { LockPasswordIcon as LockPasswordIconRegular } from './lock-password';
 import { LockPasswordIconBold } from './lock-password-bold';
 import { LockPasswordIconFilled } from './lock-password-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { LockPasswordIconFilltone } from './lock-password-filltone';
+import { LockPasswordIconLinetone } from './lock-password-linetone';
 
 export interface LockPasswordIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const LockPasswordIcon = memo(forwardRef<SVGSVGElement, LockPasswordIconProps>((
       return <LockPasswordIconFilled ref={ref} {...props} />;
     case 'bold':
       return <LockPasswordIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <LockPasswordIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <LockPasswordIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <LockPasswordIconRegular ref={ref} {...props} />;

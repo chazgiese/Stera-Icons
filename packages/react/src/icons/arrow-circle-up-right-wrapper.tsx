@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ArrowCircleUpRightIcon as ArrowCircleUpRightIconRegular } from './arrow-circle-up-right';
 import { ArrowCircleUpRightIconBold } from './arrow-circle-up-right-bold';
 import { ArrowCircleUpRightIconFilled } from './arrow-circle-up-right-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ArrowCircleUpRightIconFilltone } from './arrow-circle-up-right-filltone';
+import { ArrowCircleUpRightIconLinetone } from './arrow-circle-up-right-linetone';
 
 export interface ArrowCircleUpRightIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ArrowCircleUpRightIcon = memo(forwardRef<SVGSVGElement, ArrowCircleUpRight
       return <ArrowCircleUpRightIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ArrowCircleUpRightIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ArrowCircleUpRightIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ArrowCircleUpRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ArrowCircleUpRightIconRegular ref={ref} {...props} />;

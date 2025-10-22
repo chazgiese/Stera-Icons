@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { XIcon as XIconRegular } from './x';
 import { XIconBold } from './x-bold';
 import { XIconFilled } from './x-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { XIconFilltone } from './x-filltone';
+import { XIconLinetone } from './x-linetone';
 
 export interface XIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const XIcon = memo(forwardRef<SVGSVGElement, XIconProps>(({
       return <XIconFilled ref={ref} {...props} />;
     case 'bold':
       return <XIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <XIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <XIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <XIconRegular ref={ref} {...props} />;

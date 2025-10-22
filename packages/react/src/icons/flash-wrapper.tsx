@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FlashIcon as FlashIconRegular } from './flash';
 import { FlashIconBold } from './flash-bold';
 import { FlashIconFilled } from './flash-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FlashIconFilltone } from './flash-filltone';
+import { FlashIconLinetone } from './flash-linetone';
 
 export interface FlashIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FlashIcon = memo(forwardRef<SVGSVGElement, FlashIconProps>(({
       return <FlashIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FlashIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FlashIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FlashIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FlashIconRegular ref={ref} {...props} />;

@@ -28,7 +28,7 @@ const CompassIconFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M12.001 10.5a1.501 1.501 0 0 1 0 3 1.5 1.5 0 0 1 0-3"
+          d="M12.001 11a1.001 1.001 0 0 1 0 2 1 1 0 1 1 0-2"
         />
         <path
           fill="currentColor"

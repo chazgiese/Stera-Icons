@@ -29,7 +29,7 @@ const ToggleOnIconFilled = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M9 4a8 8 0 1 0 0 16h6a8 8 0 1 0 0-16zm6 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8"
+          d="M15 4a8 8 0 1 1 0 16H9A8 8 0 1 1 9 4zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
           clipRule="evenodd"
         />
       </svg>

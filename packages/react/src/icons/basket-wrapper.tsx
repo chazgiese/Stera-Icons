@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { BasketIcon as BasketIconRegular } from './basket';
 import { BasketIconBold } from './basket-bold';
 import { BasketIconFilled } from './basket-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { BasketIconFilltone } from './basket-filltone';
+import { BasketIconLinetone } from './basket-linetone';
 
 export interface BasketIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const BasketIcon = memo(forwardRef<SVGSVGElement, BasketIconProps>(({
       return <BasketIconFilled ref={ref} {...props} />;
     case 'bold':
       return <BasketIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <BasketIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <BasketIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <BasketIconRegular ref={ref} {...props} />;

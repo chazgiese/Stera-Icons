@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { MatchaIcon as MatchaIconRegular } from './matcha';
 import { MatchaIconBold } from './matcha-bold';
 import { MatchaIconFilled } from './matcha-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { MatchaIconFilltone } from './matcha-filltone';
+import { MatchaIconLinetone } from './matcha-linetone';
 
 export interface MatchaIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const MatchaIcon = memo(forwardRef<SVGSVGElement, MatchaIconProps>(({
       return <MatchaIconFilled ref={ref} {...props} />;
     case 'bold':
       return <MatchaIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <MatchaIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <MatchaIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <MatchaIconRegular ref={ref} {...props} />;

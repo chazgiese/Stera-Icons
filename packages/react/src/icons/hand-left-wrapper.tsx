@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { HandLeftIcon as HandLeftIconRegular } from './hand-left';
 import { HandLeftIconBold } from './hand-left-bold';
 import { HandLeftIconFilled } from './hand-left-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { HandLeftIconFilltone } from './hand-left-filltone';
+import { HandLeftIconLinetone } from './hand-left-linetone';
 
 export interface HandLeftIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const HandLeftIcon = memo(forwardRef<SVGSVGElement, HandLeftIconProps>(({
       return <HandLeftIconFilled ref={ref} {...props} />;
     case 'bold':
       return <HandLeftIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <HandLeftIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <HandLeftIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <HandLeftIconRegular ref={ref} {...props} />;

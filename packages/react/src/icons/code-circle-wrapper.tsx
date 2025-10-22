@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CodeCircleIcon as CodeCircleIconRegular } from './code-circle';
 import { CodeCircleIconBold } from './code-circle-bold';
 import { CodeCircleIconFilled } from './code-circle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CodeCircleIconFilltone } from './code-circle-filltone';
+import { CodeCircleIconLinetone } from './code-circle-linetone';
 
 export interface CodeCircleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CodeCircleIcon = memo(forwardRef<SVGSVGElement, CodeCircleIconProps>(({
       return <CodeCircleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CodeCircleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CodeCircleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CodeCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CodeCircleIconRegular ref={ref} {...props} />;

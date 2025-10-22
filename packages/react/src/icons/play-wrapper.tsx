@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { PlayIcon as PlayIconRegular } from './play';
 import { PlayIconBold } from './play-bold';
 import { PlayIconFilled } from './play-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { PlayIconFilltone } from './play-filltone';
+import { PlayIconLinetone } from './play-linetone';
 
 export interface PlayIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const PlayIcon = memo(forwardRef<SVGSVGElement, PlayIconProps>(({
       return <PlayIconFilled ref={ref} {...props} />;
     case 'bold':
       return <PlayIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <PlayIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <PlayIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <PlayIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ContactBookIcon as ContactBookIconRegular } from './contact-book';
 import { ContactBookIconBold } from './contact-book-bold';
 import { ContactBookIconFilled } from './contact-book-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ContactBookIconFilltone } from './contact-book-filltone';
+import { ContactBookIconLinetone } from './contact-book-linetone';
 
 export interface ContactBookIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ContactBookIcon = memo(forwardRef<SVGSVGElement, ContactBookIconProps>(({
       return <ContactBookIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ContactBookIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ContactBookIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ContactBookIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ContactBookIconRegular ref={ref} {...props} />;

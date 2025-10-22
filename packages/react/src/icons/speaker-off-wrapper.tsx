@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { SpeakerOffIcon as SpeakerOffIconRegular } from './speaker-off';
 import { SpeakerOffIconBold } from './speaker-off-bold';
 import { SpeakerOffIconFilled } from './speaker-off-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { SpeakerOffIconFilltone } from './speaker-off-filltone';
+import { SpeakerOffIconLinetone } from './speaker-off-linetone';
 
 export interface SpeakerOffIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const SpeakerOffIcon = memo(forwardRef<SVGSVGElement, SpeakerOffIconProps>(({
       return <SpeakerOffIconFilled ref={ref} {...props} />;
     case 'bold':
       return <SpeakerOffIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <SpeakerOffIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <SpeakerOffIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <SpeakerOffIconRegular ref={ref} {...props} />;

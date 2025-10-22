@@ -4,11 +4,11 @@ This document explains the technical implementation of per-icon versioning in St
 
 ## Overview
 
-Each icon variant (regular, bold, filled) has metadata tracking:
+Each icon variant (regular, bold, filled, filltone, linetone) has metadata tracking:
 - `versionAdded`: The package version when the icon was first added
 - `dateAdded`: ISO timestamp when the icon was first added
 - `lastModified`: ISO timestamp of last modification
-- `svgHash`: MD5 hash of the optimized SVG for change detection
+- `svgHash`: SHA-256 hash from Figma export for change detection
 
 ## Metadata Storage Location
 
@@ -59,9 +59,9 @@ packages/react/dist/*                    # Re-ignore other files
 ### How the Build Script Determines Versions
 
 ```javascript
-// 1. Load version utilities
-const versionUtils = new VersionUtils(projectRoot);
-const versionInfo = versionUtils.getVersionForNewIcons();
+// 1. Load hash-based versioning utilities
+const hashVersioning = new HashVersioning(projectRoot);
+const versionInfo = hashVersioning.getVersionForIcons();
 const currentVersion = versionInfo.version;
 
 // 2. Version source priority:
@@ -98,7 +98,7 @@ for (const icon of icons) {
 
 ### Version Bump Calculation
 
-The `VersionUtils` class parses changeset files to determine bump type:
+The `HashVersioning` class parses changeset files to determine bump type:
 
 ```javascript
 parseChangesetBump(content) {
@@ -123,13 +123,42 @@ bumpVersion(version, bumpType) {
 }
 ```
 
+## Error Handling and SVG Validation
+
+The build system now includes robust error handling for malformed SVG content:
+
+```javascript
+// Optimize SVG with error handling
+let optimizedSvg;
+try {
+  optimizedSvg = optimize(variantData.svg, svgoConfig).data;
+} catch (error) {
+  console.error(`❌ Failed to optimize SVG for ${componentName} (${variant}): ${error.message}`);
+  console.error(`⚠️  Skipping this variant due to malformed SVG`);
+  continue; // Skip this variant and continue with the next one
+}
+```
+
+This prevents the entire build from failing when individual icons have issues (like truncated SVG content from export problems).
+
+## New Icon Variants
+
+The system now supports 5 icon variants:
+- **Regular**: Standard outline style
+- **Bold**: Thicker stroke weight
+- **Filled**: Solid fill style
+- **Filltone**: Filled style with opacity overlay
+- **Linetone**: Outline style with opacity overlay
+
+All variants are processed and tracked independently in the metadata, allowing for granular version control per variant.
+
 ## Change Detection
 
 Icons are marked as "modified" when their SVG hash changes:
 
 ```javascript
-// Calculate SVG hash
-const currentSvgHash = createHash('md5').update(optimizedSvg).digest('hex');
+// Use SHA-256 hash from Figma export
+const currentSvgHash = variantData.hash; // SHA-256 from export
 const existingSvgHash = existingItem.svgHash;
 
 if (currentSvgHash !== existingSvgHash) {
@@ -211,7 +240,7 @@ git ls-files packages/react/dist/icons.meta.json
 
 **Diagnosis:**
 ```bash
-node scripts/version-utils.js info
+node scripts/hash-versioning.js info
 # Check: Has pending changesets: false
 ```
 
@@ -258,13 +287,12 @@ node scripts/version-utils.js info
 
 1. **Verify actual changes**: Compare SVG content
    ```bash
-   # Check specific icon
+   # Check specific icon hash from metadata
    node -e "
    const {readFileSync} = require('fs');
-   const {createHash} = require('crypto');
-   const svg = readFileSync('packages/react/src/icons/heart.tsx', 'utf8');
-   const hash = createHash('md5').update(svg).digest('hex');
-   console.log(hash);
+   const metadata = JSON.parse(readFileSync('packages/react/dist/icons.meta.json', 'utf8'));
+   const icon = metadata.find(item => item.name === 'heart' && item.variant === 'regular');
+   console.log('Current hash:', icon?.svgHash);
    "
    ```
 
@@ -358,5 +386,5 @@ diff <(jq -S . meta-before.json) <(jq -S . meta-after.json)
 
 - **[CHANGESET_WORKFLOW.md](CHANGESET_WORKFLOW.md)** - Contributor workflow
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Command reference
-- **`scripts/version-utils.js`** - Version detection implementation
+- **`scripts/hash-versioning.js`** - Hash-based version detection implementation
 - **`scripts/metadata-utils.js`** - Metadata utilities implementation

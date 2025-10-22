@@ -28,7 +28,7 @@ const CreditCardIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M9.5 12.5A1.5 1.5 0 0 1 11 14v1.5A1.5 1.5 0 0 1 9.5 17h-3A1.5 1.5 0 0 1 5 15.5V14a1.5 1.5 0 0 1 1.5-1.5z"
+          d="M12 15a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zM18 15a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2z"
         />
         <path
           fill="currentColor"

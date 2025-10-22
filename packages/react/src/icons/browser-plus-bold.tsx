@@ -28,7 +28,7 @@ const BrowserPlusIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12 12a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1M16 6a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z"
+          d="M12 12a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1M16 6a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z"
         />
         <path
           fill="currentColor"

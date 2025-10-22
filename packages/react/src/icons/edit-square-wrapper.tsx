@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { EditSquareIcon as EditSquareIconRegular } from './edit-square';
 import { EditSquareIconBold } from './edit-square-bold';
 import { EditSquareIconFilled } from './edit-square-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { EditSquareIconFilltone } from './edit-square-filltone';
+import { EditSquareIconLinetone } from './edit-square-linetone';
 
 export interface EditSquareIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const EditSquareIcon = memo(forwardRef<SVGSVGElement, EditSquareIconProps>(({
       return <EditSquareIconFilled ref={ref} {...props} />;
     case 'bold':
       return <EditSquareIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <EditSquareIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <EditSquareIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <EditSquareIconRegular ref={ref} {...props} />;

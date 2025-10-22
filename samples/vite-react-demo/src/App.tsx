@@ -6,7 +6,7 @@ const mockIcons = [
   { name: 'search', variant: 'outline', component: SearchIcon, tags: ['search', 'find', 'magnify'] },
   { name: 'heart', variant: 'outline', component: HeartIcon, tags: ['heart', 'love', 'favorite'] },
   { name: 'star', variant: 'outline', component: StarIcon, tags: ['star', 'rating', 'favorite'] },
-  { name: 'cog', variant: 'outline', component: CogIcon, tags: ['settings', 'gear', 'preferences'] },
+  { name: 'settings', variant: 'linetone', component: CogIcon, tags: ['settings', 'gear', 'preferences'] },
   { name: 'user', variant: 'outline', component: UserIcon, tags: ['user', 'person', 'profile'] },
   { name: 'home', variant: 'outline', component: HomeIcon, tags: ['home', 'house', 'main'] },
   { name: 'mail', variant: 'outline', component: MailIcon, tags: ['mail', 'email', 'message'] },

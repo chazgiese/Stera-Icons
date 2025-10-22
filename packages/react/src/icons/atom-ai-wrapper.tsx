@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { AtomAiIcon as AtomAiIconRegular } from './atom-ai';
 import { AtomAiIconBold } from './atom-ai-bold';
 import { AtomAiIconFilled } from './atom-ai-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { AtomAiIconFilltone } from './atom-ai-filltone';
+import { AtomAiIconLinetone } from './atom-ai-linetone';
 
 export interface AtomAiIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const AtomAiIcon = memo(forwardRef<SVGSVGElement, AtomAiIconProps>(({
       return <AtomAiIconFilled ref={ref} {...props} />;
     case 'bold':
       return <AtomAiIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <AtomAiIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <AtomAiIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <AtomAiIconRegular ref={ref} {...props} />;

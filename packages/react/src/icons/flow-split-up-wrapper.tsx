@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FlowSplitUpIcon as FlowSplitUpIconRegular } from './flow-split-up';
 import { FlowSplitUpIconBold } from './flow-split-up-bold';
 import { FlowSplitUpIconFilled } from './flow-split-up-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FlowSplitUpIconFilltone } from './flow-split-up-filltone';
+import { FlowSplitUpIconLinetone } from './flow-split-up-linetone';
 
 export interface FlowSplitUpIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FlowSplitUpIcon = memo(forwardRef<SVGSVGElement, FlowSplitUpIconProps>(({
       return <FlowSplitUpIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FlowSplitUpIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FlowSplitUpIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FlowSplitUpIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FlowSplitUpIconRegular ref={ref} {...props} />;

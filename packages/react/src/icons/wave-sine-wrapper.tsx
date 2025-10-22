@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { WaveSineIcon as WaveSineIconRegular } from './wave-sine';
 import { WaveSineIconBold } from './wave-sine-bold';
 import { WaveSineIconFilled } from './wave-sine-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { WaveSineIconFilltone } from './wave-sine-filltone';
+import { WaveSineIconLinetone } from './wave-sine-linetone';
 
 export interface WaveSineIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const WaveSineIcon = memo(forwardRef<SVGSVGElement, WaveSineIconProps>(({
       return <WaveSineIconFilled ref={ref} {...props} />;
     case 'bold':
       return <WaveSineIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <WaveSineIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <WaveSineIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <WaveSineIconRegular ref={ref} {...props} />;

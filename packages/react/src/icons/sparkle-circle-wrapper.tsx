@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { SparkleCircleIcon as SparkleCircleIconRegular } from './sparkle-circle';
 import { SparkleCircleIconBold } from './sparkle-circle-bold';
 import { SparkleCircleIconFilled } from './sparkle-circle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { SparkleCircleIconFilltone } from './sparkle-circle-filltone';
+import { SparkleCircleIconLinetone } from './sparkle-circle-linetone';
 
 export interface SparkleCircleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const SparkleCircleIcon = memo(forwardRef<SVGSVGElement, SparkleCircleIconProps>
       return <SparkleCircleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <SparkleCircleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <SparkleCircleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <SparkleCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <SparkleCircleIconRegular ref={ref} {...props} />;

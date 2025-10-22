@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ArrowLineRightIcon as ArrowLineRightIconRegular } from './arrow-line-right';
 import { ArrowLineRightIconBold } from './arrow-line-right-bold';
 import { ArrowLineRightIconFilled } from './arrow-line-right-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ArrowLineRightIconFilltone } from './arrow-line-right-filltone';
+import { ArrowLineRightIconLinetone } from './arrow-line-right-linetone';
 
 export interface ArrowLineRightIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ArrowLineRightIcon = memo(forwardRef<SVGSVGElement, ArrowLineRightIconProp
       return <ArrowLineRightIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ArrowLineRightIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ArrowLineRightIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ArrowLineRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ArrowLineRightIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { FolderIcon as FolderIconRegular } from './folder';
 import { FolderIconBold } from './folder-bold';
 import { FolderIconFilled } from './folder-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { FolderIconFilltone } from './folder-filltone';
+import { FolderIconLinetone } from './folder-linetone';
 
 export interface FolderIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const FolderIcon = memo(forwardRef<SVGSVGElement, FolderIconProps>(({
       return <FolderIconFilled ref={ref} {...props} />;
     case 'bold':
       return <FolderIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <FolderIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <FolderIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <FolderIconRegular ref={ref} {...props} />;

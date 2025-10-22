@@ -36,7 +36,7 @@ The workflow is simple:
 
 ### Version Information
 ```bash
-node scripts/version-utils.js info    # Check version status
+node scripts/hash-versioning.js info    # Check version status
 node scripts/metadata-utils.js summary # Icon statistics
 ```
 

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ChevronSquareRightIcon as ChevronSquareRightIconRegular } from './chevron-square-right';
 import { ChevronSquareRightIconBold } from './chevron-square-right-bold';
 import { ChevronSquareRightIconFilled } from './chevron-square-right-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ChevronSquareRightIconFilltone } from './chevron-square-right-filltone';
+import { ChevronSquareRightIconLinetone } from './chevron-square-right-linetone';
 
 export interface ChevronSquareRightIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ChevronSquareRightIcon = memo(forwardRef<SVGSVGElement, ChevronSquareRight
       return <ChevronSquareRightIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ChevronSquareRightIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ChevronSquareRightIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ChevronSquareRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ChevronSquareRightIconRegular ref={ref} {...props} />;

@@ -26,10 +26,7 @@ const LockOpenIconBold = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M12 14.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3"
-        />
+        <path fill="currentColor" d="M12 14a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
         <path
           fill="currentColor"
           fillRule="evenodd"

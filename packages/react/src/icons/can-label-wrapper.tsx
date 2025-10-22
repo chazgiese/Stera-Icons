@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CanLabelIcon as CanLabelIconRegular } from './can-label';
 import { CanLabelIconBold } from './can-label-bold';
 import { CanLabelIconFilled } from './can-label-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CanLabelIconFilltone } from './can-label-filltone';
+import { CanLabelIconLinetone } from './can-label-linetone';
 
 export interface CanLabelIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CanLabelIcon = memo(forwardRef<SVGSVGElement, CanLabelIconProps>(({
       return <CanLabelIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CanLabelIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CanLabelIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CanLabelIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CanLabelIconRegular ref={ref} {...props} />;

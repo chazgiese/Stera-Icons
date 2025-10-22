@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { PercentCircleIcon as PercentCircleIconRegular } from './percent-circle';
 import { PercentCircleIconBold } from './percent-circle-bold';
 import { PercentCircleIconFilled } from './percent-circle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { PercentCircleIconFilltone } from './percent-circle-filltone';
+import { PercentCircleIconLinetone } from './percent-circle-linetone';
 
 export interface PercentCircleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const PercentCircleIcon = memo(forwardRef<SVGSVGElement, PercentCircleIconProps>
       return <PercentCircleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <PercentCircleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <PercentCircleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <PercentCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <PercentCircleIconRegular ref={ref} {...props} />;

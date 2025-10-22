@@ -28,7 +28,7 @@ const LineSegmentVIconFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M8.5 4.5A3.5 3.5 0 1 1 13 7.854v8.292a3.501 3.501 0 1 1-2 0V7.853A3.5 3.5 0 0 1 8.5 4.5"
+          d="M12 1a3.5 3.5 0 0 1 1 6.854v8.292a3.501 3.501 0 1 1-2 0V7.853A3.5 3.5 0 0 1 12 1"
         />
       </svg>
     ))

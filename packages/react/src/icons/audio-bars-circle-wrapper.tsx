@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { AudioBarsCircleIcon as AudioBarsCircleIconRegular } from './audio-bars-circle';
 import { AudioBarsCircleIconBold } from './audio-bars-circle-bold';
 import { AudioBarsCircleIconFilled } from './audio-bars-circle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { AudioBarsCircleIconFilltone } from './audio-bars-circle-filltone';
+import { AudioBarsCircleIconLinetone } from './audio-bars-circle-linetone';
 
 export interface AudioBarsCircleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const AudioBarsCircleIcon = memo(forwardRef<SVGSVGElement, AudioBarsCircleIconPr
       return <AudioBarsCircleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <AudioBarsCircleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <AudioBarsCircleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <AudioBarsCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <AudioBarsCircleIconRegular ref={ref} {...props} />;

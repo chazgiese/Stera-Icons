@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ChevronFullCircleRightIcon as ChevronFullCircleRightIconRegular } from './chevron-full-circle-right';
 import { ChevronFullCircleRightIconBold } from './chevron-full-circle-right-bold';
 import { ChevronFullCircleRightIconFilled } from './chevron-full-circle-right-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ChevronFullCircleRightIconFilltone } from './chevron-full-circle-right-filltone';
+import { ChevronFullCircleRightIconLinetone } from './chevron-full-circle-right-linetone';
 
 export interface ChevronFullCircleRightIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ChevronFullCircleRightIcon = memo(forwardRef<SVGSVGElement, ChevronFullCir
       return <ChevronFullCircleRightIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ChevronFullCircleRightIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ChevronFullCircleRightIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ChevronFullCircleRightIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ChevronFullCircleRightIconRegular ref={ref} {...props} />;

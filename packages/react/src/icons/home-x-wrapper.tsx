@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { HomeXIcon as HomeXIconRegular } from './home-x';
 import { HomeXIconBold } from './home-x-bold';
 import { HomeXIconFilled } from './home-x-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { HomeXIconFilltone } from './home-x-filltone';
+import { HomeXIconLinetone } from './home-x-linetone';
 
 export interface HomeXIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const HomeXIcon = memo(forwardRef<SVGSVGElement, HomeXIconProps>(({
       return <HomeXIconFilled ref={ref} {...props} />;
     case 'bold':
       return <HomeXIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <HomeXIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <HomeXIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <HomeXIconRegular ref={ref} {...props} />;

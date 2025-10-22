@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { MailOpenIcon as MailOpenIconRegular } from './mail-open';
 import { MailOpenIconBold } from './mail-open-bold';
 import { MailOpenIconFilled } from './mail-open-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { MailOpenIconFilltone } from './mail-open-filltone';
+import { MailOpenIconLinetone } from './mail-open-linetone';
 
 export interface MailOpenIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const MailOpenIcon = memo(forwardRef<SVGSVGElement, MailOpenIconProps>(({
       return <MailOpenIconFilled ref={ref} {...props} />;
     case 'bold':
       return <MailOpenIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <MailOpenIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <MailOpenIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <MailOpenIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CircleDivideCrossIcon as CircleDivideCrossIconRegular } from './circle-divide-cross';
 import { CircleDivideCrossIconBold } from './circle-divide-cross-bold';
 import { CircleDivideCrossIconFilled } from './circle-divide-cross-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CircleDivideCrossIconFilltone } from './circle-divide-cross-filltone';
+import { CircleDivideCrossIconLinetone } from './circle-divide-cross-linetone';
 
 export interface CircleDivideCrossIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CircleDivideCrossIcon = memo(forwardRef<SVGSVGElement, CircleDivideCrossIc
       return <CircleDivideCrossIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CircleDivideCrossIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CircleDivideCrossIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CircleDivideCrossIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CircleDivideCrossIconRegular ref={ref} {...props} />;

@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { BankIcon as BankIconRegular } from './bank';
 import { BankIconBold } from './bank-bold';
 import { BankIconFilled } from './bank-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { BankIconFilltone } from './bank-filltone';
+import { BankIconLinetone } from './bank-linetone';
 
 export interface BankIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const BankIcon = memo(forwardRef<SVGSVGElement, BankIconProps>(({
       return <BankIconFilled ref={ref} {...props} />;
     case 'bold':
       return <BankIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <BankIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <BankIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <BankIconRegular ref={ref} {...props} />;

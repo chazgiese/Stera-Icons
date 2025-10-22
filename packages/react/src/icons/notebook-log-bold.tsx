@@ -28,7 +28,7 @@ const NotebookLogIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12 10a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2zM15 6a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z"
+          d="M12 12a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2zM15 8a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z"
         />
         <path
           fill="currentColor"

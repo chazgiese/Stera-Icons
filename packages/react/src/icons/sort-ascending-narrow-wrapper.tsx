@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { SortAscendingNarrowIcon as SortAscendingNarrowIconRegular } from './sort-ascending-narrow';
 import { SortAscendingNarrowIconBold } from './sort-ascending-narrow-bold';
 import { SortAscendingNarrowIconFilled } from './sort-ascending-narrow-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { SortAscendingNarrowIconFilltone } from './sort-ascending-narrow-filltone';
+import { SortAscendingNarrowIconLinetone } from './sort-ascending-narrow-linetone';
 
 export interface SortAscendingNarrowIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const SortAscendingNarrowIcon = memo(forwardRef<SVGSVGElement, SortAscendingNarr
       return <SortAscendingNarrowIconFilled ref={ref} {...props} />;
     case 'bold':
       return <SortAscendingNarrowIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <SortAscendingNarrowIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <SortAscendingNarrowIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <SortAscendingNarrowIconRegular ref={ref} {...props} />;

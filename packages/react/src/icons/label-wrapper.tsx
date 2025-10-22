@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { LabelIcon as LabelIconRegular } from './label';
 import { LabelIconBold } from './label-bold';
 import { LabelIconFilled } from './label-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { LabelIconFilltone } from './label-filltone';
+import { LabelIconLinetone } from './label-linetone';
 
 export interface LabelIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const LabelIcon = memo(forwardRef<SVGSVGElement, LabelIconProps>(({
       return <LabelIconFilled ref={ref} {...props} />;
     case 'bold':
       return <LabelIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <LabelIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <LabelIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <LabelIconRegular ref={ref} {...props} />;

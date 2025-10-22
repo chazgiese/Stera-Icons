@@ -26,11 +26,11 @@ const ToggleOnIconBold = memo(
         ref={ref}
         {...props}
       >
-        <path fill="currentColor" d="M15 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8" />
+        <path fill="currentColor" d="M15 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8" />
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M9 4a8 8 0 1 0 0 16h6a8 8 0 1 0 0-16zm6 2a6 6 0 0 1 0 12H9A6 6 0 0 1 9 6z"
+          d="M15 4a8 8 0 1 1 0 16H9A8 8 0 1 1 9 4zM9 6a6 6 0 1 0 0 12h6a6 6 0 0 0 0-12z"
           clipRule="evenodd"
         />
       </svg>

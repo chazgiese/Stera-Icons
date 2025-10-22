@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ChecklistCheckedIcon as ChecklistCheckedIconRegular } from './checklist-checked';
 import { ChecklistCheckedIconBold } from './checklist-checked-bold';
 import { ChecklistCheckedIconFilled } from './checklist-checked-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ChecklistCheckedIconFilltone } from './checklist-checked-filltone';
+import { ChecklistCheckedIconLinetone } from './checklist-checked-linetone';
 
 export interface ChecklistCheckedIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ChecklistCheckedIcon = memo(forwardRef<SVGSVGElement, ChecklistCheckedIcon
       return <ChecklistCheckedIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ChecklistCheckedIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ChecklistCheckedIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ChecklistCheckedIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ChecklistCheckedIconRegular ref={ref} {...props} />;

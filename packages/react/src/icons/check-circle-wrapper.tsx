@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { CheckCircleIcon as CheckCircleIconRegular } from './check-circle';
 import { CheckCircleIconBold } from './check-circle-bold';
 import { CheckCircleIconFilled } from './check-circle-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { CheckCircleIconFilltone } from './check-circle-filltone';
+import { CheckCircleIconLinetone } from './check-circle-linetone';
 
 export interface CheckCircleIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const CheckCircleIcon = memo(forwardRef<SVGSVGElement, CheckCircleIconProps>(({
       return <CheckCircleIconFilled ref={ref} {...props} />;
     case 'bold':
       return <CheckCircleIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <CheckCircleIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <CheckCircleIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <CheckCircleIconRegular ref={ref} {...props} />;

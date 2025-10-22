@@ -1,10 +1,10 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps, IconVariant } from '../types';
 import { ScanSearchIcon as ScanSearchIconRegular } from './scan-search';
 import { ScanSearchIconBold } from './scan-search-bold';
 import { ScanSearchIconFilled } from './scan-search-filled';
-
-export type IconVariant = 'regular' | 'bold' | 'filled';
+import { ScanSearchIconFilltone } from './scan-search-filltone';
+import { ScanSearchIconLinetone } from './scan-search-linetone';
 
 export interface ScanSearchIconProps extends IconProps {
   variant?: IconVariant;
@@ -19,6 +19,10 @@ const ScanSearchIcon = memo(forwardRef<SVGSVGElement, ScanSearchIconProps>(({
       return <ScanSearchIconFilled ref={ref} {...props} />;
     case 'bold':
       return <ScanSearchIconBold ref={ref} {...props} />;
+    case 'filltone':
+      return <ScanSearchIconFilltone ref={ref} {...props} />;
+    case 'linetone':
+      return <ScanSearchIconLinetone ref={ref} {...props} />;
     case 'regular':
     default:
       return <ScanSearchIconRegular ref={ref} {...props} />;
