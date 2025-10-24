@@ -36,7 +36,7 @@ const ThumbsUpIconFilltone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M3 13a4 4 0 0 1 4-4q.255 0 .5-.05V20a2 2 0 0 0 2 2H6c-1.656 0-3-1.34-3-2.997z"
+          d="M3 13a4 4 0 0 1 4-4q.255 0 .5-.052V20a2 2 0 0 0 2 2H6c-1.656 0-3-1.34-3-2.998z"
           clipRule="evenodd"
         />
       </svg>

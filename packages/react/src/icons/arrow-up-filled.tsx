@@ -28,7 +28,7 @@ const ArrowUpIconFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a1 1 0 0 1 .707.293l6 6A1 1 0 0 1 18 12h-5v7a1 1 0 1 1-2 0v-7H6a1 1 0 0 1-.707-1.707l6-6A1 1 0 0 1 12 4"
+          d="M12 4a1 1 0 0 1 .707.293l6 6A1 1 0 0 1 18 12h-5v7a1 1 0 0 1-2 0v-7H6a1 1 0 0 1-.707-1.707l6-6A1 1 0 0 1 12 4"
         />
       </svg>
     ))

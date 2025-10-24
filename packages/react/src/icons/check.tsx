@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CheckSourceIconLinetone = memo(
+const CheckIcon = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,15 +28,14 @@ const CheckSourceIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M3.427 10.323a1 1 0 0 1 1.392.246l4.8 6.857a1.001 1.001 0 0 1-1.639 1.147l-4.8-6.857a1 1 0 0 1 .247-1.393"
-          opacity={0.32}
+          d="M19.452 5.489a.75.75 0 0 1 1.096 1.023L10.023 17.79a6 6 0 0 1-.323.329 1.3 1.3 0 0 1-.492.289 1.25 1.25 0 0 1-.869-.062 1.3 1.3 0 0 1-.446-.355c-.09-.107-.185-.242-.274-.37l-4.233-6.047a.75.75 0 0 1 1.229-.86l4.233 6.047.035.05.043-.044z"
         />
         <path
           fill="currentColor"
-          d="M19.268 5.317a1 1 0 0 1 1.462 1.366l-11.199 12a1.001 1.001 0 0 1-1.463-1.366z"
+          d="M19.452 5.489a.75.75 0 0 1 1.096 1.023L10.023 17.791a6 6 0 0 1-.323.328 1.3 1.3 0 0 1-.492.289 1.25 1.25 0 0 1-.869-.062 1.3 1.3 0 0 1-.446-.354c-.09-.107-.185-.243-.274-.37l-4.233-6.048a.75.75 0 0 1 1.229-.86l4.233 6.047.035.05.043-.044z"
         />
       </svg>
     ))
 );
-CheckSourceIconLinetone.displayName = "CheckSourceIconLinetone";
-export { CheckSourceIconLinetone };
+CheckIcon.displayName = "CheckIcon";
+export { CheckIcon };

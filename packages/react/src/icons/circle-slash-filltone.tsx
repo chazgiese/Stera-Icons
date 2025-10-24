@@ -34,7 +34,7 @@ const CircleSlashIconFilltone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M19.04 20.453 3.546 4.961q.642-.77 1.414-1.414l15.492 15.492q-.642.771-1.414 1.414"
+          d="M19.04 20.453 3.546 4.961q.643-.77 1.414-1.414l15.492 15.492q-.642.771-1.414 1.414"
           clipRule="evenodd"
         />
       </svg>

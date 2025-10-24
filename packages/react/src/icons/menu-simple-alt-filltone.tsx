@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextBIconLinetone = memo(
+const MenuSimpleAltIconFilltone = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,17 +28,15 @@ const TextBIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M7 22H6a1 1 0 0 1-.995-.898L5 21V3a1 1 0 0 1 1-1c.552 0 1 .002 1 .002z"
-          clipRule="evenodd"
+          d="M15 14.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3z"
           opacity={0.32}
         />
         <path
           fill="currentColor"
-          d="M12.5 2a5.5 5.5 0 0 1 3.927 9.348A5.501 5.501 0 0 1 14.5 22H7v-2h7.5a3.5 3.5 0 1 0 0-7H7v-2h5.5a3.5 3.5 0 1 0 0-7H7V2z"
+          d="M21 6.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 1 1 0-3z"
         />
       </svg>
     ))
 );
-TextBIconLinetone.displayName = "TextBIconLinetone";
-export { TextBIconLinetone };
+MenuSimpleAltIconFilltone.displayName = "MenuSimpleAltIconFilltone";
+export { MenuSimpleAltIconFilltone };

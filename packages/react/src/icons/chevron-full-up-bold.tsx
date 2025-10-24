@@ -32,6 +32,12 @@ const ChevronFullUpIconBold = memo(
           d="M11.293 7.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 19 16H5a1 1 0 0 1-.707-1.707zM7.414 14h9.172L12 9.414z"
           clipRule="evenodd"
         />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M11.293 7.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 19 16H5a1 1 0 0 1-.707-1.707zM7.414 14h9.172L12 9.414z"
+          clipRule="evenodd"
+        />
       </svg>
     ))
 );

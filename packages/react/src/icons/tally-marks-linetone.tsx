@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextBIconFilltone = memo(
+const TallyMarksIconLinetone = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -26,17 +26,15 @@ const TextBIconFilltone = memo(
         ref={ref}
         {...props}
       >
+        <g fill="currentColor" opacity={0.32}>
+          <path d="M6 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M10 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M14 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M18 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1" />
+        </g>
         <path
           fill="currentColor"
-          d="M6 1.5h1.5v21H6A1.5 1.5 0 0 1 4.5 21V3A1.5 1.5 0 0 1 6 1.5"
-          opacity={0.32}
-        />
-        <path
-          fill="currentColor"
-          d="M12.5 1.5a6 6 0 0 1 4.747 9.666A6 6 0 0 1 14.5 22.5h-7v-3h7a3 3 0 1 0 0-6h-7v-3h5a3 3 0 1 0 0-6h-5v-3z"
+          d="M22.857 5.486a1 1 0 0 0-1.372-.343l-20 12a1 1 0 0 0 1.03 1.715l20-12a1 1 0 0 0 .342-1.372"
         />
       </svg>
     ))
 );
-TextBIconFilltone.displayName = "TextBIconFilltone";
-export { TextBIconFilltone };
+TallyMarksIconLinetone.displayName = "TallyMarksIconLinetone";
+export { TallyMarksIconLinetone };

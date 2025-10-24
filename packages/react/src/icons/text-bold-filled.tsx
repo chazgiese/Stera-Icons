@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const TextBIconFilled = memo(
+const TextBoldIconFilled = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -35,5 +35,5 @@ const TextBIconFilled = memo(
       </svg>
     ))
 );
-TextBIconFilled.displayName = "TextBIconFilled";
-export { TextBIconFilled };
+TextBoldIconFilled.displayName = "TextBoldIconFilled";
+export { TextBoldIconFilled };

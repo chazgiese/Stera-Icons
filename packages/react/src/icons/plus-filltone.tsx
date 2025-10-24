@@ -28,12 +28,12 @@ const PlusIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1.5A1.5 1.5 0 0 1 13.5 3v18a1.5 1.5 0 0 1-3 0V3A1.5 1.5 0 0 1 12 1.5"
+          d="M20 10.5a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3z"
+          opacity={0.32}
         />
         <path
           fill="currentColor"
-          d="M21 10.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3z"
-          opacity={0.32}
+          d="M12 2.5A1.5 1.5 0 0 1 13.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 12 2.5"
         />
       </svg>
     ))

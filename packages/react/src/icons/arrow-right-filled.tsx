@@ -30,6 +30,10 @@ const ArrowRightIconFilled = memo(
           fill="currentColor"
           d="M12.617 5.076a1 1 0 0 1 1.09.217l6 6a1 1 0 0 1 0 1.414l-6 6A1 1 0 0 1 12 18v-5H5a1 1 0 0 1 0-2h7V6a1 1 0 0 1 .617-.924"
         />
+        <path
+          fill="currentColor"
+          d="M12.617 5.076a1 1 0 0 1 1.09.217l6 6a1 1 0 0 1 0 1.414l-6 6A1 1 0 0 1 12 18v-5H5a1 1 0 0 1 0-2h7V6a1 1 0 0 1 .617-.924"
+        />
       </svg>
     ))
 );

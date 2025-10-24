@@ -29,7 +29,7 @@ const VideoIconLinetone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M21.375 6.219A1.001 1.001 0 0 1 23 7v10a1 1 0 0 1-1.625.781l-5-4a1 1 0 0 1-.375-.78v-2a1 1 0 0 1 .375-.782zM18 11.48v1.038l3 2.4V9.08z"
+          d="M21.375 6.219a1.001 1.001 0 0 1 1.625.78v10a1 1 0 0 1-1.625.782l-5-4A1 1 0 0 1 16 13v-2c0-.304.138-.592.375-.781zM18 11.48v1.038l3 2.4V9.08z"
           clipRule="evenodd"
           opacity={0.32}
         />

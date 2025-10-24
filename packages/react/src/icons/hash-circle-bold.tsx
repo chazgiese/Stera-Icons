@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const CheckSourceIconFilltone = memo(
+const HashCircleIconBold = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -28,15 +28,18 @@ const CheckSourceIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M3.14 9.914a1.5 1.5 0 0 1 2.089.368l4.8 6.858a1.5 1.5 0 0 1-2.458 1.72l-4.8-6.857a1.5 1.5 0 0 1 .369-2.09"
-          opacity={0.32}
+          fillRule="evenodd"
+          d="M14 6a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2h-2v2a1 1 0 1 1-2 0v-2H7a1 1 0 1 1 0-2h2v-2H7a1 1 0 1 1 0-2h2V7a1 1 0 0 1 2 0v2h2V7a1 1 0 0 1 1-1m-3 7h2v-2h-2z"
+          clipRule="evenodd"
         />
         <path
           fill="currentColor"
-          d="M18.903 4.977a1.5 1.5 0 0 1 2.194 2.046l-11.2 12a1.5 1.5 0 0 1-2.194-2.046z"
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18"
+          clipRule="evenodd"
         />
       </svg>
     ))
 );
-CheckSourceIconFilltone.displayName = "CheckSourceIconFilltone";
-export { CheckSourceIconFilltone };
+HashCircleIconBold.displayName = "HashCircleIconBold";
+export { HashCircleIconBold };
