@@ -51290,7 +51290,7 @@
     "svgHash": "3cd378da"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "bold",
     "tags": [
       "bold",
@@ -51301,15 +51301,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-bold.tsx",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-bold.tsx",
     "versionAdded": "5.2.0",
-    "dateAdded": "2025-10-24T21:34:56.096Z",
-    "lastModified": "2025-10-24T21:34:56.096Z",
+    "dateAdded": "2025-10-24T21:41:29.912Z",
+    "lastModified": "2025-10-24T21:41:29.912Z",
     "svgHash": "237cdefb"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "filled",
     "tags": [
       "bold",
@@ -51320,15 +51320,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-filled.tsx",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-filled.tsx",
     "versionAdded": "5.2.0",
-    "dateAdded": "2025-10-24T21:34:56.098Z",
-    "lastModified": "2025-10-24T21:34:56.098Z",
+    "dateAdded": "2025-10-24T21:41:29.916Z",
+    "lastModified": "2025-10-24T21:41:29.916Z",
     "svgHash": "02dd09c4"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "filltone",
     "tags": [
       "bold",
@@ -51339,15 +51339,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-filltone.tsx",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-filltone.tsx",
     "versionAdded": "5.2.0",
-    "dateAdded": "2025-10-24T21:34:56.100Z",
-    "lastModified": "2025-10-24T21:34:56.100Z",
+    "dateAdded": "2025-10-24T21:41:29.918Z",
+    "lastModified": "2025-10-24T21:41:29.918Z",
     "svgHash": "5463bb7f"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "linetone",
     "tags": [
       "bold",
@@ -51358,15 +51358,15 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold-linetone.tsx",
+    "componentName": "TextBIcon",
+    "fileName": "text-b-linetone.tsx",
     "versionAdded": "5.2.0",
-    "dateAdded": "2025-10-24T21:34:56.102Z",
-    "lastModified": "2025-10-24T21:34:56.102Z",
+    "dateAdded": "2025-10-24T21:41:29.921Z",
+    "lastModified": "2025-10-24T21:41:29.921Z",
     "svgHash": "212d4dbc"
   },
   {
-    "name": "text-bold",
+    "name": "text-b",
     "variant": "regular",
     "tags": [
       "bold",
@@ -51377,11 +51377,11 @@
       "text",
       "typography"
     ],
-    "componentName": "TextBoldIcon",
-    "fileName": "text-bold.tsx",
+    "componentName": "TextBIcon",
+    "fileName": "text-b.tsx",
     "versionAdded": "5.2.0",
-    "dateAdded": "2025-10-24T21:34:56.104Z",
-    "lastModified": "2025-10-24T21:34:56.104Z",
+    "dateAdded": "2025-10-24T21:41:29.923Z",
+    "lastModified": "2025-10-24T21:41:29.923Z",
     "svgHash": "76298c1a"
   },
   {

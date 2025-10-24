@@ -515,7 +515,7 @@ export { TextAlignCenterIcon } from './icons/text-align-center-wrapper';
 export { TextAlignJustifyIcon } from './icons/text-align-justify-wrapper';
 export { TextAlignLeftIcon } from './icons/text-align-left-wrapper';
 export { TextAlignRightIcon } from './icons/text-align-right-wrapper';
-export { TextBoldIcon } from './icons/text-bold-wrapper';
+export { TextBIcon } from './icons/text-b-wrapper';
 export { TextItalicIcon } from './icons/text-italic-wrapper';
 export { TextSquareIcon } from './icons/text-square-wrapper';
 export { TextStrikethroughIcon } from './icons/text-strikethrough-wrapper';
