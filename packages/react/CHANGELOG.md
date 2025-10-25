@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.3.0
+
+### Minor Changes
+
+- db89c99: Add new circle-notch loading icon and update existing icons (alarm-clock, circle-slash, tally-marks)
+
 ## 5.2.0
 
 ### Minor Changes
