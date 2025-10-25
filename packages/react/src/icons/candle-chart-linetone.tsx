@@ -26,7 +26,7 @@ const CandleChartIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M8 22a1 1 0 1 1-2 0v-2h2zM18 20a1 1 0 1 1-2 0v-2h2zM17 3a1 1 0 0 1 1 1v2h-2V4a1 1 0 0 1 1-1M7 1a1 1 0 0 1 1 1v2H6V2a1 1 0 0 1 1-1" />
         </g>
         <path

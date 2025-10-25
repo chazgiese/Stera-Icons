@@ -33,7 +33,7 @@ const CircleFourPlusIconFilltone = memo(
         <path
           fill="currentColor"
           d="M17.5 13a1 1 0 0 1 1 1v2.5H21a1 1 0 1 1 0 2h-2.5V21a1 1 0 1 1-2 0v-2.5H14a1 1 0 1 1 0-2h2.5V14a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

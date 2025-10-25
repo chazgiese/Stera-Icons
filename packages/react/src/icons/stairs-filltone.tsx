@@ -26,7 +26,7 @@ const StairsIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M3.5 15.333a1.5 1.5 0 0 1 1.5 1.5V22.5a1.5 1.5 0 0 1-3 0v-5.667a1.5 1.5 0 0 1 1.5-1.5M10.167 8.667a1.5 1.5 0 0 1 1.5 1.5v6.666a1.5 1.5 0 0 1-3 0v-6.666a1.5 1.5 0 0 1 1.5-1.5M16.833 2a1.5 1.5 0 0 1 1.5 1.5v6.667a1.5 1.5 0 0 1-3 0V3.5a1.5 1.5 0 0 1 1.5-1.5" />
         </g>
         <path

@@ -29,7 +29,7 @@ const ArrowURightTopIconLinetone = memo(
         <path
           fill="currentColor"
           d="M8.5 6a7.5 7.5 0 1 0 0 15H16a1 1 0 1 0 0-2H8.5a5.5 5.5 0 1 1 0-11H22a1 1 0 1 0 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

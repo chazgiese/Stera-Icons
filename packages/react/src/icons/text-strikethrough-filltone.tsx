@@ -29,7 +29,7 @@ const TextStrikethroughIconFilltone = memo(
         <path
           fill="currentColor"
           d="M17 1.5a1.5 1.5 0 0 1 0 3h-5.5a3 3 0 0 0 0 6h.5q.128 0 .25.021.122-.02.25-.021h1a6 6 0 0 1 0 12H7a1.5 1.5 0 0 1 0-3h6.5a3 3 0 1 0 0-6h-1q-.128-.001-.25-.023a1.5 1.5 0 0 1-.25.023h-.5a6 6 0 0 1 0-12z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

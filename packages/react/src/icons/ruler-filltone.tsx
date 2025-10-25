@@ -29,7 +29,7 @@ const RulerIconFilltone = memo(
         <path
           fill="currentColor"
           d="M5.91 2.177a2.25 2.25 0 0 1 3.181 0l12.733 12.731a2.25 2.25 0 0 1 0 3.183l-3.733 3.732a2.25 2.25 0 0 1-3.183 0L2.178 9.092a2.25 2.25 0 0 1 0-3.182z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

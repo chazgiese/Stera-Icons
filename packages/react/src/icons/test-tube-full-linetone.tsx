@@ -31,7 +31,7 @@ const TestTubeFullIconLinetone = memo(
           fillRule="evenodd"
           d="M15 1a1 1 0 0 1 1 1v17a4 4 0 0 1-8 0V2a1 1 0 0 1 1-1zm-5 18a2 2 0 1 0 4 0V3h-4z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

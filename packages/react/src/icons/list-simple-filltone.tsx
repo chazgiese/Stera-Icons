@@ -26,7 +26,7 @@ const ListSimpleIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M21.5 14a1.5 1.5 0 0 1 0 3h-12a1.5 1.5 0 0 1 0-3zM21.5 7a1.5 1.5 0 0 1 0 3h-12a1.5 1.5 0 1 1 0-3z" />
         </g>
         <path

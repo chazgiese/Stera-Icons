@@ -29,7 +29,7 @@ const CurrencyCentIconLinetone = memo(
         <path
           fill="currentColor"
           d="M12 1a1 1 0 0 1 1 1v20a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

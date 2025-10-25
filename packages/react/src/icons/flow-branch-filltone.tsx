@@ -26,7 +26,7 @@ const FlowBranchIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M13.793 13.793a1 1 0 0 1 1.414 0l6.5 6.5a1 1 0 0 1-1.414 1.414l-6.5-6.5a1 1 0 0 1 0-1.414M20.293 2.293a1 1 0 1 1 1.414 1.414l-7.242 7.243A7 7 0 0 1 9.515 13H2a1 1 0 0 1 0-2h7.515a5 5 0 0 0 3.535-1.465z" />
         </g>
         <path

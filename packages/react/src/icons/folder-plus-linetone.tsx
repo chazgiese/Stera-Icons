@@ -30,7 +30,7 @@ const FolderPlusIconLinetone = memo(
           fill="currentColor"
           d="M22 10a1 1 0 1 1 0 2H3v5a2 2 0 0 0 2 2h7a1 1 0 1 1 0 2H5a4 4 0 0 1-4-4v-6a1 1 0 0 1 1-1z"
         />
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M18.995 14a1 1 0 0 1 1 1v1.995H22a1 1 0 1 1 0 2h-2.005V21a1 1 0 0 1-2 0v-2.005H16a1 1 0 0 1 0-2h1.995V15a1 1 0 0 1 1-1" />
           <path
             fillRule="evenodd"

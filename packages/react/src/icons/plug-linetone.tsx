@@ -26,7 +26,7 @@ const PlugIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path
             fillRule="evenodd"
             d="M4.936 10.59a2.25 2.25 0 0 1 3.124.056l5.294 5.294a2.25 2.25 0 0 1 .056 3.124l-.143.153-.024.026a6 6 0 1 1-8.46-8.51zm1.71 1.47a.25.25 0 0 0-.348-.005l-.127.117a4 4 0 0 0 5.658 5.656l.117-.127a.25.25 0 0 0-.006-.346z"

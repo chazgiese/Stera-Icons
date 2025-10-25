@@ -29,7 +29,7 @@ const SpeakerIconLinetone = memo(
         <path
           fill="currentColor"
           d="M10 8a1 1 0 1 1 0 2H7.25a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25H10a1 1 0 1 1 0 2H7.25A2.25 2.25 0 0 1 5 13.75v-3.5A2.25 2.25 0 0 1 7.25 8z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

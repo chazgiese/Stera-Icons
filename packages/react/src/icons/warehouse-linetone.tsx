@@ -31,7 +31,7 @@ const WarehouseIconLinetone = memo(
           fillRule="evenodd"
           d="M10.658 2.553a3 3 0 0 1 2.684 0l8 4A3 3 0 0 1 23 9.236V18a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9.236a3 3 0 0 1 1.658-2.684zm1.79 1.789a1 1 0 0 0-.895 0l-8 4A1 1 0 0 0 3 9.236V18a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9.236a1 1 0 0 0-.553-.894z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

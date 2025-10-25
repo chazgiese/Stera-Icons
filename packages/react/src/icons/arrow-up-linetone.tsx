@@ -29,7 +29,7 @@ const ArrowUpIconLinetone = memo(
         <path
           fill="currentColor"
           d="M11 5a1 1 0 1 1 2 0v14a1 1 0 1 1-2 0z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

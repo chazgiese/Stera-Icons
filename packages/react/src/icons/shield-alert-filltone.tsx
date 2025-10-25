@@ -29,7 +29,7 @@ const ShieldAlertIconFilltone = memo(
         <path
           fill="currentColor"
           d="M11.734 1.036c.203-.056.42-.047.618.027l8 3A1 1 0 0 1 21 5v5.584a13 13 0 0 1-7.187 11.627l-1.366.684a1 1 0 0 1-.894 0l-1.367-.684A13 13 0 0 1 3 10.584V5a1 1 0 0 1 .648-.937l8-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

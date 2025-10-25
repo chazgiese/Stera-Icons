@@ -33,7 +33,7 @@ const MoreVIconLinetone = memo(
         <path
           fill="currentColor"
           d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

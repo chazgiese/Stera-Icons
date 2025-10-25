@@ -29,7 +29,7 @@ const GitBranchIconLinetone = memo(
         <path
           fill="currentColor"
           d="M18.5 7a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4h-7a2 2 0 0 0-2 2v1a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v3.536a4 4 0 0 1 2-.536h7a2 2 0 0 0 2-2V8a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

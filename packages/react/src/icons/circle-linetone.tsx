@@ -29,7 +29,7 @@ const CircleIconLinetone = memo(
         <path
           fill="currentColor"
           d="M3 12a9 9 0 1 0 18 0h2c0 6.075-4.925 11-11 11S1 18.075 1 12z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

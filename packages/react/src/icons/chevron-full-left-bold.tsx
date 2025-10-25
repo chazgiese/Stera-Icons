@@ -32,6 +32,12 @@ const ChevronFullLeftIconBold = memo(
           d="M14.293 4.293A1 1 0 0 1 16 5v14a1 1 0 0 1-1.707.707l-7-7a1 1 0 0 1 0-1.414zM9.414 12 14 16.586V7.414z"
           clipRule="evenodd"
         />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M14.293 4.293A1 1 0 0 1 16 5v14a1 1 0 0 1-1.707.707l-7-7a1 1 0 0 1 0-1.414zM9.414 12 14 16.586V7.414z"
+          clipRule="evenodd"
+        />
       </svg>
     ))
 );

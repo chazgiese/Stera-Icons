@@ -26,7 +26,7 @@ const SlidersVIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M8 12a1 1 0 1 1-2 0V2a1 1 0 0 1 2 0zM8 22a1 1 0 1 1-2 0v-4a1 1 0 1 1 2 0zM18 6a1 1 0 1 1-2 0V2a1 1 0 1 1 2 0zM18 22a1 1 0 1 1-2 0V12a1 1 0 1 1 2 0z" />
         </g>
         <path

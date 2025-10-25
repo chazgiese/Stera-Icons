@@ -33,7 +33,7 @@ const AwardStarIconFilltone = memo(
         <path
           fill="currentColor"
           d="M13 17a4 4 0 0 1 4 4v1a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-1a4 4 0 0 1 4-4v-5a1 1 0 1 1 2 0z"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

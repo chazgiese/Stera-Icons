@@ -29,7 +29,7 @@ const AlignVerticalBottomIconFilltone = memo(
         <path
           fill="currentColor"
           d="M22 21a1 1 0 0 0-1-1H3a1 1 0 1 0 0 2h18a1 1 0 0 0 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

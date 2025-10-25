@@ -35,9 +35,9 @@ const DeviceLaptopIconLinetone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M19.323 14a2 2 0 0 1 1.856 1.257l1.2 3A2 2 0 0 1 20.523 21H3.477a2 2 0 0 1-1.857-2.743l1.2-3A2 2 0 0 1 4.676 14zM3.477 19h17.046l-1.2-3H4.676z"
+          d="M19.323 14a2 2 0 0 1 1.856 1.257l1.2 3A2 2 0 0 1 20.524 21H3.477a2 2 0 0 1-1.857-2.743l1.2-3A2 2 0 0 1 4.676 14zM3.477 19h17.046l-1.2-3H4.676z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

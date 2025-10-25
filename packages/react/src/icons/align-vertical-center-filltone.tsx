@@ -26,7 +26,7 @@ const AlignVerticalCenterIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M18.5 11H21a1 1 0 1 1 0 2h-2.5zM13 11v2h-2v-2zM2 12a1 1 0 0 1 1-1h2.5v2H3a1 1 0 0 1-1-1" />
         </g>
         <path

@@ -30,7 +30,7 @@ const CircleFourIconLinetone = memo(
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         >
           <path d="M6.5 13a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M17.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" />
         </g>

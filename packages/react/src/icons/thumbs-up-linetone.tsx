@@ -31,7 +31,7 @@ const ThumbsUpIconLinetone = memo(
           fillRule="evenodd"
           d="M11.5 20a3 3 0 0 1-3-3V8.807l-1.145.168A2.5 2.5 0 0 1 7 9a4 4 0 0 0-4 4v4a5 5 0 0 0 5 5h3.5zm-4.035-.048A3 3 0 0 1 5 17v-4l.01-.204c.086-.84.692-1.524 1.49-1.73V17c0 1.104.359 2.125.965 2.952"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -28,8 +28,8 @@ const XIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M18.293 4.293a1 1 0 1 1 1.414 1.414l-14 14a1 1 0 0 1-1.414-1.414z"
-          opacity={0.32}
+          d="M18.293 4.293a1 1 0 0 1 1.414 1.414l-14 14a1 1 0 0 1-1.414-1.414z"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

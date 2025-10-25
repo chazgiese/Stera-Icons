@@ -30,7 +30,7 @@ const CommandIconFilltone = memo(
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         >
           <path d="M16.5 13.5H18a4.5 4.5 0 1 1-4.5 4.5v-7.5h3zm0 4.5a1.5 1.5 0 1 0 1.5-1.5h-1.5zM6 1.5A4.5 4.5 0 0 1 10.5 6v7.5h-3v-3H6a4.5 4.5 0 0 1 0-9m0 3a1.5 1.5 0 1 0 0 3h1.5V6A1.5 1.5 0 0 0 6 4.5" />
         </g>

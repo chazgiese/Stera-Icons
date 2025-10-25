@@ -31,7 +31,7 @@ const AlarmClockIconLinetone = memo(
           fillRule="evenodd"
           d="M12 4a9 9 0 1 1 0 18 9 9 0 0 1 0-18m0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

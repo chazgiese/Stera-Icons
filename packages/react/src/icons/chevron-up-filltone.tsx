@@ -29,7 +29,7 @@ const ChevronUpIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 7a1 1 0 0 1 .707.293l7 7A1 1 0 0 1 19 16H5l-.15-.01a1 1 0 0 1-.557-1.697l7-7A1 1 0 0 1 12 7"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path fill="currentColor" d="M19 14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2z" />
       </svg>

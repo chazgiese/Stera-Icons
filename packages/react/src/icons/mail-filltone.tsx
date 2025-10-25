@@ -29,7 +29,7 @@ const MailIconFilltone = memo(
         <path
           fill="currentColor"
           d="M19 3a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

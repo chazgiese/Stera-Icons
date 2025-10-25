@@ -36,7 +36,7 @@ const YinYangIconFilltone = memo(
           fill="currentColor"
           d="M12 5.25a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5"
         />
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M12 2a5 5 0 0 1 .257 9.993l-.514.014A5 5 0 0 0 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2" />
           <path d="M12 15.25a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5" />
         </g>

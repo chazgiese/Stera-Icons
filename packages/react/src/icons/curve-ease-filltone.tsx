@@ -26,7 +26,7 @@ const CurveEaseIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M19 16a3 3 0 1 1 0 6 3 3 0 0 1 0-6M10.938 18a1 1 0 1 1 0 2H10.5a1 1 0 1 1 0-2zM14 18a1 1 0 0 1 0 2h-.437a1 1 0 1 1 0-2zM5 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6M10.54 4.005a1 1 0 0 1 0 1.99L10.438 6H10a1 1 0 0 1 0-2h.438zM13.603 4.005a1 1 0 0 1 0 1.99L13.5 6h-.437a1 1 0 1 1 0-2h.437z" />
         </g>
         <path

@@ -29,7 +29,7 @@ const AlignHorizontalLeftIconLinetone = memo(
         <path
           fill="currentColor"
           d="M3 2a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -31,7 +31,7 @@ const DollarBillIconLinetone = memo(
           fillRule="evenodd"
           d="M20.154 5.004A3 3 0 0 1 23 8v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h16zM4 7a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-.898-.995L20 7z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

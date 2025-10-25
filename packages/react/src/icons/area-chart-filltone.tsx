@@ -29,7 +29,7 @@ const AreaChartIconFilltone = memo(
         <path
           fill="currentColor"
           d="M21.97 4.47a.751.751 0 0 1 1.28.53v12.75a2 2 0 0 1-2 2H1.5a.75.75 0 0 1-.53-1.28l8-8 .114-.094a.75.75 0 0 1 .946.093L13 13.44z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

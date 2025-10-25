@@ -33,7 +33,7 @@ const ChatBubbleIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1c5.961 0 11 4.32 11 9.889s-5.039 9.888-11 9.888c-3.782 0-7.192-1.738-9.18-4.431l-.094-.136C1.638 14.68 1 12.854 1 10.889 1 5.319 6.039 1 12 1"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

@@ -29,7 +29,7 @@ const SignatureIconLinetone = memo(
         <path
           fill="currentColor"
           d="M22 16a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

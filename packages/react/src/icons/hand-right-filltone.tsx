@@ -29,7 +29,7 @@ const HandRightIconFilltone = memo(
         <path
           fill="currentColor"
           d="M14 1a3 3 0 0 1 3 3v.174A2.994 2.994 0 0 1 21 7v7a9 9 0 0 1-17.856 1.6l-1.165-2.972A3 3 0 0 1 7 9.382V5a3 3 0 0 1 4.473-2.612A3 3 0 0 1 14 1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

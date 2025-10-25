@@ -26,7 +26,7 @@ const TargetIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6" />
           <path
             fillRule="evenodd"

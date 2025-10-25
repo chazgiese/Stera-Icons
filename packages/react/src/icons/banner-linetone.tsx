@@ -31,7 +31,7 @@ const BannerIconLinetone = memo(
           fillRule="evenodd"
           d="M19 2a1 1 0 0 1 1 1v12.679a5 5 0 0 1-2.52 4.34l-4.364 2.495a2.25 2.25 0 0 1-2.232 0L6.52 20.02A5 5 0 0 1 4 15.679V3a1 1 0 0 1 1-1zM6 4v11.679a3 3 0 0 0 1.512 2.604l4.364 2.494a.25.25 0 0 0 .248 0l4.364-2.494A3 3 0 0 0 18 15.68V4z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

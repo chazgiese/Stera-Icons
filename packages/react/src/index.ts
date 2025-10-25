@@ -190,6 +190,7 @@ export { CircleDotsIcon } from './icons/circle-dots-wrapper';
 export { CircleFourIcon } from './icons/circle-four-wrapper';
 export { CircleFourConnectedIcon } from './icons/circle-four-connected-wrapper';
 export { CircleFourPlusIcon } from './icons/circle-four-plus-wrapper';
+export { CircleNotchIcon } from './icons/circle-notch-wrapper';
 export { CircleSlashIcon } from './icons/circle-slash-wrapper';
 export { CirclesThreeIcon } from './icons/circles-three-wrapper';
 export { CityIcon } from './icons/city-wrapper';

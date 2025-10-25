@@ -35,7 +35,7 @@ const TextIconLinetone = memo(
           fillRule="evenodd"
           d="M11 5a1 1 0 0 0-1-1h4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h-4a1 1 0 0 0 1-1z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

@@ -26,7 +26,7 @@ const StairsIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M3.5 15.833a1 1 0 0 1 1 1V22.5a1 1 0 1 1-2 0v-5.667a1 1 0 0 1 1-1M10.167 9.167a1 1 0 0 1 1 1v6.666a1 1 0 0 1-2 0v-6.666a1 1 0 0 1 1-1M16.833 2.5a1 1 0 0 1 1 1v6.667a1 1 0 0 1-2 0V3.5a1 1 0 0 1 1-1" />
         </g>
         <path

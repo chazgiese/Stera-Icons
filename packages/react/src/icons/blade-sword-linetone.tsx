@@ -31,7 +31,7 @@ const BladeSwordIconLinetone = memo(
           fillRule="evenodd"
           d="M2.293 2.294a1 1 0 0 1 .95-.263l4 1c.175.044.336.135.464.263l10 10a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.338.068l-.076-.068-10-10a1 1 0 0 1-.221-.336l-.041-.13-1-4a1 1 0 0 1 .262-.948m2.61 4.195L14 15.587 15.586 14 6.49 4.903l-2.116-.528z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -31,7 +31,7 @@ const TextBIconLinetone = memo(
           fillRule="evenodd"
           d="M7 22H6a1 1 0 0 1-.995-.898L5 21V3a1 1 0 0 1 1-1c.552 0 1 .002 1 .002z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const DollarBillIconFilltone = memo(
         <path
           fill="currentColor"
           d="M20 5a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

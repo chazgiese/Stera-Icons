@@ -33,7 +33,7 @@ const PhoneIncomingIconFilltone = memo(
         <path
           fill="currentColor"
           d="M19.793 2.793a1 1 0 1 1 1.414 1.414L16.414 9H20a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1V4a1 1 0 1 1 2 0v3.586z"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

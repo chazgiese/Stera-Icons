@@ -29,7 +29,7 @@ const CheckIconFilltone = memo(
         <path
           fill="currentColor"
           d="M3.14 9.914a1.5 1.5 0 0 1 2.089.368l4.8 6.858a1.5 1.5 0 0 1-2.458 1.72l-4.8-6.857a1.5 1.5 0 0 1 .369-2.089"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

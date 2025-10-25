@@ -29,7 +29,7 @@ const BannerIconFilltone = memo(
         <path
           fill="currentColor"
           d="M19 2.25a.75.75 0 0 1 .75.75v12.679a4.75 4.75 0 0 1-2.394 4.124l-4.364 2.494a2 2 0 0 1-1.984 0l-4.364-2.494a4.75 4.75 0 0 1-2.394-4.124V3A.75.75 0 0 1 5 2.25z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

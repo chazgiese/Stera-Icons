@@ -29,7 +29,7 @@ const SearchIconFilltone = memo(
         <path
           fill="currentColor"
           d="M23.237 20.763a1.75 1.75 0 1 1-2.474 2.474l-5.5-5.5 2.474-2.474z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

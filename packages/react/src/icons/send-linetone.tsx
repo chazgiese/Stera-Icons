@@ -29,7 +29,7 @@ const SendIconLinetone = memo(
         <path
           fill="currentColor"
           d="M15.293 7.293a1 1 0 1 1 1.414 1.414l-5 5-1.414-1.414z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

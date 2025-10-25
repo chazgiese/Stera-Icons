@@ -26,7 +26,7 @@ const HashItalicIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M9.536 2.675a1.5 1.5 0 1 1 2.928.65l-4 18a1.5 1.5 0 1 1-2.928-.65zM15.536 2.675a1.5 1.5 0 1 1 2.928.65l-4 18a1.5 1.5 0 1 1-2.928-.65z" />
         </g>
         <path

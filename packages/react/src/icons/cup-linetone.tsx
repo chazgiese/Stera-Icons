@@ -29,7 +29,7 @@ const CupIconLinetone = memo(
         <path
           fill="currentColor"
           d="m19.997 6.071-.535 7.5A8 8 0 0 1 11.482 21H9.518a8 8 0 0 1-7.98-7.43l-.535-7.499 1.995-.142.535 7.499A6 6 0 0 0 9.518 19h1.964a6 6 0 0 0 5.985-5.572l.536-7.5z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

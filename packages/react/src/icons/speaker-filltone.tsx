@@ -29,7 +29,7 @@ const SpeakerIconFilltone = memo(
         <path
           fill="currentColor"
           d="M13.866 5.134c.788-.787 2.134-.229 2.134.885v11.963c0 1.114-1.346 1.672-2.134.884l-3.5-3.5A1.25 1.25 0 0 0 9.482 15H7.25C6.56 15 6 14.44 6 13.75v-3.5C6 9.56 6.56 9 7.25 9h2.232c.332 0 .65-.132.884-.366z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

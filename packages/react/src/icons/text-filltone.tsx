@@ -35,7 +35,7 @@ const TextIconFilltone = memo(
           fillRule="evenodd"
           d="M14 4.5h-4a.5.5 0 0 1 .5.5v14a.5.5 0 0 1-.5.5h4a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

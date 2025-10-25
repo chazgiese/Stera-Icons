@@ -29,7 +29,7 @@ const LabelAltIconLinetone = memo(
         <path
           fill="currentColor"
           d="M20.745 3c1.767 0 2.844 1.944 1.907 3.442l-3.141 5.028a1 1 0 0 0 0 1.06l3.141 5.028c.937 1.498-.14 3.442-1.907 3.442H9v-2h11.745a.25.25 0 0 0 .212-.383l-3.143-5.027a3 3 0 0 1 0-3.18l3.143-5.027A.25.25 0 0 0 20.745 5H9V3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

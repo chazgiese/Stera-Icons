@@ -33,7 +33,7 @@ const ChevronFullLeftIconLinetone = memo(
         <path
           fill="currentColor"
           d="M15 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

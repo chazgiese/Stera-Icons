@@ -26,7 +26,7 @@ const AudioBarsIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M9 2.5A1.5 1.5 0 0 1 10.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 9 2.5M21 8.5a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4A1.5 1.5 0 0 1 21 8.5" />
         </g>
         <path

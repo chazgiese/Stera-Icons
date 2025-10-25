@@ -29,7 +29,7 @@ const MailBadgeIconLinetone = memo(
         <path
           fill="currentColor"
           d="M16.969 3a4.5 4.5 0 0 0-.469 2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9.5a4.5 4.5 0 0 0 2-.469V17a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

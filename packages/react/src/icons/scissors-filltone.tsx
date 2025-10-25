@@ -26,7 +26,7 @@ const ScissorsIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M22.406 16.259c.346.2.475.637.292.993a2.06 2.06 0 0 1-2.433 1.027l-9.04-2.771-.004-.002 4.94-2.853z" />
           <path
             fillRule="evenodd"

@@ -29,7 +29,7 @@ const RotateLeftIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 4a9 9 0 1 1-9 9 1 1 0 1 1 2 0 7 7 0 1 0 7-7H8a1 1 0 0 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

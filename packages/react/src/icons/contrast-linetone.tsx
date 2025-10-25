@@ -29,7 +29,7 @@ const ContrastIconLinetone = memo(
         <path
           fill="currentColor"
           d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

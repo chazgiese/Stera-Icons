@@ -29,7 +29,7 @@ const ArrowUpLeftDownRightIconLinetone = memo(
         <path
           fill="currentColor"
           d="m20.707 19.293-1.414 1.414-16-16 1.414-1.414z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

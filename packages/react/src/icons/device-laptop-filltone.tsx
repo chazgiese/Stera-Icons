@@ -33,7 +33,7 @@ const DeviceLaptopIconFilltone = memo(
         <path
           fill="currentColor"
           d="M19.323 14a2 2 0 0 1 1.857 1.257l1.31 3.274A1.8 1.8 0 0 1 20.818 21H3.182a1.8 1.8 0 0 1-1.671-2.469l1.31-3.274A2 2 0 0 1 4.677 14z"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

@@ -26,7 +26,7 @@ const TallyMarksIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M6 2.5A1.5 1.5 0 0 1 7.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 6 2.5M10 2.5A1.5 1.5 0 0 1 11.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 10 2.5M14 2.5A1.5 1.5 0 0 1 15.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 14 2.5M18 2.5A1.5 1.5 0 0 1 19.5 4v16a1.5 1.5 0 0 1-3 0V4A1.5 1.5 0 0 1 18 2.5" />
         </g>
         <path

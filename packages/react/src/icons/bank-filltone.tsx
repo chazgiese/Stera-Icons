@@ -26,7 +26,7 @@ const BankIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M18.75 17A2.25 2.25 0 0 1 21 19.25V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.75A2.25 2.25 0 0 1 5.25 17zM11.575 2.095a1 1 0 0 1 .98.073l9 6A1 1 0 0 1 21 10H3a1 1 0 0 1-.555-1.832l9-6z" />
         </g>
         <path

@@ -29,7 +29,7 @@ const BellIconLinetone = memo(
         <path
           fill="currentColor"
           d="M9 18a3 3 0 1 0 6 0h2a5 5 0 0 1-10 0z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

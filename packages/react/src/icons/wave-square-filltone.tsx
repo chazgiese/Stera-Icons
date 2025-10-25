@@ -29,7 +29,7 @@ const WaveSquareIconFilltone = memo(
         <path
           fill="currentColor"
           d="M22 10.5a1.5 1.5 0 0 1 1.5 1.5v6.75a2.75 2.75 0 0 1-2.75 2.75h-7.5a2.75 2.75 0 0 1-2.75-2.75V12h3v6.5h7V12a1.5 1.5 0 0 1 1.5-1.5"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

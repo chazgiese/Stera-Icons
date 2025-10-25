@@ -26,7 +26,7 @@ const CurrencyEuroIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M17 13a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zM17 8a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3z" />
         </g>
         <path

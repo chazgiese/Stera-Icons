@@ -30,7 +30,7 @@ const PercentIconLinetone = memo(
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         >
           <path d="M17.5 14a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M6.5 3a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
         </g>

@@ -29,7 +29,7 @@ const EditSquareIconFilltone = memo(
         <path
           fill="currentColor"
           d="M16 2a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

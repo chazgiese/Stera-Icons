@@ -29,7 +29,7 @@ const MinusIconFilltone = memo(
         <path
           fill="currentColor"
           d="M21 10.5a1.5 1.5 0 0 1 0 3h-9v-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path fill="currentColor" d="M12 13.5H3a1.5 1.5 0 0 1 0-3h9z" />
       </svg>

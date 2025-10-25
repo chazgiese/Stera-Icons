@@ -31,7 +31,7 @@ const DeleteIconLinetone = memo(
           fillRule="evenodd"
           d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H9.217a5 5 0 0 1-4.24-2.35l-3.162-5.06a3 3 0 0 1 0-3.18l3.162-5.06A5 5 0 0 1 9.217 3zM9.217 5a3 3 0 0 0-2.544 1.41l-3.162 5.06a1 1 0 0 0 0 1.06l3.162 5.06A3 3 0 0 0 9.217 19H18a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

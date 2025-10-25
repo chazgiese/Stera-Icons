@@ -29,7 +29,7 @@ const ThermometerMediumIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1a4 4 0 0 1 4 4v7.5c0-.006-.002-.003.006.013a.2.2 0 0 0 .055.07 6 6 0 1 1-8.121 0 .2.2 0 0 0 .054-.07c.008-.016.006-.02.006-.013V5a4 4 0 0 1 4-4"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

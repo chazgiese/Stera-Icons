@@ -29,7 +29,7 @@ const BookmarkIconFilltone = memo(
         <path
           fill="currentColor"
           d="M16 1a5 5 0 0 1 5 5v16a1 1 0 0 1-1.65.76l-6.7-5.723a1 1 0 0 0-1.3 0l-6.7 5.724A1 1 0 0 1 3 22V6a5 5 0 0 1 5-5z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

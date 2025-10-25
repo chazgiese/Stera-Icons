@@ -33,7 +33,7 @@ const OptionKeyIconFilltone = memo(
         <path
           fill="currentColor"
           d="M22 2.5a1.5 1.5 0 0 1 0 3h-8a1.5 1.5 0 0 1 0-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

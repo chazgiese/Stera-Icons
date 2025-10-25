@@ -29,7 +29,7 @@ const GitMergeIconLinetone = memo(
         <path
           fill="currentColor"
           d="M5.5 7a1 1 0 0 1 1 1 3 3 0 0 0 3 3H16a1 1 0 1 1 0 2H9.5a4.98 4.98 0 0 1-3-1.001V16a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

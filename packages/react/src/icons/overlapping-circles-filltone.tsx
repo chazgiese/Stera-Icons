@@ -29,7 +29,7 @@ const OverlappingCirclesIconFilltone = memo(
         <path
           fill="currentColor"
           d="M8.5 4.5c1.264 0 2.455.314 3.5.866a7.498 7.498 0 0 0 0 13.267A7.5 7.5 0 1 1 8.5 4.5m7 0A7.5 7.5 0 1 1 12 18.633a7.498 7.498 0 0 0 0-13.267 7.47 7.47 0 0 1 3.5-.866"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

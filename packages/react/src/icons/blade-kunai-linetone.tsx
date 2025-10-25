@@ -31,7 +31,7 @@ const BladeKunaiIconLinetone = memo(
           fillRule="evenodd"
           d="M17.793 4.793a1 1 0 1 1 1.414 1.414l-4.273 4.274-.947 5.683c-.051.303-.239.567-.508.714l-11 6a1 1 0 0 1-1.357-1.356l6-11 .06-.098a1 1 0 0 1 .654-.41l5.684-.947zm-9.148 7.112-4.14 7.59 7.589-4.14.69-4.14z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -30,6 +30,10 @@ const ChevronFullRightIconFilled = memo(
           fill="currentColor"
           d="M8.617 4.076a1 1 0 0 1 1.09.217l7 7a1 1 0 0 1 0 1.414l-7 7A1 1 0 0 1 8 19V5l.01-.15a1 1 0 0 1 .607-.774"
         />
+        <path
+          fill="currentColor"
+          d="M8.617 4.076a1 1 0 0 1 1.09.217l7 7a1 1 0 0 1 0 1.414l-7 7A1 1 0 0 1 8 19V5l.01-.15a1 1 0 0 1 .607-.774"
+        />
       </svg>
     ))
 );

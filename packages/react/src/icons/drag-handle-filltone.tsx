@@ -29,7 +29,7 @@ const DragHandleIconFilltone = memo(
         <path
           fill="currentColor"
           d="M16 1a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

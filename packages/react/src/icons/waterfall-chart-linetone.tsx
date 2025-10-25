@@ -31,7 +31,7 @@ const WaterfallChartIconLinetone = memo(
           fillRule="evenodd"
           d="M12.75 8A2.25 2.25 0 0 1 15 10.25v3.5A2.25 2.25 0 0 1 12.75 16h-1.5A2.25 2.25 0 0 1 9 13.75v-3.5A2.25 2.25 0 0 1 11.25 8zm-1.5 2a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

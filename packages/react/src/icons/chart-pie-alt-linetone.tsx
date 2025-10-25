@@ -59,7 +59,7 @@ const ChartPieAltIconLinetone = memo(
           fillRule="evenodd"
           d="M1 12C1 6.262 5.394 1.55 11 1.045v2.01a9.001 9.001 0 1 0 6.618 15.977l1.421 1.421A10.96 10.96 0 0 1 12 23C5.925 23 1 18.075 1 12"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

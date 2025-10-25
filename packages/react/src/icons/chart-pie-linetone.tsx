@@ -31,7 +31,7 @@ const ChartPieIconLinetone = memo(
           fillRule="evenodd"
           d="m13.099 1.055.399.048a11 11 0 0 1 6.28 3.119 11 11 0 0 1 3.167 6.68C23.066 12.106 22.075 13 21 13h-8a2 2 0 0 1-2-2V3c0-1.007.785-1.942 1.876-1.955zM13 11h7.943a9 9 0 0 0-2.579-5.364A9 9 0 0 0 13 3.056z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

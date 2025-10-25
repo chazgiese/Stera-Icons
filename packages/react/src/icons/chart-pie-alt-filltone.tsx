@@ -29,7 +29,7 @@ const ChartPieAltIconFilltone = memo(
         <path
           fill="currentColor"
           d="M11 11.993a1 1 0 0 0 .293.714l7.745 7.745A10.95 10.95 0 0 1 12 23C5.925 23 1 18.075 1 12 1 6.262 5.394 1.552 11 1.047z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

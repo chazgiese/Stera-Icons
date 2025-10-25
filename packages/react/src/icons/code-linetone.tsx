@@ -29,7 +29,7 @@ const CodeIconLinetone = memo(
         <path
           fill="currentColor"
           d="M13.545 3.702a1 1 0 0 1 1.91.596l-5 16a1 1 0 0 1-1.909-.596z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

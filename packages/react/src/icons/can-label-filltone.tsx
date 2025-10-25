@@ -29,7 +29,7 @@ const CanLabelIconFilltone = memo(
         <path
           fill="currentColor"
           d="M17.5 2a1 1 0 0 1 .21 1.977l.763 1.336A4 4 0 0 1 19 7.297v9.406a4 4 0 0 1-.527 1.985l-1.317 2.304A2 2 0 0 1 15.42 22H8.58a2 2 0 0 1-1.736-1.008l-1.317-2.305A4 4 0 0 1 5 16.704V7.297a4 4 0 0 1 .527-1.984l.762-1.336A1 1 0 0 1 6.5 2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

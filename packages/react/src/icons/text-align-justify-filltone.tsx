@@ -29,7 +29,7 @@ const TextAlignJustifyIconFilltone = memo(
         <path
           fill="currentColor"
           d="M21 10.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

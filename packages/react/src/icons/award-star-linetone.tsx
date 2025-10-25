@@ -41,7 +41,7 @@ const AwardStarIconLinetone = memo(
           fillRule="evenodd"
           d="M13 17a4 4 0 0 1 4 4v1a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-1a4 4 0 0 1 4-4v-5a1 1 0 1 1 2 0zm-2 2a2 2 0 0 0-2 2h6a2 2 0 0 0-2-2z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

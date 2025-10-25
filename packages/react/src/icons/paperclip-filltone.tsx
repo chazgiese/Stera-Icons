@@ -29,7 +29,7 @@ const PaperclipIconFilltone = memo(
         <path
           fill="currentColor"
           d="M9.75.5A6.25 6.25 0 0 1 16 6.75v7.75a4 4 0 0 1-8 0V8a1.5 1.5 0 1 1 3 0v6.5a1 1 0 1 0 2 0V6.75A3.25 3.25 0 0 0 9.75 3.5z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

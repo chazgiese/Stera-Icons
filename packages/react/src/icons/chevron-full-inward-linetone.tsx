@@ -31,7 +31,7 @@ const ChevronFullInwardIconLinetone = memo(
           fillRule="evenodd"
           d="M11.293 14.293a1 1 0 0 1 1.414 0l6 6A1 1 0 0 1 18 22H6a1 1 0 0 1-.707-1.707zM8.414 20h7.172L12 16.414z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

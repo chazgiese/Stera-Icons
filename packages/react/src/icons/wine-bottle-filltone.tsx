@@ -29,7 +29,7 @@ const WineBottleIconFilltone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M13.75 2a1 1 0 0 0-.898-.995L12.75 1h-1.5a1 1 0 0 0-1 1v5.645a3.5 3.5 0 0 1 1-.145h1.5c.347 0 .683.05 1 .145z"
+          d="M13.75 2a1 1 0 0 0-.898-.995L12.75 1h-1.5a1 1 0 0 0-1 1v5.645a3.5 3.5 0 0 1 1-.145h1.5a3.5 3.5 0 0 1 1 .145z"
           clipRule="evenodd"
         />
         <path
@@ -37,7 +37,7 @@ const WineBottleIconFilltone = memo(
           fillRule="evenodd"
           d="M10.25 7.646A3.5 3.5 0 0 0 7.75 11v10a2 2 0 0 0 2 2h4.5a2 2 0 0 0 2-2V11a3.5 3.5 0 0 0-3.5-3.5h-1.5a3.5 3.5 0 0 0-1 .146"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

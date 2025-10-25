@@ -29,7 +29,7 @@ const CursorTextAltIconLinetone = memo(
         <path
           fill="currentColor"
           d="M8 1a5 5 0 0 1 5 5v5h2a1 1 0 1 1 0 2h-2v5a3 3 0 0 0 3 3h1a1 1 0 1 1 0 2h-1a5 5 0 0 1-5-5v-5H9a1 1 0 1 1 0-2h2V6a3 3 0 0 0-3-3H7a1 1 0 0 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

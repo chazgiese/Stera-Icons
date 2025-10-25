@@ -26,7 +26,7 @@ const FlowDiagramIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M9.5 13H7a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h7v2H7a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h2.5zM17 3a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2.5v-2H17a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-7V3z" />
         </g>
         <path

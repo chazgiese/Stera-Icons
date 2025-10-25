@@ -29,7 +29,7 @@ const CheckIconLinetone = memo(
         <path
           fill="currentColor"
           d="M3.427 10.323a1 1 0 0 1 1.392.246l4.8 6.857a1.001 1.001 0 0 1-1.639 1.147l-4.8-6.857a1 1 0 0 1 .247-1.393"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

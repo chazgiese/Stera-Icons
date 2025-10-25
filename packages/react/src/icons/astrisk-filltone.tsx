@@ -28,8 +28,8 @@ const AstriskIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1a1 1 0 0 1 1 1v9.413l8.168 4.717a1 1 0 1 1-1 1.731l-8.164-4.713-8.162 4.713a1 1 0 0 1-1-1.731L11 11.42V2a1 1 0 0 1 1-1"
-          opacity={0.32}
+          d="M12 1a1 1 0 0 1 1 1v9.413l8.168 4.717a1 1 0 1 1-1 1.731l-8.164-4.713-8.161 4.713a1 1 0 0 1-1-1.731L11 11.42V2a1 1 0 0 1 1-1"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const WarehouseIconFilltone = memo(
         <path
           fill="currentColor"
           d="M10.658 2.553a3 3 0 0 1 2.684 0l8 4A3 3 0 0 1 23 9.236V18a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9.236a3 3 0 0 1 1.658-2.684z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

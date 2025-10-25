@@ -29,7 +29,7 @@ const ImagePileIconFilltone = memo(
         <path
           fill="currentColor"
           d="M6.19 4.776a4 4 0 0 1 4.456-3.483L19.25 2.35l.203.029a4 4 0 0 1 3.28 4.428l-1.056 8.602a4 4 0 0 1-2.932 3.375c.144-.5.193-1.038.125-1.588l-1.056-8.602a4 4 0 0 0-4.254-3.503l-.204.02-7.318.898z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

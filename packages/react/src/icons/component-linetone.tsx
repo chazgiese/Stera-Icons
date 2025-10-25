@@ -30,7 +30,7 @@ const ComponentIconLinetone = memo(
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         >
           <path d="M4.586 8a2 2 0 0 1 2.828 0L10 10.586a2 2 0 0 1 0 2.828L7.414 16a2 2 0 0 1-2.828 0L2 13.414a2 2 0 0 1 0-2.828zm-1.172 4L6 14.586 8.586 12 6 9.414zM16.586 8a2 2 0 0 1 2.828 0L22 10.586a2 2 0 0 1 0 2.828L19.414 16a2 2 0 0 1-2.828 0L14 13.414a2 2 0 0 1 0-2.828zm-1.172 4L18 14.586 20.586 12 18 9.414z" />
         </g>

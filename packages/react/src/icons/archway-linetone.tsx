@@ -29,7 +29,7 @@ const ArchwayIconLinetone = memo(
         <path
           fill="currentColor"
           d="M19.83 21.828A4 4 0 0 1 17 23H7a4 4 0 0 1-2.828-1.172l1.414-1.414c.363.363.862.586 1.414.586h10c.552 0 1.051-.223 1.414-.586z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

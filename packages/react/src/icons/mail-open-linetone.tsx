@@ -29,7 +29,7 @@ const MailOpenIconLinetone = memo(
         <path
           fill="currentColor"
           d="M21 9a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4v-8a1 1 0 0 1 2 0v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

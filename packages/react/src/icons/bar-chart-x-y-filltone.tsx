@@ -26,7 +26,7 @@ const BarChartXYIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M8 10.5A1.5 1.5 0 0 1 9.5 12v4a1.5 1.5 0 0 1-3 0v-4A1.5 1.5 0 0 1 8 10.5M13 3.5A1.5 1.5 0 0 1 14.5 5v11a1.5 1.5 0 0 1-3 0V5A1.5 1.5 0 0 1 13 3.5M18 7.5A1.5 1.5 0 0 1 19.5 9v7a1.5 1.5 0 0 1-3 0V9A1.5 1.5 0 0 1 18 7.5" />
         </g>
         <path

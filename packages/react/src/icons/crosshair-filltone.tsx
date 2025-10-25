@@ -31,7 +31,7 @@ const CrosshairIconFilltone = memo(
           fillRule="evenodd"
           d="M12 3.5a8.5 8.5 0 1 1 0 17 8.5 8.5 0 0 1 0-17m0 3a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -31,7 +31,7 @@ const TextItalicIconFilltone = memo(
           fillRule="evenodd"
           d="M17.883 4.5a2.5 2.5 0 0 0-2.371 1.709l-3.773 11.316a1.5 1.5 0 0 0 1.423 1.975H6.117a2.5 2.5 0 0 0 2.371-1.709l3.774-11.32A1.5 1.5 0 0 0 10.838 4.5z"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

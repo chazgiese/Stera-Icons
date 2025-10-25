@@ -26,7 +26,7 @@ const SortIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M16 11a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2zM19 7a1 1 0 1 1 0 2h-9a1 1 0 0 1 0-2zM22 3a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" />
         </g>
         <path

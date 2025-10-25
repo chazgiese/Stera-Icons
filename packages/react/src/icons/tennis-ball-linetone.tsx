@@ -26,7 +26,7 @@ const TennisBallIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M5.7 4.146A10.97 10.97 0 0 1 9 12a10.97 10.97 0 0 1-3.3 7.855l-1.4-1.428A8.97 8.97 0 0 0 7 12a8.97 8.97 0 0 0-2.7-6.428zM19.7 5.573a8.97 8.97 0 0 0-2.7 6.428 8.97 8.97 0 0 0 2.7 6.427l-1.4 1.428a10.97 10.97 0 0 1-3.3-7.855 10.97 10.97 0 0 1 3.3-7.855z" />
         </g>
         <path

@@ -29,7 +29,7 @@ const DeviceDesktopIconFilltone = memo(
         <path
           fill="currentColor"
           d="M15 15a1 1 0 0 1 1 1c0 1.258.46 3.053.755 4.057.279.95-.423 1.943-1.448 1.943H8.693c-1.025 0-1.727-.992-1.448-1.943C7.54 19.054 8 17.258 8 16a1 1 0 0 1 1-1z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

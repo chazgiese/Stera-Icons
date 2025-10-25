@@ -29,7 +29,7 @@ const ExclamationPointIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 17.75a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

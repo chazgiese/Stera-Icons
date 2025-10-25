@@ -31,7 +31,7 @@ const ArrowCircleLeftIconLinetone = memo(
           fillRule="evenodd"
           d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11m-2 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

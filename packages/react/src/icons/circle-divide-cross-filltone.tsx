@@ -26,7 +26,7 @@ const CircleDivideCrossIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M11 13v9.952A11 11 0 0 1 1.047 13zM13 1.047A11 11 0 0 1 22.953 11H13z" />
         </g>
         <path

@@ -26,7 +26,7 @@ const RotationLeftIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M5.636 5.636A1 1 0 0 1 7.05 7.05a7.001 7.001 0 0 0 4.691 11.945L12 19a1 1 0 1 1 0 2l-.333-.006A9 9 0 0 1 5.636 5.636M12.333 3.006a9 9 0 0 1 6.031 15.358 1 1 0 0 1-1.414-1.414A7.001 7.001 0 0 0 12.26 5.005L11.999 5a1 1 0 0 1 0-2z" />
         </g>
         <path

@@ -29,7 +29,7 @@ const BracketsCurlyIconLinetone = memo(
         <path
           fill="currentColor"
           d="M18 2a3 3 0 0 1 3 3v2.838c0 1.458.933 2.752 2.316 3.213a1 1 0 0 1 0 1.897A3.39 3.39 0 0 0 21 16.162V19a3 3 0 0 1-3 3h-1a1 1 0 1 1 0-2h1a1 1 0 0 0 1-1v-2.838c0-1.646.748-3.16 1.969-4.162A5.39 5.39 0 0 1 19 7.838V5a1 1 0 0 0-1-1h-1a1 1 0 1 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

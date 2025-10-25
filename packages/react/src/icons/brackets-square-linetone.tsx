@@ -29,7 +29,7 @@ const BracketsSquareIconLinetone = memo(
         <path
           fill="currentColor"
           d="M19 2a3 3 0 0 1 3 3v14l-.004.154A3 3 0 0 1 19 22h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 .995-.898L20 19V5a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

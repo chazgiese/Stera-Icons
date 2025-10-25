@@ -29,7 +29,7 @@ const ArrowCircleUpRightIconFilltone = memo(
         <path
           fill="currentColor"
           d="M4.222 19.778c-4.296-4.296-4.296-11.26 0-15.556s11.26-4.296 15.556 0 4.296 11.26 0 15.556-11.26 4.296-15.556 0"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const SparkleIconFilltone = memo(
         <path
           fill="currentColor"
           d="M13.09 5.585a8 8 0 0 0 5.325 5.324L22 12l-3.585 1.09a8 8 0 0 0-5.324 5.325L12 22l-1.09-3.585a8 8 0 0 0-5.325-5.324L2 12l3.585-1.09a8 8 0 0 0 5.324-5.325L12 2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

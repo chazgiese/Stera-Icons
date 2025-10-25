@@ -29,7 +29,7 @@ const TestTubeFullIconFilltone = memo(
         <path
           fill="currentColor"
           d="M15 1a1 1 0 0 1 1 1v17a4 4 0 0 1-8 0V2a1 1 0 0 1 1-1z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

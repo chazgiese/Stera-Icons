@@ -29,7 +29,7 @@ const PlusIconLinetone = memo(
         <path
           fill="currentColor"
           d="M20 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

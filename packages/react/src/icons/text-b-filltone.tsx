@@ -29,7 +29,7 @@ const TextBIconFilltone = memo(
         <path
           fill="currentColor"
           d="M6 1.5h1.5v21H6A1.5 1.5 0 0 1 4.5 21V3A1.5 1.5 0 0 1 6 1.5"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

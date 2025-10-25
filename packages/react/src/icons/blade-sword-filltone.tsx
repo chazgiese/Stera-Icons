@@ -29,7 +29,7 @@ const BladeSwordIconFilltone = memo(
         <path
           fill="currentColor"
           d="M2.47 2.47a.75.75 0 0 1 .712-.198l4 1a.75.75 0 0 1 .348.198l10 10a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.003.052l-.057-.052-10-10a.8.8 0 0 1-.166-.252l-.031-.096-1-4a.75.75 0 0 1 .197-.712"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

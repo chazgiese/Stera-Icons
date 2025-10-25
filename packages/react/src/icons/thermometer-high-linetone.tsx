@@ -31,7 +31,7 @@ const ThermometerHighIconLinetone = memo(
           fillRule="evenodd"
           d="M12 1a4 4 0 0 1 4 4v7.5c0-.006-.002-.003.006.013a.2.2 0 0 0 .055.07 6 6 0 1 1-8.121 0 .2.2 0 0 0 .054-.07c.008-.016.006-.02.006-.013V5a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2v7.5c0 .645-.31 1.19-.707 1.555a4 4 0 1 0 5.414 0C14.31 13.69 14 13.145 14 12.5V5a2 2 0 0 0-2-2"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const WaterfallChartIconFilltone = memo(
         <path
           fill="currentColor"
           d="M13 8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2a2 2 0 0 1-1.99-1.796L9 14v-4a2 2 0 0 1 2-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

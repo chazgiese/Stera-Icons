@@ -29,7 +29,7 @@ const LineSegmentIconLinetone = memo(
         <path
           fill="currentColor"
           d="M15.793 6.793a1 1 0 1 1 1.414 1.414l-9 9a1 1 0 0 1-1.414-1.414z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

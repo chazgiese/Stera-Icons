@@ -29,7 +29,7 @@ const CurrencyEuroCirlceIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

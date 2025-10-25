@@ -29,7 +29,7 @@ const BluetoothIconFilltone = memo(
         <path
           fill="currentColor"
           d="M3.78 6.128a1.5 1.5 0 0 1 2.092-.349l7 5a1.5 1.5 0 0 1 0 2.441l-7 5a1.5 1.5 0 0 1-1.744-2.44L9.418 12l-5.29-3.78a1.5 1.5 0 0 1-.349-2.092"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

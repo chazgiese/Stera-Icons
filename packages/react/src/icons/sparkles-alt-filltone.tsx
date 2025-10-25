@@ -29,7 +29,7 @@ const SparklesAltIconFilltone = memo(
         <path
           fill="currentColor"
           d="M16.5 1a1 1 0 0 1 .977.783 6.24 6.24 0 0 0 4.74 4.74 1 1 0 0 1 0 1.954 6.24 6.24 0 0 0-4.74 4.74 1 1 0 0 1-1.954 0 6.24 6.24 0 0 0-4.74-4.74 1 1 0 0 1 0-1.954 6.24 6.24 0 0 0 4.74-4.74A1 1 0 0 1 16.5 1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

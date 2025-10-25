@@ -29,7 +29,7 @@ const PenIconFilltone = memo(
         <path
           fill="currentColor"
           d="M18.25 1.621c1.053 0 2.155.37 2.957 1.172S22.38 4.697 22.38 5.75s-.37 2.155-1.172 2.957l-1.294 1.292L14 4.085l1.294-1.292c.803-.802 1.904-1.172 2.957-1.172"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

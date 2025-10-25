@@ -29,7 +29,7 @@ const KeyIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1.5a5.5 5.5 0 0 1 2.5 10.398v2.395l1.76 1.76-.46.347-1.54 1.154L15.708 19 12 22.707l-2.5-2.5v-8.31A5.5 5.5 0 0 1 12 1.5"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

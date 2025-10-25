@@ -29,7 +29,7 @@ const BasketballIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1.25c5.937 0 10.75 4.813 10.75 10.75S17.937 22.75 12 22.75 1.25 17.937 1.25 12 6.063 1.25 12 1.25"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

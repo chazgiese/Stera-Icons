@@ -33,7 +33,7 @@ const ChartPieIconFilltone = memo(
         <path
           fill="currentColor"
           d="M13 1.047A11 11 0 0 1 22.953 11H13.25a.25.25 0 0 1-.25-.25z"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

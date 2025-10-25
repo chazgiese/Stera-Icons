@@ -33,7 +33,7 @@ const QuestionMarkIconLinetone = memo(
         <path
           fill="currentColor"
           d="M12 18a2 2 0 1 1 0 4 2 2 0 0 1 0-4"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

@@ -29,7 +29,7 @@ const PencilTipIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 1a1 1 0 0 1 .79.386l6.367 8.187c.546.702.843 1.567.843 2.456V21a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8.97c0-.89.297-1.755.843-2.457l6.368-8.187.075-.086A1 1 0 0 1 12 1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const CirclesThreeIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

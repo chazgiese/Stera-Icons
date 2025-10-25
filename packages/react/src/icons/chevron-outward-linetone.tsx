@@ -29,7 +29,7 @@ const ChevronOutwardIconLinetone = memo(
         <path
           fill="currentColor"
           d="M17.293 15.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 1 1 1.414-1.414L12 20.586z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

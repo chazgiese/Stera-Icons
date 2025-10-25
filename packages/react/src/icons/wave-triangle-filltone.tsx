@@ -29,7 +29,7 @@ const WaveTriangleIconFilltone = memo(
         <path
           fill="currentColor"
           d="M20.676 11.296a1.5 1.5 0 0 1 2.648 1.408l-3.895 7.332-.103.177c-1.069 1.71-3.583 1.71-4.652 0l-.103-.177-3.895-7.332 2.648-1.408L17 18.214z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

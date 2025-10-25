@@ -32,7 +32,7 @@ const WineGlassIconLinetone = memo(
           d="M11 14.93V19a2 2 0 0 1-2 2h6a2 2 0 0 1-2-2v-4.07a7 7 0 0 1-2 0"
           clipRule="evenodd"
         />
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M16 21a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z" />
           <path
             fillRule="evenodd"

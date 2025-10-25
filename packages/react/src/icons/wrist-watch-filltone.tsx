@@ -29,7 +29,7 @@ const WristWatchIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

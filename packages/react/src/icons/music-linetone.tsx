@@ -29,7 +29,7 @@ const MusicIconLinetone = memo(
         <path
           fill="currentColor"
           d="M18.38 2.256A2.25 2.25 0 0 1 21 4.476V15.5a1 1 0 0 1-2 0V4.476a.25.25 0 0 0-.291-.247l-9.5 1.584A.25.25 0 0 0 9 6.059V17.5a1 1 0 0 1-2 0V6.06c0-1.1.795-2.038 1.88-2.219z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

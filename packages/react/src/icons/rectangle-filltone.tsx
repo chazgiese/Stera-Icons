@@ -29,7 +29,7 @@ const RectangleIconFilltone = memo(
         <path
           fill="currentColor"
           d="M18 4a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -29,7 +29,7 @@ const ToggleOffIconFilltone = memo(
         <path
           fill="currentColor"
           d="M15 4a8 8 0 1 1 0 16H9A8 8 0 1 1 9 4z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path fill="currentColor" d="M9 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8" />
       </svg>

@@ -29,7 +29,7 @@ const PaperclipIconLinetone = memo(
         <path
           fill="currentColor"
           d="M10 1a5 5 0 0 1 5 5v9a3 3 0 1 1-6 0V8a1 1 0 0 1 2 0v7a1 1 0 1 0 2 0V6a3 3 0 0 0-3-3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

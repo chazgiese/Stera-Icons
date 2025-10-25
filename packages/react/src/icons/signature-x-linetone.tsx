@@ -26,7 +26,7 @@ const SignatureXIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M22 17a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2zM4.293 11.293a1 1 0 1 1 1.414 1.414l-.793.793.793.793a1 1 0 0 1-1.414 1.414l-.793-.793-.793.793a1 1 0 1 1-1.414-1.414l.793-.793-.793-.793a1 1 0 0 1 1.414-1.414l.793.793z" />
         </g>
         <path

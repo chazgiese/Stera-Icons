@@ -29,7 +29,7 @@ const RectangleIconLinetone = memo(
         <path
           fill="currentColor"
           d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5h-6v-2h6a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3h-6V3z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

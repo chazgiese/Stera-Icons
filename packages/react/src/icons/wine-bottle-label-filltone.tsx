@@ -29,7 +29,7 @@ const WineBottleLabelIconFilltone = memo(
         <path
           fill="currentColor"
           d="M12.853 1.005A1 1 0 0 1 13.75 2v5.646A3.5 3.5 0 0 1 16.25 11v10a2 2 0 0 1-2 2h-4.5a2 2 0 0 1-2-2V11a3.5 3.5 0 0 1 2.5-3.354V2a1 1 0 0 1 1-1h1.5z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

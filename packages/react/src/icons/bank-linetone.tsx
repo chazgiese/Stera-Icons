@@ -26,7 +26,7 @@ const BankIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M18.75 17A2.25 2.25 0 0 1 21 19.25V20a1 1 0 1 1-2 0v-.75a.25.25 0 0 0-.25-.25H5.25a.25.25 0 0 0-.25.25V20a1 1 0 0 1-2 0v-.75A2.25 2.25 0 0 1 5.25 17z" />
           <path
             fillRule="evenodd"

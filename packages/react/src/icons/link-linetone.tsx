@@ -29,7 +29,7 @@ const LinkIconLinetone = memo(
         <path
           fill="currentColor"
           d="M10.439 6.855a1 1 0 1 1 .768 1.845 4.657 4.657 0 0 0-1.5 7.593l3 3a4.657 4.657 0 0 0 6.665-6.505 1 1 0 0 1 1.447-1.38 6.657 6.657 0 0 1-9.525 9.3l-3-3a6.657 6.657 0 0 1 2.145-10.853"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

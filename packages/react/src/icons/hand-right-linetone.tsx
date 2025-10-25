@@ -29,7 +29,7 @@ const HandRightIconLinetone = memo(
         <path
           fill="currentColor"
           d="M20.002 13a1 1 0 0 1 1 1 9 9 0 0 1-17.878 1.487 1 1 0 0 1 1.973-.329A7 7 0 0 0 19.002 14a1 1 0 0 1 1-1"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
           fill="currentColor"

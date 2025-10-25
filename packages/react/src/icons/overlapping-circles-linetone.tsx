@@ -37,7 +37,7 @@ const OverlappingCirclesIconLinetone = memo(
           fillRule="evenodd"
           d="M15.5 4.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15m0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         />
       </svg>
     ))

@@ -26,7 +26,7 @@ const HashItalicIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M10.024 2.784a1 1 0 0 1 1.953.433l-4 18a1.002 1.002 0 0 1-1.953-.433zM16.024 2.784a1 1 0 0 1 1.953.433l-4 18a1.002 1.002 0 0 1-1.953-.433z" />
         </g>
         <path
