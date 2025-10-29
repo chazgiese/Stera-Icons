@@ -28,7 +28,7 @@ const SendHIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M14 11a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2z"
+          d="M14 11a1 1 0 1 1 0 2H7.594l.284-.521c.162-.299.163-.66 0-.958L7.594 11z"
           opacity={0.4}
         />
         <path

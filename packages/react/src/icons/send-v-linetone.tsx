@@ -28,7 +28,7 @@ const SendVIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 9a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0v-7a1 1 0 0 1 1-1"
+          d="M12 9a1 1 0 0 1 1 1v6.405l-.52-.283a1 1 0 0 0-.959 0l-.521.284V10a1 1 0 0 1 1-1"
           opacity={0.4}
         />
         <path

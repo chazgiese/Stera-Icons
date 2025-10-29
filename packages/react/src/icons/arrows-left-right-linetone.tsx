@@ -27,7 +27,7 @@ const ArrowsLeftRightIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M20.5 16.5a1 1 0 1 1 0 2h-18a1 1 0 1 1 0-2zM21.5 6.5a1 1 0 1 1 0 2h-18a1 1 0 0 1 0-2z" />
+          <path d="M20.5 16.5a1 1 0 1 1 0 2H4.914l-1-1 1-1zM20.086 7.5l-1 1H3.5a1 1 0 0 1 0-2h15.586z" />
         </g>
         <path
           fill="currentColor"

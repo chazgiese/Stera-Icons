@@ -28,7 +28,9 @@ const WristWatchIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16"
+          fillRule="evenodd"
+          d="M12 4a7.999 7.999 0 0 1 2.29 15.665 8 8 0 0 1-4.793-.066A8.002 8.002 0 0 1 9.71 4.334 8 8 0 0 1 12 4m0 4.5a1 1 0 0 0-1 1V12a1 1 0 0 0 .293.707l1.5 1.5a1 1 0 1 0 1.414-1.414L13 11.586V9.5a1 1 0 0 0-1-1"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

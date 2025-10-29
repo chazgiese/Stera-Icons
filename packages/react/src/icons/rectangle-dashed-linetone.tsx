@@ -26,7 +26,7 @@ const RectangleDashedIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M15 19a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2zM2.003 10a1 1 0 0 1 1 1l-.001 2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1M22 10a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1M15 3a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2z" />
         </g>
         <path

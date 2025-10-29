@@ -26,13 +26,9 @@ const CircleSlashIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18"
-          clipRule="evenodd"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M4.969 6.383A9 9 0 0 0 17.616 19.03l1.422 1.422A10.95 10.95 0 0 1 12 23C5.925 23 1 18.075 1 12c0-2.678.957-5.132 2.547-7.04zM19.397 20.143q-.087.076-.174.15.097-.083.193-.169zM12 1c6.075 0 11 4.925 11 11 0 2.678-.958 5.13-2.548 7.038l-1.422-1.422A9 9 0 0 0 6.383 4.97L4.96 3.547A10.96 10.96 0 0 1 12 1M3.876 4.584q-.097.108-.191.219.085-.1.172-.2z" />
+        </g>
         <path
           fill="currentColor"
           fillRule="evenodd"

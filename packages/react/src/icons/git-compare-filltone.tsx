@@ -27,7 +27,7 @@ const GitCompareIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M19 6.5a1 1 0 0 1 1 1V16a4 4 0 0 1-4 4h-5a1 1 0 1 1 0-2h5a2 2 0 0 0 2-2V7.5a1 1 0 0 1 1-1M13 4a1 1 0 1 1 0 2H8a2 2 0 0 0-2 2v8.5a1 1 0 1 1-2 0V8a4 4 0 0 1 4-4z" />
+          <path d="M20 16a4 4 0 0 1-4 4h-2.586l-1-1 1-1H16a2 2 0 0 0 2-2V8.354a3.5 3.5 0 0 0 2 0zM11.586 5l-1 1H8a2 2 0 0 0-2 2v7.646a3.5 3.5 0 0 0-2 0V8a4 4 0 0 1 4-4h2.586z" />
         </g>
         <path
           fill="currentColor"

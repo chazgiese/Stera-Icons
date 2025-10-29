@@ -26,11 +26,9 @@ const ChevronFullUpIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M12 7a1 1 0 0 1 .707.293l7 7A1 1 0 0 1 19 16H5l-.15-.01a1 1 0 0 1-.557-1.697l7-7A1 1 0 0 1 12 7"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M4.868 15.99h-.017l-.028-.007zM4.121 14.523l-.014.026.01-.018zM12 7a1 1 0 0 1 .707.293l7 7A1 1 0 0 0 19 14H5a1 1 0 0 0-.707.293l7-7A1 1 0 0 1 12 7" />
+        </g>
         <path fill="currentColor" d="M19 14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2z" />
       </svg>
     ))

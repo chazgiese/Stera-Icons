@@ -30,7 +30,7 @@ const PawPrintIconLinetone = memo(
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
-          opacity={0.32}
+          opacity={0.4}
         >
           <path d="M4 7.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M20 7.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M8.5 2.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M15.5 2.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
         </g>

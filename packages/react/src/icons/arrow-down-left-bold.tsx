@@ -30,10 +30,6 @@ const ArrowDownLeftIconBold = memo(
           fill="currentColor"
           d="M17.293 5.293a1 1 0 1 1 1.414 1.414L8.414 17H16a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v7.586z"
         />
-        <path
-          fill="currentColor"
-          d="M17.293 5.293a1 1 0 1 1 1.414 1.414L8.414 17H16a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v7.586z"
-        />
       </svg>
     ))
 );

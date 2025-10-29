@@ -26,11 +26,9 @@ const CircleDivideIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M11 22.952C5.394 22.447 1 17.738 1 12S5.394 1.552 11 1.047zM13 1.047C18.606 1.552 23 6.262 23 12s-4.394 10.447-10 10.952z" />
+        </g>
         <path
           fill="currentColor"
           fillRule="evenodd"

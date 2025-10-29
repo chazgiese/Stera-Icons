@@ -26,7 +26,13 @@ const BookOpenIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <path fill="currentColor" d="M13 20h-2V6.633h2z" opacity={0.4} />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M13 17.82a8 8 0 0 0-1 .746 8 8 0 0 0-1-.746V7.005a4 4 0 0 1 .184.206l.008.01a1 1 0 0 0 1.615 0l.01-.01A3 3 0 0 1 13 7.005zm-.196-10.592.002-.002v-.002l.002-.001-.001-.001z"
+          clipRule="evenodd"
+          opacity={0.4}
+        />
         <path
           fill="currentColor"
           d="M12.808 7.223h-.001l-.001.003-.002.002q0-.002.003-.006"

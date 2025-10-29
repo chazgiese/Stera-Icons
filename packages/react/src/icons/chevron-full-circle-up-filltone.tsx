@@ -28,8 +28,10 @@ const ChevronFullCircleUpIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
-          opacity={0.32}
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 7.25a1 1 0 0 0-.707.293l-4.5 4.5A1 1 0 0 0 7.5 14.75h9a1 1 0 0 0 .707-1.707l-4.5-4.5A1 1 0 0 0 12 8.25"
+          clipRule="evenodd"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

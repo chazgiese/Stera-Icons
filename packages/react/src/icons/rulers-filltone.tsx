@@ -26,11 +26,10 @@ const RulersIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M19.75 2A2.25 2.25 0 0 1 22 4.25v3.5A2.25 2.25 0 0 1 19.75 10H10v9.75A2.25 2.25 0 0 1 7.75 22h-3.5A2.25 2.25 0 0 1 2 19.75V4.25A2.25 2.25 0 0 1 4.25 2z"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M17 6a1 1 0 0 0-1 1v3h-2V7a1 1 0 1 0-2 0v3h-2v2H7a1 1 0 1 0 0 2h3v2H7a1 1 0 1 0 0 2h3v1.75A2.25 2.25 0 0 1 7.75 22h-3.5A2.25 2.25 0 0 1 2 19.75V10h8V2h9.75A2.25 2.25 0 0 1 22 4.25v3.5A2.25 2.25 0 0 1 19.75 10H18V7a1 1 0 0 0-1-1" />
+          <path d="M8 4v4H4V4z" />
+        </g>
         <path
           fill="currentColor"
           d="M10 18H7a1 1 0 1 1 0-2h3zM10 14H7a1 1 0 1 1 0-2h3z"

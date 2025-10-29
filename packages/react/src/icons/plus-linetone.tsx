@@ -28,13 +28,11 @@ const PlusIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M20 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"
-          opacity={0.4}
-        />
-        <path
-          fill="currentColor"
           d="M12 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1"
         />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M11 13H4a1 1 0 1 1 0-2h7zM20 11a1 1 0 1 1 0 2h-7v-2z" />
+        </g>
       </svg>
     ))
 );

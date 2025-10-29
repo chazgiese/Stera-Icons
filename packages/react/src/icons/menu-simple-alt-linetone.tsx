@@ -29,7 +29,7 @@ const MenuSimpleAltIconLinetone = memo(
         <path
           fill="currentColor"
           d="M15 15a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path fill="currentColor" d="M21 7a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
       </svg>

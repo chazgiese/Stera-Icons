@@ -27,7 +27,7 @@ const HashIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M9 2a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1M15 2a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1" />
+          <path d="M10 21a1 1 0 1 1-2 0v-5h2zM16 21a1 1 0 1 1-2 0v-5h2zM10 14H8v-4h2zM16 14h-2v-4h2zM9 2a1 1 0 0 1 1 1v5H8V3a1 1 0 0 1 1-1M15 2a1 1 0 0 1 1 1v5h-2V3a1 1 0 0 1 1-1" />
         </g>
         <path
           fill="currentColor"

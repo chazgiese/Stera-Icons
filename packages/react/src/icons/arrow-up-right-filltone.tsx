@@ -28,7 +28,7 @@ const ArrowUpRightIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M14.707 9.293a1 1 0 0 0-1.414 0l-8 8a1 1 0 0 0 1.414 1.414l8-8a1 1 0 0 0 0-1.414"
+          d="m13.5 11.914-6.793 6.793a1 1 0 0 1-1.414-1.414l6.793-6.793z"
           opacity={0.4}
         />
         <path

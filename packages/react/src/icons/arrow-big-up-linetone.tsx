@@ -28,7 +28,7 @@ const ArrowBigUpIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M16 12.5a1 1 0 0 1 1 1V18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-4.5a1 1 0 1 1 2 0V18a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4.5a1 1 0 0 1 1-1"
+          d="M15 13.5a1 1 0 0 0 1 1h1V18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-3.5h1a1 1 0 0 0 1-1V18a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"
           opacity={0.4}
         />
         <path

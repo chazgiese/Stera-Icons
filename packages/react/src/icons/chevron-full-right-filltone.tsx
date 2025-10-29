@@ -28,7 +28,7 @@ const ChevronFullRightIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M8.617 4.076a1 1 0 0 1 1.09.217l7 7a1 1 0 0 1 0 1.414l-7 7A1 1 0 0 1 8 19V5l.01-.15a1 1 0 0 1 .607-.774"
+          d="M8 5c0 .256.098.512.293.707L14.586 12l-6.293 6.293A1 1 0 0 0 8 19z"
           opacity={0.4}
         />
         <path

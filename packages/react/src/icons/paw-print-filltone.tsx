@@ -26,7 +26,7 @@ const PawPrintIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.32}>
+        <g fill="currentColor" opacity={0.4}>
           <path d="M4 7.75a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5M20 7.75a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5M8.5 2.75a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5M15.5 2.75a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5" />
         </g>
         <path

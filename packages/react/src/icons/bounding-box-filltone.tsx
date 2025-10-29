@@ -27,7 +27,7 @@ const BoundingBoxIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M17 20H7v-2h10zM6 17H4V7h2zM20 17h-2V7h2zM17 6H7V4h10z" />
+          <path d="M16 20H8v-2h8zM20 16h-2V8h2zM6 16H4V8h2zM16 6H8V4h8z" />
         </g>
         <path
           fill="currentColor"

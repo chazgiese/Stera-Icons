@@ -32,12 +32,6 @@ const ChevronFullOutwardIconBold = memo(
           d="M18 15a1 1 0 0 1 .707 1.707l-6 6a1 1 0 0 1-1.414 0l-6-6A1 1 0 0 1 6 15zm-6 5.586L15.586 17H8.414zM11.293 1.293a1 1 0 0 1 1.414 0l6 6A1 1 0 0 1 18 9H6a1 1 0 0 1-.707-1.707zM8.414 7h7.172L12 3.414z"
           clipRule="evenodd"
         />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M18 15a1 1 0 0 1 .707 1.707l-6 6a1 1 0 0 1-1.414 0l-6-6A1 1 0 0 1 6 15zm-6 5.586L15.586 17H8.414zM11.293 1.293a1 1 0 0 1 1.414 0l6 6A1 1 0 0 1 18 9H6a1 1 0 0 1-.707-1.707zM8.414 7h7.172L12 3.414z"
-          clipRule="evenodd"
-        />
       </svg>
     ))
 );

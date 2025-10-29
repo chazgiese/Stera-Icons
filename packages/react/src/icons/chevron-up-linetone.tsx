@@ -28,7 +28,7 @@ const ChevronUpIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M11.293 7.293a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414"
+          d="M19.707 14.293a1 1 0 1 1-1.414 1.414L12 9.414l.707-.707a1 1 0 0 0 0-1.414z"
           opacity={0.4}
         />
         <path

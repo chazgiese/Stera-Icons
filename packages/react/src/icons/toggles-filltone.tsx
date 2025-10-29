@@ -26,13 +26,13 @@ const TogglesIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.4}>
-          <path
-            fillRule="evenodd"
-            d="M16 12.75a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm-8 2a3 3 0 1 0 0 6h8a3 3 0 1 0 0-6z"
-            clipRule="evenodd"
-          />
-          <path d="M16 1.25a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10z" />
+        <g
+          fill="currentColor"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          opacity={0.4}
+        >
+          <path d="M16 12.75a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm-8 2a3 3 0 1 0 0 6h8a3 3 0 1 0 0-6zM16 1.25a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
         </g>
         <path
           fill="currentColor"

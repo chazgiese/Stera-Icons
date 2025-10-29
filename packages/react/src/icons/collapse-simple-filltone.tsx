@@ -27,7 +27,7 @@ const CollapseSimpleIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M8.293 14.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414-1.414zM20.293 2.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414-1.414z" />
+          <path d="m6.5 18.914-2.793 2.793a1 1 0 0 1-1.414-1.414L5.086 17.5zM20.293 2.293a1 1 0 0 1 1.414 1.414L18.914 6.5 17.5 5.086z" />
         </g>
         <path
           fill="currentColor"

@@ -28,7 +28,7 @@ const MoveIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M12.005 1.005a1 1 0 0 1 1 1V11H22a1 1 0 1 1 0 2h-8.995v9.005a1 1 0 1 1-2 0V13H2a1 1 0 1 1 0-2h9.005V2.005a1 1 0 0 1 1-1"
+          d="M13.005 4.419V11h6.58l1 1-1 1h-6.58v6.581L12 20.586l-.995-.995V13h-6.59l-1-1 1-1h6.59V4.41L12 3.413z"
           opacity={0.4}
         />
         <path

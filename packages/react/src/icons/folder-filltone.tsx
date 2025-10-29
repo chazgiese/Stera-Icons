@@ -28,7 +28,7 @@ const FolderIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M8.93 3a3 3 0 0 1 2.496 1.336l.812 1.219A1 1 0 0 0 13.07 6H20a3 3 0 0 1 3 3v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a3 3 0 0 1 3-3z"
+          d="M8.93 3a3 3 0 0 1 2.496 1.336l.812 1.219A1 1 0 0 0 13.07 6H20a3 3 0 0 1 3 3v2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1V6a3 3 0 0 1 3-3z"
           opacity={0.4}
         />
         <path

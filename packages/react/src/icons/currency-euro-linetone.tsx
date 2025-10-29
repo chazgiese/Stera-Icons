@@ -27,7 +27,7 @@ const CurrencyEuroIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M17 13a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM17 9a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z" />
+          <path d="M6.023 13q.045 1.058.19 2H4a1 1 0 1 1 0-2zM17 13a1 1 0 1 1 0 2H8.236a16 16 0 0 1-.21-2zM6.213 9a19 19 0 0 0-.19 2H4a1 1 0 1 1 0-2zM17 9a1 1 0 1 1 0 2H8.025q.052-1.094.211-2z" />
         </g>
         <path
           fill="currentColor"

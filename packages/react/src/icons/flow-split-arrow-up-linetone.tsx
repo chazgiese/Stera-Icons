@@ -28,7 +28,7 @@ const FlowSplitArrowUpIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 17a1 1 0 0 0 1-1v-4h4a3 3 0 0 0 3-3V2a1 1 0 1 0-2 0v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2a1 1 0 1 0-2 0v7a3 3 0 0 0 3 3h4v4a1 1 0 0 0 1 1"
+          d="M20 4.414V9a3 3 0 0 1-3 3h-4v3.126a4 4 0 0 0-2 0V12H7a3 3 0 0 1-3-3V4.414l1-1 1 1V9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.414l1-1z"
           opacity={0.4}
         />
         <path

@@ -28,7 +28,9 @@ const ChevronCircleRightIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m-.793 5.793a1 1 0 0 0-1.414 1.414L13.586 12l-3.793 3.793a1 1 0 0 0 1.414 1.414l4.5-4.5a1 1 0 0 0 0-1.414z"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

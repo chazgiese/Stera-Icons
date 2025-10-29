@@ -26,13 +26,13 @@ const TogglesIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" opacity={0.4}>
-          <path d="M16 12.75a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10z" />
-          <path
-            fillRule="evenodd"
-            d="M16 1.25a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm-8 2a3 3 0 0 0 0 6h8a3 3 0 1 0 0-6z"
-            clipRule="evenodd"
-          />
+        <g
+          fill="currentColor"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          opacity={0.4}
+        >
+          <path d="M16 12.75a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4M16 1.25a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm-8 2a3 3 0 0 0 0 6h8a3 3 0 1 0 0-6z" />
         </g>
         <path
           fill="currentColor"

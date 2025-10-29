@@ -28,7 +28,7 @@ const FlowSplitLeftIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M10 4a3 3 0 0 1 3 3v4h3a1 1 0 1 1 0 2h-3v4a3 3 0 0 1-3 3H8a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H8a1 1 0 0 1 0-2z"
+          d="M10 4a3 3 0 0 1 3 3v4h2.126a4 4 0 0 0 0 2H13v4a3 3 0 0 1-3 3H8.874a4 4 0 0 0 0-2H10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H8.874a4 4 0 0 0 0-2z"
           opacity={0.4}
         />
         <path

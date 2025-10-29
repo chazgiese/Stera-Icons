@@ -350,6 +350,7 @@ export { KeyholeIcon } from './icons/keyhole-wrapper';
 export { LabelIcon } from './icons/label-wrapper';
 export { LabelAltIcon } from './icons/label-alt-wrapper';
 export { LayersIcon } from './icons/layers-wrapper';
+export { LayersAltIcon } from './icons/layers-alt-wrapper';
 export { LayersSimpleIcon } from './icons/layers-simple-wrapper';
 export { LineChartIcon } from './icons/line-chart-wrapper';
 export { LineChartDescIcon } from './icons/line-chart-desc-wrapper';

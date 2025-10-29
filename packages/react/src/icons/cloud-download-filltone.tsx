@@ -28,7 +28,9 @@ const CloudDownloadIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a7 7 0 0 1 6.327 4.009A6 6 0 0 1 18 20H5a5 5 0 0 1 0-10l.071.002A7 7 0 0 1 12 4"
+          fillRule="evenodd"
+          d="M12 4a7 7 0 0 1 6.327 4.009A6 6 0 0 1 18 20H5a5 5 0 0 1 0-10l.071.002A7 7 0 0 1 12 4m0 4a1 1 0 0 0-1 1v5.586l-1.793-1.793a1 1 0 1 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l3.5-3.5a1 1 0 1 0-1.414-1.414L13 14.586V9a1 1 0 0 0-1-1"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

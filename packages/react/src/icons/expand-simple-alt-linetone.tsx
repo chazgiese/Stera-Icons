@@ -27,7 +27,7 @@ const ExpandSimpleAltIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M14.293 14.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414M2.293 2.293a1 1 0 0 1 1.414 0l6 6a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414" />
+          <path d="M14.293 14.293a1 1 0 0 1 1.414 0L20 18.586V20h-1.414l-4.293-4.293a1 1 0 0 1 0-1.414M9.707 8.293a1 1 0 0 1-1.414 1.414L4 5.414V4h1.414z" />
         </g>
         <path
           fill="currentColor"

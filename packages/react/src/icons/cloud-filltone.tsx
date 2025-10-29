@@ -28,8 +28,8 @@ const CloudIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a7 7 0 0 1 6.327 4.009A6 6 0 0 1 18 20H5a5 5 0 0 1 0-10l.071.002A7 7 0 0 1 12 4"
-          opacity={0.32}
+          d="M12 6a5 5 0 0 1 4.718 3.344 1 1 0 0 0 1.01.667A4 4 0 1 1 18 18H4.999a3 3 0 1 1 .753-5.907 1 1 0 0 0 1.25-.989L7 11a5 5 0 0 1 5-5"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

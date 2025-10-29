@@ -28,7 +28,7 @@ const FlowDownArrowIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 9a1 1 0 0 1 1 1v12a1 1 0 1 1-2 0V10a1 1 0 0 1 1-1"
+          d="m13 19.586-1 1-1-1v-8.687a5 5 0 0 0 2 0z"
           opacity={0.4}
         />
         <path

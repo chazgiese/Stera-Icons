@@ -28,8 +28,10 @@ const MinusCircleIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
-          opacity={0.32}
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m-4 9.996a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+          clipRule="evenodd"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -27,7 +27,7 @@ const WristWatchIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M9 18v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3h2v3a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-3zM14 0a3 3 0 0 1 3 3v3h-2V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3H7V3a3 3 0 0 1 3-3z" />
+          <path d="M17 21a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-2.758c.602.483 1.274.88 2 1.174V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.584a8 8 0 0 0 2-1.174zM14 0a3 3 0 0 1 3 3v2.757a8 8 0 0 0-2-1.174V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.583a8 8 0 0 0-2 1.174V3a3 3 0 0 1 3-3z" />
         </g>
         <path
           fill="currentColor"

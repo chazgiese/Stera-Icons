@@ -28,7 +28,7 @@ const LabelIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H9v-2h9a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H9V3z"
+          d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H9a1 1 0 0 0 0-2h9a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H9a1 1 0 0 0 0-2z"
           opacity={0.4}
         />
         <path

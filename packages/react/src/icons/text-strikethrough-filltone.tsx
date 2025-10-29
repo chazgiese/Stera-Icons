@@ -26,11 +26,9 @@ const TextStrikethroughIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M17 1.5a1.5 1.5 0 0 1 0 3h-5.5a3 3 0 0 0 0 6h.5q.128 0 .25.021.122-.02.25-.021h1a6 6 0 0 1 0 12H7a1.5 1.5 0 0 1 0-3h6.5a3 3 0 1 0 0-6h-1q-.128-.001-.25-.023a1.5 1.5 0 0 1-.25.023h-.5a6 6 0 0 1 0-12z"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M18.693 13.496A6 6 0 0 1 13.5 22.5H7a1.5 1.5 0 0 1 0-3h6.5a3 3 0 1 0 0-6c-3.488 0 4.75-.004 5.193-.004M17 1.5a1.5 1.5 0 0 1 0 3h-5.5a3 3 0 0 0-.154 5.996H6.303A6 6 0 0 1 11.5 1.5z" />
+        </g>
         <path
           fill="currentColor"
           d="M22.005 10.496a1.5 1.5 0 0 1 0 3h-20a1.5 1.5 0 0 1 0-3z"

@@ -28,9 +28,7 @@ const MailIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M19 3a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zM5 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"
-          clipRule="evenodd"
+          d="M1 6.99c.001.31.144.605.387.8L3 9.08V17a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9.08l1.613-1.29a1.03 1.03 0 0 0 .386-.8L23 7v10a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V6.99"
           opacity={0.4}
         />
         <path

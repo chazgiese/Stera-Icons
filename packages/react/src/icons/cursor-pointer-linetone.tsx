@@ -28,7 +28,7 @@ const CursorPointerIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M20 13a1 1 0 0 1 1 1 9 9 0 0 1-17.878 1.487 1 1 0 0 1 1.973-.33A7 7 0 0 0 19 14a1 1 0 0 1 1-.999"
+          d="M20.988 14.463a9 9 0 0 1-17.846 1.132l.037.092a1 1 0 0 0 1.917-.521A7 7 0 0 0 19 14l.005.102A1 1 0 0 0 21 14z"
           opacity={0.4}
         />
         <path

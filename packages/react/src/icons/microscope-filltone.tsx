@@ -27,8 +27,7 @@ const MicroscopeIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M13 6a1 1 0 1 1 0 2h-1.5a6.5 6.5 0 1 0 0 13 1 1 0 1 1 0 2 8.5 8.5 0 0 1 0-17z" />
-          <path d="M19 17a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2z" />
+          <path d="M12 8h-.5a6.5 6.5 0 1 0 0 13H6.025A8.5 8.5 0 0 1 11.5 6h.5zM19 17a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2z" />
         </g>
         <path
           fill="currentColor"

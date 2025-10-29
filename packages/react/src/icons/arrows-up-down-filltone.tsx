@@ -27,7 +27,7 @@ const ArrowsUpDownIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M17 3a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M7 2a1 1 0 0 1 1 1v18a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1" />
+          <path d="M8 21a1 1 0 1 1-2 0V8h2zM17 3a1 1 0 0 1 1 1v13h-2V4a1 1 0 0 1 1-1" />
         </g>
         <path
           fill="currentColor"

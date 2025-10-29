@@ -28,8 +28,8 @@ const ReplyIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M11 9.5c7.5 0 10 2 10 9.5-.009-.02-2.013-4.5-8-4.5h-2V20l-8-8 8-8z"
-          opacity={0.32}
+          d="M10 9.5a1 1 0 0 0 1 1c3.734 0 5.878.517 7.136 1.674.832.765 1.388 1.921 1.663 3.73C18.384 14.671 16.187 13.5 13 13.5h-2a1 1 0 0 0-1 1v3.086L4.414 12 10 6.414z"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

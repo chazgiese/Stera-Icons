@@ -28,7 +28,9 @@ const TestTubeFullIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M15 1a1 1 0 0 1 1 1v17a4 4 0 0 1-8 0V2a1 1 0 0 1 1-1z"
+          fillRule="evenodd"
+          d="M16 19a4 4 0 0 1-8 0V3h8zM11 8a1 1 0 0 0-1 1v10a2 2 0 1 0 4 0V9a1 1 0 0 0-1-1z"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

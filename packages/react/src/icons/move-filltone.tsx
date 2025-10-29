@@ -28,7 +28,7 @@ const MoveIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12.005 1.005a1 1 0 0 1 1 1V11H22a1 1 0 1 1 0 2h-8.995v9.005a1 1 0 1 1-2 0V13H2a1 1 0 1 1 0-2h9.005V2.005a1 1 0 0 1 1-1"
+          d="M13.005 11H18.5v2h-5.495v5.5h-2V13H5.5v-2h5.505V5.5h2z"
           opacity={0.4}
         />
         <path

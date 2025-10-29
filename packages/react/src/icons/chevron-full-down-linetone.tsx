@@ -28,7 +28,7 @@ const ChevronFullDownIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M19 8a1 1 0 1 1 0 2H5a1 1 0 0 1 0-2z"
+          d="M19 8a1 1 0 0 0-.707.293L16.586 10H7.414L5.707 8.293A1 1 0 0 0 5 8z"
           opacity={0.4}
         />
         <path

@@ -26,11 +26,14 @@ const FlashlightIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M15 1a3 3 0 0 1 3 3v2.343a5 5 0 0 1-1.465 3.536l-.156.156a3 3 0 0 0-.879 2.122V20a3 3 0 0 1-3 3h-1a3 3 0 0 1-3-3v-7.843c0-.795-.316-1.56-.879-2.122l-.156-.156A5 5 0 0 1 6 6.343V4a3 3 0 0 1 3-3z"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path
+            fillRule="evenodd"
+            d="M18 6.343a5 5 0 0 1-1.465 3.536l-.156.156a3 3 0 0 0-.879 2.122V20a3 3 0 0 1-3 3h-1a3 3 0 0 1-3-3v-7.843c0-.795-.316-1.56-.879-2.122l-.156-.156A5 5 0 0 1 6 6.343V5.75h12zM12 11a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1"
+            clipRule="evenodd"
+          />
+          <path d="M15 1a3 3 0 0 1 3 3v.25H6V4a3 3 0 0 1 3-3z" />
+        </g>
         <path
           fill="currentColor"
           d="M12 11a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1M18 5.75H6v-1.5h12z"

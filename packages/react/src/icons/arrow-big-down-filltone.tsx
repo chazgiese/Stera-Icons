@@ -28,8 +28,8 @@ const ArrowBigDownIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M14 3a3 3 0 0 1 3 3v3.5h3.793c1.336 0 2.005 1.616 1.06 2.56l-8.262 8.263a2.25 2.25 0 0 1-3.182 0L2.146 12.06c-.944-.944-.275-2.56 1.061-2.56H7V6a3 3 0 0 1 3-3z"
-          opacity={0.32}
+          d="M14 3a3 3 0 0 1 3 3v3.5a1 1 0 0 0 0 2h2.586l-7.41 7.41a.25.25 0 0 1-.353 0L4.414 11.5H7a1 1 0 0 0 0-2V6a3 3 0 0 1 3-3z"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

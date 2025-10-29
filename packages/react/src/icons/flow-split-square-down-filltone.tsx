@@ -28,7 +28,7 @@ const FlowSplitSquareDownIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12.103 7.005A1 1 0 0 1 13 8v3h4a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 1 1-2 0v-2a3 3 0 0 1 3-3h4V8a1 1 0 0 1 1-1z"
+          d="M13 11h4a3 3 0 0 1 3 3v1h-2v-1a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1H4v-1a3 3 0 0 1 3-3h4V8.874a4 4 0 0 0 2 0z"
           opacity={0.4}
         />
         <path

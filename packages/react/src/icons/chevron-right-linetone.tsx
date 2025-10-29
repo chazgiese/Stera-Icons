@@ -28,7 +28,7 @@ const ChevronRightIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="M15.293 11.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414-1.414z"
+          d="M15.293 12.707a1 1 0 0 0 1.414 0l-7 7a1 1 0 0 1-1.414-1.414L14.586 12z"
           opacity={0.4}
         />
         <path

@@ -27,7 +27,7 @@ const CircleCheckerIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M12 22C6.477 22 2 17.523 2 12h10zM12 2c5.523 0 10 4.477 10 10H12z" />
+          <path d="M12 21a9 9 0 0 1-9-9h9zM12 3a9 9 0 0 1 9 9h-9z" />
         </g>
         <path
           fill="currentColor"

@@ -27,7 +27,7 @@ const GitPullRequestIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M5.5 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1M15.5 4.5a4 4 0 0 1 4 4V16a1 1 0 1 1-2 0V8.5a2 2 0 0 0-2-2H12a1 1 0 1 1 0-2z" />
+          <path d="M6.5 15.146a3.5 3.5 0 0 0-2 0V8.854a3.5 3.5 0 0 0 2 0zM15.5 4.5a4 4 0 0 1 4 4v6.646a3.5 3.5 0 0 0-2 0V8.5a2 2 0 0 0-2-2h-1.586l-1-1 1-1z" />
         </g>
         <path
           fill="currentColor"

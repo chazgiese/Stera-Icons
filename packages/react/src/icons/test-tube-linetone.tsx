@@ -28,9 +28,7 @@ const TestTubeIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          fillRule="evenodd"
-          d="M15 1a1 1 0 0 1 1 1v17a4 4 0 0 1-8 0V2a1 1 0 0 1 1-1zm-5 18a2 2 0 1 0 4 0V3h-4z"
-          clipRule="evenodd"
+          d="M16 19a4 4 0 0 1-8 0V3h2v16a2 2 0 1 0 4 0V3h2z"
           opacity={0.4}
         />
         <path fill="currentColor" d="M16.5 1a1 1 0 1 1 0 2h-9a1 1 0 0 1 0-2z" />

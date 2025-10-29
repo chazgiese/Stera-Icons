@@ -27,7 +27,7 @@ const SlidersIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M12 16a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zM22 16a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2zM6 6a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zM22 6a1 1 0 1 1 0 2H12a1 1 0 1 1 0-2z" />
+          <path d="M11.126 16a4 4 0 0 0 0 2H2a1 1 0 1 1 0-2zM22 16a1 1 0 1 1 0 2h-3.126a4 4 0 0 0 0-2zM5.126 6a4 4 0 0 0 0 2H2a1 1 0 0 1 0-2zM22 6a1 1 0 1 1 0 2h-9.126a4 4 0 0 0 0-2z" />
         </g>
         <path
           fill="currentColor"

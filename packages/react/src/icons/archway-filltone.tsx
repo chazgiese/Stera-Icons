@@ -28,8 +28,8 @@ const ArchwayIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1a9 9 0 0 1 9 9v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10a9 9 0 0 1 9-9"
-          opacity={0.24}
+          d="M12 1a9 9 0 0 1 9 9v12a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1V10a9 9 0 0 1 9-9"
+          opacity={0.4}
         />
         <path fill="currentColor" d="M20 21a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z" />
       </svg>

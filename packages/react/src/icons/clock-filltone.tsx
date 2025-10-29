@@ -28,8 +28,10 @@ const ClockIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
-          opacity={0.32}
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m0 5a1 1 0 0 0-1 1v5c0 .155.037.302.1.433l.02.042a1 1 0 0 0 .173.232l3.535 3.535a1.001 1.001 0 0 0 1.415-1.414L13 11.585V7a1 1 0 0 0-1-1"
+          clipRule="evenodd"
+          opacity={0.4}
         />
         <path
           fill="currentColor"

@@ -26,11 +26,14 @@ const CompassIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M12.001 11a1.001 1.001 0 1 1-1 1 1 1 0 0 1 1-1" />
+          <path
+            fillRule="evenodd"
+            d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m5.207 5.793a1 1 0 0 0-1.066-.227l-6.5 2.5c-.264.102-.473.31-.575.575l-2.5 6.5a1.001 1.001 0 0 0 1.293 1.293l6.5-2.5c.264-.102.473-.31.575-.575l2.5-6.5a1 1 0 0 0-.227-1.066"
+            clipRule="evenodd"
+          />
+        </g>
         <path
           fill="currentColor"
           fillRule="evenodd"

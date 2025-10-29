@@ -26,7 +26,11 @@ const CircleIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <circle cx={12} cy={12} r={10} fill="currentColor" opacity={0.4} />
+        <path
+          fill="currentColor"
+          d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18"
+          opacity={0.4}
+        />
         <path
           fill="currentColor"
           fillRule="evenodd"

@@ -27,7 +27,7 @@ const HashIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M9 2a1.5 1.5 0 0 1 1.5 1.5v17a1.5 1.5 0 0 1-3 0v-17A1.5 1.5 0 0 1 9 2M15 2a1.5 1.5 0 0 1 1.5 1.5v17a1.5 1.5 0 0 1-3 0v-17A1.5 1.5 0 0 1 15 2" />
+          <path d="M10.5 20.5a1.5 1.5 0 0 1-3 0v-4h3zM16.5 20.5a1.5 1.5 0 0 1-3 0v-4h3zM10.5 13.5h-3v-3h3zM16.5 13.5h-3v-3h3zM9 2a1.5 1.5 0 0 1 1.5 1.5v4h-3v-4A1.5 1.5 0 0 1 9 2M15 2a1.5 1.5 0 0 1 1.5 1.5v4h-3v-4A1.5 1.5 0 0 1 15 2" />
         </g>
         <path
           fill="currentColor"

@@ -26,11 +26,10 @@ const WarehouseIconFilltone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M10.658 2.553a3 3 0 0 1 2.684 0l8 4A3 3 0 0 1 23 9.236V18a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9.236a3 3 0 0 1 1.658-2.684z"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M10.658 2.552a3 3 0 0 1 2.684 0l8 4A3 3 0 0 1 23 9.236V18a3 3 0 0 1-3 3h-2v-8.75A2.25 2.25 0 0 0 15.75 10h-7.5A2.25 2.25 0 0 0 6 12.25V21H4a3 3 0 0 1-3-3V9.236c0-1.136.642-2.175 1.658-2.684z" />
+          <path d="M16 18v1H8v-1zM16 15v1H8v-1zM15.75 12a.25.25 0 0 1 .25.25V13H8v-.75a.25.25 0 0 1 .25-.25z" />
+        </g>
         <path
           fill="currentColor"
           fillRule="evenodd"

@@ -27,7 +27,7 @@ const AlignHorizontalCenterIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M13 18.5V21a1 1 0 1 1-2 0v-2.5zM13 13h-2v-2h2zM12 2a1 1 0 0 1 1 1v2.5h-2V3a1 1 0 0 1 1-1" />
+          <path d="M13 21a1 1 0 1 1-2 0v-2.25h2zM13 12.75h-2v-1.5h2zM12 2a1 1 0 0 1 1 1v2.25h-2V3a1 1 0 0 1 1-1" />
         </g>
         <path
           fill="currentColor"

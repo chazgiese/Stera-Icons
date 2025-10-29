@@ -28,7 +28,9 @@ const CliCircleIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1M8.207 7.793a1 1 0 0 0-1.414 1.414L9.586 12l-2.793 2.793a1 1 0 1 0 1.414 1.414l3.5-3.5a1 1 0 0 0 0-1.414zM13 14.5a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

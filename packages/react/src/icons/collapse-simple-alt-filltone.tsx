@@ -27,7 +27,7 @@ const CollapseSimpleAltIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M14.293 14.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414M2.293 2.293a1 1 0 0 1 1.414 0l6 6a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414" />
+          <path d="M21.707 20.293a1 1 0 0 1-1.414 1.414L18 19.414 19.414 18zM2.293 2.293a1 1 0 0 1 1.414 0L6 4.586 4.586 6 2.293 3.707a1 1 0 0 1 0-1.414" />
         </g>
         <path
           fill="currentColor"

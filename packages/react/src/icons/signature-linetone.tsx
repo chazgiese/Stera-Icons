@@ -26,11 +26,9 @@ const SignatureIconLinetone = memo(
         ref={ref}
         {...props}
       >
-        <path
-          fill="currentColor"
-          d="M22 16a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2z"
-          opacity={0.4}
-        />
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M5.906 16a20 20 0 0 1-1.432 2H2a1 1 0 1 1 0-2zM22 16a1 1 0 1 1 0 2H6.979c.447-.639.87-1.31 1.26-2z" />
+        </g>
         <path
           fill="currentColor"
           fillRule="evenodd"

@@ -28,7 +28,9 @@ const AlarmClockIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a9 9 0 1 1 0 18 9 9 0 0 1 0-18"
+          fillRule="evenodd"
+          d="M12 4a9 9 0 0 1 9 9 8.97 8.97 0 0 1-2.636 6.364l-.11.104q-.349.338-.735.637l-.035.028a9 9 0 0 1-.39.286l-.421.273A8.96 8.96 0 0 1 12 22a8.96 8.96 0 0 1-6.255-2.532A9 9 0 0 1 12 4m0 3.5a1 1 0 0 0-1 1V12H8.5a1 1 0 0 0 0 2H12a1 1 0 0 0 1-1V8.5a1 1 0 0 0-1-1"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

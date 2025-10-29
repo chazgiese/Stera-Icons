@@ -28,7 +28,9 @@ const CurrencyCircleDollarIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1"
+          fillRule="evenodd"
+          d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m-.25 3.5a1 1 0 0 0-1 1V7a3 3 0 0 0 0 6h3a1 1 0 1 1 0 2h-5a1 1 0 1 0 0 2h2.5v1.5a1 1 0 1 0 2 0V17h.5a3 3 0 1 0 0-6h-3a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2h-2V5.5a1 1 0 0 0-1-1"
+          clipRule="evenodd"
           opacity={0.4}
         />
         <path

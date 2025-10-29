@@ -28,7 +28,7 @@ const ArrowDownIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M12 4a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1"
+          d="M12 4a1 1 0 0 1 1 1v7h-2V5a1 1 0 0 1 1-1"
           opacity={0.4}
         />
         <path
