@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.4.0
+
+### Minor Changes
+
+- 03aac07: Update icon variants with improved SVG content and styling
+
 ## 5.3.0
 
 ### Minor Changes
