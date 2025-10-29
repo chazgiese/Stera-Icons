@@ -181,7 +181,7 @@ async function buildIcons(iconsExportPath) {
       const currentSvgHash = variantData.hash; // Use SHA-256 hash from export
       const changeAnalysis = hashVersioning.analyzeIconChange(uniqueSlug, variant, currentSvgHash, existingMetadata);
       
-      const { versionAdded, dateAdded, lastModified } = changeAnalysis;
+      const { versionAdded, dateAdded, lastModified, versionLastModified } = changeAnalysis;
       
       // Log the status
       switch (changeAnalysis.status) {
@@ -206,6 +206,7 @@ async function buildIcons(iconsExportPath) {
         versionAdded,
         dateAdded,
         lastModified,
+        versionLastModified,
         svgHash: variantData.hash // Use SHA-256 hash from export
       });
     }

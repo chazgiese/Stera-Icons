@@ -148,12 +148,15 @@ export class HashVersioning {
       item.name === iconName && item.variant === variant
     );
 
+    const currentVersion = this.getVersionForIcons().version;
+
     if (!existingItem) {
       return {
         status: 'new',
-        versionAdded: this.getVersionForIcons().version,
+        versionAdded: currentVersion,
         dateAdded: new Date().toISOString(),
-        lastModified: new Date().toISOString()
+        lastModified: new Date().toISOString(),
+        versionLastModified: currentVersion
       };
     }
 
@@ -164,7 +167,8 @@ export class HashVersioning {
         status: 'modified',
         versionAdded: existingItem.versionAdded,
         dateAdded: existingItem.dateAdded,
-        lastModified: new Date().toISOString()
+        lastModified: new Date().toISOString(),
+        versionLastModified: currentVersion
       };
     }
 
@@ -172,7 +176,8 @@ export class HashVersioning {
       status: 'unchanged',
       versionAdded: existingItem.versionAdded,
       dateAdded: existingItem.dateAdded,
-      lastModified: existingItem.lastModified
+      lastModified: existingItem.lastModified,
+      versionLastModified: existingItem.versionLastModified || existingItem.versionAdded
     };
   }
 

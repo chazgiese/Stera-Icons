@@ -36,7 +36,14 @@ class IconMetadataUtils {
    * Get all icons modified in a specific version
    */
   getModifiedIconsByVersion(version) {
-    return this.metadata.filter(icon => icon.lastModified.startsWith(version));
+    return this.metadata.filter(icon => icon.versionLastModified === version);
+  }
+
+  /**
+   * Get all icons last modified in a specific version
+   */
+  getIconsLastModifiedInVersion(version) {
+    return this.metadata.filter(icon => icon.versionLastModified === version);
   }
 
   /**
@@ -70,8 +77,8 @@ class IconMetadataUtils {
       
       stats[version].iconsAdded++;
       
-      // Check if this icon was modified in this version
-      if (icon.lastModified.startsWith(icon.versionAdded)) {
+      // Check if this icon was modified in this version (using versionLastModified)
+      if (icon.versionLastModified === version) {
         stats[version].iconsModified++;
       }
       
@@ -82,6 +89,36 @@ class IconMetadataUtils {
       }
       if (!stats[version].dateRange.end || addedDate > new Date(stats[version].dateRange.end)) {
         stats[version].dateRange.end = icon.dateAdded;
+      }
+    });
+    
+    return stats;
+  }
+
+  /**
+   * Get modification statistics by version
+   */
+  getModificationStats() {
+    const stats = {};
+    
+    this.metadata.forEach(icon => {
+      const version = icon.versionLastModified;
+      if (!stats[version]) {
+        stats[version] = {
+          iconsLastModified: 0,
+          iconsAdded: 0,
+          iconsModified: 0
+        };
+      }
+      
+      stats[version].iconsLastModified++;
+      
+      // Count icons that were added in this version
+      if (icon.versionAdded === version) {
+        stats[version].iconsAdded++;
+      } else {
+        // This icon was modified in this version but added earlier
+        stats[version].iconsModified++;
       }
     });
     
@@ -163,6 +200,20 @@ function main() {
         console.log(`  - ${icon.componentName} (${icon.name})`);
       });
       break;
+
+    case 'modified':
+      const modifiedVersion = args[1];
+      if (!modifiedVersion) {
+        console.error('Please provide a version number (e.g., 3.1.0)');
+        process.exit(1);
+      }
+      const modifiedIcons = utils.getModifiedIconsByVersion(modifiedVersion);
+      console.log(`Icons last modified in version ${modifiedVersion}: ${modifiedIcons.length}`);
+      modifiedIcons.forEach(icon => {
+        const addedIn = icon.versionAdded === modifiedVersion ? ' (added)' : ` (added in v${icon.versionAdded})`;
+        console.log(`  - ${icon.componentName} (${icon.name})${addedIn}`);
+      });
+      break;
       
     case 'search':
       const query = args[1];
@@ -190,6 +241,17 @@ function main() {
       const stats = utils.getVersionStats();
       console.log(JSON.stringify(stats, null, 2));
       break;
+
+    case 'modifications':
+      const modStats = utils.getModificationStats();
+      console.log('📊 Modification Statistics by Version');
+      console.log('====================================');
+      Object.entries(modStats)
+        .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
+        .forEach(([version, data]) => {
+          console.log(`v${version}: ${data.iconsLastModified} total, ${data.iconsAdded} added, ${data.iconsModified} modified`);
+        });
+      break;
       
     default:
       console.log('Icon Metadata Utilities');
@@ -200,15 +262,19 @@ function main() {
       console.log('Commands:');
       console.log('  summary                    - Show overall summary');
       console.log('  version <version>          - Show icons added in version');
+      console.log('  modified <version>         - Show icons last modified in version');
       console.log('  search <query>             - Search icons by name or tags');
       console.log('  recent [days]              - Show recently added icons');
       console.log('  stats                      - Show detailed statistics');
+      console.log('  modifications              - Show modification statistics by version');
       console.log('');
       console.log('Examples:');
       console.log('  node metadata-utils.js summary');
       console.log('  node metadata-utils.js version 3.1.0');
+      console.log('  node metadata-utils.js modified 3.1.0');
       console.log('  node metadata-utils.js search "chart"');
       console.log('  node metadata-utils.js recent 30');
+      console.log('  node metadata-utils.js modifications');
       break;
   }
 }
