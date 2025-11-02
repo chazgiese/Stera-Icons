@@ -26,7 +26,7 @@ const BatteryHalfIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_5019_7281)">
+        <g clipPath="url(#clip0_5025_7345)">
           <path
             fill="currentColor"
             fillRule="evenodd"

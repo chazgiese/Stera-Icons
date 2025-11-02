@@ -26,7 +26,7 @@ const BatteryIconBold = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_5019_7246)">
+        <g clipPath="url(#clip0_5025_7310)">
           <path
             fill="currentColor"
             fillRule="evenodd"
