@@ -24,11 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.20.0
+          corepack: enable
           
       - name: Verify pnpm version
         run: pnpm --version

@@ -19,21 +19,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.20.0
+          corepack: enable
           
       - name: Verify pnpm version
         run: pnpm --version
-        
-      - name: Check lockfile
-        run: |
-          echo "Lockfile exists:"
-          ls -la pnpm-lock.yaml || echo "Lockfile not found"
-          echo "First 10 lines of lockfile:"
-          head -10 pnpm-lock.yaml
           
       - name: Setup pnpm cache
         uses: actions/cache@v3
@@ -85,11 +74,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          corepack: enable
           
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.20.0
+      - name: Verify pnpm version
+        run: pnpm --version
           
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
