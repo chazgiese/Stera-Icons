@@ -30,6 +30,9 @@ jobs:
         with:
           version: 10.20.0
           
+      - name: Verify pnpm version
+        run: pnpm --version
+          
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
