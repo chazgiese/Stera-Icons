@@ -21,6 +21,9 @@ jobs:
           node-version: '18'
           corepack: enable
           
+      - name: Prepare pnpm
+        run: corepack prepare pnpm@10.20.0 --activate
+          
       - name: Verify pnpm version
         run: pnpm --version
           
@@ -75,6 +78,9 @@ jobs:
         with:
           node-version: '18'
           corepack: enable
+          
+      - name: Prepare pnpm
+        run: corepack prepare pnpm@10.20.0 --activate
           
       - name: Verify pnpm version
         run: pnpm --version
