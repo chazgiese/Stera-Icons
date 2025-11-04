@@ -28,6 +28,7 @@
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
+    "esbuild": "^0.25.0",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
@@ -36,9 +37,9 @@
     "typescript-eslint": "^8.43.0",
     "vitest": "^1.0.0"
   },
-  "packageManager": "pnpm@8.10.0",
+  "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "pnpm": ">=10.0.0"
   }
 }

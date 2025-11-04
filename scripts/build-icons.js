@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { createHash } from 'crypto';
 import { optimize } from 'svgo';
 import { transform } from '@svgr/core';
+import { build } from 'esbuild';
 import { 
   normalizeSlug, 
   ensureUnique, 
@@ -302,6 +303,109 @@ export type { IconProps } from './types';
     process.exit(1);
   }
   
+  // Compile individual icon wrappers for subpath exports
+  console.log('\n📦 Compiling individual icon components for subpath exports...');
+  const distIconsDir = join(distDir, 'icons');
+  if (!existsSync(distIconsDir)) {
+    mkdirSync(distIconsDir, { recursive: true });
+  }
+  
+  // Compile each wrapper component individually
+  const packageJsonPath = join(__dirname, '..', 'packages', 'react', 'package.json');
+  const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
+  
+  const subpathExports = {};
+  
+  for (const [baseName] of iconsByBaseName) {
+    const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
+    const wrapperPath = join(iconsDir, `${baseName}-wrapper.tsx`);
+    
+    if (!existsSync(wrapperPath)) {
+      console.warn(`  ⚠️  Wrapper not found: ${wrapperPath}`);
+      continue;
+    }
+    
+    // Compile ESM version
+    try {
+      const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
+      await build({
+        entryPoints: [wrapperPath],
+        bundle: true,
+        format: 'esm',
+        outfile: join(distIconsDir, `${componentName}.mjs`),
+        external: ['react'],
+        minify: true,
+        treeShaking: true,
+        platform: 'neutral',
+        target: 'es2020',
+        jsx: 'automatic',
+        resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+        absWorkingDir: srcDir,
+      });
+      
+      // Compile CJS version
+      await build({
+        entryPoints: [wrapperPath],
+        bundle: true,
+        format: 'cjs',
+        outfile: join(distIconsDir, `${componentName}.cjs`),
+        external: ['react'],
+        minify: true,
+        treeShaking: true,
+        platform: 'neutral',
+        target: 'es2020',
+        jsx: 'automatic',
+        resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+        absWorkingDir: srcDir,
+        banner: {
+          js: '"use strict";',
+        },
+      });
+      
+      // Generate TypeScript definitions
+      const typesContent = `import type { IconProps, IconVariant } from '../index';
+import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
+
+export interface ${componentName}Props extends IconProps {
+  variant?: IconVariant;
+}
+
+export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+`;
+      writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
+      
+      // Add to exports
+      subpathExports[`./${componentName}`] = {
+        types: `./dist/icons/${componentName}.d.ts`,
+        import: `./dist/icons/${componentName}.mjs`,
+        require: `./dist/icons/${componentName}.cjs`
+      };
+    } catch (error) {
+      console.error(`  ❌ Failed to compile ${componentName}: ${error.message}`);
+    }
+  }
+  
+  // Update package.json with subpath exports
+  if (!packageJson.exports) {
+    packageJson.exports = {};
+  }
+  
+  // Keep existing main exports
+  const existingExports = packageJson.exports['.'] || {
+    types: './dist/index.d.ts',
+    import: './dist/index.mjs',
+    require: './dist/index.cjs'
+  };
+  
+  packageJson.exports = {
+    '.': existingExports,
+    './package.json': './package.json',
+    ...subpathExports
+  };
+  
+  writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
+  console.log(`  ✅ Generated ${Object.keys(subpathExports).length} subpath exports`);
+  
   // Calculate summary statistics
   const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
   const modifiedIcons = metadata.filter(item => {
@@ -313,12 +417,15 @@ export type { IconProps } from './types';
   console.log(`\n📊 Build Summary:`);
   console.log(`  ✅ Generated ${metadata.length} individual icon components (internal use only)`);
   console.log(`  🔗 Generated ${wrapperExports.length} wrapper components (public API)`);
+  console.log(`  📦 Compiled ${Object.keys(subpathExports).length} individual icon bundles for subpath exports`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
+  console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`  🎯 Public API: Only wrapper components with variant props are exported`);
+  console.log(`  🎯 Public API: Wrapper components with variant props are exported`);
+  console.log(`  🎯 Per-icon imports: Available via 'stera-icons/IconName' subpath exports`);
 }
 
 // Main execution
