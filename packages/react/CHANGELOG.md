@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.6.0
+
+### Minor Changes
+
+- fba4f2c: Add subpath exports for individual icons
+
 ## 5.5.0
 
 ### Minor Changes
