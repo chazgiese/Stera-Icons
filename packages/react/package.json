@@ -13,7 +13,2902 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./AlarmClockIcon": {
+      "types": "./dist/icons/AlarmClockIcon.d.ts",
+      "import": "./dist/icons/AlarmClockIcon.mjs",
+      "require": "./dist/icons/AlarmClockIcon.cjs"
+    },
+    "./AlertCircleIcon": {
+      "types": "./dist/icons/AlertCircleIcon.d.ts",
+      "import": "./dist/icons/AlertCircleIcon.mjs",
+      "require": "./dist/icons/AlertCircleIcon.cjs"
+    },
+    "./AlertDiamondIcon": {
+      "types": "./dist/icons/AlertDiamondIcon.d.ts",
+      "import": "./dist/icons/AlertDiamondIcon.mjs",
+      "require": "./dist/icons/AlertDiamondIcon.cjs"
+    },
+    "./AlertHexagonIcon": {
+      "types": "./dist/icons/AlertHexagonIcon.d.ts",
+      "import": "./dist/icons/AlertHexagonIcon.mjs",
+      "require": "./dist/icons/AlertHexagonIcon.cjs"
+    },
+    "./AlertOctagonIcon": {
+      "types": "./dist/icons/AlertOctagonIcon.d.ts",
+      "import": "./dist/icons/AlertOctagonIcon.mjs",
+      "require": "./dist/icons/AlertOctagonIcon.cjs"
+    },
+    "./AlertSquareIcon": {
+      "types": "./dist/icons/AlertSquareIcon.d.ts",
+      "import": "./dist/icons/AlertSquareIcon.mjs",
+      "require": "./dist/icons/AlertSquareIcon.cjs"
+    },
+    "./AlertTriangleIcon": {
+      "types": "./dist/icons/AlertTriangleIcon.d.ts",
+      "import": "./dist/icons/AlertTriangleIcon.mjs",
+      "require": "./dist/icons/AlertTriangleIcon.cjs"
+    },
+    "./AlienIcon": {
+      "types": "./dist/icons/AlienIcon.d.ts",
+      "import": "./dist/icons/AlienIcon.mjs",
+      "require": "./dist/icons/AlienIcon.cjs"
+    },
+    "./AlignHorizontalCenterIcon": {
+      "types": "./dist/icons/AlignHorizontalCenterIcon.d.ts",
+      "import": "./dist/icons/AlignHorizontalCenterIcon.mjs",
+      "require": "./dist/icons/AlignHorizontalCenterIcon.cjs"
+    },
+    "./AlignHorizontalLeftIcon": {
+      "types": "./dist/icons/AlignHorizontalLeftIcon.d.ts",
+      "import": "./dist/icons/AlignHorizontalLeftIcon.mjs",
+      "require": "./dist/icons/AlignHorizontalLeftIcon.cjs"
+    },
+    "./AlignHorizontalRightIcon": {
+      "types": "./dist/icons/AlignHorizontalRightIcon.d.ts",
+      "import": "./dist/icons/AlignHorizontalRightIcon.mjs",
+      "require": "./dist/icons/AlignHorizontalRightIcon.cjs"
+    },
+    "./AlignVerticalBottomIcon": {
+      "types": "./dist/icons/AlignVerticalBottomIcon.d.ts",
+      "import": "./dist/icons/AlignVerticalBottomIcon.mjs",
+      "require": "./dist/icons/AlignVerticalBottomIcon.cjs"
+    },
+    "./AlignVerticalCenterIcon": {
+      "types": "./dist/icons/AlignVerticalCenterIcon.d.ts",
+      "import": "./dist/icons/AlignVerticalCenterIcon.mjs",
+      "require": "./dist/icons/AlignVerticalCenterIcon.cjs"
+    },
+    "./AlignVerticalTopIcon": {
+      "types": "./dist/icons/AlignVerticalTopIcon.d.ts",
+      "import": "./dist/icons/AlignVerticalTopIcon.mjs",
+      "require": "./dist/icons/AlignVerticalTopIcon.cjs"
+    },
+    "./AnnotationIcon": {
+      "types": "./dist/icons/AnnotationIcon.d.ts",
+      "import": "./dist/icons/AnnotationIcon.mjs",
+      "require": "./dist/icons/AnnotationIcon.cjs"
+    },
+    "./ArchiveIcon": {
+      "types": "./dist/icons/ArchiveIcon.d.ts",
+      "import": "./dist/icons/ArchiveIcon.mjs",
+      "require": "./dist/icons/ArchiveIcon.cjs"
+    },
+    "./ArchwayIcon": {
+      "types": "./dist/icons/ArchwayIcon.d.ts",
+      "import": "./dist/icons/ArchwayIcon.mjs",
+      "require": "./dist/icons/ArchwayIcon.cjs"
+    },
+    "./AreaChartIcon": {
+      "types": "./dist/icons/AreaChartIcon.d.ts",
+      "import": "./dist/icons/AreaChartIcon.mjs",
+      "require": "./dist/icons/AreaChartIcon.cjs"
+    },
+    "./ArrowBigDownIcon": {
+      "types": "./dist/icons/ArrowBigDownIcon.d.ts",
+      "import": "./dist/icons/ArrowBigDownIcon.mjs",
+      "require": "./dist/icons/ArrowBigDownIcon.cjs"
+    },
+    "./ArrowBigLeftIcon": {
+      "types": "./dist/icons/ArrowBigLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowBigLeftIcon.mjs",
+      "require": "./dist/icons/ArrowBigLeftIcon.cjs"
+    },
+    "./ArrowBigRightIcon": {
+      "types": "./dist/icons/ArrowBigRightIcon.d.ts",
+      "import": "./dist/icons/ArrowBigRightIcon.mjs",
+      "require": "./dist/icons/ArrowBigRightIcon.cjs"
+    },
+    "./ArrowBigUpIcon": {
+      "types": "./dist/icons/ArrowBigUpIcon.d.ts",
+      "import": "./dist/icons/ArrowBigUpIcon.mjs",
+      "require": "./dist/icons/ArrowBigUpIcon.cjs"
+    },
+    "./ArrowCircleDownIcon": {
+      "types": "./dist/icons/ArrowCircleDownIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleDownIcon.mjs",
+      "require": "./dist/icons/ArrowCircleDownIcon.cjs"
+    },
+    "./ArrowCircleDownLeftIcon": {
+      "types": "./dist/icons/ArrowCircleDownLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleDownLeftIcon.mjs",
+      "require": "./dist/icons/ArrowCircleDownLeftIcon.cjs"
+    },
+    "./ArrowCircleDownRightIcon": {
+      "types": "./dist/icons/ArrowCircleDownRightIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleDownRightIcon.mjs",
+      "require": "./dist/icons/ArrowCircleDownRightIcon.cjs"
+    },
+    "./ArrowCircleLeftIcon": {
+      "types": "./dist/icons/ArrowCircleLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleLeftIcon.mjs",
+      "require": "./dist/icons/ArrowCircleLeftIcon.cjs"
+    },
+    "./ArrowCircleRightIcon": {
+      "types": "./dist/icons/ArrowCircleRightIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleRightIcon.mjs",
+      "require": "./dist/icons/ArrowCircleRightIcon.cjs"
+    },
+    "./ArrowCircleUpIcon": {
+      "types": "./dist/icons/ArrowCircleUpIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleUpIcon.mjs",
+      "require": "./dist/icons/ArrowCircleUpIcon.cjs"
+    },
+    "./ArrowCircleUpLeftIcon": {
+      "types": "./dist/icons/ArrowCircleUpLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleUpLeftIcon.mjs",
+      "require": "./dist/icons/ArrowCircleUpLeftIcon.cjs"
+    },
+    "./ArrowCircleUpRightIcon": {
+      "types": "./dist/icons/ArrowCircleUpRightIcon.d.ts",
+      "import": "./dist/icons/ArrowCircleUpRightIcon.mjs",
+      "require": "./dist/icons/ArrowCircleUpRightIcon.cjs"
+    },
+    "./ArrowCornerDownLeftIcon": {
+      "types": "./dist/icons/ArrowCornerDownLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowCornerDownLeftIcon.mjs",
+      "require": "./dist/icons/ArrowCornerDownLeftIcon.cjs"
+    },
+    "./ArrowCornerDownRightIcon": {
+      "types": "./dist/icons/ArrowCornerDownRightIcon.d.ts",
+      "import": "./dist/icons/ArrowCornerDownRightIcon.mjs",
+      "require": "./dist/icons/ArrowCornerDownRightIcon.cjs"
+    },
+    "./ArrowCornerUpLeftIcon": {
+      "types": "./dist/icons/ArrowCornerUpLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowCornerUpLeftIcon.mjs",
+      "require": "./dist/icons/ArrowCornerUpLeftIcon.cjs"
+    },
+    "./ArrowCornerUpRightIcon": {
+      "types": "./dist/icons/ArrowCornerUpRightIcon.d.ts",
+      "import": "./dist/icons/ArrowCornerUpRightIcon.mjs",
+      "require": "./dist/icons/ArrowCornerUpRightIcon.cjs"
+    },
+    "./ArrowDownIcon": {
+      "types": "./dist/icons/ArrowDownIcon.d.ts",
+      "import": "./dist/icons/ArrowDownIcon.mjs",
+      "require": "./dist/icons/ArrowDownIcon.cjs"
+    },
+    "./ArrowDownLeftIcon": {
+      "types": "./dist/icons/ArrowDownLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowDownLeftIcon.mjs",
+      "require": "./dist/icons/ArrowDownLeftIcon.cjs"
+    },
+    "./ArrowDownRightIcon": {
+      "types": "./dist/icons/ArrowDownRightIcon.d.ts",
+      "import": "./dist/icons/ArrowDownRightIcon.mjs",
+      "require": "./dist/icons/ArrowDownRightIcon.cjs"
+    },
+    "./ArrowLeftIcon": {
+      "types": "./dist/icons/ArrowLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowLeftIcon.mjs",
+      "require": "./dist/icons/ArrowLeftIcon.cjs"
+    },
+    "./ArrowLeftRightIcon": {
+      "types": "./dist/icons/ArrowLeftRightIcon.d.ts",
+      "import": "./dist/icons/ArrowLeftRightIcon.mjs",
+      "require": "./dist/icons/ArrowLeftRightIcon.cjs"
+    },
+    "./ArrowLineDownIcon": {
+      "types": "./dist/icons/ArrowLineDownIcon.d.ts",
+      "import": "./dist/icons/ArrowLineDownIcon.mjs",
+      "require": "./dist/icons/ArrowLineDownIcon.cjs"
+    },
+    "./ArrowLineLeftIcon": {
+      "types": "./dist/icons/ArrowLineLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowLineLeftIcon.mjs",
+      "require": "./dist/icons/ArrowLineLeftIcon.cjs"
+    },
+    "./ArrowLineRightIcon": {
+      "types": "./dist/icons/ArrowLineRightIcon.d.ts",
+      "import": "./dist/icons/ArrowLineRightIcon.mjs",
+      "require": "./dist/icons/ArrowLineRightIcon.cjs"
+    },
+    "./ArrowLineUpIcon": {
+      "types": "./dist/icons/ArrowLineUpIcon.d.ts",
+      "import": "./dist/icons/ArrowLineUpIcon.mjs",
+      "require": "./dist/icons/ArrowLineUpIcon.cjs"
+    },
+    "./ArrowRightIcon": {
+      "types": "./dist/icons/ArrowRightIcon.d.ts",
+      "import": "./dist/icons/ArrowRightIcon.mjs",
+      "require": "./dist/icons/ArrowRightIcon.cjs"
+    },
+    "./ArrowSquareDownIcon": {
+      "types": "./dist/icons/ArrowSquareDownIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareDownIcon.mjs",
+      "require": "./dist/icons/ArrowSquareDownIcon.cjs"
+    },
+    "./ArrowSquareDownLeftIcon": {
+      "types": "./dist/icons/ArrowSquareDownLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareDownLeftIcon.mjs",
+      "require": "./dist/icons/ArrowSquareDownLeftIcon.cjs"
+    },
+    "./ArrowSquareDownRightIcon": {
+      "types": "./dist/icons/ArrowSquareDownRightIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareDownRightIcon.mjs",
+      "require": "./dist/icons/ArrowSquareDownRightIcon.cjs"
+    },
+    "./ArrowSquareLeftIcon": {
+      "types": "./dist/icons/ArrowSquareLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareLeftIcon.mjs",
+      "require": "./dist/icons/ArrowSquareLeftIcon.cjs"
+    },
+    "./ArrowSquareRightIcon": {
+      "types": "./dist/icons/ArrowSquareRightIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareRightIcon.mjs",
+      "require": "./dist/icons/ArrowSquareRightIcon.cjs"
+    },
+    "./ArrowSquareUpIcon": {
+      "types": "./dist/icons/ArrowSquareUpIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareUpIcon.mjs",
+      "require": "./dist/icons/ArrowSquareUpIcon.cjs"
+    },
+    "./ArrowSquareUpLeftIcon": {
+      "types": "./dist/icons/ArrowSquareUpLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareUpLeftIcon.mjs",
+      "require": "./dist/icons/ArrowSquareUpLeftIcon.cjs"
+    },
+    "./ArrowSquareUpRightIcon": {
+      "types": "./dist/icons/ArrowSquareUpRightIcon.d.ts",
+      "import": "./dist/icons/ArrowSquareUpRightIcon.mjs",
+      "require": "./dist/icons/ArrowSquareUpRightIcon.cjs"
+    },
+    "./ArrowULeftIcon": {
+      "types": "./dist/icons/ArrowULeftIcon.d.ts",
+      "import": "./dist/icons/ArrowULeftIcon.mjs",
+      "require": "./dist/icons/ArrowULeftIcon.cjs"
+    },
+    "./ArrowULeftTopIcon": {
+      "types": "./dist/icons/ArrowULeftTopIcon.d.ts",
+      "import": "./dist/icons/ArrowULeftTopIcon.mjs",
+      "require": "./dist/icons/ArrowULeftTopIcon.cjs"
+    },
+    "./ArrowURightIcon": {
+      "types": "./dist/icons/ArrowURightIcon.d.ts",
+      "import": "./dist/icons/ArrowURightIcon.mjs",
+      "require": "./dist/icons/ArrowURightIcon.cjs"
+    },
+    "./ArrowURightTopIcon": {
+      "types": "./dist/icons/ArrowURightTopIcon.d.ts",
+      "import": "./dist/icons/ArrowURightTopIcon.mjs",
+      "require": "./dist/icons/ArrowURightTopIcon.cjs"
+    },
+    "./ArrowUpIcon": {
+      "types": "./dist/icons/ArrowUpIcon.d.ts",
+      "import": "./dist/icons/ArrowUpIcon.mjs",
+      "require": "./dist/icons/ArrowUpIcon.cjs"
+    },
+    "./ArrowUpDownIcon": {
+      "types": "./dist/icons/ArrowUpDownIcon.d.ts",
+      "import": "./dist/icons/ArrowUpDownIcon.mjs",
+      "require": "./dist/icons/ArrowUpDownIcon.cjs"
+    },
+    "./ArrowUpLeftIcon": {
+      "types": "./dist/icons/ArrowUpLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowUpLeftIcon.mjs",
+      "require": "./dist/icons/ArrowUpLeftIcon.cjs"
+    },
+    "./ArrowUpLeftDownRightIcon": {
+      "types": "./dist/icons/ArrowUpLeftDownRightIcon.d.ts",
+      "import": "./dist/icons/ArrowUpLeftDownRightIcon.mjs",
+      "require": "./dist/icons/ArrowUpLeftDownRightIcon.cjs"
+    },
+    "./ArrowUpRightIcon": {
+      "types": "./dist/icons/ArrowUpRightIcon.d.ts",
+      "import": "./dist/icons/ArrowUpRightIcon.mjs",
+      "require": "./dist/icons/ArrowUpRightIcon.cjs"
+    },
+    "./ArrowUpRightDownLeftIcon": {
+      "types": "./dist/icons/ArrowUpRightDownLeftIcon.d.ts",
+      "import": "./dist/icons/ArrowUpRightDownLeftIcon.mjs",
+      "require": "./dist/icons/ArrowUpRightDownLeftIcon.cjs"
+    },
+    "./ArrowsLeftRightIcon": {
+      "types": "./dist/icons/ArrowsLeftRightIcon.d.ts",
+      "import": "./dist/icons/ArrowsLeftRightIcon.mjs",
+      "require": "./dist/icons/ArrowsLeftRightIcon.cjs"
+    },
+    "./ArrowsUpDownIcon": {
+      "types": "./dist/icons/ArrowsUpDownIcon.d.ts",
+      "import": "./dist/icons/ArrowsUpDownIcon.mjs",
+      "require": "./dist/icons/ArrowsUpDownIcon.cjs"
+    },
+    "./AstriskIcon": {
+      "types": "./dist/icons/AstriskIcon.d.ts",
+      "import": "./dist/icons/AstriskIcon.mjs",
+      "require": "./dist/icons/AstriskIcon.cjs"
+    },
+    "./AstriskAltIcon": {
+      "types": "./dist/icons/AstriskAltIcon.d.ts",
+      "import": "./dist/icons/AstriskAltIcon.mjs",
+      "require": "./dist/icons/AstriskAltIcon.cjs"
+    },
+    "./AtomIcon": {
+      "types": "./dist/icons/AtomIcon.d.ts",
+      "import": "./dist/icons/AtomIcon.mjs",
+      "require": "./dist/icons/AtomIcon.cjs"
+    },
+    "./AtomAiIcon": {
+      "types": "./dist/icons/AtomAiIcon.d.ts",
+      "import": "./dist/icons/AtomAiIcon.mjs",
+      "require": "./dist/icons/AtomAiIcon.cjs"
+    },
+    "./AtomOrbitIcon": {
+      "types": "./dist/icons/AtomOrbitIcon.d.ts",
+      "import": "./dist/icons/AtomOrbitIcon.mjs",
+      "require": "./dist/icons/AtomOrbitIcon.cjs"
+    },
+    "./AudioBarsIcon": {
+      "types": "./dist/icons/AudioBarsIcon.d.ts",
+      "import": "./dist/icons/AudioBarsIcon.mjs",
+      "require": "./dist/icons/AudioBarsIcon.cjs"
+    },
+    "./AudioBarsCircleIcon": {
+      "types": "./dist/icons/AudioBarsCircleIcon.d.ts",
+      "import": "./dist/icons/AudioBarsCircleIcon.mjs",
+      "require": "./dist/icons/AudioBarsCircleIcon.cjs"
+    },
+    "./AudioBarsSquareIcon": {
+      "types": "./dist/icons/AudioBarsSquareIcon.d.ts",
+      "import": "./dist/icons/AudioBarsSquareIcon.mjs",
+      "require": "./dist/icons/AudioBarsSquareIcon.cjs"
+    },
+    "./AwardStarIcon": {
+      "types": "./dist/icons/AwardStarIcon.d.ts",
+      "import": "./dist/icons/AwardStarIcon.mjs",
+      "require": "./dist/icons/AwardStarIcon.cjs"
+    },
+    "./BagIcon": {
+      "types": "./dist/icons/BagIcon.d.ts",
+      "import": "./dist/icons/BagIcon.mjs",
+      "require": "./dist/icons/BagIcon.cjs"
+    },
+    "./BankIcon": {
+      "types": "./dist/icons/BankIcon.d.ts",
+      "import": "./dist/icons/BankIcon.mjs",
+      "require": "./dist/icons/BankIcon.cjs"
+    },
+    "./BannerIcon": {
+      "types": "./dist/icons/BannerIcon.d.ts",
+      "import": "./dist/icons/BannerIcon.mjs",
+      "require": "./dist/icons/BannerIcon.cjs"
+    },
+    "./BarChartIcon": {
+      "types": "./dist/icons/BarChartIcon.d.ts",
+      "import": "./dist/icons/BarChartIcon.mjs",
+      "require": "./dist/icons/BarChartIcon.cjs"
+    },
+    "./BarChartAscIcon": {
+      "types": "./dist/icons/BarChartAscIcon.d.ts",
+      "import": "./dist/icons/BarChartAscIcon.mjs",
+      "require": "./dist/icons/BarChartAscIcon.cjs"
+    },
+    "./BarChartDescIcon": {
+      "types": "./dist/icons/BarChartDescIcon.d.ts",
+      "import": "./dist/icons/BarChartDescIcon.mjs",
+      "require": "./dist/icons/BarChartDescIcon.cjs"
+    },
+    "./BarChartRowIcon": {
+      "types": "./dist/icons/BarChartRowIcon.d.ts",
+      "import": "./dist/icons/BarChartRowIcon.mjs",
+      "require": "./dist/icons/BarChartRowIcon.cjs"
+    },
+    "./BarChartRowAscIcon": {
+      "types": "./dist/icons/BarChartRowAscIcon.d.ts",
+      "import": "./dist/icons/BarChartRowAscIcon.mjs",
+      "require": "./dist/icons/BarChartRowAscIcon.cjs"
+    },
+    "./BarChartRowDescIcon": {
+      "types": "./dist/icons/BarChartRowDescIcon.d.ts",
+      "import": "./dist/icons/BarChartRowDescIcon.mjs",
+      "require": "./dist/icons/BarChartRowDescIcon.cjs"
+    },
+    "./BarChartXYIcon": {
+      "types": "./dist/icons/BarChartXYIcon.d.ts",
+      "import": "./dist/icons/BarChartXYIcon.mjs",
+      "require": "./dist/icons/BarChartXYIcon.cjs"
+    },
+    "./BaseballIcon": {
+      "types": "./dist/icons/BaseballIcon.d.ts",
+      "import": "./dist/icons/BaseballIcon.mjs",
+      "require": "./dist/icons/BaseballIcon.cjs"
+    },
+    "./BasketIcon": {
+      "types": "./dist/icons/BasketIcon.d.ts",
+      "import": "./dist/icons/BasketIcon.mjs",
+      "require": "./dist/icons/BasketIcon.cjs"
+    },
+    "./BasketballIcon": {
+      "types": "./dist/icons/BasketballIcon.d.ts",
+      "import": "./dist/icons/BasketballIcon.mjs",
+      "require": "./dist/icons/BasketballIcon.cjs"
+    },
+    "./BatteryIcon": {
+      "types": "./dist/icons/BatteryIcon.d.ts",
+      "import": "./dist/icons/BatteryIcon.mjs",
+      "require": "./dist/icons/BatteryIcon.cjs"
+    },
+    "./BatteryFullIcon": {
+      "types": "./dist/icons/BatteryFullIcon.d.ts",
+      "import": "./dist/icons/BatteryFullIcon.mjs",
+      "require": "./dist/icons/BatteryFullIcon.cjs"
+    },
+    "./BatteryHalfIcon": {
+      "types": "./dist/icons/BatteryHalfIcon.d.ts",
+      "import": "./dist/icons/BatteryHalfIcon.mjs",
+      "require": "./dist/icons/BatteryHalfIcon.cjs"
+    },
+    "./BatteryLowIcon": {
+      "types": "./dist/icons/BatteryLowIcon.d.ts",
+      "import": "./dist/icons/BatteryLowIcon.mjs",
+      "require": "./dist/icons/BatteryLowIcon.cjs"
+    },
+    "./BellIcon": {
+      "types": "./dist/icons/BellIcon.d.ts",
+      "import": "./dist/icons/BellIcon.mjs",
+      "require": "./dist/icons/BellIcon.cjs"
+    },
+    "./BellOffIcon": {
+      "types": "./dist/icons/BellOffIcon.d.ts",
+      "import": "./dist/icons/BellOffIcon.mjs",
+      "require": "./dist/icons/BellOffIcon.cjs"
+    },
+    "./BellXIcon": {
+      "types": "./dist/icons/BellXIcon.d.ts",
+      "import": "./dist/icons/BellXIcon.mjs",
+      "require": "./dist/icons/BellXIcon.cjs"
+    },
+    "./BladeKunaiIcon": {
+      "types": "./dist/icons/BladeKunaiIcon.d.ts",
+      "import": "./dist/icons/BladeKunaiIcon.mjs",
+      "require": "./dist/icons/BladeKunaiIcon.cjs"
+    },
+    "./BladeSwordIcon": {
+      "types": "./dist/icons/BladeSwordIcon.d.ts",
+      "import": "./dist/icons/BladeSwordIcon.mjs",
+      "require": "./dist/icons/BladeSwordIcon.cjs"
+    },
+    "./BluetoothIcon": {
+      "types": "./dist/icons/BluetoothIcon.d.ts",
+      "import": "./dist/icons/BluetoothIcon.mjs",
+      "require": "./dist/icons/BluetoothIcon.cjs"
+    },
+    "./BoltIcon": {
+      "types": "./dist/icons/BoltIcon.d.ts",
+      "import": "./dist/icons/BoltIcon.mjs",
+      "require": "./dist/icons/BoltIcon.cjs"
+    },
+    "./BookClosedIcon": {
+      "types": "./dist/icons/BookClosedIcon.d.ts",
+      "import": "./dist/icons/BookClosedIcon.mjs",
+      "require": "./dist/icons/BookClosedIcon.cjs"
+    },
+    "./BookOpenIcon": {
+      "types": "./dist/icons/BookOpenIcon.d.ts",
+      "import": "./dist/icons/BookOpenIcon.mjs",
+      "require": "./dist/icons/BookOpenIcon.cjs"
+    },
+    "./BookmarkIcon": {
+      "types": "./dist/icons/BookmarkIcon.d.ts",
+      "import": "./dist/icons/BookmarkIcon.mjs",
+      "require": "./dist/icons/BookmarkIcon.cjs"
+    },
+    "./BottleIcon": {
+      "types": "./dist/icons/BottleIcon.d.ts",
+      "import": "./dist/icons/BottleIcon.mjs",
+      "require": "./dist/icons/BottleIcon.cjs"
+    },
+    "./BottleLabelIcon": {
+      "types": "./dist/icons/BottleLabelIcon.d.ts",
+      "import": "./dist/icons/BottleLabelIcon.mjs",
+      "require": "./dist/icons/BottleLabelIcon.cjs"
+    },
+    "./BoundingBoxIcon": {
+      "types": "./dist/icons/BoundingBoxIcon.d.ts",
+      "import": "./dist/icons/BoundingBoxIcon.mjs",
+      "require": "./dist/icons/BoundingBoxIcon.cjs"
+    },
+    "./BracketsCurlyIcon": {
+      "types": "./dist/icons/BracketsCurlyIcon.d.ts",
+      "import": "./dist/icons/BracketsCurlyIcon.mjs",
+      "require": "./dist/icons/BracketsCurlyIcon.cjs"
+    },
+    "./BracketsCurlyCircleIcon": {
+      "types": "./dist/icons/BracketsCurlyCircleIcon.d.ts",
+      "import": "./dist/icons/BracketsCurlyCircleIcon.mjs",
+      "require": "./dist/icons/BracketsCurlyCircleIcon.cjs"
+    },
+    "./BracketsCurlySquareIcon": {
+      "types": "./dist/icons/BracketsCurlySquareIcon.d.ts",
+      "import": "./dist/icons/BracketsCurlySquareIcon.mjs",
+      "require": "./dist/icons/BracketsCurlySquareIcon.cjs"
+    },
+    "./BracketsSquareIcon": {
+      "types": "./dist/icons/BracketsSquareIcon.d.ts",
+      "import": "./dist/icons/BracketsSquareIcon.mjs",
+      "require": "./dist/icons/BracketsSquareIcon.cjs"
+    },
+    "./BracketsSquareCircleIcon": {
+      "types": "./dist/icons/BracketsSquareCircleIcon.d.ts",
+      "import": "./dist/icons/BracketsSquareCircleIcon.mjs",
+      "require": "./dist/icons/BracketsSquareCircleIcon.cjs"
+    },
+    "./BracketsSquareSquareIcon": {
+      "types": "./dist/icons/BracketsSquareSquareIcon.d.ts",
+      "import": "./dist/icons/BracketsSquareSquareIcon.mjs",
+      "require": "./dist/icons/BracketsSquareSquareIcon.cjs"
+    },
+    "./BrainIcon": {
+      "types": "./dist/icons/BrainIcon.d.ts",
+      "import": "./dist/icons/BrainIcon.mjs",
+      "require": "./dist/icons/BrainIcon.cjs"
+    },
+    "./BriefcaseIcon": {
+      "types": "./dist/icons/BriefcaseIcon.d.ts",
+      "import": "./dist/icons/BriefcaseIcon.mjs",
+      "require": "./dist/icons/BriefcaseIcon.cjs"
+    },
+    "./BrightnessHighIcon": {
+      "types": "./dist/icons/BrightnessHighIcon.d.ts",
+      "import": "./dist/icons/BrightnessHighIcon.mjs",
+      "require": "./dist/icons/BrightnessHighIcon.cjs"
+    },
+    "./BrightnessLowIcon": {
+      "types": "./dist/icons/BrightnessLowIcon.d.ts",
+      "import": "./dist/icons/BrightnessLowIcon.mjs",
+      "require": "./dist/icons/BrightnessLowIcon.cjs"
+    },
+    "./BrightnessMediumIcon": {
+      "types": "./dist/icons/BrightnessMediumIcon.d.ts",
+      "import": "./dist/icons/BrightnessMediumIcon.mjs",
+      "require": "./dist/icons/BrightnessMediumIcon.cjs"
+    },
+    "./BrowserIcon": {
+      "types": "./dist/icons/BrowserIcon.d.ts",
+      "import": "./dist/icons/BrowserIcon.mjs",
+      "require": "./dist/icons/BrowserIcon.cjs"
+    },
+    "./BrowserPlusIcon": {
+      "types": "./dist/icons/BrowserPlusIcon.d.ts",
+      "import": "./dist/icons/BrowserPlusIcon.mjs",
+      "require": "./dist/icons/BrowserPlusIcon.cjs"
+    },
+    "./BrowserXIcon": {
+      "types": "./dist/icons/BrowserXIcon.d.ts",
+      "import": "./dist/icons/BrowserXIcon.mjs",
+      "require": "./dist/icons/BrowserXIcon.cjs"
+    },
+    "./BubbleIcon": {
+      "types": "./dist/icons/BubbleIcon.d.ts",
+      "import": "./dist/icons/BubbleIcon.mjs",
+      "require": "./dist/icons/BubbleIcon.cjs"
+    },
+    "./BuildingIcon": {
+      "types": "./dist/icons/BuildingIcon.d.ts",
+      "import": "./dist/icons/BuildingIcon.mjs",
+      "require": "./dist/icons/BuildingIcon.cjs"
+    },
+    "./CalendarIcon": {
+      "types": "./dist/icons/CalendarIcon.d.ts",
+      "import": "./dist/icons/CalendarIcon.mjs",
+      "require": "./dist/icons/CalendarIcon.cjs"
+    },
+    "./CalendarPlusIcon": {
+      "types": "./dist/icons/CalendarPlusIcon.d.ts",
+      "import": "./dist/icons/CalendarPlusIcon.mjs",
+      "require": "./dist/icons/CalendarPlusIcon.cjs"
+    },
+    "./CalendarSlashIcon": {
+      "types": "./dist/icons/CalendarSlashIcon.d.ts",
+      "import": "./dist/icons/CalendarSlashIcon.mjs",
+      "require": "./dist/icons/CalendarSlashIcon.cjs"
+    },
+    "./CalendarXIcon": {
+      "types": "./dist/icons/CalendarXIcon.d.ts",
+      "import": "./dist/icons/CalendarXIcon.mjs",
+      "require": "./dist/icons/CalendarXIcon.cjs"
+    },
+    "./CameraIcon": {
+      "types": "./dist/icons/CameraIcon.d.ts",
+      "import": "./dist/icons/CameraIcon.mjs",
+      "require": "./dist/icons/CameraIcon.cjs"
+    },
+    "./CameraOffIcon": {
+      "types": "./dist/icons/CameraOffIcon.d.ts",
+      "import": "./dist/icons/CameraOffIcon.mjs",
+      "require": "./dist/icons/CameraOffIcon.cjs"
+    },
+    "./CanIcon": {
+      "types": "./dist/icons/CanIcon.d.ts",
+      "import": "./dist/icons/CanIcon.mjs",
+      "require": "./dist/icons/CanIcon.cjs"
+    },
+    "./CanLabelIcon": {
+      "types": "./dist/icons/CanLabelIcon.d.ts",
+      "import": "./dist/icons/CanLabelIcon.mjs",
+      "require": "./dist/icons/CanLabelIcon.cjs"
+    },
+    "./CandleChartIcon": {
+      "types": "./dist/icons/CandleChartIcon.d.ts",
+      "import": "./dist/icons/CandleChartIcon.mjs",
+      "require": "./dist/icons/CandleChartIcon.cjs"
+    },
+    "./CapsLockIcon": {
+      "types": "./dist/icons/CapsLockIcon.d.ts",
+      "import": "./dist/icons/CapsLockIcon.mjs",
+      "require": "./dist/icons/CapsLockIcon.cjs"
+    },
+    "./CardHolderIcon": {
+      "types": "./dist/icons/CardHolderIcon.d.ts",
+      "import": "./dist/icons/CardHolderIcon.mjs",
+      "require": "./dist/icons/CardHolderIcon.cjs"
+    },
+    "./ChartBarSquareIcon": {
+      "types": "./dist/icons/ChartBarSquareIcon.d.ts",
+      "import": "./dist/icons/ChartBarSquareIcon.mjs",
+      "require": "./dist/icons/ChartBarSquareIcon.cjs"
+    },
+    "./ChartDonutIcon": {
+      "types": "./dist/icons/ChartDonutIcon.d.ts",
+      "import": "./dist/icons/ChartDonutIcon.mjs",
+      "require": "./dist/icons/ChartDonutIcon.cjs"
+    },
+    "./ChartPieIcon": {
+      "types": "./dist/icons/ChartPieIcon.d.ts",
+      "import": "./dist/icons/ChartPieIcon.mjs",
+      "require": "./dist/icons/ChartPieIcon.cjs"
+    },
+    "./ChartPieAltIcon": {
+      "types": "./dist/icons/ChartPieAltIcon.d.ts",
+      "import": "./dist/icons/ChartPieAltIcon.mjs",
+      "require": "./dist/icons/ChartPieAltIcon.cjs"
+    },
+    "./ChatBoxIcon": {
+      "types": "./dist/icons/ChatBoxIcon.d.ts",
+      "import": "./dist/icons/ChatBoxIcon.mjs",
+      "require": "./dist/icons/ChatBoxIcon.cjs"
+    },
+    "./ChatBoxDotsIcon": {
+      "types": "./dist/icons/ChatBoxDotsIcon.d.ts",
+      "import": "./dist/icons/ChatBoxDotsIcon.mjs",
+      "require": "./dist/icons/ChatBoxDotsIcon.cjs"
+    },
+    "./ChatBubbleIcon": {
+      "types": "./dist/icons/ChatBubbleIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleIcon.mjs",
+      "require": "./dist/icons/ChatBubbleIcon.cjs"
+    },
+    "./ChatBubbleDotsIcon": {
+      "types": "./dist/icons/ChatBubbleDotsIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleDotsIcon.mjs",
+      "require": "./dist/icons/ChatBubbleDotsIcon.cjs"
+    },
+    "./CheckIcon": {
+      "types": "./dist/icons/CheckIcon.d.ts",
+      "import": "./dist/icons/CheckIcon.mjs",
+      "require": "./dist/icons/CheckIcon.cjs"
+    },
+    "./CheckBadgeIcon": {
+      "types": "./dist/icons/CheckBadgeIcon.d.ts",
+      "import": "./dist/icons/CheckBadgeIcon.mjs",
+      "require": "./dist/icons/CheckBadgeIcon.cjs"
+    },
+    "./CheckCircleIcon": {
+      "types": "./dist/icons/CheckCircleIcon.d.ts",
+      "import": "./dist/icons/CheckCircleIcon.mjs",
+      "require": "./dist/icons/CheckCircleIcon.cjs"
+    },
+    "./CheckSquareIcon": {
+      "types": "./dist/icons/CheckSquareIcon.d.ts",
+      "import": "./dist/icons/CheckSquareIcon.mjs",
+      "require": "./dist/icons/CheckSquareIcon.cjs"
+    },
+    "./ChecklistIcon": {
+      "types": "./dist/icons/ChecklistIcon.d.ts",
+      "import": "./dist/icons/ChecklistIcon.mjs",
+      "require": "./dist/icons/ChecklistIcon.cjs"
+    },
+    "./ChecklistCheckedIcon": {
+      "types": "./dist/icons/ChecklistCheckedIcon.d.ts",
+      "import": "./dist/icons/ChecklistCheckedIcon.mjs",
+      "require": "./dist/icons/ChecklistCheckedIcon.cjs"
+    },
+    "./ChecklistUncheckedIcon": {
+      "types": "./dist/icons/ChecklistUncheckedIcon.d.ts",
+      "import": "./dist/icons/ChecklistUncheckedIcon.mjs",
+      "require": "./dist/icons/ChecklistUncheckedIcon.cjs"
+    },
+    "./ChevronCircleDownIcon": {
+      "types": "./dist/icons/ChevronCircleDownIcon.d.ts",
+      "import": "./dist/icons/ChevronCircleDownIcon.mjs",
+      "require": "./dist/icons/ChevronCircleDownIcon.cjs"
+    },
+    "./ChevronCircleLeftIcon": {
+      "types": "./dist/icons/ChevronCircleLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronCircleLeftIcon.mjs",
+      "require": "./dist/icons/ChevronCircleLeftIcon.cjs"
+    },
+    "./ChevronCircleRightIcon": {
+      "types": "./dist/icons/ChevronCircleRightIcon.d.ts",
+      "import": "./dist/icons/ChevronCircleRightIcon.mjs",
+      "require": "./dist/icons/ChevronCircleRightIcon.cjs"
+    },
+    "./ChevronCircleUpIcon": {
+      "types": "./dist/icons/ChevronCircleUpIcon.d.ts",
+      "import": "./dist/icons/ChevronCircleUpIcon.mjs",
+      "require": "./dist/icons/ChevronCircleUpIcon.cjs"
+    },
+    "./ChevronDownIcon": {
+      "types": "./dist/icons/ChevronDownIcon.d.ts",
+      "import": "./dist/icons/ChevronDownIcon.mjs",
+      "require": "./dist/icons/ChevronDownIcon.cjs"
+    },
+    "./ChevronFullCircleDownIcon": {
+      "types": "./dist/icons/ChevronFullCircleDownIcon.d.ts",
+      "import": "./dist/icons/ChevronFullCircleDownIcon.mjs",
+      "require": "./dist/icons/ChevronFullCircleDownIcon.cjs"
+    },
+    "./ChevronFullCircleLeftIcon": {
+      "types": "./dist/icons/ChevronFullCircleLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronFullCircleLeftIcon.mjs",
+      "require": "./dist/icons/ChevronFullCircleLeftIcon.cjs"
+    },
+    "./ChevronFullCircleRightIcon": {
+      "types": "./dist/icons/ChevronFullCircleRightIcon.d.ts",
+      "import": "./dist/icons/ChevronFullCircleRightIcon.mjs",
+      "require": "./dist/icons/ChevronFullCircleRightIcon.cjs"
+    },
+    "./ChevronFullCircleUpIcon": {
+      "types": "./dist/icons/ChevronFullCircleUpIcon.d.ts",
+      "import": "./dist/icons/ChevronFullCircleUpIcon.mjs",
+      "require": "./dist/icons/ChevronFullCircleUpIcon.cjs"
+    },
+    "./ChevronFullDownIcon": {
+      "types": "./dist/icons/ChevronFullDownIcon.d.ts",
+      "import": "./dist/icons/ChevronFullDownIcon.mjs",
+      "require": "./dist/icons/ChevronFullDownIcon.cjs"
+    },
+    "./ChevronFullInwardIcon": {
+      "types": "./dist/icons/ChevronFullInwardIcon.d.ts",
+      "import": "./dist/icons/ChevronFullInwardIcon.mjs",
+      "require": "./dist/icons/ChevronFullInwardIcon.cjs"
+    },
+    "./ChevronFullLeftIcon": {
+      "types": "./dist/icons/ChevronFullLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronFullLeftIcon.mjs",
+      "require": "./dist/icons/ChevronFullLeftIcon.cjs"
+    },
+    "./ChevronFullOutwardIcon": {
+      "types": "./dist/icons/ChevronFullOutwardIcon.d.ts",
+      "import": "./dist/icons/ChevronFullOutwardIcon.mjs",
+      "require": "./dist/icons/ChevronFullOutwardIcon.cjs"
+    },
+    "./ChevronFullRightIcon": {
+      "types": "./dist/icons/ChevronFullRightIcon.d.ts",
+      "import": "./dist/icons/ChevronFullRightIcon.mjs",
+      "require": "./dist/icons/ChevronFullRightIcon.cjs"
+    },
+    "./ChevronFullSquareDownIcon": {
+      "types": "./dist/icons/ChevronFullSquareDownIcon.d.ts",
+      "import": "./dist/icons/ChevronFullSquareDownIcon.mjs",
+      "require": "./dist/icons/ChevronFullSquareDownIcon.cjs"
+    },
+    "./ChevronFullSquareLeftIcon": {
+      "types": "./dist/icons/ChevronFullSquareLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronFullSquareLeftIcon.mjs",
+      "require": "./dist/icons/ChevronFullSquareLeftIcon.cjs"
+    },
+    "./ChevronFullSquareRightIcon": {
+      "types": "./dist/icons/ChevronFullSquareRightIcon.d.ts",
+      "import": "./dist/icons/ChevronFullSquareRightIcon.mjs",
+      "require": "./dist/icons/ChevronFullSquareRightIcon.cjs"
+    },
+    "./ChevronFullSquareUpIcon": {
+      "types": "./dist/icons/ChevronFullSquareUpIcon.d.ts",
+      "import": "./dist/icons/ChevronFullSquareUpIcon.mjs",
+      "require": "./dist/icons/ChevronFullSquareUpIcon.cjs"
+    },
+    "./ChevronFullUpIcon": {
+      "types": "./dist/icons/ChevronFullUpIcon.d.ts",
+      "import": "./dist/icons/ChevronFullUpIcon.mjs",
+      "require": "./dist/icons/ChevronFullUpIcon.cjs"
+    },
+    "./ChevronInwardIcon": {
+      "types": "./dist/icons/ChevronInwardIcon.d.ts",
+      "import": "./dist/icons/ChevronInwardIcon.mjs",
+      "require": "./dist/icons/ChevronInwardIcon.cjs"
+    },
+    "./ChevronLeftIcon": {
+      "types": "./dist/icons/ChevronLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronLeftIcon.mjs",
+      "require": "./dist/icons/ChevronLeftIcon.cjs"
+    },
+    "./ChevronOutwardIcon": {
+      "types": "./dist/icons/ChevronOutwardIcon.d.ts",
+      "import": "./dist/icons/ChevronOutwardIcon.mjs",
+      "require": "./dist/icons/ChevronOutwardIcon.cjs"
+    },
+    "./ChevronRightIcon": {
+      "types": "./dist/icons/ChevronRightIcon.d.ts",
+      "import": "./dist/icons/ChevronRightIcon.mjs",
+      "require": "./dist/icons/ChevronRightIcon.cjs"
+    },
+    "./ChevronSquareDownIcon": {
+      "types": "./dist/icons/ChevronSquareDownIcon.d.ts",
+      "import": "./dist/icons/ChevronSquareDownIcon.mjs",
+      "require": "./dist/icons/ChevronSquareDownIcon.cjs"
+    },
+    "./ChevronSquareLeftIcon": {
+      "types": "./dist/icons/ChevronSquareLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronSquareLeftIcon.mjs",
+      "require": "./dist/icons/ChevronSquareLeftIcon.cjs"
+    },
+    "./ChevronSquareRightIcon": {
+      "types": "./dist/icons/ChevronSquareRightIcon.d.ts",
+      "import": "./dist/icons/ChevronSquareRightIcon.mjs",
+      "require": "./dist/icons/ChevronSquareRightIcon.cjs"
+    },
+    "./ChevronSquareUpIcon": {
+      "types": "./dist/icons/ChevronSquareUpIcon.d.ts",
+      "import": "./dist/icons/ChevronSquareUpIcon.mjs",
+      "require": "./dist/icons/ChevronSquareUpIcon.cjs"
+    },
+    "./ChevronUpIcon": {
+      "types": "./dist/icons/ChevronUpIcon.d.ts",
+      "import": "./dist/icons/ChevronUpIcon.mjs",
+      "require": "./dist/icons/ChevronUpIcon.cjs"
+    },
+    "./ChevronsDownIcon": {
+      "types": "./dist/icons/ChevronsDownIcon.d.ts",
+      "import": "./dist/icons/ChevronsDownIcon.mjs",
+      "require": "./dist/icons/ChevronsDownIcon.cjs"
+    },
+    "./ChevronsLeftIcon": {
+      "types": "./dist/icons/ChevronsLeftIcon.d.ts",
+      "import": "./dist/icons/ChevronsLeftIcon.mjs",
+      "require": "./dist/icons/ChevronsLeftIcon.cjs"
+    },
+    "./ChevronsRightIcon": {
+      "types": "./dist/icons/ChevronsRightIcon.d.ts",
+      "import": "./dist/icons/ChevronsRightIcon.mjs",
+      "require": "./dist/icons/ChevronsRightIcon.cjs"
+    },
+    "./ChevronsUpIcon": {
+      "types": "./dist/icons/ChevronsUpIcon.d.ts",
+      "import": "./dist/icons/ChevronsUpIcon.mjs",
+      "require": "./dist/icons/ChevronsUpIcon.cjs"
+    },
+    "./CircleIcon": {
+      "types": "./dist/icons/CircleIcon.d.ts",
+      "import": "./dist/icons/CircleIcon.mjs",
+      "require": "./dist/icons/CircleIcon.cjs"
+    },
+    "./CircleCheckerIcon": {
+      "types": "./dist/icons/CircleCheckerIcon.d.ts",
+      "import": "./dist/icons/CircleCheckerIcon.mjs",
+      "require": "./dist/icons/CircleCheckerIcon.cjs"
+    },
+    "./CircleDashIcon": {
+      "types": "./dist/icons/CircleDashIcon.d.ts",
+      "import": "./dist/icons/CircleDashIcon.mjs",
+      "require": "./dist/icons/CircleDashIcon.cjs"
+    },
+    "./CircleDashSimpleIcon": {
+      "types": "./dist/icons/CircleDashSimpleIcon.d.ts",
+      "import": "./dist/icons/CircleDashSimpleIcon.mjs",
+      "require": "./dist/icons/CircleDashSimpleIcon.cjs"
+    },
+    "./CircleDivideIcon": {
+      "types": "./dist/icons/CircleDivideIcon.d.ts",
+      "import": "./dist/icons/CircleDivideIcon.mjs",
+      "require": "./dist/icons/CircleDivideIcon.cjs"
+    },
+    "./CircleDivideAltIcon": {
+      "types": "./dist/icons/CircleDivideAltIcon.d.ts",
+      "import": "./dist/icons/CircleDivideAltIcon.mjs",
+      "require": "./dist/icons/CircleDivideAltIcon.cjs"
+    },
+    "./CircleDivideCrossIcon": {
+      "types": "./dist/icons/CircleDivideCrossIcon.d.ts",
+      "import": "./dist/icons/CircleDivideCrossIcon.mjs",
+      "require": "./dist/icons/CircleDivideCrossIcon.cjs"
+    },
+    "./CircleDotsIcon": {
+      "types": "./dist/icons/CircleDotsIcon.d.ts",
+      "import": "./dist/icons/CircleDotsIcon.mjs",
+      "require": "./dist/icons/CircleDotsIcon.cjs"
+    },
+    "./CircleFourIcon": {
+      "types": "./dist/icons/CircleFourIcon.d.ts",
+      "import": "./dist/icons/CircleFourIcon.mjs",
+      "require": "./dist/icons/CircleFourIcon.cjs"
+    },
+    "./CircleFourConnectedIcon": {
+      "types": "./dist/icons/CircleFourConnectedIcon.d.ts",
+      "import": "./dist/icons/CircleFourConnectedIcon.mjs",
+      "require": "./dist/icons/CircleFourConnectedIcon.cjs"
+    },
+    "./CircleFourPlusIcon": {
+      "types": "./dist/icons/CircleFourPlusIcon.d.ts",
+      "import": "./dist/icons/CircleFourPlusIcon.mjs",
+      "require": "./dist/icons/CircleFourPlusIcon.cjs"
+    },
+    "./CircleNotchIcon": {
+      "types": "./dist/icons/CircleNotchIcon.d.ts",
+      "import": "./dist/icons/CircleNotchIcon.mjs",
+      "require": "./dist/icons/CircleNotchIcon.cjs"
+    },
+    "./CircleSlashIcon": {
+      "types": "./dist/icons/CircleSlashIcon.d.ts",
+      "import": "./dist/icons/CircleSlashIcon.mjs",
+      "require": "./dist/icons/CircleSlashIcon.cjs"
+    },
+    "./CirclesThreeIcon": {
+      "types": "./dist/icons/CirclesThreeIcon.d.ts",
+      "import": "./dist/icons/CirclesThreeIcon.mjs",
+      "require": "./dist/icons/CirclesThreeIcon.cjs"
+    },
+    "./CityIcon": {
+      "types": "./dist/icons/CityIcon.d.ts",
+      "import": "./dist/icons/CityIcon.mjs",
+      "require": "./dist/icons/CityIcon.cjs"
+    },
+    "./CliIcon": {
+      "types": "./dist/icons/CliIcon.d.ts",
+      "import": "./dist/icons/CliIcon.mjs",
+      "require": "./dist/icons/CliIcon.cjs"
+    },
+    "./CliCircleIcon": {
+      "types": "./dist/icons/CliCircleIcon.d.ts",
+      "import": "./dist/icons/CliCircleIcon.mjs",
+      "require": "./dist/icons/CliCircleIcon.cjs"
+    },
+    "./CliSquareIcon": {
+      "types": "./dist/icons/CliSquareIcon.d.ts",
+      "import": "./dist/icons/CliSquareIcon.mjs",
+      "require": "./dist/icons/CliSquareIcon.cjs"
+    },
+    "./ClockIcon": {
+      "types": "./dist/icons/ClockIcon.d.ts",
+      "import": "./dist/icons/ClockIcon.mjs",
+      "require": "./dist/icons/ClockIcon.cjs"
+    },
+    "./CloudIcon": {
+      "types": "./dist/icons/CloudIcon.d.ts",
+      "import": "./dist/icons/CloudIcon.mjs",
+      "require": "./dist/icons/CloudIcon.cjs"
+    },
+    "./CloudDownloadIcon": {
+      "types": "./dist/icons/CloudDownloadIcon.d.ts",
+      "import": "./dist/icons/CloudDownloadIcon.mjs",
+      "require": "./dist/icons/CloudDownloadIcon.cjs"
+    },
+    "./CloudUploadIcon": {
+      "types": "./dist/icons/CloudUploadIcon.d.ts",
+      "import": "./dist/icons/CloudUploadIcon.mjs",
+      "require": "./dist/icons/CloudUploadIcon.cjs"
+    },
+    "./CloudXIcon": {
+      "types": "./dist/icons/CloudXIcon.d.ts",
+      "import": "./dist/icons/CloudXIcon.mjs",
+      "require": "./dist/icons/CloudXIcon.cjs"
+    },
+    "./CodeIcon": {
+      "types": "./dist/icons/CodeIcon.d.ts",
+      "import": "./dist/icons/CodeIcon.mjs",
+      "require": "./dist/icons/CodeIcon.cjs"
+    },
+    "./CodeCircleIcon": {
+      "types": "./dist/icons/CodeCircleIcon.d.ts",
+      "import": "./dist/icons/CodeCircleIcon.mjs",
+      "require": "./dist/icons/CodeCircleIcon.cjs"
+    },
+    "./CodeSquareIcon": {
+      "types": "./dist/icons/CodeSquareIcon.d.ts",
+      "import": "./dist/icons/CodeSquareIcon.mjs",
+      "require": "./dist/icons/CodeSquareIcon.cjs"
+    },
+    "./CoffeeMugIcon": {
+      "types": "./dist/icons/CoffeeMugIcon.d.ts",
+      "import": "./dist/icons/CoffeeMugIcon.mjs",
+      "require": "./dist/icons/CoffeeMugIcon.cjs"
+    },
+    "./CoinIcon": {
+      "types": "./dist/icons/CoinIcon.d.ts",
+      "import": "./dist/icons/CoinIcon.mjs",
+      "require": "./dist/icons/CoinIcon.cjs"
+    },
+    "./CollapseIcon": {
+      "types": "./dist/icons/CollapseIcon.d.ts",
+      "import": "./dist/icons/CollapseIcon.mjs",
+      "require": "./dist/icons/CollapseIcon.cjs"
+    },
+    "./CollapseSimpleIcon": {
+      "types": "./dist/icons/CollapseSimpleIcon.d.ts",
+      "import": "./dist/icons/CollapseSimpleIcon.mjs",
+      "require": "./dist/icons/CollapseSimpleIcon.cjs"
+    },
+    "./CollapseSimpleAltIcon": {
+      "types": "./dist/icons/CollapseSimpleAltIcon.d.ts",
+      "import": "./dist/icons/CollapseSimpleAltIcon.mjs",
+      "require": "./dist/icons/CollapseSimpleAltIcon.cjs"
+    },
+    "./CommandIcon": {
+      "types": "./dist/icons/CommandIcon.d.ts",
+      "import": "./dist/icons/CommandIcon.mjs",
+      "require": "./dist/icons/CommandIcon.cjs"
+    },
+    "./CommentBubbleIcon": {
+      "types": "./dist/icons/CommentBubbleIcon.d.ts",
+      "import": "./dist/icons/CommentBubbleIcon.mjs",
+      "require": "./dist/icons/CommentBubbleIcon.cjs"
+    },
+    "./CompassIcon": {
+      "types": "./dist/icons/CompassIcon.d.ts",
+      "import": "./dist/icons/CompassIcon.mjs",
+      "require": "./dist/icons/CompassIcon.cjs"
+    },
+    "./ComponentIcon": {
+      "types": "./dist/icons/ComponentIcon.d.ts",
+      "import": "./dist/icons/ComponentIcon.mjs",
+      "require": "./dist/icons/ComponentIcon.cjs"
+    },
+    "./ContactBookIcon": {
+      "types": "./dist/icons/ContactBookIcon.d.ts",
+      "import": "./dist/icons/ContactBookIcon.mjs",
+      "require": "./dist/icons/ContactBookIcon.cjs"
+    },
+    "./ContrastIcon": {
+      "types": "./dist/icons/ContrastIcon.d.ts",
+      "import": "./dist/icons/ContrastIcon.mjs",
+      "require": "./dist/icons/ContrastIcon.cjs"
+    },
+    "./CopyIcon": {
+      "types": "./dist/icons/CopyIcon.d.ts",
+      "import": "./dist/icons/CopyIcon.mjs",
+      "require": "./dist/icons/CopyIcon.cjs"
+    },
+    "./CpuIcon": {
+      "types": "./dist/icons/CpuIcon.d.ts",
+      "import": "./dist/icons/CpuIcon.mjs",
+      "require": "./dist/icons/CpuIcon.cjs"
+    },
+    "./CpuAmdIcon": {
+      "types": "./dist/icons/CpuAmdIcon.d.ts",
+      "import": "./dist/icons/CpuAmdIcon.mjs",
+      "require": "./dist/icons/CpuAmdIcon.cjs"
+    },
+    "./CreditCardIcon": {
+      "types": "./dist/icons/CreditCardIcon.d.ts",
+      "import": "./dist/icons/CreditCardIcon.mjs",
+      "require": "./dist/icons/CreditCardIcon.cjs"
+    },
+    "./CreditCardAltIcon": {
+      "types": "./dist/icons/CreditCardAltIcon.d.ts",
+      "import": "./dist/icons/CreditCardAltIcon.mjs",
+      "require": "./dist/icons/CreditCardAltIcon.cjs"
+    },
+    "./CropIcon": {
+      "types": "./dist/icons/CropIcon.d.ts",
+      "import": "./dist/icons/CropIcon.mjs",
+      "require": "./dist/icons/CropIcon.cjs"
+    },
+    "./CrosshairIcon": {
+      "types": "./dist/icons/CrosshairIcon.d.ts",
+      "import": "./dist/icons/CrosshairIcon.mjs",
+      "require": "./dist/icons/CrosshairIcon.cjs"
+    },
+    "./CubeIcon": {
+      "types": "./dist/icons/CubeIcon.d.ts",
+      "import": "./dist/icons/CubeIcon.mjs",
+      "require": "./dist/icons/CubeIcon.cjs"
+    },
+    "./CubePackageIcon": {
+      "types": "./dist/icons/CubePackageIcon.d.ts",
+      "import": "./dist/icons/CubePackageIcon.mjs",
+      "require": "./dist/icons/CubePackageIcon.cjs"
+    },
+    "./CubePackageSimpleIcon": {
+      "types": "./dist/icons/CubePackageSimpleIcon.d.ts",
+      "import": "./dist/icons/CubePackageSimpleIcon.mjs",
+      "require": "./dist/icons/CubePackageSimpleIcon.cjs"
+    },
+    "./CubicGraphIcon": {
+      "types": "./dist/icons/CubicGraphIcon.d.ts",
+      "import": "./dist/icons/CubicGraphIcon.mjs",
+      "require": "./dist/icons/CubicGraphIcon.cjs"
+    },
+    "./CupIcon": {
+      "types": "./dist/icons/CupIcon.d.ts",
+      "import": "./dist/icons/CupIcon.mjs",
+      "require": "./dist/icons/CupIcon.cjs"
+    },
+    "./CurrencyCentIcon": {
+      "types": "./dist/icons/CurrencyCentIcon.d.ts",
+      "import": "./dist/icons/CurrencyCentIcon.mjs",
+      "require": "./dist/icons/CurrencyCentIcon.cjs"
+    },
+    "./CurrencyCircleDollarIcon": {
+      "types": "./dist/icons/CurrencyCircleDollarIcon.d.ts",
+      "import": "./dist/icons/CurrencyCircleDollarIcon.mjs",
+      "require": "./dist/icons/CurrencyCircleDollarIcon.cjs"
+    },
+    "./CurrencyDollarIcon": {
+      "types": "./dist/icons/CurrencyDollarIcon.d.ts",
+      "import": "./dist/icons/CurrencyDollarIcon.mjs",
+      "require": "./dist/icons/CurrencyDollarIcon.cjs"
+    },
+    "./CurrencyEuroIcon": {
+      "types": "./dist/icons/CurrencyEuroIcon.d.ts",
+      "import": "./dist/icons/CurrencyEuroIcon.mjs",
+      "require": "./dist/icons/CurrencyEuroIcon.cjs"
+    },
+    "./CurrencyEuroCirlceIcon": {
+      "types": "./dist/icons/CurrencyEuroCirlceIcon.d.ts",
+      "import": "./dist/icons/CurrencyEuroCirlceIcon.mjs",
+      "require": "./dist/icons/CurrencyEuroCirlceIcon.cjs"
+    },
+    "./CursorIcon": {
+      "types": "./dist/icons/CursorIcon.d.ts",
+      "import": "./dist/icons/CursorIcon.mjs",
+      "require": "./dist/icons/CursorIcon.cjs"
+    },
+    "./CursorClickIcon": {
+      "types": "./dist/icons/CursorClickIcon.d.ts",
+      "import": "./dist/icons/CursorClickIcon.mjs",
+      "require": "./dist/icons/CursorClickIcon.cjs"
+    },
+    "./CursorNavigationIcon": {
+      "types": "./dist/icons/CursorNavigationIcon.d.ts",
+      "import": "./dist/icons/CursorNavigationIcon.mjs",
+      "require": "./dist/icons/CursorNavigationIcon.cjs"
+    },
+    "./CursorOgIcon": {
+      "types": "./dist/icons/CursorOgIcon.d.ts",
+      "import": "./dist/icons/CursorOgIcon.mjs",
+      "require": "./dist/icons/CursorOgIcon.cjs"
+    },
+    "./CursorPointerIcon": {
+      "types": "./dist/icons/CursorPointerIcon.d.ts",
+      "import": "./dist/icons/CursorPointerIcon.mjs",
+      "require": "./dist/icons/CursorPointerIcon.cjs"
+    },
+    "./CursorTextIcon": {
+      "types": "./dist/icons/CursorTextIcon.d.ts",
+      "import": "./dist/icons/CursorTextIcon.mjs",
+      "require": "./dist/icons/CursorTextIcon.cjs"
+    },
+    "./CursorTextAltIcon": {
+      "types": "./dist/icons/CursorTextAltIcon.d.ts",
+      "import": "./dist/icons/CursorTextAltIcon.mjs",
+      "require": "./dist/icons/CursorTextAltIcon.cjs"
+    },
+    "./CurveBezierIcon": {
+      "types": "./dist/icons/CurveBezierIcon.d.ts",
+      "import": "./dist/icons/CurveBezierIcon.mjs",
+      "require": "./dist/icons/CurveBezierIcon.cjs"
+    },
+    "./CurveEaseIcon": {
+      "types": "./dist/icons/CurveEaseIcon.d.ts",
+      "import": "./dist/icons/CurveEaseIcon.mjs",
+      "require": "./dist/icons/CurveEaseIcon.cjs"
+    },
+    "./CylinderIcon": {
+      "types": "./dist/icons/CylinderIcon.d.ts",
+      "import": "./dist/icons/CylinderIcon.mjs",
+      "require": "./dist/icons/CylinderIcon.cjs"
+    },
+    "./CylinderStackIcon": {
+      "types": "./dist/icons/CylinderStackIcon.d.ts",
+      "import": "./dist/icons/CylinderStackIcon.mjs",
+      "require": "./dist/icons/CylinderStackIcon.cjs"
+    },
+    "./DataTableIcon": {
+      "types": "./dist/icons/DataTableIcon.d.ts",
+      "import": "./dist/icons/DataTableIcon.mjs",
+      "require": "./dist/icons/DataTableIcon.cjs"
+    },
+    "./DeleteIcon": {
+      "types": "./dist/icons/DeleteIcon.d.ts",
+      "import": "./dist/icons/DeleteIcon.mjs",
+      "require": "./dist/icons/DeleteIcon.cjs"
+    },
+    "./DeviceDesktopIcon": {
+      "types": "./dist/icons/DeviceDesktopIcon.d.ts",
+      "import": "./dist/icons/DeviceDesktopIcon.mjs",
+      "require": "./dist/icons/DeviceDesktopIcon.cjs"
+    },
+    "./DeviceLaptopIcon": {
+      "types": "./dist/icons/DeviceLaptopIcon.d.ts",
+      "import": "./dist/icons/DeviceLaptopIcon.mjs",
+      "require": "./dist/icons/DeviceLaptopIcon.cjs"
+    },
+    "./DevicePhoneIcon": {
+      "types": "./dist/icons/DevicePhoneIcon.d.ts",
+      "import": "./dist/icons/DevicePhoneIcon.mjs",
+      "require": "./dist/icons/DevicePhoneIcon.cjs"
+    },
+    "./DeviceTabletIcon": {
+      "types": "./dist/icons/DeviceTabletIcon.d.ts",
+      "import": "./dist/icons/DeviceTabletIcon.mjs",
+      "require": "./dist/icons/DeviceTabletIcon.cjs"
+    },
+    "./DiamondIcon": {
+      "types": "./dist/icons/DiamondIcon.d.ts",
+      "import": "./dist/icons/DiamondIcon.mjs",
+      "require": "./dist/icons/DiamondIcon.cjs"
+    },
+    "./DocumentIcon": {
+      "types": "./dist/icons/DocumentIcon.d.ts",
+      "import": "./dist/icons/DocumentIcon.mjs",
+      "require": "./dist/icons/DocumentIcon.cjs"
+    },
+    "./DocumentCopyIcon": {
+      "types": "./dist/icons/DocumentCopyIcon.d.ts",
+      "import": "./dist/icons/DocumentCopyIcon.mjs",
+      "require": "./dist/icons/DocumentCopyIcon.cjs"
+    },
+    "./DocumentDetailIcon": {
+      "types": "./dist/icons/DocumentDetailIcon.d.ts",
+      "import": "./dist/icons/DocumentDetailIcon.mjs",
+      "require": "./dist/icons/DocumentDetailIcon.cjs"
+    },
+    "./DollarBillIcon": {
+      "types": "./dist/icons/DollarBillIcon.d.ts",
+      "import": "./dist/icons/DollarBillIcon.mjs",
+      "require": "./dist/icons/DollarBillIcon.cjs"
+    },
+    "./DownloadIcon": {
+      "types": "./dist/icons/DownloadIcon.d.ts",
+      "import": "./dist/icons/DownloadIcon.mjs",
+      "require": "./dist/icons/DownloadIcon.cjs"
+    },
+    "./DragHandleIcon": {
+      "types": "./dist/icons/DragHandleIcon.d.ts",
+      "import": "./dist/icons/DragHandleIcon.mjs",
+      "require": "./dist/icons/DragHandleIcon.cjs"
+    },
+    "./DropletIcon": {
+      "types": "./dist/icons/DropletIcon.d.ts",
+      "import": "./dist/icons/DropletIcon.mjs",
+      "require": "./dist/icons/DropletIcon.cjs"
+    },
+    "./DuplicateIcon": {
+      "types": "./dist/icons/DuplicateIcon.d.ts",
+      "import": "./dist/icons/DuplicateIcon.mjs",
+      "require": "./dist/icons/DuplicateIcon.cjs"
+    },
+    "./DuplicatePlusIcon": {
+      "types": "./dist/icons/DuplicatePlusIcon.d.ts",
+      "import": "./dist/icons/DuplicatePlusIcon.mjs",
+      "require": "./dist/icons/DuplicatePlusIcon.cjs"
+    },
+    "./EditSquareIcon": {
+      "types": "./dist/icons/EditSquareIcon.d.ts",
+      "import": "./dist/icons/EditSquareIcon.mjs",
+      "require": "./dist/icons/EditSquareIcon.cjs"
+    },
+    "./EmoteFrownIcon": {
+      "types": "./dist/icons/EmoteFrownIcon.d.ts",
+      "import": "./dist/icons/EmoteFrownIcon.mjs",
+      "require": "./dist/icons/EmoteFrownIcon.cjs"
+    },
+    "./EmoteGrinIcon": {
+      "types": "./dist/icons/EmoteGrinIcon.d.ts",
+      "import": "./dist/icons/EmoteGrinIcon.mjs",
+      "require": "./dist/icons/EmoteGrinIcon.cjs"
+    },
+    "./EmoteNeutralIcon": {
+      "types": "./dist/icons/EmoteNeutralIcon.d.ts",
+      "import": "./dist/icons/EmoteNeutralIcon.mjs",
+      "require": "./dist/icons/EmoteNeutralIcon.cjs"
+    },
+    "./EmoteSadIcon": {
+      "types": "./dist/icons/EmoteSadIcon.d.ts",
+      "import": "./dist/icons/EmoteSadIcon.mjs",
+      "require": "./dist/icons/EmoteSadIcon.cjs"
+    },
+    "./EmoteSmileIcon": {
+      "types": "./dist/icons/EmoteSmileIcon.d.ts",
+      "import": "./dist/icons/EmoteSmileIcon.mjs",
+      "require": "./dist/icons/EmoteSmileIcon.cjs"
+    },
+    "./EmoteSurprisedIcon": {
+      "types": "./dist/icons/EmoteSurprisedIcon.d.ts",
+      "import": "./dist/icons/EmoteSurprisedIcon.mjs",
+      "require": "./dist/icons/EmoteSurprisedIcon.cjs"
+    },
+    "./ExclamationPointIcon": {
+      "types": "./dist/icons/ExclamationPointIcon.d.ts",
+      "import": "./dist/icons/ExclamationPointIcon.mjs",
+      "require": "./dist/icons/ExclamationPointIcon.cjs"
+    },
+    "./ExpandIcon": {
+      "types": "./dist/icons/ExpandIcon.d.ts",
+      "import": "./dist/icons/ExpandIcon.mjs",
+      "require": "./dist/icons/ExpandIcon.cjs"
+    },
+    "./ExpandSimpleIcon": {
+      "types": "./dist/icons/ExpandSimpleIcon.d.ts",
+      "import": "./dist/icons/ExpandSimpleIcon.mjs",
+      "require": "./dist/icons/ExpandSimpleIcon.cjs"
+    },
+    "./ExpandSimpleAltIcon": {
+      "types": "./dist/icons/ExpandSimpleAltIcon.d.ts",
+      "import": "./dist/icons/ExpandSimpleAltIcon.mjs",
+      "require": "./dist/icons/ExpandSimpleAltIcon.cjs"
+    },
+    "./EyeIcon": {
+      "types": "./dist/icons/EyeIcon.d.ts",
+      "import": "./dist/icons/EyeIcon.mjs",
+      "require": "./dist/icons/EyeIcon.cjs"
+    },
+    "./EyeClosedIcon": {
+      "types": "./dist/icons/EyeClosedIcon.d.ts",
+      "import": "./dist/icons/EyeClosedIcon.mjs",
+      "require": "./dist/icons/EyeClosedIcon.cjs"
+    },
+    "./EyeOffIcon": {
+      "types": "./dist/icons/EyeOffIcon.d.ts",
+      "import": "./dist/icons/EyeOffIcon.mjs",
+      "require": "./dist/icons/EyeOffIcon.cjs"
+    },
+    "./FileCabinetIcon": {
+      "types": "./dist/icons/FileCabinetIcon.d.ts",
+      "import": "./dist/icons/FileCabinetIcon.mjs",
+      "require": "./dist/icons/FileCabinetIcon.cjs"
+    },
+    "./FlagIcon": {
+      "types": "./dist/icons/FlagIcon.d.ts",
+      "import": "./dist/icons/FlagIcon.mjs",
+      "require": "./dist/icons/FlagIcon.cjs"
+    },
+    "./FlameIcon": {
+      "types": "./dist/icons/FlameIcon.d.ts",
+      "import": "./dist/icons/FlameIcon.mjs",
+      "require": "./dist/icons/FlameIcon.cjs"
+    },
+    "./FlashIcon": {
+      "types": "./dist/icons/FlashIcon.d.ts",
+      "import": "./dist/icons/FlashIcon.mjs",
+      "require": "./dist/icons/FlashIcon.cjs"
+    },
+    "./FlashlightIcon": {
+      "types": "./dist/icons/FlashlightIcon.d.ts",
+      "import": "./dist/icons/FlashlightIcon.mjs",
+      "require": "./dist/icons/FlashlightIcon.cjs"
+    },
+    "./FlaskIcon": {
+      "types": "./dist/icons/FlaskIcon.d.ts",
+      "import": "./dist/icons/FlaskIcon.mjs",
+      "require": "./dist/icons/FlaskIcon.cjs"
+    },
+    "./FlaskFullIcon": {
+      "types": "./dist/icons/FlaskFullIcon.d.ts",
+      "import": "./dist/icons/FlaskFullIcon.mjs",
+      "require": "./dist/icons/FlaskFullIcon.cjs"
+    },
+    "./FlowBranchIcon": {
+      "types": "./dist/icons/FlowBranchIcon.d.ts",
+      "import": "./dist/icons/FlowBranchIcon.mjs",
+      "require": "./dist/icons/FlowBranchIcon.cjs"
+    },
+    "./FlowDiagramIcon": {
+      "types": "./dist/icons/FlowDiagramIcon.d.ts",
+      "import": "./dist/icons/FlowDiagramIcon.mjs",
+      "require": "./dist/icons/FlowDiagramIcon.cjs"
+    },
+    "./FlowDownArrowIcon": {
+      "types": "./dist/icons/FlowDownArrowIcon.d.ts",
+      "import": "./dist/icons/FlowDownArrowIcon.mjs",
+      "require": "./dist/icons/FlowDownArrowIcon.cjs"
+    },
+    "./FlowLeftArrowIcon": {
+      "types": "./dist/icons/FlowLeftArrowIcon.d.ts",
+      "import": "./dist/icons/FlowLeftArrowIcon.mjs",
+      "require": "./dist/icons/FlowLeftArrowIcon.cjs"
+    },
+    "./FlowMergeIcon": {
+      "types": "./dist/icons/FlowMergeIcon.d.ts",
+      "import": "./dist/icons/FlowMergeIcon.mjs",
+      "require": "./dist/icons/FlowMergeIcon.cjs"
+    },
+    "./FlowRightArrowIcon": {
+      "types": "./dist/icons/FlowRightArrowIcon.d.ts",
+      "import": "./dist/icons/FlowRightArrowIcon.mjs",
+      "require": "./dist/icons/FlowRightArrowIcon.cjs"
+    },
+    "./FlowSplitArrowDownIcon": {
+      "types": "./dist/icons/FlowSplitArrowDownIcon.d.ts",
+      "import": "./dist/icons/FlowSplitArrowDownIcon.mjs",
+      "require": "./dist/icons/FlowSplitArrowDownIcon.cjs"
+    },
+    "./FlowSplitArrowLeftIcon": {
+      "types": "./dist/icons/FlowSplitArrowLeftIcon.d.ts",
+      "import": "./dist/icons/FlowSplitArrowLeftIcon.mjs",
+      "require": "./dist/icons/FlowSplitArrowLeftIcon.cjs"
+    },
+    "./FlowSplitArrowRightIcon": {
+      "types": "./dist/icons/FlowSplitArrowRightIcon.d.ts",
+      "import": "./dist/icons/FlowSplitArrowRightIcon.mjs",
+      "require": "./dist/icons/FlowSplitArrowRightIcon.cjs"
+    },
+    "./FlowSplitArrowUpIcon": {
+      "types": "./dist/icons/FlowSplitArrowUpIcon.d.ts",
+      "import": "./dist/icons/FlowSplitArrowUpIcon.mjs",
+      "require": "./dist/icons/FlowSplitArrowUpIcon.cjs"
+    },
+    "./FlowSplitDownIcon": {
+      "types": "./dist/icons/FlowSplitDownIcon.d.ts",
+      "import": "./dist/icons/FlowSplitDownIcon.mjs",
+      "require": "./dist/icons/FlowSplitDownIcon.cjs"
+    },
+    "./FlowSplitLeftIcon": {
+      "types": "./dist/icons/FlowSplitLeftIcon.d.ts",
+      "import": "./dist/icons/FlowSplitLeftIcon.mjs",
+      "require": "./dist/icons/FlowSplitLeftIcon.cjs"
+    },
+    "./FlowSplitRightIcon": {
+      "types": "./dist/icons/FlowSplitRightIcon.d.ts",
+      "import": "./dist/icons/FlowSplitRightIcon.mjs",
+      "require": "./dist/icons/FlowSplitRightIcon.cjs"
+    },
+    "./FlowSplitSquareDownIcon": {
+      "types": "./dist/icons/FlowSplitSquareDownIcon.d.ts",
+      "import": "./dist/icons/FlowSplitSquareDownIcon.mjs",
+      "require": "./dist/icons/FlowSplitSquareDownIcon.cjs"
+    },
+    "./FlowSplitSquareLeftIcon": {
+      "types": "./dist/icons/FlowSplitSquareLeftIcon.d.ts",
+      "import": "./dist/icons/FlowSplitSquareLeftIcon.mjs",
+      "require": "./dist/icons/FlowSplitSquareLeftIcon.cjs"
+    },
+    "./FlowSplitSquareRightIcon": {
+      "types": "./dist/icons/FlowSplitSquareRightIcon.d.ts",
+      "import": "./dist/icons/FlowSplitSquareRightIcon.mjs",
+      "require": "./dist/icons/FlowSplitSquareRightIcon.cjs"
+    },
+    "./FlowSplitSquareUpIcon": {
+      "types": "./dist/icons/FlowSplitSquareUpIcon.d.ts",
+      "import": "./dist/icons/FlowSplitSquareUpIcon.mjs",
+      "require": "./dist/icons/FlowSplitSquareUpIcon.cjs"
+    },
+    "./FlowSplitUpIcon": {
+      "types": "./dist/icons/FlowSplitUpIcon.d.ts",
+      "import": "./dist/icons/FlowSplitUpIcon.mjs",
+      "require": "./dist/icons/FlowSplitUpIcon.cjs"
+    },
+    "./FlowUpArrowIcon": {
+      "types": "./dist/icons/FlowUpArrowIcon.d.ts",
+      "import": "./dist/icons/FlowUpArrowIcon.mjs",
+      "require": "./dist/icons/FlowUpArrowIcon.cjs"
+    },
+    "./FlowerIcon": {
+      "types": "./dist/icons/FlowerIcon.d.ts",
+      "import": "./dist/icons/FlowerIcon.mjs",
+      "require": "./dist/icons/FlowerIcon.cjs"
+    },
+    "./FolderIcon": {
+      "types": "./dist/icons/FolderIcon.d.ts",
+      "import": "./dist/icons/FolderIcon.mjs",
+      "require": "./dist/icons/FolderIcon.cjs"
+    },
+    "./FolderOpenIcon": {
+      "types": "./dist/icons/FolderOpenIcon.d.ts",
+      "import": "./dist/icons/FolderOpenIcon.mjs",
+      "require": "./dist/icons/FolderOpenIcon.cjs"
+    },
+    "./FolderPlusIcon": {
+      "types": "./dist/icons/FolderPlusIcon.d.ts",
+      "import": "./dist/icons/FolderPlusIcon.mjs",
+      "require": "./dist/icons/FolderPlusIcon.cjs"
+    },
+    "./FootballIcon": {
+      "types": "./dist/icons/FootballIcon.d.ts",
+      "import": "./dist/icons/FootballIcon.mjs",
+      "require": "./dist/icons/FootballIcon.cjs"
+    },
+    "./FortressIcon": {
+      "types": "./dist/icons/FortressIcon.d.ts",
+      "import": "./dist/icons/FortressIcon.mjs",
+      "require": "./dist/icons/FortressIcon.cjs"
+    },
+    "./GhostIcon": {
+      "types": "./dist/icons/GhostIcon.d.ts",
+      "import": "./dist/icons/GhostIcon.mjs",
+      "require": "./dist/icons/GhostIcon.cjs"
+    },
+    "./GiftIcon": {
+      "types": "./dist/icons/GiftIcon.d.ts",
+      "import": "./dist/icons/GiftIcon.mjs",
+      "require": "./dist/icons/GiftIcon.cjs"
+    },
+    "./GiftBoxIcon": {
+      "types": "./dist/icons/GiftBoxIcon.d.ts",
+      "import": "./dist/icons/GiftBoxIcon.mjs",
+      "require": "./dist/icons/GiftBoxIcon.cjs"
+    },
+    "./GitBranchIcon": {
+      "types": "./dist/icons/GitBranchIcon.d.ts",
+      "import": "./dist/icons/GitBranchIcon.mjs",
+      "require": "./dist/icons/GitBranchIcon.cjs"
+    },
+    "./GitCommitIcon": {
+      "types": "./dist/icons/GitCommitIcon.d.ts",
+      "import": "./dist/icons/GitCommitIcon.mjs",
+      "require": "./dist/icons/GitCommitIcon.cjs"
+    },
+    "./GitCompareIcon": {
+      "types": "./dist/icons/GitCompareIcon.d.ts",
+      "import": "./dist/icons/GitCompareIcon.mjs",
+      "require": "./dist/icons/GitCompareIcon.cjs"
+    },
+    "./GitMergeIcon": {
+      "types": "./dist/icons/GitMergeIcon.d.ts",
+      "import": "./dist/icons/GitMergeIcon.mjs",
+      "require": "./dist/icons/GitMergeIcon.cjs"
+    },
+    "./GitPullRequestIcon": {
+      "types": "./dist/icons/GitPullRequestIcon.d.ts",
+      "import": "./dist/icons/GitPullRequestIcon.mjs",
+      "require": "./dist/icons/GitPullRequestIcon.cjs"
+    },
+    "./GitPullRequestClosedIcon": {
+      "types": "./dist/icons/GitPullRequestClosedIcon.d.ts",
+      "import": "./dist/icons/GitPullRequestClosedIcon.mjs",
+      "require": "./dist/icons/GitPullRequestClosedIcon.cjs"
+    },
+    "./GitPullRequestDraftIcon": {
+      "types": "./dist/icons/GitPullRequestDraftIcon.d.ts",
+      "import": "./dist/icons/GitPullRequestDraftIcon.mjs",
+      "require": "./dist/icons/GitPullRequestDraftIcon.cjs"
+    },
+    "./GlobeIcon": {
+      "types": "./dist/icons/GlobeIcon.d.ts",
+      "import": "./dist/icons/GlobeIcon.mjs",
+      "require": "./dist/icons/GlobeIcon.cjs"
+    },
+    "./GridIcon": {
+      "types": "./dist/icons/GridIcon.d.ts",
+      "import": "./dist/icons/GridIcon.mjs",
+      "require": "./dist/icons/GridIcon.cjs"
+    },
+    "./HammerIcon": {
+      "types": "./dist/icons/HammerIcon.d.ts",
+      "import": "./dist/icons/HammerIcon.mjs",
+      "require": "./dist/icons/HammerIcon.cjs"
+    },
+    "./HandLeftIcon": {
+      "types": "./dist/icons/HandLeftIcon.d.ts",
+      "import": "./dist/icons/HandLeftIcon.mjs",
+      "require": "./dist/icons/HandLeftIcon.cjs"
+    },
+    "./HandRightIcon": {
+      "types": "./dist/icons/HandRightIcon.d.ts",
+      "import": "./dist/icons/HandRightIcon.mjs",
+      "require": "./dist/icons/HandRightIcon.cjs"
+    },
+    "./HandWaveIcon": {
+      "types": "./dist/icons/HandWaveIcon.d.ts",
+      "import": "./dist/icons/HandWaveIcon.mjs",
+      "require": "./dist/icons/HandWaveIcon.cjs"
+    },
+    "./HandbagIcon": {
+      "types": "./dist/icons/HandbagIcon.d.ts",
+      "import": "./dist/icons/HandbagIcon.mjs",
+      "require": "./dist/icons/HandbagIcon.cjs"
+    },
+    "./HashIcon": {
+      "types": "./dist/icons/HashIcon.d.ts",
+      "import": "./dist/icons/HashIcon.mjs",
+      "require": "./dist/icons/HashIcon.cjs"
+    },
+    "./HashCircleIcon": {
+      "types": "./dist/icons/HashCircleIcon.d.ts",
+      "import": "./dist/icons/HashCircleIcon.mjs",
+      "require": "./dist/icons/HashCircleIcon.cjs"
+    },
+    "./HashItalicIcon": {
+      "types": "./dist/icons/HashItalicIcon.d.ts",
+      "import": "./dist/icons/HashItalicIcon.mjs",
+      "require": "./dist/icons/HashItalicIcon.cjs"
+    },
+    "./HashSquareIcon": {
+      "types": "./dist/icons/HashSquareIcon.d.ts",
+      "import": "./dist/icons/HashSquareIcon.mjs",
+      "require": "./dist/icons/HashSquareIcon.cjs"
+    },
+    "./HeadphonesIcon": {
+      "types": "./dist/icons/HeadphonesIcon.d.ts",
+      "import": "./dist/icons/HeadphonesIcon.mjs",
+      "require": "./dist/icons/HeadphonesIcon.cjs"
+    },
+    "./HeartIcon": {
+      "types": "./dist/icons/HeartIcon.d.ts",
+      "import": "./dist/icons/HeartIcon.mjs",
+      "require": "./dist/icons/HeartIcon.cjs"
+    },
+    "./HexagonIcon": {
+      "types": "./dist/icons/HexagonIcon.d.ts",
+      "import": "./dist/icons/HexagonIcon.mjs",
+      "require": "./dist/icons/HexagonIcon.cjs"
+    },
+    "./HomeIcon": {
+      "types": "./dist/icons/HomeIcon.d.ts",
+      "import": "./dist/icons/HomeIcon.mjs",
+      "require": "./dist/icons/HomeIcon.cjs"
+    },
+    "./HomeHeartIcon": {
+      "types": "./dist/icons/HomeHeartIcon.d.ts",
+      "import": "./dist/icons/HomeHeartIcon.mjs",
+      "require": "./dist/icons/HomeHeartIcon.cjs"
+    },
+    "./HomePlusIcon": {
+      "types": "./dist/icons/HomePlusIcon.d.ts",
+      "import": "./dist/icons/HomePlusIcon.mjs",
+      "require": "./dist/icons/HomePlusIcon.cjs"
+    },
+    "./HomeSimpleIcon": {
+      "types": "./dist/icons/HomeSimpleIcon.d.ts",
+      "import": "./dist/icons/HomeSimpleIcon.mjs",
+      "require": "./dist/icons/HomeSimpleIcon.cjs"
+    },
+    "./HomeXIcon": {
+      "types": "./dist/icons/HomeXIcon.d.ts",
+      "import": "./dist/icons/HomeXIcon.mjs",
+      "require": "./dist/icons/HomeXIcon.cjs"
+    },
+    "./HourglassIcon": {
+      "types": "./dist/icons/HourglassIcon.d.ts",
+      "import": "./dist/icons/HourglassIcon.mjs",
+      "require": "./dist/icons/HourglassIcon.cjs"
+    },
+    "./HourglassEmptyIcon": {
+      "types": "./dist/icons/HourglassEmptyIcon.d.ts",
+      "import": "./dist/icons/HourglassEmptyIcon.mjs",
+      "require": "./dist/icons/HourglassEmptyIcon.cjs"
+    },
+    "./HourglassFullIcon": {
+      "types": "./dist/icons/HourglassFullIcon.d.ts",
+      "import": "./dist/icons/HourglassFullIcon.mjs",
+      "require": "./dist/icons/HourglassFullIcon.cjs"
+    },
+    "./IdHIcon": {
+      "types": "./dist/icons/IdHIcon.d.ts",
+      "import": "./dist/icons/IdHIcon.mjs",
+      "require": "./dist/icons/IdHIcon.cjs"
+    },
+    "./IdVIcon": {
+      "types": "./dist/icons/IdVIcon.d.ts",
+      "import": "./dist/icons/IdVIcon.mjs",
+      "require": "./dist/icons/IdVIcon.cjs"
+    },
+    "./ImageLandscapeIcon": {
+      "types": "./dist/icons/ImageLandscapeIcon.d.ts",
+      "import": "./dist/icons/ImageLandscapeIcon.mjs",
+      "require": "./dist/icons/ImageLandscapeIcon.cjs"
+    },
+    "./ImagePileIcon": {
+      "types": "./dist/icons/ImagePileIcon.d.ts",
+      "import": "./dist/icons/ImagePileIcon.mjs",
+      "require": "./dist/icons/ImagePileIcon.cjs"
+    },
+    "./ImageSquareIcon": {
+      "types": "./dist/icons/ImageSquareIcon.d.ts",
+      "import": "./dist/icons/ImageSquareIcon.mjs",
+      "require": "./dist/icons/ImageSquareIcon.cjs"
+    },
+    "./ImageStackIcon": {
+      "types": "./dist/icons/ImageStackIcon.d.ts",
+      "import": "./dist/icons/ImageStackIcon.mjs",
+      "require": "./dist/icons/ImageStackIcon.cjs"
+    },
+    "./InfoCircleIcon": {
+      "types": "./dist/icons/InfoCircleIcon.d.ts",
+      "import": "./dist/icons/InfoCircleIcon.mjs",
+      "require": "./dist/icons/InfoCircleIcon.cjs"
+    },
+    "./KeyIcon": {
+      "types": "./dist/icons/KeyIcon.d.ts",
+      "import": "./dist/icons/KeyIcon.mjs",
+      "require": "./dist/icons/KeyIcon.cjs"
+    },
+    "./KeyAltIcon": {
+      "types": "./dist/icons/KeyAltIcon.d.ts",
+      "import": "./dist/icons/KeyAltIcon.mjs",
+      "require": "./dist/icons/KeyAltIcon.cjs"
+    },
+    "./KeyholeIcon": {
+      "types": "./dist/icons/KeyholeIcon.d.ts",
+      "import": "./dist/icons/KeyholeIcon.mjs",
+      "require": "./dist/icons/KeyholeIcon.cjs"
+    },
+    "./LabelIcon": {
+      "types": "./dist/icons/LabelIcon.d.ts",
+      "import": "./dist/icons/LabelIcon.mjs",
+      "require": "./dist/icons/LabelIcon.cjs"
+    },
+    "./LabelAltIcon": {
+      "types": "./dist/icons/LabelAltIcon.d.ts",
+      "import": "./dist/icons/LabelAltIcon.mjs",
+      "require": "./dist/icons/LabelAltIcon.cjs"
+    },
+    "./LayersIcon": {
+      "types": "./dist/icons/LayersIcon.d.ts",
+      "import": "./dist/icons/LayersIcon.mjs",
+      "require": "./dist/icons/LayersIcon.cjs"
+    },
+    "./LayersAltIcon": {
+      "types": "./dist/icons/LayersAltIcon.d.ts",
+      "import": "./dist/icons/LayersAltIcon.mjs",
+      "require": "./dist/icons/LayersAltIcon.cjs"
+    },
+    "./LayersSimpleIcon": {
+      "types": "./dist/icons/LayersSimpleIcon.d.ts",
+      "import": "./dist/icons/LayersSimpleIcon.mjs",
+      "require": "./dist/icons/LayersSimpleIcon.cjs"
+    },
+    "./LineChartIcon": {
+      "types": "./dist/icons/LineChartIcon.d.ts",
+      "import": "./dist/icons/LineChartIcon.mjs",
+      "require": "./dist/icons/LineChartIcon.cjs"
+    },
+    "./LineChartDescIcon": {
+      "types": "./dist/icons/LineChartDescIcon.d.ts",
+      "import": "./dist/icons/LineChartDescIcon.mjs",
+      "require": "./dist/icons/LineChartDescIcon.cjs"
+    },
+    "./LineChartXYIcon": {
+      "types": "./dist/icons/LineChartXYIcon.d.ts",
+      "import": "./dist/icons/LineChartXYIcon.mjs",
+      "require": "./dist/icons/LineChartXYIcon.cjs"
+    },
+    "./LineChartXYDescIcon": {
+      "types": "./dist/icons/LineChartXYDescIcon.d.ts",
+      "import": "./dist/icons/LineChartXYDescIcon.mjs",
+      "require": "./dist/icons/LineChartXYDescIcon.cjs"
+    },
+    "./LineSegmentIcon": {
+      "types": "./dist/icons/LineSegmentIcon.d.ts",
+      "import": "./dist/icons/LineSegmentIcon.mjs",
+      "require": "./dist/icons/LineSegmentIcon.cjs"
+    },
+    "./LineSegmentHIcon": {
+      "types": "./dist/icons/LineSegmentHIcon.d.ts",
+      "import": "./dist/icons/LineSegmentHIcon.mjs",
+      "require": "./dist/icons/LineSegmentHIcon.cjs"
+    },
+    "./LineSegmentVIcon": {
+      "types": "./dist/icons/LineSegmentVIcon.d.ts",
+      "import": "./dist/icons/LineSegmentVIcon.mjs",
+      "require": "./dist/icons/LineSegmentVIcon.cjs"
+    },
+    "./LinkIcon": {
+      "types": "./dist/icons/LinkIcon.d.ts",
+      "import": "./dist/icons/LinkIcon.mjs",
+      "require": "./dist/icons/LinkIcon.cjs"
+    },
+    "./ListIcon": {
+      "types": "./dist/icons/ListIcon.d.ts",
+      "import": "./dist/icons/ListIcon.mjs",
+      "require": "./dist/icons/ListIcon.cjs"
+    },
+    "./ListBulletIcon": {
+      "types": "./dist/icons/ListBulletIcon.d.ts",
+      "import": "./dist/icons/ListBulletIcon.mjs",
+      "require": "./dist/icons/ListBulletIcon.cjs"
+    },
+    "./ListBulletSimpleIcon": {
+      "types": "./dist/icons/ListBulletSimpleIcon.d.ts",
+      "import": "./dist/icons/ListBulletSimpleIcon.mjs",
+      "require": "./dist/icons/ListBulletSimpleIcon.cjs"
+    },
+    "./ListCheckIcon": {
+      "types": "./dist/icons/ListCheckIcon.d.ts",
+      "import": "./dist/icons/ListCheckIcon.mjs",
+      "require": "./dist/icons/ListCheckIcon.cjs"
+    },
+    "./ListCheckSimpleIcon": {
+      "types": "./dist/icons/ListCheckSimpleIcon.d.ts",
+      "import": "./dist/icons/ListCheckSimpleIcon.mjs",
+      "require": "./dist/icons/ListCheckSimpleIcon.cjs"
+    },
+    "./ListMinusIcon": {
+      "types": "./dist/icons/ListMinusIcon.d.ts",
+      "import": "./dist/icons/ListMinusIcon.mjs",
+      "require": "./dist/icons/ListMinusIcon.cjs"
+    },
+    "./ListPlusIcon": {
+      "types": "./dist/icons/ListPlusIcon.d.ts",
+      "import": "./dist/icons/ListPlusIcon.mjs",
+      "require": "./dist/icons/ListPlusIcon.cjs"
+    },
+    "./ListSimpleIcon": {
+      "types": "./dist/icons/ListSimpleIcon.d.ts",
+      "import": "./dist/icons/ListSimpleIcon.mjs",
+      "require": "./dist/icons/ListSimpleIcon.cjs"
+    },
+    "./ListXIcon": {
+      "types": "./dist/icons/ListXIcon.d.ts",
+      "import": "./dist/icons/ListXIcon.mjs",
+      "require": "./dist/icons/ListXIcon.cjs"
+    },
+    "./LockIcon": {
+      "types": "./dist/icons/LockIcon.d.ts",
+      "import": "./dist/icons/LockIcon.mjs",
+      "require": "./dist/icons/LockIcon.cjs"
+    },
+    "./LockOpenIcon": {
+      "types": "./dist/icons/LockOpenIcon.d.ts",
+      "import": "./dist/icons/LockOpenIcon.mjs",
+      "require": "./dist/icons/LockOpenIcon.cjs"
+    },
+    "./LockPasswordIcon": {
+      "types": "./dist/icons/LockPasswordIcon.d.ts",
+      "import": "./dist/icons/LockPasswordIcon.mjs",
+      "require": "./dist/icons/LockPasswordIcon.cjs"
+    },
+    "./LockPasswordOpenIcon": {
+      "types": "./dist/icons/LockPasswordOpenIcon.d.ts",
+      "import": "./dist/icons/LockPasswordOpenIcon.mjs",
+      "require": "./dist/icons/LockPasswordOpenIcon.cjs"
+    },
+    "./MacWindowIcon": {
+      "types": "./dist/icons/MacWindowIcon.d.ts",
+      "import": "./dist/icons/MacWindowIcon.mjs",
+      "require": "./dist/icons/MacWindowIcon.cjs"
+    },
+    "./MailIcon": {
+      "types": "./dist/icons/MailIcon.d.ts",
+      "import": "./dist/icons/MailIcon.mjs",
+      "require": "./dist/icons/MailIcon.cjs"
+    },
+    "./MailBadgeIcon": {
+      "types": "./dist/icons/MailBadgeIcon.d.ts",
+      "import": "./dist/icons/MailBadgeIcon.mjs",
+      "require": "./dist/icons/MailBadgeIcon.cjs"
+    },
+    "./MailOpenIcon": {
+      "types": "./dist/icons/MailOpenIcon.d.ts",
+      "import": "./dist/icons/MailOpenIcon.mjs",
+      "require": "./dist/icons/MailOpenIcon.cjs"
+    },
+    "./MapIcon": {
+      "types": "./dist/icons/MapIcon.d.ts",
+      "import": "./dist/icons/MapIcon.mjs",
+      "require": "./dist/icons/MapIcon.cjs"
+    },
+    "./MapPinIcon": {
+      "types": "./dist/icons/MapPinIcon.d.ts",
+      "import": "./dist/icons/MapPinIcon.mjs",
+      "require": "./dist/icons/MapPinIcon.cjs"
+    },
+    "./MapPinMinusIcon": {
+      "types": "./dist/icons/MapPinMinusIcon.d.ts",
+      "import": "./dist/icons/MapPinMinusIcon.mjs",
+      "require": "./dist/icons/MapPinMinusIcon.cjs"
+    },
+    "./MapPinPlusIcon": {
+      "types": "./dist/icons/MapPinPlusIcon.d.ts",
+      "import": "./dist/icons/MapPinPlusIcon.mjs",
+      "require": "./dist/icons/MapPinPlusIcon.cjs"
+    },
+    "./MatchaIcon": {
+      "types": "./dist/icons/MatchaIcon.d.ts",
+      "import": "./dist/icons/MatchaIcon.mjs",
+      "require": "./dist/icons/MatchaIcon.cjs"
+    },
+    "./MedalIcon": {
+      "types": "./dist/icons/MedalIcon.d.ts",
+      "import": "./dist/icons/MedalIcon.mjs",
+      "require": "./dist/icons/MedalIcon.cjs"
+    },
+    "./MedalStarIcon": {
+      "types": "./dist/icons/MedalStarIcon.d.ts",
+      "import": "./dist/icons/MedalStarIcon.mjs",
+      "require": "./dist/icons/MedalStarIcon.cjs"
+    },
+    "./MedicalCrossIcon": {
+      "types": "./dist/icons/MedicalCrossIcon.d.ts",
+      "import": "./dist/icons/MedicalCrossIcon.mjs",
+      "require": "./dist/icons/MedicalCrossIcon.cjs"
+    },
+    "./MenuIcon": {
+      "types": "./dist/icons/MenuIcon.d.ts",
+      "import": "./dist/icons/MenuIcon.mjs",
+      "require": "./dist/icons/MenuIcon.cjs"
+    },
+    "./MenuAltIcon": {
+      "types": "./dist/icons/MenuAltIcon.d.ts",
+      "import": "./dist/icons/MenuAltIcon.mjs",
+      "require": "./dist/icons/MenuAltIcon.cjs"
+    },
+    "./MenuSimpleAltIcon": {
+      "types": "./dist/icons/MenuSimpleAltIcon.d.ts",
+      "import": "./dist/icons/MenuSimpleAltIcon.mjs",
+      "require": "./dist/icons/MenuSimpleAltIcon.cjs"
+    },
+    "./MicIcon": {
+      "types": "./dist/icons/MicIcon.d.ts",
+      "import": "./dist/icons/MicIcon.mjs",
+      "require": "./dist/icons/MicIcon.cjs"
+    },
+    "./MicOffIcon": {
+      "types": "./dist/icons/MicOffIcon.d.ts",
+      "import": "./dist/icons/MicOffIcon.mjs",
+      "require": "./dist/icons/MicOffIcon.cjs"
+    },
+    "./MicroscopeIcon": {
+      "types": "./dist/icons/MicroscopeIcon.d.ts",
+      "import": "./dist/icons/MicroscopeIcon.mjs",
+      "require": "./dist/icons/MicroscopeIcon.cjs"
+    },
+    "./MinusIcon": {
+      "types": "./dist/icons/MinusIcon.d.ts",
+      "import": "./dist/icons/MinusIcon.mjs",
+      "require": "./dist/icons/MinusIcon.cjs"
+    },
+    "./MinusCircleIcon": {
+      "types": "./dist/icons/MinusCircleIcon.d.ts",
+      "import": "./dist/icons/MinusCircleIcon.mjs",
+      "require": "./dist/icons/MinusCircleIcon.cjs"
+    },
+    "./MinusSquareIcon": {
+      "types": "./dist/icons/MinusSquareIcon.d.ts",
+      "import": "./dist/icons/MinusSquareIcon.mjs",
+      "require": "./dist/icons/MinusSquareIcon.cjs"
+    },
+    "./MoonCrescentIcon": {
+      "types": "./dist/icons/MoonCrescentIcon.d.ts",
+      "import": "./dist/icons/MoonCrescentIcon.mjs",
+      "require": "./dist/icons/MoonCrescentIcon.cjs"
+    },
+    "./MoreIcon": {
+      "types": "./dist/icons/MoreIcon.d.ts",
+      "import": "./dist/icons/MoreIcon.mjs",
+      "require": "./dist/icons/MoreIcon.cjs"
+    },
+    "./MoreCircleIcon": {
+      "types": "./dist/icons/MoreCircleIcon.d.ts",
+      "import": "./dist/icons/MoreCircleIcon.mjs",
+      "require": "./dist/icons/MoreCircleIcon.cjs"
+    },
+    "./MoreCircleVIcon": {
+      "types": "./dist/icons/MoreCircleVIcon.d.ts",
+      "import": "./dist/icons/MoreCircleVIcon.mjs",
+      "require": "./dist/icons/MoreCircleVIcon.cjs"
+    },
+    "./MoreSquareIcon": {
+      "types": "./dist/icons/MoreSquareIcon.d.ts",
+      "import": "./dist/icons/MoreSquareIcon.mjs",
+      "require": "./dist/icons/MoreSquareIcon.cjs"
+    },
+    "./MoreSquareVIcon": {
+      "types": "./dist/icons/MoreSquareVIcon.d.ts",
+      "import": "./dist/icons/MoreSquareVIcon.mjs",
+      "require": "./dist/icons/MoreSquareVIcon.cjs"
+    },
+    "./MoreVIcon": {
+      "types": "./dist/icons/MoreVIcon.d.ts",
+      "import": "./dist/icons/MoreVIcon.mjs",
+      "require": "./dist/icons/MoreVIcon.cjs"
+    },
+    "./MoveIcon": {
+      "types": "./dist/icons/MoveIcon.d.ts",
+      "import": "./dist/icons/MoveIcon.mjs",
+      "require": "./dist/icons/MoveIcon.cjs"
+    },
+    "./MusicIcon": {
+      "types": "./dist/icons/MusicIcon.d.ts",
+      "import": "./dist/icons/MusicIcon.mjs",
+      "require": "./dist/icons/MusicIcon.cjs"
+    },
+    "./NoteIcon": {
+      "types": "./dist/icons/NoteIcon.d.ts",
+      "import": "./dist/icons/NoteIcon.mjs",
+      "require": "./dist/icons/NoteIcon.cjs"
+    },
+    "./NoteTextIcon": {
+      "types": "./dist/icons/NoteTextIcon.d.ts",
+      "import": "./dist/icons/NoteTextIcon.mjs",
+      "require": "./dist/icons/NoteTextIcon.cjs"
+    },
+    "./NotebookIcon": {
+      "types": "./dist/icons/NotebookIcon.d.ts",
+      "import": "./dist/icons/NotebookIcon.mjs",
+      "require": "./dist/icons/NotebookIcon.cjs"
+    },
+    "./NotebookLogIcon": {
+      "types": "./dist/icons/NotebookLogIcon.d.ts",
+      "import": "./dist/icons/NotebookLogIcon.mjs",
+      "require": "./dist/icons/NotebookLogIcon.cjs"
+    },
+    "./OptionKeyIcon": {
+      "types": "./dist/icons/OptionKeyIcon.d.ts",
+      "import": "./dist/icons/OptionKeyIcon.mjs",
+      "require": "./dist/icons/OptionKeyIcon.cjs"
+    },
+    "./OverlappingCirclesIcon": {
+      "types": "./dist/icons/OverlappingCirclesIcon.d.ts",
+      "import": "./dist/icons/OverlappingCirclesIcon.mjs",
+      "require": "./dist/icons/OverlappingCirclesIcon.cjs"
+    },
+    "./OverlappingCirclesAltIcon": {
+      "types": "./dist/icons/OverlappingCirclesAltIcon.d.ts",
+      "import": "./dist/icons/OverlappingCirclesAltIcon.mjs",
+      "require": "./dist/icons/OverlappingCirclesAltIcon.cjs"
+    },
+    "./PaintPaletteIcon": {
+      "types": "./dist/icons/PaintPaletteIcon.d.ts",
+      "import": "./dist/icons/PaintPaletteIcon.mjs",
+      "require": "./dist/icons/PaintPaletteIcon.cjs"
+    },
+    "./PaperclipIcon": {
+      "types": "./dist/icons/PaperclipIcon.d.ts",
+      "import": "./dist/icons/PaperclipIcon.mjs",
+      "require": "./dist/icons/PaperclipIcon.cjs"
+    },
+    "./PauseIcon": {
+      "types": "./dist/icons/PauseIcon.d.ts",
+      "import": "./dist/icons/PauseIcon.mjs",
+      "require": "./dist/icons/PauseIcon.cjs"
+    },
+    "./PauseCircleIcon": {
+      "types": "./dist/icons/PauseCircleIcon.d.ts",
+      "import": "./dist/icons/PauseCircleIcon.mjs",
+      "require": "./dist/icons/PauseCircleIcon.cjs"
+    },
+    "./PawPrintIcon": {
+      "types": "./dist/icons/PawPrintIcon.d.ts",
+      "import": "./dist/icons/PawPrintIcon.mjs",
+      "require": "./dist/icons/PawPrintIcon.cjs"
+    },
+    "./PeaceIcon": {
+      "types": "./dist/icons/PeaceIcon.d.ts",
+      "import": "./dist/icons/PeaceIcon.mjs",
+      "require": "./dist/icons/PeaceIcon.cjs"
+    },
+    "./PedestalIcon": {
+      "types": "./dist/icons/PedestalIcon.d.ts",
+      "import": "./dist/icons/PedestalIcon.mjs",
+      "require": "./dist/icons/PedestalIcon.cjs"
+    },
+    "./PenIcon": {
+      "types": "./dist/icons/PenIcon.d.ts",
+      "import": "./dist/icons/PenIcon.mjs",
+      "require": "./dist/icons/PenIcon.cjs"
+    },
+    "./PenNibIcon": {
+      "types": "./dist/icons/PenNibIcon.d.ts",
+      "import": "./dist/icons/PenNibIcon.mjs",
+      "require": "./dist/icons/PenNibIcon.cjs"
+    },
+    "./PencilTipIcon": {
+      "types": "./dist/icons/PencilTipIcon.d.ts",
+      "import": "./dist/icons/PencilTipIcon.mjs",
+      "require": "./dist/icons/PencilTipIcon.cjs"
+    },
+    "./PercentIcon": {
+      "types": "./dist/icons/PercentIcon.d.ts",
+      "import": "./dist/icons/PercentIcon.mjs",
+      "require": "./dist/icons/PercentIcon.cjs"
+    },
+    "./PercentCircleIcon": {
+      "types": "./dist/icons/PercentCircleIcon.d.ts",
+      "import": "./dist/icons/PercentCircleIcon.mjs",
+      "require": "./dist/icons/PercentCircleIcon.cjs"
+    },
+    "./PercentSquareIcon": {
+      "types": "./dist/icons/PercentSquareIcon.d.ts",
+      "import": "./dist/icons/PercentSquareIcon.mjs",
+      "require": "./dist/icons/PercentSquareIcon.cjs"
+    },
+    "./PhoneIcon": {
+      "types": "./dist/icons/PhoneIcon.d.ts",
+      "import": "./dist/icons/PhoneIcon.mjs",
+      "require": "./dist/icons/PhoneIcon.cjs"
+    },
+    "./PhoneIncomingIcon": {
+      "types": "./dist/icons/PhoneIncomingIcon.d.ts",
+      "import": "./dist/icons/PhoneIncomingIcon.mjs",
+      "require": "./dist/icons/PhoneIncomingIcon.cjs"
+    },
+    "./PhoneOffIcon": {
+      "types": "./dist/icons/PhoneOffIcon.d.ts",
+      "import": "./dist/icons/PhoneOffIcon.mjs",
+      "require": "./dist/icons/PhoneOffIcon.cjs"
+    },
+    "./PhoneOutgoingIcon": {
+      "types": "./dist/icons/PhoneOutgoingIcon.d.ts",
+      "import": "./dist/icons/PhoneOutgoingIcon.mjs",
+      "require": "./dist/icons/PhoneOutgoingIcon.cjs"
+    },
+    "./PlayIcon": {
+      "types": "./dist/icons/PlayIcon.d.ts",
+      "import": "./dist/icons/PlayIcon.mjs",
+      "require": "./dist/icons/PlayIcon.cjs"
+    },
+    "./PlayCircleIcon": {
+      "types": "./dist/icons/PlayCircleIcon.d.ts",
+      "import": "./dist/icons/PlayCircleIcon.mjs",
+      "require": "./dist/icons/PlayCircleIcon.cjs"
+    },
+    "./PlayRectangleIcon": {
+      "types": "./dist/icons/PlayRectangleIcon.d.ts",
+      "import": "./dist/icons/PlayRectangleIcon.mjs",
+      "require": "./dist/icons/PlayRectangleIcon.cjs"
+    },
+    "./PlaylistIcon": {
+      "types": "./dist/icons/PlaylistIcon.d.ts",
+      "import": "./dist/icons/PlaylistIcon.mjs",
+      "require": "./dist/icons/PlaylistIcon.cjs"
+    },
+    "./PlugIcon": {
+      "types": "./dist/icons/PlugIcon.d.ts",
+      "import": "./dist/icons/PlugIcon.mjs",
+      "require": "./dist/icons/PlugIcon.cjs"
+    },
+    "./PlusIcon": {
+      "types": "./dist/icons/PlusIcon.d.ts",
+      "import": "./dist/icons/PlusIcon.mjs",
+      "require": "./dist/icons/PlusIcon.cjs"
+    },
+    "./PlusCircleIcon": {
+      "types": "./dist/icons/PlusCircleIcon.d.ts",
+      "import": "./dist/icons/PlusCircleIcon.mjs",
+      "require": "./dist/icons/PlusCircleIcon.cjs"
+    },
+    "./PlusSquareIcon": {
+      "types": "./dist/icons/PlusSquareIcon.d.ts",
+      "import": "./dist/icons/PlusSquareIcon.mjs",
+      "require": "./dist/icons/PlusSquareIcon.cjs"
+    },
+    "./QuestionMarkIcon": {
+      "types": "./dist/icons/QuestionMarkIcon.d.ts",
+      "import": "./dist/icons/QuestionMarkIcon.mjs",
+      "require": "./dist/icons/QuestionMarkIcon.cjs"
+    },
+    "./QuestionMarkCircleIcon": {
+      "types": "./dist/icons/QuestionMarkCircleIcon.d.ts",
+      "import": "./dist/icons/QuestionMarkCircleIcon.mjs",
+      "require": "./dist/icons/QuestionMarkCircleIcon.cjs"
+    },
+    "./ReceiptIcon": {
+      "types": "./dist/icons/ReceiptIcon.d.ts",
+      "import": "./dist/icons/ReceiptIcon.mjs",
+      "require": "./dist/icons/ReceiptIcon.cjs"
+    },
+    "./ReceiptAltIcon": {
+      "types": "./dist/icons/ReceiptAltIcon.d.ts",
+      "import": "./dist/icons/ReceiptAltIcon.mjs",
+      "require": "./dist/icons/ReceiptAltIcon.cjs"
+    },
+    "./RectangleIcon": {
+      "types": "./dist/icons/RectangleIcon.d.ts",
+      "import": "./dist/icons/RectangleIcon.mjs",
+      "require": "./dist/icons/RectangleIcon.cjs"
+    },
+    "./RectangleDashedIcon": {
+      "types": "./dist/icons/RectangleDashedIcon.d.ts",
+      "import": "./dist/icons/RectangleDashedIcon.mjs",
+      "require": "./dist/icons/RectangleDashedIcon.cjs"
+    },
+    "./ReplyIcon": {
+      "types": "./dist/icons/ReplyIcon.d.ts",
+      "import": "./dist/icons/ReplyIcon.mjs",
+      "require": "./dist/icons/ReplyIcon.cjs"
+    },
+    "./RobotIcon": {
+      "types": "./dist/icons/RobotIcon.d.ts",
+      "import": "./dist/icons/RobotIcon.mjs",
+      "require": "./dist/icons/RobotIcon.cjs"
+    },
+    "./RobotHumanoidIcon": {
+      "types": "./dist/icons/RobotHumanoidIcon.d.ts",
+      "import": "./dist/icons/RobotHumanoidIcon.mjs",
+      "require": "./dist/icons/RobotHumanoidIcon.cjs"
+    },
+    "./RocketIcon": {
+      "types": "./dist/icons/RocketIcon.d.ts",
+      "import": "./dist/icons/RocketIcon.mjs",
+      "require": "./dist/icons/RocketIcon.cjs"
+    },
+    "./RotateCircleLeftIcon": {
+      "types": "./dist/icons/RotateCircleLeftIcon.d.ts",
+      "import": "./dist/icons/RotateCircleLeftIcon.mjs",
+      "require": "./dist/icons/RotateCircleLeftIcon.cjs"
+    },
+    "./RotateCircleRightIcon": {
+      "types": "./dist/icons/RotateCircleRightIcon.d.ts",
+      "import": "./dist/icons/RotateCircleRightIcon.mjs",
+      "require": "./dist/icons/RotateCircleRightIcon.cjs"
+    },
+    "./RotateLeftIcon": {
+      "types": "./dist/icons/RotateLeftIcon.d.ts",
+      "import": "./dist/icons/RotateLeftIcon.mjs",
+      "require": "./dist/icons/RotateLeftIcon.cjs"
+    },
+    "./RotateRightIcon": {
+      "types": "./dist/icons/RotateRightIcon.d.ts",
+      "import": "./dist/icons/RotateRightIcon.mjs",
+      "require": "./dist/icons/RotateRightIcon.cjs"
+    },
+    "./RotationLeftIcon": {
+      "types": "./dist/icons/RotationLeftIcon.d.ts",
+      "import": "./dist/icons/RotationLeftIcon.mjs",
+      "require": "./dist/icons/RotationLeftIcon.cjs"
+    },
+    "./RotationRightIcon": {
+      "types": "./dist/icons/RotationRightIcon.d.ts",
+      "import": "./dist/icons/RotationRightIcon.mjs",
+      "require": "./dist/icons/RotationRightIcon.cjs"
+    },
+    "./RouteArrowIcon": {
+      "types": "./dist/icons/RouteArrowIcon.d.ts",
+      "import": "./dist/icons/RouteArrowIcon.mjs",
+      "require": "./dist/icons/RouteArrowIcon.cjs"
+    },
+    "./RulerIcon": {
+      "types": "./dist/icons/RulerIcon.d.ts",
+      "import": "./dist/icons/RulerIcon.mjs",
+      "require": "./dist/icons/RulerIcon.cjs"
+    },
+    "./RulersIcon": {
+      "types": "./dist/icons/RulersIcon.d.ts",
+      "import": "./dist/icons/RulersIcon.mjs",
+      "require": "./dist/icons/RulersIcon.cjs"
+    },
+    "./SaveIcon": {
+      "types": "./dist/icons/SaveIcon.d.ts",
+      "import": "./dist/icons/SaveIcon.mjs",
+      "require": "./dist/icons/SaveIcon.cjs"
+    },
+    "./ScanIcon": {
+      "types": "./dist/icons/ScanIcon.d.ts",
+      "import": "./dist/icons/ScanIcon.mjs",
+      "require": "./dist/icons/ScanIcon.cjs"
+    },
+    "./ScanBarcodeIcon": {
+      "types": "./dist/icons/ScanBarcodeIcon.d.ts",
+      "import": "./dist/icons/ScanBarcodeIcon.mjs",
+      "require": "./dist/icons/ScanBarcodeIcon.cjs"
+    },
+    "./ScanCameraIcon": {
+      "types": "./dist/icons/ScanCameraIcon.d.ts",
+      "import": "./dist/icons/ScanCameraIcon.mjs",
+      "require": "./dist/icons/ScanCameraIcon.cjs"
+    },
+    "./ScanCubeIcon": {
+      "types": "./dist/icons/ScanCubeIcon.d.ts",
+      "import": "./dist/icons/ScanCubeIcon.mjs",
+      "require": "./dist/icons/ScanCubeIcon.cjs"
+    },
+    "./ScanDashedIcon": {
+      "types": "./dist/icons/ScanDashedIcon.d.ts",
+      "import": "./dist/icons/ScanDashedIcon.mjs",
+      "require": "./dist/icons/ScanDashedIcon.cjs"
+    },
+    "./ScanDocumentIcon": {
+      "types": "./dist/icons/ScanDocumentIcon.d.ts",
+      "import": "./dist/icons/ScanDocumentIcon.mjs",
+      "require": "./dist/icons/ScanDocumentIcon.cjs"
+    },
+    "./ScanFaceIcon": {
+      "types": "./dist/icons/ScanFaceIcon.d.ts",
+      "import": "./dist/icons/ScanFaceIcon.mjs",
+      "require": "./dist/icons/ScanFaceIcon.cjs"
+    },
+    "./ScanSearchIcon": {
+      "types": "./dist/icons/ScanSearchIcon.d.ts",
+      "import": "./dist/icons/ScanSearchIcon.mjs",
+      "require": "./dist/icons/ScanSearchIcon.cjs"
+    },
+    "./ScatterChartIcon": {
+      "types": "./dist/icons/ScatterChartIcon.d.ts",
+      "import": "./dist/icons/ScatterChartIcon.mjs",
+      "require": "./dist/icons/ScatterChartIcon.cjs"
+    },
+    "./ScissorsIcon": {
+      "types": "./dist/icons/ScissorsIcon.d.ts",
+      "import": "./dist/icons/ScissorsIcon.mjs",
+      "require": "./dist/icons/ScissorsIcon.cjs"
+    },
+    "./ScrewdriverIcon": {
+      "types": "./dist/icons/ScrewdriverIcon.d.ts",
+      "import": "./dist/icons/ScrewdriverIcon.mjs",
+      "require": "./dist/icons/ScrewdriverIcon.cjs"
+    },
+    "./ScribbleIcon": {
+      "types": "./dist/icons/ScribbleIcon.d.ts",
+      "import": "./dist/icons/ScribbleIcon.mjs",
+      "require": "./dist/icons/ScribbleIcon.cjs"
+    },
+    "./SearchIcon": {
+      "types": "./dist/icons/SearchIcon.d.ts",
+      "import": "./dist/icons/SearchIcon.mjs",
+      "require": "./dist/icons/SearchIcon.cjs"
+    },
+    "./SearchCircleIcon": {
+      "types": "./dist/icons/SearchCircleIcon.d.ts",
+      "import": "./dist/icons/SearchCircleIcon.mjs",
+      "require": "./dist/icons/SearchCircleIcon.cjs"
+    },
+    "./SearchSquareIcon": {
+      "types": "./dist/icons/SearchSquareIcon.d.ts",
+      "import": "./dist/icons/SearchSquareIcon.mjs",
+      "require": "./dist/icons/SearchSquareIcon.cjs"
+    },
+    "./SeedlingIcon": {
+      "types": "./dist/icons/SeedlingIcon.d.ts",
+      "import": "./dist/icons/SeedlingIcon.mjs",
+      "require": "./dist/icons/SeedlingIcon.cjs"
+    },
+    "./SendIcon": {
+      "types": "./dist/icons/SendIcon.d.ts",
+      "import": "./dist/icons/SendIcon.mjs",
+      "require": "./dist/icons/SendIcon.cjs"
+    },
+    "./SendHIcon": {
+      "types": "./dist/icons/SendHIcon.d.ts",
+      "import": "./dist/icons/SendHIcon.mjs",
+      "require": "./dist/icons/SendHIcon.cjs"
+    },
+    "./SendVIcon": {
+      "types": "./dist/icons/SendVIcon.d.ts",
+      "import": "./dist/icons/SendVIcon.mjs",
+      "require": "./dist/icons/SendVIcon.cjs"
+    },
+    "./SettingsIcon": {
+      "types": "./dist/icons/SettingsIcon.d.ts",
+      "import": "./dist/icons/SettingsIcon.mjs",
+      "require": "./dist/icons/SettingsIcon.cjs"
+    },
+    "./ShieldIcon": {
+      "types": "./dist/icons/ShieldIcon.d.ts",
+      "import": "./dist/icons/ShieldIcon.mjs",
+      "require": "./dist/icons/ShieldIcon.cjs"
+    },
+    "./ShieldAlertIcon": {
+      "types": "./dist/icons/ShieldAlertIcon.d.ts",
+      "import": "./dist/icons/ShieldAlertIcon.mjs",
+      "require": "./dist/icons/ShieldAlertIcon.cjs"
+    },
+    "./ShieldCheckIcon": {
+      "types": "./dist/icons/ShieldCheckIcon.d.ts",
+      "import": "./dist/icons/ShieldCheckIcon.mjs",
+      "require": "./dist/icons/ShieldCheckIcon.cjs"
+    },
+    "./ShieldSlashIcon": {
+      "types": "./dist/icons/ShieldSlashIcon.d.ts",
+      "import": "./dist/icons/ShieldSlashIcon.mjs",
+      "require": "./dist/icons/ShieldSlashIcon.cjs"
+    },
+    "./SidebarLeftIcon": {
+      "types": "./dist/icons/SidebarLeftIcon.d.ts",
+      "import": "./dist/icons/SidebarLeftIcon.mjs",
+      "require": "./dist/icons/SidebarLeftIcon.cjs"
+    },
+    "./SidebarRightIcon": {
+      "types": "./dist/icons/SidebarRightIcon.d.ts",
+      "import": "./dist/icons/SidebarRightIcon.mjs",
+      "require": "./dist/icons/SidebarRightIcon.cjs"
+    },
+    "./SignInIcon": {
+      "types": "./dist/icons/SignInIcon.d.ts",
+      "import": "./dist/icons/SignInIcon.mjs",
+      "require": "./dist/icons/SignInIcon.cjs"
+    },
+    "./SignInAltIcon": {
+      "types": "./dist/icons/SignInAltIcon.d.ts",
+      "import": "./dist/icons/SignInAltIcon.mjs",
+      "require": "./dist/icons/SignInAltIcon.cjs"
+    },
+    "./SignOutIcon": {
+      "types": "./dist/icons/SignOutIcon.d.ts",
+      "import": "./dist/icons/SignOutIcon.mjs",
+      "require": "./dist/icons/SignOutIcon.cjs"
+    },
+    "./SignOutAltIcon": {
+      "types": "./dist/icons/SignOutAltIcon.d.ts",
+      "import": "./dist/icons/SignOutAltIcon.mjs",
+      "require": "./dist/icons/SignOutAltIcon.cjs"
+    },
+    "./SignatureIcon": {
+      "types": "./dist/icons/SignatureIcon.d.ts",
+      "import": "./dist/icons/SignatureIcon.mjs",
+      "require": "./dist/icons/SignatureIcon.cjs"
+    },
+    "./SignatureXIcon": {
+      "types": "./dist/icons/SignatureXIcon.d.ts",
+      "import": "./dist/icons/SignatureXIcon.mjs",
+      "require": "./dist/icons/SignatureXIcon.cjs"
+    },
+    "./SlidersIcon": {
+      "types": "./dist/icons/SlidersIcon.d.ts",
+      "import": "./dist/icons/SlidersIcon.mjs",
+      "require": "./dist/icons/SlidersIcon.cjs"
+    },
+    "./SlidersVIcon": {
+      "types": "./dist/icons/SlidersVIcon.d.ts",
+      "import": "./dist/icons/SlidersVIcon.mjs",
+      "require": "./dist/icons/SlidersVIcon.cjs"
+    },
+    "./SnowflakeIcon": {
+      "types": "./dist/icons/SnowflakeIcon.d.ts",
+      "import": "./dist/icons/SnowflakeIcon.mjs",
+      "require": "./dist/icons/SnowflakeIcon.cjs"
+    },
+    "./SoccerBallIcon": {
+      "types": "./dist/icons/SoccerBallIcon.d.ts",
+      "import": "./dist/icons/SoccerBallIcon.mjs",
+      "require": "./dist/icons/SoccerBallIcon.cjs"
+    },
+    "./SoccerFieldIcon": {
+      "types": "./dist/icons/SoccerFieldIcon.d.ts",
+      "import": "./dist/icons/SoccerFieldIcon.mjs",
+      "require": "./dist/icons/SoccerFieldIcon.cjs"
+    },
+    "./SortIcon": {
+      "types": "./dist/icons/SortIcon.d.ts",
+      "import": "./dist/icons/SortIcon.mjs",
+      "require": "./dist/icons/SortIcon.cjs"
+    },
+    "./SortAscendingIcon": {
+      "types": "./dist/icons/SortAscendingIcon.d.ts",
+      "import": "./dist/icons/SortAscendingIcon.mjs",
+      "require": "./dist/icons/SortAscendingIcon.cjs"
+    },
+    "./SortAscendingNarrowIcon": {
+      "types": "./dist/icons/SortAscendingNarrowIcon.d.ts",
+      "import": "./dist/icons/SortAscendingNarrowIcon.mjs",
+      "require": "./dist/icons/SortAscendingNarrowIcon.cjs"
+    },
+    "./SortNarrowIcon": {
+      "types": "./dist/icons/SortNarrowIcon.d.ts",
+      "import": "./dist/icons/SortNarrowIcon.mjs",
+      "require": "./dist/icons/SortNarrowIcon.cjs"
+    },
+    "./SparkleIcon": {
+      "types": "./dist/icons/SparkleIcon.d.ts",
+      "import": "./dist/icons/SparkleIcon.mjs",
+      "require": "./dist/icons/SparkleIcon.cjs"
+    },
+    "./SparkleCircleIcon": {
+      "types": "./dist/icons/SparkleCircleIcon.d.ts",
+      "import": "./dist/icons/SparkleCircleIcon.mjs",
+      "require": "./dist/icons/SparkleCircleIcon.cjs"
+    },
+    "./SparkleSquareIcon": {
+      "types": "./dist/icons/SparkleSquareIcon.d.ts",
+      "import": "./dist/icons/SparkleSquareIcon.mjs",
+      "require": "./dist/icons/SparkleSquareIcon.cjs"
+    },
+    "./SparklesIcon": {
+      "types": "./dist/icons/SparklesIcon.d.ts",
+      "import": "./dist/icons/SparklesIcon.mjs",
+      "require": "./dist/icons/SparklesIcon.cjs"
+    },
+    "./SparklesAltIcon": {
+      "types": "./dist/icons/SparklesAltIcon.d.ts",
+      "import": "./dist/icons/SparklesAltIcon.mjs",
+      "require": "./dist/icons/SparklesAltIcon.cjs"
+    },
+    "./SpeakerIcon": {
+      "types": "./dist/icons/SpeakerIcon.d.ts",
+      "import": "./dist/icons/SpeakerIcon.mjs",
+      "require": "./dist/icons/SpeakerIcon.cjs"
+    },
+    "./SpeakerHighIcon": {
+      "types": "./dist/icons/SpeakerHighIcon.d.ts",
+      "import": "./dist/icons/SpeakerHighIcon.mjs",
+      "require": "./dist/icons/SpeakerHighIcon.cjs"
+    },
+    "./SpeakerLowIcon": {
+      "types": "./dist/icons/SpeakerLowIcon.d.ts",
+      "import": "./dist/icons/SpeakerLowIcon.mjs",
+      "require": "./dist/icons/SpeakerLowIcon.cjs"
+    },
+    "./SpeakerMediumIcon": {
+      "types": "./dist/icons/SpeakerMediumIcon.d.ts",
+      "import": "./dist/icons/SpeakerMediumIcon.mjs",
+      "require": "./dist/icons/SpeakerMediumIcon.cjs"
+    },
+    "./SpeakerOffIcon": {
+      "types": "./dist/icons/SpeakerOffIcon.d.ts",
+      "import": "./dist/icons/SpeakerOffIcon.mjs",
+      "require": "./dist/icons/SpeakerOffIcon.cjs"
+    },
+    "./SpinnerIcon": {
+      "types": "./dist/icons/SpinnerIcon.d.ts",
+      "import": "./dist/icons/SpinnerIcon.mjs",
+      "require": "./dist/icons/SpinnerIcon.cjs"
+    },
+    "./SquareIcon": {
+      "types": "./dist/icons/SquareIcon.d.ts",
+      "import": "./dist/icons/SquareIcon.mjs",
+      "require": "./dist/icons/SquareIcon.cjs"
+    },
+    "./SquareDashedIcon": {
+      "types": "./dist/icons/SquareDashedIcon.d.ts",
+      "import": "./dist/icons/SquareDashedIcon.mjs",
+      "require": "./dist/icons/SquareDashedIcon.cjs"
+    },
+    "./SquareGridIcon": {
+      "types": "./dist/icons/SquareGridIcon.d.ts",
+      "import": "./dist/icons/SquareGridIcon.mjs",
+      "require": "./dist/icons/SquareGridIcon.cjs"
+    },
+    "./SquareGridPlusIcon": {
+      "types": "./dist/icons/SquareGridPlusIcon.d.ts",
+      "import": "./dist/icons/SquareGridPlusIcon.mjs",
+      "require": "./dist/icons/SquareGridPlusIcon.cjs"
+    },
+    "./StairsIcon": {
+      "types": "./dist/icons/StairsIcon.d.ts",
+      "import": "./dist/icons/StairsIcon.mjs",
+      "require": "./dist/icons/StairsIcon.cjs"
+    },
+    "./StarIcon": {
+      "types": "./dist/icons/StarIcon.d.ts",
+      "import": "./dist/icons/StarIcon.mjs",
+      "require": "./dist/icons/StarIcon.cjs"
+    },
+    "./StarHalfIcon": {
+      "types": "./dist/icons/StarHalfIcon.d.ts",
+      "import": "./dist/icons/StarHalfIcon.mjs",
+      "require": "./dist/icons/StarHalfIcon.cjs"
+    },
+    "./StopCircleIcon": {
+      "types": "./dist/icons/StopCircleIcon.d.ts",
+      "import": "./dist/icons/StopCircleIcon.mjs",
+      "require": "./dist/icons/StopCircleIcon.cjs"
+    },
+    "./StoreIcon": {
+      "types": "./dist/icons/StoreIcon.d.ts",
+      "import": "./dist/icons/StoreIcon.mjs",
+      "require": "./dist/icons/StoreIcon.cjs"
+    },
+    "./TagIcon": {
+      "types": "./dist/icons/TagIcon.d.ts",
+      "import": "./dist/icons/TagIcon.mjs",
+      "require": "./dist/icons/TagIcon.cjs"
+    },
+    "./TallyMarksIcon": {
+      "types": "./dist/icons/TallyMarksIcon.d.ts",
+      "import": "./dist/icons/TallyMarksIcon.mjs",
+      "require": "./dist/icons/TallyMarksIcon.cjs"
+    },
+    "./TargetIcon": {
+      "types": "./dist/icons/TargetIcon.d.ts",
+      "import": "./dist/icons/TargetIcon.mjs",
+      "require": "./dist/icons/TargetIcon.cjs"
+    },
+    "./TennisBallIcon": {
+      "types": "./dist/icons/TennisBallIcon.d.ts",
+      "import": "./dist/icons/TennisBallIcon.mjs",
+      "require": "./dist/icons/TennisBallIcon.cjs"
+    },
+    "./TestTubeIcon": {
+      "types": "./dist/icons/TestTubeIcon.d.ts",
+      "import": "./dist/icons/TestTubeIcon.mjs",
+      "require": "./dist/icons/TestTubeIcon.cjs"
+    },
+    "./TestTubeFullIcon": {
+      "types": "./dist/icons/TestTubeFullIcon.d.ts",
+      "import": "./dist/icons/TestTubeFullIcon.mjs",
+      "require": "./dist/icons/TestTubeFullIcon.cjs"
+    },
+    "./TextIcon": {
+      "types": "./dist/icons/TextIcon.d.ts",
+      "import": "./dist/icons/TextIcon.mjs",
+      "require": "./dist/icons/TextIcon.cjs"
+    },
+    "./TextAlignCenterIcon": {
+      "types": "./dist/icons/TextAlignCenterIcon.d.ts",
+      "import": "./dist/icons/TextAlignCenterIcon.mjs",
+      "require": "./dist/icons/TextAlignCenterIcon.cjs"
+    },
+    "./TextAlignJustifyIcon": {
+      "types": "./dist/icons/TextAlignJustifyIcon.d.ts",
+      "import": "./dist/icons/TextAlignJustifyIcon.mjs",
+      "require": "./dist/icons/TextAlignJustifyIcon.cjs"
+    },
+    "./TextAlignLeftIcon": {
+      "types": "./dist/icons/TextAlignLeftIcon.d.ts",
+      "import": "./dist/icons/TextAlignLeftIcon.mjs",
+      "require": "./dist/icons/TextAlignLeftIcon.cjs"
+    },
+    "./TextAlignRightIcon": {
+      "types": "./dist/icons/TextAlignRightIcon.d.ts",
+      "import": "./dist/icons/TextAlignRightIcon.mjs",
+      "require": "./dist/icons/TextAlignRightIcon.cjs"
+    },
+    "./TextBIcon": {
+      "types": "./dist/icons/TextBIcon.d.ts",
+      "import": "./dist/icons/TextBIcon.mjs",
+      "require": "./dist/icons/TextBIcon.cjs"
+    },
+    "./TextItalicIcon": {
+      "types": "./dist/icons/TextItalicIcon.d.ts",
+      "import": "./dist/icons/TextItalicIcon.mjs",
+      "require": "./dist/icons/TextItalicIcon.cjs"
+    },
+    "./TextSquareIcon": {
+      "types": "./dist/icons/TextSquareIcon.d.ts",
+      "import": "./dist/icons/TextSquareIcon.mjs",
+      "require": "./dist/icons/TextSquareIcon.cjs"
+    },
+    "./TextStrikethroughIcon": {
+      "types": "./dist/icons/TextStrikethroughIcon.d.ts",
+      "import": "./dist/icons/TextStrikethroughIcon.mjs",
+      "require": "./dist/icons/TextStrikethroughIcon.cjs"
+    },
+    "./TextUnderlineIcon": {
+      "types": "./dist/icons/TextUnderlineIcon.d.ts",
+      "import": "./dist/icons/TextUnderlineIcon.mjs",
+      "require": "./dist/icons/TextUnderlineIcon.cjs"
+    },
+    "./ThermometerHighIcon": {
+      "types": "./dist/icons/ThermometerHighIcon.d.ts",
+      "import": "./dist/icons/ThermometerHighIcon.mjs",
+      "require": "./dist/icons/ThermometerHighIcon.cjs"
+    },
+    "./ThermometerLowIcon": {
+      "types": "./dist/icons/ThermometerLowIcon.d.ts",
+      "import": "./dist/icons/ThermometerLowIcon.mjs",
+      "require": "./dist/icons/ThermometerLowIcon.cjs"
+    },
+    "./ThermometerMediumIcon": {
+      "types": "./dist/icons/ThermometerMediumIcon.d.ts",
+      "import": "./dist/icons/ThermometerMediumIcon.mjs",
+      "require": "./dist/icons/ThermometerMediumIcon.cjs"
+    },
+    "./ThumbsDownIcon": {
+      "types": "./dist/icons/ThumbsDownIcon.d.ts",
+      "import": "./dist/icons/ThumbsDownIcon.mjs",
+      "require": "./dist/icons/ThumbsDownIcon.cjs"
+    },
+    "./ThumbsUpIcon": {
+      "types": "./dist/icons/ThumbsUpIcon.d.ts",
+      "import": "./dist/icons/ThumbsUpIcon.mjs",
+      "require": "./dist/icons/ThumbsUpIcon.cjs"
+    },
+    "./TimerIcon": {
+      "types": "./dist/icons/TimerIcon.d.ts",
+      "import": "./dist/icons/TimerIcon.mjs",
+      "require": "./dist/icons/TimerIcon.cjs"
+    },
+    "./ToggleOffIcon": {
+      "types": "./dist/icons/ToggleOffIcon.d.ts",
+      "import": "./dist/icons/ToggleOffIcon.mjs",
+      "require": "./dist/icons/ToggleOffIcon.cjs"
+    },
+    "./ToggleOnIcon": {
+      "types": "./dist/icons/ToggleOnIcon.d.ts",
+      "import": "./dist/icons/ToggleOnIcon.mjs",
+      "require": "./dist/icons/ToggleOnIcon.cjs"
+    },
+    "./TogglesIcon": {
+      "types": "./dist/icons/TogglesIcon.d.ts",
+      "import": "./dist/icons/TogglesIcon.mjs",
+      "require": "./dist/icons/TogglesIcon.cjs"
+    },
+    "./ToolboxIcon": {
+      "types": "./dist/icons/ToolboxIcon.d.ts",
+      "import": "./dist/icons/ToolboxIcon.mjs",
+      "require": "./dist/icons/ToolboxIcon.cjs"
+    },
+    "./ToolsIcon": {
+      "types": "./dist/icons/ToolsIcon.d.ts",
+      "import": "./dist/icons/ToolsIcon.mjs",
+      "require": "./dist/icons/ToolsIcon.cjs"
+    },
+    "./TrashIcon": {
+      "types": "./dist/icons/TrashIcon.d.ts",
+      "import": "./dist/icons/TrashIcon.mjs",
+      "require": "./dist/icons/TrashIcon.cjs"
+    },
+    "./TrendDownIcon": {
+      "types": "./dist/icons/TrendDownIcon.d.ts",
+      "import": "./dist/icons/TrendDownIcon.mjs",
+      "require": "./dist/icons/TrendDownIcon.cjs"
+    },
+    "./TrendUpIcon": {
+      "types": "./dist/icons/TrendUpIcon.d.ts",
+      "import": "./dist/icons/TrendUpIcon.mjs",
+      "require": "./dist/icons/TrendUpIcon.cjs"
+    },
+    "./TriangleIcon": {
+      "types": "./dist/icons/TriangleIcon.d.ts",
+      "import": "./dist/icons/TriangleIcon.mjs",
+      "require": "./dist/icons/TriangleIcon.cjs"
+    },
+    "./TriangleDownIcon": {
+      "types": "./dist/icons/TriangleDownIcon.d.ts",
+      "import": "./dist/icons/TriangleDownIcon.mjs",
+      "require": "./dist/icons/TriangleDownIcon.cjs"
+    },
+    "./TrophyIcon": {
+      "types": "./dist/icons/TrophyIcon.d.ts",
+      "import": "./dist/icons/TrophyIcon.mjs",
+      "require": "./dist/icons/TrophyIcon.cjs"
+    },
+    "./TruckIcon": {
+      "types": "./dist/icons/TruckIcon.d.ts",
+      "import": "./dist/icons/TruckIcon.mjs",
+      "require": "./dist/icons/TruckIcon.cjs"
+    },
+    "./TvIcon": {
+      "types": "./dist/icons/TvIcon.d.ts",
+      "import": "./dist/icons/TvIcon.mjs",
+      "require": "./dist/icons/TvIcon.cjs"
+    },
+    "./TvPlayAltIcon": {
+      "types": "./dist/icons/TvPlayAltIcon.d.ts",
+      "import": "./dist/icons/TvPlayAltIcon.mjs",
+      "require": "./dist/icons/TvPlayAltIcon.cjs"
+    },
+    "./UploadIcon": {
+      "types": "./dist/icons/UploadIcon.d.ts",
+      "import": "./dist/icons/UploadIcon.mjs",
+      "require": "./dist/icons/UploadIcon.cjs"
+    },
+    "./UserIcon": {
+      "types": "./dist/icons/UserIcon.d.ts",
+      "import": "./dist/icons/UserIcon.mjs",
+      "require": "./dist/icons/UserIcon.cjs"
+    },
+    "./UserCircleIcon": {
+      "types": "./dist/icons/UserCircleIcon.d.ts",
+      "import": "./dist/icons/UserCircleIcon.mjs",
+      "require": "./dist/icons/UserCircleIcon.cjs"
+    },
+    "./UserCircleDashedIcon": {
+      "types": "./dist/icons/UserCircleDashedIcon.d.ts",
+      "import": "./dist/icons/UserCircleDashedIcon.mjs",
+      "require": "./dist/icons/UserCircleDashedIcon.cjs"
+    },
+    "./UsersIcon": {
+      "types": "./dist/icons/UsersIcon.d.ts",
+      "import": "./dist/icons/UsersIcon.mjs",
+      "require": "./dist/icons/UsersIcon.cjs"
+    },
+    "./UsersThreeIcon": {
+      "types": "./dist/icons/UsersThreeIcon.d.ts",
+      "import": "./dist/icons/UsersThreeIcon.mjs",
+      "require": "./dist/icons/UsersThreeIcon.cjs"
+    },
+    "./VideoIcon": {
+      "types": "./dist/icons/VideoIcon.d.ts",
+      "import": "./dist/icons/VideoIcon.mjs",
+      "require": "./dist/icons/VideoIcon.cjs"
+    },
+    "./VideoOffIcon": {
+      "types": "./dist/icons/VideoOffIcon.d.ts",
+      "import": "./dist/icons/VideoOffIcon.mjs",
+      "require": "./dist/icons/VideoOffIcon.cjs"
+    },
+    "./VolleyballIcon": {
+      "types": "./dist/icons/VolleyballIcon.d.ts",
+      "import": "./dist/icons/VolleyballIcon.mjs",
+      "require": "./dist/icons/VolleyballIcon.cjs"
+    },
+    "./WandIcon": {
+      "types": "./dist/icons/WandIcon.d.ts",
+      "import": "./dist/icons/WandIcon.mjs",
+      "require": "./dist/icons/WandIcon.cjs"
+    },
+    "./WarehouseIcon": {
+      "types": "./dist/icons/WarehouseIcon.d.ts",
+      "import": "./dist/icons/WarehouseIcon.mjs",
+      "require": "./dist/icons/WarehouseIcon.cjs"
+    },
+    "./WaterfallChartIcon": {
+      "types": "./dist/icons/WaterfallChartIcon.d.ts",
+      "import": "./dist/icons/WaterfallChartIcon.mjs",
+      "require": "./dist/icons/WaterfallChartIcon.cjs"
+    },
+    "./WaterfallChartXIcon": {
+      "types": "./dist/icons/WaterfallChartXIcon.d.ts",
+      "import": "./dist/icons/WaterfallChartXIcon.mjs",
+      "require": "./dist/icons/WaterfallChartXIcon.cjs"
+    },
+    "./WaterfallChartXYIcon": {
+      "types": "./dist/icons/WaterfallChartXYIcon.d.ts",
+      "import": "./dist/icons/WaterfallChartXYIcon.mjs",
+      "require": "./dist/icons/WaterfallChartXYIcon.cjs"
+    },
+    "./WaveSineIcon": {
+      "types": "./dist/icons/WaveSineIcon.d.ts",
+      "import": "./dist/icons/WaveSineIcon.mjs",
+      "require": "./dist/icons/WaveSineIcon.cjs"
+    },
+    "./WaveSquareIcon": {
+      "types": "./dist/icons/WaveSquareIcon.d.ts",
+      "import": "./dist/icons/WaveSquareIcon.mjs",
+      "require": "./dist/icons/WaveSquareIcon.cjs"
+    },
+    "./WaveTriangleIcon": {
+      "types": "./dist/icons/WaveTriangleIcon.d.ts",
+      "import": "./dist/icons/WaveTriangleIcon.mjs",
+      "require": "./dist/icons/WaveTriangleIcon.cjs"
+    },
+    "./WifiIcon": {
+      "types": "./dist/icons/WifiIcon.d.ts",
+      "import": "./dist/icons/WifiIcon.mjs",
+      "require": "./dist/icons/WifiIcon.cjs"
+    },
+    "./WifiSlashIcon": {
+      "types": "./dist/icons/WifiSlashIcon.d.ts",
+      "import": "./dist/icons/WifiSlashIcon.mjs",
+      "require": "./dist/icons/WifiSlashIcon.cjs"
+    },
+    "./WineBottleIcon": {
+      "types": "./dist/icons/WineBottleIcon.d.ts",
+      "import": "./dist/icons/WineBottleIcon.mjs",
+      "require": "./dist/icons/WineBottleIcon.cjs"
+    },
+    "./WineBottleLabelIcon": {
+      "types": "./dist/icons/WineBottleLabelIcon.d.ts",
+      "import": "./dist/icons/WineBottleLabelIcon.mjs",
+      "require": "./dist/icons/WineBottleLabelIcon.cjs"
+    },
+    "./WineGlassIcon": {
+      "types": "./dist/icons/WineGlassIcon.d.ts",
+      "import": "./dist/icons/WineGlassIcon.mjs",
+      "require": "./dist/icons/WineGlassIcon.cjs"
+    },
+    "./WrenchIcon": {
+      "types": "./dist/icons/WrenchIcon.d.ts",
+      "import": "./dist/icons/WrenchIcon.mjs",
+      "require": "./dist/icons/WrenchIcon.cjs"
+    },
+    "./WristWatchIcon": {
+      "types": "./dist/icons/WristWatchIcon.d.ts",
+      "import": "./dist/icons/WristWatchIcon.mjs",
+      "require": "./dist/icons/WristWatchIcon.cjs"
+    },
+    "./XIcon": {
+      "types": "./dist/icons/XIcon.d.ts",
+      "import": "./dist/icons/XIcon.mjs",
+      "require": "./dist/icons/XIcon.cjs"
+    },
+    "./XCircleIcon": {
+      "types": "./dist/icons/XCircleIcon.d.ts",
+      "import": "./dist/icons/XCircleIcon.mjs",
+      "require": "./dist/icons/XCircleIcon.cjs"
+    },
+    "./XSquareIcon": {
+      "types": "./dist/icons/XSquareIcon.d.ts",
+      "import": "./dist/icons/XSquareIcon.mjs",
+      "require": "./dist/icons/XSquareIcon.cjs"
+    },
+    "./YinYangIcon": {
+      "types": "./dist/icons/YinYangIcon.d.ts",
+      "import": "./dist/icons/YinYangIcon.mjs",
+      "require": "./dist/icons/YinYangIcon.cjs"
+    }
   },
   "files": [
     "dist",
