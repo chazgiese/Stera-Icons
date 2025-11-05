@@ -2,6 +2,9 @@
 import type { IconProps } from './types';
 
 // Wrapper components with variant props
+export { AccessibilityIcon } from './icons/accessibility-wrapper';
+export { AgentCursorIcon } from './icons/agent-cursor-wrapper';
+export { AgentWorkflowIcon } from './icons/agent-workflow-wrapper';
 export { AlarmClockIcon } from './icons/alarm-clock-wrapper';
 export { AlertCircleIcon } from './icons/alert-circle-wrapper';
 export { AlertDiamondIcon } from './icons/alert-diamond-wrapper';
@@ -353,6 +356,7 @@ export { LabelAltIcon } from './icons/label-alt-wrapper';
 export { LayersIcon } from './icons/layers-wrapper';
 export { LayersAltIcon } from './icons/layers-alt-wrapper';
 export { LayersSimpleIcon } from './icons/layers-simple-wrapper';
+export { LineBarChartIcon } from './icons/line-bar-chart-wrapper';
 export { LineChartIcon } from './icons/line-chart-wrapper';
 export { LineChartDescIcon } from './icons/line-chart-desc-wrapper';
 export { LineChartXYIcon } from './icons/line-chart-x-y-wrapper';
@@ -476,6 +480,7 @@ export { SendIcon } from './icons/send-wrapper';
 export { SendHIcon } from './icons/send-h-wrapper';
 export { SendVIcon } from './icons/send-v-wrapper';
 export { SettingsIcon } from './icons/settings-wrapper';
+export { ShareIcon } from './icons/share-wrapper';
 export { ShieldIcon } from './icons/shield-wrapper';
 export { ShieldAlertIcon } from './icons/shield-alert-wrapper';
 export { ShieldCheckIcon } from './icons/shield-check-wrapper';

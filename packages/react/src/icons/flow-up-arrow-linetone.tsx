@@ -33,7 +33,7 @@ const FlowUpArrowIconLinetone = memo(
         />
         <path
           fill="currentColor"
-          d="M6.293 7.707a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1-1.414 1.414L12 3.414 7.707 7.707a1 1 0 0 1-1.414 0"
+          d="M6.293 7.707a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0l5 5a1 1 0 1 1-1.414 1.414L12 3.414 7.707 7.707a1 1 0 0 1-1.414 0"
         />
         <path
           fill="currentColor"
