@@ -1,16 +1,11 @@
 # Stera Icons
 
-A lightweight, tree-shakeable React icon library with TypeScript support and accessibility features.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/stera-icons)](https://bundlephobia.com/package/stera-icons)
+[![npm downloads](https://img.shields.io/npm/dm/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
 
-## Features
-
-- 📦 **Tree-shakeable**: Import only the icons you need
-- ⚡ **Lightweight**: Optimized SVGs with minimal bundle impact (~3.8MB package size)
-- 🔧 **TypeScript**: Full type safety and IntelliSense support
-- ♿ **Accessible**: Built-in ARIA support for screen readers
-- 🎯 **Per-icon imports**: Import individual icons for maximum optimization
-- 🚀 **Optimized builds**: Production-ready with no development overhead
-- 🎨 **Multiple variants**: 5 variants (regular, bold, filled, filltone, linetone) for every icon
+A lightweight React icon library with TypeScript support and five variants for every icon.
 
 ## Installation
 
@@ -22,23 +17,18 @@ yarn add stera-icons
 pnpm add stera-icons
 ```
 
-## Package Size
+## Features
 
-Stera Icons is optimized for production use:
-
-- **Package size**: ~3.8MB (unpacked)
-- **Bundle size**: Each icon adds only ~1-2KB to your bundle
-- **Tree-shaking**: Import only what you use for minimal impact
-- **No source maps**: Production builds exclude development files for optimal size
-
-The package includes 552 icons with 5 variants each (regular, bold, filled, filltone, linetone), but thanks to tree-shaking, you only pay for what you import.
+- Tree-shakeable imports - only bundle what you use
+- TypeScript support with full type safety
+- Five variants per icon: regular, bold, filled, filltone, linetone
+- Accessible by default with ARIA support
+- Optimized SVGs - each icon adds roughly 1-2KB to your bundle
 
 ## Usage
 
-### Basic Usage
-
 ```tsx
-import { SearchIcon, HeartIcon, StarIcon, CogIcon, UserIcon, HomeIcon, MailIcon, PhoneIcon, CalendarIcon, DownloadIcon } from 'stera-icons';
+import { SearchIcon, HeartIcon, StarIcon } from 'stera-icons';
 
 function App() {
   return (
@@ -46,39 +36,26 @@ function App() {
       <SearchIcon size={24} color="#646cff" aria-label="Search" />
       <HeartIcon size={20} color="red" />
       <StarIcon size={32} />
-      <CogIcon size={24} aria-label="Settings" />
-      <UserIcon size={20} />
-      <HomeIcon size={24} />
-      <MailIcon size={20} aria-label="Email" />
-      <PhoneIcon size={24} />
-      <CalendarIcon size={20} />
-      <DownloadIcon size={24} />
     </div>
   );
 }
 ```
 
-### With Variants
+### Variants
+
+Each icon supports five variants. The default is `regular`:
 
 ```tsx
-import { SearchIcon, HeartIcon } from 'stera-icons';
+import { SearchIcon } from 'stera-icons';
 
 function App() {
   return (
     <div>
-      {/* Use variant prop to switch between icon styles */}
       <SearchIcon variant="regular" size={24} />
       <SearchIcon variant="bold" size={24} />
       <SearchIcon variant="filled" size={24} />
       <SearchIcon variant="filltone" size={24} />
       <SearchIcon variant="linetone" size={24} />
-      
-      {/* Regular variant is the default */}
-      <HeartIcon size={20} />
-      <HeartIcon variant="bold" size={20} />
-      <HeartIcon variant="filled" size={20} />
-      <HeartIcon variant="filltone" size={20} />
-      <HeartIcon variant="linetone" size={20} />
     </div>
   );
 }
@@ -86,53 +63,19 @@ function App() {
 
 ### Accessibility
 
-```tsx
-// Decorative icons (hidden from screen readers)
-<SearchIcon aria-hidden="true" />
+For decorative icons, hide them from screen readers:
 
-// Meaningful icons (provide context)
-<SearchIcon aria-label="Search products" />
-<HeartIcon aria-label="Add to favorites" />
+```tsx
+<SearchIcon aria-hidden="true" />
 ```
 
-## Icon Naming
-
-All icon components are suffixed with "Icon" to prevent naming conflicts with your existing components:
-
-- **Pattern**: `{Name}Icon` (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`)
-- **Variants**: Use the `variant` prop to switch between styles (regular, bold, filled, filltone, linetone)
-
-## Icon Variants
-
-Stera Icons provides five distinct variants for maximum design flexibility:
-
-- **Regular**: Clean, outlined icons perfect for general use
-- **Bold**: Thicker strokes for emphasis and better visibility at small sizes
-- **Filled**: Solid icons for high contrast and modern designs
-- **Filltone**: Filled icons with subtle transparency effects
-- **Linetone**: Outlined icons with subtle transparency effects
-
-### Example Usage
+For meaningful icons, provide context:
 
 ```tsx
-import { HeartIcon } from 'stera-icons';
-
-function IconVariants() {
-  return (
-    <div>
-      <HeartIcon variant="regular" size={24} />   {/* Regular variant */}
-      <HeartIcon variant="bold" size={24} />      {/* Bold variant */}
-      <HeartIcon variant="filled" size={24} />    {/* Filled variant */}
-      <HeartIcon variant="filltone" size={24} />  {/* Filltone variant */}
-      <HeartIcon variant="linetone" size={24} />  {/* Linetone variant */}
-    </div>
-  );
-}
+<SearchIcon aria-label="Search products" />
 ```
 
 ## API
-
-### IconProps
 
 All icons accept these props:
 
@@ -145,6 +88,10 @@ All icons accept these props:
 | `aria-label` | `string` | - | Accessible label for screen readers |
 | `aria-hidden` | `boolean` | - | Hide from screen readers |
 | `...props` | `SVGProps<SVGSVGElement>` | - | All other SVG props |
+
+## Icon Naming
+
+All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
 
 ## Examples
 
@@ -169,17 +116,10 @@ function SearchButton() {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: white;
 }
 
 .search-icon {
   color: #666;
-}
-
-.search-btn:hover .search-icon {
-  color: #333;
 }
 ```
 
@@ -189,11 +129,10 @@ function SearchButton() {
 import { useState } from 'react';
 import * as Icons from 'stera-icons';
 
-const iconNames = ['SearchIcon', 'HeartIcon', 'StarIcon', 'CogIcon', 'UserIcon'] as const;
+const iconNames = ['SearchIcon', 'HeartIcon', 'StarIcon'] as const;
 
 function IconSelector() {
   const [selectedIcon, setSelectedIcon] = useState('SearchIcon');
-  
   const IconComponent = Icons[selectedIcon as keyof typeof Icons];
   
   return (
@@ -208,24 +147,6 @@ function IconSelector() {
   );
 }
 ```
-
-## Development
-
-For contributors and development:
-
-### Build Scripts
-
-- `pnpm build` - Production build (optimized, no source maps)
-- `pnpm build:dev` - Development build (with source maps for debugging)
-- `pnpm dev` - Watch mode for development
-- `pnpm test` - Run test suite
-
-### Build Configuration
-
-- **Production builds**: Optimized for size and performance
-- **Development builds**: Include source maps for debugging
-- **Tree-shaking**: Enabled for optimal bundle sizes
-- **TypeScript**: Full type safety and IntelliSense
 
 ## License
 
