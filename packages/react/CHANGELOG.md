@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.7.0
+
+### Minor Changes
+
+- 44d8515: Add new icons
+
 ## 5.6.0
 
 ### Minor Changes
