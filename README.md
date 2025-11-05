@@ -1,5 +1,7 @@
 # Stera Icons
 
+![Cover Image](./assets/Cover%20Image.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/stera-icons)](https://bundlephobia.com/package/stera-icons)
