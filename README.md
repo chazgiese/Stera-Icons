@@ -1,6 +1,6 @@
-# Stera Icons
-
 ![Cover Image](./assets/Cover%20Image.png)
+
+# Stera Icons
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
