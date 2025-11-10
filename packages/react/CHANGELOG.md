@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.8.1
+
+### Patch Changes
+
+- ea87cb6: Fix `barricade` and `clock-4` icon drawings.
+
 ## 5.8.0
 
 ### Minor Changes
