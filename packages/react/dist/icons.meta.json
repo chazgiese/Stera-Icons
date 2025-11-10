@@ -9189,9 +9189,9 @@
     "fileName": "barricade-filltone.tsx",
     "versionAdded": "5.8.0",
     "dateAdded": "2025-11-10T04:31:57.238Z",
-    "lastModified": "2025-11-10T04:31:57.238Z",
-    "versionLastModified": "5.8.0",
-    "svgHash": "35124839"
+    "lastModified": "2025-11-10T05:08:23.847Z",
+    "versionLastModified": "5.8.1",
+    "svgHash": "5196a0d6"
   },
   {
     "name": "barricade",
@@ -21983,9 +21983,9 @@
     "fileName": "clock-4-bold.tsx",
     "versionAdded": "5.8.0",
     "dateAdded": "2025-11-10T04:31:59.356Z",
-    "lastModified": "2025-11-10T04:31:59.356Z",
-    "versionLastModified": "5.8.0",
-    "svgHash": "3c2073e1"
+    "lastModified": "2025-11-10T05:08:25.922Z",
+    "versionLastModified": "5.8.1",
+    "svgHash": "41ac966e"
   },
   {
     "name": "clock-4",
@@ -22075,9 +22075,9 @@
     "fileName": "clock-4.tsx",
     "versionAdded": "5.8.0",
     "dateAdded": "2025-11-10T04:31:59.369Z",
-    "lastModified": "2025-11-10T04:31:59.369Z",
-    "versionLastModified": "5.8.0",
-    "svgHash": "4565c1a7"
+    "lastModified": "2025-11-10T05:08:25.932Z",
+    "versionLastModified": "5.8.1",
+    "svgHash": "68afc90e"
   },
   {
     "name": "clock-6",
