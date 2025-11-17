@@ -644,6 +644,21 @@
       "import": "./dist/icons/CalendarIcon.mjs",
       "require": "./dist/icons/CalendarIcon.cjs"
     },
+    "./CalendarBlankIcon": {
+      "types": "./dist/icons/CalendarBlankIcon.d.ts",
+      "import": "./dist/icons/CalendarBlankIcon.mjs",
+      "require": "./dist/icons/CalendarBlankIcon.cjs"
+    },
+    "./CalendarClockIcon": {
+      "types": "./dist/icons/CalendarClockIcon.d.ts",
+      "import": "./dist/icons/CalendarClockIcon.mjs",
+      "require": "./dist/icons/CalendarClockIcon.cjs"
+    },
+    "./CalendarMinusIcon": {
+      "types": "./dist/icons/CalendarMinusIcon.d.ts",
+      "import": "./dist/icons/CalendarMinusIcon.mjs",
+      "require": "./dist/icons/CalendarMinusIcon.cjs"
+    },
     "./CalendarPlusIcon": {
       "types": "./dist/icons/CalendarPlusIcon.d.ts",
       "import": "./dist/icons/CalendarPlusIcon.mjs",
@@ -2024,6 +2039,11 @@
       "import": "./dist/icons/MapPinPlusIcon.mjs",
       "require": "./dist/icons/MapPinPlusIcon.cjs"
     },
+    "./MapPinnedIcon": {
+      "types": "./dist/icons/MapPinnedIcon.d.ts",
+      "import": "./dist/icons/MapPinnedIcon.mjs",
+      "require": "./dist/icons/MapPinnedIcon.cjs"
+    },
     "./MatchaIcon": {
       "types": "./dist/icons/MatchaIcon.d.ts",
       "import": "./dist/icons/MatchaIcon.mjs",
@@ -2443,6 +2463,11 @@
       "types": "./dist/icons/ScanSearchIcon.d.ts",
       "import": "./dist/icons/ScanSearchIcon.mjs",
       "require": "./dist/icons/ScanSearchIcon.cjs"
+    },
+    "./ScanTextIcon": {
+      "types": "./dist/icons/ScanTextIcon.d.ts",
+      "import": "./dist/icons/ScanTextIcon.mjs",
+      "require": "./dist/icons/ScanTextIcon.cjs"
     },
     "./ScatterChartIcon": {
       "types": "./dist/icons/ScatterChartIcon.d.ts",

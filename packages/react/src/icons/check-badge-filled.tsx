@@ -26,7 +26,7 @@ const CheckBadgeIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_5049_5783)">
+        <g clipPath="url(#clip0_5055_5765)">
           <path
             fill="currentColor"
             fillRule="evenodd"

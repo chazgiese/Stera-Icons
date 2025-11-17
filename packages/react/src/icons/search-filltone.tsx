@@ -28,13 +28,13 @@ const SearchIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="M22.414 19.586a2 2 0 1 1-2.828 2.828L16.15 18.98a9.55 9.55 0 0 0 2.829-2.829z"
+          d="M22.164 19.336a2 2 0 1 1-2.828 2.828L15.9 18.73A9.55 9.55 0 0 0 18.73 15.9z"
           opacity={0.4}
         />
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M11 1.5a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19m0 3a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13"
+          d="M10.75 1.25a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19m0 3a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13"
           clipRule="evenodd"
         />
       </svg>
