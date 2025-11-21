@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.10.0
+
+### Minor Changes
+
+- f16b0f9: Add alarm clock icons and refine existing time and alert icons.
+
 ## 5.9.0
 
 ### Minor Changes
