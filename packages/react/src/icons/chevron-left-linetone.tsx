@@ -33,7 +33,7 @@ const ChevronLeftIconLinetone = memo(
         />
         <path
           fill="currentColor"
-          d="M14.293 4.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414-1.414z"
+          d="M14.293 4.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 1 1-1.414-1.414z"
         />
       </svg>
     ))

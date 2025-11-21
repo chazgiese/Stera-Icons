@@ -27,9 +27,12 @@ const ScanIconLinetone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="M20 15a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-1a1 1 0 1 1 2 0v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 1 1-1M17 3a4 4 0 0 1 4 4v1a1 1 0 1 1-2 0V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1a1 1 0 0 1-2 0V7a4 4 0 0 1 4-4z" />
+          <path d="M2 17a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H4a3 3 0 0 1-3-3v-2a1 1 0 0 1 1-1M20 1a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0V4a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z" />
         </g>
-        <path fill="currentColor" d="M23 11a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2z" />
+        <path
+          fill="currentColor"
+          d="M22 17a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1M6 1a1 1 0 0 1 0 2H4a1 1 0 0 0-1 1v2a1 1 0 0 1-2 0V4a3 3 0 0 1 3-3z"
+        />
       </svg>
     ))
 );

@@ -26,7 +26,7 @@ const HandWaveIconBold = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" clipPath="url(#clip0_5055_3986)">
+        <g fill="currentColor" clipPath="url(#clip0_3435_8345)">
           <path d="M2.629 16.071a1 1 0 0 1 1.3.558c.296.742 1.273 2.523 2.67 3.571A1 1 0 1 1 5.4 21.8c-1.802-1.352-2.959-3.504-3.329-4.429a1 1 0 0 1 .558-1.3" />
           <path
             fillRule="evenodd"

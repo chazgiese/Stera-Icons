@@ -1,0 +1,37 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const BackslashIcon = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M4.56 2.502a.75.75 0 0 0-1.12.996l16 18a.75.75 0 0 0 1.12-.996z"
+        />
+      </svg>
+    ))
+);
+BackslashIcon.displayName = "BackslashIcon";
+export { BackslashIcon };

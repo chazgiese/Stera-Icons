@@ -29,7 +29,7 @@ const ChevronFullUpIcon = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M11.47 7.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1-.53 1.28H5a.75.75 0 0 1-.53-1.28zm-4.66 6.78h10.38L12 9.06z"
+          d="M11.47 7.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1-.53 1.28H5a.751.751 0 0 1-.53-1.28zm-4.66 6.78h10.38L12 9.06z"
           clipRule="evenodd"
         />
       </svg>

@@ -34,6 +34,16 @@
       "import": "./dist/icons/AlarmClockIcon.mjs",
       "require": "./dist/icons/AlarmClockIcon.cjs"
     },
+    "./AlarmClockMinusIcon": {
+      "types": "./dist/icons/AlarmClockMinusIcon.d.ts",
+      "import": "./dist/icons/AlarmClockMinusIcon.mjs",
+      "require": "./dist/icons/AlarmClockMinusIcon.cjs"
+    },
+    "./AlarmClockPlusIcon": {
+      "types": "./dist/icons/AlarmClockPlusIcon.d.ts",
+      "import": "./dist/icons/AlarmClockPlusIcon.mjs",
+      "require": "./dist/icons/AlarmClockPlusIcon.cjs"
+    },
     "./AlertCircleIcon": {
       "types": "./dist/icons/AlertCircleIcon.d.ts",
       "import": "./dist/icons/AlertCircleIcon.mjs",
@@ -359,6 +369,11 @@
       "import": "./dist/icons/AstriskAltIcon.mjs",
       "require": "./dist/icons/AstriskAltIcon.cjs"
     },
+    "./AtSignIcon": {
+      "types": "./dist/icons/AtSignIcon.d.ts",
+      "import": "./dist/icons/AtSignIcon.mjs",
+      "require": "./dist/icons/AtSignIcon.cjs"
+    },
     "./AtomIcon": {
       "types": "./dist/icons/AtomIcon.d.ts",
       "import": "./dist/icons/AtomIcon.mjs",
@@ -393,6 +408,11 @@
       "types": "./dist/icons/AwardStarIcon.d.ts",
       "import": "./dist/icons/AwardStarIcon.mjs",
       "require": "./dist/icons/AwardStarIcon.cjs"
+    },
+    "./BackslashIcon": {
+      "types": "./dist/icons/BackslashIcon.d.ts",
+      "import": "./dist/icons/BackslashIcon.mjs",
+      "require": "./dist/icons/BackslashIcon.cjs"
     },
     "./BagIcon": {
       "types": "./dist/icons/BagIcon.d.ts",
@@ -488,6 +508,11 @@
       "types": "./dist/icons/BellIcon.d.ts",
       "import": "./dist/icons/BellIcon.mjs",
       "require": "./dist/icons/BellIcon.cjs"
+    },
+    "./BellDotIcon": {
+      "types": "./dist/icons/BellDotIcon.d.ts",
+      "import": "./dist/icons/BellDotIcon.mjs",
+      "require": "./dist/icons/BellDotIcon.cjs"
     },
     "./BellOffIcon": {
       "types": "./dist/icons/BellOffIcon.d.ts",
@@ -654,10 +679,20 @@
       "import": "./dist/icons/CalendarClockIcon.mjs",
       "require": "./dist/icons/CalendarClockIcon.cjs"
     },
+    "./CalendarFoldIcon": {
+      "types": "./dist/icons/CalendarFoldIcon.d.ts",
+      "import": "./dist/icons/CalendarFoldIcon.mjs",
+      "require": "./dist/icons/CalendarFoldIcon.cjs"
+    },
     "./CalendarMinusIcon": {
       "types": "./dist/icons/CalendarMinusIcon.d.ts",
       "import": "./dist/icons/CalendarMinusIcon.mjs",
       "require": "./dist/icons/CalendarMinusIcon.cjs"
+    },
+    "./CalendarOffIcon": {
+      "types": "./dist/icons/CalendarOffIcon.d.ts",
+      "import": "./dist/icons/CalendarOffIcon.mjs",
+      "require": "./dist/icons/CalendarOffIcon.cjs"
     },
     "./CalendarPlusIcon": {
       "types": "./dist/icons/CalendarPlusIcon.d.ts",
@@ -1034,6 +1069,16 @@
       "import": "./dist/icons/CliSquareIcon.mjs",
       "require": "./dist/icons/CliSquareIcon.cjs"
     },
+    "./ClipboardIcon": {
+      "types": "./dist/icons/ClipboardIcon.d.ts",
+      "import": "./dist/icons/ClipboardIcon.mjs",
+      "require": "./dist/icons/ClipboardIcon.cjs"
+    },
+    "./ClipboardTextIcon": {
+      "types": "./dist/icons/ClipboardTextIcon.d.ts",
+      "import": "./dist/icons/ClipboardTextIcon.mjs",
+      "require": "./dist/icons/ClipboardTextIcon.cjs"
+    },
     "./ClockIcon": {
       "types": "./dist/icons/ClockIcon.d.ts",
       "import": "./dist/icons/ClockIcon.mjs",
@@ -1324,15 +1369,20 @@
       "import": "./dist/icons/CylinderIcon.mjs",
       "require": "./dist/icons/CylinderIcon.cjs"
     },
-    "./CylinderStackIcon": {
-      "types": "./dist/icons/CylinderStackIcon.d.ts",
-      "import": "./dist/icons/CylinderStackIcon.mjs",
-      "require": "./dist/icons/CylinderStackIcon.cjs"
-    },
     "./DataTableIcon": {
       "types": "./dist/icons/DataTableIcon.d.ts",
       "import": "./dist/icons/DataTableIcon.mjs",
       "require": "./dist/icons/DataTableIcon.cjs"
+    },
+    "./DatabaseIcon": {
+      "types": "./dist/icons/DatabaseIcon.d.ts",
+      "import": "./dist/icons/DatabaseIcon.mjs",
+      "require": "./dist/icons/DatabaseIcon.cjs"
+    },
+    "./DatabaseSparkleIcon": {
+      "types": "./dist/icons/DatabaseSparkleIcon.d.ts",
+      "import": "./dist/icons/DatabaseSparkleIcon.mjs",
+      "require": "./dist/icons/DatabaseSparkleIcon.cjs"
     },
     "./DeleteIcon": {
       "types": "./dist/icons/DeleteIcon.d.ts",
@@ -1929,6 +1979,11 @@
       "import": "./dist/icons/LinkIcon.mjs",
       "require": "./dist/icons/LinkIcon.cjs"
     },
+    "./LinkOffIcon": {
+      "types": "./dist/icons/LinkOffIcon.d.ts",
+      "import": "./dist/icons/LinkOffIcon.mjs",
+      "require": "./dist/icons/LinkOffIcon.cjs"
+    },
     "./ListIcon": {
       "types": "./dist/icons/ListIcon.d.ts",
       "import": "./dist/icons/ListIcon.mjs",
@@ -1998,6 +2053,11 @@
       "types": "./dist/icons/LockPasswordOpenIcon.d.ts",
       "import": "./dist/icons/LockPasswordOpenIcon.mjs",
       "require": "./dist/icons/LockPasswordOpenIcon.cjs"
+    },
+    "./LotusIcon": {
+      "types": "./dist/icons/LotusIcon.d.ts",
+      "import": "./dist/icons/LotusIcon.mjs",
+      "require": "./dist/icons/LotusIcon.cjs"
     },
     "./MacWindowIcon": {
       "types": "./dist/icons/MacWindowIcon.d.ts",
@@ -2093,6 +2153,11 @@
       "types": "./dist/icons/MicroscopeIcon.d.ts",
       "import": "./dist/icons/MicroscopeIcon.mjs",
       "require": "./dist/icons/MicroscopeIcon.cjs"
+    },
+    "./MinimizeIcon": {
+      "types": "./dist/icons/MinimizeIcon.d.ts",
+      "import": "./dist/icons/MinimizeIcon.mjs",
+      "require": "./dist/icons/MinimizeIcon.cjs"
     },
     "./MinusIcon": {
       "types": "./dist/icons/MinusIcon.d.ts",
@@ -2234,6 +2299,21 @@
       "import": "./dist/icons/PenNibIcon.mjs",
       "require": "./dist/icons/PenNibIcon.cjs"
     },
+    "./PencilIcon": {
+      "types": "./dist/icons/PencilIcon.d.ts",
+      "import": "./dist/icons/PencilIcon.mjs",
+      "require": "./dist/icons/PencilIcon.cjs"
+    },
+    "./PencilLineIcon": {
+      "types": "./dist/icons/PencilLineIcon.d.ts",
+      "import": "./dist/icons/PencilLineIcon.mjs",
+      "require": "./dist/icons/PencilLineIcon.cjs"
+    },
+    "./PencilRulerIcon": {
+      "types": "./dist/icons/PencilRulerIcon.d.ts",
+      "import": "./dist/icons/PencilRulerIcon.mjs",
+      "require": "./dist/icons/PencilRulerIcon.cjs"
+    },
     "./PencilTipIcon": {
       "types": "./dist/icons/PencilTipIcon.d.ts",
       "import": "./dist/icons/PencilTipIcon.mjs",
@@ -2314,6 +2394,11 @@
       "import": "./dist/icons/PlusSquareIcon.mjs",
       "require": "./dist/icons/PlusSquareIcon.cjs"
     },
+    "./PoundSterlingIcon": {
+      "types": "./dist/icons/PoundSterlingIcon.d.ts",
+      "import": "./dist/icons/PoundSterlingIcon.mjs",
+      "require": "./dist/icons/PoundSterlingIcon.cjs"
+    },
     "./PushPinIcon": {
       "types": "./dist/icons/PushPinIcon.d.ts",
       "import": "./dist/icons/PushPinIcon.mjs",
@@ -2323,6 +2408,11 @@
       "types": "./dist/icons/PushPinAltIcon.d.ts",
       "import": "./dist/icons/PushPinAltIcon.mjs",
       "require": "./dist/icons/PushPinAltIcon.cjs"
+    },
+    "./QrCodeIcon": {
+      "types": "./dist/icons/QrCodeIcon.d.ts",
+      "import": "./dist/icons/QrCodeIcon.mjs",
+      "require": "./dist/icons/QrCodeIcon.cjs"
     },
     "./QuestionMarkIcon": {
       "types": "./dist/icons/QuestionMarkIcon.d.ts",
@@ -2454,10 +2544,20 @@
       "import": "./dist/icons/ScanDocumentIcon.mjs",
       "require": "./dist/icons/ScanDocumentIcon.cjs"
     },
+    "./ScanEyeIcon": {
+      "types": "./dist/icons/ScanEyeIcon.d.ts",
+      "import": "./dist/icons/ScanEyeIcon.mjs",
+      "require": "./dist/icons/ScanEyeIcon.cjs"
+    },
     "./ScanFaceIcon": {
       "types": "./dist/icons/ScanFaceIcon.d.ts",
       "import": "./dist/icons/ScanFaceIcon.mjs",
       "require": "./dist/icons/ScanFaceIcon.cjs"
+    },
+    "./ScanLineIcon": {
+      "types": "./dist/icons/ScanLineIcon.d.ts",
+      "import": "./dist/icons/ScanLineIcon.mjs",
+      "require": "./dist/icons/ScanLineIcon.cjs"
     },
     "./ScanSearchIcon": {
       "types": "./dist/icons/ScanSearchIcon.d.ts",
@@ -2544,10 +2644,20 @@
       "import": "./dist/icons/ShieldAlertIcon.mjs",
       "require": "./dist/icons/ShieldAlertIcon.cjs"
     },
+    "./ShieldBanIcon": {
+      "types": "./dist/icons/ShieldBanIcon.d.ts",
+      "import": "./dist/icons/ShieldBanIcon.mjs",
+      "require": "./dist/icons/ShieldBanIcon.cjs"
+    },
     "./ShieldCheckIcon": {
       "types": "./dist/icons/ShieldCheckIcon.d.ts",
       "import": "./dist/icons/ShieldCheckIcon.mjs",
       "require": "./dist/icons/ShieldCheckIcon.cjs"
+    },
+    "./ShieldHalfIcon": {
+      "types": "./dist/icons/ShieldHalfIcon.d.ts",
+      "import": "./dist/icons/ShieldHalfIcon.mjs",
+      "require": "./dist/icons/ShieldHalfIcon.cjs"
     },
     "./ShieldSlashIcon": {
       "types": "./dist/icons/ShieldSlashIcon.d.ts",
@@ -2584,6 +2694,41 @@
       "import": "./dist/icons/SignOutAltIcon.mjs",
       "require": "./dist/icons/SignOutAltIcon.cjs"
     },
+    "./SignalAltHighIcon": {
+      "types": "./dist/icons/SignalAltHighIcon.d.ts",
+      "import": "./dist/icons/SignalAltHighIcon.mjs",
+      "require": "./dist/icons/SignalAltHighIcon.cjs"
+    },
+    "./SignalAltLowIcon": {
+      "types": "./dist/icons/SignalAltLowIcon.d.ts",
+      "import": "./dist/icons/SignalAltLowIcon.mjs",
+      "require": "./dist/icons/SignalAltLowIcon.cjs"
+    },
+    "./SignalAltMediumIcon": {
+      "types": "./dist/icons/SignalAltMediumIcon.d.ts",
+      "import": "./dist/icons/SignalAltMediumIcon.mjs",
+      "require": "./dist/icons/SignalAltMediumIcon.cjs"
+    },
+    "./SignalHighIcon": {
+      "types": "./dist/icons/SignalHighIcon.d.ts",
+      "import": "./dist/icons/SignalHighIcon.mjs",
+      "require": "./dist/icons/SignalHighIcon.cjs"
+    },
+    "./SignalLowIcon": {
+      "types": "./dist/icons/SignalLowIcon.d.ts",
+      "import": "./dist/icons/SignalLowIcon.mjs",
+      "require": "./dist/icons/SignalLowIcon.cjs"
+    },
+    "./SignalMediumIcon": {
+      "types": "./dist/icons/SignalMediumIcon.d.ts",
+      "import": "./dist/icons/SignalMediumIcon.mjs",
+      "require": "./dist/icons/SignalMediumIcon.cjs"
+    },
+    "./SignalZeroIcon": {
+      "types": "./dist/icons/SignalZeroIcon.d.ts",
+      "import": "./dist/icons/SignalZeroIcon.mjs",
+      "require": "./dist/icons/SignalZeroIcon.cjs"
+    },
     "./SignatureIcon": {
       "types": "./dist/icons/SignatureIcon.d.ts",
       "import": "./dist/icons/SignatureIcon.mjs",
@@ -2593,6 +2738,11 @@
       "types": "./dist/icons/SignatureXIcon.d.ts",
       "import": "./dist/icons/SignatureXIcon.mjs",
       "require": "./dist/icons/SignatureXIcon.cjs"
+    },
+    "./SlashIcon": {
+      "types": "./dist/icons/SlashIcon.d.ts",
+      "import": "./dist/icons/SlashIcon.mjs",
+      "require": "./dist/icons/SlashIcon.cjs"
     },
     "./SlidersIcon": {
       "types": "./dist/icons/SlidersIcon.d.ts",
@@ -2739,6 +2889,11 @@
       "import": "./dist/icons/StoreIcon.mjs",
       "require": "./dist/icons/StoreIcon.cjs"
     },
+    "./SwatchBookIcon": {
+      "types": "./dist/icons/SwatchBookIcon.d.ts",
+      "import": "./dist/icons/SwatchBookIcon.mjs",
+      "require": "./dist/icons/SwatchBookIcon.cjs"
+    },
     "./TagIcon": {
       "types": "./dist/icons/TagIcon.d.ts",
       "import": "./dist/icons/TagIcon.mjs",
@@ -2808,6 +2963,11 @@
       "types": "./dist/icons/TextQuoteIcon.d.ts",
       "import": "./dist/icons/TextQuoteIcon.mjs",
       "require": "./dist/icons/TextQuoteIcon.cjs"
+    },
+    "./TextSearchIcon": {
+      "types": "./dist/icons/TextSearchIcon.d.ts",
+      "import": "./dist/icons/TextSearchIcon.mjs",
+      "require": "./dist/icons/TextSearchIcon.cjs"
     },
     "./TextSquareIcon": {
       "types": "./dist/icons/TextSquareIcon.d.ts",
@@ -2938,6 +3098,11 @@
       "types": "./dist/icons/TvPlayAltIcon.d.ts",
       "import": "./dist/icons/TvPlayAltIcon.mjs",
       "require": "./dist/icons/TvPlayAltIcon.cjs"
+    },
+    "./UmbrellaIcon": {
+      "types": "./dist/icons/UmbrellaIcon.d.ts",
+      "import": "./dist/icons/UmbrellaIcon.mjs",
+      "require": "./dist/icons/UmbrellaIcon.cjs"
     },
     "./UploadIcon": {
       "types": "./dist/icons/UploadIcon.d.ts",
