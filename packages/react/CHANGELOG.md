@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.10.1
+
+### Patch Changes
+
+- e216834: Update icon metadata tags for existing icons to improve searchability and consistency.
+
 ## 5.10.0
 
 ### Minor Changes
