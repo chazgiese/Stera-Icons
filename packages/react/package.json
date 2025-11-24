@@ -579,6 +579,11 @@
       "import": "./dist/icons/BoundingBoxIcon.mjs",
       "require": "./dist/icons/BoundingBoxIcon.cjs"
     },
+    "./BoxesIcon": {
+      "types": "./dist/icons/BoxesIcon.d.ts",
+      "import": "./dist/icons/BoxesIcon.mjs",
+      "require": "./dist/icons/BoxesIcon.cjs"
+    },
     "./BracketsCurlyIcon": {
       "types": "./dist/icons/BracketsCurlyIcon.d.ts",
       "import": "./dist/icons/BracketsCurlyIcon.mjs",
@@ -1694,6 +1699,11 @@
       "import": "./dist/icons/FortressIcon.mjs",
       "require": "./dist/icons/FortressIcon.cjs"
     },
+    "./FrameIcon": {
+      "types": "./dist/icons/FrameIcon.d.ts",
+      "import": "./dist/icons/FrameIcon.mjs",
+      "require": "./dist/icons/FrameIcon.cjs"
+    },
     "./GhostIcon": {
       "types": "./dist/icons/GhostIcon.d.ts",
       "import": "./dist/icons/GhostIcon.mjs",
@@ -2398,6 +2408,11 @@
       "types": "./dist/icons/PoundSterlingIcon.d.ts",
       "import": "./dist/icons/PoundSterlingIcon.mjs",
       "require": "./dist/icons/PoundSterlingIcon.cjs"
+    },
+    "./PoundSterlingCircleIcon": {
+      "types": "./dist/icons/PoundSterlingCircleIcon.d.ts",
+      "import": "./dist/icons/PoundSterlingCircleIcon.mjs",
+      "require": "./dist/icons/PoundSterlingCircleIcon.cjs"
     },
     "./PushPinIcon": {
       "types": "./dist/icons/PushPinIcon.d.ts",
@@ -3114,6 +3129,11 @@
       "import": "./dist/icons/UserIcon.mjs",
       "require": "./dist/icons/UserIcon.cjs"
     },
+    "./UserBanIcon": {
+      "types": "./dist/icons/UserBanIcon.d.ts",
+      "import": "./dist/icons/UserBanIcon.mjs",
+      "require": "./dist/icons/UserBanIcon.cjs"
+    },
     "./UserCircleIcon": {
       "types": "./dist/icons/UserCircleIcon.d.ts",
       "import": "./dist/icons/UserCircleIcon.mjs",
@@ -3123,6 +3143,26 @@
       "types": "./dist/icons/UserCircleDashedIcon.d.ts",
       "import": "./dist/icons/UserCircleDashedIcon.mjs",
       "require": "./dist/icons/UserCircleDashedIcon.cjs"
+    },
+    "./UserMinusIcon": {
+      "types": "./dist/icons/UserMinusIcon.d.ts",
+      "import": "./dist/icons/UserMinusIcon.mjs",
+      "require": "./dist/icons/UserMinusIcon.cjs"
+    },
+    "./UserPlusIcon": {
+      "types": "./dist/icons/UserPlusIcon.d.ts",
+      "import": "./dist/icons/UserPlusIcon.mjs",
+      "require": "./dist/icons/UserPlusIcon.cjs"
+    },
+    "./UserSettingsIcon": {
+      "types": "./dist/icons/UserSettingsIcon.d.ts",
+      "import": "./dist/icons/UserSettingsIcon.mjs",
+      "require": "./dist/icons/UserSettingsIcon.cjs"
+    },
+    "./UserXIcon": {
+      "types": "./dist/icons/UserXIcon.d.ts",
+      "import": "./dist/icons/UserXIcon.mjs",
+      "require": "./dist/icons/UserXIcon.cjs"
     },
     "./UsersIcon": {
       "types": "./dist/icons/UsersIcon.d.ts",

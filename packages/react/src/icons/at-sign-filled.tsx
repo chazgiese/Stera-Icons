@@ -26,7 +26,7 @@ const AtSignIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_3590_206)">
+        <g clipPath="url(#clip0_5059_9851)">
           <path
             fill="currentColor"
             fillRule="evenodd"

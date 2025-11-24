@@ -28,7 +28,7 @@ const BookClosedIcon = memo(
       >
         <path
           fill="currentColor"
-          d="M13 10.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5zM16 6.25a.75.75 0 0 1 0 1.5H8a.75.75 0 1 1 0-1.5z"
+          d="M13 10.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5zM16 6.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5z"
         />
         <path
           fill="currentColor"

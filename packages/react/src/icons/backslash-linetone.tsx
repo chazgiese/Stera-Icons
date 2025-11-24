@@ -28,7 +28,7 @@ const BackslashIconLinetone = memo(
       >
         <path
           fill="currentColor"
-          d="m11.253 12.664 8 9a1 1 0 1 0 1.494-1.328l-8-9z"
+          d="m11.252 12.664 8 9a1 1 0 1 0 1.495-1.328l-8-9z"
           opacity={0.4}
         />
         <path
