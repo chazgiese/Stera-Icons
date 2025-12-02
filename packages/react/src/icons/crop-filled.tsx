@@ -26,7 +26,7 @@ const CropIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_5059_7030)">
+        <g clipPath="url(#clip0_3435_6775)">
           <path
             fill="currentColor"
             fillRule="evenodd"

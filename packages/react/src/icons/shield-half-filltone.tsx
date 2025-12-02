@@ -32,7 +32,7 @@ const ShieldHalfIconFilltone = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M11 22.618V1.307l.648-.244.086-.027c.203-.056.42-.047.618.027l.648.244v21.31l-.553.277a1 1 0 0 1-.894 0z"
+          d="M11 22.618V1.307l.648-.243.086-.028c.203-.056.42-.047.618.028l.648.243v21.311l-.553.277a1 1 0 0 1-.894 0z"
           clipRule="evenodd"
         />
       </svg>

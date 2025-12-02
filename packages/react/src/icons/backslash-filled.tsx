@@ -28,7 +28,7 @@ const BackslashIconFilled = memo(
       >
         <path
           fill="currentColor"
-          d="M5.122 2.004a1.5 1.5 0 0 0-2.243 1.992l16 18a1.5 1.5 0 0 0 2.242-1.992z"
+          d="M5.122 2.004A1.5 1.5 0 0 0 2.88 3.996l16 18a1.5 1.5 0 0 0 2.242-1.992z"
         />
       </svg>
     ))

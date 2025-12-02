@@ -28,7 +28,7 @@ const SlashIconFilltone = memo(
       >
         <path
           fill="currentColor"
-          d="m13.122 12.996-8 9a1.5 1.5 0 0 1-2.243-1.992l8-9z"
+          d="m13.122 12.996-8 9a1.5 1.5 0 0 1-2.242-1.992l8-9z"
           opacity={0.4}
         />
         <path

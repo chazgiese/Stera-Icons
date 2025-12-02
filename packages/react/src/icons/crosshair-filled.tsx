@@ -26,7 +26,7 @@ const CrosshairIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_5059_7046)">
+        <g clipPath="url(#clip0_3435_6791)">
           <path
             fill="currentColor"
             fillRule="evenodd"

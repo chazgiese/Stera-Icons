@@ -29,6 +29,11 @@
       "import": "./dist/icons/AgentWorkflowIcon.mjs",
       "require": "./dist/icons/AgentWorkflowIcon.cjs"
     },
+    "./AirplaneIcon": {
+      "types": "./dist/icons/AirplaneIcon.d.ts",
+      "import": "./dist/icons/AirplaneIcon.mjs",
+      "require": "./dist/icons/AirplaneIcon.cjs"
+    },
     "./AlarmClockIcon": {
       "types": "./dist/icons/AlarmClockIcon.d.ts",
       "import": "./dist/icons/AlarmClockIcon.mjs",
@@ -123,11 +128,6 @@
       "types": "./dist/icons/ArchwayIcon.d.ts",
       "import": "./dist/icons/ArchwayIcon.mjs",
       "require": "./dist/icons/ArchwayIcon.cjs"
-    },
-    "./AreaChartIcon": {
-      "types": "./dist/icons/AreaChartIcon.d.ts",
-      "import": "./dist/icons/AreaChartIcon.mjs",
-      "require": "./dist/icons/AreaChartIcon.cjs"
     },
     "./ArrowBigDownIcon": {
       "types": "./dist/icons/ArrowBigDownIcon.d.ts",
@@ -429,41 +429,6 @@
       "import": "./dist/icons/BannerIcon.mjs",
       "require": "./dist/icons/BannerIcon.cjs"
     },
-    "./BarChartIcon": {
-      "types": "./dist/icons/BarChartIcon.d.ts",
-      "import": "./dist/icons/BarChartIcon.mjs",
-      "require": "./dist/icons/BarChartIcon.cjs"
-    },
-    "./BarChartAscIcon": {
-      "types": "./dist/icons/BarChartAscIcon.d.ts",
-      "import": "./dist/icons/BarChartAscIcon.mjs",
-      "require": "./dist/icons/BarChartAscIcon.cjs"
-    },
-    "./BarChartDescIcon": {
-      "types": "./dist/icons/BarChartDescIcon.d.ts",
-      "import": "./dist/icons/BarChartDescIcon.mjs",
-      "require": "./dist/icons/BarChartDescIcon.cjs"
-    },
-    "./BarChartRowIcon": {
-      "types": "./dist/icons/BarChartRowIcon.d.ts",
-      "import": "./dist/icons/BarChartRowIcon.mjs",
-      "require": "./dist/icons/BarChartRowIcon.cjs"
-    },
-    "./BarChartRowAscIcon": {
-      "types": "./dist/icons/BarChartRowAscIcon.d.ts",
-      "import": "./dist/icons/BarChartRowAscIcon.mjs",
-      "require": "./dist/icons/BarChartRowAscIcon.cjs"
-    },
-    "./BarChartRowDescIcon": {
-      "types": "./dist/icons/BarChartRowDescIcon.d.ts",
-      "import": "./dist/icons/BarChartRowDescIcon.mjs",
-      "require": "./dist/icons/BarChartRowDescIcon.cjs"
-    },
-    "./BarChartXYIcon": {
-      "types": "./dist/icons/BarChartXYIcon.d.ts",
-      "import": "./dist/icons/BarChartXYIcon.mjs",
-      "require": "./dist/icons/BarChartXYIcon.cjs"
-    },
     "./BarricadeIcon": {
       "types": "./dist/icons/BarricadeIcon.d.ts",
       "import": "./dist/icons/BarricadeIcon.mjs",
@@ -559,6 +524,16 @@
       "import": "./dist/icons/BookOpenIcon.mjs",
       "require": "./dist/icons/BookOpenIcon.cjs"
     },
+    "./BookOpenFoldIcon": {
+      "types": "./dist/icons/BookOpenFoldIcon.d.ts",
+      "import": "./dist/icons/BookOpenFoldIcon.mjs",
+      "require": "./dist/icons/BookOpenFoldIcon.cjs"
+    },
+    "./BookOpenTextIcon": {
+      "types": "./dist/icons/BookOpenTextIcon.d.ts",
+      "import": "./dist/icons/BookOpenTextIcon.mjs",
+      "require": "./dist/icons/BookOpenTextIcon.cjs"
+    },
     "./BookmarkIcon": {
       "types": "./dist/icons/BookmarkIcon.d.ts",
       "import": "./dist/icons/BookmarkIcon.mjs",
@@ -618,6 +593,11 @@
       "types": "./dist/icons/BrainIcon.d.ts",
       "import": "./dist/icons/BrainIcon.mjs",
       "require": "./dist/icons/BrainIcon.cjs"
+    },
+    "./BrainCircuitIcon": {
+      "types": "./dist/icons/BrainCircuitIcon.d.ts",
+      "import": "./dist/icons/BrainCircuitIcon.mjs",
+      "require": "./dist/icons/BrainCircuitIcon.cjs"
     },
     "./BrickWallIcon": {
       "types": "./dist/icons/BrickWallIcon.d.ts",
@@ -734,11 +714,6 @@
       "import": "./dist/icons/CanLabelIcon.mjs",
       "require": "./dist/icons/CanLabelIcon.cjs"
     },
-    "./CandleChartIcon": {
-      "types": "./dist/icons/CandleChartIcon.d.ts",
-      "import": "./dist/icons/CandleChartIcon.mjs",
-      "require": "./dist/icons/CandleChartIcon.cjs"
-    },
     "./CapsLockIcon": {
       "types": "./dist/icons/CapsLockIcon.d.ts",
       "import": "./dist/icons/CapsLockIcon.mjs",
@@ -749,15 +724,85 @@
       "import": "./dist/icons/CardHolderIcon.mjs",
       "require": "./dist/icons/CardHolderIcon.cjs"
     },
+    "./ChartAreaIcon": {
+      "types": "./dist/icons/ChartAreaIcon.d.ts",
+      "import": "./dist/icons/ChartAreaIcon.mjs",
+      "require": "./dist/icons/ChartAreaIcon.cjs"
+    },
+    "./ChartBarIcon": {
+      "types": "./dist/icons/ChartBarIcon.d.ts",
+      "import": "./dist/icons/ChartBarIcon.mjs",
+      "require": "./dist/icons/ChartBarIcon.cjs"
+    },
+    "./ChartBarAscIcon": {
+      "types": "./dist/icons/ChartBarAscIcon.d.ts",
+      "import": "./dist/icons/ChartBarAscIcon.mjs",
+      "require": "./dist/icons/ChartBarAscIcon.cjs"
+    },
+    "./ChartBarDescIcon": {
+      "types": "./dist/icons/ChartBarDescIcon.d.ts",
+      "import": "./dist/icons/ChartBarDescIcon.mjs",
+      "require": "./dist/icons/ChartBarDescIcon.cjs"
+    },
+    "./ChartBarRowIcon": {
+      "types": "./dist/icons/ChartBarRowIcon.d.ts",
+      "import": "./dist/icons/ChartBarRowIcon.mjs",
+      "require": "./dist/icons/ChartBarRowIcon.cjs"
+    },
+    "./ChartBarRowAscIcon": {
+      "types": "./dist/icons/ChartBarRowAscIcon.d.ts",
+      "import": "./dist/icons/ChartBarRowAscIcon.mjs",
+      "require": "./dist/icons/ChartBarRowAscIcon.cjs"
+    },
+    "./ChartBarRowDescIcon": {
+      "types": "./dist/icons/ChartBarRowDescIcon.d.ts",
+      "import": "./dist/icons/ChartBarRowDescIcon.mjs",
+      "require": "./dist/icons/ChartBarRowDescIcon.cjs"
+    },
     "./ChartBarSquareIcon": {
       "types": "./dist/icons/ChartBarSquareIcon.d.ts",
       "import": "./dist/icons/ChartBarSquareIcon.mjs",
       "require": "./dist/icons/ChartBarSquareIcon.cjs"
     },
+    "./ChartBarXYIcon": {
+      "types": "./dist/icons/ChartBarXYIcon.d.ts",
+      "import": "./dist/icons/ChartBarXYIcon.mjs",
+      "require": "./dist/icons/ChartBarXYIcon.cjs"
+    },
+    "./ChartCandleIcon": {
+      "types": "./dist/icons/ChartCandleIcon.d.ts",
+      "import": "./dist/icons/ChartCandleIcon.mjs",
+      "require": "./dist/icons/ChartCandleIcon.cjs"
+    },
     "./ChartDonutIcon": {
       "types": "./dist/icons/ChartDonutIcon.d.ts",
       "import": "./dist/icons/ChartDonutIcon.mjs",
       "require": "./dist/icons/ChartDonutIcon.cjs"
+    },
+    "./ChartLineIcon": {
+      "types": "./dist/icons/ChartLineIcon.d.ts",
+      "import": "./dist/icons/ChartLineIcon.mjs",
+      "require": "./dist/icons/ChartLineIcon.cjs"
+    },
+    "./ChartLineBarIcon": {
+      "types": "./dist/icons/ChartLineBarIcon.d.ts",
+      "import": "./dist/icons/ChartLineBarIcon.mjs",
+      "require": "./dist/icons/ChartLineBarIcon.cjs"
+    },
+    "./ChartLineDescIcon": {
+      "types": "./dist/icons/ChartLineDescIcon.d.ts",
+      "import": "./dist/icons/ChartLineDescIcon.mjs",
+      "require": "./dist/icons/ChartLineDescIcon.cjs"
+    },
+    "./ChartLineXYIcon": {
+      "types": "./dist/icons/ChartLineXYIcon.d.ts",
+      "import": "./dist/icons/ChartLineXYIcon.mjs",
+      "require": "./dist/icons/ChartLineXYIcon.cjs"
+    },
+    "./ChartLineXYDescIcon": {
+      "types": "./dist/icons/ChartLineXYDescIcon.d.ts",
+      "import": "./dist/icons/ChartLineXYDescIcon.mjs",
+      "require": "./dist/icons/ChartLineXYDescIcon.cjs"
     },
     "./ChartPieIcon": {
       "types": "./dist/icons/ChartPieIcon.d.ts",
@@ -769,25 +814,75 @@
       "import": "./dist/icons/ChartPieAltIcon.mjs",
       "require": "./dist/icons/ChartPieAltIcon.cjs"
     },
+    "./ChartScatterIcon": {
+      "types": "./dist/icons/ChartScatterIcon.d.ts",
+      "import": "./dist/icons/ChartScatterIcon.mjs",
+      "require": "./dist/icons/ChartScatterIcon.cjs"
+    },
+    "./ChartWaterfallIcon": {
+      "types": "./dist/icons/ChartWaterfallIcon.d.ts",
+      "import": "./dist/icons/ChartWaterfallIcon.mjs",
+      "require": "./dist/icons/ChartWaterfallIcon.cjs"
+    },
+    "./ChartWaterfallXIcon": {
+      "types": "./dist/icons/ChartWaterfallXIcon.d.ts",
+      "import": "./dist/icons/ChartWaterfallXIcon.mjs",
+      "require": "./dist/icons/ChartWaterfallXIcon.cjs"
+    },
+    "./ChartWaterfallXYIcon": {
+      "types": "./dist/icons/ChartWaterfallXYIcon.d.ts",
+      "import": "./dist/icons/ChartWaterfallXYIcon.mjs",
+      "require": "./dist/icons/ChartWaterfallXYIcon.cjs"
+    },
     "./ChatBoxIcon": {
       "types": "./dist/icons/ChatBoxIcon.d.ts",
       "import": "./dist/icons/ChatBoxIcon.mjs",
       "require": "./dist/icons/ChatBoxIcon.cjs"
+    },
+    "./ChatBoxDashedIcon": {
+      "types": "./dist/icons/ChatBoxDashedIcon.d.ts",
+      "import": "./dist/icons/ChatBoxDashedIcon.mjs",
+      "require": "./dist/icons/ChatBoxDashedIcon.cjs"
+    },
+    "./ChatBoxDotIcon": {
+      "types": "./dist/icons/ChatBoxDotIcon.d.ts",
+      "import": "./dist/icons/ChatBoxDotIcon.mjs",
+      "require": "./dist/icons/ChatBoxDotIcon.cjs"
     },
     "./ChatBoxDotsIcon": {
       "types": "./dist/icons/ChatBoxDotsIcon.d.ts",
       "import": "./dist/icons/ChatBoxDotsIcon.mjs",
       "require": "./dist/icons/ChatBoxDotsIcon.cjs"
     },
+    "./ChatBoxTextIcon": {
+      "types": "./dist/icons/ChatBoxTextIcon.d.ts",
+      "import": "./dist/icons/ChatBoxTextIcon.mjs",
+      "require": "./dist/icons/ChatBoxTextIcon.cjs"
+    },
     "./ChatBubbleIcon": {
       "types": "./dist/icons/ChatBubbleIcon.d.ts",
       "import": "./dist/icons/ChatBubbleIcon.mjs",
       "require": "./dist/icons/ChatBubbleIcon.cjs"
     },
+    "./ChatBubbleDashedIcon": {
+      "types": "./dist/icons/ChatBubbleDashedIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleDashedIcon.mjs",
+      "require": "./dist/icons/ChatBubbleDashedIcon.cjs"
+    },
+    "./ChatBubbleDotIcon": {
+      "types": "./dist/icons/ChatBubbleDotIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleDotIcon.mjs",
+      "require": "./dist/icons/ChatBubbleDotIcon.cjs"
+    },
     "./ChatBubbleDotsIcon": {
       "types": "./dist/icons/ChatBubbleDotsIcon.d.ts",
       "import": "./dist/icons/ChatBubbleDotsIcon.mjs",
       "require": "./dist/icons/ChatBubbleDotsIcon.cjs"
+    },
+    "./ChatBubbleTextIcon": {
+      "types": "./dist/icons/ChatBubbleTextIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleTextIcon.mjs",
+      "require": "./dist/icons/ChatBubbleTextIcon.cjs"
     },
     "./CheckIcon": {
       "types": "./dist/icons/CheckIcon.d.ts",
@@ -1024,21 +1119,6 @@
       "import": "./dist/icons/CircleDotsIcon.mjs",
       "require": "./dist/icons/CircleDotsIcon.cjs"
     },
-    "./CircleFourIcon": {
-      "types": "./dist/icons/CircleFourIcon.d.ts",
-      "import": "./dist/icons/CircleFourIcon.mjs",
-      "require": "./dist/icons/CircleFourIcon.cjs"
-    },
-    "./CircleFourConnectedIcon": {
-      "types": "./dist/icons/CircleFourConnectedIcon.d.ts",
-      "import": "./dist/icons/CircleFourConnectedIcon.mjs",
-      "require": "./dist/icons/CircleFourConnectedIcon.cjs"
-    },
-    "./CircleFourPlusIcon": {
-      "types": "./dist/icons/CircleFourPlusIcon.d.ts",
-      "import": "./dist/icons/CircleFourPlusIcon.mjs",
-      "require": "./dist/icons/CircleFourPlusIcon.cjs"
-    },
     "./CircleNotchIcon": {
       "types": "./dist/icons/CircleNotchIcon.d.ts",
       "import": "./dist/icons/CircleNotchIcon.mjs",
@@ -1224,6 +1304,16 @@
       "import": "./dist/icons/ComponentIcon.mjs",
       "require": "./dist/icons/ComponentIcon.cjs"
     },
+    "./ConnectionIcon": {
+      "types": "./dist/icons/ConnectionIcon.d.ts",
+      "import": "./dist/icons/ConnectionIcon.mjs",
+      "require": "./dist/icons/ConnectionIcon.cjs"
+    },
+    "./ConnectionAltIcon": {
+      "types": "./dist/icons/ConnectionAltIcon.d.ts",
+      "import": "./dist/icons/ConnectionAltIcon.mjs",
+      "require": "./dist/icons/ConnectionAltIcon.cjs"
+    },
     "./ContactBookIcon": {
       "types": "./dist/icons/ContactBookIcon.d.ts",
       "import": "./dist/icons/ContactBookIcon.mjs",
@@ -1384,10 +1474,25 @@
       "import": "./dist/icons/DatabaseIcon.mjs",
       "require": "./dist/icons/DatabaseIcon.cjs"
     },
+    "./DatabaseBanIcon": {
+      "types": "./dist/icons/DatabaseBanIcon.d.ts",
+      "import": "./dist/icons/DatabaseBanIcon.mjs",
+      "require": "./dist/icons/DatabaseBanIcon.cjs"
+    },
+    "./DatabasePlusIcon": {
+      "types": "./dist/icons/DatabasePlusIcon.d.ts",
+      "import": "./dist/icons/DatabasePlusIcon.mjs",
+      "require": "./dist/icons/DatabasePlusIcon.cjs"
+    },
     "./DatabaseSparkleIcon": {
       "types": "./dist/icons/DatabaseSparkleIcon.d.ts",
       "import": "./dist/icons/DatabaseSparkleIcon.mjs",
       "require": "./dist/icons/DatabaseSparkleIcon.cjs"
+    },
+    "./DatabaseXIcon": {
+      "types": "./dist/icons/DatabaseXIcon.d.ts",
+      "import": "./dist/icons/DatabaseXIcon.mjs",
+      "require": "./dist/icons/DatabaseXIcon.cjs"
     },
     "./DeleteIcon": {
       "types": "./dist/icons/DeleteIcon.d.ts",
@@ -1533,6 +1638,11 @@
       "types": "./dist/icons/EyeOffIcon.d.ts",
       "import": "./dist/icons/EyeOffIcon.mjs",
       "require": "./dist/icons/EyeOffIcon.cjs"
+    },
+    "./FigmaIcon": {
+      "types": "./dist/icons/FigmaIcon.d.ts",
+      "import": "./dist/icons/FigmaIcon.mjs",
+      "require": "./dist/icons/FigmaIcon.cjs"
     },
     "./FileCabinetIcon": {
       "types": "./dist/icons/FileCabinetIcon.d.ts",
@@ -1754,6 +1864,11 @@
       "import": "./dist/icons/GitPullRequestDraftIcon.mjs",
       "require": "./dist/icons/GitPullRequestDraftIcon.cjs"
     },
+    "./GithubIcon": {
+      "types": "./dist/icons/GithubIcon.d.ts",
+      "import": "./dist/icons/GithubIcon.mjs",
+      "require": "./dist/icons/GithubIcon.cjs"
+    },
     "./GlobeIcon": {
       "types": "./dist/icons/GlobeIcon.d.ts",
       "import": "./dist/icons/GlobeIcon.mjs",
@@ -1914,6 +2029,11 @@
       "import": "./dist/icons/KeyAltIcon.mjs",
       "require": "./dist/icons/KeyAltIcon.cjs"
     },
+    "./KeyboardIcon": {
+      "types": "./dist/icons/KeyboardIcon.d.ts",
+      "import": "./dist/icons/KeyboardIcon.mjs",
+      "require": "./dist/icons/KeyboardIcon.cjs"
+    },
     "./KeyholeIcon": {
       "types": "./dist/icons/KeyholeIcon.d.ts",
       "import": "./dist/icons/KeyholeIcon.mjs",
@@ -1944,30 +2064,50 @@
       "import": "./dist/icons/LayersSimpleIcon.mjs",
       "require": "./dist/icons/LayersSimpleIcon.cjs"
     },
-    "./LineBarChartIcon": {
-      "types": "./dist/icons/LineBarChartIcon.d.ts",
-      "import": "./dist/icons/LineBarChartIcon.mjs",
-      "require": "./dist/icons/LineBarChartIcon.cjs"
+    "./LayoutGridIcon": {
+      "types": "./dist/icons/LayoutGridIcon.d.ts",
+      "import": "./dist/icons/LayoutGridIcon.mjs",
+      "require": "./dist/icons/LayoutGridIcon.cjs"
     },
-    "./LineChartIcon": {
-      "types": "./dist/icons/LineChartIcon.d.ts",
-      "import": "./dist/icons/LineChartIcon.mjs",
-      "require": "./dist/icons/LineChartIcon.cjs"
+    "./LayoutGridCircleIcon": {
+      "types": "./dist/icons/LayoutGridCircleIcon.d.ts",
+      "import": "./dist/icons/LayoutGridCircleIcon.mjs",
+      "require": "./dist/icons/LayoutGridCircleIcon.cjs"
     },
-    "./LineChartDescIcon": {
-      "types": "./dist/icons/LineChartDescIcon.d.ts",
-      "import": "./dist/icons/LineChartDescIcon.mjs",
-      "require": "./dist/icons/LineChartDescIcon.cjs"
+    "./LayoutGridCirclePlusIcon": {
+      "types": "./dist/icons/LayoutGridCirclePlusIcon.d.ts",
+      "import": "./dist/icons/LayoutGridCirclePlusIcon.mjs",
+      "require": "./dist/icons/LayoutGridCirclePlusIcon.cjs"
     },
-    "./LineChartXYIcon": {
-      "types": "./dist/icons/LineChartXYIcon.d.ts",
-      "import": "./dist/icons/LineChartXYIcon.mjs",
-      "require": "./dist/icons/LineChartXYIcon.cjs"
+    "./LayoutGridPlusIcon": {
+      "types": "./dist/icons/LayoutGridPlusIcon.d.ts",
+      "import": "./dist/icons/LayoutGridPlusIcon.mjs",
+      "require": "./dist/icons/LayoutGridPlusIcon.cjs"
     },
-    "./LineChartXYDescIcon": {
-      "types": "./dist/icons/LineChartXYDescIcon.d.ts",
-      "import": "./dist/icons/LineChartXYDescIcon.mjs",
-      "require": "./dist/icons/LineChartXYDescIcon.cjs"
+    "./LayoutListIcon": {
+      "types": "./dist/icons/LayoutListIcon.d.ts",
+      "import": "./dist/icons/LayoutListIcon.mjs",
+      "require": "./dist/icons/LayoutListIcon.cjs"
+    },
+    "./LayoutMasonryIcon": {
+      "types": "./dist/icons/LayoutMasonryIcon.d.ts",
+      "import": "./dist/icons/LayoutMasonryIcon.mjs",
+      "require": "./dist/icons/LayoutMasonryIcon.cjs"
+    },
+    "./LayoutPanelLeftIcon": {
+      "types": "./dist/icons/LayoutPanelLeftIcon.d.ts",
+      "import": "./dist/icons/LayoutPanelLeftIcon.mjs",
+      "require": "./dist/icons/LayoutPanelLeftIcon.cjs"
+    },
+    "./LayoutPanelRightIcon": {
+      "types": "./dist/icons/LayoutPanelRightIcon.d.ts",
+      "import": "./dist/icons/LayoutPanelRightIcon.mjs",
+      "require": "./dist/icons/LayoutPanelRightIcon.cjs"
+    },
+    "./LeafIcon": {
+      "types": "./dist/icons/LeafIcon.d.ts",
+      "import": "./dist/icons/LeafIcon.mjs",
+      "require": "./dist/icons/LeafIcon.cjs"
     },
     "./LineSegmentIcon": {
       "types": "./dist/icons/LineSegmentIcon.d.ts",
@@ -2189,6 +2329,11 @@
       "import": "./dist/icons/MoonCrescentIcon.mjs",
       "require": "./dist/icons/MoonCrescentIcon.cjs"
     },
+    "./MoonStarIcon": {
+      "types": "./dist/icons/MoonStarIcon.d.ts",
+      "import": "./dist/icons/MoonStarIcon.mjs",
+      "require": "./dist/icons/MoonStarIcon.cjs"
+    },
     "./MoreIcon": {
       "types": "./dist/icons/MoreIcon.d.ts",
       "import": "./dist/icons/MoreIcon.mjs",
@@ -2228,6 +2373,11 @@
       "types": "./dist/icons/MusicIcon.d.ts",
       "import": "./dist/icons/MusicIcon.mjs",
       "require": "./dist/icons/MusicIcon.cjs"
+    },
+    "./NodeMapIcon": {
+      "types": "./dist/icons/NodeMapIcon.d.ts",
+      "import": "./dist/icons/NodeMapIcon.mjs",
+      "require": "./dist/icons/NodeMapIcon.cjs"
     },
     "./NoteIcon": {
       "types": "./dist/icons/NoteIcon.d.ts",
@@ -2363,6 +2513,11 @@
       "types": "./dist/icons/PhoneOutgoingIcon.d.ts",
       "import": "./dist/icons/PhoneOutgoingIcon.mjs",
       "require": "./dist/icons/PhoneOutgoingIcon.cjs"
+    },
+    "./PieIcon": {
+      "types": "./dist/icons/PieIcon.d.ts",
+      "import": "./dist/icons/PieIcon.mjs",
+      "require": "./dist/icons/PieIcon.cjs"
     },
     "./PlayIcon": {
       "types": "./dist/icons/PlayIcon.d.ts",
@@ -2574,6 +2729,11 @@
       "import": "./dist/icons/ScanLineIcon.mjs",
       "require": "./dist/icons/ScanLineIcon.cjs"
     },
+    "./ScanPlusIcon": {
+      "types": "./dist/icons/ScanPlusIcon.d.ts",
+      "import": "./dist/icons/ScanPlusIcon.mjs",
+      "require": "./dist/icons/ScanPlusIcon.cjs"
+    },
     "./ScanSearchIcon": {
       "types": "./dist/icons/ScanSearchIcon.d.ts",
       "import": "./dist/icons/ScanSearchIcon.mjs",
@@ -2583,11 +2743,6 @@
       "types": "./dist/icons/ScanTextIcon.d.ts",
       "import": "./dist/icons/ScanTextIcon.mjs",
       "require": "./dist/icons/ScanTextIcon.cjs"
-    },
-    "./ScatterChartIcon": {
-      "types": "./dist/icons/ScatterChartIcon.d.ts",
-      "import": "./dist/icons/ScatterChartIcon.mjs",
-      "require": "./dist/icons/ScatterChartIcon.cjs"
     },
     "./ScissorsIcon": {
       "types": "./dist/icons/ScissorsIcon.d.ts",
@@ -2869,16 +3024,6 @@
       "import": "./dist/icons/SquareDashedIcon.mjs",
       "require": "./dist/icons/SquareDashedIcon.cjs"
     },
-    "./SquareGridIcon": {
-      "types": "./dist/icons/SquareGridIcon.d.ts",
-      "import": "./dist/icons/SquareGridIcon.mjs",
-      "require": "./dist/icons/SquareGridIcon.cjs"
-    },
-    "./SquareGridPlusIcon": {
-      "types": "./dist/icons/SquareGridPlusIcon.d.ts",
-      "import": "./dist/icons/SquareGridPlusIcon.mjs",
-      "require": "./dist/icons/SquareGridPlusIcon.cjs"
-    },
     "./StairsIcon": {
       "types": "./dist/icons/StairsIcon.d.ts",
       "import": "./dist/icons/StairsIcon.mjs",
@@ -2903,6 +3048,11 @@
       "types": "./dist/icons/StoreIcon.d.ts",
       "import": "./dist/icons/StoreIcon.mjs",
       "require": "./dist/icons/StoreIcon.cjs"
+    },
+    "./SunriseIcon": {
+      "types": "./dist/icons/SunriseIcon.d.ts",
+      "import": "./dist/icons/SunriseIcon.mjs",
+      "require": "./dist/icons/SunriseIcon.cjs"
     },
     "./SwatchBookIcon": {
       "types": "./dist/icons/SwatchBookIcon.d.ts",
@@ -3024,6 +3174,11 @@
       "import": "./dist/icons/ThumbsUpIcon.mjs",
       "require": "./dist/icons/ThumbsUpIcon.cjs"
     },
+    "./TicketIcon": {
+      "types": "./dist/icons/TicketIcon.d.ts",
+      "import": "./dist/icons/TicketIcon.mjs",
+      "require": "./dist/icons/TicketIcon.cjs"
+    },
     "./TimerIcon": {
       "types": "./dist/icons/TimerIcon.d.ts",
       "import": "./dist/icons/TimerIcon.mjs",
@@ -3053,6 +3208,11 @@
       "types": "./dist/icons/ToolsIcon.d.ts",
       "import": "./dist/icons/ToolsIcon.mjs",
       "require": "./dist/icons/ToolsIcon.cjs"
+    },
+    "./ToyBrickIcon": {
+      "types": "./dist/icons/ToyBrickIcon.d.ts",
+      "import": "./dist/icons/ToyBrickIcon.mjs",
+      "require": "./dist/icons/ToyBrickIcon.cjs"
     },
     "./TrashIcon": {
       "types": "./dist/icons/TrashIcon.d.ts",
@@ -3198,21 +3358,6 @@
       "types": "./dist/icons/WarehouseIcon.d.ts",
       "import": "./dist/icons/WarehouseIcon.mjs",
       "require": "./dist/icons/WarehouseIcon.cjs"
-    },
-    "./WaterfallChartIcon": {
-      "types": "./dist/icons/WaterfallChartIcon.d.ts",
-      "import": "./dist/icons/WaterfallChartIcon.mjs",
-      "require": "./dist/icons/WaterfallChartIcon.cjs"
-    },
-    "./WaterfallChartXIcon": {
-      "types": "./dist/icons/WaterfallChartXIcon.d.ts",
-      "import": "./dist/icons/WaterfallChartXIcon.mjs",
-      "require": "./dist/icons/WaterfallChartXIcon.cjs"
-    },
-    "./WaterfallChartXYIcon": {
-      "types": "./dist/icons/WaterfallChartXYIcon.d.ts",
-      "import": "./dist/icons/WaterfallChartXYIcon.mjs",
-      "require": "./dist/icons/WaterfallChartXYIcon.cjs"
     },
     "./WaveSineIcon": {
       "types": "./dist/icons/WaveSineIcon.d.ts",

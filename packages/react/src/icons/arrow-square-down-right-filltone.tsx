@@ -35,7 +35,7 @@ const ArrowSquareDownRightIconFilltone = memo(
         />
         <path
           fill="currentColor"
-          d="M8.707 7.293a1 1 0 1 0-1.414 1.414L13.586 15H9a1 1 0 1 0 0 2h7a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4.586z"
+          d="M8.707 7.293a1 1 0 1 0-1.414 1.414L13.586 15H9a1 1 0 0 0 0 2h7a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4.586z"
         />
       </svg>
     ))

@@ -27,7 +27,7 @@ const XIconFilltone = memo(
         {...props}
       >
         <g fill="currentColor" opacity={0.4}>
-          <path d="m12 14.121-5.94 5.94a1.5 1.5 0 0 1-2.12-2.121L9.88 12zM17.94 3.94a1.5 1.5 0 0 1 2.12 2.12L14.122 12l-2.12-2.12z" />
+          <path d="m12 14.121-5.94 5.94a1.5 1.5 0 0 1-2.12-2.121L9.878 12zM17.94 3.94a1.5 1.5 0 0 1 2.12 2.12L14.121 12 12 9.88z" />
         </g>
         <path
           fill="currentColor"
