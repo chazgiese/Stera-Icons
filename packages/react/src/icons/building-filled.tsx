@@ -26,7 +26,7 @@ const BuildingIconFilled = memo(
         ref={ref}
         {...props}
       >
-        <g clipPath="url(#clip0_3435_5191)">
+        <g clipPath="url(#clip0_5072_8124)">
           <path
             fill="currentColor"
             fillRule="evenodd"

@@ -28,7 +28,7 @@ const ChatBubbleTextIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12 12a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 8a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z"
+          d="M12 12a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 8a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z"
         />
         <path
           fill="currentColor"

@@ -504,6 +504,11 @@
       "import": "./dist/icons/BladeSwordIcon.mjs",
       "require": "./dist/icons/BladeSwordIcon.cjs"
     },
+    "./BlocksIcon": {
+      "types": "./dist/icons/BlocksIcon.d.ts",
+      "import": "./dist/icons/BlocksIcon.mjs",
+      "require": "./dist/icons/BlocksIcon.cjs"
+    },
     "./BluetoothIcon": {
       "types": "./dist/icons/BluetoothIcon.d.ts",
       "import": "./dist/icons/BluetoothIcon.mjs",
@@ -883,6 +888,11 @@
       "types": "./dist/icons/ChatBubbleTextIcon.d.ts",
       "import": "./dist/icons/ChatBubbleTextIcon.mjs",
       "require": "./dist/icons/ChatBubbleTextIcon.cjs"
+    },
+    "./ChatMessagesIcon": {
+      "types": "./dist/icons/ChatMessagesIcon.d.ts",
+      "import": "./dist/icons/ChatMessagesIcon.mjs",
+      "require": "./dist/icons/ChatMessagesIcon.cjs"
     },
     "./CheckIcon": {
       "types": "./dist/icons/CheckIcon.d.ts",
@@ -1649,6 +1659,11 @@
       "import": "./dist/icons/FileCabinetIcon.mjs",
       "require": "./dist/icons/FileCabinetIcon.cjs"
     },
+    "./FinderIcon": {
+      "types": "./dist/icons/FinderIcon.d.ts",
+      "import": "./dist/icons/FinderIcon.mjs",
+      "require": "./dist/icons/FinderIcon.cjs"
+    },
     "./FlagIcon": {
       "types": "./dist/icons/FlagIcon.d.ts",
       "import": "./dist/icons/FlagIcon.mjs",
@@ -1813,6 +1828,11 @@
       "types": "./dist/icons/FrameIcon.d.ts",
       "import": "./dist/icons/FrameIcon.mjs",
       "require": "./dist/icons/FrameIcon.cjs"
+    },
+    "./GavelIcon": {
+      "types": "./dist/icons/GavelIcon.d.ts",
+      "import": "./dist/icons/GavelIcon.mjs",
+      "require": "./dist/icons/GavelIcon.cjs"
     },
     "./GhostIcon": {
       "types": "./dist/icons/GhostIcon.d.ts",
@@ -1999,6 +2019,11 @@
       "import": "./dist/icons/ImageLandscapeIcon.mjs",
       "require": "./dist/icons/ImageLandscapeIcon.cjs"
     },
+    "./ImagePanoramaIcon": {
+      "types": "./dist/icons/ImagePanoramaIcon.d.ts",
+      "import": "./dist/icons/ImagePanoramaIcon.mjs",
+      "require": "./dist/icons/ImagePanoramaIcon.cjs"
+    },
     "./ImagePileIcon": {
       "types": "./dist/icons/ImagePileIcon.d.ts",
       "import": "./dist/icons/ImagePileIcon.mjs",
@@ -2109,6 +2134,16 @@
       "import": "./dist/icons/LeafIcon.mjs",
       "require": "./dist/icons/LeafIcon.cjs"
     },
+    "./LightbulbIcon": {
+      "types": "./dist/icons/LightbulbIcon.d.ts",
+      "import": "./dist/icons/LightbulbIcon.mjs",
+      "require": "./dist/icons/LightbulbIcon.cjs"
+    },
+    "./LightbulbOnIcon": {
+      "types": "./dist/icons/LightbulbOnIcon.d.ts",
+      "import": "./dist/icons/LightbulbOnIcon.mjs",
+      "require": "./dist/icons/LightbulbOnIcon.cjs"
+    },
     "./LineSegmentIcon": {
       "types": "./dist/icons/LineSegmentIcon.d.ts",
       "import": "./dist/icons/LineSegmentIcon.mjs",
@@ -2158,6 +2193,16 @@
       "types": "./dist/icons/ListCheckSimpleIcon.d.ts",
       "import": "./dist/icons/ListCheckSimpleIcon.mjs",
       "require": "./dist/icons/ListCheckSimpleIcon.cjs"
+    },
+    "./ListContractIcon": {
+      "types": "./dist/icons/ListContractIcon.d.ts",
+      "import": "./dist/icons/ListContractIcon.mjs",
+      "require": "./dist/icons/ListContractIcon.cjs"
+    },
+    "./ListExpandIcon": {
+      "types": "./dist/icons/ListExpandIcon.d.ts",
+      "import": "./dist/icons/ListExpandIcon.mjs",
+      "require": "./dist/icons/ListExpandIcon.cjs"
     },
     "./ListMinusIcon": {
       "types": "./dist/icons/ListMinusIcon.d.ts",
@@ -2214,6 +2259,11 @@
       "import": "./dist/icons/MacWindowIcon.mjs",
       "require": "./dist/icons/MacWindowIcon.cjs"
     },
+    "./MacWindowCursorIcon": {
+      "types": "./dist/icons/MacWindowCursorIcon.d.ts",
+      "import": "./dist/icons/MacWindowCursorIcon.mjs",
+      "require": "./dist/icons/MacWindowCursorIcon.cjs"
+    },
     "./MailIcon": {
       "types": "./dist/icons/MailIcon.d.ts",
       "import": "./dist/icons/MailIcon.mjs",
@@ -2224,10 +2274,25 @@
       "import": "./dist/icons/MailBadgeIcon.mjs",
       "require": "./dist/icons/MailBadgeIcon.cjs"
     },
+    "./MailMinusIcon": {
+      "types": "./dist/icons/MailMinusIcon.d.ts",
+      "import": "./dist/icons/MailMinusIcon.mjs",
+      "require": "./dist/icons/MailMinusIcon.cjs"
+    },
     "./MailOpenIcon": {
       "types": "./dist/icons/MailOpenIcon.d.ts",
       "import": "./dist/icons/MailOpenIcon.mjs",
       "require": "./dist/icons/MailOpenIcon.cjs"
+    },
+    "./MailPlusIcon": {
+      "types": "./dist/icons/MailPlusIcon.d.ts",
+      "import": "./dist/icons/MailPlusIcon.mjs",
+      "require": "./dist/icons/MailPlusIcon.cjs"
+    },
+    "./MailXIcon": {
+      "types": "./dist/icons/MailXIcon.d.ts",
+      "import": "./dist/icons/MailXIcon.mjs",
+      "require": "./dist/icons/MailXIcon.cjs"
     },
     "./MapIcon": {
       "types": "./dist/icons/MapIcon.d.ts",
@@ -2418,6 +2483,46 @@
       "types": "./dist/icons/PaintPaletteIcon.d.ts",
       "import": "./dist/icons/PaintPaletteIcon.mjs",
       "require": "./dist/icons/PaintPaletteIcon.cjs"
+    },
+    "./PanelBottomFloatingIcon": {
+      "types": "./dist/icons/PanelBottomFloatingIcon.d.ts",
+      "import": "./dist/icons/PanelBottomFloatingIcon.mjs",
+      "require": "./dist/icons/PanelBottomFloatingIcon.cjs"
+    },
+    "./PanelLeftFloatingIcon": {
+      "types": "./dist/icons/PanelLeftFloatingIcon.d.ts",
+      "import": "./dist/icons/PanelLeftFloatingIcon.mjs",
+      "require": "./dist/icons/PanelLeftFloatingIcon.cjs"
+    },
+    "./PanelRightFloatingIcon": {
+      "types": "./dist/icons/PanelRightFloatingIcon.d.ts",
+      "import": "./dist/icons/PanelRightFloatingIcon.mjs",
+      "require": "./dist/icons/PanelRightFloatingIcon.cjs"
+    },
+    "./PanelTopFloatingIcon": {
+      "types": "./dist/icons/PanelTopFloatingIcon.d.ts",
+      "import": "./dist/icons/PanelTopFloatingIcon.mjs",
+      "require": "./dist/icons/PanelTopFloatingIcon.cjs"
+    },
+    "./PanelsLeftBottomIcon": {
+      "types": "./dist/icons/PanelsLeftBottomIcon.d.ts",
+      "import": "./dist/icons/PanelsLeftBottomIcon.mjs",
+      "require": "./dist/icons/PanelsLeftBottomIcon.cjs"
+    },
+    "./PanelsLeftTopIcon": {
+      "types": "./dist/icons/PanelsLeftTopIcon.d.ts",
+      "import": "./dist/icons/PanelsLeftTopIcon.mjs",
+      "require": "./dist/icons/PanelsLeftTopIcon.cjs"
+    },
+    "./PanelsRightBottomIcon": {
+      "types": "./dist/icons/PanelsRightBottomIcon.d.ts",
+      "import": "./dist/icons/PanelsRightBottomIcon.mjs",
+      "require": "./dist/icons/PanelsRightBottomIcon.cjs"
+    },
+    "./PanelsRightTopIcon": {
+      "types": "./dist/icons/PanelsRightTopIcon.d.ts",
+      "import": "./dist/icons/PanelsRightTopIcon.mjs",
+      "require": "./dist/icons/PanelsRightTopIcon.cjs"
     },
     "./PaperclipIcon": {
       "types": "./dist/icons/PaperclipIcon.d.ts",
