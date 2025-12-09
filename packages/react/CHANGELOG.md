@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 5.13.0
+
+### Minor Changes
+
+- 27cd6be: Add 21 new icons and update existing icons
+
 ## 5.12.0
 
 ### Minor Changes
