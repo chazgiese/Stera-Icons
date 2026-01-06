@@ -21,7 +21,7 @@ describe('Simple Validation', () => {
     // Check first item structure
     const firstIcon = metadata[0];
     expect(firstIcon).toHaveProperty('name');
-    expect(firstIcon).toHaveProperty('variant');
+    expect(firstIcon).toHaveProperty('weight');
     expect(firstIcon).toHaveProperty('tags');
     expect(firstIcon).toHaveProperty('componentName');
     expect(firstIcon).toHaveProperty('fileName');
