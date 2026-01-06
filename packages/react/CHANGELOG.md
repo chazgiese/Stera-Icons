@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 6.0.0
+
+### Major Changes
+
+- 05a5326: Major API update: All icons now support `weight` and `duotone` props, providing 6 variants per icon (regular, bold, filled, filltone, linetone combinations).
+
 ## 5.13.0
 
 ### Minor Changes
