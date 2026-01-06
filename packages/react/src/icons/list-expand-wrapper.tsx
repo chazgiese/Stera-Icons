@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListExpandIcon as RegularListExpandIcon } from './list-expand';
-import { ListExpandIconBold } from './list-expand-bold';
-import { ListExpandIconFilled } from './list-expand-filled';
-import { ListExpandIconFilltone } from './list-expand-filltone';
-import { ListExpandIconLinetone } from './list-expand-linetone';
+import { ListExpandIconDuotone as ListExpandIconDuotone } from './list-expand-duotone';
+import { ListExpandIconBold as ListExpandIconBold } from './list-expand-bold';
+import { ListExpandIconBoldDuotone as ListExpandIconBoldDuotone } from './list-expand-bold-duotone';
+import { ListExpandIconFill as ListExpandIconFill } from './list-expand-fill';
+import { ListExpandIconFillDuotone as ListExpandIconFillDuotone } from './list-expand-fill-duotone';
 
 export interface ListExpandIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListExpandIcon = memo(forwardRef<SVGSVGElement, ListExpandIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListExpandIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListExpandIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListExpandIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListExpandIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListExpandIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListExpandIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListExpandIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListExpandIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListExpandIconFill ref={ref} {...props} />;
+  if (duotone) return <ListExpandIconDuotone ref={ref} {...props} />;
+  return <RegularListExpandIcon ref={ref} {...props} />;
 }));
 
 ListExpandIcon.displayName = 'ListExpandIcon';

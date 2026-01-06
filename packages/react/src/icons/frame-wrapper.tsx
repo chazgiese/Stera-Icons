@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FrameIcon as RegularFrameIcon } from './frame';
-import { FrameIconBold } from './frame-bold';
-import { FrameIconFilled } from './frame-filled';
-import { FrameIconFilltone } from './frame-filltone';
-import { FrameIconLinetone } from './frame-linetone';
+import { FrameIconDuotone as FrameIconDuotone } from './frame-duotone';
+import { FrameIconBold as FrameIconBold } from './frame-bold';
+import { FrameIconBoldDuotone as FrameIconBoldDuotone } from './frame-bold-duotone';
+import { FrameIconFill as FrameIconFill } from './frame-fill';
+import { FrameIconFillDuotone as FrameIconFillDuotone } from './frame-fill-duotone';
 
 export interface FrameIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FrameIcon = memo(forwardRef<SVGSVGElement, FrameIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FrameIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FrameIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FrameIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FrameIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFrameIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FrameIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FrameIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FrameIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FrameIconFill ref={ref} {...props} />;
+  if (duotone) return <FrameIconDuotone ref={ref} {...props} />;
+  return <RegularFrameIcon ref={ref} {...props} />;
 }));
 
 FrameIcon.displayName = 'FrameIcon';

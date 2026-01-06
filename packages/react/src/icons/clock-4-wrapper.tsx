@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { Clock4Icon as RegularClock4Icon } from './clock-4';
-import { Clock4IconBold } from './clock-4-bold';
-import { Clock4IconFilled } from './clock-4-filled';
-import { Clock4IconFilltone } from './clock-4-filltone';
-import { Clock4IconLinetone } from './clock-4-linetone';
+import { Clock4IconDuotone as Clock4IconDuotone } from './clock-4-duotone';
+import { Clock4IconBold as Clock4IconBold } from './clock-4-bold';
+import { Clock4IconBoldDuotone as Clock4IconBoldDuotone } from './clock-4-bold-duotone';
+import { Clock4IconFill as Clock4IconFill } from './clock-4-fill';
+import { Clock4IconFillDuotone as Clock4IconFillDuotone } from './clock-4-fill-duotone';
 
 export interface Clock4IconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const Clock4Icon = memo(forwardRef<SVGSVGElement, Clock4IconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <Clock4IconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <Clock4IconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <Clock4IconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <Clock4IconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularClock4Icon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <Clock4IconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <Clock4IconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <Clock4IconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <Clock4IconFill ref={ref} {...props} />;
+  if (duotone) return <Clock4IconDuotone ref={ref} {...props} />;
+  return <RegularClock4Icon ref={ref} {...props} />;
 }));
 
 Clock4Icon.displayName = 'Clock4Icon';

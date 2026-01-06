@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ComponentIcon as RegularComponentIcon } from './component';
-import { ComponentIconBold } from './component-bold';
-import { ComponentIconFilled } from './component-filled';
-import { ComponentIconFilltone } from './component-filltone';
-import { ComponentIconLinetone } from './component-linetone';
+import { ComponentIconDuotone as ComponentIconDuotone } from './component-duotone';
+import { ComponentIconBold as ComponentIconBold } from './component-bold';
+import { ComponentIconBoldDuotone as ComponentIconBoldDuotone } from './component-bold-duotone';
+import { ComponentIconFill as ComponentIconFill } from './component-fill';
+import { ComponentIconFillDuotone as ComponentIconFillDuotone } from './component-fill-duotone';
 
 export interface ComponentIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ComponentIcon = memo(forwardRef<SVGSVGElement, ComponentIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ComponentIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ComponentIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ComponentIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ComponentIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularComponentIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ComponentIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ComponentIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ComponentIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ComponentIconFill ref={ref} {...props} />;
+  if (duotone) return <ComponentIconDuotone ref={ref} {...props} />;
+  return <RegularComponentIcon ref={ref} {...props} />;
 }));
 
 ComponentIcon.displayName = 'ComponentIcon';

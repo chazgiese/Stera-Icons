@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MinusSquareIcon as RegularMinusSquareIcon } from './minus-square';
-import { MinusSquareIconBold } from './minus-square-bold';
-import { MinusSquareIconFilled } from './minus-square-filled';
-import { MinusSquareIconFilltone } from './minus-square-filltone';
-import { MinusSquareIconLinetone } from './minus-square-linetone';
+import { MinusSquareIconDuotone as MinusSquareIconDuotone } from './minus-square-duotone';
+import { MinusSquareIconBold as MinusSquareIconBold } from './minus-square-bold';
+import { MinusSquareIconBoldDuotone as MinusSquareIconBoldDuotone } from './minus-square-bold-duotone';
+import { MinusSquareIconFill as MinusSquareIconFill } from './minus-square-fill';
+import { MinusSquareIconFillDuotone as MinusSquareIconFillDuotone } from './minus-square-fill-duotone';
 
 export interface MinusSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MinusSquareIcon = memo(forwardRef<SVGSVGElement, MinusSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MinusSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MinusSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MinusSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MinusSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMinusSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MinusSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MinusSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MinusSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MinusSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <MinusSquareIconDuotone ref={ref} {...props} />;
+  return <RegularMinusSquareIcon ref={ref} {...props} />;
 }));
 
 MinusSquareIcon.displayName = 'MinusSquareIcon';

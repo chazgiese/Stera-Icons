@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DocumentCopyIcon as RegularDocumentCopyIcon } from './document-copy';
-import { DocumentCopyIconBold } from './document-copy-bold';
-import { DocumentCopyIconFilled } from './document-copy-filled';
-import { DocumentCopyIconFilltone } from './document-copy-filltone';
-import { DocumentCopyIconLinetone } from './document-copy-linetone';
+import { DocumentCopyIconDuotone as DocumentCopyIconDuotone } from './document-copy-duotone';
+import { DocumentCopyIconBold as DocumentCopyIconBold } from './document-copy-bold';
+import { DocumentCopyIconBoldDuotone as DocumentCopyIconBoldDuotone } from './document-copy-bold-duotone';
+import { DocumentCopyIconFill as DocumentCopyIconFill } from './document-copy-fill';
+import { DocumentCopyIconFillDuotone as DocumentCopyIconFillDuotone } from './document-copy-fill-duotone';
 
 export interface DocumentCopyIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DocumentCopyIcon = memo(forwardRef<SVGSVGElement, DocumentCopyIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DocumentCopyIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DocumentCopyIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DocumentCopyIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DocumentCopyIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDocumentCopyIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DocumentCopyIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DocumentCopyIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DocumentCopyIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DocumentCopyIconFill ref={ref} {...props} />;
+  if (duotone) return <DocumentCopyIconDuotone ref={ref} {...props} />;
+  return <RegularDocumentCopyIcon ref={ref} {...props} />;
 }));
 
 DocumentCopyIcon.displayName = 'DocumentCopyIcon';

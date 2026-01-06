@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlignHorizontalLeftIcon as RegularAlignHorizontalLeftIcon } from './align-horizontal-left';
-import { AlignHorizontalLeftIconBold } from './align-horizontal-left-bold';
-import { AlignHorizontalLeftIconFilled } from './align-horizontal-left-filled';
-import { AlignHorizontalLeftIconFilltone } from './align-horizontal-left-filltone';
-import { AlignHorizontalLeftIconLinetone } from './align-horizontal-left-linetone';
+import { AlignHorizontalLeftIconDuotone as AlignHorizontalLeftIconDuotone } from './align-horizontal-left-duotone';
+import { AlignHorizontalLeftIconBold as AlignHorizontalLeftIconBold } from './align-horizontal-left-bold';
+import { AlignHorizontalLeftIconBoldDuotone as AlignHorizontalLeftIconBoldDuotone } from './align-horizontal-left-bold-duotone';
+import { AlignHorizontalLeftIconFill as AlignHorizontalLeftIconFill } from './align-horizontal-left-fill';
+import { AlignHorizontalLeftIconFillDuotone as AlignHorizontalLeftIconFillDuotone } from './align-horizontal-left-fill-duotone';
 
 export interface AlignHorizontalLeftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlignHorizontalLeftIcon = memo(forwardRef<SVGSVGElement, AlignHorizontalLeftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlignHorizontalLeftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlignHorizontalLeftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlignHorizontalLeftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlignHorizontalLeftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlignHorizontalLeftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlignHorizontalLeftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlignHorizontalLeftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlignHorizontalLeftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlignHorizontalLeftIconFill ref={ref} {...props} />;
+  if (duotone) return <AlignHorizontalLeftIconDuotone ref={ref} {...props} />;
+  return <RegularAlignHorizontalLeftIcon ref={ref} {...props} />;
 }));
 
 AlignHorizontalLeftIcon.displayName = 'AlignHorizontalLeftIcon';

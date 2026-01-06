@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowLineDownIcon as RegularArrowLineDownIcon } from './arrow-line-down';
-import { ArrowLineDownIconBold } from './arrow-line-down-bold';
-import { ArrowLineDownIconFilled } from './arrow-line-down-filled';
-import { ArrowLineDownIconFilltone } from './arrow-line-down-filltone';
-import { ArrowLineDownIconLinetone } from './arrow-line-down-linetone';
+import { ArrowLineDownIconDuotone as ArrowLineDownIconDuotone } from './arrow-line-down-duotone';
+import { ArrowLineDownIconBold as ArrowLineDownIconBold } from './arrow-line-down-bold';
+import { ArrowLineDownIconBoldDuotone as ArrowLineDownIconBoldDuotone } from './arrow-line-down-bold-duotone';
+import { ArrowLineDownIconFill as ArrowLineDownIconFill } from './arrow-line-down-fill';
+import { ArrowLineDownIconFillDuotone as ArrowLineDownIconFillDuotone } from './arrow-line-down-fill-duotone';
 
 export interface ArrowLineDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowLineDownIcon = memo(forwardRef<SVGSVGElement, ArrowLineDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowLineDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowLineDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowLineDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowLineDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowLineDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowLineDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowLineDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowLineDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowLineDownIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowLineDownIconDuotone ref={ref} {...props} />;
+  return <RegularArrowLineDownIcon ref={ref} {...props} />;
 }));
 
 ArrowLineDownIcon.displayName = 'ArrowLineDownIcon';

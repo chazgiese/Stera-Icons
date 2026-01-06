@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CurrencyEuroIcon as RegularCurrencyEuroIcon } from './currency-euro';
-import { CurrencyEuroIconBold } from './currency-euro-bold';
-import { CurrencyEuroIconFilled } from './currency-euro-filled';
-import { CurrencyEuroIconFilltone } from './currency-euro-filltone';
-import { CurrencyEuroIconLinetone } from './currency-euro-linetone';
+import { CurrencyEuroIconDuotone as CurrencyEuroIconDuotone } from './currency-euro-duotone';
+import { CurrencyEuroIconBold as CurrencyEuroIconBold } from './currency-euro-bold';
+import { CurrencyEuroIconBoldDuotone as CurrencyEuroIconBoldDuotone } from './currency-euro-bold-duotone';
+import { CurrencyEuroIconFill as CurrencyEuroIconFill } from './currency-euro-fill';
+import { CurrencyEuroIconFillDuotone as CurrencyEuroIconFillDuotone } from './currency-euro-fill-duotone';
 
 export interface CurrencyEuroIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CurrencyEuroIcon = memo(forwardRef<SVGSVGElement, CurrencyEuroIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CurrencyEuroIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CurrencyEuroIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CurrencyEuroIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CurrencyEuroIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCurrencyEuroIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CurrencyEuroIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CurrencyEuroIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CurrencyEuroIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CurrencyEuroIconFill ref={ref} {...props} />;
+  if (duotone) return <CurrencyEuroIconDuotone ref={ref} {...props} />;
+  return <RegularCurrencyEuroIcon ref={ref} {...props} />;
 }));
 
 CurrencyEuroIcon.displayName = 'CurrencyEuroIcon';

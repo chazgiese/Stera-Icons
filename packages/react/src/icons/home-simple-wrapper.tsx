@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HomeSimpleIcon as RegularHomeSimpleIcon } from './home-simple';
-import { HomeSimpleIconBold } from './home-simple-bold';
-import { HomeSimpleIconFilled } from './home-simple-filled';
-import { HomeSimpleIconFilltone } from './home-simple-filltone';
-import { HomeSimpleIconLinetone } from './home-simple-linetone';
+import { HomeSimpleIconDuotone as HomeSimpleIconDuotone } from './home-simple-duotone';
+import { HomeSimpleIconBold as HomeSimpleIconBold } from './home-simple-bold';
+import { HomeSimpleIconBoldDuotone as HomeSimpleIconBoldDuotone } from './home-simple-bold-duotone';
+import { HomeSimpleIconFill as HomeSimpleIconFill } from './home-simple-fill';
+import { HomeSimpleIconFillDuotone as HomeSimpleIconFillDuotone } from './home-simple-fill-duotone';
 
 export interface HomeSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HomeSimpleIcon = memo(forwardRef<SVGSVGElement, HomeSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HomeSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HomeSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HomeSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HomeSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHomeSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HomeSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HomeSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HomeSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HomeSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <HomeSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularHomeSimpleIcon ref={ref} {...props} />;
 }));
 
 HomeSimpleIcon.displayName = 'HomeSimpleIcon';

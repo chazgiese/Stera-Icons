@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartBarIcon as RegularChartBarIcon } from './chart-bar';
-import { ChartBarIconBold } from './chart-bar-bold';
-import { ChartBarIconFilled } from './chart-bar-filled';
-import { ChartBarIconFilltone } from './chart-bar-filltone';
-import { ChartBarIconLinetone } from './chart-bar-linetone';
+import { ChartBarIconDuotone as ChartBarIconDuotone } from './chart-bar-duotone';
+import { ChartBarIconBold as ChartBarIconBold } from './chart-bar-bold';
+import { ChartBarIconBoldDuotone as ChartBarIconBoldDuotone } from './chart-bar-bold-duotone';
+import { ChartBarIconFill as ChartBarIconFill } from './chart-bar-fill';
+import { ChartBarIconFillDuotone as ChartBarIconFillDuotone } from './chart-bar-fill-duotone';
 
 export interface ChartBarIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartBarIcon = memo(forwardRef<SVGSVGElement, ChartBarIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartBarIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartBarIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartBarIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartBarIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartBarIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartBarIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartBarIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartBarIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartBarIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartBarIconDuotone ref={ref} {...props} />;
+  return <RegularChartBarIcon ref={ref} {...props} />;
 }));
 
 ChartBarIcon.displayName = 'ChartBarIcon';

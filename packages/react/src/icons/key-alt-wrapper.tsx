@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { KeyAltIcon as RegularKeyAltIcon } from './key-alt';
-import { KeyAltIconBold } from './key-alt-bold';
-import { KeyAltIconFilled } from './key-alt-filled';
-import { KeyAltIconFilltone } from './key-alt-filltone';
-import { KeyAltIconLinetone } from './key-alt-linetone';
+import { KeyAltIconDuotone as KeyAltIconDuotone } from './key-alt-duotone';
+import { KeyAltIconBold as KeyAltIconBold } from './key-alt-bold';
+import { KeyAltIconBoldDuotone as KeyAltIconBoldDuotone } from './key-alt-bold-duotone';
+import { KeyAltIconFill as KeyAltIconFill } from './key-alt-fill';
+import { KeyAltIconFillDuotone as KeyAltIconFillDuotone } from './key-alt-fill-duotone';
 
 export interface KeyAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const KeyAltIcon = memo(forwardRef<SVGSVGElement, KeyAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <KeyAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <KeyAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <KeyAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <KeyAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularKeyAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <KeyAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <KeyAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <KeyAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <KeyAltIconFill ref={ref} {...props} />;
+  if (duotone) return <KeyAltIconDuotone ref={ref} {...props} />;
+  return <RegularKeyAltIcon ref={ref} {...props} />;
 }));
 
 KeyAltIcon.displayName = 'KeyAltIcon';

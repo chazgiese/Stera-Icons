@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlaskIcon as RegularFlaskIcon } from './flask';
-import { FlaskIconBold } from './flask-bold';
-import { FlaskIconFilled } from './flask-filled';
-import { FlaskIconFilltone } from './flask-filltone';
-import { FlaskIconLinetone } from './flask-linetone';
+import { FlaskIconDuotone as FlaskIconDuotone } from './flask-duotone';
+import { FlaskIconBold as FlaskIconBold } from './flask-bold';
+import { FlaskIconBoldDuotone as FlaskIconBoldDuotone } from './flask-bold-duotone';
+import { FlaskIconFill as FlaskIconFill } from './flask-fill';
+import { FlaskIconFillDuotone as FlaskIconFillDuotone } from './flask-fill-duotone';
 
 export interface FlaskIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlaskIcon = memo(forwardRef<SVGSVGElement, FlaskIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlaskIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlaskIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlaskIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlaskIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlaskIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlaskIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlaskIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlaskIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlaskIconFill ref={ref} {...props} />;
+  if (duotone) return <FlaskIconDuotone ref={ref} {...props} />;
+  return <RegularFlaskIcon ref={ref} {...props} />;
 }));
 
 FlaskIcon.displayName = 'FlaskIcon';

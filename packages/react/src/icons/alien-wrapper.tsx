@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlienIcon as RegularAlienIcon } from './alien';
-import { AlienIconBold } from './alien-bold';
-import { AlienIconFilled } from './alien-filled';
-import { AlienIconFilltone } from './alien-filltone';
-import { AlienIconLinetone } from './alien-linetone';
+import { AlienIconDuotone as AlienIconDuotone } from './alien-duotone';
+import { AlienIconBold as AlienIconBold } from './alien-bold';
+import { AlienIconBoldDuotone as AlienIconBoldDuotone } from './alien-bold-duotone';
+import { AlienIconFill as AlienIconFill } from './alien-fill';
+import { AlienIconFillDuotone as AlienIconFillDuotone } from './alien-fill-duotone';
 
 export interface AlienIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlienIcon = memo(forwardRef<SVGSVGElement, AlienIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlienIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlienIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlienIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlienIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlienIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlienIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlienIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlienIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlienIconFill ref={ref} {...props} />;
+  if (duotone) return <AlienIconDuotone ref={ref} {...props} />;
+  return <RegularAlienIcon ref={ref} {...props} />;
 }));
 
 AlienIcon.displayName = 'AlienIcon';

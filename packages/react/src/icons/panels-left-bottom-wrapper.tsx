@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PanelsLeftBottomIcon as RegularPanelsLeftBottomIcon } from './panels-left-bottom';
-import { PanelsLeftBottomIconBold } from './panels-left-bottom-bold';
-import { PanelsLeftBottomIconFilled } from './panels-left-bottom-filled';
-import { PanelsLeftBottomIconFilltone } from './panels-left-bottom-filltone';
-import { PanelsLeftBottomIconLinetone } from './panels-left-bottom-linetone';
+import { PanelsLeftBottomIconDuotone as PanelsLeftBottomIconDuotone } from './panels-left-bottom-duotone';
+import { PanelsLeftBottomIconBold as PanelsLeftBottomIconBold } from './panels-left-bottom-bold';
+import { PanelsLeftBottomIconBoldDuotone as PanelsLeftBottomIconBoldDuotone } from './panels-left-bottom-bold-duotone';
+import { PanelsLeftBottomIconFill as PanelsLeftBottomIconFill } from './panels-left-bottom-fill';
+import { PanelsLeftBottomIconFillDuotone as PanelsLeftBottomIconFillDuotone } from './panels-left-bottom-fill-duotone';
 
 export interface PanelsLeftBottomIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PanelsLeftBottomIcon = memo(forwardRef<SVGSVGElement, PanelsLeftBottomIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PanelsLeftBottomIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PanelsLeftBottomIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PanelsLeftBottomIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PanelsLeftBottomIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPanelsLeftBottomIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PanelsLeftBottomIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PanelsLeftBottomIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PanelsLeftBottomIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PanelsLeftBottomIconFill ref={ref} {...props} />;
+  if (duotone) return <PanelsLeftBottomIconDuotone ref={ref} {...props} />;
+  return <RegularPanelsLeftBottomIcon ref={ref} {...props} />;
 }));
 
 PanelsLeftBottomIcon.displayName = 'PanelsLeftBottomIcon';

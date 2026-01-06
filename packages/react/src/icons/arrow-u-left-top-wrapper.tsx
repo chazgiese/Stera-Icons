@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowULeftTopIcon as RegularArrowULeftTopIcon } from './arrow-u-left-top';
-import { ArrowULeftTopIconBold } from './arrow-u-left-top-bold';
-import { ArrowULeftTopIconFilled } from './arrow-u-left-top-filled';
-import { ArrowULeftTopIconFilltone } from './arrow-u-left-top-filltone';
-import { ArrowULeftTopIconLinetone } from './arrow-u-left-top-linetone';
+import { ArrowULeftTopIconDuotone as ArrowULeftTopIconDuotone } from './arrow-u-left-top-duotone';
+import { ArrowULeftTopIconBold as ArrowULeftTopIconBold } from './arrow-u-left-top-bold';
+import { ArrowULeftTopIconBoldDuotone as ArrowULeftTopIconBoldDuotone } from './arrow-u-left-top-bold-duotone';
+import { ArrowULeftTopIconFill as ArrowULeftTopIconFill } from './arrow-u-left-top-fill';
+import { ArrowULeftTopIconFillDuotone as ArrowULeftTopIconFillDuotone } from './arrow-u-left-top-fill-duotone';
 
 export interface ArrowULeftTopIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowULeftTopIcon = memo(forwardRef<SVGSVGElement, ArrowULeftTopIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowULeftTopIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowULeftTopIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowULeftTopIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowULeftTopIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowULeftTopIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowULeftTopIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowULeftTopIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowULeftTopIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowULeftTopIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowULeftTopIconDuotone ref={ref} {...props} />;
+  return <RegularArrowULeftTopIcon ref={ref} {...props} />;
 }));
 
 ArrowULeftTopIcon.displayName = 'ArrowULeftTopIcon';

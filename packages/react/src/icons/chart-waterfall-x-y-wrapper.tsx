@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartWaterfallXYIcon as RegularChartWaterfallXYIcon } from './chart-waterfall-x-y';
-import { ChartWaterfallXYIconBold } from './chart-waterfall-x-y-bold';
-import { ChartWaterfallXYIconFilled } from './chart-waterfall-x-y-filled';
-import { ChartWaterfallXYIconFilltone } from './chart-waterfall-x-y-filltone';
-import { ChartWaterfallXYIconLinetone } from './chart-waterfall-x-y-linetone';
+import { ChartWaterfallXYIconDuotone as ChartWaterfallXYIconDuotone } from './chart-waterfall-x-y-duotone';
+import { ChartWaterfallXYIconBold as ChartWaterfallXYIconBold } from './chart-waterfall-x-y-bold';
+import { ChartWaterfallXYIconBoldDuotone as ChartWaterfallXYIconBoldDuotone } from './chart-waterfall-x-y-bold-duotone';
+import { ChartWaterfallXYIconFill as ChartWaterfallXYIconFill } from './chart-waterfall-x-y-fill';
+import { ChartWaterfallXYIconFillDuotone as ChartWaterfallXYIconFillDuotone } from './chart-waterfall-x-y-fill-duotone';
 
 export interface ChartWaterfallXYIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartWaterfallXYIcon = memo(forwardRef<SVGSVGElement, ChartWaterfallXYIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartWaterfallXYIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartWaterfallXYIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartWaterfallXYIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartWaterfallXYIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartWaterfallXYIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartWaterfallXYIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartWaterfallXYIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartWaterfallXYIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartWaterfallXYIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartWaterfallXYIconDuotone ref={ref} {...props} />;
+  return <RegularChartWaterfallXYIcon ref={ref} {...props} />;
 }));
 
 ChartWaterfallXYIcon.displayName = 'ChartWaterfallXYIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UserBanIcon as RegularUserBanIcon } from './user-ban';
-import { UserBanIconBold } from './user-ban-bold';
-import { UserBanIconFilled } from './user-ban-filled';
-import { UserBanIconFilltone } from './user-ban-filltone';
-import { UserBanIconLinetone } from './user-ban-linetone';
+import { UserBanIconDuotone as UserBanIconDuotone } from './user-ban-duotone';
+import { UserBanIconBold as UserBanIconBold } from './user-ban-bold';
+import { UserBanIconBoldDuotone as UserBanIconBoldDuotone } from './user-ban-bold-duotone';
+import { UserBanIconFill as UserBanIconFill } from './user-ban-fill';
+import { UserBanIconFillDuotone as UserBanIconFillDuotone } from './user-ban-fill-duotone';
 
 export interface UserBanIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UserBanIcon = memo(forwardRef<SVGSVGElement, UserBanIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UserBanIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UserBanIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UserBanIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UserBanIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUserBanIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UserBanIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UserBanIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UserBanIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UserBanIconFill ref={ref} {...props} />;
+  if (duotone) return <UserBanIconDuotone ref={ref} {...props} />;
+  return <RegularUserBanIcon ref={ref} {...props} />;
 }));
 
 UserBanIcon.displayName = 'UserBanIcon';

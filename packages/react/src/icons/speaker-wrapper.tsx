@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SpeakerIcon as RegularSpeakerIcon } from './speaker';
-import { SpeakerIconBold } from './speaker-bold';
-import { SpeakerIconFilled } from './speaker-filled';
-import { SpeakerIconFilltone } from './speaker-filltone';
-import { SpeakerIconLinetone } from './speaker-linetone';
+import { SpeakerIconDuotone as SpeakerIconDuotone } from './speaker-duotone';
+import { SpeakerIconBold as SpeakerIconBold } from './speaker-bold';
+import { SpeakerIconBoldDuotone as SpeakerIconBoldDuotone } from './speaker-bold-duotone';
+import { SpeakerIconFill as SpeakerIconFill } from './speaker-fill';
+import { SpeakerIconFillDuotone as SpeakerIconFillDuotone } from './speaker-fill-duotone';
 
 export interface SpeakerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SpeakerIcon = memo(forwardRef<SVGSVGElement, SpeakerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SpeakerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SpeakerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SpeakerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SpeakerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSpeakerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SpeakerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SpeakerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SpeakerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SpeakerIconFill ref={ref} {...props} />;
+  if (duotone) return <SpeakerIconDuotone ref={ref} {...props} />;
+  return <RegularSpeakerIcon ref={ref} {...props} />;
 }));
 
 SpeakerIcon.displayName = 'SpeakerIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AtomIcon as RegularAtomIcon } from './atom';
-import { AtomIconBold } from './atom-bold';
-import { AtomIconFilled } from './atom-filled';
-import { AtomIconFilltone } from './atom-filltone';
-import { AtomIconLinetone } from './atom-linetone';
+import { AtomIconDuotone as AtomIconDuotone } from './atom-duotone';
+import { AtomIconBold as AtomIconBold } from './atom-bold';
+import { AtomIconBoldDuotone as AtomIconBoldDuotone } from './atom-bold-duotone';
+import { AtomIconFill as AtomIconFill } from './atom-fill';
+import { AtomIconFillDuotone as AtomIconFillDuotone } from './atom-fill-duotone';
 
 export interface AtomIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AtomIcon = memo(forwardRef<SVGSVGElement, AtomIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AtomIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AtomIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AtomIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AtomIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAtomIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AtomIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AtomIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AtomIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AtomIconFill ref={ref} {...props} />;
+  if (duotone) return <AtomIconDuotone ref={ref} {...props} />;
+  return <RegularAtomIcon ref={ref} {...props} />;
 }));
 
 AtomIcon.displayName = 'AtomIcon';

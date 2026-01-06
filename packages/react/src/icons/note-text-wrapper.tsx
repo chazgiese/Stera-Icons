@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { NoteTextIcon as RegularNoteTextIcon } from './note-text';
-import { NoteTextIconBold } from './note-text-bold';
-import { NoteTextIconFilled } from './note-text-filled';
-import { NoteTextIconFilltone } from './note-text-filltone';
-import { NoteTextIconLinetone } from './note-text-linetone';
+import { NoteTextIconDuotone as NoteTextIconDuotone } from './note-text-duotone';
+import { NoteTextIconBold as NoteTextIconBold } from './note-text-bold';
+import { NoteTextIconBoldDuotone as NoteTextIconBoldDuotone } from './note-text-bold-duotone';
+import { NoteTextIconFill as NoteTextIconFill } from './note-text-fill';
+import { NoteTextIconFillDuotone as NoteTextIconFillDuotone } from './note-text-fill-duotone';
 
 export interface NoteTextIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const NoteTextIcon = memo(forwardRef<SVGSVGElement, NoteTextIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <NoteTextIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <NoteTextIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <NoteTextIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <NoteTextIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularNoteTextIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <NoteTextIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <NoteTextIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <NoteTextIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <NoteTextIconFill ref={ref} {...props} />;
+  if (duotone) return <NoteTextIconDuotone ref={ref} {...props} />;
+  return <RegularNoteTextIcon ref={ref} {...props} />;
 }));
 
 NoteTextIcon.displayName = 'NoteTextIcon';

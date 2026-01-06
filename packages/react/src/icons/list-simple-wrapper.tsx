@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListSimpleIcon as RegularListSimpleIcon } from './list-simple';
-import { ListSimpleIconBold } from './list-simple-bold';
-import { ListSimpleIconFilled } from './list-simple-filled';
-import { ListSimpleIconFilltone } from './list-simple-filltone';
-import { ListSimpleIconLinetone } from './list-simple-linetone';
+import { ListSimpleIconDuotone as ListSimpleIconDuotone } from './list-simple-duotone';
+import { ListSimpleIconBold as ListSimpleIconBold } from './list-simple-bold';
+import { ListSimpleIconBoldDuotone as ListSimpleIconBoldDuotone } from './list-simple-bold-duotone';
+import { ListSimpleIconFill as ListSimpleIconFill } from './list-simple-fill';
+import { ListSimpleIconFillDuotone as ListSimpleIconFillDuotone } from './list-simple-fill-duotone';
 
 export interface ListSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListSimpleIcon = memo(forwardRef<SVGSVGElement, ListSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <ListSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularListSimpleIcon ref={ref} {...props} />;
 }));
 
 ListSimpleIcon.displayName = 'ListSimpleIcon';

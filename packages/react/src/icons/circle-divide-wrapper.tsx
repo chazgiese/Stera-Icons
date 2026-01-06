@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CircleDivideIcon as RegularCircleDivideIcon } from './circle-divide';
-import { CircleDivideIconBold } from './circle-divide-bold';
-import { CircleDivideIconFilled } from './circle-divide-filled';
-import { CircleDivideIconFilltone } from './circle-divide-filltone';
-import { CircleDivideIconLinetone } from './circle-divide-linetone';
+import { CircleDivideIconDuotone as CircleDivideIconDuotone } from './circle-divide-duotone';
+import { CircleDivideIconBold as CircleDivideIconBold } from './circle-divide-bold';
+import { CircleDivideIconBoldDuotone as CircleDivideIconBoldDuotone } from './circle-divide-bold-duotone';
+import { CircleDivideIconFill as CircleDivideIconFill } from './circle-divide-fill';
+import { CircleDivideIconFillDuotone as CircleDivideIconFillDuotone } from './circle-divide-fill-duotone';
 
 export interface CircleDivideIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CircleDivideIcon = memo(forwardRef<SVGSVGElement, CircleDivideIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CircleDivideIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CircleDivideIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CircleDivideIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CircleDivideIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCircleDivideIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CircleDivideIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CircleDivideIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CircleDivideIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CircleDivideIconFill ref={ref} {...props} />;
+  if (duotone) return <CircleDivideIconDuotone ref={ref} {...props} />;
+  return <RegularCircleDivideIcon ref={ref} {...props} />;
 }));
 
 CircleDivideIcon.displayName = 'CircleDivideIcon';

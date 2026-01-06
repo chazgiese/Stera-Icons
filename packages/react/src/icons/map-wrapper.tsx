@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MapIcon as RegularMapIcon } from './map';
-import { MapIconBold } from './map-bold';
-import { MapIconFilled } from './map-filled';
-import { MapIconFilltone } from './map-filltone';
-import { MapIconLinetone } from './map-linetone';
+import { MapIconDuotone as MapIconDuotone } from './map-duotone';
+import { MapIconBold as MapIconBold } from './map-bold';
+import { MapIconBoldDuotone as MapIconBoldDuotone } from './map-bold-duotone';
+import { MapIconFill as MapIconFill } from './map-fill';
+import { MapIconFillDuotone as MapIconFillDuotone } from './map-fill-duotone';
 
 export interface MapIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MapIcon = memo(forwardRef<SVGSVGElement, MapIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MapIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MapIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MapIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MapIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMapIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MapIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MapIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MapIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MapIconFill ref={ref} {...props} />;
+  if (duotone) return <MapIconDuotone ref={ref} {...props} />;
+  return <RegularMapIcon ref={ref} {...props} />;
 }));
 
 MapIcon.displayName = 'MapIcon';

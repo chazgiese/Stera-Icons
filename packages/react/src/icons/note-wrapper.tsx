@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { NoteIcon as RegularNoteIcon } from './note';
-import { NoteIconBold } from './note-bold';
-import { NoteIconFilled } from './note-filled';
-import { NoteIconFilltone } from './note-filltone';
-import { NoteIconLinetone } from './note-linetone';
+import { NoteIconDuotone as NoteIconDuotone } from './note-duotone';
+import { NoteIconBold as NoteIconBold } from './note-bold';
+import { NoteIconBoldDuotone as NoteIconBoldDuotone } from './note-bold-duotone';
+import { NoteIconFill as NoteIconFill } from './note-fill';
+import { NoteIconFillDuotone as NoteIconFillDuotone } from './note-fill-duotone';
 
 export interface NoteIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const NoteIcon = memo(forwardRef<SVGSVGElement, NoteIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <NoteIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <NoteIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <NoteIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <NoteIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularNoteIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <NoteIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <NoteIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <NoteIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <NoteIconFill ref={ref} {...props} />;
+  if (duotone) return <NoteIconDuotone ref={ref} {...props} />;
+  return <RegularNoteIcon ref={ref} {...props} />;
 }));
 
 NoteIcon.displayName = 'NoteIcon';

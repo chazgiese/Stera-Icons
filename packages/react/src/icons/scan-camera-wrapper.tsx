@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanCameraIcon as RegularScanCameraIcon } from './scan-camera';
-import { ScanCameraIconBold } from './scan-camera-bold';
-import { ScanCameraIconFilled } from './scan-camera-filled';
-import { ScanCameraIconFilltone } from './scan-camera-filltone';
-import { ScanCameraIconLinetone } from './scan-camera-linetone';
+import { ScanCameraIconDuotone as ScanCameraIconDuotone } from './scan-camera-duotone';
+import { ScanCameraIconBold as ScanCameraIconBold } from './scan-camera-bold';
+import { ScanCameraIconBoldDuotone as ScanCameraIconBoldDuotone } from './scan-camera-bold-duotone';
+import { ScanCameraIconFill as ScanCameraIconFill } from './scan-camera-fill';
+import { ScanCameraIconFillDuotone as ScanCameraIconFillDuotone } from './scan-camera-fill-duotone';
 
 export interface ScanCameraIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanCameraIcon = memo(forwardRef<SVGSVGElement, ScanCameraIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanCameraIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanCameraIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanCameraIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanCameraIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanCameraIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanCameraIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanCameraIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanCameraIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanCameraIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanCameraIconDuotone ref={ref} {...props} />;
+  return <RegularScanCameraIcon ref={ref} {...props} />;
 }));
 
 ScanCameraIcon.displayName = 'ScanCameraIcon';

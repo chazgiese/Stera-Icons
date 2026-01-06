@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowCornerDownLeftIcon as RegularArrowCornerDownLeftIcon } from './arrow-corner-down-left';
-import { ArrowCornerDownLeftIconBold } from './arrow-corner-down-left-bold';
-import { ArrowCornerDownLeftIconFilled } from './arrow-corner-down-left-filled';
-import { ArrowCornerDownLeftIconFilltone } from './arrow-corner-down-left-filltone';
-import { ArrowCornerDownLeftIconLinetone } from './arrow-corner-down-left-linetone';
+import { ArrowCornerDownLeftIconDuotone as ArrowCornerDownLeftIconDuotone } from './arrow-corner-down-left-duotone';
+import { ArrowCornerDownLeftIconBold as ArrowCornerDownLeftIconBold } from './arrow-corner-down-left-bold';
+import { ArrowCornerDownLeftIconBoldDuotone as ArrowCornerDownLeftIconBoldDuotone } from './arrow-corner-down-left-bold-duotone';
+import { ArrowCornerDownLeftIconFill as ArrowCornerDownLeftIconFill } from './arrow-corner-down-left-fill';
+import { ArrowCornerDownLeftIconFillDuotone as ArrowCornerDownLeftIconFillDuotone } from './arrow-corner-down-left-fill-duotone';
 
 export interface ArrowCornerDownLeftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowCornerDownLeftIcon = memo(forwardRef<SVGSVGElement, ArrowCornerDownLeftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowCornerDownLeftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowCornerDownLeftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowCornerDownLeftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowCornerDownLeftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowCornerDownLeftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowCornerDownLeftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowCornerDownLeftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowCornerDownLeftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowCornerDownLeftIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowCornerDownLeftIconDuotone ref={ref} {...props} />;
+  return <RegularArrowCornerDownLeftIcon ref={ref} {...props} />;
 }));
 
 ArrowCornerDownLeftIcon.displayName = 'ArrowCornerDownLeftIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChatBoxTextIcon as RegularChatBoxTextIcon } from './chat-box-text';
-import { ChatBoxTextIconBold } from './chat-box-text-bold';
-import { ChatBoxTextIconFilled } from './chat-box-text-filled';
-import { ChatBoxTextIconFilltone } from './chat-box-text-filltone';
-import { ChatBoxTextIconLinetone } from './chat-box-text-linetone';
+import { ChatBoxTextIconDuotone as ChatBoxTextIconDuotone } from './chat-box-text-duotone';
+import { ChatBoxTextIconBold as ChatBoxTextIconBold } from './chat-box-text-bold';
+import { ChatBoxTextIconBoldDuotone as ChatBoxTextIconBoldDuotone } from './chat-box-text-bold-duotone';
+import { ChatBoxTextIconFill as ChatBoxTextIconFill } from './chat-box-text-fill';
+import { ChatBoxTextIconFillDuotone as ChatBoxTextIconFillDuotone } from './chat-box-text-fill-duotone';
 
 export interface ChatBoxTextIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChatBoxTextIcon = memo(forwardRef<SVGSVGElement, ChatBoxTextIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChatBoxTextIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChatBoxTextIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChatBoxTextIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChatBoxTextIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChatBoxTextIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChatBoxTextIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChatBoxTextIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChatBoxTextIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChatBoxTextIconFill ref={ref} {...props} />;
+  if (duotone) return <ChatBoxTextIconDuotone ref={ref} {...props} />;
+  return <RegularChatBoxTextIcon ref={ref} {...props} />;
 }));
 
 ChatBoxTextIcon.displayName = 'ChatBoxTextIcon';

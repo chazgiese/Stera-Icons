@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CircleDotsIcon as RegularCircleDotsIcon } from './circle-dots';
-import { CircleDotsIconBold } from './circle-dots-bold';
-import { CircleDotsIconFilled } from './circle-dots-filled';
-import { CircleDotsIconFilltone } from './circle-dots-filltone';
-import { CircleDotsIconLinetone } from './circle-dots-linetone';
+import { CircleDotsIconDuotone as CircleDotsIconDuotone } from './circle-dots-duotone';
+import { CircleDotsIconBold as CircleDotsIconBold } from './circle-dots-bold';
+import { CircleDotsIconBoldDuotone as CircleDotsIconBoldDuotone } from './circle-dots-bold-duotone';
+import { CircleDotsIconFill as CircleDotsIconFill } from './circle-dots-fill';
+import { CircleDotsIconFillDuotone as CircleDotsIconFillDuotone } from './circle-dots-fill-duotone';
 
 export interface CircleDotsIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CircleDotsIcon = memo(forwardRef<SVGSVGElement, CircleDotsIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CircleDotsIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CircleDotsIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CircleDotsIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CircleDotsIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCircleDotsIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CircleDotsIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CircleDotsIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CircleDotsIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CircleDotsIconFill ref={ref} {...props} />;
+  if (duotone) return <CircleDotsIconDuotone ref={ref} {...props} />;
+  return <RegularCircleDotsIcon ref={ref} {...props} />;
 }));
 
 CircleDotsIcon.displayName = 'CircleDotsIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BellDotIcon as RegularBellDotIcon } from './bell-dot';
-import { BellDotIconBold } from './bell-dot-bold';
-import { BellDotIconFilled } from './bell-dot-filled';
-import { BellDotIconFilltone } from './bell-dot-filltone';
-import { BellDotIconLinetone } from './bell-dot-linetone';
+import { BellDotIconDuotone as BellDotIconDuotone } from './bell-dot-duotone';
+import { BellDotIconBold as BellDotIconBold } from './bell-dot-bold';
+import { BellDotIconBoldDuotone as BellDotIconBoldDuotone } from './bell-dot-bold-duotone';
+import { BellDotIconFill as BellDotIconFill } from './bell-dot-fill';
+import { BellDotIconFillDuotone as BellDotIconFillDuotone } from './bell-dot-fill-duotone';
 
 export interface BellDotIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BellDotIcon = memo(forwardRef<SVGSVGElement, BellDotIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BellDotIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BellDotIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BellDotIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BellDotIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBellDotIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BellDotIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BellDotIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BellDotIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BellDotIconFill ref={ref} {...props} />;
+  if (duotone) return <BellDotIconDuotone ref={ref} {...props} />;
+  return <RegularBellDotIcon ref={ref} {...props} />;
 }));
 
 BellDotIcon.displayName = 'BellDotIcon';

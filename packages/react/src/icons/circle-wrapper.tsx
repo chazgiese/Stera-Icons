@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CircleIcon as RegularCircleIcon } from './circle';
-import { CircleIconBold } from './circle-bold';
-import { CircleIconFilled } from './circle-filled';
-import { CircleIconFilltone } from './circle-filltone';
-import { CircleIconLinetone } from './circle-linetone';
+import { CircleIconDuotone as CircleIconDuotone } from './circle-duotone';
+import { CircleIconBold as CircleIconBold } from './circle-bold';
+import { CircleIconBoldDuotone as CircleIconBoldDuotone } from './circle-bold-duotone';
+import { CircleIconFill as CircleIconFill } from './circle-fill';
+import { CircleIconFillDuotone as CircleIconFillDuotone } from './circle-fill-duotone';
 
 export interface CircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CircleIcon = memo(forwardRef<SVGSVGElement, CircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CircleIconFill ref={ref} {...props} />;
+  if (duotone) return <CircleIconDuotone ref={ref} {...props} />;
+  return <RegularCircleIcon ref={ref} {...props} />;
 }));
 
 CircleIcon.displayName = 'CircleIcon';

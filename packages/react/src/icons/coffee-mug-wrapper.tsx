@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CoffeeMugIcon as RegularCoffeeMugIcon } from './coffee-mug';
-import { CoffeeMugIconBold } from './coffee-mug-bold';
-import { CoffeeMugIconFilled } from './coffee-mug-filled';
-import { CoffeeMugIconFilltone } from './coffee-mug-filltone';
-import { CoffeeMugIconLinetone } from './coffee-mug-linetone';
+import { CoffeeMugIconDuotone as CoffeeMugIconDuotone } from './coffee-mug-duotone';
+import { CoffeeMugIconBold as CoffeeMugIconBold } from './coffee-mug-bold';
+import { CoffeeMugIconBoldDuotone as CoffeeMugIconBoldDuotone } from './coffee-mug-bold-duotone';
+import { CoffeeMugIconFill as CoffeeMugIconFill } from './coffee-mug-fill';
+import { CoffeeMugIconFillDuotone as CoffeeMugIconFillDuotone } from './coffee-mug-fill-duotone';
 
 export interface CoffeeMugIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CoffeeMugIcon = memo(forwardRef<SVGSVGElement, CoffeeMugIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CoffeeMugIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CoffeeMugIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CoffeeMugIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CoffeeMugIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCoffeeMugIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CoffeeMugIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CoffeeMugIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CoffeeMugIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CoffeeMugIconFill ref={ref} {...props} />;
+  if (duotone) return <CoffeeMugIconDuotone ref={ref} {...props} />;
+  return <RegularCoffeeMugIcon ref={ref} {...props} />;
 }));
 
 CoffeeMugIcon.displayName = 'CoffeeMugIcon';

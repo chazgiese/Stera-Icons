@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UserSettingsIcon as RegularUserSettingsIcon } from './user-settings';
-import { UserSettingsIconBold } from './user-settings-bold';
-import { UserSettingsIconFilled } from './user-settings-filled';
-import { UserSettingsIconFilltone } from './user-settings-filltone';
-import { UserSettingsIconLinetone } from './user-settings-linetone';
+import { UserSettingsIconDuotone as UserSettingsIconDuotone } from './user-settings-duotone';
+import { UserSettingsIconBold as UserSettingsIconBold } from './user-settings-bold';
+import { UserSettingsIconBoldDuotone as UserSettingsIconBoldDuotone } from './user-settings-bold-duotone';
+import { UserSettingsIconFill as UserSettingsIconFill } from './user-settings-fill';
+import { UserSettingsIconFillDuotone as UserSettingsIconFillDuotone } from './user-settings-fill-duotone';
 
 export interface UserSettingsIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UserSettingsIcon = memo(forwardRef<SVGSVGElement, UserSettingsIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UserSettingsIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UserSettingsIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UserSettingsIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UserSettingsIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUserSettingsIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UserSettingsIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UserSettingsIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UserSettingsIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UserSettingsIconFill ref={ref} {...props} />;
+  if (duotone) return <UserSettingsIconDuotone ref={ref} {...props} />;
+  return <RegularUserSettingsIcon ref={ref} {...props} />;
 }));
 
 UserSettingsIcon.displayName = 'UserSettingsIcon';

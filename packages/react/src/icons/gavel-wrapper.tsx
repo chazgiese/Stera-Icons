@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GavelIcon as RegularGavelIcon } from './gavel';
-import { GavelIconBold } from './gavel-bold';
-import { GavelIconFilled } from './gavel-filled';
-import { GavelIconFilltone } from './gavel-filltone';
-import { GavelIconLinetone } from './gavel-linetone';
+import { GavelIconDuotone as GavelIconDuotone } from './gavel-duotone';
+import { GavelIconBold as GavelIconBold } from './gavel-bold';
+import { GavelIconBoldDuotone as GavelIconBoldDuotone } from './gavel-bold-duotone';
+import { GavelIconFill as GavelIconFill } from './gavel-fill';
+import { GavelIconFillDuotone as GavelIconFillDuotone } from './gavel-fill-duotone';
 
 export interface GavelIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GavelIcon = memo(forwardRef<SVGSVGElement, GavelIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GavelIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GavelIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GavelIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GavelIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGavelIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GavelIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GavelIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GavelIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GavelIconFill ref={ref} {...props} />;
+  if (duotone) return <GavelIconDuotone ref={ref} {...props} />;
+  return <RegularGavelIcon ref={ref} {...props} />;
 }));
 
 GavelIcon.displayName = 'GavelIcon';

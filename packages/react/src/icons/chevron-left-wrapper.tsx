@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronLeftIcon as RegularChevronLeftIcon } from './chevron-left';
-import { ChevronLeftIconBold } from './chevron-left-bold';
-import { ChevronLeftIconFilled } from './chevron-left-filled';
-import { ChevronLeftIconFilltone } from './chevron-left-filltone';
-import { ChevronLeftIconLinetone } from './chevron-left-linetone';
+import { ChevronLeftIconDuotone as ChevronLeftIconDuotone } from './chevron-left-duotone';
+import { ChevronLeftIconBold as ChevronLeftIconBold } from './chevron-left-bold';
+import { ChevronLeftIconBoldDuotone as ChevronLeftIconBoldDuotone } from './chevron-left-bold-duotone';
+import { ChevronLeftIconFill as ChevronLeftIconFill } from './chevron-left-fill';
+import { ChevronLeftIconFillDuotone as ChevronLeftIconFillDuotone } from './chevron-left-fill-duotone';
 
 export interface ChevronLeftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronLeftIcon = memo(forwardRef<SVGSVGElement, ChevronLeftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronLeftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronLeftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronLeftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronLeftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronLeftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronLeftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronLeftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronLeftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronLeftIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronLeftIconDuotone ref={ref} {...props} />;
+  return <RegularChevronLeftIcon ref={ref} {...props} />;
 }));
 
 ChevronLeftIcon.displayName = 'ChevronLeftIcon';

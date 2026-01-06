@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { VideoIcon as RegularVideoIcon } from './video';
-import { VideoIconBold } from './video-bold';
-import { VideoIconFilled } from './video-filled';
-import { VideoIconFilltone } from './video-filltone';
-import { VideoIconLinetone } from './video-linetone';
+import { VideoIconDuotone as VideoIconDuotone } from './video-duotone';
+import { VideoIconBold as VideoIconBold } from './video-bold';
+import { VideoIconBoldDuotone as VideoIconBoldDuotone } from './video-bold-duotone';
+import { VideoIconFill as VideoIconFill } from './video-fill';
+import { VideoIconFillDuotone as VideoIconFillDuotone } from './video-fill-duotone';
 
 export interface VideoIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const VideoIcon = memo(forwardRef<SVGSVGElement, VideoIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <VideoIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <VideoIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <VideoIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <VideoIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularVideoIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <VideoIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <VideoIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <VideoIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <VideoIconFill ref={ref} {...props} />;
+  if (duotone) return <VideoIconDuotone ref={ref} {...props} />;
+  return <RegularVideoIcon ref={ref} {...props} />;
 }));
 
 VideoIcon.displayName = 'VideoIcon';

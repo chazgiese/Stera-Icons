@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DownloadIcon as RegularDownloadIcon } from './download';
-import { DownloadIconBold } from './download-bold';
-import { DownloadIconFilled } from './download-filled';
-import { DownloadIconFilltone } from './download-filltone';
-import { DownloadIconLinetone } from './download-linetone';
+import { DownloadIconDuotone as DownloadIconDuotone } from './download-duotone';
+import { DownloadIconBold as DownloadIconBold } from './download-bold';
+import { DownloadIconBoldDuotone as DownloadIconBoldDuotone } from './download-bold-duotone';
+import { DownloadIconFill as DownloadIconFill } from './download-fill';
+import { DownloadIconFillDuotone as DownloadIconFillDuotone } from './download-fill-duotone';
 
 export interface DownloadIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DownloadIcon = memo(forwardRef<SVGSVGElement, DownloadIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DownloadIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DownloadIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DownloadIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DownloadIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDownloadIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DownloadIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DownloadIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DownloadIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DownloadIconFill ref={ref} {...props} />;
+  if (duotone) return <DownloadIconDuotone ref={ref} {...props} />;
+  return <RegularDownloadIcon ref={ref} {...props} />;
 }));
 
 DownloadIcon.displayName = 'DownloadIcon';

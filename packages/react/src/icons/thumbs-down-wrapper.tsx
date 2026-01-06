@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ThumbsDownIcon as RegularThumbsDownIcon } from './thumbs-down';
-import { ThumbsDownIconBold } from './thumbs-down-bold';
-import { ThumbsDownIconFilled } from './thumbs-down-filled';
-import { ThumbsDownIconFilltone } from './thumbs-down-filltone';
-import { ThumbsDownIconLinetone } from './thumbs-down-linetone';
+import { ThumbsDownIconDuotone as ThumbsDownIconDuotone } from './thumbs-down-duotone';
+import { ThumbsDownIconBold as ThumbsDownIconBold } from './thumbs-down-bold';
+import { ThumbsDownIconBoldDuotone as ThumbsDownIconBoldDuotone } from './thumbs-down-bold-duotone';
+import { ThumbsDownIconFill as ThumbsDownIconFill } from './thumbs-down-fill';
+import { ThumbsDownIconFillDuotone as ThumbsDownIconFillDuotone } from './thumbs-down-fill-duotone';
 
 export interface ThumbsDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ThumbsDownIcon = memo(forwardRef<SVGSVGElement, ThumbsDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ThumbsDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ThumbsDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ThumbsDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ThumbsDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularThumbsDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ThumbsDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ThumbsDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ThumbsDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ThumbsDownIconFill ref={ref} {...props} />;
+  if (duotone) return <ThumbsDownIconDuotone ref={ref} {...props} />;
+  return <RegularThumbsDownIcon ref={ref} {...props} />;
 }));
 
 ThumbsDownIcon.displayName = 'ThumbsDownIcon';

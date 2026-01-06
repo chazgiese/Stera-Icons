@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { KeyIcon as RegularKeyIcon } from './key';
-import { KeyIconBold } from './key-bold';
-import { KeyIconFilled } from './key-filled';
-import { KeyIconFilltone } from './key-filltone';
-import { KeyIconLinetone } from './key-linetone';
+import { KeyIconDuotone as KeyIconDuotone } from './key-duotone';
+import { KeyIconBold as KeyIconBold } from './key-bold';
+import { KeyIconBoldDuotone as KeyIconBoldDuotone } from './key-bold-duotone';
+import { KeyIconFill as KeyIconFill } from './key-fill';
+import { KeyIconFillDuotone as KeyIconFillDuotone } from './key-fill-duotone';
 
 export interface KeyIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const KeyIcon = memo(forwardRef<SVGSVGElement, KeyIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <KeyIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <KeyIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <KeyIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <KeyIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularKeyIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <KeyIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <KeyIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <KeyIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <KeyIconFill ref={ref} {...props} />;
+  if (duotone) return <KeyIconDuotone ref={ref} {...props} />;
+  return <RegularKeyIcon ref={ref} {...props} />;
 }));
 
 KeyIcon.displayName = 'KeyIcon';

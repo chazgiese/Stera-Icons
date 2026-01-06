@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BatteryLowIcon as RegularBatteryLowIcon } from './battery-low';
-import { BatteryLowIconBold } from './battery-low-bold';
-import { BatteryLowIconFilled } from './battery-low-filled';
-import { BatteryLowIconFilltone } from './battery-low-filltone';
-import { BatteryLowIconLinetone } from './battery-low-linetone';
+import { BatteryLowIconDuotone as BatteryLowIconDuotone } from './battery-low-duotone';
+import { BatteryLowIconBold as BatteryLowIconBold } from './battery-low-bold';
+import { BatteryLowIconBoldDuotone as BatteryLowIconBoldDuotone } from './battery-low-bold-duotone';
+import { BatteryLowIconFill as BatteryLowIconFill } from './battery-low-fill';
+import { BatteryLowIconFillDuotone as BatteryLowIconFillDuotone } from './battery-low-fill-duotone';
 
 export interface BatteryLowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BatteryLowIcon = memo(forwardRef<SVGSVGElement, BatteryLowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BatteryLowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BatteryLowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BatteryLowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BatteryLowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBatteryLowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BatteryLowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BatteryLowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BatteryLowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BatteryLowIconFill ref={ref} {...props} />;
+  if (duotone) return <BatteryLowIconDuotone ref={ref} {...props} />;
+  return <RegularBatteryLowIcon ref={ref} {...props} />;
 }));
 
 BatteryLowIcon.displayName = 'BatteryLowIcon';

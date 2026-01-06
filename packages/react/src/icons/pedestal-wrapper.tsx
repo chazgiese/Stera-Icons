@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PedestalIcon as RegularPedestalIcon } from './pedestal';
-import { PedestalIconBold } from './pedestal-bold';
-import { PedestalIconFilled } from './pedestal-filled';
-import { PedestalIconFilltone } from './pedestal-filltone';
-import { PedestalIconLinetone } from './pedestal-linetone';
+import { PedestalIconDuotone as PedestalIconDuotone } from './pedestal-duotone';
+import { PedestalIconBold as PedestalIconBold } from './pedestal-bold';
+import { PedestalIconBoldDuotone as PedestalIconBoldDuotone } from './pedestal-bold-duotone';
+import { PedestalIconFill as PedestalIconFill } from './pedestal-fill';
+import { PedestalIconFillDuotone as PedestalIconFillDuotone } from './pedestal-fill-duotone';
 
 export interface PedestalIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PedestalIcon = memo(forwardRef<SVGSVGElement, PedestalIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PedestalIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PedestalIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PedestalIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PedestalIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPedestalIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PedestalIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PedestalIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PedestalIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PedestalIconFill ref={ref} {...props} />;
+  if (duotone) return <PedestalIconDuotone ref={ref} {...props} />;
+  return <RegularPedestalIcon ref={ref} {...props} />;
 }));
 
 PedestalIcon.displayName = 'PedestalIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ShieldIcon as RegularShieldIcon } from './shield';
-import { ShieldIconBold } from './shield-bold';
-import { ShieldIconFilled } from './shield-filled';
-import { ShieldIconFilltone } from './shield-filltone';
-import { ShieldIconLinetone } from './shield-linetone';
+import { ShieldIconDuotone as ShieldIconDuotone } from './shield-duotone';
+import { ShieldIconBold as ShieldIconBold } from './shield-bold';
+import { ShieldIconBoldDuotone as ShieldIconBoldDuotone } from './shield-bold-duotone';
+import { ShieldIconFill as ShieldIconFill } from './shield-fill';
+import { ShieldIconFillDuotone as ShieldIconFillDuotone } from './shield-fill-duotone';
 
 export interface ShieldIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ShieldIcon = memo(forwardRef<SVGSVGElement, ShieldIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ShieldIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ShieldIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ShieldIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ShieldIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularShieldIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ShieldIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ShieldIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ShieldIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ShieldIconFill ref={ref} {...props} />;
+  if (duotone) return <ShieldIconDuotone ref={ref} {...props} />;
+  return <RegularShieldIcon ref={ref} {...props} />;
 }));
 
 ShieldIcon.displayName = 'ShieldIcon';

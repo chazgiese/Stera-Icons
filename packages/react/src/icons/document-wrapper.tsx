@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DocumentIcon as RegularDocumentIcon } from './document';
-import { DocumentIconBold } from './document-bold';
-import { DocumentIconFilled } from './document-filled';
-import { DocumentIconFilltone } from './document-filltone';
-import { DocumentIconLinetone } from './document-linetone';
+import { DocumentIconDuotone as DocumentIconDuotone } from './document-duotone';
+import { DocumentIconBold as DocumentIconBold } from './document-bold';
+import { DocumentIconBoldDuotone as DocumentIconBoldDuotone } from './document-bold-duotone';
+import { DocumentIconFill as DocumentIconFill } from './document-fill';
+import { DocumentIconFillDuotone as DocumentIconFillDuotone } from './document-fill-duotone';
 
 export interface DocumentIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DocumentIcon = memo(forwardRef<SVGSVGElement, DocumentIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DocumentIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DocumentIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DocumentIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DocumentIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDocumentIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DocumentIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DocumentIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DocumentIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DocumentIconFill ref={ref} {...props} />;
+  if (duotone) return <DocumentIconDuotone ref={ref} {...props} />;
+  return <RegularDocumentIcon ref={ref} {...props} />;
 }));
 
 DocumentIcon.displayName = 'DocumentIcon';

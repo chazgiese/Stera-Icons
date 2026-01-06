@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PhoneOutgoingIcon as RegularPhoneOutgoingIcon } from './phone-outgoing';
-import { PhoneOutgoingIconBold } from './phone-outgoing-bold';
-import { PhoneOutgoingIconFilled } from './phone-outgoing-filled';
-import { PhoneOutgoingIconFilltone } from './phone-outgoing-filltone';
-import { PhoneOutgoingIconLinetone } from './phone-outgoing-linetone';
+import { PhoneOutgoingIconDuotone as PhoneOutgoingIconDuotone } from './phone-outgoing-duotone';
+import { PhoneOutgoingIconBold as PhoneOutgoingIconBold } from './phone-outgoing-bold';
+import { PhoneOutgoingIconBoldDuotone as PhoneOutgoingIconBoldDuotone } from './phone-outgoing-bold-duotone';
+import { PhoneOutgoingIconFill as PhoneOutgoingIconFill } from './phone-outgoing-fill';
+import { PhoneOutgoingIconFillDuotone as PhoneOutgoingIconFillDuotone } from './phone-outgoing-fill-duotone';
 
 export interface PhoneOutgoingIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PhoneOutgoingIcon = memo(forwardRef<SVGSVGElement, PhoneOutgoingIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PhoneOutgoingIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PhoneOutgoingIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PhoneOutgoingIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PhoneOutgoingIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPhoneOutgoingIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PhoneOutgoingIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PhoneOutgoingIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PhoneOutgoingIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PhoneOutgoingIconFill ref={ref} {...props} />;
+  if (duotone) return <PhoneOutgoingIconDuotone ref={ref} {...props} />;
+  return <RegularPhoneOutgoingIcon ref={ref} {...props} />;
 }));
 
 PhoneOutgoingIcon.displayName = 'PhoneOutgoingIcon';

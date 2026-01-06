@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MoreSquareVIcon as RegularMoreSquareVIcon } from './more-square-v';
-import { MoreSquareVIconBold } from './more-square-v-bold';
-import { MoreSquareVIconFilled } from './more-square-v-filled';
-import { MoreSquareVIconFilltone } from './more-square-v-filltone';
-import { MoreSquareVIconLinetone } from './more-square-v-linetone';
+import { MoreSquareVIconDuotone as MoreSquareVIconDuotone } from './more-square-v-duotone';
+import { MoreSquareVIconBold as MoreSquareVIconBold } from './more-square-v-bold';
+import { MoreSquareVIconBoldDuotone as MoreSquareVIconBoldDuotone } from './more-square-v-bold-duotone';
+import { MoreSquareVIconFill as MoreSquareVIconFill } from './more-square-v-fill';
+import { MoreSquareVIconFillDuotone as MoreSquareVIconFillDuotone } from './more-square-v-fill-duotone';
 
 export interface MoreSquareVIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MoreSquareVIcon = memo(forwardRef<SVGSVGElement, MoreSquareVIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MoreSquareVIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MoreSquareVIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MoreSquareVIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MoreSquareVIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMoreSquareVIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MoreSquareVIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MoreSquareVIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MoreSquareVIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MoreSquareVIconFill ref={ref} {...props} />;
+  if (duotone) return <MoreSquareVIconDuotone ref={ref} {...props} />;
+  return <RegularMoreSquareVIcon ref={ref} {...props} />;
 }));
 
 MoreSquareVIcon.displayName = 'MoreSquareVIcon';

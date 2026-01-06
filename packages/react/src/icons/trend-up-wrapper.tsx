@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TrendUpIcon as RegularTrendUpIcon } from './trend-up';
-import { TrendUpIconBold } from './trend-up-bold';
-import { TrendUpIconFilled } from './trend-up-filled';
-import { TrendUpIconFilltone } from './trend-up-filltone';
-import { TrendUpIconLinetone } from './trend-up-linetone';
+import { TrendUpIconDuotone as TrendUpIconDuotone } from './trend-up-duotone';
+import { TrendUpIconBold as TrendUpIconBold } from './trend-up-bold';
+import { TrendUpIconBoldDuotone as TrendUpIconBoldDuotone } from './trend-up-bold-duotone';
+import { TrendUpIconFill as TrendUpIconFill } from './trend-up-fill';
+import { TrendUpIconFillDuotone as TrendUpIconFillDuotone } from './trend-up-fill-duotone';
 
 export interface TrendUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TrendUpIcon = memo(forwardRef<SVGSVGElement, TrendUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TrendUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TrendUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TrendUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TrendUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTrendUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TrendUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TrendUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TrendUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TrendUpIconFill ref={ref} {...props} />;
+  if (duotone) return <TrendUpIconDuotone ref={ref} {...props} />;
+  return <RegularTrendUpIcon ref={ref} {...props} />;
 }));
 
 TrendUpIcon.displayName = 'TrendUpIcon';

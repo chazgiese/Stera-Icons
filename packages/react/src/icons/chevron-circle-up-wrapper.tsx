@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronCircleUpIcon as RegularChevronCircleUpIcon } from './chevron-circle-up';
-import { ChevronCircleUpIconBold } from './chevron-circle-up-bold';
-import { ChevronCircleUpIconFilled } from './chevron-circle-up-filled';
-import { ChevronCircleUpIconFilltone } from './chevron-circle-up-filltone';
-import { ChevronCircleUpIconLinetone } from './chevron-circle-up-linetone';
+import { ChevronCircleUpIconDuotone as ChevronCircleUpIconDuotone } from './chevron-circle-up-duotone';
+import { ChevronCircleUpIconBold as ChevronCircleUpIconBold } from './chevron-circle-up-bold';
+import { ChevronCircleUpIconBoldDuotone as ChevronCircleUpIconBoldDuotone } from './chevron-circle-up-bold-duotone';
+import { ChevronCircleUpIconFill as ChevronCircleUpIconFill } from './chevron-circle-up-fill';
+import { ChevronCircleUpIconFillDuotone as ChevronCircleUpIconFillDuotone } from './chevron-circle-up-fill-duotone';
 
 export interface ChevronCircleUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronCircleUpIcon = memo(forwardRef<SVGSVGElement, ChevronCircleUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronCircleUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronCircleUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronCircleUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronCircleUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronCircleUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronCircleUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronCircleUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronCircleUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronCircleUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronCircleUpIconDuotone ref={ref} {...props} />;
+  return <RegularChevronCircleUpIcon ref={ref} {...props} />;
 }));
 
 ChevronCircleUpIcon.displayName = 'ChevronCircleUpIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MenuSimpleAltIcon as RegularMenuSimpleAltIcon } from './menu-simple-alt';
-import { MenuSimpleAltIconBold } from './menu-simple-alt-bold';
-import { MenuSimpleAltIconFilled } from './menu-simple-alt-filled';
-import { MenuSimpleAltIconFilltone } from './menu-simple-alt-filltone';
-import { MenuSimpleAltIconLinetone } from './menu-simple-alt-linetone';
+import { MenuSimpleAltIconDuotone as MenuSimpleAltIconDuotone } from './menu-simple-alt-duotone';
+import { MenuSimpleAltIconBold as MenuSimpleAltIconBold } from './menu-simple-alt-bold';
+import { MenuSimpleAltIconBoldDuotone as MenuSimpleAltIconBoldDuotone } from './menu-simple-alt-bold-duotone';
+import { MenuSimpleAltIconFill as MenuSimpleAltIconFill } from './menu-simple-alt-fill';
+import { MenuSimpleAltIconFillDuotone as MenuSimpleAltIconFillDuotone } from './menu-simple-alt-fill-duotone';
 
 export interface MenuSimpleAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MenuSimpleAltIcon = memo(forwardRef<SVGSVGElement, MenuSimpleAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MenuSimpleAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MenuSimpleAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MenuSimpleAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MenuSimpleAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMenuSimpleAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MenuSimpleAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MenuSimpleAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MenuSimpleAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MenuSimpleAltIconFill ref={ref} {...props} />;
+  if (duotone) return <MenuSimpleAltIconDuotone ref={ref} {...props} />;
+  return <RegularMenuSimpleAltIcon ref={ref} {...props} />;
 }));
 
 MenuSimpleAltIcon.displayName = 'MenuSimpleAltIcon';

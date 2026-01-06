@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowLineUpIcon as RegularArrowLineUpIcon } from './arrow-line-up';
-import { ArrowLineUpIconBold } from './arrow-line-up-bold';
-import { ArrowLineUpIconFilled } from './arrow-line-up-filled';
-import { ArrowLineUpIconFilltone } from './arrow-line-up-filltone';
-import { ArrowLineUpIconLinetone } from './arrow-line-up-linetone';
+import { ArrowLineUpIconDuotone as ArrowLineUpIconDuotone } from './arrow-line-up-duotone';
+import { ArrowLineUpIconBold as ArrowLineUpIconBold } from './arrow-line-up-bold';
+import { ArrowLineUpIconBoldDuotone as ArrowLineUpIconBoldDuotone } from './arrow-line-up-bold-duotone';
+import { ArrowLineUpIconFill as ArrowLineUpIconFill } from './arrow-line-up-fill';
+import { ArrowLineUpIconFillDuotone as ArrowLineUpIconFillDuotone } from './arrow-line-up-fill-duotone';
 
 export interface ArrowLineUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowLineUpIcon = memo(forwardRef<SVGSVGElement, ArrowLineUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowLineUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowLineUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowLineUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowLineUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowLineUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowLineUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowLineUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowLineUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowLineUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowLineUpIconDuotone ref={ref} {...props} />;
+  return <RegularArrowLineUpIcon ref={ref} {...props} />;
 }));
 
 ArrowLineUpIcon.displayName = 'ArrowLineUpIcon';

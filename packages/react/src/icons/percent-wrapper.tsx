@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PercentIcon as RegularPercentIcon } from './percent';
-import { PercentIconBold } from './percent-bold';
-import { PercentIconFilled } from './percent-filled';
-import { PercentIconFilltone } from './percent-filltone';
-import { PercentIconLinetone } from './percent-linetone';
+import { PercentIconDuotone as PercentIconDuotone } from './percent-duotone';
+import { PercentIconBold as PercentIconBold } from './percent-bold';
+import { PercentIconBoldDuotone as PercentIconBoldDuotone } from './percent-bold-duotone';
+import { PercentIconFill as PercentIconFill } from './percent-fill';
+import { PercentIconFillDuotone as PercentIconFillDuotone } from './percent-fill-duotone';
 
 export interface PercentIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PercentIcon = memo(forwardRef<SVGSVGElement, PercentIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PercentIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PercentIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PercentIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PercentIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPercentIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PercentIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PercentIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PercentIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PercentIconFill ref={ref} {...props} />;
+  if (duotone) return <PercentIconDuotone ref={ref} {...props} />;
+  return <RegularPercentIcon ref={ref} {...props} />;
 }));
 
 PercentIcon.displayName = 'PercentIcon';

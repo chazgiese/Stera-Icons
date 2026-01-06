@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SortIcon as RegularSortIcon } from './sort';
-import { SortIconBold } from './sort-bold';
-import { SortIconFilled } from './sort-filled';
-import { SortIconFilltone } from './sort-filltone';
-import { SortIconLinetone } from './sort-linetone';
+import { SortIconDuotone as SortIconDuotone } from './sort-duotone';
+import { SortIconBold as SortIconBold } from './sort-bold';
+import { SortIconBoldDuotone as SortIconBoldDuotone } from './sort-bold-duotone';
+import { SortIconFill as SortIconFill } from './sort-fill';
+import { SortIconFillDuotone as SortIconFillDuotone } from './sort-fill-duotone';
 
 export interface SortIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SortIcon = memo(forwardRef<SVGSVGElement, SortIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SortIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SortIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SortIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SortIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSortIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SortIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SortIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SortIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SortIconFill ref={ref} {...props} />;
+  if (duotone) return <SortIconDuotone ref={ref} {...props} />;
+  return <RegularSortIcon ref={ref} {...props} />;
 }));
 
 SortIcon.displayName = 'SortIcon';

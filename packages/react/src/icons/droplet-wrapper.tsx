@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DropletIcon as RegularDropletIcon } from './droplet';
-import { DropletIconBold } from './droplet-bold';
-import { DropletIconFilled } from './droplet-filled';
-import { DropletIconFilltone } from './droplet-filltone';
-import { DropletIconLinetone } from './droplet-linetone';
+import { DropletIconDuotone as DropletIconDuotone } from './droplet-duotone';
+import { DropletIconBold as DropletIconBold } from './droplet-bold';
+import { DropletIconBoldDuotone as DropletIconBoldDuotone } from './droplet-bold-duotone';
+import { DropletIconFill as DropletIconFill } from './droplet-fill';
+import { DropletIconFillDuotone as DropletIconFillDuotone } from './droplet-fill-duotone';
 
 export interface DropletIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DropletIcon = memo(forwardRef<SVGSVGElement, DropletIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DropletIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DropletIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DropletIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DropletIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDropletIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DropletIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DropletIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DropletIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DropletIconFill ref={ref} {...props} />;
+  if (duotone) return <DropletIconDuotone ref={ref} {...props} />;
+  return <RegularDropletIcon ref={ref} {...props} />;
 }));
 
 DropletIcon.displayName = 'DropletIcon';

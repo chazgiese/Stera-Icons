@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { QuestionMarkIcon as RegularQuestionMarkIcon } from './question-mark';
-import { QuestionMarkIconBold } from './question-mark-bold';
-import { QuestionMarkIconFilled } from './question-mark-filled';
-import { QuestionMarkIconFilltone } from './question-mark-filltone';
-import { QuestionMarkIconLinetone } from './question-mark-linetone';
+import { QuestionMarkIconDuotone as QuestionMarkIconDuotone } from './question-mark-duotone';
+import { QuestionMarkIconBold as QuestionMarkIconBold } from './question-mark-bold';
+import { QuestionMarkIconBoldDuotone as QuestionMarkIconBoldDuotone } from './question-mark-bold-duotone';
+import { QuestionMarkIconFill as QuestionMarkIconFill } from './question-mark-fill';
+import { QuestionMarkIconFillDuotone as QuestionMarkIconFillDuotone } from './question-mark-fill-duotone';
 
 export interface QuestionMarkIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const QuestionMarkIcon = memo(forwardRef<SVGSVGElement, QuestionMarkIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <QuestionMarkIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <QuestionMarkIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <QuestionMarkIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <QuestionMarkIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularQuestionMarkIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <QuestionMarkIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <QuestionMarkIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <QuestionMarkIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <QuestionMarkIconFill ref={ref} {...props} />;
+  if (duotone) return <QuestionMarkIconDuotone ref={ref} {...props} />;
+  return <RegularQuestionMarkIcon ref={ref} {...props} />;
 }));
 
 QuestionMarkIcon.displayName = 'QuestionMarkIcon';

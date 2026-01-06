@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CardHolderIcon as RegularCardHolderIcon } from './card-holder';
-import { CardHolderIconBold } from './card-holder-bold';
-import { CardHolderIconFilled } from './card-holder-filled';
-import { CardHolderIconFilltone } from './card-holder-filltone';
-import { CardHolderIconLinetone } from './card-holder-linetone';
+import { CardHolderIconDuotone as CardHolderIconDuotone } from './card-holder-duotone';
+import { CardHolderIconBold as CardHolderIconBold } from './card-holder-bold';
+import { CardHolderIconBoldDuotone as CardHolderIconBoldDuotone } from './card-holder-bold-duotone';
+import { CardHolderIconFill as CardHolderIconFill } from './card-holder-fill';
+import { CardHolderIconFillDuotone as CardHolderIconFillDuotone } from './card-holder-fill-duotone';
 
 export interface CardHolderIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CardHolderIcon = memo(forwardRef<SVGSVGElement, CardHolderIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CardHolderIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CardHolderIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CardHolderIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CardHolderIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCardHolderIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CardHolderIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CardHolderIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CardHolderIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CardHolderIconFill ref={ref} {...props} />;
+  if (duotone) return <CardHolderIconDuotone ref={ref} {...props} />;
+  return <RegularCardHolderIcon ref={ref} {...props} />;
 }));
 
 CardHolderIcon.displayName = 'CardHolderIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UserIcon as RegularUserIcon } from './user';
-import { UserIconBold } from './user-bold';
-import { UserIconFilled } from './user-filled';
-import { UserIconFilltone } from './user-filltone';
-import { UserIconLinetone } from './user-linetone';
+import { UserIconDuotone as UserIconDuotone } from './user-duotone';
+import { UserIconBold as UserIconBold } from './user-bold';
+import { UserIconBoldDuotone as UserIconBoldDuotone } from './user-bold-duotone';
+import { UserIconFill as UserIconFill } from './user-fill';
+import { UserIconFillDuotone as UserIconFillDuotone } from './user-fill-duotone';
 
 export interface UserIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UserIcon = memo(forwardRef<SVGSVGElement, UserIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UserIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UserIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UserIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UserIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUserIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UserIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UserIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UserIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UserIconFill ref={ref} {...props} />;
+  if (duotone) return <UserIconDuotone ref={ref} {...props} />;
+  return <RegularUserIcon ref={ref} {...props} />;
 }));
 
 UserIcon.displayName = 'UserIcon';

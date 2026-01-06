@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { Clock10Icon as RegularClock10Icon } from './clock-10';
-import { Clock10IconBold } from './clock-10-bold';
-import { Clock10IconFilled } from './clock-10-filled';
-import { Clock10IconFilltone } from './clock-10-filltone';
-import { Clock10IconLinetone } from './clock-10-linetone';
+import { Clock10IconDuotone as Clock10IconDuotone } from './clock-10-duotone';
+import { Clock10IconBold as Clock10IconBold } from './clock-10-bold';
+import { Clock10IconBoldDuotone as Clock10IconBoldDuotone } from './clock-10-bold-duotone';
+import { Clock10IconFill as Clock10IconFill } from './clock-10-fill';
+import { Clock10IconFillDuotone as Clock10IconFillDuotone } from './clock-10-fill-duotone';
 
 export interface Clock10IconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const Clock10Icon = memo(forwardRef<SVGSVGElement, Clock10IconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <Clock10IconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <Clock10IconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <Clock10IconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <Clock10IconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularClock10Icon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <Clock10IconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <Clock10IconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <Clock10IconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <Clock10IconFill ref={ref} {...props} />;
+  if (duotone) return <Clock10IconDuotone ref={ref} {...props} />;
+  return <RegularClock10Icon ref={ref} {...props} />;
 }));
 
 Clock10Icon.displayName = 'Clock10Icon';

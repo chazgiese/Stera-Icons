@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LayoutGridCircleIcon as RegularLayoutGridCircleIcon } from './layout-grid-circle';
-import { LayoutGridCircleIconBold } from './layout-grid-circle-bold';
-import { LayoutGridCircleIconFilled } from './layout-grid-circle-filled';
-import { LayoutGridCircleIconFilltone } from './layout-grid-circle-filltone';
-import { LayoutGridCircleIconLinetone } from './layout-grid-circle-linetone';
+import { LayoutGridCircleIconDuotone as LayoutGridCircleIconDuotone } from './layout-grid-circle-duotone';
+import { LayoutGridCircleIconBold as LayoutGridCircleIconBold } from './layout-grid-circle-bold';
+import { LayoutGridCircleIconBoldDuotone as LayoutGridCircleIconBoldDuotone } from './layout-grid-circle-bold-duotone';
+import { LayoutGridCircleIconFill as LayoutGridCircleIconFill } from './layout-grid-circle-fill';
+import { LayoutGridCircleIconFillDuotone as LayoutGridCircleIconFillDuotone } from './layout-grid-circle-fill-duotone';
 
 export interface LayoutGridCircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LayoutGridCircleIcon = memo(forwardRef<SVGSVGElement, LayoutGridCircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LayoutGridCircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LayoutGridCircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LayoutGridCircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LayoutGridCircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLayoutGridCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LayoutGridCircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LayoutGridCircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LayoutGridCircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LayoutGridCircleIconFill ref={ref} {...props} />;
+  if (duotone) return <LayoutGridCircleIconDuotone ref={ref} {...props} />;
+  return <RegularLayoutGridCircleIcon ref={ref} {...props} />;
 }));
 
 LayoutGridCircleIcon.displayName = 'LayoutGridCircleIcon';

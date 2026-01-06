@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MicroscopeIcon as RegularMicroscopeIcon } from './microscope';
-import { MicroscopeIconBold } from './microscope-bold';
-import { MicroscopeIconFilled } from './microscope-filled';
-import { MicroscopeIconFilltone } from './microscope-filltone';
-import { MicroscopeIconLinetone } from './microscope-linetone';
+import { MicroscopeIconDuotone as MicroscopeIconDuotone } from './microscope-duotone';
+import { MicroscopeIconBold as MicroscopeIconBold } from './microscope-bold';
+import { MicroscopeIconBoldDuotone as MicroscopeIconBoldDuotone } from './microscope-bold-duotone';
+import { MicroscopeIconFill as MicroscopeIconFill } from './microscope-fill';
+import { MicroscopeIconFillDuotone as MicroscopeIconFillDuotone } from './microscope-fill-duotone';
 
 export interface MicroscopeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MicroscopeIcon = memo(forwardRef<SVGSVGElement, MicroscopeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MicroscopeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MicroscopeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MicroscopeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MicroscopeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMicroscopeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MicroscopeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MicroscopeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MicroscopeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MicroscopeIconFill ref={ref} {...props} />;
+  if (duotone) return <MicroscopeIconDuotone ref={ref} {...props} />;
+  return <RegularMicroscopeIcon ref={ref} {...props} />;
 }));
 
 MicroscopeIcon.displayName = 'MicroscopeIcon';

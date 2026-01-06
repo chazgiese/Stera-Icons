@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GitBranchIcon as RegularGitBranchIcon } from './git-branch';
-import { GitBranchIconBold } from './git-branch-bold';
-import { GitBranchIconFilled } from './git-branch-filled';
-import { GitBranchIconFilltone } from './git-branch-filltone';
-import { GitBranchIconLinetone } from './git-branch-linetone';
+import { GitBranchIconDuotone as GitBranchIconDuotone } from './git-branch-duotone';
+import { GitBranchIconBold as GitBranchIconBold } from './git-branch-bold';
+import { GitBranchIconBoldDuotone as GitBranchIconBoldDuotone } from './git-branch-bold-duotone';
+import { GitBranchIconFill as GitBranchIconFill } from './git-branch-fill';
+import { GitBranchIconFillDuotone as GitBranchIconFillDuotone } from './git-branch-fill-duotone';
 
 export interface GitBranchIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GitBranchIcon = memo(forwardRef<SVGSVGElement, GitBranchIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GitBranchIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GitBranchIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GitBranchIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GitBranchIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGitBranchIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GitBranchIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GitBranchIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GitBranchIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GitBranchIconFill ref={ref} {...props} />;
+  if (duotone) return <GitBranchIconDuotone ref={ref} {...props} />;
+  return <RegularGitBranchIcon ref={ref} {...props} />;
 }));
 
 GitBranchIcon.displayName = 'GitBranchIcon';

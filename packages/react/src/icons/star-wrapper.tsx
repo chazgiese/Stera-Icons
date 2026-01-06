@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { StarIcon as RegularStarIcon } from './star';
-import { StarIconBold } from './star-bold';
-import { StarIconFilled } from './star-filled';
-import { StarIconFilltone } from './star-filltone';
-import { StarIconLinetone } from './star-linetone';
+import { StarIconDuotone as StarIconDuotone } from './star-duotone';
+import { StarIconBold as StarIconBold } from './star-bold';
+import { StarIconBoldDuotone as StarIconBoldDuotone } from './star-bold-duotone';
+import { StarIconFill as StarIconFill } from './star-fill';
+import { StarIconFillDuotone as StarIconFillDuotone } from './star-fill-duotone';
 
 export interface StarIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const StarIcon = memo(forwardRef<SVGSVGElement, StarIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <StarIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <StarIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <StarIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <StarIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularStarIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <StarIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <StarIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <StarIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <StarIconFill ref={ref} {...props} />;
+  if (duotone) return <StarIconDuotone ref={ref} {...props} />;
+  return <RegularStarIcon ref={ref} {...props} />;
 }));
 
 StarIcon.displayName = 'StarIcon';

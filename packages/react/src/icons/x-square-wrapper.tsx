@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { XSquareIcon as RegularXSquareIcon } from './x-square';
-import { XSquareIconBold } from './x-square-bold';
-import { XSquareIconFilled } from './x-square-filled';
-import { XSquareIconFilltone } from './x-square-filltone';
-import { XSquareIconLinetone } from './x-square-linetone';
+import { XSquareIconDuotone as XSquareIconDuotone } from './x-square-duotone';
+import { XSquareIconBold as XSquareIconBold } from './x-square-bold';
+import { XSquareIconBoldDuotone as XSquareIconBoldDuotone } from './x-square-bold-duotone';
+import { XSquareIconFill as XSquareIconFill } from './x-square-fill';
+import { XSquareIconFillDuotone as XSquareIconFillDuotone } from './x-square-fill-duotone';
 
 export interface XSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const XSquareIcon = memo(forwardRef<SVGSVGElement, XSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <XSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <XSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <XSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <XSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularXSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <XSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <XSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <XSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <XSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <XSquareIconDuotone ref={ref} {...props} />;
+  return <RegularXSquareIcon ref={ref} {...props} />;
 }));
 
 XSquareIcon.displayName = 'XSquareIcon';

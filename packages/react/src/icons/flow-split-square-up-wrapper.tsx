@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowSplitSquareUpIcon as RegularFlowSplitSquareUpIcon } from './flow-split-square-up';
-import { FlowSplitSquareUpIconBold } from './flow-split-square-up-bold';
-import { FlowSplitSquareUpIconFilled } from './flow-split-square-up-filled';
-import { FlowSplitSquareUpIconFilltone } from './flow-split-square-up-filltone';
-import { FlowSplitSquareUpIconLinetone } from './flow-split-square-up-linetone';
+import { FlowSplitSquareUpIconDuotone as FlowSplitSquareUpIconDuotone } from './flow-split-square-up-duotone';
+import { FlowSplitSquareUpIconBold as FlowSplitSquareUpIconBold } from './flow-split-square-up-bold';
+import { FlowSplitSquareUpIconBoldDuotone as FlowSplitSquareUpIconBoldDuotone } from './flow-split-square-up-bold-duotone';
+import { FlowSplitSquareUpIconFill as FlowSplitSquareUpIconFill } from './flow-split-square-up-fill';
+import { FlowSplitSquareUpIconFillDuotone as FlowSplitSquareUpIconFillDuotone } from './flow-split-square-up-fill-duotone';
 
 export interface FlowSplitSquareUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowSplitSquareUpIcon = memo(forwardRef<SVGSVGElement, FlowSplitSquareUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowSplitSquareUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowSplitSquareUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowSplitSquareUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowSplitSquareUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowSplitSquareUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowSplitSquareUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowSplitSquareUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowSplitSquareUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowSplitSquareUpIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowSplitSquareUpIconDuotone ref={ref} {...props} />;
+  return <RegularFlowSplitSquareUpIcon ref={ref} {...props} />;
 }));
 
 FlowSplitSquareUpIcon.displayName = 'FlowSplitSquareUpIcon';

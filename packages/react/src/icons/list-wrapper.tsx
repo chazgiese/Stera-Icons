@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListIcon as RegularListIcon } from './list';
-import { ListIconBold } from './list-bold';
-import { ListIconFilled } from './list-filled';
-import { ListIconFilltone } from './list-filltone';
-import { ListIconLinetone } from './list-linetone';
+import { ListIconDuotone as ListIconDuotone } from './list-duotone';
+import { ListIconBold as ListIconBold } from './list-bold';
+import { ListIconBoldDuotone as ListIconBoldDuotone } from './list-bold-duotone';
+import { ListIconFill as ListIconFill } from './list-fill';
+import { ListIconFillDuotone as ListIconFillDuotone } from './list-fill-duotone';
 
 export interface ListIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListIcon = memo(forwardRef<SVGSVGElement, ListIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListIconFill ref={ref} {...props} />;
+  if (duotone) return <ListIconDuotone ref={ref} {...props} />;
+  return <RegularListIcon ref={ref} {...props} />;
 }));
 
 ListIcon.displayName = 'ListIcon';

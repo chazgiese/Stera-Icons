@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ImagePileIcon as RegularImagePileIcon } from './image-pile';
-import { ImagePileIconBold } from './image-pile-bold';
-import { ImagePileIconFilled } from './image-pile-filled';
-import { ImagePileIconFilltone } from './image-pile-filltone';
-import { ImagePileIconLinetone } from './image-pile-linetone';
+import { ImagePileIconDuotone as ImagePileIconDuotone } from './image-pile-duotone';
+import { ImagePileIconBold as ImagePileIconBold } from './image-pile-bold';
+import { ImagePileIconBoldDuotone as ImagePileIconBoldDuotone } from './image-pile-bold-duotone';
+import { ImagePileIconFill as ImagePileIconFill } from './image-pile-fill';
+import { ImagePileIconFillDuotone as ImagePileIconFillDuotone } from './image-pile-fill-duotone';
 
 export interface ImagePileIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ImagePileIcon = memo(forwardRef<SVGSVGElement, ImagePileIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ImagePileIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ImagePileIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ImagePileIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ImagePileIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularImagePileIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ImagePileIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ImagePileIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ImagePileIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ImagePileIconFill ref={ref} {...props} />;
+  if (duotone) return <ImagePileIconDuotone ref={ref} {...props} />;
+  return <RegularImagePileIcon ref={ref} {...props} />;
 }));
 
 ImagePileIcon.displayName = 'ImagePileIcon';

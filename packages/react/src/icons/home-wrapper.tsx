@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HomeIcon as RegularHomeIcon } from './home';
-import { HomeIconBold } from './home-bold';
-import { HomeIconFilled } from './home-filled';
-import { HomeIconFilltone } from './home-filltone';
-import { HomeIconLinetone } from './home-linetone';
+import { HomeIconDuotone as HomeIconDuotone } from './home-duotone';
+import { HomeIconBold as HomeIconBold } from './home-bold';
+import { HomeIconBoldDuotone as HomeIconBoldDuotone } from './home-bold-duotone';
+import { HomeIconFill as HomeIconFill } from './home-fill';
+import { HomeIconFillDuotone as HomeIconFillDuotone } from './home-fill-duotone';
 
 export interface HomeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HomeIcon = memo(forwardRef<SVGSVGElement, HomeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HomeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HomeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HomeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HomeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHomeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HomeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HomeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HomeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HomeIconFill ref={ref} {...props} />;
+  if (duotone) return <HomeIconDuotone ref={ref} {...props} />;
+  return <RegularHomeIcon ref={ref} {...props} />;
 }));
 
 HomeIcon.displayName = 'HomeIcon';

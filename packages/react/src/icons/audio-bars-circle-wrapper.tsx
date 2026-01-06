@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AudioBarsCircleIcon as RegularAudioBarsCircleIcon } from './audio-bars-circle';
-import { AudioBarsCircleIconBold } from './audio-bars-circle-bold';
-import { AudioBarsCircleIconFilled } from './audio-bars-circle-filled';
-import { AudioBarsCircleIconFilltone } from './audio-bars-circle-filltone';
-import { AudioBarsCircleIconLinetone } from './audio-bars-circle-linetone';
+import { AudioBarsCircleIconDuotone as AudioBarsCircleIconDuotone } from './audio-bars-circle-duotone';
+import { AudioBarsCircleIconBold as AudioBarsCircleIconBold } from './audio-bars-circle-bold';
+import { AudioBarsCircleIconBoldDuotone as AudioBarsCircleIconBoldDuotone } from './audio-bars-circle-bold-duotone';
+import { AudioBarsCircleIconFill as AudioBarsCircleIconFill } from './audio-bars-circle-fill';
+import { AudioBarsCircleIconFillDuotone as AudioBarsCircleIconFillDuotone } from './audio-bars-circle-fill-duotone';
 
 export interface AudioBarsCircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AudioBarsCircleIcon = memo(forwardRef<SVGSVGElement, AudioBarsCircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AudioBarsCircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AudioBarsCircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AudioBarsCircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AudioBarsCircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAudioBarsCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AudioBarsCircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AudioBarsCircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AudioBarsCircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AudioBarsCircleIconFill ref={ref} {...props} />;
+  if (duotone) return <AudioBarsCircleIconDuotone ref={ref} {...props} />;
+  return <RegularAudioBarsCircleIcon ref={ref} {...props} />;
 }));
 
 AudioBarsCircleIcon.displayName = 'AudioBarsCircleIcon';

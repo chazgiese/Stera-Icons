@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CursorPointerIcon as RegularCursorPointerIcon } from './cursor-pointer';
-import { CursorPointerIconBold } from './cursor-pointer-bold';
-import { CursorPointerIconFilled } from './cursor-pointer-filled';
-import { CursorPointerIconFilltone } from './cursor-pointer-filltone';
-import { CursorPointerIconLinetone } from './cursor-pointer-linetone';
+import { CursorPointerIconDuotone as CursorPointerIconDuotone } from './cursor-pointer-duotone';
+import { CursorPointerIconBold as CursorPointerIconBold } from './cursor-pointer-bold';
+import { CursorPointerIconBoldDuotone as CursorPointerIconBoldDuotone } from './cursor-pointer-bold-duotone';
+import { CursorPointerIconFill as CursorPointerIconFill } from './cursor-pointer-fill';
+import { CursorPointerIconFillDuotone as CursorPointerIconFillDuotone } from './cursor-pointer-fill-duotone';
 
 export interface CursorPointerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CursorPointerIcon = memo(forwardRef<SVGSVGElement, CursorPointerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CursorPointerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CursorPointerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CursorPointerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CursorPointerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCursorPointerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CursorPointerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CursorPointerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CursorPointerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CursorPointerIconFill ref={ref} {...props} />;
+  if (duotone) return <CursorPointerIconDuotone ref={ref} {...props} />;
+  return <RegularCursorPointerIcon ref={ref} {...props} />;
 }));
 
 CursorPointerIcon.displayName = 'CursorPointerIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PanelsRightTopIcon as RegularPanelsRightTopIcon } from './panels-right-top';
-import { PanelsRightTopIconBold } from './panels-right-top-bold';
-import { PanelsRightTopIconFilled } from './panels-right-top-filled';
-import { PanelsRightTopIconFilltone } from './panels-right-top-filltone';
-import { PanelsRightTopIconLinetone } from './panels-right-top-linetone';
+import { PanelsRightTopIconDuotone as PanelsRightTopIconDuotone } from './panels-right-top-duotone';
+import { PanelsRightTopIconBold as PanelsRightTopIconBold } from './panels-right-top-bold';
+import { PanelsRightTopIconBoldDuotone as PanelsRightTopIconBoldDuotone } from './panels-right-top-bold-duotone';
+import { PanelsRightTopIconFill as PanelsRightTopIconFill } from './panels-right-top-fill';
+import { PanelsRightTopIconFillDuotone as PanelsRightTopIconFillDuotone } from './panels-right-top-fill-duotone';
 
 export interface PanelsRightTopIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PanelsRightTopIcon = memo(forwardRef<SVGSVGElement, PanelsRightTopIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PanelsRightTopIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PanelsRightTopIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PanelsRightTopIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PanelsRightTopIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPanelsRightTopIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PanelsRightTopIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PanelsRightTopIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PanelsRightTopIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PanelsRightTopIconFill ref={ref} {...props} />;
+  if (duotone) return <PanelsRightTopIconDuotone ref={ref} {...props} />;
+  return <RegularPanelsRightTopIcon ref={ref} {...props} />;
 }));
 
 PanelsRightTopIcon.displayName = 'PanelsRightTopIcon';

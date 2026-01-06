@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronFullInwardIcon as RegularChevronFullInwardIcon } from './chevron-full-inward';
-import { ChevronFullInwardIconBold } from './chevron-full-inward-bold';
-import { ChevronFullInwardIconFilled } from './chevron-full-inward-filled';
-import { ChevronFullInwardIconFilltone } from './chevron-full-inward-filltone';
-import { ChevronFullInwardIconLinetone } from './chevron-full-inward-linetone';
+import { ChevronFullInwardIconDuotone as ChevronFullInwardIconDuotone } from './chevron-full-inward-duotone';
+import { ChevronFullInwardIconBold as ChevronFullInwardIconBold } from './chevron-full-inward-bold';
+import { ChevronFullInwardIconBoldDuotone as ChevronFullInwardIconBoldDuotone } from './chevron-full-inward-bold-duotone';
+import { ChevronFullInwardIconFill as ChevronFullInwardIconFill } from './chevron-full-inward-fill';
+import { ChevronFullInwardIconFillDuotone as ChevronFullInwardIconFillDuotone } from './chevron-full-inward-fill-duotone';
 
 export interface ChevronFullInwardIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronFullInwardIcon = memo(forwardRef<SVGSVGElement, ChevronFullInwardIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronFullInwardIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronFullInwardIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronFullInwardIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronFullInwardIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronFullInwardIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronFullInwardIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronFullInwardIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronFullInwardIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronFullInwardIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronFullInwardIconDuotone ref={ref} {...props} />;
+  return <RegularChevronFullInwardIcon ref={ref} {...props} />;
 }));
 
 ChevronFullInwardIcon.displayName = 'ChevronFullInwardIcon';

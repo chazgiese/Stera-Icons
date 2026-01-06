@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { IdHIcon as RegularIdHIcon } from './id-h';
-import { IdHIconBold } from './id-h-bold';
-import { IdHIconFilled } from './id-h-filled';
-import { IdHIconFilltone } from './id-h-filltone';
-import { IdHIconLinetone } from './id-h-linetone';
+import { IdHIconDuotone as IdHIconDuotone } from './id-h-duotone';
+import { IdHIconBold as IdHIconBold } from './id-h-bold';
+import { IdHIconBoldDuotone as IdHIconBoldDuotone } from './id-h-bold-duotone';
+import { IdHIconFill as IdHIconFill } from './id-h-fill';
+import { IdHIconFillDuotone as IdHIconFillDuotone } from './id-h-fill-duotone';
 
 export interface IdHIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const IdHIcon = memo(forwardRef<SVGSVGElement, IdHIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <IdHIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <IdHIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <IdHIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <IdHIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularIdHIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <IdHIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <IdHIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <IdHIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <IdHIconFill ref={ref} {...props} />;
+  if (duotone) return <IdHIconDuotone ref={ref} {...props} />;
+  return <RegularIdHIcon ref={ref} {...props} />;
 }));
 
 IdHIcon.displayName = 'IdHIcon';

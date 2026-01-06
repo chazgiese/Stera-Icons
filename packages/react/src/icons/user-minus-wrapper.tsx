@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UserMinusIcon as RegularUserMinusIcon } from './user-minus';
-import { UserMinusIconBold } from './user-minus-bold';
-import { UserMinusIconFilled } from './user-minus-filled';
-import { UserMinusIconFilltone } from './user-minus-filltone';
-import { UserMinusIconLinetone } from './user-minus-linetone';
+import { UserMinusIconDuotone as UserMinusIconDuotone } from './user-minus-duotone';
+import { UserMinusIconBold as UserMinusIconBold } from './user-minus-bold';
+import { UserMinusIconBoldDuotone as UserMinusIconBoldDuotone } from './user-minus-bold-duotone';
+import { UserMinusIconFill as UserMinusIconFill } from './user-minus-fill';
+import { UserMinusIconFillDuotone as UserMinusIconFillDuotone } from './user-minus-fill-duotone';
 
 export interface UserMinusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UserMinusIcon = memo(forwardRef<SVGSVGElement, UserMinusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UserMinusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UserMinusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UserMinusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UserMinusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUserMinusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UserMinusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UserMinusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UserMinusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UserMinusIconFill ref={ref} {...props} />;
+  if (duotone) return <UserMinusIconDuotone ref={ref} {...props} />;
+  return <RegularUserMinusIcon ref={ref} {...props} />;
 }));
 
 UserMinusIcon.displayName = 'UserMinusIcon';

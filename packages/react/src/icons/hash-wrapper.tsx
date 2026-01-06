@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HashIcon as RegularHashIcon } from './hash';
-import { HashIconBold } from './hash-bold';
-import { HashIconFilled } from './hash-filled';
-import { HashIconFilltone } from './hash-filltone';
-import { HashIconLinetone } from './hash-linetone';
+import { HashIconDuotone as HashIconDuotone } from './hash-duotone';
+import { HashIconBold as HashIconBold } from './hash-bold';
+import { HashIconBoldDuotone as HashIconBoldDuotone } from './hash-bold-duotone';
+import { HashIconFill as HashIconFill } from './hash-fill';
+import { HashIconFillDuotone as HashIconFillDuotone } from './hash-fill-duotone';
 
 export interface HashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HashIcon = memo(forwardRef<SVGSVGElement, HashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HashIconFill ref={ref} {...props} />;
+  if (duotone) return <HashIconDuotone ref={ref} {...props} />;
+  return <RegularHashIcon ref={ref} {...props} />;
 }));
 
 HashIcon.displayName = 'HashIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SpinnerIcon as RegularSpinnerIcon } from './spinner';
-import { SpinnerIconBold } from './spinner-bold';
-import { SpinnerIconFilled } from './spinner-filled';
-import { SpinnerIconFilltone } from './spinner-filltone';
-import { SpinnerIconLinetone } from './spinner-linetone';
+import { SpinnerIconDuotone as SpinnerIconDuotone } from './spinner-duotone';
+import { SpinnerIconBold as SpinnerIconBold } from './spinner-bold';
+import { SpinnerIconBoldDuotone as SpinnerIconBoldDuotone } from './spinner-bold-duotone';
+import { SpinnerIconFill as SpinnerIconFill } from './spinner-fill';
+import { SpinnerIconFillDuotone as SpinnerIconFillDuotone } from './spinner-fill-duotone';
 
 export interface SpinnerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SpinnerIcon = memo(forwardRef<SVGSVGElement, SpinnerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SpinnerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SpinnerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SpinnerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SpinnerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSpinnerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SpinnerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SpinnerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SpinnerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SpinnerIconFill ref={ref} {...props} />;
+  if (duotone) return <SpinnerIconDuotone ref={ref} {...props} />;
+  return <RegularSpinnerIcon ref={ref} {...props} />;
 }));
 
 SpinnerIcon.displayName = 'SpinnerIcon';

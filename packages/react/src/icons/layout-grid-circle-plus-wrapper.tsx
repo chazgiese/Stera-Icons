@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LayoutGridCirclePlusIcon as RegularLayoutGridCirclePlusIcon } from './layout-grid-circle-plus';
-import { LayoutGridCirclePlusIconBold } from './layout-grid-circle-plus-bold';
-import { LayoutGridCirclePlusIconFilled } from './layout-grid-circle-plus-filled';
-import { LayoutGridCirclePlusIconFilltone } from './layout-grid-circle-plus-filltone';
-import { LayoutGridCirclePlusIconLinetone } from './layout-grid-circle-plus-linetone';
+import { LayoutGridCirclePlusIconDuotone as LayoutGridCirclePlusIconDuotone } from './layout-grid-circle-plus-duotone';
+import { LayoutGridCirclePlusIconBold as LayoutGridCirclePlusIconBold } from './layout-grid-circle-plus-bold';
+import { LayoutGridCirclePlusIconBoldDuotone as LayoutGridCirclePlusIconBoldDuotone } from './layout-grid-circle-plus-bold-duotone';
+import { LayoutGridCirclePlusIconFill as LayoutGridCirclePlusIconFill } from './layout-grid-circle-plus-fill';
+import { LayoutGridCirclePlusIconFillDuotone as LayoutGridCirclePlusIconFillDuotone } from './layout-grid-circle-plus-fill-duotone';
 
 export interface LayoutGridCirclePlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LayoutGridCirclePlusIcon = memo(forwardRef<SVGSVGElement, LayoutGridCirclePlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LayoutGridCirclePlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LayoutGridCirclePlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LayoutGridCirclePlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LayoutGridCirclePlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLayoutGridCirclePlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LayoutGridCirclePlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LayoutGridCirclePlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LayoutGridCirclePlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LayoutGridCirclePlusIconFill ref={ref} {...props} />;
+  if (duotone) return <LayoutGridCirclePlusIconDuotone ref={ref} {...props} />;
+  return <RegularLayoutGridCirclePlusIcon ref={ref} {...props} />;
 }));
 
 LayoutGridCirclePlusIcon.displayName = 'LayoutGridCirclePlusIcon';

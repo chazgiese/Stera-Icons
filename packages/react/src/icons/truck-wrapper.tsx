@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TruckIcon as RegularTruckIcon } from './truck';
-import { TruckIconBold } from './truck-bold';
-import { TruckIconFilled } from './truck-filled';
-import { TruckIconFilltone } from './truck-filltone';
-import { TruckIconLinetone } from './truck-linetone';
+import { TruckIconDuotone as TruckIconDuotone } from './truck-duotone';
+import { TruckIconBold as TruckIconBold } from './truck-bold';
+import { TruckIconBoldDuotone as TruckIconBoldDuotone } from './truck-bold-duotone';
+import { TruckIconFill as TruckIconFill } from './truck-fill';
+import { TruckIconFillDuotone as TruckIconFillDuotone } from './truck-fill-duotone';
 
 export interface TruckIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TruckIcon = memo(forwardRef<SVGSVGElement, TruckIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TruckIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TruckIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TruckIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TruckIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTruckIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TruckIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TruckIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TruckIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TruckIconFill ref={ref} {...props} />;
+  if (duotone) return <TruckIconDuotone ref={ref} {...props} />;
+  return <RegularTruckIcon ref={ref} {...props} />;
 }));
 
 TruckIcon.displayName = 'TruckIcon';

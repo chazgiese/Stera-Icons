@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FolderOpenIcon as RegularFolderOpenIcon } from './folder-open';
-import { FolderOpenIconBold } from './folder-open-bold';
-import { FolderOpenIconFilled } from './folder-open-filled';
-import { FolderOpenIconFilltone } from './folder-open-filltone';
-import { FolderOpenIconLinetone } from './folder-open-linetone';
+import { FolderOpenIconDuotone as FolderOpenIconDuotone } from './folder-open-duotone';
+import { FolderOpenIconBold as FolderOpenIconBold } from './folder-open-bold';
+import { FolderOpenIconBoldDuotone as FolderOpenIconBoldDuotone } from './folder-open-bold-duotone';
+import { FolderOpenIconFill as FolderOpenIconFill } from './folder-open-fill';
+import { FolderOpenIconFillDuotone as FolderOpenIconFillDuotone } from './folder-open-fill-duotone';
 
 export interface FolderOpenIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FolderOpenIcon = memo(forwardRef<SVGSVGElement, FolderOpenIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FolderOpenIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FolderOpenIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FolderOpenIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FolderOpenIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFolderOpenIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FolderOpenIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FolderOpenIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FolderOpenIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FolderOpenIconFill ref={ref} {...props} />;
+  if (duotone) return <FolderOpenIconDuotone ref={ref} {...props} />;
+  return <RegularFolderOpenIcon ref={ref} {...props} />;
 }));
 
 FolderOpenIcon.displayName = 'FolderOpenIcon';

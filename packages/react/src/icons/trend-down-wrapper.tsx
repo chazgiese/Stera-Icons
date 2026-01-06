@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TrendDownIcon as RegularTrendDownIcon } from './trend-down';
-import { TrendDownIconBold } from './trend-down-bold';
-import { TrendDownIconFilled } from './trend-down-filled';
-import { TrendDownIconFilltone } from './trend-down-filltone';
-import { TrendDownIconLinetone } from './trend-down-linetone';
+import { TrendDownIconDuotone as TrendDownIconDuotone } from './trend-down-duotone';
+import { TrendDownIconBold as TrendDownIconBold } from './trend-down-bold';
+import { TrendDownIconBoldDuotone as TrendDownIconBoldDuotone } from './trend-down-bold-duotone';
+import { TrendDownIconFill as TrendDownIconFill } from './trend-down-fill';
+import { TrendDownIconFillDuotone as TrendDownIconFillDuotone } from './trend-down-fill-duotone';
 
 export interface TrendDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TrendDownIcon = memo(forwardRef<SVGSVGElement, TrendDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TrendDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TrendDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TrendDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TrendDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTrendDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TrendDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TrendDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TrendDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TrendDownIconFill ref={ref} {...props} />;
+  if (duotone) return <TrendDownIconDuotone ref={ref} {...props} />;
+  return <RegularTrendDownIcon ref={ref} {...props} />;
 }));
 
 TrendDownIcon.displayName = 'TrendDownIcon';

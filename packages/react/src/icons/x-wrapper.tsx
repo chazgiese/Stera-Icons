@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { XIcon as RegularXIcon } from './x';
-import { XIconBold } from './x-bold';
-import { XIconFilled } from './x-filled';
-import { XIconFilltone } from './x-filltone';
-import { XIconLinetone } from './x-linetone';
+import { XIconDuotone as XIconDuotone } from './x-duotone';
+import { XIconBold as XIconBold } from './x-bold';
+import { XIconBoldDuotone as XIconBoldDuotone } from './x-bold-duotone';
+import { XIconFill as XIconFill } from './x-fill';
+import { XIconFillDuotone as XIconFillDuotone } from './x-fill-duotone';
 
 export interface XIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const XIcon = memo(forwardRef<SVGSVGElement, XIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <XIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <XIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <XIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <XIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularXIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <XIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <XIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <XIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <XIconFill ref={ref} {...props} />;
+  if (duotone) return <XIconDuotone ref={ref} {...props} />;
+  return <RegularXIcon ref={ref} {...props} />;
 }));
 
 XIcon.displayName = 'XIcon';

@@ -1,0 +1,40 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const UserCircleDashedIconFillDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M3.128 16.726A1 1 0 0 1 4.516 17q.173.256.363.5-.418.54-.753 1.139a1 1 0 0 0-.126.485v.018c0 .256.1.502.275.687a11 11 0 0 1-1.421-1.717 1 1 0 0 1 .274-1.386M19.484 17a1 1 0 0 1 1.662 1.112c-.415.62-.893 1.195-1.422 1.717a1 1 0 0 0 .276-.687v-.018a1 1 0 0 0-.126-.485q-.335-.6-.754-1.139a9 9 0 0 0 .364-.5M1.209 9.854a1 1 0 0 1 1.962.388A9 9 0 0 0 3 12q.002.904.17 1.758a1 1 0 1 1-1.961.388A11 11 0 0 1 1 12q.002-1.1.209-2.146M21.615 9.067a1 1 0 0 1 1.176.787Q22.998 10.9 23 12q-.002 1.1-.209 2.146a1 1 0 0 1-1.962-.388Q21 12.904 21 12q-.002-.904-.17-1.758a1 1 0 0 1 .785-1.175M5.888 2.854A1 1 0 1 1 7 4.516 9.1 9.1 0 0 0 4.516 7a1 1 0 0 1-1.662-1.112 11.1 11.1 0 0 1 3.034-3.034M16.726 3.128a1 1 0 0 1 1.386-.274c1.2.802 2.232 1.835 3.035 3.034A1 1 0 1 1 19.484 7 9.1 9.1 0 0 0 17 4.516a1 1 0 0 1-.274-1.388M12 1q1.1.002 2.146.209a1 1 0 0 1-.388 1.962A9 9 0 0 0 12 3q-.904.002-1.758.17a1 1 0 1 1-.388-1.961A11 11 0 0 1 12 1" />
+        </g>
+        <path
+          fill="currentColor"
+          d="M12 6.5a4.5 4.5 0 0 1 2.867 7.968 9.03 9.03 0 0 1 5.007 4.17 1 1 0 0 1 .126.486v.018a1 1 0 0 1-.3.713A10.97 10.97 0 0 1 12 23c-2.998 0-5.717-1.2-7.7-3.145a1 1 0 0 1-.3-.713v-.018a1 1 0 0 1 .126-.485 9.03 9.03 0 0 1 5.006-4.171A4.5 4.5 0 0 1 12 6.5"
+        />
+      </svg>
+    ))
+);
+UserCircleDashedIconFillDuotone.displayName = "UserCircleDashedIconFillDuotone";
+export { UserCircleDashedIconFillDuotone };

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CirclesThreeIcon as RegularCirclesThreeIcon } from './circles-three';
-import { CirclesThreeIconBold } from './circles-three-bold';
-import { CirclesThreeIconFilled } from './circles-three-filled';
-import { CirclesThreeIconFilltone } from './circles-three-filltone';
-import { CirclesThreeIconLinetone } from './circles-three-linetone';
+import { CirclesThreeIconDuotone as CirclesThreeIconDuotone } from './circles-three-duotone';
+import { CirclesThreeIconBold as CirclesThreeIconBold } from './circles-three-bold';
+import { CirclesThreeIconBoldDuotone as CirclesThreeIconBoldDuotone } from './circles-three-bold-duotone';
+import { CirclesThreeIconFill as CirclesThreeIconFill } from './circles-three-fill';
+import { CirclesThreeIconFillDuotone as CirclesThreeIconFillDuotone } from './circles-three-fill-duotone';
 
 export interface CirclesThreeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CirclesThreeIcon = memo(forwardRef<SVGSVGElement, CirclesThreeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CirclesThreeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CirclesThreeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CirclesThreeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CirclesThreeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCirclesThreeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CirclesThreeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CirclesThreeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CirclesThreeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CirclesThreeIconFill ref={ref} {...props} />;
+  if (duotone) return <CirclesThreeIconDuotone ref={ref} {...props} />;
+  return <RegularCirclesThreeIcon ref={ref} {...props} />;
 }));
 
 CirclesThreeIcon.displayName = 'CirclesThreeIcon';

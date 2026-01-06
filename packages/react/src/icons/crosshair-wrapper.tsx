@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CrosshairIcon as RegularCrosshairIcon } from './crosshair';
-import { CrosshairIconBold } from './crosshair-bold';
-import { CrosshairIconFilled } from './crosshair-filled';
-import { CrosshairIconFilltone } from './crosshair-filltone';
-import { CrosshairIconLinetone } from './crosshair-linetone';
+import { CrosshairIconDuotone as CrosshairIconDuotone } from './crosshair-duotone';
+import { CrosshairIconBold as CrosshairIconBold } from './crosshair-bold';
+import { CrosshairIconBoldDuotone as CrosshairIconBoldDuotone } from './crosshair-bold-duotone';
+import { CrosshairIconFill as CrosshairIconFill } from './crosshair-fill';
+import { CrosshairIconFillDuotone as CrosshairIconFillDuotone } from './crosshair-fill-duotone';
 
 export interface CrosshairIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CrosshairIcon = memo(forwardRef<SVGSVGElement, CrosshairIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CrosshairIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CrosshairIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CrosshairIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CrosshairIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCrosshairIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CrosshairIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CrosshairIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CrosshairIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CrosshairIconFill ref={ref} {...props} />;
+  if (duotone) return <CrosshairIconDuotone ref={ref} {...props} />;
+  return <RegularCrosshairIcon ref={ref} {...props} />;
 }));
 
 CrosshairIcon.displayName = 'CrosshairIcon';

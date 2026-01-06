@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowBigLeftIcon as RegularArrowBigLeftIcon } from './arrow-big-left';
-import { ArrowBigLeftIconBold } from './arrow-big-left-bold';
-import { ArrowBigLeftIconFilled } from './arrow-big-left-filled';
-import { ArrowBigLeftIconFilltone } from './arrow-big-left-filltone';
-import { ArrowBigLeftIconLinetone } from './arrow-big-left-linetone';
+import { ArrowBigLeftIconDuotone as ArrowBigLeftIconDuotone } from './arrow-big-left-duotone';
+import { ArrowBigLeftIconBold as ArrowBigLeftIconBold } from './arrow-big-left-bold';
+import { ArrowBigLeftIconBoldDuotone as ArrowBigLeftIconBoldDuotone } from './arrow-big-left-bold-duotone';
+import { ArrowBigLeftIconFill as ArrowBigLeftIconFill } from './arrow-big-left-fill';
+import { ArrowBigLeftIconFillDuotone as ArrowBigLeftIconFillDuotone } from './arrow-big-left-fill-duotone';
 
 export interface ArrowBigLeftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowBigLeftIcon = memo(forwardRef<SVGSVGElement, ArrowBigLeftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowBigLeftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowBigLeftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowBigLeftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowBigLeftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowBigLeftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowBigLeftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowBigLeftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowBigLeftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowBigLeftIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowBigLeftIconDuotone ref={ref} {...props} />;
+  return <RegularArrowBigLeftIcon ref={ref} {...props} />;
 }));
 
 ArrowBigLeftIcon.displayName = 'ArrowBigLeftIcon';

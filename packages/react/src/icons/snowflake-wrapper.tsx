@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SnowflakeIcon as RegularSnowflakeIcon } from './snowflake';
-import { SnowflakeIconBold } from './snowflake-bold';
-import { SnowflakeIconFilled } from './snowflake-filled';
-import { SnowflakeIconFilltone } from './snowflake-filltone';
-import { SnowflakeIconLinetone } from './snowflake-linetone';
+import { SnowflakeIconDuotone as SnowflakeIconDuotone } from './snowflake-duotone';
+import { SnowflakeIconBold as SnowflakeIconBold } from './snowflake-bold';
+import { SnowflakeIconBoldDuotone as SnowflakeIconBoldDuotone } from './snowflake-bold-duotone';
+import { SnowflakeIconFill as SnowflakeIconFill } from './snowflake-fill';
+import { SnowflakeIconFillDuotone as SnowflakeIconFillDuotone } from './snowflake-fill-duotone';
 
 export interface SnowflakeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SnowflakeIcon = memo(forwardRef<SVGSVGElement, SnowflakeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SnowflakeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SnowflakeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SnowflakeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SnowflakeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSnowflakeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SnowflakeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SnowflakeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SnowflakeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SnowflakeIconFill ref={ref} {...props} />;
+  if (duotone) return <SnowflakeIconDuotone ref={ref} {...props} />;
+  return <RegularSnowflakeIcon ref={ref} {...props} />;
 }));
 
 SnowflakeIcon.displayName = 'SnowflakeIcon';

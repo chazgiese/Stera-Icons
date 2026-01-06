@@ -1,0 +1,50 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const IdHIconDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M19 3.25A3.75 3.75 0 0 1 22.75 7v10A3.75 3.75 0 0 1 19 20.75H5A3.75 3.75 0 0 1 1.25 17V7A3.75 3.75 0 0 1 5 3.25zM5 4.75A2.25 2.25 0 0 0 2.75 7v10A2.25 2.25 0 0 0 5 19.25h14A2.25 2.25 0 0 0 21.25 17V7A2.25 2.25 0 0 0 19 4.75z"
+          clipRule="evenodd"
+          opacity={0.4}
+        />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M8.829 8.25a2.75 2.75 0 0 1 2.75 2.75c0 .713-.274 1.36-.72 1.85a3.76 3.76 0 0 1 1.506 1.9.75.75 0 1 1-1.414.5 2.251 2.251 0 0 0-4.244 0 .75.75 0 1 1-1.414-.5 3.76 3.76 0 0 1 1.506-1.9 2.74 2.74 0 0 1-.72-1.85 2.75 2.75 0 0 1 2.75-2.75m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5"
+          clipRule="evenodd"
+        />
+        <path
+          fill="currentColor"
+          d="M18 13.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5zM18 9.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5z"
+        />
+      </svg>
+    ))
+);
+IdHIconDuotone.displayName = "IdHIconDuotone";
+export { IdHIconDuotone };

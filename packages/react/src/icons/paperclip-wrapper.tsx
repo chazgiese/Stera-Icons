@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PaperclipIcon as RegularPaperclipIcon } from './paperclip';
-import { PaperclipIconBold } from './paperclip-bold';
-import { PaperclipIconFilled } from './paperclip-filled';
-import { PaperclipIconFilltone } from './paperclip-filltone';
-import { PaperclipIconLinetone } from './paperclip-linetone';
+import { PaperclipIconDuotone as PaperclipIconDuotone } from './paperclip-duotone';
+import { PaperclipIconBold as PaperclipIconBold } from './paperclip-bold';
+import { PaperclipIconBoldDuotone as PaperclipIconBoldDuotone } from './paperclip-bold-duotone';
+import { PaperclipIconFill as PaperclipIconFill } from './paperclip-fill';
+import { PaperclipIconFillDuotone as PaperclipIconFillDuotone } from './paperclip-fill-duotone';
 
 export interface PaperclipIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PaperclipIcon = memo(forwardRef<SVGSVGElement, PaperclipIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PaperclipIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PaperclipIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PaperclipIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PaperclipIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPaperclipIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PaperclipIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PaperclipIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PaperclipIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PaperclipIconFill ref={ref} {...props} />;
+  if (duotone) return <PaperclipIconDuotone ref={ref} {...props} />;
+  return <RegularPaperclipIcon ref={ref} {...props} />;
 }));
 
 PaperclipIcon.displayName = 'PaperclipIcon';

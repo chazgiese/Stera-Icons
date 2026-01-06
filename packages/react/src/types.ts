@@ -1,17 +1,20 @@
 import { SVGProps } from 'react';
 
-export type IconVariant = 'regular' | 'bold' | 'filled' | 'filltone' | 'linetone';
+export type IconWeight = 'regular' | 'bold' | 'fill';
 
 export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   size?: number | string;
   color?: string;
+  weight?: IconWeight;
+  duotone?: boolean;
   'aria-label'?: string;
   'aria-hidden'?: boolean;
 }
 
 export interface IconMetadata {
   name: string;
-  variant: 'regular' | 'bold' | 'filled' | 'filltone' | 'linetone';
+  weight: 'regular' | 'bold' | 'fill';
+  duotone: boolean;
   tags: string[];
   componentName: string;
   fileName: string;
@@ -29,7 +32,10 @@ export interface IconsExport {
     name: string;
     tags: string[];
     variants: Array<{
-      variant: 'Bold' | 'Fill' | 'Filltone' | 'Linetone' | 'Regular';
+      variant: {
+        weight: 'Regular' | 'Bold' | 'Fill';
+        duotone: boolean;
+      };
       svg: string;
       hash: string;
     }>;

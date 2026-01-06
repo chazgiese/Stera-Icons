@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BoltIcon as RegularBoltIcon } from './bolt';
-import { BoltIconBold } from './bolt-bold';
-import { BoltIconFilled } from './bolt-filled';
-import { BoltIconFilltone } from './bolt-filltone';
-import { BoltIconLinetone } from './bolt-linetone';
+import { BoltIconDuotone as BoltIconDuotone } from './bolt-duotone';
+import { BoltIconBold as BoltIconBold } from './bolt-bold';
+import { BoltIconBoldDuotone as BoltIconBoldDuotone } from './bolt-bold-duotone';
+import { BoltIconFill as BoltIconFill } from './bolt-fill';
+import { BoltIconFillDuotone as BoltIconFillDuotone } from './bolt-fill-duotone';
 
 export interface BoltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BoltIcon = memo(forwardRef<SVGSVGElement, BoltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BoltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BoltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BoltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BoltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBoltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BoltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BoltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BoltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BoltIconFill ref={ref} {...props} />;
+  if (duotone) return <BoltIconDuotone ref={ref} {...props} />;
+  return <RegularBoltIcon ref={ref} {...props} />;
 }));
 
 BoltIcon.displayName = 'BoltIcon';

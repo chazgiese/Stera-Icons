@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DatabaseIcon as RegularDatabaseIcon } from './database';
-import { DatabaseIconBold } from './database-bold';
-import { DatabaseIconFilled } from './database-filled';
-import { DatabaseIconFilltone } from './database-filltone';
-import { DatabaseIconLinetone } from './database-linetone';
+import { DatabaseIconDuotone as DatabaseIconDuotone } from './database-duotone';
+import { DatabaseIconBold as DatabaseIconBold } from './database-bold';
+import { DatabaseIconBoldDuotone as DatabaseIconBoldDuotone } from './database-bold-duotone';
+import { DatabaseIconFill as DatabaseIconFill } from './database-fill';
+import { DatabaseIconFillDuotone as DatabaseIconFillDuotone } from './database-fill-duotone';
 
 export interface DatabaseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DatabaseIcon = memo(forwardRef<SVGSVGElement, DatabaseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DatabaseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DatabaseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DatabaseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DatabaseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDatabaseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DatabaseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DatabaseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DatabaseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DatabaseIconFill ref={ref} {...props} />;
+  if (duotone) return <DatabaseIconDuotone ref={ref} {...props} />;
+  return <RegularDatabaseIcon ref={ref} {...props} />;
 }));
 
 DatabaseIcon.displayName = 'DatabaseIcon';

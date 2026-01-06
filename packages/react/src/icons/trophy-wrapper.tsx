@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TrophyIcon as RegularTrophyIcon } from './trophy';
-import { TrophyIconBold } from './trophy-bold';
-import { TrophyIconFilled } from './trophy-filled';
-import { TrophyIconFilltone } from './trophy-filltone';
-import { TrophyIconLinetone } from './trophy-linetone';
+import { TrophyIconDuotone as TrophyIconDuotone } from './trophy-duotone';
+import { TrophyIconBold as TrophyIconBold } from './trophy-bold';
+import { TrophyIconBoldDuotone as TrophyIconBoldDuotone } from './trophy-bold-duotone';
+import { TrophyIconFill as TrophyIconFill } from './trophy-fill';
+import { TrophyIconFillDuotone as TrophyIconFillDuotone } from './trophy-fill-duotone';
 
 export interface TrophyIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TrophyIcon = memo(forwardRef<SVGSVGElement, TrophyIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TrophyIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TrophyIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TrophyIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TrophyIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTrophyIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TrophyIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TrophyIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TrophyIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TrophyIconFill ref={ref} {...props} />;
+  if (duotone) return <TrophyIconDuotone ref={ref} {...props} />;
+  return <RegularTrophyIcon ref={ref} {...props} />;
 }));
 
 TrophyIcon.displayName = 'TrophyIcon';

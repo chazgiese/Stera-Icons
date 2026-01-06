@@ -1,0 +1,44 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const PlayRectangleIconBoldDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M14 3c1.383 0 2.481 0 3.365.071.896.073 1.66.227 2.359.583a6 6 0 0 1 2.622 2.622c.356.7.51 1.463.583 2.359C23 9.519 23 10.617 23 12s0 2.481-.071 3.365c-.073.896-.227 1.66-.583 2.359a6 6 0 0 1-2.622 2.622c-.7.356-1.463.51-2.359.583C16.481 21 15.384 21 14 21h-4c-1.384 0-2.481 0-3.365-.071-.896-.073-1.66-.227-2.359-.583a6 6 0 0 1-2.622-2.622c-.356-.7-.51-1.463-.583-2.359C1 14.481 1 13.383 1 12s0-2.481.071-3.365c.073-.896.227-1.66.583-2.359a6 6 0 0 1 2.622-2.622c.7-.356 1.463-.51 2.359-.583C7.519 3 8.616 3 10 3zm-4 2c-1.416 0-2.419 0-3.202.064-.772.064-1.244.183-1.614.372a4 4 0 0 0-1.748 1.748c-.19.37-.308.842-.372 1.614C3 9.58 3 10.584 3 12s0 2.419.064 3.202c.064.772.183 1.244.372 1.614a4 4 0 0 0 1.748 1.749c.37.188.842.307 1.614.37C7.58 19 8.584 19 10 19h4c1.416 0 2.419 0 3.202-.064.772-.064 1.244-.183 1.614-.372a4 4 0 0 0 1.749-1.748c.188-.37.307-.842.37-1.614C21 14.42 21 13.416 21 12s0-2.419-.064-3.202c-.064-.772-.183-1.244-.372-1.614a4 4 0 0 0-1.748-1.748c-.37-.19-.842-.308-1.614-.372C16.42 5 15.416 5 14 5z"
+          clipRule="evenodd"
+          opacity={0.4}
+        />
+        <path
+          fill="currentColor"
+          d="M9.69 6.87c.335-.02.74.25 1.547.788l4.516 3.011c.668.445 1.002.668 1.118.948a1 1 0 0 1 0 .766c-.116.28-.45.503-1.118.948l-4.516 3.01c-.808.54-1.212.809-1.547.789a1 1 0 0 1-.738-.396c-.202-.267-.202-.753-.202-1.723V8.989c0-.97 0-1.456.202-1.723.177-.234.447-.378.738-.396"
+        />
+      </svg>
+    ))
+);
+PlayRectangleIconBoldDuotone.displayName = "PlayRectangleIconBoldDuotone";
+export { PlayRectangleIconBoldDuotone };

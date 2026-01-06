@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MoveIcon as RegularMoveIcon } from './move';
-import { MoveIconBold } from './move-bold';
-import { MoveIconFilled } from './move-filled';
-import { MoveIconFilltone } from './move-filltone';
-import { MoveIconLinetone } from './move-linetone';
+import { MoveIconDuotone as MoveIconDuotone } from './move-duotone';
+import { MoveIconBold as MoveIconBold } from './move-bold';
+import { MoveIconBoldDuotone as MoveIconBoldDuotone } from './move-bold-duotone';
+import { MoveIconFill as MoveIconFill } from './move-fill';
+import { MoveIconFillDuotone as MoveIconFillDuotone } from './move-fill-duotone';
 
 export interface MoveIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MoveIcon = memo(forwardRef<SVGSVGElement, MoveIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MoveIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MoveIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MoveIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MoveIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMoveIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MoveIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MoveIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MoveIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MoveIconFill ref={ref} {...props} />;
+  if (duotone) return <MoveIconDuotone ref={ref} {...props} />;
+  return <RegularMoveIcon ref={ref} {...props} />;
 }));
 
 MoveIcon.displayName = 'MoveIcon';

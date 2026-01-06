@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChatBubbleDotsIcon as RegularChatBubbleDotsIcon } from './chat-bubble-dots';
-import { ChatBubbleDotsIconBold } from './chat-bubble-dots-bold';
-import { ChatBubbleDotsIconFilled } from './chat-bubble-dots-filled';
-import { ChatBubbleDotsIconFilltone } from './chat-bubble-dots-filltone';
-import { ChatBubbleDotsIconLinetone } from './chat-bubble-dots-linetone';
+import { ChatBubbleDotsIconDuotone as ChatBubbleDotsIconDuotone } from './chat-bubble-dots-duotone';
+import { ChatBubbleDotsIconBold as ChatBubbleDotsIconBold } from './chat-bubble-dots-bold';
+import { ChatBubbleDotsIconBoldDuotone as ChatBubbleDotsIconBoldDuotone } from './chat-bubble-dots-bold-duotone';
+import { ChatBubbleDotsIconFill as ChatBubbleDotsIconFill } from './chat-bubble-dots-fill';
+import { ChatBubbleDotsIconFillDuotone as ChatBubbleDotsIconFillDuotone } from './chat-bubble-dots-fill-duotone';
 
 export interface ChatBubbleDotsIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChatBubbleDotsIcon = memo(forwardRef<SVGSVGElement, ChatBubbleDotsIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChatBubbleDotsIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChatBubbleDotsIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChatBubbleDotsIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChatBubbleDotsIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChatBubbleDotsIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChatBubbleDotsIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChatBubbleDotsIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChatBubbleDotsIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChatBubbleDotsIconFill ref={ref} {...props} />;
+  if (duotone) return <ChatBubbleDotsIconDuotone ref={ref} {...props} />;
+  return <RegularChatBubbleDotsIcon ref={ref} {...props} />;
 }));
 
 ChatBubbleDotsIcon.displayName = 'ChatBubbleDotsIcon';

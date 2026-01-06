@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BrowserPlusIcon as RegularBrowserPlusIcon } from './browser-plus';
-import { BrowserPlusIconBold } from './browser-plus-bold';
-import { BrowserPlusIconFilled } from './browser-plus-filled';
-import { BrowserPlusIconFilltone } from './browser-plus-filltone';
-import { BrowserPlusIconLinetone } from './browser-plus-linetone';
+import { BrowserPlusIconDuotone as BrowserPlusIconDuotone } from './browser-plus-duotone';
+import { BrowserPlusIconBold as BrowserPlusIconBold } from './browser-plus-bold';
+import { BrowserPlusIconBoldDuotone as BrowserPlusIconBoldDuotone } from './browser-plus-bold-duotone';
+import { BrowserPlusIconFill as BrowserPlusIconFill } from './browser-plus-fill';
+import { BrowserPlusIconFillDuotone as BrowserPlusIconFillDuotone } from './browser-plus-fill-duotone';
 
 export interface BrowserPlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BrowserPlusIcon = memo(forwardRef<SVGSVGElement, BrowserPlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BrowserPlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BrowserPlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BrowserPlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BrowserPlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBrowserPlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BrowserPlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BrowserPlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BrowserPlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BrowserPlusIconFill ref={ref} {...props} />;
+  if (duotone) return <BrowserPlusIconDuotone ref={ref} {...props} />;
+  return <RegularBrowserPlusIcon ref={ref} {...props} />;
 }));
 
 BrowserPlusIcon.displayName = 'BrowserPlusIcon';

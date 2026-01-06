@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LayoutPanelRightIcon as RegularLayoutPanelRightIcon } from './layout-panel-right';
-import { LayoutPanelRightIconBold } from './layout-panel-right-bold';
-import { LayoutPanelRightIconFilled } from './layout-panel-right-filled';
-import { LayoutPanelRightIconFilltone } from './layout-panel-right-filltone';
-import { LayoutPanelRightIconLinetone } from './layout-panel-right-linetone';
+import { LayoutPanelRightIconDuotone as LayoutPanelRightIconDuotone } from './layout-panel-right-duotone';
+import { LayoutPanelRightIconBold as LayoutPanelRightIconBold } from './layout-panel-right-bold';
+import { LayoutPanelRightIconBoldDuotone as LayoutPanelRightIconBoldDuotone } from './layout-panel-right-bold-duotone';
+import { LayoutPanelRightIconFill as LayoutPanelRightIconFill } from './layout-panel-right-fill';
+import { LayoutPanelRightIconFillDuotone as LayoutPanelRightIconFillDuotone } from './layout-panel-right-fill-duotone';
 
 export interface LayoutPanelRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LayoutPanelRightIcon = memo(forwardRef<SVGSVGElement, LayoutPanelRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LayoutPanelRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LayoutPanelRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LayoutPanelRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LayoutPanelRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLayoutPanelRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LayoutPanelRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LayoutPanelRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LayoutPanelRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LayoutPanelRightIconFill ref={ref} {...props} />;
+  if (duotone) return <LayoutPanelRightIconDuotone ref={ref} {...props} />;
+  return <RegularLayoutPanelRightIcon ref={ref} {...props} />;
 }));
 
 LayoutPanelRightIcon.displayName = 'LayoutPanelRightIcon';

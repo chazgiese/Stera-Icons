@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CloudUploadIcon as RegularCloudUploadIcon } from './cloud-upload';
-import { CloudUploadIconBold } from './cloud-upload-bold';
-import { CloudUploadIconFilled } from './cloud-upload-filled';
-import { CloudUploadIconFilltone } from './cloud-upload-filltone';
-import { CloudUploadIconLinetone } from './cloud-upload-linetone';
+import { CloudUploadIconDuotone as CloudUploadIconDuotone } from './cloud-upload-duotone';
+import { CloudUploadIconBold as CloudUploadIconBold } from './cloud-upload-bold';
+import { CloudUploadIconBoldDuotone as CloudUploadIconBoldDuotone } from './cloud-upload-bold-duotone';
+import { CloudUploadIconFill as CloudUploadIconFill } from './cloud-upload-fill';
+import { CloudUploadIconFillDuotone as CloudUploadIconFillDuotone } from './cloud-upload-fill-duotone';
 
 export interface CloudUploadIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CloudUploadIcon = memo(forwardRef<SVGSVGElement, CloudUploadIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CloudUploadIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CloudUploadIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CloudUploadIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CloudUploadIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCloudUploadIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CloudUploadIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CloudUploadIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CloudUploadIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CloudUploadIconFill ref={ref} {...props} />;
+  if (duotone) return <CloudUploadIconDuotone ref={ref} {...props} />;
+  return <RegularCloudUploadIcon ref={ref} {...props} />;
 }));
 
 CloudUploadIcon.displayName = 'CloudUploadIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowSplitArrowDownIcon as RegularFlowSplitArrowDownIcon } from './flow-split-arrow-down';
-import { FlowSplitArrowDownIconBold } from './flow-split-arrow-down-bold';
-import { FlowSplitArrowDownIconFilled } from './flow-split-arrow-down-filled';
-import { FlowSplitArrowDownIconFilltone } from './flow-split-arrow-down-filltone';
-import { FlowSplitArrowDownIconLinetone } from './flow-split-arrow-down-linetone';
+import { FlowSplitArrowDownIconDuotone as FlowSplitArrowDownIconDuotone } from './flow-split-arrow-down-duotone';
+import { FlowSplitArrowDownIconBold as FlowSplitArrowDownIconBold } from './flow-split-arrow-down-bold';
+import { FlowSplitArrowDownIconBoldDuotone as FlowSplitArrowDownIconBoldDuotone } from './flow-split-arrow-down-bold-duotone';
+import { FlowSplitArrowDownIconFill as FlowSplitArrowDownIconFill } from './flow-split-arrow-down-fill';
+import { FlowSplitArrowDownIconFillDuotone as FlowSplitArrowDownIconFillDuotone } from './flow-split-arrow-down-fill-duotone';
 
 export interface FlowSplitArrowDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowSplitArrowDownIcon = memo(forwardRef<SVGSVGElement, FlowSplitArrowDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowSplitArrowDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowSplitArrowDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowSplitArrowDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowSplitArrowDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowSplitArrowDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowSplitArrowDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowSplitArrowDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowSplitArrowDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowSplitArrowDownIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowSplitArrowDownIconDuotone ref={ref} {...props} />;
+  return <RegularFlowSplitArrowDownIcon ref={ref} {...props} />;
 }));
 
 FlowSplitArrowDownIcon.displayName = 'FlowSplitArrowDownIcon';

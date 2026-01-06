@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PlugIcon as RegularPlugIcon } from './plug';
-import { PlugIconBold } from './plug-bold';
-import { PlugIconFilled } from './plug-filled';
-import { PlugIconFilltone } from './plug-filltone';
-import { PlugIconLinetone } from './plug-linetone';
+import { PlugIconDuotone as PlugIconDuotone } from './plug-duotone';
+import { PlugIconBold as PlugIconBold } from './plug-bold';
+import { PlugIconBoldDuotone as PlugIconBoldDuotone } from './plug-bold-duotone';
+import { PlugIconFill as PlugIconFill } from './plug-fill';
+import { PlugIconFillDuotone as PlugIconFillDuotone } from './plug-fill-duotone';
 
 export interface PlugIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PlugIcon = memo(forwardRef<SVGSVGElement, PlugIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PlugIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PlugIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PlugIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PlugIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPlugIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PlugIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PlugIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PlugIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PlugIconFill ref={ref} {...props} />;
+  if (duotone) return <PlugIconDuotone ref={ref} {...props} />;
+  return <RegularPlugIcon ref={ref} {...props} />;
 }));
 
 PlugIcon.displayName = 'PlugIcon';

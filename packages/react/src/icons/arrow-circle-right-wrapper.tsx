@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowCircleRightIcon as RegularArrowCircleRightIcon } from './arrow-circle-right';
-import { ArrowCircleRightIconBold } from './arrow-circle-right-bold';
-import { ArrowCircleRightIconFilled } from './arrow-circle-right-filled';
-import { ArrowCircleRightIconFilltone } from './arrow-circle-right-filltone';
-import { ArrowCircleRightIconLinetone } from './arrow-circle-right-linetone';
+import { ArrowCircleRightIconDuotone as ArrowCircleRightIconDuotone } from './arrow-circle-right-duotone';
+import { ArrowCircleRightIconBold as ArrowCircleRightIconBold } from './arrow-circle-right-bold';
+import { ArrowCircleRightIconBoldDuotone as ArrowCircleRightIconBoldDuotone } from './arrow-circle-right-bold-duotone';
+import { ArrowCircleRightIconFill as ArrowCircleRightIconFill } from './arrow-circle-right-fill';
+import { ArrowCircleRightIconFillDuotone as ArrowCircleRightIconFillDuotone } from './arrow-circle-right-fill-duotone';
 
 export interface ArrowCircleRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowCircleRightIcon = memo(forwardRef<SVGSVGElement, ArrowCircleRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowCircleRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowCircleRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowCircleRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowCircleRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowCircleRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowCircleRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowCircleRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowCircleRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowCircleRightIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowCircleRightIconDuotone ref={ref} {...props} />;
+  return <RegularArrowCircleRightIcon ref={ref} {...props} />;
 }));
 
 ArrowCircleRightIcon.displayName = 'ArrowCircleRightIcon';

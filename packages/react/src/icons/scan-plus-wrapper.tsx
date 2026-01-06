@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanPlusIcon as RegularScanPlusIcon } from './scan-plus';
-import { ScanPlusIconBold } from './scan-plus-bold';
-import { ScanPlusIconFilled } from './scan-plus-filled';
-import { ScanPlusIconFilltone } from './scan-plus-filltone';
-import { ScanPlusIconLinetone } from './scan-plus-linetone';
+import { ScanPlusIconDuotone as ScanPlusIconDuotone } from './scan-plus-duotone';
+import { ScanPlusIconBold as ScanPlusIconBold } from './scan-plus-bold';
+import { ScanPlusIconBoldDuotone as ScanPlusIconBoldDuotone } from './scan-plus-bold-duotone';
+import { ScanPlusIconFill as ScanPlusIconFill } from './scan-plus-fill';
+import { ScanPlusIconFillDuotone as ScanPlusIconFillDuotone } from './scan-plus-fill-duotone';
 
 export interface ScanPlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanPlusIcon = memo(forwardRef<SVGSVGElement, ScanPlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanPlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanPlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanPlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanPlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanPlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanPlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanPlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanPlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanPlusIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanPlusIconDuotone ref={ref} {...props} />;
+  return <RegularScanPlusIcon ref={ref} {...props} />;
 }));
 
 ScanPlusIcon.displayName = 'ScanPlusIcon';

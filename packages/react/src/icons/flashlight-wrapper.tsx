@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlashlightIcon as RegularFlashlightIcon } from './flashlight';
-import { FlashlightIconBold } from './flashlight-bold';
-import { FlashlightIconFilled } from './flashlight-filled';
-import { FlashlightIconFilltone } from './flashlight-filltone';
-import { FlashlightIconLinetone } from './flashlight-linetone';
+import { FlashlightIconDuotone as FlashlightIconDuotone } from './flashlight-duotone';
+import { FlashlightIconBold as FlashlightIconBold } from './flashlight-bold';
+import { FlashlightIconBoldDuotone as FlashlightIconBoldDuotone } from './flashlight-bold-duotone';
+import { FlashlightIconFill as FlashlightIconFill } from './flashlight-fill';
+import { FlashlightIconFillDuotone as FlashlightIconFillDuotone } from './flashlight-fill-duotone';
 
 export interface FlashlightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlashlightIcon = memo(forwardRef<SVGSVGElement, FlashlightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlashlightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlashlightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlashlightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlashlightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlashlightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlashlightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlashlightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlashlightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlashlightIconFill ref={ref} {...props} />;
+  if (duotone) return <FlashlightIconDuotone ref={ref} {...props} />;
+  return <RegularFlashlightIcon ref={ref} {...props} />;
 }));
 
 FlashlightIcon.displayName = 'FlashlightIcon';

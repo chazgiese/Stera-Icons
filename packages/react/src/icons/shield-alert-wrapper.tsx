@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ShieldAlertIcon as RegularShieldAlertIcon } from './shield-alert';
-import { ShieldAlertIconBold } from './shield-alert-bold';
-import { ShieldAlertIconFilled } from './shield-alert-filled';
-import { ShieldAlertIconFilltone } from './shield-alert-filltone';
-import { ShieldAlertIconLinetone } from './shield-alert-linetone';
+import { ShieldAlertIconDuotone as ShieldAlertIconDuotone } from './shield-alert-duotone';
+import { ShieldAlertIconBold as ShieldAlertIconBold } from './shield-alert-bold';
+import { ShieldAlertIconBoldDuotone as ShieldAlertIconBoldDuotone } from './shield-alert-bold-duotone';
+import { ShieldAlertIconFill as ShieldAlertIconFill } from './shield-alert-fill';
+import { ShieldAlertIconFillDuotone as ShieldAlertIconFillDuotone } from './shield-alert-fill-duotone';
 
 export interface ShieldAlertIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ShieldAlertIcon = memo(forwardRef<SVGSVGElement, ShieldAlertIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ShieldAlertIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ShieldAlertIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ShieldAlertIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ShieldAlertIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularShieldAlertIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ShieldAlertIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ShieldAlertIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ShieldAlertIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ShieldAlertIconFill ref={ref} {...props} />;
+  if (duotone) return <ShieldAlertIconDuotone ref={ref} {...props} />;
+  return <RegularShieldAlertIcon ref={ref} {...props} />;
 }));
 
 ShieldAlertIcon.displayName = 'ShieldAlertIcon';

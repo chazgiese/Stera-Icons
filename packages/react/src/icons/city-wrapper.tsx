@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CityIcon as RegularCityIcon } from './city';
-import { CityIconBold } from './city-bold';
-import { CityIconFilled } from './city-filled';
-import { CityIconFilltone } from './city-filltone';
-import { CityIconLinetone } from './city-linetone';
+import { CityIconDuotone as CityIconDuotone } from './city-duotone';
+import { CityIconBold as CityIconBold } from './city-bold';
+import { CityIconBoldDuotone as CityIconBoldDuotone } from './city-bold-duotone';
+import { CityIconFill as CityIconFill } from './city-fill';
+import { CityIconFillDuotone as CityIconFillDuotone } from './city-fill-duotone';
 
 export interface CityIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CityIcon = memo(forwardRef<SVGSVGElement, CityIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CityIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CityIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CityIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CityIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCityIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CityIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CityIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CityIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CityIconFill ref={ref} {...props} />;
+  if (duotone) return <CityIconDuotone ref={ref} {...props} />;
+  return <RegularCityIcon ref={ref} {...props} />;
 }));
 
 CityIcon.displayName = 'CityIcon';

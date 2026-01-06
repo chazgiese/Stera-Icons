@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PencilIcon as RegularPencilIcon } from './pencil';
-import { PencilIconBold } from './pencil-bold';
-import { PencilIconFilled } from './pencil-filled';
-import { PencilIconFilltone } from './pencil-filltone';
-import { PencilIconLinetone } from './pencil-linetone';
+import { PencilIconDuotone as PencilIconDuotone } from './pencil-duotone';
+import { PencilIconBold as PencilIconBold } from './pencil-bold';
+import { PencilIconBoldDuotone as PencilIconBoldDuotone } from './pencil-bold-duotone';
+import { PencilIconFill as PencilIconFill } from './pencil-fill';
+import { PencilIconFillDuotone as PencilIconFillDuotone } from './pencil-fill-duotone';
 
 export interface PencilIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PencilIcon = memo(forwardRef<SVGSVGElement, PencilIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PencilIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PencilIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PencilIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PencilIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPencilIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PencilIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PencilIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PencilIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PencilIconFill ref={ref} {...props} />;
+  if (duotone) return <PencilIconDuotone ref={ref} {...props} />;
+  return <RegularPencilIcon ref={ref} {...props} />;
 }));
 
 PencilIcon.displayName = 'PencilIcon';

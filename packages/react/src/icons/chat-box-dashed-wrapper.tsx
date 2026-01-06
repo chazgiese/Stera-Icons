@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChatBoxDashedIcon as RegularChatBoxDashedIcon } from './chat-box-dashed';
-import { ChatBoxDashedIconBold } from './chat-box-dashed-bold';
-import { ChatBoxDashedIconFilled } from './chat-box-dashed-filled';
-import { ChatBoxDashedIconFilltone } from './chat-box-dashed-filltone';
-import { ChatBoxDashedIconLinetone } from './chat-box-dashed-linetone';
+import { ChatBoxDashedIconDuotone as ChatBoxDashedIconDuotone } from './chat-box-dashed-duotone';
+import { ChatBoxDashedIconBold as ChatBoxDashedIconBold } from './chat-box-dashed-bold';
+import { ChatBoxDashedIconBoldDuotone as ChatBoxDashedIconBoldDuotone } from './chat-box-dashed-bold-duotone';
+import { ChatBoxDashedIconFill as ChatBoxDashedIconFill } from './chat-box-dashed-fill';
+import { ChatBoxDashedIconFillDuotone as ChatBoxDashedIconFillDuotone } from './chat-box-dashed-fill-duotone';
 
 export interface ChatBoxDashedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChatBoxDashedIcon = memo(forwardRef<SVGSVGElement, ChatBoxDashedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChatBoxDashedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChatBoxDashedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChatBoxDashedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChatBoxDashedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChatBoxDashedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChatBoxDashedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChatBoxDashedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChatBoxDashedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChatBoxDashedIconFill ref={ref} {...props} />;
+  if (duotone) return <ChatBoxDashedIconDuotone ref={ref} {...props} />;
+  return <RegularChatBoxDashedIcon ref={ref} {...props} />;
 }));
 
 ChatBoxDashedIcon.displayName = 'ChatBoxDashedIcon';

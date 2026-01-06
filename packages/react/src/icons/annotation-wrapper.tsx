@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AnnotationIcon as RegularAnnotationIcon } from './annotation';
-import { AnnotationIconBold } from './annotation-bold';
-import { AnnotationIconFilled } from './annotation-filled';
-import { AnnotationIconFilltone } from './annotation-filltone';
-import { AnnotationIconLinetone } from './annotation-linetone';
+import { AnnotationIconDuotone as AnnotationIconDuotone } from './annotation-duotone';
+import { AnnotationIconBold as AnnotationIconBold } from './annotation-bold';
+import { AnnotationIconBoldDuotone as AnnotationIconBoldDuotone } from './annotation-bold-duotone';
+import { AnnotationIconFill as AnnotationIconFill } from './annotation-fill';
+import { AnnotationIconFillDuotone as AnnotationIconFillDuotone } from './annotation-fill-duotone';
 
 export interface AnnotationIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AnnotationIcon = memo(forwardRef<SVGSVGElement, AnnotationIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AnnotationIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AnnotationIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AnnotationIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AnnotationIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAnnotationIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AnnotationIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AnnotationIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AnnotationIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AnnotationIconFill ref={ref} {...props} />;
+  if (duotone) return <AnnotationIconDuotone ref={ref} {...props} />;
+  return <RegularAnnotationIcon ref={ref} {...props} />;
 }));
 
 AnnotationIcon.displayName = 'AnnotationIcon';

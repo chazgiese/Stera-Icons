@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MinusIcon as RegularMinusIcon } from './minus';
-import { MinusIconBold } from './minus-bold';
-import { MinusIconFilled } from './minus-filled';
-import { MinusIconFilltone } from './minus-filltone';
-import { MinusIconLinetone } from './minus-linetone';
+import { MinusIconDuotone as MinusIconDuotone } from './minus-duotone';
+import { MinusIconBold as MinusIconBold } from './minus-bold';
+import { MinusIconBoldDuotone as MinusIconBoldDuotone } from './minus-bold-duotone';
+import { MinusIconFill as MinusIconFill } from './minus-fill';
+import { MinusIconFillDuotone as MinusIconFillDuotone } from './minus-fill-duotone';
 
 export interface MinusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MinusIcon = memo(forwardRef<SVGSVGElement, MinusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MinusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MinusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MinusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MinusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMinusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MinusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MinusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MinusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MinusIconFill ref={ref} {...props} />;
+  if (duotone) return <MinusIconDuotone ref={ref} {...props} />;
+  return <RegularMinusIcon ref={ref} {...props} />;
 }));
 
 MinusIcon.displayName = 'MinusIcon';

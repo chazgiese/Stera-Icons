@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowerIcon as RegularFlowerIcon } from './flower';
-import { FlowerIconBold } from './flower-bold';
-import { FlowerIconFilled } from './flower-filled';
-import { FlowerIconFilltone } from './flower-filltone';
-import { FlowerIconLinetone } from './flower-linetone';
+import { FlowerIconDuotone as FlowerIconDuotone } from './flower-duotone';
+import { FlowerIconBold as FlowerIconBold } from './flower-bold';
+import { FlowerIconBoldDuotone as FlowerIconBoldDuotone } from './flower-bold-duotone';
+import { FlowerIconFill as FlowerIconFill } from './flower-fill';
+import { FlowerIconFillDuotone as FlowerIconFillDuotone } from './flower-fill-duotone';
 
 export interface FlowerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowerIcon = memo(forwardRef<SVGSVGElement, FlowerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowerIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowerIconDuotone ref={ref} {...props} />;
+  return <RegularFlowerIcon ref={ref} {...props} />;
 }));
 
 FlowerIcon.displayName = 'FlowerIcon';

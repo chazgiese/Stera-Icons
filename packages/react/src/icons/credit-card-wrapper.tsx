@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CreditCardIcon as RegularCreditCardIcon } from './credit-card';
-import { CreditCardIconBold } from './credit-card-bold';
-import { CreditCardIconFilled } from './credit-card-filled';
-import { CreditCardIconFilltone } from './credit-card-filltone';
-import { CreditCardIconLinetone } from './credit-card-linetone';
+import { CreditCardIconDuotone as CreditCardIconDuotone } from './credit-card-duotone';
+import { CreditCardIconBold as CreditCardIconBold } from './credit-card-bold';
+import { CreditCardIconBoldDuotone as CreditCardIconBoldDuotone } from './credit-card-bold-duotone';
+import { CreditCardIconFill as CreditCardIconFill } from './credit-card-fill';
+import { CreditCardIconFillDuotone as CreditCardIconFillDuotone } from './credit-card-fill-duotone';
 
 export interface CreditCardIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CreditCardIcon = memo(forwardRef<SVGSVGElement, CreditCardIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CreditCardIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CreditCardIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CreditCardIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CreditCardIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCreditCardIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CreditCardIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CreditCardIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CreditCardIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CreditCardIconFill ref={ref} {...props} />;
+  if (duotone) return <CreditCardIconDuotone ref={ref} {...props} />;
+  return <RegularCreditCardIcon ref={ref} {...props} />;
 }));
 
 CreditCardIcon.displayName = 'CreditCardIcon';

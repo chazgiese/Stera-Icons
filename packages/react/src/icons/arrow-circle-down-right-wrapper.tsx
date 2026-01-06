@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowCircleDownRightIcon as RegularArrowCircleDownRightIcon } from './arrow-circle-down-right';
-import { ArrowCircleDownRightIconBold } from './arrow-circle-down-right-bold';
-import { ArrowCircleDownRightIconFilled } from './arrow-circle-down-right-filled';
-import { ArrowCircleDownRightIconFilltone } from './arrow-circle-down-right-filltone';
-import { ArrowCircleDownRightIconLinetone } from './arrow-circle-down-right-linetone';
+import { ArrowCircleDownRightIconDuotone as ArrowCircleDownRightIconDuotone } from './arrow-circle-down-right-duotone';
+import { ArrowCircleDownRightIconBold as ArrowCircleDownRightIconBold } from './arrow-circle-down-right-bold';
+import { ArrowCircleDownRightIconBoldDuotone as ArrowCircleDownRightIconBoldDuotone } from './arrow-circle-down-right-bold-duotone';
+import { ArrowCircleDownRightIconFill as ArrowCircleDownRightIconFill } from './arrow-circle-down-right-fill';
+import { ArrowCircleDownRightIconFillDuotone as ArrowCircleDownRightIconFillDuotone } from './arrow-circle-down-right-fill-duotone';
 
 export interface ArrowCircleDownRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowCircleDownRightIcon = memo(forwardRef<SVGSVGElement, ArrowCircleDownRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowCircleDownRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowCircleDownRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowCircleDownRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowCircleDownRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowCircleDownRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowCircleDownRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowCircleDownRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowCircleDownRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowCircleDownRightIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowCircleDownRightIconDuotone ref={ref} {...props} />;
+  return <RegularArrowCircleDownRightIcon ref={ref} {...props} />;
 }));
 
 ArrowCircleDownRightIcon.displayName = 'ArrowCircleDownRightIcon';

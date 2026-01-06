@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LightbulbOnIcon as RegularLightbulbOnIcon } from './lightbulb-on';
-import { LightbulbOnIconBold } from './lightbulb-on-bold';
-import { LightbulbOnIconFilled } from './lightbulb-on-filled';
-import { LightbulbOnIconFilltone } from './lightbulb-on-filltone';
-import { LightbulbOnIconLinetone } from './lightbulb-on-linetone';
+import { LightbulbOnIconDuotone as LightbulbOnIconDuotone } from './lightbulb-on-duotone';
+import { LightbulbOnIconBold as LightbulbOnIconBold } from './lightbulb-on-bold';
+import { LightbulbOnIconBoldDuotone as LightbulbOnIconBoldDuotone } from './lightbulb-on-bold-duotone';
+import { LightbulbOnIconFill as LightbulbOnIconFill } from './lightbulb-on-fill';
+import { LightbulbOnIconFillDuotone as LightbulbOnIconFillDuotone } from './lightbulb-on-fill-duotone';
 
 export interface LightbulbOnIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LightbulbOnIcon = memo(forwardRef<SVGSVGElement, LightbulbOnIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LightbulbOnIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LightbulbOnIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LightbulbOnIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LightbulbOnIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLightbulbOnIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LightbulbOnIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LightbulbOnIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LightbulbOnIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LightbulbOnIconFill ref={ref} {...props} />;
+  if (duotone) return <LightbulbOnIconDuotone ref={ref} {...props} />;
+  return <RegularLightbulbOnIcon ref={ref} {...props} />;
 }));
 
 LightbulbOnIcon.displayName = 'LightbulbOnIcon';

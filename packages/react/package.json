@@ -2474,10 +2474,10 @@
       "import": "./dist/icons/OverlappingCirclesIcon.mjs",
       "require": "./dist/icons/OverlappingCirclesIcon.cjs"
     },
-    "./OverlappingCirclesAltIcon": {
-      "types": "./dist/icons/OverlappingCirclesAltIcon.d.ts",
-      "import": "./dist/icons/OverlappingCirclesAltIcon.mjs",
-      "require": "./dist/icons/OverlappingCirclesAltIcon.cjs"
+    "./OverlappingCirclesDashIcon": {
+      "types": "./dist/icons/OverlappingCirclesDashIcon.d.ts",
+      "import": "./dist/icons/OverlappingCirclesDashIcon.mjs",
+      "require": "./dist/icons/OverlappingCirclesDashIcon.cjs"
     },
     "./PaintPaletteIcon": {
       "types": "./dist/icons/PaintPaletteIcon.d.ts",

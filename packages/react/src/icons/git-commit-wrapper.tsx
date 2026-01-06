@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GitCommitIcon as RegularGitCommitIcon } from './git-commit';
-import { GitCommitIconBold } from './git-commit-bold';
-import { GitCommitIconFilled } from './git-commit-filled';
-import { GitCommitIconFilltone } from './git-commit-filltone';
-import { GitCommitIconLinetone } from './git-commit-linetone';
+import { GitCommitIconDuotone as GitCommitIconDuotone } from './git-commit-duotone';
+import { GitCommitIconBold as GitCommitIconBold } from './git-commit-bold';
+import { GitCommitIconBoldDuotone as GitCommitIconBoldDuotone } from './git-commit-bold-duotone';
+import { GitCommitIconFill as GitCommitIconFill } from './git-commit-fill';
+import { GitCommitIconFillDuotone as GitCommitIconFillDuotone } from './git-commit-fill-duotone';
 
 export interface GitCommitIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GitCommitIcon = memo(forwardRef<SVGSVGElement, GitCommitIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GitCommitIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GitCommitIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GitCommitIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GitCommitIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGitCommitIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GitCommitIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GitCommitIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GitCommitIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GitCommitIconFill ref={ref} {...props} />;
+  if (duotone) return <GitCommitIconDuotone ref={ref} {...props} />;
+  return <RegularGitCommitIcon ref={ref} {...props} />;
 }));
 
 GitCommitIcon.displayName = 'GitCommitIcon';

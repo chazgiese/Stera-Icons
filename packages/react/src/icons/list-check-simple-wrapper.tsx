@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListCheckSimpleIcon as RegularListCheckSimpleIcon } from './list-check-simple';
-import { ListCheckSimpleIconBold } from './list-check-simple-bold';
-import { ListCheckSimpleIconFilled } from './list-check-simple-filled';
-import { ListCheckSimpleIconFilltone } from './list-check-simple-filltone';
-import { ListCheckSimpleIconLinetone } from './list-check-simple-linetone';
+import { ListCheckSimpleIconDuotone as ListCheckSimpleIconDuotone } from './list-check-simple-duotone';
+import { ListCheckSimpleIconBold as ListCheckSimpleIconBold } from './list-check-simple-bold';
+import { ListCheckSimpleIconBoldDuotone as ListCheckSimpleIconBoldDuotone } from './list-check-simple-bold-duotone';
+import { ListCheckSimpleIconFill as ListCheckSimpleIconFill } from './list-check-simple-fill';
+import { ListCheckSimpleIconFillDuotone as ListCheckSimpleIconFillDuotone } from './list-check-simple-fill-duotone';
 
 export interface ListCheckSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListCheckSimpleIcon = memo(forwardRef<SVGSVGElement, ListCheckSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListCheckSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListCheckSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListCheckSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListCheckSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListCheckSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListCheckSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListCheckSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListCheckSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListCheckSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <ListCheckSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularListCheckSimpleIcon ref={ref} {...props} />;
 }));
 
 ListCheckSimpleIcon.displayName = 'ListCheckSimpleIcon';

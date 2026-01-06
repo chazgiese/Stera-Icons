@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PanelRightFloatingIcon as RegularPanelRightFloatingIcon } from './panel-right-floating';
-import { PanelRightFloatingIconBold } from './panel-right-floating-bold';
-import { PanelRightFloatingIconFilled } from './panel-right-floating-filled';
-import { PanelRightFloatingIconFilltone } from './panel-right-floating-filltone';
-import { PanelRightFloatingIconLinetone } from './panel-right-floating-linetone';
+import { PanelRightFloatingIconDuotone as PanelRightFloatingIconDuotone } from './panel-right-floating-duotone';
+import { PanelRightFloatingIconBold as PanelRightFloatingIconBold } from './panel-right-floating-bold';
+import { PanelRightFloatingIconBoldDuotone as PanelRightFloatingIconBoldDuotone } from './panel-right-floating-bold-duotone';
+import { PanelRightFloatingIconFill as PanelRightFloatingIconFill } from './panel-right-floating-fill';
+import { PanelRightFloatingIconFillDuotone as PanelRightFloatingIconFillDuotone } from './panel-right-floating-fill-duotone';
 
 export interface PanelRightFloatingIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PanelRightFloatingIcon = memo(forwardRef<SVGSVGElement, PanelRightFloatingIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PanelRightFloatingIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PanelRightFloatingIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PanelRightFloatingIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PanelRightFloatingIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPanelRightFloatingIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PanelRightFloatingIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PanelRightFloatingIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PanelRightFloatingIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PanelRightFloatingIconFill ref={ref} {...props} />;
+  if (duotone) return <PanelRightFloatingIconDuotone ref={ref} {...props} />;
+  return <RegularPanelRightFloatingIcon ref={ref} {...props} />;
 }));
 
 PanelRightFloatingIcon.displayName = 'PanelRightFloatingIcon';

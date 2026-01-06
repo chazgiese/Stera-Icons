@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlertOctagonIcon as RegularAlertOctagonIcon } from './alert-octagon';
-import { AlertOctagonIconBold } from './alert-octagon-bold';
-import { AlertOctagonIconFilled } from './alert-octagon-filled';
-import { AlertOctagonIconFilltone } from './alert-octagon-filltone';
-import { AlertOctagonIconLinetone } from './alert-octagon-linetone';
+import { AlertOctagonIconDuotone as AlertOctagonIconDuotone } from './alert-octagon-duotone';
+import { AlertOctagonIconBold as AlertOctagonIconBold } from './alert-octagon-bold';
+import { AlertOctagonIconBoldDuotone as AlertOctagonIconBoldDuotone } from './alert-octagon-bold-duotone';
+import { AlertOctagonIconFill as AlertOctagonIconFill } from './alert-octagon-fill';
+import { AlertOctagonIconFillDuotone as AlertOctagonIconFillDuotone } from './alert-octagon-fill-duotone';
 
 export interface AlertOctagonIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlertOctagonIcon = memo(forwardRef<SVGSVGElement, AlertOctagonIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlertOctagonIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlertOctagonIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlertOctagonIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlertOctagonIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlertOctagonIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlertOctagonIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlertOctagonIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlertOctagonIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlertOctagonIconFill ref={ref} {...props} />;
+  if (duotone) return <AlertOctagonIconDuotone ref={ref} {...props} />;
+  return <RegularAlertOctagonIcon ref={ref} {...props} />;
 }));
 
 AlertOctagonIcon.displayName = 'AlertOctagonIcon';

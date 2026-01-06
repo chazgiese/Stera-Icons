@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { StairsIcon as RegularStairsIcon } from './stairs';
-import { StairsIconBold } from './stairs-bold';
-import { StairsIconFilled } from './stairs-filled';
-import { StairsIconFilltone } from './stairs-filltone';
-import { StairsIconLinetone } from './stairs-linetone';
+import { StairsIconDuotone as StairsIconDuotone } from './stairs-duotone';
+import { StairsIconBold as StairsIconBold } from './stairs-bold';
+import { StairsIconBoldDuotone as StairsIconBoldDuotone } from './stairs-bold-duotone';
+import { StairsIconFill as StairsIconFill } from './stairs-fill';
+import { StairsIconFillDuotone as StairsIconFillDuotone } from './stairs-fill-duotone';
 
 export interface StairsIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const StairsIcon = memo(forwardRef<SVGSVGElement, StairsIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <StairsIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <StairsIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <StairsIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <StairsIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularStairsIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <StairsIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <StairsIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <StairsIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <StairsIconFill ref={ref} {...props} />;
+  if (duotone) return <StairsIconDuotone ref={ref} {...props} />;
+  return <RegularStairsIcon ref={ref} {...props} />;
 }));
 
 StairsIcon.displayName = 'StairsIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { KeyholeIcon as RegularKeyholeIcon } from './keyhole';
-import { KeyholeIconBold } from './keyhole-bold';
-import { KeyholeIconFilled } from './keyhole-filled';
-import { KeyholeIconFilltone } from './keyhole-filltone';
-import { KeyholeIconLinetone } from './keyhole-linetone';
+import { KeyholeIconDuotone as KeyholeIconDuotone } from './keyhole-duotone';
+import { KeyholeIconBold as KeyholeIconBold } from './keyhole-bold';
+import { KeyholeIconBoldDuotone as KeyholeIconBoldDuotone } from './keyhole-bold-duotone';
+import { KeyholeIconFill as KeyholeIconFill } from './keyhole-fill';
+import { KeyholeIconFillDuotone as KeyholeIconFillDuotone } from './keyhole-fill-duotone';
 
 export interface KeyholeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const KeyholeIcon = memo(forwardRef<SVGSVGElement, KeyholeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <KeyholeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <KeyholeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <KeyholeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <KeyholeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularKeyholeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <KeyholeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <KeyholeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <KeyholeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <KeyholeIconFill ref={ref} {...props} />;
+  if (duotone) return <KeyholeIconDuotone ref={ref} {...props} />;
+  return <RegularKeyholeIcon ref={ref} {...props} />;
 }));
 
 KeyholeIcon.displayName = 'KeyholeIcon';

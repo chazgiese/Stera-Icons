@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CollapseIcon as RegularCollapseIcon } from './collapse';
-import { CollapseIconBold } from './collapse-bold';
-import { CollapseIconFilled } from './collapse-filled';
-import { CollapseIconFilltone } from './collapse-filltone';
-import { CollapseIconLinetone } from './collapse-linetone';
+import { CollapseIconDuotone as CollapseIconDuotone } from './collapse-duotone';
+import { CollapseIconBold as CollapseIconBold } from './collapse-bold';
+import { CollapseIconBoldDuotone as CollapseIconBoldDuotone } from './collapse-bold-duotone';
+import { CollapseIconFill as CollapseIconFill } from './collapse-fill';
+import { CollapseIconFillDuotone as CollapseIconFillDuotone } from './collapse-fill-duotone';
 
 export interface CollapseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CollapseIcon = memo(forwardRef<SVGSVGElement, CollapseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CollapseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CollapseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CollapseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CollapseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCollapseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CollapseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CollapseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CollapseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CollapseIconFill ref={ref} {...props} />;
+  if (duotone) return <CollapseIconDuotone ref={ref} {...props} />;
+  return <RegularCollapseIcon ref={ref} {...props} />;
 }));
 
 CollapseIcon.displayName = 'CollapseIcon';

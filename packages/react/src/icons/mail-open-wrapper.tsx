@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MailOpenIcon as RegularMailOpenIcon } from './mail-open';
-import { MailOpenIconBold } from './mail-open-bold';
-import { MailOpenIconFilled } from './mail-open-filled';
-import { MailOpenIconFilltone } from './mail-open-filltone';
-import { MailOpenIconLinetone } from './mail-open-linetone';
+import { MailOpenIconDuotone as MailOpenIconDuotone } from './mail-open-duotone';
+import { MailOpenIconBold as MailOpenIconBold } from './mail-open-bold';
+import { MailOpenIconBoldDuotone as MailOpenIconBoldDuotone } from './mail-open-bold-duotone';
+import { MailOpenIconFill as MailOpenIconFill } from './mail-open-fill';
+import { MailOpenIconFillDuotone as MailOpenIconFillDuotone } from './mail-open-fill-duotone';
 
 export interface MailOpenIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MailOpenIcon = memo(forwardRef<SVGSVGElement, MailOpenIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MailOpenIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MailOpenIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MailOpenIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MailOpenIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMailOpenIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MailOpenIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MailOpenIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MailOpenIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MailOpenIconFill ref={ref} {...props} />;
+  if (duotone) return <MailOpenIconDuotone ref={ref} {...props} />;
+  return <RegularMailOpenIcon ref={ref} {...props} />;
 }));
 
 MailOpenIcon.displayName = 'MailOpenIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ThumbsUpIcon as RegularThumbsUpIcon } from './thumbs-up';
-import { ThumbsUpIconBold } from './thumbs-up-bold';
-import { ThumbsUpIconFilled } from './thumbs-up-filled';
-import { ThumbsUpIconFilltone } from './thumbs-up-filltone';
-import { ThumbsUpIconLinetone } from './thumbs-up-linetone';
+import { ThumbsUpIconDuotone as ThumbsUpIconDuotone } from './thumbs-up-duotone';
+import { ThumbsUpIconBold as ThumbsUpIconBold } from './thumbs-up-bold';
+import { ThumbsUpIconBoldDuotone as ThumbsUpIconBoldDuotone } from './thumbs-up-bold-duotone';
+import { ThumbsUpIconFill as ThumbsUpIconFill } from './thumbs-up-fill';
+import { ThumbsUpIconFillDuotone as ThumbsUpIconFillDuotone } from './thumbs-up-fill-duotone';
 
 export interface ThumbsUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ThumbsUpIcon = memo(forwardRef<SVGSVGElement, ThumbsUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ThumbsUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ThumbsUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ThumbsUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ThumbsUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularThumbsUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ThumbsUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ThumbsUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ThumbsUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ThumbsUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ThumbsUpIconDuotone ref={ref} {...props} />;
+  return <RegularThumbsUpIcon ref={ref} {...props} />;
 }));
 
 ThumbsUpIcon.displayName = 'ThumbsUpIcon';

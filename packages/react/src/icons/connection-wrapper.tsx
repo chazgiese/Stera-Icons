@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ConnectionIcon as RegularConnectionIcon } from './connection';
-import { ConnectionIconBold } from './connection-bold';
-import { ConnectionIconFilled } from './connection-filled';
-import { ConnectionIconFilltone } from './connection-filltone';
-import { ConnectionIconLinetone } from './connection-linetone';
+import { ConnectionIconDuotone as ConnectionIconDuotone } from './connection-duotone';
+import { ConnectionIconBold as ConnectionIconBold } from './connection-bold';
+import { ConnectionIconBoldDuotone as ConnectionIconBoldDuotone } from './connection-bold-duotone';
+import { ConnectionIconFill as ConnectionIconFill } from './connection-fill';
+import { ConnectionIconFillDuotone as ConnectionIconFillDuotone } from './connection-fill-duotone';
 
 export interface ConnectionIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ConnectionIcon = memo(forwardRef<SVGSVGElement, ConnectionIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ConnectionIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ConnectionIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ConnectionIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ConnectionIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularConnectionIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ConnectionIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ConnectionIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ConnectionIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ConnectionIconFill ref={ref} {...props} />;
+  if (duotone) return <ConnectionIconDuotone ref={ref} {...props} />;
+  return <RegularConnectionIcon ref={ref} {...props} />;
 }));
 
 ConnectionIcon.displayName = 'ConnectionIcon';

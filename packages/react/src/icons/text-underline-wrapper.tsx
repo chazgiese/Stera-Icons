@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextUnderlineIcon as RegularTextUnderlineIcon } from './text-underline';
-import { TextUnderlineIconBold } from './text-underline-bold';
-import { TextUnderlineIconFilled } from './text-underline-filled';
-import { TextUnderlineIconFilltone } from './text-underline-filltone';
-import { TextUnderlineIconLinetone } from './text-underline-linetone';
+import { TextUnderlineIconDuotone as TextUnderlineIconDuotone } from './text-underline-duotone';
+import { TextUnderlineIconBold as TextUnderlineIconBold } from './text-underline-bold';
+import { TextUnderlineIconBoldDuotone as TextUnderlineIconBoldDuotone } from './text-underline-bold-duotone';
+import { TextUnderlineIconFill as TextUnderlineIconFill } from './text-underline-fill';
+import { TextUnderlineIconFillDuotone as TextUnderlineIconFillDuotone } from './text-underline-fill-duotone';
 
 export interface TextUnderlineIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextUnderlineIcon = memo(forwardRef<SVGSVGElement, TextUnderlineIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextUnderlineIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextUnderlineIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextUnderlineIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextUnderlineIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextUnderlineIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextUnderlineIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextUnderlineIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextUnderlineIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextUnderlineIconFill ref={ref} {...props} />;
+  if (duotone) return <TextUnderlineIconDuotone ref={ref} {...props} />;
+  return <RegularTextUnderlineIcon ref={ref} {...props} />;
 }));
 
 TextUnderlineIcon.displayName = 'TextUnderlineIcon';

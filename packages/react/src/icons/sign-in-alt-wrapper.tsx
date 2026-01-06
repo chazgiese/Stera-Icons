@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SignInAltIcon as RegularSignInAltIcon } from './sign-in-alt';
-import { SignInAltIconBold } from './sign-in-alt-bold';
-import { SignInAltIconFilled } from './sign-in-alt-filled';
-import { SignInAltIconFilltone } from './sign-in-alt-filltone';
-import { SignInAltIconLinetone } from './sign-in-alt-linetone';
+import { SignInAltIconDuotone as SignInAltIconDuotone } from './sign-in-alt-duotone';
+import { SignInAltIconBold as SignInAltIconBold } from './sign-in-alt-bold';
+import { SignInAltIconBoldDuotone as SignInAltIconBoldDuotone } from './sign-in-alt-bold-duotone';
+import { SignInAltIconFill as SignInAltIconFill } from './sign-in-alt-fill';
+import { SignInAltIconFillDuotone as SignInAltIconFillDuotone } from './sign-in-alt-fill-duotone';
 
 export interface SignInAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SignInAltIcon = memo(forwardRef<SVGSVGElement, SignInAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SignInAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SignInAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SignInAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SignInAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSignInAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SignInAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SignInAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SignInAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SignInAltIconFill ref={ref} {...props} />;
+  if (duotone) return <SignInAltIconDuotone ref={ref} {...props} />;
+  return <RegularSignInAltIcon ref={ref} {...props} />;
 }));
 
 SignInAltIcon.displayName = 'SignInAltIcon';

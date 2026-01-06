@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PencilRulerIcon as RegularPencilRulerIcon } from './pencil-ruler';
-import { PencilRulerIconBold } from './pencil-ruler-bold';
-import { PencilRulerIconFilled } from './pencil-ruler-filled';
-import { PencilRulerIconFilltone } from './pencil-ruler-filltone';
-import { PencilRulerIconLinetone } from './pencil-ruler-linetone';
+import { PencilRulerIconDuotone as PencilRulerIconDuotone } from './pencil-ruler-duotone';
+import { PencilRulerIconBold as PencilRulerIconBold } from './pencil-ruler-bold';
+import { PencilRulerIconBoldDuotone as PencilRulerIconBoldDuotone } from './pencil-ruler-bold-duotone';
+import { PencilRulerIconFill as PencilRulerIconFill } from './pencil-ruler-fill';
+import { PencilRulerIconFillDuotone as PencilRulerIconFillDuotone } from './pencil-ruler-fill-duotone';
 
 export interface PencilRulerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PencilRulerIcon = memo(forwardRef<SVGSVGElement, PencilRulerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PencilRulerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PencilRulerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PencilRulerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PencilRulerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPencilRulerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PencilRulerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PencilRulerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PencilRulerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PencilRulerIconFill ref={ref} {...props} />;
+  if (duotone) return <PencilRulerIconDuotone ref={ref} {...props} />;
+  return <RegularPencilRulerIcon ref={ref} {...props} />;
 }));
 
 PencilRulerIcon.displayName = 'PencilRulerIcon';

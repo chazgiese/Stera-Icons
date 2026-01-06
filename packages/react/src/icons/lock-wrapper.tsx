@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LockIcon as RegularLockIcon } from './lock';
-import { LockIconBold } from './lock-bold';
-import { LockIconFilled } from './lock-filled';
-import { LockIconFilltone } from './lock-filltone';
-import { LockIconLinetone } from './lock-linetone';
+import { LockIconDuotone as LockIconDuotone } from './lock-duotone';
+import { LockIconBold as LockIconBold } from './lock-bold';
+import { LockIconBoldDuotone as LockIconBoldDuotone } from './lock-bold-duotone';
+import { LockIconFill as LockIconFill } from './lock-fill';
+import { LockIconFillDuotone as LockIconFillDuotone } from './lock-fill-duotone';
 
 export interface LockIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LockIcon = memo(forwardRef<SVGSVGElement, LockIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LockIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LockIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LockIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LockIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLockIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LockIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LockIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LockIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LockIconFill ref={ref} {...props} />;
+  if (duotone) return <LockIconDuotone ref={ref} {...props} />;
+  return <RegularLockIcon ref={ref} {...props} />;
 }));
 
 LockIcon.displayName = 'LockIcon';

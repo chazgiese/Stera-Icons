@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BackslashIcon as RegularBackslashIcon } from './backslash';
-import { BackslashIconBold } from './backslash-bold';
-import { BackslashIconFilled } from './backslash-filled';
-import { BackslashIconFilltone } from './backslash-filltone';
-import { BackslashIconLinetone } from './backslash-linetone';
+import { BackslashIconDuotone as BackslashIconDuotone } from './backslash-duotone';
+import { BackslashIconBold as BackslashIconBold } from './backslash-bold';
+import { BackslashIconBoldDuotone as BackslashIconBoldDuotone } from './backslash-bold-duotone';
+import { BackslashIconFill as BackslashIconFill } from './backslash-fill';
+import { BackslashIconFillDuotone as BackslashIconFillDuotone } from './backslash-fill-duotone';
 
 export interface BackslashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BackslashIcon = memo(forwardRef<SVGSVGElement, BackslashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BackslashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BackslashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BackslashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BackslashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBackslashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BackslashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BackslashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BackslashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BackslashIconFill ref={ref} {...props} />;
+  if (duotone) return <BackslashIconDuotone ref={ref} {...props} />;
+  return <RegularBackslashIcon ref={ref} {...props} />;
 }));
 
 BackslashIcon.displayName = 'BackslashIcon';

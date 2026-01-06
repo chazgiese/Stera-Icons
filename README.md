@@ -83,7 +83,8 @@ All icons accept these props:
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `variant` | `'regular' \| 'bold' \| 'filled' \| 'filltone' \| 'linetone'` | `'regular'` | Icon variant style |
+| `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight style |
+| `duotone` | `boolean` | `false` | Whether to use duotone variant |
 | `size` | `number \| string` | `24` | Icon size in pixels |
 | `color` | `string` | `'currentColor'` | Icon color (inherits text color by default) |
 | `className` | `string` | - | Additional CSS class |
@@ -122,6 +123,36 @@ function SearchButton() {
 
 .search-icon {
   color: #666;
+}
+```
+
+### Using Variants
+
+```tsx
+import { SearchIcon } from 'stera-icons';
+
+function SearchExamples() {
+  return (
+    <div>
+      {/* Regular weight, no duotone (default) */}
+      <SearchIcon />
+      
+      {/* Regular weight with duotone */}
+      <SearchIcon duotone />
+      
+      {/* Bold weight, no duotone */}
+      <SearchIcon weight="bold" />
+      
+      {/* Bold weight with duotone */}
+      <SearchIcon weight="bold" duotone />
+      
+      {/* Fill weight, no duotone */}
+      <SearchIcon weight="fill" />
+      
+      {/* Fill weight with duotone */}
+      <SearchIcon weight="fill" duotone />
+    </div>
+  );
 }
 ```
 

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CylinderIcon as RegularCylinderIcon } from './cylinder';
-import { CylinderIconBold } from './cylinder-bold';
-import { CylinderIconFilled } from './cylinder-filled';
-import { CylinderIconFilltone } from './cylinder-filltone';
-import { CylinderIconLinetone } from './cylinder-linetone';
+import { CylinderIconDuotone as CylinderIconDuotone } from './cylinder-duotone';
+import { CylinderIconBold as CylinderIconBold } from './cylinder-bold';
+import { CylinderIconBoldDuotone as CylinderIconBoldDuotone } from './cylinder-bold-duotone';
+import { CylinderIconFill as CylinderIconFill } from './cylinder-fill';
+import { CylinderIconFillDuotone as CylinderIconFillDuotone } from './cylinder-fill-duotone';
 
 export interface CylinderIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CylinderIcon = memo(forwardRef<SVGSVGElement, CylinderIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CylinderIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CylinderIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CylinderIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CylinderIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCylinderIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CylinderIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CylinderIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CylinderIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CylinderIconFill ref={ref} {...props} />;
+  if (duotone) return <CylinderIconDuotone ref={ref} {...props} />;
+  return <RegularCylinderIcon ref={ref} {...props} />;
 }));
 
 CylinderIcon.displayName = 'CylinderIcon';

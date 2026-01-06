@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WristWatchIcon as RegularWristWatchIcon } from './wrist-watch';
-import { WristWatchIconBold } from './wrist-watch-bold';
-import { WristWatchIconFilled } from './wrist-watch-filled';
-import { WristWatchIconFilltone } from './wrist-watch-filltone';
-import { WristWatchIconLinetone } from './wrist-watch-linetone';
+import { WristWatchIconDuotone as WristWatchIconDuotone } from './wrist-watch-duotone';
+import { WristWatchIconBold as WristWatchIconBold } from './wrist-watch-bold';
+import { WristWatchIconBoldDuotone as WristWatchIconBoldDuotone } from './wrist-watch-bold-duotone';
+import { WristWatchIconFill as WristWatchIconFill } from './wrist-watch-fill';
+import { WristWatchIconFillDuotone as WristWatchIconFillDuotone } from './wrist-watch-fill-duotone';
 
 export interface WristWatchIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WristWatchIcon = memo(forwardRef<SVGSVGElement, WristWatchIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WristWatchIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WristWatchIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WristWatchIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WristWatchIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWristWatchIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WristWatchIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WristWatchIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WristWatchIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WristWatchIconFill ref={ref} {...props} />;
+  if (duotone) return <WristWatchIconDuotone ref={ref} {...props} />;
+  return <RegularWristWatchIcon ref={ref} {...props} />;
 }));
 
 WristWatchIcon.displayName = 'WristWatchIcon';

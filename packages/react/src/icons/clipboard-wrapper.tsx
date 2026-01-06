@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ClipboardIcon as RegularClipboardIcon } from './clipboard';
-import { ClipboardIconBold } from './clipboard-bold';
-import { ClipboardIconFilled } from './clipboard-filled';
-import { ClipboardIconFilltone } from './clipboard-filltone';
-import { ClipboardIconLinetone } from './clipboard-linetone';
+import { ClipboardIconDuotone as ClipboardIconDuotone } from './clipboard-duotone';
+import { ClipboardIconBold as ClipboardIconBold } from './clipboard-bold';
+import { ClipboardIconBoldDuotone as ClipboardIconBoldDuotone } from './clipboard-bold-duotone';
+import { ClipboardIconFill as ClipboardIconFill } from './clipboard-fill';
+import { ClipboardIconFillDuotone as ClipboardIconFillDuotone } from './clipboard-fill-duotone';
 
 export interface ClipboardIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ClipboardIcon = memo(forwardRef<SVGSVGElement, ClipboardIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ClipboardIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ClipboardIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ClipboardIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ClipboardIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularClipboardIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ClipboardIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ClipboardIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ClipboardIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ClipboardIconFill ref={ref} {...props} />;
+  if (duotone) return <ClipboardIconDuotone ref={ref} {...props} />;
+  return <RegularClipboardIcon ref={ref} {...props} />;
 }));
 
 ClipboardIcon.displayName = 'ClipboardIcon';

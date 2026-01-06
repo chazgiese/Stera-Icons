@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlameIcon as RegularFlameIcon } from './flame';
-import { FlameIconBold } from './flame-bold';
-import { FlameIconFilled } from './flame-filled';
-import { FlameIconFilltone } from './flame-filltone';
-import { FlameIconLinetone } from './flame-linetone';
+import { FlameIconDuotone as FlameIconDuotone } from './flame-duotone';
+import { FlameIconBold as FlameIconBold } from './flame-bold';
+import { FlameIconBoldDuotone as FlameIconBoldDuotone } from './flame-bold-duotone';
+import { FlameIconFill as FlameIconFill } from './flame-fill';
+import { FlameIconFillDuotone as FlameIconFillDuotone } from './flame-fill-duotone';
 
 export interface FlameIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlameIcon = memo(forwardRef<SVGSVGElement, FlameIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlameIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlameIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlameIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlameIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlameIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlameIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlameIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlameIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlameIconFill ref={ref} {...props} />;
+  if (duotone) return <FlameIconDuotone ref={ref} {...props} />;
+  return <RegularFlameIcon ref={ref} {...props} />;
 }));
 
 FlameIcon.displayName = 'FlameIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlignHorizontalCenterIcon as RegularAlignHorizontalCenterIcon } from './align-horizontal-center';
-import { AlignHorizontalCenterIconBold } from './align-horizontal-center-bold';
-import { AlignHorizontalCenterIconFilled } from './align-horizontal-center-filled';
-import { AlignHorizontalCenterIconFilltone } from './align-horizontal-center-filltone';
-import { AlignHorizontalCenterIconLinetone } from './align-horizontal-center-linetone';
+import { AlignHorizontalCenterIconDuotone as AlignHorizontalCenterIconDuotone } from './align-horizontal-center-duotone';
+import { AlignHorizontalCenterIconBold as AlignHorizontalCenterIconBold } from './align-horizontal-center-bold';
+import { AlignHorizontalCenterIconBoldDuotone as AlignHorizontalCenterIconBoldDuotone } from './align-horizontal-center-bold-duotone';
+import { AlignHorizontalCenterIconFill as AlignHorizontalCenterIconFill } from './align-horizontal-center-fill';
+import { AlignHorizontalCenterIconFillDuotone as AlignHorizontalCenterIconFillDuotone } from './align-horizontal-center-fill-duotone';
 
 export interface AlignHorizontalCenterIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlignHorizontalCenterIcon = memo(forwardRef<SVGSVGElement, AlignHorizontalCenterIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlignHorizontalCenterIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlignHorizontalCenterIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlignHorizontalCenterIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlignHorizontalCenterIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlignHorizontalCenterIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlignHorizontalCenterIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlignHorizontalCenterIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlignHorizontalCenterIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlignHorizontalCenterIconFill ref={ref} {...props} />;
+  if (duotone) return <AlignHorizontalCenterIconDuotone ref={ref} {...props} />;
+  return <RegularAlignHorizontalCenterIcon ref={ref} {...props} />;
 }));
 
 AlignHorizontalCenterIcon.displayName = 'AlignHorizontalCenterIcon';

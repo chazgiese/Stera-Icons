@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextAlignCenterIcon as RegularTextAlignCenterIcon } from './text-align-center';
-import { TextAlignCenterIconBold } from './text-align-center-bold';
-import { TextAlignCenterIconFilled } from './text-align-center-filled';
-import { TextAlignCenterIconFilltone } from './text-align-center-filltone';
-import { TextAlignCenterIconLinetone } from './text-align-center-linetone';
+import { TextAlignCenterIconDuotone as TextAlignCenterIconDuotone } from './text-align-center-duotone';
+import { TextAlignCenterIconBold as TextAlignCenterIconBold } from './text-align-center-bold';
+import { TextAlignCenterIconBoldDuotone as TextAlignCenterIconBoldDuotone } from './text-align-center-bold-duotone';
+import { TextAlignCenterIconFill as TextAlignCenterIconFill } from './text-align-center-fill';
+import { TextAlignCenterIconFillDuotone as TextAlignCenterIconFillDuotone } from './text-align-center-fill-duotone';
 
 export interface TextAlignCenterIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextAlignCenterIcon = memo(forwardRef<SVGSVGElement, TextAlignCenterIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextAlignCenterIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextAlignCenterIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextAlignCenterIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextAlignCenterIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextAlignCenterIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextAlignCenterIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextAlignCenterIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextAlignCenterIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextAlignCenterIconFill ref={ref} {...props} />;
+  if (duotone) return <TextAlignCenterIconDuotone ref={ref} {...props} />;
+  return <RegularTextAlignCenterIcon ref={ref} {...props} />;
 }));
 
 TextAlignCenterIcon.displayName = 'TextAlignCenterIcon';

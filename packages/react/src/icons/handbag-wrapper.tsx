@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HandbagIcon as RegularHandbagIcon } from './handbag';
-import { HandbagIconBold } from './handbag-bold';
-import { HandbagIconFilled } from './handbag-filled';
-import { HandbagIconFilltone } from './handbag-filltone';
-import { HandbagIconLinetone } from './handbag-linetone';
+import { HandbagIconDuotone as HandbagIconDuotone } from './handbag-duotone';
+import { HandbagIconBold as HandbagIconBold } from './handbag-bold';
+import { HandbagIconBoldDuotone as HandbagIconBoldDuotone } from './handbag-bold-duotone';
+import { HandbagIconFill as HandbagIconFill } from './handbag-fill';
+import { HandbagIconFillDuotone as HandbagIconFillDuotone } from './handbag-fill-duotone';
 
 export interface HandbagIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HandbagIcon = memo(forwardRef<SVGSVGElement, HandbagIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HandbagIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HandbagIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HandbagIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HandbagIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHandbagIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HandbagIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HandbagIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HandbagIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HandbagIconFill ref={ref} {...props} />;
+  if (duotone) return <HandbagIconDuotone ref={ref} {...props} />;
+  return <RegularHandbagIcon ref={ref} {...props} />;
 }));
 
 HandbagIcon.displayName = 'HandbagIcon';

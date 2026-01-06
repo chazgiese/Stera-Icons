@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AstriskIcon as RegularAstriskIcon } from './astrisk';
-import { AstriskIconBold } from './astrisk-bold';
-import { AstriskIconFilled } from './astrisk-filled';
-import { AstriskIconFilltone } from './astrisk-filltone';
-import { AstriskIconLinetone } from './astrisk-linetone';
+import { AstriskIconDuotone as AstriskIconDuotone } from './astrisk-duotone';
+import { AstriskIconBold as AstriskIconBold } from './astrisk-bold';
+import { AstriskIconBoldDuotone as AstriskIconBoldDuotone } from './astrisk-bold-duotone';
+import { AstriskIconFill as AstriskIconFill } from './astrisk-fill';
+import { AstriskIconFillDuotone as AstriskIconFillDuotone } from './astrisk-fill-duotone';
 
 export interface AstriskIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AstriskIcon = memo(forwardRef<SVGSVGElement, AstriskIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AstriskIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AstriskIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AstriskIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AstriskIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAstriskIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AstriskIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AstriskIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AstriskIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AstriskIconFill ref={ref} {...props} />;
+  if (duotone) return <AstriskIconDuotone ref={ref} {...props} />;
+  return <RegularAstriskIcon ref={ref} {...props} />;
 }));
 
 AstriskIcon.displayName = 'AstriskIcon';

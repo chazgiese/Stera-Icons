@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FootballIcon as RegularFootballIcon } from './football';
-import { FootballIconBold } from './football-bold';
-import { FootballIconFilled } from './football-filled';
-import { FootballIconFilltone } from './football-filltone';
-import { FootballIconLinetone } from './football-linetone';
+import { FootballIconDuotone as FootballIconDuotone } from './football-duotone';
+import { FootballIconBold as FootballIconBold } from './football-bold';
+import { FootballIconBoldDuotone as FootballIconBoldDuotone } from './football-bold-duotone';
+import { FootballIconFill as FootballIconFill } from './football-fill';
+import { FootballIconFillDuotone as FootballIconFillDuotone } from './football-fill-duotone';
 
 export interface FootballIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FootballIcon = memo(forwardRef<SVGSVGElement, FootballIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FootballIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FootballIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FootballIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FootballIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFootballIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FootballIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FootballIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FootballIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FootballIconFill ref={ref} {...props} />;
+  if (duotone) return <FootballIconDuotone ref={ref} {...props} />;
+  return <RegularFootballIcon ref={ref} {...props} />;
 }));
 
 FootballIcon.displayName = 'FootballIcon';

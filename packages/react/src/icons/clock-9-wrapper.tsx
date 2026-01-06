@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { Clock9Icon as RegularClock9Icon } from './clock-9';
-import { Clock9IconBold } from './clock-9-bold';
-import { Clock9IconFilled } from './clock-9-filled';
-import { Clock9IconFilltone } from './clock-9-filltone';
-import { Clock9IconLinetone } from './clock-9-linetone';
+import { Clock9IconDuotone as Clock9IconDuotone } from './clock-9-duotone';
+import { Clock9IconBold as Clock9IconBold } from './clock-9-bold';
+import { Clock9IconBoldDuotone as Clock9IconBoldDuotone } from './clock-9-bold-duotone';
+import { Clock9IconFill as Clock9IconFill } from './clock-9-fill';
+import { Clock9IconFillDuotone as Clock9IconFillDuotone } from './clock-9-fill-duotone';
 
 export interface Clock9IconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const Clock9Icon = memo(forwardRef<SVGSVGElement, Clock9IconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <Clock9IconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <Clock9IconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <Clock9IconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <Clock9IconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularClock9Icon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <Clock9IconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <Clock9IconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <Clock9IconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <Clock9IconFill ref={ref} {...props} />;
+  if (duotone) return <Clock9IconDuotone ref={ref} {...props} />;
+  return <RegularClock9Icon ref={ref} {...props} />;
 }));
 
 Clock9Icon.displayName = 'Clock9Icon';

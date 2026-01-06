@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SearchIcon as RegularSearchIcon } from './search';
-import { SearchIconBold } from './search-bold';
-import { SearchIconFilled } from './search-filled';
-import { SearchIconFilltone } from './search-filltone';
-import { SearchIconLinetone } from './search-linetone';
+import { SearchIconDuotone as SearchIconDuotone } from './search-duotone';
+import { SearchIconBold as SearchIconBold } from './search-bold';
+import { SearchIconBoldDuotone as SearchIconBoldDuotone } from './search-bold-duotone';
+import { SearchIconFill as SearchIconFill } from './search-fill';
+import { SearchIconFillDuotone as SearchIconFillDuotone } from './search-fill-duotone';
 
 export interface SearchIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SearchIcon = memo(forwardRef<SVGSVGElement, SearchIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SearchIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SearchIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SearchIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SearchIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSearchIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SearchIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SearchIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SearchIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SearchIconFill ref={ref} {...props} />;
+  if (duotone) return <SearchIconDuotone ref={ref} {...props} />;
+  return <RegularSearchIcon ref={ref} {...props} />;
 }));
 
 SearchIcon.displayName = 'SearchIcon';

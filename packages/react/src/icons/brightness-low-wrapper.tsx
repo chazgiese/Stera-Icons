@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BrightnessLowIcon as RegularBrightnessLowIcon } from './brightness-low';
-import { BrightnessLowIconBold } from './brightness-low-bold';
-import { BrightnessLowIconFilled } from './brightness-low-filled';
-import { BrightnessLowIconFilltone } from './brightness-low-filltone';
-import { BrightnessLowIconLinetone } from './brightness-low-linetone';
+import { BrightnessLowIconDuotone as BrightnessLowIconDuotone } from './brightness-low-duotone';
+import { BrightnessLowIconBold as BrightnessLowIconBold } from './brightness-low-bold';
+import { BrightnessLowIconBoldDuotone as BrightnessLowIconBoldDuotone } from './brightness-low-bold-duotone';
+import { BrightnessLowIconFill as BrightnessLowIconFill } from './brightness-low-fill';
+import { BrightnessLowIconFillDuotone as BrightnessLowIconFillDuotone } from './brightness-low-fill-duotone';
 
 export interface BrightnessLowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BrightnessLowIcon = memo(forwardRef<SVGSVGElement, BrightnessLowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BrightnessLowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BrightnessLowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BrightnessLowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BrightnessLowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBrightnessLowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BrightnessLowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BrightnessLowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BrightnessLowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BrightnessLowIconFill ref={ref} {...props} />;
+  if (duotone) return <BrightnessLowIconDuotone ref={ref} {...props} />;
+  return <RegularBrightnessLowIcon ref={ref} {...props} />;
 }));
 
 BrightnessLowIcon.displayName = 'BrightnessLowIcon';

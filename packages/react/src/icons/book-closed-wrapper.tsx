@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BookClosedIcon as RegularBookClosedIcon } from './book-closed';
-import { BookClosedIconBold } from './book-closed-bold';
-import { BookClosedIconFilled } from './book-closed-filled';
-import { BookClosedIconFilltone } from './book-closed-filltone';
-import { BookClosedIconLinetone } from './book-closed-linetone';
+import { BookClosedIconDuotone as BookClosedIconDuotone } from './book-closed-duotone';
+import { BookClosedIconBold as BookClosedIconBold } from './book-closed-bold';
+import { BookClosedIconBoldDuotone as BookClosedIconBoldDuotone } from './book-closed-bold-duotone';
+import { BookClosedIconFill as BookClosedIconFill } from './book-closed-fill';
+import { BookClosedIconFillDuotone as BookClosedIconFillDuotone } from './book-closed-fill-duotone';
 
 export interface BookClosedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BookClosedIcon = memo(forwardRef<SVGSVGElement, BookClosedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BookClosedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BookClosedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BookClosedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BookClosedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBookClosedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BookClosedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BookClosedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BookClosedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BookClosedIconFill ref={ref} {...props} />;
+  if (duotone) return <BookClosedIconDuotone ref={ref} {...props} />;
+  return <RegularBookClosedIcon ref={ref} {...props} />;
 }));
 
 BookClosedIcon.displayName = 'BookClosedIcon';

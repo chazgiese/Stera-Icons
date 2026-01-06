@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GitCompareIcon as RegularGitCompareIcon } from './git-compare';
-import { GitCompareIconBold } from './git-compare-bold';
-import { GitCompareIconFilled } from './git-compare-filled';
-import { GitCompareIconFilltone } from './git-compare-filltone';
-import { GitCompareIconLinetone } from './git-compare-linetone';
+import { GitCompareIconDuotone as GitCompareIconDuotone } from './git-compare-duotone';
+import { GitCompareIconBold as GitCompareIconBold } from './git-compare-bold';
+import { GitCompareIconBoldDuotone as GitCompareIconBoldDuotone } from './git-compare-bold-duotone';
+import { GitCompareIconFill as GitCompareIconFill } from './git-compare-fill';
+import { GitCompareIconFillDuotone as GitCompareIconFillDuotone } from './git-compare-fill-duotone';
 
 export interface GitCompareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GitCompareIcon = memo(forwardRef<SVGSVGElement, GitCompareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GitCompareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GitCompareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GitCompareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GitCompareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGitCompareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GitCompareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GitCompareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GitCompareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GitCompareIconFill ref={ref} {...props} />;
+  if (duotone) return <GitCompareIconDuotone ref={ref} {...props} />;
+  return <RegularGitCompareIcon ref={ref} {...props} />;
 }));
 
 GitCompareIcon.displayName = 'GitCompareIcon';

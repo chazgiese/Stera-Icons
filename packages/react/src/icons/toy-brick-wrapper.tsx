@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ToyBrickIcon as RegularToyBrickIcon } from './toy-brick';
-import { ToyBrickIconBold } from './toy-brick-bold';
-import { ToyBrickIconFilled } from './toy-brick-filled';
-import { ToyBrickIconFilltone } from './toy-brick-filltone';
-import { ToyBrickIconLinetone } from './toy-brick-linetone';
+import { ToyBrickIconDuotone as ToyBrickIconDuotone } from './toy-brick-duotone';
+import { ToyBrickIconBold as ToyBrickIconBold } from './toy-brick-bold';
+import { ToyBrickIconBoldDuotone as ToyBrickIconBoldDuotone } from './toy-brick-bold-duotone';
+import { ToyBrickIconFill as ToyBrickIconFill } from './toy-brick-fill';
+import { ToyBrickIconFillDuotone as ToyBrickIconFillDuotone } from './toy-brick-fill-duotone';
 
 export interface ToyBrickIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ToyBrickIcon = memo(forwardRef<SVGSVGElement, ToyBrickIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ToyBrickIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ToyBrickIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ToyBrickIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ToyBrickIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularToyBrickIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ToyBrickIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ToyBrickIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ToyBrickIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ToyBrickIconFill ref={ref} {...props} />;
+  if (duotone) return <ToyBrickIconDuotone ref={ref} {...props} />;
+  return <RegularToyBrickIcon ref={ref} {...props} />;
 }));
 
 ToyBrickIcon.displayName = 'ToyBrickIcon';

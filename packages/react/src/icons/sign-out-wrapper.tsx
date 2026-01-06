@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SignOutIcon as RegularSignOutIcon } from './sign-out';
-import { SignOutIconBold } from './sign-out-bold';
-import { SignOutIconFilled } from './sign-out-filled';
-import { SignOutIconFilltone } from './sign-out-filltone';
-import { SignOutIconLinetone } from './sign-out-linetone';
+import { SignOutIconDuotone as SignOutIconDuotone } from './sign-out-duotone';
+import { SignOutIconBold as SignOutIconBold } from './sign-out-bold';
+import { SignOutIconBoldDuotone as SignOutIconBoldDuotone } from './sign-out-bold-duotone';
+import { SignOutIconFill as SignOutIconFill } from './sign-out-fill';
+import { SignOutIconFillDuotone as SignOutIconFillDuotone } from './sign-out-fill-duotone';
 
 export interface SignOutIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SignOutIcon = memo(forwardRef<SVGSVGElement, SignOutIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SignOutIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SignOutIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SignOutIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SignOutIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSignOutIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SignOutIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SignOutIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SignOutIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SignOutIconFill ref={ref} {...props} />;
+  if (duotone) return <SignOutIconDuotone ref={ref} {...props} />;
+  return <RegularSignOutIcon ref={ref} {...props} />;
 }));
 
 SignOutIcon.displayName = 'SignOutIcon';

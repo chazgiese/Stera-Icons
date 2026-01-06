@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CubePackageIcon as RegularCubePackageIcon } from './cube-package';
-import { CubePackageIconBold } from './cube-package-bold';
-import { CubePackageIconFilled } from './cube-package-filled';
-import { CubePackageIconFilltone } from './cube-package-filltone';
-import { CubePackageIconLinetone } from './cube-package-linetone';
+import { CubePackageIconDuotone as CubePackageIconDuotone } from './cube-package-duotone';
+import { CubePackageIconBold as CubePackageIconBold } from './cube-package-bold';
+import { CubePackageIconBoldDuotone as CubePackageIconBoldDuotone } from './cube-package-bold-duotone';
+import { CubePackageIconFill as CubePackageIconFill } from './cube-package-fill';
+import { CubePackageIconFillDuotone as CubePackageIconFillDuotone } from './cube-package-fill-duotone';
 
 export interface CubePackageIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CubePackageIcon = memo(forwardRef<SVGSVGElement, CubePackageIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CubePackageIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CubePackageIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CubePackageIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CubePackageIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCubePackageIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CubePackageIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CubePackageIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CubePackageIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CubePackageIconFill ref={ref} {...props} />;
+  if (duotone) return <CubePackageIconDuotone ref={ref} {...props} />;
+  return <RegularCubePackageIcon ref={ref} {...props} />;
 }));
 
 CubePackageIcon.displayName = 'CubePackageIcon';

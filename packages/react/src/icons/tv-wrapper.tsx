@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TvIcon as RegularTvIcon } from './tv';
-import { TvIconBold } from './tv-bold';
-import { TvIconFilled } from './tv-filled';
-import { TvIconFilltone } from './tv-filltone';
-import { TvIconLinetone } from './tv-linetone';
+import { TvIconDuotone as TvIconDuotone } from './tv-duotone';
+import { TvIconBold as TvIconBold } from './tv-bold';
+import { TvIconBoldDuotone as TvIconBoldDuotone } from './tv-bold-duotone';
+import { TvIconFill as TvIconFill } from './tv-fill';
+import { TvIconFillDuotone as TvIconFillDuotone } from './tv-fill-duotone';
 
 export interface TvIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TvIcon = memo(forwardRef<SVGSVGElement, TvIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TvIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TvIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TvIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TvIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTvIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TvIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TvIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TvIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TvIconFill ref={ref} {...props} />;
+  if (duotone) return <TvIconDuotone ref={ref} {...props} />;
+  return <RegularTvIcon ref={ref} {...props} />;
 }));
 
 TvIcon.displayName = 'TvIcon';

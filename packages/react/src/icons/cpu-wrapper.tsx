@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CpuIcon as RegularCpuIcon } from './cpu';
-import { CpuIconBold } from './cpu-bold';
-import { CpuIconFilled } from './cpu-filled';
-import { CpuIconFilltone } from './cpu-filltone';
-import { CpuIconLinetone } from './cpu-linetone';
+import { CpuIconDuotone as CpuIconDuotone } from './cpu-duotone';
+import { CpuIconBold as CpuIconBold } from './cpu-bold';
+import { CpuIconBoldDuotone as CpuIconBoldDuotone } from './cpu-bold-duotone';
+import { CpuIconFill as CpuIconFill } from './cpu-fill';
+import { CpuIconFillDuotone as CpuIconFillDuotone } from './cpu-fill-duotone';
 
 export interface CpuIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CpuIcon = memo(forwardRef<SVGSVGElement, CpuIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CpuIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CpuIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CpuIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CpuIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCpuIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CpuIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CpuIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CpuIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CpuIconFill ref={ref} {...props} />;
+  if (duotone) return <CpuIconDuotone ref={ref} {...props} />;
+  return <RegularCpuIcon ref={ref} {...props} />;
 }));
 
 CpuIcon.displayName = 'CpuIcon';

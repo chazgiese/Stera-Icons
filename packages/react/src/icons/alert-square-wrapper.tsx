@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlertSquareIcon as RegularAlertSquareIcon } from './alert-square';
-import { AlertSquareIconBold } from './alert-square-bold';
-import { AlertSquareIconFilled } from './alert-square-filled';
-import { AlertSquareIconFilltone } from './alert-square-filltone';
-import { AlertSquareIconLinetone } from './alert-square-linetone';
+import { AlertSquareIconDuotone as AlertSquareIconDuotone } from './alert-square-duotone';
+import { AlertSquareIconBold as AlertSquareIconBold } from './alert-square-bold';
+import { AlertSquareIconBoldDuotone as AlertSquareIconBoldDuotone } from './alert-square-bold-duotone';
+import { AlertSquareIconFill as AlertSquareIconFill } from './alert-square-fill';
+import { AlertSquareIconFillDuotone as AlertSquareIconFillDuotone } from './alert-square-fill-duotone';
 
 export interface AlertSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlertSquareIcon = memo(forwardRef<SVGSVGElement, AlertSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlertSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlertSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlertSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlertSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlertSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlertSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlertSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlertSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlertSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <AlertSquareIconDuotone ref={ref} {...props} />;
+  return <RegularAlertSquareIcon ref={ref} {...props} />;
 }));
 
 AlertSquareIcon.displayName = 'AlertSquareIcon';

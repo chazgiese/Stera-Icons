@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ContactBookIcon as RegularContactBookIcon } from './contact-book';
-import { ContactBookIconBold } from './contact-book-bold';
-import { ContactBookIconFilled } from './contact-book-filled';
-import { ContactBookIconFilltone } from './contact-book-filltone';
-import { ContactBookIconLinetone } from './contact-book-linetone';
+import { ContactBookIconDuotone as ContactBookIconDuotone } from './contact-book-duotone';
+import { ContactBookIconBold as ContactBookIconBold } from './contact-book-bold';
+import { ContactBookIconBoldDuotone as ContactBookIconBoldDuotone } from './contact-book-bold-duotone';
+import { ContactBookIconFill as ContactBookIconFill } from './contact-book-fill';
+import { ContactBookIconFillDuotone as ContactBookIconFillDuotone } from './contact-book-fill-duotone';
 
 export interface ContactBookIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ContactBookIcon = memo(forwardRef<SVGSVGElement, ContactBookIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ContactBookIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ContactBookIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ContactBookIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ContactBookIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularContactBookIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ContactBookIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ContactBookIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ContactBookIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ContactBookIconFill ref={ref} {...props} />;
+  if (duotone) return <ContactBookIconDuotone ref={ref} {...props} />;
+  return <RegularContactBookIcon ref={ref} {...props} />;
 }));
 
 ContactBookIcon.displayName = 'ContactBookIcon';

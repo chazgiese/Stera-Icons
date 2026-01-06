@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HomeHeartIcon as RegularHomeHeartIcon } from './home-heart';
-import { HomeHeartIconBold } from './home-heart-bold';
-import { HomeHeartIconFilled } from './home-heart-filled';
-import { HomeHeartIconFilltone } from './home-heart-filltone';
-import { HomeHeartIconLinetone } from './home-heart-linetone';
+import { HomeHeartIconDuotone as HomeHeartIconDuotone } from './home-heart-duotone';
+import { HomeHeartIconBold as HomeHeartIconBold } from './home-heart-bold';
+import { HomeHeartIconBoldDuotone as HomeHeartIconBoldDuotone } from './home-heart-bold-duotone';
+import { HomeHeartIconFill as HomeHeartIconFill } from './home-heart-fill';
+import { HomeHeartIconFillDuotone as HomeHeartIconFillDuotone } from './home-heart-fill-duotone';
 
 export interface HomeHeartIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HomeHeartIcon = memo(forwardRef<SVGSVGElement, HomeHeartIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HomeHeartIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HomeHeartIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HomeHeartIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HomeHeartIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHomeHeartIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HomeHeartIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HomeHeartIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HomeHeartIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HomeHeartIconFill ref={ref} {...props} />;
+  if (duotone) return <HomeHeartIconDuotone ref={ref} {...props} />;
+  return <RegularHomeHeartIcon ref={ref} {...props} />;
 }));
 
 HomeHeartIcon.displayName = 'HomeHeartIcon';

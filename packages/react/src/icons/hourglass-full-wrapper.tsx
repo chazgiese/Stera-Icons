@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HourglassFullIcon as RegularHourglassFullIcon } from './hourglass-full';
-import { HourglassFullIconBold } from './hourglass-full-bold';
-import { HourglassFullIconFilled } from './hourglass-full-filled';
-import { HourglassFullIconFilltone } from './hourglass-full-filltone';
-import { HourglassFullIconLinetone } from './hourglass-full-linetone';
+import { HourglassFullIconDuotone as HourglassFullIconDuotone } from './hourglass-full-duotone';
+import { HourglassFullIconBold as HourglassFullIconBold } from './hourglass-full-bold';
+import { HourglassFullIconBoldDuotone as HourglassFullIconBoldDuotone } from './hourglass-full-bold-duotone';
+import { HourglassFullIconFill as HourglassFullIconFill } from './hourglass-full-fill';
+import { HourglassFullIconFillDuotone as HourglassFullIconFillDuotone } from './hourglass-full-fill-duotone';
 
 export interface HourglassFullIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HourglassFullIcon = memo(forwardRef<SVGSVGElement, HourglassFullIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HourglassFullIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HourglassFullIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HourglassFullIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HourglassFullIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHourglassFullIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HourglassFullIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HourglassFullIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HourglassFullIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HourglassFullIconFill ref={ref} {...props} />;
+  if (duotone) return <HourglassFullIconDuotone ref={ref} {...props} />;
+  return <RegularHourglassFullIcon ref={ref} {...props} />;
 }));
 
 HourglassFullIcon.displayName = 'HourglassFullIcon';

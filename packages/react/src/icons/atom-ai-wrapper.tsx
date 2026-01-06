@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AtomAiIcon as RegularAtomAiIcon } from './atom-ai';
-import { AtomAiIconBold } from './atom-ai-bold';
-import { AtomAiIconFilled } from './atom-ai-filled';
-import { AtomAiIconFilltone } from './atom-ai-filltone';
-import { AtomAiIconLinetone } from './atom-ai-linetone';
+import { AtomAiIconDuotone as AtomAiIconDuotone } from './atom-ai-duotone';
+import { AtomAiIconBold as AtomAiIconBold } from './atom-ai-bold';
+import { AtomAiIconBoldDuotone as AtomAiIconBoldDuotone } from './atom-ai-bold-duotone';
+import { AtomAiIconFill as AtomAiIconFill } from './atom-ai-fill';
+import { AtomAiIconFillDuotone as AtomAiIconFillDuotone } from './atom-ai-fill-duotone';
 
 export interface AtomAiIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AtomAiIcon = memo(forwardRef<SVGSVGElement, AtomAiIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AtomAiIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AtomAiIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AtomAiIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AtomAiIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAtomAiIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AtomAiIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AtomAiIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AtomAiIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AtomAiIconFill ref={ref} {...props} />;
+  if (duotone) return <AtomAiIconDuotone ref={ref} {...props} />;
+  return <RegularAtomAiIcon ref={ref} {...props} />;
 }));
 
 AtomAiIcon.displayName = 'AtomAiIcon';

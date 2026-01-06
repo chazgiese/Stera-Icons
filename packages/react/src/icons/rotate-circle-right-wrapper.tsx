@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { RotateCircleRightIcon as RegularRotateCircleRightIcon } from './rotate-circle-right';
-import { RotateCircleRightIconBold } from './rotate-circle-right-bold';
-import { RotateCircleRightIconFilled } from './rotate-circle-right-filled';
-import { RotateCircleRightIconFilltone } from './rotate-circle-right-filltone';
-import { RotateCircleRightIconLinetone } from './rotate-circle-right-linetone';
+import { RotateCircleRightIconDuotone as RotateCircleRightIconDuotone } from './rotate-circle-right-duotone';
+import { RotateCircleRightIconBold as RotateCircleRightIconBold } from './rotate-circle-right-bold';
+import { RotateCircleRightIconBoldDuotone as RotateCircleRightIconBoldDuotone } from './rotate-circle-right-bold-duotone';
+import { RotateCircleRightIconFill as RotateCircleRightIconFill } from './rotate-circle-right-fill';
+import { RotateCircleRightIconFillDuotone as RotateCircleRightIconFillDuotone } from './rotate-circle-right-fill-duotone';
 
 export interface RotateCircleRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const RotateCircleRightIcon = memo(forwardRef<SVGSVGElement, RotateCircleRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <RotateCircleRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <RotateCircleRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <RotateCircleRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <RotateCircleRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularRotateCircleRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <RotateCircleRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <RotateCircleRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <RotateCircleRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <RotateCircleRightIconFill ref={ref} {...props} />;
+  if (duotone) return <RotateCircleRightIconDuotone ref={ref} {...props} />;
+  return <RegularRotateCircleRightIcon ref={ref} {...props} />;
 }));
 
 RotateCircleRightIcon.displayName = 'RotateCircleRightIcon';

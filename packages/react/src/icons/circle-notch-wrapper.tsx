@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CircleNotchIcon as RegularCircleNotchIcon } from './circle-notch';
-import { CircleNotchIconBold } from './circle-notch-bold';
-import { CircleNotchIconFilled } from './circle-notch-filled';
-import { CircleNotchIconFilltone } from './circle-notch-filltone';
-import { CircleNotchIconLinetone } from './circle-notch-linetone';
+import { CircleNotchIconDuotone as CircleNotchIconDuotone } from './circle-notch-duotone';
+import { CircleNotchIconBold as CircleNotchIconBold } from './circle-notch-bold';
+import { CircleNotchIconBoldDuotone as CircleNotchIconBoldDuotone } from './circle-notch-bold-duotone';
+import { CircleNotchIconFill as CircleNotchIconFill } from './circle-notch-fill';
+import { CircleNotchIconFillDuotone as CircleNotchIconFillDuotone } from './circle-notch-fill-duotone';
 
 export interface CircleNotchIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CircleNotchIcon = memo(forwardRef<SVGSVGElement, CircleNotchIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CircleNotchIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CircleNotchIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CircleNotchIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CircleNotchIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCircleNotchIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CircleNotchIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CircleNotchIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CircleNotchIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CircleNotchIconFill ref={ref} {...props} />;
+  if (duotone) return <CircleNotchIconDuotone ref={ref} {...props} />;
+  return <RegularCircleNotchIcon ref={ref} {...props} />;
 }));
 
 CircleNotchIcon.displayName = 'CircleNotchIcon';

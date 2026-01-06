@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MenuAltIcon as RegularMenuAltIcon } from './menu-alt';
-import { MenuAltIconBold } from './menu-alt-bold';
-import { MenuAltIconFilled } from './menu-alt-filled';
-import { MenuAltIconFilltone } from './menu-alt-filltone';
-import { MenuAltIconLinetone } from './menu-alt-linetone';
+import { MenuAltIconDuotone as MenuAltIconDuotone } from './menu-alt-duotone';
+import { MenuAltIconBold as MenuAltIconBold } from './menu-alt-bold';
+import { MenuAltIconBoldDuotone as MenuAltIconBoldDuotone } from './menu-alt-bold-duotone';
+import { MenuAltIconFill as MenuAltIconFill } from './menu-alt-fill';
+import { MenuAltIconFillDuotone as MenuAltIconFillDuotone } from './menu-alt-fill-duotone';
 
 export interface MenuAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MenuAltIcon = memo(forwardRef<SVGSVGElement, MenuAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MenuAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MenuAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MenuAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MenuAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMenuAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MenuAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MenuAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MenuAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MenuAltIconFill ref={ref} {...props} />;
+  if (duotone) return <MenuAltIconDuotone ref={ref} {...props} />;
+  return <RegularMenuAltIcon ref={ref} {...props} />;
 }));
 
 MenuAltIcon.displayName = 'MenuAltIcon';

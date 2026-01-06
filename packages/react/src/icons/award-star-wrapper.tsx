@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AwardStarIcon as RegularAwardStarIcon } from './award-star';
-import { AwardStarIconBold } from './award-star-bold';
-import { AwardStarIconFilled } from './award-star-filled';
-import { AwardStarIconFilltone } from './award-star-filltone';
-import { AwardStarIconLinetone } from './award-star-linetone';
+import { AwardStarIconDuotone as AwardStarIconDuotone } from './award-star-duotone';
+import { AwardStarIconBold as AwardStarIconBold } from './award-star-bold';
+import { AwardStarIconBoldDuotone as AwardStarIconBoldDuotone } from './award-star-bold-duotone';
+import { AwardStarIconFill as AwardStarIconFill } from './award-star-fill';
+import { AwardStarIconFillDuotone as AwardStarIconFillDuotone } from './award-star-fill-duotone';
 
 export interface AwardStarIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AwardStarIcon = memo(forwardRef<SVGSVGElement, AwardStarIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AwardStarIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AwardStarIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AwardStarIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AwardStarIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAwardStarIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AwardStarIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AwardStarIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AwardStarIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AwardStarIconFill ref={ref} {...props} />;
+  if (duotone) return <AwardStarIconDuotone ref={ref} {...props} />;
+  return <RegularAwardStarIcon ref={ref} {...props} />;
 }));
 
 AwardStarIcon.displayName = 'AwardStarIcon';

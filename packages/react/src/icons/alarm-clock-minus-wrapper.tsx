@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlarmClockMinusIcon as RegularAlarmClockMinusIcon } from './alarm-clock-minus';
-import { AlarmClockMinusIconBold } from './alarm-clock-minus-bold';
-import { AlarmClockMinusIconFilled } from './alarm-clock-minus-filled';
-import { AlarmClockMinusIconFilltone } from './alarm-clock-minus-filltone';
-import { AlarmClockMinusIconLinetone } from './alarm-clock-minus-linetone';
+import { AlarmClockMinusIconDuotone as AlarmClockMinusIconDuotone } from './alarm-clock-minus-duotone';
+import { AlarmClockMinusIconBold as AlarmClockMinusIconBold } from './alarm-clock-minus-bold';
+import { AlarmClockMinusIconBoldDuotone as AlarmClockMinusIconBoldDuotone } from './alarm-clock-minus-bold-duotone';
+import { AlarmClockMinusIconFill as AlarmClockMinusIconFill } from './alarm-clock-minus-fill';
+import { AlarmClockMinusIconFillDuotone as AlarmClockMinusIconFillDuotone } from './alarm-clock-minus-fill-duotone';
 
 export interface AlarmClockMinusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlarmClockMinusIcon = memo(forwardRef<SVGSVGElement, AlarmClockMinusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlarmClockMinusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlarmClockMinusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlarmClockMinusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlarmClockMinusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlarmClockMinusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlarmClockMinusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlarmClockMinusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlarmClockMinusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlarmClockMinusIconFill ref={ref} {...props} />;
+  if (duotone) return <AlarmClockMinusIconDuotone ref={ref} {...props} />;
+  return <RegularAlarmClockMinusIcon ref={ref} {...props} />;
 }));
 
 AlarmClockMinusIcon.displayName = 'AlarmClockMinusIcon';

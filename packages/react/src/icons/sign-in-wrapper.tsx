@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SignInIcon as RegularSignInIcon } from './sign-in';
-import { SignInIconBold } from './sign-in-bold';
-import { SignInIconFilled } from './sign-in-filled';
-import { SignInIconFilltone } from './sign-in-filltone';
-import { SignInIconLinetone } from './sign-in-linetone';
+import { SignInIconDuotone as SignInIconDuotone } from './sign-in-duotone';
+import { SignInIconBold as SignInIconBold } from './sign-in-bold';
+import { SignInIconBoldDuotone as SignInIconBoldDuotone } from './sign-in-bold-duotone';
+import { SignInIconFill as SignInIconFill } from './sign-in-fill';
+import { SignInIconFillDuotone as SignInIconFillDuotone } from './sign-in-fill-duotone';
 
 export interface SignInIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SignInIcon = memo(forwardRef<SVGSVGElement, SignInIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SignInIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SignInIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SignInIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SignInIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSignInIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SignInIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SignInIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SignInIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SignInIconFill ref={ref} {...props} />;
+  if (duotone) return <SignInIconDuotone ref={ref} {...props} />;
+  return <RegularSignInIcon ref={ref} {...props} />;
 }));
 
 SignInIcon.displayName = 'SignInIcon';

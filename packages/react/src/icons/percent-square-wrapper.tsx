@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PercentSquareIcon as RegularPercentSquareIcon } from './percent-square';
-import { PercentSquareIconBold } from './percent-square-bold';
-import { PercentSquareIconFilled } from './percent-square-filled';
-import { PercentSquareIconFilltone } from './percent-square-filltone';
-import { PercentSquareIconLinetone } from './percent-square-linetone';
+import { PercentSquareIconDuotone as PercentSquareIconDuotone } from './percent-square-duotone';
+import { PercentSquareIconBold as PercentSquareIconBold } from './percent-square-bold';
+import { PercentSquareIconBoldDuotone as PercentSquareIconBoldDuotone } from './percent-square-bold-duotone';
+import { PercentSquareIconFill as PercentSquareIconFill } from './percent-square-fill';
+import { PercentSquareIconFillDuotone as PercentSquareIconFillDuotone } from './percent-square-fill-duotone';
 
 export interface PercentSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PercentSquareIcon = memo(forwardRef<SVGSVGElement, PercentSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PercentSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PercentSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PercentSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PercentSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPercentSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PercentSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PercentSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PercentSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PercentSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <PercentSquareIconDuotone ref={ref} {...props} />;
+  return <RegularPercentSquareIcon ref={ref} {...props} />;
 }));
 
 PercentSquareIcon.displayName = 'PercentSquareIcon';

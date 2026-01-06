@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListBulletIcon as RegularListBulletIcon } from './list-bullet';
-import { ListBulletIconBold } from './list-bullet-bold';
-import { ListBulletIconFilled } from './list-bullet-filled';
-import { ListBulletIconFilltone } from './list-bullet-filltone';
-import { ListBulletIconLinetone } from './list-bullet-linetone';
+import { ListBulletIconDuotone as ListBulletIconDuotone } from './list-bullet-duotone';
+import { ListBulletIconBold as ListBulletIconBold } from './list-bullet-bold';
+import { ListBulletIconBoldDuotone as ListBulletIconBoldDuotone } from './list-bullet-bold-duotone';
+import { ListBulletIconFill as ListBulletIconFill } from './list-bullet-fill';
+import { ListBulletIconFillDuotone as ListBulletIconFillDuotone } from './list-bullet-fill-duotone';
 
 export interface ListBulletIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListBulletIcon = memo(forwardRef<SVGSVGElement, ListBulletIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListBulletIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListBulletIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListBulletIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListBulletIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListBulletIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListBulletIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListBulletIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListBulletIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListBulletIconFill ref={ref} {...props} />;
+  if (duotone) return <ListBulletIconDuotone ref={ref} {...props} />;
+  return <RegularListBulletIcon ref={ref} {...props} />;
 }));
 
 ListBulletIcon.displayName = 'ListBulletIcon';

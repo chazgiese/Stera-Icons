@@ -14,24 +14,28 @@ function App() {
         <h2>HomeIcon Variants</h2>
         <div className="variant-grid">
           <div className="variant-item">
-            <HomeIcon variant="regular" size={48} />
+            <HomeIcon size={48} />
             <span>regular</span>
           </div>
           <div className="variant-item">
-            <HomeIcon variant="bold" size={48} />
+            <HomeIcon duotone size={48} />
+            <span>regular duotone</span>
+          </div>
+          <div className="variant-item">
+            <HomeIcon weight="bold" size={48} />
             <span>bold</span>
           </div>
           <div className="variant-item">
-            <HomeIcon variant="filled" size={48} />
-            <span>filled</span>
+            <HomeIcon weight="bold" duotone size={48} />
+            <span>bold duotone</span>
           </div>
           <div className="variant-item">
-            <HomeIcon variant="filltone" size={48} />
-            <span>filltone</span>
+            <HomeIcon weight="fill" size={48} />
+            <span>fill</span>
           </div>
           <div className="variant-item">
-            <HomeIcon variant="linetone" size={48} />
-            <span>linetone</span>
+            <HomeIcon weight="fill" duotone size={48} />
+            <span>fill duotone</span>
           </div>
         </div>
       </div>

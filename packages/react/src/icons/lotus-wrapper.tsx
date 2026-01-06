@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LotusIcon as RegularLotusIcon } from './lotus';
-import { LotusIconBold } from './lotus-bold';
-import { LotusIconFilled } from './lotus-filled';
-import { LotusIconFilltone } from './lotus-filltone';
-import { LotusIconLinetone } from './lotus-linetone';
+import { LotusIconDuotone as LotusIconDuotone } from './lotus-duotone';
+import { LotusIconBold as LotusIconBold } from './lotus-bold';
+import { LotusIconBoldDuotone as LotusIconBoldDuotone } from './lotus-bold-duotone';
+import { LotusIconFill as LotusIconFill } from './lotus-fill';
+import { LotusIconFillDuotone as LotusIconFillDuotone } from './lotus-fill-duotone';
 
 export interface LotusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LotusIcon = memo(forwardRef<SVGSVGElement, LotusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LotusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LotusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LotusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LotusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLotusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LotusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LotusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LotusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LotusIconFill ref={ref} {...props} />;
+  if (duotone) return <LotusIconDuotone ref={ref} {...props} />;
+  return <RegularLotusIcon ref={ref} {...props} />;
 }));
 
 LotusIcon.displayName = 'LotusIcon';

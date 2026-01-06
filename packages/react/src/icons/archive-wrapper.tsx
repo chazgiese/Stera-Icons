@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArchiveIcon as RegularArchiveIcon } from './archive';
-import { ArchiveIconBold } from './archive-bold';
-import { ArchiveIconFilled } from './archive-filled';
-import { ArchiveIconFilltone } from './archive-filltone';
-import { ArchiveIconLinetone } from './archive-linetone';
+import { ArchiveIconDuotone as ArchiveIconDuotone } from './archive-duotone';
+import { ArchiveIconBold as ArchiveIconBold } from './archive-bold';
+import { ArchiveIconBoldDuotone as ArchiveIconBoldDuotone } from './archive-bold-duotone';
+import { ArchiveIconFill as ArchiveIconFill } from './archive-fill';
+import { ArchiveIconFillDuotone as ArchiveIconFillDuotone } from './archive-fill-duotone';
 
 export interface ArchiveIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArchiveIcon = memo(forwardRef<SVGSVGElement, ArchiveIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArchiveIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArchiveIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArchiveIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArchiveIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArchiveIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArchiveIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArchiveIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArchiveIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArchiveIconFill ref={ref} {...props} />;
+  if (duotone) return <ArchiveIconDuotone ref={ref} {...props} />;
+  return <RegularArchiveIcon ref={ref} {...props} />;
 }));
 
 ArchiveIcon.displayName = 'ArchiveIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MenuIcon as RegularMenuIcon } from './menu';
-import { MenuIconBold } from './menu-bold';
-import { MenuIconFilled } from './menu-filled';
-import { MenuIconFilltone } from './menu-filltone';
-import { MenuIconLinetone } from './menu-linetone';
+import { MenuIconDuotone as MenuIconDuotone } from './menu-duotone';
+import { MenuIconBold as MenuIconBold } from './menu-bold';
+import { MenuIconBoldDuotone as MenuIconBoldDuotone } from './menu-bold-duotone';
+import { MenuIconFill as MenuIconFill } from './menu-fill';
+import { MenuIconFillDuotone as MenuIconFillDuotone } from './menu-fill-duotone';
 
 export interface MenuIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MenuIcon = memo(forwardRef<SVGSVGElement, MenuIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MenuIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MenuIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MenuIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MenuIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMenuIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MenuIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MenuIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MenuIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MenuIconFill ref={ref} {...props} />;
+  if (duotone) return <MenuIconDuotone ref={ref} {...props} />;
+  return <RegularMenuIcon ref={ref} {...props} />;
 }));
 
 MenuIcon.displayName = 'MenuIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartBarRowIcon as RegularChartBarRowIcon } from './chart-bar-row';
-import { ChartBarRowIconBold } from './chart-bar-row-bold';
-import { ChartBarRowIconFilled } from './chart-bar-row-filled';
-import { ChartBarRowIconFilltone } from './chart-bar-row-filltone';
-import { ChartBarRowIconLinetone } from './chart-bar-row-linetone';
+import { ChartBarRowIconDuotone as ChartBarRowIconDuotone } from './chart-bar-row-duotone';
+import { ChartBarRowIconBold as ChartBarRowIconBold } from './chart-bar-row-bold';
+import { ChartBarRowIconBoldDuotone as ChartBarRowIconBoldDuotone } from './chart-bar-row-bold-duotone';
+import { ChartBarRowIconFill as ChartBarRowIconFill } from './chart-bar-row-fill';
+import { ChartBarRowIconFillDuotone as ChartBarRowIconFillDuotone } from './chart-bar-row-fill-duotone';
 
 export interface ChartBarRowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartBarRowIcon = memo(forwardRef<SVGSVGElement, ChartBarRowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartBarRowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartBarRowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartBarRowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartBarRowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartBarRowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartBarRowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartBarRowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartBarRowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartBarRowIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartBarRowIconDuotone ref={ref} {...props} />;
+  return <RegularChartBarRowIcon ref={ref} {...props} />;
 }));
 
 ChartBarRowIcon.displayName = 'ChartBarRowIcon';

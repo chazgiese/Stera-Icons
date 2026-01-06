@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChatBoxIcon as RegularChatBoxIcon } from './chat-box';
-import { ChatBoxIconBold } from './chat-box-bold';
-import { ChatBoxIconFilled } from './chat-box-filled';
-import { ChatBoxIconFilltone } from './chat-box-filltone';
-import { ChatBoxIconLinetone } from './chat-box-linetone';
+import { ChatBoxIconDuotone as ChatBoxIconDuotone } from './chat-box-duotone';
+import { ChatBoxIconBold as ChatBoxIconBold } from './chat-box-bold';
+import { ChatBoxIconBoldDuotone as ChatBoxIconBoldDuotone } from './chat-box-bold-duotone';
+import { ChatBoxIconFill as ChatBoxIconFill } from './chat-box-fill';
+import { ChatBoxIconFillDuotone as ChatBoxIconFillDuotone } from './chat-box-fill-duotone';
 
 export interface ChatBoxIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChatBoxIcon = memo(forwardRef<SVGSVGElement, ChatBoxIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChatBoxIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChatBoxIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChatBoxIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChatBoxIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChatBoxIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChatBoxIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChatBoxIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChatBoxIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChatBoxIconFill ref={ref} {...props} />;
+  if (duotone) return <ChatBoxIconDuotone ref={ref} {...props} />;
+  return <RegularChatBoxIcon ref={ref} {...props} />;
 }));
 
 ChatBoxIcon.displayName = 'ChatBoxIcon';

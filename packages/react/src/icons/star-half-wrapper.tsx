@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { StarHalfIcon as RegularStarHalfIcon } from './star-half';
-import { StarHalfIconBold } from './star-half-bold';
-import { StarHalfIconFilled } from './star-half-filled';
-import { StarHalfIconFilltone } from './star-half-filltone';
-import { StarHalfIconLinetone } from './star-half-linetone';
+import { StarHalfIconDuotone as StarHalfIconDuotone } from './star-half-duotone';
+import { StarHalfIconBold as StarHalfIconBold } from './star-half-bold';
+import { StarHalfIconBoldDuotone as StarHalfIconBoldDuotone } from './star-half-bold-duotone';
+import { StarHalfIconFill as StarHalfIconFill } from './star-half-fill';
+import { StarHalfIconFillDuotone as StarHalfIconFillDuotone } from './star-half-fill-duotone';
 
 export interface StarHalfIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const StarHalfIcon = memo(forwardRef<SVGSVGElement, StarHalfIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <StarHalfIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <StarHalfIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <StarHalfIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <StarHalfIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularStarHalfIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <StarHalfIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <StarHalfIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <StarHalfIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <StarHalfIconFill ref={ref} {...props} />;
+  if (duotone) return <StarHalfIconDuotone ref={ref} {...props} />;
+  return <RegularStarHalfIcon ref={ref} {...props} />;
 }));
 
 StarHalfIcon.displayName = 'StarHalfIcon';

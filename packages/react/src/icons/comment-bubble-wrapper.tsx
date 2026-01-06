@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CommentBubbleIcon as RegularCommentBubbleIcon } from './comment-bubble';
-import { CommentBubbleIconBold } from './comment-bubble-bold';
-import { CommentBubbleIconFilled } from './comment-bubble-filled';
-import { CommentBubbleIconFilltone } from './comment-bubble-filltone';
-import { CommentBubbleIconLinetone } from './comment-bubble-linetone';
+import { CommentBubbleIconDuotone as CommentBubbleIconDuotone } from './comment-bubble-duotone';
+import { CommentBubbleIconBold as CommentBubbleIconBold } from './comment-bubble-bold';
+import { CommentBubbleIconBoldDuotone as CommentBubbleIconBoldDuotone } from './comment-bubble-bold-duotone';
+import { CommentBubbleIconFill as CommentBubbleIconFill } from './comment-bubble-fill';
+import { CommentBubbleIconFillDuotone as CommentBubbleIconFillDuotone } from './comment-bubble-fill-duotone';
 
 export interface CommentBubbleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CommentBubbleIcon = memo(forwardRef<SVGSVGElement, CommentBubbleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CommentBubbleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CommentBubbleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CommentBubbleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CommentBubbleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCommentBubbleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CommentBubbleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CommentBubbleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CommentBubbleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CommentBubbleIconFill ref={ref} {...props} />;
+  if (duotone) return <CommentBubbleIconDuotone ref={ref} {...props} />;
+  return <RegularCommentBubbleIcon ref={ref} {...props} />;
 }));
 
 CommentBubbleIcon.displayName = 'CommentBubbleIcon';

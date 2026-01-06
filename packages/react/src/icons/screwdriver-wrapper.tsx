@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScrewdriverIcon as RegularScrewdriverIcon } from './screwdriver';
-import { ScrewdriverIconBold } from './screwdriver-bold';
-import { ScrewdriverIconFilled } from './screwdriver-filled';
-import { ScrewdriverIconFilltone } from './screwdriver-filltone';
-import { ScrewdriverIconLinetone } from './screwdriver-linetone';
+import { ScrewdriverIconDuotone as ScrewdriverIconDuotone } from './screwdriver-duotone';
+import { ScrewdriverIconBold as ScrewdriverIconBold } from './screwdriver-bold';
+import { ScrewdriverIconBoldDuotone as ScrewdriverIconBoldDuotone } from './screwdriver-bold-duotone';
+import { ScrewdriverIconFill as ScrewdriverIconFill } from './screwdriver-fill';
+import { ScrewdriverIconFillDuotone as ScrewdriverIconFillDuotone } from './screwdriver-fill-duotone';
 
 export interface ScrewdriverIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScrewdriverIcon = memo(forwardRef<SVGSVGElement, ScrewdriverIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScrewdriverIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScrewdriverIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScrewdriverIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScrewdriverIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScrewdriverIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScrewdriverIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScrewdriverIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScrewdriverIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScrewdriverIconFill ref={ref} {...props} />;
+  if (duotone) return <ScrewdriverIconDuotone ref={ref} {...props} />;
+  return <RegularScrewdriverIcon ref={ref} {...props} />;
 }));
 
 ScrewdriverIcon.displayName = 'ScrewdriverIcon';

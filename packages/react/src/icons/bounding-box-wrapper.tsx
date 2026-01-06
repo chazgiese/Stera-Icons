@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BoundingBoxIcon as RegularBoundingBoxIcon } from './bounding-box';
-import { BoundingBoxIconBold } from './bounding-box-bold';
-import { BoundingBoxIconFilled } from './bounding-box-filled';
-import { BoundingBoxIconFilltone } from './bounding-box-filltone';
-import { BoundingBoxIconLinetone } from './bounding-box-linetone';
+import { BoundingBoxIconDuotone as BoundingBoxIconDuotone } from './bounding-box-duotone';
+import { BoundingBoxIconBold as BoundingBoxIconBold } from './bounding-box-bold';
+import { BoundingBoxIconBoldDuotone as BoundingBoxIconBoldDuotone } from './bounding-box-bold-duotone';
+import { BoundingBoxIconFill as BoundingBoxIconFill } from './bounding-box-fill';
+import { BoundingBoxIconFillDuotone as BoundingBoxIconFillDuotone } from './bounding-box-fill-duotone';
 
 export interface BoundingBoxIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BoundingBoxIcon = memo(forwardRef<SVGSVGElement, BoundingBoxIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BoundingBoxIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BoundingBoxIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BoundingBoxIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BoundingBoxIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBoundingBoxIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BoundingBoxIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BoundingBoxIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BoundingBoxIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BoundingBoxIconFill ref={ref} {...props} />;
+  if (duotone) return <BoundingBoxIconDuotone ref={ref} {...props} />;
+  return <RegularBoundingBoxIcon ref={ref} {...props} />;
 }));
 
 BoundingBoxIcon.displayName = 'BoundingBoxIcon';

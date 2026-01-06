@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BrainIcon as RegularBrainIcon } from './brain';
-import { BrainIconBold } from './brain-bold';
-import { BrainIconFilled } from './brain-filled';
-import { BrainIconFilltone } from './brain-filltone';
-import { BrainIconLinetone } from './brain-linetone';
+import { BrainIconDuotone as BrainIconDuotone } from './brain-duotone';
+import { BrainIconBold as BrainIconBold } from './brain-bold';
+import { BrainIconBoldDuotone as BrainIconBoldDuotone } from './brain-bold-duotone';
+import { BrainIconFill as BrainIconFill } from './brain-fill';
+import { BrainIconFillDuotone as BrainIconFillDuotone } from './brain-fill-duotone';
 
 export interface BrainIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BrainIcon = memo(forwardRef<SVGSVGElement, BrainIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BrainIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BrainIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BrainIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BrainIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBrainIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BrainIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BrainIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BrainIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BrainIconFill ref={ref} {...props} />;
+  if (duotone) return <BrainIconDuotone ref={ref} {...props} />;
+  return <RegularBrainIcon ref={ref} {...props} />;
 }));
 
 BrainIcon.displayName = 'BrainIcon';

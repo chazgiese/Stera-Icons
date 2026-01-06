@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { NodeMapIcon as RegularNodeMapIcon } from './node-map';
-import { NodeMapIconBold } from './node-map-bold';
-import { NodeMapIconFilled } from './node-map-filled';
-import { NodeMapIconFilltone } from './node-map-filltone';
-import { NodeMapIconLinetone } from './node-map-linetone';
+import { NodeMapIconDuotone as NodeMapIconDuotone } from './node-map-duotone';
+import { NodeMapIconBold as NodeMapIconBold } from './node-map-bold';
+import { NodeMapIconBoldDuotone as NodeMapIconBoldDuotone } from './node-map-bold-duotone';
+import { NodeMapIconFill as NodeMapIconFill } from './node-map-fill';
+import { NodeMapIconFillDuotone as NodeMapIconFillDuotone } from './node-map-fill-duotone';
 
 export interface NodeMapIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const NodeMapIcon = memo(forwardRef<SVGSVGElement, NodeMapIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <NodeMapIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <NodeMapIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <NodeMapIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <NodeMapIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularNodeMapIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <NodeMapIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <NodeMapIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <NodeMapIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <NodeMapIconFill ref={ref} {...props} />;
+  if (duotone) return <NodeMapIconDuotone ref={ref} {...props} />;
+  return <RegularNodeMapIcon ref={ref} {...props} />;
 }));
 
 NodeMapIcon.displayName = 'NodeMapIcon';

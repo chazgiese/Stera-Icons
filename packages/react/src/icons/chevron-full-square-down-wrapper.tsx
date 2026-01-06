@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronFullSquareDownIcon as RegularChevronFullSquareDownIcon } from './chevron-full-square-down';
-import { ChevronFullSquareDownIconBold } from './chevron-full-square-down-bold';
-import { ChevronFullSquareDownIconFilled } from './chevron-full-square-down-filled';
-import { ChevronFullSquareDownIconFilltone } from './chevron-full-square-down-filltone';
-import { ChevronFullSquareDownIconLinetone } from './chevron-full-square-down-linetone';
+import { ChevronFullSquareDownIconDuotone as ChevronFullSquareDownIconDuotone } from './chevron-full-square-down-duotone';
+import { ChevronFullSquareDownIconBold as ChevronFullSquareDownIconBold } from './chevron-full-square-down-bold';
+import { ChevronFullSquareDownIconBoldDuotone as ChevronFullSquareDownIconBoldDuotone } from './chevron-full-square-down-bold-duotone';
+import { ChevronFullSquareDownIconFill as ChevronFullSquareDownIconFill } from './chevron-full-square-down-fill';
+import { ChevronFullSquareDownIconFillDuotone as ChevronFullSquareDownIconFillDuotone } from './chevron-full-square-down-fill-duotone';
 
 export interface ChevronFullSquareDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronFullSquareDownIcon = memo(forwardRef<SVGSVGElement, ChevronFullSquareDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronFullSquareDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronFullSquareDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronFullSquareDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronFullSquareDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronFullSquareDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronFullSquareDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronFullSquareDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronFullSquareDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronFullSquareDownIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronFullSquareDownIconDuotone ref={ref} {...props} />;
+  return <RegularChevronFullSquareDownIcon ref={ref} {...props} />;
 }));
 
 ChevronFullSquareDownIcon.displayName = 'ChevronFullSquareDownIcon';

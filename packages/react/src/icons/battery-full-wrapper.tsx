@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BatteryFullIcon as RegularBatteryFullIcon } from './battery-full';
-import { BatteryFullIconBold } from './battery-full-bold';
-import { BatteryFullIconFilled } from './battery-full-filled';
-import { BatteryFullIconFilltone } from './battery-full-filltone';
-import { BatteryFullIconLinetone } from './battery-full-linetone';
+import { BatteryFullIconDuotone as BatteryFullIconDuotone } from './battery-full-duotone';
+import { BatteryFullIconBold as BatteryFullIconBold } from './battery-full-bold';
+import { BatteryFullIconBoldDuotone as BatteryFullIconBoldDuotone } from './battery-full-bold-duotone';
+import { BatteryFullIconFill as BatteryFullIconFill } from './battery-full-fill';
+import { BatteryFullIconFillDuotone as BatteryFullIconFillDuotone } from './battery-full-fill-duotone';
 
 export interface BatteryFullIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BatteryFullIcon = memo(forwardRef<SVGSVGElement, BatteryFullIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BatteryFullIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BatteryFullIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BatteryFullIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BatteryFullIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBatteryFullIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BatteryFullIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BatteryFullIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BatteryFullIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BatteryFullIconFill ref={ref} {...props} />;
+  if (duotone) return <BatteryFullIconDuotone ref={ref} {...props} />;
+  return <RegularBatteryFullIcon ref={ref} {...props} />;
 }));
 
 BatteryFullIcon.displayName = 'BatteryFullIcon';

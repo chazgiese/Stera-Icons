@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CurrencyCentIcon as RegularCurrencyCentIcon } from './currency-cent';
-import { CurrencyCentIconBold } from './currency-cent-bold';
-import { CurrencyCentIconFilled } from './currency-cent-filled';
-import { CurrencyCentIconFilltone } from './currency-cent-filltone';
-import { CurrencyCentIconLinetone } from './currency-cent-linetone';
+import { CurrencyCentIconDuotone as CurrencyCentIconDuotone } from './currency-cent-duotone';
+import { CurrencyCentIconBold as CurrencyCentIconBold } from './currency-cent-bold';
+import { CurrencyCentIconBoldDuotone as CurrencyCentIconBoldDuotone } from './currency-cent-bold-duotone';
+import { CurrencyCentIconFill as CurrencyCentIconFill } from './currency-cent-fill';
+import { CurrencyCentIconFillDuotone as CurrencyCentIconFillDuotone } from './currency-cent-fill-duotone';
 
 export interface CurrencyCentIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CurrencyCentIcon = memo(forwardRef<SVGSVGElement, CurrencyCentIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CurrencyCentIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CurrencyCentIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CurrencyCentIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CurrencyCentIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCurrencyCentIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CurrencyCentIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CurrencyCentIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CurrencyCentIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CurrencyCentIconFill ref={ref} {...props} />;
+  if (duotone) return <CurrencyCentIconDuotone ref={ref} {...props} />;
+  return <RegularCurrencyCentIcon ref={ref} {...props} />;
 }));
 
 CurrencyCentIcon.displayName = 'CurrencyCentIcon';

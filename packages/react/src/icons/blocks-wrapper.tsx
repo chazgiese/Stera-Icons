@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BlocksIcon as RegularBlocksIcon } from './blocks';
-import { BlocksIconBold } from './blocks-bold';
-import { BlocksIconFilled } from './blocks-filled';
-import { BlocksIconFilltone } from './blocks-filltone';
-import { BlocksIconLinetone } from './blocks-linetone';
+import { BlocksIconDuotone as BlocksIconDuotone } from './blocks-duotone';
+import { BlocksIconBold as BlocksIconBold } from './blocks-bold';
+import { BlocksIconBoldDuotone as BlocksIconBoldDuotone } from './blocks-bold-duotone';
+import { BlocksIconFill as BlocksIconFill } from './blocks-fill';
+import { BlocksIconFillDuotone as BlocksIconFillDuotone } from './blocks-fill-duotone';
 
 export interface BlocksIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BlocksIcon = memo(forwardRef<SVGSVGElement, BlocksIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BlocksIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BlocksIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BlocksIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BlocksIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBlocksIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BlocksIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BlocksIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BlocksIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BlocksIconFill ref={ref} {...props} />;
+  if (duotone) return <BlocksIconDuotone ref={ref} {...props} />;
+  return <RegularBlocksIcon ref={ref} {...props} />;
 }));
 
 BlocksIcon.displayName = 'BlocksIcon';

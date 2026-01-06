@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowDownArrowIcon as RegularFlowDownArrowIcon } from './flow-down-arrow';
-import { FlowDownArrowIconBold } from './flow-down-arrow-bold';
-import { FlowDownArrowIconFilled } from './flow-down-arrow-filled';
-import { FlowDownArrowIconFilltone } from './flow-down-arrow-filltone';
-import { FlowDownArrowIconLinetone } from './flow-down-arrow-linetone';
+import { FlowDownArrowIconDuotone as FlowDownArrowIconDuotone } from './flow-down-arrow-duotone';
+import { FlowDownArrowIconBold as FlowDownArrowIconBold } from './flow-down-arrow-bold';
+import { FlowDownArrowIconBoldDuotone as FlowDownArrowIconBoldDuotone } from './flow-down-arrow-bold-duotone';
+import { FlowDownArrowIconFill as FlowDownArrowIconFill } from './flow-down-arrow-fill';
+import { FlowDownArrowIconFillDuotone as FlowDownArrowIconFillDuotone } from './flow-down-arrow-fill-duotone';
 
 export interface FlowDownArrowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowDownArrowIcon = memo(forwardRef<SVGSVGElement, FlowDownArrowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowDownArrowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowDownArrowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowDownArrowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowDownArrowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowDownArrowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowDownArrowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowDownArrowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowDownArrowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowDownArrowIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowDownArrowIconDuotone ref={ref} {...props} />;
+  return <RegularFlowDownArrowIcon ref={ref} {...props} />;
 }));
 
 FlowDownArrowIcon.displayName = 'FlowDownArrowIcon';

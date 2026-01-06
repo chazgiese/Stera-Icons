@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PenIcon as RegularPenIcon } from './pen';
-import { PenIconBold } from './pen-bold';
-import { PenIconFilled } from './pen-filled';
-import { PenIconFilltone } from './pen-filltone';
-import { PenIconLinetone } from './pen-linetone';
+import { PenIconDuotone as PenIconDuotone } from './pen-duotone';
+import { PenIconBold as PenIconBold } from './pen-bold';
+import { PenIconBoldDuotone as PenIconBoldDuotone } from './pen-bold-duotone';
+import { PenIconFill as PenIconFill } from './pen-fill';
+import { PenIconFillDuotone as PenIconFillDuotone } from './pen-fill-duotone';
 
 export interface PenIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PenIcon = memo(forwardRef<SVGSVGElement, PenIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PenIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PenIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PenIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PenIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPenIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PenIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PenIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PenIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PenIconFill ref={ref} {...props} />;
+  if (duotone) return <PenIconDuotone ref={ref} {...props} />;
+  return <RegularPenIcon ref={ref} {...props} />;
 }));
 
 PenIcon.displayName = 'PenIcon';

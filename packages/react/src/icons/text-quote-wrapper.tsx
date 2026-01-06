@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextQuoteIcon as RegularTextQuoteIcon } from './text-quote';
-import { TextQuoteIconBold } from './text-quote-bold';
-import { TextQuoteIconFilled } from './text-quote-filled';
-import { TextQuoteIconFilltone } from './text-quote-filltone';
-import { TextQuoteIconLinetone } from './text-quote-linetone';
+import { TextQuoteIconDuotone as TextQuoteIconDuotone } from './text-quote-duotone';
+import { TextQuoteIconBold as TextQuoteIconBold } from './text-quote-bold';
+import { TextQuoteIconBoldDuotone as TextQuoteIconBoldDuotone } from './text-quote-bold-duotone';
+import { TextQuoteIconFill as TextQuoteIconFill } from './text-quote-fill';
+import { TextQuoteIconFillDuotone as TextQuoteIconFillDuotone } from './text-quote-fill-duotone';
 
 export interface TextQuoteIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextQuoteIcon = memo(forwardRef<SVGSVGElement, TextQuoteIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextQuoteIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextQuoteIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextQuoteIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextQuoteIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextQuoteIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextQuoteIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextQuoteIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextQuoteIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextQuoteIconFill ref={ref} {...props} />;
+  if (duotone) return <TextQuoteIconDuotone ref={ref} {...props} />;
+  return <RegularTextQuoteIcon ref={ref} {...props} />;
 }));
 
 TextQuoteIcon.displayName = 'TextQuoteIcon';

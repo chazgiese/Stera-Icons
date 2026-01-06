@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ThermometerLowIcon as RegularThermometerLowIcon } from './thermometer-low';
-import { ThermometerLowIconBold } from './thermometer-low-bold';
-import { ThermometerLowIconFilled } from './thermometer-low-filled';
-import { ThermometerLowIconFilltone } from './thermometer-low-filltone';
-import { ThermometerLowIconLinetone } from './thermometer-low-linetone';
+import { ThermometerLowIconDuotone as ThermometerLowIconDuotone } from './thermometer-low-duotone';
+import { ThermometerLowIconBold as ThermometerLowIconBold } from './thermometer-low-bold';
+import { ThermometerLowIconBoldDuotone as ThermometerLowIconBoldDuotone } from './thermometer-low-bold-duotone';
+import { ThermometerLowIconFill as ThermometerLowIconFill } from './thermometer-low-fill';
+import { ThermometerLowIconFillDuotone as ThermometerLowIconFillDuotone } from './thermometer-low-fill-duotone';
 
 export interface ThermometerLowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ThermometerLowIcon = memo(forwardRef<SVGSVGElement, ThermometerLowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ThermometerLowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ThermometerLowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ThermometerLowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ThermometerLowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularThermometerLowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ThermometerLowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ThermometerLowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ThermometerLowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ThermometerLowIconFill ref={ref} {...props} />;
+  if (duotone) return <ThermometerLowIconDuotone ref={ref} {...props} />;
+  return <RegularThermometerLowIcon ref={ref} {...props} />;
 }));
 
 ThermometerLowIcon.displayName = 'ThermometerLowIcon';

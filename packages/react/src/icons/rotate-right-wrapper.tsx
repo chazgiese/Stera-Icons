@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { RotateRightIcon as RegularRotateRightIcon } from './rotate-right';
-import { RotateRightIconBold } from './rotate-right-bold';
-import { RotateRightIconFilled } from './rotate-right-filled';
-import { RotateRightIconFilltone } from './rotate-right-filltone';
-import { RotateRightIconLinetone } from './rotate-right-linetone';
+import { RotateRightIconDuotone as RotateRightIconDuotone } from './rotate-right-duotone';
+import { RotateRightIconBold as RotateRightIconBold } from './rotate-right-bold';
+import { RotateRightIconBoldDuotone as RotateRightIconBoldDuotone } from './rotate-right-bold-duotone';
+import { RotateRightIconFill as RotateRightIconFill } from './rotate-right-fill';
+import { RotateRightIconFillDuotone as RotateRightIconFillDuotone } from './rotate-right-fill-duotone';
 
 export interface RotateRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const RotateRightIcon = memo(forwardRef<SVGSVGElement, RotateRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <RotateRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <RotateRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <RotateRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <RotateRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularRotateRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <RotateRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <RotateRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <RotateRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <RotateRightIconFill ref={ref} {...props} />;
+  if (duotone) return <RotateRightIconDuotone ref={ref} {...props} />;
+  return <RegularRotateRightIcon ref={ref} {...props} />;
 }));
 
 RotateRightIcon.displayName = 'RotateRightIcon';

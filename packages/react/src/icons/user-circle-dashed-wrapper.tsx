@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UserCircleDashedIcon as RegularUserCircleDashedIcon } from './user-circle-dashed';
-import { UserCircleDashedIconBold } from './user-circle-dashed-bold';
-import { UserCircleDashedIconFilled } from './user-circle-dashed-filled';
-import { UserCircleDashedIconFilltone } from './user-circle-dashed-filltone';
-import { UserCircleDashedIconLinetone } from './user-circle-dashed-linetone';
+import { UserCircleDashedIconDuotone as UserCircleDashedIconDuotone } from './user-circle-dashed-duotone';
+import { UserCircleDashedIconBold as UserCircleDashedIconBold } from './user-circle-dashed-bold';
+import { UserCircleDashedIconBoldDuotone as UserCircleDashedIconBoldDuotone } from './user-circle-dashed-bold-duotone';
+import { UserCircleDashedIconFill as UserCircleDashedIconFill } from './user-circle-dashed-fill';
+import { UserCircleDashedIconFillDuotone as UserCircleDashedIconFillDuotone } from './user-circle-dashed-fill-duotone';
 
 export interface UserCircleDashedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UserCircleDashedIcon = memo(forwardRef<SVGSVGElement, UserCircleDashedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UserCircleDashedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UserCircleDashedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UserCircleDashedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UserCircleDashedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUserCircleDashedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UserCircleDashedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UserCircleDashedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UserCircleDashedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UserCircleDashedIconFill ref={ref} {...props} />;
+  if (duotone) return <UserCircleDashedIconDuotone ref={ref} {...props} />;
+  return <RegularUserCircleDashedIcon ref={ref} {...props} />;
 }));
 
 UserCircleDashedIcon.displayName = 'UserCircleDashedIcon';

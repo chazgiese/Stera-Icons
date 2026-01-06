@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowUpLeftDownRightIcon as RegularArrowUpLeftDownRightIcon } from './arrow-up-left-down-right';
-import { ArrowUpLeftDownRightIconBold } from './arrow-up-left-down-right-bold';
-import { ArrowUpLeftDownRightIconFilled } from './arrow-up-left-down-right-filled';
-import { ArrowUpLeftDownRightIconFilltone } from './arrow-up-left-down-right-filltone';
-import { ArrowUpLeftDownRightIconLinetone } from './arrow-up-left-down-right-linetone';
+import { ArrowUpLeftDownRightIconDuotone as ArrowUpLeftDownRightIconDuotone } from './arrow-up-left-down-right-duotone';
+import { ArrowUpLeftDownRightIconBold as ArrowUpLeftDownRightIconBold } from './arrow-up-left-down-right-bold';
+import { ArrowUpLeftDownRightIconBoldDuotone as ArrowUpLeftDownRightIconBoldDuotone } from './arrow-up-left-down-right-bold-duotone';
+import { ArrowUpLeftDownRightIconFill as ArrowUpLeftDownRightIconFill } from './arrow-up-left-down-right-fill';
+import { ArrowUpLeftDownRightIconFillDuotone as ArrowUpLeftDownRightIconFillDuotone } from './arrow-up-left-down-right-fill-duotone';
 
 export interface ArrowUpLeftDownRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowUpLeftDownRightIcon = memo(forwardRef<SVGSVGElement, ArrowUpLeftDownRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowUpLeftDownRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowUpLeftDownRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowUpLeftDownRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowUpLeftDownRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowUpLeftDownRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowUpLeftDownRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowUpLeftDownRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowUpLeftDownRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowUpLeftDownRightIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowUpLeftDownRightIconDuotone ref={ref} {...props} />;
+  return <RegularArrowUpLeftDownRightIcon ref={ref} {...props} />;
 }));
 
 ArrowUpLeftDownRightIcon.displayName = 'ArrowUpLeftDownRightIcon';

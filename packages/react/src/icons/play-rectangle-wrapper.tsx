@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PlayRectangleIcon as RegularPlayRectangleIcon } from './play-rectangle';
-import { PlayRectangleIconBold } from './play-rectangle-bold';
-import { PlayRectangleIconFilled } from './play-rectangle-filled';
-import { PlayRectangleIconFilltone } from './play-rectangle-filltone';
-import { PlayRectangleIconLinetone } from './play-rectangle-linetone';
+import { PlayRectangleIconDuotone as PlayRectangleIconDuotone } from './play-rectangle-duotone';
+import { PlayRectangleIconBold as PlayRectangleIconBold } from './play-rectangle-bold';
+import { PlayRectangleIconBoldDuotone as PlayRectangleIconBoldDuotone } from './play-rectangle-bold-duotone';
+import { PlayRectangleIconFill as PlayRectangleIconFill } from './play-rectangle-fill';
+import { PlayRectangleIconFillDuotone as PlayRectangleIconFillDuotone } from './play-rectangle-fill-duotone';
 
 export interface PlayRectangleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PlayRectangleIcon = memo(forwardRef<SVGSVGElement, PlayRectangleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PlayRectangleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PlayRectangleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PlayRectangleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PlayRectangleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPlayRectangleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PlayRectangleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PlayRectangleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PlayRectangleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PlayRectangleIconFill ref={ref} {...props} />;
+  if (duotone) return <PlayRectangleIconDuotone ref={ref} {...props} />;
+  return <RegularPlayRectangleIcon ref={ref} {...props} />;
 }));
 
 PlayRectangleIcon.displayName = 'PlayRectangleIcon';

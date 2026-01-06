@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlagIcon as RegularFlagIcon } from './flag';
-import { FlagIconBold } from './flag-bold';
-import { FlagIconFilled } from './flag-filled';
-import { FlagIconFilltone } from './flag-filltone';
-import { FlagIconLinetone } from './flag-linetone';
+import { FlagIconDuotone as FlagIconDuotone } from './flag-duotone';
+import { FlagIconBold as FlagIconBold } from './flag-bold';
+import { FlagIconBoldDuotone as FlagIconBoldDuotone } from './flag-bold-duotone';
+import { FlagIconFill as FlagIconFill } from './flag-fill';
+import { FlagIconFillDuotone as FlagIconFillDuotone } from './flag-fill-duotone';
 
 export interface FlagIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlagIcon = memo(forwardRef<SVGSVGElement, FlagIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlagIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlagIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlagIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlagIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlagIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlagIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlagIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlagIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlagIconFill ref={ref} {...props} />;
+  if (duotone) return <FlagIconDuotone ref={ref} {...props} />;
+  return <RegularFlagIcon ref={ref} {...props} />;
 }));
 
 FlagIcon.displayName = 'FlagIcon';

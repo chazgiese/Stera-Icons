@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MailBadgeIcon as RegularMailBadgeIcon } from './mail-badge';
-import { MailBadgeIconBold } from './mail-badge-bold';
-import { MailBadgeIconFilled } from './mail-badge-filled';
-import { MailBadgeIconFilltone } from './mail-badge-filltone';
-import { MailBadgeIconLinetone } from './mail-badge-linetone';
+import { MailBadgeIconDuotone as MailBadgeIconDuotone } from './mail-badge-duotone';
+import { MailBadgeIconBold as MailBadgeIconBold } from './mail-badge-bold';
+import { MailBadgeIconBoldDuotone as MailBadgeIconBoldDuotone } from './mail-badge-bold-duotone';
+import { MailBadgeIconFill as MailBadgeIconFill } from './mail-badge-fill';
+import { MailBadgeIconFillDuotone as MailBadgeIconFillDuotone } from './mail-badge-fill-duotone';
 
 export interface MailBadgeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MailBadgeIcon = memo(forwardRef<SVGSVGElement, MailBadgeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MailBadgeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MailBadgeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MailBadgeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MailBadgeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMailBadgeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MailBadgeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MailBadgeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MailBadgeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MailBadgeIconFill ref={ref} {...props} />;
+  if (duotone) return <MailBadgeIconDuotone ref={ref} {...props} />;
+  return <RegularMailBadgeIcon ref={ref} {...props} />;
 }));
 
 MailBadgeIcon.displayName = 'MailBadgeIcon';

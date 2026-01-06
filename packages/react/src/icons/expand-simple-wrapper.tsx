@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ExpandSimpleIcon as RegularExpandSimpleIcon } from './expand-simple';
-import { ExpandSimpleIconBold } from './expand-simple-bold';
-import { ExpandSimpleIconFilled } from './expand-simple-filled';
-import { ExpandSimpleIconFilltone } from './expand-simple-filltone';
-import { ExpandSimpleIconLinetone } from './expand-simple-linetone';
+import { ExpandSimpleIconDuotone as ExpandSimpleIconDuotone } from './expand-simple-duotone';
+import { ExpandSimpleIconBold as ExpandSimpleIconBold } from './expand-simple-bold';
+import { ExpandSimpleIconBoldDuotone as ExpandSimpleIconBoldDuotone } from './expand-simple-bold-duotone';
+import { ExpandSimpleIconFill as ExpandSimpleIconFill } from './expand-simple-fill';
+import { ExpandSimpleIconFillDuotone as ExpandSimpleIconFillDuotone } from './expand-simple-fill-duotone';
 
 export interface ExpandSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ExpandSimpleIcon = memo(forwardRef<SVGSVGElement, ExpandSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ExpandSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ExpandSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ExpandSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ExpandSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularExpandSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ExpandSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ExpandSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ExpandSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ExpandSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <ExpandSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularExpandSimpleIcon ref={ref} {...props} />;
 }));
 
 ExpandSimpleIcon.displayName = 'ExpandSimpleIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { EditSquareIcon as RegularEditSquareIcon } from './edit-square';
-import { EditSquareIconBold } from './edit-square-bold';
-import { EditSquareIconFilled } from './edit-square-filled';
-import { EditSquareIconFilltone } from './edit-square-filltone';
-import { EditSquareIconLinetone } from './edit-square-linetone';
+import { EditSquareIconDuotone as EditSquareIconDuotone } from './edit-square-duotone';
+import { EditSquareIconBold as EditSquareIconBold } from './edit-square-bold';
+import { EditSquareIconBoldDuotone as EditSquareIconBoldDuotone } from './edit-square-bold-duotone';
+import { EditSquareIconFill as EditSquareIconFill } from './edit-square-fill';
+import { EditSquareIconFillDuotone as EditSquareIconFillDuotone } from './edit-square-fill-duotone';
 
 export interface EditSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const EditSquareIcon = memo(forwardRef<SVGSVGElement, EditSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <EditSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <EditSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <EditSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <EditSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularEditSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <EditSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <EditSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <EditSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <EditSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <EditSquareIconDuotone ref={ref} {...props} />;
+  return <RegularEditSquareIcon ref={ref} {...props} />;
 }));
 
 EditSquareIcon.displayName = 'EditSquareIcon';

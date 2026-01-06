@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CursorTextAltIcon as RegularCursorTextAltIcon } from './cursor-text-alt';
-import { CursorTextAltIconBold } from './cursor-text-alt-bold';
-import { CursorTextAltIconFilled } from './cursor-text-alt-filled';
-import { CursorTextAltIconFilltone } from './cursor-text-alt-filltone';
-import { CursorTextAltIconLinetone } from './cursor-text-alt-linetone';
+import { CursorTextAltIconDuotone as CursorTextAltIconDuotone } from './cursor-text-alt-duotone';
+import { CursorTextAltIconBold as CursorTextAltIconBold } from './cursor-text-alt-bold';
+import { CursorTextAltIconBoldDuotone as CursorTextAltIconBoldDuotone } from './cursor-text-alt-bold-duotone';
+import { CursorTextAltIconFill as CursorTextAltIconFill } from './cursor-text-alt-fill';
+import { CursorTextAltIconFillDuotone as CursorTextAltIconFillDuotone } from './cursor-text-alt-fill-duotone';
 
 export interface CursorTextAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CursorTextAltIcon = memo(forwardRef<SVGSVGElement, CursorTextAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CursorTextAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CursorTextAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CursorTextAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CursorTextAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCursorTextAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CursorTextAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CursorTextAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CursorTextAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CursorTextAltIconFill ref={ref} {...props} />;
+  if (duotone) return <CursorTextAltIconDuotone ref={ref} {...props} />;
+  return <RegularCursorTextAltIcon ref={ref} {...props} />;
 }));
 
 CursorTextAltIcon.displayName = 'CursorTextAltIcon';

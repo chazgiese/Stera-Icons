@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DollarBillIcon as RegularDollarBillIcon } from './dollar-bill';
-import { DollarBillIconBold } from './dollar-bill-bold';
-import { DollarBillIconFilled } from './dollar-bill-filled';
-import { DollarBillIconFilltone } from './dollar-bill-filltone';
-import { DollarBillIconLinetone } from './dollar-bill-linetone';
+import { DollarBillIconDuotone as DollarBillIconDuotone } from './dollar-bill-duotone';
+import { DollarBillIconBold as DollarBillIconBold } from './dollar-bill-bold';
+import { DollarBillIconBoldDuotone as DollarBillIconBoldDuotone } from './dollar-bill-bold-duotone';
+import { DollarBillIconFill as DollarBillIconFill } from './dollar-bill-fill';
+import { DollarBillIconFillDuotone as DollarBillIconFillDuotone } from './dollar-bill-fill-duotone';
 
 export interface DollarBillIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DollarBillIcon = memo(forwardRef<SVGSVGElement, DollarBillIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DollarBillIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DollarBillIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DollarBillIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DollarBillIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDollarBillIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DollarBillIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DollarBillIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DollarBillIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DollarBillIconFill ref={ref} {...props} />;
+  if (duotone) return <DollarBillIconDuotone ref={ref} {...props} />;
+  return <RegularDollarBillIcon ref={ref} {...props} />;
 }));
 
 DollarBillIcon.displayName = 'DollarBillIcon';

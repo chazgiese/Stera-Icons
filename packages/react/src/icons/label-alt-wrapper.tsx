@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LabelAltIcon as RegularLabelAltIcon } from './label-alt';
-import { LabelAltIconBold } from './label-alt-bold';
-import { LabelAltIconFilled } from './label-alt-filled';
-import { LabelAltIconFilltone } from './label-alt-filltone';
-import { LabelAltIconLinetone } from './label-alt-linetone';
+import { LabelAltIconDuotone as LabelAltIconDuotone } from './label-alt-duotone';
+import { LabelAltIconBold as LabelAltIconBold } from './label-alt-bold';
+import { LabelAltIconBoldDuotone as LabelAltIconBoldDuotone } from './label-alt-bold-duotone';
+import { LabelAltIconFill as LabelAltIconFill } from './label-alt-fill';
+import { LabelAltIconFillDuotone as LabelAltIconFillDuotone } from './label-alt-fill-duotone';
 
 export interface LabelAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LabelAltIcon = memo(forwardRef<SVGSVGElement, LabelAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LabelAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LabelAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LabelAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LabelAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLabelAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LabelAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LabelAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LabelAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LabelAltIconFill ref={ref} {...props} />;
+  if (duotone) return <LabelAltIconDuotone ref={ref} {...props} />;
+  return <RegularLabelAltIcon ref={ref} {...props} />;
 }));
 
 LabelAltIcon.displayName = 'LabelAltIcon';

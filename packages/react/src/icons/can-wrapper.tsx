@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CanIcon as RegularCanIcon } from './can';
-import { CanIconBold } from './can-bold';
-import { CanIconFilled } from './can-filled';
-import { CanIconFilltone } from './can-filltone';
-import { CanIconLinetone } from './can-linetone';
+import { CanIconDuotone as CanIconDuotone } from './can-duotone';
+import { CanIconBold as CanIconBold } from './can-bold';
+import { CanIconBoldDuotone as CanIconBoldDuotone } from './can-bold-duotone';
+import { CanIconFill as CanIconFill } from './can-fill';
+import { CanIconFillDuotone as CanIconFillDuotone } from './can-fill-duotone';
 
 export interface CanIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CanIcon = memo(forwardRef<SVGSVGElement, CanIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CanIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CanIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CanIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CanIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCanIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CanIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CanIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CanIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CanIconFill ref={ref} {...props} />;
+  if (duotone) return <CanIconDuotone ref={ref} {...props} />;
+  return <RegularCanIcon ref={ref} {...props} />;
 }));
 
 CanIcon.displayName = 'CanIcon';

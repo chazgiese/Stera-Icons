@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CheckSquareIcon as RegularCheckSquareIcon } from './check-square';
-import { CheckSquareIconBold } from './check-square-bold';
-import { CheckSquareIconFilled } from './check-square-filled';
-import { CheckSquareIconFilltone } from './check-square-filltone';
-import { CheckSquareIconLinetone } from './check-square-linetone';
+import { CheckSquareIconDuotone as CheckSquareIconDuotone } from './check-square-duotone';
+import { CheckSquareIconBold as CheckSquareIconBold } from './check-square-bold';
+import { CheckSquareIconBoldDuotone as CheckSquareIconBoldDuotone } from './check-square-bold-duotone';
+import { CheckSquareIconFill as CheckSquareIconFill } from './check-square-fill';
+import { CheckSquareIconFillDuotone as CheckSquareIconFillDuotone } from './check-square-fill-duotone';
 
 export interface CheckSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CheckSquareIcon = memo(forwardRef<SVGSVGElement, CheckSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CheckSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CheckSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CheckSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CheckSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCheckSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CheckSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CheckSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CheckSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CheckSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <CheckSquareIconDuotone ref={ref} {...props} />;
+  return <RegularCheckSquareIcon ref={ref} {...props} />;
 }));
 
 CheckSquareIcon.displayName = 'CheckSquareIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CommandIcon as RegularCommandIcon } from './command';
-import { CommandIconBold } from './command-bold';
-import { CommandIconFilled } from './command-filled';
-import { CommandIconFilltone } from './command-filltone';
-import { CommandIconLinetone } from './command-linetone';
+import { CommandIconDuotone as CommandIconDuotone } from './command-duotone';
+import { CommandIconBold as CommandIconBold } from './command-bold';
+import { CommandIconBoldDuotone as CommandIconBoldDuotone } from './command-bold-duotone';
+import { CommandIconFill as CommandIconFill } from './command-fill';
+import { CommandIconFillDuotone as CommandIconFillDuotone } from './command-fill-duotone';
 
 export interface CommandIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CommandIcon = memo(forwardRef<SVGSVGElement, CommandIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CommandIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CommandIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CommandIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CommandIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCommandIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CommandIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CommandIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CommandIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CommandIconFill ref={ref} {...props} />;
+  if (duotone) return <CommandIconDuotone ref={ref} {...props} />;
+  return <RegularCommandIcon ref={ref} {...props} />;
 }));
 
 CommandIcon.displayName = 'CommandIcon';

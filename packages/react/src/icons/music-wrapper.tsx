@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MusicIcon as RegularMusicIcon } from './music';
-import { MusicIconBold } from './music-bold';
-import { MusicIconFilled } from './music-filled';
-import { MusicIconFilltone } from './music-filltone';
-import { MusicIconLinetone } from './music-linetone';
+import { MusicIconDuotone as MusicIconDuotone } from './music-duotone';
+import { MusicIconBold as MusicIconBold } from './music-bold';
+import { MusicIconBoldDuotone as MusicIconBoldDuotone } from './music-bold-duotone';
+import { MusicIconFill as MusicIconFill } from './music-fill';
+import { MusicIconFillDuotone as MusicIconFillDuotone } from './music-fill-duotone';
 
 export interface MusicIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MusicIcon = memo(forwardRef<SVGSVGElement, MusicIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MusicIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MusicIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MusicIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MusicIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMusicIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MusicIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MusicIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MusicIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MusicIconFill ref={ref} {...props} />;
+  if (duotone) return <MusicIconDuotone ref={ref} {...props} />;
+  return <RegularMusicIcon ref={ref} {...props} />;
 }));
 
 MusicIcon.displayName = 'MusicIcon';

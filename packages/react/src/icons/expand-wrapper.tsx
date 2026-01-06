@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ExpandIcon as RegularExpandIcon } from './expand';
-import { ExpandIconBold } from './expand-bold';
-import { ExpandIconFilled } from './expand-filled';
-import { ExpandIconFilltone } from './expand-filltone';
-import { ExpandIconLinetone } from './expand-linetone';
+import { ExpandIconDuotone as ExpandIconDuotone } from './expand-duotone';
+import { ExpandIconBold as ExpandIconBold } from './expand-bold';
+import { ExpandIconBoldDuotone as ExpandIconBoldDuotone } from './expand-bold-duotone';
+import { ExpandIconFill as ExpandIconFill } from './expand-fill';
+import { ExpandIconFillDuotone as ExpandIconFillDuotone } from './expand-fill-duotone';
 
 export interface ExpandIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ExpandIcon = memo(forwardRef<SVGSVGElement, ExpandIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ExpandIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ExpandIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ExpandIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ExpandIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularExpandIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ExpandIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ExpandIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ExpandIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ExpandIconFill ref={ref} {...props} />;
+  if (duotone) return <ExpandIconDuotone ref={ref} {...props} />;
+  return <RegularExpandIcon ref={ref} {...props} />;
 }));
 
 ExpandIcon.displayName = 'ExpandIcon';

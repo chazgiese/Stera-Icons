@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanIcon as RegularScanIcon } from './scan';
-import { ScanIconBold } from './scan-bold';
-import { ScanIconFilled } from './scan-filled';
-import { ScanIconFilltone } from './scan-filltone';
-import { ScanIconLinetone } from './scan-linetone';
+import { ScanIconDuotone as ScanIconDuotone } from './scan-duotone';
+import { ScanIconBold as ScanIconBold } from './scan-bold';
+import { ScanIconBoldDuotone as ScanIconBoldDuotone } from './scan-bold-duotone';
+import { ScanIconFill as ScanIconFill } from './scan-fill';
+import { ScanIconFillDuotone as ScanIconFillDuotone } from './scan-fill-duotone';
 
 export interface ScanIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanIcon = memo(forwardRef<SVGSVGElement, ScanIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanIconDuotone ref={ref} {...props} />;
+  return <RegularScanIcon ref={ref} {...props} />;
 }));
 
 ScanIcon.displayName = 'ScanIcon';

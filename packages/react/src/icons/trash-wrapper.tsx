@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TrashIcon as RegularTrashIcon } from './trash';
-import { TrashIconBold } from './trash-bold';
-import { TrashIconFilled } from './trash-filled';
-import { TrashIconFilltone } from './trash-filltone';
-import { TrashIconLinetone } from './trash-linetone';
+import { TrashIconDuotone as TrashIconDuotone } from './trash-duotone';
+import { TrashIconBold as TrashIconBold } from './trash-bold';
+import { TrashIconBoldDuotone as TrashIconBoldDuotone } from './trash-bold-duotone';
+import { TrashIconFill as TrashIconFill } from './trash-fill';
+import { TrashIconFillDuotone as TrashIconFillDuotone } from './trash-fill-duotone';
 
 export interface TrashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TrashIcon = memo(forwardRef<SVGSVGElement, TrashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TrashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TrashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TrashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TrashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTrashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TrashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TrashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TrashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TrashIconFill ref={ref} {...props} />;
+  if (duotone) return <TrashIconDuotone ref={ref} {...props} />;
+  return <RegularTrashIcon ref={ref} {...props} />;
 }));
 
 TrashIcon.displayName = 'TrashIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MapPinnedIcon as RegularMapPinnedIcon } from './map-pinned';
-import { MapPinnedIconBold } from './map-pinned-bold';
-import { MapPinnedIconFilled } from './map-pinned-filled';
-import { MapPinnedIconFilltone } from './map-pinned-filltone';
-import { MapPinnedIconLinetone } from './map-pinned-linetone';
+import { MapPinnedIconDuotone as MapPinnedIconDuotone } from './map-pinned-duotone';
+import { MapPinnedIconBold as MapPinnedIconBold } from './map-pinned-bold';
+import { MapPinnedIconBoldDuotone as MapPinnedIconBoldDuotone } from './map-pinned-bold-duotone';
+import { MapPinnedIconFill as MapPinnedIconFill } from './map-pinned-fill';
+import { MapPinnedIconFillDuotone as MapPinnedIconFillDuotone } from './map-pinned-fill-duotone';
 
 export interface MapPinnedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MapPinnedIcon = memo(forwardRef<SVGSVGElement, MapPinnedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MapPinnedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MapPinnedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MapPinnedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MapPinnedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMapPinnedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MapPinnedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MapPinnedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MapPinnedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MapPinnedIconFill ref={ref} {...props} />;
+  if (duotone) return <MapPinnedIconDuotone ref={ref} {...props} />;
+  return <RegularMapPinnedIcon ref={ref} {...props} />;
 }));
 
 MapPinnedIcon.displayName = 'MapPinnedIcon';

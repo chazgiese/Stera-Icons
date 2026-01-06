@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MacWindowIcon as RegularMacWindowIcon } from './mac-window';
-import { MacWindowIconBold } from './mac-window-bold';
-import { MacWindowIconFilled } from './mac-window-filled';
-import { MacWindowIconFilltone } from './mac-window-filltone';
-import { MacWindowIconLinetone } from './mac-window-linetone';
+import { MacWindowIconDuotone as MacWindowIconDuotone } from './mac-window-duotone';
+import { MacWindowIconBold as MacWindowIconBold } from './mac-window-bold';
+import { MacWindowIconBoldDuotone as MacWindowIconBoldDuotone } from './mac-window-bold-duotone';
+import { MacWindowIconFill as MacWindowIconFill } from './mac-window-fill';
+import { MacWindowIconFillDuotone as MacWindowIconFillDuotone } from './mac-window-fill-duotone';
 
 export interface MacWindowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MacWindowIcon = memo(forwardRef<SVGSVGElement, MacWindowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MacWindowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MacWindowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MacWindowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MacWindowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMacWindowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MacWindowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MacWindowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MacWindowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MacWindowIconFill ref={ref} {...props} />;
+  if (duotone) return <MacWindowIconDuotone ref={ref} {...props} />;
+  return <RegularMacWindowIcon ref={ref} {...props} />;
 }));
 
 MacWindowIcon.displayName = 'MacWindowIcon';

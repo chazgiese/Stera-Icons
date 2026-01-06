@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { RobotHumanoidIcon as RegularRobotHumanoidIcon } from './robot-humanoid';
-import { RobotHumanoidIconBold } from './robot-humanoid-bold';
-import { RobotHumanoidIconFilled } from './robot-humanoid-filled';
-import { RobotHumanoidIconFilltone } from './robot-humanoid-filltone';
-import { RobotHumanoidIconLinetone } from './robot-humanoid-linetone';
+import { RobotHumanoidIconDuotone as RobotHumanoidIconDuotone } from './robot-humanoid-duotone';
+import { RobotHumanoidIconBold as RobotHumanoidIconBold } from './robot-humanoid-bold';
+import { RobotHumanoidIconBoldDuotone as RobotHumanoidIconBoldDuotone } from './robot-humanoid-bold-duotone';
+import { RobotHumanoidIconFill as RobotHumanoidIconFill } from './robot-humanoid-fill';
+import { RobotHumanoidIconFillDuotone as RobotHumanoidIconFillDuotone } from './robot-humanoid-fill-duotone';
 
 export interface RobotHumanoidIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const RobotHumanoidIcon = memo(forwardRef<SVGSVGElement, RobotHumanoidIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <RobotHumanoidIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <RobotHumanoidIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <RobotHumanoidIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <RobotHumanoidIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularRobotHumanoidIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <RobotHumanoidIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <RobotHumanoidIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <RobotHumanoidIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <RobotHumanoidIconFill ref={ref} {...props} />;
+  if (duotone) return <RobotHumanoidIconDuotone ref={ref} {...props} />;
+  return <RegularRobotHumanoidIcon ref={ref} {...props} />;
 }));
 
 RobotHumanoidIcon.displayName = 'RobotHumanoidIcon';

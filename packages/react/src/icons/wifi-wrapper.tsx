@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WifiIcon as RegularWifiIcon } from './wifi';
-import { WifiIconBold } from './wifi-bold';
-import { WifiIconFilled } from './wifi-filled';
-import { WifiIconFilltone } from './wifi-filltone';
-import { WifiIconLinetone } from './wifi-linetone';
+import { WifiIconDuotone as WifiIconDuotone } from './wifi-duotone';
+import { WifiIconBold as WifiIconBold } from './wifi-bold';
+import { WifiIconBoldDuotone as WifiIconBoldDuotone } from './wifi-bold-duotone';
+import { WifiIconFill as WifiIconFill } from './wifi-fill';
+import { WifiIconFillDuotone as WifiIconFillDuotone } from './wifi-fill-duotone';
 
 export interface WifiIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WifiIcon = memo(forwardRef<SVGSVGElement, WifiIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WifiIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WifiIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WifiIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WifiIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWifiIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WifiIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WifiIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WifiIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WifiIconFill ref={ref} {...props} />;
+  if (duotone) return <WifiIconDuotone ref={ref} {...props} />;
+  return <RegularWifiIcon ref={ref} {...props} />;
 }));
 
 WifiIcon.displayName = 'WifiIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ImageSquareIcon as RegularImageSquareIcon } from './image-square';
-import { ImageSquareIconBold } from './image-square-bold';
-import { ImageSquareIconFilled } from './image-square-filled';
-import { ImageSquareIconFilltone } from './image-square-filltone';
-import { ImageSquareIconLinetone } from './image-square-linetone';
+import { ImageSquareIconDuotone as ImageSquareIconDuotone } from './image-square-duotone';
+import { ImageSquareIconBold as ImageSquareIconBold } from './image-square-bold';
+import { ImageSquareIconBoldDuotone as ImageSquareIconBoldDuotone } from './image-square-bold-duotone';
+import { ImageSquareIconFill as ImageSquareIconFill } from './image-square-fill';
+import { ImageSquareIconFillDuotone as ImageSquareIconFillDuotone } from './image-square-fill-duotone';
 
 export interface ImageSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ImageSquareIcon = memo(forwardRef<SVGSVGElement, ImageSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ImageSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ImageSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ImageSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ImageSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularImageSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ImageSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ImageSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ImageSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ImageSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <ImageSquareIconDuotone ref={ref} {...props} />;
+  return <RegularImageSquareIcon ref={ref} {...props} />;
 }));
 
 ImageSquareIcon.displayName = 'ImageSquareIcon';

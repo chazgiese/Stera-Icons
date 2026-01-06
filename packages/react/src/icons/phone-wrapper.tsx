@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PhoneIcon as RegularPhoneIcon } from './phone';
-import { PhoneIconBold } from './phone-bold';
-import { PhoneIconFilled } from './phone-filled';
-import { PhoneIconFilltone } from './phone-filltone';
-import { PhoneIconLinetone } from './phone-linetone';
+import { PhoneIconDuotone as PhoneIconDuotone } from './phone-duotone';
+import { PhoneIconBold as PhoneIconBold } from './phone-bold';
+import { PhoneIconBoldDuotone as PhoneIconBoldDuotone } from './phone-bold-duotone';
+import { PhoneIconFill as PhoneIconFill } from './phone-fill';
+import { PhoneIconFillDuotone as PhoneIconFillDuotone } from './phone-fill-duotone';
 
 export interface PhoneIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PhoneIcon = memo(forwardRef<SVGSVGElement, PhoneIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PhoneIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PhoneIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PhoneIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PhoneIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPhoneIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PhoneIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PhoneIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PhoneIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PhoneIconFill ref={ref} {...props} />;
+  if (duotone) return <PhoneIconDuotone ref={ref} {...props} />;
+  return <RegularPhoneIcon ref={ref} {...props} />;
 }));
 
 PhoneIcon.displayName = 'PhoneIcon';

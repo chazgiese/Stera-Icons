@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChatBoxDotIcon as RegularChatBoxDotIcon } from './chat-box-dot';
-import { ChatBoxDotIconBold } from './chat-box-dot-bold';
-import { ChatBoxDotIconFilled } from './chat-box-dot-filled';
-import { ChatBoxDotIconFilltone } from './chat-box-dot-filltone';
-import { ChatBoxDotIconLinetone } from './chat-box-dot-linetone';
+import { ChatBoxDotIconDuotone as ChatBoxDotIconDuotone } from './chat-box-dot-duotone';
+import { ChatBoxDotIconBold as ChatBoxDotIconBold } from './chat-box-dot-bold';
+import { ChatBoxDotIconBoldDuotone as ChatBoxDotIconBoldDuotone } from './chat-box-dot-bold-duotone';
+import { ChatBoxDotIconFill as ChatBoxDotIconFill } from './chat-box-dot-fill';
+import { ChatBoxDotIconFillDuotone as ChatBoxDotIconFillDuotone } from './chat-box-dot-fill-duotone';
 
 export interface ChatBoxDotIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChatBoxDotIcon = memo(forwardRef<SVGSVGElement, ChatBoxDotIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChatBoxDotIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChatBoxDotIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChatBoxDotIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChatBoxDotIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChatBoxDotIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChatBoxDotIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChatBoxDotIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChatBoxDotIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChatBoxDotIconFill ref={ref} {...props} />;
+  if (duotone) return <ChatBoxDotIconDuotone ref={ref} {...props} />;
+  return <RegularChatBoxDotIcon ref={ref} {...props} />;
 }));
 
 ChatBoxDotIcon.displayName = 'ChatBoxDotIcon';

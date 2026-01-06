@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowSplitArrowUpIcon as RegularFlowSplitArrowUpIcon } from './flow-split-arrow-up';
-import { FlowSplitArrowUpIconBold } from './flow-split-arrow-up-bold';
-import { FlowSplitArrowUpIconFilled } from './flow-split-arrow-up-filled';
-import { FlowSplitArrowUpIconFilltone } from './flow-split-arrow-up-filltone';
-import { FlowSplitArrowUpIconLinetone } from './flow-split-arrow-up-linetone';
+import { FlowSplitArrowUpIconDuotone as FlowSplitArrowUpIconDuotone } from './flow-split-arrow-up-duotone';
+import { FlowSplitArrowUpIconBold as FlowSplitArrowUpIconBold } from './flow-split-arrow-up-bold';
+import { FlowSplitArrowUpIconBoldDuotone as FlowSplitArrowUpIconBoldDuotone } from './flow-split-arrow-up-bold-duotone';
+import { FlowSplitArrowUpIconFill as FlowSplitArrowUpIconFill } from './flow-split-arrow-up-fill';
+import { FlowSplitArrowUpIconFillDuotone as FlowSplitArrowUpIconFillDuotone } from './flow-split-arrow-up-fill-duotone';
 
 export interface FlowSplitArrowUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowSplitArrowUpIcon = memo(forwardRef<SVGSVGElement, FlowSplitArrowUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowSplitArrowUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowSplitArrowUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowSplitArrowUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowSplitArrowUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowSplitArrowUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowSplitArrowUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowSplitArrowUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowSplitArrowUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowSplitArrowUpIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowSplitArrowUpIconDuotone ref={ref} {...props} />;
+  return <RegularFlowSplitArrowUpIcon ref={ref} {...props} />;
 }));
 
 FlowSplitArrowUpIcon.displayName = 'FlowSplitArrowUpIcon';

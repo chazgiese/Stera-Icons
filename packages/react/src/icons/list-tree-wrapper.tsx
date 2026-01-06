@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListTreeIcon as RegularListTreeIcon } from './list-tree';
-import { ListTreeIconBold } from './list-tree-bold';
-import { ListTreeIconFilled } from './list-tree-filled';
-import { ListTreeIconFilltone } from './list-tree-filltone';
-import { ListTreeIconLinetone } from './list-tree-linetone';
+import { ListTreeIconDuotone as ListTreeIconDuotone } from './list-tree-duotone';
+import { ListTreeIconBold as ListTreeIconBold } from './list-tree-bold';
+import { ListTreeIconBoldDuotone as ListTreeIconBoldDuotone } from './list-tree-bold-duotone';
+import { ListTreeIconFill as ListTreeIconFill } from './list-tree-fill';
+import { ListTreeIconFillDuotone as ListTreeIconFillDuotone } from './list-tree-fill-duotone';
 
 export interface ListTreeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListTreeIcon = memo(forwardRef<SVGSVGElement, ListTreeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListTreeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListTreeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListTreeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListTreeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListTreeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListTreeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListTreeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListTreeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListTreeIconFill ref={ref} {...props} />;
+  if (duotone) return <ListTreeIconDuotone ref={ref} {...props} />;
+  return <RegularListTreeIcon ref={ref} {...props} />;
 }));
 
 ListTreeIcon.displayName = 'ListTreeIcon';

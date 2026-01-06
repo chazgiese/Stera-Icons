@@ -1,0 +1,45 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const VideoOffIconDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <g fill="currentColor" opacity={0.4}>
+          <path d="M3.142 7.735a2 2 0 0 0-.147.244c-.1.197-.17.458-.207.912-.038.462-.038 1.056-.038 1.909v2.4c0 .853 0 1.447.038 1.91.037.453.106.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h5.4c.853 0 1.447 0 1.91-.038q.271-.024.461-.064l1.3 1.07a.8.8 0 0 1-.169.123c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H6.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032v-2.4c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471q.14-.274.32-.52z" />
+          <path
+            fillRule="evenodd"
+            d="M12.2 5.25c.828 0 1.494-.001 2.031.043.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47q.024.31.031.68l3.793-3.034A.75.75 0 0 1 22.75 7v10a.75.75 0 0 1-1.219.586l-5-4A.75.75 0 0 1 16.25 13v-2.2c0-.853 0-1.447-.038-1.91-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207-.462-.038-1.056-.038-1.909-.038H6.934a.75.75 0 1 1 0-1.5zm5.55 6.11v1.279l3.5 2.8V8.56z"
+            clipRule="evenodd"
+          />
+        </g>
+        <path
+          fill="currentColor"
+          d="M.421 4.524a.75.75 0 0 1 1.056-.103l17 14a.75.75 0 0 1-.954 1.158l-17-14a.75.75 0 0 1-.102-1.055"
+        />
+      </svg>
+    ))
+);
+VideoOffIconDuotone.displayName = "VideoOffIconDuotone";
+export { VideoOffIconDuotone };

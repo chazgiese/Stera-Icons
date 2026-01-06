@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowSquareUpRightIcon as RegularArrowSquareUpRightIcon } from './arrow-square-up-right';
-import { ArrowSquareUpRightIconBold } from './arrow-square-up-right-bold';
-import { ArrowSquareUpRightIconFilled } from './arrow-square-up-right-filled';
-import { ArrowSquareUpRightIconFilltone } from './arrow-square-up-right-filltone';
-import { ArrowSquareUpRightIconLinetone } from './arrow-square-up-right-linetone';
+import { ArrowSquareUpRightIconDuotone as ArrowSquareUpRightIconDuotone } from './arrow-square-up-right-duotone';
+import { ArrowSquareUpRightIconBold as ArrowSquareUpRightIconBold } from './arrow-square-up-right-bold';
+import { ArrowSquareUpRightIconBoldDuotone as ArrowSquareUpRightIconBoldDuotone } from './arrow-square-up-right-bold-duotone';
+import { ArrowSquareUpRightIconFill as ArrowSquareUpRightIconFill } from './arrow-square-up-right-fill';
+import { ArrowSquareUpRightIconFillDuotone as ArrowSquareUpRightIconFillDuotone } from './arrow-square-up-right-fill-duotone';
 
 export interface ArrowSquareUpRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowSquareUpRightIcon = memo(forwardRef<SVGSVGElement, ArrowSquareUpRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowSquareUpRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowSquareUpRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowSquareUpRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowSquareUpRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowSquareUpRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowSquareUpRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowSquareUpRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowSquareUpRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowSquareUpRightIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowSquareUpRightIconDuotone ref={ref} {...props} />;
+  return <RegularArrowSquareUpRightIcon ref={ref} {...props} />;
 }));
 
 ArrowSquareUpRightIcon.displayName = 'ArrowSquareUpRightIcon';

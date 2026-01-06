@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BirdhouseIcon as RegularBirdhouseIcon } from './birdhouse';
-import { BirdhouseIconBold } from './birdhouse-bold';
-import { BirdhouseIconFilled } from './birdhouse-filled';
-import { BirdhouseIconFilltone } from './birdhouse-filltone';
-import { BirdhouseIconLinetone } from './birdhouse-linetone';
+import { BirdhouseIconDuotone as BirdhouseIconDuotone } from './birdhouse-duotone';
+import { BirdhouseIconBold as BirdhouseIconBold } from './birdhouse-bold';
+import { BirdhouseIconBoldDuotone as BirdhouseIconBoldDuotone } from './birdhouse-bold-duotone';
+import { BirdhouseIconFill as BirdhouseIconFill } from './birdhouse-fill';
+import { BirdhouseIconFillDuotone as BirdhouseIconFillDuotone } from './birdhouse-fill-duotone';
 
 export interface BirdhouseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BirdhouseIcon = memo(forwardRef<SVGSVGElement, BirdhouseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BirdhouseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BirdhouseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BirdhouseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BirdhouseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBirdhouseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BirdhouseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BirdhouseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BirdhouseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BirdhouseIconFill ref={ref} {...props} />;
+  if (duotone) return <BirdhouseIconDuotone ref={ref} {...props} />;
+  return <RegularBirdhouseIcon ref={ref} {...props} />;
 }));
 
 BirdhouseIcon.displayName = 'BirdhouseIcon';

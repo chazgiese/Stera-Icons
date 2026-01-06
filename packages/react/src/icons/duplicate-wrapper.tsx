@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DuplicateIcon as RegularDuplicateIcon } from './duplicate';
-import { DuplicateIconBold } from './duplicate-bold';
-import { DuplicateIconFilled } from './duplicate-filled';
-import { DuplicateIconFilltone } from './duplicate-filltone';
-import { DuplicateIconLinetone } from './duplicate-linetone';
+import { DuplicateIconDuotone as DuplicateIconDuotone } from './duplicate-duotone';
+import { DuplicateIconBold as DuplicateIconBold } from './duplicate-bold';
+import { DuplicateIconBoldDuotone as DuplicateIconBoldDuotone } from './duplicate-bold-duotone';
+import { DuplicateIconFill as DuplicateIconFill } from './duplicate-fill';
+import { DuplicateIconFillDuotone as DuplicateIconFillDuotone } from './duplicate-fill-duotone';
 
 export interface DuplicateIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DuplicateIcon = memo(forwardRef<SVGSVGElement, DuplicateIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DuplicateIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DuplicateIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DuplicateIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DuplicateIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDuplicateIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DuplicateIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DuplicateIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DuplicateIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DuplicateIconFill ref={ref} {...props} />;
+  if (duotone) return <DuplicateIconDuotone ref={ref} {...props} />;
+  return <RegularDuplicateIcon ref={ref} {...props} />;
 }));
 
 DuplicateIcon.displayName = 'DuplicateIcon';

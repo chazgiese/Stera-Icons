@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CheckIcon as RegularCheckIcon } from './check';
-import { CheckIconBold } from './check-bold';
-import { CheckIconFilled } from './check-filled';
-import { CheckIconFilltone } from './check-filltone';
-import { CheckIconLinetone } from './check-linetone';
+import { CheckIconDuotone as CheckIconDuotone } from './check-duotone';
+import { CheckIconBold as CheckIconBold } from './check-bold';
+import { CheckIconBoldDuotone as CheckIconBoldDuotone } from './check-bold-duotone';
+import { CheckIconFill as CheckIconFill } from './check-fill';
+import { CheckIconFillDuotone as CheckIconFillDuotone } from './check-fill-duotone';
 
 export interface CheckIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CheckIcon = memo(forwardRef<SVGSVGElement, CheckIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CheckIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CheckIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CheckIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CheckIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCheckIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CheckIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CheckIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CheckIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CheckIconFill ref={ref} {...props} />;
+  if (duotone) return <CheckIconDuotone ref={ref} {...props} />;
+  return <RegularCheckIcon ref={ref} {...props} />;
 }));
 
 CheckIcon.displayName = 'CheckIcon';

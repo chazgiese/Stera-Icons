@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SaveIcon as RegularSaveIcon } from './save';
-import { SaveIconBold } from './save-bold';
-import { SaveIconFilled } from './save-filled';
-import { SaveIconFilltone } from './save-filltone';
-import { SaveIconLinetone } from './save-linetone';
+import { SaveIconDuotone as SaveIconDuotone } from './save-duotone';
+import { SaveIconBold as SaveIconBold } from './save-bold';
+import { SaveIconBoldDuotone as SaveIconBoldDuotone } from './save-bold-duotone';
+import { SaveIconFill as SaveIconFill } from './save-fill';
+import { SaveIconFillDuotone as SaveIconFillDuotone } from './save-fill-duotone';
 
 export interface SaveIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SaveIcon = memo(forwardRef<SVGSVGElement, SaveIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SaveIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SaveIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SaveIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SaveIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSaveIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SaveIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SaveIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SaveIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SaveIconFill ref={ref} {...props} />;
+  if (duotone) return <SaveIconDuotone ref={ref} {...props} />;
+  return <RegularSaveIcon ref={ref} {...props} />;
 }));
 
 SaveIcon.displayName = 'SaveIcon';

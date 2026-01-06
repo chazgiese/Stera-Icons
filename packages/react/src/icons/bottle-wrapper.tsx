@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BottleIcon as RegularBottleIcon } from './bottle';
-import { BottleIconBold } from './bottle-bold';
-import { BottleIconFilled } from './bottle-filled';
-import { BottleIconFilltone } from './bottle-filltone';
-import { BottleIconLinetone } from './bottle-linetone';
+import { BottleIconDuotone as BottleIconDuotone } from './bottle-duotone';
+import { BottleIconBold as BottleIconBold } from './bottle-bold';
+import { BottleIconBoldDuotone as BottleIconBoldDuotone } from './bottle-bold-duotone';
+import { BottleIconFill as BottleIconFill } from './bottle-fill';
+import { BottleIconFillDuotone as BottleIconFillDuotone } from './bottle-fill-duotone';
 
 export interface BottleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BottleIcon = memo(forwardRef<SVGSVGElement, BottleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BottleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BottleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BottleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BottleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBottleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BottleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BottleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BottleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BottleIconFill ref={ref} {...props} />;
+  if (duotone) return <BottleIconDuotone ref={ref} {...props} />;
+  return <RegularBottleIcon ref={ref} {...props} />;
 }));
 
 BottleIcon.displayName = 'BottleIcon';

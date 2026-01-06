@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChecklistIcon as RegularChecklistIcon } from './checklist';
-import { ChecklistIconBold } from './checklist-bold';
-import { ChecklistIconFilled } from './checklist-filled';
-import { ChecklistIconFilltone } from './checklist-filltone';
-import { ChecklistIconLinetone } from './checklist-linetone';
+import { ChecklistIconDuotone as ChecklistIconDuotone } from './checklist-duotone';
+import { ChecklistIconBold as ChecklistIconBold } from './checklist-bold';
+import { ChecklistIconBoldDuotone as ChecklistIconBoldDuotone } from './checklist-bold-duotone';
+import { ChecklistIconFill as ChecklistIconFill } from './checklist-fill';
+import { ChecklistIconFillDuotone as ChecklistIconFillDuotone } from './checklist-fill-duotone';
 
 export interface ChecklistIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChecklistIcon = memo(forwardRef<SVGSVGElement, ChecklistIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChecklistIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChecklistIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChecklistIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChecklistIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChecklistIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChecklistIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChecklistIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChecklistIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChecklistIconFill ref={ref} {...props} />;
+  if (duotone) return <ChecklistIconDuotone ref={ref} {...props} />;
+  return <RegularChecklistIcon ref={ref} {...props} />;
 }));
 
 ChecklistIcon.displayName = 'ChecklistIcon';

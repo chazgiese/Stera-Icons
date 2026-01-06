@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowDownIcon as RegularArrowDownIcon } from './arrow-down';
-import { ArrowDownIconBold } from './arrow-down-bold';
-import { ArrowDownIconFilled } from './arrow-down-filled';
-import { ArrowDownIconFilltone } from './arrow-down-filltone';
-import { ArrowDownIconLinetone } from './arrow-down-linetone';
+import { ArrowDownIconDuotone as ArrowDownIconDuotone } from './arrow-down-duotone';
+import { ArrowDownIconBold as ArrowDownIconBold } from './arrow-down-bold';
+import { ArrowDownIconBoldDuotone as ArrowDownIconBoldDuotone } from './arrow-down-bold-duotone';
+import { ArrowDownIconFill as ArrowDownIconFill } from './arrow-down-fill';
+import { ArrowDownIconFillDuotone as ArrowDownIconFillDuotone } from './arrow-down-fill-duotone';
 
 export interface ArrowDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowDownIcon = memo(forwardRef<SVGSVGElement, ArrowDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowDownIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowDownIconDuotone ref={ref} {...props} />;
+  return <RegularArrowDownIcon ref={ref} {...props} />;
 }));
 
 ArrowDownIcon.displayName = 'ArrowDownIcon';

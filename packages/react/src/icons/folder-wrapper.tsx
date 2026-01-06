@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FolderIcon as RegularFolderIcon } from './folder';
-import { FolderIconBold } from './folder-bold';
-import { FolderIconFilled } from './folder-filled';
-import { FolderIconFilltone } from './folder-filltone';
-import { FolderIconLinetone } from './folder-linetone';
+import { FolderIconDuotone as FolderIconDuotone } from './folder-duotone';
+import { FolderIconBold as FolderIconBold } from './folder-bold';
+import { FolderIconBoldDuotone as FolderIconBoldDuotone } from './folder-bold-duotone';
+import { FolderIconFill as FolderIconFill } from './folder-fill';
+import { FolderIconFillDuotone as FolderIconFillDuotone } from './folder-fill-duotone';
 
 export interface FolderIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FolderIcon = memo(forwardRef<SVGSVGElement, FolderIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FolderIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FolderIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FolderIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FolderIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFolderIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FolderIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FolderIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FolderIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FolderIconFill ref={ref} {...props} />;
+  if (duotone) return <FolderIconDuotone ref={ref} {...props} />;
+  return <RegularFolderIcon ref={ref} {...props} />;
 }));
 
 FolderIcon.displayName = 'FolderIcon';

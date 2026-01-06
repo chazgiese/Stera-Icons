@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SortNarrowIcon as RegularSortNarrowIcon } from './sort-narrow';
-import { SortNarrowIconBold } from './sort-narrow-bold';
-import { SortNarrowIconFilled } from './sort-narrow-filled';
-import { SortNarrowIconFilltone } from './sort-narrow-filltone';
-import { SortNarrowIconLinetone } from './sort-narrow-linetone';
+import { SortNarrowIconDuotone as SortNarrowIconDuotone } from './sort-narrow-duotone';
+import { SortNarrowIconBold as SortNarrowIconBold } from './sort-narrow-bold';
+import { SortNarrowIconBoldDuotone as SortNarrowIconBoldDuotone } from './sort-narrow-bold-duotone';
+import { SortNarrowIconFill as SortNarrowIconFill } from './sort-narrow-fill';
+import { SortNarrowIconFillDuotone as SortNarrowIconFillDuotone } from './sort-narrow-fill-duotone';
 
 export interface SortNarrowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SortNarrowIcon = memo(forwardRef<SVGSVGElement, SortNarrowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SortNarrowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SortNarrowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SortNarrowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SortNarrowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSortNarrowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SortNarrowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SortNarrowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SortNarrowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SortNarrowIconFill ref={ref} {...props} />;
+  if (duotone) return <SortNarrowIconDuotone ref={ref} {...props} />;
+  return <RegularSortNarrowIcon ref={ref} {...props} />;
 }));
 
 SortNarrowIcon.displayName = 'SortNarrowIcon';

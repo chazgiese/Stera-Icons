@@ -11,14 +11,16 @@ describe('Icon Validation', () => {
     expect(Array.isArray(metadata)).toBe(true);
     
     // Validate metadata structure
-    metadata.forEach((icon: { name: string; variant: string; tags: string[]; componentName: string; fileName: string }) => {
+    metadata.forEach((icon: { name: string; weight: string; duotone: boolean; tags: string[]; componentName: string; fileName: string }) => {
       expect(icon).toHaveProperty('name');
-      expect(icon).toHaveProperty('variant');
+      expect(icon).toHaveProperty('weight');
+      expect(icon).toHaveProperty('duotone');
       expect(icon).toHaveProperty('tags');
       expect(icon).toHaveProperty('componentName');
       expect(icon).toHaveProperty('fileName');
       
-      expect(['bold', 'filled', 'regular', 'filltone', 'linetone']).toContain(icon.variant);
+      expect(['regular', 'bold', 'fill']).toContain(icon.weight);
+      expect(typeof icon.duotone).toBe('boolean');
       expect(Array.isArray(icon.tags)).toBe(true);
       expect(typeof icon.name).toBe('string');
       expect(typeof icon.componentName).toBe('string');

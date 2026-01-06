@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PauseIcon as RegularPauseIcon } from './pause';
-import { PauseIconBold } from './pause-bold';
-import { PauseIconFilled } from './pause-filled';
-import { PauseIconFilltone } from './pause-filltone';
-import { PauseIconLinetone } from './pause-linetone';
+import { PauseIconDuotone as PauseIconDuotone } from './pause-duotone';
+import { PauseIconBold as PauseIconBold } from './pause-bold';
+import { PauseIconBoldDuotone as PauseIconBoldDuotone } from './pause-bold-duotone';
+import { PauseIconFill as PauseIconFill } from './pause-fill';
+import { PauseIconFillDuotone as PauseIconFillDuotone } from './pause-fill-duotone';
 
 export interface PauseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PauseIcon = memo(forwardRef<SVGSVGElement, PauseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PauseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PauseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PauseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PauseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPauseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PauseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PauseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PauseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PauseIconFill ref={ref} {...props} />;
+  if (duotone) return <PauseIconDuotone ref={ref} {...props} />;
+  return <RegularPauseIcon ref={ref} {...props} />;
 }));
 
 PauseIcon.displayName = 'PauseIcon';

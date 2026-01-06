@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartLineXYIcon as RegularChartLineXYIcon } from './chart-line-x-y';
-import { ChartLineXYIconBold } from './chart-line-x-y-bold';
-import { ChartLineXYIconFilled } from './chart-line-x-y-filled';
-import { ChartLineXYIconFilltone } from './chart-line-x-y-filltone';
-import { ChartLineXYIconLinetone } from './chart-line-x-y-linetone';
+import { ChartLineXYIconDuotone as ChartLineXYIconDuotone } from './chart-line-x-y-duotone';
+import { ChartLineXYIconBold as ChartLineXYIconBold } from './chart-line-x-y-bold';
+import { ChartLineXYIconBoldDuotone as ChartLineXYIconBoldDuotone } from './chart-line-x-y-bold-duotone';
+import { ChartLineXYIconFill as ChartLineXYIconFill } from './chart-line-x-y-fill';
+import { ChartLineXYIconFillDuotone as ChartLineXYIconFillDuotone } from './chart-line-x-y-fill-duotone';
 
 export interface ChartLineXYIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartLineXYIcon = memo(forwardRef<SVGSVGElement, ChartLineXYIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartLineXYIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartLineXYIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartLineXYIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartLineXYIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartLineXYIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartLineXYIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartLineXYIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartLineXYIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartLineXYIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartLineXYIconDuotone ref={ref} {...props} />;
+  return <RegularChartLineXYIcon ref={ref} {...props} />;
 }));
 
 ChartLineXYIcon.displayName = 'ChartLineXYIcon';

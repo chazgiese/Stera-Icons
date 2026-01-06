@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DiamondIcon as RegularDiamondIcon } from './diamond';
-import { DiamondIconBold } from './diamond-bold';
-import { DiamondIconFilled } from './diamond-filled';
-import { DiamondIconFilltone } from './diamond-filltone';
-import { DiamondIconLinetone } from './diamond-linetone';
+import { DiamondIconDuotone as DiamondIconDuotone } from './diamond-duotone';
+import { DiamondIconBold as DiamondIconBold } from './diamond-bold';
+import { DiamondIconBoldDuotone as DiamondIconBoldDuotone } from './diamond-bold-duotone';
+import { DiamondIconFill as DiamondIconFill } from './diamond-fill';
+import { DiamondIconFillDuotone as DiamondIconFillDuotone } from './diamond-fill-duotone';
 
 export interface DiamondIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DiamondIcon = memo(forwardRef<SVGSVGElement, DiamondIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DiamondIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DiamondIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DiamondIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DiamondIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDiamondIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DiamondIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DiamondIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DiamondIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DiamondIconFill ref={ref} {...props} />;
+  if (duotone) return <DiamondIconDuotone ref={ref} {...props} />;
+  return <RegularDiamondIcon ref={ref} {...props} />;
 }));
 
 DiamondIcon.displayName = 'DiamondIcon';

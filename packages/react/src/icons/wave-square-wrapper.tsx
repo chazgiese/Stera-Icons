@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WaveSquareIcon as RegularWaveSquareIcon } from './wave-square';
-import { WaveSquareIconBold } from './wave-square-bold';
-import { WaveSquareIconFilled } from './wave-square-filled';
-import { WaveSquareIconFilltone } from './wave-square-filltone';
-import { WaveSquareIconLinetone } from './wave-square-linetone';
+import { WaveSquareIconDuotone as WaveSquareIconDuotone } from './wave-square-duotone';
+import { WaveSquareIconBold as WaveSquareIconBold } from './wave-square-bold';
+import { WaveSquareIconBoldDuotone as WaveSquareIconBoldDuotone } from './wave-square-bold-duotone';
+import { WaveSquareIconFill as WaveSquareIconFill } from './wave-square-fill';
+import { WaveSquareIconFillDuotone as WaveSquareIconFillDuotone } from './wave-square-fill-duotone';
 
 export interface WaveSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WaveSquareIcon = memo(forwardRef<SVGSVGElement, WaveSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WaveSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WaveSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WaveSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WaveSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWaveSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WaveSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WaveSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WaveSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WaveSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <WaveSquareIconDuotone ref={ref} {...props} />;
+  return <RegularWaveSquareIcon ref={ref} {...props} />;
 }));
 
 WaveSquareIcon.displayName = 'WaveSquareIcon';

@@ -28,7 +28,7 @@ const ShareIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M9 8a1 1 0 1 1 0 2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2a1 1 0 0 1 0-2h2a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4z"
+          d="M9 8a1 1 0 0 1 0 2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2a1 1 0 0 1 0-2h2a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4z"
         />
         <path
           fill="currentColor"

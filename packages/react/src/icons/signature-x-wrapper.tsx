@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SignatureXIcon as RegularSignatureXIcon } from './signature-x';
-import { SignatureXIconBold } from './signature-x-bold';
-import { SignatureXIconFilled } from './signature-x-filled';
-import { SignatureXIconFilltone } from './signature-x-filltone';
-import { SignatureXIconLinetone } from './signature-x-linetone';
+import { SignatureXIconDuotone as SignatureXIconDuotone } from './signature-x-duotone';
+import { SignatureXIconBold as SignatureXIconBold } from './signature-x-bold';
+import { SignatureXIconBoldDuotone as SignatureXIconBoldDuotone } from './signature-x-bold-duotone';
+import { SignatureXIconFill as SignatureXIconFill } from './signature-x-fill';
+import { SignatureXIconFillDuotone as SignatureXIconFillDuotone } from './signature-x-fill-duotone';
 
 export interface SignatureXIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SignatureXIcon = memo(forwardRef<SVGSVGElement, SignatureXIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SignatureXIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SignatureXIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SignatureXIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SignatureXIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSignatureXIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SignatureXIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SignatureXIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SignatureXIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SignatureXIconFill ref={ref} {...props} />;
+  if (duotone) return <SignatureXIconDuotone ref={ref} {...props} />;
+  return <RegularSignatureXIcon ref={ref} {...props} />;
 }));
 
 SignatureXIcon.displayName = 'SignatureXIcon';

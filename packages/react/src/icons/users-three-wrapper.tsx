@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UsersThreeIcon as RegularUsersThreeIcon } from './users-three';
-import { UsersThreeIconBold } from './users-three-bold';
-import { UsersThreeIconFilled } from './users-three-filled';
-import { UsersThreeIconFilltone } from './users-three-filltone';
-import { UsersThreeIconLinetone } from './users-three-linetone';
+import { UsersThreeIconDuotone as UsersThreeIconDuotone } from './users-three-duotone';
+import { UsersThreeIconBold as UsersThreeIconBold } from './users-three-bold';
+import { UsersThreeIconBoldDuotone as UsersThreeIconBoldDuotone } from './users-three-bold-duotone';
+import { UsersThreeIconFill as UsersThreeIconFill } from './users-three-fill';
+import { UsersThreeIconFillDuotone as UsersThreeIconFillDuotone } from './users-three-fill-duotone';
 
 export interface UsersThreeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UsersThreeIcon = memo(forwardRef<SVGSVGElement, UsersThreeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UsersThreeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UsersThreeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UsersThreeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UsersThreeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUsersThreeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UsersThreeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UsersThreeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UsersThreeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UsersThreeIconFill ref={ref} {...props} />;
+  if (duotone) return <UsersThreeIconDuotone ref={ref} {...props} />;
+  return <RegularUsersThreeIcon ref={ref} {...props} />;
 }));
 
 UsersThreeIcon.displayName = 'UsersThreeIcon';

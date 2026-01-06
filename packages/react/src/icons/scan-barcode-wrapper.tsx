@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanBarcodeIcon as RegularScanBarcodeIcon } from './scan-barcode';
-import { ScanBarcodeIconBold } from './scan-barcode-bold';
-import { ScanBarcodeIconFilled } from './scan-barcode-filled';
-import { ScanBarcodeIconFilltone } from './scan-barcode-filltone';
-import { ScanBarcodeIconLinetone } from './scan-barcode-linetone';
+import { ScanBarcodeIconDuotone as ScanBarcodeIconDuotone } from './scan-barcode-duotone';
+import { ScanBarcodeIconBold as ScanBarcodeIconBold } from './scan-barcode-bold';
+import { ScanBarcodeIconBoldDuotone as ScanBarcodeIconBoldDuotone } from './scan-barcode-bold-duotone';
+import { ScanBarcodeIconFill as ScanBarcodeIconFill } from './scan-barcode-fill';
+import { ScanBarcodeIconFillDuotone as ScanBarcodeIconFillDuotone } from './scan-barcode-fill-duotone';
 
 export interface ScanBarcodeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanBarcodeIcon = memo(forwardRef<SVGSVGElement, ScanBarcodeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanBarcodeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanBarcodeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanBarcodeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanBarcodeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanBarcodeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanBarcodeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanBarcodeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanBarcodeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanBarcodeIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanBarcodeIconDuotone ref={ref} {...props} />;
+  return <RegularScanBarcodeIcon ref={ref} {...props} />;
 }));
 
 ScanBarcodeIcon.displayName = 'ScanBarcodeIcon';

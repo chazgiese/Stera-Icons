@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PieIcon as RegularPieIcon } from './pie';
-import { PieIconBold } from './pie-bold';
-import { PieIconFilled } from './pie-filled';
-import { PieIconFilltone } from './pie-filltone';
-import { PieIconLinetone } from './pie-linetone';
+import { PieIconDuotone as PieIconDuotone } from './pie-duotone';
+import { PieIconBold as PieIconBold } from './pie-bold';
+import { PieIconBoldDuotone as PieIconBoldDuotone } from './pie-bold-duotone';
+import { PieIconFill as PieIconFill } from './pie-fill';
+import { PieIconFillDuotone as PieIconFillDuotone } from './pie-fill-duotone';
 
 export interface PieIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PieIcon = memo(forwardRef<SVGSVGElement, PieIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PieIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PieIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PieIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PieIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPieIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PieIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PieIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PieIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PieIconFill ref={ref} {...props} />;
+  if (duotone) return <PieIconDuotone ref={ref} {...props} />;
+  return <RegularPieIcon ref={ref} {...props} />;
 }));
 
 PieIcon.displayName = 'PieIcon';

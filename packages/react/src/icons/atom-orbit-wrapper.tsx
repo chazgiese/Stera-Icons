@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AtomOrbitIcon as RegularAtomOrbitIcon } from './atom-orbit';
-import { AtomOrbitIconBold } from './atom-orbit-bold';
-import { AtomOrbitIconFilled } from './atom-orbit-filled';
-import { AtomOrbitIconFilltone } from './atom-orbit-filltone';
-import { AtomOrbitIconLinetone } from './atom-orbit-linetone';
+import { AtomOrbitIconDuotone as AtomOrbitIconDuotone } from './atom-orbit-duotone';
+import { AtomOrbitIconBold as AtomOrbitIconBold } from './atom-orbit-bold';
+import { AtomOrbitIconBoldDuotone as AtomOrbitIconBoldDuotone } from './atom-orbit-bold-duotone';
+import { AtomOrbitIconFill as AtomOrbitIconFill } from './atom-orbit-fill';
+import { AtomOrbitIconFillDuotone as AtomOrbitIconFillDuotone } from './atom-orbit-fill-duotone';
 
 export interface AtomOrbitIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AtomOrbitIcon = memo(forwardRef<SVGSVGElement, AtomOrbitIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AtomOrbitIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AtomOrbitIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AtomOrbitIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AtomOrbitIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAtomOrbitIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AtomOrbitIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AtomOrbitIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AtomOrbitIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AtomOrbitIconFill ref={ref} {...props} />;
+  if (duotone) return <AtomOrbitIconDuotone ref={ref} {...props} />;
+  return <RegularAtomOrbitIcon ref={ref} {...props} />;
 }));
 
 AtomOrbitIcon.displayName = 'AtomOrbitIcon';

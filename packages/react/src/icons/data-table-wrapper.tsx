@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DataTableIcon as RegularDataTableIcon } from './data-table';
-import { DataTableIconBold } from './data-table-bold';
-import { DataTableIconFilled } from './data-table-filled';
-import { DataTableIconFilltone } from './data-table-filltone';
-import { DataTableIconLinetone } from './data-table-linetone';
+import { DataTableIconDuotone as DataTableIconDuotone } from './data-table-duotone';
+import { DataTableIconBold as DataTableIconBold } from './data-table-bold';
+import { DataTableIconBoldDuotone as DataTableIconBoldDuotone } from './data-table-bold-duotone';
+import { DataTableIconFill as DataTableIconFill } from './data-table-fill';
+import { DataTableIconFillDuotone as DataTableIconFillDuotone } from './data-table-fill-duotone';
 
 export interface DataTableIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DataTableIcon = memo(forwardRef<SVGSVGElement, DataTableIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DataTableIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DataTableIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DataTableIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DataTableIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDataTableIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DataTableIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DataTableIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DataTableIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DataTableIconFill ref={ref} {...props} />;
+  if (duotone) return <DataTableIconDuotone ref={ref} {...props} />;
+  return <RegularDataTableIcon ref={ref} {...props} />;
 }));
 
 DataTableIcon.displayName = 'DataTableIcon';

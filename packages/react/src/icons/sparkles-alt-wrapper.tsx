@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SparklesAltIcon as RegularSparklesAltIcon } from './sparkles-alt';
-import { SparklesAltIconBold } from './sparkles-alt-bold';
-import { SparklesAltIconFilled } from './sparkles-alt-filled';
-import { SparklesAltIconFilltone } from './sparkles-alt-filltone';
-import { SparklesAltIconLinetone } from './sparkles-alt-linetone';
+import { SparklesAltIconDuotone as SparklesAltIconDuotone } from './sparkles-alt-duotone';
+import { SparklesAltIconBold as SparklesAltIconBold } from './sparkles-alt-bold';
+import { SparklesAltIconBoldDuotone as SparklesAltIconBoldDuotone } from './sparkles-alt-bold-duotone';
+import { SparklesAltIconFill as SparklesAltIconFill } from './sparkles-alt-fill';
+import { SparklesAltIconFillDuotone as SparklesAltIconFillDuotone } from './sparkles-alt-fill-duotone';
 
 export interface SparklesAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SparklesAltIcon = memo(forwardRef<SVGSVGElement, SparklesAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SparklesAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SparklesAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SparklesAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SparklesAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSparklesAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SparklesAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SparklesAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SparklesAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SparklesAltIconFill ref={ref} {...props} />;
+  if (duotone) return <SparklesAltIconDuotone ref={ref} {...props} />;
+  return <RegularSparklesAltIcon ref={ref} {...props} />;
 }));
 
 SparklesAltIcon.displayName = 'SparklesAltIcon';

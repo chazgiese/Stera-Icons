@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MacWindowCursorIcon as RegularMacWindowCursorIcon } from './mac-window-cursor';
-import { MacWindowCursorIconBold } from './mac-window-cursor-bold';
-import { MacWindowCursorIconFilled } from './mac-window-cursor-filled';
-import { MacWindowCursorIconFilltone } from './mac-window-cursor-filltone';
-import { MacWindowCursorIconLinetone } from './mac-window-cursor-linetone';
+import { MacWindowCursorIconDuotone as MacWindowCursorIconDuotone } from './mac-window-cursor-duotone';
+import { MacWindowCursorIconBold as MacWindowCursorIconBold } from './mac-window-cursor-bold';
+import { MacWindowCursorIconBoldDuotone as MacWindowCursorIconBoldDuotone } from './mac-window-cursor-bold-duotone';
+import { MacWindowCursorIconFill as MacWindowCursorIconFill } from './mac-window-cursor-fill';
+import { MacWindowCursorIconFillDuotone as MacWindowCursorIconFillDuotone } from './mac-window-cursor-fill-duotone';
 
 export interface MacWindowCursorIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MacWindowCursorIcon = memo(forwardRef<SVGSVGElement, MacWindowCursorIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MacWindowCursorIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MacWindowCursorIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MacWindowCursorIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MacWindowCursorIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMacWindowCursorIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MacWindowCursorIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MacWindowCursorIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MacWindowCursorIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MacWindowCursorIconFill ref={ref} {...props} />;
+  if (duotone) return <MacWindowCursorIconDuotone ref={ref} {...props} />;
+  return <RegularMacWindowCursorIcon ref={ref} {...props} />;
 }));
 
 MacWindowCursorIcon.displayName = 'MacWindowCursorIcon';

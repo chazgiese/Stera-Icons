@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { UploadIcon as RegularUploadIcon } from './upload';
-import { UploadIconBold } from './upload-bold';
-import { UploadIconFilled } from './upload-filled';
-import { UploadIconFilltone } from './upload-filltone';
-import { UploadIconLinetone } from './upload-linetone';
+import { UploadIconDuotone as UploadIconDuotone } from './upload-duotone';
+import { UploadIconBold as UploadIconBold } from './upload-bold';
+import { UploadIconBoldDuotone as UploadIconBoldDuotone } from './upload-bold-duotone';
+import { UploadIconFill as UploadIconFill } from './upload-fill';
+import { UploadIconFillDuotone as UploadIconFillDuotone } from './upload-fill-duotone';
 
 export interface UploadIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const UploadIcon = memo(forwardRef<SVGSVGElement, UploadIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <UploadIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <UploadIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <UploadIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <UploadIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularUploadIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <UploadIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <UploadIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <UploadIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <UploadIconFill ref={ref} {...props} />;
+  if (duotone) return <UploadIconDuotone ref={ref} {...props} />;
+  return <RegularUploadIcon ref={ref} {...props} />;
 }));
 
 UploadIcon.displayName = 'UploadIcon';

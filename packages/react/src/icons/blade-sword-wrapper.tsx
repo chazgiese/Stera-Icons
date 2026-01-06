@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BladeSwordIcon as RegularBladeSwordIcon } from './blade-sword';
-import { BladeSwordIconBold } from './blade-sword-bold';
-import { BladeSwordIconFilled } from './blade-sword-filled';
-import { BladeSwordIconFilltone } from './blade-sword-filltone';
-import { BladeSwordIconLinetone } from './blade-sword-linetone';
+import { BladeSwordIconDuotone as BladeSwordIconDuotone } from './blade-sword-duotone';
+import { BladeSwordIconBold as BladeSwordIconBold } from './blade-sword-bold';
+import { BladeSwordIconBoldDuotone as BladeSwordIconBoldDuotone } from './blade-sword-bold-duotone';
+import { BladeSwordIconFill as BladeSwordIconFill } from './blade-sword-fill';
+import { BladeSwordIconFillDuotone as BladeSwordIconFillDuotone } from './blade-sword-fill-duotone';
 
 export interface BladeSwordIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BladeSwordIcon = memo(forwardRef<SVGSVGElement, BladeSwordIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BladeSwordIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BladeSwordIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BladeSwordIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BladeSwordIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBladeSwordIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BladeSwordIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BladeSwordIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BladeSwordIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BladeSwordIconFill ref={ref} {...props} />;
+  if (duotone) return <BladeSwordIconDuotone ref={ref} {...props} />;
+  return <RegularBladeSwordIcon ref={ref} {...props} />;
 }));
 
 BladeSwordIcon.displayName = 'BladeSwordIcon';

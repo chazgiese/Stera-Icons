@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CursorClickIcon as RegularCursorClickIcon } from './cursor-click';
-import { CursorClickIconBold } from './cursor-click-bold';
-import { CursorClickIconFilled } from './cursor-click-filled';
-import { CursorClickIconFilltone } from './cursor-click-filltone';
-import { CursorClickIconLinetone } from './cursor-click-linetone';
+import { CursorClickIconDuotone as CursorClickIconDuotone } from './cursor-click-duotone';
+import { CursorClickIconBold as CursorClickIconBold } from './cursor-click-bold';
+import { CursorClickIconBoldDuotone as CursorClickIconBoldDuotone } from './cursor-click-bold-duotone';
+import { CursorClickIconFill as CursorClickIconFill } from './cursor-click-fill';
+import { CursorClickIconFillDuotone as CursorClickIconFillDuotone } from './cursor-click-fill-duotone';
 
 export interface CursorClickIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CursorClickIcon = memo(forwardRef<SVGSVGElement, CursorClickIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CursorClickIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CursorClickIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CursorClickIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CursorClickIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCursorClickIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CursorClickIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CursorClickIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CursorClickIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CursorClickIconFill ref={ref} {...props} />;
+  if (duotone) return <CursorClickIconDuotone ref={ref} {...props} />;
+  return <RegularCursorClickIcon ref={ref} {...props} />;
 }));
 
 CursorClickIcon.displayName = 'CursorClickIcon';

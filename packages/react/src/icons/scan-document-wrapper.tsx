@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanDocumentIcon as RegularScanDocumentIcon } from './scan-document';
-import { ScanDocumentIconBold } from './scan-document-bold';
-import { ScanDocumentIconFilled } from './scan-document-filled';
-import { ScanDocumentIconFilltone } from './scan-document-filltone';
-import { ScanDocumentIconLinetone } from './scan-document-linetone';
+import { ScanDocumentIconDuotone as ScanDocumentIconDuotone } from './scan-document-duotone';
+import { ScanDocumentIconBold as ScanDocumentIconBold } from './scan-document-bold';
+import { ScanDocumentIconBoldDuotone as ScanDocumentIconBoldDuotone } from './scan-document-bold-duotone';
+import { ScanDocumentIconFill as ScanDocumentIconFill } from './scan-document-fill';
+import { ScanDocumentIconFillDuotone as ScanDocumentIconFillDuotone } from './scan-document-fill-duotone';
 
 export interface ScanDocumentIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanDocumentIcon = memo(forwardRef<SVGSVGElement, ScanDocumentIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanDocumentIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanDocumentIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanDocumentIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanDocumentIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanDocumentIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanDocumentIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanDocumentIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanDocumentIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanDocumentIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanDocumentIconDuotone ref={ref} {...props} />;
+  return <RegularScanDocumentIcon ref={ref} {...props} />;
 }));
 
 ScanDocumentIcon.displayName = 'ScanDocumentIcon';

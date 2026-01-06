@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BankIcon as RegularBankIcon } from './bank';
-import { BankIconBold } from './bank-bold';
-import { BankIconFilled } from './bank-filled';
-import { BankIconFilltone } from './bank-filltone';
-import { BankIconLinetone } from './bank-linetone';
+import { BankIconDuotone as BankIconDuotone } from './bank-duotone';
+import { BankIconBold as BankIconBold } from './bank-bold';
+import { BankIconBoldDuotone as BankIconBoldDuotone } from './bank-bold-duotone';
+import { BankIconFill as BankIconFill } from './bank-fill';
+import { BankIconFillDuotone as BankIconFillDuotone } from './bank-fill-duotone';
 
 export interface BankIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BankIcon = memo(forwardRef<SVGSVGElement, BankIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BankIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BankIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BankIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BankIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBankIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BankIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BankIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BankIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BankIconFill ref={ref} {...props} />;
+  if (duotone) return <BankIconDuotone ref={ref} {...props} />;
+  return <RegularBankIcon ref={ref} {...props} />;
 }));
 
 BankIcon.displayName = 'BankIcon';

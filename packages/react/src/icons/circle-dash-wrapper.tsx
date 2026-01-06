@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CircleDashIcon as RegularCircleDashIcon } from './circle-dash';
-import { CircleDashIconBold } from './circle-dash-bold';
-import { CircleDashIconFilled } from './circle-dash-filled';
-import { CircleDashIconFilltone } from './circle-dash-filltone';
-import { CircleDashIconLinetone } from './circle-dash-linetone';
+import { CircleDashIconDuotone as CircleDashIconDuotone } from './circle-dash-duotone';
+import { CircleDashIconBold as CircleDashIconBold } from './circle-dash-bold';
+import { CircleDashIconBoldDuotone as CircleDashIconBoldDuotone } from './circle-dash-bold-duotone';
+import { CircleDashIconFill as CircleDashIconFill } from './circle-dash-fill';
+import { CircleDashIconFillDuotone as CircleDashIconFillDuotone } from './circle-dash-fill-duotone';
 
 export interface CircleDashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CircleDashIcon = memo(forwardRef<SVGSVGElement, CircleDashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CircleDashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CircleDashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CircleDashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CircleDashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCircleDashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CircleDashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CircleDashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CircleDashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CircleDashIconFill ref={ref} {...props} />;
+  if (duotone) return <CircleDashIconDuotone ref={ref} {...props} />;
+  return <RegularCircleDashIcon ref={ref} {...props} />;
 }));
 
 CircleDashIcon.displayName = 'CircleDashIcon';

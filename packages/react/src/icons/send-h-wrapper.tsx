@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SendHIcon as RegularSendHIcon } from './send-h';
-import { SendHIconBold } from './send-h-bold';
-import { SendHIconFilled } from './send-h-filled';
-import { SendHIconFilltone } from './send-h-filltone';
-import { SendHIconLinetone } from './send-h-linetone';
+import { SendHIconDuotone as SendHIconDuotone } from './send-h-duotone';
+import { SendHIconBold as SendHIconBold } from './send-h-bold';
+import { SendHIconBoldDuotone as SendHIconBoldDuotone } from './send-h-bold-duotone';
+import { SendHIconFill as SendHIconFill } from './send-h-fill';
+import { SendHIconFillDuotone as SendHIconFillDuotone } from './send-h-fill-duotone';
 
 export interface SendHIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SendHIcon = memo(forwardRef<SVGSVGElement, SendHIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SendHIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SendHIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SendHIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SendHIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSendHIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SendHIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SendHIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SendHIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SendHIconFill ref={ref} {...props} />;
+  if (duotone) return <SendHIconDuotone ref={ref} {...props} />;
+  return <RegularSendHIcon ref={ref} {...props} />;
 }));
 
 SendHIcon.displayName = 'SendHIcon';

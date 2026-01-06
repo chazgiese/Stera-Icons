@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowBigUpIcon as RegularArrowBigUpIcon } from './arrow-big-up';
-import { ArrowBigUpIconBold } from './arrow-big-up-bold';
-import { ArrowBigUpIconFilled } from './arrow-big-up-filled';
-import { ArrowBigUpIconFilltone } from './arrow-big-up-filltone';
-import { ArrowBigUpIconLinetone } from './arrow-big-up-linetone';
+import { ArrowBigUpIconDuotone as ArrowBigUpIconDuotone } from './arrow-big-up-duotone';
+import { ArrowBigUpIconBold as ArrowBigUpIconBold } from './arrow-big-up-bold';
+import { ArrowBigUpIconBoldDuotone as ArrowBigUpIconBoldDuotone } from './arrow-big-up-bold-duotone';
+import { ArrowBigUpIconFill as ArrowBigUpIconFill } from './arrow-big-up-fill';
+import { ArrowBigUpIconFillDuotone as ArrowBigUpIconFillDuotone } from './arrow-big-up-fill-duotone';
 
 export interface ArrowBigUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowBigUpIcon = memo(forwardRef<SVGSVGElement, ArrowBigUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowBigUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowBigUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowBigUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowBigUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowBigUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowBigUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowBigUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowBigUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowBigUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowBigUpIconDuotone ref={ref} {...props} />;
+  return <RegularArrowBigUpIcon ref={ref} {...props} />;
 }));
 
 ArrowBigUpIcon.displayName = 'ArrowBigUpIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BottleLabelIcon as RegularBottleLabelIcon } from './bottle-label';
-import { BottleLabelIconBold } from './bottle-label-bold';
-import { BottleLabelIconFilled } from './bottle-label-filled';
-import { BottleLabelIconFilltone } from './bottle-label-filltone';
-import { BottleLabelIconLinetone } from './bottle-label-linetone';
+import { BottleLabelIconDuotone as BottleLabelIconDuotone } from './bottle-label-duotone';
+import { BottleLabelIconBold as BottleLabelIconBold } from './bottle-label-bold';
+import { BottleLabelIconBoldDuotone as BottleLabelIconBoldDuotone } from './bottle-label-bold-duotone';
+import { BottleLabelIconFill as BottleLabelIconFill } from './bottle-label-fill';
+import { BottleLabelIconFillDuotone as BottleLabelIconFillDuotone } from './bottle-label-fill-duotone';
 
 export interface BottleLabelIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BottleLabelIcon = memo(forwardRef<SVGSVGElement, BottleLabelIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BottleLabelIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BottleLabelIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BottleLabelIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BottleLabelIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBottleLabelIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BottleLabelIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BottleLabelIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BottleLabelIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BottleLabelIconFill ref={ref} {...props} />;
+  if (duotone) return <BottleLabelIconDuotone ref={ref} {...props} />;
+  return <RegularBottleLabelIcon ref={ref} {...props} />;
 }));
 
 BottleLabelIcon.displayName = 'BottleLabelIcon';

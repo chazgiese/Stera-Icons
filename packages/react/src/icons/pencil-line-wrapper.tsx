@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PencilLineIcon as RegularPencilLineIcon } from './pencil-line';
-import { PencilLineIconBold } from './pencil-line-bold';
-import { PencilLineIconFilled } from './pencil-line-filled';
-import { PencilLineIconFilltone } from './pencil-line-filltone';
-import { PencilLineIconLinetone } from './pencil-line-linetone';
+import { PencilLineIconDuotone as PencilLineIconDuotone } from './pencil-line-duotone';
+import { PencilLineIconBold as PencilLineIconBold } from './pencil-line-bold';
+import { PencilLineIconBoldDuotone as PencilLineIconBoldDuotone } from './pencil-line-bold-duotone';
+import { PencilLineIconFill as PencilLineIconFill } from './pencil-line-fill';
+import { PencilLineIconFillDuotone as PencilLineIconFillDuotone } from './pencil-line-fill-duotone';
 
 export interface PencilLineIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PencilLineIcon = memo(forwardRef<SVGSVGElement, PencilLineIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PencilLineIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PencilLineIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PencilLineIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PencilLineIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPencilLineIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PencilLineIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PencilLineIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PencilLineIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PencilLineIconFill ref={ref} {...props} />;
+  if (duotone) return <PencilLineIconDuotone ref={ref} {...props} />;
+  return <RegularPencilLineIcon ref={ref} {...props} />;
 }));
 
 PencilLineIcon.displayName = 'PencilLineIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DuplicatePlusIcon as RegularDuplicatePlusIcon } from './duplicate-plus';
-import { DuplicatePlusIconBold } from './duplicate-plus-bold';
-import { DuplicatePlusIconFilled } from './duplicate-plus-filled';
-import { DuplicatePlusIconFilltone } from './duplicate-plus-filltone';
-import { DuplicatePlusIconLinetone } from './duplicate-plus-linetone';
+import { DuplicatePlusIconDuotone as DuplicatePlusIconDuotone } from './duplicate-plus-duotone';
+import { DuplicatePlusIconBold as DuplicatePlusIconBold } from './duplicate-plus-bold';
+import { DuplicatePlusIconBoldDuotone as DuplicatePlusIconBoldDuotone } from './duplicate-plus-bold-duotone';
+import { DuplicatePlusIconFill as DuplicatePlusIconFill } from './duplicate-plus-fill';
+import { DuplicatePlusIconFillDuotone as DuplicatePlusIconFillDuotone } from './duplicate-plus-fill-duotone';
 
 export interface DuplicatePlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DuplicatePlusIcon = memo(forwardRef<SVGSVGElement, DuplicatePlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DuplicatePlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DuplicatePlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DuplicatePlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DuplicatePlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDuplicatePlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DuplicatePlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DuplicatePlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DuplicatePlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DuplicatePlusIconFill ref={ref} {...props} />;
+  if (duotone) return <DuplicatePlusIconDuotone ref={ref} {...props} />;
+  return <RegularDuplicatePlusIcon ref={ref} {...props} />;
 }));
 
 DuplicatePlusIcon.displayName = 'DuplicatePlusIcon';

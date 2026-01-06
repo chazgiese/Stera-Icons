@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MedicalCrossIcon as RegularMedicalCrossIcon } from './medical-cross';
-import { MedicalCrossIconBold } from './medical-cross-bold';
-import { MedicalCrossIconFilled } from './medical-cross-filled';
-import { MedicalCrossIconFilltone } from './medical-cross-filltone';
-import { MedicalCrossIconLinetone } from './medical-cross-linetone';
+import { MedicalCrossIconDuotone as MedicalCrossIconDuotone } from './medical-cross-duotone';
+import { MedicalCrossIconBold as MedicalCrossIconBold } from './medical-cross-bold';
+import { MedicalCrossIconBoldDuotone as MedicalCrossIconBoldDuotone } from './medical-cross-bold-duotone';
+import { MedicalCrossIconFill as MedicalCrossIconFill } from './medical-cross-fill';
+import { MedicalCrossIconFillDuotone as MedicalCrossIconFillDuotone } from './medical-cross-fill-duotone';
 
 export interface MedicalCrossIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MedicalCrossIcon = memo(forwardRef<SVGSVGElement, MedicalCrossIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MedicalCrossIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MedicalCrossIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MedicalCrossIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MedicalCrossIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMedicalCrossIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MedicalCrossIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MedicalCrossIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MedicalCrossIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MedicalCrossIconFill ref={ref} {...props} />;
+  if (duotone) return <MedicalCrossIconDuotone ref={ref} {...props} />;
+  return <RegularMedicalCrossIcon ref={ref} {...props} />;
 }));
 
 MedicalCrossIcon.displayName = 'MedicalCrossIcon';

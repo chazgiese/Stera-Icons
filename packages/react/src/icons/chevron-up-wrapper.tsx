@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronUpIcon as RegularChevronUpIcon } from './chevron-up';
-import { ChevronUpIconBold } from './chevron-up-bold';
-import { ChevronUpIconFilled } from './chevron-up-filled';
-import { ChevronUpIconFilltone } from './chevron-up-filltone';
-import { ChevronUpIconLinetone } from './chevron-up-linetone';
+import { ChevronUpIconDuotone as ChevronUpIconDuotone } from './chevron-up-duotone';
+import { ChevronUpIconBold as ChevronUpIconBold } from './chevron-up-bold';
+import { ChevronUpIconBoldDuotone as ChevronUpIconBoldDuotone } from './chevron-up-bold-duotone';
+import { ChevronUpIconFill as ChevronUpIconFill } from './chevron-up-fill';
+import { ChevronUpIconFillDuotone as ChevronUpIconFillDuotone } from './chevron-up-fill-duotone';
 
 export interface ChevronUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronUpIcon = memo(forwardRef<SVGSVGElement, ChevronUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronUpIconDuotone ref={ref} {...props} />;
+  return <RegularChevronUpIcon ref={ref} {...props} />;
 }));
 
 ChevronUpIcon.displayName = 'ChevronUpIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TestTubeFullIcon as RegularTestTubeFullIcon } from './test-tube-full';
-import { TestTubeFullIconBold } from './test-tube-full-bold';
-import { TestTubeFullIconFilled } from './test-tube-full-filled';
-import { TestTubeFullIconFilltone } from './test-tube-full-filltone';
-import { TestTubeFullIconLinetone } from './test-tube-full-linetone';
+import { TestTubeFullIconDuotone as TestTubeFullIconDuotone } from './test-tube-full-duotone';
+import { TestTubeFullIconBold as TestTubeFullIconBold } from './test-tube-full-bold';
+import { TestTubeFullIconBoldDuotone as TestTubeFullIconBoldDuotone } from './test-tube-full-bold-duotone';
+import { TestTubeFullIconFill as TestTubeFullIconFill } from './test-tube-full-fill';
+import { TestTubeFullIconFillDuotone as TestTubeFullIconFillDuotone } from './test-tube-full-fill-duotone';
 
 export interface TestTubeFullIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TestTubeFullIcon = memo(forwardRef<SVGSVGElement, TestTubeFullIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TestTubeFullIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TestTubeFullIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TestTubeFullIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TestTubeFullIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTestTubeFullIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TestTubeFullIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TestTubeFullIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TestTubeFullIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TestTubeFullIconFill ref={ref} {...props} />;
+  if (duotone) return <TestTubeFullIconDuotone ref={ref} {...props} />;
+  return <RegularTestTubeFullIcon ref={ref} {...props} />;
 }));
 
 TestTubeFullIcon.displayName = 'TestTubeFullIcon';

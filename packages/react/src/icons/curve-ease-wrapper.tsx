@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CurveEaseIcon as RegularCurveEaseIcon } from './curve-ease';
-import { CurveEaseIconBold } from './curve-ease-bold';
-import { CurveEaseIconFilled } from './curve-ease-filled';
-import { CurveEaseIconFilltone } from './curve-ease-filltone';
-import { CurveEaseIconLinetone } from './curve-ease-linetone';
+import { CurveEaseIconDuotone as CurveEaseIconDuotone } from './curve-ease-duotone';
+import { CurveEaseIconBold as CurveEaseIconBold } from './curve-ease-bold';
+import { CurveEaseIconBoldDuotone as CurveEaseIconBoldDuotone } from './curve-ease-bold-duotone';
+import { CurveEaseIconFill as CurveEaseIconFill } from './curve-ease-fill';
+import { CurveEaseIconFillDuotone as CurveEaseIconFillDuotone } from './curve-ease-fill-duotone';
 
 export interface CurveEaseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CurveEaseIcon = memo(forwardRef<SVGSVGElement, CurveEaseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CurveEaseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CurveEaseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CurveEaseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CurveEaseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCurveEaseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CurveEaseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CurveEaseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CurveEaseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CurveEaseIconFill ref={ref} {...props} />;
+  if (duotone) return <CurveEaseIconDuotone ref={ref} {...props} />;
+  return <RegularCurveEaseIcon ref={ref} {...props} />;
 }));
 
 CurveEaseIcon.displayName = 'CurveEaseIcon';

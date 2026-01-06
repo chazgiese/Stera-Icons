@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListBulletSimpleIcon as RegularListBulletSimpleIcon } from './list-bullet-simple';
-import { ListBulletSimpleIconBold } from './list-bullet-simple-bold';
-import { ListBulletSimpleIconFilled } from './list-bullet-simple-filled';
-import { ListBulletSimpleIconFilltone } from './list-bullet-simple-filltone';
-import { ListBulletSimpleIconLinetone } from './list-bullet-simple-linetone';
+import { ListBulletSimpleIconDuotone as ListBulletSimpleIconDuotone } from './list-bullet-simple-duotone';
+import { ListBulletSimpleIconBold as ListBulletSimpleIconBold } from './list-bullet-simple-bold';
+import { ListBulletSimpleIconBoldDuotone as ListBulletSimpleIconBoldDuotone } from './list-bullet-simple-bold-duotone';
+import { ListBulletSimpleIconFill as ListBulletSimpleIconFill } from './list-bullet-simple-fill';
+import { ListBulletSimpleIconFillDuotone as ListBulletSimpleIconFillDuotone } from './list-bullet-simple-fill-duotone';
 
 export interface ListBulletSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListBulletSimpleIcon = memo(forwardRef<SVGSVGElement, ListBulletSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListBulletSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListBulletSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListBulletSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListBulletSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListBulletSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListBulletSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListBulletSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListBulletSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListBulletSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <ListBulletSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularListBulletSimpleIcon ref={ref} {...props} />;
 }));
 
 ListBulletSimpleIcon.displayName = 'ListBulletSimpleIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CoolSIcon as RegularCoolSIcon } from './cool-s';
-import { CoolSIconBold } from './cool-s-bold';
-import { CoolSIconFilled } from './cool-s-filled';
-import { CoolSIconFilltone } from './cool-s-filltone';
-import { CoolSIconLinetone } from './cool-s-linetone';
+import { CoolSIconDuotone as CoolSIconDuotone } from './cool-s-duotone';
+import { CoolSIconBold as CoolSIconBold } from './cool-s-bold';
+import { CoolSIconBoldDuotone as CoolSIconBoldDuotone } from './cool-s-bold-duotone';
+import { CoolSIconFill as CoolSIconFill } from './cool-s-fill';
+import { CoolSIconFillDuotone as CoolSIconFillDuotone } from './cool-s-fill-duotone';
 
 export interface CoolSIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CoolSIcon = memo(forwardRef<SVGSVGElement, CoolSIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CoolSIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CoolSIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CoolSIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CoolSIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCoolSIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CoolSIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CoolSIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CoolSIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CoolSIconFill ref={ref} {...props} />;
+  if (duotone) return <CoolSIconDuotone ref={ref} {...props} />;
+  return <RegularCoolSIcon ref={ref} {...props} />;
 }));
 
 CoolSIcon.displayName = 'CoolSIcon';

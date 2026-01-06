@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CalendarSlashIcon as RegularCalendarSlashIcon } from './calendar-slash';
-import { CalendarSlashIconBold } from './calendar-slash-bold';
-import { CalendarSlashIconFilled } from './calendar-slash-filled';
-import { CalendarSlashIconFilltone } from './calendar-slash-filltone';
-import { CalendarSlashIconLinetone } from './calendar-slash-linetone';
+import { CalendarSlashIconDuotone as CalendarSlashIconDuotone } from './calendar-slash-duotone';
+import { CalendarSlashIconBold as CalendarSlashIconBold } from './calendar-slash-bold';
+import { CalendarSlashIconBoldDuotone as CalendarSlashIconBoldDuotone } from './calendar-slash-bold-duotone';
+import { CalendarSlashIconFill as CalendarSlashIconFill } from './calendar-slash-fill';
+import { CalendarSlashIconFillDuotone as CalendarSlashIconFillDuotone } from './calendar-slash-fill-duotone';
 
 export interface CalendarSlashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CalendarSlashIcon = memo(forwardRef<SVGSVGElement, CalendarSlashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CalendarSlashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CalendarSlashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CalendarSlashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CalendarSlashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCalendarSlashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CalendarSlashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CalendarSlashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CalendarSlashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CalendarSlashIconFill ref={ref} {...props} />;
+  if (duotone) return <CalendarSlashIconDuotone ref={ref} {...props} />;
+  return <RegularCalendarSlashIcon ref={ref} {...props} />;
 }));
 
 CalendarSlashIcon.displayName = 'CalendarSlashIcon';

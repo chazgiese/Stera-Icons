@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlarmClockPlusIcon as RegularAlarmClockPlusIcon } from './alarm-clock-plus';
-import { AlarmClockPlusIconBold } from './alarm-clock-plus-bold';
-import { AlarmClockPlusIconFilled } from './alarm-clock-plus-filled';
-import { AlarmClockPlusIconFilltone } from './alarm-clock-plus-filltone';
-import { AlarmClockPlusIconLinetone } from './alarm-clock-plus-linetone';
+import { AlarmClockPlusIconDuotone as AlarmClockPlusIconDuotone } from './alarm-clock-plus-duotone';
+import { AlarmClockPlusIconBold as AlarmClockPlusIconBold } from './alarm-clock-plus-bold';
+import { AlarmClockPlusIconBoldDuotone as AlarmClockPlusIconBoldDuotone } from './alarm-clock-plus-bold-duotone';
+import { AlarmClockPlusIconFill as AlarmClockPlusIconFill } from './alarm-clock-plus-fill';
+import { AlarmClockPlusIconFillDuotone as AlarmClockPlusIconFillDuotone } from './alarm-clock-plus-fill-duotone';
 
 export interface AlarmClockPlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlarmClockPlusIcon = memo(forwardRef<SVGSVGElement, AlarmClockPlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlarmClockPlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlarmClockPlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlarmClockPlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlarmClockPlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlarmClockPlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlarmClockPlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlarmClockPlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlarmClockPlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlarmClockPlusIconFill ref={ref} {...props} />;
+  if (duotone) return <AlarmClockPlusIconDuotone ref={ref} {...props} />;
+  return <RegularAlarmClockPlusIcon ref={ref} {...props} />;
 }));
 
 AlarmClockPlusIcon.displayName = 'AlarmClockPlusIcon';

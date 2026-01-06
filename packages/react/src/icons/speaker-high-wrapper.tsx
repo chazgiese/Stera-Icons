@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SpeakerHighIcon as RegularSpeakerHighIcon } from './speaker-high';
-import { SpeakerHighIconBold } from './speaker-high-bold';
-import { SpeakerHighIconFilled } from './speaker-high-filled';
-import { SpeakerHighIconFilltone } from './speaker-high-filltone';
-import { SpeakerHighIconLinetone } from './speaker-high-linetone';
+import { SpeakerHighIconDuotone as SpeakerHighIconDuotone } from './speaker-high-duotone';
+import { SpeakerHighIconBold as SpeakerHighIconBold } from './speaker-high-bold';
+import { SpeakerHighIconBoldDuotone as SpeakerHighIconBoldDuotone } from './speaker-high-bold-duotone';
+import { SpeakerHighIconFill as SpeakerHighIconFill } from './speaker-high-fill';
+import { SpeakerHighIconFillDuotone as SpeakerHighIconFillDuotone } from './speaker-high-fill-duotone';
 
 export interface SpeakerHighIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SpeakerHighIcon = memo(forwardRef<SVGSVGElement, SpeakerHighIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SpeakerHighIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SpeakerHighIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SpeakerHighIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SpeakerHighIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSpeakerHighIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SpeakerHighIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SpeakerHighIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SpeakerHighIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SpeakerHighIconFill ref={ref} {...props} />;
+  if (duotone) return <SpeakerHighIconDuotone ref={ref} {...props} />;
+  return <RegularSpeakerHighIcon ref={ref} {...props} />;
 }));
 
 SpeakerHighIcon.displayName = 'SpeakerHighIcon';

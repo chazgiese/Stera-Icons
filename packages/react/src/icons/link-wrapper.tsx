@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LinkIcon as RegularLinkIcon } from './link';
-import { LinkIconBold } from './link-bold';
-import { LinkIconFilled } from './link-filled';
-import { LinkIconFilltone } from './link-filltone';
-import { LinkIconLinetone } from './link-linetone';
+import { LinkIconDuotone as LinkIconDuotone } from './link-duotone';
+import { LinkIconBold as LinkIconBold } from './link-bold';
+import { LinkIconBoldDuotone as LinkIconBoldDuotone } from './link-bold-duotone';
+import { LinkIconFill as LinkIconFill } from './link-fill';
+import { LinkIconFillDuotone as LinkIconFillDuotone } from './link-fill-duotone';
 
 export interface LinkIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LinkIcon = memo(forwardRef<SVGSVGElement, LinkIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LinkIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LinkIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LinkIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LinkIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLinkIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LinkIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LinkIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LinkIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LinkIconFill ref={ref} {...props} />;
+  if (duotone) return <LinkIconDuotone ref={ref} {...props} />;
+  return <RegularLinkIcon ref={ref} {...props} />;
 }));
 
 LinkIcon.displayName = 'LinkIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlignHorizontalRightIcon as RegularAlignHorizontalRightIcon } from './align-horizontal-right';
-import { AlignHorizontalRightIconBold } from './align-horizontal-right-bold';
-import { AlignHorizontalRightIconFilled } from './align-horizontal-right-filled';
-import { AlignHorizontalRightIconFilltone } from './align-horizontal-right-filltone';
-import { AlignHorizontalRightIconLinetone } from './align-horizontal-right-linetone';
+import { AlignHorizontalRightIconDuotone as AlignHorizontalRightIconDuotone } from './align-horizontal-right-duotone';
+import { AlignHorizontalRightIconBold as AlignHorizontalRightIconBold } from './align-horizontal-right-bold';
+import { AlignHorizontalRightIconBoldDuotone as AlignHorizontalRightIconBoldDuotone } from './align-horizontal-right-bold-duotone';
+import { AlignHorizontalRightIconFill as AlignHorizontalRightIconFill } from './align-horizontal-right-fill';
+import { AlignHorizontalRightIconFillDuotone as AlignHorizontalRightIconFillDuotone } from './align-horizontal-right-fill-duotone';
 
 export interface AlignHorizontalRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlignHorizontalRightIcon = memo(forwardRef<SVGSVGElement, AlignHorizontalRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlignHorizontalRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlignHorizontalRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlignHorizontalRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlignHorizontalRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlignHorizontalRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlignHorizontalRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlignHorizontalRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlignHorizontalRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlignHorizontalRightIconFill ref={ref} {...props} />;
+  if (duotone) return <AlignHorizontalRightIconDuotone ref={ref} {...props} />;
+  return <RegularAlignHorizontalRightIcon ref={ref} {...props} />;
 }));
 
 AlignHorizontalRightIcon.displayName = 'AlignHorizontalRightIcon';

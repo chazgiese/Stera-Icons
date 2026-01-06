@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartBarAscIcon as RegularChartBarAscIcon } from './chart-bar-asc';
-import { ChartBarAscIconBold } from './chart-bar-asc-bold';
-import { ChartBarAscIconFilled } from './chart-bar-asc-filled';
-import { ChartBarAscIconFilltone } from './chart-bar-asc-filltone';
-import { ChartBarAscIconLinetone } from './chart-bar-asc-linetone';
+import { ChartBarAscIconDuotone as ChartBarAscIconDuotone } from './chart-bar-asc-duotone';
+import { ChartBarAscIconBold as ChartBarAscIconBold } from './chart-bar-asc-bold';
+import { ChartBarAscIconBoldDuotone as ChartBarAscIconBoldDuotone } from './chart-bar-asc-bold-duotone';
+import { ChartBarAscIconFill as ChartBarAscIconFill } from './chart-bar-asc-fill';
+import { ChartBarAscIconFillDuotone as ChartBarAscIconFillDuotone } from './chart-bar-asc-fill-duotone';
 
 export interface ChartBarAscIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartBarAscIcon = memo(forwardRef<SVGSVGElement, ChartBarAscIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartBarAscIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartBarAscIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartBarAscIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartBarAscIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartBarAscIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartBarAscIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartBarAscIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartBarAscIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartBarAscIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartBarAscIconDuotone ref={ref} {...props} />;
+  return <RegularChartBarAscIcon ref={ref} {...props} />;
 }));
 
 ChartBarAscIcon.displayName = 'ChartBarAscIcon';

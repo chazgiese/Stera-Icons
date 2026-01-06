@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ShieldHalfIcon as RegularShieldHalfIcon } from './shield-half';
-import { ShieldHalfIconBold } from './shield-half-bold';
-import { ShieldHalfIconFilled } from './shield-half-filled';
-import { ShieldHalfIconFilltone } from './shield-half-filltone';
-import { ShieldHalfIconLinetone } from './shield-half-linetone';
+import { ShieldHalfIconDuotone as ShieldHalfIconDuotone } from './shield-half-duotone';
+import { ShieldHalfIconBold as ShieldHalfIconBold } from './shield-half-bold';
+import { ShieldHalfIconBoldDuotone as ShieldHalfIconBoldDuotone } from './shield-half-bold-duotone';
+import { ShieldHalfIconFill as ShieldHalfIconFill } from './shield-half-fill';
+import { ShieldHalfIconFillDuotone as ShieldHalfIconFillDuotone } from './shield-half-fill-duotone';
 
 export interface ShieldHalfIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ShieldHalfIcon = memo(forwardRef<SVGSVGElement, ShieldHalfIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ShieldHalfIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ShieldHalfIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ShieldHalfIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ShieldHalfIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularShieldHalfIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ShieldHalfIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ShieldHalfIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ShieldHalfIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ShieldHalfIconFill ref={ref} {...props} />;
+  if (duotone) return <ShieldHalfIconDuotone ref={ref} {...props} />;
+  return <RegularShieldHalfIcon ref={ref} {...props} />;
 }));
 
 ShieldHalfIcon.displayName = 'ShieldHalfIcon';

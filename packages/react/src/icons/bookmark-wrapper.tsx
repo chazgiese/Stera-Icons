@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BookmarkIcon as RegularBookmarkIcon } from './bookmark';
-import { BookmarkIconBold } from './bookmark-bold';
-import { BookmarkIconFilled } from './bookmark-filled';
-import { BookmarkIconFilltone } from './bookmark-filltone';
-import { BookmarkIconLinetone } from './bookmark-linetone';
+import { BookmarkIconDuotone as BookmarkIconDuotone } from './bookmark-duotone';
+import { BookmarkIconBold as BookmarkIconBold } from './bookmark-bold';
+import { BookmarkIconBoldDuotone as BookmarkIconBoldDuotone } from './bookmark-bold-duotone';
+import { BookmarkIconFill as BookmarkIconFill } from './bookmark-fill';
+import { BookmarkIconFillDuotone as BookmarkIconFillDuotone } from './bookmark-fill-duotone';
 
 export interface BookmarkIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BookmarkIcon = memo(forwardRef<SVGSVGElement, BookmarkIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BookmarkIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BookmarkIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BookmarkIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BookmarkIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBookmarkIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BookmarkIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BookmarkIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BookmarkIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BookmarkIconFill ref={ref} {...props} />;
+  if (duotone) return <BookmarkIconDuotone ref={ref} {...props} />;
+  return <RegularBookmarkIcon ref={ref} {...props} />;
 }));
 
 BookmarkIcon.displayName = 'BookmarkIcon';

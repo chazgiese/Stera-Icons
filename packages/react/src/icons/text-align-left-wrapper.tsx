@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextAlignLeftIcon as RegularTextAlignLeftIcon } from './text-align-left';
-import { TextAlignLeftIconBold } from './text-align-left-bold';
-import { TextAlignLeftIconFilled } from './text-align-left-filled';
-import { TextAlignLeftIconFilltone } from './text-align-left-filltone';
-import { TextAlignLeftIconLinetone } from './text-align-left-linetone';
+import { TextAlignLeftIconDuotone as TextAlignLeftIconDuotone } from './text-align-left-duotone';
+import { TextAlignLeftIconBold as TextAlignLeftIconBold } from './text-align-left-bold';
+import { TextAlignLeftIconBoldDuotone as TextAlignLeftIconBoldDuotone } from './text-align-left-bold-duotone';
+import { TextAlignLeftIconFill as TextAlignLeftIconFill } from './text-align-left-fill';
+import { TextAlignLeftIconFillDuotone as TextAlignLeftIconFillDuotone } from './text-align-left-fill-duotone';
 
 export interface TextAlignLeftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextAlignLeftIcon = memo(forwardRef<SVGSVGElement, TextAlignLeftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextAlignLeftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextAlignLeftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextAlignLeftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextAlignLeftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextAlignLeftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextAlignLeftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextAlignLeftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextAlignLeftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextAlignLeftIconFill ref={ref} {...props} />;
+  if (duotone) return <TextAlignLeftIconDuotone ref={ref} {...props} />;
+  return <RegularTextAlignLeftIcon ref={ref} {...props} />;
 }));
 
 TextAlignLeftIcon.displayName = 'TextAlignLeftIcon';

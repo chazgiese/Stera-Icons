@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GitPullRequestClosedIcon as RegularGitPullRequestClosedIcon } from './git-pull-request-closed';
-import { GitPullRequestClosedIconBold } from './git-pull-request-closed-bold';
-import { GitPullRequestClosedIconFilled } from './git-pull-request-closed-filled';
-import { GitPullRequestClosedIconFilltone } from './git-pull-request-closed-filltone';
-import { GitPullRequestClosedIconLinetone } from './git-pull-request-closed-linetone';
+import { GitPullRequestClosedIconDuotone as GitPullRequestClosedIconDuotone } from './git-pull-request-closed-duotone';
+import { GitPullRequestClosedIconBold as GitPullRequestClosedIconBold } from './git-pull-request-closed-bold';
+import { GitPullRequestClosedIconBoldDuotone as GitPullRequestClosedIconBoldDuotone } from './git-pull-request-closed-bold-duotone';
+import { GitPullRequestClosedIconFill as GitPullRequestClosedIconFill } from './git-pull-request-closed-fill';
+import { GitPullRequestClosedIconFillDuotone as GitPullRequestClosedIconFillDuotone } from './git-pull-request-closed-fill-duotone';
 
 export interface GitPullRequestClosedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GitPullRequestClosedIcon = memo(forwardRef<SVGSVGElement, GitPullRequestClosedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GitPullRequestClosedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GitPullRequestClosedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GitPullRequestClosedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GitPullRequestClosedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGitPullRequestClosedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GitPullRequestClosedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GitPullRequestClosedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GitPullRequestClosedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GitPullRequestClosedIconFill ref={ref} {...props} />;
+  if (duotone) return <GitPullRequestClosedIconDuotone ref={ref} {...props} />;
+  return <RegularGitPullRequestClosedIcon ref={ref} {...props} />;
 }));
 
 GitPullRequestClosedIcon.displayName = 'GitPullRequestClosedIcon';

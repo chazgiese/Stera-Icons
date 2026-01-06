@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlashIcon as RegularFlashIcon } from './flash';
-import { FlashIconBold } from './flash-bold';
-import { FlashIconFilled } from './flash-filled';
-import { FlashIconFilltone } from './flash-filltone';
-import { FlashIconLinetone } from './flash-linetone';
+import { FlashIconDuotone as FlashIconDuotone } from './flash-duotone';
+import { FlashIconBold as FlashIconBold } from './flash-bold';
+import { FlashIconBoldDuotone as FlashIconBoldDuotone } from './flash-bold-duotone';
+import { FlashIconFill as FlashIconFill } from './flash-fill';
+import { FlashIconFillDuotone as FlashIconFillDuotone } from './flash-fill-duotone';
 
 export interface FlashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlashIcon = memo(forwardRef<SVGSVGElement, FlashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlashIconFill ref={ref} {...props} />;
+  if (duotone) return <FlashIconDuotone ref={ref} {...props} />;
+  return <RegularFlashIcon ref={ref} {...props} />;
 }));
 
 FlashIcon.displayName = 'FlashIcon';

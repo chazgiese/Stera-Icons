@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SquareIcon as RegularSquareIcon } from './square';
-import { SquareIconBold } from './square-bold';
-import { SquareIconFilled } from './square-filled';
-import { SquareIconFilltone } from './square-filltone';
-import { SquareIconLinetone } from './square-linetone';
+import { SquareIconDuotone as SquareIconDuotone } from './square-duotone';
+import { SquareIconBold as SquareIconBold } from './square-bold';
+import { SquareIconBoldDuotone as SquareIconBoldDuotone } from './square-bold-duotone';
+import { SquareIconFill as SquareIconFill } from './square-fill';
+import { SquareIconFillDuotone as SquareIconFillDuotone } from './square-fill-duotone';
 
 export interface SquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SquareIcon = memo(forwardRef<SVGSVGElement, SquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SquareIconFill ref={ref} {...props} />;
+  if (duotone) return <SquareIconDuotone ref={ref} {...props} />;
+  return <RegularSquareIcon ref={ref} {...props} />;
 }));
 
 SquareIcon.displayName = 'SquareIcon';

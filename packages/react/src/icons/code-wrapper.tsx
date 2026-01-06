@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CodeIcon as RegularCodeIcon } from './code';
-import { CodeIconBold } from './code-bold';
-import { CodeIconFilled } from './code-filled';
-import { CodeIconFilltone } from './code-filltone';
-import { CodeIconLinetone } from './code-linetone';
+import { CodeIconDuotone as CodeIconDuotone } from './code-duotone';
+import { CodeIconBold as CodeIconBold } from './code-bold';
+import { CodeIconBoldDuotone as CodeIconBoldDuotone } from './code-bold-duotone';
+import { CodeIconFill as CodeIconFill } from './code-fill';
+import { CodeIconFillDuotone as CodeIconFillDuotone } from './code-fill-duotone';
 
 export interface CodeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CodeIcon = memo(forwardRef<SVGSVGElement, CodeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CodeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CodeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CodeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CodeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCodeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CodeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CodeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CodeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CodeIconFill ref={ref} {...props} />;
+  if (duotone) return <CodeIconDuotone ref={ref} {...props} />;
+  return <RegularCodeIcon ref={ref} {...props} />;
 }));
 
 CodeIcon.displayName = 'CodeIcon';

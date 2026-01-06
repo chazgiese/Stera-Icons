@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanLineIcon as RegularScanLineIcon } from './scan-line';
-import { ScanLineIconBold } from './scan-line-bold';
-import { ScanLineIconFilled } from './scan-line-filled';
-import { ScanLineIconFilltone } from './scan-line-filltone';
-import { ScanLineIconLinetone } from './scan-line-linetone';
+import { ScanLineIconDuotone as ScanLineIconDuotone } from './scan-line-duotone';
+import { ScanLineIconBold as ScanLineIconBold } from './scan-line-bold';
+import { ScanLineIconBoldDuotone as ScanLineIconBoldDuotone } from './scan-line-bold-duotone';
+import { ScanLineIconFill as ScanLineIconFill } from './scan-line-fill';
+import { ScanLineIconFillDuotone as ScanLineIconFillDuotone } from './scan-line-fill-duotone';
 
 export interface ScanLineIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanLineIcon = memo(forwardRef<SVGSVGElement, ScanLineIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanLineIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanLineIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanLineIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanLineIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanLineIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanLineIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanLineIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanLineIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanLineIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanLineIconDuotone ref={ref} {...props} />;
+  return <RegularScanLineIcon ref={ref} {...props} />;
 }));
 
 ScanLineIcon.displayName = 'ScanLineIcon';

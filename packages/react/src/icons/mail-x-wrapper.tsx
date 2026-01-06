@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MailXIcon as RegularMailXIcon } from './mail-x';
-import { MailXIconBold } from './mail-x-bold';
-import { MailXIconFilled } from './mail-x-filled';
-import { MailXIconFilltone } from './mail-x-filltone';
-import { MailXIconLinetone } from './mail-x-linetone';
+import { MailXIconDuotone as MailXIconDuotone } from './mail-x-duotone';
+import { MailXIconBold as MailXIconBold } from './mail-x-bold';
+import { MailXIconBoldDuotone as MailXIconBoldDuotone } from './mail-x-bold-duotone';
+import { MailXIconFill as MailXIconFill } from './mail-x-fill';
+import { MailXIconFillDuotone as MailXIconFillDuotone } from './mail-x-fill-duotone';
 
 export interface MailXIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MailXIcon = memo(forwardRef<SVGSVGElement, MailXIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MailXIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MailXIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MailXIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MailXIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMailXIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MailXIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MailXIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MailXIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MailXIconFill ref={ref} {...props} />;
+  if (duotone) return <MailXIconDuotone ref={ref} {...props} />;
+  return <RegularMailXIcon ref={ref} {...props} />;
 }));
 
 MailXIcon.displayName = 'MailXIcon';

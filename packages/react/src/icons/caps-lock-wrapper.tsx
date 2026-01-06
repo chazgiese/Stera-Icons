@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CapsLockIcon as RegularCapsLockIcon } from './caps-lock';
-import { CapsLockIconBold } from './caps-lock-bold';
-import { CapsLockIconFilled } from './caps-lock-filled';
-import { CapsLockIconFilltone } from './caps-lock-filltone';
-import { CapsLockIconLinetone } from './caps-lock-linetone';
+import { CapsLockIconDuotone as CapsLockIconDuotone } from './caps-lock-duotone';
+import { CapsLockIconBold as CapsLockIconBold } from './caps-lock-bold';
+import { CapsLockIconBoldDuotone as CapsLockIconBoldDuotone } from './caps-lock-bold-duotone';
+import { CapsLockIconFill as CapsLockIconFill } from './caps-lock-fill';
+import { CapsLockIconFillDuotone as CapsLockIconFillDuotone } from './caps-lock-fill-duotone';
 
 export interface CapsLockIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CapsLockIcon = memo(forwardRef<SVGSVGElement, CapsLockIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CapsLockIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CapsLockIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CapsLockIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CapsLockIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCapsLockIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CapsLockIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CapsLockIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CapsLockIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CapsLockIconFill ref={ref} {...props} />;
+  if (duotone) return <CapsLockIconDuotone ref={ref} {...props} />;
+  return <RegularCapsLockIcon ref={ref} {...props} />;
 }));
 
 CapsLockIcon.displayName = 'CapsLockIcon';

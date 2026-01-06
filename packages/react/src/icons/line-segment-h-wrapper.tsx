@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LineSegmentHIcon as RegularLineSegmentHIcon } from './line-segment-h';
-import { LineSegmentHIconBold } from './line-segment-h-bold';
-import { LineSegmentHIconFilled } from './line-segment-h-filled';
-import { LineSegmentHIconFilltone } from './line-segment-h-filltone';
-import { LineSegmentHIconLinetone } from './line-segment-h-linetone';
+import { LineSegmentHIconDuotone as LineSegmentHIconDuotone } from './line-segment-h-duotone';
+import { LineSegmentHIconBold as LineSegmentHIconBold } from './line-segment-h-bold';
+import { LineSegmentHIconBoldDuotone as LineSegmentHIconBoldDuotone } from './line-segment-h-bold-duotone';
+import { LineSegmentHIconFill as LineSegmentHIconFill } from './line-segment-h-fill';
+import { LineSegmentHIconFillDuotone as LineSegmentHIconFillDuotone } from './line-segment-h-fill-duotone';
 
 export interface LineSegmentHIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LineSegmentHIcon = memo(forwardRef<SVGSVGElement, LineSegmentHIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LineSegmentHIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LineSegmentHIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LineSegmentHIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LineSegmentHIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLineSegmentHIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LineSegmentHIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LineSegmentHIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LineSegmentHIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LineSegmentHIconFill ref={ref} {...props} />;
+  if (duotone) return <LineSegmentHIconDuotone ref={ref} {...props} />;
+  return <RegularLineSegmentHIcon ref={ref} {...props} />;
 }));
 
 LineSegmentHIcon.displayName = 'LineSegmentHIcon';

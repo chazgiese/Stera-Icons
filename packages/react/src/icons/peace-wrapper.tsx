@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PeaceIcon as RegularPeaceIcon } from './peace';
-import { PeaceIconBold } from './peace-bold';
-import { PeaceIconFilled } from './peace-filled';
-import { PeaceIconFilltone } from './peace-filltone';
-import { PeaceIconLinetone } from './peace-linetone';
+import { PeaceIconDuotone as PeaceIconDuotone } from './peace-duotone';
+import { PeaceIconBold as PeaceIconBold } from './peace-bold';
+import { PeaceIconBoldDuotone as PeaceIconBoldDuotone } from './peace-bold-duotone';
+import { PeaceIconFill as PeaceIconFill } from './peace-fill';
+import { PeaceIconFillDuotone as PeaceIconFillDuotone } from './peace-fill-duotone';
 
 export interface PeaceIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PeaceIcon = memo(forwardRef<SVGSVGElement, PeaceIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PeaceIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PeaceIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PeaceIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PeaceIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPeaceIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PeaceIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PeaceIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PeaceIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PeaceIconFill ref={ref} {...props} />;
+  if (duotone) return <PeaceIconDuotone ref={ref} {...props} />;
+  return <RegularPeaceIcon ref={ref} {...props} />;
 }));
 
 PeaceIcon.displayName = 'PeaceIcon';

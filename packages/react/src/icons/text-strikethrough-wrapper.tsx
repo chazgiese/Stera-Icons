@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextStrikethroughIcon as RegularTextStrikethroughIcon } from './text-strikethrough';
-import { TextStrikethroughIconBold } from './text-strikethrough-bold';
-import { TextStrikethroughIconFilled } from './text-strikethrough-filled';
-import { TextStrikethroughIconFilltone } from './text-strikethrough-filltone';
-import { TextStrikethroughIconLinetone } from './text-strikethrough-linetone';
+import { TextStrikethroughIconDuotone as TextStrikethroughIconDuotone } from './text-strikethrough-duotone';
+import { TextStrikethroughIconBold as TextStrikethroughIconBold } from './text-strikethrough-bold';
+import { TextStrikethroughIconBoldDuotone as TextStrikethroughIconBoldDuotone } from './text-strikethrough-bold-duotone';
+import { TextStrikethroughIconFill as TextStrikethroughIconFill } from './text-strikethrough-fill';
+import { TextStrikethroughIconFillDuotone as TextStrikethroughIconFillDuotone } from './text-strikethrough-fill-duotone';
 
 export interface TextStrikethroughIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextStrikethroughIcon = memo(forwardRef<SVGSVGElement, TextStrikethroughIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextStrikethroughIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextStrikethroughIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextStrikethroughIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextStrikethroughIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextStrikethroughIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextStrikethroughIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextStrikethroughIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextStrikethroughIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextStrikethroughIconFill ref={ref} {...props} />;
+  if (duotone) return <TextStrikethroughIconDuotone ref={ref} {...props} />;
+  return <RegularTextStrikethroughIcon ref={ref} {...props} />;
 }));
 
 TextStrikethroughIcon.displayName = 'TextStrikethroughIcon';

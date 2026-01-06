@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SidebarRightIcon as RegularSidebarRightIcon } from './sidebar-right';
-import { SidebarRightIconBold } from './sidebar-right-bold';
-import { SidebarRightIconFilled } from './sidebar-right-filled';
-import { SidebarRightIconFilltone } from './sidebar-right-filltone';
-import { SidebarRightIconLinetone } from './sidebar-right-linetone';
+import { SidebarRightIconDuotone as SidebarRightIconDuotone } from './sidebar-right-duotone';
+import { SidebarRightIconBold as SidebarRightIconBold } from './sidebar-right-bold';
+import { SidebarRightIconBoldDuotone as SidebarRightIconBoldDuotone } from './sidebar-right-bold-duotone';
+import { SidebarRightIconFill as SidebarRightIconFill } from './sidebar-right-fill';
+import { SidebarRightIconFillDuotone as SidebarRightIconFillDuotone } from './sidebar-right-fill-duotone';
 
 export interface SidebarRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SidebarRightIcon = memo(forwardRef<SVGSVGElement, SidebarRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SidebarRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SidebarRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SidebarRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SidebarRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSidebarRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SidebarRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SidebarRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SidebarRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SidebarRightIconFill ref={ref} {...props} />;
+  if (duotone) return <SidebarRightIconDuotone ref={ref} {...props} />;
+  return <RegularSidebarRightIcon ref={ref} {...props} />;
 }));
 
 SidebarRightIcon.displayName = 'SidebarRightIcon';

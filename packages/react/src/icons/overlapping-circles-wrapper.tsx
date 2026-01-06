@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { OverlappingCirclesIcon as RegularOverlappingCirclesIcon } from './overlapping-circles';
-import { OverlappingCirclesIconBold } from './overlapping-circles-bold';
-import { OverlappingCirclesIconFilled } from './overlapping-circles-filled';
-import { OverlappingCirclesIconFilltone } from './overlapping-circles-filltone';
-import { OverlappingCirclesIconLinetone } from './overlapping-circles-linetone';
+import { OverlappingCirclesIconDuotone as OverlappingCirclesIconDuotone } from './overlapping-circles-duotone';
+import { OverlappingCirclesIconBold as OverlappingCirclesIconBold } from './overlapping-circles-bold';
+import { OverlappingCirclesIconBoldDuotone as OverlappingCirclesIconBoldDuotone } from './overlapping-circles-bold-duotone';
+import { OverlappingCirclesIconFill as OverlappingCirclesIconFill } from './overlapping-circles-fill';
+import { OverlappingCirclesIconFillDuotone as OverlappingCirclesIconFillDuotone } from './overlapping-circles-fill-duotone';
 
 export interface OverlappingCirclesIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const OverlappingCirclesIcon = memo(forwardRef<SVGSVGElement, OverlappingCirclesIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <OverlappingCirclesIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <OverlappingCirclesIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <OverlappingCirclesIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <OverlappingCirclesIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularOverlappingCirclesIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <OverlappingCirclesIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <OverlappingCirclesIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <OverlappingCirclesIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <OverlappingCirclesIconFill ref={ref} {...props} />;
+  if (duotone) return <OverlappingCirclesIconDuotone ref={ref} {...props} />;
+  return <RegularOverlappingCirclesIcon ref={ref} {...props} />;
 }));
 
 OverlappingCirclesIcon.displayName = 'OverlappingCirclesIcon';

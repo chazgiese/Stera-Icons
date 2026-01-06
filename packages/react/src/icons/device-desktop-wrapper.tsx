@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DeviceDesktopIcon as RegularDeviceDesktopIcon } from './device-desktop';
-import { DeviceDesktopIconBold } from './device-desktop-bold';
-import { DeviceDesktopIconFilled } from './device-desktop-filled';
-import { DeviceDesktopIconFilltone } from './device-desktop-filltone';
-import { DeviceDesktopIconLinetone } from './device-desktop-linetone';
+import { DeviceDesktopIconDuotone as DeviceDesktopIconDuotone } from './device-desktop-duotone';
+import { DeviceDesktopIconBold as DeviceDesktopIconBold } from './device-desktop-bold';
+import { DeviceDesktopIconBoldDuotone as DeviceDesktopIconBoldDuotone } from './device-desktop-bold-duotone';
+import { DeviceDesktopIconFill as DeviceDesktopIconFill } from './device-desktop-fill';
+import { DeviceDesktopIconFillDuotone as DeviceDesktopIconFillDuotone } from './device-desktop-fill-duotone';
 
 export interface DeviceDesktopIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DeviceDesktopIcon = memo(forwardRef<SVGSVGElement, DeviceDesktopIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DeviceDesktopIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DeviceDesktopIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DeviceDesktopIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DeviceDesktopIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDeviceDesktopIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DeviceDesktopIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DeviceDesktopIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DeviceDesktopIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DeviceDesktopIconFill ref={ref} {...props} />;
+  if (duotone) return <DeviceDesktopIconDuotone ref={ref} {...props} />;
+  return <RegularDeviceDesktopIcon ref={ref} {...props} />;
 }));
 
 DeviceDesktopIcon.displayName = 'DeviceDesktopIcon';

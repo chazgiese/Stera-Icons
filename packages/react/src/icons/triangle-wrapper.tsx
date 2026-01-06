@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TriangleIcon as RegularTriangleIcon } from './triangle';
-import { TriangleIconBold } from './triangle-bold';
-import { TriangleIconFilled } from './triangle-filled';
-import { TriangleIconFilltone } from './triangle-filltone';
-import { TriangleIconLinetone } from './triangle-linetone';
+import { TriangleIconDuotone as TriangleIconDuotone } from './triangle-duotone';
+import { TriangleIconBold as TriangleIconBold } from './triangle-bold';
+import { TriangleIconBoldDuotone as TriangleIconBoldDuotone } from './triangle-bold-duotone';
+import { TriangleIconFill as TriangleIconFill } from './triangle-fill';
+import { TriangleIconFillDuotone as TriangleIconFillDuotone } from './triangle-fill-duotone';
 
 export interface TriangleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TriangleIcon = memo(forwardRef<SVGSVGElement, TriangleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TriangleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TriangleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TriangleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TriangleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTriangleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TriangleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TriangleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TriangleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TriangleIconFill ref={ref} {...props} />;
+  if (duotone) return <TriangleIconDuotone ref={ref} {...props} />;
+  return <RegularTriangleIcon ref={ref} {...props} />;
 }));
 
 TriangleIcon.displayName = 'TriangleIcon';

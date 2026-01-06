@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LeafIcon as RegularLeafIcon } from './leaf';
-import { LeafIconBold } from './leaf-bold';
-import { LeafIconFilled } from './leaf-filled';
-import { LeafIconFilltone } from './leaf-filltone';
-import { LeafIconLinetone } from './leaf-linetone';
+import { LeafIconDuotone as LeafIconDuotone } from './leaf-duotone';
+import { LeafIconBold as LeafIconBold } from './leaf-bold';
+import { LeafIconBoldDuotone as LeafIconBoldDuotone } from './leaf-bold-duotone';
+import { LeafIconFill as LeafIconFill } from './leaf-fill';
+import { LeafIconFillDuotone as LeafIconFillDuotone } from './leaf-fill-duotone';
 
 export interface LeafIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LeafIcon = memo(forwardRef<SVGSVGElement, LeafIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LeafIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LeafIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LeafIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LeafIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLeafIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LeafIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LeafIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LeafIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LeafIconFill ref={ref} {...props} />;
+  if (duotone) return <LeafIconDuotone ref={ref} {...props} />;
+  return <RegularLeafIcon ref={ref} {...props} />;
 }));
 
 LeafIcon.displayName = 'LeafIcon';

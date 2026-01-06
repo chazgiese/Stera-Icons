@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SearchSquareIcon as RegularSearchSquareIcon } from './search-square';
-import { SearchSquareIconBold } from './search-square-bold';
-import { SearchSquareIconFilled } from './search-square-filled';
-import { SearchSquareIconFilltone } from './search-square-filltone';
-import { SearchSquareIconLinetone } from './search-square-linetone';
+import { SearchSquareIconDuotone as SearchSquareIconDuotone } from './search-square-duotone';
+import { SearchSquareIconBold as SearchSquareIconBold } from './search-square-bold';
+import { SearchSquareIconBoldDuotone as SearchSquareIconBoldDuotone } from './search-square-bold-duotone';
+import { SearchSquareIconFill as SearchSquareIconFill } from './search-square-fill';
+import { SearchSquareIconFillDuotone as SearchSquareIconFillDuotone } from './search-square-fill-duotone';
 
 export interface SearchSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SearchSquareIcon = memo(forwardRef<SVGSVGElement, SearchSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SearchSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SearchSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SearchSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SearchSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSearchSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SearchSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SearchSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SearchSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SearchSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <SearchSquareIconDuotone ref={ref} {...props} />;
+  return <RegularSearchSquareIcon ref={ref} {...props} />;
 }));
 
 SearchSquareIcon.displayName = 'SearchSquareIcon';

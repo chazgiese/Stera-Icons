@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CurrencyEuroCirlceIcon as RegularCurrencyEuroCirlceIcon } from './currency-euro-cirlce';
-import { CurrencyEuroCirlceIconBold } from './currency-euro-cirlce-bold';
-import { CurrencyEuroCirlceIconFilled } from './currency-euro-cirlce-filled';
-import { CurrencyEuroCirlceIconFilltone } from './currency-euro-cirlce-filltone';
-import { CurrencyEuroCirlceIconLinetone } from './currency-euro-cirlce-linetone';
+import { CurrencyEuroCirlceIconDuotone as CurrencyEuroCirlceIconDuotone } from './currency-euro-cirlce-duotone';
+import { CurrencyEuroCirlceIconBold as CurrencyEuroCirlceIconBold } from './currency-euro-cirlce-bold';
+import { CurrencyEuroCirlceIconBoldDuotone as CurrencyEuroCirlceIconBoldDuotone } from './currency-euro-cirlce-bold-duotone';
+import { CurrencyEuroCirlceIconFill as CurrencyEuroCirlceIconFill } from './currency-euro-cirlce-fill';
+import { CurrencyEuroCirlceIconFillDuotone as CurrencyEuroCirlceIconFillDuotone } from './currency-euro-cirlce-fill-duotone';
 
 export interface CurrencyEuroCirlceIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CurrencyEuroCirlceIcon = memo(forwardRef<SVGSVGElement, CurrencyEuroCirlceIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CurrencyEuroCirlceIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CurrencyEuroCirlceIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CurrencyEuroCirlceIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CurrencyEuroCirlceIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCurrencyEuroCirlceIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CurrencyEuroCirlceIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CurrencyEuroCirlceIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CurrencyEuroCirlceIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CurrencyEuroCirlceIconFill ref={ref} {...props} />;
+  if (duotone) return <CurrencyEuroCirlceIconDuotone ref={ref} {...props} />;
+  return <RegularCurrencyEuroCirlceIcon ref={ref} {...props} />;
 }));
 
 CurrencyEuroCirlceIcon.displayName = 'CurrencyEuroCirlceIcon';

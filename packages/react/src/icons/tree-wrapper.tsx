@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TreeIcon as RegularTreeIcon } from './tree';
-import { TreeIconBold } from './tree-bold';
-import { TreeIconFilled } from './tree-filled';
-import { TreeIconFilltone } from './tree-filltone';
-import { TreeIconLinetone } from './tree-linetone';
+import { TreeIconDuotone as TreeIconDuotone } from './tree-duotone';
+import { TreeIconBold as TreeIconBold } from './tree-bold';
+import { TreeIconBoldDuotone as TreeIconBoldDuotone } from './tree-bold-duotone';
+import { TreeIconFill as TreeIconFill } from './tree-fill';
+import { TreeIconFillDuotone as TreeIconFillDuotone } from './tree-fill-duotone';
 
 export interface TreeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TreeIcon = memo(forwardRef<SVGSVGElement, TreeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TreeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TreeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TreeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TreeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTreeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TreeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TreeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TreeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TreeIconFill ref={ref} {...props} />;
+  if (duotone) return <TreeIconDuotone ref={ref} {...props} />;
+  return <RegularTreeIcon ref={ref} {...props} />;
 }));
 
 TreeIcon.displayName = 'TreeIcon';

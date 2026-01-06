@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ShareIcon as RegularShareIcon } from './share';
-import { ShareIconBold } from './share-bold';
-import { ShareIconFilled } from './share-filled';
-import { ShareIconFilltone } from './share-filltone';
-import { ShareIconLinetone } from './share-linetone';
+import { ShareIconDuotone as ShareIconDuotone } from './share-duotone';
+import { ShareIconBold as ShareIconBold } from './share-bold';
+import { ShareIconBoldDuotone as ShareIconBoldDuotone } from './share-bold-duotone';
+import { ShareIconFill as ShareIconFill } from './share-fill';
+import { ShareIconFillDuotone as ShareIconFillDuotone } from './share-fill-duotone';
 
 export interface ShareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ShareIcon = memo(forwardRef<SVGSVGElement, ShareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ShareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ShareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ShareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ShareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularShareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ShareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ShareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ShareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ShareIconFill ref={ref} {...props} />;
+  if (duotone) return <ShareIconDuotone ref={ref} {...props} />;
+  return <RegularShareIcon ref={ref} {...props} />;
 }));
 
 ShareIcon.displayName = 'ShareIcon';

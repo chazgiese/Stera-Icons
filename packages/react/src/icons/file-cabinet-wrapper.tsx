@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FileCabinetIcon as RegularFileCabinetIcon } from './file-cabinet';
-import { FileCabinetIconBold } from './file-cabinet-bold';
-import { FileCabinetIconFilled } from './file-cabinet-filled';
-import { FileCabinetIconFilltone } from './file-cabinet-filltone';
-import { FileCabinetIconLinetone } from './file-cabinet-linetone';
+import { FileCabinetIconDuotone as FileCabinetIconDuotone } from './file-cabinet-duotone';
+import { FileCabinetIconBold as FileCabinetIconBold } from './file-cabinet-bold';
+import { FileCabinetIconBoldDuotone as FileCabinetIconBoldDuotone } from './file-cabinet-bold-duotone';
+import { FileCabinetIconFill as FileCabinetIconFill } from './file-cabinet-fill';
+import { FileCabinetIconFillDuotone as FileCabinetIconFillDuotone } from './file-cabinet-fill-duotone';
 
 export interface FileCabinetIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FileCabinetIcon = memo(forwardRef<SVGSVGElement, FileCabinetIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FileCabinetIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FileCabinetIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FileCabinetIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FileCabinetIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFileCabinetIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FileCabinetIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FileCabinetIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FileCabinetIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FileCabinetIconFill ref={ref} {...props} />;
+  if (duotone) return <FileCabinetIconDuotone ref={ref} {...props} />;
+  return <RegularFileCabinetIcon ref={ref} {...props} />;
 }));
 
 FileCabinetIcon.displayName = 'FileCabinetIcon';

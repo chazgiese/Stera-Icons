@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { VideoOffIcon as RegularVideoOffIcon } from './video-off';
-import { VideoOffIconBold } from './video-off-bold';
-import { VideoOffIconFilled } from './video-off-filled';
-import { VideoOffIconFilltone } from './video-off-filltone';
-import { VideoOffIconLinetone } from './video-off-linetone';
+import { VideoOffIconDuotone as VideoOffIconDuotone } from './video-off-duotone';
+import { VideoOffIconBold as VideoOffIconBold } from './video-off-bold';
+import { VideoOffIconBoldDuotone as VideoOffIconBoldDuotone } from './video-off-bold-duotone';
+import { VideoOffIconFill as VideoOffIconFill } from './video-off-fill';
+import { VideoOffIconFillDuotone as VideoOffIconFillDuotone } from './video-off-fill-duotone';
 
 export interface VideoOffIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const VideoOffIcon = memo(forwardRef<SVGSVGElement, VideoOffIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <VideoOffIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <VideoOffIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <VideoOffIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <VideoOffIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularVideoOffIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <VideoOffIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <VideoOffIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <VideoOffIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <VideoOffIconFill ref={ref} {...props} />;
+  if (duotone) return <VideoOffIconDuotone ref={ref} {...props} />;
+  return <RegularVideoOffIcon ref={ref} {...props} />;
 }));
 
 VideoOffIcon.displayName = 'VideoOffIcon';

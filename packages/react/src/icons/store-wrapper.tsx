@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { StoreIcon as RegularStoreIcon } from './store';
-import { StoreIconBold } from './store-bold';
-import { StoreIconFilled } from './store-filled';
-import { StoreIconFilltone } from './store-filltone';
-import { StoreIconLinetone } from './store-linetone';
+import { StoreIconDuotone as StoreIconDuotone } from './store-duotone';
+import { StoreIconBold as StoreIconBold } from './store-bold';
+import { StoreIconBoldDuotone as StoreIconBoldDuotone } from './store-bold-duotone';
+import { StoreIconFill as StoreIconFill } from './store-fill';
+import { StoreIconFillDuotone as StoreIconFillDuotone } from './store-fill-duotone';
 
 export interface StoreIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const StoreIcon = memo(forwardRef<SVGSVGElement, StoreIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <StoreIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <StoreIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <StoreIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <StoreIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularStoreIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <StoreIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <StoreIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <StoreIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <StoreIconFill ref={ref} {...props} />;
+  if (duotone) return <StoreIconDuotone ref={ref} {...props} />;
+  return <RegularStoreIcon ref={ref} {...props} />;
 }));
 
 StoreIcon.displayName = 'StoreIcon';

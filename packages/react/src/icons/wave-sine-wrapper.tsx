@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WaveSineIcon as RegularWaveSineIcon } from './wave-sine';
-import { WaveSineIconBold } from './wave-sine-bold';
-import { WaveSineIconFilled } from './wave-sine-filled';
-import { WaveSineIconFilltone } from './wave-sine-filltone';
-import { WaveSineIconLinetone } from './wave-sine-linetone';
+import { WaveSineIconDuotone as WaveSineIconDuotone } from './wave-sine-duotone';
+import { WaveSineIconBold as WaveSineIconBold } from './wave-sine-bold';
+import { WaveSineIconBoldDuotone as WaveSineIconBoldDuotone } from './wave-sine-bold-duotone';
+import { WaveSineIconFill as WaveSineIconFill } from './wave-sine-fill';
+import { WaveSineIconFillDuotone as WaveSineIconFillDuotone } from './wave-sine-fill-duotone';
 
 export interface WaveSineIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WaveSineIcon = memo(forwardRef<SVGSVGElement, WaveSineIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WaveSineIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WaveSineIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WaveSineIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WaveSineIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWaveSineIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WaveSineIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WaveSineIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WaveSineIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WaveSineIconFill ref={ref} {...props} />;
+  if (duotone) return <WaveSineIconDuotone ref={ref} {...props} />;
+  return <RegularWaveSineIcon ref={ref} {...props} />;
 }));
 
 WaveSineIcon.displayName = 'WaveSineIcon';

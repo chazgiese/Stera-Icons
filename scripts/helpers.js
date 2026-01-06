@@ -2,16 +2,14 @@
  * Helper functions for processing icon names and generating component names
  */
 
-// Define the valid variant types that should be recognized as variants (not part of icon names)
-const VALID_VARIANTS = new Set(['bold', 'filled', 'filltone', 'linetone', 'regular']);
+// Define the valid weight types
+const VALID_WEIGHTS = new Set(['regular', 'bold', 'fill']);
 
-// Map from export variant names to internal variant names
-const VARIANT_MAPPING = {
+// Map from export weight names to internal weight names
+const WEIGHT_MAPPING = {
+  'Regular': 'regular',
   'Bold': 'bold',
-  'Fill': 'filled', 
-  'Filltone': 'filltone',
-  'Linetone': 'linetone',
-  'Regular': 'regular'
+  'Fill': 'fill'
 };
 
 export function normalizeSlug(name) {
@@ -46,40 +44,52 @@ export function toPascalCase(slug) {
     .join('');
 }
 
-export function getComponentName(slug, variant) {
+export function getComponentName(slug, weight, duotone) {
   const baseName = toPascalCase(slug);
   const iconName = `${baseName}Icon`;
-  if (variant === 'filled') return `${iconName}Filled`;
-  if (variant === 'bold') return `${iconName}Bold`;
-  if (variant === 'filltone') return `${iconName}Filltone`;
-  if (variant === 'linetone') return `${iconName}Linetone`;
-  return iconName; // regular variant with Icon suffix
+  
+  if (weight === 'regular' && !duotone) {
+    return iconName; // base component, no suffix
+  }
+  
+  const weightSuffix = weight === 'regular' ? '' : weight.charAt(0).toUpperCase() + weight.slice(1);
+  const duotoneSuffix = duotone ? 'Duotone' : '';
+  
+  return `${iconName}${weightSuffix}${duotoneSuffix}`;
 }
 
-export function getFileName(slug, variant) {
-  if (variant === 'filled') return `${slug}-filled`;
-  if (variant === 'bold') return `${slug}-bold`;
-  if (variant === 'filltone') return `${slug}-filltone`;
-  if (variant === 'linetone') return `${slug}-linetone`;
-  return slug; // regular variant gets no suffix
+export function getFileName(slug, weight, duotone) {
+  if (weight === 'regular' && !duotone) {
+    return slug; // base component, no suffix
+  }
+  
+  const parts = [];
+  if (weight !== 'regular') {
+    parts.push(weight);
+  }
+  if (duotone) {
+    parts.push('duotone');
+  }
+  
+  return parts.length > 0 ? `${slug}-${parts.join('-')}` : slug;
 }
 
 /**
- * Validates if a given string is a recognized variant type
- * @param {string} variantName - The variant name to check
- * @returns {boolean} - True if it's a valid variant type
+ * Validates if a given string is a recognized weight type
+ * @param {string} weightName - The weight name to check
+ * @returns {boolean} - True if it's a valid weight type
  */
-export function isValidVariant(variantName) {
-  return VALID_VARIANTS.has(variantName.toLowerCase());
+export function isValidWeight(weightName) {
+  return VALID_WEIGHTS.has(weightName.toLowerCase());
 }
 
 /**
- * Maps export variant names to internal variant names
- * @param {string} exportVariant - The variant name from the export (e.g., "Bold", "Fill")
- * @returns {string} - The internal variant name (e.g., "bold", "filled")
+ * Maps export weight names to internal weight names
+ * @param {string} exportWeight - The weight name from the export (e.g., "Bold", "Fill", "Regular")
+ * @returns {string} - The internal weight name (e.g., "bold", "fill", "regular")
  */
-export function mapVariantName(exportVariant) {
-  return VARIANT_MAPPING[exportVariant] || 'regular';
+export function mapWeightName(exportWeight) {
+  return WEIGHT_MAPPING[exportWeight] || 'regular';
 }
 
 /**
@@ -103,7 +113,10 @@ export function parseIconName(iconName) {
  */
 export function validateVariantData(variantData) {
   return variantData && 
-         typeof variantData.variant === 'string' && 
+         variantData.variant &&
+         typeof variantData.variant === 'object' &&
+         typeof variantData.variant.weight === 'string' &&
+         typeof variantData.variant.duotone === 'boolean' &&
          typeof variantData.svg === 'string' &&
          variantData.svg.trim().length > 0;
 }

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MicOffIcon as RegularMicOffIcon } from './mic-off';
-import { MicOffIconBold } from './mic-off-bold';
-import { MicOffIconFilled } from './mic-off-filled';
-import { MicOffIconFilltone } from './mic-off-filltone';
-import { MicOffIconLinetone } from './mic-off-linetone';
+import { MicOffIconDuotone as MicOffIconDuotone } from './mic-off-duotone';
+import { MicOffIconBold as MicOffIconBold } from './mic-off-bold';
+import { MicOffIconBoldDuotone as MicOffIconBoldDuotone } from './mic-off-bold-duotone';
+import { MicOffIconFill as MicOffIconFill } from './mic-off-fill';
+import { MicOffIconFillDuotone as MicOffIconFillDuotone } from './mic-off-fill-duotone';
 
 export interface MicOffIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MicOffIcon = memo(forwardRef<SVGSVGElement, MicOffIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MicOffIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MicOffIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MicOffIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MicOffIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMicOffIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MicOffIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MicOffIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MicOffIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MicOffIconFill ref={ref} {...props} />;
+  if (duotone) return <MicOffIconDuotone ref={ref} {...props} />;
+  return <RegularMicOffIcon ref={ref} {...props} />;
 }));
 
 MicOffIcon.displayName = 'MicOffIcon';

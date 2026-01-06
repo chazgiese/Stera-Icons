@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TennisBallIcon as RegularTennisBallIcon } from './tennis-ball';
-import { TennisBallIconBold } from './tennis-ball-bold';
-import { TennisBallIconFilled } from './tennis-ball-filled';
-import { TennisBallIconFilltone } from './tennis-ball-filltone';
-import { TennisBallIconLinetone } from './tennis-ball-linetone';
+import { TennisBallIconDuotone as TennisBallIconDuotone } from './tennis-ball-duotone';
+import { TennisBallIconBold as TennisBallIconBold } from './tennis-ball-bold';
+import { TennisBallIconBoldDuotone as TennisBallIconBoldDuotone } from './tennis-ball-bold-duotone';
+import { TennisBallIconFill as TennisBallIconFill } from './tennis-ball-fill';
+import { TennisBallIconFillDuotone as TennisBallIconFillDuotone } from './tennis-ball-fill-duotone';
 
 export interface TennisBallIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TennisBallIcon = memo(forwardRef<SVGSVGElement, TennisBallIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TennisBallIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TennisBallIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TennisBallIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TennisBallIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTennisBallIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TennisBallIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TennisBallIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TennisBallIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TennisBallIconFill ref={ref} {...props} />;
+  if (duotone) return <TennisBallIconDuotone ref={ref} {...props} />;
+  return <RegularTennisBallIcon ref={ref} {...props} />;
 }));
 
 TennisBallIcon.displayName = 'TennisBallIcon';

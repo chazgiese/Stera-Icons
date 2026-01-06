@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ExclamationPointIcon as RegularExclamationPointIcon } from './exclamation-point';
-import { ExclamationPointIconBold } from './exclamation-point-bold';
-import { ExclamationPointIconFilled } from './exclamation-point-filled';
-import { ExclamationPointIconFilltone } from './exclamation-point-filltone';
-import { ExclamationPointIconLinetone } from './exclamation-point-linetone';
+import { ExclamationPointIconDuotone as ExclamationPointIconDuotone } from './exclamation-point-duotone';
+import { ExclamationPointIconBold as ExclamationPointIconBold } from './exclamation-point-bold';
+import { ExclamationPointIconBoldDuotone as ExclamationPointIconBoldDuotone } from './exclamation-point-bold-duotone';
+import { ExclamationPointIconFill as ExclamationPointIconFill } from './exclamation-point-fill';
+import { ExclamationPointIconFillDuotone as ExclamationPointIconFillDuotone } from './exclamation-point-fill-duotone';
 
 export interface ExclamationPointIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ExclamationPointIcon = memo(forwardRef<SVGSVGElement, ExclamationPointIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ExclamationPointIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ExclamationPointIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ExclamationPointIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ExclamationPointIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularExclamationPointIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ExclamationPointIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ExclamationPointIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ExclamationPointIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ExclamationPointIconFill ref={ref} {...props} />;
+  if (duotone) return <ExclamationPointIconDuotone ref={ref} {...props} />;
+  return <RegularExclamationPointIcon ref={ref} {...props} />;
 }));
 
 ExclamationPointIcon.displayName = 'ExclamationPointIcon';

@@ -1,0 +1,40 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const BookOpenIconFillDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <g fill="currentColor" opacity={0.4}>
+          <path d="m11.22 21.624-.008-.009-.01-.014zM1.718 3.616c3.732-1.096 6.485-.564 8.336.314.35.166.665.344.946.522V21c0 .19.053.367.146.518l-.006-.01v.003l-.001-.003-.016-.026-.083-.122a6 6 0 0 0-.371-.47 7.2 7.2 0 0 0-1.576-1.343c-1.397-.878-3.602-1.586-6.81-.644A1.002 1.002 0 0 1 1 17.943V4.576a1 1 0 0 1 .718-.96M13.946 3.93c1.85-.878 4.604-1.41 8.336-.314a1 1 0 0 1 .718.96v13.367a1 1 0 0 1-1.282.96c-3.21-.942-5.414-.234-6.81.644a7.2 7.2 0 0 0-1.577 1.344 6 6 0 0 0-.454.591l-.016.026v.003-.002l.001-.002v-.001A1 1 0 0 0 13 21V4.452a9 9 0 0 1 .946-.522" />
+        </g>
+        <path
+          fill="currentColor"
+          d="M13 21a1 1 0 1 1-2 0V4.452c.403.256.736.515 1 .746.264-.231.597-.49 1-.746z"
+        />
+      </svg>
+    ))
+);
+BookOpenIconFillDuotone.displayName = "BookOpenIconFillDuotone";
+export { BookOpenIconFillDuotone };

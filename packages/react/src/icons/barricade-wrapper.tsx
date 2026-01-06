@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BarricadeIcon as RegularBarricadeIcon } from './barricade';
-import { BarricadeIconBold } from './barricade-bold';
-import { BarricadeIconFilled } from './barricade-filled';
-import { BarricadeIconFilltone } from './barricade-filltone';
-import { BarricadeIconLinetone } from './barricade-linetone';
+import { BarricadeIconDuotone as BarricadeIconDuotone } from './barricade-duotone';
+import { BarricadeIconBold as BarricadeIconBold } from './barricade-bold';
+import { BarricadeIconBoldDuotone as BarricadeIconBoldDuotone } from './barricade-bold-duotone';
+import { BarricadeIconFill as BarricadeIconFill } from './barricade-fill';
+import { BarricadeIconFillDuotone as BarricadeIconFillDuotone } from './barricade-fill-duotone';
 
 export interface BarricadeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BarricadeIcon = memo(forwardRef<SVGSVGElement, BarricadeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BarricadeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BarricadeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BarricadeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BarricadeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBarricadeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BarricadeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BarricadeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BarricadeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BarricadeIconFill ref={ref} {...props} />;
+  if (duotone) return <BarricadeIconDuotone ref={ref} {...props} />;
+  return <RegularBarricadeIcon ref={ref} {...props} />;
 }));
 
 BarricadeIcon.displayName = 'BarricadeIcon';

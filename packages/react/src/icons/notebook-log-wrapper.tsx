@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { NotebookLogIcon as RegularNotebookLogIcon } from './notebook-log';
-import { NotebookLogIconBold } from './notebook-log-bold';
-import { NotebookLogIconFilled } from './notebook-log-filled';
-import { NotebookLogIconFilltone } from './notebook-log-filltone';
-import { NotebookLogIconLinetone } from './notebook-log-linetone';
+import { NotebookLogIconDuotone as NotebookLogIconDuotone } from './notebook-log-duotone';
+import { NotebookLogIconBold as NotebookLogIconBold } from './notebook-log-bold';
+import { NotebookLogIconBoldDuotone as NotebookLogIconBoldDuotone } from './notebook-log-bold-duotone';
+import { NotebookLogIconFill as NotebookLogIconFill } from './notebook-log-fill';
+import { NotebookLogIconFillDuotone as NotebookLogIconFillDuotone } from './notebook-log-fill-duotone';
 
 export interface NotebookLogIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const NotebookLogIcon = memo(forwardRef<SVGSVGElement, NotebookLogIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <NotebookLogIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <NotebookLogIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <NotebookLogIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <NotebookLogIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularNotebookLogIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <NotebookLogIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <NotebookLogIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <NotebookLogIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <NotebookLogIconFill ref={ref} {...props} />;
+  if (duotone) return <NotebookLogIconDuotone ref={ref} {...props} />;
+  return <RegularNotebookLogIcon ref={ref} {...props} />;
 }));
 
 NotebookLogIcon.displayName = 'NotebookLogIcon';

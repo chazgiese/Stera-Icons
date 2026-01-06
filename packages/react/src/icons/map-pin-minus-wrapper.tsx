@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MapPinMinusIcon as RegularMapPinMinusIcon } from './map-pin-minus';
-import { MapPinMinusIconBold } from './map-pin-minus-bold';
-import { MapPinMinusIconFilled } from './map-pin-minus-filled';
-import { MapPinMinusIconFilltone } from './map-pin-minus-filltone';
-import { MapPinMinusIconLinetone } from './map-pin-minus-linetone';
+import { MapPinMinusIconDuotone as MapPinMinusIconDuotone } from './map-pin-minus-duotone';
+import { MapPinMinusIconBold as MapPinMinusIconBold } from './map-pin-minus-bold';
+import { MapPinMinusIconBoldDuotone as MapPinMinusIconBoldDuotone } from './map-pin-minus-bold-duotone';
+import { MapPinMinusIconFill as MapPinMinusIconFill } from './map-pin-minus-fill';
+import { MapPinMinusIconFillDuotone as MapPinMinusIconFillDuotone } from './map-pin-minus-fill-duotone';
 
 export interface MapPinMinusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MapPinMinusIcon = memo(forwardRef<SVGSVGElement, MapPinMinusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MapPinMinusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MapPinMinusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MapPinMinusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MapPinMinusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMapPinMinusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MapPinMinusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MapPinMinusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MapPinMinusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MapPinMinusIconFill ref={ref} {...props} />;
+  if (duotone) return <MapPinMinusIconDuotone ref={ref} {...props} />;
+  return <RegularMapPinMinusIcon ref={ref} {...props} />;
 }));
 
 MapPinMinusIcon.displayName = 'MapPinMinusIcon';

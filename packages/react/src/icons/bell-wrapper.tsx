@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BellIcon as RegularBellIcon } from './bell';
-import { BellIconBold } from './bell-bold';
-import { BellIconFilled } from './bell-filled';
-import { BellIconFilltone } from './bell-filltone';
-import { BellIconLinetone } from './bell-linetone';
+import { BellIconDuotone as BellIconDuotone } from './bell-duotone';
+import { BellIconBold as BellIconBold } from './bell-bold';
+import { BellIconBoldDuotone as BellIconBoldDuotone } from './bell-bold-duotone';
+import { BellIconFill as BellIconFill } from './bell-fill';
+import { BellIconFillDuotone as BellIconFillDuotone } from './bell-fill-duotone';
 
 export interface BellIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BellIcon = memo(forwardRef<SVGSVGElement, BellIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BellIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BellIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BellIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BellIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBellIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BellIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BellIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BellIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BellIconFill ref={ref} {...props} />;
+  if (duotone) return <BellIconDuotone ref={ref} {...props} />;
+  return <RegularBellIcon ref={ref} {...props} />;
 }));
 
 BellIcon.displayName = 'BellIcon';

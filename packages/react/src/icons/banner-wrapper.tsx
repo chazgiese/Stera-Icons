@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BannerIcon as RegularBannerIcon } from './banner';
-import { BannerIconBold } from './banner-bold';
-import { BannerIconFilled } from './banner-filled';
-import { BannerIconFilltone } from './banner-filltone';
-import { BannerIconLinetone } from './banner-linetone';
+import { BannerIconDuotone as BannerIconDuotone } from './banner-duotone';
+import { BannerIconBold as BannerIconBold } from './banner-bold';
+import { BannerIconBoldDuotone as BannerIconBoldDuotone } from './banner-bold-duotone';
+import { BannerIconFill as BannerIconFill } from './banner-fill';
+import { BannerIconFillDuotone as BannerIconFillDuotone } from './banner-fill-duotone';
 
 export interface BannerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BannerIcon = memo(forwardRef<SVGSVGElement, BannerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BannerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BannerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BannerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BannerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBannerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BannerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BannerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BannerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BannerIconFill ref={ref} {...props} />;
+  if (duotone) return <BannerIconDuotone ref={ref} {...props} />;
+  return <RegularBannerIcon ref={ref} {...props} />;
 }));
 
 BannerIcon.displayName = 'BannerIcon';

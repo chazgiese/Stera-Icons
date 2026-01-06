@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MicIcon as RegularMicIcon } from './mic';
-import { MicIconBold } from './mic-bold';
-import { MicIconFilled } from './mic-filled';
-import { MicIconFilltone } from './mic-filltone';
-import { MicIconLinetone } from './mic-linetone';
+import { MicIconDuotone as MicIconDuotone } from './mic-duotone';
+import { MicIconBold as MicIconBold } from './mic-bold';
+import { MicIconBoldDuotone as MicIconBoldDuotone } from './mic-bold-duotone';
+import { MicIconFill as MicIconFill } from './mic-fill';
+import { MicIconFillDuotone as MicIconFillDuotone } from './mic-fill-duotone';
 
 export interface MicIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MicIcon = memo(forwardRef<SVGSVGElement, MicIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MicIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MicIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MicIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MicIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMicIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MicIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MicIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MicIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MicIconFill ref={ref} {...props} />;
+  if (duotone) return <MicIconDuotone ref={ref} {...props} />;
+  return <RegularMicIcon ref={ref} {...props} />;
 }));
 
 MicIcon.displayName = 'MicIcon';

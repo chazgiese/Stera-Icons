@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextAlignRightIcon as RegularTextAlignRightIcon } from './text-align-right';
-import { TextAlignRightIconBold } from './text-align-right-bold';
-import { TextAlignRightIconFilled } from './text-align-right-filled';
-import { TextAlignRightIconFilltone } from './text-align-right-filltone';
-import { TextAlignRightIconLinetone } from './text-align-right-linetone';
+import { TextAlignRightIconDuotone as TextAlignRightIconDuotone } from './text-align-right-duotone';
+import { TextAlignRightIconBold as TextAlignRightIconBold } from './text-align-right-bold';
+import { TextAlignRightIconBoldDuotone as TextAlignRightIconBoldDuotone } from './text-align-right-bold-duotone';
+import { TextAlignRightIconFill as TextAlignRightIconFill } from './text-align-right-fill';
+import { TextAlignRightIconFillDuotone as TextAlignRightIconFillDuotone } from './text-align-right-fill-duotone';
 
 export interface TextAlignRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextAlignRightIcon = memo(forwardRef<SVGSVGElement, TextAlignRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextAlignRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextAlignRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextAlignRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextAlignRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextAlignRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextAlignRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextAlignRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextAlignRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextAlignRightIconFill ref={ref} {...props} />;
+  if (duotone) return <TextAlignRightIconDuotone ref={ref} {...props} />;
+  return <RegularTextAlignRightIcon ref={ref} {...props} />;
 }));
 
 TextAlignRightIcon.displayName = 'TextAlignRightIcon';

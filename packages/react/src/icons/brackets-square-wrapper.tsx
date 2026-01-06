@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BracketsSquareIcon as RegularBracketsSquareIcon } from './brackets-square';
-import { BracketsSquareIconBold } from './brackets-square-bold';
-import { BracketsSquareIconFilled } from './brackets-square-filled';
-import { BracketsSquareIconFilltone } from './brackets-square-filltone';
-import { BracketsSquareIconLinetone } from './brackets-square-linetone';
+import { BracketsSquareIconDuotone as BracketsSquareIconDuotone } from './brackets-square-duotone';
+import { BracketsSquareIconBold as BracketsSquareIconBold } from './brackets-square-bold';
+import { BracketsSquareIconBoldDuotone as BracketsSquareIconBoldDuotone } from './brackets-square-bold-duotone';
+import { BracketsSquareIconFill as BracketsSquareIconFill } from './brackets-square-fill';
+import { BracketsSquareIconFillDuotone as BracketsSquareIconFillDuotone } from './brackets-square-fill-duotone';
 
 export interface BracketsSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BracketsSquareIcon = memo(forwardRef<SVGSVGElement, BracketsSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BracketsSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BracketsSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BracketsSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BracketsSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBracketsSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BracketsSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BracketsSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BracketsSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BracketsSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <BracketsSquareIconDuotone ref={ref} {...props} />;
+  return <RegularBracketsSquareIcon ref={ref} {...props} />;
 }));
 
 BracketsSquareIcon.displayName = 'BracketsSquareIcon';

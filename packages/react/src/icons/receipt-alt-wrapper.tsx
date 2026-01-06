@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ReceiptAltIcon as RegularReceiptAltIcon } from './receipt-alt';
-import { ReceiptAltIconBold } from './receipt-alt-bold';
-import { ReceiptAltIconFilled } from './receipt-alt-filled';
-import { ReceiptAltIconFilltone } from './receipt-alt-filltone';
-import { ReceiptAltIconLinetone } from './receipt-alt-linetone';
+import { ReceiptAltIconDuotone as ReceiptAltIconDuotone } from './receipt-alt-duotone';
+import { ReceiptAltIconBold as ReceiptAltIconBold } from './receipt-alt-bold';
+import { ReceiptAltIconBoldDuotone as ReceiptAltIconBoldDuotone } from './receipt-alt-bold-duotone';
+import { ReceiptAltIconFill as ReceiptAltIconFill } from './receipt-alt-fill';
+import { ReceiptAltIconFillDuotone as ReceiptAltIconFillDuotone } from './receipt-alt-fill-duotone';
 
 export interface ReceiptAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ReceiptAltIcon = memo(forwardRef<SVGSVGElement, ReceiptAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ReceiptAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ReceiptAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ReceiptAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ReceiptAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularReceiptAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ReceiptAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ReceiptAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ReceiptAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ReceiptAltIconFill ref={ref} {...props} />;
+  if (duotone) return <ReceiptAltIconDuotone ref={ref} {...props} />;
+  return <RegularReceiptAltIcon ref={ref} {...props} />;
 }));
 
 ReceiptAltIcon.displayName = 'ReceiptAltIcon';

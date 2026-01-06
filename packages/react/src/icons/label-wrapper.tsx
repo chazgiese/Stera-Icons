@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { LabelIcon as RegularLabelIcon } from './label';
-import { LabelIconBold } from './label-bold';
-import { LabelIconFilled } from './label-filled';
-import { LabelIconFilltone } from './label-filltone';
-import { LabelIconLinetone } from './label-linetone';
+import { LabelIconDuotone as LabelIconDuotone } from './label-duotone';
+import { LabelIconBold as LabelIconBold } from './label-bold';
+import { LabelIconBoldDuotone as LabelIconBoldDuotone } from './label-bold-duotone';
+import { LabelIconFill as LabelIconFill } from './label-fill';
+import { LabelIconFillDuotone as LabelIconFillDuotone } from './label-fill-duotone';
 
 export interface LabelIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const LabelIcon = memo(forwardRef<SVGSVGElement, LabelIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <LabelIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <LabelIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <LabelIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <LabelIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularLabelIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <LabelIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <LabelIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <LabelIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <LabelIconFill ref={ref} {...props} />;
+  if (duotone) return <LabelIconDuotone ref={ref} {...props} />;
+  return <RegularLabelIcon ref={ref} {...props} />;
 }));
 
 LabelIcon.displayName = 'LabelIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AudioBarsSquareIcon as RegularAudioBarsSquareIcon } from './audio-bars-square';
-import { AudioBarsSquareIconBold } from './audio-bars-square-bold';
-import { AudioBarsSquareIconFilled } from './audio-bars-square-filled';
-import { AudioBarsSquareIconFilltone } from './audio-bars-square-filltone';
-import { AudioBarsSquareIconLinetone } from './audio-bars-square-linetone';
+import { AudioBarsSquareIconDuotone as AudioBarsSquareIconDuotone } from './audio-bars-square-duotone';
+import { AudioBarsSquareIconBold as AudioBarsSquareIconBold } from './audio-bars-square-bold';
+import { AudioBarsSquareIconBoldDuotone as AudioBarsSquareIconBoldDuotone } from './audio-bars-square-bold-duotone';
+import { AudioBarsSquareIconFill as AudioBarsSquareIconFill } from './audio-bars-square-fill';
+import { AudioBarsSquareIconFillDuotone as AudioBarsSquareIconFillDuotone } from './audio-bars-square-fill-duotone';
 
 export interface AudioBarsSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AudioBarsSquareIcon = memo(forwardRef<SVGSVGElement, AudioBarsSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AudioBarsSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AudioBarsSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AudioBarsSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AudioBarsSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAudioBarsSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AudioBarsSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AudioBarsSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AudioBarsSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AudioBarsSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <AudioBarsSquareIconDuotone ref={ref} {...props} />;
+  return <RegularAudioBarsSquareIcon ref={ref} {...props} />;
 }));
 
 AudioBarsSquareIcon.displayName = 'AudioBarsSquareIcon';

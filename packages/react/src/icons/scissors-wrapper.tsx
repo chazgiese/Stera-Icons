@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScissorsIcon as RegularScissorsIcon } from './scissors';
-import { ScissorsIconBold } from './scissors-bold';
-import { ScissorsIconFilled } from './scissors-filled';
-import { ScissorsIconFilltone } from './scissors-filltone';
-import { ScissorsIconLinetone } from './scissors-linetone';
+import { ScissorsIconDuotone as ScissorsIconDuotone } from './scissors-duotone';
+import { ScissorsIconBold as ScissorsIconBold } from './scissors-bold';
+import { ScissorsIconBoldDuotone as ScissorsIconBoldDuotone } from './scissors-bold-duotone';
+import { ScissorsIconFill as ScissorsIconFill } from './scissors-fill';
+import { ScissorsIconFillDuotone as ScissorsIconFillDuotone } from './scissors-fill-duotone';
 
 export interface ScissorsIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScissorsIcon = memo(forwardRef<SVGSVGElement, ScissorsIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScissorsIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScissorsIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScissorsIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScissorsIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScissorsIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScissorsIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScissorsIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScissorsIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScissorsIconFill ref={ref} {...props} />;
+  if (duotone) return <ScissorsIconDuotone ref={ref} {...props} />;
+  return <RegularScissorsIcon ref={ref} {...props} />;
 }));
 
 ScissorsIcon.displayName = 'ScissorsIcon';

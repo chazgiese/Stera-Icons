@@ -26,7 +26,7 @@ const MacWindowCursorIconBold = memo(
         ref={ref}
         {...props}
       >
-        <g fill="currentColor" clipPath="url(#clip0_5072_11117)">
+        <g fill="currentColor" clipPath="url(#clip0_3676_591)">
           <path
             fillRule="evenodd"
             d="M13.128 13.111c-.396-1.188.687-2.32 1.87-2.017l.114.033 7.817 2.605c1.457.486 1.42 2.56-.054 2.994l-3.206.942-.942 3.206c-.434 1.473-2.508 1.51-2.994.054zm4.067 5.878.71-2.408a1 1 0 0 1 .677-.677l2.41-.71-5.694-1.897z"

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CliIcon as RegularCliIcon } from './cli';
-import { CliIconBold } from './cli-bold';
-import { CliIconFilled } from './cli-filled';
-import { CliIconFilltone } from './cli-filltone';
-import { CliIconLinetone } from './cli-linetone';
+import { CliIconDuotone as CliIconDuotone } from './cli-duotone';
+import { CliIconBold as CliIconBold } from './cli-bold';
+import { CliIconBoldDuotone as CliIconBoldDuotone } from './cli-bold-duotone';
+import { CliIconFill as CliIconFill } from './cli-fill';
+import { CliIconFillDuotone as CliIconFillDuotone } from './cli-fill-duotone';
 
 export interface CliIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CliIcon = memo(forwardRef<SVGSVGElement, CliIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CliIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CliIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CliIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CliIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCliIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CliIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CliIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CliIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CliIconFill ref={ref} {...props} />;
+  if (duotone) return <CliIconDuotone ref={ref} {...props} />;
+  return <RegularCliIcon ref={ref} {...props} />;
 }));
 
 CliIcon.displayName = 'CliIcon';

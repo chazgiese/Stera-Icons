@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BaseballIcon as RegularBaseballIcon } from './baseball';
-import { BaseballIconBold } from './baseball-bold';
-import { BaseballIconFilled } from './baseball-filled';
-import { BaseballIconFilltone } from './baseball-filltone';
-import { BaseballIconLinetone } from './baseball-linetone';
+import { BaseballIconDuotone as BaseballIconDuotone } from './baseball-duotone';
+import { BaseballIconBold as BaseballIconBold } from './baseball-bold';
+import { BaseballIconBoldDuotone as BaseballIconBoldDuotone } from './baseball-bold-duotone';
+import { BaseballIconFill as BaseballIconFill } from './baseball-fill';
+import { BaseballIconFillDuotone as BaseballIconFillDuotone } from './baseball-fill-duotone';
 
 export interface BaseballIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BaseballIcon = memo(forwardRef<SVGSVGElement, BaseballIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BaseballIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BaseballIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BaseballIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BaseballIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBaseballIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BaseballIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BaseballIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BaseballIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BaseballIconFill ref={ref} {...props} />;
+  if (duotone) return <BaseballIconDuotone ref={ref} {...props} />;
+  return <RegularBaseballIcon ref={ref} {...props} />;
 }));
 
 BaseballIcon.displayName = 'BaseballIcon';

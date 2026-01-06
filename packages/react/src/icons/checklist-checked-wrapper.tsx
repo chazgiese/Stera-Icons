@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChecklistCheckedIcon as RegularChecklistCheckedIcon } from './checklist-checked';
-import { ChecklistCheckedIconBold } from './checklist-checked-bold';
-import { ChecklistCheckedIconFilled } from './checklist-checked-filled';
-import { ChecklistCheckedIconFilltone } from './checklist-checked-filltone';
-import { ChecklistCheckedIconLinetone } from './checklist-checked-linetone';
+import { ChecklistCheckedIconDuotone as ChecklistCheckedIconDuotone } from './checklist-checked-duotone';
+import { ChecklistCheckedIconBold as ChecklistCheckedIconBold } from './checklist-checked-bold';
+import { ChecklistCheckedIconBoldDuotone as ChecklistCheckedIconBoldDuotone } from './checklist-checked-bold-duotone';
+import { ChecklistCheckedIconFill as ChecklistCheckedIconFill } from './checklist-checked-fill';
+import { ChecklistCheckedIconFillDuotone as ChecklistCheckedIconFillDuotone } from './checklist-checked-fill-duotone';
 
 export interface ChecklistCheckedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChecklistCheckedIcon = memo(forwardRef<SVGSVGElement, ChecklistCheckedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChecklistCheckedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChecklistCheckedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChecklistCheckedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChecklistCheckedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChecklistCheckedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChecklistCheckedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChecklistCheckedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChecklistCheckedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChecklistCheckedIconFill ref={ref} {...props} />;
+  if (duotone) return <ChecklistCheckedIconDuotone ref={ref} {...props} />;
+  return <RegularChecklistCheckedIcon ref={ref} {...props} />;
 }));
 
 ChecklistCheckedIcon.displayName = 'ChecklistCheckedIcon';

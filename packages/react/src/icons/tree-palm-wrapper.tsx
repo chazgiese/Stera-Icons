@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TreePalmIcon as RegularTreePalmIcon } from './tree-palm';
-import { TreePalmIconBold } from './tree-palm-bold';
-import { TreePalmIconFilled } from './tree-palm-filled';
-import { TreePalmIconFilltone } from './tree-palm-filltone';
-import { TreePalmIconLinetone } from './tree-palm-linetone';
+import { TreePalmIconDuotone as TreePalmIconDuotone } from './tree-palm-duotone';
+import { TreePalmIconBold as TreePalmIconBold } from './tree-palm-bold';
+import { TreePalmIconBoldDuotone as TreePalmIconBoldDuotone } from './tree-palm-bold-duotone';
+import { TreePalmIconFill as TreePalmIconFill } from './tree-palm-fill';
+import { TreePalmIconFillDuotone as TreePalmIconFillDuotone } from './tree-palm-fill-duotone';
 
 export interface TreePalmIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TreePalmIcon = memo(forwardRef<SVGSVGElement, TreePalmIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TreePalmIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TreePalmIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TreePalmIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TreePalmIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTreePalmIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TreePalmIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TreePalmIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TreePalmIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TreePalmIconFill ref={ref} {...props} />;
+  if (duotone) return <TreePalmIconDuotone ref={ref} {...props} />;
+  return <RegularTreePalmIcon ref={ref} {...props} />;
 }));
 
 TreePalmIcon.displayName = 'TreePalmIcon';

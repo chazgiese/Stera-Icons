@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ContrastIcon as RegularContrastIcon } from './contrast';
-import { ContrastIconBold } from './contrast-bold';
-import { ContrastIconFilled } from './contrast-filled';
-import { ContrastIconFilltone } from './contrast-filltone';
-import { ContrastIconLinetone } from './contrast-linetone';
+import { ContrastIconDuotone as ContrastIconDuotone } from './contrast-duotone';
+import { ContrastIconBold as ContrastIconBold } from './contrast-bold';
+import { ContrastIconBoldDuotone as ContrastIconBoldDuotone } from './contrast-bold-duotone';
+import { ContrastIconFill as ContrastIconFill } from './contrast-fill';
+import { ContrastIconFillDuotone as ContrastIconFillDuotone } from './contrast-fill-duotone';
 
 export interface ContrastIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ContrastIcon = memo(forwardRef<SVGSVGElement, ContrastIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ContrastIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ContrastIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ContrastIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ContrastIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularContrastIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ContrastIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ContrastIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ContrastIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ContrastIconFill ref={ref} {...props} />;
+  if (duotone) return <ContrastIconDuotone ref={ref} {...props} />;
+  return <RegularContrastIcon ref={ref} {...props} />;
 }));
 
 ContrastIcon.displayName = 'ContrastIcon';

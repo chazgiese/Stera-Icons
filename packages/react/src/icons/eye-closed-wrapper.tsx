@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { EyeClosedIcon as RegularEyeClosedIcon } from './eye-closed';
-import { EyeClosedIconBold } from './eye-closed-bold';
-import { EyeClosedIconFilled } from './eye-closed-filled';
-import { EyeClosedIconFilltone } from './eye-closed-filltone';
-import { EyeClosedIconLinetone } from './eye-closed-linetone';
+import { EyeClosedIconDuotone as EyeClosedIconDuotone } from './eye-closed-duotone';
+import { EyeClosedIconBold as EyeClosedIconBold } from './eye-closed-bold';
+import { EyeClosedIconBoldDuotone as EyeClosedIconBoldDuotone } from './eye-closed-bold-duotone';
+import { EyeClosedIconFill as EyeClosedIconFill } from './eye-closed-fill';
+import { EyeClosedIconFillDuotone as EyeClosedIconFillDuotone } from './eye-closed-fill-duotone';
 
 export interface EyeClosedIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const EyeClosedIcon = memo(forwardRef<SVGSVGElement, EyeClosedIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <EyeClosedIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <EyeClosedIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <EyeClosedIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <EyeClosedIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularEyeClosedIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <EyeClosedIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <EyeClosedIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <EyeClosedIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <EyeClosedIconFill ref={ref} {...props} />;
+  if (duotone) return <EyeClosedIconDuotone ref={ref} {...props} />;
+  return <RegularEyeClosedIcon ref={ref} {...props} />;
 }));
 
 EyeClosedIcon.displayName = 'EyeClosedIcon';

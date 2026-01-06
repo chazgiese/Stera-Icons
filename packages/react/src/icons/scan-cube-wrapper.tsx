@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanCubeIcon as RegularScanCubeIcon } from './scan-cube';
-import { ScanCubeIconBold } from './scan-cube-bold';
-import { ScanCubeIconFilled } from './scan-cube-filled';
-import { ScanCubeIconFilltone } from './scan-cube-filltone';
-import { ScanCubeIconLinetone } from './scan-cube-linetone';
+import { ScanCubeIconDuotone as ScanCubeIconDuotone } from './scan-cube-duotone';
+import { ScanCubeIconBold as ScanCubeIconBold } from './scan-cube-bold';
+import { ScanCubeIconBoldDuotone as ScanCubeIconBoldDuotone } from './scan-cube-bold-duotone';
+import { ScanCubeIconFill as ScanCubeIconFill } from './scan-cube-fill';
+import { ScanCubeIconFillDuotone as ScanCubeIconFillDuotone } from './scan-cube-fill-duotone';
 
 export interface ScanCubeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanCubeIcon = memo(forwardRef<SVGSVGElement, ScanCubeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanCubeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanCubeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanCubeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanCubeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanCubeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanCubeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanCubeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanCubeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanCubeIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanCubeIconDuotone ref={ref} {...props} />;
+  return <RegularScanCubeIcon ref={ref} {...props} />;
 }));
 
 ScanCubeIcon.displayName = 'ScanCubeIcon';

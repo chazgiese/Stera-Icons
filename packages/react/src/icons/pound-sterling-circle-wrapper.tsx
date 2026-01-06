@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PoundSterlingCircleIcon as RegularPoundSterlingCircleIcon } from './pound-sterling-circle';
-import { PoundSterlingCircleIconBold } from './pound-sterling-circle-bold';
-import { PoundSterlingCircleIconFilled } from './pound-sterling-circle-filled';
-import { PoundSterlingCircleIconFilltone } from './pound-sterling-circle-filltone';
-import { PoundSterlingCircleIconLinetone } from './pound-sterling-circle-linetone';
+import { PoundSterlingCircleIconDuotone as PoundSterlingCircleIconDuotone } from './pound-sterling-circle-duotone';
+import { PoundSterlingCircleIconBold as PoundSterlingCircleIconBold } from './pound-sterling-circle-bold';
+import { PoundSterlingCircleIconBoldDuotone as PoundSterlingCircleIconBoldDuotone } from './pound-sterling-circle-bold-duotone';
+import { PoundSterlingCircleIconFill as PoundSterlingCircleIconFill } from './pound-sterling-circle-fill';
+import { PoundSterlingCircleIconFillDuotone as PoundSterlingCircleIconFillDuotone } from './pound-sterling-circle-fill-duotone';
 
 export interface PoundSterlingCircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PoundSterlingCircleIcon = memo(forwardRef<SVGSVGElement, PoundSterlingCircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PoundSterlingCircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PoundSterlingCircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PoundSterlingCircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PoundSterlingCircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPoundSterlingCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PoundSterlingCircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PoundSterlingCircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PoundSterlingCircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PoundSterlingCircleIconFill ref={ref} {...props} />;
+  if (duotone) return <PoundSterlingCircleIconDuotone ref={ref} {...props} />;
+  return <RegularPoundSterlingCircleIcon ref={ref} {...props} />;
 }));
 
 PoundSterlingCircleIcon.displayName = 'PoundSterlingCircleIcon';

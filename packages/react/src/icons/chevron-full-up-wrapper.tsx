@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChevronFullUpIcon as RegularChevronFullUpIcon } from './chevron-full-up';
-import { ChevronFullUpIconBold } from './chevron-full-up-bold';
-import { ChevronFullUpIconFilled } from './chevron-full-up-filled';
-import { ChevronFullUpIconFilltone } from './chevron-full-up-filltone';
-import { ChevronFullUpIconLinetone } from './chevron-full-up-linetone';
+import { ChevronFullUpIconDuotone as ChevronFullUpIconDuotone } from './chevron-full-up-duotone';
+import { ChevronFullUpIconBold as ChevronFullUpIconBold } from './chevron-full-up-bold';
+import { ChevronFullUpIconBoldDuotone as ChevronFullUpIconBoldDuotone } from './chevron-full-up-bold-duotone';
+import { ChevronFullUpIconFill as ChevronFullUpIconFill } from './chevron-full-up-fill';
+import { ChevronFullUpIconFillDuotone as ChevronFullUpIconFillDuotone } from './chevron-full-up-fill-duotone';
 
 export interface ChevronFullUpIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChevronFullUpIcon = memo(forwardRef<SVGSVGElement, ChevronFullUpIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChevronFullUpIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChevronFullUpIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChevronFullUpIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChevronFullUpIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChevronFullUpIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChevronFullUpIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChevronFullUpIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChevronFullUpIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChevronFullUpIconFill ref={ref} {...props} />;
+  if (duotone) return <ChevronFullUpIconDuotone ref={ref} {...props} />;
+  return <RegularChevronFullUpIcon ref={ref} {...props} />;
 }));
 
 ChevronFullUpIcon.displayName = 'ChevronFullUpIcon';

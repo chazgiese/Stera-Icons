@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GiftIcon as RegularGiftIcon } from './gift';
-import { GiftIconBold } from './gift-bold';
-import { GiftIconFilled } from './gift-filled';
-import { GiftIconFilltone } from './gift-filltone';
-import { GiftIconLinetone } from './gift-linetone';
+import { GiftIconDuotone as GiftIconDuotone } from './gift-duotone';
+import { GiftIconBold as GiftIconBold } from './gift-bold';
+import { GiftIconBoldDuotone as GiftIconBoldDuotone } from './gift-bold-duotone';
+import { GiftIconFill as GiftIconFill } from './gift-fill';
+import { GiftIconFillDuotone as GiftIconFillDuotone } from './gift-fill-duotone';
 
 export interface GiftIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GiftIcon = memo(forwardRef<SVGSVGElement, GiftIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GiftIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GiftIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GiftIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GiftIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGiftIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GiftIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GiftIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GiftIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GiftIconFill ref={ref} {...props} />;
+  if (duotone) return <GiftIconDuotone ref={ref} {...props} />;
+  return <RegularGiftIcon ref={ref} {...props} />;
 }));
 
 GiftIcon.displayName = 'GiftIcon';

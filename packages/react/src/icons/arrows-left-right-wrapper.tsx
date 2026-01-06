@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowsLeftRightIcon as RegularArrowsLeftRightIcon } from './arrows-left-right';
-import { ArrowsLeftRightIconBold } from './arrows-left-right-bold';
-import { ArrowsLeftRightIconFilled } from './arrows-left-right-filled';
-import { ArrowsLeftRightIconFilltone } from './arrows-left-right-filltone';
-import { ArrowsLeftRightIconLinetone } from './arrows-left-right-linetone';
+import { ArrowsLeftRightIconDuotone as ArrowsLeftRightIconDuotone } from './arrows-left-right-duotone';
+import { ArrowsLeftRightIconBold as ArrowsLeftRightIconBold } from './arrows-left-right-bold';
+import { ArrowsLeftRightIconBoldDuotone as ArrowsLeftRightIconBoldDuotone } from './arrows-left-right-bold-duotone';
+import { ArrowsLeftRightIconFill as ArrowsLeftRightIconFill } from './arrows-left-right-fill';
+import { ArrowsLeftRightIconFillDuotone as ArrowsLeftRightIconFillDuotone } from './arrows-left-right-fill-duotone';
 
 export interface ArrowsLeftRightIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowsLeftRightIcon = memo(forwardRef<SVGSVGElement, ArrowsLeftRightIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowsLeftRightIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowsLeftRightIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowsLeftRightIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowsLeftRightIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowsLeftRightIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowsLeftRightIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowsLeftRightIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowsLeftRightIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowsLeftRightIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowsLeftRightIconDuotone ref={ref} {...props} />;
+  return <RegularArrowsLeftRightIcon ref={ref} {...props} />;
 }));
 
 ArrowsLeftRightIcon.displayName = 'ArrowsLeftRightIcon';

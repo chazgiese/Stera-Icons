@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WifiSlashIcon as RegularWifiSlashIcon } from './wifi-slash';
-import { WifiSlashIconBold } from './wifi-slash-bold';
-import { WifiSlashIconFilled } from './wifi-slash-filled';
-import { WifiSlashIconFilltone } from './wifi-slash-filltone';
-import { WifiSlashIconLinetone } from './wifi-slash-linetone';
+import { WifiSlashIconDuotone as WifiSlashIconDuotone } from './wifi-slash-duotone';
+import { WifiSlashIconBold as WifiSlashIconBold } from './wifi-slash-bold';
+import { WifiSlashIconBoldDuotone as WifiSlashIconBoldDuotone } from './wifi-slash-bold-duotone';
+import { WifiSlashIconFill as WifiSlashIconFill } from './wifi-slash-fill';
+import { WifiSlashIconFillDuotone as WifiSlashIconFillDuotone } from './wifi-slash-fill-duotone';
 
 export interface WifiSlashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WifiSlashIcon = memo(forwardRef<SVGSVGElement, WifiSlashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WifiSlashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WifiSlashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WifiSlashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WifiSlashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWifiSlashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WifiSlashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WifiSlashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WifiSlashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WifiSlashIconFill ref={ref} {...props} />;
+  if (duotone) return <WifiSlashIconDuotone ref={ref} {...props} />;
+  return <RegularWifiSlashIcon ref={ref} {...props} />;
 }));
 
 WifiSlashIcon.displayName = 'WifiSlashIcon';

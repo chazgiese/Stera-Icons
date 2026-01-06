@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartAreaIcon as RegularChartAreaIcon } from './chart-area';
-import { ChartAreaIconBold } from './chart-area-bold';
-import { ChartAreaIconFilled } from './chart-area-filled';
-import { ChartAreaIconFilltone } from './chart-area-filltone';
-import { ChartAreaIconLinetone } from './chart-area-linetone';
+import { ChartAreaIconDuotone as ChartAreaIconDuotone } from './chart-area-duotone';
+import { ChartAreaIconBold as ChartAreaIconBold } from './chart-area-bold';
+import { ChartAreaIconBoldDuotone as ChartAreaIconBoldDuotone } from './chart-area-bold-duotone';
+import { ChartAreaIconFill as ChartAreaIconFill } from './chart-area-fill';
+import { ChartAreaIconFillDuotone as ChartAreaIconFillDuotone } from './chart-area-fill-duotone';
 
 export interface ChartAreaIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartAreaIcon = memo(forwardRef<SVGSVGElement, ChartAreaIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartAreaIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartAreaIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartAreaIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartAreaIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartAreaIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartAreaIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartAreaIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartAreaIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartAreaIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartAreaIconDuotone ref={ref} {...props} />;
+  return <RegularChartAreaIcon ref={ref} {...props} />;
 }));
 
 ChartAreaIcon.displayName = 'ChartAreaIcon';

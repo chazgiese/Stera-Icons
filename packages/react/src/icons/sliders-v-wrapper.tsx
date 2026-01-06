@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SlidersVIcon as RegularSlidersVIcon } from './sliders-v';
-import { SlidersVIconBold } from './sliders-v-bold';
-import { SlidersVIconFilled } from './sliders-v-filled';
-import { SlidersVIconFilltone } from './sliders-v-filltone';
-import { SlidersVIconLinetone } from './sliders-v-linetone';
+import { SlidersVIconDuotone as SlidersVIconDuotone } from './sliders-v-duotone';
+import { SlidersVIconBold as SlidersVIconBold } from './sliders-v-bold';
+import { SlidersVIconBoldDuotone as SlidersVIconBoldDuotone } from './sliders-v-bold-duotone';
+import { SlidersVIconFill as SlidersVIconFill } from './sliders-v-fill';
+import { SlidersVIconFillDuotone as SlidersVIconFillDuotone } from './sliders-v-fill-duotone';
 
 export interface SlidersVIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SlidersVIcon = memo(forwardRef<SVGSVGElement, SlidersVIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SlidersVIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SlidersVIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SlidersVIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SlidersVIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSlidersVIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SlidersVIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SlidersVIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SlidersVIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SlidersVIconFill ref={ref} {...props} />;
+  if (duotone) return <SlidersVIconDuotone ref={ref} {...props} />;
+  return <RegularSlidersVIcon ref={ref} {...props} />;
 }));
 
 SlidersVIcon.displayName = 'SlidersVIcon';

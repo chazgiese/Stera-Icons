@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { WarehouseIcon as RegularWarehouseIcon } from './warehouse';
-import { WarehouseIconBold } from './warehouse-bold';
-import { WarehouseIconFilled } from './warehouse-filled';
-import { WarehouseIconFilltone } from './warehouse-filltone';
-import { WarehouseIconLinetone } from './warehouse-linetone';
+import { WarehouseIconDuotone as WarehouseIconDuotone } from './warehouse-duotone';
+import { WarehouseIconBold as WarehouseIconBold } from './warehouse-bold';
+import { WarehouseIconBoldDuotone as WarehouseIconBoldDuotone } from './warehouse-bold-duotone';
+import { WarehouseIconFill as WarehouseIconFill } from './warehouse-fill';
+import { WarehouseIconFillDuotone as WarehouseIconFillDuotone } from './warehouse-fill-duotone';
 
 export interface WarehouseIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const WarehouseIcon = memo(forwardRef<SVGSVGElement, WarehouseIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <WarehouseIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <WarehouseIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <WarehouseIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <WarehouseIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularWarehouseIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <WarehouseIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <WarehouseIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <WarehouseIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <WarehouseIconFill ref={ref} {...props} />;
+  if (duotone) return <WarehouseIconDuotone ref={ref} {...props} />;
+  return <RegularWarehouseIcon ref={ref} {...props} />;
 }));
 
 WarehouseIcon.displayName = 'WarehouseIcon';

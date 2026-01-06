@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartPieAltIcon as RegularChartPieAltIcon } from './chart-pie-alt';
-import { ChartPieAltIconBold } from './chart-pie-alt-bold';
-import { ChartPieAltIconFilled } from './chart-pie-alt-filled';
-import { ChartPieAltIconFilltone } from './chart-pie-alt-filltone';
-import { ChartPieAltIconLinetone } from './chart-pie-alt-linetone';
+import { ChartPieAltIconDuotone as ChartPieAltIconDuotone } from './chart-pie-alt-duotone';
+import { ChartPieAltIconBold as ChartPieAltIconBold } from './chart-pie-alt-bold';
+import { ChartPieAltIconBoldDuotone as ChartPieAltIconBoldDuotone } from './chart-pie-alt-bold-duotone';
+import { ChartPieAltIconFill as ChartPieAltIconFill } from './chart-pie-alt-fill';
+import { ChartPieAltIconFillDuotone as ChartPieAltIconFillDuotone } from './chart-pie-alt-fill-duotone';
 
 export interface ChartPieAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartPieAltIcon = memo(forwardRef<SVGSVGElement, ChartPieAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartPieAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartPieAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartPieAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartPieAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartPieAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartPieAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartPieAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartPieAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartPieAltIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartPieAltIconDuotone ref={ref} {...props} />;
+  return <RegularChartPieAltIcon ref={ref} {...props} />;
 }));
 
 ChartPieAltIcon.displayName = 'ChartPieAltIcon';

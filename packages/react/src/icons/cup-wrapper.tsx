@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CupIcon as RegularCupIcon } from './cup';
-import { CupIconBold } from './cup-bold';
-import { CupIconFilled } from './cup-filled';
-import { CupIconFilltone } from './cup-filltone';
-import { CupIconLinetone } from './cup-linetone';
+import { CupIconDuotone as CupIconDuotone } from './cup-duotone';
+import { CupIconBold as CupIconBold } from './cup-bold';
+import { CupIconBoldDuotone as CupIconBoldDuotone } from './cup-bold-duotone';
+import { CupIconFill as CupIconFill } from './cup-fill';
+import { CupIconFillDuotone as CupIconFillDuotone } from './cup-fill-duotone';
 
 export interface CupIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CupIcon = memo(forwardRef<SVGSVGElement, CupIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CupIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CupIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CupIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CupIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCupIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CupIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CupIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CupIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CupIconFill ref={ref} {...props} />;
+  if (duotone) return <CupIconDuotone ref={ref} {...props} />;
+  return <RegularCupIcon ref={ref} {...props} />;
 }));
 
 CupIcon.displayName = 'CupIcon';

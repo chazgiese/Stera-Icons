@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PercentCircleIcon as RegularPercentCircleIcon } from './percent-circle';
-import { PercentCircleIconBold } from './percent-circle-bold';
-import { PercentCircleIconFilled } from './percent-circle-filled';
-import { PercentCircleIconFilltone } from './percent-circle-filltone';
-import { PercentCircleIconLinetone } from './percent-circle-linetone';
+import { PercentCircleIconDuotone as PercentCircleIconDuotone } from './percent-circle-duotone';
+import { PercentCircleIconBold as PercentCircleIconBold } from './percent-circle-bold';
+import { PercentCircleIconBoldDuotone as PercentCircleIconBoldDuotone } from './percent-circle-bold-duotone';
+import { PercentCircleIconFill as PercentCircleIconFill } from './percent-circle-fill';
+import { PercentCircleIconFillDuotone as PercentCircleIconFillDuotone } from './percent-circle-fill-duotone';
 
 export interface PercentCircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PercentCircleIcon = memo(forwardRef<SVGSVGElement, PercentCircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PercentCircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PercentCircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PercentCircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PercentCircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPercentCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PercentCircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PercentCircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PercentCircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PercentCircleIconFill ref={ref} {...props} />;
+  if (duotone) return <PercentCircleIconDuotone ref={ref} {...props} />;
+  return <RegularPercentCircleIcon ref={ref} {...props} />;
 }));
 
 PercentCircleIcon.displayName = 'PercentCircleIcon';

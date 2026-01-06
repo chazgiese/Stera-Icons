@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SortAscendingIcon as RegularSortAscendingIcon } from './sort-ascending';
-import { SortAscendingIconBold } from './sort-ascending-bold';
-import { SortAscendingIconFilled } from './sort-ascending-filled';
-import { SortAscendingIconFilltone } from './sort-ascending-filltone';
-import { SortAscendingIconLinetone } from './sort-ascending-linetone';
+import { SortAscendingIconDuotone as SortAscendingIconDuotone } from './sort-ascending-duotone';
+import { SortAscendingIconBold as SortAscendingIconBold } from './sort-ascending-bold';
+import { SortAscendingIconBoldDuotone as SortAscendingIconBoldDuotone } from './sort-ascending-bold-duotone';
+import { SortAscendingIconFill as SortAscendingIconFill } from './sort-ascending-fill';
+import { SortAscendingIconFillDuotone as SortAscendingIconFillDuotone } from './sort-ascending-fill-duotone';
 
 export interface SortAscendingIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SortAscendingIcon = memo(forwardRef<SVGSVGElement, SortAscendingIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SortAscendingIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SortAscendingIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SortAscendingIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SortAscendingIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSortAscendingIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SortAscendingIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SortAscendingIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SortAscendingIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SortAscendingIconFill ref={ref} {...props} />;
+  if (duotone) return <SortAscendingIconDuotone ref={ref} {...props} />;
+  return <RegularSortAscendingIcon ref={ref} {...props} />;
 }));
 
 SortAscendingIcon.displayName = 'SortAscendingIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TicketIcon as RegularTicketIcon } from './ticket';
-import { TicketIconBold } from './ticket-bold';
-import { TicketIconFilled } from './ticket-filled';
-import { TicketIconFilltone } from './ticket-filltone';
-import { TicketIconLinetone } from './ticket-linetone';
+import { TicketIconDuotone as TicketIconDuotone } from './ticket-duotone';
+import { TicketIconBold as TicketIconBold } from './ticket-bold';
+import { TicketIconBoldDuotone as TicketIconBoldDuotone } from './ticket-bold-duotone';
+import { TicketIconFill as TicketIconFill } from './ticket-fill';
+import { TicketIconFillDuotone as TicketIconFillDuotone } from './ticket-fill-duotone';
 
 export interface TicketIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TicketIcon = memo(forwardRef<SVGSVGElement, TicketIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TicketIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TicketIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TicketIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TicketIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTicketIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TicketIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TicketIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TicketIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TicketIconFill ref={ref} {...props} />;
+  if (duotone) return <TicketIconDuotone ref={ref} {...props} />;
+  return <RegularTicketIcon ref={ref} {...props} />;
 }));
 
 TicketIcon.displayName = 'TicketIcon';

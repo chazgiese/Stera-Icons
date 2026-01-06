@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PushPinIcon as RegularPushPinIcon } from './push-pin';
-import { PushPinIconBold } from './push-pin-bold';
-import { PushPinIconFilled } from './push-pin-filled';
-import { PushPinIconFilltone } from './push-pin-filltone';
-import { PushPinIconLinetone } from './push-pin-linetone';
+import { PushPinIconDuotone as PushPinIconDuotone } from './push-pin-duotone';
+import { PushPinIconBold as PushPinIconBold } from './push-pin-bold';
+import { PushPinIconBoldDuotone as PushPinIconBoldDuotone } from './push-pin-bold-duotone';
+import { PushPinIconFill as PushPinIconFill } from './push-pin-fill';
+import { PushPinIconFillDuotone as PushPinIconFillDuotone } from './push-pin-fill-duotone';
 
 export interface PushPinIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PushPinIcon = memo(forwardRef<SVGSVGElement, PushPinIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PushPinIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PushPinIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PushPinIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PushPinIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPushPinIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PushPinIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PushPinIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PushPinIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PushPinIconFill ref={ref} {...props} />;
+  if (duotone) return <PushPinIconDuotone ref={ref} {...props} />;
+  return <RegularPushPinIcon ref={ref} {...props} />;
 }));
 
 PushPinIcon.displayName = 'PushPinIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { MoreVIcon as RegularMoreVIcon } from './more-v';
-import { MoreVIconBold } from './more-v-bold';
-import { MoreVIconFilled } from './more-v-filled';
-import { MoreVIconFilltone } from './more-v-filltone';
-import { MoreVIconLinetone } from './more-v-linetone';
+import { MoreVIconDuotone as MoreVIconDuotone } from './more-v-duotone';
+import { MoreVIconBold as MoreVIconBold } from './more-v-bold';
+import { MoreVIconBoldDuotone as MoreVIconBoldDuotone } from './more-v-bold-duotone';
+import { MoreVIconFill as MoreVIconFill } from './more-v-fill';
+import { MoreVIconFillDuotone as MoreVIconFillDuotone } from './more-v-fill-duotone';
 
 export interface MoreVIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const MoreVIcon = memo(forwardRef<SVGSVGElement, MoreVIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <MoreVIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <MoreVIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <MoreVIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <MoreVIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularMoreVIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <MoreVIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <MoreVIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <MoreVIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <MoreVIconFill ref={ref} {...props} />;
+  if (duotone) return <MoreVIconDuotone ref={ref} {...props} />;
+  return <RegularMoreVIcon ref={ref} {...props} />;
 }));
 
 MoreVIcon.displayName = 'MoreVIcon';

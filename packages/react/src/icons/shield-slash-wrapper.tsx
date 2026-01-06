@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ShieldSlashIcon as RegularShieldSlashIcon } from './shield-slash';
-import { ShieldSlashIconBold } from './shield-slash-bold';
-import { ShieldSlashIconFilled } from './shield-slash-filled';
-import { ShieldSlashIconFilltone } from './shield-slash-filltone';
-import { ShieldSlashIconLinetone } from './shield-slash-linetone';
+import { ShieldSlashIconDuotone as ShieldSlashIconDuotone } from './shield-slash-duotone';
+import { ShieldSlashIconBold as ShieldSlashIconBold } from './shield-slash-bold';
+import { ShieldSlashIconBoldDuotone as ShieldSlashIconBoldDuotone } from './shield-slash-bold-duotone';
+import { ShieldSlashIconFill as ShieldSlashIconFill } from './shield-slash-fill';
+import { ShieldSlashIconFillDuotone as ShieldSlashIconFillDuotone } from './shield-slash-fill-duotone';
 
 export interface ShieldSlashIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ShieldSlashIcon = memo(forwardRef<SVGSVGElement, ShieldSlashIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ShieldSlashIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ShieldSlashIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ShieldSlashIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ShieldSlashIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularShieldSlashIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ShieldSlashIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ShieldSlashIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ShieldSlashIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ShieldSlashIconFill ref={ref} {...props} />;
+  if (duotone) return <ShieldSlashIconDuotone ref={ref} {...props} />;
+  return <RegularShieldSlashIcon ref={ref} {...props} />;
 }));
 
 ShieldSlashIcon.displayName = 'ShieldSlashIcon';

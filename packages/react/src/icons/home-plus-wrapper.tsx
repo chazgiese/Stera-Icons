@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HomePlusIcon as RegularHomePlusIcon } from './home-plus';
-import { HomePlusIconBold } from './home-plus-bold';
-import { HomePlusIconFilled } from './home-plus-filled';
-import { HomePlusIconFilltone } from './home-plus-filltone';
-import { HomePlusIconLinetone } from './home-plus-linetone';
+import { HomePlusIconDuotone as HomePlusIconDuotone } from './home-plus-duotone';
+import { HomePlusIconBold as HomePlusIconBold } from './home-plus-bold';
+import { HomePlusIconBoldDuotone as HomePlusIconBoldDuotone } from './home-plus-bold-duotone';
+import { HomePlusIconFill as HomePlusIconFill } from './home-plus-fill';
+import { HomePlusIconFillDuotone as HomePlusIconFillDuotone } from './home-plus-fill-duotone';
 
 export interface HomePlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HomePlusIcon = memo(forwardRef<SVGSVGElement, HomePlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HomePlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HomePlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HomePlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HomePlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHomePlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HomePlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HomePlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HomePlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HomePlusIconFill ref={ref} {...props} />;
+  if (duotone) return <HomePlusIconDuotone ref={ref} {...props} />;
+  return <RegularHomePlusIcon ref={ref} {...props} />;
 }));
 
 HomePlusIcon.displayName = 'HomePlusIcon';

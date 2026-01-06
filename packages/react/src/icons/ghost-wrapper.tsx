@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GhostIcon as RegularGhostIcon } from './ghost';
-import { GhostIconBold } from './ghost-bold';
-import { GhostIconFilled } from './ghost-filled';
-import { GhostIconFilltone } from './ghost-filltone';
-import { GhostIconLinetone } from './ghost-linetone';
+import { GhostIconDuotone as GhostIconDuotone } from './ghost-duotone';
+import { GhostIconBold as GhostIconBold } from './ghost-bold';
+import { GhostIconBoldDuotone as GhostIconBoldDuotone } from './ghost-bold-duotone';
+import { GhostIconFill as GhostIconFill } from './ghost-fill';
+import { GhostIconFillDuotone as GhostIconFillDuotone } from './ghost-fill-duotone';
 
 export interface GhostIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GhostIcon = memo(forwardRef<SVGSVGElement, GhostIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GhostIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GhostIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GhostIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GhostIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGhostIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GhostIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GhostIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GhostIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GhostIconFill ref={ref} {...props} />;
+  if (duotone) return <GhostIconDuotone ref={ref} {...props} />;
+  return <RegularGhostIcon ref={ref} {...props} />;
 }));
 
 GhostIcon.displayName = 'GhostIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DevicePhoneIcon as RegularDevicePhoneIcon } from './device-phone';
-import { DevicePhoneIconBold } from './device-phone-bold';
-import { DevicePhoneIconFilled } from './device-phone-filled';
-import { DevicePhoneIconFilltone } from './device-phone-filltone';
-import { DevicePhoneIconLinetone } from './device-phone-linetone';
+import { DevicePhoneIconDuotone as DevicePhoneIconDuotone } from './device-phone-duotone';
+import { DevicePhoneIconBold as DevicePhoneIconBold } from './device-phone-bold';
+import { DevicePhoneIconBoldDuotone as DevicePhoneIconBoldDuotone } from './device-phone-bold-duotone';
+import { DevicePhoneIconFill as DevicePhoneIconFill } from './device-phone-fill';
+import { DevicePhoneIconFillDuotone as DevicePhoneIconFillDuotone } from './device-phone-fill-duotone';
 
 export interface DevicePhoneIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DevicePhoneIcon = memo(forwardRef<SVGSVGElement, DevicePhoneIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DevicePhoneIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DevicePhoneIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DevicePhoneIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DevicePhoneIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDevicePhoneIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DevicePhoneIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DevicePhoneIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DevicePhoneIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DevicePhoneIconFill ref={ref} {...props} />;
+  if (duotone) return <DevicePhoneIconDuotone ref={ref} {...props} />;
+  return <RegularDevicePhoneIcon ref={ref} {...props} />;
 }));
 
 DevicePhoneIcon.displayName = 'DevicePhoneIcon';

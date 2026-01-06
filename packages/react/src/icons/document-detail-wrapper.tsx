@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { DocumentDetailIcon as RegularDocumentDetailIcon } from './document-detail';
-import { DocumentDetailIconBold } from './document-detail-bold';
-import { DocumentDetailIconFilled } from './document-detail-filled';
-import { DocumentDetailIconFilltone } from './document-detail-filltone';
-import { DocumentDetailIconLinetone } from './document-detail-linetone';
+import { DocumentDetailIconDuotone as DocumentDetailIconDuotone } from './document-detail-duotone';
+import { DocumentDetailIconBold as DocumentDetailIconBold } from './document-detail-bold';
+import { DocumentDetailIconBoldDuotone as DocumentDetailIconBoldDuotone } from './document-detail-bold-duotone';
+import { DocumentDetailIconFill as DocumentDetailIconFill } from './document-detail-fill';
+import { DocumentDetailIconFillDuotone as DocumentDetailIconFillDuotone } from './document-detail-fill-duotone';
 
 export interface DocumentDetailIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const DocumentDetailIcon = memo(forwardRef<SVGSVGElement, DocumentDetailIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <DocumentDetailIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <DocumentDetailIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <DocumentDetailIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <DocumentDetailIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularDocumentDetailIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <DocumentDetailIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <DocumentDetailIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <DocumentDetailIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <DocumentDetailIconFill ref={ref} {...props} />;
+  if (duotone) return <DocumentDetailIconDuotone ref={ref} {...props} />;
+  return <RegularDocumentDetailIcon ref={ref} {...props} />;
 }));
 
 DocumentDetailIcon.displayName = 'DocumentDetailIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GridIcon as RegularGridIcon } from './grid';
-import { GridIconBold } from './grid-bold';
-import { GridIconFilled } from './grid-filled';
-import { GridIconFilltone } from './grid-filltone';
-import { GridIconLinetone } from './grid-linetone';
+import { GridIconDuotone as GridIconDuotone } from './grid-duotone';
+import { GridIconBold as GridIconBold } from './grid-bold';
+import { GridIconBoldDuotone as GridIconBoldDuotone } from './grid-bold-duotone';
+import { GridIconFill as GridIconFill } from './grid-fill';
+import { GridIconFillDuotone as GridIconFillDuotone } from './grid-fill-duotone';
 
 export interface GridIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GridIcon = memo(forwardRef<SVGSVGElement, GridIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GridIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GridIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GridIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GridIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGridIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GridIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GridIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GridIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GridIconFill ref={ref} {...props} />;
+  if (duotone) return <GridIconDuotone ref={ref} {...props} />;
+  return <RegularGridIcon ref={ref} {...props} />;
 }));
 
 GridIcon.displayName = 'GridIcon';

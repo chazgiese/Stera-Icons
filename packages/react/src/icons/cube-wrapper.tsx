@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CubeIcon as RegularCubeIcon } from './cube';
-import { CubeIconBold } from './cube-bold';
-import { CubeIconFilled } from './cube-filled';
-import { CubeIconFilltone } from './cube-filltone';
-import { CubeIconLinetone } from './cube-linetone';
+import { CubeIconDuotone as CubeIconDuotone } from './cube-duotone';
+import { CubeIconBold as CubeIconBold } from './cube-bold';
+import { CubeIconBoldDuotone as CubeIconBoldDuotone } from './cube-bold-duotone';
+import { CubeIconFill as CubeIconFill } from './cube-fill';
+import { CubeIconFillDuotone as CubeIconFillDuotone } from './cube-fill-duotone';
 
 export interface CubeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CubeIcon = memo(forwardRef<SVGSVGElement, CubeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CubeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CubeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CubeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CubeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCubeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CubeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CubeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CubeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CubeIconFill ref={ref} {...props} />;
+  if (duotone) return <CubeIconDuotone ref={ref} {...props} />;
+  return <RegularCubeIcon ref={ref} {...props} />;
 }));
 
 CubeIcon.displayName = 'CubeIcon';

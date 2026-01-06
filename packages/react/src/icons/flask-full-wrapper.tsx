@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlaskFullIcon as RegularFlaskFullIcon } from './flask-full';
-import { FlaskFullIconBold } from './flask-full-bold';
-import { FlaskFullIconFilled } from './flask-full-filled';
-import { FlaskFullIconFilltone } from './flask-full-filltone';
-import { FlaskFullIconLinetone } from './flask-full-linetone';
+import { FlaskFullIconDuotone as FlaskFullIconDuotone } from './flask-full-duotone';
+import { FlaskFullIconBold as FlaskFullIconBold } from './flask-full-bold';
+import { FlaskFullIconBoldDuotone as FlaskFullIconBoldDuotone } from './flask-full-bold-duotone';
+import { FlaskFullIconFill as FlaskFullIconFill } from './flask-full-fill';
+import { FlaskFullIconFillDuotone as FlaskFullIconFillDuotone } from './flask-full-fill-duotone';
 
 export interface FlaskFullIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlaskFullIcon = memo(forwardRef<SVGSVGElement, FlaskFullIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlaskFullIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlaskFullIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlaskFullIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlaskFullIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlaskFullIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlaskFullIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlaskFullIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlaskFullIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlaskFullIconFill ref={ref} {...props} />;
+  if (duotone) return <FlaskFullIconDuotone ref={ref} {...props} />;
+  return <RegularFlaskFullIcon ref={ref} {...props} />;
 }));
 
 FlaskFullIcon.displayName = 'FlaskFullIcon';

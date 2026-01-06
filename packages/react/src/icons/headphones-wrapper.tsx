@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { HeadphonesIcon as RegularHeadphonesIcon } from './headphones';
-import { HeadphonesIconBold } from './headphones-bold';
-import { HeadphonesIconFilled } from './headphones-filled';
-import { HeadphonesIconFilltone } from './headphones-filltone';
-import { HeadphonesIconLinetone } from './headphones-linetone';
+import { HeadphonesIconDuotone as HeadphonesIconDuotone } from './headphones-duotone';
+import { HeadphonesIconBold as HeadphonesIconBold } from './headphones-bold';
+import { HeadphonesIconBoldDuotone as HeadphonesIconBoldDuotone } from './headphones-bold-duotone';
+import { HeadphonesIconFill as HeadphonesIconFill } from './headphones-fill';
+import { HeadphonesIconFillDuotone as HeadphonesIconFillDuotone } from './headphones-fill-duotone';
 
 export interface HeadphonesIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const HeadphonesIcon = memo(forwardRef<SVGSVGElement, HeadphonesIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <HeadphonesIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <HeadphonesIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <HeadphonesIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <HeadphonesIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularHeadphonesIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <HeadphonesIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <HeadphonesIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <HeadphonesIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <HeadphonesIconFill ref={ref} {...props} />;
+  if (duotone) return <HeadphonesIconDuotone ref={ref} {...props} />;
+  return <RegularHeadphonesIcon ref={ref} {...props} />;
 }));
 
 HeadphonesIcon.displayName = 'HeadphonesIcon';

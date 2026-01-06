@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BellOffIcon as RegularBellOffIcon } from './bell-off';
-import { BellOffIconBold } from './bell-off-bold';
-import { BellOffIconFilled } from './bell-off-filled';
-import { BellOffIconFilltone } from './bell-off-filltone';
-import { BellOffIconLinetone } from './bell-off-linetone';
+import { BellOffIconDuotone as BellOffIconDuotone } from './bell-off-duotone';
+import { BellOffIconBold as BellOffIconBold } from './bell-off-bold';
+import { BellOffIconBoldDuotone as BellOffIconBoldDuotone } from './bell-off-bold-duotone';
+import { BellOffIconFill as BellOffIconFill } from './bell-off-fill';
+import { BellOffIconFillDuotone as BellOffIconFillDuotone } from './bell-off-fill-duotone';
 
 export interface BellOffIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BellOffIcon = memo(forwardRef<SVGSVGElement, BellOffIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BellOffIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BellOffIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BellOffIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BellOffIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBellOffIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BellOffIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BellOffIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BellOffIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BellOffIconFill ref={ref} {...props} />;
+  if (duotone) return <BellOffIconDuotone ref={ref} {...props} />;
+  return <RegularBellOffIcon ref={ref} {...props} />;
 }));
 
 BellOffIcon.displayName = 'BellOffIcon';

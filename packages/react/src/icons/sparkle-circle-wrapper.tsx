@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SparkleCircleIcon as RegularSparkleCircleIcon } from './sparkle-circle';
-import { SparkleCircleIconBold } from './sparkle-circle-bold';
-import { SparkleCircleIconFilled } from './sparkle-circle-filled';
-import { SparkleCircleIconFilltone } from './sparkle-circle-filltone';
-import { SparkleCircleIconLinetone } from './sparkle-circle-linetone';
+import { SparkleCircleIconDuotone as SparkleCircleIconDuotone } from './sparkle-circle-duotone';
+import { SparkleCircleIconBold as SparkleCircleIconBold } from './sparkle-circle-bold';
+import { SparkleCircleIconBoldDuotone as SparkleCircleIconBoldDuotone } from './sparkle-circle-bold-duotone';
+import { SparkleCircleIconFill as SparkleCircleIconFill } from './sparkle-circle-fill';
+import { SparkleCircleIconFillDuotone as SparkleCircleIconFillDuotone } from './sparkle-circle-fill-duotone';
 
 export interface SparkleCircleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SparkleCircleIcon = memo(forwardRef<SVGSVGElement, SparkleCircleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SparkleCircleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SparkleCircleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SparkleCircleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SparkleCircleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSparkleCircleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SparkleCircleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SparkleCircleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SparkleCircleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SparkleCircleIconFill ref={ref} {...props} />;
+  if (duotone) return <SparkleCircleIconDuotone ref={ref} {...props} />;
+  return <RegularSparkleCircleIcon ref={ref} {...props} />;
 }));
 
 SparkleCircleIcon.displayName = 'SparkleCircleIcon';

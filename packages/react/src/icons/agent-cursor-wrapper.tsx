@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AgentCursorIcon as RegularAgentCursorIcon } from './agent-cursor';
-import { AgentCursorIconBold } from './agent-cursor-bold';
-import { AgentCursorIconFilled } from './agent-cursor-filled';
-import { AgentCursorIconFilltone } from './agent-cursor-filltone';
-import { AgentCursorIconLinetone } from './agent-cursor-linetone';
+import { AgentCursorIconDuotone as AgentCursorIconDuotone } from './agent-cursor-duotone';
+import { AgentCursorIconBold as AgentCursorIconBold } from './agent-cursor-bold';
+import { AgentCursorIconBoldDuotone as AgentCursorIconBoldDuotone } from './agent-cursor-bold-duotone';
+import { AgentCursorIconFill as AgentCursorIconFill } from './agent-cursor-fill';
+import { AgentCursorIconFillDuotone as AgentCursorIconFillDuotone } from './agent-cursor-fill-duotone';
 
 export interface AgentCursorIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AgentCursorIcon = memo(forwardRef<SVGSVGElement, AgentCursorIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AgentCursorIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AgentCursorIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AgentCursorIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AgentCursorIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAgentCursorIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AgentCursorIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AgentCursorIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AgentCursorIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AgentCursorIconFill ref={ref} {...props} />;
+  if (duotone) return <AgentCursorIconDuotone ref={ref} {...props} />;
+  return <RegularAgentCursorIcon ref={ref} {...props} />;
 }));
 
 AgentCursorIcon.displayName = 'AgentCursorIcon';

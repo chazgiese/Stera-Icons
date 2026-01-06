@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ScanFaceIcon as RegularScanFaceIcon } from './scan-face';
-import { ScanFaceIconBold } from './scan-face-bold';
-import { ScanFaceIconFilled } from './scan-face-filled';
-import { ScanFaceIconFilltone } from './scan-face-filltone';
-import { ScanFaceIconLinetone } from './scan-face-linetone';
+import { ScanFaceIconDuotone as ScanFaceIconDuotone } from './scan-face-duotone';
+import { ScanFaceIconBold as ScanFaceIconBold } from './scan-face-bold';
+import { ScanFaceIconBoldDuotone as ScanFaceIconBoldDuotone } from './scan-face-bold-duotone';
+import { ScanFaceIconFill as ScanFaceIconFill } from './scan-face-fill';
+import { ScanFaceIconFillDuotone as ScanFaceIconFillDuotone } from './scan-face-fill-duotone';
 
 export interface ScanFaceIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ScanFaceIcon = memo(forwardRef<SVGSVGElement, ScanFaceIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ScanFaceIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ScanFaceIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ScanFaceIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ScanFaceIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularScanFaceIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ScanFaceIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ScanFaceIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ScanFaceIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ScanFaceIconFill ref={ref} {...props} />;
+  if (duotone) return <ScanFaceIconDuotone ref={ref} {...props} />;
+  return <RegularScanFaceIcon ref={ref} {...props} />;
 }));
 
 ScanFaceIcon.displayName = 'ScanFaceIcon';

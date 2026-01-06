@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GitMergeIcon as RegularGitMergeIcon } from './git-merge';
-import { GitMergeIconBold } from './git-merge-bold';
-import { GitMergeIconFilled } from './git-merge-filled';
-import { GitMergeIconFilltone } from './git-merge-filltone';
-import { GitMergeIconLinetone } from './git-merge-linetone';
+import { GitMergeIconDuotone as GitMergeIconDuotone } from './git-merge-duotone';
+import { GitMergeIconBold as GitMergeIconBold } from './git-merge-bold';
+import { GitMergeIconBoldDuotone as GitMergeIconBoldDuotone } from './git-merge-bold-duotone';
+import { GitMergeIconFill as GitMergeIconFill } from './git-merge-fill';
+import { GitMergeIconFillDuotone as GitMergeIconFillDuotone } from './git-merge-fill-duotone';
 
 export interface GitMergeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GitMergeIcon = memo(forwardRef<SVGSVGElement, GitMergeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GitMergeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GitMergeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GitMergeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GitMergeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGitMergeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GitMergeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GitMergeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GitMergeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GitMergeIconFill ref={ref} {...props} />;
+  if (duotone) return <GitMergeIconDuotone ref={ref} {...props} />;
+  return <RegularGitMergeIcon ref={ref} {...props} />;
 }));
 
 GitMergeIcon.displayName = 'GitMergeIcon';

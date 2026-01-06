@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BatteryIcon as RegularBatteryIcon } from './battery';
-import { BatteryIconBold } from './battery-bold';
-import { BatteryIconFilled } from './battery-filled';
-import { BatteryIconFilltone } from './battery-filltone';
-import { BatteryIconLinetone } from './battery-linetone';
+import { BatteryIconDuotone as BatteryIconDuotone } from './battery-duotone';
+import { BatteryIconBold as BatteryIconBold } from './battery-bold';
+import { BatteryIconBoldDuotone as BatteryIconBoldDuotone } from './battery-bold-duotone';
+import { BatteryIconFill as BatteryIconFill } from './battery-fill';
+import { BatteryIconFillDuotone as BatteryIconFillDuotone } from './battery-fill-duotone';
 
 export interface BatteryIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BatteryIcon = memo(forwardRef<SVGSVGElement, BatteryIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BatteryIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BatteryIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BatteryIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BatteryIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBatteryIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BatteryIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BatteryIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BatteryIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BatteryIconFill ref={ref} {...props} />;
+  if (duotone) return <BatteryIconDuotone ref={ref} {...props} />;
+  return <RegularBatteryIcon ref={ref} {...props} />;
 }));
 
 BatteryIcon.displayName = 'BatteryIcon';

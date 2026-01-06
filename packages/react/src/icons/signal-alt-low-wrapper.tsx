@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SignalAltLowIcon as RegularSignalAltLowIcon } from './signal-alt-low';
-import { SignalAltLowIconBold } from './signal-alt-low-bold';
-import { SignalAltLowIconFilled } from './signal-alt-low-filled';
-import { SignalAltLowIconFilltone } from './signal-alt-low-filltone';
-import { SignalAltLowIconLinetone } from './signal-alt-low-linetone';
+import { SignalAltLowIconDuotone as SignalAltLowIconDuotone } from './signal-alt-low-duotone';
+import { SignalAltLowIconBold as SignalAltLowIconBold } from './signal-alt-low-bold';
+import { SignalAltLowIconBoldDuotone as SignalAltLowIconBoldDuotone } from './signal-alt-low-bold-duotone';
+import { SignalAltLowIconFill as SignalAltLowIconFill } from './signal-alt-low-fill';
+import { SignalAltLowIconFillDuotone as SignalAltLowIconFillDuotone } from './signal-alt-low-fill-duotone';
 
 export interface SignalAltLowIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SignalAltLowIcon = memo(forwardRef<SVGSVGElement, SignalAltLowIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SignalAltLowIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SignalAltLowIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SignalAltLowIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SignalAltLowIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSignalAltLowIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SignalAltLowIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SignalAltLowIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SignalAltLowIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SignalAltLowIconFill ref={ref} {...props} />;
+  if (duotone) return <SignalAltLowIconDuotone ref={ref} {...props} />;
+  return <RegularSignalAltLowIcon ref={ref} {...props} />;
 }));
 
 SignalAltLowIcon.displayName = 'SignalAltLowIcon';

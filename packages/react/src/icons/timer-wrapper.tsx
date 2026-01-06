@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TimerIcon as RegularTimerIcon } from './timer';
-import { TimerIconBold } from './timer-bold';
-import { TimerIconFilled } from './timer-filled';
-import { TimerIconFilltone } from './timer-filltone';
-import { TimerIconLinetone } from './timer-linetone';
+import { TimerIconDuotone as TimerIconDuotone } from './timer-duotone';
+import { TimerIconBold as TimerIconBold } from './timer-bold';
+import { TimerIconBoldDuotone as TimerIconBoldDuotone } from './timer-bold-duotone';
+import { TimerIconFill as TimerIconFill } from './timer-fill';
+import { TimerIconFillDuotone as TimerIconFillDuotone } from './timer-fill-duotone';
 
 export interface TimerIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TimerIcon = memo(forwardRef<SVGSVGElement, TimerIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TimerIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TimerIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TimerIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TimerIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTimerIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TimerIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TimerIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TimerIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TimerIconFill ref={ref} {...props} />;
+  if (duotone) return <TimerIconDuotone ref={ref} {...props} />;
+  return <RegularTimerIcon ref={ref} {...props} />;
 }));
 
 TimerIcon.displayName = 'TimerIcon';

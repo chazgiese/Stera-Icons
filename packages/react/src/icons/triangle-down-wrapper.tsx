@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TriangleDownIcon as RegularTriangleDownIcon } from './triangle-down';
-import { TriangleDownIconBold } from './triangle-down-bold';
-import { TriangleDownIconFilled } from './triangle-down-filled';
-import { TriangleDownIconFilltone } from './triangle-down-filltone';
-import { TriangleDownIconLinetone } from './triangle-down-linetone';
+import { TriangleDownIconDuotone as TriangleDownIconDuotone } from './triangle-down-duotone';
+import { TriangleDownIconBold as TriangleDownIconBold } from './triangle-down-bold';
+import { TriangleDownIconBoldDuotone as TriangleDownIconBoldDuotone } from './triangle-down-bold-duotone';
+import { TriangleDownIconFill as TriangleDownIconFill } from './triangle-down-fill';
+import { TriangleDownIconFillDuotone as TriangleDownIconFillDuotone } from './triangle-down-fill-duotone';
 
 export interface TriangleDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TriangleDownIcon = memo(forwardRef<SVGSVGElement, TriangleDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TriangleDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TriangleDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TriangleDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TriangleDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTriangleDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TriangleDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TriangleDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TriangleDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TriangleDownIconFill ref={ref} {...props} />;
+  if (duotone) return <TriangleDownIconDuotone ref={ref} {...props} />;
+  return <RegularTriangleDownIcon ref={ref} {...props} />;
 }));
 
 TriangleDownIcon.displayName = 'TriangleDownIcon';

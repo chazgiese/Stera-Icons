@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { EmoteNeutralIcon as RegularEmoteNeutralIcon } from './emote-neutral';
-import { EmoteNeutralIconBold } from './emote-neutral-bold';
-import { EmoteNeutralIconFilled } from './emote-neutral-filled';
-import { EmoteNeutralIconFilltone } from './emote-neutral-filltone';
-import { EmoteNeutralIconLinetone } from './emote-neutral-linetone';
+import { EmoteNeutralIconDuotone as EmoteNeutralIconDuotone } from './emote-neutral-duotone';
+import { EmoteNeutralIconBold as EmoteNeutralIconBold } from './emote-neutral-bold';
+import { EmoteNeutralIconBoldDuotone as EmoteNeutralIconBoldDuotone } from './emote-neutral-bold-duotone';
+import { EmoteNeutralIconFill as EmoteNeutralIconFill } from './emote-neutral-fill';
+import { EmoteNeutralIconFillDuotone as EmoteNeutralIconFillDuotone } from './emote-neutral-fill-duotone';
 
 export interface EmoteNeutralIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const EmoteNeutralIcon = memo(forwardRef<SVGSVGElement, EmoteNeutralIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <EmoteNeutralIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <EmoteNeutralIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <EmoteNeutralIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <EmoteNeutralIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularEmoteNeutralIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <EmoteNeutralIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <EmoteNeutralIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <EmoteNeutralIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <EmoteNeutralIconFill ref={ref} {...props} />;
+  if (duotone) return <EmoteNeutralIconDuotone ref={ref} {...props} />;
+  return <RegularEmoteNeutralIcon ref={ref} {...props} />;
 }));
 
 EmoteNeutralIcon.displayName = 'EmoteNeutralIcon';

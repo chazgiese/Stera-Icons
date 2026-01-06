@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartCandleIcon as RegularChartCandleIcon } from './chart-candle';
-import { ChartCandleIconBold } from './chart-candle-bold';
-import { ChartCandleIconFilled } from './chart-candle-filled';
-import { ChartCandleIconFilltone } from './chart-candle-filltone';
-import { ChartCandleIconLinetone } from './chart-candle-linetone';
+import { ChartCandleIconDuotone as ChartCandleIconDuotone } from './chart-candle-duotone';
+import { ChartCandleIconBold as ChartCandleIconBold } from './chart-candle-bold';
+import { ChartCandleIconBoldDuotone as ChartCandleIconBoldDuotone } from './chart-candle-bold-duotone';
+import { ChartCandleIconFill as ChartCandleIconFill } from './chart-candle-fill';
+import { ChartCandleIconFillDuotone as ChartCandleIconFillDuotone } from './chart-candle-fill-duotone';
 
 export interface ChartCandleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartCandleIcon = memo(forwardRef<SVGSVGElement, ChartCandleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartCandleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartCandleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartCandleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartCandleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartCandleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartCandleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartCandleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartCandleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartCandleIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartCandleIconDuotone ref={ref} {...props} />;
+  return <RegularChartCandleIcon ref={ref} {...props} />;
 }));
 
 ChartCandleIcon.displayName = 'ChartCandleIcon';

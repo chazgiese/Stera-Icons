@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlignVerticalBottomIcon as RegularAlignVerticalBottomIcon } from './align-vertical-bottom';
-import { AlignVerticalBottomIconBold } from './align-vertical-bottom-bold';
-import { AlignVerticalBottomIconFilled } from './align-vertical-bottom-filled';
-import { AlignVerticalBottomIconFilltone } from './align-vertical-bottom-filltone';
-import { AlignVerticalBottomIconLinetone } from './align-vertical-bottom-linetone';
+import { AlignVerticalBottomIconDuotone as AlignVerticalBottomIconDuotone } from './align-vertical-bottom-duotone';
+import { AlignVerticalBottomIconBold as AlignVerticalBottomIconBold } from './align-vertical-bottom-bold';
+import { AlignVerticalBottomIconBoldDuotone as AlignVerticalBottomIconBoldDuotone } from './align-vertical-bottom-bold-duotone';
+import { AlignVerticalBottomIconFill as AlignVerticalBottomIconFill } from './align-vertical-bottom-fill';
+import { AlignVerticalBottomIconFillDuotone as AlignVerticalBottomIconFillDuotone } from './align-vertical-bottom-fill-duotone';
 
 export interface AlignVerticalBottomIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlignVerticalBottomIcon = memo(forwardRef<SVGSVGElement, AlignVerticalBottomIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlignVerticalBottomIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlignVerticalBottomIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlignVerticalBottomIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlignVerticalBottomIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlignVerticalBottomIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlignVerticalBottomIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlignVerticalBottomIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlignVerticalBottomIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlignVerticalBottomIconFill ref={ref} {...props} />;
+  if (duotone) return <AlignVerticalBottomIconDuotone ref={ref} {...props} />;
+  return <RegularAlignVerticalBottomIcon ref={ref} {...props} />;
 }));
 
 AlignVerticalBottomIcon.displayName = 'AlignVerticalBottomIcon';

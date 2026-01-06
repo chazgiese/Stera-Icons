@@ -14,9 +14,9 @@ import {
   getFileName, 
   parseTags,
   parseIconName,
-  mapVariantName,
+  mapWeightName,
   validateVariantData,
-  isValidVariant
+  isValidWeight
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
 
@@ -81,13 +81,6 @@ async function buildIcons(iconsExportPath) {
     }
   }
   
-  // Create a map of existing metadata by component name for quick lookup
-  const existingMetadataMap = new Map();
-  existingMetadata.forEach(item => {
-    existingMetadataMap.set(item.componentName, item);
-  });
-  
-  
   // Track icons by base name for wrapper generation
   const iconsByBaseName = new Map();
   
@@ -117,7 +110,7 @@ async function buildIcons(iconsExportPath) {
     // Generate the wrapper component name (user-facing API)
     const baseComponentName = uniqueSlug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
     
-    // Process each variant (Bold, Fill, Filltone, Linetone, Regular)
+    // Process each variant (6 combinations: 3 weights × 2 duotone states)
     for (const variantData of icon.variants) {
       // Validate variant data structure
       if (!validateVariantData(variantData)) {
@@ -125,18 +118,24 @@ async function buildIcons(iconsExportPath) {
         continue; // Skip this variant
       }
       
-      // Map export variant name to internal variant name
-      const variant = mapVariantName(variantData.variant);
+      // Extract weight and duotone from variant object
+      const exportWeight = variantData.variant.weight;
+      const duotone = variantData.variant.duotone;
       
-      // Validate that this is a recognized variant type
-      if (!isValidVariant(variant)) {
-        console.error(`  ❌ Unknown variant type "${variantData.variant}" for ${originalName}`);
+      // Map export weight name to internal weight name
+      const weight = mapWeightName(exportWeight);
+      
+      // Validate that this is a recognized weight type
+      if (!isValidWeight(weight)) {
+        console.error(`  ❌ Unknown weight type "${exportWeight}" for ${originalName}`);
         continue; // Skip this variant
       }
-      const componentName = getComponentName(uniqueSlug, variant);
-      const fileName = getFileName(uniqueSlug, variant);
       
-      console.log(`  📝 Processing ${componentName} (${variant})`);
+      const componentName = getComponentName(uniqueSlug, weight, duotone);
+      const fileName = getFileName(uniqueSlug, weight, duotone);
+      
+      const variantLabel = duotone ? `${weight}-duotone` : weight;
+      console.log(`  📝 Processing ${componentName} (${variantLabel})`);
       
       // Optimize SVG with SVGO
       let optimizedSvg;
@@ -175,32 +174,71 @@ async function buildIcons(iconsExportPath) {
       // Individual variant components are no longer exported - only wrapper components are used
       
       // Track variant for wrapper generation
-      iconVariants.push({ variant, componentName, fileName });
+      iconVariants.push({ weight, duotone, componentName, fileName });
       
       
       // Use hash-based versioning to determine icon status
+      // Find existing metadata entry matching name, weight, and duotone
+      const existingItem = existingMetadata.find(item => 
+        item.name === parsedIconName && 
+        item.weight === weight && 
+        item.duotone === duotone &&
+        item.componentName === baseComponentName
+      );
+      
       const currentSvgHash = variantData.hash; // Use SHA-256 hash from export
-      const changeAnalysis = hashVersioning.analyzeIconChange(uniqueSlug, variant, currentSvgHash, existingMetadata);
+      const currentVersion = hashVersioning.getVersionForIcons().version;
+      
+      let changeAnalysis;
+      if (!existingItem) {
+        changeAnalysis = {
+          status: 'new',
+          versionAdded: currentVersion,
+          dateAdded: new Date().toISOString(),
+          lastModified: new Date().toISOString(),
+          versionLastModified: currentVersion
+        };
+      } else {
+        const isModified = existingItem.svgHash !== currentSvgHash;
+        if (isModified) {
+          changeAnalysis = {
+            status: 'modified',
+            versionAdded: existingItem.versionAdded,
+            dateAdded: existingItem.dateAdded,
+            lastModified: new Date().toISOString(),
+            versionLastModified: currentVersion
+          };
+        } else {
+          changeAnalysis = {
+            status: 'unchanged',
+            versionAdded: existingItem.versionAdded,
+            dateAdded: existingItem.dateAdded,
+            lastModified: existingItem.lastModified,
+            versionLastModified: existingItem.versionLastModified || existingItem.versionAdded
+          };
+        }
+      }
       
       const { versionAdded, dateAdded, lastModified, versionLastModified } = changeAnalysis;
       
       // Log the status
       switch (changeAnalysis.status) {
         case 'new':
-          console.log(`  🆕 New icon: ${baseComponentName} ${variant} (v${versionAdded})`);
+          console.log(`  🆕 New icon: ${baseComponentName} ${variantLabel} (v${versionAdded})`);
           break;
         case 'modified':
-          console.log(`  🔄 Modified icon: ${baseComponentName} ${variant} (last modified: v${currentVersion})`);
+          console.log(`  🔄 Modified icon: ${baseComponentName} ${variantLabel} (last modified: v${currentVersion})`);
           break;
         case 'unchanged':
-          console.log(`  ✅ Unchanged icon: ${baseComponentName} ${variant}`);
+          console.log(`  ✅ Unchanged icon: ${baseComponentName} ${variantLabel}`);
           break;
       }
       
       // Add to metadata with the wrapper component name (user-facing API)
       metadata.push({
         name: parsedIconName,
-        variant,
+        weight,
+        duotone,
         tags: parseTags(icon.tags),
         componentName: baseComponentName,
         fileName: `${fileName}.tsx`,
@@ -227,36 +265,62 @@ async function buildIcons(iconsExportPath) {
     
     console.log(`  📦 Creating wrapper for ${baseComponentName}`);
     
+    // Build imports and component mapping for all 6 variants
+    const imports = [];
+    const componentMap = new Map();
+    
+    for (const variantInfo of iconData.variants) {
+      const { weight, duotone, componentName, fileName } = variantInfo;
+      const importAlias = weight === 'regular' && !duotone 
+        ? `Regular${baseComponentName}`
+        : componentName;
+      imports.push(`import { ${componentName} as ${importAlias} } from './${fileName}';`);
+      componentMap.set(`${weight}-${duotone}`, importAlias);
+    }
+    
+    // Build the selection logic - order matters: check most specific first
+    const selectionLogic = [];
+    
+    // Check for bold + duotone
+    if (componentMap.has('bold-true')) {
+      selectionLogic.push(`if (weight === 'bold' && duotone) return <${componentMap.get('bold-true')} ref={ref} {...props} />;`);
+    }
+    // Check for bold (no duotone)
+    if (componentMap.has('bold-false')) {
+      selectionLogic.push(`if (weight === 'bold') return <${componentMap.get('bold-false')} ref={ref} {...props} />;`);
+    }
+    // Check for fill + duotone
+    if (componentMap.has('fill-true')) {
+      selectionLogic.push(`if (weight === 'fill' && duotone) return <${componentMap.get('fill-true')} ref={ref} {...props} />;`);
+    }
+    // Check for fill (no duotone)
+    if (componentMap.has('fill-false')) {
+      selectionLogic.push(`if (weight === 'fill') return <${componentMap.get('fill-false')} ref={ref} {...props} />;`);
+    }
+    // Check for regular + duotone
+    if (componentMap.has('regular-true')) {
+      selectionLogic.push(`if (duotone) return <${componentMap.get('regular-true')} ref={ref} {...props} />;`);
+    }
+    // Default to regular (no duotone)
+    const defaultComponent = componentMap.get('regular-false') || `Regular${baseComponentName}`;
+    selectionLogic.push(`return <${defaultComponent} ref={ref} {...props} />;`);
+    
     // Generate wrapper component code
     const wrapperCode = `import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
-import { ${baseComponentName} as Regular${baseComponentName} } from './${baseName}';
-import { ${baseComponentName}Bold } from './${baseName}-bold';
-import { ${baseComponentName}Filled } from './${baseName}-filled';
-import { ${baseComponentName}Filltone } from './${baseName}-filltone';
-import { ${baseComponentName}Linetone } from './${baseName}-linetone';
+import type { IconProps } from '../types';
+${imports.join('\n')}
 
 export interface ${baseComponentName}Props extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <${baseComponentName}Filled ref={ref} {...props} />;
-    case 'bold':
-      return <${baseComponentName}Bold ref={ref} {...props} />;
-    case 'filltone':
-      return <${baseComponentName}Filltone ref={ref} {...props} />;
-    case 'linetone':
-      return <${baseComponentName}Linetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <Regular${baseComponentName} ref={ref} {...props} />;
-  }
+  ${selectionLogic.join('\n  ')}
 }));
 
 ${baseComponentName}.displayName = '${baseComponentName}';
@@ -363,11 +427,12 @@ export type { IconProps } from './types';
       });
       
       // Generate TypeScript definitions
-      const typesContent = `import type { IconProps, IconVariant } from '../index';
+      const typesContent = `import type { IconProps } from '../index';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export interface ${componentName}Props extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
@@ -409,7 +474,12 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   // Calculate summary statistics
   const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
   const modifiedIcons = metadata.filter(item => {
-    const existing = existingMetadataMap.get(item.componentName);
+    const existing = existingMetadata.find(e => 
+      e.name === item.name && 
+      e.weight === item.weight && 
+      e.duotone === item.duotone &&
+      e.componentName === item.componentName
+    );
     return existing && existing.svgHash && item.svgHash !== existing.svgHash;
   }).length;
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;

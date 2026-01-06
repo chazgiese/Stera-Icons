@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { BookOpenIcon as RegularBookOpenIcon } from './book-open';
-import { BookOpenIconBold } from './book-open-bold';
-import { BookOpenIconFilled } from './book-open-filled';
-import { BookOpenIconFilltone } from './book-open-filltone';
-import { BookOpenIconLinetone } from './book-open-linetone';
+import { BookOpenIconDuotone as BookOpenIconDuotone } from './book-open-duotone';
+import { BookOpenIconBold as BookOpenIconBold } from './book-open-bold';
+import { BookOpenIconBoldDuotone as BookOpenIconBoldDuotone } from './book-open-bold-duotone';
+import { BookOpenIconFill as BookOpenIconFill } from './book-open-fill';
+import { BookOpenIconFillDuotone as BookOpenIconFillDuotone } from './book-open-fill-duotone';
 
 export interface BookOpenIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const BookOpenIcon = memo(forwardRef<SVGSVGElement, BookOpenIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <BookOpenIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <BookOpenIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <BookOpenIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <BookOpenIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularBookOpenIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <BookOpenIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <BookOpenIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <BookOpenIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <BookOpenIconFill ref={ref} {...props} />;
+  if (duotone) return <BookOpenIconDuotone ref={ref} {...props} />;
+  return <RegularBookOpenIcon ref={ref} {...props} />;
 }));
 
 BookOpenIcon.displayName = 'BookOpenIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CloudIcon as RegularCloudIcon } from './cloud';
-import { CloudIconBold } from './cloud-bold';
-import { CloudIconFilled } from './cloud-filled';
-import { CloudIconFilltone } from './cloud-filltone';
-import { CloudIconLinetone } from './cloud-linetone';
+import { CloudIconDuotone as CloudIconDuotone } from './cloud-duotone';
+import { CloudIconBold as CloudIconBold } from './cloud-bold';
+import { CloudIconBoldDuotone as CloudIconBoldDuotone } from './cloud-bold-duotone';
+import { CloudIconFill as CloudIconFill } from './cloud-fill';
+import { CloudIconFillDuotone as CloudIconFillDuotone } from './cloud-fill-duotone';
 
 export interface CloudIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CloudIcon = memo(forwardRef<SVGSVGElement, CloudIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CloudIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CloudIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CloudIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CloudIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCloudIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CloudIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CloudIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CloudIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CloudIconFill ref={ref} {...props} />;
+  if (duotone) return <CloudIconDuotone ref={ref} {...props} />;
+  return <RegularCloudIcon ref={ref} {...props} />;
 }));
 
 CloudIcon.displayName = 'CloudIcon';

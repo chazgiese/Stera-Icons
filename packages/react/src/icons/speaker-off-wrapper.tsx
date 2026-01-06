@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SpeakerOffIcon as RegularSpeakerOffIcon } from './speaker-off';
-import { SpeakerOffIconBold } from './speaker-off-bold';
-import { SpeakerOffIconFilled } from './speaker-off-filled';
-import { SpeakerOffIconFilltone } from './speaker-off-filltone';
-import { SpeakerOffIconLinetone } from './speaker-off-linetone';
+import { SpeakerOffIconDuotone as SpeakerOffIconDuotone } from './speaker-off-duotone';
+import { SpeakerOffIconBold as SpeakerOffIconBold } from './speaker-off-bold';
+import { SpeakerOffIconBoldDuotone as SpeakerOffIconBoldDuotone } from './speaker-off-bold-duotone';
+import { SpeakerOffIconFill as SpeakerOffIconFill } from './speaker-off-fill';
+import { SpeakerOffIconFillDuotone as SpeakerOffIconFillDuotone } from './speaker-off-fill-duotone';
 
 export interface SpeakerOffIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SpeakerOffIcon = memo(forwardRef<SVGSVGElement, SpeakerOffIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SpeakerOffIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SpeakerOffIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SpeakerOffIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SpeakerOffIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSpeakerOffIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SpeakerOffIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SpeakerOffIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SpeakerOffIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SpeakerOffIconFill ref={ref} {...props} />;
+  if (duotone) return <SpeakerOffIconDuotone ref={ref} {...props} />;
+  return <RegularSpeakerOffIcon ref={ref} {...props} />;
 }));
 
 SpeakerOffIcon.displayName = 'SpeakerOffIcon';

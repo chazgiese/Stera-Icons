@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { RocketIcon as RegularRocketIcon } from './rocket';
-import { RocketIconBold } from './rocket-bold';
-import { RocketIconFilled } from './rocket-filled';
-import { RocketIconFilltone } from './rocket-filltone';
-import { RocketIconLinetone } from './rocket-linetone';
+import { RocketIconDuotone as RocketIconDuotone } from './rocket-duotone';
+import { RocketIconBold as RocketIconBold } from './rocket-bold';
+import { RocketIconBoldDuotone as RocketIconBoldDuotone } from './rocket-bold-duotone';
+import { RocketIconFill as RocketIconFill } from './rocket-fill';
+import { RocketIconFillDuotone as RocketIconFillDuotone } from './rocket-fill-duotone';
 
 export interface RocketIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const RocketIcon = memo(forwardRef<SVGSVGElement, RocketIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <RocketIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <RocketIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <RocketIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <RocketIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularRocketIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <RocketIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <RocketIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <RocketIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <RocketIconFill ref={ref} {...props} />;
+  if (duotone) return <RocketIconDuotone ref={ref} {...props} />;
+  return <RegularRocketIcon ref={ref} {...props} />;
 }));
 
 RocketIcon.displayName = 'RocketIcon';

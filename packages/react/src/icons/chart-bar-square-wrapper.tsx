@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartBarSquareIcon as RegularChartBarSquareIcon } from './chart-bar-square';
-import { ChartBarSquareIconBold } from './chart-bar-square-bold';
-import { ChartBarSquareIconFilled } from './chart-bar-square-filled';
-import { ChartBarSquareIconFilltone } from './chart-bar-square-filltone';
-import { ChartBarSquareIconLinetone } from './chart-bar-square-linetone';
+import { ChartBarSquareIconDuotone as ChartBarSquareIconDuotone } from './chart-bar-square-duotone';
+import { ChartBarSquareIconBold as ChartBarSquareIconBold } from './chart-bar-square-bold';
+import { ChartBarSquareIconBoldDuotone as ChartBarSquareIconBoldDuotone } from './chart-bar-square-bold-duotone';
+import { ChartBarSquareIconFill as ChartBarSquareIconFill } from './chart-bar-square-fill';
+import { ChartBarSquareIconFillDuotone as ChartBarSquareIconFillDuotone } from './chart-bar-square-fill-duotone';
 
 export interface ChartBarSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartBarSquareIcon = memo(forwardRef<SVGSVGElement, ChartBarSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartBarSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartBarSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartBarSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartBarSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartBarSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartBarSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartBarSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartBarSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartBarSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartBarSquareIconDuotone ref={ref} {...props} />;
+  return <RegularChartBarSquareIcon ref={ref} {...props} />;
 }));
 
 ChartBarSquareIcon.displayName = 'ChartBarSquareIcon';

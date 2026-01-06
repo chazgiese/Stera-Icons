@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CursorNavigationIcon as RegularCursorNavigationIcon } from './cursor-navigation';
-import { CursorNavigationIconBold } from './cursor-navigation-bold';
-import { CursorNavigationIconFilled } from './cursor-navigation-filled';
-import { CursorNavigationIconFilltone } from './cursor-navigation-filltone';
-import { CursorNavigationIconLinetone } from './cursor-navigation-linetone';
+import { CursorNavigationIconDuotone as CursorNavigationIconDuotone } from './cursor-navigation-duotone';
+import { CursorNavigationIconBold as CursorNavigationIconBold } from './cursor-navigation-bold';
+import { CursorNavigationIconBoldDuotone as CursorNavigationIconBoldDuotone } from './cursor-navigation-bold-duotone';
+import { CursorNavigationIconFill as CursorNavigationIconFill } from './cursor-navigation-fill';
+import { CursorNavigationIconFillDuotone as CursorNavigationIconFillDuotone } from './cursor-navigation-fill-duotone';
 
 export interface CursorNavigationIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CursorNavigationIcon = memo(forwardRef<SVGSVGElement, CursorNavigationIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CursorNavigationIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CursorNavigationIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CursorNavigationIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CursorNavigationIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCursorNavigationIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CursorNavigationIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CursorNavigationIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CursorNavigationIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CursorNavigationIconFill ref={ref} {...props} />;
+  if (duotone) return <CursorNavigationIconDuotone ref={ref} {...props} />;
+  return <RegularCursorNavigationIcon ref={ref} {...props} />;
 }));
 
 CursorNavigationIcon.displayName = 'CursorNavigationIcon';

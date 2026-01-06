@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FlowDiagramIcon as RegularFlowDiagramIcon } from './flow-diagram';
-import { FlowDiagramIconBold } from './flow-diagram-bold';
-import { FlowDiagramIconFilled } from './flow-diagram-filled';
-import { FlowDiagramIconFilltone } from './flow-diagram-filltone';
-import { FlowDiagramIconLinetone } from './flow-diagram-linetone';
+import { FlowDiagramIconDuotone as FlowDiagramIconDuotone } from './flow-diagram-duotone';
+import { FlowDiagramIconBold as FlowDiagramIconBold } from './flow-diagram-bold';
+import { FlowDiagramIconBoldDuotone as FlowDiagramIconBoldDuotone } from './flow-diagram-bold-duotone';
+import { FlowDiagramIconFill as FlowDiagramIconFill } from './flow-diagram-fill';
+import { FlowDiagramIconFillDuotone as FlowDiagramIconFillDuotone } from './flow-diagram-fill-duotone';
 
 export interface FlowDiagramIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FlowDiagramIcon = memo(forwardRef<SVGSVGElement, FlowDiagramIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FlowDiagramIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FlowDiagramIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FlowDiagramIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FlowDiagramIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFlowDiagramIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FlowDiagramIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FlowDiagramIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FlowDiagramIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FlowDiagramIconFill ref={ref} {...props} />;
+  if (duotone) return <FlowDiagramIconDuotone ref={ref} {...props} />;
+  return <RegularFlowDiagramIcon ref={ref} {...props} />;
 }));
 
 FlowDiagramIcon.displayName = 'FlowDiagramIcon';

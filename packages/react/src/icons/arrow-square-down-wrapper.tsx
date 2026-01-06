@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ArrowSquareDownIcon as RegularArrowSquareDownIcon } from './arrow-square-down';
-import { ArrowSquareDownIconBold } from './arrow-square-down-bold';
-import { ArrowSquareDownIconFilled } from './arrow-square-down-filled';
-import { ArrowSquareDownIconFilltone } from './arrow-square-down-filltone';
-import { ArrowSquareDownIconLinetone } from './arrow-square-down-linetone';
+import { ArrowSquareDownIconDuotone as ArrowSquareDownIconDuotone } from './arrow-square-down-duotone';
+import { ArrowSquareDownIconBold as ArrowSquareDownIconBold } from './arrow-square-down-bold';
+import { ArrowSquareDownIconBoldDuotone as ArrowSquareDownIconBoldDuotone } from './arrow-square-down-bold-duotone';
+import { ArrowSquareDownIconFill as ArrowSquareDownIconFill } from './arrow-square-down-fill';
+import { ArrowSquareDownIconFillDuotone as ArrowSquareDownIconFillDuotone } from './arrow-square-down-fill-duotone';
 
 export interface ArrowSquareDownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ArrowSquareDownIcon = memo(forwardRef<SVGSVGElement, ArrowSquareDownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ArrowSquareDownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ArrowSquareDownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ArrowSquareDownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ArrowSquareDownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularArrowSquareDownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ArrowSquareDownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ArrowSquareDownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ArrowSquareDownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ArrowSquareDownIconFill ref={ref} {...props} />;
+  if (duotone) return <ArrowSquareDownIconDuotone ref={ref} {...props} />;
+  return <RegularArrowSquareDownIcon ref={ref} {...props} />;
 }));
 
 ArrowSquareDownIcon.displayName = 'ArrowSquareDownIcon';

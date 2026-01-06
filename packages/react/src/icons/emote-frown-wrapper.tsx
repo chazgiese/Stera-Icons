@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { EmoteFrownIcon as RegularEmoteFrownIcon } from './emote-frown';
-import { EmoteFrownIconBold } from './emote-frown-bold';
-import { EmoteFrownIconFilled } from './emote-frown-filled';
-import { EmoteFrownIconFilltone } from './emote-frown-filltone';
-import { EmoteFrownIconLinetone } from './emote-frown-linetone';
+import { EmoteFrownIconDuotone as EmoteFrownIconDuotone } from './emote-frown-duotone';
+import { EmoteFrownIconBold as EmoteFrownIconBold } from './emote-frown-bold';
+import { EmoteFrownIconBoldDuotone as EmoteFrownIconBoldDuotone } from './emote-frown-bold-duotone';
+import { EmoteFrownIconFill as EmoteFrownIconFill } from './emote-frown-fill';
+import { EmoteFrownIconFillDuotone as EmoteFrownIconFillDuotone } from './emote-frown-fill-duotone';
 
 export interface EmoteFrownIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const EmoteFrownIcon = memo(forwardRef<SVGSVGElement, EmoteFrownIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <EmoteFrownIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <EmoteFrownIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <EmoteFrownIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <EmoteFrownIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularEmoteFrownIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <EmoteFrownIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <EmoteFrownIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <EmoteFrownIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <EmoteFrownIconFill ref={ref} {...props} />;
+  if (duotone) return <EmoteFrownIconDuotone ref={ref} {...props} />;
+  return <RegularEmoteFrownIcon ref={ref} {...props} />;
 }));
 
 EmoteFrownIcon.displayName = 'EmoteFrownIcon';

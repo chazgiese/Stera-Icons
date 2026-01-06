@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AlertDiamondIcon as RegularAlertDiamondIcon } from './alert-diamond';
-import { AlertDiamondIconBold } from './alert-diamond-bold';
-import { AlertDiamondIconFilled } from './alert-diamond-filled';
-import { AlertDiamondIconFilltone } from './alert-diamond-filltone';
-import { AlertDiamondIconLinetone } from './alert-diamond-linetone';
+import { AlertDiamondIconDuotone as AlertDiamondIconDuotone } from './alert-diamond-duotone';
+import { AlertDiamondIconBold as AlertDiamondIconBold } from './alert-diamond-bold';
+import { AlertDiamondIconBoldDuotone as AlertDiamondIconBoldDuotone } from './alert-diamond-bold-duotone';
+import { AlertDiamondIconFill as AlertDiamondIconFill } from './alert-diamond-fill';
+import { AlertDiamondIconFillDuotone as AlertDiamondIconFillDuotone } from './alert-diamond-fill-duotone';
 
 export interface AlertDiamondIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AlertDiamondIcon = memo(forwardRef<SVGSVGElement, AlertDiamondIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AlertDiamondIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AlertDiamondIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AlertDiamondIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AlertDiamondIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAlertDiamondIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AlertDiamondIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AlertDiamondIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AlertDiamondIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AlertDiamondIconFill ref={ref} {...props} />;
+  if (duotone) return <AlertDiamondIconDuotone ref={ref} {...props} />;
+  return <RegularAlertDiamondIcon ref={ref} {...props} />;
 }));
 
 AlertDiamondIcon.displayName = 'AlertDiamondIcon';

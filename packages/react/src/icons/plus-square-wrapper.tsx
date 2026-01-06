@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PlusSquareIcon as RegularPlusSquareIcon } from './plus-square';
-import { PlusSquareIconBold } from './plus-square-bold';
-import { PlusSquareIconFilled } from './plus-square-filled';
-import { PlusSquareIconFilltone } from './plus-square-filltone';
-import { PlusSquareIconLinetone } from './plus-square-linetone';
+import { PlusSquareIconDuotone as PlusSquareIconDuotone } from './plus-square-duotone';
+import { PlusSquareIconBold as PlusSquareIconBold } from './plus-square-bold';
+import { PlusSquareIconBoldDuotone as PlusSquareIconBoldDuotone } from './plus-square-bold-duotone';
+import { PlusSquareIconFill as PlusSquareIconFill } from './plus-square-fill';
+import { PlusSquareIconFillDuotone as PlusSquareIconFillDuotone } from './plus-square-fill-duotone';
 
 export interface PlusSquareIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PlusSquareIcon = memo(forwardRef<SVGSVGElement, PlusSquareIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PlusSquareIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PlusSquareIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PlusSquareIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PlusSquareIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPlusSquareIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PlusSquareIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PlusSquareIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PlusSquareIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PlusSquareIconFill ref={ref} {...props} />;
+  if (duotone) return <PlusSquareIconDuotone ref={ref} {...props} />;
+  return <RegularPlusSquareIcon ref={ref} {...props} />;
 }));
 
 PlusSquareIcon.displayName = 'PlusSquareIcon';

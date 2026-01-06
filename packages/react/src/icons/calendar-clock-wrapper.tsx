@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CalendarClockIcon as RegularCalendarClockIcon } from './calendar-clock';
-import { CalendarClockIconBold } from './calendar-clock-bold';
-import { CalendarClockIconFilled } from './calendar-clock-filled';
-import { CalendarClockIconFilltone } from './calendar-clock-filltone';
-import { CalendarClockIconLinetone } from './calendar-clock-linetone';
+import { CalendarClockIconDuotone as CalendarClockIconDuotone } from './calendar-clock-duotone';
+import { CalendarClockIconBold as CalendarClockIconBold } from './calendar-clock-bold';
+import { CalendarClockIconBoldDuotone as CalendarClockIconBoldDuotone } from './calendar-clock-bold-duotone';
+import { CalendarClockIconFill as CalendarClockIconFill } from './calendar-clock-fill';
+import { CalendarClockIconFillDuotone as CalendarClockIconFillDuotone } from './calendar-clock-fill-duotone';
 
 export interface CalendarClockIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CalendarClockIcon = memo(forwardRef<SVGSVGElement, CalendarClockIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CalendarClockIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CalendarClockIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CalendarClockIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CalendarClockIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCalendarClockIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CalendarClockIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CalendarClockIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CalendarClockIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CalendarClockIconFill ref={ref} {...props} />;
+  if (duotone) return <CalendarClockIconDuotone ref={ref} {...props} />;
+  return <RegularCalendarClockIcon ref={ref} {...props} />;
 }));
 
 CalendarClockIcon.displayName = 'CalendarClockIcon';

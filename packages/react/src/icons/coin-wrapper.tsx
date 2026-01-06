@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CoinIcon as RegularCoinIcon } from './coin';
-import { CoinIconBold } from './coin-bold';
-import { CoinIconFilled } from './coin-filled';
-import { CoinIconFilltone } from './coin-filltone';
-import { CoinIconLinetone } from './coin-linetone';
+import { CoinIconDuotone as CoinIconDuotone } from './coin-duotone';
+import { CoinIconBold as CoinIconBold } from './coin-bold';
+import { CoinIconBoldDuotone as CoinIconBoldDuotone } from './coin-bold-duotone';
+import { CoinIconFill as CoinIconFill } from './coin-fill';
+import { CoinIconFillDuotone as CoinIconFillDuotone } from './coin-fill-duotone';
 
 export interface CoinIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CoinIcon = memo(forwardRef<SVGSVGElement, CoinIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CoinIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CoinIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CoinIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CoinIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCoinIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CoinIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CoinIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CoinIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CoinIconFill ref={ref} {...props} />;
+  if (duotone) return <CoinIconDuotone ref={ref} {...props} />;
+  return <RegularCoinIcon ref={ref} {...props} />;
 }));
 
 CoinIcon.displayName = 'CoinIcon';

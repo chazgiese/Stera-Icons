@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TogglesIcon as RegularTogglesIcon } from './toggles';
-import { TogglesIconBold } from './toggles-bold';
-import { TogglesIconFilled } from './toggles-filled';
-import { TogglesIconFilltone } from './toggles-filltone';
-import { TogglesIconLinetone } from './toggles-linetone';
+import { TogglesIconDuotone as TogglesIconDuotone } from './toggles-duotone';
+import { TogglesIconBold as TogglesIconBold } from './toggles-bold';
+import { TogglesIconBoldDuotone as TogglesIconBoldDuotone } from './toggles-bold-duotone';
+import { TogglesIconFill as TogglesIconFill } from './toggles-fill';
+import { TogglesIconFillDuotone as TogglesIconFillDuotone } from './toggles-fill-duotone';
 
 export interface TogglesIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TogglesIcon = memo(forwardRef<SVGSVGElement, TogglesIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TogglesIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TogglesIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TogglesIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TogglesIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTogglesIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TogglesIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TogglesIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TogglesIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TogglesIconFill ref={ref} {...props} />;
+  if (duotone) return <TogglesIconDuotone ref={ref} {...props} />;
+  return <RegularTogglesIcon ref={ref} {...props} />;
 }));
 
 TogglesIcon.displayName = 'TogglesIcon';

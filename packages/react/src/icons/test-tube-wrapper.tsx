@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TestTubeIcon as RegularTestTubeIcon } from './test-tube';
-import { TestTubeIconBold } from './test-tube-bold';
-import { TestTubeIconFilled } from './test-tube-filled';
-import { TestTubeIconFilltone } from './test-tube-filltone';
-import { TestTubeIconLinetone } from './test-tube-linetone';
+import { TestTubeIconDuotone as TestTubeIconDuotone } from './test-tube-duotone';
+import { TestTubeIconBold as TestTubeIconBold } from './test-tube-bold';
+import { TestTubeIconBoldDuotone as TestTubeIconBoldDuotone } from './test-tube-bold-duotone';
+import { TestTubeIconFill as TestTubeIconFill } from './test-tube-fill';
+import { TestTubeIconFillDuotone as TestTubeIconFillDuotone } from './test-tube-fill-duotone';
 
 export interface TestTubeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TestTubeIcon = memo(forwardRef<SVGSVGElement, TestTubeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TestTubeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TestTubeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TestTubeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TestTubeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTestTubeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TestTubeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TestTubeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TestTubeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TestTubeIconFill ref={ref} {...props} />;
+  if (duotone) return <TestTubeIconDuotone ref={ref} {...props} />;
+  return <RegularTestTubeIcon ref={ref} {...props} />;
 }));
 
 TestTubeIcon.displayName = 'TestTubeIcon';

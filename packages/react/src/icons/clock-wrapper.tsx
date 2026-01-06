@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ClockIcon as RegularClockIcon } from './clock';
-import { ClockIconBold } from './clock-bold';
-import { ClockIconFilled } from './clock-filled';
-import { ClockIconFilltone } from './clock-filltone';
-import { ClockIconLinetone } from './clock-linetone';
+import { ClockIconDuotone as ClockIconDuotone } from './clock-duotone';
+import { ClockIconBold as ClockIconBold } from './clock-bold';
+import { ClockIconBoldDuotone as ClockIconBoldDuotone } from './clock-bold-duotone';
+import { ClockIconFill as ClockIconFill } from './clock-fill';
+import { ClockIconFillDuotone as ClockIconFillDuotone } from './clock-fill-duotone';
 
 export interface ClockIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ClockIcon = memo(forwardRef<SVGSVGElement, ClockIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ClockIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ClockIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ClockIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ClockIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularClockIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ClockIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ClockIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ClockIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ClockIconFill ref={ref} {...props} />;
+  if (duotone) return <ClockIconDuotone ref={ref} {...props} />;
+  return <RegularClockIcon ref={ref} {...props} />;
 }));
 
 ClockIcon.displayName = 'ClockIcon';

@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PushPinAltIcon as RegularPushPinAltIcon } from './push-pin-alt';
-import { PushPinAltIconBold } from './push-pin-alt-bold';
-import { PushPinAltIconFilled } from './push-pin-alt-filled';
-import { PushPinAltIconFilltone } from './push-pin-alt-filltone';
-import { PushPinAltIconLinetone } from './push-pin-alt-linetone';
+import { PushPinAltIconDuotone as PushPinAltIconDuotone } from './push-pin-alt-duotone';
+import { PushPinAltIconBold as PushPinAltIconBold } from './push-pin-alt-bold';
+import { PushPinAltIconBoldDuotone as PushPinAltIconBoldDuotone } from './push-pin-alt-bold-duotone';
+import { PushPinAltIconFill as PushPinAltIconFill } from './push-pin-alt-fill';
+import { PushPinAltIconFillDuotone as PushPinAltIconFillDuotone } from './push-pin-alt-fill-duotone';
 
 export interface PushPinAltIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PushPinAltIcon = memo(forwardRef<SVGSVGElement, PushPinAltIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PushPinAltIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PushPinAltIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PushPinAltIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PushPinAltIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPushPinAltIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PushPinAltIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PushPinAltIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PushPinAltIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PushPinAltIconFill ref={ref} {...props} />;
+  if (duotone) return <PushPinAltIconDuotone ref={ref} {...props} />;
+  return <RegularPushPinAltIcon ref={ref} {...props} />;
 }));
 
 PushPinAltIcon.displayName = 'PushPinAltIcon';

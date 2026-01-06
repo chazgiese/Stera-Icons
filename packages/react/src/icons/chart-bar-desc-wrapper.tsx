@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ChartBarDescIcon as RegularChartBarDescIcon } from './chart-bar-desc';
-import { ChartBarDescIconBold } from './chart-bar-desc-bold';
-import { ChartBarDescIconFilled } from './chart-bar-desc-filled';
-import { ChartBarDescIconFilltone } from './chart-bar-desc-filltone';
-import { ChartBarDescIconLinetone } from './chart-bar-desc-linetone';
+import { ChartBarDescIconDuotone as ChartBarDescIconDuotone } from './chart-bar-desc-duotone';
+import { ChartBarDescIconBold as ChartBarDescIconBold } from './chart-bar-desc-bold';
+import { ChartBarDescIconBoldDuotone as ChartBarDescIconBoldDuotone } from './chart-bar-desc-bold-duotone';
+import { ChartBarDescIconFill as ChartBarDescIconFill } from './chart-bar-desc-fill';
+import { ChartBarDescIconFillDuotone as ChartBarDescIconFillDuotone } from './chart-bar-desc-fill-duotone';
 
 export interface ChartBarDescIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ChartBarDescIcon = memo(forwardRef<SVGSVGElement, ChartBarDescIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ChartBarDescIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ChartBarDescIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ChartBarDescIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ChartBarDescIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularChartBarDescIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ChartBarDescIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ChartBarDescIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ChartBarDescIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ChartBarDescIconFill ref={ref} {...props} />;
+  if (duotone) return <ChartBarDescIconDuotone ref={ref} {...props} />;
+  return <RegularChartBarDescIcon ref={ref} {...props} />;
 }));
 
 ChartBarDescIcon.displayName = 'ChartBarDescIcon';

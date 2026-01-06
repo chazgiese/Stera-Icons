@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { GiftBoxIcon as RegularGiftBoxIcon } from './gift-box';
-import { GiftBoxIconBold } from './gift-box-bold';
-import { GiftBoxIconFilled } from './gift-box-filled';
-import { GiftBoxIconFilltone } from './gift-box-filltone';
-import { GiftBoxIconLinetone } from './gift-box-linetone';
+import { GiftBoxIconDuotone as GiftBoxIconDuotone } from './gift-box-duotone';
+import { GiftBoxIconBold as GiftBoxIconBold } from './gift-box-bold';
+import { GiftBoxIconBoldDuotone as GiftBoxIconBoldDuotone } from './gift-box-bold-duotone';
+import { GiftBoxIconFill as GiftBoxIconFill } from './gift-box-fill';
+import { GiftBoxIconFillDuotone as GiftBoxIconFillDuotone } from './gift-box-fill-duotone';
 
 export interface GiftBoxIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const GiftBoxIcon = memo(forwardRef<SVGSVGElement, GiftBoxIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <GiftBoxIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <GiftBoxIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <GiftBoxIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <GiftBoxIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularGiftBoxIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <GiftBoxIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <GiftBoxIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <GiftBoxIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <GiftBoxIconFill ref={ref} {...props} />;
+  if (duotone) return <GiftBoxIconDuotone ref={ref} {...props} />;
+  return <RegularGiftBoxIcon ref={ref} {...props} />;
 }));
 
 GiftBoxIcon.displayName = 'GiftBoxIcon';

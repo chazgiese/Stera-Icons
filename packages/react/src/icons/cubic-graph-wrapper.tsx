@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CubicGraphIcon as RegularCubicGraphIcon } from './cubic-graph';
-import { CubicGraphIconBold } from './cubic-graph-bold';
-import { CubicGraphIconFilled } from './cubic-graph-filled';
-import { CubicGraphIconFilltone } from './cubic-graph-filltone';
-import { CubicGraphIconLinetone } from './cubic-graph-linetone';
+import { CubicGraphIconDuotone as CubicGraphIconDuotone } from './cubic-graph-duotone';
+import { CubicGraphIconBold as CubicGraphIconBold } from './cubic-graph-bold';
+import { CubicGraphIconBoldDuotone as CubicGraphIconBoldDuotone } from './cubic-graph-bold-duotone';
+import { CubicGraphIconFill as CubicGraphIconFill } from './cubic-graph-fill';
+import { CubicGraphIconFillDuotone as CubicGraphIconFillDuotone } from './cubic-graph-fill-duotone';
 
 export interface CubicGraphIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CubicGraphIcon = memo(forwardRef<SVGSVGElement, CubicGraphIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CubicGraphIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CubicGraphIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CubicGraphIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CubicGraphIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCubicGraphIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CubicGraphIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CubicGraphIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CubicGraphIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CubicGraphIconFill ref={ref} {...props} />;
+  if (duotone) return <CubicGraphIconDuotone ref={ref} {...props} />;
+  return <RegularCubicGraphIcon ref={ref} {...props} />;
 }));
 
 CubicGraphIcon.displayName = 'CubicGraphIcon';

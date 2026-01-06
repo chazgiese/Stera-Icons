@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextBIcon as RegularTextBIcon } from './text-b';
-import { TextBIconBold } from './text-b-bold';
-import { TextBIconFilled } from './text-b-filled';
-import { TextBIconFilltone } from './text-b-filltone';
-import { TextBIconLinetone } from './text-b-linetone';
+import { TextBIconDuotone as TextBIconDuotone } from './text-b-duotone';
+import { TextBIconBold as TextBIconBold } from './text-b-bold';
+import { TextBIconBoldDuotone as TextBIconBoldDuotone } from './text-b-bold-duotone';
+import { TextBIconFill as TextBIconFill } from './text-b-fill';
+import { TextBIconFillDuotone as TextBIconFillDuotone } from './text-b-fill-duotone';
 
 export interface TextBIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextBIcon = memo(forwardRef<SVGSVGElement, TextBIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextBIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextBIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextBIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextBIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextBIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextBIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextBIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextBIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextBIconFill ref={ref} {...props} />;
+  if (duotone) return <TextBIconDuotone ref={ref} {...props} />;
+  return <RegularTextBIcon ref={ref} {...props} />;
 }));
 
 TextBIcon.displayName = 'TextBIcon';

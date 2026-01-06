@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { ListCheckIcon as RegularListCheckIcon } from './list-check';
-import { ListCheckIconBold } from './list-check-bold';
-import { ListCheckIconFilled } from './list-check-filled';
-import { ListCheckIconFilltone } from './list-check-filltone';
-import { ListCheckIconLinetone } from './list-check-linetone';
+import { ListCheckIconDuotone as ListCheckIconDuotone } from './list-check-duotone';
+import { ListCheckIconBold as ListCheckIconBold } from './list-check-bold';
+import { ListCheckIconBoldDuotone as ListCheckIconBoldDuotone } from './list-check-bold-duotone';
+import { ListCheckIconFill as ListCheckIconFill } from './list-check-fill';
+import { ListCheckIconFillDuotone as ListCheckIconFillDuotone } from './list-check-fill-duotone';
 
 export interface ListCheckIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const ListCheckIcon = memo(forwardRef<SVGSVGElement, ListCheckIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <ListCheckIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <ListCheckIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <ListCheckIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <ListCheckIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularListCheckIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <ListCheckIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <ListCheckIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <ListCheckIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <ListCheckIconFill ref={ref} {...props} />;
+  if (duotone) return <ListCheckIconDuotone ref={ref} {...props} />;
+  return <RegularListCheckIcon ref={ref} {...props} />;
 }));
 
 ListCheckIcon.displayName = 'ListCheckIcon';

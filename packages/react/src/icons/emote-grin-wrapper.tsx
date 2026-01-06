@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { EmoteGrinIcon as RegularEmoteGrinIcon } from './emote-grin';
-import { EmoteGrinIconBold } from './emote-grin-bold';
-import { EmoteGrinIconFilled } from './emote-grin-filled';
-import { EmoteGrinIconFilltone } from './emote-grin-filltone';
-import { EmoteGrinIconLinetone } from './emote-grin-linetone';
+import { EmoteGrinIconDuotone as EmoteGrinIconDuotone } from './emote-grin-duotone';
+import { EmoteGrinIconBold as EmoteGrinIconBold } from './emote-grin-bold';
+import { EmoteGrinIconBoldDuotone as EmoteGrinIconBoldDuotone } from './emote-grin-bold-duotone';
+import { EmoteGrinIconFill as EmoteGrinIconFill } from './emote-grin-fill';
+import { EmoteGrinIconFillDuotone as EmoteGrinIconFillDuotone } from './emote-grin-fill-duotone';
 
 export interface EmoteGrinIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const EmoteGrinIcon = memo(forwardRef<SVGSVGElement, EmoteGrinIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <EmoteGrinIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <EmoteGrinIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <EmoteGrinIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <EmoteGrinIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularEmoteGrinIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <EmoteGrinIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <EmoteGrinIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <EmoteGrinIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <EmoteGrinIconFill ref={ref} {...props} />;
+  if (duotone) return <EmoteGrinIconDuotone ref={ref} {...props} />;
+  return <RegularEmoteGrinIcon ref={ref} {...props} />;
 }));
 
 EmoteGrinIcon.displayName = 'EmoteGrinIcon';

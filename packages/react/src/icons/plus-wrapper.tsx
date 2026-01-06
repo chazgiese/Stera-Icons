@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { PlusIcon as RegularPlusIcon } from './plus';
-import { PlusIconBold } from './plus-bold';
-import { PlusIconFilled } from './plus-filled';
-import { PlusIconFilltone } from './plus-filltone';
-import { PlusIconLinetone } from './plus-linetone';
+import { PlusIconDuotone as PlusIconDuotone } from './plus-duotone';
+import { PlusIconBold as PlusIconBold } from './plus-bold';
+import { PlusIconBoldDuotone as PlusIconBoldDuotone } from './plus-bold-duotone';
+import { PlusIconFill as PlusIconFill } from './plus-fill';
+import { PlusIconFillDuotone as PlusIconFillDuotone } from './plus-fill-duotone';
 
 export interface PlusIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const PlusIcon = memo(forwardRef<SVGSVGElement, PlusIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <PlusIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <PlusIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <PlusIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <PlusIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularPlusIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <PlusIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <PlusIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <PlusIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <PlusIconFill ref={ref} {...props} />;
+  if (duotone) return <PlusIconDuotone ref={ref} {...props} />;
+  return <RegularPlusIcon ref={ref} {...props} />;
 }));
 
 PlusIcon.displayName = 'PlusIcon';

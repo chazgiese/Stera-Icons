@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { TextSearchIcon as RegularTextSearchIcon } from './text-search';
-import { TextSearchIconBold } from './text-search-bold';
-import { TextSearchIconFilled } from './text-search-filled';
-import { TextSearchIconFilltone } from './text-search-filltone';
-import { TextSearchIconLinetone } from './text-search-linetone';
+import { TextSearchIconDuotone as TextSearchIconDuotone } from './text-search-duotone';
+import { TextSearchIconBold as TextSearchIconBold } from './text-search-bold';
+import { TextSearchIconBoldDuotone as TextSearchIconBoldDuotone } from './text-search-bold-duotone';
+import { TextSearchIconFill as TextSearchIconFill } from './text-search-fill';
+import { TextSearchIconFillDuotone as TextSearchIconFillDuotone } from './text-search-fill-duotone';
 
 export interface TextSearchIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const TextSearchIcon = memo(forwardRef<SVGSVGElement, TextSearchIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <TextSearchIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <TextSearchIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <TextSearchIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <TextSearchIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularTextSearchIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <TextSearchIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <TextSearchIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <TextSearchIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <TextSearchIconFill ref={ref} {...props} />;
+  if (duotone) return <TextSearchIconDuotone ref={ref} {...props} />;
+  return <RegularTextSearchIcon ref={ref} {...props} />;
 }));
 
 TextSearchIcon.displayName = 'TextSearchIcon';

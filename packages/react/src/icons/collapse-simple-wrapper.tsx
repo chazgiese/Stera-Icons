@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { CollapseSimpleIcon as RegularCollapseSimpleIcon } from './collapse-simple';
-import { CollapseSimpleIconBold } from './collapse-simple-bold';
-import { CollapseSimpleIconFilled } from './collapse-simple-filled';
-import { CollapseSimpleIconFilltone } from './collapse-simple-filltone';
-import { CollapseSimpleIconLinetone } from './collapse-simple-linetone';
+import { CollapseSimpleIconDuotone as CollapseSimpleIconDuotone } from './collapse-simple-duotone';
+import { CollapseSimpleIconBold as CollapseSimpleIconBold } from './collapse-simple-bold';
+import { CollapseSimpleIconBoldDuotone as CollapseSimpleIconBoldDuotone } from './collapse-simple-bold-duotone';
+import { CollapseSimpleIconFill as CollapseSimpleIconFill } from './collapse-simple-fill';
+import { CollapseSimpleIconFillDuotone as CollapseSimpleIconFillDuotone } from './collapse-simple-fill-duotone';
 
 export interface CollapseSimpleIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const CollapseSimpleIcon = memo(forwardRef<SVGSVGElement, CollapseSimpleIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <CollapseSimpleIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <CollapseSimpleIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <CollapseSimpleIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <CollapseSimpleIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularCollapseSimpleIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <CollapseSimpleIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <CollapseSimpleIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <CollapseSimpleIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <CollapseSimpleIconFill ref={ref} {...props} />;
+  if (duotone) return <CollapseSimpleIconDuotone ref={ref} {...props} />;
+  return <RegularCollapseSimpleIcon ref={ref} {...props} />;
 }));
 
 CollapseSimpleIcon.displayName = 'CollapseSimpleIcon';

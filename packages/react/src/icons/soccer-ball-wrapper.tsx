@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { SoccerBallIcon as RegularSoccerBallIcon } from './soccer-ball';
-import { SoccerBallIconBold } from './soccer-ball-bold';
-import { SoccerBallIconFilled } from './soccer-ball-filled';
-import { SoccerBallIconFilltone } from './soccer-ball-filltone';
-import { SoccerBallIconLinetone } from './soccer-ball-linetone';
+import { SoccerBallIconDuotone as SoccerBallIconDuotone } from './soccer-ball-duotone';
+import { SoccerBallIconBold as SoccerBallIconBold } from './soccer-ball-bold';
+import { SoccerBallIconBoldDuotone as SoccerBallIconBoldDuotone } from './soccer-ball-bold-duotone';
+import { SoccerBallIconFill as SoccerBallIconFill } from './soccer-ball-fill';
+import { SoccerBallIconFillDuotone as SoccerBallIconFillDuotone } from './soccer-ball-fill-duotone';
 
 export interface SoccerBallIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const SoccerBallIcon = memo(forwardRef<SVGSVGElement, SoccerBallIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <SoccerBallIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <SoccerBallIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <SoccerBallIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <SoccerBallIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularSoccerBallIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <SoccerBallIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <SoccerBallIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <SoccerBallIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <SoccerBallIconFill ref={ref} {...props} />;
+  if (duotone) return <SoccerBallIconDuotone ref={ref} {...props} />;
+  return <RegularSoccerBallIcon ref={ref} {...props} />;
 }));
 
 SoccerBallIcon.displayName = 'SoccerBallIcon';

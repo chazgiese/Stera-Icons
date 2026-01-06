@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { FolderTreeIcon as RegularFolderTreeIcon } from './folder-tree';
-import { FolderTreeIconBold } from './folder-tree-bold';
-import { FolderTreeIconFilled } from './folder-tree-filled';
-import { FolderTreeIconFilltone } from './folder-tree-filltone';
-import { FolderTreeIconLinetone } from './folder-tree-linetone';
+import { FolderTreeIconDuotone as FolderTreeIconDuotone } from './folder-tree-duotone';
+import { FolderTreeIconBold as FolderTreeIconBold } from './folder-tree-bold';
+import { FolderTreeIconBoldDuotone as FolderTreeIconBoldDuotone } from './folder-tree-bold-duotone';
+import { FolderTreeIconFill as FolderTreeIconFill } from './folder-tree-fill';
+import { FolderTreeIconFillDuotone as FolderTreeIconFillDuotone } from './folder-tree-fill-duotone';
 
 export interface FolderTreeIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const FolderTreeIcon = memo(forwardRef<SVGSVGElement, FolderTreeIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <FolderTreeIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <FolderTreeIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <FolderTreeIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <FolderTreeIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularFolderTreeIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <FolderTreeIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <FolderTreeIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <FolderTreeIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <FolderTreeIconFill ref={ref} {...props} />;
+  if (duotone) return <FolderTreeIconDuotone ref={ref} {...props} />;
+  return <RegularFolderTreeIcon ref={ref} {...props} />;
 }));
 
 FolderTreeIcon.displayName = 'FolderTreeIcon';

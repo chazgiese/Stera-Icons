@@ -1,32 +1,28 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps, IconVariant } from '../types';
+import type { IconProps } from '../types';
 import { AtSignIcon as RegularAtSignIcon } from './at-sign';
-import { AtSignIconBold } from './at-sign-bold';
-import { AtSignIconFilled } from './at-sign-filled';
-import { AtSignIconFilltone } from './at-sign-filltone';
-import { AtSignIconLinetone } from './at-sign-linetone';
+import { AtSignIconDuotone as AtSignIconDuotone } from './at-sign-duotone';
+import { AtSignIconBold as AtSignIconBold } from './at-sign-bold';
+import { AtSignIconBoldDuotone as AtSignIconBoldDuotone } from './at-sign-bold-duotone';
+import { AtSignIconFill as AtSignIconFill } from './at-sign-fill';
+import { AtSignIconFillDuotone as AtSignIconFillDuotone } from './at-sign-fill-duotone';
 
 export interface AtSignIconProps extends IconProps {
-  variant?: IconVariant;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
 }
 
 const AtSignIcon = memo(forwardRef<SVGSVGElement, AtSignIconProps>(({ 
-  variant = 'regular',
+  weight = 'regular',
+  duotone = false,
   ...props 
 }, ref) => {
-  switch (variant) {
-    case 'filled':
-      return <AtSignIconFilled ref={ref} {...props} />;
-    case 'bold':
-      return <AtSignIconBold ref={ref} {...props} />;
-    case 'filltone':
-      return <AtSignIconFilltone ref={ref} {...props} />;
-    case 'linetone':
-      return <AtSignIconLinetone ref={ref} {...props} />;
-    case 'regular':
-    default:
-      return <RegularAtSignIcon ref={ref} {...props} />;
-  }
+  if (weight === 'bold' && duotone) return <AtSignIconBoldDuotone ref={ref} {...props} />;
+  if (weight === 'bold') return <AtSignIconBold ref={ref} {...props} />;
+  if (weight === 'fill' && duotone) return <AtSignIconFillDuotone ref={ref} {...props} />;
+  if (weight === 'fill') return <AtSignIconFill ref={ref} {...props} />;
+  if (duotone) return <AtSignIconDuotone ref={ref} {...props} />;
+  return <RegularAtSignIcon ref={ref} {...props} />;
 }));
 
 AtSignIcon.displayName = 'AtSignIcon';

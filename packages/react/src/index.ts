@@ -494,7 +494,7 @@ export { NotebookIcon } from './icons/notebook-wrapper';
 export { NotebookLogIcon } from './icons/notebook-log-wrapper';
 export { OptionKeyIcon } from './icons/option-key-wrapper';
 export { OverlappingCirclesIcon } from './icons/overlapping-circles-wrapper';
-export { OverlappingCirclesAltIcon } from './icons/overlapping-circles-alt-wrapper';
+export { OverlappingCirclesDashIcon } from './icons/overlapping-circles-dash-wrapper';
 export { PaintPaletteIcon } from './icons/paint-palette-wrapper';
 export { PanelBottomFloatingIcon } from './icons/panel-bottom-floating-wrapper';
 export { PanelLeftFloatingIcon } from './icons/panel-left-floating-wrapper';
