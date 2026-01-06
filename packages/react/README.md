@@ -43,19 +43,29 @@ function App() {
 
 ### Variants
 
-Each icon supports five variants. The default is `regular`:
-
 ```tsx
 import { SearchIcon } from 'stera-icons';
 
-function App() {
+function SearchExamples() {
   return (
     <div>
-      <SearchIcon variant="regular" size={24} />
-      <SearchIcon variant="bold" size={24} />
-      <SearchIcon variant="filled" size={24} />
-      <SearchIcon variant="filltone" size={24} />
-      <SearchIcon variant="linetone" size={24} />
+      {/* Regular weight, no duotone (default) */}
+      <SearchIcon />
+      
+      {/* Regular weight with duotone */}
+      <SearchIcon duotone />
+      
+      {/* Bold weight, no duotone */}
+      <SearchIcon weight="bold" />
+      
+      {/* Bold weight with duotone */}
+      <SearchIcon weight="bold" duotone />
+      
+      {/* Fill weight, no duotone */}
+      <SearchIcon weight="fill" />
+      
+      {/* Fill weight with duotone */}
+      <SearchIcon weight="fill" duotone />
     </div>
   );
 }
@@ -121,36 +131,6 @@ function SearchButton() {
 
 .search-icon {
   color: #666;
-}
-```
-
-### Using Variants
-
-```tsx
-import { SearchIcon } from 'stera-icons';
-
-function SearchExamples() {
-  return (
-    <div>
-      {/* Regular weight, no duotone (default) */}
-      <SearchIcon />
-      
-      {/* Regular weight with duotone */}
-      <SearchIcon duotone />
-      
-      {/* Bold weight, no duotone */}
-      <SearchIcon weight="bold" />
-      
-      {/* Bold weight with duotone */}
-      <SearchIcon weight="bold" duotone />
-      
-      {/* Fill weight, no duotone */}
-      <SearchIcon weight="fill" />
-      
-      {/* Fill weight with duotone */}
-      <SearchIcon weight="fill" duotone />
-    </div>
-  );
 }
 ```
 

@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      id-token: write  # Required for OIDC trusted publishing
     
     steps:
       - name: Checkout
@@ -24,6 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          registry-url: 'https://registry.npmjs.org'
           
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -37,7 +39,6 @@ jobs:
           
       - name: Configure npm
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm config set registry https://registry.npmjs.org/
           
       - name: Install dependencies
@@ -46,9 +47,8 @@ jobs:
       - name: Build
         run: pnpm build
         
-      - name: Verify npm authentication
+      - name: Verify npm package access
         run: |
-          npm whoami
           npm view stera-icons --json || echo "Package not found or access denied"
         
       - name: Create Release Pull Request or Publish to npm
@@ -61,4 +61,4 @@ jobs:
           commit: "chore: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # NPM_TOKEN not needed - trusted publishing handles authentication
