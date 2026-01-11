@@ -28,7 +28,7 @@ const ChevronFullCircleUpIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12 8.25a1 1 0 0 1 .707.293l4.5 4.5a1 1 0 0 1-.707 1.707h-9a1 1 0 0 1-.707-1.707l4.5-4.5A1 1 0 0 1 12 8.25"
+          d="M11.023 8.37a1.25 1.25 0 0 1 1.954 0l3.48 4.349c.654.818.07 2.031-.978 2.031H8.522c-1.049 0-1.632-1.213-.977-2.031z"
         />
         <path
           fill="currentColor"

@@ -28,7 +28,7 @@ const ChevronFullSquareLeftIcon = memo(
       >
         <path
           fill="currentColor"
-          d="M12.543 7.396c.63-.63 1.707-.183 1.707.708v7.793c0 .89-1.077 1.336-1.707.707l-3.72-3.72a1.25 1.25 0 0 1 0-1.768z"
+          d="M12.875 7.74a1 1 0 0 1 1.625.78v6.96a1 1 0 0 1-1.625.78l-4.35-3.479a1 1 0 0 1 0-1.562z"
         />
         <path
           fill="currentColor"

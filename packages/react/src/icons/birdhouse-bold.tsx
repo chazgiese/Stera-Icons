@@ -29,7 +29,7 @@ const BirdhouseIconBold = memo(
         <path
           fill="currentColor"
           fillRule="evenodd"
-          d="M12 9a3.5 3.5 0 1 1 0 7.001 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
+          d="M12 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
           clipRule="evenodd"
         />
         <path

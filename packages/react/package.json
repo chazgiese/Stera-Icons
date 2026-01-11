@@ -654,6 +654,11 @@
       "import": "./dist/icons/BuildingIcon.mjs",
       "require": "./dist/icons/BuildingIcon.cjs"
     },
+    "./CalculatorIcon": {
+      "types": "./dist/icons/CalculatorIcon.d.ts",
+      "import": "./dist/icons/CalculatorIcon.mjs",
+      "require": "./dist/icons/CalculatorIcon.cjs"
+    },
     "./CalendarIcon": {
       "types": "./dist/icons/CalendarIcon.d.ts",
       "import": "./dist/icons/CalendarIcon.mjs",
@@ -859,6 +864,11 @@
       "import": "./dist/icons/ChatBoxDotsIcon.mjs",
       "require": "./dist/icons/ChatBoxDotsIcon.cjs"
     },
+    "./ChatBoxQuestionIcon": {
+      "types": "./dist/icons/ChatBoxQuestionIcon.d.ts",
+      "import": "./dist/icons/ChatBoxQuestionIcon.mjs",
+      "require": "./dist/icons/ChatBoxQuestionIcon.cjs"
+    },
     "./ChatBoxTextIcon": {
       "types": "./dist/icons/ChatBoxTextIcon.d.ts",
       "import": "./dist/icons/ChatBoxTextIcon.mjs",
@@ -883,6 +893,11 @@
       "types": "./dist/icons/ChatBubbleDotsIcon.d.ts",
       "import": "./dist/icons/ChatBubbleDotsIcon.mjs",
       "require": "./dist/icons/ChatBubbleDotsIcon.cjs"
+    },
+    "./ChatBubbleQuestionIcon": {
+      "types": "./dist/icons/ChatBubbleQuestionIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleQuestionIcon.mjs",
+      "require": "./dist/icons/ChatBubbleQuestionIcon.cjs"
     },
     "./ChatBubbleTextIcon": {
       "types": "./dist/icons/ChatBubbleTextIcon.d.ts",
@@ -1078,6 +1093,11 @@
       "types": "./dist/icons/ChevronsLeftIcon.d.ts",
       "import": "./dist/icons/ChevronsLeftIcon.mjs",
       "require": "./dist/icons/ChevronsLeftIcon.cjs"
+    },
+    "./ChevronsLeftRightEllipsisIcon": {
+      "types": "./dist/icons/ChevronsLeftRightEllipsisIcon.d.ts",
+      "import": "./dist/icons/ChevronsLeftRightEllipsisIcon.mjs",
+      "require": "./dist/icons/ChevronsLeftRightEllipsisIcon.cjs"
     },
     "./ChevronsRightIcon": {
       "types": "./dist/icons/ChevronsRightIcon.d.ts",
@@ -1379,6 +1399,11 @@
       "import": "./dist/icons/CubeIcon.mjs",
       "require": "./dist/icons/CubeIcon.cjs"
     },
+    "./CubeDashIcon": {
+      "types": "./dist/icons/CubeDashIcon.d.ts",
+      "import": "./dist/icons/CubeDashIcon.mjs",
+      "require": "./dist/icons/CubeDashIcon.cjs"
+    },
     "./CubePackageIcon": {
       "types": "./dist/icons/CubePackageIcon.d.ts",
       "import": "./dist/icons/CubePackageIcon.mjs",
@@ -1549,6 +1574,11 @@
       "import": "./dist/icons/DocumentDetailIcon.mjs",
       "require": "./dist/icons/DocumentDetailIcon.cjs"
     },
+    "./DocumentSearchIcon": {
+      "types": "./dist/icons/DocumentSearchIcon.d.ts",
+      "import": "./dist/icons/DocumentSearchIcon.mjs",
+      "require": "./dist/icons/DocumentSearchIcon.cjs"
+    },
     "./DollarBillIcon": {
       "types": "./dist/icons/DollarBillIcon.d.ts",
       "import": "./dist/icons/DollarBillIcon.mjs",
@@ -1558,6 +1588,11 @@
       "types": "./dist/icons/DownloadIcon.d.ts",
       "import": "./dist/icons/DownloadIcon.mjs",
       "require": "./dist/icons/DownloadIcon.cjs"
+    },
+    "./DraftingCompassIcon": {
+      "types": "./dist/icons/DraftingCompassIcon.d.ts",
+      "import": "./dist/icons/DraftingCompassIcon.mjs",
+      "require": "./dist/icons/DraftingCompassIcon.cjs"
     },
     "./DragHandleIcon": {
       "types": "./dist/icons/DragHandleIcon.d.ts",
@@ -1658,6 +1693,11 @@
       "types": "./dist/icons/FileCabinetIcon.d.ts",
       "import": "./dist/icons/FileCabinetIcon.mjs",
       "require": "./dist/icons/FileCabinetIcon.cjs"
+    },
+    "./FilmStripIcon": {
+      "types": "./dist/icons/FilmStripIcon.d.ts",
+      "import": "./dist/icons/FilmStripIcon.mjs",
+      "require": "./dist/icons/FilmStripIcon.cjs"
     },
     "./FinderIcon": {
       "types": "./dist/icons/FinderIcon.d.ts",
@@ -1819,6 +1859,11 @@
       "import": "./dist/icons/FootballIcon.mjs",
       "require": "./dist/icons/FootballIcon.cjs"
     },
+    "./ForkKnifeIcon": {
+      "types": "./dist/icons/ForkKnifeIcon.d.ts",
+      "import": "./dist/icons/ForkKnifeIcon.mjs",
+      "require": "./dist/icons/ForkKnifeIcon.cjs"
+    },
     "./FortressIcon": {
       "types": "./dist/icons/FortressIcon.d.ts",
       "import": "./dist/icons/FortressIcon.mjs",
@@ -1828,6 +1873,76 @@
       "types": "./dist/icons/FrameIcon.d.ts",
       "import": "./dist/icons/FrameIcon.mjs",
       "require": "./dist/icons/FrameIcon.cjs"
+    },
+    "./GaugeDots0PercentIcon": {
+      "types": "./dist/icons/GaugeDots0PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots0PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots0PercentIcon.cjs"
+    },
+    "./GaugeDots100PercentIcon": {
+      "types": "./dist/icons/GaugeDots100PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots100PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots100PercentIcon.cjs"
+    },
+    "./GaugeDots15PercentIcon": {
+      "types": "./dist/icons/GaugeDots15PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots15PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots15PercentIcon.cjs"
+    },
+    "./GaugeDots33PercentIcon": {
+      "types": "./dist/icons/GaugeDots33PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots33PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots33PercentIcon.cjs"
+    },
+    "./GaugeDots50PercentIcon": {
+      "types": "./dist/icons/GaugeDots50PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots50PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots50PercentIcon.cjs"
+    },
+    "./GaugeDots66PercentIcon": {
+      "types": "./dist/icons/GaugeDots66PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots66PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots66PercentIcon.cjs"
+    },
+    "./GaugeDots85PercentIcon": {
+      "types": "./dist/icons/GaugeDots85PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeDots85PercentIcon.mjs",
+      "require": "./dist/icons/GaugeDots85PercentIcon.cjs"
+    },
+    "./GaugeLines0PercentIcon": {
+      "types": "./dist/icons/GaugeLines0PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines0PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines0PercentIcon.cjs"
+    },
+    "./GaugeLines100PercentIcon": {
+      "types": "./dist/icons/GaugeLines100PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines100PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines100PercentIcon.cjs"
+    },
+    "./GaugeLines15PercentIcon": {
+      "types": "./dist/icons/GaugeLines15PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines15PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines15PercentIcon.cjs"
+    },
+    "./GaugeLines33PercentIcon": {
+      "types": "./dist/icons/GaugeLines33PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines33PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines33PercentIcon.cjs"
+    },
+    "./GaugeLines50PercentIcon": {
+      "types": "./dist/icons/GaugeLines50PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines50PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines50PercentIcon.cjs"
+    },
+    "./GaugeLines66PercentIcon": {
+      "types": "./dist/icons/GaugeLines66PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines66PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines66PercentIcon.cjs"
+    },
+    "./GaugeLines85PercentIcon": {
+      "types": "./dist/icons/GaugeLines85PercentIcon.d.ts",
+      "import": "./dist/icons/GaugeLines85PercentIcon.mjs",
+      "require": "./dist/icons/GaugeLines85PercentIcon.cjs"
     },
     "./GavelIcon": {
       "types": "./dist/icons/GavelIcon.d.ts",
@@ -2044,6 +2159,11 @@
       "import": "./dist/icons/InfoCircleIcon.mjs",
       "require": "./dist/icons/InfoCircleIcon.cjs"
     },
+    "./InfoSquareIcon": {
+      "types": "./dist/icons/InfoSquareIcon.d.ts",
+      "import": "./dist/icons/InfoSquareIcon.mjs",
+      "require": "./dist/icons/InfoSquareIcon.cjs"
+    },
     "./KeyIcon": {
       "types": "./dist/icons/KeyIcon.d.ts",
       "import": "./dist/icons/KeyIcon.mjs",
@@ -2073,6 +2193,11 @@
       "types": "./dist/icons/LabelAltIcon.d.ts",
       "import": "./dist/icons/LabelAltIcon.mjs",
       "require": "./dist/icons/LabelAltIcon.cjs"
+    },
+    "./LassoDashIcon": {
+      "types": "./dist/icons/LassoDashIcon.d.ts",
+      "import": "./dist/icons/LassoDashIcon.mjs",
+      "require": "./dist/icons/LassoDashIcon.cjs"
     },
     "./LayersIcon": {
       "types": "./dist/icons/LayersIcon.d.ts",
@@ -2158,6 +2283,11 @@
       "types": "./dist/icons/LineSegmentVIcon.d.ts",
       "import": "./dist/icons/LineSegmentVIcon.mjs",
       "require": "./dist/icons/LineSegmentVIcon.cjs"
+    },
+    "./LineWeightIcon": {
+      "types": "./dist/icons/LineWeightIcon.d.ts",
+      "import": "./dist/icons/LineWeightIcon.mjs",
+      "require": "./dist/icons/LineWeightIcon.cjs"
     },
     "./LinkIcon": {
       "types": "./dist/icons/LinkIcon.d.ts",
@@ -2864,6 +2994,16 @@
       "import": "./dist/icons/ScribbleIcon.mjs",
       "require": "./dist/icons/ScribbleIcon.cjs"
     },
+    "./ScrollIcon": {
+      "types": "./dist/icons/ScrollIcon.d.ts",
+      "import": "./dist/icons/ScrollIcon.mjs",
+      "require": "./dist/icons/ScrollIcon.cjs"
+    },
+    "./ScrollTextIcon": {
+      "types": "./dist/icons/ScrollTextIcon.d.ts",
+      "import": "./dist/icons/ScrollTextIcon.mjs",
+      "require": "./dist/icons/ScrollTextIcon.cjs"
+    },
     "./SearchIcon": {
       "types": "./dist/icons/SearchIcon.d.ts",
       "import": "./dist/icons/SearchIcon.mjs",
@@ -2883,6 +3023,11 @@
       "types": "./dist/icons/SeedlingIcon.d.ts",
       "import": "./dist/icons/SeedlingIcon.mjs",
       "require": "./dist/icons/SeedlingIcon.cjs"
+    },
+    "./SelectFieldIcon": {
+      "types": "./dist/icons/SelectFieldIcon.d.ts",
+      "import": "./dist/icons/SelectFieldIcon.mjs",
+      "require": "./dist/icons/SelectFieldIcon.cjs"
     },
     "./SendIcon": {
       "types": "./dist/icons/SendIcon.d.ts",
@@ -3119,6 +3264,11 @@
       "import": "./dist/icons/SpinnerIcon.mjs",
       "require": "./dist/icons/SpinnerIcon.cjs"
     },
+    "./SpiralIcon": {
+      "types": "./dist/icons/SpiralIcon.d.ts",
+      "import": "./dist/icons/SpiralIcon.mjs",
+      "require": "./dist/icons/SpiralIcon.cjs"
+    },
     "./SquareIcon": {
       "types": "./dist/icons/SquareIcon.d.ts",
       "import": "./dist/icons/SquareIcon.mjs",
@@ -3179,6 +3329,11 @@
       "import": "./dist/icons/TargetIcon.mjs",
       "require": "./dist/icons/TargetIcon.cjs"
     },
+    "./TelescopeIcon": {
+      "types": "./dist/icons/TelescopeIcon.d.ts",
+      "import": "./dist/icons/TelescopeIcon.mjs",
+      "require": "./dist/icons/TelescopeIcon.cjs"
+    },
     "./TennisBallIcon": {
       "types": "./dist/icons/TennisBallIcon.d.ts",
       "import": "./dist/icons/TennisBallIcon.mjs",
@@ -3198,6 +3353,11 @@
       "types": "./dist/icons/TextIcon.d.ts",
       "import": "./dist/icons/TextIcon.mjs",
       "require": "./dist/icons/TextIcon.cjs"
+    },
+    "./TextAiIcon": {
+      "types": "./dist/icons/TextAiIcon.d.ts",
+      "import": "./dist/icons/TextAiIcon.mjs",
+      "require": "./dist/icons/TextAiIcon.cjs"
     },
     "./TextAlignCenterIcon": {
       "types": "./dist/icons/TextAlignCenterIcon.d.ts",

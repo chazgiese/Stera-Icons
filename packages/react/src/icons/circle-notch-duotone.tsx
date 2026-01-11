@@ -27,17 +27,15 @@ const CircleNotchIconDuotone = memo(
         {...props}
       >
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeWidth={1.5}
-          d="M19.071 4.929a10 10 0 1 1-14.142 0"
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M12.528 1.263a10.75 10.75 0 0 1 7.074 3.135.75.75 0 0 0-1.061 1.061 9.25 9.25 0 0 0-13.082 0 .75.75 0 0 0-1.06-1.06 10.75 10.75 0 0 1 7.073-3.136L12 1.25z"
+          clipRule="evenodd"
+          opacity={0.4}
         />
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeWidth={1.5}
-          d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"
-          opacity={0.4}
+          fill="currentColor"
+          d="M18.541 4.399a.75.75 0 0 1 1.06 0 10.75 10.75 0 1 1-15.202 0 .75.75 0 0 1 1.06 1.06 9.25 9.25 0 1 0 13.082 0 .75.75 0 0 1 0-1.06"
         />
       </svg>
     ))

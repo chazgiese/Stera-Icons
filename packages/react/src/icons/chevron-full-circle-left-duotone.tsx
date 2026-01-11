@@ -35,7 +35,7 @@ const ChevronFullCircleLeftIconDuotone = memo(
         />
         <path
           fill="currentColor"
-          d="M12.97 6.97a.75.75 0 0 1 1.28.53v9a.75.75 0 0 1-1.28.53l-4.5-4.5a.75.75 0 0 1 0-1.06z"
+          d="M12.875 7.739a1 1 0 0 1 1.625.781v6.96a1 1 0 0 1-1.625.78l-4.35-3.479c-.5-.4-.5-1.162 0-1.562z"
         />
       </svg>
     ))

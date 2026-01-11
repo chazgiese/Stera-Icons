@@ -35,7 +35,7 @@ const ChevronFullSquareUpIconDuotone = memo(
         />
         <path
           fill="currentColor"
-          d="M11.47 8.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28z"
+          d="M11.218 8.525c.4-.5 1.163-.5 1.563 0l3.48 4.35a1 1 0 0 1-.782 1.625H8.52a1 1 0 0 1-.781-1.625z"
         />
       </svg>
     ))

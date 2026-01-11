@@ -32,7 +32,7 @@ const CameraOffIconBoldDuotone = memo(
         </g>
         <path
           fill="currentColor"
-          d="M1.793 1.793a1 1 0 0 1 1.414 0l20 20a1 1 0 0 1-1.414 1.414l-20-20a1 1 0 0 1 0-1.414"
+          d="M1.793 1.793a1 1 0 0 1 1.414 0l20 20a1 1 0 1 1-1.414 1.414l-20-20a1 1 0 0 1 0-1.414"
         />
       </svg>
     ))

@@ -28,7 +28,7 @@ const ChevronFullCircleLeftIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M12.793 6.793A1 1 0 0 1 14.5 7.5v9a1 1 0 0 1-1.707.707l-4.5-4.5a1 1 0 0 1 0-1.414z"
+          d="M12.719 7.544c.818-.655 2.031-.072 2.031.977v6.958c0 1.049-1.213 1.632-2.031.977l-4.35-3.48a1.25 1.25 0 0 1 0-1.953z"
         />
         <path
           fill="currentColor"

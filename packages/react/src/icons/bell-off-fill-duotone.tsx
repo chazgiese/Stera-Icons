@@ -36,7 +36,7 @@ const BellOffIconFillDuotone = memo(
         </g>
         <path
           fill="currentColor"
-          d="M2.293 2.293a1 1 0 0 1 1.414 0l18 18a1 1 0 0 1-1.414 1.414l-18-18a1 1 0 0 1 0-1.414"
+          d="M2.293 2.293a1 1 0 0 1 1.414 0l18 18a1 1 0 1 1-1.414 1.414l-18-18a1 1 0 0 1 0-1.414"
         />
       </svg>
     ))
