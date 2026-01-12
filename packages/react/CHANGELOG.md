@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 6.1.1
+
+### Patch Changes
+
+- 703184f: Update icon modifications
+
 ## 6.1.0
 
 ### Minor Changes
