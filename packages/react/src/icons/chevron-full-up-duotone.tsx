@@ -27,16 +27,13 @@ const ChevronFullUpIconDuotone = memo(
         {...props}
       >
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="m5 15 7-7 7 7"
-        />
-        <path
           fill="currentColor"
           d="M18.47 15.53c.146.147.338.22.53.22H5a.748.748 0 0 0 .53-.22l1.28-1.28h10.38z"
           opacity={0.4}
+        />
+        <path
+          fill="currentColor"
+          d="M11.47 7.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 1 1-1.06 1.06L12 9.06l-6.47 6.47a.75.75 0 1 1-1.06-1.06z"
         />
       </svg>
     ))

@@ -3354,11 +3354,6 @@
       "import": "./dist/icons/TextIcon.mjs",
       "require": "./dist/icons/TextIcon.cjs"
     },
-    "./TextAiIcon": {
-      "types": "./dist/icons/TextAiIcon.d.ts",
-      "import": "./dist/icons/TextAiIcon.mjs",
-      "require": "./dist/icons/TextAiIcon.cjs"
-    },
     "./TextAlignCenterIcon": {
       "types": "./dist/icons/TextAlignCenterIcon.d.ts",
       "import": "./dist/icons/TextAlignCenterIcon.mjs",
@@ -3398,6 +3393,11 @@
       "types": "./dist/icons/TextSearchIcon.d.ts",
       "import": "./dist/icons/TextSearchIcon.mjs",
       "require": "./dist/icons/TextSearchIcon.cjs"
+    },
+    "./TextSparkleIcon": {
+      "types": "./dist/icons/TextSparkleIcon.d.ts",
+      "import": "./dist/icons/TextSparkleIcon.mjs",
+      "require": "./dist/icons/TextSparkleIcon.cjs"
     },
     "./TextSquareIcon": {
       "types": "./dist/icons/TextSquareIcon.d.ts",

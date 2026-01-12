@@ -29,14 +29,11 @@ const ArrowDownIconDuotone = memo(
         <path
           fill="currentColor"
           d="M12 4.25a.75.75 0 0 1 .75.75v12.19l-.75.75-.75-.75V5a.75.75 0 0 1 .75-.75"
-          opacity={0.32}
+          opacity={0.4}
         />
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="m5 12 7 7 7-7"
+          fill="currentColor"
+          d="M18.47 11.47a.75.75 0 1 1 1.06 1.06l-7 7a.75.75 0 0 1-1.06 0l-7-7a.75.75 0 1 1 1.06-1.06L12 17.94z"
         />
       </svg>
     ))

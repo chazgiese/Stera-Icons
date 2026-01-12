@@ -21,43 +21,57 @@ pnpm add stera-icons
 
 ## Features
 
+- Three weights: Regular, Bold, Fill
+- Duotone style option
 - Tree-shakeable imports - only bundle what you use
 - TypeScript support with full type safety
-- Five variants per icon: regular, bold, filled, filltone, linetone
 - Accessible by default with ARIA support
-- Optimized SVGs - each icon adds roughly 1-2KB to your bundle
+- Optimized SVGs
 
 ## Usage
 
 ```tsx
-import { SearchIcon, HeartIcon, StarIcon } from 'stera-icons';
+import { HeartIcon } from 'stera-icons';
 
 function App() {
   return (
     <div>
-      <SearchIcon size={24} color="#646cff" aria-label="Search" />
-      <HeartIcon size={20} color="red" />
-      <StarIcon size={32} />
+      <HeartIcon />
     </div>
   );
 }
 ```
 
-### Variants
+## Icon Naming
 
-Each icon supports five variants. The default is `regular`:
+All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
+
+
+### Using Variants
 
 ```tsx
 import { SearchIcon } from 'stera-icons';
 
-function App() {
+function SearchExamples() {
   return (
     <div>
-      <SearchIcon variant="regular" size={24} />
-      <SearchIcon variant="bold" size={24} />
-      <SearchIcon variant="filled" size={24} />
-      <SearchIcon variant="filltone" size={24} />
-      <SearchIcon variant="linetone" size={24} />
+      {/* Regular weight, no duotone (default) */}
+      <SearchIcon />
+      
+      {/* Regular weight with duotone */}
+      <SearchIcon duotone />
+      
+      {/* Bold weight, no duotone */}
+      <SearchIcon weight="bold" />
+      
+      {/* Bold weight with duotone */}
+      <SearchIcon weight="bold" duotone />
+      
+      {/* Fill weight, no duotone */}
+      <SearchIcon weight="fill" />
+      
+      {/* Fill weight with duotone */}
+      <SearchIcon weight="fill" duotone />
     </div>
   );
 }
@@ -91,70 +105,6 @@ All icons accept these props:
 | `aria-label` | `string` | - | Accessible label for screen readers |
 | `aria-hidden` | `boolean` | - | Hide from screen readers |
 | `...props` | `SVGProps<SVGSVGElement>` | - | All other SVG props |
-
-## Icon Naming
-
-All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
-
-## Examples
-
-### Styling with CSS
-
-```tsx
-import { SearchIcon } from 'stera-icons';
-
-function SearchButton() {
-  return (
-    <button className="search-btn">
-      <SearchIcon size={20} className="search-icon" />
-      Search
-    </button>
-  );
-}
-```
-
-```css
-.search-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-}
-
-.search-icon {
-  color: #666;
-}
-```
-
-### Using Variants
-
-```tsx
-import { SearchIcon } from 'stera-icons';
-
-function SearchExamples() {
-  return (
-    <div>
-      {/* Regular weight, no duotone (default) */}
-      <SearchIcon />
-      
-      {/* Regular weight with duotone */}
-      <SearchIcon duotone />
-      
-      {/* Bold weight, no duotone */}
-      <SearchIcon weight="bold" />
-      
-      {/* Bold weight with duotone */}
-      <SearchIcon weight="bold" duotone />
-      
-      {/* Fill weight, no duotone */}
-      <SearchIcon weight="fill" />
-      
-      {/* Fill weight with duotone */}
-      <SearchIcon weight="fill" duotone />
-    </div>
-  );
-}
-```
 
 ### Dynamic Icon Loading
 

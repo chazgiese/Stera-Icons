@@ -32,10 +32,10 @@ const AtSignIconDuotone = memo(
           opacity={0.4}
         />
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeWidth={1.5}
-          d="M16 8v5c0 2.596 1.501 3.844 3 3.722M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M16 7.25a.75.75 0 0 1 .75.75v5c0 1.155.333 1.923.744 2.377.409.451.932.64 1.445.598a.75.75 0 0 1 .122 1.495c-.986.08-1.962-.295-2.68-1.086a4.1 4.1 0 0 1-.777-1.294 4.75 4.75 0 1 1-.354-6.552V8a.75.75 0 0 1 .75-.75m-4 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5"
+          clipRule="evenodd"
         />
       </svg>
     ))

@@ -32,11 +32,8 @@ const ChevronFullLeftIconDuotone = memo(
           opacity={0.4}
         />
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="m15 5-7 7 7 7"
+          fill="currentColor"
+          d="M14.47 4.47a.75.75 0 1 1 1.06 1.06L9.06 12l6.47 6.47a.75.75 0 1 1-1.06 1.06l-7-7a.75.75 0 0 1 0-1.06z"
         />
       </svg>
     ))

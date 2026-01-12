@@ -32,11 +32,8 @@ const CursorOgIconDuotone = memo(
           opacity={0.4}
         />
         <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="m14.588 14.383 5.174-.692L7 2.449l.005 17.008 3.938-3.427"
+          fill="currentColor"
+          d="M6.691 1.766a.75.75 0 0 1 .805.12l12.762 11.242a.75.75 0 0 1-.397 1.307l-5.174.692a.75.75 0 0 1-.198-1.487l3.541-.475L7.75 4.11l.004 13.702 2.697-2.346a.75.75 0 1 1 .984 1.132l-3.938 3.425a.751.751 0 0 1-1.242-.565L6.25 2.45a.75.75 0 0 1 .441-.683"
         />
       </svg>
     ))
