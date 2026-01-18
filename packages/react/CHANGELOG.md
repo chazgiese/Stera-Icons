@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 6.2.0
+
+### Minor Changes
+
+- 755f8f2: Add 32 new icons including activity, angle, and additional icon variants
+
 ## 6.1.1
 
 ### Patch Changes
