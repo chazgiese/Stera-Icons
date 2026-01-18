@@ -15,5 +15,6 @@ const CpuAmdFill = memo(
 
 CpuAmdFill.displayName = 'CpuAmdFill';
 
-export { CpuAmdFill };
+// Triple export pattern (lucide-react style)
+export { CpuAmdFill, CpuAmdFill as CpuAmdFillIcon, CpuAmdFill as SiCpuAmdFill };
 export type { CpuAmdFillProps };

@@ -13,7 +13,8 @@ export interface FlashProps extends IconProps {
 }
 
 /**
- * Flash with dynamic weight and duotone props.
+ * Flash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlashRegular } from 'stera-icons/FlashRegular';
  */
@@ -32,4 +33,5 @@ const Flash = memo(forwardRef<SVGSVGElement, FlashProps>(({
 
 Flash.displayName = 'Flash';
 
-export { Flash };
+// Triple export pattern (lucide-react style)
+export { Flash, Flash as FlashIcon, Flash as SiFlash };

@@ -13,7 +13,8 @@ export interface ImagePileProps extends IconProps {
 }
 
 /**
- * ImagePile with dynamic weight and duotone props.
+ * ImagePile - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ImagePileRegular } from 'stera-icons/ImagePileRegular';
  */
@@ -32,4 +33,5 @@ const ImagePile = memo(forwardRef<SVGSVGElement, ImagePileProps>(({
 
 ImagePile.displayName = 'ImagePile';
 
-export { ImagePile };
+// Triple export pattern (lucide-react style)
+export { ImagePile, ImagePile as ImagePileIcon, ImagePile as SiImagePile };

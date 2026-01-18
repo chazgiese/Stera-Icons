@@ -16,5 +16,6 @@ const ScanSearchBold = memo(
 
 ScanSearchBold.displayName = 'ScanSearchBold';
 
-export { ScanSearchBold };
+// Triple export pattern (lucide-react style)
+export { ScanSearchBold, ScanSearchBold as ScanSearchBoldIcon, ScanSearchBold as SiScanSearchBold };
 export type { ScanSearchBoldProps };

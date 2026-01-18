@@ -14,5 +14,6 @@ const ChartLineDescFill = memo(
 
 ChartLineDescFill.displayName = 'ChartLineDescFill';
 
-export { ChartLineDescFill };
+// Triple export pattern (lucide-react style)
+export { ChartLineDescFill, ChartLineDescFill as ChartLineDescFillIcon, ChartLineDescFill as SiChartLineDescFill };
 export type { ChartLineDescFillProps };

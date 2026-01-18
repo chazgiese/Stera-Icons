@@ -14,5 +14,6 @@ const TreeDeciduousBold = memo(
 
 TreeDeciduousBold.displayName = 'TreeDeciduousBold';
 
-export { TreeDeciduousBold };
+// Triple export pattern (lucide-react style)
+export { TreeDeciduousBold, TreeDeciduousBold as TreeDeciduousBoldIcon, TreeDeciduousBold as SiTreeDeciduousBold };
 export type { TreeDeciduousBoldProps };

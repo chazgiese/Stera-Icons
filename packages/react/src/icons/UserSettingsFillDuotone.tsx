@@ -15,5 +15,6 @@ const UserSettingsFillDuotone = memo(
 
 UserSettingsFillDuotone.displayName = 'UserSettingsFillDuotone';
 
-export { UserSettingsFillDuotone };
+// Triple export pattern (lucide-react style)
+export { UserSettingsFillDuotone, UserSettingsFillDuotone as UserSettingsFillDuotoneIcon, UserSettingsFillDuotone as SiUserSettingsFillDuotone };
 export type { UserSettingsFillDuotoneProps };

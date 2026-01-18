@@ -15,5 +15,6 @@ const ChatBoxTextFillDuotone = memo(
 
 ChatBoxTextFillDuotone.displayName = 'ChatBoxTextFillDuotone';
 
-export { ChatBoxTextFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ChatBoxTextFillDuotone, ChatBoxTextFillDuotone as ChatBoxTextFillDuotoneIcon, ChatBoxTextFillDuotone as SiChatBoxTextFillDuotone };
 export type { ChatBoxTextFillDuotoneProps };

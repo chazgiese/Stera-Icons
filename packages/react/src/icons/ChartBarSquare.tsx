@@ -13,7 +13,8 @@ export interface ChartBarSquareProps extends IconProps {
 }
 
 /**
- * ChartBarSquare with dynamic weight and duotone props.
+ * ChartBarSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarSquareRegular } from 'stera-icons/ChartBarSquareRegular';
  */
@@ -32,4 +33,5 @@ const ChartBarSquare = memo(forwardRef<SVGSVGElement, ChartBarSquareProps>(({
 
 ChartBarSquare.displayName = 'ChartBarSquare';
 
-export { ChartBarSquare };
+// Triple export pattern (lucide-react style)
+export { ChartBarSquare, ChartBarSquare as ChartBarSquareIcon, ChartBarSquare as SiChartBarSquare };

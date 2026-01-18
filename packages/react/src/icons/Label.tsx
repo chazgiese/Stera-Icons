@@ -13,7 +13,8 @@ export interface LabelProps extends IconProps {
 }
 
 /**
- * Label with dynamic weight and duotone props.
+ * Label - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LabelRegular } from 'stera-icons/LabelRegular';
  */
@@ -32,4 +33,5 @@ const Label = memo(forwardRef<SVGSVGElement, LabelProps>(({
 
 Label.displayName = 'Label';
 
-export { Label };
+// Triple export pattern (lucide-react style)
+export { Label, Label as LabelIcon, Label as SiLabel };

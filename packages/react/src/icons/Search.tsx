@@ -13,7 +13,8 @@ export interface SearchProps extends IconProps {
 }
 
 /**
- * Search with dynamic weight and duotone props.
+ * Search - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SearchRegular } from 'stera-icons/SearchRegular';
  */
@@ -32,4 +33,5 @@ const Search = memo(forwardRef<SVGSVGElement, SearchProps>(({
 
 Search.displayName = 'Search';
 
-export { Search };
+// Triple export pattern (lucide-react style)
+export { Search, Search as SearchIcon, Search as SiSearch };

@@ -13,7 +13,8 @@ export interface CalendarOffProps extends IconProps {
 }
 
 /**
- * CalendarOff with dynamic weight and duotone props.
+ * CalendarOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalendarOffRegular } from 'stera-icons/CalendarOffRegular';
  */
@@ -32,4 +33,5 @@ const CalendarOff = memo(forwardRef<SVGSVGElement, CalendarOffProps>(({
 
 CalendarOff.displayName = 'CalendarOff';
 
-export { CalendarOff };
+// Triple export pattern (lucide-react style)
+export { CalendarOff, CalendarOff as CalendarOffIcon, CalendarOff as SiCalendarOff };

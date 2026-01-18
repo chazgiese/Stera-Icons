@@ -13,7 +13,8 @@ export interface ListSimpleProps extends IconProps {
 }
 
 /**
- * ListSimple with dynamic weight and duotone props.
+ * ListSimple - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListSimpleRegular } from 'stera-icons/ListSimpleRegular';
  */
@@ -32,4 +33,5 @@ const ListSimple = memo(forwardRef<SVGSVGElement, ListSimpleProps>(({
 
 ListSimple.displayName = 'ListSimple';
 
-export { ListSimple };
+// Triple export pattern (lucide-react style)
+export { ListSimple, ListSimple as ListSimpleIcon, ListSimple as SiListSimple };

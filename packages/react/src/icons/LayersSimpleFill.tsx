@@ -14,5 +14,6 @@ const LayersSimpleFill = memo(
 
 LayersSimpleFill.displayName = 'LayersSimpleFill';
 
-export { LayersSimpleFill };
+// Triple export pattern (lucide-react style)
+export { LayersSimpleFill, LayersSimpleFill as LayersSimpleFillIcon, LayersSimpleFill as SiLayersSimpleFill };
 export type { LayersSimpleFillProps };

@@ -14,5 +14,6 @@ const ContrastBold = memo(
 
 ContrastBold.displayName = 'ContrastBold';
 
-export { ContrastBold };
+// Triple export pattern (lucide-react style)
+export { ContrastBold, ContrastBold as ContrastBoldIcon, ContrastBold as SiContrastBold };
 export type { ContrastBoldProps };

@@ -14,5 +14,6 @@ const PlayBold = memo(
 
 PlayBold.displayName = 'PlayBold';
 
-export { PlayBold };
+// Triple export pattern (lucide-react style)
+export { PlayBold, PlayBold as PlayBoldIcon, PlayBold as SiPlayBold };
 export type { PlayBoldProps };

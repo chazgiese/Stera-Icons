@@ -13,7 +13,8 @@ export interface ChartDonutProps extends IconProps {
 }
 
 /**
- * ChartDonut with dynamic weight and duotone props.
+ * ChartDonut - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartDonutRegular } from 'stera-icons/ChartDonutRegular';
  */
@@ -32,4 +33,5 @@ const ChartDonut = memo(forwardRef<SVGSVGElement, ChartDonutProps>(({
 
 ChartDonut.displayName = 'ChartDonut';
 
-export { ChartDonut };
+// Triple export pattern (lucide-react style)
+export { ChartDonut, ChartDonut as ChartDonutIcon, ChartDonut as SiChartDonut };

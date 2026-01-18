@@ -16,5 +16,6 @@ const DataTableRegularDuotone = memo(
 
 DataTableRegularDuotone.displayName = 'DataTableRegularDuotone';
 
-export { DataTableRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { DataTableRegularDuotone, DataTableRegularDuotone as DataTableRegularDuotoneIcon, DataTableRegularDuotone as SiDataTableRegularDuotone };
 export type { DataTableRegularDuotoneProps };

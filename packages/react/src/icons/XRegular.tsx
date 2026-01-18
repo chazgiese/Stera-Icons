@@ -14,5 +14,6 @@ const XRegular = memo(
 
 XRegular.displayName = 'XRegular';
 
-export { XRegular };
+// Triple export pattern (lucide-react style)
+export { XRegular, XRegular as XRegularIcon, XRegular as SiXRegular };
 export type { XRegularProps };

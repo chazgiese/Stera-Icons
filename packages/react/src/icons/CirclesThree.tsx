@@ -13,7 +13,8 @@ export interface CirclesThreeProps extends IconProps {
 }
 
 /**
- * CirclesThree with dynamic weight and duotone props.
+ * CirclesThree - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CirclesThreeRegular } from 'stera-icons/CirclesThreeRegular';
  */
@@ -32,4 +33,5 @@ const CirclesThree = memo(forwardRef<SVGSVGElement, CirclesThreeProps>(({
 
 CirclesThree.displayName = 'CirclesThree';
 
-export { CirclesThree };
+// Triple export pattern (lucide-react style)
+export { CirclesThree, CirclesThree as CirclesThreeIcon, CirclesThree as SiCirclesThree };

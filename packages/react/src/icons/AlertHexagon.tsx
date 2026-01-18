@@ -13,7 +13,8 @@ export interface AlertHexagonProps extends IconProps {
 }
 
 /**
- * AlertHexagon with dynamic weight and duotone props.
+ * AlertHexagon - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertHexagonRegular } from 'stera-icons/AlertHexagonRegular';
  */
@@ -32,4 +33,5 @@ const AlertHexagon = memo(forwardRef<SVGSVGElement, AlertHexagonProps>(({
 
 AlertHexagon.displayName = 'AlertHexagon';
 
-export { AlertHexagon };
+// Triple export pattern (lucide-react style)
+export { AlertHexagon, AlertHexagon as AlertHexagonIcon, AlertHexagon as SiAlertHexagon };

@@ -15,5 +15,6 @@ const HashCircleRegular = memo(
 
 HashCircleRegular.displayName = 'HashCircleRegular';
 
-export { HashCircleRegular };
+// Triple export pattern (lucide-react style)
+export { HashCircleRegular, HashCircleRegular as HashCircleRegularIcon, HashCircleRegular as SiHashCircleRegular };
 export type { HashCircleRegularProps };

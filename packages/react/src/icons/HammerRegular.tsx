@@ -14,5 +14,6 @@ const HammerRegular = memo(
 
 HammerRegular.displayName = 'HammerRegular';
 
-export { HammerRegular };
+// Triple export pattern (lucide-react style)
+export { HammerRegular, HammerRegular as HammerRegularIcon, HammerRegular as SiHammerRegular };
 export type { HammerRegularProps };

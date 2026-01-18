@@ -13,7 +13,8 @@ export interface CodeCircleProps extends IconProps {
 }
 
 /**
- * CodeCircle with dynamic weight and duotone props.
+ * CodeCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CodeCircleRegular } from 'stera-icons/CodeCircleRegular';
  */
@@ -32,4 +33,5 @@ const CodeCircle = memo(forwardRef<SVGSVGElement, CodeCircleProps>(({
 
 CodeCircle.displayName = 'CodeCircle';
 
-export { CodeCircle };
+// Triple export pattern (lucide-react style)
+export { CodeCircle, CodeCircle as CodeCircleIcon, CodeCircle as SiCodeCircle };

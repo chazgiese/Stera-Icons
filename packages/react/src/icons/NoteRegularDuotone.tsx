@@ -15,5 +15,6 @@ const NoteRegularDuotone = memo(
 
 NoteRegularDuotone.displayName = 'NoteRegularDuotone';
 
-export { NoteRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { NoteRegularDuotone, NoteRegularDuotone as NoteRegularDuotoneIcon, NoteRegularDuotone as SiNoteRegularDuotone };
 export type { NoteRegularDuotoneProps };

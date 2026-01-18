@@ -13,7 +13,8 @@ export interface CheckBadgeProps extends IconProps {
 }
 
 /**
- * CheckBadge with dynamic weight and duotone props.
+ * CheckBadge - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CheckBadgeRegular } from 'stera-icons/CheckBadgeRegular';
  */
@@ -32,4 +33,5 @@ const CheckBadge = memo(forwardRef<SVGSVGElement, CheckBadgeProps>(({
 
 CheckBadge.displayName = 'CheckBadge';
 
-export { CheckBadge };
+// Triple export pattern (lucide-react style)
+export { CheckBadge, CheckBadge as CheckBadgeIcon, CheckBadge as SiCheckBadge };

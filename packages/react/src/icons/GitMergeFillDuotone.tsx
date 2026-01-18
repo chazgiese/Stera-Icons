@@ -15,5 +15,6 @@ const GitMergeFillDuotone = memo(
 
 GitMergeFillDuotone.displayName = 'GitMergeFillDuotone';
 
-export { GitMergeFillDuotone };
+// Triple export pattern (lucide-react style)
+export { GitMergeFillDuotone, GitMergeFillDuotone as GitMergeFillDuotoneIcon, GitMergeFillDuotone as SiGitMergeFillDuotone };
 export type { GitMergeFillDuotoneProps };

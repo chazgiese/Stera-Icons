@@ -14,5 +14,6 @@ const DocumentFill = memo(
 
 DocumentFill.displayName = 'DocumentFill';
 
-export { DocumentFill };
+// Triple export pattern (lucide-react style)
+export { DocumentFill, DocumentFill as DocumentFillIcon, DocumentFill as SiDocumentFill };
 export type { DocumentFillProps };

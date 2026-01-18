@@ -13,7 +13,8 @@ export interface GitCommitProps extends IconProps {
 }
 
 /**
- * GitCommit with dynamic weight and duotone props.
+ * GitCommit - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GitCommitRegular } from 'stera-icons/GitCommitRegular';
  */
@@ -32,4 +33,5 @@ const GitCommit = memo(forwardRef<SVGSVGElement, GitCommitProps>(({
 
 GitCommit.displayName = 'GitCommit';
 
-export { GitCommit };
+// Triple export pattern (lucide-react style)
+export { GitCommit, GitCommit as GitCommitIcon, GitCommit as SiGitCommit };

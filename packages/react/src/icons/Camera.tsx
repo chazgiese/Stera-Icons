@@ -13,7 +13,8 @@ export interface CameraProps extends IconProps {
 }
 
 /**
- * Camera with dynamic weight and duotone props.
+ * Camera - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CameraRegular } from 'stera-icons/CameraRegular';
  */
@@ -32,4 +33,5 @@ const Camera = memo(forwardRef<SVGSVGElement, CameraProps>(({
 
 Camera.displayName = 'Camera';
 
-export { Camera };
+// Triple export pattern (lucide-react style)
+export { Camera, Camera as CameraIcon, Camera as SiCamera };

@@ -14,5 +14,6 @@ const AlignVerticalBottomFill = memo(
 
 AlignVerticalBottomFill.displayName = 'AlignVerticalBottomFill';
 
-export { AlignVerticalBottomFill };
+// Triple export pattern (lucide-react style)
+export { AlignVerticalBottomFill, AlignVerticalBottomFill as AlignVerticalBottomFillIcon, AlignVerticalBottomFill as SiAlignVerticalBottomFill };
 export type { AlignVerticalBottomFillProps };

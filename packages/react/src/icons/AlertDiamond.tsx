@@ -13,7 +13,8 @@ export interface AlertDiamondProps extends IconProps {
 }
 
 /**
- * AlertDiamond with dynamic weight and duotone props.
+ * AlertDiamond - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertDiamondRegular } from 'stera-icons/AlertDiamondRegular';
  */
@@ -32,4 +33,5 @@ const AlertDiamond = memo(forwardRef<SVGSVGElement, AlertDiamondProps>(({
 
 AlertDiamond.displayName = 'AlertDiamond';
 
-export { AlertDiamond };
+// Triple export pattern (lucide-react style)
+export { AlertDiamond, AlertDiamond as AlertDiamondIcon, AlertDiamond as SiAlertDiamond };

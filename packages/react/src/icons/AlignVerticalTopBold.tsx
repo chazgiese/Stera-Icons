@@ -15,5 +15,6 @@ const AlignVerticalTopBold = memo(
 
 AlignVerticalTopBold.displayName = 'AlignVerticalTopBold';
 
-export { AlignVerticalTopBold };
+// Triple export pattern (lucide-react style)
+export { AlignVerticalTopBold, AlignVerticalTopBold as AlignVerticalTopBoldIcon, AlignVerticalTopBold as SiAlignVerticalTopBold };
 export type { AlignVerticalTopBoldProps };

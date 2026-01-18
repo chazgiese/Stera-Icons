@@ -15,5 +15,6 @@ const BankRegular = memo(
 
 BankRegular.displayName = 'BankRegular';
 
-export { BankRegular };
+// Triple export pattern (lucide-react style)
+export { BankRegular, BankRegular as BankRegularIcon, BankRegular as SiBankRegular };
 export type { BankRegularProps };

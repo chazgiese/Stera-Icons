@@ -13,7 +13,8 @@ export interface TrendDownProps extends IconProps {
 }
 
 /**
- * TrendDown with dynamic weight and duotone props.
+ * TrendDown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TrendDownRegular } from 'stera-icons/TrendDownRegular';
  */
@@ -32,4 +33,5 @@ const TrendDown = memo(forwardRef<SVGSVGElement, TrendDownProps>(({
 
 TrendDown.displayName = 'TrendDown';
 
-export { TrendDown };
+// Triple export pattern (lucide-react style)
+export { TrendDown, TrendDown as TrendDownIcon, TrendDown as SiTrendDown };

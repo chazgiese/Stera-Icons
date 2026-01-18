@@ -15,5 +15,6 @@ const SignalAltMediumFillDuotone = memo(
 
 SignalAltMediumFillDuotone.displayName = 'SignalAltMediumFillDuotone';
 
-export { SignalAltMediumFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SignalAltMediumFillDuotone, SignalAltMediumFillDuotone as SignalAltMediumFillDuotoneIcon, SignalAltMediumFillDuotone as SiSignalAltMediumFillDuotone };
 export type { SignalAltMediumFillDuotoneProps };

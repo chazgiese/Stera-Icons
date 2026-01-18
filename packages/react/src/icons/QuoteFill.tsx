@@ -14,5 +14,6 @@ const QuoteFill = memo(
 
 QuoteFill.displayName = 'QuoteFill';
 
-export { QuoteFill };
+// Triple export pattern (lucide-react style)
+export { QuoteFill, QuoteFill as QuoteFillIcon, QuoteFill as SiQuoteFill };
 export type { QuoteFillProps };

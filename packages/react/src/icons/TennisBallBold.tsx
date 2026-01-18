@@ -14,5 +14,6 @@ const TennisBallBold = memo(
 
 TennisBallBold.displayName = 'TennisBallBold';
 
-export { TennisBallBold };
+// Triple export pattern (lucide-react style)
+export { TennisBallBold, TennisBallBold as TennisBallBoldIcon, TennisBallBold as SiTennisBallBold };
 export type { TennisBallBoldProps };

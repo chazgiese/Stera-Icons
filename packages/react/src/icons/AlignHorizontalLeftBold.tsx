@@ -15,5 +15,6 @@ const AlignHorizontalLeftBold = memo(
 
 AlignHorizontalLeftBold.displayName = 'AlignHorizontalLeftBold';
 
-export { AlignHorizontalLeftBold };
+// Triple export pattern (lucide-react style)
+export { AlignHorizontalLeftBold, AlignHorizontalLeftBold as AlignHorizontalLeftBoldIcon, AlignHorizontalLeftBold as SiAlignHorizontalLeftBold };
 export type { AlignHorizontalLeftBoldProps };

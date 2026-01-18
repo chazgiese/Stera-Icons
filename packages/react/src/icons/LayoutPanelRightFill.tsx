@@ -14,5 +14,6 @@ const LayoutPanelRightFill = memo(
 
 LayoutPanelRightFill.displayName = 'LayoutPanelRightFill';
 
-export { LayoutPanelRightFill };
+// Triple export pattern (lucide-react style)
+export { LayoutPanelRightFill, LayoutPanelRightFill as LayoutPanelRightFillIcon, LayoutPanelRightFill as SiLayoutPanelRightFill };
 export type { LayoutPanelRightFillProps };

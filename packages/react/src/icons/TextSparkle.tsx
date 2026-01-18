@@ -13,7 +13,8 @@ export interface TextSparkleProps extends IconProps {
 }
 
 /**
- * TextSparkle with dynamic weight and duotone props.
+ * TextSparkle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextSparkleRegular } from 'stera-icons/TextSparkleRegular';
  */
@@ -32,4 +33,5 @@ const TextSparkle = memo(forwardRef<SVGSVGElement, TextSparkleProps>(({
 
 TextSparkle.displayName = 'TextSparkle';
 
-export { TextSparkle };
+// Triple export pattern (lucide-react style)
+export { TextSparkle, TextSparkle as TextSparkleIcon, TextSparkle as SiTextSparkle };

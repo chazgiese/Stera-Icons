@@ -13,7 +13,8 @@ export interface HourglassEmptyProps extends IconProps {
 }
 
 /**
- * HourglassEmpty with dynamic weight and duotone props.
+ * HourglassEmpty - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HourglassEmptyRegular } from 'stera-icons/HourglassEmptyRegular';
  */
@@ -32,4 +33,5 @@ const HourglassEmpty = memo(forwardRef<SVGSVGElement, HourglassEmptyProps>(({
 
 HourglassEmpty.displayName = 'HourglassEmpty';
 
-export { HourglassEmpty };
+// Triple export pattern (lucide-react style)
+export { HourglassEmpty, HourglassEmpty as HourglassEmptyIcon, HourglassEmpty as SiHourglassEmpty };

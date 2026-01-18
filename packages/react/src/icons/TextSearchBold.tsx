@@ -15,5 +15,6 @@ const TextSearchBold = memo(
 
 TextSearchBold.displayName = 'TextSearchBold';
 
-export { TextSearchBold };
+// Triple export pattern (lucide-react style)
+export { TextSearchBold, TextSearchBold as TextSearchBoldIcon, TextSearchBold as SiTextSearchBold };
 export type { TextSearchBoldProps };

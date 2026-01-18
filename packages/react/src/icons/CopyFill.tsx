@@ -14,5 +14,6 @@ const CopyFill = memo(
 
 CopyFill.displayName = 'CopyFill';
 
-export { CopyFill };
+// Triple export pattern (lucide-react style)
+export { CopyFill, CopyFill as CopyFillIcon, CopyFill as SiCopyFill };
 export type { CopyFillProps };

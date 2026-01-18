@@ -14,5 +14,6 @@ const BrickWallFill = memo(
 
 BrickWallFill.displayName = 'BrickWallFill';
 
-export { BrickWallFill };
+// Triple export pattern (lucide-react style)
+export { BrickWallFill, BrickWallFill as BrickWallFillIcon, BrickWallFill as SiBrickWallFill };
 export type { BrickWallFillProps };

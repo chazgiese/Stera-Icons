@@ -14,5 +14,6 @@ const PanelsRightBottomBold = memo(
 
 PanelsRightBottomBold.displayName = 'PanelsRightBottomBold';
 
-export { PanelsRightBottomBold };
+// Triple export pattern (lucide-react style)
+export { PanelsRightBottomBold, PanelsRightBottomBold as PanelsRightBottomBoldIcon, PanelsRightBottomBold as SiPanelsRightBottomBold };
 export type { PanelsRightBottomBoldProps };

@@ -15,5 +15,6 @@ const XSquareRegularDuotone = memo(
 
 XSquareRegularDuotone.displayName = 'XSquareRegularDuotone';
 
-export { XSquareRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { XSquareRegularDuotone, XSquareRegularDuotone as XSquareRegularDuotoneIcon, XSquareRegularDuotone as SiXSquareRegularDuotone };
 export type { XSquareRegularDuotoneProps };

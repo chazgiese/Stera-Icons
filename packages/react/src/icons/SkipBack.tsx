@@ -13,7 +13,8 @@ export interface SkipBackProps extends IconProps {
 }
 
 /**
- * SkipBack with dynamic weight and duotone props.
+ * SkipBack - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SkipBackRegular } from 'stera-icons/SkipBackRegular';
  */
@@ -32,4 +33,5 @@ const SkipBack = memo(forwardRef<SVGSVGElement, SkipBackProps>(({
 
 SkipBack.displayName = 'SkipBack';
 
-export { SkipBack };
+// Triple export pattern (lucide-react style)
+export { SkipBack, SkipBack as SkipBackIcon, SkipBack as SiSkipBack };

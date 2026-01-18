@@ -15,5 +15,6 @@ const MedalBoldDuotone = memo(
 
 MedalBoldDuotone.displayName = 'MedalBoldDuotone';
 
-export { MedalBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { MedalBoldDuotone, MedalBoldDuotone as MedalBoldDuotoneIcon, MedalBoldDuotone as SiMedalBoldDuotone };
 export type { MedalBoldDuotoneProps };

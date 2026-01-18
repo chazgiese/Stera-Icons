@@ -14,5 +14,6 @@ const SpinnerRegular = memo(
 
 SpinnerRegular.displayName = 'SpinnerRegular';
 
-export { SpinnerRegular };
+// Triple export pattern (lucide-react style)
+export { SpinnerRegular, SpinnerRegular as SpinnerRegularIcon, SpinnerRegular as SiSpinnerRegular };
 export type { SpinnerRegularProps };

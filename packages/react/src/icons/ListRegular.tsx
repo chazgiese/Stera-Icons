@@ -14,5 +14,6 @@ const ListRegular = memo(
 
 ListRegular.displayName = 'ListRegular';
 
-export { ListRegular };
+// Triple export pattern (lucide-react style)
+export { ListRegular, ListRegular as ListRegularIcon, ListRegular as SiListRegular };
 export type { ListRegularProps };

@@ -15,5 +15,6 @@ const ShieldCheckBold = memo(
 
 ShieldCheckBold.displayName = 'ShieldCheckBold';
 
-export { ShieldCheckBold };
+// Triple export pattern (lucide-react style)
+export { ShieldCheckBold, ShieldCheckBold as ShieldCheckBoldIcon, ShieldCheckBold as SiShieldCheckBold };
 export type { ShieldCheckBoldProps };

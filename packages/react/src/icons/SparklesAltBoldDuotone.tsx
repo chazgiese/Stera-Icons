@@ -15,5 +15,6 @@ const SparklesAltBoldDuotone = memo(
 
 SparklesAltBoldDuotone.displayName = 'SparklesAltBoldDuotone';
 
-export { SparklesAltBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { SparklesAltBoldDuotone, SparklesAltBoldDuotone as SparklesAltBoldDuotoneIcon, SparklesAltBoldDuotone as SiSparklesAltBoldDuotone };
 export type { SparklesAltBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface BellOffProps extends IconProps {
 }
 
 /**
- * BellOff with dynamic weight and duotone props.
+ * BellOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BellOffRegular } from 'stera-icons/BellOffRegular';
  */
@@ -32,4 +33,5 @@ const BellOff = memo(forwardRef<SVGSVGElement, BellOffProps>(({
 
 BellOff.displayName = 'BellOff';
 
-export { BellOff };
+// Triple export pattern (lucide-react style)
+export { BellOff, BellOff as BellOffIcon, BellOff as SiBellOff };

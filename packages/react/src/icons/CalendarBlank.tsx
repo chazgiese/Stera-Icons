@@ -13,7 +13,8 @@ export interface CalendarBlankProps extends IconProps {
 }
 
 /**
- * CalendarBlank with dynamic weight and duotone props.
+ * CalendarBlank - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalendarBlankRegular } from 'stera-icons/CalendarBlankRegular';
  */
@@ -32,4 +33,5 @@ const CalendarBlank = memo(forwardRef<SVGSVGElement, CalendarBlankProps>(({
 
 CalendarBlank.displayName = 'CalendarBlank';
 
-export { CalendarBlank };
+// Triple export pattern (lucide-react style)
+export { CalendarBlank, CalendarBlank as CalendarBlankIcon, CalendarBlank as SiCalendarBlank };

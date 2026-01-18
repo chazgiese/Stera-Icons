@@ -15,5 +15,6 @@ const CalculatorBold = memo(
 
 CalculatorBold.displayName = 'CalculatorBold';
 
-export { CalculatorBold };
+// Triple export pattern (lucide-react style)
+export { CalculatorBold, CalculatorBold as CalculatorBoldIcon, CalculatorBold as SiCalculatorBold };
 export type { CalculatorBoldProps };

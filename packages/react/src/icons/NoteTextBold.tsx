@@ -15,5 +15,6 @@ const NoteTextBold = memo(
 
 NoteTextBold.displayName = 'NoteTextBold';
 
-export { NoteTextBold };
+// Triple export pattern (lucide-react style)
+export { NoteTextBold, NoteTextBold as NoteTextBoldIcon, NoteTextBold as SiNoteTextBold };
 export type { NoteTextBoldProps };

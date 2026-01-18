@@ -14,5 +14,6 @@ const MapBold = memo(
 
 MapBold.displayName = 'MapBold';
 
-export { MapBold };
+// Triple export pattern (lucide-react style)
+export { MapBold, MapBold as MapBoldIcon, MapBold as SiMapBold };
 export type { MapBoldProps };

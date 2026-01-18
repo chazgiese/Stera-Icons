@@ -15,5 +15,6 @@ const TvBoldDuotone = memo(
 
 TvBoldDuotone.displayName = 'TvBoldDuotone';
 
-export { TvBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { TvBoldDuotone, TvBoldDuotone as TvBoldDuotoneIcon, TvBoldDuotone as SiTvBoldDuotone };
 export type { TvBoldDuotoneProps };

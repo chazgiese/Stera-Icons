@@ -13,7 +13,8 @@ export interface ChartCandleAltProps extends IconProps {
 }
 
 /**
- * ChartCandleAlt with dynamic weight and duotone props.
+ * ChartCandleAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartCandleAltRegular } from 'stera-icons/ChartCandleAltRegular';
  */
@@ -32,4 +33,5 @@ const ChartCandleAlt = memo(forwardRef<SVGSVGElement, ChartCandleAltProps>(({
 
 ChartCandleAlt.displayName = 'ChartCandleAlt';
 
-export { ChartCandleAlt };
+// Triple export pattern (lucide-react style)
+export { ChartCandleAlt, ChartCandleAlt as ChartCandleAltIcon, ChartCandleAlt as SiChartCandleAlt };

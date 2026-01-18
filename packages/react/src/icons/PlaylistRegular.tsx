@@ -15,5 +15,6 @@ const PlaylistRegular = memo(
 
 PlaylistRegular.displayName = 'PlaylistRegular';
 
-export { PlaylistRegular };
+// Triple export pattern (lucide-react style)
+export { PlaylistRegular, PlaylistRegular as PlaylistRegularIcon, PlaylistRegular as SiPlaylistRegular };
 export type { PlaylistRegularProps };

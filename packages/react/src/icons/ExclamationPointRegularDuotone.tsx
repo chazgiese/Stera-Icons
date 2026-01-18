@@ -15,5 +15,6 @@ const ExclamationPointRegularDuotone = memo(
 
 ExclamationPointRegularDuotone.displayName = 'ExclamationPointRegularDuotone';
 
-export { ExclamationPointRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ExclamationPointRegularDuotone, ExclamationPointRegularDuotone as ExclamationPointRegularDuotoneIcon, ExclamationPointRegularDuotone as SiExclamationPointRegularDuotone };
 export type { ExclamationPointRegularDuotoneProps };

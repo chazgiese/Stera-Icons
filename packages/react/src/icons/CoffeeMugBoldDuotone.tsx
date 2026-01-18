@@ -16,5 +16,6 @@ const CoffeeMugBoldDuotone = memo(
 
 CoffeeMugBoldDuotone.displayName = 'CoffeeMugBoldDuotone';
 
-export { CoffeeMugBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { CoffeeMugBoldDuotone, CoffeeMugBoldDuotone as CoffeeMugBoldDuotoneIcon, CoffeeMugBoldDuotone as SiCoffeeMugBoldDuotone };
 export type { CoffeeMugBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface NotebookLogProps extends IconProps {
 }
 
 /**
- * NotebookLog with dynamic weight and duotone props.
+ * NotebookLog - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { NotebookLogRegular } from 'stera-icons/NotebookLogRegular';
  */
@@ -32,4 +33,5 @@ const NotebookLog = memo(forwardRef<SVGSVGElement, NotebookLogProps>(({
 
 NotebookLog.displayName = 'NotebookLog';
 
-export { NotebookLog };
+// Triple export pattern (lucide-react style)
+export { NotebookLog, NotebookLog as NotebookLogIcon, NotebookLog as SiNotebookLog };

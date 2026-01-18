@@ -15,5 +15,6 @@ const CandleRegularDuotone = memo(
 
 CandleRegularDuotone.displayName = 'CandleRegularDuotone';
 
-export { CandleRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { CandleRegularDuotone, CandleRegularDuotone as CandleRegularDuotoneIcon, CandleRegularDuotone as SiCandleRegularDuotone };
 export type { CandleRegularDuotoneProps };

@@ -14,5 +14,6 @@ const PencilTipFill = memo(
 
 PencilTipFill.displayName = 'PencilTipFill';
 
-export { PencilTipFill };
+// Triple export pattern (lucide-react style)
+export { PencilTipFill, PencilTipFill as PencilTipFillIcon, PencilTipFill as SiPencilTipFill };
 export type { PencilTipFillProps };

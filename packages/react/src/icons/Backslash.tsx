@@ -13,7 +13,8 @@ export interface BackslashProps extends IconProps {
 }
 
 /**
- * Backslash with dynamic weight and duotone props.
+ * Backslash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BackslashRegular } from 'stera-icons/BackslashRegular';
  */
@@ -32,4 +33,5 @@ const Backslash = memo(forwardRef<SVGSVGElement, BackslashProps>(({
 
 Backslash.displayName = 'Backslash';
 
-export { Backslash };
+// Triple export pattern (lucide-react style)
+export { Backslash, Backslash as BackslashIcon, Backslash as SiBackslash };

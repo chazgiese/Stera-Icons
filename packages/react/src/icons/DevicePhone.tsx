@@ -13,7 +13,8 @@ export interface DevicePhoneProps extends IconProps {
 }
 
 /**
- * DevicePhone with dynamic weight and duotone props.
+ * DevicePhone - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DevicePhoneRegular } from 'stera-icons/DevicePhoneRegular';
  */
@@ -32,4 +33,5 @@ const DevicePhone = memo(forwardRef<SVGSVGElement, DevicePhoneProps>(({
 
 DevicePhone.displayName = 'DevicePhone';
 
-export { DevicePhone };
+// Triple export pattern (lucide-react style)
+export { DevicePhone, DevicePhone as DevicePhoneIcon, DevicePhone as SiDevicePhone };

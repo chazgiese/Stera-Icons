@@ -14,5 +14,6 @@ const EmoteNeutralFill = memo(
 
 EmoteNeutralFill.displayName = 'EmoteNeutralFill';
 
-export { EmoteNeutralFill };
+// Triple export pattern (lucide-react style)
+export { EmoteNeutralFill, EmoteNeutralFill as EmoteNeutralFillIcon, EmoteNeutralFill as SiEmoteNeutralFill };
 export type { EmoteNeutralFillProps };

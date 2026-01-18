@@ -13,7 +13,8 @@ export interface TelescopeProps extends IconProps {
 }
 
 /**
- * Telescope with dynamic weight and duotone props.
+ * Telescope - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TelescopeRegular } from 'stera-icons/TelescopeRegular';
  */
@@ -32,4 +33,5 @@ const Telescope = memo(forwardRef<SVGSVGElement, TelescopeProps>(({
 
 Telescope.displayName = 'Telescope';
 
-export { Telescope };
+// Triple export pattern (lucide-react style)
+export { Telescope, Telescope as TelescopeIcon, Telescope as SiTelescope };

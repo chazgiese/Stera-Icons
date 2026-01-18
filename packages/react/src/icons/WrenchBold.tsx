@@ -14,5 +14,6 @@ const WrenchBold = memo(
 
 WrenchBold.displayName = 'WrenchBold';
 
-export { WrenchBold };
+// Triple export pattern (lucide-react style)
+export { WrenchBold, WrenchBold as WrenchBoldIcon, WrenchBold as SiWrenchBold };
 export type { WrenchBoldProps };

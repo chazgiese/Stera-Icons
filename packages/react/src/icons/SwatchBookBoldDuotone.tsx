@@ -16,5 +16,6 @@ const SwatchBookBoldDuotone = memo(
 
 SwatchBookBoldDuotone.displayName = 'SwatchBookBoldDuotone';
 
-export { SwatchBookBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { SwatchBookBoldDuotone, SwatchBookBoldDuotone as SwatchBookBoldDuotoneIcon, SwatchBookBoldDuotone as SiSwatchBookBoldDuotone };
 export type { SwatchBookBoldDuotoneProps };

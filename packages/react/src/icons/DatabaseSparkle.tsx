@@ -13,7 +13,8 @@ export interface DatabaseSparkleProps extends IconProps {
 }
 
 /**
- * DatabaseSparkle with dynamic weight and duotone props.
+ * DatabaseSparkle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseSparkleRegular } from 'stera-icons/DatabaseSparkleRegular';
  */
@@ -32,4 +33,5 @@ const DatabaseSparkle = memo(forwardRef<SVGSVGElement, DatabaseSparkleProps>(({
 
 DatabaseSparkle.displayName = 'DatabaseSparkle';
 
-export { DatabaseSparkle };
+// Triple export pattern (lucide-react style)
+export { DatabaseSparkle, DatabaseSparkle as DatabaseSparkleIcon, DatabaseSparkle as SiDatabaseSparkle };

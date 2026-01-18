@@ -13,7 +13,8 @@ export interface LabelAltProps extends IconProps {
 }
 
 /**
- * LabelAlt with dynamic weight and duotone props.
+ * LabelAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LabelAltRegular } from 'stera-icons/LabelAltRegular';
  */
@@ -32,4 +33,5 @@ const LabelAlt = memo(forwardRef<SVGSVGElement, LabelAltProps>(({
 
 LabelAlt.displayName = 'LabelAlt';
 
-export { LabelAlt };
+// Triple export pattern (lucide-react style)
+export { LabelAlt, LabelAlt as LabelAltIcon, LabelAlt as SiLabelAlt };

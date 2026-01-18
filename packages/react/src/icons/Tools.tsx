@@ -13,7 +13,8 @@ export interface ToolsProps extends IconProps {
 }
 
 /**
- * Tools with dynamic weight and duotone props.
+ * Tools - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ToolsRegular } from 'stera-icons/ToolsRegular';
  */
@@ -32,4 +33,5 @@ const Tools = memo(forwardRef<SVGSVGElement, ToolsProps>(({
 
 Tools.displayName = 'Tools';
 
-export { Tools };
+// Triple export pattern (lucide-react style)
+export { Tools, Tools as ToolsIcon, Tools as SiTools };

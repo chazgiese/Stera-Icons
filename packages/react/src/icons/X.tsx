@@ -13,7 +13,8 @@ export interface XProps extends IconProps {
 }
 
 /**
- * X with dynamic weight and duotone props.
+ * X - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { XRegular } from 'stera-icons/XRegular';
  */
@@ -32,4 +33,5 @@ const X = memo(forwardRef<SVGSVGElement, XProps>(({
 
 X.displayName = 'X';
 
-export { X };
+// Triple export pattern (lucide-react style)
+export { X, X as XIcon, X as SiX };

@@ -14,5 +14,6 @@ const CrosshairRegular = memo(
 
 CrosshairRegular.displayName = 'CrosshairRegular';
 
-export { CrosshairRegular };
+// Triple export pattern (lucide-react style)
+export { CrosshairRegular, CrosshairRegular as CrosshairRegularIcon, CrosshairRegular as SiCrosshairRegular };
 export type { CrosshairRegularProps };

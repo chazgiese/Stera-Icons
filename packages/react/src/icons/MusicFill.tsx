@@ -14,5 +14,6 @@ const MusicFill = memo(
 
 MusicFill.displayName = 'MusicFill';
 
-export { MusicFill };
+// Triple export pattern (lucide-react style)
+export { MusicFill, MusicFill as MusicFillIcon, MusicFill as SiMusicFill };
 export type { MusicFillProps };

@@ -13,7 +13,8 @@ export interface CircleCheckerProps extends IconProps {
 }
 
 /**
- * CircleChecker with dynamic weight and duotone props.
+ * CircleChecker - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleCheckerRegular } from 'stera-icons/CircleCheckerRegular';
  */
@@ -32,4 +33,5 @@ const CircleChecker = memo(forwardRef<SVGSVGElement, CircleCheckerProps>(({
 
 CircleChecker.displayName = 'CircleChecker';
 
-export { CircleChecker };
+// Triple export pattern (lucide-react style)
+export { CircleChecker, CircleChecker as CircleCheckerIcon, CircleChecker as SiCircleChecker };

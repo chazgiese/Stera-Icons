@@ -14,5 +14,6 @@ const TelescopeFill = memo(
 
 TelescopeFill.displayName = 'TelescopeFill';
 
-export { TelescopeFill };
+// Triple export pattern (lucide-react style)
+export { TelescopeFill, TelescopeFill as TelescopeFillIcon, TelescopeFill as SiTelescopeFill };
 export type { TelescopeFillProps };

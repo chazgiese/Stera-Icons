@@ -15,5 +15,6 @@ const YinYangRegularDuotone = memo(
 
 YinYangRegularDuotone.displayName = 'YinYangRegularDuotone';
 
-export { YinYangRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { YinYangRegularDuotone, YinYangRegularDuotone as YinYangRegularDuotoneIcon, YinYangRegularDuotone as SiYinYangRegularDuotone };
 export type { YinYangRegularDuotoneProps };

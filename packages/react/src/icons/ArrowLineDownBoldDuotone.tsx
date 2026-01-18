@@ -15,5 +15,6 @@ const ArrowLineDownBoldDuotone = memo(
 
 ArrowLineDownBoldDuotone.displayName = 'ArrowLineDownBoldDuotone';
 
-export { ArrowLineDownBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ArrowLineDownBoldDuotone, ArrowLineDownBoldDuotone as ArrowLineDownBoldDuotoneIcon, ArrowLineDownBoldDuotone as SiArrowLineDownBoldDuotone };
 export type { ArrowLineDownBoldDuotoneProps };

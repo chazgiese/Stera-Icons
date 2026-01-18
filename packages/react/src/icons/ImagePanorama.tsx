@@ -13,7 +13,8 @@ export interface ImagePanoramaProps extends IconProps {
 }
 
 /**
- * ImagePanorama with dynamic weight and duotone props.
+ * ImagePanorama - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ImagePanoramaRegular } from 'stera-icons/ImagePanoramaRegular';
  */
@@ -32,4 +33,5 @@ const ImagePanorama = memo(forwardRef<SVGSVGElement, ImagePanoramaProps>(({
 
 ImagePanorama.displayName = 'ImagePanorama';
 
-export { ImagePanorama };
+// Triple export pattern (lucide-react style)
+export { ImagePanorama, ImagePanorama as ImagePanoramaIcon, ImagePanorama as SiImagePanorama };

@@ -15,5 +15,6 @@ const CliCircleBold = memo(
 
 CliCircleBold.displayName = 'CliCircleBold';
 
-export { CliCircleBold };
+// Triple export pattern (lucide-react style)
+export { CliCircleBold, CliCircleBold as CliCircleBoldIcon, CliCircleBold as SiCliCircleBold };
 export type { CliCircleBoldProps };

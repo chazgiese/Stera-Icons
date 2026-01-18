@@ -15,5 +15,6 @@ const EyeRegularDuotone = memo(
 
 EyeRegularDuotone.displayName = 'EyeRegularDuotone';
 
-export { EyeRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { EyeRegularDuotone, EyeRegularDuotone as EyeRegularDuotoneIcon, EyeRegularDuotone as SiEyeRegularDuotone };
 export type { EyeRegularDuotoneProps };

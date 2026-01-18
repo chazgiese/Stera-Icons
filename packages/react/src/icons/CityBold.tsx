@@ -15,5 +15,6 @@ const CityBold = memo(
 
 CityBold.displayName = 'CityBold';
 
-export { CityBold };
+// Triple export pattern (lucide-react style)
+export { CityBold, CityBold as CityBoldIcon, CityBold as SiCityBold };
 export type { CityBoldProps };

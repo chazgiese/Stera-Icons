@@ -15,5 +15,6 @@ const FastForwardFillDuotone = memo(
 
 FastForwardFillDuotone.displayName = 'FastForwardFillDuotone';
 
-export { FastForwardFillDuotone };
+// Triple export pattern (lucide-react style)
+export { FastForwardFillDuotone, FastForwardFillDuotone as FastForwardFillDuotoneIcon, FastForwardFillDuotone as SiFastForwardFillDuotone };
 export type { FastForwardFillDuotoneProps };

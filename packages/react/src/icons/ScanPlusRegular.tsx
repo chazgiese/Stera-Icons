@@ -14,5 +14,6 @@ const ScanPlusRegular = memo(
 
 ScanPlusRegular.displayName = 'ScanPlusRegular';
 
-export { ScanPlusRegular };
+// Triple export pattern (lucide-react style)
+export { ScanPlusRegular, ScanPlusRegular as ScanPlusRegularIcon, ScanPlusRegular as SiScanPlusRegular };
 export type { ScanPlusRegularProps };

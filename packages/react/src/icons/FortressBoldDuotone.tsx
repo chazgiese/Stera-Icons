@@ -15,5 +15,6 @@ const FortressBoldDuotone = memo(
 
 FortressBoldDuotone.displayName = 'FortressBoldDuotone';
 
-export { FortressBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FortressBoldDuotone, FortressBoldDuotone as FortressBoldDuotoneIcon, FortressBoldDuotone as SiFortressBoldDuotone };
 export type { FortressBoldDuotoneProps };

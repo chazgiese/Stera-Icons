@@ -13,7 +13,8 @@ export interface TreeDeciduousProps extends IconProps {
 }
 
 /**
- * TreeDeciduous with dynamic weight and duotone props.
+ * TreeDeciduous - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TreeDeciduousRegular } from 'stera-icons/TreeDeciduousRegular';
  */
@@ -32,4 +33,5 @@ const TreeDeciduous = memo(forwardRef<SVGSVGElement, TreeDeciduousProps>(({
 
 TreeDeciduous.displayName = 'TreeDeciduous';
 
-export { TreeDeciduous };
+// Triple export pattern (lucide-react style)
+export { TreeDeciduous, TreeDeciduous as TreeDeciduousIcon, TreeDeciduous as SiTreeDeciduous };

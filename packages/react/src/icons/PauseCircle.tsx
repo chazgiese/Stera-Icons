@@ -13,7 +13,8 @@ export interface PauseCircleProps extends IconProps {
 }
 
 /**
- * PauseCircle with dynamic weight and duotone props.
+ * PauseCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PauseCircleRegular } from 'stera-icons/PauseCircleRegular';
  */
@@ -32,4 +33,5 @@ const PauseCircle = memo(forwardRef<SVGSVGElement, PauseCircleProps>(({
 
 PauseCircle.displayName = 'PauseCircle';
 
-export { PauseCircle };
+// Triple export pattern (lucide-react style)
+export { PauseCircle, PauseCircle as PauseCircleIcon, PauseCircle as SiPauseCircle };

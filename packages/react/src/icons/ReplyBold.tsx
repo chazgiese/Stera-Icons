@@ -14,5 +14,6 @@ const ReplyBold = memo(
 
 ReplyBold.displayName = 'ReplyBold';
 
-export { ReplyBold };
+// Triple export pattern (lucide-react style)
+export { ReplyBold, ReplyBold as ReplyBoldIcon, ReplyBold as SiReplyBold };
 export type { ReplyBoldProps };

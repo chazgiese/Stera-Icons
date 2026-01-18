@@ -16,5 +16,6 @@ const AnnotationBoldDuotone = memo(
 
 AnnotationBoldDuotone.displayName = 'AnnotationBoldDuotone';
 
-export { AnnotationBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { AnnotationBoldDuotone, AnnotationBoldDuotone as AnnotationBoldDuotoneIcon, AnnotationBoldDuotone as SiAnnotationBoldDuotone };
 export type { AnnotationBoldDuotoneProps };

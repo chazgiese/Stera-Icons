@@ -13,7 +13,8 @@ export interface GitPullRequestDraftProps extends IconProps {
 }
 
 /**
- * GitPullRequestDraft with dynamic weight and duotone props.
+ * GitPullRequestDraft - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GitPullRequestDraftRegular } from 'stera-icons/GitPullRequestDraftRegular';
  */
@@ -32,4 +33,5 @@ const GitPullRequestDraft = memo(forwardRef<SVGSVGElement, GitPullRequestDraftPr
 
 GitPullRequestDraft.displayName = 'GitPullRequestDraft';
 
-export { GitPullRequestDraft };
+// Triple export pattern (lucide-react style)
+export { GitPullRequestDraft, GitPullRequestDraft as GitPullRequestDraftIcon, GitPullRequestDraft as SiGitPullRequestDraft };

@@ -14,5 +14,6 @@ const CupBold = memo(
 
 CupBold.displayName = 'CupBold';
 
-export { CupBold };
+// Triple export pattern (lucide-react style)
+export { CupBold, CupBold as CupBoldIcon, CupBold as SiCupBold };
 export type { CupBoldProps };

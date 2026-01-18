@@ -13,7 +13,8 @@ export interface DollarBillProps extends IconProps {
 }
 
 /**
- * DollarBill with dynamic weight and duotone props.
+ * DollarBill - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DollarBillRegular } from 'stera-icons/DollarBillRegular';
  */
@@ -32,4 +33,5 @@ const DollarBill = memo(forwardRef<SVGSVGElement, DollarBillProps>(({
 
 DollarBill.displayName = 'DollarBill';
 
-export { DollarBill };
+// Triple export pattern (lucide-react style)
+export { DollarBill, DollarBill as DollarBillIcon, DollarBill as SiDollarBill };

@@ -14,5 +14,6 @@ const BellXFill = memo(
 
 BellXFill.displayName = 'BellXFill';
 
-export { BellXFill };
+// Triple export pattern (lucide-react style)
+export { BellXFill, BellXFill as BellXFillIcon, BellXFill as SiBellXFill };
 export type { BellXFillProps };

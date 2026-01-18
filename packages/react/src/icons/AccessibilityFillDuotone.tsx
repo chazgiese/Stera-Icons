@@ -15,5 +15,6 @@ const AccessibilityFillDuotone = memo(
 
 AccessibilityFillDuotone.displayName = 'AccessibilityFillDuotone';
 
-export { AccessibilityFillDuotone };
+// Triple export pattern (lucide-react style)
+export { AccessibilityFillDuotone, AccessibilityFillDuotone as AccessibilityFillDuotoneIcon, AccessibilityFillDuotone as SiAccessibilityFillDuotone };
 export type { AccessibilityFillDuotoneProps };

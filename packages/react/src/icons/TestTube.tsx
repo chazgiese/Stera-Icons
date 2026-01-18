@@ -13,7 +13,8 @@ export interface TestTubeProps extends IconProps {
 }
 
 /**
- * TestTube with dynamic weight and duotone props.
+ * TestTube - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TestTubeRegular } from 'stera-icons/TestTubeRegular';
  */
@@ -32,4 +33,5 @@ const TestTube = memo(forwardRef<SVGSVGElement, TestTubeProps>(({
 
 TestTube.displayName = 'TestTube';
 
-export { TestTube };
+// Triple export pattern (lucide-react style)
+export { TestTube, TestTube as TestTubeIcon, TestTube as SiTestTube };

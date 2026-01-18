@@ -15,5 +15,6 @@ const ChecklistBold = memo(
 
 ChecklistBold.displayName = 'ChecklistBold';
 
-export { ChecklistBold };
+// Triple export pattern (lucide-react style)
+export { ChecklistBold, ChecklistBold as ChecklistBoldIcon, ChecklistBold as SiChecklistBold };
 export type { ChecklistBoldProps };

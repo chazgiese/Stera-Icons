@@ -15,5 +15,6 @@ const YinYangFill = memo(
 
 YinYangFill.displayName = 'YinYangFill';
 
-export { YinYangFill };
+// Triple export pattern (lucide-react style)
+export { YinYangFill, YinYangFill as YinYangFillIcon, YinYangFill as SiYinYangFill };
 export type { YinYangFillProps };

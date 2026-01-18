@@ -13,7 +13,8 @@ export interface MailboxProps extends IconProps {
 }
 
 /**
- * Mailbox with dynamic weight and duotone props.
+ * Mailbox - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MailboxRegular } from 'stera-icons/MailboxRegular';
  */
@@ -32,4 +33,5 @@ const Mailbox = memo(forwardRef<SVGSVGElement, MailboxProps>(({
 
 Mailbox.displayName = 'Mailbox';
 
-export { Mailbox };
+// Triple export pattern (lucide-react style)
+export { Mailbox, Mailbox as MailboxIcon, Mailbox as SiMailbox };

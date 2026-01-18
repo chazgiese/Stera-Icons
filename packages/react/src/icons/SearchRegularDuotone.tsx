@@ -15,5 +15,6 @@ const SearchRegularDuotone = memo(
 
 SearchRegularDuotone.displayName = 'SearchRegularDuotone';
 
-export { SearchRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { SearchRegularDuotone, SearchRegularDuotone as SearchRegularDuotoneIcon, SearchRegularDuotone as SiSearchRegularDuotone };
 export type { SearchRegularDuotoneProps };

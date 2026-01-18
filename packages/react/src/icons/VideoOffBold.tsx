@@ -14,5 +14,6 @@ const VideoOffBold = memo(
 
 VideoOffBold.displayName = 'VideoOffBold';
 
-export { VideoOffBold };
+// Triple export pattern (lucide-react style)
+export { VideoOffBold, VideoOffBold as VideoOffBoldIcon, VideoOffBold as SiVideoOffBold };
 export type { VideoOffBoldProps };

@@ -14,5 +14,6 @@ const TrendUpBold = memo(
 
 TrendUpBold.displayName = 'TrendUpBold';
 
-export { TrendUpBold };
+// Triple export pattern (lucide-react style)
+export { TrendUpBold, TrendUpBold as TrendUpBoldIcon, TrendUpBold as SiTrendUpBold };
 export type { TrendUpBoldProps };

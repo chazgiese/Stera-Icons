@@ -14,5 +14,6 @@ const BrainRegular = memo(
 
 BrainRegular.displayName = 'BrainRegular';
 
-export { BrainRegular };
+// Triple export pattern (lucide-react style)
+export { BrainRegular, BrainRegular as BrainRegularIcon, BrainRegular as SiBrainRegular };
 export type { BrainRegularProps };

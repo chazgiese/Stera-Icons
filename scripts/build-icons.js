@@ -14,7 +14,9 @@ import {
   parseIconName,
   mapWeightName,
   validateVariantData,
-  isValidWeight
+  isValidWeight,
+  generateTripleExport,
+  generateTripleExportWithPath
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
 
@@ -264,7 +266,8 @@ const ${componentName} = memo(
 
 ${componentName}.displayName = '${componentName}';
 
-export { ${componentName} };
+// Triple export pattern (lucide-react style)
+${generateTripleExport(componentName)}
 export type { ${componentName}Props };
 `;
       
@@ -275,8 +278,8 @@ export type { ${componentName}Props };
       // Track variant for wrapper generation
       iconVariants.push({ weight, duotone, componentName, fileName });
       
-      // Add to direct variant exports
-      directVariantExports.push(`export { ${componentName} } from './icons/${fileName}';`);
+      // Add to direct variant exports with triple aliasing
+      directVariantExports.push(generateTripleExportWithPath(componentName, `./icons/${fileName}`));
       
       // Use hash-based versioning to determine icon status (O(1) Map lookup)
       const metadataKey = `${parsedIconName}|${weight}|${duotone}|${baseComponentName}`;
@@ -358,10 +361,10 @@ export type { ${componentName}Props };
   console.log(''); // Newline after progress indicator
   console.log(`  ✅ Generated ${metadata.length} variant components`);
   
-  // Generate wrapper components (for backwards compatibility with dynamic weight prop)
+  // Generate dynamic wrapper components for convenience
   const totalWrappers = iconsByBaseName.size;
   let wrappersGenerated = 0;
-  console.log('\n🔗 Generating wrapper components...');
+  console.log('\n🔗 Generating dynamic wrapper components...');
   
   for (const [baseName, iconData] of iconsByBaseName) {
     const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
@@ -407,7 +410,7 @@ export type { ${componentName}Props };
     // Get the actual regular variant name for documentation
     const regularVariantName = iconData.variants.find(v => v.weight === 'regular' && !v.duotone)?.componentName || baseComponentName;
     
-    // Generate wrapper component code
+    // Generate wrapper component code with triple exports
     const wrapperCode = `import { forwardRef, memo } from 'react';
 import type { IconProps } from '../types';
 ${imports.join('\n')}
@@ -418,7 +421,8 @@ export interface ${baseComponentName}Props extends IconProps {
 }
 
 /**
- * ${baseComponentName} with dynamic weight and duotone props.
+ * ${baseComponentName} - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ${regularVariantName} } from 'stera-icons/${regularVariantName}';
  */
@@ -432,15 +436,16 @@ const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}
 
 ${baseComponentName}.displayName = '${baseComponentName}';
 
-export { ${baseComponentName} };
+// Triple export pattern (lucide-react style)
+${generateTripleExport(baseComponentName)}
 `;
     
     // Write wrapper component file (PascalCase filename matching component name)
     const wrapperPath = join(iconsDir, `${baseComponentName}.tsx`);
     writeFileSync(wrapperPath, wrapperCode);
     
-    // Add to wrapper exports
-    wrapperExports.push(`export { ${baseComponentName} } from './icons/${baseComponentName}';`);
+    // Add to wrapper exports with triple aliasing
+    wrapperExports.push(generateTripleExportWithPath(baseComponentName, `./icons/${baseComponentName}`));
   }
   
   // Finish wrapper progress line
@@ -449,22 +454,24 @@ export { ${baseComponentName} };
   
   // Generate main index file with both wrapper and direct variant exports
   const indexContent = `// Auto-generated file - do not edit manually
-// Stera Icons - Optimized with IconBase architecture
-// Note: IconBase is available via 'stera-icons/base' for advanced usage
+// Stera Icons - Modern React icon library with triple-aliased exports
+// Import patterns: { Search }, { SearchIcon }, { SiSearch }
 
 // Export types
 export type { IconProps, IconWeight, PathData, PathElement, IconPathData } from './types';
 
 // =============================================================================
-// WRAPPER COMPONENTS (backwards compatible, includes all 6 variants per icon)
-// Use these when you need dynamic weight/duotone props
+// DYNAMIC WRAPPER COMPONENTS (convenience, includes all 6 variants per icon)
+// Use these when you need to switch weights/duotone at runtime
+// All icons available with 3 aliases: Base, Icon suffix, Si prefix
 // =============================================================================
 ${wrapperExports.join('\n')}
 
 // =============================================================================
 // DIRECT VARIANT EXPORTS (optimal bundle size, ~300 bytes each)
 // Use these for maximum tree-shaking - import only the exact variant you need
-// Example: import { SearchBold } from 'stera-icons';
+// All variants available with 3 aliases: Base, Icon suffix, Si prefix
+// Example: import { SearchBold, SearchBoldIcon, SiSearchBold } from 'stera-icons';
 // =============================================================================
 ${directVariantExports.join('\n')}
 `;
@@ -598,6 +605,12 @@ ${directVariantExports.join('\n')}
   // Generate TypeScript definitions for wrapper components
   console.log('📝 Generating TypeScript definitions...');
   for (const componentName of wrapperComponents) {
+    const aliases = {
+      base: componentName,
+      iconSuffix: `${componentName}Icon`,
+      siPrefix: `Si${componentName}`
+    };
+    
     const typesContent = `import type { IconProps } from '../index';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -606,11 +619,26 @@ export interface ${componentName}Props extends IconProps {
   duotone?: boolean;
 }
 
-export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+export declare const ${aliases.base}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
+export declare const ${aliases.siPrefix}: typeof ${aliases.base};
 `;
     writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
     
+    // Add subpath exports for base component
     subpathExports[`./${componentName}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
+    
+    // Add subpath exports for aliases (pointing to same files)
+    subpathExports[`./${aliases.iconSuffix}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
+    subpathExports[`./${aliases.siPrefix}`] = {
       types: `./dist/icons/${componentName}.d.ts`,
       import: `./dist/icons/${componentName}.mjs`,
       require: `./dist/icons/${componentName}.cjs`
@@ -619,16 +647,37 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   
   // Generate TypeScript definitions for variant components
   for (const componentName of variantComponents) {
+    const aliases = {
+      base: componentName,
+      iconSuffix: `${componentName}Icon`,
+      siPrefix: `Si${componentName}`
+    };
+    
     const variantTypesContent = `import type { IconBaseProps } from '../IconBase';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export type ${componentName}Props = Omit<IconBaseProps, 'children'>;
 
-export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+export declare const ${aliases.base}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
+export declare const ${aliases.siPrefix}: typeof ${aliases.base};
 `;
     writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
     
+    // Add subpath exports for base component
     subpathExports[`./${componentName}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
+    
+    // Add subpath exports for aliases (pointing to same files)
+    subpathExports[`./${aliases.iconSuffix}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
+    subpathExports[`./${aliases.siPrefix}`] = {
       types: `./dist/icons/${componentName}.d.ts`,
       import: `./dist/icons/${componentName}.mjs`,
       require: `./dist/icons/${componentName}.cjs`
@@ -664,7 +713,7 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   
   console.log(`\n📊 Build Summary:`);
   console.log(`  ✅ Generated ${metadata.length} direct variant components (IconBase-based)`);
-  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components (backwards compatible)`);
+  console.log(`  🔗 Generated ${wrapperExports.length} dynamic wrapper components (convenience)`);
   console.log(`  📦 Compiled ${Object.keys(subpathExports).length} individual bundles for subpath exports`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
@@ -672,10 +721,11 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`\n🎯 Import patterns:`);
-  console.log(`  • Direct variant (smallest): import { SearchBold } from 'stera-icons/SearchBold';`);
-  console.log(`  • Wrapper (dynamic props): import { Search } from 'stera-icons/Search';`);
-  console.log(`  • From index: import { Search, SearchBold } from 'stera-icons';`);
+  console.log(`\n🎯 Import patterns (all with triple aliasing):`);
+  console.log(`  • Aliased imports: import { SiSearch, SiHome } from 'stera-icons';`);
+  console.log(`  • Direct variant: import { SearchBold, SearchBoldIcon } from 'stera-icons';`);
+  console.log(`  • Dynamic wrapper: import { Search } from 'stera-icons/Search';`);
+  console.log(`  • Subpath import: import { SearchBold } from 'stera-icons/SearchBold';`);
 }
 
 // Main execution

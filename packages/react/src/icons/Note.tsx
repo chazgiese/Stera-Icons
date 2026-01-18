@@ -13,7 +13,8 @@ export interface NoteProps extends IconProps {
 }
 
 /**
- * Note with dynamic weight and duotone props.
+ * Note - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { NoteRegular } from 'stera-icons/NoteRegular';
  */
@@ -32,4 +33,5 @@ const Note = memo(forwardRef<SVGSVGElement, NoteProps>(({
 
 Note.displayName = 'Note';
 
-export { Note };
+// Triple export pattern (lucide-react style)
+export { Note, Note as NoteIcon, Note as SiNote };

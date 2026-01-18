@@ -14,5 +14,6 @@ const XFill = memo(
 
 XFill.displayName = 'XFill';
 
-export { XFill };
+// Triple export pattern (lucide-react style)
+export { XFill, XFill as XFillIcon, XFill as SiXFill };
 export type { XFillProps };

@@ -14,5 +14,6 @@ const CrosshairFill = memo(
 
 CrosshairFill.displayName = 'CrosshairFill';
 
-export { CrosshairFill };
+// Triple export pattern (lucide-react style)
+export { CrosshairFill, CrosshairFill as CrosshairFillIcon, CrosshairFill as SiCrosshairFill };
 export type { CrosshairFillProps };

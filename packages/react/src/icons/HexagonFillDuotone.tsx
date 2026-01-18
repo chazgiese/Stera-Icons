@@ -15,5 +15,6 @@ const HexagonFillDuotone = memo(
 
 HexagonFillDuotone.displayName = 'HexagonFillDuotone';
 
-export { HexagonFillDuotone };
+// Triple export pattern (lucide-react style)
+export { HexagonFillDuotone, HexagonFillDuotone as HexagonFillDuotoneIcon, HexagonFillDuotone as SiHexagonFillDuotone };
 export type { HexagonFillDuotoneProps };

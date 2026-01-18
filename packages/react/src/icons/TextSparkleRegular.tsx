@@ -14,5 +14,6 @@ const TextSparkleRegular = memo(
 
 TextSparkleRegular.displayName = 'TextSparkleRegular';
 
-export { TextSparkleRegular };
+// Triple export pattern (lucide-react style)
+export { TextSparkleRegular, TextSparkleRegular as TextSparkleRegularIcon, TextSparkleRegular as SiTextSparkleRegular };
 export type { TextSparkleRegularProps };

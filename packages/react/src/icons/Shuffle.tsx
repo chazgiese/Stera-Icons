@@ -13,7 +13,8 @@ export interface ShuffleProps extends IconProps {
 }
 
 /**
- * Shuffle with dynamic weight and duotone props.
+ * Shuffle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShuffleRegular } from 'stera-icons/ShuffleRegular';
  */
@@ -32,4 +33,5 @@ const Shuffle = memo(forwardRef<SVGSVGElement, ShuffleProps>(({
 
 Shuffle.displayName = 'Shuffle';
 
-export { Shuffle };
+// Triple export pattern (lucide-react style)
+export { Shuffle, Shuffle as ShuffleIcon, Shuffle as SiShuffle };

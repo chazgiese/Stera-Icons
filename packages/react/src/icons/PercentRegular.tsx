@@ -15,5 +15,6 @@ const PercentRegular = memo(
 
 PercentRegular.displayName = 'PercentRegular';
 
-export { PercentRegular };
+// Triple export pattern (lucide-react style)
+export { PercentRegular, PercentRegular as PercentRegularIcon, PercentRegular as SiPercentRegular };
 export type { PercentRegularProps };

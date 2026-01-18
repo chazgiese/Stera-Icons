@@ -16,5 +16,6 @@ const ConnectionFill = memo(
 
 ConnectionFill.displayName = 'ConnectionFill';
 
-export { ConnectionFill };
+// Triple export pattern (lucide-react style)
+export { ConnectionFill, ConnectionFill as ConnectionFillIcon, ConnectionFill as SiConnectionFill };
 export type { ConnectionFillProps };

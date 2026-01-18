@@ -14,5 +14,6 @@ const TextAlignRightRegular = memo(
 
 TextAlignRightRegular.displayName = 'TextAlignRightRegular';
 
-export { TextAlignRightRegular };
+// Triple export pattern (lucide-react style)
+export { TextAlignRightRegular, TextAlignRightRegular as TextAlignRightRegularIcon, TextAlignRightRegular as SiTextAlignRightRegular };
 export type { TextAlignRightRegularProps };

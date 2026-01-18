@@ -15,5 +15,6 @@ const TagRegular = memo(
 
 TagRegular.displayName = 'TagRegular';
 
-export { TagRegular };
+// Triple export pattern (lucide-react style)
+export { TagRegular, TagRegular as TagRegularIcon, TagRegular as SiTagRegular };
 export type { TagRegularProps };

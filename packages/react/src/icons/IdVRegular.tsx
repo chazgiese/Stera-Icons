@@ -15,5 +15,6 @@ const IdVRegular = memo(
 
 IdVRegular.displayName = 'IdVRegular';
 
-export { IdVRegular };
+// Triple export pattern (lucide-react style)
+export { IdVRegular, IdVRegular as IdVRegularIcon, IdVRegular as SiIdVRegular };
 export type { IdVRegularProps };

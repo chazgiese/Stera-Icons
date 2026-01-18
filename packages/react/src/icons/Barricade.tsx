@@ -13,7 +13,8 @@ export interface BarricadeProps extends IconProps {
 }
 
 /**
- * Barricade with dynamic weight and duotone props.
+ * Barricade - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BarricadeRegular } from 'stera-icons/BarricadeRegular';
  */
@@ -32,4 +33,5 @@ const Barricade = memo(forwardRef<SVGSVGElement, BarricadeProps>(({
 
 Barricade.displayName = 'Barricade';
 
-export { Barricade };
+// Triple export pattern (lucide-react style)
+export { Barricade, Barricade as BarricadeIcon, Barricade as SiBarricade };

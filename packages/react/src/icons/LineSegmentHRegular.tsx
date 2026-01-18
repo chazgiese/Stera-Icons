@@ -14,5 +14,6 @@ const LineSegmentHRegular = memo(
 
 LineSegmentHRegular.displayName = 'LineSegmentHRegular';
 
-export { LineSegmentHRegular };
+// Triple export pattern (lucide-react style)
+export { LineSegmentHRegular, LineSegmentHRegular as LineSegmentHRegularIcon, LineSegmentHRegular as SiLineSegmentHRegular };
 export type { LineSegmentHRegularProps };

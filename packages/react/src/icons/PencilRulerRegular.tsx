@@ -14,5 +14,6 @@ const PencilRulerRegular = memo(
 
 PencilRulerRegular.displayName = 'PencilRulerRegular';
 
-export { PencilRulerRegular };
+// Triple export pattern (lucide-react style)
+export { PencilRulerRegular, PencilRulerRegular as PencilRulerRegularIcon, PencilRulerRegular as SiPencilRulerRegular };
 export type { PencilRulerRegularProps };

@@ -14,5 +14,6 @@ const ShieldFill = memo(
 
 ShieldFill.displayName = 'ShieldFill';
 
-export { ShieldFill };
+// Triple export pattern (lucide-react style)
+export { ShieldFill, ShieldFill as ShieldFillIcon, ShieldFill as SiShieldFill };
 export type { ShieldFillProps };

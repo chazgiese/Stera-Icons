@@ -15,5 +15,6 @@ const ShieldHalfRegularDuotone = memo(
 
 ShieldHalfRegularDuotone.displayName = 'ShieldHalfRegularDuotone';
 
-export { ShieldHalfRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ShieldHalfRegularDuotone, ShieldHalfRegularDuotone as ShieldHalfRegularDuotoneIcon, ShieldHalfRegularDuotone as SiShieldHalfRegularDuotone };
 export type { ShieldHalfRegularDuotoneProps };

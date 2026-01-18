@@ -15,5 +15,6 @@ const SpeakerOffRegular = memo(
 
 SpeakerOffRegular.displayName = 'SpeakerOffRegular';
 
-export { SpeakerOffRegular };
+// Triple export pattern (lucide-react style)
+export { SpeakerOffRegular, SpeakerOffRegular as SpeakerOffRegularIcon, SpeakerOffRegular as SiSpeakerOffRegular };
 export type { SpeakerOffRegularProps };

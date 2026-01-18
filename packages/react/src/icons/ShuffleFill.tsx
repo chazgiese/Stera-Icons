@@ -15,5 +15,6 @@ const ShuffleFill = memo(
 
 ShuffleFill.displayName = 'ShuffleFill';
 
-export { ShuffleFill };
+// Triple export pattern (lucide-react style)
+export { ShuffleFill, ShuffleFill as ShuffleFillIcon, ShuffleFill as SiShuffleFill };
 export type { ShuffleFillProps };

@@ -13,7 +13,8 @@ export interface MinusProps extends IconProps {
 }
 
 /**
- * Minus with dynamic weight and duotone props.
+ * Minus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MinusRegular } from 'stera-icons/MinusRegular';
  */
@@ -32,4 +33,5 @@ const Minus = memo(forwardRef<SVGSVGElement, MinusProps>(({
 
 Minus.displayName = 'Minus';
 
-export { Minus };
+// Triple export pattern (lucide-react style)
+export { Minus, Minus as MinusIcon, Minus as SiMinus };

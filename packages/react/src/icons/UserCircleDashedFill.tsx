@@ -14,5 +14,6 @@ const UserCircleDashedFill = memo(
 
 UserCircleDashedFill.displayName = 'UserCircleDashedFill';
 
-export { UserCircleDashedFill };
+// Triple export pattern (lucide-react style)
+export { UserCircleDashedFill, UserCircleDashedFill as UserCircleDashedFillIcon, UserCircleDashedFill as SiUserCircleDashedFill };
 export type { UserCircleDashedFillProps };

@@ -13,7 +13,8 @@ export interface FlowSplitSquareUpProps extends IconProps {
 }
 
 /**
- * FlowSplitSquareUp with dynamic weight and duotone props.
+ * FlowSplitSquareUp - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowSplitSquareUpRegular } from 'stera-icons/FlowSplitSquareUpRegular';
  */
@@ -32,4 +33,5 @@ const FlowSplitSquareUp = memo(forwardRef<SVGSVGElement, FlowSplitSquareUpProps>
 
 FlowSplitSquareUp.displayName = 'FlowSplitSquareUp';
 
-export { FlowSplitSquareUp };
+// Triple export pattern (lucide-react style)
+export { FlowSplitSquareUp, FlowSplitSquareUp as FlowSplitSquareUpIcon, FlowSplitSquareUp as SiFlowSplitSquareUp };

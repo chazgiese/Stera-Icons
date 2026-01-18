@@ -15,5 +15,6 @@ const PaintPaletteBold = memo(
 
 PaintPaletteBold.displayName = 'PaintPaletteBold';
 
-export { PaintPaletteBold };
+// Triple export pattern (lucide-react style)
+export { PaintPaletteBold, PaintPaletteBold as PaintPaletteBoldIcon, PaintPaletteBold as SiPaintPaletteBold };
 export type { PaintPaletteBoldProps };

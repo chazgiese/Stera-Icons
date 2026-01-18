@@ -14,5 +14,6 @@ const TextAlignJustifyRegular = memo(
 
 TextAlignJustifyRegular.displayName = 'TextAlignJustifyRegular';
 
-export { TextAlignJustifyRegular };
+// Triple export pattern (lucide-react style)
+export { TextAlignJustifyRegular, TextAlignJustifyRegular as TextAlignJustifyRegularIcon, TextAlignJustifyRegular as SiTextAlignJustifyRegular };
 export type { TextAlignJustifyRegularProps };

@@ -13,7 +13,8 @@ export interface ExpandSimpleAltProps extends IconProps {
 }
 
 /**
- * ExpandSimpleAlt with dynamic weight and duotone props.
+ * ExpandSimpleAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ExpandSimpleAltRegular } from 'stera-icons/ExpandSimpleAltRegular';
  */
@@ -32,4 +33,5 @@ const ExpandSimpleAlt = memo(forwardRef<SVGSVGElement, ExpandSimpleAltProps>(({
 
 ExpandSimpleAlt.displayName = 'ExpandSimpleAlt';
 
-export { ExpandSimpleAlt };
+// Triple export pattern (lucide-react style)
+export { ExpandSimpleAlt, ExpandSimpleAlt as ExpandSimpleAltIcon, ExpandSimpleAlt as SiExpandSimpleAlt };

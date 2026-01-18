@@ -14,5 +14,6 @@ const LotusFill = memo(
 
 LotusFill.displayName = 'LotusFill';
 
-export { LotusFill };
+// Triple export pattern (lucide-react style)
+export { LotusFill, LotusFill as LotusFillIcon, LotusFill as SiLotusFill };
 export type { LotusFillProps };

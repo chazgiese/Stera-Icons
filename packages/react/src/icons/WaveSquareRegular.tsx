@@ -14,5 +14,6 @@ const WaveSquareRegular = memo(
 
 WaveSquareRegular.displayName = 'WaveSquareRegular';
 
-export { WaveSquareRegular };
+// Triple export pattern (lucide-react style)
+export { WaveSquareRegular, WaveSquareRegular as WaveSquareRegularIcon, WaveSquareRegular as SiWaveSquareRegular };
 export type { WaveSquareRegularProps };

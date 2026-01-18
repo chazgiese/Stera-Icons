@@ -13,7 +13,8 @@ export interface PlayProps extends IconProps {
 }
 
 /**
- * Play with dynamic weight and duotone props.
+ * Play - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PlayRegular } from 'stera-icons/PlayRegular';
  */
@@ -32,4 +33,5 @@ const Play = memo(forwardRef<SVGSVGElement, PlayProps>(({
 
 Play.displayName = 'Play';
 
-export { Play };
+// Triple export pattern (lucide-react style)
+export { Play, Play as PlayIcon, Play as SiPlay };

@@ -15,5 +15,6 @@ const BaseballRegular = memo(
 
 BaseballRegular.displayName = 'BaseballRegular';
 
-export { BaseballRegular };
+// Triple export pattern (lucide-react style)
+export { BaseballRegular, BaseballRegular as BaseballRegularIcon, BaseballRegular as SiBaseballRegular };
 export type { BaseballRegularProps };

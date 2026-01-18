@@ -13,7 +13,8 @@ export interface ListCheckProps extends IconProps {
 }
 
 /**
- * ListCheck with dynamic weight and duotone props.
+ * ListCheck - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListCheckRegular } from 'stera-icons/ListCheckRegular';
  */
@@ -32,4 +33,5 @@ const ListCheck = memo(forwardRef<SVGSVGElement, ListCheckProps>(({
 
 ListCheck.displayName = 'ListCheck';
 
-export { ListCheck };
+// Triple export pattern (lucide-react style)
+export { ListCheck, ListCheck as ListCheckIcon, ListCheck as SiListCheck };

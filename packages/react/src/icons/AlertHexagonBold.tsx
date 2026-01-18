@@ -15,5 +15,6 @@ const AlertHexagonBold = memo(
 
 AlertHexagonBold.displayName = 'AlertHexagonBold';
 
-export { AlertHexagonBold };
+// Triple export pattern (lucide-react style)
+export { AlertHexagonBold, AlertHexagonBold as AlertHexagonBoldIcon, AlertHexagonBold as SiAlertHexagonBold };
 export type { AlertHexagonBoldProps };

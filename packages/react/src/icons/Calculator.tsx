@@ -13,7 +13,8 @@ export interface CalculatorProps extends IconProps {
 }
 
 /**
- * Calculator with dynamic weight and duotone props.
+ * Calculator - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalculatorRegular } from 'stera-icons/CalculatorRegular';
  */
@@ -32,4 +33,5 @@ const Calculator = memo(forwardRef<SVGSVGElement, CalculatorProps>(({
 
 Calculator.displayName = 'Calculator';
 
-export { Calculator };
+// Triple export pattern (lucide-react style)
+export { Calculator, Calculator as CalculatorIcon, Calculator as SiCalculator };

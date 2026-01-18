@@ -15,5 +15,6 @@ const CheckSquareBold = memo(
 
 CheckSquareBold.displayName = 'CheckSquareBold';
 
-export { CheckSquareBold };
+// Triple export pattern (lucide-react style)
+export { CheckSquareBold, CheckSquareBold as CheckSquareBoldIcon, CheckSquareBold as SiCheckSquareBold };
 export type { CheckSquareBoldProps };

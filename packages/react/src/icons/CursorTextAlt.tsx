@@ -13,7 +13,8 @@ export interface CursorTextAltProps extends IconProps {
 }
 
 /**
- * CursorTextAlt with dynamic weight and duotone props.
+ * CursorTextAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CursorTextAltRegular } from 'stera-icons/CursorTextAltRegular';
  */
@@ -32,4 +33,5 @@ const CursorTextAlt = memo(forwardRef<SVGSVGElement, CursorTextAltProps>(({
 
 CursorTextAlt.displayName = 'CursorTextAlt';
 
-export { CursorTextAlt };
+// Triple export pattern (lucide-react style)
+export { CursorTextAlt, CursorTextAlt as CursorTextAltIcon, CursorTextAlt as SiCursorTextAlt };

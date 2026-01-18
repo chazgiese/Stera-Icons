@@ -13,7 +13,8 @@ export interface PawPrintProps extends IconProps {
 }
 
 /**
- * PawPrint with dynamic weight and duotone props.
+ * PawPrint - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PawPrintRegular } from 'stera-icons/PawPrintRegular';
  */
@@ -32,4 +33,5 @@ const PawPrint = memo(forwardRef<SVGSVGElement, PawPrintProps>(({
 
 PawPrint.displayName = 'PawPrint';
 
-export { PawPrint };
+// Triple export pattern (lucide-react style)
+export { PawPrint, PawPrint as PawPrintIcon, PawPrint as SiPawPrint };

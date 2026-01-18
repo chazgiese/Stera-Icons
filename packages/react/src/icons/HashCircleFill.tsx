@@ -15,5 +15,6 @@ const HashCircleFill = memo(
 
 HashCircleFill.displayName = 'HashCircleFill';
 
-export { HashCircleFill };
+// Triple export pattern (lucide-react style)
+export { HashCircleFill, HashCircleFill as HashCircleFillIcon, HashCircleFill as SiHashCircleFill };
 export type { HashCircleFillProps };

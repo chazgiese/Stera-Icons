@@ -14,5 +14,6 @@ const BoundingBoxFill = memo(
 
 BoundingBoxFill.displayName = 'BoundingBoxFill';
 
-export { BoundingBoxFill };
+// Triple export pattern (lucide-react style)
+export { BoundingBoxFill, BoundingBoxFill as BoundingBoxFillIcon, BoundingBoxFill as SiBoundingBoxFill };
 export type { BoundingBoxFillProps };

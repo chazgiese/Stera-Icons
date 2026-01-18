@@ -15,5 +15,6 @@ const PenNibBoldDuotone = memo(
 
 PenNibBoldDuotone.displayName = 'PenNibBoldDuotone';
 
-export { PenNibBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PenNibBoldDuotone, PenNibBoldDuotone as PenNibBoldDuotoneIcon, PenNibBoldDuotone as SiPenNibBoldDuotone };
 export type { PenNibBoldDuotoneProps };

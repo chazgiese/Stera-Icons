@@ -14,5 +14,6 @@ const SendHRegular = memo(
 
 SendHRegular.displayName = 'SendHRegular';
 
-export { SendHRegular };
+// Triple export pattern (lucide-react style)
+export { SendHRegular, SendHRegular as SendHRegularIcon, SendHRegular as SiSendHRegular };
 export type { SendHRegularProps };

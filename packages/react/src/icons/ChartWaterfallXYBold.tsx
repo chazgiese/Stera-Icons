@@ -15,5 +15,6 @@ const ChartWaterfallXYBold = memo(
 
 ChartWaterfallXYBold.displayName = 'ChartWaterfallXYBold';
 
-export { ChartWaterfallXYBold };
+// Triple export pattern (lucide-react style)
+export { ChartWaterfallXYBold, ChartWaterfallXYBold as ChartWaterfallXYBoldIcon, ChartWaterfallXYBold as SiChartWaterfallXYBold };
 export type { ChartWaterfallXYBoldProps };

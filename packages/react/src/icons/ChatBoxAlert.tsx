@@ -13,7 +13,8 @@ export interface ChatBoxAlertProps extends IconProps {
 }
 
 /**
- * ChatBoxAlert with dynamic weight and duotone props.
+ * ChatBoxAlert - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBoxAlertRegular } from 'stera-icons/ChatBoxAlertRegular';
  */
@@ -32,4 +33,5 @@ const ChatBoxAlert = memo(forwardRef<SVGSVGElement, ChatBoxAlertProps>(({
 
 ChatBoxAlert.displayName = 'ChatBoxAlert';
 
-export { ChatBoxAlert };
+// Triple export pattern (lucide-react style)
+export { ChatBoxAlert, ChatBoxAlert as ChatBoxAlertIcon, ChatBoxAlert as SiChatBoxAlert };

@@ -14,5 +14,6 @@ const TextQuoteRegular = memo(
 
 TextQuoteRegular.displayName = 'TextQuoteRegular';
 
-export { TextQuoteRegular };
+// Triple export pattern (lucide-react style)
+export { TextQuoteRegular, TextQuoteRegular as TextQuoteRegularIcon, TextQuoteRegular as SiTextQuoteRegular };
 export type { TextQuoteRegularProps };

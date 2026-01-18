@@ -13,7 +13,8 @@ export interface UserBanProps extends IconProps {
 }
 
 /**
- * UserBan with dynamic weight and duotone props.
+ * UserBan - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UserBanRegular } from 'stera-icons/UserBanRegular';
  */
@@ -32,4 +33,5 @@ const UserBan = memo(forwardRef<SVGSVGElement, UserBanProps>(({
 
 UserBan.displayName = 'UserBan';
 
-export { UserBan };
+// Triple export pattern (lucide-react style)
+export { UserBan, UserBan as UserBanIcon, UserBan as SiUserBan };

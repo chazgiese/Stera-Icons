@@ -15,5 +15,6 @@ const BladeSwordRegularDuotone = memo(
 
 BladeSwordRegularDuotone.displayName = 'BladeSwordRegularDuotone';
 
-export { BladeSwordRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { BladeSwordRegularDuotone, BladeSwordRegularDuotone as BladeSwordRegularDuotoneIcon, BladeSwordRegularDuotone as SiBladeSwordRegularDuotone };
 export type { BladeSwordRegularDuotoneProps };

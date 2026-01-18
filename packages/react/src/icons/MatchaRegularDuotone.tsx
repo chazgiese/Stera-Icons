@@ -15,5 +15,6 @@ const MatchaRegularDuotone = memo(
 
 MatchaRegularDuotone.displayName = 'MatchaRegularDuotone';
 
-export { MatchaRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { MatchaRegularDuotone, MatchaRegularDuotone as MatchaRegularDuotoneIcon, MatchaRegularDuotone as SiMatchaRegularDuotone };
 export type { MatchaRegularDuotoneProps };

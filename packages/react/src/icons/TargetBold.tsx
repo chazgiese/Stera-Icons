@@ -16,5 +16,6 @@ const TargetBold = memo(
 
 TargetBold.displayName = 'TargetBold';
 
-export { TargetBold };
+// Triple export pattern (lucide-react style)
+export { TargetBold, TargetBold as TargetBoldIcon, TargetBold as SiTargetBold };
 export type { TargetBoldProps };

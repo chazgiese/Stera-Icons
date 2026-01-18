@@ -14,5 +14,6 @@ const ListBulletSimpleFill = memo(
 
 ListBulletSimpleFill.displayName = 'ListBulletSimpleFill';
 
-export { ListBulletSimpleFill };
+// Triple export pattern (lucide-react style)
+export { ListBulletSimpleFill, ListBulletSimpleFill as ListBulletSimpleFillIcon, ListBulletSimpleFill as SiListBulletSimpleFill };
 export type { ListBulletSimpleFillProps };

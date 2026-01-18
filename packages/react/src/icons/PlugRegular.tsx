@@ -14,5 +14,6 @@ const PlugRegular = memo(
 
 PlugRegular.displayName = 'PlugRegular';
 
-export { PlugRegular };
+// Triple export pattern (lucide-react style)
+export { PlugRegular, PlugRegular as PlugRegularIcon, PlugRegular as SiPlugRegular };
 export type { PlugRegularProps };

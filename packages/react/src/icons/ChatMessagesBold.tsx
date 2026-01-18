@@ -14,5 +14,6 @@ const ChatMessagesBold = memo(
 
 ChatMessagesBold.displayName = 'ChatMessagesBold';
 
-export { ChatMessagesBold };
+// Triple export pattern (lucide-react style)
+export { ChatMessagesBold, ChatMessagesBold as ChatMessagesBoldIcon, ChatMessagesBold as SiChatMessagesBold };
 export type { ChatMessagesBoldProps };

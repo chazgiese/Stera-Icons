@@ -13,7 +13,8 @@ export interface CommandProps extends IconProps {
 }
 
 /**
- * Command with dynamic weight and duotone props.
+ * Command - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CommandRegular } from 'stera-icons/CommandRegular';
  */
@@ -32,4 +33,5 @@ const Command = memo(forwardRef<SVGSVGElement, CommandProps>(({
 
 Command.displayName = 'Command';
 
-export { Command };
+// Triple export pattern (lucide-react style)
+export { Command, Command as CommandIcon, Command as SiCommand };

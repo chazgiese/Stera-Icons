@@ -14,5 +14,6 @@ const CubeDashBold = memo(
 
 CubeDashBold.displayName = 'CubeDashBold';
 
-export { CubeDashBold };
+// Triple export pattern (lucide-react style)
+export { CubeDashBold, CubeDashBold as CubeDashBoldIcon, CubeDashBold as SiCubeDashBold };
 export type { CubeDashBoldProps };

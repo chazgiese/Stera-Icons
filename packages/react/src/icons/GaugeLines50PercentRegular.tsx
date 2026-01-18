@@ -15,5 +15,6 @@ const GaugeLines50PercentRegular = memo(
 
 GaugeLines50PercentRegular.displayName = 'GaugeLines50PercentRegular';
 
-export { GaugeLines50PercentRegular };
+// Triple export pattern (lucide-react style)
+export { GaugeLines50PercentRegular, GaugeLines50PercentRegular as GaugeLines50PercentRegularIcon, GaugeLines50PercentRegular as SiGaugeLines50PercentRegular };
 export type { GaugeLines50PercentRegularProps };

@@ -15,5 +15,6 @@ const SelectFieldRegular = memo(
 
 SelectFieldRegular.displayName = 'SelectFieldRegular';
 
-export { SelectFieldRegular };
+// Triple export pattern (lucide-react style)
+export { SelectFieldRegular, SelectFieldRegular as SelectFieldRegularIcon, SelectFieldRegular as SiSelectFieldRegular };
 export type { SelectFieldRegularProps };

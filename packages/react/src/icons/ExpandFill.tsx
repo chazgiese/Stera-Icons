@@ -14,5 +14,6 @@ const ExpandFill = memo(
 
 ExpandFill.displayName = 'ExpandFill';
 
-export { ExpandFill };
+// Triple export pattern (lucide-react style)
+export { ExpandFill, ExpandFill as ExpandFillIcon, ExpandFill as SiExpandFill };
 export type { ExpandFillProps };

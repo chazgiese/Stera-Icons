@@ -15,5 +15,6 @@ const WineBottleLabelBoldDuotone = memo(
 
 WineBottleLabelBoldDuotone.displayName = 'WineBottleLabelBoldDuotone';
 
-export { WineBottleLabelBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { WineBottleLabelBoldDuotone, WineBottleLabelBoldDuotone as WineBottleLabelBoldDuotoneIcon, WineBottleLabelBoldDuotone as SiWineBottleLabelBoldDuotone };
 export type { WineBottleLabelBoldDuotoneProps };

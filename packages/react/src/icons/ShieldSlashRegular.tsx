@@ -14,5 +14,6 @@ const ShieldSlashRegular = memo(
 
 ShieldSlashRegular.displayName = 'ShieldSlashRegular';
 
-export { ShieldSlashRegular };
+// Triple export pattern (lucide-react style)
+export { ShieldSlashRegular, ShieldSlashRegular as ShieldSlashRegularIcon, ShieldSlashRegular as SiShieldSlashRegular };
 export type { ShieldSlashRegularProps };

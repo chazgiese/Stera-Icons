@@ -16,5 +16,6 @@ const ToolsFill = memo(
 
 ToolsFill.displayName = 'ToolsFill';
 
-export { ToolsFill };
+// Triple export pattern (lucide-react style)
+export { ToolsFill, ToolsFill as ToolsFillIcon, ToolsFill as SiToolsFill };
 export type { ToolsFillProps };

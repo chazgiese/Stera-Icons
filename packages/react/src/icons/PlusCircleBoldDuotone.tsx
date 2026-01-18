@@ -15,5 +15,6 @@ const PlusCircleBoldDuotone = memo(
 
 PlusCircleBoldDuotone.displayName = 'PlusCircleBoldDuotone';
 
-export { PlusCircleBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PlusCircleBoldDuotone, PlusCircleBoldDuotone as PlusCircleBoldDuotoneIcon, PlusCircleBoldDuotone as SiPlusCircleBoldDuotone };
 export type { PlusCircleBoldDuotoneProps };

@@ -14,5 +14,6 @@ const StairsBold = memo(
 
 StairsBold.displayName = 'StairsBold';
 
-export { StairsBold };
+// Triple export pattern (lucide-react style)
+export { StairsBold, StairsBold as StairsBoldIcon, StairsBold as SiStairsBold };
 export type { StairsBoldProps };

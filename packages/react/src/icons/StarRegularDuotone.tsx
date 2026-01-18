@@ -15,5 +15,6 @@ const StarRegularDuotone = memo(
 
 StarRegularDuotone.displayName = 'StarRegularDuotone';
 
-export { StarRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { StarRegularDuotone, StarRegularDuotone as StarRegularDuotoneIcon, StarRegularDuotone as SiStarRegularDuotone };
 export type { StarRegularDuotoneProps };

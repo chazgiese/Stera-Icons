@@ -15,5 +15,6 @@ const GlobeRegularDuotone = memo(
 
 GlobeRegularDuotone.displayName = 'GlobeRegularDuotone';
 
-export { GlobeRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { GlobeRegularDuotone, GlobeRegularDuotone as GlobeRegularDuotoneIcon, GlobeRegularDuotone as SiGlobeRegularDuotone };
 export type { GlobeRegularDuotoneProps };

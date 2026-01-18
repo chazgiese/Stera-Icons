@@ -13,7 +13,8 @@ export interface InfoSquareProps extends IconProps {
 }
 
 /**
- * InfoSquare with dynamic weight and duotone props.
+ * InfoSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { InfoSquareRegular } from 'stera-icons/InfoSquareRegular';
  */
@@ -32,4 +33,5 @@ const InfoSquare = memo(forwardRef<SVGSVGElement, InfoSquareProps>(({
 
 InfoSquare.displayName = 'InfoSquare';
 
-export { InfoSquare };
+// Triple export pattern (lucide-react style)
+export { InfoSquare, InfoSquare as InfoSquareIcon, InfoSquare as SiInfoSquare };

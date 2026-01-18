@@ -13,7 +13,8 @@ export interface ConnectionAltProps extends IconProps {
 }
 
 /**
- * ConnectionAlt with dynamic weight and duotone props.
+ * ConnectionAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ConnectionAltRegular } from 'stera-icons/ConnectionAltRegular';
  */
@@ -32,4 +33,5 @@ const ConnectionAlt = memo(forwardRef<SVGSVGElement, ConnectionAltProps>(({
 
 ConnectionAlt.displayName = 'ConnectionAlt';
 
-export { ConnectionAlt };
+// Triple export pattern (lucide-react style)
+export { ConnectionAlt, ConnectionAlt as ConnectionAltIcon, ConnectionAlt as SiConnectionAlt };

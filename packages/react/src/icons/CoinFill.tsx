@@ -14,5 +14,6 @@ const CoinFill = memo(
 
 CoinFill.displayName = 'CoinFill';
 
-export { CoinFill };
+// Triple export pattern (lucide-react style)
+export { CoinFill, CoinFill as CoinFillIcon, CoinFill as SiCoinFill };
 export type { CoinFillProps };

@@ -14,5 +14,6 @@ const RouteArrowBold = memo(
 
 RouteArrowBold.displayName = 'RouteArrowBold';
 
-export { RouteArrowBold };
+// Triple export pattern (lucide-react style)
+export { RouteArrowBold, RouteArrowBold as RouteArrowBoldIcon, RouteArrowBold as SiRouteArrowBold };
 export type { RouteArrowBoldProps };

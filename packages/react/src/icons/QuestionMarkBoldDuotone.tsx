@@ -15,5 +15,6 @@ const QuestionMarkBoldDuotone = memo(
 
 QuestionMarkBoldDuotone.displayName = 'QuestionMarkBoldDuotone';
 
-export { QuestionMarkBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { QuestionMarkBoldDuotone, QuestionMarkBoldDuotone as QuestionMarkBoldDuotoneIcon, QuestionMarkBoldDuotone as SiQuestionMarkBoldDuotone };
 export type { QuestionMarkBoldDuotoneProps };

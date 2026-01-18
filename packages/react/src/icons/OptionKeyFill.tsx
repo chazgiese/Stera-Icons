@@ -14,5 +14,6 @@ const OptionKeyFill = memo(
 
 OptionKeyFill.displayName = 'OptionKeyFill';
 
-export { OptionKeyFill };
+// Triple export pattern (lucide-react style)
+export { OptionKeyFill, OptionKeyFill as OptionKeyFillIcon, OptionKeyFill as SiOptionKeyFill };
 export type { OptionKeyFillProps };

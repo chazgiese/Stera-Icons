@@ -15,5 +15,6 @@ const BracketsSquareCircleRegular = memo(
 
 BracketsSquareCircleRegular.displayName = 'BracketsSquareCircleRegular';
 
-export { BracketsSquareCircleRegular };
+// Triple export pattern (lucide-react style)
+export { BracketsSquareCircleRegular, BracketsSquareCircleRegular as BracketsSquareCircleRegularIcon, BracketsSquareCircleRegular as SiBracketsSquareCircleRegular };
 export type { BracketsSquareCircleRegularProps };

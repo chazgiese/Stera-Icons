@@ -15,5 +15,6 @@ const PercentCircleBoldDuotone = memo(
 
 PercentCircleBoldDuotone.displayName = 'PercentCircleBoldDuotone';
 
-export { PercentCircleBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PercentCircleBoldDuotone, PercentCircleBoldDuotone as PercentCircleBoldDuotoneIcon, PercentCircleBoldDuotone as SiPercentCircleBoldDuotone };
 export type { PercentCircleBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface QrCodeProps extends IconProps {
 }
 
 /**
- * QrCode with dynamic weight and duotone props.
+ * QrCode - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { QrCodeRegular } from 'stera-icons/QrCodeRegular';
  */
@@ -32,4 +33,5 @@ const QrCode = memo(forwardRef<SVGSVGElement, QrCodeProps>(({
 
 QrCode.displayName = 'QrCode';
 
-export { QrCode };
+// Triple export pattern (lucide-react style)
+export { QrCode, QrCode as QrCodeIcon, QrCode as SiQrCode };

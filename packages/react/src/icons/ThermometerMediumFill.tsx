@@ -14,5 +14,6 @@ const ThermometerMediumFill = memo(
 
 ThermometerMediumFill.displayName = 'ThermometerMediumFill';
 
-export { ThermometerMediumFill };
+// Triple export pattern (lucide-react style)
+export { ThermometerMediumFill, ThermometerMediumFill as ThermometerMediumFillIcon, ThermometerMediumFill as SiThermometerMediumFill };
 export type { ThermometerMediumFillProps };

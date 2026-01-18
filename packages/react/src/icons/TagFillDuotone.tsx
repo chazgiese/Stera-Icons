@@ -15,5 +15,6 @@ const TagFillDuotone = memo(
 
 TagFillDuotone.displayName = 'TagFillDuotone';
 
-export { TagFillDuotone };
+// Triple export pattern (lucide-react style)
+export { TagFillDuotone, TagFillDuotone as TagFillDuotoneIcon, TagFillDuotone as SiTagFillDuotone };
 export type { TagFillDuotoneProps };

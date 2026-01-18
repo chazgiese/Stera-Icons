@@ -16,5 +16,6 @@ const BrightnessHighBold = memo(
 
 BrightnessHighBold.displayName = 'BrightnessHighBold';
 
-export { BrightnessHighBold };
+// Triple export pattern (lucide-react style)
+export { BrightnessHighBold, BrightnessHighBold as BrightnessHighBoldIcon, BrightnessHighBold as SiBrightnessHighBold };
 export type { BrightnessHighBoldProps };

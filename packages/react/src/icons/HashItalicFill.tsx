@@ -14,5 +14,6 @@ const HashItalicFill = memo(
 
 HashItalicFill.displayName = 'HashItalicFill';
 
-export { HashItalicFill };
+// Triple export pattern (lucide-react style)
+export { HashItalicFill, HashItalicFill as HashItalicFillIcon, HashItalicFill as SiHashItalicFill };
 export type { HashItalicFillProps };

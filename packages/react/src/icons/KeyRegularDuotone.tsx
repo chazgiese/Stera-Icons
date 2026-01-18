@@ -15,5 +15,6 @@ const KeyRegularDuotone = memo(
 
 KeyRegularDuotone.displayName = 'KeyRegularDuotone';
 
-export { KeyRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { KeyRegularDuotone, KeyRegularDuotone as KeyRegularDuotoneIcon, KeyRegularDuotone as SiKeyRegularDuotone };
 export type { KeyRegularDuotoneProps };

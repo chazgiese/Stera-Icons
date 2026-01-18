@@ -14,5 +14,6 @@ const RepeatRegular = memo(
 
 RepeatRegular.displayName = 'RepeatRegular';
 
-export { RepeatRegular };
+// Triple export pattern (lucide-react style)
+export { RepeatRegular, RepeatRegular as RepeatRegularIcon, RepeatRegular as SiRepeatRegular };
 export type { RepeatRegularProps };

@@ -15,5 +15,6 @@ const LineWeightRegular = memo(
 
 LineWeightRegular.displayName = 'LineWeightRegular';
 
-export { LineWeightRegular };
+// Triple export pattern (lucide-react style)
+export { LineWeightRegular, LineWeightRegular as LineWeightRegularIcon, LineWeightRegular as SiLineWeightRegular };
 export type { LineWeightRegularProps };

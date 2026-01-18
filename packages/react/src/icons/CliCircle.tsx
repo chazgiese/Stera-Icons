@@ -13,7 +13,8 @@ export interface CliCircleProps extends IconProps {
 }
 
 /**
- * CliCircle with dynamic weight and duotone props.
+ * CliCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CliCircleRegular } from 'stera-icons/CliCircleRegular';
  */
@@ -32,4 +33,5 @@ const CliCircle = memo(forwardRef<SVGSVGElement, CliCircleProps>(({
 
 CliCircle.displayName = 'CliCircle';
 
-export { CliCircle };
+// Triple export pattern (lucide-react style)
+export { CliCircle, CliCircle as CliCircleIcon, CliCircle as SiCliCircle };

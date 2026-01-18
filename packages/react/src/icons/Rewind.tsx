@@ -13,7 +13,8 @@ export interface RewindProps extends IconProps {
 }
 
 /**
- * Rewind with dynamic weight and duotone props.
+ * Rewind - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RewindRegular } from 'stera-icons/RewindRegular';
  */
@@ -32,4 +33,5 @@ const Rewind = memo(forwardRef<SVGSVGElement, RewindProps>(({
 
 Rewind.displayName = 'Rewind';
 
-export { Rewind };
+// Triple export pattern (lucide-react style)
+export { Rewind, Rewind as RewindIcon, Rewind as SiRewind };

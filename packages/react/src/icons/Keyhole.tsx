@@ -13,7 +13,8 @@ export interface KeyholeProps extends IconProps {
 }
 
 /**
- * Keyhole with dynamic weight and duotone props.
+ * Keyhole - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { KeyholeRegular } from 'stera-icons/KeyholeRegular';
  */
@@ -32,4 +33,5 @@ const Keyhole = memo(forwardRef<SVGSVGElement, KeyholeProps>(({
 
 Keyhole.displayName = 'Keyhole';
 
-export { Keyhole };
+// Triple export pattern (lucide-react style)
+export { Keyhole, Keyhole as KeyholeIcon, Keyhole as SiKeyhole };

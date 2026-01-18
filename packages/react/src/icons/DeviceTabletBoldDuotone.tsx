@@ -14,5 +14,6 @@ const DeviceTabletBoldDuotone = memo(
 
 DeviceTabletBoldDuotone.displayName = 'DeviceTabletBoldDuotone';
 
-export { DeviceTabletBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { DeviceTabletBoldDuotone, DeviceTabletBoldDuotone as DeviceTabletBoldDuotoneIcon, DeviceTabletBoldDuotone as SiDeviceTabletBoldDuotone };
 export type { DeviceTabletBoldDuotoneProps };

@@ -15,5 +15,6 @@ const HomePlusBoldDuotone = memo(
 
 HomePlusBoldDuotone.displayName = 'HomePlusBoldDuotone';
 
-export { HomePlusBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HomePlusBoldDuotone, HomePlusBoldDuotone as HomePlusBoldDuotoneIcon, HomePlusBoldDuotone as SiHomePlusBoldDuotone };
 export type { HomePlusBoldDuotoneProps };

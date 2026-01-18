@@ -13,7 +13,8 @@ export interface StarHalfProps extends IconProps {
 }
 
 /**
- * StarHalf with dynamic weight and duotone props.
+ * StarHalf - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { StarHalfRegular } from 'stera-icons/StarHalfRegular';
  */
@@ -32,4 +33,5 @@ const StarHalf = memo(forwardRef<SVGSVGElement, StarHalfProps>(({
 
 StarHalf.displayName = 'StarHalf';
 
-export { StarHalf };
+// Triple export pattern (lucide-react style)
+export { StarHalf, StarHalf as StarHalfIcon, StarHalf as SiStarHalf };

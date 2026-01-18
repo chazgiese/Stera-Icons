@@ -13,7 +13,8 @@ export interface CursorPointerProps extends IconProps {
 }
 
 /**
- * CursorPointer with dynamic weight and duotone props.
+ * CursorPointer - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CursorPointerRegular } from 'stera-icons/CursorPointerRegular';
  */
@@ -32,4 +33,5 @@ const CursorPointer = memo(forwardRef<SVGSVGElement, CursorPointerProps>(({
 
 CursorPointer.displayName = 'CursorPointer';
 
-export { CursorPointer };
+// Triple export pattern (lucide-react style)
+export { CursorPointer, CursorPointer as CursorPointerIcon, CursorPointer as SiCursorPointer };

@@ -15,5 +15,6 @@ const HeadphonesBoldDuotone = memo(
 
 HeadphonesBoldDuotone.displayName = 'HeadphonesBoldDuotone';
 
-export { HeadphonesBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HeadphonesBoldDuotone, HeadphonesBoldDuotone as HeadphonesBoldDuotoneIcon, HeadphonesBoldDuotone as SiHeadphonesBoldDuotone };
 export type { HeadphonesBoldDuotoneProps };

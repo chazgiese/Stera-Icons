@@ -13,7 +13,8 @@ export interface BatteryProps extends IconProps {
 }
 
 /**
- * Battery with dynamic weight and duotone props.
+ * Battery - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BatteryRegular } from 'stera-icons/BatteryRegular';
  */
@@ -32,4 +33,5 @@ const Battery = memo(forwardRef<SVGSVGElement, BatteryProps>(({
 
 Battery.displayName = 'Battery';
 
-export { Battery };
+// Triple export pattern (lucide-react style)
+export { Battery, Battery as BatteryIcon, Battery as SiBattery };

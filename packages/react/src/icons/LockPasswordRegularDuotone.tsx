@@ -15,5 +15,6 @@ const LockPasswordRegularDuotone = memo(
 
 LockPasswordRegularDuotone.displayName = 'LockPasswordRegularDuotone';
 
-export { LockPasswordRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { LockPasswordRegularDuotone, LockPasswordRegularDuotone as LockPasswordRegularDuotoneIcon, LockPasswordRegularDuotone as SiLockPasswordRegularDuotone };
 export type { LockPasswordRegularDuotoneProps };

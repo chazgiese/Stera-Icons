@@ -15,5 +15,6 @@ const PhoneOffBold = memo(
 
 PhoneOffBold.displayName = 'PhoneOffBold';
 
-export { PhoneOffBold };
+// Triple export pattern (lucide-react style)
+export { PhoneOffBold, PhoneOffBold as PhoneOffBoldIcon, PhoneOffBold as SiPhoneOffBold };
 export type { PhoneOffBoldProps };

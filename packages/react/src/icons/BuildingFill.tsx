@@ -14,5 +14,6 @@ const BuildingFill = memo(
 
 BuildingFill.displayName = 'BuildingFill';
 
-export { BuildingFill };
+// Triple export pattern (lucide-react style)
+export { BuildingFill, BuildingFill as BuildingFillIcon, BuildingFill as SiBuildingFill };
 export type { BuildingFillProps };

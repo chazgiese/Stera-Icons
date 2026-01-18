@@ -15,5 +15,6 @@ const CursorOgFillDuotone = memo(
 
 CursorOgFillDuotone.displayName = 'CursorOgFillDuotone';
 
-export { CursorOgFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CursorOgFillDuotone, CursorOgFillDuotone as CursorOgFillDuotoneIcon, CursorOgFillDuotone as SiCursorOgFillDuotone };
 export type { CursorOgFillDuotoneProps };

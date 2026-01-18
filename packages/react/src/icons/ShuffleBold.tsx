@@ -15,5 +15,6 @@ const ShuffleBold = memo(
 
 ShuffleBold.displayName = 'ShuffleBold';
 
-export { ShuffleBold };
+// Triple export pattern (lucide-react style)
+export { ShuffleBold, ShuffleBold as ShuffleBoldIcon, ShuffleBold as SiShuffleBold };
 export type { ShuffleBoldProps };

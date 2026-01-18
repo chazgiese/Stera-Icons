@@ -14,5 +14,6 @@ const BookOpenRegular = memo(
 
 BookOpenRegular.displayName = 'BookOpenRegular';
 
-export { BookOpenRegular };
+// Triple export pattern (lucide-react style)
+export { BookOpenRegular, BookOpenRegular as BookOpenRegularIcon, BookOpenRegular as SiBookOpenRegular };
 export type { BookOpenRegularProps };

@@ -15,5 +15,6 @@ const ChartPieBoldDuotone = memo(
 
 ChartPieBoldDuotone.displayName = 'ChartPieBoldDuotone';
 
-export { ChartPieBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ChartPieBoldDuotone, ChartPieBoldDuotone as ChartPieBoldDuotoneIcon, ChartPieBoldDuotone as SiChartPieBoldDuotone };
 export type { ChartPieBoldDuotoneProps };

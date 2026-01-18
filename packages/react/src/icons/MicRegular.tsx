@@ -15,5 +15,6 @@ const MicRegular = memo(
 
 MicRegular.displayName = 'MicRegular';
 
-export { MicRegular };
+// Triple export pattern (lucide-react style)
+export { MicRegular, MicRegular as MicRegularIcon, MicRegular as SiMicRegular };
 export type { MicRegularProps };

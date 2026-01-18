@@ -15,5 +15,6 @@ const ChartBarSquareBold = memo(
 
 ChartBarSquareBold.displayName = 'ChartBarSquareBold';
 
-export { ChartBarSquareBold };
+// Triple export pattern (lucide-react style)
+export { ChartBarSquareBold, ChartBarSquareBold as ChartBarSquareBoldIcon, ChartBarSquareBold as SiChartBarSquareBold };
 export type { ChartBarSquareBoldProps };

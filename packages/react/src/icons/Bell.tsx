@@ -13,7 +13,8 @@ export interface BellProps extends IconProps {
 }
 
 /**
- * Bell with dynamic weight and duotone props.
+ * Bell - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BellRegular } from 'stera-icons/BellRegular';
  */
@@ -32,4 +33,5 @@ const Bell = memo(forwardRef<SVGSVGElement, BellProps>(({
 
 Bell.displayName = 'Bell';
 
-export { Bell };
+// Triple export pattern (lucide-react style)
+export { Bell, Bell as BellIcon, Bell as SiBell };

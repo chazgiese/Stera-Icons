@@ -13,7 +13,8 @@ export interface FlaskFullProps extends IconProps {
 }
 
 /**
- * FlaskFull with dynamic weight and duotone props.
+ * FlaskFull - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlaskFullRegular } from 'stera-icons/FlaskFullRegular';
  */
@@ -32,4 +33,5 @@ const FlaskFull = memo(forwardRef<SVGSVGElement, FlaskFullProps>(({
 
 FlaskFull.displayName = 'FlaskFull';
 
-export { FlaskFull };
+// Triple export pattern (lucide-react style)
+export { FlaskFull, FlaskFull as FlaskFullIcon, FlaskFull as SiFlaskFull };

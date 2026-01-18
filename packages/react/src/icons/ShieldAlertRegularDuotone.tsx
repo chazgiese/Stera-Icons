@@ -15,5 +15,6 @@ const ShieldAlertRegularDuotone = memo(
 
 ShieldAlertRegularDuotone.displayName = 'ShieldAlertRegularDuotone';
 
-export { ShieldAlertRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ShieldAlertRegularDuotone, ShieldAlertRegularDuotone as ShieldAlertRegularDuotoneIcon, ShieldAlertRegularDuotone as SiShieldAlertRegularDuotone };
 export type { ShieldAlertRegularDuotoneProps };

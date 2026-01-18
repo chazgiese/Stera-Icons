@@ -15,5 +15,6 @@ const UploadBold = memo(
 
 UploadBold.displayName = 'UploadBold';
 
-export { UploadBold };
+// Triple export pattern (lucide-react style)
+export { UploadBold, UploadBold as UploadBoldIcon, UploadBold as SiUploadBold };
 export type { UploadBoldProps };

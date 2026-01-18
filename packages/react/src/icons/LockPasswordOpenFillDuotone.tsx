@@ -15,5 +15,6 @@ const LockPasswordOpenFillDuotone = memo(
 
 LockPasswordOpenFillDuotone.displayName = 'LockPasswordOpenFillDuotone';
 
-export { LockPasswordOpenFillDuotone };
+// Triple export pattern (lucide-react style)
+export { LockPasswordOpenFillDuotone, LockPasswordOpenFillDuotone as LockPasswordOpenFillDuotoneIcon, LockPasswordOpenFillDuotone as SiLockPasswordOpenFillDuotone };
 export type { LockPasswordOpenFillDuotoneProps };

@@ -13,7 +13,8 @@ export interface CreditCardAltProps extends IconProps {
 }
 
 /**
- * CreditCardAlt with dynamic weight and duotone props.
+ * CreditCardAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CreditCardAltRegular } from 'stera-icons/CreditCardAltRegular';
  */
@@ -32,4 +33,5 @@ const CreditCardAlt = memo(forwardRef<SVGSVGElement, CreditCardAltProps>(({
 
 CreditCardAlt.displayName = 'CreditCardAlt';
 
-export { CreditCardAlt };
+// Triple export pattern (lucide-react style)
+export { CreditCardAlt, CreditCardAlt as CreditCardAltIcon, CreditCardAlt as SiCreditCardAlt };

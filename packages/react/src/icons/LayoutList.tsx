@@ -13,7 +13,8 @@ export interface LayoutListProps extends IconProps {
 }
 
 /**
- * LayoutList with dynamic weight and duotone props.
+ * LayoutList - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutListRegular } from 'stera-icons/LayoutListRegular';
  */
@@ -32,4 +33,5 @@ const LayoutList = memo(forwardRef<SVGSVGElement, LayoutListProps>(({
 
 LayoutList.displayName = 'LayoutList';
 
-export { LayoutList };
+// Triple export pattern (lucide-react style)
+export { LayoutList, LayoutList as LayoutListIcon, LayoutList as SiLayoutList };

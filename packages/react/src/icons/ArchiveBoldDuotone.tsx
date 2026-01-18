@@ -16,5 +16,6 @@ const ArchiveBoldDuotone = memo(
 
 ArchiveBoldDuotone.displayName = 'ArchiveBoldDuotone';
 
-export { ArchiveBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ArchiveBoldDuotone, ArchiveBoldDuotone as ArchiveBoldDuotoneIcon, ArchiveBoldDuotone as SiArchiveBoldDuotone };
 export type { ArchiveBoldDuotoneProps };

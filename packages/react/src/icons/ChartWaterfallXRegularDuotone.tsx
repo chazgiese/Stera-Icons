@@ -15,5 +15,6 @@ const ChartWaterfallXRegularDuotone = memo(
 
 ChartWaterfallXRegularDuotone.displayName = 'ChartWaterfallXRegularDuotone';
 
-export { ChartWaterfallXRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ChartWaterfallXRegularDuotone, ChartWaterfallXRegularDuotone as ChartWaterfallXRegularDuotoneIcon, ChartWaterfallXRegularDuotone as SiChartWaterfallXRegularDuotone };
 export type { ChartWaterfallXRegularDuotoneProps };

@@ -14,5 +14,6 @@ const FigmaFill = memo(
 
 FigmaFill.displayName = 'FigmaFill';
 
-export { FigmaFill };
+// Triple export pattern (lucide-react style)
+export { FigmaFill, FigmaFill as FigmaFillIcon, FigmaFill as SiFigmaFill };
 export type { FigmaFillProps };

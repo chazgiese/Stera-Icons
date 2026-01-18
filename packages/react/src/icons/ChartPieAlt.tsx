@@ -13,7 +13,8 @@ export interface ChartPieAltProps extends IconProps {
 }
 
 /**
- * ChartPieAlt with dynamic weight and duotone props.
+ * ChartPieAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartPieAltRegular } from 'stera-icons/ChartPieAltRegular';
  */
@@ -32,4 +33,5 @@ const ChartPieAlt = memo(forwardRef<SVGSVGElement, ChartPieAltProps>(({
 
 ChartPieAlt.displayName = 'ChartPieAlt';
 
-export { ChartPieAlt };
+// Triple export pattern (lucide-react style)
+export { ChartPieAlt, ChartPieAlt as ChartPieAltIcon, ChartPieAlt as SiChartPieAlt };

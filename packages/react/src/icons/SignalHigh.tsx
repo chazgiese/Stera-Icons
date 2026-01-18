@@ -13,7 +13,8 @@ export interface SignalHighProps extends IconProps {
 }
 
 /**
- * SignalHigh with dynamic weight and duotone props.
+ * SignalHigh - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignalHighRegular } from 'stera-icons/SignalHighRegular';
  */
@@ -32,4 +33,5 @@ const SignalHigh = memo(forwardRef<SVGSVGElement, SignalHighProps>(({
 
 SignalHigh.displayName = 'SignalHigh';
 
-export { SignalHigh };
+// Triple export pattern (lucide-react style)
+export { SignalHigh, SignalHigh as SignalHighIcon, SignalHigh as SiSignalHigh };

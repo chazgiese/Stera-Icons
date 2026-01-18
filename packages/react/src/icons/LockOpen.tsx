@@ -13,7 +13,8 @@ export interface LockOpenProps extends IconProps {
 }
 
 /**
- * LockOpen with dynamic weight and duotone props.
+ * LockOpen - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LockOpenRegular } from 'stera-icons/LockOpenRegular';
  */
@@ -32,4 +33,5 @@ const LockOpen = memo(forwardRef<SVGSVGElement, LockOpenProps>(({
 
 LockOpen.displayName = 'LockOpen';
 
-export { LockOpen };
+// Triple export pattern (lucide-react style)
+export { LockOpen, LockOpen as LockOpenIcon, LockOpen as SiLockOpen };

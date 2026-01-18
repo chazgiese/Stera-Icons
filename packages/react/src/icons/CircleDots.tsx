@@ -13,7 +13,8 @@ export interface CircleDotsProps extends IconProps {
 }
 
 /**
- * CircleDots with dynamic weight and duotone props.
+ * CircleDots - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleDotsRegular } from 'stera-icons/CircleDotsRegular';
  */
@@ -32,4 +33,5 @@ const CircleDots = memo(forwardRef<SVGSVGElement, CircleDotsProps>(({
 
 CircleDots.displayName = 'CircleDots';
 
-export { CircleDots };
+// Triple export pattern (lucide-react style)
+export { CircleDots, CircleDots as CircleDotsIcon, CircleDots as SiCircleDots };

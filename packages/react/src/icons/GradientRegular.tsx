@@ -15,5 +15,6 @@ const GradientRegular = memo(
 
 GradientRegular.displayName = 'GradientRegular';
 
-export { GradientRegular };
+// Triple export pattern (lucide-react style)
+export { GradientRegular, GradientRegular as GradientRegularIcon, GradientRegular as SiGradientRegular };
 export type { GradientRegularProps };

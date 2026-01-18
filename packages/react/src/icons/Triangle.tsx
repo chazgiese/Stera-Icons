@@ -13,7 +13,8 @@ export interface TriangleProps extends IconProps {
 }
 
 /**
- * Triangle with dynamic weight and duotone props.
+ * Triangle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TriangleRegular } from 'stera-icons/TriangleRegular';
  */
@@ -32,4 +33,5 @@ const Triangle = memo(forwardRef<SVGSVGElement, TriangleProps>(({
 
 Triangle.displayName = 'Triangle';
 
-export { Triangle };
+// Triple export pattern (lucide-react style)
+export { Triangle, Triangle as TriangleIcon, Triangle as SiTriangle };

@@ -14,5 +14,6 @@ const ChartAreaBold = memo(
 
 ChartAreaBold.displayName = 'ChartAreaBold';
 
-export { ChartAreaBold };
+// Triple export pattern (lucide-react style)
+export { ChartAreaBold, ChartAreaBold as ChartAreaBoldIcon, ChartAreaBold as SiChartAreaBold };
 export type { ChartAreaBoldProps };

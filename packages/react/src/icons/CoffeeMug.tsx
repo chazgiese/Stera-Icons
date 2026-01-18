@@ -13,7 +13,8 @@ export interface CoffeeMugProps extends IconProps {
 }
 
 /**
- * CoffeeMug with dynamic weight and duotone props.
+ * CoffeeMug - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CoffeeMugRegular } from 'stera-icons/CoffeeMugRegular';
  */
@@ -32,4 +33,5 @@ const CoffeeMug = memo(forwardRef<SVGSVGElement, CoffeeMugProps>(({
 
 CoffeeMug.displayName = 'CoffeeMug';
 
-export { CoffeeMug };
+// Triple export pattern (lucide-react style)
+export { CoffeeMug, CoffeeMug as CoffeeMugIcon, CoffeeMug as SiCoffeeMug };

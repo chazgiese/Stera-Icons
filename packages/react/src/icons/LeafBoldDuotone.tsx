@@ -15,5 +15,6 @@ const LeafBoldDuotone = memo(
 
 LeafBoldDuotone.displayName = 'LeafBoldDuotone';
 
-export { LeafBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { LeafBoldDuotone, LeafBoldDuotone as LeafBoldDuotoneIcon, LeafBoldDuotone as SiLeafBoldDuotone };
 export type { LeafBoldDuotoneProps };

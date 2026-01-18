@@ -14,5 +14,6 @@ const CommandBold = memo(
 
 CommandBold.displayName = 'CommandBold';
 
-export { CommandBold };
+// Triple export pattern (lucide-react style)
+export { CommandBold, CommandBold as CommandBoldIcon, CommandBold as SiCommandBold };
 export type { CommandBoldProps };

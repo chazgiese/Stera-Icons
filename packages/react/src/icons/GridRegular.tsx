@@ -14,5 +14,6 @@ const GridRegular = memo(
 
 GridRegular.displayName = 'GridRegular';
 
-export { GridRegular };
+// Triple export pattern (lucide-react style)
+export { GridRegular, GridRegular as GridRegularIcon, GridRegular as SiGridRegular };
 export type { GridRegularProps };

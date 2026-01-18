@@ -14,5 +14,6 @@ const SearchFill = memo(
 
 SearchFill.displayName = 'SearchFill';
 
-export { SearchFill };
+// Triple export pattern (lucide-react style)
+export { SearchFill, SearchFill as SearchFillIcon, SearchFill as SiSearchFill };
 export type { SearchFillProps };

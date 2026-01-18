@@ -14,5 +14,6 @@ const SaveFill = memo(
 
 SaveFill.displayName = 'SaveFill';
 
-export { SaveFill };
+// Triple export pattern (lucide-react style)
+export { SaveFill, SaveFill as SaveFillIcon, SaveFill as SiSaveFill };
 export type { SaveFillProps };

@@ -13,7 +13,8 @@ export interface AstriskProps extends IconProps {
 }
 
 /**
- * Astrisk with dynamic weight and duotone props.
+ * Astrisk - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AstriskRegular } from 'stera-icons/AstriskRegular';
  */
@@ -32,4 +33,5 @@ const Astrisk = memo(forwardRef<SVGSVGElement, AstriskProps>(({
 
 Astrisk.displayName = 'Astrisk';
 
-export { Astrisk };
+// Triple export pattern (lucide-react style)
+export { Astrisk, Astrisk as AstriskIcon, Astrisk as SiAstrisk };

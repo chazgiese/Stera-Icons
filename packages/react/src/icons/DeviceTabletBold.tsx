@@ -15,5 +15,6 @@ const DeviceTabletBold = memo(
 
 DeviceTabletBold.displayName = 'DeviceTabletBold';
 
-export { DeviceTabletBold };
+// Triple export pattern (lucide-react style)
+export { DeviceTabletBold, DeviceTabletBold as DeviceTabletBoldIcon, DeviceTabletBold as SiDeviceTabletBold };
 export type { DeviceTabletBoldProps };

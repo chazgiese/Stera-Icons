@@ -13,7 +13,8 @@ export interface ContrastProps extends IconProps {
 }
 
 /**
- * Contrast with dynamic weight and duotone props.
+ * Contrast - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ContrastRegular } from 'stera-icons/ContrastRegular';
  */
@@ -32,4 +33,5 @@ const Contrast = memo(forwardRef<SVGSVGElement, ContrastProps>(({
 
 Contrast.displayName = 'Contrast';
 
-export { Contrast };
+// Triple export pattern (lucide-react style)
+export { Contrast, Contrast as ContrastIcon, Contrast as SiContrast };

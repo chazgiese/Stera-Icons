@@ -15,5 +15,6 @@ const LinkFill = memo(
 
 LinkFill.displayName = 'LinkFill';
 
-export { LinkFill };
+// Triple export pattern (lucide-react style)
+export { LinkFill, LinkFill as LinkFillIcon, LinkFill as SiLinkFill };
 export type { LinkFillProps };

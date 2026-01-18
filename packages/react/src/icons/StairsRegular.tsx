@@ -14,5 +14,6 @@ const StairsRegular = memo(
 
 StairsRegular.displayName = 'StairsRegular';
 
-export { StairsRegular };
+// Triple export pattern (lucide-react style)
+export { StairsRegular, StairsRegular as StairsRegularIcon, StairsRegular as SiStairsRegular };
 export type { StairsRegularProps };

@@ -13,7 +13,8 @@ export interface ChartPieProps extends IconProps {
 }
 
 /**
- * ChartPie with dynamic weight and duotone props.
+ * ChartPie - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartPieRegular } from 'stera-icons/ChartPieRegular';
  */
@@ -32,4 +33,5 @@ const ChartPie = memo(forwardRef<SVGSVGElement, ChartPieProps>(({
 
 ChartPie.displayName = 'ChartPie';
 
-export { ChartPie };
+// Triple export pattern (lucide-react style)
+export { ChartPie, ChartPie as ChartPieIcon, ChartPie as SiChartPie };

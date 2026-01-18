@@ -14,5 +14,6 @@ const WaveTriangleBold = memo(
 
 WaveTriangleBold.displayName = 'WaveTriangleBold';
 
-export { WaveTriangleBold };
+// Triple export pattern (lucide-react style)
+export { WaveTriangleBold, WaveTriangleBold as WaveTriangleBoldIcon, WaveTriangleBold as SiWaveTriangleBold };
 export type { WaveTriangleBoldProps };

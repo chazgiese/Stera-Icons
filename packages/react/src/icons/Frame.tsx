@@ -13,7 +13,8 @@ export interface FrameProps extends IconProps {
 }
 
 /**
- * Frame with dynamic weight and duotone props.
+ * Frame - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FrameRegular } from 'stera-icons/FrameRegular';
  */
@@ -32,4 +33,5 @@ const Frame = memo(forwardRef<SVGSVGElement, FrameProps>(({
 
 Frame.displayName = 'Frame';
 
-export { Frame };
+// Triple export pattern (lucide-react style)
+export { Frame, Frame as FrameIcon, Frame as SiFrame };

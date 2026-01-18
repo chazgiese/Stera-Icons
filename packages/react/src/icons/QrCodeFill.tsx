@@ -16,5 +16,6 @@ const QrCodeFill = memo(
 
 QrCodeFill.displayName = 'QrCodeFill';
 
-export { QrCodeFill };
+// Triple export pattern (lucide-react style)
+export { QrCodeFill, QrCodeFill as QrCodeFillIcon, QrCodeFill as SiQrCodeFill };
 export type { QrCodeFillProps };

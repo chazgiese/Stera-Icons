@@ -13,7 +13,8 @@ export interface GaugeLines15PercentProps extends IconProps {
 }
 
 /**
- * GaugeLines15Percent with dynamic weight and duotone props.
+ * GaugeLines15Percent - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GaugeLines15PercentRegular } from 'stera-icons/GaugeLines15PercentRegular';
  */
@@ -32,4 +33,5 @@ const GaugeLines15Percent = memo(forwardRef<SVGSVGElement, GaugeLines15PercentPr
 
 GaugeLines15Percent.displayName = 'GaugeLines15Percent';
 
-export { GaugeLines15Percent };
+// Triple export pattern (lucide-react style)
+export { GaugeLines15Percent, GaugeLines15Percent as GaugeLines15PercentIcon, GaugeLines15Percent as SiGaugeLines15Percent };

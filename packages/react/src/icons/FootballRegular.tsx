@@ -15,5 +15,6 @@ const FootballRegular = memo(
 
 FootballRegular.displayName = 'FootballRegular';
 
-export { FootballRegular };
+// Triple export pattern (lucide-react style)
+export { FootballRegular, FootballRegular as FootballRegularIcon, FootballRegular as SiFootballRegular };
 export type { FootballRegularProps };

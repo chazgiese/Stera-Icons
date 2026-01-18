@@ -13,7 +13,8 @@ export interface ChatBubbleCheckProps extends IconProps {
 }
 
 /**
- * ChatBubbleCheck with dynamic weight and duotone props.
+ * ChatBubbleCheck - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBubbleCheckRegular } from 'stera-icons/ChatBubbleCheckRegular';
  */
@@ -32,4 +33,5 @@ const ChatBubbleCheck = memo(forwardRef<SVGSVGElement, ChatBubbleCheckProps>(({
 
 ChatBubbleCheck.displayName = 'ChatBubbleCheck';
 
-export { ChatBubbleCheck };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleCheck, ChatBubbleCheck as ChatBubbleCheckIcon, ChatBubbleCheck as SiChatBubbleCheck };

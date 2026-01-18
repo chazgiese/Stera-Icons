@@ -15,5 +15,6 @@ const CheckCircleBold = memo(
 
 CheckCircleBold.displayName = 'CheckCircleBold';
 
-export { CheckCircleBold };
+// Triple export pattern (lucide-react style)
+export { CheckCircleBold, CheckCircleBold as CheckCircleBoldIcon, CheckCircleBold as SiCheckCircleBold };
 export type { CheckCircleBoldProps };

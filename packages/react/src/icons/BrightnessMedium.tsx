@@ -13,7 +13,8 @@ export interface BrightnessMediumProps extends IconProps {
 }
 
 /**
- * BrightnessMedium with dynamic weight and duotone props.
+ * BrightnessMedium - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrightnessMediumRegular } from 'stera-icons/BrightnessMediumRegular';
  */
@@ -32,4 +33,5 @@ const BrightnessMedium = memo(forwardRef<SVGSVGElement, BrightnessMediumProps>((
 
 BrightnessMedium.displayName = 'BrightnessMedium';
 
-export { BrightnessMedium };
+// Triple export pattern (lucide-react style)
+export { BrightnessMedium, BrightnessMedium as BrightnessMediumIcon, BrightnessMedium as SiBrightnessMedium };

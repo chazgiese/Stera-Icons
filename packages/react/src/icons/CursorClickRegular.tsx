@@ -15,5 +15,6 @@ const CursorClickRegular = memo(
 
 CursorClickRegular.displayName = 'CursorClickRegular';
 
-export { CursorClickRegular };
+// Triple export pattern (lucide-react style)
+export { CursorClickRegular, CursorClickRegular as CursorClickRegularIcon, CursorClickRegular as SiCursorClickRegular };
 export type { CursorClickRegularProps };

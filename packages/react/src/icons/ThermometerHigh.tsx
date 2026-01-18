@@ -13,7 +13,8 @@ export interface ThermometerHighProps extends IconProps {
 }
 
 /**
- * ThermometerHigh with dynamic weight and duotone props.
+ * ThermometerHigh - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ThermometerHighRegular } from 'stera-icons/ThermometerHighRegular';
  */
@@ -32,4 +33,5 @@ const ThermometerHigh = memo(forwardRef<SVGSVGElement, ThermometerHighProps>(({
 
 ThermometerHigh.displayName = 'ThermometerHigh';
 
-export { ThermometerHigh };
+// Triple export pattern (lucide-react style)
+export { ThermometerHigh, ThermometerHigh as ThermometerHighIcon, ThermometerHigh as SiThermometerHigh };

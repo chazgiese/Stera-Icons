@@ -13,7 +13,8 @@ export interface TextSearchProps extends IconProps {
 }
 
 /**
- * TextSearch with dynamic weight and duotone props.
+ * TextSearch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextSearchRegular } from 'stera-icons/TextSearchRegular';
  */
@@ -32,4 +33,5 @@ const TextSearch = memo(forwardRef<SVGSVGElement, TextSearchProps>(({
 
 TextSearch.displayName = 'TextSearch';
 
-export { TextSearch };
+// Triple export pattern (lucide-react style)
+export { TextSearch, TextSearch as TextSearchIcon, TextSearch as SiTextSearch };

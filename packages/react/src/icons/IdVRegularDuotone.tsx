@@ -16,5 +16,6 @@ const IdVRegularDuotone = memo(
 
 IdVRegularDuotone.displayName = 'IdVRegularDuotone';
 
-export { IdVRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { IdVRegularDuotone, IdVRegularDuotone as IdVRegularDuotoneIcon, IdVRegularDuotone as SiIdVRegularDuotone };
 export type { IdVRegularDuotoneProps };

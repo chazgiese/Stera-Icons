@@ -15,5 +15,6 @@ const PencilFillDuotone = memo(
 
 PencilFillDuotone.displayName = 'PencilFillDuotone';
 
-export { PencilFillDuotone };
+// Triple export pattern (lucide-react style)
+export { PencilFillDuotone, PencilFillDuotone as PencilFillDuotoneIcon, PencilFillDuotone as SiPencilFillDuotone };
 export type { PencilFillDuotoneProps };

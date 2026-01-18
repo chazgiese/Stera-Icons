@@ -13,7 +13,8 @@ export interface CubePackageSimpleProps extends IconProps {
 }
 
 /**
- * CubePackageSimple with dynamic weight and duotone props.
+ * CubePackageSimple - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CubePackageSimpleRegular } from 'stera-icons/CubePackageSimpleRegular';
  */
@@ -32,4 +33,5 @@ const CubePackageSimple = memo(forwardRef<SVGSVGElement, CubePackageSimpleProps>
 
 CubePackageSimple.displayName = 'CubePackageSimple';
 
-export { CubePackageSimple };
+// Triple export pattern (lucide-react style)
+export { CubePackageSimple, CubePackageSimple as CubePackageSimpleIcon, CubePackageSimple as SiCubePackageSimple };

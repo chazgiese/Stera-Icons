@@ -13,7 +13,8 @@ export interface RectangleProps extends IconProps {
 }
 
 /**
- * Rectangle with dynamic weight and duotone props.
+ * Rectangle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RectangleRegular } from 'stera-icons/RectangleRegular';
  */
@@ -32,4 +33,5 @@ const Rectangle = memo(forwardRef<SVGSVGElement, RectangleProps>(({
 
 Rectangle.displayName = 'Rectangle';
 
-export { Rectangle };
+// Triple export pattern (lucide-react style)
+export { Rectangle, Rectangle as RectangleIcon, Rectangle as SiRectangle };

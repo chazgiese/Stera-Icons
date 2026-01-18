@@ -16,5 +16,6 @@ const AgentCursorBold = memo(
 
 AgentCursorBold.displayName = 'AgentCursorBold';
 
-export { AgentCursorBold };
+// Triple export pattern (lucide-react style)
+export { AgentCursorBold, AgentCursorBold as AgentCursorBoldIcon, AgentCursorBold as SiAgentCursorBold };
 export type { AgentCursorBoldProps };

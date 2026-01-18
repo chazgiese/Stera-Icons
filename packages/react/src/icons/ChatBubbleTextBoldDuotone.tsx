@@ -15,5 +15,6 @@ const ChatBubbleTextBoldDuotone = memo(
 
 ChatBubbleTextBoldDuotone.displayName = 'ChatBubbleTextBoldDuotone';
 
-export { ChatBubbleTextBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleTextBoldDuotone, ChatBubbleTextBoldDuotone as ChatBubbleTextBoldDuotoneIcon, ChatBubbleTextBoldDuotone as SiChatBubbleTextBoldDuotone };
 export type { ChatBubbleTextBoldDuotoneProps };

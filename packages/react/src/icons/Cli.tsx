@@ -13,7 +13,8 @@ export interface CliProps extends IconProps {
 }
 
 /**
- * Cli with dynamic weight and duotone props.
+ * Cli - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CliRegular } from 'stera-icons/CliRegular';
  */
@@ -32,4 +33,5 @@ const Cli = memo(forwardRef<SVGSVGElement, CliProps>(({
 
 Cli.displayName = 'Cli';
 
-export { Cli };
+// Triple export pattern (lucide-react style)
+export { Cli, Cli as CliIcon, Cli as SiCli };

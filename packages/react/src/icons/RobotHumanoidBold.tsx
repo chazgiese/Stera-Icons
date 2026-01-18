@@ -15,5 +15,6 @@ const RobotHumanoidBold = memo(
 
 RobotHumanoidBold.displayName = 'RobotHumanoidBold';
 
-export { RobotHumanoidBold };
+// Triple export pattern (lucide-react style)
+export { RobotHumanoidBold, RobotHumanoidBold as RobotHumanoidBoldIcon, RobotHumanoidBold as SiRobotHumanoidBold };
 export type { RobotHumanoidBoldProps };

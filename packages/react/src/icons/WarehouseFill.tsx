@@ -14,5 +14,6 @@ const WarehouseFill = memo(
 
 WarehouseFill.displayName = 'WarehouseFill';
 
-export { WarehouseFill };
+// Triple export pattern (lucide-react style)
+export { WarehouseFill, WarehouseFill as WarehouseFillIcon, WarehouseFill as SiWarehouseFill };
 export type { WarehouseFillProps };

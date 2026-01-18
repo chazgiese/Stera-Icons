@@ -14,5 +14,6 @@ const ScrewdriverFill = memo(
 
 ScrewdriverFill.displayName = 'ScrewdriverFill';
 
-export { ScrewdriverFill };
+// Triple export pattern (lucide-react style)
+export { ScrewdriverFill, ScrewdriverFill as ScrewdriverFillIcon, ScrewdriverFill as SiScrewdriverFill };
 export type { ScrewdriverFillProps };

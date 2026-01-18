@@ -14,5 +14,6 @@ const CoolSBold = memo(
 
 CoolSBold.displayName = 'CoolSBold';
 
-export { CoolSBold };
+// Triple export pattern (lucide-react style)
+export { CoolSBold, CoolSBold as CoolSBoldIcon, CoolSBold as SiCoolSBold };
 export type { CoolSBoldProps };

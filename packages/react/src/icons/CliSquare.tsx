@@ -13,7 +13,8 @@ export interface CliSquareProps extends IconProps {
 }
 
 /**
- * CliSquare with dynamic weight and duotone props.
+ * CliSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CliSquareRegular } from 'stera-icons/CliSquareRegular';
  */
@@ -32,4 +33,5 @@ const CliSquare = memo(forwardRef<SVGSVGElement, CliSquareProps>(({
 
 CliSquare.displayName = 'CliSquare';
 
-export { CliSquare };
+// Triple export pattern (lucide-react style)
+export { CliSquare, CliSquare as CliSquareIcon, CliSquare as SiCliSquare };

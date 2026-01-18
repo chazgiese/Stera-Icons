@@ -14,5 +14,6 @@ const TvFill = memo(
 
 TvFill.displayName = 'TvFill';
 
-export { TvFill };
+// Triple export pattern (lucide-react style)
+export { TvFill, TvFill as TvFillIcon, TvFill as SiTvFill };
 export type { TvFillProps };

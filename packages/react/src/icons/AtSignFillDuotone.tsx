@@ -15,5 +15,6 @@ const AtSignFillDuotone = memo(
 
 AtSignFillDuotone.displayName = 'AtSignFillDuotone';
 
-export { AtSignFillDuotone };
+// Triple export pattern (lucide-react style)
+export { AtSignFillDuotone, AtSignFillDuotone as AtSignFillDuotoneIcon, AtSignFillDuotone as SiAtSignFillDuotone };
 export type { AtSignFillDuotoneProps };

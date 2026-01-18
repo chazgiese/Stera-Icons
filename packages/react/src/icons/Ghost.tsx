@@ -13,7 +13,8 @@ export interface GhostProps extends IconProps {
 }
 
 /**
- * Ghost with dynamic weight and duotone props.
+ * Ghost - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GhostRegular } from 'stera-icons/GhostRegular';
  */
@@ -32,4 +33,5 @@ const Ghost = memo(forwardRef<SVGSVGElement, GhostProps>(({
 
 Ghost.displayName = 'Ghost';
 
-export { Ghost };
+// Triple export pattern (lucide-react style)
+export { Ghost, Ghost as GhostIcon, Ghost as SiGhost };

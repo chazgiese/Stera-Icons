@@ -16,5 +16,6 @@ const ScanCameraBold = memo(
 
 ScanCameraBold.displayName = 'ScanCameraBold';
 
-export { ScanCameraBold };
+// Triple export pattern (lucide-react style)
+export { ScanCameraBold, ScanCameraBold as ScanCameraBoldIcon, ScanCameraBold as SiScanCameraBold };
 export type { ScanCameraBoldProps };

@@ -7,7 +7,7 @@ type ListCheckBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ListCheckBoldDuotone = memo(
   forwardRef<SVGSVGElement, ListCheckBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M22 17a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM22 11a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM22 5a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" />
+      <path d="M22 17a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM22 11a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM22 5a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" opacity={0.4} />
         <path fill="currentColor" d="M5.27 15.82a1 1 0 0 1 1.46 1.36l-2.8 3a1 1 0 0 1-1.55-.1l-1.2-1.72a1 1 0 0 1 1.64-1.15l.5.7zM5.27 9.82a1 1 0 0 1 1.46 1.36l-2.8 3a1 1 0 0 1-1.55-.1l-1.2-1.72a1 1 0 0 1 1.64-1.15l.5.7zM5.27 3.82a1 1 0 0 1 1.46 1.36l-2.8 3a1 1 0 0 1-1.55-.1l-1.2-1.72A1 1 0 0 1 2.82 5.2l.5.7z" />
     </IconBase>
   ))
@@ -15,5 +15,6 @@ const ListCheckBoldDuotone = memo(
 
 ListCheckBoldDuotone.displayName = 'ListCheckBoldDuotone';
 
-export { ListCheckBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ListCheckBoldDuotone, ListCheckBoldDuotone as ListCheckBoldDuotoneIcon, ListCheckBoldDuotone as SiListCheckBoldDuotone };
 export type { ListCheckBoldDuotoneProps };

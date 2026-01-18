@@ -16,5 +16,6 @@ const ScanCameraFill = memo(
 
 ScanCameraFill.displayName = 'ScanCameraFill';
 
-export { ScanCameraFill };
+// Triple export pattern (lucide-react style)
+export { ScanCameraFill, ScanCameraFill as ScanCameraFillIcon, ScanCameraFill as SiScanCameraFill };
 export type { ScanCameraFillProps };

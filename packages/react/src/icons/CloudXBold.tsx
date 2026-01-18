@@ -15,5 +15,6 @@ const CloudXBold = memo(
 
 CloudXBold.displayName = 'CloudXBold';
 
-export { CloudXBold };
+// Triple export pattern (lucide-react style)
+export { CloudXBold, CloudXBold as CloudXBoldIcon, CloudXBold as SiCloudXBold };
 export type { CloudXBoldProps };

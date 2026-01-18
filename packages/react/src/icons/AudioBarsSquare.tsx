@@ -13,7 +13,8 @@ export interface AudioBarsSquareProps extends IconProps {
 }
 
 /**
- * AudioBarsSquare with dynamic weight and duotone props.
+ * AudioBarsSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AudioBarsSquareRegular } from 'stera-icons/AudioBarsSquareRegular';
  */
@@ -32,4 +33,5 @@ const AudioBarsSquare = memo(forwardRef<SVGSVGElement, AudioBarsSquareProps>(({
 
 AudioBarsSquare.displayName = 'AudioBarsSquare';
 
-export { AudioBarsSquare };
+// Triple export pattern (lucide-react style)
+export { AudioBarsSquare, AudioBarsSquare as AudioBarsSquareIcon, AudioBarsSquare as SiAudioBarsSquare };

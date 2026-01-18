@@ -15,5 +15,6 @@ const DeviceTabletRegular = memo(
 
 DeviceTabletRegular.displayName = 'DeviceTabletRegular';
 
-export { DeviceTabletRegular };
+// Triple export pattern (lucide-react style)
+export { DeviceTabletRegular, DeviceTabletRegular as DeviceTabletRegularIcon, DeviceTabletRegular as SiDeviceTabletRegular };
 export type { DeviceTabletRegularProps };

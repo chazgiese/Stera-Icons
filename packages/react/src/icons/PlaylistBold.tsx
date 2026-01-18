@@ -15,5 +15,6 @@ const PlaylistBold = memo(
 
 PlaylistBold.displayName = 'PlaylistBold';
 
-export { PlaylistBold };
+// Triple export pattern (lucide-react style)
+export { PlaylistBold, PlaylistBold as PlaylistBoldIcon, PlaylistBold as SiPlaylistBold };
 export type { PlaylistBoldProps };

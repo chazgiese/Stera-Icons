@@ -14,5 +14,6 @@ const TallyMarksBold = memo(
 
 TallyMarksBold.displayName = 'TallyMarksBold';
 
-export { TallyMarksBold };
+// Triple export pattern (lucide-react style)
+export { TallyMarksBold, TallyMarksBold as TallyMarksBoldIcon, TallyMarksBold as SiTallyMarksBold };
 export type { TallyMarksBoldProps };

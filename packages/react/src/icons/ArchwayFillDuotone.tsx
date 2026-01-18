@@ -15,5 +15,6 @@ const ArchwayFillDuotone = memo(
 
 ArchwayFillDuotone.displayName = 'ArchwayFillDuotone';
 
-export { ArchwayFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ArchwayFillDuotone, ArchwayFillDuotone as ArchwayFillDuotoneIcon, ArchwayFillDuotone as SiArchwayFillDuotone };
 export type { ArchwayFillDuotoneProps };

@@ -13,7 +13,8 @@ export interface AlarmClockProps extends IconProps {
 }
 
 /**
- * AlarmClock with dynamic weight and duotone props.
+ * AlarmClock - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlarmClockRegular } from 'stera-icons/AlarmClockRegular';
  */
@@ -32,4 +33,5 @@ const AlarmClock = memo(forwardRef<SVGSVGElement, AlarmClockProps>(({
 
 AlarmClock.displayName = 'AlarmClock';
 
-export { AlarmClock };
+// Triple export pattern (lucide-react style)
+export { AlarmClock, AlarmClock as AlarmClockIcon, AlarmClock as SiAlarmClock };

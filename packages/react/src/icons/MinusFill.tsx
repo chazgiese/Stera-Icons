@@ -14,5 +14,6 @@ const MinusFill = memo(
 
 MinusFill.displayName = 'MinusFill';
 
-export { MinusFill };
+// Triple export pattern (lucide-react style)
+export { MinusFill, MinusFill as MinusFillIcon, MinusFill as SiMinusFill };
 export type { MinusFillProps };

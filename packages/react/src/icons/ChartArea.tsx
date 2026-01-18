@@ -13,7 +13,8 @@ export interface ChartAreaProps extends IconProps {
 }
 
 /**
- * ChartArea with dynamic weight and duotone props.
+ * ChartArea - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartAreaRegular } from 'stera-icons/ChartAreaRegular';
  */
@@ -32,4 +33,5 @@ const ChartArea = memo(forwardRef<SVGSVGElement, ChartAreaProps>(({
 
 ChartArea.displayName = 'ChartArea';
 
-export { ChartArea };
+// Triple export pattern (lucide-react style)
+export { ChartArea, ChartArea as ChartAreaIcon, ChartArea as SiChartArea };

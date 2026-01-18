@@ -15,5 +15,6 @@ const BatteryRegularDuotone = memo(
 
 BatteryRegularDuotone.displayName = 'BatteryRegularDuotone';
 
-export { BatteryRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { BatteryRegularDuotone, BatteryRegularDuotone as BatteryRegularDuotoneIcon, BatteryRegularDuotone as SiBatteryRegularDuotone };
 export type { BatteryRegularDuotoneProps };

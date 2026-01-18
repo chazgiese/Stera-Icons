@@ -14,5 +14,6 @@ const PlusSquareFill = memo(
 
 PlusSquareFill.displayName = 'PlusSquareFill';
 
-export { PlusSquareFill };
+// Triple export pattern (lucide-react style)
+export { PlusSquareFill, PlusSquareFill as PlusSquareFillIcon, PlusSquareFill as SiPlusSquareFill };
 export type { PlusSquareFillProps };

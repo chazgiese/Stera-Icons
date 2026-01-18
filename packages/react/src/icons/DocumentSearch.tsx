@@ -13,7 +13,8 @@ export interface DocumentSearchProps extends IconProps {
 }
 
 /**
- * DocumentSearch with dynamic weight and duotone props.
+ * DocumentSearch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DocumentSearchRegular } from 'stera-icons/DocumentSearchRegular';
  */
@@ -32,4 +33,5 @@ const DocumentSearch = memo(forwardRef<SVGSVGElement, DocumentSearchProps>(({
 
 DocumentSearch.displayName = 'DocumentSearch';
 
-export { DocumentSearch };
+// Triple export pattern (lucide-react style)
+export { DocumentSearch, DocumentSearch as DocumentSearchIcon, DocumentSearch as SiDocumentSearch };

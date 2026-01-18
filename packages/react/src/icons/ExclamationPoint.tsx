@@ -13,7 +13,8 @@ export interface ExclamationPointProps extends IconProps {
 }
 
 /**
- * ExclamationPoint with dynamic weight and duotone props.
+ * ExclamationPoint - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ExclamationPointRegular } from 'stera-icons/ExclamationPointRegular';
  */
@@ -32,4 +33,5 @@ const ExclamationPoint = memo(forwardRef<SVGSVGElement, ExclamationPointProps>((
 
 ExclamationPoint.displayName = 'ExclamationPoint';
 
-export { ExclamationPoint };
+// Triple export pattern (lucide-react style)
+export { ExclamationPoint, ExclamationPoint as ExclamationPointIcon, ExclamationPoint as SiExclamationPoint };

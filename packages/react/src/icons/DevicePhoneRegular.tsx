@@ -15,5 +15,6 @@ const DevicePhoneRegular = memo(
 
 DevicePhoneRegular.displayName = 'DevicePhoneRegular';
 
-export { DevicePhoneRegular };
+// Triple export pattern (lucide-react style)
+export { DevicePhoneRegular, DevicePhoneRegular as DevicePhoneRegularIcon, DevicePhoneRegular as SiDevicePhoneRegular };
 export type { DevicePhoneRegularProps };

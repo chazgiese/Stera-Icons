@@ -15,5 +15,6 @@ const PercentSquareRegular = memo(
 
 PercentSquareRegular.displayName = 'PercentSquareRegular';
 
-export { PercentSquareRegular };
+// Triple export pattern (lucide-react style)
+export { PercentSquareRegular, PercentSquareRegular as PercentSquareRegularIcon, PercentSquareRegular as SiPercentSquareRegular };
 export type { PercentSquareRegularProps };

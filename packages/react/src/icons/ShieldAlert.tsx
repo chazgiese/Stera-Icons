@@ -13,7 +13,8 @@ export interface ShieldAlertProps extends IconProps {
 }
 
 /**
- * ShieldAlert with dynamic weight and duotone props.
+ * ShieldAlert - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShieldAlertRegular } from 'stera-icons/ShieldAlertRegular';
  */
@@ -32,4 +33,5 @@ const ShieldAlert = memo(forwardRef<SVGSVGElement, ShieldAlertProps>(({
 
 ShieldAlert.displayName = 'ShieldAlert';
 
-export { ShieldAlert };
+// Triple export pattern (lucide-react style)
+export { ShieldAlert, ShieldAlert as ShieldAlertIcon, ShieldAlert as SiShieldAlert };

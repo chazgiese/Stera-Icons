@@ -13,7 +13,8 @@ export interface TextAlignRightProps extends IconProps {
 }
 
 /**
- * TextAlignRight with dynamic weight and duotone props.
+ * TextAlignRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextAlignRightRegular } from 'stera-icons/TextAlignRightRegular';
  */
@@ -32,4 +33,5 @@ const TextAlignRight = memo(forwardRef<SVGSVGElement, TextAlignRightProps>(({
 
 TextAlignRight.displayName = 'TextAlignRight';
 
-export { TextAlignRight };
+// Triple export pattern (lucide-react style)
+export { TextAlignRight, TextAlignRight as TextAlignRightIcon, TextAlignRight as SiTextAlignRight };

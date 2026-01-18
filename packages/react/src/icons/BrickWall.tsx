@@ -13,7 +13,8 @@ export interface BrickWallProps extends IconProps {
 }
 
 /**
- * BrickWall with dynamic weight and duotone props.
+ * BrickWall - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrickWallRegular } from 'stera-icons/BrickWallRegular';
  */
@@ -32,4 +33,5 @@ const BrickWall = memo(forwardRef<SVGSVGElement, BrickWallProps>(({
 
 BrickWall.displayName = 'BrickWall';
 
-export { BrickWall };
+// Triple export pattern (lucide-react style)
+export { BrickWall, BrickWall as BrickWallIcon, BrickWall as SiBrickWall };

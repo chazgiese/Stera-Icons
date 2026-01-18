@@ -13,7 +13,8 @@ export interface BoundingBoxProps extends IconProps {
 }
 
 /**
- * BoundingBox with dynamic weight and duotone props.
+ * BoundingBox - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BoundingBoxRegular } from 'stera-icons/BoundingBoxRegular';
  */
@@ -32,4 +33,5 @@ const BoundingBox = memo(forwardRef<SVGSVGElement, BoundingBoxProps>(({
 
 BoundingBox.displayName = 'BoundingBox';
 
-export { BoundingBox };
+// Triple export pattern (lucide-react style)
+export { BoundingBox, BoundingBox as BoundingBoxIcon, BoundingBox as SiBoundingBox };

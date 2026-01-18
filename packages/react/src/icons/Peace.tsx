@@ -13,7 +13,8 @@ export interface PeaceProps extends IconProps {
 }
 
 /**
- * Peace with dynamic weight and duotone props.
+ * Peace - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PeaceRegular } from 'stera-icons/PeaceRegular';
  */
@@ -32,4 +33,5 @@ const Peace = memo(forwardRef<SVGSVGElement, PeaceProps>(({
 
 Peace.displayName = 'Peace';
 
-export { Peace };
+// Triple export pattern (lucide-react style)
+export { Peace, Peace as PeaceIcon, Peace as SiPeace };

@@ -13,7 +13,8 @@ export interface BrightnessLowProps extends IconProps {
 }
 
 /**
- * BrightnessLow with dynamic weight and duotone props.
+ * BrightnessLow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrightnessLowRegular } from 'stera-icons/BrightnessLowRegular';
  */
@@ -32,4 +33,5 @@ const BrightnessLow = memo(forwardRef<SVGSVGElement, BrightnessLowProps>(({
 
 BrightnessLow.displayName = 'BrightnessLow';
 
-export { BrightnessLow };
+// Triple export pattern (lucide-react style)
+export { BrightnessLow, BrightnessLow as BrightnessLowIcon, BrightnessLow as SiBrightnessLow };

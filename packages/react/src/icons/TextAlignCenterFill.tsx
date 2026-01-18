@@ -14,5 +14,6 @@ const TextAlignCenterFill = memo(
 
 TextAlignCenterFill.displayName = 'TextAlignCenterFill';
 
-export { TextAlignCenterFill };
+// Triple export pattern (lucide-react style)
+export { TextAlignCenterFill, TextAlignCenterFill as TextAlignCenterFillIcon, TextAlignCenterFill as SiTextAlignCenterFill };
 export type { TextAlignCenterFillProps };

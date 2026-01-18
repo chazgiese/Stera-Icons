@@ -13,7 +13,8 @@ export interface WarehouseProps extends IconProps {
 }
 
 /**
- * Warehouse with dynamic weight and duotone props.
+ * Warehouse - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WarehouseRegular } from 'stera-icons/WarehouseRegular';
  */
@@ -32,4 +33,5 @@ const Warehouse = memo(forwardRef<SVGSVGElement, WarehouseProps>(({
 
 Warehouse.displayName = 'Warehouse';
 
-export { Warehouse };
+// Triple export pattern (lucide-react style)
+export { Warehouse, Warehouse as WarehouseIcon, Warehouse as SiWarehouse };

@@ -14,5 +14,6 @@ const PercentFill = memo(
 
 PercentFill.displayName = 'PercentFill';
 
-export { PercentFill };
+// Triple export pattern (lucide-react style)
+export { PercentFill, PercentFill as PercentFillIcon, PercentFill as SiPercentFill };
 export type { PercentFillProps };

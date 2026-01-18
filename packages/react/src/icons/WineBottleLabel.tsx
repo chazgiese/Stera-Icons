@@ -13,7 +13,8 @@ export interface WineBottleLabelProps extends IconProps {
 }
 
 /**
- * WineBottleLabel with dynamic weight and duotone props.
+ * WineBottleLabel - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WineBottleLabelRegular } from 'stera-icons/WineBottleLabelRegular';
  */
@@ -32,4 +33,5 @@ const WineBottleLabel = memo(forwardRef<SVGSVGElement, WineBottleLabelProps>(({
 
 WineBottleLabel.displayName = 'WineBottleLabel';
 
-export { WineBottleLabel };
+// Triple export pattern (lucide-react style)
+export { WineBottleLabel, WineBottleLabel as WineBottleLabelIcon, WineBottleLabel as SiWineBottleLabel };

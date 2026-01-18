@@ -15,5 +15,6 @@ const BracketsCurlySquareBoldDuotone = memo(
 
 BracketsCurlySquareBoldDuotone.displayName = 'BracketsCurlySquareBoldDuotone';
 
-export { BracketsCurlySquareBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { BracketsCurlySquareBoldDuotone, BracketsCurlySquareBoldDuotone as BracketsCurlySquareBoldDuotoneIcon, BracketsCurlySquareBoldDuotone as SiBracketsCurlySquareBoldDuotone };
 export type { BracketsCurlySquareBoldDuotoneProps };

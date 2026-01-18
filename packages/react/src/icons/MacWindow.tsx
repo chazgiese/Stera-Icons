@@ -13,7 +13,8 @@ export interface MacWindowProps extends IconProps {
 }
 
 /**
- * MacWindow with dynamic weight and duotone props.
+ * MacWindow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MacWindowRegular } from 'stera-icons/MacWindowRegular';
  */
@@ -32,4 +33,5 @@ const MacWindow = memo(forwardRef<SVGSVGElement, MacWindowProps>(({
 
 MacWindow.displayName = 'MacWindow';
 
-export { MacWindow };
+// Triple export pattern (lucide-react style)
+export { MacWindow, MacWindow as MacWindowIcon, MacWindow as SiMacWindow };

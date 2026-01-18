@@ -15,5 +15,6 @@ const SelectFieldFillDuotone = memo(
 
 SelectFieldFillDuotone.displayName = 'SelectFieldFillDuotone';
 
-export { SelectFieldFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SelectFieldFillDuotone, SelectFieldFillDuotone as SelectFieldFillDuotoneIcon, SelectFieldFillDuotone as SiSelectFieldFillDuotone };
 export type { SelectFieldFillDuotoneProps };

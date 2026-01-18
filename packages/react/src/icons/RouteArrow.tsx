@@ -13,7 +13,8 @@ export interface RouteArrowProps extends IconProps {
 }
 
 /**
- * RouteArrow with dynamic weight and duotone props.
+ * RouteArrow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RouteArrowRegular } from 'stera-icons/RouteArrowRegular';
  */
@@ -32,4 +33,5 @@ const RouteArrow = memo(forwardRef<SVGSVGElement, RouteArrowProps>(({
 
 RouteArrow.displayName = 'RouteArrow';
 
-export { RouteArrow };
+// Triple export pattern (lucide-react style)
+export { RouteArrow, RouteArrow as RouteArrowIcon, RouteArrow as SiRouteArrow };

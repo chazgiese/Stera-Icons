@@ -13,7 +13,8 @@ export interface QuoteProps extends IconProps {
 }
 
 /**
- * Quote with dynamic weight and duotone props.
+ * Quote - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { QuoteRegular } from 'stera-icons/QuoteRegular';
  */
@@ -32,4 +33,5 @@ const Quote = memo(forwardRef<SVGSVGElement, QuoteProps>(({
 
 Quote.displayName = 'Quote';
 
-export { Quote };
+// Triple export pattern (lucide-react style)
+export { Quote, Quote as QuoteIcon, Quote as SiQuote };

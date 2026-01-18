@@ -13,7 +13,8 @@ export interface ListPlusProps extends IconProps {
 }
 
 /**
- * ListPlus with dynamic weight and duotone props.
+ * ListPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListPlusRegular } from 'stera-icons/ListPlusRegular';
  */
@@ -32,4 +33,5 @@ const ListPlus = memo(forwardRef<SVGSVGElement, ListPlusProps>(({
 
 ListPlus.displayName = 'ListPlus';
 
-export { ListPlus };
+// Triple export pattern (lucide-react style)
+export { ListPlus, ListPlus as ListPlusIcon, ListPlus as SiListPlus };

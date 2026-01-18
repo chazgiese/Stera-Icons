@@ -15,5 +15,6 @@ const KeyAltFillDuotone = memo(
 
 KeyAltFillDuotone.displayName = 'KeyAltFillDuotone';
 
-export { KeyAltFillDuotone };
+// Triple export pattern (lucide-react style)
+export { KeyAltFillDuotone, KeyAltFillDuotone as KeyAltFillDuotoneIcon, KeyAltFillDuotone as SiKeyAltFillDuotone };
 export type { KeyAltFillDuotoneProps };

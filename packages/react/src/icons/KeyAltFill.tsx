@@ -14,5 +14,6 @@ const KeyAltFill = memo(
 
 KeyAltFill.displayName = 'KeyAltFill';
 
-export { KeyAltFill };
+// Triple export pattern (lucide-react style)
+export { KeyAltFill, KeyAltFill as KeyAltFillIcon, KeyAltFill as SiKeyAltFill };
 export type { KeyAltFillProps };

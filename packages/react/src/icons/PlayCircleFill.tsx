@@ -14,5 +14,6 @@ const PlayCircleFill = memo(
 
 PlayCircleFill.displayName = 'PlayCircleFill';
 
-export { PlayCircleFill };
+// Triple export pattern (lucide-react style)
+export { PlayCircleFill, PlayCircleFill as PlayCircleFillIcon, PlayCircleFill as SiPlayCircleFill };
 export type { PlayCircleFillProps };

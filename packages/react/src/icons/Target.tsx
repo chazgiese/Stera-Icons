@@ -13,7 +13,8 @@ export interface TargetProps extends IconProps {
 }
 
 /**
- * Target with dynamic weight and duotone props.
+ * Target - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TargetRegular } from 'stera-icons/TargetRegular';
  */
@@ -32,4 +33,5 @@ const Target = memo(forwardRef<SVGSVGElement, TargetProps>(({
 
 Target.displayName = 'Target';
 
-export { Target };
+// Triple export pattern (lucide-react style)
+export { Target, Target as TargetIcon, Target as SiTarget };

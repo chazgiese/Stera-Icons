@@ -14,5 +14,6 @@ const FolderFill = memo(
 
 FolderFill.displayName = 'FolderFill';
 
-export { FolderFill };
+// Triple export pattern (lucide-react style)
+export { FolderFill, FolderFill as FolderFillIcon, FolderFill as SiFolderFill };
 export type { FolderFillProps };

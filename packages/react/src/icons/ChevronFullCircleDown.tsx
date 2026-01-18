@@ -13,7 +13,8 @@ export interface ChevronFullCircleDownProps extends IconProps {
 }
 
 /**
- * ChevronFullCircleDown with dynamic weight and duotone props.
+ * ChevronFullCircleDown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullCircleDownRegular } from 'stera-icons/ChevronFullCircleDownRegular';
  */
@@ -32,4 +33,5 @@ const ChevronFullCircleDown = memo(forwardRef<SVGSVGElement, ChevronFullCircleDo
 
 ChevronFullCircleDown.displayName = 'ChevronFullCircleDown';
 
-export { ChevronFullCircleDown };
+// Triple export pattern (lucide-react style)
+export { ChevronFullCircleDown, ChevronFullCircleDown as ChevronFullCircleDownIcon, ChevronFullCircleDown as SiChevronFullCircleDown };

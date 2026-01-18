@@ -15,5 +15,6 @@ const PanelRightFloatingRegular = memo(
 
 PanelRightFloatingRegular.displayName = 'PanelRightFloatingRegular';
 
-export { PanelRightFloatingRegular };
+// Triple export pattern (lucide-react style)
+export { PanelRightFloatingRegular, PanelRightFloatingRegular as PanelRightFloatingRegularIcon, PanelRightFloatingRegular as SiPanelRightFloatingRegular };
 export type { PanelRightFloatingRegularProps };

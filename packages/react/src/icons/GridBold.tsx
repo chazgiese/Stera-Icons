@@ -14,5 +14,6 @@ const GridBold = memo(
 
 GridBold.displayName = 'GridBold';
 
-export { GridBold };
+// Triple export pattern (lucide-react style)
+export { GridBold, GridBold as GridBoldIcon, GridBold as SiGridBold };
 export type { GridBoldProps };

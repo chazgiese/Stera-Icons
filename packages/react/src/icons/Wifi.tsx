@@ -13,7 +13,8 @@ export interface WifiProps extends IconProps {
 }
 
 /**
- * Wifi with dynamic weight and duotone props.
+ * Wifi - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WifiRegular } from 'stera-icons/WifiRegular';
  */
@@ -32,4 +33,5 @@ const Wifi = memo(forwardRef<SVGSVGElement, WifiProps>(({
 
 Wifi.displayName = 'Wifi';
 
-export { Wifi };
+// Triple export pattern (lucide-react style)
+export { Wifi, Wifi as WifiIcon, Wifi as SiWifi };

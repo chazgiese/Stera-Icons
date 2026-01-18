@@ -13,7 +13,8 @@ export interface SignInProps extends IconProps {
 }
 
 /**
- * SignIn with dynamic weight and duotone props.
+ * SignIn - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignInRegular } from 'stera-icons/SignInRegular';
  */
@@ -32,4 +33,5 @@ const SignIn = memo(forwardRef<SVGSVGElement, SignInProps>(({
 
 SignIn.displayName = 'SignIn';
 
-export { SignIn };
+// Triple export pattern (lucide-react style)
+export { SignIn, SignIn as SignInIcon, SignIn as SiSignIn };

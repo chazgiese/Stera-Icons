@@ -13,7 +13,8 @@ export interface ChartBarDescProps extends IconProps {
 }
 
 /**
- * ChartBarDesc with dynamic weight and duotone props.
+ * ChartBarDesc - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarDescRegular } from 'stera-icons/ChartBarDescRegular';
  */
@@ -32,4 +33,5 @@ const ChartBarDesc = memo(forwardRef<SVGSVGElement, ChartBarDescProps>(({
 
 ChartBarDesc.displayName = 'ChartBarDesc';
 
-export { ChartBarDesc };
+// Triple export pattern (lucide-react style)
+export { ChartBarDesc, ChartBarDesc as ChartBarDescIcon, ChartBarDesc as SiChartBarDesc };

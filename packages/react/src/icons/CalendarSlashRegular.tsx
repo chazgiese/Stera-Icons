@@ -15,5 +15,6 @@ const CalendarSlashRegular = memo(
 
 CalendarSlashRegular.displayName = 'CalendarSlashRegular';
 
-export { CalendarSlashRegular };
+// Triple export pattern (lucide-react style)
+export { CalendarSlashRegular, CalendarSlashRegular as CalendarSlashRegularIcon, CalendarSlashRegular as SiCalendarSlashRegular };
 export type { CalendarSlashRegularProps };

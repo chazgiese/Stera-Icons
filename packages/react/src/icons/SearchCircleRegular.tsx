@@ -15,5 +15,6 @@ const SearchCircleRegular = memo(
 
 SearchCircleRegular.displayName = 'SearchCircleRegular';
 
-export { SearchCircleRegular };
+// Triple export pattern (lucide-react style)
+export { SearchCircleRegular, SearchCircleRegular as SearchCircleRegularIcon, SearchCircleRegular as SiSearchCircleRegular };
 export type { SearchCircleRegularProps };

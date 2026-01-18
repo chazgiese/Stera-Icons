@@ -14,5 +14,6 @@ const PlugFill = memo(
 
 PlugFill.displayName = 'PlugFill';
 
-export { PlugFill };
+// Triple export pattern (lucide-react style)
+export { PlugFill, PlugFill as PlugFillIcon, PlugFill as SiPlugFill };
 export type { PlugFillProps };

@@ -14,5 +14,6 @@ const MatchaRegular = memo(
 
 MatchaRegular.displayName = 'MatchaRegular';
 
-export { MatchaRegular };
+// Triple export pattern (lucide-react style)
+export { MatchaRegular, MatchaRegular as MatchaRegularIcon, MatchaRegular as SiMatchaRegular };
 export type { MatchaRegularProps };

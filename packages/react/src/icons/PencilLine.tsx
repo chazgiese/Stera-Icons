@@ -13,7 +13,8 @@ export interface PencilLineProps extends IconProps {
 }
 
 /**
- * PencilLine with dynamic weight and duotone props.
+ * PencilLine - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PencilLineRegular } from 'stera-icons/PencilLineRegular';
  */
@@ -32,4 +33,5 @@ const PencilLine = memo(forwardRef<SVGSVGElement, PencilLineProps>(({
 
 PencilLine.displayName = 'PencilLine';
 
-export { PencilLine };
+// Triple export pattern (lucide-react style)
+export { PencilLine, PencilLine as PencilLineIcon, PencilLine as SiPencilLine };

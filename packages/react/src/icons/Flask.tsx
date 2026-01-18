@@ -13,7 +13,8 @@ export interface FlaskProps extends IconProps {
 }
 
 /**
- * Flask with dynamic weight and duotone props.
+ * Flask - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlaskRegular } from 'stera-icons/FlaskRegular';
  */
@@ -32,4 +33,5 @@ const Flask = memo(forwardRef<SVGSVGElement, FlaskProps>(({
 
 Flask.displayName = 'Flask';
 
-export { Flask };
+// Triple export pattern (lucide-react style)
+export { Flask, Flask as FlaskIcon, Flask as SiFlask };

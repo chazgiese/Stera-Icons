@@ -13,7 +13,8 @@ export interface AccessibilityProps extends IconProps {
 }
 
 /**
- * Accessibility with dynamic weight and duotone props.
+ * Accessibility - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AccessibilityRegular } from 'stera-icons/AccessibilityRegular';
  */
@@ -32,4 +33,5 @@ const Accessibility = memo(forwardRef<SVGSVGElement, AccessibilityProps>(({
 
 Accessibility.displayName = 'Accessibility';
 
-export { Accessibility };
+// Triple export pattern (lucide-react style)
+export { Accessibility, Accessibility as AccessibilityIcon, Accessibility as SiAccessibility };

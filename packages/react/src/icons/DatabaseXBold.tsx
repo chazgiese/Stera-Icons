@@ -15,5 +15,6 @@ const DatabaseXBold = memo(
 
 DatabaseXBold.displayName = 'DatabaseXBold';
 
-export { DatabaseXBold };
+// Triple export pattern (lucide-react style)
+export { DatabaseXBold, DatabaseXBold as DatabaseXBoldIcon, DatabaseXBold as SiDatabaseXBold };
 export type { DatabaseXBoldProps };

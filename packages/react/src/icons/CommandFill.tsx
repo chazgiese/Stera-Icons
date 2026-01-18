@@ -14,5 +14,6 @@ const CommandFill = memo(
 
 CommandFill.displayName = 'CommandFill';
 
-export { CommandFill };
+// Triple export pattern (lucide-react style)
+export { CommandFill, CommandFill as CommandFillIcon, CommandFill as SiCommandFill };
 export type { CommandFillProps };

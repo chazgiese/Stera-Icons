@@ -15,5 +15,6 @@ const ChatBubbleDotRegular = memo(
 
 ChatBubbleDotRegular.displayName = 'ChatBubbleDotRegular';
 
-export { ChatBubbleDotRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleDotRegular, ChatBubbleDotRegular as ChatBubbleDotRegularIcon, ChatBubbleDotRegular as SiChatBubbleDotRegular };
 export type { ChatBubbleDotRegularProps };

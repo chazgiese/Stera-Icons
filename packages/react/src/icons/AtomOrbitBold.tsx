@@ -16,5 +16,6 @@ const AtomOrbitBold = memo(
 
 AtomOrbitBold.displayName = 'AtomOrbitBold';
 
-export { AtomOrbitBold };
+// Triple export pattern (lucide-react style)
+export { AtomOrbitBold, AtomOrbitBold as AtomOrbitBoldIcon, AtomOrbitBold as SiAtomOrbitBold };
 export type { AtomOrbitBoldProps };

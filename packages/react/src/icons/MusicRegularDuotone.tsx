@@ -15,5 +15,6 @@ const MusicRegularDuotone = memo(
 
 MusicRegularDuotone.displayName = 'MusicRegularDuotone';
 
-export { MusicRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { MusicRegularDuotone, MusicRegularDuotone as MusicRegularDuotoneIcon, MusicRegularDuotone as SiMusicRegularDuotone };
 export type { MusicRegularDuotoneProps };

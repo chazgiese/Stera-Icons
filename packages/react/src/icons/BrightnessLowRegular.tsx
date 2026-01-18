@@ -16,5 +16,6 @@ const BrightnessLowRegular = memo(
 
 BrightnessLowRegular.displayName = 'BrightnessLowRegular';
 
-export { BrightnessLowRegular };
+// Triple export pattern (lucide-react style)
+export { BrightnessLowRegular, BrightnessLowRegular as BrightnessLowRegularIcon, BrightnessLowRegular as SiBrightnessLowRegular };
 export type { BrightnessLowRegularProps };

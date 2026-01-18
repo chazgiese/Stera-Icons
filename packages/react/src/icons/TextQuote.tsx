@@ -13,7 +13,8 @@ export interface TextQuoteProps extends IconProps {
 }
 
 /**
- * TextQuote with dynamic weight and duotone props.
+ * TextQuote - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextQuoteRegular } from 'stera-icons/TextQuoteRegular';
  */
@@ -32,4 +33,5 @@ const TextQuote = memo(forwardRef<SVGSVGElement, TextQuoteProps>(({
 
 TextQuote.displayName = 'TextQuote';
 
-export { TextQuote };
+// Triple export pattern (lucide-react style)
+export { TextQuote, TextQuote as TextQuoteIcon, TextQuote as SiTextQuote };

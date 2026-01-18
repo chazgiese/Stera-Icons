@@ -13,7 +13,8 @@ export interface LayoutMasonryProps extends IconProps {
 }
 
 /**
- * LayoutMasonry with dynamic weight and duotone props.
+ * LayoutMasonry - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutMasonryRegular } from 'stera-icons/LayoutMasonryRegular';
  */
@@ -32,4 +33,5 @@ const LayoutMasonry = memo(forwardRef<SVGSVGElement, LayoutMasonryProps>(({
 
 LayoutMasonry.displayName = 'LayoutMasonry';
 
-export { LayoutMasonry };
+// Triple export pattern (lucide-react style)
+export { LayoutMasonry, LayoutMasonry as LayoutMasonryIcon, LayoutMasonry as SiLayoutMasonry };

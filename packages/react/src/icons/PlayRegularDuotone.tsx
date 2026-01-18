@@ -15,5 +15,6 @@ const PlayRegularDuotone = memo(
 
 PlayRegularDuotone.displayName = 'PlayRegularDuotone';
 
-export { PlayRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { PlayRegularDuotone, PlayRegularDuotone as PlayRegularDuotoneIcon, PlayRegularDuotone as SiPlayRegularDuotone };
 export type { PlayRegularDuotoneProps };

@@ -14,5 +14,6 @@ const ShareFill = memo(
 
 ShareFill.displayName = 'ShareFill';
 
-export { ShareFill };
+// Triple export pattern (lucide-react style)
+export { ShareFill, ShareFill as ShareFillIcon, ShareFill as SiShareFill };
 export type { ShareFillProps };

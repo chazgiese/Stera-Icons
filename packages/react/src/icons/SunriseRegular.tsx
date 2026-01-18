@@ -15,5 +15,6 @@ const SunriseRegular = memo(
 
 SunriseRegular.displayName = 'SunriseRegular';
 
-export { SunriseRegular };
+// Triple export pattern (lucide-react style)
+export { SunriseRegular, SunriseRegular as SunriseRegularIcon, SunriseRegular as SiSunriseRegular };
 export type { SunriseRegularProps };

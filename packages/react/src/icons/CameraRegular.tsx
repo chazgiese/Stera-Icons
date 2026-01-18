@@ -15,5 +15,6 @@ const CameraRegular = memo(
 
 CameraRegular.displayName = 'CameraRegular';
 
-export { CameraRegular };
+// Triple export pattern (lucide-react style)
+export { CameraRegular, CameraRegular as CameraRegularIcon, CameraRegular as SiCameraRegular };
 export type { CameraRegularProps };

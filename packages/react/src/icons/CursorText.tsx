@@ -13,7 +13,8 @@ export interface CursorTextProps extends IconProps {
 }
 
 /**
- * CursorText with dynamic weight and duotone props.
+ * CursorText - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CursorTextRegular } from 'stera-icons/CursorTextRegular';
  */
@@ -32,4 +33,5 @@ const CursorText = memo(forwardRef<SVGSVGElement, CursorTextProps>(({
 
 CursorText.displayName = 'CursorText';
 
-export { CursorText };
+// Triple export pattern (lucide-react style)
+export { CursorText, CursorText as CursorTextIcon, CursorText as SiCursorText };

@@ -15,5 +15,6 @@ const ThermometerHighBold = memo(
 
 ThermometerHighBold.displayName = 'ThermometerHighBold';
 
-export { ThermometerHighBold };
+// Triple export pattern (lucide-react style)
+export { ThermometerHighBold, ThermometerHighBold as ThermometerHighBoldIcon, ThermometerHighBold as SiThermometerHighBold };
 export type { ThermometerHighBoldProps };

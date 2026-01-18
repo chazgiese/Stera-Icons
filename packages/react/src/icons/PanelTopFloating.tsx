@@ -13,7 +13,8 @@ export interface PanelTopFloatingProps extends IconProps {
 }
 
 /**
- * PanelTopFloating with dynamic weight and duotone props.
+ * PanelTopFloating - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PanelTopFloatingRegular } from 'stera-icons/PanelTopFloatingRegular';
  */
@@ -32,4 +33,5 @@ const PanelTopFloating = memo(forwardRef<SVGSVGElement, PanelTopFloatingProps>((
 
 PanelTopFloating.displayName = 'PanelTopFloating';
 
-export { PanelTopFloating };
+// Triple export pattern (lucide-react style)
+export { PanelTopFloating, PanelTopFloating as PanelTopFloatingIcon, PanelTopFloating as SiPanelTopFloating };

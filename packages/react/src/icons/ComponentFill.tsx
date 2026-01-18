@@ -14,5 +14,6 @@ const ComponentFill = memo(
 
 ComponentFill.displayName = 'ComponentFill';
 
-export { ComponentFill };
+// Triple export pattern (lucide-react style)
+export { ComponentFill, ComponentFill as ComponentFillIcon, ComponentFill as SiComponentFill };
 export type { ComponentFillProps };

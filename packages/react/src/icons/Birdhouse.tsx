@@ -13,7 +13,8 @@ export interface BirdhouseProps extends IconProps {
 }
 
 /**
- * Birdhouse with dynamic weight and duotone props.
+ * Birdhouse - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BirdhouseRegular } from 'stera-icons/BirdhouseRegular';
  */
@@ -32,4 +33,5 @@ const Birdhouse = memo(forwardRef<SVGSVGElement, BirdhouseProps>(({
 
 Birdhouse.displayName = 'Birdhouse';
 
-export { Birdhouse };
+// Triple export pattern (lucide-react style)
+export { Birdhouse, Birdhouse as BirdhouseIcon, Birdhouse as SiBirdhouse };

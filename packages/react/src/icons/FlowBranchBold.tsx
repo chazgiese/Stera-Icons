@@ -14,5 +14,6 @@ const FlowBranchBold = memo(
 
 FlowBranchBold.displayName = 'FlowBranchBold';
 
-export { FlowBranchBold };
+// Triple export pattern (lucide-react style)
+export { FlowBranchBold, FlowBranchBold as FlowBranchBoldIcon, FlowBranchBold as SiFlowBranchBold };
 export type { FlowBranchBoldProps };

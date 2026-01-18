@@ -13,7 +13,8 @@ export interface SignalAltMediumProps extends IconProps {
 }
 
 /**
- * SignalAltMedium with dynamic weight and duotone props.
+ * SignalAltMedium - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignalAltMediumRegular } from 'stera-icons/SignalAltMediumRegular';
  */
@@ -32,4 +33,5 @@ const SignalAltMedium = memo(forwardRef<SVGSVGElement, SignalAltMediumProps>(({
 
 SignalAltMedium.displayName = 'SignalAltMedium';
 
-export { SignalAltMedium };
+// Triple export pattern (lucide-react style)
+export { SignalAltMedium, SignalAltMedium as SignalAltMediumIcon, SignalAltMedium as SiSignalAltMedium };

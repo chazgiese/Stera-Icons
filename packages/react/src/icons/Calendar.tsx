@@ -13,7 +13,8 @@ export interface CalendarProps extends IconProps {
 }
 
 /**
- * Calendar with dynamic weight and duotone props.
+ * Calendar - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalendarRegular } from 'stera-icons/CalendarRegular';
  */
@@ -32,4 +33,5 @@ const Calendar = memo(forwardRef<SVGSVGElement, CalendarProps>(({
 
 Calendar.displayName = 'Calendar';
 
-export { Calendar };
+// Triple export pattern (lucide-react style)
+export { Calendar, Calendar as CalendarIcon, Calendar as SiCalendar };

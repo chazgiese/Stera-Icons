@@ -13,7 +13,8 @@ export interface MenuProps extends IconProps {
 }
 
 /**
- * Menu with dynamic weight and duotone props.
+ * Menu - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MenuRegular } from 'stera-icons/MenuRegular';
  */
@@ -32,4 +33,5 @@ const Menu = memo(forwardRef<SVGSVGElement, MenuProps>(({
 
 Menu.displayName = 'Menu';
 
-export { Menu };
+// Triple export pattern (lucide-react style)
+export { Menu, Menu as MenuIcon, Menu as SiMenu };

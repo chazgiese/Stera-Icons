@@ -14,5 +14,6 @@ const ExpandRegular = memo(
 
 ExpandRegular.displayName = 'ExpandRegular';
 
-export { ExpandRegular };
+// Triple export pattern (lucide-react style)
+export { ExpandRegular, ExpandRegular as ExpandRegularIcon, ExpandRegular as SiExpandRegular };
 export type { ExpandRegularProps };

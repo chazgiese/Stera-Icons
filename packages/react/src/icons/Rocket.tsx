@@ -13,7 +13,8 @@ export interface RocketProps extends IconProps {
 }
 
 /**
- * Rocket with dynamic weight and duotone props.
+ * Rocket - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RocketRegular } from 'stera-icons/RocketRegular';
  */
@@ -32,4 +33,5 @@ const Rocket = memo(forwardRef<SVGSVGElement, RocketProps>(({
 
 Rocket.displayName = 'Rocket';
 
-export { Rocket };
+// Triple export pattern (lucide-react style)
+export { Rocket, Rocket as RocketIcon, Rocket as SiRocket };

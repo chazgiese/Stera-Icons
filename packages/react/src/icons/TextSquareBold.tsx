@@ -15,5 +15,6 @@ const TextSquareBold = memo(
 
 TextSquareBold.displayName = 'TextSquareBold';
 
-export { TextSquareBold };
+// Triple export pattern (lucide-react style)
+export { TextSquareBold, TextSquareBold as TextSquareBoldIcon, TextSquareBold as SiTextSquareBold };
 export type { TextSquareBoldProps };

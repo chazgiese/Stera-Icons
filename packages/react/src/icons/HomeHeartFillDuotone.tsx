@@ -15,5 +15,6 @@ const HomeHeartFillDuotone = memo(
 
 HomeHeartFillDuotone.displayName = 'HomeHeartFillDuotone';
 
-export { HomeHeartFillDuotone };
+// Triple export pattern (lucide-react style)
+export { HomeHeartFillDuotone, HomeHeartFillDuotone as HomeHeartFillDuotoneIcon, HomeHeartFillDuotone as SiHomeHeartFillDuotone };
 export type { HomeHeartFillDuotoneProps };

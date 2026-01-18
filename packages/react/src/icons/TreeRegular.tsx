@@ -14,5 +14,6 @@ const TreeRegular = memo(
 
 TreeRegular.displayName = 'TreeRegular';
 
-export { TreeRegular };
+// Triple export pattern (lucide-react style)
+export { TreeRegular, TreeRegular as TreeRegularIcon, TreeRegular as SiTreeRegular };
 export type { TreeRegularProps };

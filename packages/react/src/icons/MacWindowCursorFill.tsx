@@ -16,5 +16,6 @@ const MacWindowCursorFill = memo(
 
 MacWindowCursorFill.displayName = 'MacWindowCursorFill';
 
-export { MacWindowCursorFill };
+// Triple export pattern (lucide-react style)
+export { MacWindowCursorFill, MacWindowCursorFill as MacWindowCursorFillIcon, MacWindowCursorFill as SiMacWindowCursorFill };
 export type { MacWindowCursorFillProps };

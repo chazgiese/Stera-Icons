@@ -15,5 +15,6 @@ const TargetFill = memo(
 
 TargetFill.displayName = 'TargetFill';
 
-export { TargetFill };
+// Triple export pattern (lucide-react style)
+export { TargetFill, TargetFill as TargetFillIcon, TargetFill as SiTargetFill };
 export type { TargetFillProps };

@@ -13,7 +13,8 @@ export interface SparklesAltProps extends IconProps {
 }
 
 /**
- * SparklesAlt with dynamic weight and duotone props.
+ * SparklesAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SparklesAltRegular } from 'stera-icons/SparklesAltRegular';
  */
@@ -32,4 +33,5 @@ const SparklesAlt = memo(forwardRef<SVGSVGElement, SparklesAltProps>(({
 
 SparklesAlt.displayName = 'SparklesAlt';
 
-export { SparklesAlt };
+// Triple export pattern (lucide-react style)
+export { SparklesAlt, SparklesAlt as SparklesAltIcon, SparklesAlt as SiSparklesAlt };

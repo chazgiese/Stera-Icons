@@ -16,5 +16,6 @@ const ScissorsFill = memo(
 
 ScissorsFill.displayName = 'ScissorsFill';
 
-export { ScissorsFill };
+// Triple export pattern (lucide-react style)
+export { ScissorsFill, ScissorsFill as ScissorsFillIcon, ScissorsFill as SiScissorsFill };
 export type { ScissorsFillProps };

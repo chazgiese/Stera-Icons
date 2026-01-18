@@ -13,7 +13,8 @@ export interface KeyProps extends IconProps {
 }
 
 /**
- * Key with dynamic weight and duotone props.
+ * Key - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { KeyRegular } from 'stera-icons/KeyRegular';
  */
@@ -32,4 +33,5 @@ const Key = memo(forwardRef<SVGSVGElement, KeyProps>(({
 
 Key.displayName = 'Key';
 
-export { Key };
+// Triple export pattern (lucide-react style)
+export { Key, Key as KeyIcon, Key as SiKey };

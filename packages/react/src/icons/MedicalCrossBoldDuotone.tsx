@@ -15,5 +15,6 @@ const MedicalCrossBoldDuotone = memo(
 
 MedicalCrossBoldDuotone.displayName = 'MedicalCrossBoldDuotone';
 
-export { MedicalCrossBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { MedicalCrossBoldDuotone, MedicalCrossBoldDuotone as MedicalCrossBoldDuotoneIcon, MedicalCrossBoldDuotone as SiMedicalCrossBoldDuotone };
 export type { MedicalCrossBoldDuotoneProps };

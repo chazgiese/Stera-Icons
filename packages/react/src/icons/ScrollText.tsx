@@ -13,7 +13,8 @@ export interface ScrollTextProps extends IconProps {
 }
 
 /**
- * ScrollText with dynamic weight and duotone props.
+ * ScrollText - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScrollTextRegular } from 'stera-icons/ScrollTextRegular';
  */
@@ -32,4 +33,5 @@ const ScrollText = memo(forwardRef<SVGSVGElement, ScrollTextProps>(({
 
 ScrollText.displayName = 'ScrollText';
 
-export { ScrollText };
+// Triple export pattern (lucide-react style)
+export { ScrollText, ScrollText as ScrollTextIcon, ScrollText as SiScrollText };

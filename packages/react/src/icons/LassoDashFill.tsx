@@ -14,5 +14,6 @@ const LassoDashFill = memo(
 
 LassoDashFill.displayName = 'LassoDashFill';
 
-export { LassoDashFill };
+// Triple export pattern (lucide-react style)
+export { LassoDashFill, LassoDashFill as LassoDashFillIcon, LassoDashFill as SiLassoDashFill };
 export type { LassoDashFillProps };

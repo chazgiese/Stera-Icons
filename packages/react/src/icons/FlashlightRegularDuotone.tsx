@@ -15,5 +15,6 @@ const FlashlightRegularDuotone = memo(
 
 FlashlightRegularDuotone.displayName = 'FlashlightRegularDuotone';
 
-export { FlashlightRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { FlashlightRegularDuotone, FlashlightRegularDuotone as FlashlightRegularDuotoneIcon, FlashlightRegularDuotone as SiFlashlightRegularDuotone };
 export type { FlashlightRegularDuotoneProps };

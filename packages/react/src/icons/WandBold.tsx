@@ -16,5 +16,6 @@ const WandBold = memo(
 
 WandBold.displayName = 'WandBold';
 
-export { WandBold };
+// Triple export pattern (lucide-react style)
+export { WandBold, WandBold as WandBoldIcon, WandBold as SiWandBold };
 export type { WandBoldProps };

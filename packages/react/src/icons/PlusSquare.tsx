@@ -13,7 +13,8 @@ export interface PlusSquareProps extends IconProps {
 }
 
 /**
- * PlusSquare with dynamic weight and duotone props.
+ * PlusSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PlusSquareRegular } from 'stera-icons/PlusSquareRegular';
  */
@@ -32,4 +33,5 @@ const PlusSquare = memo(forwardRef<SVGSVGElement, PlusSquareProps>(({
 
 PlusSquare.displayName = 'PlusSquare';
 
-export { PlusSquare };
+// Triple export pattern (lucide-react style)
+export { PlusSquare, PlusSquare as PlusSquareIcon, PlusSquare as SiPlusSquare };

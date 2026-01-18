@@ -14,5 +14,6 @@ const CapsLockFill = memo(
 
 CapsLockFill.displayName = 'CapsLockFill';
 
-export { CapsLockFill };
+// Triple export pattern (lucide-react style)
+export { CapsLockFill, CapsLockFill as CapsLockFillIcon, CapsLockFill as SiCapsLockFill };
 export type { CapsLockFillProps };

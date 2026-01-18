@@ -14,5 +14,6 @@ const ArrowULeftTopBold = memo(
 
 ArrowULeftTopBold.displayName = 'ArrowULeftTopBold';
 
-export { ArrowULeftTopBold };
+// Triple export pattern (lucide-react style)
+export { ArrowULeftTopBold, ArrowULeftTopBold as ArrowULeftTopBoldIcon, ArrowULeftTopBold as SiArrowULeftTopBold };
 export type { ArrowULeftTopBoldProps };

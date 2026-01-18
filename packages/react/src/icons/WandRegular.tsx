@@ -16,5 +16,6 @@ const WandRegular = memo(
 
 WandRegular.displayName = 'WandRegular';
 
-export { WandRegular };
+// Triple export pattern (lucide-react style)
+export { WandRegular, WandRegular as WandRegularIcon, WandRegular as SiWandRegular };
 export type { WandRegularProps };

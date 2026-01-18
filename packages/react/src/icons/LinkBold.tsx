@@ -15,5 +15,6 @@ const LinkBold = memo(
 
 LinkBold.displayName = 'LinkBold';
 
-export { LinkBold };
+// Triple export pattern (lucide-react style)
+export { LinkBold, LinkBold as LinkBoldIcon, LinkBold as SiLinkBold };
 export type { LinkBoldProps };

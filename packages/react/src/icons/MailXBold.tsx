@@ -15,5 +15,6 @@ const MailXBold = memo(
 
 MailXBold.displayName = 'MailXBold';
 
-export { MailXBold };
+// Triple export pattern (lucide-react style)
+export { MailXBold, MailXBold as MailXBoldIcon, MailXBold as SiMailXBold };
 export type { MailXBoldProps };

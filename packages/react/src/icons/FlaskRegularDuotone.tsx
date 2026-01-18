@@ -15,5 +15,6 @@ const FlaskRegularDuotone = memo(
 
 FlaskRegularDuotone.displayName = 'FlaskRegularDuotone';
 
-export { FlaskRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { FlaskRegularDuotone, FlaskRegularDuotone as FlaskRegularDuotoneIcon, FlaskRegularDuotone as SiFlaskRegularDuotone };
 export type { FlaskRegularDuotoneProps };

@@ -15,5 +15,6 @@ const RewindRegularDuotone = memo(
 
 RewindRegularDuotone.displayName = 'RewindRegularDuotone';
 
-export { RewindRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { RewindRegularDuotone, RewindRegularDuotone as RewindRegularDuotoneIcon, RewindRegularDuotone as SiRewindRegularDuotone };
 export type { RewindRegularDuotoneProps };

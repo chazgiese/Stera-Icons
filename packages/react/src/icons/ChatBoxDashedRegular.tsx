@@ -14,5 +14,6 @@ const ChatBoxDashedRegular = memo(
 
 ChatBoxDashedRegular.displayName = 'ChatBoxDashedRegular';
 
-export { ChatBoxDashedRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBoxDashedRegular, ChatBoxDashedRegular as ChatBoxDashedRegularIcon, ChatBoxDashedRegular as SiChatBoxDashedRegular };
 export type { ChatBoxDashedRegularProps };

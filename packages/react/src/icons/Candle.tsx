@@ -13,7 +13,8 @@ export interface CandleProps extends IconProps {
 }
 
 /**
- * Candle with dynamic weight and duotone props.
+ * Candle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CandleRegular } from 'stera-icons/CandleRegular';
  */
@@ -32,4 +33,5 @@ const Candle = memo(forwardRef<SVGSVGElement, CandleProps>(({
 
 Candle.displayName = 'Candle';
 
-export { Candle };
+// Triple export pattern (lucide-react style)
+export { Candle, Candle as CandleIcon, Candle as SiCandle };

@@ -14,5 +14,6 @@ const UserCircleRegular = memo(
 
 UserCircleRegular.displayName = 'UserCircleRegular';
 
-export { UserCircleRegular };
+// Triple export pattern (lucide-react style)
+export { UserCircleRegular, UserCircleRegular as UserCircleRegularIcon, UserCircleRegular as SiUserCircleRegular };
 export type { UserCircleRegularProps };

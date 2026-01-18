@@ -15,5 +15,6 @@ const CodeCircleRegular = memo(
 
 CodeCircleRegular.displayName = 'CodeCircleRegular';
 
-export { CodeCircleRegular };
+// Triple export pattern (lucide-react style)
+export { CodeCircleRegular, CodeCircleRegular as CodeCircleRegularIcon, CodeCircleRegular as SiCodeCircleRegular };
 export type { CodeCircleRegularProps };

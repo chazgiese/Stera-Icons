@@ -13,7 +13,8 @@ export interface EmoteSurprisedProps extends IconProps {
 }
 
 /**
- * EmoteSurprised with dynamic weight and duotone props.
+ * EmoteSurprised - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSurprisedRegular } from 'stera-icons/EmoteSurprisedRegular';
  */
@@ -32,4 +33,5 @@ const EmoteSurprised = memo(forwardRef<SVGSVGElement, EmoteSurprisedProps>(({
 
 EmoteSurprised.displayName = 'EmoteSurprised';
 
-export { EmoteSurprised };
+// Triple export pattern (lucide-react style)
+export { EmoteSurprised, EmoteSurprised as EmoteSurprisedIcon, EmoteSurprised as SiEmoteSurprised };

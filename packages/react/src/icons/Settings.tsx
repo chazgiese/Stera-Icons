@@ -13,7 +13,8 @@ export interface SettingsProps extends IconProps {
 }
 
 /**
- * Settings with dynamic weight and duotone props.
+ * Settings - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SettingsRegular } from 'stera-icons/SettingsRegular';
  */
@@ -32,4 +33,5 @@ const Settings = memo(forwardRef<SVGSVGElement, SettingsProps>(({
 
 Settings.displayName = 'Settings';
 
-export { Settings };
+// Triple export pattern (lucide-react style)
+export { Settings, Settings as SettingsIcon, Settings as SiSettings };

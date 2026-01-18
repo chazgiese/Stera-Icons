@@ -15,5 +15,6 @@ const DatabaseSparkleRegularDuotone = memo(
 
 DatabaseSparkleRegularDuotone.displayName = 'DatabaseSparkleRegularDuotone';
 
-export { DatabaseSparkleRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { DatabaseSparkleRegularDuotone, DatabaseSparkleRegularDuotone as DatabaseSparkleRegularDuotoneIcon, DatabaseSparkleRegularDuotone as SiDatabaseSparkleRegularDuotone };
 export type { DatabaseSparkleRegularDuotoneProps };

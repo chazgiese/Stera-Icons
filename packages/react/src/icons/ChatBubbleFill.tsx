@@ -14,5 +14,6 @@ const ChatBubbleFill = memo(
 
 ChatBubbleFill.displayName = 'ChatBubbleFill';
 
-export { ChatBubbleFill };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleFill, ChatBubbleFill as ChatBubbleFillIcon, ChatBubbleFill as SiChatBubbleFill };
 export type { ChatBubbleFillProps };

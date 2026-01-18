@@ -15,5 +15,6 @@ const MoreCircleRegular = memo(
 
 MoreCircleRegular.displayName = 'MoreCircleRegular';
 
-export { MoreCircleRegular };
+// Triple export pattern (lucide-react style)
+export { MoreCircleRegular, MoreCircleRegular as MoreCircleRegularIcon, MoreCircleRegular as SiMoreCircleRegular };
 export type { MoreCircleRegularProps };

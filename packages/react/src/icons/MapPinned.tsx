@@ -13,7 +13,8 @@ export interface MapPinnedProps extends IconProps {
 }
 
 /**
- * MapPinned with dynamic weight and duotone props.
+ * MapPinned - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MapPinnedRegular } from 'stera-icons/MapPinnedRegular';
  */
@@ -32,4 +33,5 @@ const MapPinned = memo(forwardRef<SVGSVGElement, MapPinnedProps>(({
 
 MapPinned.displayName = 'MapPinned';
 
-export { MapPinned };
+// Triple export pattern (lucide-react style)
+export { MapPinned, MapPinned as MapPinnedIcon, MapPinned as SiMapPinned };

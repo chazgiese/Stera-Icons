@@ -14,5 +14,6 @@ const HandLeftFill = memo(
 
 HandLeftFill.displayName = 'HandLeftFill';
 
-export { HandLeftFill };
+// Triple export pattern (lucide-react style)
+export { HandLeftFill, HandLeftFill as HandLeftFillIcon, HandLeftFill as SiHandLeftFill };
 export type { HandLeftFillProps };

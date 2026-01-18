@@ -13,7 +13,8 @@ export interface DatabaseXProps extends IconProps {
 }
 
 /**
- * DatabaseX with dynamic weight and duotone props.
+ * DatabaseX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseXRegular } from 'stera-icons/DatabaseXRegular';
  */
@@ -32,4 +33,5 @@ const DatabaseX = memo(forwardRef<SVGSVGElement, DatabaseXProps>(({
 
 DatabaseX.displayName = 'DatabaseX';
 
-export { DatabaseX };
+// Triple export pattern (lucide-react style)
+export { DatabaseX, DatabaseX as DatabaseXIcon, DatabaseX as SiDatabaseX };

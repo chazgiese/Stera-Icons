@@ -15,5 +15,6 @@ const CalculatorRegular = memo(
 
 CalculatorRegular.displayName = 'CalculatorRegular';
 
-export { CalculatorRegular };
+// Triple export pattern (lucide-react style)
+export { CalculatorRegular, CalculatorRegular as CalculatorRegularIcon, CalculatorRegular as SiCalculatorRegular };
 export type { CalculatorRegularProps };

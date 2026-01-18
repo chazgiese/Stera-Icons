@@ -15,5 +15,6 @@ const PedestalBold = memo(
 
 PedestalBold.displayName = 'PedestalBold';
 
-export { PedestalBold };
+// Triple export pattern (lucide-react style)
+export { PedestalBold, PedestalBold as PedestalBoldIcon, PedestalBold as SiPedestalBold };
 export type { PedestalBoldProps };

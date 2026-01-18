@@ -14,5 +14,6 @@ const MenuFill = memo(
 
 MenuFill.displayName = 'MenuFill';
 
-export { MenuFill };
+// Triple export pattern (lucide-react style)
+export { MenuFill, MenuFill as MenuFillIcon, MenuFill as SiMenuFill };
 export type { MenuFillProps };

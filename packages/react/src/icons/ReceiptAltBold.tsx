@@ -15,5 +15,6 @@ const ReceiptAltBold = memo(
 
 ReceiptAltBold.displayName = 'ReceiptAltBold';
 
-export { ReceiptAltBold };
+// Triple export pattern (lucide-react style)
+export { ReceiptAltBold, ReceiptAltBold as ReceiptAltBoldIcon, ReceiptAltBold as SiReceiptAltBold };
 export type { ReceiptAltBoldProps };

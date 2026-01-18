@@ -15,5 +15,6 @@ const HomeXBold = memo(
 
 HomeXBold.displayName = 'HomeXBold';
 
-export { HomeXBold };
+// Triple export pattern (lucide-react style)
+export { HomeXBold, HomeXBold as HomeXBoldIcon, HomeXBold as SiHomeXBold };
 export type { HomeXBoldProps };

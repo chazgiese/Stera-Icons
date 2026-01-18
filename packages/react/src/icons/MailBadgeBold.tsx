@@ -15,5 +15,6 @@ const MailBadgeBold = memo(
 
 MailBadgeBold.displayName = 'MailBadgeBold';
 
-export { MailBadgeBold };
+// Triple export pattern (lucide-react style)
+export { MailBadgeBold, MailBadgeBold as MailBadgeBoldIcon, MailBadgeBold as SiMailBadgeBold };
 export type { MailBadgeBoldProps };

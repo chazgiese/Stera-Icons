@@ -15,5 +15,6 @@ const ChatBoxPlusBold = memo(
 
 ChatBoxPlusBold.displayName = 'ChatBoxPlusBold';
 
-export { ChatBoxPlusBold };
+// Triple export pattern (lucide-react style)
+export { ChatBoxPlusBold, ChatBoxPlusBold as ChatBoxPlusBoldIcon, ChatBoxPlusBold as SiChatBoxPlusBold };
 export type { ChatBoxPlusBoldProps };

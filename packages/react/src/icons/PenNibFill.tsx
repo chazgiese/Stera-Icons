@@ -14,5 +14,6 @@ const PenNibFill = memo(
 
 PenNibFill.displayName = 'PenNibFill';
 
-export { PenNibFill };
+// Triple export pattern (lucide-react style)
+export { PenNibFill, PenNibFill as PenNibFillIcon, PenNibFill as SiPenNibFill };
 export type { PenNibFillProps };

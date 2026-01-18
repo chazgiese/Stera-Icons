@@ -16,5 +16,6 @@ const FlaskFullBoldDuotone = memo(
 
 FlaskFullBoldDuotone.displayName = 'FlaskFullBoldDuotone';
 
-export { FlaskFullBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FlaskFullBoldDuotone, FlaskFullBoldDuotone as FlaskFullBoldDuotoneIcon, FlaskFullBoldDuotone as SiFlaskFullBoldDuotone };
 export type { FlaskFullBoldDuotoneProps };

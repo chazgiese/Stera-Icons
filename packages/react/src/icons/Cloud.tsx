@@ -13,7 +13,8 @@ export interface CloudProps extends IconProps {
 }
 
 /**
- * Cloud with dynamic weight and duotone props.
+ * Cloud - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CloudRegular } from 'stera-icons/CloudRegular';
  */
@@ -32,4 +33,5 @@ const Cloud = memo(forwardRef<SVGSVGElement, CloudProps>(({
 
 Cloud.displayName = 'Cloud';
 
-export { Cloud };
+// Triple export pattern (lucide-react style)
+export { Cloud, Cloud as CloudIcon, Cloud as SiCloud };

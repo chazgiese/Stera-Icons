@@ -15,5 +15,6 @@ const QuoteOpeningRegularDuotone = memo(
 
 QuoteOpeningRegularDuotone.displayName = 'QuoteOpeningRegularDuotone';
 
-export { QuoteOpeningRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { QuoteOpeningRegularDuotone, QuoteOpeningRegularDuotone as QuoteOpeningRegularDuotoneIcon, QuoteOpeningRegularDuotone as SiQuoteOpeningRegularDuotone };
 export type { QuoteOpeningRegularDuotoneProps };

@@ -14,5 +14,6 @@ const CodeBold = memo(
 
 CodeBold.displayName = 'CodeBold';
 
-export { CodeBold };
+// Triple export pattern (lucide-react style)
+export { CodeBold, CodeBold as CodeBoldIcon, CodeBold as SiCodeBold };
 export type { CodeBoldProps };

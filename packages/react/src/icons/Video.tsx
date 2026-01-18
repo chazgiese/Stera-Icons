@@ -13,7 +13,8 @@ export interface VideoProps extends IconProps {
 }
 
 /**
- * Video with dynamic weight and duotone props.
+ * Video - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { VideoRegular } from 'stera-icons/VideoRegular';
  */
@@ -32,4 +33,5 @@ const Video = memo(forwardRef<SVGSVGElement, VideoProps>(({
 
 Video.displayName = 'Video';
 
-export { Video };
+// Triple export pattern (lucide-react style)
+export { Video, Video as VideoIcon, Video as SiVideo };

@@ -14,5 +14,6 @@ const ChatBoxDashedFill = memo(
 
 ChatBoxDashedFill.displayName = 'ChatBoxDashedFill';
 
-export { ChatBoxDashedFill };
+// Triple export pattern (lucide-react style)
+export { ChatBoxDashedFill, ChatBoxDashedFill as ChatBoxDashedFillIcon, ChatBoxDashedFill as SiChatBoxDashedFill };
 export type { ChatBoxDashedFillProps };

@@ -13,7 +13,8 @@ export interface ReplyProps extends IconProps {
 }
 
 /**
- * Reply with dynamic weight and duotone props.
+ * Reply - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ReplyRegular } from 'stera-icons/ReplyRegular';
  */
@@ -32,4 +33,5 @@ const Reply = memo(forwardRef<SVGSVGElement, ReplyProps>(({
 
 Reply.displayName = 'Reply';
 
-export { Reply };
+// Triple export pattern (lucide-react style)
+export { Reply, Reply as ReplyIcon, Reply as SiReply };

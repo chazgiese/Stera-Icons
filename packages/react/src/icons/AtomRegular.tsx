@@ -15,5 +15,6 @@ const AtomRegular = memo(
 
 AtomRegular.displayName = 'AtomRegular';
 
-export { AtomRegular };
+// Triple export pattern (lucide-react style)
+export { AtomRegular, AtomRegular as AtomRegularIcon, AtomRegular as SiAtomRegular };
 export type { AtomRegularProps };

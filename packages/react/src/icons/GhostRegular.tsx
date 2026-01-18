@@ -15,5 +15,6 @@ const GhostRegular = memo(
 
 GhostRegular.displayName = 'GhostRegular';
 
-export { GhostRegular };
+// Triple export pattern (lucide-react style)
+export { GhostRegular, GhostRegular as GhostRegularIcon, GhostRegular as SiGhostRegular };
 export type { GhostRegularProps };

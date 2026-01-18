@@ -13,7 +13,8 @@ export interface ChevronSquareRightProps extends IconProps {
 }
 
 /**
- * ChevronSquareRight with dynamic weight and duotone props.
+ * ChevronSquareRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChevronSquareRightRegular } from 'stera-icons/ChevronSquareRightRegular';
  */
@@ -32,4 +33,5 @@ const ChevronSquareRight = memo(forwardRef<SVGSVGElement, ChevronSquareRightProp
 
 ChevronSquareRight.displayName = 'ChevronSquareRight';
 
-export { ChevronSquareRight };
+// Triple export pattern (lucide-react style)
+export { ChevronSquareRight, ChevronSquareRight as ChevronSquareRightIcon, ChevronSquareRight as SiChevronSquareRight };

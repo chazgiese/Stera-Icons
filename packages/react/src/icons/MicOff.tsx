@@ -13,7 +13,8 @@ export interface MicOffProps extends IconProps {
 }
 
 /**
- * MicOff with dynamic weight and duotone props.
+ * MicOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MicOffRegular } from 'stera-icons/MicOffRegular';
  */
@@ -32,4 +33,5 @@ const MicOff = memo(forwardRef<SVGSVGElement, MicOffProps>(({
 
 MicOff.displayName = 'MicOff';
 
-export { MicOff };
+// Triple export pattern (lucide-react style)
+export { MicOff, MicOff as MicOffIcon, MicOff as SiMicOff };

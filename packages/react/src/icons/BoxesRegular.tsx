@@ -14,5 +14,6 @@ const BoxesRegular = memo(
 
 BoxesRegular.displayName = 'BoxesRegular';
 
-export { BoxesRegular };
+// Triple export pattern (lucide-react style)
+export { BoxesRegular, BoxesRegular as BoxesRegularIcon, BoxesRegular as SiBoxesRegular };
 export type { BoxesRegularProps };

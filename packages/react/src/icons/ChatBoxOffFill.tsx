@@ -14,5 +14,6 @@ const ChatBoxOffFill = memo(
 
 ChatBoxOffFill.displayName = 'ChatBoxOffFill';
 
-export { ChatBoxOffFill };
+// Triple export pattern (lucide-react style)
+export { ChatBoxOffFill, ChatBoxOffFill as ChatBoxOffFillIcon, ChatBoxOffFill as SiChatBoxOffFill };
 export type { ChatBoxOffFillProps };

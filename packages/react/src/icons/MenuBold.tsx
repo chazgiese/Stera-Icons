@@ -14,5 +14,6 @@ const MenuBold = memo(
 
 MenuBold.displayName = 'MenuBold';
 
-export { MenuBold };
+// Triple export pattern (lucide-react style)
+export { MenuBold, MenuBold as MenuBoldIcon, MenuBold as SiMenuBold };
 export type { MenuBoldProps };

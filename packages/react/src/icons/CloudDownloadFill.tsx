@@ -14,5 +14,6 @@ const CloudDownloadFill = memo(
 
 CloudDownloadFill.displayName = 'CloudDownloadFill';
 
-export { CloudDownloadFill };
+// Triple export pattern (lucide-react style)
+export { CloudDownloadFill, CloudDownloadFill as CloudDownloadFillIcon, CloudDownloadFill as SiCloudDownloadFill };
 export type { CloudDownloadFillProps };

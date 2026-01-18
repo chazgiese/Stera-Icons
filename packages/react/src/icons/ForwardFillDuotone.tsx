@@ -15,5 +15,6 @@ const ForwardFillDuotone = memo(
 
 ForwardFillDuotone.displayName = 'ForwardFillDuotone';
 
-export { ForwardFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ForwardFillDuotone, ForwardFillDuotone as ForwardFillDuotoneIcon, ForwardFillDuotone as SiForwardFillDuotone };
 export type { ForwardFillDuotoneProps };

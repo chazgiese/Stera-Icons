@@ -14,5 +14,6 @@ const WineGlassRegular = memo(
 
 WineGlassRegular.displayName = 'WineGlassRegular';
 
-export { WineGlassRegular };
+// Triple export pattern (lucide-react style)
+export { WineGlassRegular, WineGlassRegular as WineGlassRegularIcon, WineGlassRegular as SiWineGlassRegular };
 export type { WineGlassRegularProps };

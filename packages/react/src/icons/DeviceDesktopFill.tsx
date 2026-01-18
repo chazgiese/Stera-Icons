@@ -14,5 +14,6 @@ const DeviceDesktopFill = memo(
 
 DeviceDesktopFill.displayName = 'DeviceDesktopFill';
 
-export { DeviceDesktopFill };
+// Triple export pattern (lucide-react style)
+export { DeviceDesktopFill, DeviceDesktopFill as DeviceDesktopFillIcon, DeviceDesktopFill as SiDeviceDesktopFill };
 export type { DeviceDesktopFillProps };

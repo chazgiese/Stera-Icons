@@ -13,7 +13,8 @@ export interface BottleProps extends IconProps {
 }
 
 /**
- * Bottle with dynamic weight and duotone props.
+ * Bottle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BottleRegular } from 'stera-icons/BottleRegular';
  */
@@ -32,4 +33,5 @@ const Bottle = memo(forwardRef<SVGSVGElement, BottleProps>(({
 
 Bottle.displayName = 'Bottle';
 
-export { Bottle };
+// Triple export pattern (lucide-react style)
+export { Bottle, Bottle as BottleIcon, Bottle as SiBottle };

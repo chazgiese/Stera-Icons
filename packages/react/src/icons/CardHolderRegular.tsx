@@ -14,5 +14,6 @@ const CardHolderRegular = memo(
 
 CardHolderRegular.displayName = 'CardHolderRegular';
 
-export { CardHolderRegular };
+// Triple export pattern (lucide-react style)
+export { CardHolderRegular, CardHolderRegular as CardHolderRegularIcon, CardHolderRegular as SiCardHolderRegular };
 export type { CardHolderRegularProps };

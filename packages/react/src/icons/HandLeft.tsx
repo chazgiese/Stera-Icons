@@ -13,7 +13,8 @@ export interface HandLeftProps extends IconProps {
 }
 
 /**
- * HandLeft with dynamic weight and duotone props.
+ * HandLeft - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HandLeftRegular } from 'stera-icons/HandLeftRegular';
  */
@@ -32,4 +33,5 @@ const HandLeft = memo(forwardRef<SVGSVGElement, HandLeftProps>(({
 
 HandLeft.displayName = 'HandLeft';
 
-export { HandLeft };
+// Triple export pattern (lucide-react style)
+export { HandLeft, HandLeft as HandLeftIcon, HandLeft as SiHandLeft };

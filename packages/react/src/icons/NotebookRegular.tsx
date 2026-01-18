@@ -15,5 +15,6 @@ const NotebookRegular = memo(
 
 NotebookRegular.displayName = 'NotebookRegular';
 
-export { NotebookRegular };
+// Triple export pattern (lucide-react style)
+export { NotebookRegular, NotebookRegular as NotebookRegularIcon, NotebookRegular as SiNotebookRegular };
 export type { NotebookRegularProps };

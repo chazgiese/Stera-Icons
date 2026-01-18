@@ -13,7 +13,8 @@ export interface ClipboardProps extends IconProps {
 }
 
 /**
- * Clipboard with dynamic weight and duotone props.
+ * Clipboard - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ClipboardRegular } from 'stera-icons/ClipboardRegular';
  */
@@ -32,4 +33,5 @@ const Clipboard = memo(forwardRef<SVGSVGElement, ClipboardProps>(({
 
 Clipboard.displayName = 'Clipboard';
 
-export { Clipboard };
+// Triple export pattern (lucide-react style)
+export { Clipboard, Clipboard as ClipboardIcon, Clipboard as SiClipboard };

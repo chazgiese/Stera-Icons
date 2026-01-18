@@ -13,7 +13,8 @@ export interface BookOpenProps extends IconProps {
 }
 
 /**
- * BookOpen with dynamic weight and duotone props.
+ * BookOpen - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BookOpenRegular } from 'stera-icons/BookOpenRegular';
  */
@@ -32,4 +33,5 @@ const BookOpen = memo(forwardRef<SVGSVGElement, BookOpenProps>(({
 
 BookOpen.displayName = 'BookOpen';
 
-export { BookOpen };
+// Triple export pattern (lucide-react style)
+export { BookOpen, BookOpen as BookOpenIcon, BookOpen as SiBookOpen };

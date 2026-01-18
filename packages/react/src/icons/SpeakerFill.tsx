@@ -14,5 +14,6 @@ const SpeakerFill = memo(
 
 SpeakerFill.displayName = 'SpeakerFill';
 
-export { SpeakerFill };
+// Triple export pattern (lucide-react style)
+export { SpeakerFill, SpeakerFill as SpeakerFillIcon, SpeakerFill as SiSpeakerFill };
 export type { SpeakerFillProps };

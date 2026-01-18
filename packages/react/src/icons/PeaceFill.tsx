@@ -14,5 +14,6 @@ const PeaceFill = memo(
 
 PeaceFill.displayName = 'PeaceFill';
 
-export { PeaceFill };
+// Triple export pattern (lucide-react style)
+export { PeaceFill, PeaceFill as PeaceFillIcon, PeaceFill as SiPeaceFill };
 export type { PeaceFillProps };

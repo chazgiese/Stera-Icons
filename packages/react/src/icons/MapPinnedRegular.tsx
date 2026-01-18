@@ -16,5 +16,6 @@ const MapPinnedRegular = memo(
 
 MapPinnedRegular.displayName = 'MapPinnedRegular';
 
-export { MapPinnedRegular };
+// Triple export pattern (lucide-react style)
+export { MapPinnedRegular, MapPinnedRegular as MapPinnedRegularIcon, MapPinnedRegular as SiMapPinnedRegular };
 export type { MapPinnedRegularProps };

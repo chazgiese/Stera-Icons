@@ -13,7 +13,8 @@ export interface MinimizeProps extends IconProps {
 }
 
 /**
- * Minimize with dynamic weight and duotone props.
+ * Minimize - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MinimizeRegular } from 'stera-icons/MinimizeRegular';
  */
@@ -32,4 +33,5 @@ const Minimize = memo(forwardRef<SVGSVGElement, MinimizeProps>(({
 
 Minimize.displayName = 'Minimize';
 
-export { Minimize };
+// Triple export pattern (lucide-react style)
+export { Minimize, Minimize as MinimizeIcon, Minimize as SiMinimize };

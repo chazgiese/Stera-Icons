@@ -15,5 +15,6 @@ const StopwatchFill = memo(
 
 StopwatchFill.displayName = 'StopwatchFill';
 
-export { StopwatchFill };
+// Triple export pattern (lucide-react style)
+export { StopwatchFill, StopwatchFill as StopwatchFillIcon, StopwatchFill as SiStopwatchFill };
 export type { StopwatchFillProps };

@@ -15,5 +15,6 @@ const EmoteSmileFillDuotone = memo(
 
 EmoteSmileFillDuotone.displayName = 'EmoteSmileFillDuotone';
 
-export { EmoteSmileFillDuotone };
+// Triple export pattern (lucide-react style)
+export { EmoteSmileFillDuotone, EmoteSmileFillDuotone as EmoteSmileFillDuotoneIcon, EmoteSmileFillDuotone as SiEmoteSmileFillDuotone };
 export type { EmoteSmileFillDuotoneProps };

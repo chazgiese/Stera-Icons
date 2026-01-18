@@ -15,5 +15,6 @@ const SortAscendingFill = memo(
 
 SortAscendingFill.displayName = 'SortAscendingFill';
 
-export { SortAscendingFill };
+// Triple export pattern (lucide-react style)
+export { SortAscendingFill, SortAscendingFill as SortAscendingFillIcon, SortAscendingFill as SiSortAscendingFill };
 export type { SortAscendingFillProps };

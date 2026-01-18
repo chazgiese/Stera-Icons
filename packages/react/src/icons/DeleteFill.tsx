@@ -14,5 +14,6 @@ const DeleteFill = memo(
 
 DeleteFill.displayName = 'DeleteFill';
 
-export { DeleteFill };
+// Triple export pattern (lucide-react style)
+export { DeleteFill, DeleteFill as DeleteFillIcon, DeleteFill as SiDeleteFill };
 export type { DeleteFillProps };

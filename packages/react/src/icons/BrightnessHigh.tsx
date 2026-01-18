@@ -13,7 +13,8 @@ export interface BrightnessHighProps extends IconProps {
 }
 
 /**
- * BrightnessHigh with dynamic weight and duotone props.
+ * BrightnessHigh - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrightnessHighRegular } from 'stera-icons/BrightnessHighRegular';
  */
@@ -32,4 +33,5 @@ const BrightnessHigh = memo(forwardRef<SVGSVGElement, BrightnessHighProps>(({
 
 BrightnessHigh.displayName = 'BrightnessHigh';
 
-export { BrightnessHigh };
+// Triple export pattern (lucide-react style)
+export { BrightnessHigh, BrightnessHigh as BrightnessHighIcon, BrightnessHigh as SiBrightnessHigh };

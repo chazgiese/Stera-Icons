@@ -13,7 +13,8 @@ export interface FlowBranchProps extends IconProps {
 }
 
 /**
- * FlowBranch with dynamic weight and duotone props.
+ * FlowBranch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowBranchRegular } from 'stera-icons/FlowBranchRegular';
  */
@@ -32,4 +33,5 @@ const FlowBranch = memo(forwardRef<SVGSVGElement, FlowBranchProps>(({
 
 FlowBranch.displayName = 'FlowBranch';
 
-export { FlowBranch };
+// Triple export pattern (lucide-react style)
+export { FlowBranch, FlowBranch as FlowBranchIcon, FlowBranch as SiFlowBranch };

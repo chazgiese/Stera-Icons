@@ -14,5 +14,6 @@ const PauseBold = memo(
 
 PauseBold.displayName = 'PauseBold';
 
-export { PauseBold };
+// Triple export pattern (lucide-react style)
+export { PauseBold, PauseBold as PauseBoldIcon, PauseBold as SiPauseBold };
 export type { PauseBoldProps };

@@ -13,7 +13,8 @@ export interface ArrowUpDownProps extends IconProps {
 }
 
 /**
- * ArrowUpDown with dynamic weight and duotone props.
+ * ArrowUpDown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowUpDownRegular } from 'stera-icons/ArrowUpDownRegular';
  */
@@ -32,4 +33,5 @@ const ArrowUpDown = memo(forwardRef<SVGSVGElement, ArrowUpDownProps>(({
 
 ArrowUpDown.displayName = 'ArrowUpDown';
 
-export { ArrowUpDown };
+// Triple export pattern (lucide-react style)
+export { ArrowUpDown, ArrowUpDown as ArrowUpDownIcon, ArrowUpDown as SiArrowUpDown };

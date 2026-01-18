@@ -13,7 +13,8 @@ export interface AgentWorkflowProps extends IconProps {
 }
 
 /**
- * AgentWorkflow with dynamic weight and duotone props.
+ * AgentWorkflow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AgentWorkflowRegular } from 'stera-icons/AgentWorkflowRegular';
  */
@@ -32,4 +33,5 @@ const AgentWorkflow = memo(forwardRef<SVGSVGElement, AgentWorkflowProps>(({
 
 AgentWorkflow.displayName = 'AgentWorkflow';
 
-export { AgentWorkflow };
+// Triple export pattern (lucide-react style)
+export { AgentWorkflow, AgentWorkflow as AgentWorkflowIcon, AgentWorkflow as SiAgentWorkflow };

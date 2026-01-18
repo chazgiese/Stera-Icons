@@ -13,7 +13,8 @@ export interface KeyAltProps extends IconProps {
 }
 
 /**
- * KeyAlt with dynamic weight and duotone props.
+ * KeyAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { KeyAltRegular } from 'stera-icons/KeyAltRegular';
  */
@@ -32,4 +33,5 @@ const KeyAlt = memo(forwardRef<SVGSVGElement, KeyAltProps>(({
 
 KeyAlt.displayName = 'KeyAlt';
 
-export { KeyAlt };
+// Triple export pattern (lucide-react style)
+export { KeyAlt, KeyAlt as KeyAltIcon, KeyAlt as SiKeyAlt };

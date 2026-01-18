@@ -15,5 +15,6 @@ const SearchSquareBold = memo(
 
 SearchSquareBold.displayName = 'SearchSquareBold';
 
-export { SearchSquareBold };
+// Triple export pattern (lucide-react style)
+export { SearchSquareBold, SearchSquareBold as SearchSquareBoldIcon, SearchSquareBold as SiSearchSquareBold };
 export type { SearchSquareBoldProps };

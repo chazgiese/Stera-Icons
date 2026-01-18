@@ -15,5 +15,6 @@ const RocketRegular = memo(
 
 RocketRegular.displayName = 'RocketRegular';
 
-export { RocketRegular };
+// Triple export pattern (lucide-react style)
+export { RocketRegular, RocketRegular as RocketRegularIcon, RocketRegular as SiRocketRegular };
 export type { RocketRegularProps };

@@ -13,7 +13,8 @@ export interface CursorNavigationProps extends IconProps {
 }
 
 /**
- * CursorNavigation with dynamic weight and duotone props.
+ * CursorNavigation - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CursorNavigationRegular } from 'stera-icons/CursorNavigationRegular';
  */
@@ -32,4 +33,5 @@ const CursorNavigation = memo(forwardRef<SVGSVGElement, CursorNavigationProps>((
 
 CursorNavigation.displayName = 'CursorNavigation';
 
-export { CursorNavigation };
+// Triple export pattern (lucide-react style)
+export { CursorNavigation, CursorNavigation as CursorNavigationIcon, CursorNavigation as SiCursorNavigation };

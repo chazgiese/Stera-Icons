@@ -14,5 +14,6 @@ const SparklesAltFill = memo(
 
 SparklesAltFill.displayName = 'SparklesAltFill';
 
-export { SparklesAltFill };
+// Triple export pattern (lucide-react style)
+export { SparklesAltFill, SparklesAltFill as SparklesAltFillIcon, SparklesAltFill as SiSparklesAltFill };
 export type { SparklesAltFillProps };

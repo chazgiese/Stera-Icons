@@ -13,7 +13,8 @@ export interface ComponentProps extends IconProps {
 }
 
 /**
- * Component with dynamic weight and duotone props.
+ * Component - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ComponentRegular } from 'stera-icons/ComponentRegular';
  */
@@ -32,4 +33,5 @@ const Component = memo(forwardRef<SVGSVGElement, ComponentProps>(({
 
 Component.displayName = 'Component';
 
-export { Component };
+// Triple export pattern (lucide-react style)
+export { Component, Component as ComponentIcon, Component as SiComponent };

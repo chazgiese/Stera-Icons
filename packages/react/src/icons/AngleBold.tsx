@@ -15,5 +15,6 @@ const AngleBold = memo(
 
 AngleBold.displayName = 'AngleBold';
 
-export { AngleBold };
+// Triple export pattern (lucide-react style)
+export { AngleBold, AngleBold as AngleBoldIcon, AngleBold as SiAngleBold };
 export type { AngleBoldProps };

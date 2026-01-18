@@ -13,7 +13,8 @@ export interface FolderPlusProps extends IconProps {
 }
 
 /**
- * FolderPlus with dynamic weight and duotone props.
+ * FolderPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FolderPlusRegular } from 'stera-icons/FolderPlusRegular';
  */
@@ -32,4 +33,5 @@ const FolderPlus = memo(forwardRef<SVGSVGElement, FolderPlusProps>(({
 
 FolderPlus.displayName = 'FolderPlus';
 
-export { FolderPlus };
+// Triple export pattern (lucide-react style)
+export { FolderPlus, FolderPlus as FolderPlusIcon, FolderPlus as SiFolderPlus };

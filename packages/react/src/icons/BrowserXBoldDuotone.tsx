@@ -15,5 +15,6 @@ const BrowserXBoldDuotone = memo(
 
 BrowserXBoldDuotone.displayName = 'BrowserXBoldDuotone';
 
-export { BrowserXBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { BrowserXBoldDuotone, BrowserXBoldDuotone as BrowserXBoldDuotoneIcon, BrowserXBoldDuotone as SiBrowserXBoldDuotone };
 export type { BrowserXBoldDuotoneProps };

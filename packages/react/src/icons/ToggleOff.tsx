@@ -13,7 +13,8 @@ export interface ToggleOffProps extends IconProps {
 }
 
 /**
- * ToggleOff with dynamic weight and duotone props.
+ * ToggleOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ToggleOffRegular } from 'stera-icons/ToggleOffRegular';
  */
@@ -32,4 +33,5 @@ const ToggleOff = memo(forwardRef<SVGSVGElement, ToggleOffProps>(({
 
 ToggleOff.displayName = 'ToggleOff';
 
-export { ToggleOff };
+// Triple export pattern (lucide-react style)
+export { ToggleOff, ToggleOff as ToggleOffIcon, ToggleOff as SiToggleOff };

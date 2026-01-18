@@ -13,7 +13,8 @@ export interface HashItalicProps extends IconProps {
 }
 
 /**
- * HashItalic with dynamic weight and duotone props.
+ * HashItalic - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HashItalicRegular } from 'stera-icons/HashItalicRegular';
  */
@@ -32,4 +33,5 @@ const HashItalic = memo(forwardRef<SVGSVGElement, HashItalicProps>(({
 
 HashItalic.displayName = 'HashItalic';
 
-export { HashItalic };
+// Triple export pattern (lucide-react style)
+export { HashItalic, HashItalic as HashItalicIcon, HashItalic as SiHashItalic };

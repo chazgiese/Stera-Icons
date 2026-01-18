@@ -13,7 +13,8 @@ export interface TextItalicProps extends IconProps {
 }
 
 /**
- * TextItalic with dynamic weight and duotone props.
+ * TextItalic - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextItalicRegular } from 'stera-icons/TextItalicRegular';
  */
@@ -32,4 +33,5 @@ const TextItalic = memo(forwardRef<SVGSVGElement, TextItalicProps>(({
 
 TextItalic.displayName = 'TextItalic';
 
-export { TextItalic };
+// Triple export pattern (lucide-react style)
+export { TextItalic, TextItalic as TextItalicIcon, TextItalic as SiTextItalic };

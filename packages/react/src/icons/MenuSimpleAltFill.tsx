@@ -14,5 +14,6 @@ const MenuSimpleAltFill = memo(
 
 MenuSimpleAltFill.displayName = 'MenuSimpleAltFill';
 
-export { MenuSimpleAltFill };
+// Triple export pattern (lucide-react style)
+export { MenuSimpleAltFill, MenuSimpleAltFill as MenuSimpleAltFillIcon, MenuSimpleAltFill as SiMenuSimpleAltFill };
 export type { MenuSimpleAltFillProps };

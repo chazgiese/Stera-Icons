@@ -13,7 +13,8 @@ export interface ReceiptAltProps extends IconProps {
 }
 
 /**
- * ReceiptAlt with dynamic weight and duotone props.
+ * ReceiptAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ReceiptAltRegular } from 'stera-icons/ReceiptAltRegular';
  */
@@ -32,4 +33,5 @@ const ReceiptAlt = memo(forwardRef<SVGSVGElement, ReceiptAltProps>(({
 
 ReceiptAlt.displayName = 'ReceiptAlt';
 
-export { ReceiptAlt };
+// Triple export pattern (lucide-react style)
+export { ReceiptAlt, ReceiptAlt as ReceiptAltIcon, ReceiptAlt as SiReceiptAlt };

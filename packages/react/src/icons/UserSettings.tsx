@@ -13,7 +13,8 @@ export interface UserSettingsProps extends IconProps {
 }
 
 /**
- * UserSettings with dynamic weight and duotone props.
+ * UserSettings - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UserSettingsRegular } from 'stera-icons/UserSettingsRegular';
  */
@@ -32,4 +33,5 @@ const UserSettings = memo(forwardRef<SVGSVGElement, UserSettingsProps>(({
 
 UserSettings.displayName = 'UserSettings';
 
-export { UserSettings };
+// Triple export pattern (lucide-react style)
+export { UserSettings, UserSettings as UserSettingsIcon, UserSettings as SiUserSettings };

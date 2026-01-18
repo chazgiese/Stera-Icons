@@ -16,5 +16,6 @@ const CubicGraphRegular = memo(
 
 CubicGraphRegular.displayName = 'CubicGraphRegular';
 
-export { CubicGraphRegular };
+// Triple export pattern (lucide-react style)
+export { CubicGraphRegular, CubicGraphRegular as CubicGraphRegularIcon, CubicGraphRegular as SiCubicGraphRegular };
 export type { CubicGraphRegularProps };

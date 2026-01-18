@@ -14,5 +14,6 @@ const CoolSFill = memo(
 
 CoolSFill.displayName = 'CoolSFill';
 
-export { CoolSFill };
+// Triple export pattern (lucide-react style)
+export { CoolSFill, CoolSFill as CoolSFillIcon, CoolSFill as SiCoolSFill };
 export type { CoolSFillProps };

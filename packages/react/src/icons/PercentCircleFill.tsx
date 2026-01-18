@@ -14,5 +14,6 @@ const PercentCircleFill = memo(
 
 PercentCircleFill.displayName = 'PercentCircleFill';
 
-export { PercentCircleFill };
+// Triple export pattern (lucide-react style)
+export { PercentCircleFill, PercentCircleFill as PercentCircleFillIcon, PercentCircleFill as SiPercentCircleFill };
 export type { PercentCircleFillProps };

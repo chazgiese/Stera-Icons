@@ -16,5 +16,6 @@ const ScanFaceRegular = memo(
 
 ScanFaceRegular.displayName = 'ScanFaceRegular';
 
-export { ScanFaceRegular };
+// Triple export pattern (lucide-react style)
+export { ScanFaceRegular, ScanFaceRegular as ScanFaceRegularIcon, ScanFaceRegular as SiScanFaceRegular };
 export type { ScanFaceRegularProps };

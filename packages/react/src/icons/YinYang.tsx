@@ -13,7 +13,8 @@ export interface YinYangProps extends IconProps {
 }
 
 /**
- * YinYang with dynamic weight and duotone props.
+ * YinYang - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { YinYangRegular } from 'stera-icons/YinYangRegular';
  */
@@ -32,4 +33,5 @@ const YinYang = memo(forwardRef<SVGSVGElement, YinYangProps>(({
 
 YinYang.displayName = 'YinYang';
 
-export { YinYang };
+// Triple export pattern (lucide-react style)
+export { YinYang, YinYang as YinYangIcon, YinYang as SiYinYang };

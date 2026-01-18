@@ -13,7 +13,8 @@ export interface LayersSimpleProps extends IconProps {
 }
 
 /**
- * LayersSimple with dynamic weight and duotone props.
+ * LayersSimple - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayersSimpleRegular } from 'stera-icons/LayersSimpleRegular';
  */
@@ -32,4 +33,5 @@ const LayersSimple = memo(forwardRef<SVGSVGElement, LayersSimpleProps>(({
 
 LayersSimple.displayName = 'LayersSimple';
 
-export { LayersSimple };
+// Triple export pattern (lucide-react style)
+export { LayersSimple, LayersSimple as LayersSimpleIcon, LayersSimple as SiLayersSimple };

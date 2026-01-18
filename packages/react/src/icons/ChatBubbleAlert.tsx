@@ -13,7 +13,8 @@ export interface ChatBubbleAlertProps extends IconProps {
 }
 
 /**
- * ChatBubbleAlert with dynamic weight and duotone props.
+ * ChatBubbleAlert - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBubbleAlertRegular } from 'stera-icons/ChatBubbleAlertRegular';
  */
@@ -32,4 +33,5 @@ const ChatBubbleAlert = memo(forwardRef<SVGSVGElement, ChatBubbleAlertProps>(({
 
 ChatBubbleAlert.displayName = 'ChatBubbleAlert';
 
-export { ChatBubbleAlert };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleAlert, ChatBubbleAlert as ChatBubbleAlertIcon, ChatBubbleAlert as SiChatBubbleAlert };

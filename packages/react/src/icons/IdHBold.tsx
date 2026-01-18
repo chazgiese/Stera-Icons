@@ -16,5 +16,6 @@ const IdHBold = memo(
 
 IdHBold.displayName = 'IdHBold';
 
-export { IdHBold };
+// Triple export pattern (lucide-react style)
+export { IdHBold, IdHBold as IdHBoldIcon, IdHBold as SiIdHBold };
 export type { IdHBoldProps };

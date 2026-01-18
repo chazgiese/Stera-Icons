@@ -13,7 +13,8 @@ export interface PercentCircleProps extends IconProps {
 }
 
 /**
- * PercentCircle with dynamic weight and duotone props.
+ * PercentCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PercentCircleRegular } from 'stera-icons/PercentCircleRegular';
  */
@@ -32,4 +33,5 @@ const PercentCircle = memo(forwardRef<SVGSVGElement, PercentCircleProps>(({
 
 PercentCircle.displayName = 'PercentCircle';
 
-export { PercentCircle };
+// Triple export pattern (lucide-react style)
+export { PercentCircle, PercentCircle as PercentCircleIcon, PercentCircle as SiPercentCircle };

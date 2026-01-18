@@ -14,5 +14,6 @@ const FrameRegular = memo(
 
 FrameRegular.displayName = 'FrameRegular';
 
-export { FrameRegular };
+// Triple export pattern (lucide-react style)
+export { FrameRegular, FrameRegular as FrameRegularIcon, FrameRegular as SiFrameRegular };
 export type { FrameRegularProps };

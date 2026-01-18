@@ -14,5 +14,6 @@ const FlowerFill = memo(
 
 FlowerFill.displayName = 'FlowerFill';
 
-export { FlowerFill };
+// Triple export pattern (lucide-react style)
+export { FlowerFill, FlowerFill as FlowerFillIcon, FlowerFill as SiFlowerFill };
 export type { FlowerFillProps };

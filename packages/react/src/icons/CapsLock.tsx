@@ -13,7 +13,8 @@ export interface CapsLockProps extends IconProps {
 }
 
 /**
- * CapsLock with dynamic weight and duotone props.
+ * CapsLock - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CapsLockRegular } from 'stera-icons/CapsLockRegular';
  */
@@ -32,4 +33,5 @@ const CapsLock = memo(forwardRef<SVGSVGElement, CapsLockProps>(({
 
 CapsLock.displayName = 'CapsLock';
 
-export { CapsLock };
+// Triple export pattern (lucide-react style)
+export { CapsLock, CapsLock as CapsLockIcon, CapsLock as SiCapsLock };

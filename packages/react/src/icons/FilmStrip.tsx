@@ -13,7 +13,8 @@ export interface FilmStripProps extends IconProps {
 }
 
 /**
- * FilmStrip with dynamic weight and duotone props.
+ * FilmStrip - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FilmStripRegular } from 'stera-icons/FilmStripRegular';
  */
@@ -32,4 +33,5 @@ const FilmStrip = memo(forwardRef<SVGSVGElement, FilmStripProps>(({
 
 FilmStrip.displayName = 'FilmStrip';
 
-export { FilmStrip };
+// Triple export pattern (lucide-react style)
+export { FilmStrip, FilmStrip as FilmStripIcon, FilmStrip as SiFilmStrip };

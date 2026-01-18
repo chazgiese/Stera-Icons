@@ -13,7 +13,8 @@ export interface WineGlassProps extends IconProps {
 }
 
 /**
- * WineGlass with dynamic weight and duotone props.
+ * WineGlass - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WineGlassRegular } from 'stera-icons/WineGlassRegular';
  */
@@ -32,4 +33,5 @@ const WineGlass = memo(forwardRef<SVGSVGElement, WineGlassProps>(({
 
 WineGlass.displayName = 'WineGlass';
 
-export { WineGlass };
+// Triple export pattern (lucide-react style)
+export { WineGlass, WineGlass as WineGlassIcon, WineGlass as SiWineGlass };

@@ -14,5 +14,6 @@ const ScanLineBold = memo(
 
 ScanLineBold.displayName = 'ScanLineBold';
 
-export { ScanLineBold };
+// Triple export pattern (lucide-react style)
+export { ScanLineBold, ScanLineBold as ScanLineBoldIcon, ScanLineBold as SiScanLineBold };
 export type { ScanLineBoldProps };

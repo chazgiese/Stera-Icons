@@ -14,5 +14,6 @@ const ImageStackFill = memo(
 
 ImageStackFill.displayName = 'ImageStackFill';
 
-export { ImageStackFill };
+// Triple export pattern (lucide-react style)
+export { ImageStackFill, ImageStackFill as ImageStackFillIcon, ImageStackFill as SiImageStackFill };
 export type { ImageStackFillProps };

@@ -13,7 +13,8 @@ export interface EyeProps extends IconProps {
 }
 
 /**
- * Eye with dynamic weight and duotone props.
+ * Eye - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EyeRegular } from 'stera-icons/EyeRegular';
  */
@@ -32,4 +33,5 @@ const Eye = memo(forwardRef<SVGSVGElement, EyeProps>(({
 
 Eye.displayName = 'Eye';
 
-export { Eye };
+// Triple export pattern (lucide-react style)
+export { Eye, Eye as EyeIcon, Eye as SiEye };

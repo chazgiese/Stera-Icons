@@ -14,5 +14,6 @@ const LightbulbOnFill = memo(
 
 LightbulbOnFill.displayName = 'LightbulbOnFill';
 
-export { LightbulbOnFill };
+// Triple export pattern (lucide-react style)
+export { LightbulbOnFill, LightbulbOnFill as LightbulbOnFillIcon, LightbulbOnFill as SiLightbulbOnFill };
 export type { LightbulbOnFillProps };

@@ -15,5 +15,6 @@ const MoreSquareVBold = memo(
 
 MoreSquareVBold.displayName = 'MoreSquareVBold';
 
-export { MoreSquareVBold };
+// Triple export pattern (lucide-react style)
+export { MoreSquareVBold, MoreSquareVBold as MoreSquareVBoldIcon, MoreSquareVBold as SiMoreSquareVBold };
 export type { MoreSquareVBoldProps };

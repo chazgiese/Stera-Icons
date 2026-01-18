@@ -13,7 +13,8 @@ export interface HomeXProps extends IconProps {
 }
 
 /**
- * HomeX with dynamic weight and duotone props.
+ * HomeX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HomeXRegular } from 'stera-icons/HomeXRegular';
  */
@@ -32,4 +33,5 @@ const HomeX = memo(forwardRef<SVGSVGElement, HomeXProps>(({
 
 HomeX.displayName = 'HomeX';
 
-export { HomeX };
+// Triple export pattern (lucide-react style)
+export { HomeX, HomeX as HomeXIcon, HomeX as SiHomeX };

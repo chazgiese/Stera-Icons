@@ -14,5 +14,6 @@ const FilmStripRegular = memo(
 
 FilmStripRegular.displayName = 'FilmStripRegular';
 
-export { FilmStripRegular };
+// Triple export pattern (lucide-react style)
+export { FilmStripRegular, FilmStripRegular as FilmStripRegularIcon, FilmStripRegular as SiFilmStripRegular };
 export type { FilmStripRegularProps };

@@ -13,7 +13,8 @@ export interface GaugeDots0PercentProps extends IconProps {
 }
 
 /**
- * GaugeDots0Percent with dynamic weight and duotone props.
+ * GaugeDots0Percent - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GaugeDots0PercentRegular } from 'stera-icons/GaugeDots0PercentRegular';
  */
@@ -32,4 +33,5 @@ const GaugeDots0Percent = memo(forwardRef<SVGSVGElement, GaugeDots0PercentProps>
 
 GaugeDots0Percent.displayName = 'GaugeDots0Percent';
 
-export { GaugeDots0Percent };
+// Triple export pattern (lucide-react style)
+export { GaugeDots0Percent, GaugeDots0Percent as GaugeDots0PercentIcon, GaugeDots0Percent as SiGaugeDots0Percent };

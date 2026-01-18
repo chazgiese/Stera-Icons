@@ -13,7 +13,8 @@ export interface FlowDiagramProps extends IconProps {
 }
 
 /**
- * FlowDiagram with dynamic weight and duotone props.
+ * FlowDiagram - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowDiagramRegular } from 'stera-icons/FlowDiagramRegular';
  */
@@ -32,4 +33,5 @@ const FlowDiagram = memo(forwardRef<SVGSVGElement, FlowDiagramProps>(({
 
 FlowDiagram.displayName = 'FlowDiagram';
 
-export { FlowDiagram };
+// Triple export pattern (lucide-react style)
+export { FlowDiagram, FlowDiagram as FlowDiagramIcon, FlowDiagram as SiFlowDiagram };

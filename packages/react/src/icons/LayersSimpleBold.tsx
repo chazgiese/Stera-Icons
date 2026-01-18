@@ -14,5 +14,6 @@ const LayersSimpleBold = memo(
 
 LayersSimpleBold.displayName = 'LayersSimpleBold';
 
-export { LayersSimpleBold };
+// Triple export pattern (lucide-react style)
+export { LayersSimpleBold, LayersSimpleBold as LayersSimpleBoldIcon, LayersSimpleBold as SiLayersSimpleBold };
 export type { LayersSimpleBoldProps };

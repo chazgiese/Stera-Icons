@@ -15,5 +15,6 @@ const BuildingFillDuotone = memo(
 
 BuildingFillDuotone.displayName = 'BuildingFillDuotone';
 
-export { BuildingFillDuotone };
+// Triple export pattern (lucide-react style)
+export { BuildingFillDuotone, BuildingFillDuotone as BuildingFillDuotoneIcon, BuildingFillDuotone as SiBuildingFillDuotone };
 export type { BuildingFillDuotoneProps };

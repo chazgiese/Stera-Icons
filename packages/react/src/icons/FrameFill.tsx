@@ -14,5 +14,6 @@ const FrameFill = memo(
 
 FrameFill.displayName = 'FrameFill';
 
-export { FrameFill };
+// Triple export pattern (lucide-react style)
+export { FrameFill, FrameFill as FrameFillIcon, FrameFill as SiFrameFill };
 export type { FrameFillProps };

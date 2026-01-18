@@ -15,5 +15,6 @@ const SparklesRegular = memo(
 
 SparklesRegular.displayName = 'SparklesRegular';
 
-export { SparklesRegular };
+// Triple export pattern (lucide-react style)
+export { SparklesRegular, SparklesRegular as SparklesRegularIcon, SparklesRegular as SiSparklesRegular };
 export type { SparklesRegularProps };

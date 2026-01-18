@@ -13,7 +13,8 @@ export interface CanProps extends IconProps {
 }
 
 /**
- * Can with dynamic weight and duotone props.
+ * Can - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CanRegular } from 'stera-icons/CanRegular';
  */
@@ -32,4 +33,5 @@ const Can = memo(forwardRef<SVGSVGElement, CanProps>(({
 
 Can.displayName = 'Can';
 
-export { Can };
+// Triple export pattern (lucide-react style)
+export { Can, Can as CanIcon, Can as SiCan };

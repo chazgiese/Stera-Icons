@@ -14,5 +14,6 @@ const UmbrellaFill = memo(
 
 UmbrellaFill.displayName = 'UmbrellaFill';
 
-export { UmbrellaFill };
+// Triple export pattern (lucide-react style)
+export { UmbrellaFill, UmbrellaFill as UmbrellaFillIcon, UmbrellaFill as SiUmbrellaFill };
 export type { UmbrellaFillProps };

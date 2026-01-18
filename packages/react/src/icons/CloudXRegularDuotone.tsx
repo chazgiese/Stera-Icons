@@ -15,5 +15,6 @@ const CloudXRegularDuotone = memo(
 
 CloudXRegularDuotone.displayName = 'CloudXRegularDuotone';
 
-export { CloudXRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { CloudXRegularDuotone, CloudXRegularDuotone as CloudXRegularDuotoneIcon, CloudXRegularDuotone as SiCloudXRegularDuotone };
 export type { CloudXRegularDuotoneProps };

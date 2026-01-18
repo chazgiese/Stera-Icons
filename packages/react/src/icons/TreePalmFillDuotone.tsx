@@ -15,5 +15,6 @@ const TreePalmFillDuotone = memo(
 
 TreePalmFillDuotone.displayName = 'TreePalmFillDuotone';
 
-export { TreePalmFillDuotone };
+// Triple export pattern (lucide-react style)
+export { TreePalmFillDuotone, TreePalmFillDuotone as TreePalmFillDuotoneIcon, TreePalmFillDuotone as SiTreePalmFillDuotone };
 export type { TreePalmFillDuotoneProps };

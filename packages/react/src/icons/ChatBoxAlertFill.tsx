@@ -14,5 +14,6 @@ const ChatBoxAlertFill = memo(
 
 ChatBoxAlertFill.displayName = 'ChatBoxAlertFill';
 
-export { ChatBoxAlertFill };
+// Triple export pattern (lucide-react style)
+export { ChatBoxAlertFill, ChatBoxAlertFill as ChatBoxAlertFillIcon, ChatBoxAlertFill as SiChatBoxAlertFill };
 export type { ChatBoxAlertFillProps };

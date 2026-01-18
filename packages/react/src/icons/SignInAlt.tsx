@@ -13,7 +13,8 @@ export interface SignInAltProps extends IconProps {
 }
 
 /**
- * SignInAlt with dynamic weight and duotone props.
+ * SignInAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignInAltRegular } from 'stera-icons/SignInAltRegular';
  */
@@ -32,4 +33,5 @@ const SignInAlt = memo(forwardRef<SVGSVGElement, SignInAltProps>(({
 
 SignInAlt.displayName = 'SignInAlt';
 
-export { SignInAlt };
+// Triple export pattern (lucide-react style)
+export { SignInAlt, SignInAlt as SignInAltIcon, SignInAlt as SiSignInAlt };

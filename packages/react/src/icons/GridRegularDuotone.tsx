@@ -15,5 +15,6 @@ const GridRegularDuotone = memo(
 
 GridRegularDuotone.displayName = 'GridRegularDuotone';
 
-export { GridRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { GridRegularDuotone, GridRegularDuotone as GridRegularDuotoneIcon, GridRegularDuotone as SiGridRegularDuotone };
 export type { GridRegularDuotoneProps };

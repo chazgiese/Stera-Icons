@@ -15,5 +15,6 @@ const DownloadFillDuotone = memo(
 
 DownloadFillDuotone.displayName = 'DownloadFillDuotone';
 
-export { DownloadFillDuotone };
+// Triple export pattern (lucide-react style)
+export { DownloadFillDuotone, DownloadFillDuotone as DownloadFillDuotoneIcon, DownloadFillDuotone as SiDownloadFillDuotone };
 export type { DownloadFillDuotoneProps };

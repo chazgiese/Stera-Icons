@@ -14,5 +14,6 @@ const CurrencyDollarBold = memo(
 
 CurrencyDollarBold.displayName = 'CurrencyDollarBold';
 
-export { CurrencyDollarBold };
+// Triple export pattern (lucide-react style)
+export { CurrencyDollarBold, CurrencyDollarBold as CurrencyDollarBoldIcon, CurrencyDollarBold as SiCurrencyDollarBold };
 export type { CurrencyDollarBoldProps };

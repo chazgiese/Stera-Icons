@@ -15,5 +15,6 @@ const LeafFill = memo(
 
 LeafFill.displayName = 'LeafFill';
 
-export { LeafFill };
+// Triple export pattern (lucide-react style)
+export { LeafFill, LeafFill as LeafFillIcon, LeafFill as SiLeafFill };
 export type { LeafFillProps };

@@ -15,5 +15,6 @@ const PercentSquareFillDuotone = memo(
 
 PercentSquareFillDuotone.displayName = 'PercentSquareFillDuotone';
 
-export { PercentSquareFillDuotone };
+// Triple export pattern (lucide-react style)
+export { PercentSquareFillDuotone, PercentSquareFillDuotone as PercentSquareFillDuotoneIcon, PercentSquareFillDuotone as SiPercentSquareFillDuotone };
 export type { PercentSquareFillDuotoneProps };

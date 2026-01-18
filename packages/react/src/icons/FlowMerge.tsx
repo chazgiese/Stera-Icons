@@ -13,7 +13,8 @@ export interface FlowMergeProps extends IconProps {
 }
 
 /**
- * FlowMerge with dynamic weight and duotone props.
+ * FlowMerge - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowMergeRegular } from 'stera-icons/FlowMergeRegular';
  */
@@ -32,4 +33,5 @@ const FlowMerge = memo(forwardRef<SVGSVGElement, FlowMergeProps>(({
 
 FlowMerge.displayName = 'FlowMerge';
 
-export { FlowMerge };
+// Triple export pattern (lucide-react style)
+export { FlowMerge, FlowMerge as FlowMergeIcon, FlowMerge as SiFlowMerge };

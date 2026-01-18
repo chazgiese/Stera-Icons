@@ -13,7 +13,8 @@ export interface IdVProps extends IconProps {
 }
 
 /**
- * IdV with dynamic weight and duotone props.
+ * IdV - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { IdVRegular } from 'stera-icons/IdVRegular';
  */
@@ -32,4 +33,5 @@ const IdV = memo(forwardRef<SVGSVGElement, IdVProps>(({
 
 IdV.displayName = 'IdV';
 
-export { IdV };
+// Triple export pattern (lucide-react style)
+export { IdV, IdV as IdVIcon, IdV as SiIdV };

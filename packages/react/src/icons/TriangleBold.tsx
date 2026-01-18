@@ -14,5 +14,6 @@ const TriangleBold = memo(
 
 TriangleBold.displayName = 'TriangleBold';
 
-export { TriangleBold };
+// Triple export pattern (lucide-react style)
+export { TriangleBold, TriangleBold as TriangleBoldIcon, TriangleBold as SiTriangleBold };
 export type { TriangleBoldProps };

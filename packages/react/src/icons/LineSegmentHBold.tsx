@@ -14,5 +14,6 @@ const LineSegmentHBold = memo(
 
 LineSegmentHBold.displayName = 'LineSegmentHBold';
 
-export { LineSegmentHBold };
+// Triple export pattern (lucide-react style)
+export { LineSegmentHBold, LineSegmentHBold as LineSegmentHBoldIcon, LineSegmentHBold as SiLineSegmentHBold };
 export type { LineSegmentHBoldProps };

@@ -14,5 +14,6 @@ const NodeMapFill = memo(
 
 NodeMapFill.displayName = 'NodeMapFill';
 
-export { NodeMapFill };
+// Triple export pattern (lucide-react style)
+export { NodeMapFill, NodeMapFill as NodeMapFillIcon, NodeMapFill as SiNodeMapFill };
 export type { NodeMapFillProps };

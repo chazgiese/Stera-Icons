@@ -14,5 +14,6 @@ const MoveFill = memo(
 
 MoveFill.displayName = 'MoveFill';
 
-export { MoveFill };
+// Triple export pattern (lucide-react style)
+export { MoveFill, MoveFill as MoveFillIcon, MoveFill as SiMoveFill };
 export type { MoveFillProps };

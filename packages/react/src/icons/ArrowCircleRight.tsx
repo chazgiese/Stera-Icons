@@ -13,7 +13,8 @@ export interface ArrowCircleRightProps extends IconProps {
 }
 
 /**
- * ArrowCircleRight with dynamic weight and duotone props.
+ * ArrowCircleRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowCircleRightRegular } from 'stera-icons/ArrowCircleRightRegular';
  */
@@ -32,4 +33,5 @@ const ArrowCircleRight = memo(forwardRef<SVGSVGElement, ArrowCircleRightProps>((
 
 ArrowCircleRight.displayName = 'ArrowCircleRight';
 
-export { ArrowCircleRight };
+// Triple export pattern (lucide-react style)
+export { ArrowCircleRight, ArrowCircleRight as ArrowCircleRightIcon, ArrowCircleRight as SiArrowCircleRight };

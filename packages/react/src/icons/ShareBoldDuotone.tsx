@@ -15,5 +15,6 @@ const ShareBoldDuotone = memo(
 
 ShareBoldDuotone.displayName = 'ShareBoldDuotone';
 
-export { ShareBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ShareBoldDuotone, ShareBoldDuotone as ShareBoldDuotoneIcon, ShareBoldDuotone as SiShareBoldDuotone };
 export type { ShareBoldDuotoneProps };

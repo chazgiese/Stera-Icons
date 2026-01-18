@@ -14,5 +14,6 @@ const PanelsRightTopFill = memo(
 
 PanelsRightTopFill.displayName = 'PanelsRightTopFill';
 
-export { PanelsRightTopFill };
+// Triple export pattern (lucide-react style)
+export { PanelsRightTopFill, PanelsRightTopFill as PanelsRightTopFillIcon, PanelsRightTopFill as SiPanelsRightTopFill };
 export type { PanelsRightTopFillProps };

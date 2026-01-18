@@ -13,7 +13,8 @@ export interface FileCabinetProps extends IconProps {
 }
 
 /**
- * FileCabinet with dynamic weight and duotone props.
+ * FileCabinet - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FileCabinetRegular } from 'stera-icons/FileCabinetRegular';
  */
@@ -32,4 +33,5 @@ const FileCabinet = memo(forwardRef<SVGSVGElement, FileCabinetProps>(({
 
 FileCabinet.displayName = 'FileCabinet';
 
-export { FileCabinet };
+// Triple export pattern (lucide-react style)
+export { FileCabinet, FileCabinet as FileCabinetIcon, FileCabinet as SiFileCabinet };

@@ -15,5 +15,6 @@ const CanRegularDuotone = memo(
 
 CanRegularDuotone.displayName = 'CanRegularDuotone';
 
-export { CanRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { CanRegularDuotone, CanRegularDuotone as CanRegularDuotoneIcon, CanRegularDuotone as SiCanRegularDuotone };
 export type { CanRegularDuotoneProps };

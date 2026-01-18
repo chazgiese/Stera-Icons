@@ -13,7 +13,8 @@ export interface CircleProps extends IconProps {
 }
 
 /**
- * Circle with dynamic weight and duotone props.
+ * Circle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleRegular } from 'stera-icons/CircleRegular';
  */
@@ -32,4 +33,5 @@ const Circle = memo(forwardRef<SVGSVGElement, CircleProps>(({
 
 Circle.displayName = 'Circle';
 
-export { Circle };
+// Triple export pattern (lucide-react style)
+export { Circle, Circle as CircleIcon, Circle as SiCircle };

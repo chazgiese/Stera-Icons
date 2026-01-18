@@ -15,5 +15,6 @@ const TimerBoldDuotone = memo(
 
 TimerBoldDuotone.displayName = 'TimerBoldDuotone';
 
-export { TimerBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { TimerBoldDuotone, TimerBoldDuotone as TimerBoldDuotoneIcon, TimerBoldDuotone as SiTimerBoldDuotone };
 export type { TimerBoldDuotoneProps };

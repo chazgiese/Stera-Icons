@@ -14,5 +14,6 @@ const KeyholeRegular = memo(
 
 KeyholeRegular.displayName = 'KeyholeRegular';
 
-export { KeyholeRegular };
+// Triple export pattern (lucide-react style)
+export { KeyholeRegular, KeyholeRegular as KeyholeRegularIcon, KeyholeRegular as SiKeyholeRegular };
 export type { KeyholeRegularProps };

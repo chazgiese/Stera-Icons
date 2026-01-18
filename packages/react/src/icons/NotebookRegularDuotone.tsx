@@ -16,5 +16,6 @@ const NotebookRegularDuotone = memo(
 
 NotebookRegularDuotone.displayName = 'NotebookRegularDuotone';
 
-export { NotebookRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { NotebookRegularDuotone, NotebookRegularDuotone as NotebookRegularDuotoneIcon, NotebookRegularDuotone as SiNotebookRegularDuotone };
 export type { NotebookRegularDuotoneProps };

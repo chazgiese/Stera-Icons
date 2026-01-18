@@ -14,5 +14,6 @@ const TestTubeBold = memo(
 
 TestTubeBold.displayName = 'TestTubeBold';
 
-export { TestTubeBold };
+// Triple export pattern (lucide-react style)
+export { TestTubeBold, TestTubeBold as TestTubeBoldIcon, TestTubeBold as SiTestTubeBold };
 export type { TestTubeBoldProps };

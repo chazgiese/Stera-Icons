@@ -14,5 +14,6 @@ const ForwardBold = memo(
 
 ForwardBold.displayName = 'ForwardBold';
 
-export { ForwardBold };
+// Triple export pattern (lucide-react style)
+export { ForwardBold, ForwardBold as ForwardBoldIcon, ForwardBold as SiForwardBold };
 export type { ForwardBoldProps };

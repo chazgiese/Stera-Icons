@@ -13,7 +13,8 @@ export interface CropProps extends IconProps {
 }
 
 /**
- * Crop with dynamic weight and duotone props.
+ * Crop - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CropRegular } from 'stera-icons/CropRegular';
  */
@@ -32,4 +33,5 @@ const Crop = memo(forwardRef<SVGSVGElement, CropProps>(({
 
 Crop.displayName = 'Crop';
 
-export { Crop };
+// Triple export pattern (lucide-react style)
+export { Crop, Crop as CropIcon, Crop as SiCrop };

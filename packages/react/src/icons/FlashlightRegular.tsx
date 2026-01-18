@@ -15,5 +15,6 @@ const FlashlightRegular = memo(
 
 FlashlightRegular.displayName = 'FlashlightRegular';
 
-export { FlashlightRegular };
+// Triple export pattern (lucide-react style)
+export { FlashlightRegular, FlashlightRegular as FlashlightRegularIcon, FlashlightRegular as SiFlashlightRegular };
 export type { FlashlightRegularProps };

@@ -13,7 +13,8 @@ export interface LayoutGridCirclePlusProps extends IconProps {
 }
 
 /**
- * LayoutGridCirclePlus with dynamic weight and duotone props.
+ * LayoutGridCirclePlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridCirclePlusRegular } from 'stera-icons/LayoutGridCirclePlusRegular';
  */
@@ -32,4 +33,5 @@ const LayoutGridCirclePlus = memo(forwardRef<SVGSVGElement, LayoutGridCirclePlus
 
 LayoutGridCirclePlus.displayName = 'LayoutGridCirclePlus';
 
-export { LayoutGridCirclePlus };
+// Triple export pattern (lucide-react style)
+export { LayoutGridCirclePlus, LayoutGridCirclePlus as LayoutGridCirclePlusIcon, LayoutGridCirclePlus as SiLayoutGridCirclePlus };

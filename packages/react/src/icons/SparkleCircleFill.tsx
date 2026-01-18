@@ -14,5 +14,6 @@ const SparkleCircleFill = memo(
 
 SparkleCircleFill.displayName = 'SparkleCircleFill';
 
-export { SparkleCircleFill };
+// Triple export pattern (lucide-react style)
+export { SparkleCircleFill, SparkleCircleFill as SparkleCircleFillIcon, SparkleCircleFill as SiSparkleCircleFill };
 export type { SparkleCircleFillProps };

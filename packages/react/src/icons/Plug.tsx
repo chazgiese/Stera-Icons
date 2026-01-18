@@ -13,7 +13,8 @@ export interface PlugProps extends IconProps {
 }
 
 /**
- * Plug with dynamic weight and duotone props.
+ * Plug - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PlugRegular } from 'stera-icons/PlugRegular';
  */
@@ -32,4 +33,5 @@ const Plug = memo(forwardRef<SVGSVGElement, PlugProps>(({
 
 Plug.displayName = 'Plug';
 
-export { Plug };
+// Triple export pattern (lucide-react style)
+export { Plug, Plug as PlugIcon, Plug as SiPlug };

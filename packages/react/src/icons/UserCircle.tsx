@@ -13,7 +13,8 @@ export interface UserCircleProps extends IconProps {
 }
 
 /**
- * UserCircle with dynamic weight and duotone props.
+ * UserCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UserCircleRegular } from 'stera-icons/UserCircleRegular';
  */
@@ -32,4 +33,5 @@ const UserCircle = memo(forwardRef<SVGSVGElement, UserCircleProps>(({
 
 UserCircle.displayName = 'UserCircle';
 
-export { UserCircle };
+// Triple export pattern (lucide-react style)
+export { UserCircle, UserCircle as UserCircleIcon, UserCircle as SiUserCircle };

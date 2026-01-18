@@ -15,5 +15,6 @@ const PushPinRegularDuotone = memo(
 
 PushPinRegularDuotone.displayName = 'PushPinRegularDuotone';
 
-export { PushPinRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { PushPinRegularDuotone, PushPinRegularDuotone as PushPinRegularDuotoneIcon, PushPinRegularDuotone as SiPushPinRegularDuotone };
 export type { PushPinRegularDuotoneProps };

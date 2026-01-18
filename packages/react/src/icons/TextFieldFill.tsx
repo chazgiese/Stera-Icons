@@ -15,5 +15,6 @@ const TextFieldFill = memo(
 
 TextFieldFill.displayName = 'TextFieldFill';
 
-export { TextFieldFill };
+// Triple export pattern (lucide-react style)
+export { TextFieldFill, TextFieldFill as TextFieldFillIcon, TextFieldFill as SiTextFieldFill };
 export type { TextFieldFillProps };

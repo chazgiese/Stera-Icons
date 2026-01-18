@@ -15,5 +15,6 @@ const VideoFillDuotone = memo(
 
 VideoFillDuotone.displayName = 'VideoFillDuotone';
 
-export { VideoFillDuotone };
+// Triple export pattern (lucide-react style)
+export { VideoFillDuotone, VideoFillDuotone as VideoFillDuotoneIcon, VideoFillDuotone as SiVideoFillDuotone };
 export type { VideoFillDuotoneProps };

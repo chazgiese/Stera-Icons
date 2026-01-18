@@ -14,5 +14,6 @@ const BagRegular = memo(
 
 BagRegular.displayName = 'BagRegular';
 
-export { BagRegular };
+// Triple export pattern (lucide-react style)
+export { BagRegular, BagRegular as BagRegularIcon, BagRegular as SiBagRegular };
 export type { BagRegularProps };

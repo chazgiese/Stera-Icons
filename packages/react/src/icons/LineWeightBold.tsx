@@ -15,5 +15,6 @@ const LineWeightBold = memo(
 
 LineWeightBold.displayName = 'LineWeightBold';
 
-export { LineWeightBold };
+// Triple export pattern (lucide-react style)
+export { LineWeightBold, LineWeightBold as LineWeightBoldIcon, LineWeightBold as SiLineWeightBold };
 export type { LineWeightBoldProps };

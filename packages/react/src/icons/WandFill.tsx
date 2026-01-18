@@ -16,5 +16,6 @@ const WandFill = memo(
 
 WandFill.displayName = 'WandFill';
 
-export { WandFill };
+// Triple export pattern (lucide-react style)
+export { WandFill, WandFill as WandFillIcon, WandFill as SiWandFill };
 export type { WandFillProps };

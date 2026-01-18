@@ -15,5 +15,6 @@ const CheckFillDuotone = memo(
 
 CheckFillDuotone.displayName = 'CheckFillDuotone';
 
-export { CheckFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CheckFillDuotone, CheckFillDuotone as CheckFillDuotoneIcon, CheckFillDuotone as SiCheckFillDuotone };
 export type { CheckFillDuotoneProps };

@@ -13,7 +13,8 @@ export interface ThermometerMediumProps extends IconProps {
 }
 
 /**
- * ThermometerMedium with dynamic weight and duotone props.
+ * ThermometerMedium - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ThermometerMediumRegular } from 'stera-icons/ThermometerMediumRegular';
  */
@@ -32,4 +33,5 @@ const ThermometerMedium = memo(forwardRef<SVGSVGElement, ThermometerMediumProps>
 
 ThermometerMedium.displayName = 'ThermometerMedium';
 
-export { ThermometerMedium };
+// Triple export pattern (lucide-react style)
+export { ThermometerMedium, ThermometerMedium as ThermometerMediumIcon, ThermometerMedium as SiThermometerMedium };

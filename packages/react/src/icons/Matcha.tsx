@@ -13,7 +13,8 @@ export interface MatchaProps extends IconProps {
 }
 
 /**
- * Matcha with dynamic weight and duotone props.
+ * Matcha - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MatchaRegular } from 'stera-icons/MatchaRegular';
  */
@@ -32,4 +33,5 @@ const Matcha = memo(forwardRef<SVGSVGElement, MatchaProps>(({
 
 Matcha.displayName = 'Matcha';
 
-export { Matcha };
+// Triple export pattern (lucide-react style)
+export { Matcha, Matcha as MatchaIcon, Matcha as SiMatcha };

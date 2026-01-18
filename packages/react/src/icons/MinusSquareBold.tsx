@@ -15,5 +15,6 @@ const MinusSquareBold = memo(
 
 MinusSquareBold.displayName = 'MinusSquareBold';
 
-export { MinusSquareBold };
+// Triple export pattern (lucide-react style)
+export { MinusSquareBold, MinusSquareBold as MinusSquareBoldIcon, MinusSquareBold as SiMinusSquareBold };
 export type { MinusSquareBoldProps };

@@ -16,5 +16,6 @@ const ArchiveRegularDuotone = memo(
 
 ArchiveRegularDuotone.displayName = 'ArchiveRegularDuotone';
 
-export { ArchiveRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ArchiveRegularDuotone, ArchiveRegularDuotone as ArchiveRegularDuotoneIcon, ArchiveRegularDuotone as SiArchiveRegularDuotone };
 export type { ArchiveRegularDuotoneProps };

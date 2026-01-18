@@ -14,5 +14,6 @@ const BatteryBold = memo(
 
 BatteryBold.displayName = 'BatteryBold';
 
-export { BatteryBold };
+// Triple export pattern (lucide-react style)
+export { BatteryBold, BatteryBold as BatteryBoldIcon, BatteryBold as SiBatteryBold };
 export type { BatteryBoldProps };

@@ -14,5 +14,6 @@ const CircleDotsBold = memo(
 
 CircleDotsBold.displayName = 'CircleDotsBold';
 
-export { CircleDotsBold };
+// Triple export pattern (lucide-react style)
+export { CircleDotsBold, CircleDotsBold as CircleDotsBoldIcon, CircleDotsBold as SiCircleDotsBold };
 export type { CircleDotsBoldProps };

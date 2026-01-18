@@ -15,5 +15,6 @@ const CalendarClockFill = memo(
 
 CalendarClockFill.displayName = 'CalendarClockFill';
 
-export { CalendarClockFill };
+// Triple export pattern (lucide-react style)
+export { CalendarClockFill, CalendarClockFill as CalendarClockFillIcon, CalendarClockFill as SiCalendarClockFill };
 export type { CalendarClockFillProps };

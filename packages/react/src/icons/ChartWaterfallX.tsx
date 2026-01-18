@@ -13,7 +13,8 @@ export interface ChartWaterfallXProps extends IconProps {
 }
 
 /**
- * ChartWaterfallX with dynamic weight and duotone props.
+ * ChartWaterfallX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartWaterfallXRegular } from 'stera-icons/ChartWaterfallXRegular';
  */
@@ -32,4 +33,5 @@ const ChartWaterfallX = memo(forwardRef<SVGSVGElement, ChartWaterfallXProps>(({
 
 ChartWaterfallX.displayName = 'ChartWaterfallX';
 
-export { ChartWaterfallX };
+// Triple export pattern (lucide-react style)
+export { ChartWaterfallX, ChartWaterfallX as ChartWaterfallXIcon, ChartWaterfallX as SiChartWaterfallX };

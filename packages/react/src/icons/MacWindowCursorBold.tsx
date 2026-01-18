@@ -16,5 +16,6 @@ const MacWindowCursorBold = memo(
 
 MacWindowCursorBold.displayName = 'MacWindowCursorBold';
 
-export { MacWindowCursorBold };
+// Triple export pattern (lucide-react style)
+export { MacWindowCursorBold, MacWindowCursorBold as MacWindowCursorBoldIcon, MacWindowCursorBold as SiMacWindowCursorBold };
 export type { MacWindowCursorBoldProps };

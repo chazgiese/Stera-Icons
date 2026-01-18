@@ -15,5 +15,6 @@ const ShuffleRegular = memo(
 
 ShuffleRegular.displayName = 'ShuffleRegular';
 
-export { ShuffleRegular };
+// Triple export pattern (lucide-react style)
+export { ShuffleRegular, ShuffleRegular as ShuffleRegularIcon, ShuffleRegular as SiShuffleRegular };
 export type { ShuffleRegularProps };

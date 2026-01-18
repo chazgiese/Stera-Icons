@@ -15,5 +15,6 @@ const MoveFillDuotone = memo(
 
 MoveFillDuotone.displayName = 'MoveFillDuotone';
 
-export { MoveFillDuotone };
+// Triple export pattern (lucide-react style)
+export { MoveFillDuotone, MoveFillDuotone as MoveFillDuotoneIcon, MoveFillDuotone as SiMoveFillDuotone };
 export type { MoveFillDuotoneProps };

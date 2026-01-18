@@ -13,7 +13,8 @@ export interface ChatMessagesProps extends IconProps {
 }
 
 /**
- * ChatMessages with dynamic weight and duotone props.
+ * ChatMessages - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatMessagesRegular } from 'stera-icons/ChatMessagesRegular';
  */
@@ -32,4 +33,5 @@ const ChatMessages = memo(forwardRef<SVGSVGElement, ChatMessagesProps>(({
 
 ChatMessages.displayName = 'ChatMessages';
 
-export { ChatMessages };
+// Triple export pattern (lucide-react style)
+export { ChatMessages, ChatMessages as ChatMessagesIcon, ChatMessages as SiChatMessages };

@@ -14,5 +14,6 @@ const BladeKunaiFill = memo(
 
 BladeKunaiFill.displayName = 'BladeKunaiFill';
 
-export { BladeKunaiFill };
+// Triple export pattern (lucide-react style)
+export { BladeKunaiFill, BladeKunaiFill as BladeKunaiFillIcon, BladeKunaiFill as SiBladeKunaiFill };
 export type { BladeKunaiFillProps };

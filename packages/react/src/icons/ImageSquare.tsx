@@ -13,7 +13,8 @@ export interface ImageSquareProps extends IconProps {
 }
 
 /**
- * ImageSquare with dynamic weight and duotone props.
+ * ImageSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ImageSquareRegular } from 'stera-icons/ImageSquareRegular';
  */
@@ -32,4 +33,5 @@ const ImageSquare = memo(forwardRef<SVGSVGElement, ImageSquareProps>(({
 
 ImageSquare.displayName = 'ImageSquare';
 
-export { ImageSquare };
+// Triple export pattern (lucide-react style)
+export { ImageSquare, ImageSquare as ImageSquareIcon, ImageSquare as SiImageSquare };

@@ -13,7 +13,8 @@ export interface TennisBallProps extends IconProps {
 }
 
 /**
- * TennisBall with dynamic weight and duotone props.
+ * TennisBall - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TennisBallRegular } from 'stera-icons/TennisBallRegular';
  */
@@ -32,4 +33,5 @@ const TennisBall = memo(forwardRef<SVGSVGElement, TennisBallProps>(({
 
 TennisBall.displayName = 'TennisBall';
 
-export { TennisBall };
+// Triple export pattern (lucide-react style)
+export { TennisBall, TennisBall as TennisBallIcon, TennisBall as SiTennisBall };

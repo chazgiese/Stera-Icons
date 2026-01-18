@@ -13,7 +13,8 @@ export interface ScissorsProps extends IconProps {
 }
 
 /**
- * Scissors with dynamic weight and duotone props.
+ * Scissors - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScissorsRegular } from 'stera-icons/ScissorsRegular';
  */
@@ -32,4 +33,5 @@ const Scissors = memo(forwardRef<SVGSVGElement, ScissorsProps>(({
 
 Scissors.displayName = 'Scissors';
 
-export { Scissors };
+// Triple export pattern (lucide-react style)
+export { Scissors, Scissors as ScissorsIcon, Scissors as SiScissors };

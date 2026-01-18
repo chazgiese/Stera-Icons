@@ -15,5 +15,6 @@ const RocketFill = memo(
 
 RocketFill.displayName = 'RocketFill';
 
-export { RocketFill };
+// Triple export pattern (lucide-react style)
+export { RocketFill, RocketFill as RocketFillIcon, RocketFill as SiRocketFill };
 export type { RocketFillProps };

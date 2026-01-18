@@ -13,7 +13,8 @@ export interface PilcrowProps extends IconProps {
 }
 
 /**
- * Pilcrow with dynamic weight and duotone props.
+ * Pilcrow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PilcrowRegular } from 'stera-icons/PilcrowRegular';
  */
@@ -32,4 +33,5 @@ const Pilcrow = memo(forwardRef<SVGSVGElement, PilcrowProps>(({
 
 Pilcrow.displayName = 'Pilcrow';
 
-export { Pilcrow };
+// Triple export pattern (lucide-react style)
+export { Pilcrow, Pilcrow as PilcrowIcon, Pilcrow as SiPilcrow };

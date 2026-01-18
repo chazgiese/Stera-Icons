@@ -14,5 +14,6 @@ const TrendUpFill = memo(
 
 TrendUpFill.displayName = 'TrendUpFill';
 
-export { TrendUpFill };
+// Triple export pattern (lucide-react style)
+export { TrendUpFill, TrendUpFill as TrendUpFillIcon, TrendUpFill as SiTrendUpFill };
 export type { TrendUpFillProps };

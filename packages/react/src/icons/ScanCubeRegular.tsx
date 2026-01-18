@@ -16,5 +16,6 @@ const ScanCubeRegular = memo(
 
 ScanCubeRegular.displayName = 'ScanCubeRegular';
 
-export { ScanCubeRegular };
+// Triple export pattern (lucide-react style)
+export { ScanCubeRegular, ScanCubeRegular as ScanCubeRegularIcon, ScanCubeRegular as SiScanCubeRegular };
 export type { ScanCubeRegularProps };

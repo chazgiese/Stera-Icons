@@ -13,7 +13,8 @@ export interface ChecklistProps extends IconProps {
 }
 
 /**
- * Checklist with dynamic weight and duotone props.
+ * Checklist - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChecklistRegular } from 'stera-icons/ChecklistRegular';
  */
@@ -32,4 +33,5 @@ const Checklist = memo(forwardRef<SVGSVGElement, ChecklistProps>(({
 
 Checklist.displayName = 'Checklist';
 
-export { Checklist };
+// Triple export pattern (lucide-react style)
+export { Checklist, Checklist as ChecklistIcon, Checklist as SiChecklist };

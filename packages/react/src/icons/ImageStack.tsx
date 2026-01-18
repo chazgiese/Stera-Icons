@@ -13,7 +13,8 @@ export interface ImageStackProps extends IconProps {
 }
 
 /**
- * ImageStack with dynamic weight and duotone props.
+ * ImageStack - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ImageStackRegular } from 'stera-icons/ImageStackRegular';
  */
@@ -32,4 +33,5 @@ const ImageStack = memo(forwardRef<SVGSVGElement, ImageStackProps>(({
 
 ImageStack.displayName = 'ImageStack';
 
-export { ImageStack };
+// Triple export pattern (lucide-react style)
+export { ImageStack, ImageStack as ImageStackIcon, ImageStack as SiImageStack };

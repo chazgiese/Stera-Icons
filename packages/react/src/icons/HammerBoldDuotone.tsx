@@ -15,5 +15,6 @@ const HammerBoldDuotone = memo(
 
 HammerBoldDuotone.displayName = 'HammerBoldDuotone';
 
-export { HammerBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HammerBoldDuotone, HammerBoldDuotone as HammerBoldDuotoneIcon, HammerBoldDuotone as SiHammerBoldDuotone };
 export type { HammerBoldDuotoneProps };

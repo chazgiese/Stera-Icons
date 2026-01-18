@@ -13,7 +13,8 @@ export interface DatabaseBanProps extends IconProps {
 }
 
 /**
- * DatabaseBan with dynamic weight and duotone props.
+ * DatabaseBan - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseBanRegular } from 'stera-icons/DatabaseBanRegular';
  */
@@ -32,4 +33,5 @@ const DatabaseBan = memo(forwardRef<SVGSVGElement, DatabaseBanProps>(({
 
 DatabaseBan.displayName = 'DatabaseBan';
 
-export { DatabaseBan };
+// Triple export pattern (lucide-react style)
+export { DatabaseBan, DatabaseBan as DatabaseBanIcon, DatabaseBan as SiDatabaseBan };

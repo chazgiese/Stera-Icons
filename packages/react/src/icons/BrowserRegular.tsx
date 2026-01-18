@@ -15,5 +15,6 @@ const BrowserRegular = memo(
 
 BrowserRegular.displayName = 'BrowserRegular';
 
-export { BrowserRegular };
+// Triple export pattern (lucide-react style)
+export { BrowserRegular, BrowserRegular as BrowserRegularIcon, BrowserRegular as SiBrowserRegular };
 export type { BrowserRegularProps };

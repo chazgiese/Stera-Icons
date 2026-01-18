@@ -14,5 +14,6 @@ const TextAlignCenterRegular = memo(
 
 TextAlignCenterRegular.displayName = 'TextAlignCenterRegular';
 
-export { TextAlignCenterRegular };
+// Triple export pattern (lucide-react style)
+export { TextAlignCenterRegular, TextAlignCenterRegular as TextAlignCenterRegularIcon, TextAlignCenterRegular as SiTextAlignCenterRegular };
 export type { TextAlignCenterRegularProps };

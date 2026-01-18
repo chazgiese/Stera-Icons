@@ -13,7 +13,8 @@ export interface ListTreeProps extends IconProps {
 }
 
 /**
- * ListTree with dynamic weight and duotone props.
+ * ListTree - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListTreeRegular } from 'stera-icons/ListTreeRegular';
  */
@@ -32,4 +33,5 @@ const ListTree = memo(forwardRef<SVGSVGElement, ListTreeProps>(({
 
 ListTree.displayName = 'ListTree';
 
-export { ListTree };
+// Triple export pattern (lucide-react style)
+export { ListTree, ListTree as ListTreeIcon, ListTree as SiListTree };

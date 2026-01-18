@@ -14,5 +14,6 @@ const GithubFill = memo(
 
 GithubFill.displayName = 'GithubFill';
 
-export { GithubFill };
+// Triple export pattern (lucide-react style)
+export { GithubFill, GithubFill as GithubFillIcon, GithubFill as SiGithubFill };
 export type { GithubFillProps };

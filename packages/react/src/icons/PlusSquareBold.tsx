@@ -15,5 +15,6 @@ const PlusSquareBold = memo(
 
 PlusSquareBold.displayName = 'PlusSquareBold';
 
-export { PlusSquareBold };
+// Triple export pattern (lucide-react style)
+export { PlusSquareBold, PlusSquareBold as PlusSquareBoldIcon, PlusSquareBold as SiPlusSquareBold };
 export type { PlusSquareBoldProps };

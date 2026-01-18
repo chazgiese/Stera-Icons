@@ -13,7 +13,8 @@ export interface AlignHorizontalRightProps extends IconProps {
 }
 
 /**
- * AlignHorizontalRight with dynamic weight and duotone props.
+ * AlignHorizontalRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlignHorizontalRightRegular } from 'stera-icons/AlignHorizontalRightRegular';
  */
@@ -32,4 +33,5 @@ const AlignHorizontalRight = memo(forwardRef<SVGSVGElement, AlignHorizontalRight
 
 AlignHorizontalRight.displayName = 'AlignHorizontalRight';
 
-export { AlignHorizontalRight };
+// Triple export pattern (lucide-react style)
+export { AlignHorizontalRight, AlignHorizontalRight as AlignHorizontalRightIcon, AlignHorizontalRight as SiAlignHorizontalRight };

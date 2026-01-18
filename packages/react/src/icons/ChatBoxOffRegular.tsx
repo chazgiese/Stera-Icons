@@ -15,5 +15,6 @@ const ChatBoxOffRegular = memo(
 
 ChatBoxOffRegular.displayName = 'ChatBoxOffRegular';
 
-export { ChatBoxOffRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBoxOffRegular, ChatBoxOffRegular as ChatBoxOffRegularIcon, ChatBoxOffRegular as SiChatBoxOffRegular };
 export type { ChatBoxOffRegularProps };

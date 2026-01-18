@@ -14,5 +14,6 @@ const RepeatFill = memo(
 
 RepeatFill.displayName = 'RepeatFill';
 
-export { RepeatFill };
+// Triple export pattern (lucide-react style)
+export { RepeatFill, RepeatFill as RepeatFillIcon, RepeatFill as SiRepeatFill };
 export type { RepeatFillProps };

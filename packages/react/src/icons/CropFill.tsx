@@ -14,5 +14,6 @@ const CropFill = memo(
 
 CropFill.displayName = 'CropFill';
 
-export { CropFill };
+// Triple export pattern (lucide-react style)
+export { CropFill, CropFill as CropFillIcon, CropFill as SiCropFill };
 export type { CropFillProps };

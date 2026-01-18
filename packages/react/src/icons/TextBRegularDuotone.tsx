@@ -15,5 +15,6 @@ const TextBRegularDuotone = memo(
 
 TextBRegularDuotone.displayName = 'TextBRegularDuotone';
 
-export { TextBRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { TextBRegularDuotone, TextBRegularDuotone as TextBRegularDuotoneIcon, TextBRegularDuotone as SiTextBRegularDuotone };
 export type { TextBRegularDuotoneProps };

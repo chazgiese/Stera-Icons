@@ -15,5 +15,6 @@ const DiamondBoldDuotone = memo(
 
 DiamondBoldDuotone.displayName = 'DiamondBoldDuotone';
 
-export { DiamondBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { DiamondBoldDuotone, DiamondBoldDuotone as DiamondBoldDuotoneIcon, DiamondBoldDuotone as SiDiamondBoldDuotone };
 export type { DiamondBoldDuotoneProps };

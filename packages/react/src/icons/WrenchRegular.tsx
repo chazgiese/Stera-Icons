@@ -14,5 +14,6 @@ const WrenchRegular = memo(
 
 WrenchRegular.displayName = 'WrenchRegular';
 
-export { WrenchRegular };
+// Triple export pattern (lucide-react style)
+export { WrenchRegular, WrenchRegular as WrenchRegularIcon, WrenchRegular as SiWrenchRegular };
 export type { WrenchRegularProps };

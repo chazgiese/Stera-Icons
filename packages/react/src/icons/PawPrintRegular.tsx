@@ -14,5 +14,6 @@ const PawPrintRegular = memo(
 
 PawPrintRegular.displayName = 'PawPrintRegular';
 
-export { PawPrintRegular };
+// Triple export pattern (lucide-react style)
+export { PawPrintRegular, PawPrintRegular as PawPrintRegularIcon, PawPrintRegular as SiPawPrintRegular };
 export type { PawPrintRegularProps };

@@ -13,7 +13,8 @@ export interface ShieldBanProps extends IconProps {
 }
 
 /**
- * ShieldBan with dynamic weight and duotone props.
+ * ShieldBan - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShieldBanRegular } from 'stera-icons/ShieldBanRegular';
  */
@@ -32,4 +33,5 @@ const ShieldBan = memo(forwardRef<SVGSVGElement, ShieldBanProps>(({
 
 ShieldBan.displayName = 'ShieldBan';
 
-export { ShieldBan };
+// Triple export pattern (lucide-react style)
+export { ShieldBan, ShieldBan as ShieldBanIcon, ShieldBan as SiShieldBan };

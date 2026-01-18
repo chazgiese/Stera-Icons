@@ -13,7 +13,8 @@ export interface HashCircleProps extends IconProps {
 }
 
 /**
- * HashCircle with dynamic weight and duotone props.
+ * HashCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HashCircleRegular } from 'stera-icons/HashCircleRegular';
  */
@@ -32,4 +33,5 @@ const HashCircle = memo(forwardRef<SVGSVGElement, HashCircleProps>(({
 
 HashCircle.displayName = 'HashCircle';
 
-export { HashCircle };
+// Triple export pattern (lucide-react style)
+export { HashCircle, HashCircle as HashCircleIcon, HashCircle as SiHashCircle };

@@ -15,5 +15,6 @@ const SearchSquareRegular = memo(
 
 SearchSquareRegular.displayName = 'SearchSquareRegular';
 
-export { SearchSquareRegular };
+// Triple export pattern (lucide-react style)
+export { SearchSquareRegular, SearchSquareRegular as SearchSquareRegularIcon, SearchSquareRegular as SiSearchSquareRegular };
 export type { SearchSquareRegularProps };

@@ -13,7 +13,8 @@ export interface ListExpandProps extends IconProps {
 }
 
 /**
- * ListExpand with dynamic weight and duotone props.
+ * ListExpand - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListExpandRegular } from 'stera-icons/ListExpandRegular';
  */
@@ -32,4 +33,5 @@ const ListExpand = memo(forwardRef<SVGSVGElement, ListExpandProps>(({
 
 ListExpand.displayName = 'ListExpand';
 
-export { ListExpand };
+// Triple export pattern (lucide-react style)
+export { ListExpand, ListExpand as ListExpandIcon, ListExpand as SiListExpand };

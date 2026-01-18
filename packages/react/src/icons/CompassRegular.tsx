@@ -15,5 +15,6 @@ const CompassRegular = memo(
 
 CompassRegular.displayName = 'CompassRegular';
 
-export { CompassRegular };
+// Triple export pattern (lucide-react style)
+export { CompassRegular, CompassRegular as CompassRegularIcon, CompassRegular as SiCompassRegular };
 export type { CompassRegularProps };

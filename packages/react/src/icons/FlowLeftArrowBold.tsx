@@ -14,5 +14,6 @@ const FlowLeftArrowBold = memo(
 
 FlowLeftArrowBold.displayName = 'FlowLeftArrowBold';
 
-export { FlowLeftArrowBold };
+// Triple export pattern (lucide-react style)
+export { FlowLeftArrowBold, FlowLeftArrowBold as FlowLeftArrowBoldIcon, FlowLeftArrowBold as SiFlowLeftArrowBold };
 export type { FlowLeftArrowBoldProps };

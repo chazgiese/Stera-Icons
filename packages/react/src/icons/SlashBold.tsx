@@ -14,5 +14,6 @@ const SlashBold = memo(
 
 SlashBold.displayName = 'SlashBold';
 
-export { SlashBold };
+// Triple export pattern (lucide-react style)
+export { SlashBold, SlashBold as SlashBoldIcon, SlashBold as SiSlashBold };
 export type { SlashBoldProps };

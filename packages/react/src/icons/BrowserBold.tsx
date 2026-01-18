@@ -15,5 +15,6 @@ const BrowserBold = memo(
 
 BrowserBold.displayName = 'BrowserBold';
 
-export { BrowserBold };
+// Triple export pattern (lucide-react style)
+export { BrowserBold, BrowserBold as BrowserBoldIcon, BrowserBold as SiBrowserBold };
 export type { BrowserBoldProps };

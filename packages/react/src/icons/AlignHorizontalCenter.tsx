@@ -13,7 +13,8 @@ export interface AlignHorizontalCenterProps extends IconProps {
 }
 
 /**
- * AlignHorizontalCenter with dynamic weight and duotone props.
+ * AlignHorizontalCenter - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlignHorizontalCenterRegular } from 'stera-icons/AlignHorizontalCenterRegular';
  */
@@ -32,4 +33,5 @@ const AlignHorizontalCenter = memo(forwardRef<SVGSVGElement, AlignHorizontalCent
 
 AlignHorizontalCenter.displayName = 'AlignHorizontalCenter';
 
-export { AlignHorizontalCenter };
+// Triple export pattern (lucide-react style)
+export { AlignHorizontalCenter, AlignHorizontalCenter as AlignHorizontalCenterIcon, AlignHorizontalCenter as SiAlignHorizontalCenter };

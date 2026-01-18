@@ -13,7 +13,8 @@ export interface ForkKnifeProps extends IconProps {
 }
 
 /**
- * ForkKnife with dynamic weight and duotone props.
+ * ForkKnife - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ForkKnifeRegular } from 'stera-icons/ForkKnifeRegular';
  */
@@ -32,4 +33,5 @@ const ForkKnife = memo(forwardRef<SVGSVGElement, ForkKnifeProps>(({
 
 ForkKnife.displayName = 'ForkKnife';
 
-export { ForkKnife };
+// Triple export pattern (lucide-react style)
+export { ForkKnife, ForkKnife as ForkKnifeIcon, ForkKnife as SiForkKnife };

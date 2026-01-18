@@ -17,5 +17,6 @@ const BookOpenBoldDuotone = memo(
 
 BookOpenBoldDuotone.displayName = 'BookOpenBoldDuotone';
 
-export { BookOpenBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { BookOpenBoldDuotone, BookOpenBoldDuotone as BookOpenBoldDuotoneIcon, BookOpenBoldDuotone as SiBookOpenBoldDuotone };
 export type { BookOpenBoldDuotoneProps };

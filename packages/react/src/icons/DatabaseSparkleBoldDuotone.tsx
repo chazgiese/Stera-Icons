@@ -15,5 +15,6 @@ const DatabaseSparkleBoldDuotone = memo(
 
 DatabaseSparkleBoldDuotone.displayName = 'DatabaseSparkleBoldDuotone';
 
-export { DatabaseSparkleBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { DatabaseSparkleBoldDuotone, DatabaseSparkleBoldDuotone as DatabaseSparkleBoldDuotoneIcon, DatabaseSparkleBoldDuotone as SiDatabaseSparkleBoldDuotone };
 export type { DatabaseSparkleBoldDuotoneProps };

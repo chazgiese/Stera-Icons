@@ -15,5 +15,6 @@ const ChartAreaRegularDuotone = memo(
 
 ChartAreaRegularDuotone.displayName = 'ChartAreaRegularDuotone';
 
-export { ChartAreaRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ChartAreaRegularDuotone, ChartAreaRegularDuotone as ChartAreaRegularDuotoneIcon, ChartAreaRegularDuotone as SiChartAreaRegularDuotone };
 export type { ChartAreaRegularDuotoneProps };

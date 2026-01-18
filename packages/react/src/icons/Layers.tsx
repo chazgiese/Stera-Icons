@@ -13,7 +13,8 @@ export interface LayersProps extends IconProps {
 }
 
 /**
- * Layers with dynamic weight and duotone props.
+ * Layers - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayersRegular } from 'stera-icons/LayersRegular';
  */
@@ -32,4 +33,5 @@ const Layers = memo(forwardRef<SVGSVGElement, LayersProps>(({
 
 Layers.displayName = 'Layers';
 
-export { Layers };
+// Triple export pattern (lucide-react style)
+export { Layers, Layers as LayersIcon, Layers as SiLayers };

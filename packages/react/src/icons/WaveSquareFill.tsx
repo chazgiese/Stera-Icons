@@ -14,5 +14,6 @@ const WaveSquareFill = memo(
 
 WaveSquareFill.displayName = 'WaveSquareFill';
 
-export { WaveSquareFill };
+// Triple export pattern (lucide-react style)
+export { WaveSquareFill, WaveSquareFill as WaveSquareFillIcon, WaveSquareFill as SiWaveSquareFill };
 export type { WaveSquareFillProps };

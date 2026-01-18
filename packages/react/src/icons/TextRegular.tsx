@@ -14,5 +14,6 @@ const TextRegular = memo(
 
 TextRegular.displayName = 'TextRegular';
 
-export { TextRegular };
+// Triple export pattern (lucide-react style)
+export { TextRegular, TextRegular as TextRegularIcon, TextRegular as SiTextRegular };
 export type { TextRegularProps };

@@ -15,5 +15,6 @@ const ThermometerLowRegularDuotone = memo(
 
 ThermometerLowRegularDuotone.displayName = 'ThermometerLowRegularDuotone';
 
-export { ThermometerLowRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ThermometerLowRegularDuotone, ThermometerLowRegularDuotone as ThermometerLowRegularDuotoneIcon, ThermometerLowRegularDuotone as SiThermometerLowRegularDuotone };
 export type { ThermometerLowRegularDuotoneProps };

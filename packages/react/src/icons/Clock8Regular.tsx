@@ -15,5 +15,6 @@ const Clock8Regular = memo(
 
 Clock8Regular.displayName = 'Clock8Regular';
 
-export { Clock8Regular };
+// Triple export pattern (lucide-react style)
+export { Clock8Regular, Clock8Regular as Clock8RegularIcon, Clock8Regular as SiClock8Regular };
 export type { Clock8RegularProps };

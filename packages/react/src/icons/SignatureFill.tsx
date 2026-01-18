@@ -14,5 +14,6 @@ const SignatureFill = memo(
 
 SignatureFill.displayName = 'SignatureFill';
 
-export { SignatureFill };
+// Triple export pattern (lucide-react style)
+export { SignatureFill, SignatureFill as SignatureFillIcon, SignatureFill as SiSignatureFill };
 export type { SignatureFillProps };

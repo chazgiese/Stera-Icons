@@ -15,5 +15,6 @@ const SettingsRegularDuotone = memo(
 
 SettingsRegularDuotone.displayName = 'SettingsRegularDuotone';
 
-export { SettingsRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { SettingsRegularDuotone, SettingsRegularDuotone as SettingsRegularDuotoneIcon, SettingsRegularDuotone as SiSettingsRegularDuotone };
 export type { SettingsRegularDuotoneProps };

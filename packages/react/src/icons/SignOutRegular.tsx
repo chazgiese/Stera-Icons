@@ -15,5 +15,6 @@ const SignOutRegular = memo(
 
 SignOutRegular.displayName = 'SignOutRegular';
 
-export { SignOutRegular };
+// Triple export pattern (lucide-react style)
+export { SignOutRegular, SignOutRegular as SignOutRegularIcon, SignOutRegular as SiSignOutRegular };
 export type { SignOutRegularProps };

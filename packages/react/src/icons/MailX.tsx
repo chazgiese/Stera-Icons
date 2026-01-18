@@ -13,7 +13,8 @@ export interface MailXProps extends IconProps {
 }
 
 /**
- * MailX with dynamic weight and duotone props.
+ * MailX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MailXRegular } from 'stera-icons/MailXRegular';
  */
@@ -32,4 +33,5 @@ const MailX = memo(forwardRef<SVGSVGElement, MailXProps>(({
 
 MailX.displayName = 'MailX';
 
-export { MailX };
+// Triple export pattern (lucide-react style)
+export { MailX, MailX as MailXIcon, MailX as SiMailX };

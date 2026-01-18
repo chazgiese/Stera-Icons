@@ -13,7 +13,8 @@ export interface CommentBubbleProps extends IconProps {
 }
 
 /**
- * CommentBubble with dynamic weight and duotone props.
+ * CommentBubble - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CommentBubbleRegular } from 'stera-icons/CommentBubbleRegular';
  */
@@ -32,4 +33,5 @@ const CommentBubble = memo(forwardRef<SVGSVGElement, CommentBubbleProps>(({
 
 CommentBubble.displayName = 'CommentBubble';
 
-export { CommentBubble };
+// Triple export pattern (lucide-react style)
+export { CommentBubble, CommentBubble as CommentBubbleIcon, CommentBubble as SiCommentBubble };

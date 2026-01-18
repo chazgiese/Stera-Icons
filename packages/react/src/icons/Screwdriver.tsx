@@ -13,7 +13,8 @@ export interface ScrewdriverProps extends IconProps {
 }
 
 /**
- * Screwdriver with dynamic weight and duotone props.
+ * Screwdriver - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScrewdriverRegular } from 'stera-icons/ScrewdriverRegular';
  */
@@ -32,4 +33,5 @@ const Screwdriver = memo(forwardRef<SVGSVGElement, ScrewdriverProps>(({
 
 Screwdriver.displayName = 'Screwdriver';
 
-export { Screwdriver };
+// Triple export pattern (lucide-react style)
+export { Screwdriver, Screwdriver as ScrewdriverIcon, Screwdriver as SiScrewdriver };

@@ -15,5 +15,6 @@ const DuplicatePlusBold = memo(
 
 DuplicatePlusBold.displayName = 'DuplicatePlusBold';
 
-export { DuplicatePlusBold };
+// Triple export pattern (lucide-react style)
+export { DuplicatePlusBold, DuplicatePlusBold as DuplicatePlusBoldIcon, DuplicatePlusBold as SiDuplicatePlusBold };
 export type { DuplicatePlusBoldProps };

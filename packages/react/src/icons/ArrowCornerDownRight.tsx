@@ -13,7 +13,8 @@ export interface ArrowCornerDownRightProps extends IconProps {
 }
 
 /**
- * ArrowCornerDownRight with dynamic weight and duotone props.
+ * ArrowCornerDownRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowCornerDownRightRegular } from 'stera-icons/ArrowCornerDownRightRegular';
  */
@@ -32,4 +33,5 @@ const ArrowCornerDownRight = memo(forwardRef<SVGSVGElement, ArrowCornerDownRight
 
 ArrowCornerDownRight.displayName = 'ArrowCornerDownRight';
 
-export { ArrowCornerDownRight };
+// Triple export pattern (lucide-react style)
+export { ArrowCornerDownRight, ArrowCornerDownRight as ArrowCornerDownRightIcon, ArrowCornerDownRight as SiArrowCornerDownRight };

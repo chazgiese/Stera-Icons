@@ -15,5 +15,6 @@ const TriangleFillDuotone = memo(
 
 TriangleFillDuotone.displayName = 'TriangleFillDuotone';
 
-export { TriangleFillDuotone };
+// Triple export pattern (lucide-react style)
+export { TriangleFillDuotone, TriangleFillDuotone as TriangleFillDuotoneIcon, TriangleFillDuotone as SiTriangleFillDuotone };
 export type { TriangleFillDuotoneProps };

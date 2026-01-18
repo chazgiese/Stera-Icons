@@ -15,5 +15,6 @@ const MailMinusRegular = memo(
 
 MailMinusRegular.displayName = 'MailMinusRegular';
 
-export { MailMinusRegular };
+// Triple export pattern (lucide-react style)
+export { MailMinusRegular, MailMinusRegular as MailMinusRegularIcon, MailMinusRegular as SiMailMinusRegular };
 export type { MailMinusRegularProps };

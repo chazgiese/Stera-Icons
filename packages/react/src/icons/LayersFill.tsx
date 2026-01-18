@@ -14,5 +14,6 @@ const LayersFill = memo(
 
 LayersFill.displayName = 'LayersFill';
 
-export { LayersFill };
+// Triple export pattern (lucide-react style)
+export { LayersFill, LayersFill as LayersFillIcon, LayersFill as SiLayersFill };
 export type { LayersFillProps };

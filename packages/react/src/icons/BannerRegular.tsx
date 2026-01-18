@@ -14,5 +14,6 @@ const BannerRegular = memo(
 
 BannerRegular.displayName = 'BannerRegular';
 
-export { BannerRegular };
+// Triple export pattern (lucide-react style)
+export { BannerRegular, BannerRegular as BannerRegularIcon, BannerRegular as SiBannerRegular };
 export type { BannerRegularProps };

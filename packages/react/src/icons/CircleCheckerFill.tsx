@@ -14,5 +14,6 @@ const CircleCheckerFill = memo(
 
 CircleCheckerFill.displayName = 'CircleCheckerFill';
 
-export { CircleCheckerFill };
+// Triple export pattern (lucide-react style)
+export { CircleCheckerFill, CircleCheckerFill as CircleCheckerFillIcon, CircleCheckerFill as SiCircleCheckerFill };
 export type { CircleCheckerFillProps };

@@ -15,5 +15,6 @@ const HandRightFillDuotone = memo(
 
 HandRightFillDuotone.displayName = 'HandRightFillDuotone';
 
-export { HandRightFillDuotone };
+// Triple export pattern (lucide-react style)
+export { HandRightFillDuotone, HandRightFillDuotone as HandRightFillDuotoneIcon, HandRightFillDuotone as SiHandRightFillDuotone };
 export type { HandRightFillDuotoneProps };

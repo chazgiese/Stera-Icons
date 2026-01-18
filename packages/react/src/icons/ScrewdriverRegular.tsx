@@ -15,5 +15,6 @@ const ScrewdriverRegular = memo(
 
 ScrewdriverRegular.displayName = 'ScrewdriverRegular';
 
-export { ScrewdriverRegular };
+// Triple export pattern (lucide-react style)
+export { ScrewdriverRegular, ScrewdriverRegular as ScrewdriverRegularIcon, ScrewdriverRegular as SiScrewdriverRegular };
 export type { ScrewdriverRegularProps };

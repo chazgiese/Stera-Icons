@@ -114,14 +114,40 @@ export function validateVariantData(variantData) {
 }
 
 export function parseTags(tags) {
-  // Handle both array format (new) and string format (legacy)
-  if (Array.isArray(tags)) {
-    return tags.map(tag => tag.trim().toLowerCase()).filter(tag => tag.length > 0);
-  }
-  
-  // Legacy string format
-  return tags
-    .split(',')
-    .map(tag => tag.trim().toLowerCase())
-    .filter(tag => tag.length > 0);
+  // Tags are always in array format
+  return tags.map(tag => tag.trim().toLowerCase()).filter(tag => tag.length > 0);
+}
+
+/**
+ * Generate aliased export names for a component (lucide-react style)
+ * @param {string} componentName - The component name (e.g., "SearchBold")
+ * @returns {Object} - Object with base, icon suffix, and Si prefix aliases
+ */
+export function generateAliases(componentName) {
+  return {
+    base: componentName,
+    iconSuffix: `${componentName}Icon`,
+    siPrefix: `Si${componentName}`
+  };
+}
+
+/**
+ * Generate triple export statement for a component
+ * @param {string} componentName - The component name (e.g., "SearchBold")
+ * @returns {string} - Export statement with all three aliases
+ */
+export function generateTripleExport(componentName) {
+  const aliases = generateAliases(componentName);
+  return `export { ${aliases.base}, ${aliases.base} as ${aliases.iconSuffix}, ${aliases.base} as ${aliases.siPrefix} };`;
+}
+
+/**
+ * Generate triple export statement with import path
+ * @param {string} componentName - The component name (e.g., "SearchBold")
+ * @param {string} importPath - The import path (e.g., "./icons/SearchBold")
+ * @returns {string} - Full export statement with path
+ */
+export function generateTripleExportWithPath(componentName, importPath) {
+  const aliases = generateAliases(componentName);
+  return `export { ${aliases.base}, ${aliases.iconSuffix}, ${aliases.siPrefix} } from '${importPath}';`;
 }

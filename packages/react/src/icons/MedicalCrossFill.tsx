@@ -14,5 +14,6 @@ const MedicalCrossFill = memo(
 
 MedicalCrossFill.displayName = 'MedicalCrossFill';
 
-export { MedicalCrossFill };
+// Triple export pattern (lucide-react style)
+export { MedicalCrossFill, MedicalCrossFill as MedicalCrossFillIcon, MedicalCrossFill as SiMedicalCrossFill };
 export type { MedicalCrossFillProps };

@@ -14,5 +14,6 @@ const ChevronFullOutwardRegular = memo(
 
 ChevronFullOutwardRegular.displayName = 'ChevronFullOutwardRegular';
 
-export { ChevronFullOutwardRegular };
+// Triple export pattern (lucide-react style)
+export { ChevronFullOutwardRegular, ChevronFullOutwardRegular as ChevronFullOutwardRegularIcon, ChevronFullOutwardRegular as SiChevronFullOutwardRegular };
 export type { ChevronFullOutwardRegularProps };

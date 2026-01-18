@@ -13,7 +13,8 @@ export interface SquareSlashProps extends IconProps {
 }
 
 /**
- * SquareSlash with dynamic weight and duotone props.
+ * SquareSlash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SquareSlashRegular } from 'stera-icons/SquareSlashRegular';
  */
@@ -32,4 +33,5 @@ const SquareSlash = memo(forwardRef<SVGSVGElement, SquareSlashProps>(({
 
 SquareSlash.displayName = 'SquareSlash';
 
-export { SquareSlash };
+// Triple export pattern (lucide-react style)
+export { SquareSlash, SquareSlash as SquareSlashIcon, SquareSlash as SiSquareSlash };

@@ -13,7 +13,8 @@ export interface GiftBoxProps extends IconProps {
 }
 
 /**
- * GiftBox with dynamic weight and duotone props.
+ * GiftBox - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GiftBoxRegular } from 'stera-icons/GiftBoxRegular';
  */
@@ -32,4 +33,5 @@ const GiftBox = memo(forwardRef<SVGSVGElement, GiftBoxProps>(({
 
 GiftBox.displayName = 'GiftBox';
 
-export { GiftBox };
+// Triple export pattern (lucide-react style)
+export { GiftBox, GiftBox as GiftBoxIcon, GiftBox as SiGiftBox };

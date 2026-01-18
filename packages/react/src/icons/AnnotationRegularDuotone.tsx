@@ -16,5 +16,6 @@ const AnnotationRegularDuotone = memo(
 
 AnnotationRegularDuotone.displayName = 'AnnotationRegularDuotone';
 
-export { AnnotationRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { AnnotationRegularDuotone, AnnotationRegularDuotone as AnnotationRegularDuotoneIcon, AnnotationRegularDuotone as SiAnnotationRegularDuotone };
 export type { AnnotationRegularDuotoneProps };

@@ -13,7 +13,8 @@ export interface StairsProps extends IconProps {
 }
 
 /**
- * Stairs with dynamic weight and duotone props.
+ * Stairs - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { StairsRegular } from 'stera-icons/StairsRegular';
  */
@@ -32,4 +33,5 @@ const Stairs = memo(forwardRef<SVGSVGElement, StairsProps>(({
 
 Stairs.displayName = 'Stairs';
 
-export { Stairs };
+// Triple export pattern (lucide-react style)
+export { Stairs, Stairs as StairsIcon, Stairs as SiStairs };

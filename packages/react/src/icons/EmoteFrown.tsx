@@ -13,7 +13,8 @@ export interface EmoteFrownProps extends IconProps {
 }
 
 /**
- * EmoteFrown with dynamic weight and duotone props.
+ * EmoteFrown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EmoteFrownRegular } from 'stera-icons/EmoteFrownRegular';
  */
@@ -32,4 +33,5 @@ const EmoteFrown = memo(forwardRef<SVGSVGElement, EmoteFrownProps>(({
 
 EmoteFrown.displayName = 'EmoteFrown';
 
-export { EmoteFrown };
+// Triple export pattern (lucide-react style)
+export { EmoteFrown, EmoteFrown as EmoteFrownIcon, EmoteFrown as SiEmoteFrown };

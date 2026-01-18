@@ -15,5 +15,6 @@ const DeleteBold = memo(
 
 DeleteBold.displayName = 'DeleteBold';
 
-export { DeleteBold };
+// Triple export pattern (lucide-react style)
+export { DeleteBold, DeleteBold as DeleteBoldIcon, DeleteBold as SiDeleteBold };
 export type { DeleteBoldProps };

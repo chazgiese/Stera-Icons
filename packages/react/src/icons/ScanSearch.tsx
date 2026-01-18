@@ -13,7 +13,8 @@ export interface ScanSearchProps extends IconProps {
 }
 
 /**
- * ScanSearch with dynamic weight and duotone props.
+ * ScanSearch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScanSearchRegular } from 'stera-icons/ScanSearchRegular';
  */
@@ -32,4 +33,5 @@ const ScanSearch = memo(forwardRef<SVGSVGElement, ScanSearchProps>(({
 
 ScanSearch.displayName = 'ScanSearch';
 
-export { ScanSearch };
+// Triple export pattern (lucide-react style)
+export { ScanSearch, ScanSearch as ScanSearchIcon, ScanSearch as SiScanSearch };

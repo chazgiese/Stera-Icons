@@ -14,5 +14,6 @@ const SquareBold = memo(
 
 SquareBold.displayName = 'SquareBold';
 
-export { SquareBold };
+// Triple export pattern (lucide-react style)
+export { SquareBold, SquareBold as SquareBoldIcon, SquareBold as SiSquareBold };
 export type { SquareBoldProps };

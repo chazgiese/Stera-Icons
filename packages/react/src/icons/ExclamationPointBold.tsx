@@ -14,5 +14,6 @@ const ExclamationPointBold = memo(
 
 ExclamationPointBold.displayName = 'ExclamationPointBold';
 
-export { ExclamationPointBold };
+// Triple export pattern (lucide-react style)
+export { ExclamationPointBold, ExclamationPointBold as ExclamationPointBoldIcon, ExclamationPointBold as SiExclamationPointBold };
 export type { ExclamationPointBoldProps };

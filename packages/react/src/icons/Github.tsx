@@ -13,7 +13,8 @@ export interface GithubProps extends IconProps {
 }
 
 /**
- * Github with dynamic weight and duotone props.
+ * Github - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GithubRegular } from 'stera-icons/GithubRegular';
  */
@@ -32,4 +33,5 @@ const Github = memo(forwardRef<SVGSVGElement, GithubProps>(({
 
 Github.displayName = 'Github';
 
-export { Github };
+// Triple export pattern (lucide-react style)
+export { Github, Github as GithubIcon, Github as SiGithub };

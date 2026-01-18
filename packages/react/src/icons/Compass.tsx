@@ -13,7 +13,8 @@ export interface CompassProps extends IconProps {
 }
 
 /**
- * Compass with dynamic weight and duotone props.
+ * Compass - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CompassRegular } from 'stera-icons/CompassRegular';
  */
@@ -32,4 +33,5 @@ const Compass = memo(forwardRef<SVGSVGElement, CompassProps>(({
 
 Compass.displayName = 'Compass';
 
-export { Compass };
+// Triple export pattern (lucide-react style)
+export { Compass, Compass as CompassIcon, Compass as SiCompass };

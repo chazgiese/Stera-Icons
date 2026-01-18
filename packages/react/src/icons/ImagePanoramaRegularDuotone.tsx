@@ -15,5 +15,6 @@ const ImagePanoramaRegularDuotone = memo(
 
 ImagePanoramaRegularDuotone.displayName = 'ImagePanoramaRegularDuotone';
 
-export { ImagePanoramaRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ImagePanoramaRegularDuotone, ImagePanoramaRegularDuotone as ImagePanoramaRegularDuotoneIcon, ImagePanoramaRegularDuotone as SiImagePanoramaRegularDuotone };
 export type { ImagePanoramaRegularDuotoneProps };

@@ -13,7 +13,8 @@ export interface PauseProps extends IconProps {
 }
 
 /**
- * Pause with dynamic weight and duotone props.
+ * Pause - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PauseRegular } from 'stera-icons/PauseRegular';
  */
@@ -32,4 +33,5 @@ const Pause = memo(forwardRef<SVGSVGElement, PauseProps>(({
 
 Pause.displayName = 'Pause';
 
-export { Pause };
+// Triple export pattern (lucide-react style)
+export { Pause, Pause as PauseIcon, Pause as SiPause };

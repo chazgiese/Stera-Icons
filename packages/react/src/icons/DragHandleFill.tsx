@@ -14,5 +14,6 @@ const DragHandleFill = memo(
 
 DragHandleFill.displayName = 'DragHandleFill';
 
-export { DragHandleFill };
+// Triple export pattern (lucide-react style)
+export { DragHandleFill, DragHandleFill as DragHandleFillIcon, DragHandleFill as SiDragHandleFill };
 export type { DragHandleFillProps };

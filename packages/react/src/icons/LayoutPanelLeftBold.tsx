@@ -14,5 +14,6 @@ const LayoutPanelLeftBold = memo(
 
 LayoutPanelLeftBold.displayName = 'LayoutPanelLeftBold';
 
-export { LayoutPanelLeftBold };
+// Triple export pattern (lucide-react style)
+export { LayoutPanelLeftBold, LayoutPanelLeftBold as LayoutPanelLeftBoldIcon, LayoutPanelLeftBold as SiLayoutPanelLeftBold };
 export type { LayoutPanelLeftBoldProps };

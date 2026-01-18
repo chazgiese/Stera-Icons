@@ -13,7 +13,8 @@ export interface PoundSterlingCircleProps extends IconProps {
 }
 
 /**
- * PoundSterlingCircle with dynamic weight and duotone props.
+ * PoundSterlingCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PoundSterlingCircleRegular } from 'stera-icons/PoundSterlingCircleRegular';
  */
@@ -32,4 +33,5 @@ const PoundSterlingCircle = memo(forwardRef<SVGSVGElement, PoundSterlingCirclePr
 
 PoundSterlingCircle.displayName = 'PoundSterlingCircle';
 
-export { PoundSterlingCircle };
+// Triple export pattern (lucide-react style)
+export { PoundSterlingCircle, PoundSterlingCircle as PoundSterlingCircleIcon, PoundSterlingCircle as SiPoundSterlingCircle };

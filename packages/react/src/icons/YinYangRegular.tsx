@@ -15,5 +15,6 @@ const YinYangRegular = memo(
 
 YinYangRegular.displayName = 'YinYangRegular';
 
-export { YinYangRegular };
+// Triple export pattern (lucide-react style)
+export { YinYangRegular, YinYangRegular as YinYangRegularIcon, YinYangRegular as SiYinYangRegular };
 export type { YinYangRegularProps };

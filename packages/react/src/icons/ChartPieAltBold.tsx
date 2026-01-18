@@ -15,5 +15,6 @@ const ChartPieAltBold = memo(
 
 ChartPieAltBold.displayName = 'ChartPieAltBold';
 
-export { ChartPieAltBold };
+// Triple export pattern (lucide-react style)
+export { ChartPieAltBold, ChartPieAltBold as ChartPieAltBoldIcon, ChartPieAltBold as SiChartPieAltBold };
 export type { ChartPieAltBoldProps };

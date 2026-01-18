@@ -14,5 +14,6 @@ const BrainFill = memo(
 
 BrainFill.displayName = 'BrainFill';
 
-export { BrainFill };
+// Triple export pattern (lucide-react style)
+export { BrainFill, BrainFill as BrainFillIcon, BrainFill as SiBrainFill };
 export type { BrainFillProps };

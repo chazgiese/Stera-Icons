@@ -13,7 +13,8 @@ export interface SquareDashedProps extends IconProps {
 }
 
 /**
- * SquareDashed with dynamic weight and duotone props.
+ * SquareDashed - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SquareDashedRegular } from 'stera-icons/SquareDashedRegular';
  */
@@ -32,4 +33,5 @@ const SquareDashed = memo(forwardRef<SVGSVGElement, SquareDashedProps>(({
 
 SquareDashed.displayName = 'SquareDashed';
 
-export { SquareDashed };
+// Triple export pattern (lucide-react style)
+export { SquareDashed, SquareDashed as SquareDashedIcon, SquareDashed as SiSquareDashed };

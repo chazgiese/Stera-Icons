@@ -14,5 +14,6 @@ const VideoRegular = memo(
 
 VideoRegular.displayName = 'VideoRegular';
 
-export { VideoRegular };
+// Triple export pattern (lucide-react style)
+export { VideoRegular, VideoRegular as VideoRegularIcon, VideoRegular as SiVideoRegular };
 export type { VideoRegularProps };

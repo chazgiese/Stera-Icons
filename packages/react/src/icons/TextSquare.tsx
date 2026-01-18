@@ -13,7 +13,8 @@ export interface TextSquareProps extends IconProps {
 }
 
 /**
- * TextSquare with dynamic weight and duotone props.
+ * TextSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextSquareRegular } from 'stera-icons/TextSquareRegular';
  */
@@ -32,4 +33,5 @@ const TextSquare = memo(forwardRef<SVGSVGElement, TextSquareProps>(({
 
 TextSquare.displayName = 'TextSquare';
 
-export { TextSquare };
+// Triple export pattern (lucide-react style)
+export { TextSquare, TextSquare as TextSquareIcon, TextSquare as SiTextSquare };

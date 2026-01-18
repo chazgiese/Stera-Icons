@@ -13,7 +13,8 @@ export interface PhoneIncomingProps extends IconProps {
 }
 
 /**
- * PhoneIncoming with dynamic weight and duotone props.
+ * PhoneIncoming - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PhoneIncomingRegular } from 'stera-icons/PhoneIncomingRegular';
  */
@@ -32,4 +33,5 @@ const PhoneIncoming = memo(forwardRef<SVGSVGElement, PhoneIncomingProps>(({
 
 PhoneIncoming.displayName = 'PhoneIncoming';
 
-export { PhoneIncoming };
+// Triple export pattern (lucide-react style)
+export { PhoneIncoming, PhoneIncoming as PhoneIncomingIcon, PhoneIncoming as SiPhoneIncoming };

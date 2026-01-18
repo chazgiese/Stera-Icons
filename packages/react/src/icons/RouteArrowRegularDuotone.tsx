@@ -16,5 +16,6 @@ const RouteArrowRegularDuotone = memo(
 
 RouteArrowRegularDuotone.displayName = 'RouteArrowRegularDuotone';
 
-export { RouteArrowRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { RouteArrowRegularDuotone, RouteArrowRegularDuotone as RouteArrowRegularDuotoneIcon, RouteArrowRegularDuotone as SiRouteArrowRegularDuotone };
 export type { RouteArrowRegularDuotoneProps };

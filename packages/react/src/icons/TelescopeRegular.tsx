@@ -14,5 +14,6 @@ const TelescopeRegular = memo(
 
 TelescopeRegular.displayName = 'TelescopeRegular';
 
-export { TelescopeRegular };
+// Triple export pattern (lucide-react style)
+export { TelescopeRegular, TelescopeRegular as TelescopeRegularIcon, TelescopeRegular as SiTelescopeRegular };
 export type { TelescopeRegularProps };

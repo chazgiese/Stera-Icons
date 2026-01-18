@@ -15,5 +15,6 @@ const ScrollTextRegular = memo(
 
 ScrollTextRegular.displayName = 'ScrollTextRegular';
 
-export { ScrollTextRegular };
+// Triple export pattern (lucide-react style)
+export { ScrollTextRegular, ScrollTextRegular as ScrollTextRegularIcon, ScrollTextRegular as SiScrollTextRegular };
 export type { ScrollTextRegularProps };

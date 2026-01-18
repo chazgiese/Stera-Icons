@@ -14,5 +14,6 @@ const CodeRegular = memo(
 
 CodeRegular.displayName = 'CodeRegular';
 
-export { CodeRegular };
+// Triple export pattern (lucide-react style)
+export { CodeRegular, CodeRegular as CodeRegularIcon, CodeRegular as SiCodeRegular };
 export type { CodeRegularProps };

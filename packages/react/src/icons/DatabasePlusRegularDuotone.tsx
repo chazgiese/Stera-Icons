@@ -15,5 +15,6 @@ const DatabasePlusRegularDuotone = memo(
 
 DatabasePlusRegularDuotone.displayName = 'DatabasePlusRegularDuotone';
 
-export { DatabasePlusRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { DatabasePlusRegularDuotone, DatabasePlusRegularDuotone as DatabasePlusRegularDuotoneIcon, DatabasePlusRegularDuotone as SiDatabasePlusRegularDuotone };
 export type { DatabasePlusRegularDuotoneProps };

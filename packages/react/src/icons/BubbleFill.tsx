@@ -14,5 +14,6 @@ const BubbleFill = memo(
 
 BubbleFill.displayName = 'BubbleFill';
 
-export { BubbleFill };
+// Triple export pattern (lucide-react style)
+export { BubbleFill, BubbleFill as BubbleFillIcon, BubbleFill as SiBubbleFill };
 export type { BubbleFillProps };

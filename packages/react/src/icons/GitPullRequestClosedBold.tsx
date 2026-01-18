@@ -15,5 +15,6 @@ const GitPullRequestClosedBold = memo(
 
 GitPullRequestClosedBold.displayName = 'GitPullRequestClosedBold';
 
-export { GitPullRequestClosedBold };
+// Triple export pattern (lucide-react style)
+export { GitPullRequestClosedBold, GitPullRequestClosedBold as GitPullRequestClosedBoldIcon, GitPullRequestClosedBold as SiGitPullRequestClosedBold };
 export type { GitPullRequestClosedBoldProps };

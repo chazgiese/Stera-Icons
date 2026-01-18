@@ -14,5 +14,6 @@ const BackslashBold = memo(
 
 BackslashBold.displayName = 'BackslashBold';
 
-export { BackslashBold };
+// Triple export pattern (lucide-react style)
+export { BackslashBold, BackslashBold as BackslashBoldIcon, BackslashBold as SiBackslashBold };
 export type { BackslashBoldProps };

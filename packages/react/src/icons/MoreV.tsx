@@ -13,7 +13,8 @@ export interface MoreVProps extends IconProps {
 }
 
 /**
- * MoreV with dynamic weight and duotone props.
+ * MoreV - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MoreVRegular } from 'stera-icons/MoreVRegular';
  */
@@ -32,4 +33,5 @@ const MoreV = memo(forwardRef<SVGSVGElement, MoreVProps>(({
 
 MoreV.displayName = 'MoreV';
 
-export { MoreV };
+// Triple export pattern (lucide-react style)
+export { MoreV, MoreV as MoreVIcon, MoreV as SiMoreV };

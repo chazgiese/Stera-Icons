@@ -15,5 +15,6 @@ const StopCircleBold = memo(
 
 StopCircleBold.displayName = 'StopCircleBold';
 
-export { StopCircleBold };
+// Triple export pattern (lucide-react style)
+export { StopCircleBold, StopCircleBold as StopCircleBoldIcon, StopCircleBold as SiStopCircleBold };
 export type { StopCircleBoldProps };

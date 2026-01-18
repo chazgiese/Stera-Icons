@@ -14,5 +14,6 @@ const ActivityFill = memo(
 
 ActivityFill.displayName = 'ActivityFill';
 
-export { ActivityFill };
+// Triple export pattern (lucide-react style)
+export { ActivityFill, ActivityFill as ActivityFillIcon, ActivityFill as SiActivityFill };
 export type { ActivityFillProps };

@@ -13,7 +13,8 @@ export interface CircleNotchProps extends IconProps {
 }
 
 /**
- * CircleNotch with dynamic weight and duotone props.
+ * CircleNotch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleNotchRegular } from 'stera-icons/CircleNotchRegular';
  */
@@ -32,4 +33,5 @@ const CircleNotch = memo(forwardRef<SVGSVGElement, CircleNotchProps>(({
 
 CircleNotch.displayName = 'CircleNotch';
 
-export { CircleNotch };
+// Triple export pattern (lucide-react style)
+export { CircleNotch, CircleNotch as CircleNotchIcon, CircleNotch as SiCircleNotch };

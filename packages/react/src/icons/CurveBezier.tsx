@@ -13,7 +13,8 @@ export interface CurveBezierProps extends IconProps {
 }
 
 /**
- * CurveBezier with dynamic weight and duotone props.
+ * CurveBezier - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CurveBezierRegular } from 'stera-icons/CurveBezierRegular';
  */
@@ -32,4 +33,5 @@ const CurveBezier = memo(forwardRef<SVGSVGElement, CurveBezierProps>(({
 
 CurveBezier.displayName = 'CurveBezier';
 
-export { CurveBezier };
+// Triple export pattern (lucide-react style)
+export { CurveBezier, CurveBezier as CurveBezierIcon, CurveBezier as SiCurveBezier };

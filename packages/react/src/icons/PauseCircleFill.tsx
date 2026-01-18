@@ -14,5 +14,6 @@ const PauseCircleFill = memo(
 
 PauseCircleFill.displayName = 'PauseCircleFill';
 
-export { PauseCircleFill };
+// Triple export pattern (lucide-react style)
+export { PauseCircleFill, PauseCircleFill as PauseCircleFillIcon, PauseCircleFill as SiPauseCircleFill };
 export type { PauseCircleFillProps };

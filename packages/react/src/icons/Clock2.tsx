@@ -13,7 +13,8 @@ export interface Clock2Props extends IconProps {
 }
 
 /**
- * Clock2 with dynamic weight and duotone props.
+ * Clock2 - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { Clock2Regular } from 'stera-icons/Clock2Regular';
  */
@@ -32,4 +33,5 @@ const Clock2 = memo(forwardRef<SVGSVGElement, Clock2Props>(({
 
 Clock2.displayName = 'Clock2';
 
-export { Clock2 };
+// Triple export pattern (lucide-react style)
+export { Clock2, Clock2 as Clock2Icon, Clock2 as SiClock2 };

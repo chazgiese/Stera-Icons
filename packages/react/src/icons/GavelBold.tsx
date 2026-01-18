@@ -14,5 +14,6 @@ const GavelBold = memo(
 
 GavelBold.displayName = 'GavelBold';
 
-export { GavelBold };
+// Triple export pattern (lucide-react style)
+export { GavelBold, GavelBold as GavelBoldIcon, GavelBold as SiGavelBold };
 export type { GavelBoldProps };

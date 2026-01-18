@@ -13,7 +13,8 @@ export interface CircleDivideCrossProps extends IconProps {
 }
 
 /**
- * CircleDivideCross with dynamic weight and duotone props.
+ * CircleDivideCross - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleDivideCrossRegular } from 'stera-icons/CircleDivideCrossRegular';
  */
@@ -32,4 +33,5 @@ const CircleDivideCross = memo(forwardRef<SVGSVGElement, CircleDivideCrossProps>
 
 CircleDivideCross.displayName = 'CircleDivideCross';
 
-export { CircleDivideCross };
+// Triple export pattern (lucide-react style)
+export { CircleDivideCross, CircleDivideCross as CircleDivideCrossIcon, CircleDivideCross as SiCircleDivideCross };

@@ -13,7 +13,8 @@ export interface SortNarrowProps extends IconProps {
 }
 
 /**
- * SortNarrow with dynamic weight and duotone props.
+ * SortNarrow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SortNarrowRegular } from 'stera-icons/SortNarrowRegular';
  */
@@ -32,4 +33,5 @@ const SortNarrow = memo(forwardRef<SVGSVGElement, SortNarrowProps>(({
 
 SortNarrow.displayName = 'SortNarrow';
 
-export { SortNarrow };
+// Triple export pattern (lucide-react style)
+export { SortNarrow, SortNarrow as SortNarrowIcon, SortNarrow as SiSortNarrow };

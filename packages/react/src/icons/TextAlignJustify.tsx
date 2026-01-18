@@ -13,7 +13,8 @@ export interface TextAlignJustifyProps extends IconProps {
 }
 
 /**
- * TextAlignJustify with dynamic weight and duotone props.
+ * TextAlignJustify - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextAlignJustifyRegular } from 'stera-icons/TextAlignJustifyRegular';
  */
@@ -32,4 +33,5 @@ const TextAlignJustify = memo(forwardRef<SVGSVGElement, TextAlignJustifyProps>((
 
 TextAlignJustify.displayName = 'TextAlignJustify';
 
-export { TextAlignJustify };
+// Triple export pattern (lucide-react style)
+export { TextAlignJustify, TextAlignJustify as TextAlignJustifyIcon, TextAlignJustify as SiTextAlignJustify };

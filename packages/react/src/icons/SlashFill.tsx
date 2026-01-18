@@ -14,5 +14,6 @@ const SlashFill = memo(
 
 SlashFill.displayName = 'SlashFill';
 
-export { SlashFill };
+// Triple export pattern (lucide-react style)
+export { SlashFill, SlashFill as SlashFillIcon, SlashFill as SiSlashFill };
 export type { SlashFillProps };

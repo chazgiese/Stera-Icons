@@ -14,5 +14,6 @@ const TextBRegular = memo(
 
 TextBRegular.displayName = 'TextBRegular';
 
-export { TextBRegular };
+// Triple export pattern (lucide-react style)
+export { TextBRegular, TextBRegular as TextBRegularIcon, TextBRegular as SiTextBRegular };
 export type { TextBRegularProps };

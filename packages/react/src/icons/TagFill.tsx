@@ -14,5 +14,6 @@ const TagFill = memo(
 
 TagFill.displayName = 'TagFill';
 
-export { TagFill };
+// Triple export pattern (lucide-react style)
+export { TagFill, TagFill as TagFillIcon, TagFill as SiTagFill };
 export type { TagFillProps };

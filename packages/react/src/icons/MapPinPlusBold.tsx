@@ -15,5 +15,6 @@ const MapPinPlusBold = memo(
 
 MapPinPlusBold.displayName = 'MapPinPlusBold';
 
-export { MapPinPlusBold };
+// Triple export pattern (lucide-react style)
+export { MapPinPlusBold, MapPinPlusBold as MapPinPlusBoldIcon, MapPinPlusBold as SiMapPinPlusBold };
 export type { MapPinPlusBoldProps };

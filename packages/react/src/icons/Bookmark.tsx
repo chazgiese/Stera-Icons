@@ -13,7 +13,8 @@ export interface BookmarkProps extends IconProps {
 }
 
 /**
- * Bookmark with dynamic weight and duotone props.
+ * Bookmark - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BookmarkRegular } from 'stera-icons/BookmarkRegular';
  */
@@ -32,4 +33,5 @@ const Bookmark = memo(forwardRef<SVGSVGElement, BookmarkProps>(({
 
 Bookmark.displayName = 'Bookmark';
 
-export { Bookmark };
+// Triple export pattern (lucide-react style)
+export { Bookmark, Bookmark as BookmarkIcon, Bookmark as SiBookmark };

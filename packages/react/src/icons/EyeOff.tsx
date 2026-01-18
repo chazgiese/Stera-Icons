@@ -13,7 +13,8 @@ export interface EyeOffProps extends IconProps {
 }
 
 /**
- * EyeOff with dynamic weight and duotone props.
+ * EyeOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EyeOffRegular } from 'stera-icons/EyeOffRegular';
  */
@@ -32,4 +33,5 @@ const EyeOff = memo(forwardRef<SVGSVGElement, EyeOffProps>(({
 
 EyeOff.displayName = 'EyeOff';
 
-export { EyeOff };
+// Triple export pattern (lucide-react style)
+export { EyeOff, EyeOff as EyeOffIcon, EyeOff as SiEyeOff };

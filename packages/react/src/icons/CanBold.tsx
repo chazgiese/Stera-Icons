@@ -14,5 +14,6 @@ const CanBold = memo(
 
 CanBold.displayName = 'CanBold';
 
-export { CanBold };
+// Triple export pattern (lucide-react style)
+export { CanBold, CanBold as CanBoldIcon, CanBold as SiCanBold };
 export type { CanBoldProps };

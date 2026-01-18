@@ -13,7 +13,8 @@ export interface ToyBrickProps extends IconProps {
 }
 
 /**
- * ToyBrick with dynamic weight and duotone props.
+ * ToyBrick - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ToyBrickRegular } from 'stera-icons/ToyBrickRegular';
  */
@@ -32,4 +33,5 @@ const ToyBrick = memo(forwardRef<SVGSVGElement, ToyBrickProps>(({
 
 ToyBrick.displayName = 'ToyBrick';
 
-export { ToyBrick };
+// Triple export pattern (lucide-react style)
+export { ToyBrick, ToyBrick as ToyBrickIcon, ToyBrick as SiToyBrick };

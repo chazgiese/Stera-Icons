@@ -15,5 +15,6 @@ const FilmStripBoldDuotone = memo(
 
 FilmStripBoldDuotone.displayName = 'FilmStripBoldDuotone';
 
-export { FilmStripBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FilmStripBoldDuotone, FilmStripBoldDuotone as FilmStripBoldDuotoneIcon, FilmStripBoldDuotone as SiFilmStripBoldDuotone };
 export type { FilmStripBoldDuotoneProps };

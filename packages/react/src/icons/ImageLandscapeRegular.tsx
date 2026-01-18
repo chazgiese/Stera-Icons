@@ -15,5 +15,6 @@ const ImageLandscapeRegular = memo(
 
 ImageLandscapeRegular.displayName = 'ImageLandscapeRegular';
 
-export { ImageLandscapeRegular };
+// Triple export pattern (lucide-react style)
+export { ImageLandscapeRegular, ImageLandscapeRegular as ImageLandscapeRegularIcon, ImageLandscapeRegular as SiImageLandscapeRegular };
 export type { ImageLandscapeRegularProps };

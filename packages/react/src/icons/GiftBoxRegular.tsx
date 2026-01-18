@@ -14,5 +14,6 @@ const GiftBoxRegular = memo(
 
 GiftBoxRegular.displayName = 'GiftBoxRegular';
 
-export { GiftBoxRegular };
+// Triple export pattern (lucide-react style)
+export { GiftBoxRegular, GiftBoxRegular as GiftBoxRegularIcon, GiftBoxRegular as SiGiftBoxRegular };
 export type { GiftBoxRegularProps };

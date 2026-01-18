@@ -15,5 +15,6 @@ const SaveFillDuotone = memo(
 
 SaveFillDuotone.displayName = 'SaveFillDuotone';
 
-export { SaveFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SaveFillDuotone, SaveFillDuotone as SaveFillDuotoneIcon, SaveFillDuotone as SiSaveFillDuotone };
 export type { SaveFillDuotoneProps };

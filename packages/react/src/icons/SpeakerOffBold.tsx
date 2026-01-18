@@ -15,5 +15,6 @@ const SpeakerOffBold = memo(
 
 SpeakerOffBold.displayName = 'SpeakerOffBold';
 
-export { SpeakerOffBold };
+// Triple export pattern (lucide-react style)
+export { SpeakerOffBold, SpeakerOffBold as SpeakerOffBoldIcon, SpeakerOffBold as SiSpeakerOffBold };
 export type { SpeakerOffBoldProps };

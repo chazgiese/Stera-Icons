@@ -13,7 +13,8 @@ export interface RotateRightProps extends IconProps {
 }
 
 /**
- * RotateRight with dynamic weight and duotone props.
+ * RotateRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RotateRightRegular } from 'stera-icons/RotateRightRegular';
  */
@@ -32,4 +33,5 @@ const RotateRight = memo(forwardRef<SVGSVGElement, RotateRightProps>(({
 
 RotateRight.displayName = 'RotateRight';
 
-export { RotateRight };
+// Triple export pattern (lucide-react style)
+export { RotateRight, RotateRight as RotateRightIcon, RotateRight as SiRotateRight };

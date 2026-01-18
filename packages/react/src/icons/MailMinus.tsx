@@ -13,7 +13,8 @@ export interface MailMinusProps extends IconProps {
 }
 
 /**
- * MailMinus with dynamic weight and duotone props.
+ * MailMinus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MailMinusRegular } from 'stera-icons/MailMinusRegular';
  */
@@ -32,4 +33,5 @@ const MailMinus = memo(forwardRef<SVGSVGElement, MailMinusProps>(({
 
 MailMinus.displayName = 'MailMinus';
 
-export { MailMinus };
+// Triple export pattern (lucide-react style)
+export { MailMinus, MailMinus as MailMinusIcon, MailMinus as SiMailMinus };

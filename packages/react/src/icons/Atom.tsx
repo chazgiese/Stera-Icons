@@ -13,7 +13,8 @@ export interface AtomProps extends IconProps {
 }
 
 /**
- * Atom with dynamic weight and duotone props.
+ * Atom - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AtomRegular } from 'stera-icons/AtomRegular';
  */
@@ -32,4 +33,5 @@ const Atom = memo(forwardRef<SVGSVGElement, AtomProps>(({
 
 Atom.displayName = 'Atom';
 
-export { Atom };
+// Triple export pattern (lucide-react style)
+export { Atom, Atom as AtomIcon, Atom as SiAtom };

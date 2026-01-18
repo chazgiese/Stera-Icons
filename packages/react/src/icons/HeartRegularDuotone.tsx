@@ -15,5 +15,6 @@ const HeartRegularDuotone = memo(
 
 HeartRegularDuotone.displayName = 'HeartRegularDuotone';
 
-export { HeartRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { HeartRegularDuotone, HeartRegularDuotone as HeartRegularDuotoneIcon, HeartRegularDuotone as SiHeartRegularDuotone };
 export type { HeartRegularDuotoneProps };

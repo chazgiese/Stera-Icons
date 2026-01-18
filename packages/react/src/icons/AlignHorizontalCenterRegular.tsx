@@ -14,5 +14,6 @@ const AlignHorizontalCenterRegular = memo(
 
 AlignHorizontalCenterRegular.displayName = 'AlignHorizontalCenterRegular';
 
-export { AlignHorizontalCenterRegular };
+// Triple export pattern (lucide-react style)
+export { AlignHorizontalCenterRegular, AlignHorizontalCenterRegular as AlignHorizontalCenterRegularIcon, AlignHorizontalCenterRegular as SiAlignHorizontalCenterRegular };
 export type { AlignHorizontalCenterRegularProps };

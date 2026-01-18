@@ -15,5 +15,6 @@ const ArchiveFill = memo(
 
 ArchiveFill.displayName = 'ArchiveFill';
 
-export { ArchiveFill };
+// Triple export pattern (lucide-react style)
+export { ArchiveFill, ArchiveFill as ArchiveFillIcon, ArchiveFill as SiArchiveFill };
 export type { ArchiveFillProps };

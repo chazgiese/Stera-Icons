@@ -14,5 +14,6 @@ const AlignVerticalCenterRegular = memo(
 
 AlignVerticalCenterRegular.displayName = 'AlignVerticalCenterRegular';
 
-export { AlignVerticalCenterRegular };
+// Triple export pattern (lucide-react style)
+export { AlignVerticalCenterRegular, AlignVerticalCenterRegular as AlignVerticalCenterRegularIcon, AlignVerticalCenterRegular as SiAlignVerticalCenterRegular };
 export type { AlignVerticalCenterRegularProps };

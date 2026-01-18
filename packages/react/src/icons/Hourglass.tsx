@@ -13,7 +13,8 @@ export interface HourglassProps extends IconProps {
 }
 
 /**
- * Hourglass with dynamic weight and duotone props.
+ * Hourglass - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HourglassRegular } from 'stera-icons/HourglassRegular';
  */
@@ -32,4 +33,5 @@ const Hourglass = memo(forwardRef<SVGSVGElement, HourglassProps>(({
 
 Hourglass.displayName = 'Hourglass';
 
-export { Hourglass };
+// Triple export pattern (lucide-react style)
+export { Hourglass, Hourglass as HourglassIcon, Hourglass as SiHourglass };

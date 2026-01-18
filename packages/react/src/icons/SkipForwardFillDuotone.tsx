@@ -15,5 +15,6 @@ const SkipForwardFillDuotone = memo(
 
 SkipForwardFillDuotone.displayName = 'SkipForwardFillDuotone';
 
-export { SkipForwardFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SkipForwardFillDuotone, SkipForwardFillDuotone as SkipForwardFillDuotoneIcon, SkipForwardFillDuotone as SiSkipForwardFillDuotone };
 export type { SkipForwardFillDuotoneProps };

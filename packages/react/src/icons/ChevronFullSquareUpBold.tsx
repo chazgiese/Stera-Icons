@@ -15,5 +15,6 @@ const ChevronFullSquareUpBold = memo(
 
 ChevronFullSquareUpBold.displayName = 'ChevronFullSquareUpBold';
 
-export { ChevronFullSquareUpBold };
+// Triple export pattern (lucide-react style)
+export { ChevronFullSquareUpBold, ChevronFullSquareUpBold as ChevronFullSquareUpBoldIcon, ChevronFullSquareUpBold as SiChevronFullSquareUpBold };
 export type { ChevronFullSquareUpBoldProps };

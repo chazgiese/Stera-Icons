@@ -13,7 +13,8 @@ export interface ChevronFullUpProps extends IconProps {
 }
 
 /**
- * ChevronFullUp with dynamic weight and duotone props.
+ * ChevronFullUp - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullUpRegular } from 'stera-icons/ChevronFullUpRegular';
  */
@@ -32,4 +33,5 @@ const ChevronFullUp = memo(forwardRef<SVGSVGElement, ChevronFullUpProps>(({
 
 ChevronFullUp.displayName = 'ChevronFullUp';
 
-export { ChevronFullUp };
+// Triple export pattern (lucide-react style)
+export { ChevronFullUp, ChevronFullUp as ChevronFullUpIcon, ChevronFullUp as SiChevronFullUp };

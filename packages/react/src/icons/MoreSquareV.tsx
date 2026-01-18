@@ -13,7 +13,8 @@ export interface MoreSquareVProps extends IconProps {
 }
 
 /**
- * MoreSquareV with dynamic weight and duotone props.
+ * MoreSquareV - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MoreSquareVRegular } from 'stera-icons/MoreSquareVRegular';
  */
@@ -32,4 +33,5 @@ const MoreSquareV = memo(forwardRef<SVGSVGElement, MoreSquareVProps>(({
 
 MoreSquareV.displayName = 'MoreSquareV';
 
-export { MoreSquareV };
+// Triple export pattern (lucide-react style)
+export { MoreSquareV, MoreSquareV as MoreSquareVIcon, MoreSquareV as SiMoreSquareV };

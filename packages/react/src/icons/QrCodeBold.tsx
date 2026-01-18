@@ -16,5 +16,6 @@ const QrCodeBold = memo(
 
 QrCodeBold.displayName = 'QrCodeBold';
 
-export { QrCodeBold };
+// Triple export pattern (lucide-react style)
+export { QrCodeBold, QrCodeBold as QrCodeBoldIcon, QrCodeBold as SiQrCodeBold };
 export type { QrCodeBoldProps };

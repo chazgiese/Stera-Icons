@@ -14,5 +14,6 @@ const CloudXFill = memo(
 
 CloudXFill.displayName = 'CloudXFill';
 
-export { CloudXFill };
+// Triple export pattern (lucide-react style)
+export { CloudXFill, CloudXFill as CloudXFillIcon, CloudXFill as SiCloudXFill };
 export type { CloudXFillProps };

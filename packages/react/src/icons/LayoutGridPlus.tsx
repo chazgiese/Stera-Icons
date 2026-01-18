@@ -13,7 +13,8 @@ export interface LayoutGridPlusProps extends IconProps {
 }
 
 /**
- * LayoutGridPlus with dynamic weight and duotone props.
+ * LayoutGridPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridPlusRegular } from 'stera-icons/LayoutGridPlusRegular';
  */
@@ -32,4 +33,5 @@ const LayoutGridPlus = memo(forwardRef<SVGSVGElement, LayoutGridPlusProps>(({
 
 LayoutGridPlus.displayName = 'LayoutGridPlus';
 
-export { LayoutGridPlus };
+// Triple export pattern (lucide-react style)
+export { LayoutGridPlus, LayoutGridPlus as LayoutGridPlusIcon, LayoutGridPlus as SiLayoutGridPlus };

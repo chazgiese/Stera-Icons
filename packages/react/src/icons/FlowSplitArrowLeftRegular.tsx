@@ -14,5 +14,6 @@ const FlowSplitArrowLeftRegular = memo(
 
 FlowSplitArrowLeftRegular.displayName = 'FlowSplitArrowLeftRegular';
 
-export { FlowSplitArrowLeftRegular };
+// Triple export pattern (lucide-react style)
+export { FlowSplitArrowLeftRegular, FlowSplitArrowLeftRegular as FlowSplitArrowLeftRegularIcon, FlowSplitArrowLeftRegular as SiFlowSplitArrowLeftRegular };
 export type { FlowSplitArrowLeftRegularProps };

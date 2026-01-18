@@ -14,5 +14,6 @@ const LinkOffBold = memo(
 
 LinkOffBold.displayName = 'LinkOffBold';
 
-export { LinkOffBold };
+// Triple export pattern (lucide-react style)
+export { LinkOffBold, LinkOffBold as LinkOffBoldIcon, LinkOffBold as SiLinkOffBold };
 export type { LinkOffBoldProps };

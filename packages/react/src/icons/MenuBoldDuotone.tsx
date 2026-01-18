@@ -15,5 +15,6 @@ const MenuBoldDuotone = memo(
 
 MenuBoldDuotone.displayName = 'MenuBoldDuotone';
 
-export { MenuBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { MenuBoldDuotone, MenuBoldDuotone as MenuBoldDuotoneIcon, MenuBoldDuotone as SiMenuBoldDuotone };
 export type { MenuBoldDuotoneProps };

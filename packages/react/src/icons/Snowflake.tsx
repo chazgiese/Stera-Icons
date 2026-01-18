@@ -13,7 +13,8 @@ export interface SnowflakeProps extends IconProps {
 }
 
 /**
- * Snowflake with dynamic weight and duotone props.
+ * Snowflake - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SnowflakeRegular } from 'stera-icons/SnowflakeRegular';
  */
@@ -32,4 +33,5 @@ const Snowflake = memo(forwardRef<SVGSVGElement, SnowflakeProps>(({
 
 Snowflake.displayName = 'Snowflake';
 
-export { Snowflake };
+// Triple export pattern (lucide-react style)
+export { Snowflake, Snowflake as SnowflakeIcon, Snowflake as SiSnowflake };

@@ -14,5 +14,6 @@ const IdVFill = memo(
 
 IdVFill.displayName = 'IdVFill';
 
-export { IdVFill };
+// Triple export pattern (lucide-react style)
+export { IdVFill, IdVFill as IdVFillIcon, IdVFill as SiIdVFill };
 export type { IdVFillProps };

@@ -14,5 +14,6 @@ const TrophyRegular = memo(
 
 TrophyRegular.displayName = 'TrophyRegular';
 
-export { TrophyRegular };
+// Triple export pattern (lucide-react style)
+export { TrophyRegular, TrophyRegular as TrophyRegularIcon, TrophyRegular as SiTrophyRegular };
 export type { TrophyRegularProps };

@@ -13,7 +13,8 @@ export interface HomeHeartProps extends IconProps {
 }
 
 /**
- * HomeHeart with dynamic weight and duotone props.
+ * HomeHeart - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HomeHeartRegular } from 'stera-icons/HomeHeartRegular';
  */
@@ -32,4 +33,5 @@ const HomeHeart = memo(forwardRef<SVGSVGElement, HomeHeartProps>(({
 
 HomeHeart.displayName = 'HomeHeart';
 
-export { HomeHeart };
+// Triple export pattern (lucide-react style)
+export { HomeHeart, HomeHeart as HomeHeartIcon, HomeHeart as SiHomeHeart };

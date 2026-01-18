@@ -15,5 +15,6 @@ const HourglassBold = memo(
 
 HourglassBold.displayName = 'HourglassBold';
 
-export { HourglassBold };
+// Triple export pattern (lucide-react style)
+export { HourglassBold, HourglassBold as HourglassBoldIcon, HourglassBold as SiHourglassBold };
 export type { HourglassBoldProps };

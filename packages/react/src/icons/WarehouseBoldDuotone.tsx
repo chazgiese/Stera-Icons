@@ -15,5 +15,6 @@ const WarehouseBoldDuotone = memo(
 
 WarehouseBoldDuotone.displayName = 'WarehouseBoldDuotone';
 
-export { WarehouseBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { WarehouseBoldDuotone, WarehouseBoldDuotone as WarehouseBoldDuotoneIcon, WarehouseBoldDuotone as SiWarehouseBoldDuotone };
 export type { WarehouseBoldDuotoneProps };

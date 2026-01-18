@@ -15,5 +15,6 @@ const FrameRegularDuotone = memo(
 
 FrameRegularDuotone.displayName = 'FrameRegularDuotone';
 
-export { FrameRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { FrameRegularDuotone, FrameRegularDuotone as FrameRegularDuotoneIcon, FrameRegularDuotone as SiFrameRegularDuotone };
 export type { FrameRegularDuotoneProps };

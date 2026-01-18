@@ -14,5 +14,6 @@ const BookmarkBold = memo(
 
 BookmarkBold.displayName = 'BookmarkBold';
 
-export { BookmarkBold };
+// Triple export pattern (lucide-react style)
+export { BookmarkBold, BookmarkBold as BookmarkBoldIcon, BookmarkBold as SiBookmarkBold };
 export type { BookmarkBoldProps };

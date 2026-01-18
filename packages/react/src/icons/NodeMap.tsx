@@ -13,7 +13,8 @@ export interface NodeMapProps extends IconProps {
 }
 
 /**
- * NodeMap with dynamic weight and duotone props.
+ * NodeMap - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { NodeMapRegular } from 'stera-icons/NodeMapRegular';
  */
@@ -32,4 +33,5 @@ const NodeMap = memo(forwardRef<SVGSVGElement, NodeMapProps>(({
 
 NodeMap.displayName = 'NodeMap';
 
-export { NodeMap };
+// Triple export pattern (lucide-react style)
+export { NodeMap, NodeMap as NodeMapIcon, NodeMap as SiNodeMap };

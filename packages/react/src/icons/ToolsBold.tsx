@@ -14,5 +14,6 @@ const ToolsBold = memo(
 
 ToolsBold.displayName = 'ToolsBold';
 
-export { ToolsBold };
+// Triple export pattern (lucide-react style)
+export { ToolsBold, ToolsBold as ToolsBoldIcon, ToolsBold as SiToolsBold };
 export type { ToolsBoldProps };

@@ -15,5 +15,6 @@ const SortAscendingBold = memo(
 
 SortAscendingBold.displayName = 'SortAscendingBold';
 
-export { SortAscendingBold };
+// Triple export pattern (lucide-react style)
+export { SortAscendingBold, SortAscendingBold as SortAscendingBoldIcon, SortAscendingBold as SiSortAscendingBold };
 export type { SortAscendingBoldProps };

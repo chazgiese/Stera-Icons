@@ -15,5 +15,6 @@ const RobotHumanoidRegular = memo(
 
 RobotHumanoidRegular.displayName = 'RobotHumanoidRegular';
 
-export { RobotHumanoidRegular };
+// Triple export pattern (lucide-react style)
+export { RobotHumanoidRegular, RobotHumanoidRegular as RobotHumanoidRegularIcon, RobotHumanoidRegular as SiRobotHumanoidRegular };
 export type { RobotHumanoidRegularProps };

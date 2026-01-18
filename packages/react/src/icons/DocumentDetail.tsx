@@ -13,7 +13,8 @@ export interface DocumentDetailProps extends IconProps {
 }
 
 /**
- * DocumentDetail with dynamic weight and duotone props.
+ * DocumentDetail - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DocumentDetailRegular } from 'stera-icons/DocumentDetailRegular';
  */
@@ -32,4 +33,5 @@ const DocumentDetail = memo(forwardRef<SVGSVGElement, DocumentDetailProps>(({
 
 DocumentDetail.displayName = 'DocumentDetail';
 
-export { DocumentDetail };
+// Triple export pattern (lucide-react style)
+export { DocumentDetail, DocumentDetail as DocumentDetailIcon, DocumentDetail as SiDocumentDetail };

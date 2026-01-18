@@ -14,5 +14,6 @@ const BriefcaseRegular = memo(
 
 BriefcaseRegular.displayName = 'BriefcaseRegular';
 
-export { BriefcaseRegular };
+// Triple export pattern (lucide-react style)
+export { BriefcaseRegular, BriefcaseRegular as BriefcaseRegularIcon, BriefcaseRegular as SiBriefcaseRegular };
 export type { BriefcaseRegularProps };

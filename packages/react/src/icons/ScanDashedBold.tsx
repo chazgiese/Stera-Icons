@@ -14,5 +14,6 @@ const ScanDashedBold = memo(
 
 ScanDashedBold.displayName = 'ScanDashedBold';
 
-export { ScanDashedBold };
+// Triple export pattern (lucide-react style)
+export { ScanDashedBold, ScanDashedBold as ScanDashedBoldIcon, ScanDashedBold as SiScanDashedBold };
 export type { ScanDashedBoldProps };

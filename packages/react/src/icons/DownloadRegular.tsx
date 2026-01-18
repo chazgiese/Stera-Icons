@@ -15,5 +15,6 @@ const DownloadRegular = memo(
 
 DownloadRegular.displayName = 'DownloadRegular';
 
-export { DownloadRegular };
+// Triple export pattern (lucide-react style)
+export { DownloadRegular, DownloadRegular as DownloadRegularIcon, DownloadRegular as SiDownloadRegular };
 export type { DownloadRegularProps };

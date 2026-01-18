@@ -13,7 +13,8 @@ export interface SignalAltLowProps extends IconProps {
 }
 
 /**
- * SignalAltLow with dynamic weight and duotone props.
+ * SignalAltLow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignalAltLowRegular } from 'stera-icons/SignalAltLowRegular';
  */
@@ -32,4 +33,5 @@ const SignalAltLow = memo(forwardRef<SVGSVGElement, SignalAltLowProps>(({
 
 SignalAltLow.displayName = 'SignalAltLow';
 
-export { SignalAltLow };
+// Triple export pattern (lucide-react style)
+export { SignalAltLow, SignalAltLow as SignalAltLowIcon, SignalAltLow as SiSignalAltLow };

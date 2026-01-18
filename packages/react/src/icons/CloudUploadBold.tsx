@@ -15,5 +15,6 @@ const CloudUploadBold = memo(
 
 CloudUploadBold.displayName = 'CloudUploadBold';
 
-export { CloudUploadBold };
+// Triple export pattern (lucide-react style)
+export { CloudUploadBold, CloudUploadBold as CloudUploadBoldIcon, CloudUploadBold as SiCloudUploadBold };
 export type { CloudUploadBoldProps };

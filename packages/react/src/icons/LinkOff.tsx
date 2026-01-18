@@ -13,7 +13,8 @@ export interface LinkOffProps extends IconProps {
 }
 
 /**
- * LinkOff with dynamic weight and duotone props.
+ * LinkOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LinkOffRegular } from 'stera-icons/LinkOffRegular';
  */
@@ -32,4 +33,5 @@ const LinkOff = memo(forwardRef<SVGSVGElement, LinkOffProps>(({
 
 LinkOff.displayName = 'LinkOff';
 
-export { LinkOff };
+// Triple export pattern (lucide-react style)
+export { LinkOff, LinkOff as LinkOffIcon, LinkOff as SiLinkOff };

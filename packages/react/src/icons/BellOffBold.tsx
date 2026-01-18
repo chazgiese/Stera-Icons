@@ -15,5 +15,6 @@ const BellOffBold = memo(
 
 BellOffBold.displayName = 'BellOffBold';
 
-export { BellOffBold };
+// Triple export pattern (lucide-react style)
+export { BellOffBold, BellOffBold as BellOffBoldIcon, BellOffBold as SiBellOffBold };
 export type { BellOffBoldProps };

@@ -16,5 +16,6 @@ const AtomOrbitRegular = memo(
 
 AtomOrbitRegular.displayName = 'AtomOrbitRegular';
 
-export { AtomOrbitRegular };
+// Triple export pattern (lucide-react style)
+export { AtomOrbitRegular, AtomOrbitRegular as AtomOrbitRegularIcon, AtomOrbitRegular as SiAtomOrbitRegular };
 export type { AtomOrbitRegularProps };

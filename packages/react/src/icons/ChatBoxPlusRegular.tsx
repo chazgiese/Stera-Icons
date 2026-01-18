@@ -15,5 +15,6 @@ const ChatBoxPlusRegular = memo(
 
 ChatBoxPlusRegular.displayName = 'ChatBoxPlusRegular';
 
-export { ChatBoxPlusRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBoxPlusRegular, ChatBoxPlusRegular as ChatBoxPlusRegularIcon, ChatBoxPlusRegular as SiChatBoxPlusRegular };
 export type { ChatBoxPlusRegularProps };

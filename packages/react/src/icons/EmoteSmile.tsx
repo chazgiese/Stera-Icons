@@ -13,7 +13,8 @@ export interface EmoteSmileProps extends IconProps {
 }
 
 /**
- * EmoteSmile with dynamic weight and duotone props.
+ * EmoteSmile - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSmileRegular } from 'stera-icons/EmoteSmileRegular';
  */
@@ -32,4 +33,5 @@ const EmoteSmile = memo(forwardRef<SVGSVGElement, EmoteSmileProps>(({
 
 EmoteSmile.displayName = 'EmoteSmile';
 
-export { EmoteSmile };
+// Triple export pattern (lucide-react style)
+export { EmoteSmile, EmoteSmile as EmoteSmileIcon, EmoteSmile as SiEmoteSmile };

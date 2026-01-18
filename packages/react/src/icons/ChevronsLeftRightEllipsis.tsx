@@ -13,7 +13,8 @@ export interface ChevronsLeftRightEllipsisProps extends IconProps {
 }
 
 /**
- * ChevronsLeftRightEllipsis with dynamic weight and duotone props.
+ * ChevronsLeftRightEllipsis - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChevronsLeftRightEllipsisRegular } from 'stera-icons/ChevronsLeftRightEllipsisRegular';
  */
@@ -32,4 +33,5 @@ const ChevronsLeftRightEllipsis = memo(forwardRef<SVGSVGElement, ChevronsLeftRig
 
 ChevronsLeftRightEllipsis.displayName = 'ChevronsLeftRightEllipsis';
 
-export { ChevronsLeftRightEllipsis };
+// Triple export pattern (lucide-react style)
+export { ChevronsLeftRightEllipsis, ChevronsLeftRightEllipsis as ChevronsLeftRightEllipsisIcon, ChevronsLeftRightEllipsis as SiChevronsLeftRightEllipsis };

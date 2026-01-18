@@ -13,7 +13,8 @@ export interface TriangleDownProps extends IconProps {
 }
 
 /**
- * TriangleDown with dynamic weight and duotone props.
+ * TriangleDown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TriangleDownRegular } from 'stera-icons/TriangleDownRegular';
  */
@@ -32,4 +33,5 @@ const TriangleDown = memo(forwardRef<SVGSVGElement, TriangleDownProps>(({
 
 TriangleDown.displayName = 'TriangleDown';
 
-export { TriangleDown };
+// Triple export pattern (lucide-react style)
+export { TriangleDown, TriangleDown as TriangleDownIcon, TriangleDown as SiTriangleDown };

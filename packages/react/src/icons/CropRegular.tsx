@@ -14,5 +14,6 @@ const CropRegular = memo(
 
 CropRegular.displayName = 'CropRegular';
 
-export { CropRegular };
+// Triple export pattern (lucide-react style)
+export { CropRegular, CropRegular as CropRegularIcon, CropRegular as SiCropRegular };
 export type { CropRegularProps };

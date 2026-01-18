@@ -13,7 +13,8 @@ export interface BrowserXProps extends IconProps {
 }
 
 /**
- * BrowserX with dynamic weight and duotone props.
+ * BrowserX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrowserXRegular } from 'stera-icons/BrowserXRegular';
  */
@@ -32,4 +33,5 @@ const BrowserX = memo(forwardRef<SVGSVGElement, BrowserXProps>(({
 
 BrowserX.displayName = 'BrowserX';
 
-export { BrowserX };
+// Triple export pattern (lucide-react style)
+export { BrowserX, BrowserX as BrowserXIcon, BrowserX as SiBrowserX };

@@ -15,5 +15,6 @@ const PeaceBoldDuotone = memo(
 
 PeaceBoldDuotone.displayName = 'PeaceBoldDuotone';
 
-export { PeaceBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PeaceBoldDuotone, PeaceBoldDuotone as PeaceBoldDuotoneIcon, PeaceBoldDuotone as SiPeaceBoldDuotone };
 export type { PeaceBoldDuotoneProps };

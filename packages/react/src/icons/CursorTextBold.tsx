@@ -14,5 +14,6 @@ const CursorTextBold = memo(
 
 CursorTextBold.displayName = 'CursorTextBold';
 
-export { CursorTextBold };
+// Triple export pattern (lucide-react style)
+export { CursorTextBold, CursorTextBold as CursorTextBoldIcon, CursorTextBold as SiCursorTextBold };
 export type { CursorTextBoldProps };

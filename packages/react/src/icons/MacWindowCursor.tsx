@@ -13,7 +13,8 @@ export interface MacWindowCursorProps extends IconProps {
 }
 
 /**
- * MacWindowCursor with dynamic weight and duotone props.
+ * MacWindowCursor - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MacWindowCursorRegular } from 'stera-icons/MacWindowCursorRegular';
  */
@@ -32,4 +33,5 @@ const MacWindowCursor = memo(forwardRef<SVGSVGElement, MacWindowCursorProps>(({
 
 MacWindowCursor.displayName = 'MacWindowCursor';
 
-export { MacWindowCursor };
+// Triple export pattern (lucide-react style)
+export { MacWindowCursor, MacWindowCursor as MacWindowCursorIcon, MacWindowCursor as SiMacWindowCursor };

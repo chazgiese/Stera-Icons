@@ -13,7 +13,8 @@ export interface GitBranchProps extends IconProps {
 }
 
 /**
- * GitBranch with dynamic weight and duotone props.
+ * GitBranch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GitBranchRegular } from 'stera-icons/GitBranchRegular';
  */
@@ -32,4 +33,5 @@ const GitBranch = memo(forwardRef<SVGSVGElement, GitBranchProps>(({
 
 GitBranch.displayName = 'GitBranch';
 
-export { GitBranch };
+// Triple export pattern (lucide-react style)
+export { GitBranch, GitBranch as GitBranchIcon, GitBranch as SiGitBranch };

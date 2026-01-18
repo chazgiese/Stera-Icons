@@ -15,5 +15,6 @@ const ChatBoxCheckBold = memo(
 
 ChatBoxCheckBold.displayName = 'ChatBoxCheckBold';
 
-export { ChatBoxCheckBold };
+// Triple export pattern (lucide-react style)
+export { ChatBoxCheckBold, ChatBoxCheckBold as ChatBoxCheckBoldIcon, ChatBoxCheckBold as SiChatBoxCheckBold };
 export type { ChatBoxCheckBoldProps };

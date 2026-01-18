@@ -15,5 +15,6 @@ const ReceiptBold = memo(
 
 ReceiptBold.displayName = 'ReceiptBold';
 
-export { ReceiptBold };
+// Triple export pattern (lucide-react style)
+export { ReceiptBold, ReceiptBold as ReceiptBoldIcon, ReceiptBold as SiReceiptBold };
 export type { ReceiptBoldProps };

@@ -15,5 +15,6 @@ const MicBold = memo(
 
 MicBold.displayName = 'MicBold';
 
-export { MicBold };
+// Triple export pattern (lucide-react style)
+export { MicBold, MicBold as MicBoldIcon, MicBold as SiMicBold };
 export type { MicBoldProps };

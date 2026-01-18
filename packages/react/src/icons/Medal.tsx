@@ -13,7 +13,8 @@ export interface MedalProps extends IconProps {
 }
 
 /**
- * Medal with dynamic weight and duotone props.
+ * Medal - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MedalRegular } from 'stera-icons/MedalRegular';
  */
@@ -32,4 +33,5 @@ const Medal = memo(forwardRef<SVGSVGElement, MedalProps>(({
 
 Medal.displayName = 'Medal';
 
-export { Medal };
+// Triple export pattern (lucide-react style)
+export { Medal, Medal as MedalIcon, Medal as SiMedal };

@@ -13,7 +13,8 @@ export interface EmoteGrinProps extends IconProps {
 }
 
 /**
- * EmoteGrin with dynamic weight and duotone props.
+ * EmoteGrin - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EmoteGrinRegular } from 'stera-icons/EmoteGrinRegular';
  */
@@ -32,4 +33,5 @@ const EmoteGrin = memo(forwardRef<SVGSVGElement, EmoteGrinProps>(({
 
 EmoteGrin.displayName = 'EmoteGrin';
 
-export { EmoteGrin };
+// Triple export pattern (lucide-react style)
+export { EmoteGrin, EmoteGrin as EmoteGrinIcon, EmoteGrin as SiEmoteGrin };

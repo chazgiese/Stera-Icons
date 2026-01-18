@@ -14,5 +14,6 @@ const UmbrellaRegular = memo(
 
 UmbrellaRegular.displayName = 'UmbrellaRegular';
 
-export { UmbrellaRegular };
+// Triple export pattern (lucide-react style)
+export { UmbrellaRegular, UmbrellaRegular as UmbrellaRegularIcon, UmbrellaRegular as SiUmbrellaRegular };
 export type { UmbrellaRegularProps };

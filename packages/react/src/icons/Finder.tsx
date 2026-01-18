@@ -13,7 +13,8 @@ export interface FinderProps extends IconProps {
 }
 
 /**
- * Finder with dynamic weight and duotone props.
+ * Finder - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FinderRegular } from 'stera-icons/FinderRegular';
  */
@@ -32,4 +33,5 @@ const Finder = memo(forwardRef<SVGSVGElement, FinderProps>(({
 
 Finder.displayName = 'Finder';
 
-export { Finder };
+// Triple export pattern (lucide-react style)
+export { Finder, Finder as FinderIcon, Finder as SiFinder };

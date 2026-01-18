@@ -14,5 +14,6 @@ const TextSparkleFill = memo(
 
 TextSparkleFill.displayName = 'TextSparkleFill';
 
-export { TextSparkleFill };
+// Triple export pattern (lucide-react style)
+export { TextSparkleFill, TextSparkleFill as TextSparkleFillIcon, TextSparkleFill as SiTextSparkleFill };
 export type { TextSparkleFillProps };

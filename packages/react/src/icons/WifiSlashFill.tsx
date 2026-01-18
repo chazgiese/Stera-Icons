@@ -14,5 +14,6 @@ const WifiSlashFill = memo(
 
 WifiSlashFill.displayName = 'WifiSlashFill';
 
-export { WifiSlashFill };
+// Triple export pattern (lucide-react style)
+export { WifiSlashFill, WifiSlashFill as WifiSlashFillIcon, WifiSlashFill as SiWifiSlashFill };
 export type { WifiSlashFillProps };

@@ -14,5 +14,6 @@ const SwatchBookFill = memo(
 
 SwatchBookFill.displayName = 'SwatchBookFill';
 
-export { SwatchBookFill };
+// Triple export pattern (lucide-react style)
+export { SwatchBookFill, SwatchBookFill as SwatchBookFillIcon, SwatchBookFill as SiSwatchBookFill };
 export type { SwatchBookFillProps };

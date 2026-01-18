@@ -15,5 +15,6 @@ const KeyholeBoldDuotone = memo(
 
 KeyholeBoldDuotone.displayName = 'KeyholeBoldDuotone';
 
-export { KeyholeBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { KeyholeBoldDuotone, KeyholeBoldDuotone as KeyholeBoldDuotoneIcon, KeyholeBoldDuotone as SiKeyholeBoldDuotone };
 export type { KeyholeBoldDuotoneProps };

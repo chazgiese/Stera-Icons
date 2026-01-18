@@ -14,5 +14,6 @@ const HexagonFill = memo(
 
 HexagonFill.displayName = 'HexagonFill';
 
-export { HexagonFill };
+// Triple export pattern (lucide-react style)
+export { HexagonFill, HexagonFill as HexagonFillIcon, HexagonFill as SiHexagonFill };
 export type { HexagonFillProps };

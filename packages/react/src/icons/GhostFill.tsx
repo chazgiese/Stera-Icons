@@ -14,5 +14,6 @@ const GhostFill = memo(
 
 GhostFill.displayName = 'GhostFill';
 
-export { GhostFill };
+// Triple export pattern (lucide-react style)
+export { GhostFill, GhostFill as GhostFillIcon, GhostFill as SiGhostFill };
 export type { GhostFillProps };

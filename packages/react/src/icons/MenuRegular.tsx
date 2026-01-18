@@ -14,5 +14,6 @@ const MenuRegular = memo(
 
 MenuRegular.displayName = 'MenuRegular';
 
-export { MenuRegular };
+// Triple export pattern (lucide-react style)
+export { MenuRegular, MenuRegular as MenuRegularIcon, MenuRegular as SiMenuRegular };
 export type { MenuRegularProps };

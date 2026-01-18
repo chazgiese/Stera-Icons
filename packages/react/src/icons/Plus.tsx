@@ -13,7 +13,8 @@ export interface PlusProps extends IconProps {
 }
 
 /**
- * Plus with dynamic weight and duotone props.
+ * Plus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PlusRegular } from 'stera-icons/PlusRegular';
  */
@@ -32,4 +33,5 @@ const Plus = memo(forwardRef<SVGSVGElement, PlusProps>(({
 
 Plus.displayName = 'Plus';
 
-export { Plus };
+// Triple export pattern (lucide-react style)
+export { Plus, Plus as PlusIcon, Plus as SiPlus };

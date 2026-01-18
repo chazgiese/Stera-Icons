@@ -15,5 +15,6 @@ const CanLabelBoldDuotone = memo(
 
 CanLabelBoldDuotone.displayName = 'CanLabelBoldDuotone';
 
-export { CanLabelBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { CanLabelBoldDuotone, CanLabelBoldDuotone as CanLabelBoldDuotoneIcon, CanLabelBoldDuotone as SiCanLabelBoldDuotone };
 export type { CanLabelBoldDuotoneProps };

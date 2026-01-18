@@ -14,5 +14,6 @@ const BrightnessHighFill = memo(
 
 BrightnessHighFill.displayName = 'BrightnessHighFill';
 
-export { BrightnessHighFill };
+// Triple export pattern (lucide-react style)
+export { BrightnessHighFill, BrightnessHighFill as BrightnessHighFillIcon, BrightnessHighFill as SiBrightnessHighFill };
 export type { BrightnessHighFillProps };

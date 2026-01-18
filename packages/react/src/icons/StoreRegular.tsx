@@ -14,5 +14,6 @@ const StoreRegular = memo(
 
 StoreRegular.displayName = 'StoreRegular';
 
-export { StoreRegular };
+// Triple export pattern (lucide-react style)
+export { StoreRegular, StoreRegular as StoreRegularIcon, StoreRegular as SiStoreRegular };
 export type { StoreRegularProps };

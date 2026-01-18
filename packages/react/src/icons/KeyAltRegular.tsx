@@ -15,5 +15,6 @@ const KeyAltRegular = memo(
 
 KeyAltRegular.displayName = 'KeyAltRegular';
 
-export { KeyAltRegular };
+// Triple export pattern (lucide-react style)
+export { KeyAltRegular, KeyAltRegular as KeyAltRegularIcon, KeyAltRegular as SiKeyAltRegular };
 export type { KeyAltRegularProps };

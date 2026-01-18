@@ -14,5 +14,6 @@ const SignalZeroBold = memo(
 
 SignalZeroBold.displayName = 'SignalZeroBold';
 
-export { SignalZeroBold };
+// Triple export pattern (lucide-react style)
+export { SignalZeroBold, SignalZeroBold as SignalZeroBoldIcon, SignalZeroBold as SiSignalZeroBold };
 export type { SignalZeroBoldProps };

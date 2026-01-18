@@ -14,5 +14,6 @@ const TextStrikethroughRegular = memo(
 
 TextStrikethroughRegular.displayName = 'TextStrikethroughRegular';
 
-export { TextStrikethroughRegular };
+// Triple export pattern (lucide-react style)
+export { TextStrikethroughRegular, TextStrikethroughRegular as TextStrikethroughRegularIcon, TextStrikethroughRegular as SiTextStrikethroughRegular };
 export type { TextStrikethroughRegularProps };

@@ -15,5 +15,6 @@ const GradientFillDuotone = memo(
 
 GradientFillDuotone.displayName = 'GradientFillDuotone';
 
-export { GradientFillDuotone };
+// Triple export pattern (lucide-react style)
+export { GradientFillDuotone, GradientFillDuotone as GradientFillDuotoneIcon, GradientFillDuotone as SiGradientFillDuotone };
 export type { GradientFillDuotoneProps };

@@ -15,5 +15,6 @@ const TrashRegular = memo(
 
 TrashRegular.displayName = 'TrashRegular';
 
-export { TrashRegular };
+// Triple export pattern (lucide-react style)
+export { TrashRegular, TrashRegular as TrashRegularIcon, TrashRegular as SiTrashRegular };
 export type { TrashRegularProps };

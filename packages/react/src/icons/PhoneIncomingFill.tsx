@@ -15,5 +15,6 @@ const PhoneIncomingFill = memo(
 
 PhoneIncomingFill.displayName = 'PhoneIncomingFill';
 
-export { PhoneIncomingFill };
+// Triple export pattern (lucide-react style)
+export { PhoneIncomingFill, PhoneIncomingFill as PhoneIncomingFillIcon, PhoneIncomingFill as SiPhoneIncomingFill };
 export type { PhoneIncomingFillProps };

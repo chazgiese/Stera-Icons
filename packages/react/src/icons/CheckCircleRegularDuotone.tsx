@@ -15,5 +15,6 @@ const CheckCircleRegularDuotone = memo(
 
 CheckCircleRegularDuotone.displayName = 'CheckCircleRegularDuotone';
 
-export { CheckCircleRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { CheckCircleRegularDuotone, CheckCircleRegularDuotone as CheckCircleRegularDuotoneIcon, CheckCircleRegularDuotone as SiCheckCircleRegularDuotone };
 export type { CheckCircleRegularDuotoneProps };

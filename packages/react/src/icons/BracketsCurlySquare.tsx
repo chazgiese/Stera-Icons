@@ -13,7 +13,8 @@ export interface BracketsCurlySquareProps extends IconProps {
 }
 
 /**
- * BracketsCurlySquare with dynamic weight and duotone props.
+ * BracketsCurlySquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BracketsCurlySquareRegular } from 'stera-icons/BracketsCurlySquareRegular';
  */
@@ -32,4 +33,5 @@ const BracketsCurlySquare = memo(forwardRef<SVGSVGElement, BracketsCurlySquarePr
 
 BracketsCurlySquare.displayName = 'BracketsCurlySquare';
 
-export { BracketsCurlySquare };
+// Triple export pattern (lucide-react style)
+export { BracketsCurlySquare, BracketsCurlySquare as BracketsCurlySquareIcon, BracketsCurlySquare as SiBracketsCurlySquare };

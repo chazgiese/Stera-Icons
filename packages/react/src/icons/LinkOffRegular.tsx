@@ -14,5 +14,6 @@ const LinkOffRegular = memo(
 
 LinkOffRegular.displayName = 'LinkOffRegular';
 
-export { LinkOffRegular };
+// Triple export pattern (lucide-react style)
+export { LinkOffRegular, LinkOffRegular as LinkOffRegularIcon, LinkOffRegular as SiLinkOffRegular };
 export type { LinkOffRegularProps };

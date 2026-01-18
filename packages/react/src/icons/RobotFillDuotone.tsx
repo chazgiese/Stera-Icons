@@ -15,5 +15,6 @@ const RobotFillDuotone = memo(
 
 RobotFillDuotone.displayName = 'RobotFillDuotone';
 
-export { RobotFillDuotone };
+// Triple export pattern (lucide-react style)
+export { RobotFillDuotone, RobotFillDuotone as RobotFillDuotoneIcon, RobotFillDuotone as SiRobotFillDuotone };
 export type { RobotFillDuotoneProps };

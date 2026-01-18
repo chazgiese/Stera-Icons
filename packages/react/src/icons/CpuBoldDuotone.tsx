@@ -15,5 +15,6 @@ const CpuBoldDuotone = memo(
 
 CpuBoldDuotone.displayName = 'CpuBoldDuotone';
 
-export { CpuBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { CpuBoldDuotone, CpuBoldDuotone as CpuBoldDuotoneIcon, CpuBoldDuotone as SiCpuBoldDuotone };
 export type { CpuBoldDuotoneProps };

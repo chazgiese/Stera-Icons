@@ -13,7 +13,8 @@ export interface CalendarFoldProps extends IconProps {
 }
 
 /**
- * CalendarFold with dynamic weight and duotone props.
+ * CalendarFold - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalendarFoldRegular } from 'stera-icons/CalendarFoldRegular';
  */
@@ -32,4 +33,5 @@ const CalendarFold = memo(forwardRef<SVGSVGElement, CalendarFoldProps>(({
 
 CalendarFold.displayName = 'CalendarFold';
 
-export { CalendarFold };
+// Triple export pattern (lucide-react style)
+export { CalendarFold, CalendarFold as CalendarFoldIcon, CalendarFold as SiCalendarFold };

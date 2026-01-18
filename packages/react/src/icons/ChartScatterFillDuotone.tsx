@@ -15,5 +15,6 @@ const ChartScatterFillDuotone = memo(
 
 ChartScatterFillDuotone.displayName = 'ChartScatterFillDuotone';
 
-export { ChartScatterFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ChartScatterFillDuotone, ChartScatterFillDuotone as ChartScatterFillDuotoneIcon, ChartScatterFillDuotone as SiChartScatterFillDuotone };
 export type { ChartScatterFillDuotoneProps };

@@ -13,7 +13,8 @@ export interface CircleSlashProps extends IconProps {
 }
 
 /**
- * CircleSlash with dynamic weight and duotone props.
+ * CircleSlash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleSlashRegular } from 'stera-icons/CircleSlashRegular';
  */
@@ -32,4 +33,5 @@ const CircleSlash = memo(forwardRef<SVGSVGElement, CircleSlashProps>(({
 
 CircleSlash.displayName = 'CircleSlash';
 
-export { CircleSlash };
+// Triple export pattern (lucide-react style)
+export { CircleSlash, CircleSlash as CircleSlashIcon, CircleSlash as SiCircleSlash };

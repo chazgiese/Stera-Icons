@@ -13,7 +13,8 @@ export interface PercentProps extends IconProps {
 }
 
 /**
- * Percent with dynamic weight and duotone props.
+ * Percent - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PercentRegular } from 'stera-icons/PercentRegular';
  */
@@ -32,4 +33,5 @@ const Percent = memo(forwardRef<SVGSVGElement, PercentProps>(({
 
 Percent.displayName = 'Percent';
 
-export { Percent };
+// Triple export pattern (lucide-react style)
+export { Percent, Percent as PercentIcon, Percent as SiPercent };

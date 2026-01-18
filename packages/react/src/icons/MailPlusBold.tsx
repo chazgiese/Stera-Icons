@@ -15,5 +15,6 @@ const MailPlusBold = memo(
 
 MailPlusBold.displayName = 'MailPlusBold';
 
-export { MailPlusBold };
+// Triple export pattern (lucide-react style)
+export { MailPlusBold, MailPlusBold as MailPlusBoldIcon, MailPlusBold as SiMailPlusBold };
 export type { MailPlusBoldProps };

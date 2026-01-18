@@ -13,7 +13,8 @@ export interface PencilRulerProps extends IconProps {
 }
 
 /**
- * PencilRuler with dynamic weight and duotone props.
+ * PencilRuler - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PencilRulerRegular } from 'stera-icons/PencilRulerRegular';
  */
@@ -32,4 +33,5 @@ const PencilRuler = memo(forwardRef<SVGSVGElement, PencilRulerProps>(({
 
 PencilRuler.displayName = 'PencilRuler';
 
-export { PencilRuler };
+// Triple export pattern (lucide-react style)
+export { PencilRuler, PencilRuler as PencilRulerIcon, PencilRuler as SiPencilRuler };

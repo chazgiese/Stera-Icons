@@ -17,5 +17,6 @@ const AtomAiFill = memo(
 
 AtomAiFill.displayName = 'AtomAiFill';
 
-export { AtomAiFill };
+// Triple export pattern (lucide-react style)
+export { AtomAiFill, AtomAiFill as AtomAiFillIcon, AtomAiFill as SiAtomAiFill };
 export type { AtomAiFillProps };

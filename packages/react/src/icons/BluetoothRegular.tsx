@@ -14,5 +14,6 @@ const BluetoothRegular = memo(
 
 BluetoothRegular.displayName = 'BluetoothRegular';
 
-export { BluetoothRegular };
+// Triple export pattern (lucide-react style)
+export { BluetoothRegular, BluetoothRegular as BluetoothRegularIcon, BluetoothRegular as SiBluetoothRegular };
 export type { BluetoothRegularProps };

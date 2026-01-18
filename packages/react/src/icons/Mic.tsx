@@ -13,7 +13,8 @@ export interface MicProps extends IconProps {
 }
 
 /**
- * Mic with dynamic weight and duotone props.
+ * Mic - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MicRegular } from 'stera-icons/MicRegular';
  */
@@ -32,4 +33,5 @@ const Mic = memo(forwardRef<SVGSVGElement, MicProps>(({
 
 Mic.displayName = 'Mic';
 
-export { Mic };
+// Triple export pattern (lucide-react style)
+export { Mic, Mic as MicIcon, Mic as SiMic };

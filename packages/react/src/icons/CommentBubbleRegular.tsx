@@ -14,5 +14,6 @@ const CommentBubbleRegular = memo(
 
 CommentBubbleRegular.displayName = 'CommentBubbleRegular';
 
-export { CommentBubbleRegular };
+// Triple export pattern (lucide-react style)
+export { CommentBubbleRegular, CommentBubbleRegular as CommentBubbleRegularIcon, CommentBubbleRegular as SiCommentBubbleRegular };
 export type { CommentBubbleRegularProps };

@@ -14,5 +14,6 @@ const AlertDiamondFill = memo(
 
 AlertDiamondFill.displayName = 'AlertDiamondFill';
 
-export { AlertDiamondFill };
+// Triple export pattern (lucide-react style)
+export { AlertDiamondFill, AlertDiamondFill as AlertDiamondFillIcon, AlertDiamondFill as SiAlertDiamondFill };
 export type { AlertDiamondFillProps };

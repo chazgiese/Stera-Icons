@@ -14,5 +14,6 @@ const GitCompareBold = memo(
 
 GitCompareBold.displayName = 'GitCompareBold';
 
-export { GitCompareBold };
+// Triple export pattern (lucide-react style)
+export { GitCompareBold, GitCompareBold as GitCompareBoldIcon, GitCompareBold as SiGitCompareBold };
 export type { GitCompareBoldProps };

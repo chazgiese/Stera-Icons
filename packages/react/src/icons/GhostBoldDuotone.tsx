@@ -15,5 +15,6 @@ const GhostBoldDuotone = memo(
 
 GhostBoldDuotone.displayName = 'GhostBoldDuotone';
 
-export { GhostBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { GhostBoldDuotone, GhostBoldDuotone as GhostBoldDuotoneIcon, GhostBoldDuotone as SiGhostBoldDuotone };
 export type { GhostBoldDuotoneProps };

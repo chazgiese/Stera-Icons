@@ -15,5 +15,6 @@ const SortNarrowFill = memo(
 
 SortNarrowFill.displayName = 'SortNarrowFill';
 
-export { SortNarrowFill };
+// Triple export pattern (lucide-react style)
+export { SortNarrowFill, SortNarrowFill as SortNarrowFillIcon, SortNarrowFill as SiSortNarrowFill };
 export type { SortNarrowFillProps };

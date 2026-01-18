@@ -14,5 +14,6 @@ const HandWaveFill = memo(
 
 HandWaveFill.displayName = 'HandWaveFill';
 
-export { HandWaveFill };
+// Triple export pattern (lucide-react style)
+export { HandWaveFill, HandWaveFill as HandWaveFillIcon, HandWaveFill as SiHandWaveFill };
 export type { HandWaveFillProps };

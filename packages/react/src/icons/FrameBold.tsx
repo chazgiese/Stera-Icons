@@ -14,5 +14,6 @@ const FrameBold = memo(
 
 FrameBold.displayName = 'FrameBold';
 
-export { FrameBold };
+// Triple export pattern (lucide-react style)
+export { FrameBold, FrameBold as FrameBoldIcon, FrameBold as SiFrameBold };
 export type { FrameBoldProps };

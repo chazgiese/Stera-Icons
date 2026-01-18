@@ -14,5 +14,6 @@ const BasketFill = memo(
 
 BasketFill.displayName = 'BasketFill';
 
-export { BasketFill };
+// Triple export pattern (lucide-react style)
+export { BasketFill, BasketFill as BasketFillIcon, BasketFill as SiBasketFill };
 export type { BasketFillProps };

@@ -14,5 +14,6 @@ const LayoutListFill = memo(
 
 LayoutListFill.displayName = 'LayoutListFill';
 
-export { LayoutListFill };
+// Triple export pattern (lucide-react style)
+export { LayoutListFill, LayoutListFill as LayoutListFillIcon, LayoutListFill as SiLayoutListFill };
 export type { LayoutListFillProps };

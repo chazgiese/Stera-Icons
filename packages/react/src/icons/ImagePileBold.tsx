@@ -15,5 +15,6 @@ const ImagePileBold = memo(
 
 ImagePileBold.displayName = 'ImagePileBold';
 
-export { ImagePileBold };
+// Triple export pattern (lucide-react style)
+export { ImagePileBold, ImagePileBold as ImagePileBoldIcon, ImagePileBold as SiImagePileBold };
 export type { ImagePileBoldProps };

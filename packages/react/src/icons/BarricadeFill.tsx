@@ -14,5 +14,6 @@ const BarricadeFill = memo(
 
 BarricadeFill.displayName = 'BarricadeFill';
 
-export { BarricadeFill };
+// Triple export pattern (lucide-react style)
+export { BarricadeFill, BarricadeFill as BarricadeFillIcon, BarricadeFill as SiBarricadeFill };
 export type { BarricadeFillProps };

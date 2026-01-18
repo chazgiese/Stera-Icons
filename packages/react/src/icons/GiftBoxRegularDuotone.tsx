@@ -15,5 +15,6 @@ const GiftBoxRegularDuotone = memo(
 
 GiftBoxRegularDuotone.displayName = 'GiftBoxRegularDuotone';
 
-export { GiftBoxRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { GiftBoxRegularDuotone, GiftBoxRegularDuotone as GiftBoxRegularDuotoneIcon, GiftBoxRegularDuotone as SiGiftBoxRegularDuotone };
 export type { GiftBoxRegularDuotoneProps };

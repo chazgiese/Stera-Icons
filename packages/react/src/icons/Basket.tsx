@@ -13,7 +13,8 @@ export interface BasketProps extends IconProps {
 }
 
 /**
- * Basket with dynamic weight and duotone props.
+ * Basket - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BasketRegular } from 'stera-icons/BasketRegular';
  */
@@ -32,4 +33,5 @@ const Basket = memo(forwardRef<SVGSVGElement, BasketProps>(({
 
 Basket.displayName = 'Basket';
 
-export { Basket };
+// Triple export pattern (lucide-react style)
+export { Basket, Basket as BasketIcon, Basket as SiBasket };

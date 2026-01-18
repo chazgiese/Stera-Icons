@@ -13,7 +13,8 @@ export interface WristWatchProps extends IconProps {
 }
 
 /**
- * WristWatch with dynamic weight and duotone props.
+ * WristWatch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WristWatchRegular } from 'stera-icons/WristWatchRegular';
  */
@@ -32,4 +33,5 @@ const WristWatch = memo(forwardRef<SVGSVGElement, WristWatchProps>(({
 
 WristWatch.displayName = 'WristWatch';
 
-export { WristWatch };
+// Triple export pattern (lucide-react style)
+export { WristWatch, WristWatch as WristWatchIcon, WristWatch as SiWristWatch };

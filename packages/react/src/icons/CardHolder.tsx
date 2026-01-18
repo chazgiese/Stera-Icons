@@ -13,7 +13,8 @@ export interface CardHolderProps extends IconProps {
 }
 
 /**
- * CardHolder with dynamic weight and duotone props.
+ * CardHolder - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CardHolderRegular } from 'stera-icons/CardHolderRegular';
  */
@@ -32,4 +33,5 @@ const CardHolder = memo(forwardRef<SVGSVGElement, CardHolderProps>(({
 
 CardHolder.displayName = 'CardHolder';
 
-export { CardHolder };
+// Triple export pattern (lucide-react style)
+export { CardHolder, CardHolder as CardHolderIcon, CardHolder as SiCardHolder };

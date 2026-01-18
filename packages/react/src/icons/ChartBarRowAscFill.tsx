@@ -14,5 +14,6 @@ const ChartBarRowAscFill = memo(
 
 ChartBarRowAscFill.displayName = 'ChartBarRowAscFill';
 
-export { ChartBarRowAscFill };
+// Triple export pattern (lucide-react style)
+export { ChartBarRowAscFill, ChartBarRowAscFill as ChartBarRowAscFillIcon, ChartBarRowAscFill as SiChartBarRowAscFill };
 export type { ChartBarRowAscFillProps };

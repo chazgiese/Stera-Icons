@@ -13,7 +13,8 @@ export interface CpuAmdProps extends IconProps {
 }
 
 /**
- * CpuAmd with dynamic weight and duotone props.
+ * CpuAmd - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CpuAmdRegular } from 'stera-icons/CpuAmdRegular';
  */
@@ -32,4 +33,5 @@ const CpuAmd = memo(forwardRef<SVGSVGElement, CpuAmdProps>(({
 
 CpuAmd.displayName = 'CpuAmd';
 
-export { CpuAmd };
+// Triple export pattern (lucide-react style)
+export { CpuAmd, CpuAmd as CpuAmdIcon, CpuAmd as SiCpuAmd };

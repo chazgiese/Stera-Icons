@@ -15,5 +15,6 @@ const ChevronsLeftRightEllipsisBold = memo(
 
 ChevronsLeftRightEllipsisBold.displayName = 'ChevronsLeftRightEllipsisBold';
 
-export { ChevronsLeftRightEllipsisBold };
+// Triple export pattern (lucide-react style)
+export { ChevronsLeftRightEllipsisBold, ChevronsLeftRightEllipsisBold as ChevronsLeftRightEllipsisBoldIcon, ChevronsLeftRightEllipsisBold as SiChevronsLeftRightEllipsisBold };
 export type { ChevronsLeftRightEllipsisBoldProps };

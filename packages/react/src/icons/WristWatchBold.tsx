@@ -15,5 +15,6 @@ const WristWatchBold = memo(
 
 WristWatchBold.displayName = 'WristWatchBold';
 
-export { WristWatchBold };
+// Triple export pattern (lucide-react style)
+export { WristWatchBold, WristWatchBold as WristWatchBoldIcon, WristWatchBold as SiWristWatchBold };
 export type { WristWatchBoldProps };

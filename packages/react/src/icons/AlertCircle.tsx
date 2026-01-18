@@ -13,7 +13,8 @@ export interface AlertCircleProps extends IconProps {
 }
 
 /**
- * AlertCircle with dynamic weight and duotone props.
+ * AlertCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertCircleRegular } from 'stera-icons/AlertCircleRegular';
  */
@@ -32,4 +33,5 @@ const AlertCircle = memo(forwardRef<SVGSVGElement, AlertCircleProps>(({
 
 AlertCircle.displayName = 'AlertCircle';
 
-export { AlertCircle };
+// Triple export pattern (lucide-react style)
+export { AlertCircle, AlertCircle as AlertCircleIcon, AlertCircle as SiAlertCircle };

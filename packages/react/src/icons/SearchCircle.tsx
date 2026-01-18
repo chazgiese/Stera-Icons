@@ -13,7 +13,8 @@ export interface SearchCircleProps extends IconProps {
 }
 
 /**
- * SearchCircle with dynamic weight and duotone props.
+ * SearchCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SearchCircleRegular } from 'stera-icons/SearchCircleRegular';
  */
@@ -32,4 +33,5 @@ const SearchCircle = memo(forwardRef<SVGSVGElement, SearchCircleProps>(({
 
 SearchCircle.displayName = 'SearchCircle';
 
-export { SearchCircle };
+// Triple export pattern (lucide-react style)
+export { SearchCircle, SearchCircle as SearchCircleIcon, SearchCircle as SiSearchCircle };

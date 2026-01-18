@@ -13,7 +13,8 @@ export interface MenuAltProps extends IconProps {
 }
 
 /**
- * MenuAlt with dynamic weight and duotone props.
+ * MenuAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MenuAltRegular } from 'stera-icons/MenuAltRegular';
  */
@@ -32,4 +33,5 @@ const MenuAlt = memo(forwardRef<SVGSVGElement, MenuAltProps>(({
 
 MenuAlt.displayName = 'MenuAlt';
 
-export { MenuAlt };
+// Triple export pattern (lucide-react style)
+export { MenuAlt, MenuAlt as MenuAltIcon, MenuAlt as SiMenuAlt };

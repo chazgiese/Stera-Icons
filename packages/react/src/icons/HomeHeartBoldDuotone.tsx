@@ -15,5 +15,6 @@ const HomeHeartBoldDuotone = memo(
 
 HomeHeartBoldDuotone.displayName = 'HomeHeartBoldDuotone';
 
-export { HomeHeartBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HomeHeartBoldDuotone, HomeHeartBoldDuotone as HomeHeartBoldDuotoneIcon, HomeHeartBoldDuotone as SiHomeHeartBoldDuotone };
 export type { HomeHeartBoldDuotoneProps };

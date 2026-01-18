@@ -15,5 +15,6 @@ const BracketsCurlyCircleRegular = memo(
 
 BracketsCurlyCircleRegular.displayName = 'BracketsCurlyCircleRegular';
 
-export { BracketsCurlyCircleRegular };
+// Triple export pattern (lucide-react style)
+export { BracketsCurlyCircleRegular, BracketsCurlyCircleRegular as BracketsCurlyCircleRegularIcon, BracketsCurlyCircleRegular as SiBracketsCurlyCircleRegular };
 export type { BracketsCurlyCircleRegularProps };

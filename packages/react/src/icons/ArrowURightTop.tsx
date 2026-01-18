@@ -13,7 +13,8 @@ export interface ArrowURightTopProps extends IconProps {
 }
 
 /**
- * ArrowURightTop with dynamic weight and duotone props.
+ * ArrowURightTop - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowURightTopRegular } from 'stera-icons/ArrowURightTopRegular';
  */
@@ -32,4 +33,5 @@ const ArrowURightTop = memo(forwardRef<SVGSVGElement, ArrowURightTopProps>(({
 
 ArrowURightTop.displayName = 'ArrowURightTop';
 
-export { ArrowURightTop };
+// Triple export pattern (lucide-react style)
+export { ArrowURightTop, ArrowURightTop as ArrowURightTopIcon, ArrowURightTop as SiArrowURightTop };

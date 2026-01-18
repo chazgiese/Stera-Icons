@@ -16,5 +16,6 @@ const HandWaveBold = memo(
 
 HandWaveBold.displayName = 'HandWaveBold';
 
-export { HandWaveBold };
+// Triple export pattern (lucide-react style)
+export { HandWaveBold, HandWaveBold as HandWaveBoldIcon, HandWaveBold as SiHandWaveBold };
 export type { HandWaveBoldProps };

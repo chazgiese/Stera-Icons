@@ -15,5 +15,6 @@ const FlameFillDuotone = memo(
 
 FlameFillDuotone.displayName = 'FlameFillDuotone';
 
-export { FlameFillDuotone };
+// Triple export pattern (lucide-react style)
+export { FlameFillDuotone, FlameFillDuotone as FlameFillDuotoneIcon, FlameFillDuotone as SiFlameFillDuotone };
 export type { FlameFillDuotoneProps };

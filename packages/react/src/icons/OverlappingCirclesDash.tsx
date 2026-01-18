@@ -13,7 +13,8 @@ export interface OverlappingCirclesDashProps extends IconProps {
 }
 
 /**
- * OverlappingCirclesDash with dynamic weight and duotone props.
+ * OverlappingCirclesDash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { OverlappingCirclesDashRegular } from 'stera-icons/OverlappingCirclesDashRegular';
  */
@@ -32,4 +33,5 @@ const OverlappingCirclesDash = memo(forwardRef<SVGSVGElement, OverlappingCircles
 
 OverlappingCirclesDash.displayName = 'OverlappingCirclesDash';
 
-export { OverlappingCirclesDash };
+// Triple export pattern (lucide-react style)
+export { OverlappingCirclesDash, OverlappingCirclesDash as OverlappingCirclesDashIcon, OverlappingCirclesDash as SiOverlappingCirclesDash };

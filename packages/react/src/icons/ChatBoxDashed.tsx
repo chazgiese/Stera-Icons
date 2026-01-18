@@ -13,7 +13,8 @@ export interface ChatBoxDashedProps extends IconProps {
 }
 
 /**
- * ChatBoxDashed with dynamic weight and duotone props.
+ * ChatBoxDashed - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBoxDashedRegular } from 'stera-icons/ChatBoxDashedRegular';
  */
@@ -32,4 +33,5 @@ const ChatBoxDashed = memo(forwardRef<SVGSVGElement, ChatBoxDashedProps>(({
 
 ChatBoxDashed.displayName = 'ChatBoxDashed';
 
-export { ChatBoxDashed };
+// Triple export pattern (lucide-react style)
+export { ChatBoxDashed, ChatBoxDashed as ChatBoxDashedIcon, ChatBoxDashed as SiChatBoxDashed };

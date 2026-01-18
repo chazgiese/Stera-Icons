@@ -15,5 +15,6 @@ const MailMinusBoldDuotone = memo(
 
 MailMinusBoldDuotone.displayName = 'MailMinusBoldDuotone';
 
-export { MailMinusBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { MailMinusBoldDuotone, MailMinusBoldDuotone as MailMinusBoldDuotoneIcon, MailMinusBoldDuotone as SiMailMinusBoldDuotone };
 export type { MailMinusBoldDuotoneProps };

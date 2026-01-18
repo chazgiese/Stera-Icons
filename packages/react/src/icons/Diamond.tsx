@@ -13,7 +13,8 @@ export interface DiamondProps extends IconProps {
 }
 
 /**
- * Diamond with dynamic weight and duotone props.
+ * Diamond - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DiamondRegular } from 'stera-icons/DiamondRegular';
  */
@@ -32,4 +33,5 @@ const Diamond = memo(forwardRef<SVGSVGElement, DiamondProps>(({
 
 Diamond.displayName = 'Diamond';
 
-export { Diamond };
+// Triple export pattern (lucide-react style)
+export { Diamond, Diamond as DiamondIcon, Diamond as SiDiamond };

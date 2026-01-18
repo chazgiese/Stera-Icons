@@ -15,5 +15,6 @@ const QuestionMarkCircleRegularDuotone = memo(
 
 QuestionMarkCircleRegularDuotone.displayName = 'QuestionMarkCircleRegularDuotone';
 
-export { QuestionMarkCircleRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { QuestionMarkCircleRegularDuotone, QuestionMarkCircleRegularDuotone as QuestionMarkCircleRegularDuotoneIcon, QuestionMarkCircleRegularDuotone as SiQuestionMarkCircleRegularDuotone };
 export type { QuestionMarkCircleRegularDuotoneProps };

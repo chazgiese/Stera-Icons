@@ -14,5 +14,6 @@ const DragHandleBold = memo(
 
 DragHandleBold.displayName = 'DragHandleBold';
 
-export { DragHandleBold };
+// Triple export pattern (lucide-react style)
+export { DragHandleBold, DragHandleBold as DragHandleBoldIcon, DragHandleBold as SiDragHandleBold };
 export type { DragHandleBoldProps };

@@ -13,7 +13,8 @@ export interface WifiSlashProps extends IconProps {
 }
 
 /**
- * WifiSlash with dynamic weight and duotone props.
+ * WifiSlash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WifiSlashRegular } from 'stera-icons/WifiSlashRegular';
  */
@@ -32,4 +33,5 @@ const WifiSlash = memo(forwardRef<SVGSVGElement, WifiSlashProps>(({
 
 WifiSlash.displayName = 'WifiSlash';
 
-export { WifiSlash };
+// Triple export pattern (lucide-react style)
+export { WifiSlash, WifiSlash as WifiSlashIcon, WifiSlash as SiWifiSlash };

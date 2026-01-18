@@ -15,5 +15,6 @@ const HashSquareFill = memo(
 
 HashSquareFill.displayName = 'HashSquareFill';
 
-export { HashSquareFill };
+// Triple export pattern (lucide-react style)
+export { HashSquareFill, HashSquareFill as HashSquareFillIcon, HashSquareFill as SiHashSquareFill };
 export type { HashSquareFillProps };

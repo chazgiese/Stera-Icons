@@ -13,7 +13,8 @@ export interface CurrencyDollarProps extends IconProps {
 }
 
 /**
- * CurrencyDollar with dynamic weight and duotone props.
+ * CurrencyDollar - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CurrencyDollarRegular } from 'stera-icons/CurrencyDollarRegular';
  */
@@ -32,4 +33,5 @@ const CurrencyDollar = memo(forwardRef<SVGSVGElement, CurrencyDollarProps>(({
 
 CurrencyDollar.displayName = 'CurrencyDollar';
 
-export { CurrencyDollar };
+// Triple export pattern (lucide-react style)
+export { CurrencyDollar, CurrencyDollar as CurrencyDollarIcon, CurrencyDollar as SiCurrencyDollar };

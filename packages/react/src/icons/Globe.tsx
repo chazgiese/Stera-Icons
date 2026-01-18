@@ -13,7 +13,8 @@ export interface GlobeProps extends IconProps {
 }
 
 /**
- * Globe with dynamic weight and duotone props.
+ * Globe - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GlobeRegular } from 'stera-icons/GlobeRegular';
  */
@@ -32,4 +33,5 @@ const Globe = memo(forwardRef<SVGSVGElement, GlobeProps>(({
 
 Globe.displayName = 'Globe';
 
-export { Globe };
+// Triple export pattern (lucide-react style)
+export { Globe, Globe as GlobeIcon, Globe as SiGlobe };

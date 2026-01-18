@@ -14,5 +14,6 @@ const AlignHorizontalRightFill = memo(
 
 AlignHorizontalRightFill.displayName = 'AlignHorizontalRightFill';
 
-export { AlignHorizontalRightFill };
+// Triple export pattern (lucide-react style)
+export { AlignHorizontalRightFill, AlignHorizontalRightFill as AlignHorizontalRightFillIcon, AlignHorizontalRightFill as SiAlignHorizontalRightFill };
 export type { AlignHorizontalRightFillProps };

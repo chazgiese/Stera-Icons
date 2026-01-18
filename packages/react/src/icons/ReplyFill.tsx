@@ -14,5 +14,6 @@ const ReplyFill = memo(
 
 ReplyFill.displayName = 'ReplyFill';
 
-export { ReplyFill };
+// Triple export pattern (lucide-react style)
+export { ReplyFill, ReplyFill as ReplyFillIcon, ReplyFill as SiReplyFill };
 export type { ReplyFillProps };

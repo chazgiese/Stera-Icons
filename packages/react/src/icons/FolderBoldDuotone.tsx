@@ -15,5 +15,6 @@ const FolderBoldDuotone = memo(
 
 FolderBoldDuotone.displayName = 'FolderBoldDuotone';
 
-export { FolderBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FolderBoldDuotone, FolderBoldDuotone as FolderBoldDuotoneIcon, FolderBoldDuotone as SiFolderBoldDuotone };
 export type { FolderBoldDuotoneProps };

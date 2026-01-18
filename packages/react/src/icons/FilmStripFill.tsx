@@ -14,5 +14,6 @@ const FilmStripFill = memo(
 
 FilmStripFill.displayName = 'FilmStripFill';
 
-export { FilmStripFill };
+// Triple export pattern (lucide-react style)
+export { FilmStripFill, FilmStripFill as FilmStripFillIcon, FilmStripFill as SiFilmStripFill };
 export type { FilmStripFillProps };

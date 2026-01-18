@@ -14,5 +14,6 @@ const ApertureBold = memo(
 
 ApertureBold.displayName = 'ApertureBold';
 
-export { ApertureBold };
+// Triple export pattern (lucide-react style)
+export { ApertureBold, ApertureBold as ApertureBoldIcon, ApertureBold as SiApertureBold };
 export type { ApertureBoldProps };

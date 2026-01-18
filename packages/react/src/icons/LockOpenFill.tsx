@@ -14,5 +14,6 @@ const LockOpenFill = memo(
 
 LockOpenFill.displayName = 'LockOpenFill';
 
-export { LockOpenFill };
+// Triple export pattern (lucide-react style)
+export { LockOpenFill, LockOpenFill as LockOpenFillIcon, LockOpenFill as SiLockOpenFill };
 export type { LockOpenFillProps };

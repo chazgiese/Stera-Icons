@@ -13,7 +13,8 @@ export interface HomeProps extends IconProps {
 }
 
 /**
- * Home with dynamic weight and duotone props.
+ * Home - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HomeRegular } from 'stera-icons/HomeRegular';
  */
@@ -32,4 +33,5 @@ const Home = memo(forwardRef<SVGSVGElement, HomeProps>(({
 
 Home.displayName = 'Home';
 
-export { Home };
+// Triple export pattern (lucide-react style)
+export { Home, Home as HomeIcon, Home as SiHome };

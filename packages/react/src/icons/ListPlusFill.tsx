@@ -15,5 +15,6 @@ const ListPlusFill = memo(
 
 ListPlusFill.displayName = 'ListPlusFill';
 
-export { ListPlusFill };
+// Triple export pattern (lucide-react style)
+export { ListPlusFill, ListPlusFill as ListPlusFillIcon, ListPlusFill as SiListPlusFill };
 export type { ListPlusFillProps };

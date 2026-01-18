@@ -13,7 +13,8 @@ export interface CircleDashSimpleProps extends IconProps {
 }
 
 /**
- * CircleDashSimple with dynamic weight and duotone props.
+ * CircleDashSimple - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CircleDashSimpleRegular } from 'stera-icons/CircleDashSimpleRegular';
  */
@@ -32,4 +33,5 @@ const CircleDashSimple = memo(forwardRef<SVGSVGElement, CircleDashSimpleProps>((
 
 CircleDashSimple.displayName = 'CircleDashSimple';
 
-export { CircleDashSimple };
+// Triple export pattern (lucide-react style)
+export { CircleDashSimple, CircleDashSimple as CircleDashSimpleIcon, CircleDashSimple as SiCircleDashSimple };

@@ -13,7 +13,8 @@ export interface SortAscendingNarrowProps extends IconProps {
 }
 
 /**
- * SortAscendingNarrow with dynamic weight and duotone props.
+ * SortAscendingNarrow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SortAscendingNarrowRegular } from 'stera-icons/SortAscendingNarrowRegular';
  */
@@ -32,4 +33,5 @@ const SortAscendingNarrow = memo(forwardRef<SVGSVGElement, SortAscendingNarrowPr
 
 SortAscendingNarrow.displayName = 'SortAscendingNarrow';
 
-export { SortAscendingNarrow };
+// Triple export pattern (lucide-react style)
+export { SortAscendingNarrow, SortAscendingNarrow as SortAscendingNarrowIcon, SortAscendingNarrow as SiSortAscendingNarrow };

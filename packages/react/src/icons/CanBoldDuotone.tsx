@@ -15,5 +15,6 @@ const CanBoldDuotone = memo(
 
 CanBoldDuotone.displayName = 'CanBoldDuotone';
 
-export { CanBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { CanBoldDuotone, CanBoldDuotone as CanBoldDuotoneIcon, CanBoldDuotone as SiCanBoldDuotone };
 export type { CanBoldDuotoneProps };

@@ -15,5 +15,6 @@ const TimerBold = memo(
 
 TimerBold.displayName = 'TimerBold';
 
-export { TimerBold };
+// Triple export pattern (lucide-react style)
+export { TimerBold, TimerBold as TimerBoldIcon, TimerBold as SiTimerBold };
 export type { TimerBoldProps };

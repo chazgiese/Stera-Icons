@@ -14,5 +14,6 @@ const MoreVRegularDuotone = memo(
 
 MoreVRegularDuotone.displayName = 'MoreVRegularDuotone';
 
-export { MoreVRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { MoreVRegularDuotone, MoreVRegularDuotone as MoreVRegularDuotoneIcon, MoreVRegularDuotone as SiMoreVRegularDuotone };
 export type { MoreVRegularDuotoneProps };

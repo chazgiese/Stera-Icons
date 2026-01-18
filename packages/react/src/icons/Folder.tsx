@@ -13,7 +13,8 @@ export interface FolderProps extends IconProps {
 }
 
 /**
- * Folder with dynamic weight and duotone props.
+ * Folder - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FolderRegular } from 'stera-icons/FolderRegular';
  */
@@ -32,4 +33,5 @@ const Folder = memo(forwardRef<SVGSVGElement, FolderProps>(({
 
 Folder.displayName = 'Folder';
 
-export { Folder };
+// Triple export pattern (lucide-react style)
+export { Folder, Folder as FolderIcon, Folder as SiFolder };

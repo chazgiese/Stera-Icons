@@ -15,5 +15,6 @@ const FlaskFullFillDuotone = memo(
 
 FlaskFullFillDuotone.displayName = 'FlaskFullFillDuotone';
 
-export { FlaskFullFillDuotone };
+// Triple export pattern (lucide-react style)
+export { FlaskFullFillDuotone, FlaskFullFillDuotone as FlaskFullFillDuotoneIcon, FlaskFullFillDuotone as SiFlaskFullFillDuotone };
 export type { FlaskFullFillDuotoneProps };

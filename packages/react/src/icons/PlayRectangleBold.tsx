@@ -15,5 +15,6 @@ const PlayRectangleBold = memo(
 
 PlayRectangleBold.displayName = 'PlayRectangleBold';
 
-export { PlayRectangleBold };
+// Triple export pattern (lucide-react style)
+export { PlayRectangleBold, PlayRectangleBold as PlayRectangleBoldIcon, PlayRectangleBold as SiPlayRectangleBold };
 export type { PlayRectangleBoldProps };

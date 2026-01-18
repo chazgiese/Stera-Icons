@@ -15,5 +15,6 @@ const ActivityBoldDuotone = memo(
 
 ActivityBoldDuotone.displayName = 'ActivityBoldDuotone';
 
-export { ActivityBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ActivityBoldDuotone, ActivityBoldDuotone as ActivityBoldDuotoneIcon, ActivityBoldDuotone as SiActivityBoldDuotone };
 export type { ActivityBoldDuotoneProps };

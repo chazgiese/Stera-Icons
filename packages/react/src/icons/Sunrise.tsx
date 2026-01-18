@@ -13,7 +13,8 @@ export interface SunriseProps extends IconProps {
 }
 
 /**
- * Sunrise with dynamic weight and duotone props.
+ * Sunrise - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SunriseRegular } from 'stera-icons/SunriseRegular';
  */
@@ -32,4 +33,5 @@ const Sunrise = memo(forwardRef<SVGSVGElement, SunriseProps>(({
 
 Sunrise.displayName = 'Sunrise';
 
-export { Sunrise };
+// Triple export pattern (lucide-react style)
+export { Sunrise, Sunrise as SunriseIcon, Sunrise as SiSunrise };

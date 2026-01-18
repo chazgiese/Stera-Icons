@@ -14,5 +14,6 @@ const ScrollRegular = memo(
 
 ScrollRegular.displayName = 'ScrollRegular';
 
-export { ScrollRegular };
+// Triple export pattern (lucide-react style)
+export { ScrollRegular, ScrollRegular as ScrollRegularIcon, ScrollRegular as SiScrollRegular };
 export type { ScrollRegularProps };

@@ -14,5 +14,6 @@ const AstriskBold = memo(
 
 AstriskBold.displayName = 'AstriskBold';
 
-export { AstriskBold };
+// Triple export pattern (lucide-react style)
+export { AstriskBold, AstriskBold as AstriskBoldIcon, AstriskBold as SiAstriskBold };
 export type { AstriskBoldProps };

@@ -14,5 +14,6 @@ const SignalMediumBold = memo(
 
 SignalMediumBold.displayName = 'SignalMediumBold';
 
-export { SignalMediumBold };
+// Triple export pattern (lucide-react style)
+export { SignalMediumBold, SignalMediumBold as SignalMediumBoldIcon, SignalMediumBold as SiSignalMediumBold };
 export type { SignalMediumBoldProps };

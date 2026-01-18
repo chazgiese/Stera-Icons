@@ -15,5 +15,6 @@ const MicOffFill = memo(
 
 MicOffFill.displayName = 'MicOffFill';
 
-export { MicOffFill };
+// Triple export pattern (lucide-react style)
+export { MicOffFill, MicOffFill as MicOffFillIcon, MicOffFill as SiMicOffFill };
 export type { MicOffFillProps };

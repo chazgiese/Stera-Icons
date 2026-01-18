@@ -14,5 +14,6 @@ const MoveRegular = memo(
 
 MoveRegular.displayName = 'MoveRegular';
 
-export { MoveRegular };
+// Triple export pattern (lucide-react style)
+export { MoveRegular, MoveRegular as MoveRegularIcon, MoveRegular as SiMoveRegular };
 export type { MoveRegularProps };

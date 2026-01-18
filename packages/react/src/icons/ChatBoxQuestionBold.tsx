@@ -15,5 +15,6 @@ const ChatBoxQuestionBold = memo(
 
 ChatBoxQuestionBold.displayName = 'ChatBoxQuestionBold';
 
-export { ChatBoxQuestionBold };
+// Triple export pattern (lucide-react style)
+export { ChatBoxQuestionBold, ChatBoxQuestionBold as ChatBoxQuestionBoldIcon, ChatBoxQuestionBold as SiChatBoxQuestionBold };
 export type { ChatBoxQuestionBoldProps };

@@ -13,7 +13,8 @@ export interface PhoneOffProps extends IconProps {
 }
 
 /**
- * PhoneOff with dynamic weight and duotone props.
+ * PhoneOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PhoneOffRegular } from 'stera-icons/PhoneOffRegular';
  */
@@ -32,4 +33,5 @@ const PhoneOff = memo(forwardRef<SVGSVGElement, PhoneOffProps>(({
 
 PhoneOff.displayName = 'PhoneOff';
 
-export { PhoneOff };
+// Triple export pattern (lucide-react style)
+export { PhoneOff, PhoneOff as PhoneOffIcon, PhoneOff as SiPhoneOff };

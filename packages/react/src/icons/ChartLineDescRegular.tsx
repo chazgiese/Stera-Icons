@@ -14,5 +14,6 @@ const ChartLineDescRegular = memo(
 
 ChartLineDescRegular.displayName = 'ChartLineDescRegular';
 
-export { ChartLineDescRegular };
+// Triple export pattern (lucide-react style)
+export { ChartLineDescRegular, ChartLineDescRegular as ChartLineDescRegularIcon, ChartLineDescRegular as SiChartLineDescRegular };
 export type { ChartLineDescRegularProps };

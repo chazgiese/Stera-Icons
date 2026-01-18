@@ -14,5 +14,6 @@ const SignalHighBold = memo(
 
 SignalHighBold.displayName = 'SignalHighBold';
 
-export { SignalHighBold };
+// Triple export pattern (lucide-react style)
+export { SignalHighBold, SignalHighBold as SignalHighBoldIcon, SignalHighBold as SiSignalHighBold };
 export type { SignalHighBoldProps };

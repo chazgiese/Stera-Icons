@@ -14,5 +14,6 @@ const MoreVRegular = memo(
 
 MoreVRegular.displayName = 'MoreVRegular';
 
-export { MoreVRegular };
+// Triple export pattern (lucide-react style)
+export { MoreVRegular, MoreVRegular as MoreVRegularIcon, MoreVRegular as SiMoreVRegular };
 export type { MoreVRegularProps };

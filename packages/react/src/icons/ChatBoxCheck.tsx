@@ -13,7 +13,8 @@ export interface ChatBoxCheckProps extends IconProps {
 }
 
 /**
- * ChatBoxCheck with dynamic weight and duotone props.
+ * ChatBoxCheck - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBoxCheckRegular } from 'stera-icons/ChatBoxCheckRegular';
  */
@@ -32,4 +33,5 @@ const ChatBoxCheck = memo(forwardRef<SVGSVGElement, ChatBoxCheckProps>(({
 
 ChatBoxCheck.displayName = 'ChatBoxCheck';
 
-export { ChatBoxCheck };
+// Triple export pattern (lucide-react style)
+export { ChatBoxCheck, ChatBoxCheck as ChatBoxCheckIcon, ChatBoxCheck as SiChatBoxCheck };

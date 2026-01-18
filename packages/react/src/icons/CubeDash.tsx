@@ -13,7 +13,8 @@ export interface CubeDashProps extends IconProps {
 }
 
 /**
- * CubeDash with dynamic weight and duotone props.
+ * CubeDash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CubeDashRegular } from 'stera-icons/CubeDashRegular';
  */
@@ -32,4 +33,5 @@ const CubeDash = memo(forwardRef<SVGSVGElement, CubeDashProps>(({
 
 CubeDash.displayName = 'CubeDash';
 
-export { CubeDash };
+// Triple export pattern (lucide-react style)
+export { CubeDash, CubeDash as CubeDashIcon, CubeDash as SiCubeDash };

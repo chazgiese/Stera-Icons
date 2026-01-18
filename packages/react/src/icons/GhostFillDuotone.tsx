@@ -15,5 +15,6 @@ const GhostFillDuotone = memo(
 
 GhostFillDuotone.displayName = 'GhostFillDuotone';
 
-export { GhostFillDuotone };
+// Triple export pattern (lucide-react style)
+export { GhostFillDuotone, GhostFillDuotone as GhostFillDuotoneIcon, GhostFillDuotone as SiGhostFillDuotone };
 export type { GhostFillDuotoneProps };

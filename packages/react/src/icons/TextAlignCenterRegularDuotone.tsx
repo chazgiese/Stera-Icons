@@ -15,5 +15,6 @@ const TextAlignCenterRegularDuotone = memo(
 
 TextAlignCenterRegularDuotone.displayName = 'TextAlignCenterRegularDuotone';
 
-export { TextAlignCenterRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { TextAlignCenterRegularDuotone, TextAlignCenterRegularDuotone as TextAlignCenterRegularDuotoneIcon, TextAlignCenterRegularDuotone as SiTextAlignCenterRegularDuotone };
 export type { TextAlignCenterRegularDuotoneProps };

@@ -14,5 +14,6 @@ const ImageLandscapeFill = memo(
 
 ImageLandscapeFill.displayName = 'ImageLandscapeFill';
 
-export { ImageLandscapeFill };
+// Triple export pattern (lucide-react style)
+export { ImageLandscapeFill, ImageLandscapeFill as ImageLandscapeFillIcon, ImageLandscapeFill as SiImageLandscapeFill };
 export type { ImageLandscapeFillProps };

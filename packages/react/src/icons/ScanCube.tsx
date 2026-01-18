@@ -13,7 +13,8 @@ export interface ScanCubeProps extends IconProps {
 }
 
 /**
- * ScanCube with dynamic weight and duotone props.
+ * ScanCube - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScanCubeRegular } from 'stera-icons/ScanCubeRegular';
  */
@@ -32,4 +33,5 @@ const ScanCube = memo(forwardRef<SVGSVGElement, ScanCubeProps>(({
 
 ScanCube.displayName = 'ScanCube';
 
-export { ScanCube };
+// Triple export pattern (lucide-react style)
+export { ScanCube, ScanCube as ScanCubeIcon, ScanCube as SiScanCube };

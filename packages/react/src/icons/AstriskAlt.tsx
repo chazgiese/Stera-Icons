@@ -13,7 +13,8 @@ export interface AstriskAltProps extends IconProps {
 }
 
 /**
- * AstriskAlt with dynamic weight and duotone props.
+ * AstriskAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AstriskAltRegular } from 'stera-icons/AstriskAltRegular';
  */
@@ -32,4 +33,5 @@ const AstriskAlt = memo(forwardRef<SVGSVGElement, AstriskAltProps>(({
 
 AstriskAlt.displayName = 'AstriskAlt';
 
-export { AstriskAlt };
+// Triple export pattern (lucide-react style)
+export { AstriskAlt, AstriskAlt as AstriskAltIcon, AstriskAlt as SiAstriskAlt };

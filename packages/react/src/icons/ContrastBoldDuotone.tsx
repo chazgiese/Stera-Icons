@@ -15,5 +15,6 @@ const ContrastBoldDuotone = memo(
 
 ContrastBoldDuotone.displayName = 'ContrastBoldDuotone';
 
-export { ContrastBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ContrastBoldDuotone, ContrastBoldDuotone as ContrastBoldDuotoneIcon, ContrastBoldDuotone as SiContrastBoldDuotone };
 export type { ContrastBoldDuotoneProps };

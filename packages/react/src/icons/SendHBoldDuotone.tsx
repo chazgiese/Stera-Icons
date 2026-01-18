@@ -15,5 +15,6 @@ const SendHBoldDuotone = memo(
 
 SendHBoldDuotone.displayName = 'SendHBoldDuotone';
 
-export { SendHBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { SendHBoldDuotone, SendHBoldDuotone as SendHBoldDuotoneIcon, SendHBoldDuotone as SiSendHBoldDuotone };
 export type { SendHBoldDuotoneProps };

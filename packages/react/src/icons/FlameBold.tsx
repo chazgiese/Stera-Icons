@@ -14,5 +14,6 @@ const FlameBold = memo(
 
 FlameBold.displayName = 'FlameBold';
 
-export { FlameBold };
+// Triple export pattern (lucide-react style)
+export { FlameBold, FlameBold as FlameBoldIcon, FlameBold as SiFlameBold };
 export type { FlameBoldProps };

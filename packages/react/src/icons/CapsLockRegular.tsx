@@ -14,5 +14,6 @@ const CapsLockRegular = memo(
 
 CapsLockRegular.displayName = 'CapsLockRegular';
 
-export { CapsLockRegular };
+// Triple export pattern (lucide-react style)
+export { CapsLockRegular, CapsLockRegular as CapsLockRegularIcon, CapsLockRegular as SiCapsLockRegular };
 export type { CapsLockRegularProps };

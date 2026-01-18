@@ -14,5 +14,6 @@ const FlowSplitSquareDownRegular = memo(
 
 FlowSplitSquareDownRegular.displayName = 'FlowSplitSquareDownRegular';
 
-export { FlowSplitSquareDownRegular };
+// Triple export pattern (lucide-react style)
+export { FlowSplitSquareDownRegular, FlowSplitSquareDownRegular as FlowSplitSquareDownRegularIcon, FlowSplitSquareDownRegular as SiFlowSplitSquareDownRegular };
 export type { FlowSplitSquareDownRegularProps };

@@ -15,5 +15,6 @@ const FolderPlusFill = memo(
 
 FolderPlusFill.displayName = 'FolderPlusFill';
 
-export { FolderPlusFill };
+// Triple export pattern (lucide-react style)
+export { FolderPlusFill, FolderPlusFill as FolderPlusFillIcon, FolderPlusFill as SiFolderPlusFill };
 export type { FolderPlusFillProps };

@@ -13,7 +13,8 @@ export interface ExpandProps extends IconProps {
 }
 
 /**
- * Expand with dynamic weight and duotone props.
+ * Expand - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ExpandRegular } from 'stera-icons/ExpandRegular';
  */
@@ -32,4 +33,5 @@ const Expand = memo(forwardRef<SVGSVGElement, ExpandProps>(({
 
 Expand.displayName = 'Expand';
 
-export { Expand };
+// Triple export pattern (lucide-react style)
+export { Expand, Expand as ExpandIcon, Expand as SiExpand };

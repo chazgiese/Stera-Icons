@@ -15,5 +15,6 @@ const ArrowURightTopBoldDuotone = memo(
 
 ArrowURightTopBoldDuotone.displayName = 'ArrowURightTopBoldDuotone';
 
-export { ArrowURightTopBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ArrowURightTopBoldDuotone, ArrowURightTopBoldDuotone as ArrowURightTopBoldDuotoneIcon, ArrowURightTopBoldDuotone as SiArrowURightTopBoldDuotone };
 export type { ArrowURightTopBoldDuotoneProps };

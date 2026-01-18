@@ -13,7 +13,8 @@ export interface SearchSquareProps extends IconProps {
 }
 
 /**
- * SearchSquare with dynamic weight and duotone props.
+ * SearchSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SearchSquareRegular } from 'stera-icons/SearchSquareRegular';
  */
@@ -32,4 +33,5 @@ const SearchSquare = memo(forwardRef<SVGSVGElement, SearchSquareProps>(({
 
 SearchSquare.displayName = 'SearchSquare';
 
-export { SearchSquare };
+// Triple export pattern (lucide-react style)
+export { SearchSquare, SearchSquare as SearchSquareIcon, SearchSquare as SiSearchSquare };

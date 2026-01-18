@@ -13,7 +13,8 @@ export interface AgentCursorProps extends IconProps {
 }
 
 /**
- * AgentCursor with dynamic weight and duotone props.
+ * AgentCursor - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AgentCursorRegular } from 'stera-icons/AgentCursorRegular';
  */
@@ -32,4 +33,5 @@ const AgentCursor = memo(forwardRef<SVGSVGElement, AgentCursorProps>(({
 
 AgentCursor.displayName = 'AgentCursor';
 
-export { AgentCursor };
+// Triple export pattern (lucide-react style)
+export { AgentCursor, AgentCursor as AgentCursorIcon, AgentCursor as SiAgentCursor };

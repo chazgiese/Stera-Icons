@@ -15,5 +15,6 @@ const LightbulbOnBold = memo(
 
 LightbulbOnBold.displayName = 'LightbulbOnBold';
 
-export { LightbulbOnBold };
+// Triple export pattern (lucide-react style)
+export { LightbulbOnBold, LightbulbOnBold as LightbulbOnBoldIcon, LightbulbOnBold as SiLightbulbOnBold };
 export type { LightbulbOnBoldProps };

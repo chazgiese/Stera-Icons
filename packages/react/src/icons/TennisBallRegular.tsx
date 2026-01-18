@@ -14,5 +14,6 @@ const TennisBallRegular = memo(
 
 TennisBallRegular.displayName = 'TennisBallRegular';
 
-export { TennisBallRegular };
+// Triple export pattern (lucide-react style)
+export { TennisBallRegular, TennisBallRegular as TennisBallRegularIcon, TennisBallRegular as SiTennisBallRegular };
 export type { TennisBallRegularProps };

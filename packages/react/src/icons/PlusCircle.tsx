@@ -13,7 +13,8 @@ export interface PlusCircleProps extends IconProps {
 }
 
 /**
- * PlusCircle with dynamic weight and duotone props.
+ * PlusCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PlusCircleRegular } from 'stera-icons/PlusCircleRegular';
  */
@@ -32,4 +33,5 @@ const PlusCircle = memo(forwardRef<SVGSVGElement, PlusCircleProps>(({
 
 PlusCircle.displayName = 'PlusCircle';
 
-export { PlusCircle };
+// Triple export pattern (lucide-react style)
+export { PlusCircle, PlusCircle as PlusCircleIcon, PlusCircle as SiPlusCircle };

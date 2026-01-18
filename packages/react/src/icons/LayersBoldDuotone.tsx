@@ -15,5 +15,6 @@ const LayersBoldDuotone = memo(
 
 LayersBoldDuotone.displayName = 'LayersBoldDuotone';
 
-export { LayersBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { LayersBoldDuotone, LayersBoldDuotone as LayersBoldDuotoneIcon, LayersBoldDuotone as SiLayersBoldDuotone };
 export type { LayersBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface QuestionMarkCircleProps extends IconProps {
 }
 
 /**
- * QuestionMarkCircle with dynamic weight and duotone props.
+ * QuestionMarkCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { QuestionMarkCircleRegular } from 'stera-icons/QuestionMarkCircleRegular';
  */
@@ -32,4 +33,5 @@ const QuestionMarkCircle = memo(forwardRef<SVGSVGElement, QuestionMarkCircleProp
 
 QuestionMarkCircle.displayName = 'QuestionMarkCircle';
 
-export { QuestionMarkCircle };
+// Triple export pattern (lucide-react style)
+export { QuestionMarkCircle, QuestionMarkCircle as QuestionMarkCircleIcon, QuestionMarkCircle as SiQuestionMarkCircle };

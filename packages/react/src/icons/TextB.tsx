@@ -13,7 +13,8 @@ export interface TextBProps extends IconProps {
 }
 
 /**
- * TextB with dynamic weight and duotone props.
+ * TextB - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextBRegular } from 'stera-icons/TextBRegular';
  */
@@ -32,4 +33,5 @@ const TextB = memo(forwardRef<SVGSVGElement, TextBProps>(({
 
 TextB.displayName = 'TextB';
 
-export { TextB };
+// Triple export pattern (lucide-react style)
+export { TextB, TextB as TextBIcon, TextB as SiTextB };

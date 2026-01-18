@@ -13,7 +13,8 @@ export interface BlocksProps extends IconProps {
 }
 
 /**
- * Blocks with dynamic weight and duotone props.
+ * Blocks - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BlocksRegular } from 'stera-icons/BlocksRegular';
  */
@@ -32,4 +33,5 @@ const Blocks = memo(forwardRef<SVGSVGElement, BlocksProps>(({
 
 Blocks.displayName = 'Blocks';
 
-export { Blocks };
+// Triple export pattern (lucide-react style)
+export { Blocks, Blocks as BlocksIcon, Blocks as SiBlocks };

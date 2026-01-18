@@ -15,5 +15,6 @@ const AlertHexagonRegularDuotone = memo(
 
 AlertHexagonRegularDuotone.displayName = 'AlertHexagonRegularDuotone';
 
-export { AlertHexagonRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { AlertHexagonRegularDuotone, AlertHexagonRegularDuotone as AlertHexagonRegularDuotoneIcon, AlertHexagonRegularDuotone as SiAlertHexagonRegularDuotone };
 export type { AlertHexagonRegularDuotoneProps };

@@ -13,7 +13,8 @@ export interface BannerProps extends IconProps {
 }
 
 /**
- * Banner with dynamic weight and duotone props.
+ * Banner - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BannerRegular } from 'stera-icons/BannerRegular';
  */
@@ -32,4 +33,5 @@ const Banner = memo(forwardRef<SVGSVGElement, BannerProps>(({
 
 Banner.displayName = 'Banner';
 
-export { Banner };
+// Triple export pattern (lucide-react style)
+export { Banner, Banner as BannerIcon, Banner as SiBanner };

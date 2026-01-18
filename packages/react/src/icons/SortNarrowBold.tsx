@@ -15,5 +15,6 @@ const SortNarrowBold = memo(
 
 SortNarrowBold.displayName = 'SortNarrowBold';
 
-export { SortNarrowBold };
+// Triple export pattern (lucide-react style)
+export { SortNarrowBold, SortNarrowBold as SortNarrowBoldIcon, SortNarrowBold as SiSortNarrowBold };
 export type { SortNarrowBoldProps };

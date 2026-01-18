@@ -13,7 +13,8 @@ export interface BoxesProps extends IconProps {
 }
 
 /**
- * Boxes with dynamic weight and duotone props.
+ * Boxes - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BoxesRegular } from 'stera-icons/BoxesRegular';
  */
@@ -32,4 +33,5 @@ const Boxes = memo(forwardRef<SVGSVGElement, BoxesProps>(({
 
 Boxes.displayName = 'Boxes';
 
-export { Boxes };
+// Triple export pattern (lucide-react style)
+export { Boxes, Boxes as BoxesIcon, Boxes as SiBoxes };

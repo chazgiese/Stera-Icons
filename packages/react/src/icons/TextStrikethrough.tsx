@@ -13,7 +13,8 @@ export interface TextStrikethroughProps extends IconProps {
 }
 
 /**
- * TextStrikethrough with dynamic weight and duotone props.
+ * TextStrikethrough - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextStrikethroughRegular } from 'stera-icons/TextStrikethroughRegular';
  */
@@ -32,4 +33,5 @@ const TextStrikethrough = memo(forwardRef<SVGSVGElement, TextStrikethroughProps>
 
 TextStrikethrough.displayName = 'TextStrikethrough';
 
-export { TextStrikethrough };
+// Triple export pattern (lucide-react style)
+export { TextStrikethrough, TextStrikethrough as TextStrikethroughIcon, TextStrikethrough as SiTextStrikethrough };

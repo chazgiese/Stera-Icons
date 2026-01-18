@@ -15,5 +15,6 @@ const AlienBold = memo(
 
 AlienBold.displayName = 'AlienBold';
 
-export { AlienBold };
+// Triple export pattern (lucide-react style)
+export { AlienBold, AlienBold as AlienBoldIcon, AlienBold as SiAlienBold };
 export type { AlienBoldProps };

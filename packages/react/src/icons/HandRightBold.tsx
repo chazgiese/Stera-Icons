@@ -14,5 +14,6 @@ const HandRightBold = memo(
 
 HandRightBold.displayName = 'HandRightBold';
 
-export { HandRightBold };
+// Triple export pattern (lucide-react style)
+export { HandRightBold, HandRightBold as HandRightBoldIcon, HandRightBold as SiHandRightBold };
 export type { HandRightBoldProps };

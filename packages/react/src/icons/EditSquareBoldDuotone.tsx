@@ -15,5 +15,6 @@ const EditSquareBoldDuotone = memo(
 
 EditSquareBoldDuotone.displayName = 'EditSquareBoldDuotone';
 
-export { EditSquareBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { EditSquareBoldDuotone, EditSquareBoldDuotone as EditSquareBoldDuotoneIcon, EditSquareBoldDuotone as SiEditSquareBoldDuotone };
 export type { EditSquareBoldDuotoneProps };

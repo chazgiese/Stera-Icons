@@ -13,7 +13,8 @@ export interface FolderTreeProps extends IconProps {
 }
 
 /**
- * FolderTree with dynamic weight and duotone props.
+ * FolderTree - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FolderTreeRegular } from 'stera-icons/FolderTreeRegular';
  */
@@ -32,4 +33,5 @@ const FolderTree = memo(forwardRef<SVGSVGElement, FolderTreeProps>(({
 
 FolderTree.displayName = 'FolderTree';
 
-export { FolderTree };
+// Triple export pattern (lucide-react style)
+export { FolderTree, FolderTree as FolderTreeIcon, FolderTree as SiFolderTree };

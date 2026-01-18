@@ -14,5 +14,6 @@ const BladeSwordFill = memo(
 
 BladeSwordFill.displayName = 'BladeSwordFill';
 
-export { BladeSwordFill };
+// Triple export pattern (lucide-react style)
+export { BladeSwordFill, BladeSwordFill as BladeSwordFillIcon, BladeSwordFill as SiBladeSwordFill };
 export type { BladeSwordFillProps };

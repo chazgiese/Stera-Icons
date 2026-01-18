@@ -13,7 +13,8 @@ export interface ArrowSquareDownProps extends IconProps {
 }
 
 /**
- * ArrowSquareDown with dynamic weight and duotone props.
+ * ArrowSquareDown - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowSquareDownRegular } from 'stera-icons/ArrowSquareDownRegular';
  */
@@ -32,4 +33,5 @@ const ArrowSquareDown = memo(forwardRef<SVGSVGElement, ArrowSquareDownProps>(({
 
 ArrowSquareDown.displayName = 'ArrowSquareDown';
 
-export { ArrowSquareDown };
+// Triple export pattern (lucide-react style)
+export { ArrowSquareDown, ArrowSquareDown as ArrowSquareDownIcon, ArrowSquareDown as SiArrowSquareDown };

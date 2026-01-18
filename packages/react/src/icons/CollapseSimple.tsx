@@ -13,7 +13,8 @@ export interface CollapseSimpleProps extends IconProps {
 }
 
 /**
- * CollapseSimple with dynamic weight and duotone props.
+ * CollapseSimple - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CollapseSimpleRegular } from 'stera-icons/CollapseSimpleRegular';
  */
@@ -32,4 +33,5 @@ const CollapseSimple = memo(forwardRef<SVGSVGElement, CollapseSimpleProps>(({
 
 CollapseSimple.displayName = 'CollapseSimple';
 
-export { CollapseSimple };
+// Triple export pattern (lucide-react style)
+export { CollapseSimple, CollapseSimple as CollapseSimpleIcon, CollapseSimple as SiCollapseSimple };

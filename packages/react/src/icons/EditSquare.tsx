@@ -13,7 +13,8 @@ export interface EditSquareProps extends IconProps {
 }
 
 /**
- * EditSquare with dynamic weight and duotone props.
+ * EditSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EditSquareRegular } from 'stera-icons/EditSquareRegular';
  */
@@ -32,4 +33,5 @@ const EditSquare = memo(forwardRef<SVGSVGElement, EditSquareProps>(({
 
 EditSquare.displayName = 'EditSquare';
 
-export { EditSquare };
+// Triple export pattern (lucide-react style)
+export { EditSquare, EditSquare as EditSquareIcon, EditSquare as SiEditSquare };

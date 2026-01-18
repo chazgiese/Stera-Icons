@@ -14,5 +14,6 @@ const AlienFill = memo(
 
 AlienFill.displayName = 'AlienFill';
 
-export { AlienFill };
+// Triple export pattern (lucide-react style)
+export { AlienFill, AlienFill as AlienFillIcon, AlienFill as SiAlienFill };
 export type { AlienFillProps };

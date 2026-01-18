@@ -15,5 +15,6 @@ const ChatBubbleOffBold = memo(
 
 ChatBubbleOffBold.displayName = 'ChatBubbleOffBold';
 
-export { ChatBubbleOffBold };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleOffBold, ChatBubbleOffBold as ChatBubbleOffBoldIcon, ChatBubbleOffBold as SiChatBubbleOffBold };
 export type { ChatBubbleOffBoldProps };

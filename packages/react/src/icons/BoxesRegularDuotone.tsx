@@ -15,5 +15,6 @@ const BoxesRegularDuotone = memo(
 
 BoxesRegularDuotone.displayName = 'BoxesRegularDuotone';
 
-export { BoxesRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { BoxesRegularDuotone, BoxesRegularDuotone as BoxesRegularDuotoneIcon, BoxesRegularDuotone as SiBoxesRegularDuotone };
 export type { BoxesRegularDuotoneProps };

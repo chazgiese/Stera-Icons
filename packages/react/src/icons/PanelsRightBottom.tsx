@@ -13,7 +13,8 @@ export interface PanelsRightBottomProps extends IconProps {
 }
 
 /**
- * PanelsRightBottom with dynamic weight and duotone props.
+ * PanelsRightBottom - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PanelsRightBottomRegular } from 'stera-icons/PanelsRightBottomRegular';
  */
@@ -32,4 +33,5 @@ const PanelsRightBottom = memo(forwardRef<SVGSVGElement, PanelsRightBottomProps>
 
 PanelsRightBottom.displayName = 'PanelsRightBottom';
 
-export { PanelsRightBottom };
+// Triple export pattern (lucide-react style)
+export { PanelsRightBottom, PanelsRightBottom as PanelsRightBottomIcon, PanelsRightBottom as SiPanelsRightBottom };

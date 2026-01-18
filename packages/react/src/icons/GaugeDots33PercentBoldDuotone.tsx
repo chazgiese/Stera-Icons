@@ -7,14 +7,15 @@ type GaugeDots33PercentBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GaugeDots33PercentBoldDuotone = memo(
   forwardRef<SVGSVGElement, GaugeDots33PercentBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fill="currentColor" d="M6.34 6.34a1 1 0 0 1 1.3-.1l.02.01.04.04.16.11 2.35 1.74a105 105 0 0 1 3.2 2.45 2 2 0 0 1-2.82 2.82l-.06-.05c-.33-.39-1.42-1.84-2.39-3.15L6.4 7.86 6.3 7.7l-.04-.04v-.01l-.06-.08a1 1 0 0 1 .15-1.23" />
-        <path d="M7.4 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M5.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 5.9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
-        <path fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path d="M7.4 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M5.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 5.9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" opacity={0.4} />
+        <path fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" opacity={0.4} />
+        <path fill="currentColor" d="M6.34 6.34a1 1 0 0 1 1.3-.1l.02.01.04.04.16.11 2.35 1.74a105 105 0 0 1 3.2 2.45 2 2 0 0 1-2.82 2.82l-.06-.05c-.33-.39-1.42-1.84-2.39-3.15L6.4 7.86 6.3 7.7l-.04-.04v-.01l-.06-.08a1 1 0 0 1 .15-1.23" />
     </IconBase>
   ))
 );
 
 GaugeDots33PercentBoldDuotone.displayName = 'GaugeDots33PercentBoldDuotone';
 
-export { GaugeDots33PercentBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { GaugeDots33PercentBoldDuotone, GaugeDots33PercentBoldDuotone as GaugeDots33PercentBoldDuotoneIcon, GaugeDots33PercentBoldDuotone as SiGaugeDots33PercentBoldDuotone };
 export type { GaugeDots33PercentBoldDuotoneProps };

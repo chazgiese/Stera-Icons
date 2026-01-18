@@ -15,5 +15,6 @@ const ChatBoxAlertRegular = memo(
 
 ChatBoxAlertRegular.displayName = 'ChatBoxAlertRegular';
 
-export { ChatBoxAlertRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBoxAlertRegular, ChatBoxAlertRegular as ChatBoxAlertRegularIcon, ChatBoxAlertRegular as SiChatBoxAlertRegular };
 export type { ChatBoxAlertRegularProps };

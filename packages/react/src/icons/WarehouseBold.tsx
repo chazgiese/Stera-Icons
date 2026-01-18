@@ -14,5 +14,6 @@ const WarehouseBold = memo(
 
 WarehouseBold.displayName = 'WarehouseBold';
 
-export { WarehouseBold };
+// Triple export pattern (lucide-react style)
+export { WarehouseBold, WarehouseBold as WarehouseBoldIcon, WarehouseBold as SiWarehouseBold };
 export type { WarehouseBoldProps };

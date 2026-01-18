@@ -13,7 +13,8 @@ export interface SidebarRightProps extends IconProps {
 }
 
 /**
- * SidebarRight with dynamic weight and duotone props.
+ * SidebarRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SidebarRightRegular } from 'stera-icons/SidebarRightRegular';
  */
@@ -32,4 +33,5 @@ const SidebarRight = memo(forwardRef<SVGSVGElement, SidebarRightProps>(({
 
 SidebarRight.displayName = 'SidebarRight';
 
-export { SidebarRight };
+// Triple export pattern (lucide-react style)
+export { SidebarRight, SidebarRight as SidebarRightIcon, SidebarRight as SiSidebarRight };

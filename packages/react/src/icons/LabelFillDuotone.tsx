@@ -15,5 +15,6 @@ const LabelFillDuotone = memo(
 
 LabelFillDuotone.displayName = 'LabelFillDuotone';
 
-export { LabelFillDuotone };
+// Triple export pattern (lucide-react style)
+export { LabelFillDuotone, LabelFillDuotone as LabelFillDuotoneIcon, LabelFillDuotone as SiLabelFillDuotone };
 export type { LabelFillDuotoneProps };

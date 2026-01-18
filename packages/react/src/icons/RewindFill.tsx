@@ -14,5 +14,6 @@ const RewindFill = memo(
 
 RewindFill.displayName = 'RewindFill';
 
-export { RewindFill };
+// Triple export pattern (lucide-react style)
+export { RewindFill, RewindFill as RewindFillIcon, RewindFill as SiRewindFill };
 export type { RewindFillProps };

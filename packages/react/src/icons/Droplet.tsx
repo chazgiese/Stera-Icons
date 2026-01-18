@@ -13,7 +13,8 @@ export interface DropletProps extends IconProps {
 }
 
 /**
- * Droplet with dynamic weight and duotone props.
+ * Droplet - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DropletRegular } from 'stera-icons/DropletRegular';
  */
@@ -32,4 +33,5 @@ const Droplet = memo(forwardRef<SVGSVGElement, DropletProps>(({
 
 Droplet.displayName = 'Droplet';
 
-export { Droplet };
+// Triple export pattern (lucide-react style)
+export { Droplet, Droplet as DropletIcon, Droplet as SiDroplet };

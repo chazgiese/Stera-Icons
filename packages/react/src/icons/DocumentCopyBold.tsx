@@ -14,5 +14,6 @@ const DocumentCopyBold = memo(
 
 DocumentCopyBold.displayName = 'DocumentCopyBold';
 
-export { DocumentCopyBold };
+// Triple export pattern (lucide-react style)
+export { DocumentCopyBold, DocumentCopyBold as DocumentCopyBoldIcon, DocumentCopyBold as SiDocumentCopyBold };
 export type { DocumentCopyBoldProps };

@@ -15,5 +15,6 @@ const CanLabelBold = memo(
 
 CanLabelBold.displayName = 'CanLabelBold';
 
-export { CanLabelBold };
+// Triple export pattern (lucide-react style)
+export { CanLabelBold, CanLabelBold as CanLabelBoldIcon, CanLabelBold as SiCanLabelBold };
 export type { CanLabelBoldProps };

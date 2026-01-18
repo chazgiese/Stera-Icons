@@ -13,7 +13,8 @@ export interface ApertureProps extends IconProps {
 }
 
 /**
- * Aperture with dynamic weight and duotone props.
+ * Aperture - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ApertureRegular } from 'stera-icons/ApertureRegular';
  */
@@ -32,4 +33,5 @@ const Aperture = memo(forwardRef<SVGSVGElement, ApertureProps>(({
 
 Aperture.displayName = 'Aperture';
 
-export { Aperture };
+// Triple export pattern (lucide-react style)
+export { Aperture, Aperture as ApertureIcon, Aperture as SiAperture };

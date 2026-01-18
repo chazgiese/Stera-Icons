@@ -13,7 +13,8 @@ export interface BracketsCurlyProps extends IconProps {
 }
 
 /**
- * BracketsCurly with dynamic weight and duotone props.
+ * BracketsCurly - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BracketsCurlyRegular } from 'stera-icons/BracketsCurlyRegular';
  */
@@ -32,4 +33,5 @@ const BracketsCurly = memo(forwardRef<SVGSVGElement, BracketsCurlyProps>(({
 
 BracketsCurly.displayName = 'BracketsCurly';
 
-export { BracketsCurly };
+// Triple export pattern (lucide-react style)
+export { BracketsCurly, BracketsCurly as BracketsCurlyIcon, BracketsCurly as SiBracketsCurly };

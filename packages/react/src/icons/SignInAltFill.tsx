@@ -14,5 +14,6 @@ const SignInAltFill = memo(
 
 SignInAltFill.displayName = 'SignInAltFill';
 
-export { SignInAltFill };
+// Triple export pattern (lucide-react style)
+export { SignInAltFill, SignInAltFill as SignInAltFillIcon, SignInAltFill as SiSignInAltFill };
 export type { SignInAltFillProps };

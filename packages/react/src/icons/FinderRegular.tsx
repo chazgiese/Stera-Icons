@@ -15,5 +15,6 @@ const FinderRegular = memo(
 
 FinderRegular.displayName = 'FinderRegular';
 
-export { FinderRegular };
+// Triple export pattern (lucide-react style)
+export { FinderRegular, FinderRegular as FinderRegularIcon, FinderRegular as SiFinderRegular };
 export type { FinderRegularProps };

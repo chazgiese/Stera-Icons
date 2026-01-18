@@ -15,5 +15,6 @@ const CloudDownloadRegularDuotone = memo(
 
 CloudDownloadRegularDuotone.displayName = 'CloudDownloadRegularDuotone';
 
-export { CloudDownloadRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { CloudDownloadRegularDuotone, CloudDownloadRegularDuotone as CloudDownloadRegularDuotoneIcon, CloudDownloadRegularDuotone as SiCloudDownloadRegularDuotone };
 export type { CloudDownloadRegularDuotoneProps };

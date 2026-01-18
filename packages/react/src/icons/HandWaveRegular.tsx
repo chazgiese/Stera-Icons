@@ -16,5 +16,6 @@ const HandWaveRegular = memo(
 
 HandWaveRegular.displayName = 'HandWaveRegular';
 
-export { HandWaveRegular };
+// Triple export pattern (lucide-react style)
+export { HandWaveRegular, HandWaveRegular as HandWaveRegularIcon, HandWaveRegular as SiHandWaveRegular };
 export type { HandWaveRegularProps };

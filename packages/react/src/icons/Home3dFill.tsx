@@ -15,5 +15,6 @@ const Home3dFill = memo(
 
 Home3dFill.displayName = 'Home3dFill';
 
-export { Home3dFill };
+// Triple export pattern (lucide-react style)
+export { Home3dFill, Home3dFill as Home3dFillIcon, Home3dFill as SiHome3dFill };
 export type { Home3dFillProps };

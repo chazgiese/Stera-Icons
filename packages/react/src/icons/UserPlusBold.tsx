@@ -15,5 +15,6 @@ const UserPlusBold = memo(
 
 UserPlusBold.displayName = 'UserPlusBold';
 
-export { UserPlusBold };
+// Triple export pattern (lucide-react style)
+export { UserPlusBold, UserPlusBold as UserPlusBoldIcon, UserPlusBold as SiUserPlusBold };
 export type { UserPlusBoldProps };

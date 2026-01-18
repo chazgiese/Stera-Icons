@@ -13,7 +13,8 @@ export interface UmbrellaProps extends IconProps {
 }
 
 /**
- * Umbrella with dynamic weight and duotone props.
+ * Umbrella - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UmbrellaRegular } from 'stera-icons/UmbrellaRegular';
  */
@@ -32,4 +33,5 @@ const Umbrella = memo(forwardRef<SVGSVGElement, UmbrellaProps>(({
 
 Umbrella.displayName = 'Umbrella';
 
-export { Umbrella };
+// Triple export pattern (lucide-react style)
+export { Umbrella, Umbrella as UmbrellaIcon, Umbrella as SiUmbrella };

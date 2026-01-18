@@ -16,5 +16,6 @@ const FinderFillDuotone = memo(
 
 FinderFillDuotone.displayName = 'FinderFillDuotone';
 
-export { FinderFillDuotone };
+// Triple export pattern (lucide-react style)
+export { FinderFillDuotone, FinderFillDuotone as FinderFillDuotoneIcon, FinderFillDuotone as SiFinderFillDuotone };
 export type { FinderFillDuotoneProps };

@@ -13,7 +13,8 @@ export interface MailOpenProps extends IconProps {
 }
 
 /**
- * MailOpen with dynamic weight and duotone props.
+ * MailOpen - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MailOpenRegular } from 'stera-icons/MailOpenRegular';
  */
@@ -32,4 +33,5 @@ const MailOpen = memo(forwardRef<SVGSVGElement, MailOpenProps>(({
 
 MailOpen.displayName = 'MailOpen';
 
-export { MailOpen };
+// Triple export pattern (lucide-react style)
+export { MailOpen, MailOpen as MailOpenIcon, MailOpen as SiMailOpen };

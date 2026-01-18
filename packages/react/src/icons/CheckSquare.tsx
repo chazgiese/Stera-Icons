@@ -13,7 +13,8 @@ export interface CheckSquareProps extends IconProps {
 }
 
 /**
- * CheckSquare with dynamic weight and duotone props.
+ * CheckSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CheckSquareRegular } from 'stera-icons/CheckSquareRegular';
  */
@@ -32,4 +33,5 @@ const CheckSquare = memo(forwardRef<SVGSVGElement, CheckSquareProps>(({
 
 CheckSquare.displayName = 'CheckSquare';
 
-export { CheckSquare };
+// Triple export pattern (lucide-react style)
+export { CheckSquare, CheckSquare as CheckSquareIcon, CheckSquare as SiCheckSquare };

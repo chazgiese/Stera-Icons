@@ -15,5 +15,6 @@ const GaugeLines15PercentBold = memo(
 
 GaugeLines15PercentBold.displayName = 'GaugeLines15PercentBold';
 
-export { GaugeLines15PercentBold };
+// Triple export pattern (lucide-react style)
+export { GaugeLines15PercentBold, GaugeLines15PercentBold as GaugeLines15PercentBoldIcon, GaugeLines15PercentBold as SiGaugeLines15PercentBold };
 export type { GaugeLines15PercentBoldProps };

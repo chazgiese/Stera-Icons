@@ -14,5 +14,6 @@ const CityFill = memo(
 
 CityFill.displayName = 'CityFill';
 
-export { CityFill };
+// Triple export pattern (lucide-react style)
+export { CityFill, CityFill as CityFillIcon, CityFill as SiCityFill };
 export type { CityFillProps };

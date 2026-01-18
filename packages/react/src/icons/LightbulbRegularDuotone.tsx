@@ -15,5 +15,6 @@ const LightbulbRegularDuotone = memo(
 
 LightbulbRegularDuotone.displayName = 'LightbulbRegularDuotone';
 
-export { LightbulbRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { LightbulbRegularDuotone, LightbulbRegularDuotone as LightbulbRegularDuotoneIcon, LightbulbRegularDuotone as SiLightbulbRegularDuotone };
 export type { LightbulbRegularDuotoneProps };

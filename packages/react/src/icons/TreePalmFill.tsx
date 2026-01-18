@@ -14,5 +14,6 @@ const TreePalmFill = memo(
 
 TreePalmFill.displayName = 'TreePalmFill';
 
-export { TreePalmFill };
+// Triple export pattern (lucide-react style)
+export { TreePalmFill, TreePalmFill as TreePalmFillIcon, TreePalmFill as SiTreePalmFill };
 export type { TreePalmFillProps };

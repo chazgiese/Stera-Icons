@@ -13,7 +13,8 @@ export interface DataTableProps extends IconProps {
 }
 
 /**
- * DataTable with dynamic weight and duotone props.
+ * DataTable - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DataTableRegular } from 'stera-icons/DataTableRegular';
  */
@@ -32,4 +33,5 @@ const DataTable = memo(forwardRef<SVGSVGElement, DataTableProps>(({
 
 DataTable.displayName = 'DataTable';
 
-export { DataTable };
+// Triple export pattern (lucide-react style)
+export { DataTable, DataTable as DataTableIcon, DataTable as SiDataTable };

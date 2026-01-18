@@ -14,5 +14,6 @@ const BankFill = memo(
 
 BankFill.displayName = 'BankFill';
 
-export { BankFill };
+// Triple export pattern (lucide-react style)
+export { BankFill, BankFill as BankFillIcon, BankFill as SiBankFill };
 export type { BankFillProps };

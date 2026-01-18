@@ -14,5 +14,6 @@ const CandleBold = memo(
 
 CandleBold.displayName = 'CandleBold';
 
-export { CandleBold };
+// Triple export pattern (lucide-react style)
+export { CandleBold, CandleBold as CandleBoldIcon, CandleBold as SiCandleBold };
 export type { CandleBoldProps };

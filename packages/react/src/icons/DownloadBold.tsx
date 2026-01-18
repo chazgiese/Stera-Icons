@@ -15,5 +15,6 @@ const DownloadBold = memo(
 
 DownloadBold.displayName = 'DownloadBold';
 
-export { DownloadBold };
+// Triple export pattern (lucide-react style)
+export { DownloadBold, DownloadBold as DownloadBoldIcon, DownloadBold as SiDownloadBold };
 export type { DownloadBoldProps };

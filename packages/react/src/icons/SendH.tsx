@@ -13,7 +13,8 @@ export interface SendHProps extends IconProps {
 }
 
 /**
- * SendH with dynamic weight and duotone props.
+ * SendH - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SendHRegular } from 'stera-icons/SendHRegular';
  */
@@ -32,4 +33,5 @@ const SendH = memo(forwardRef<SVGSVGElement, SendHProps>(({
 
 SendH.displayName = 'SendH';
 
-export { SendH };
+// Triple export pattern (lucide-react style)
+export { SendH, SendH as SendHIcon, SendH as SiSendH };

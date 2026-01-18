@@ -15,5 +15,6 @@ const LineSegmentBoldDuotone = memo(
 
 LineSegmentBoldDuotone.displayName = 'LineSegmentBoldDuotone';
 
-export { LineSegmentBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { LineSegmentBoldDuotone, LineSegmentBoldDuotone as LineSegmentBoldDuotoneIcon, LineSegmentBoldDuotone as SiLineSegmentBoldDuotone };
 export type { LineSegmentBoldDuotoneProps };

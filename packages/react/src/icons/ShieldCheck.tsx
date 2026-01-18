@@ -13,7 +13,8 @@ export interface ShieldCheckProps extends IconProps {
 }
 
 /**
- * ShieldCheck with dynamic weight and duotone props.
+ * ShieldCheck - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShieldCheckRegular } from 'stera-icons/ShieldCheckRegular';
  */
@@ -32,4 +33,5 @@ const ShieldCheck = memo(forwardRef<SVGSVGElement, ShieldCheckProps>(({
 
 ShieldCheck.displayName = 'ShieldCheck';
 
-export { ShieldCheck };
+// Triple export pattern (lucide-react style)
+export { ShieldCheck, ShieldCheck as ShieldCheckIcon, ShieldCheck as SiShieldCheck };

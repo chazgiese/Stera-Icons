@@ -14,5 +14,6 @@ const MusicBold = memo(
 
 MusicBold.displayName = 'MusicBold';
 
-export { MusicBold };
+// Triple export pattern (lucide-react style)
+export { MusicBold, MusicBold as MusicBoldIcon, MusicBold as SiMusicBold };
 export type { MusicBoldProps };

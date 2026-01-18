@@ -15,5 +15,6 @@ const ApertureRegularDuotone = memo(
 
 ApertureRegularDuotone.displayName = 'ApertureRegularDuotone';
 
-export { ApertureRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ApertureRegularDuotone, ApertureRegularDuotone as ApertureRegularDuotoneIcon, ApertureRegularDuotone as SiApertureRegularDuotone };
 export type { ApertureRegularDuotoneProps };

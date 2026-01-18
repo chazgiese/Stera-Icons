@@ -13,7 +13,8 @@ export interface CurrencyEuroCirlceProps extends IconProps {
 }
 
 /**
- * CurrencyEuroCirlce with dynamic weight and duotone props.
+ * CurrencyEuroCirlce - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CurrencyEuroCirlceRegular } from 'stera-icons/CurrencyEuroCirlceRegular';
  */
@@ -32,4 +33,5 @@ const CurrencyEuroCirlce = memo(forwardRef<SVGSVGElement, CurrencyEuroCirlceProp
 
 CurrencyEuroCirlce.displayName = 'CurrencyEuroCirlce';
 
-export { CurrencyEuroCirlce };
+// Triple export pattern (lucide-react style)
+export { CurrencyEuroCirlce, CurrencyEuroCirlce as CurrencyEuroCirlceIcon, CurrencyEuroCirlce as SiCurrencyEuroCirlce };

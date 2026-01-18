@@ -14,5 +14,6 @@ const ListTreeBold = memo(
 
 ListTreeBold.displayName = 'ListTreeBold';
 
-export { ListTreeBold };
+// Triple export pattern (lucide-react style)
+export { ListTreeBold, ListTreeBold as ListTreeBoldIcon, ListTreeBold as SiListTreeBold };
 export type { ListTreeBoldProps };

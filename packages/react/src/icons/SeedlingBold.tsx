@@ -14,5 +14,6 @@ const SeedlingBold = memo(
 
 SeedlingBold.displayName = 'SeedlingBold';
 
-export { SeedlingBold };
+// Triple export pattern (lucide-react style)
+export { SeedlingBold, SeedlingBold as SeedlingBoldIcon, SeedlingBold as SiSeedlingBold };
 export type { SeedlingBoldProps };

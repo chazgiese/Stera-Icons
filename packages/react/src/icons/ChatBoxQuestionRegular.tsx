@@ -15,5 +15,6 @@ const ChatBoxQuestionRegular = memo(
 
 ChatBoxQuestionRegular.displayName = 'ChatBoxQuestionRegular';
 
-export { ChatBoxQuestionRegular };
+// Triple export pattern (lucide-react style)
+export { ChatBoxQuestionRegular, ChatBoxQuestionRegular as ChatBoxQuestionRegularIcon, ChatBoxQuestionRegular as SiChatBoxQuestionRegular };
 export type { ChatBoxQuestionRegularProps };

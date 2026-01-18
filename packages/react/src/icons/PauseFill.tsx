@@ -14,5 +14,6 @@ const PauseFill = memo(
 
 PauseFill.displayName = 'PauseFill';
 
-export { PauseFill };
+// Triple export pattern (lucide-react style)
+export { PauseFill, PauseFill as PauseFillIcon, PauseFill as SiPauseFill };
 export type { PauseFillProps };

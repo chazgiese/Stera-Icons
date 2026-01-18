@@ -14,5 +14,6 @@ const AstriskAltRegular = memo(
 
 AstriskAltRegular.displayName = 'AstriskAltRegular';
 
-export { AstriskAltRegular };
+// Triple export pattern (lucide-react style)
+export { AstriskAltRegular, AstriskAltRegular as AstriskAltRegularIcon, AstriskAltRegular as SiAstriskAltRegular };
 export type { AstriskAltRegularProps };

@@ -15,5 +15,6 @@ const ImagePanoramaBold = memo(
 
 ImagePanoramaBold.displayName = 'ImagePanoramaBold';
 
-export { ImagePanoramaBold };
+// Triple export pattern (lucide-react style)
+export { ImagePanoramaBold, ImagePanoramaBold as ImagePanoramaBoldIcon, ImagePanoramaBold as SiImagePanoramaBold };
 export type { ImagePanoramaBoldProps };

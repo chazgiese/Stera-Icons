@@ -13,7 +13,8 @@ export interface GitPullRequestClosedProps extends IconProps {
 }
 
 /**
- * GitPullRequestClosed with dynamic weight and duotone props.
+ * GitPullRequestClosed - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GitPullRequestClosedRegular } from 'stera-icons/GitPullRequestClosedRegular';
  */
@@ -32,4 +33,5 @@ const GitPullRequestClosed = memo(forwardRef<SVGSVGElement, GitPullRequestClosed
 
 GitPullRequestClosed.displayName = 'GitPullRequestClosed';
 
-export { GitPullRequestClosed };
+// Triple export pattern (lucide-react style)
+export { GitPullRequestClosed, GitPullRequestClosed as GitPullRequestClosedIcon, GitPullRequestClosed as SiGitPullRequestClosed };

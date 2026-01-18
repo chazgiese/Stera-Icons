@@ -15,5 +15,6 @@ const MapFillDuotone = memo(
 
 MapFillDuotone.displayName = 'MapFillDuotone';
 
-export { MapFillDuotone };
+// Triple export pattern (lucide-react style)
+export { MapFillDuotone, MapFillDuotone as MapFillDuotoneIcon, MapFillDuotone as SiMapFillDuotone };
 export type { MapFillDuotoneProps };

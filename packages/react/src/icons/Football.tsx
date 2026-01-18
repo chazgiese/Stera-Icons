@@ -13,7 +13,8 @@ export interface FootballProps extends IconProps {
 }
 
 /**
- * Football with dynamic weight and duotone props.
+ * Football - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FootballRegular } from 'stera-icons/FootballRegular';
  */
@@ -32,4 +33,5 @@ const Football = memo(forwardRef<SVGSVGElement, FootballProps>(({
 
 Football.displayName = 'Football';
 
-export { Football };
+// Triple export pattern (lucide-react style)
+export { Football, Football as FootballIcon, Football as SiFootball };

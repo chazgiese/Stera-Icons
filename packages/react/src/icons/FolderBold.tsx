@@ -14,5 +14,6 @@ const FolderBold = memo(
 
 FolderBold.displayName = 'FolderBold';
 
-export { FolderBold };
+// Triple export pattern (lucide-react style)
+export { FolderBold, FolderBold as FolderBoldIcon, FolderBold as SiFolderBold };
 export type { FolderBoldProps };

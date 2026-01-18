@@ -14,5 +14,6 @@ const SpiralBold = memo(
 
 SpiralBold.displayName = 'SpiralBold';
 
-export { SpiralBold };
+// Triple export pattern (lucide-react style)
+export { SpiralBold, SpiralBold as SpiralBoldIcon, SpiralBold as SiSpiralBold };
 export type { SpiralBoldProps };

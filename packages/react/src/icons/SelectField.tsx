@@ -13,7 +13,8 @@ export interface SelectFieldProps extends IconProps {
 }
 
 /**
- * SelectField with dynamic weight and duotone props.
+ * SelectField - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SelectFieldRegular } from 'stera-icons/SelectFieldRegular';
  */
@@ -32,4 +33,5 @@ const SelectField = memo(forwardRef<SVGSVGElement, SelectFieldProps>(({
 
 SelectField.displayName = 'SelectField';
 
-export { SelectField };
+// Triple export pattern (lucide-react style)
+export { SelectField, SelectField as SelectFieldIcon, SelectField as SiSelectField };

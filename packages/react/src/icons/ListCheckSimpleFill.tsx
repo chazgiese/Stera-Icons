@@ -14,5 +14,6 @@ const ListCheckSimpleFill = memo(
 
 ListCheckSimpleFill.displayName = 'ListCheckSimpleFill';
 
-export { ListCheckSimpleFill };
+// Triple export pattern (lucide-react style)
+export { ListCheckSimpleFill, ListCheckSimpleFill as ListCheckSimpleFillIcon, ListCheckSimpleFill as SiListCheckSimpleFill };
 export type { ListCheckSimpleFillProps };

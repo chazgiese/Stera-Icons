@@ -13,7 +13,8 @@ export interface TimerProps extends IconProps {
 }
 
 /**
- * Timer with dynamic weight and duotone props.
+ * Timer - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TimerRegular } from 'stera-icons/TimerRegular';
  */
@@ -32,4 +33,5 @@ const Timer = memo(forwardRef<SVGSVGElement, TimerProps>(({
 
 Timer.displayName = 'Timer';
 
-export { Timer };
+// Triple export pattern (lucide-react style)
+export { Timer, Timer as TimerIcon, Timer as SiTimer };

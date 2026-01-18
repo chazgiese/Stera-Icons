@@ -14,5 +14,6 @@ const TreeDeciduousRegular = memo(
 
 TreeDeciduousRegular.displayName = 'TreeDeciduousRegular';
 
-export { TreeDeciduousRegular };
+// Triple export pattern (lucide-react style)
+export { TreeDeciduousRegular, TreeDeciduousRegular as TreeDeciduousRegularIcon, TreeDeciduousRegular as SiTreeDeciduousRegular };
 export type { TreeDeciduousRegularProps };

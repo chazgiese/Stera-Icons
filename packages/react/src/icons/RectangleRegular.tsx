@@ -14,5 +14,6 @@ const RectangleRegular = memo(
 
 RectangleRegular.displayName = 'RectangleRegular';
 
-export { RectangleRegular };
+// Triple export pattern (lucide-react style)
+export { RectangleRegular, RectangleRegular as RectangleRegularIcon, RectangleRegular as SiRectangleRegular };
 export type { RectangleRegularProps };

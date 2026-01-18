@@ -14,5 +14,6 @@ const BoundingBoxRegular = memo(
 
 BoundingBoxRegular.displayName = 'BoundingBoxRegular';
 
-export { BoundingBoxRegular };
+// Triple export pattern (lucide-react style)
+export { BoundingBoxRegular, BoundingBoxRegular as BoundingBoxRegularIcon, BoundingBoxRegular as SiBoundingBoxRegular };
 export type { BoundingBoxRegularProps };

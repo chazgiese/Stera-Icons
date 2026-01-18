@@ -15,5 +15,6 @@ const RotateLeftBoldDuotone = memo(
 
 RotateLeftBoldDuotone.displayName = 'RotateLeftBoldDuotone';
 
-export { RotateLeftBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { RotateLeftBoldDuotone, RotateLeftBoldDuotone as RotateLeftBoldDuotoneIcon, RotateLeftBoldDuotone as SiRotateLeftBoldDuotone };
 export type { RotateLeftBoldDuotoneProps };

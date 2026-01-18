@@ -13,7 +13,8 @@ export interface QuestionMarkProps extends IconProps {
 }
 
 /**
- * QuestionMark with dynamic weight and duotone props.
+ * QuestionMark - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { QuestionMarkRegular } from 'stera-icons/QuestionMarkRegular';
  */
@@ -32,4 +33,5 @@ const QuestionMark = memo(forwardRef<SVGSVGElement, QuestionMarkProps>(({
 
 QuestionMark.displayName = 'QuestionMark';
 
-export { QuestionMark };
+// Triple export pattern (lucide-react style)
+export { QuestionMark, QuestionMark as QuestionMarkIcon, QuestionMark as SiQuestionMark };

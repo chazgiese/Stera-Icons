@@ -14,5 +14,6 @@ const CurveBezierRegular = memo(
 
 CurveBezierRegular.displayName = 'CurveBezierRegular';
 
-export { CurveBezierRegular };
+// Triple export pattern (lucide-react style)
+export { CurveBezierRegular, CurveBezierRegular as CurveBezierRegularIcon, CurveBezierRegular as SiCurveBezierRegular };
 export type { CurveBezierRegularProps };

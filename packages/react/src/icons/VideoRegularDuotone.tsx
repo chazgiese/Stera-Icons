@@ -15,5 +15,6 @@ const VideoRegularDuotone = memo(
 
 VideoRegularDuotone.displayName = 'VideoRegularDuotone';
 
-export { VideoRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { VideoRegularDuotone, VideoRegularDuotone as VideoRegularDuotoneIcon, VideoRegularDuotone as SiVideoRegularDuotone };
 export type { VideoRegularDuotoneProps };

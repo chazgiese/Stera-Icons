@@ -13,7 +13,8 @@ export interface HandbagProps extends IconProps {
 }
 
 /**
- * Handbag with dynamic weight and duotone props.
+ * Handbag - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HandbagRegular } from 'stera-icons/HandbagRegular';
  */
@@ -32,4 +33,5 @@ const Handbag = memo(forwardRef<SVGSVGElement, HandbagProps>(({
 
 Handbag.displayName = 'Handbag';
 
-export { Handbag };
+// Triple export pattern (lucide-react style)
+export { Handbag, Handbag as HandbagIcon, Handbag as SiHandbag };

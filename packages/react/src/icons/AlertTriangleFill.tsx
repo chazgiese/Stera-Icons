@@ -14,5 +14,6 @@ const AlertTriangleFill = memo(
 
 AlertTriangleFill.displayName = 'AlertTriangleFill';
 
-export { AlertTriangleFill };
+// Triple export pattern (lucide-react style)
+export { AlertTriangleFill, AlertTriangleFill as AlertTriangleFillIcon, AlertTriangleFill as SiAlertTriangleFill };
 export type { AlertTriangleFillProps };

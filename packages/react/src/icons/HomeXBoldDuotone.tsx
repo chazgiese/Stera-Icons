@@ -15,5 +15,6 @@ const HomeXBoldDuotone = memo(
 
 HomeXBoldDuotone.displayName = 'HomeXBoldDuotone';
 
-export { HomeXBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HomeXBoldDuotone, HomeXBoldDuotone as HomeXBoldDuotoneIcon, HomeXBoldDuotone as SiHomeXBoldDuotone };
 export type { HomeXBoldDuotoneProps };

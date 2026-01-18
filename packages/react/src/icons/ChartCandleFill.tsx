@@ -14,5 +14,6 @@ const ChartCandleFill = memo(
 
 ChartCandleFill.displayName = 'ChartCandleFill';
 
-export { ChartCandleFill };
+// Triple export pattern (lucide-react style)
+export { ChartCandleFill, ChartCandleFill as ChartCandleFillIcon, ChartCandleFill as SiChartCandleFill };
 export type { ChartCandleFillProps };

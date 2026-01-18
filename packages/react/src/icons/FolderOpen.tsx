@@ -13,7 +13,8 @@ export interface FolderOpenProps extends IconProps {
 }
 
 /**
- * FolderOpen with dynamic weight and duotone props.
+ * FolderOpen - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FolderOpenRegular } from 'stera-icons/FolderOpenRegular';
  */
@@ -32,4 +33,5 @@ const FolderOpen = memo(forwardRef<SVGSVGElement, FolderOpenProps>(({
 
 FolderOpen.displayName = 'FolderOpen';
 
-export { FolderOpen };
+// Triple export pattern (lucide-react style)
+export { FolderOpen, FolderOpen as FolderOpenIcon, FolderOpen as SiFolderOpen };

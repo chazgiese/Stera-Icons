@@ -15,5 +15,6 @@ const DatabaseXRegular = memo(
 
 DatabaseXRegular.displayName = 'DatabaseXRegular';
 
-export { DatabaseXRegular };
+// Triple export pattern (lucide-react style)
+export { DatabaseXRegular, DatabaseXRegular as DatabaseXRegularIcon, DatabaseXRegular as SiDatabaseXRegular };
 export type { DatabaseXRegularProps };

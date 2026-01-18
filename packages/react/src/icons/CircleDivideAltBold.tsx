@@ -14,5 +14,6 @@ const CircleDivideAltBold = memo(
 
 CircleDivideAltBold.displayName = 'CircleDivideAltBold';
 
-export { CircleDivideAltBold };
+// Triple export pattern (lucide-react style)
+export { CircleDivideAltBold, CircleDivideAltBold as CircleDivideAltBoldIcon, CircleDivideAltBold as SiCircleDivideAltBold };
 export type { CircleDivideAltBoldProps };

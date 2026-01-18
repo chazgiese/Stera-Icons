@@ -16,5 +16,6 @@ const AgentCursorRegular = memo(
 
 AgentCursorRegular.displayName = 'AgentCursorRegular';
 
-export { AgentCursorRegular };
+// Triple export pattern (lucide-react style)
+export { AgentCursorRegular, AgentCursorRegular as AgentCursorRegularIcon, AgentCursorRegular as SiAgentCursorRegular };
 export type { AgentCursorRegularProps };

@@ -13,7 +13,8 @@ export interface BrowserProps extends IconProps {
 }
 
 /**
- * Browser with dynamic weight and duotone props.
+ * Browser - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BrowserRegular } from 'stera-icons/BrowserRegular';
  */
@@ -32,4 +33,5 @@ const Browser = memo(forwardRef<SVGSVGElement, BrowserProps>(({
 
 Browser.displayName = 'Browser';
 
-export { Browser };
+// Triple export pattern (lucide-react style)
+export { Browser, Browser as BrowserIcon, Browser as SiBrowser };

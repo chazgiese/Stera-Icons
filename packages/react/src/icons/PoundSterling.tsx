@@ -13,7 +13,8 @@ export interface PoundSterlingProps extends IconProps {
 }
 
 /**
- * PoundSterling with dynamic weight and duotone props.
+ * PoundSterling - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PoundSterlingRegular } from 'stera-icons/PoundSterlingRegular';
  */
@@ -32,4 +33,5 @@ const PoundSterling = memo(forwardRef<SVGSVGElement, PoundSterlingProps>(({
 
 PoundSterling.displayName = 'PoundSterling';
 
-export { PoundSterling };
+// Triple export pattern (lucide-react style)
+export { PoundSterling, PoundSterling as PoundSterlingIcon, PoundSterling as SiPoundSterling };

@@ -14,5 +14,6 @@ const LayoutGridCircleRegular = memo(
 
 LayoutGridCircleRegular.displayName = 'LayoutGridCircleRegular';
 
-export { LayoutGridCircleRegular };
+// Triple export pattern (lucide-react style)
+export { LayoutGridCircleRegular, LayoutGridCircleRegular as LayoutGridCircleRegularIcon, LayoutGridCircleRegular as SiLayoutGridCircleRegular };
 export type { LayoutGridCircleRegularProps };

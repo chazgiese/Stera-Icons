@@ -13,7 +13,8 @@ export interface BladeSwordProps extends IconProps {
 }
 
 /**
- * BladeSword with dynamic weight and duotone props.
+ * BladeSword - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BladeSwordRegular } from 'stera-icons/BladeSwordRegular';
  */
@@ -32,4 +33,5 @@ const BladeSword = memo(forwardRef<SVGSVGElement, BladeSwordProps>(({
 
 BladeSword.displayName = 'BladeSword';
 
-export { BladeSword };
+// Triple export pattern (lucide-react style)
+export { BladeSword, BladeSword as BladeSwordIcon, BladeSword as SiBladeSword };

@@ -13,7 +13,8 @@ export interface MusicProps extends IconProps {
 }
 
 /**
- * Music with dynamic weight and duotone props.
+ * Music - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MusicRegular } from 'stera-icons/MusicRegular';
  */
@@ -32,4 +33,5 @@ const Music = memo(forwardRef<SVGSVGElement, MusicProps>(({
 
 Music.displayName = 'Music';
 
-export { Music };
+// Triple export pattern (lucide-react style)
+export { Music, Music as MusicIcon, Music as SiMusic };

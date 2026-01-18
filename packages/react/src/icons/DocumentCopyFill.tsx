@@ -15,5 +15,6 @@ const DocumentCopyFill = memo(
 
 DocumentCopyFill.displayName = 'DocumentCopyFill';
 
-export { DocumentCopyFill };
+// Triple export pattern (lucide-react style)
+export { DocumentCopyFill, DocumentCopyFill as DocumentCopyFillIcon, DocumentCopyFill as SiDocumentCopyFill };
 export type { DocumentCopyFillProps };

@@ -13,7 +13,8 @@ export interface PenProps extends IconProps {
 }
 
 /**
- * Pen with dynamic weight and duotone props.
+ * Pen - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PenRegular } from 'stera-icons/PenRegular';
  */
@@ -32,4 +33,5 @@ const Pen = memo(forwardRef<SVGSVGElement, PenProps>(({
 
 Pen.displayName = 'Pen';
 
-export { Pen };
+// Triple export pattern (lucide-react style)
+export { Pen, Pen as PenIcon, Pen as SiPen };

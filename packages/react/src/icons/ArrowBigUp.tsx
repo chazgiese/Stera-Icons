@@ -13,7 +13,8 @@ export interface ArrowBigUpProps extends IconProps {
 }
 
 /**
- * ArrowBigUp with dynamic weight and duotone props.
+ * ArrowBigUp - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowBigUpRegular } from 'stera-icons/ArrowBigUpRegular';
  */
@@ -32,4 +33,5 @@ const ArrowBigUp = memo(forwardRef<SVGSVGElement, ArrowBigUpProps>(({
 
 ArrowBigUp.displayName = 'ArrowBigUp';
 
-export { ArrowBigUp };
+// Triple export pattern (lucide-react style)
+export { ArrowBigUp, ArrowBigUp as ArrowBigUpIcon, ArrowBigUp as SiArrowBigUp };

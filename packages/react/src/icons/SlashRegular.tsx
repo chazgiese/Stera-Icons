@@ -14,5 +14,6 @@ const SlashRegular = memo(
 
 SlashRegular.displayName = 'SlashRegular';
 
-export { SlashRegular };
+// Triple export pattern (lucide-react style)
+export { SlashRegular, SlashRegular as SlashRegularIcon, SlashRegular as SiSlashRegular };
 export type { SlashRegularProps };

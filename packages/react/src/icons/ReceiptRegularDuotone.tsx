@@ -15,5 +15,6 @@ const ReceiptRegularDuotone = memo(
 
 ReceiptRegularDuotone.displayName = 'ReceiptRegularDuotone';
 
-export { ReceiptRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ReceiptRegularDuotone, ReceiptRegularDuotone as ReceiptRegularDuotoneIcon, ReceiptRegularDuotone as SiReceiptRegularDuotone };
 export type { ReceiptRegularDuotoneProps };

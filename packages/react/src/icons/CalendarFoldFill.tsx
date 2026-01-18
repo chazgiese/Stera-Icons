@@ -14,5 +14,6 @@ const CalendarFoldFill = memo(
 
 CalendarFoldFill.displayName = 'CalendarFoldFill';
 
-export { CalendarFoldFill };
+// Triple export pattern (lucide-react style)
+export { CalendarFoldFill, CalendarFoldFill as CalendarFoldFillIcon, CalendarFoldFill as SiCalendarFoldFill };
 export type { CalendarFoldFillProps };

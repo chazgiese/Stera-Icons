@@ -13,7 +13,8 @@ export interface SpeakerHighProps extends IconProps {
 }
 
 /**
- * SpeakerHigh with dynamic weight and duotone props.
+ * SpeakerHigh - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SpeakerHighRegular } from 'stera-icons/SpeakerHighRegular';
  */
@@ -32,4 +33,5 @@ const SpeakerHigh = memo(forwardRef<SVGSVGElement, SpeakerHighProps>(({
 
 SpeakerHigh.displayName = 'SpeakerHigh';
 
-export { SpeakerHigh };
+// Triple export pattern (lucide-react style)
+export { SpeakerHigh, SpeakerHigh as SpeakerHighIcon, SpeakerHigh as SiSpeakerHigh };

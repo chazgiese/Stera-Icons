@@ -14,5 +14,6 @@ const FolderTreeFill = memo(
 
 FolderTreeFill.displayName = 'FolderTreeFill';
 
-export { FolderTreeFill };
+// Triple export pattern (lucide-react style)
+export { FolderTreeFill, FolderTreeFill as FolderTreeFillIcon, FolderTreeFill as SiFolderTreeFill };
 export type { FolderTreeFillProps };

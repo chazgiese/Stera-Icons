@@ -15,5 +15,6 @@ const ThumbsUpFillDuotone = memo(
 
 ThumbsUpFillDuotone.displayName = 'ThumbsUpFillDuotone';
 
-export { ThumbsUpFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ThumbsUpFillDuotone, ThumbsUpFillDuotone as ThumbsUpFillDuotoneIcon, ThumbsUpFillDuotone as SiThumbsUpFillDuotone };
 export type { ThumbsUpFillDuotoneProps };

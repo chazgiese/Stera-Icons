@@ -14,5 +14,6 @@ const WifiSlashRegular = memo(
 
 WifiSlashRegular.displayName = 'WifiSlashRegular';
 
-export { WifiSlashRegular };
+// Triple export pattern (lucide-react style)
+export { WifiSlashRegular, WifiSlashRegular as WifiSlashRegularIcon, WifiSlashRegular as SiWifiSlashRegular };
 export type { WifiSlashRegularProps };

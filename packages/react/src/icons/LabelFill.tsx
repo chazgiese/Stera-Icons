@@ -14,5 +14,6 @@ const LabelFill = memo(
 
 LabelFill.displayName = 'LabelFill';
 
-export { LabelFill };
+// Triple export pattern (lucide-react style)
+export { LabelFill, LabelFill as LabelFillIcon, LabelFill as SiLabelFill };
 export type { LabelFillProps };

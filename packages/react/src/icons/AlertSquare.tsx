@@ -13,7 +13,8 @@ export interface AlertSquareProps extends IconProps {
 }
 
 /**
- * AlertSquare with dynamic weight and duotone props.
+ * AlertSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertSquareRegular } from 'stera-icons/AlertSquareRegular';
  */
@@ -32,4 +33,5 @@ const AlertSquare = memo(forwardRef<SVGSVGElement, AlertSquareProps>(({
 
 AlertSquare.displayName = 'AlertSquare';
 
-export { AlertSquare };
+// Triple export pattern (lucide-react style)
+export { AlertSquare, AlertSquare as AlertSquareIcon, AlertSquare as SiAlertSquare };

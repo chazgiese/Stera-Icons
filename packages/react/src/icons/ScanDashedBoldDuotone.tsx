@@ -7,7 +7,7 @@ type ScanDashedBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ScanDashedBoldDuotone = memo(
   forwardRef<SVGSVGElement, ScanDashedBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3 16a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3v-2a1 1 0 0 1 1-1M21 16a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1M7 2a1 1 0 0 1 0 2H5a1 1 0 0 0-1 1v2a1 1 0 0 1-2 0V5a3 3 0 0 1 3-3zM19 2a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0V5a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z" />
+      <path d="M3 16a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3v-2a1 1 0 0 1 1-1M21 16a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1M7 2a1 1 0 0 1 0 2H5a1 1 0 0 0-1 1v2a1 1 0 0 1-2 0V5a3 3 0 0 1 3-3zM19 2a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0V5a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z" opacity={0.4} />
         <path fill="currentColor" d="M23 11a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
@@ -15,5 +15,6 @@ const ScanDashedBoldDuotone = memo(
 
 ScanDashedBoldDuotone.displayName = 'ScanDashedBoldDuotone';
 
-export { ScanDashedBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ScanDashedBoldDuotone, ScanDashedBoldDuotone as ScanDashedBoldDuotoneIcon, ScanDashedBoldDuotone as SiScanDashedBoldDuotone };
 export type { ScanDashedBoldDuotoneProps };

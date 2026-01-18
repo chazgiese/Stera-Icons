@@ -14,5 +14,6 @@ const ApertureFill = memo(
 
 ApertureFill.displayName = 'ApertureFill';
 
-export { ApertureFill };
+// Triple export pattern (lucide-react style)
+export { ApertureFill, ApertureFill as ApertureFillIcon, ApertureFill as SiApertureFill };
 export type { ApertureFillProps };

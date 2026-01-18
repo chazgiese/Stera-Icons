@@ -14,5 +14,6 @@ const OptionKeyBold = memo(
 
 OptionKeyBold.displayName = 'OptionKeyBold';
 
-export { OptionKeyBold };
+// Triple export pattern (lucide-react style)
+export { OptionKeyBold, OptionKeyBold as OptionKeyBoldIcon, OptionKeyBold as SiOptionKeyBold };
 export type { OptionKeyBoldProps };

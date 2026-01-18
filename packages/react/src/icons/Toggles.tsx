@@ -13,7 +13,8 @@ export interface TogglesProps extends IconProps {
 }
 
 /**
- * Toggles with dynamic weight and duotone props.
+ * Toggles - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TogglesRegular } from 'stera-icons/TogglesRegular';
  */
@@ -32,4 +33,5 @@ const Toggles = memo(forwardRef<SVGSVGElement, TogglesProps>(({
 
 Toggles.displayName = 'Toggles';
 
-export { Toggles };
+// Triple export pattern (lucide-react style)
+export { Toggles, Toggles as TogglesIcon, Toggles as SiToggles };

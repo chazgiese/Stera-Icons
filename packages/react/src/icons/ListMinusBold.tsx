@@ -15,5 +15,6 @@ const ListMinusBold = memo(
 
 ListMinusBold.displayName = 'ListMinusBold';
 
-export { ListMinusBold };
+// Triple export pattern (lucide-react style)
+export { ListMinusBold, ListMinusBold as ListMinusBoldIcon, ListMinusBold as SiListMinusBold };
 export type { ListMinusBoldProps };

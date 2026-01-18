@@ -15,5 +15,6 @@ const ShareRegular = memo(
 
 ShareRegular.displayName = 'ShareRegular';
 
-export { ShareRegular };
+// Triple export pattern (lucide-react style)
+export { ShareRegular, ShareRegular as ShareRegularIcon, ShareRegular as SiShareRegular };
 export type { ShareRegularProps };

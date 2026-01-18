@@ -14,5 +14,6 @@ const SendHFill = memo(
 
 SendHFill.displayName = 'SendHFill';
 
-export { SendHFill };
+// Triple export pattern (lucide-react style)
+export { SendHFill, SendHFill as SendHFillIcon, SendHFill as SiSendHFill };
 export type { SendHFillProps };

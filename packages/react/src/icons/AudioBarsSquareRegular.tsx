@@ -15,5 +15,6 @@ const AudioBarsSquareRegular = memo(
 
 AudioBarsSquareRegular.displayName = 'AudioBarsSquareRegular';
 
-export { AudioBarsSquareRegular };
+// Triple export pattern (lucide-react style)
+export { AudioBarsSquareRegular, AudioBarsSquareRegular as AudioBarsSquareRegularIcon, AudioBarsSquareRegular as SiAudioBarsSquareRegular };
 export type { AudioBarsSquareRegularProps };

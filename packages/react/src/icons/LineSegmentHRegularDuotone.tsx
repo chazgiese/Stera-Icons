@@ -15,5 +15,6 @@ const LineSegmentHRegularDuotone = memo(
 
 LineSegmentHRegularDuotone.displayName = 'LineSegmentHRegularDuotone';
 
-export { LineSegmentHRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { LineSegmentHRegularDuotone, LineSegmentHRegularDuotone as LineSegmentHRegularDuotoneIcon, LineSegmentHRegularDuotone as SiLineSegmentHRegularDuotone };
 export type { LineSegmentHRegularDuotoneProps };

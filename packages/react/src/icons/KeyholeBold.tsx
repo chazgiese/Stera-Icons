@@ -14,5 +14,6 @@ const KeyholeBold = memo(
 
 KeyholeBold.displayName = 'KeyholeBold';
 
-export { KeyholeBold };
+// Triple export pattern (lucide-react style)
+export { KeyholeBold, KeyholeBold as KeyholeBoldIcon, KeyholeBold as SiKeyholeBold };
 export type { KeyholeBoldProps };

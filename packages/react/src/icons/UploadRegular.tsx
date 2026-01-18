@@ -15,5 +15,6 @@ const UploadRegular = memo(
 
 UploadRegular.displayName = 'UploadRegular';
 
-export { UploadRegular };
+// Triple export pattern (lucide-react style)
+export { UploadRegular, UploadRegular as UploadRegularIcon, UploadRegular as SiUploadRegular };
 export type { UploadRegularProps };

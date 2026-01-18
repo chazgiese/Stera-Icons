@@ -14,5 +14,6 @@ const BoxesFill = memo(
 
 BoxesFill.displayName = 'BoxesFill';
 
-export { BoxesFill };
+// Triple export pattern (lucide-react style)
+export { BoxesFill, BoxesFill as BoxesFillIcon, BoxesFill as SiBoxesFill };
 export type { BoxesFillProps };

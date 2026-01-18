@@ -13,7 +13,8 @@ export interface MapProps extends IconProps {
 }
 
 /**
- * Map with dynamic weight and duotone props.
+ * Map - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MapRegular } from 'stera-icons/MapRegular';
  */
@@ -32,4 +33,5 @@ const Map = memo(forwardRef<SVGSVGElement, MapProps>(({
 
 Map.displayName = 'Map';
 
-export { Map };
+// Triple export pattern (lucide-react style)
+export { Map, Map as MapIcon, Map as SiMap };

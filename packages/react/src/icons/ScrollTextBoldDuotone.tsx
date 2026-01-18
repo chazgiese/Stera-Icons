@@ -15,5 +15,6 @@ const ScrollTextBoldDuotone = memo(
 
 ScrollTextBoldDuotone.displayName = 'ScrollTextBoldDuotone';
 
-export { ScrollTextBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ScrollTextBoldDuotone, ScrollTextBoldDuotone as ScrollTextBoldDuotoneIcon, ScrollTextBoldDuotone as SiScrollTextBoldDuotone };
 export type { ScrollTextBoldDuotoneProps };

@@ -14,5 +14,6 @@ const LayersRegular = memo(
 
 LayersRegular.displayName = 'LayersRegular';
 
-export { LayersRegular };
+// Triple export pattern (lucide-react style)
+export { LayersRegular, LayersRegular as LayersRegularIcon, LayersRegular as SiLayersRegular };
 export type { LayersRegularProps };

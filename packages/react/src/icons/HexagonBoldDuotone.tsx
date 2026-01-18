@@ -15,5 +15,6 @@ const HexagonBoldDuotone = memo(
 
 HexagonBoldDuotone.displayName = 'HexagonBoldDuotone';
 
-export { HexagonBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { HexagonBoldDuotone, HexagonBoldDuotone as HexagonBoldDuotoneIcon, HexagonBoldDuotone as SiHexagonBoldDuotone };
 export type { HexagonBoldDuotoneProps };

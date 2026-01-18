@@ -15,5 +15,6 @@ const ArrowSquareUpRightFillDuotone = memo(
 
 ArrowSquareUpRightFillDuotone.displayName = 'ArrowSquareUpRightFillDuotone';
 
-export { ArrowSquareUpRightFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ArrowSquareUpRightFillDuotone, ArrowSquareUpRightFillDuotone as ArrowSquareUpRightFillDuotoneIcon, ArrowSquareUpRightFillDuotone as SiArrowSquareUpRightFillDuotone };
 export type { ArrowSquareUpRightFillDuotoneProps };

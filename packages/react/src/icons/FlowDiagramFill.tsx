@@ -14,5 +14,6 @@ const FlowDiagramFill = memo(
 
 FlowDiagramFill.displayName = 'FlowDiagramFill';
 
-export { FlowDiagramFill };
+// Triple export pattern (lucide-react style)
+export { FlowDiagramFill, FlowDiagramFill as FlowDiagramFillIcon, FlowDiagramFill as SiFlowDiagramFill };
 export type { FlowDiagramFillProps };

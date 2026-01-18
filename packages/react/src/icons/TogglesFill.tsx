@@ -15,5 +15,6 @@ const TogglesFill = memo(
 
 TogglesFill.displayName = 'TogglesFill';
 
-export { TogglesFill };
+// Triple export pattern (lucide-react style)
+export { TogglesFill, TogglesFill as TogglesFillIcon, TogglesFill as SiTogglesFill };
 export type { TogglesFillProps };

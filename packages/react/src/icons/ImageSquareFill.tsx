@@ -15,5 +15,6 @@ const ImageSquareFill = memo(
 
 ImageSquareFill.displayName = 'ImageSquareFill';
 
-export { ImageSquareFill };
+// Triple export pattern (lucide-react style)
+export { ImageSquareFill, ImageSquareFill as ImageSquareFillIcon, ImageSquareFill as SiImageSquareFill };
 export type { ImageSquareFillProps };

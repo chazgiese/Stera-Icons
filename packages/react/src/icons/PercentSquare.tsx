@@ -13,7 +13,8 @@ export interface PercentSquareProps extends IconProps {
 }
 
 /**
- * PercentSquare with dynamic weight and duotone props.
+ * PercentSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PercentSquareRegular } from 'stera-icons/PercentSquareRegular';
  */
@@ -32,4 +33,5 @@ const PercentSquare = memo(forwardRef<SVGSVGElement, PercentSquareProps>(({
 
 PercentSquare.displayName = 'PercentSquare';
 
-export { PercentSquare };
+// Triple export pattern (lucide-react style)
+export { PercentSquare, PercentSquare as PercentSquareIcon, PercentSquare as SiPercentSquare };

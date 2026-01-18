@@ -14,5 +14,6 @@ const ScanLineFill = memo(
 
 ScanLineFill.displayName = 'ScanLineFill';
 
-export { ScanLineFill };
+// Triple export pattern (lucide-react style)
+export { ScanLineFill, ScanLineFill as ScanLineFillIcon, ScanLineFill as SiScanLineFill };
 export type { ScanLineFillProps };

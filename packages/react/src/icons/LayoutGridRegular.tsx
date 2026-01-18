@@ -14,5 +14,6 @@ const LayoutGridRegular = memo(
 
 LayoutGridRegular.displayName = 'LayoutGridRegular';
 
-export { LayoutGridRegular };
+// Triple export pattern (lucide-react style)
+export { LayoutGridRegular, LayoutGridRegular as LayoutGridRegularIcon, LayoutGridRegular as SiLayoutGridRegular };
 export type { LayoutGridRegularProps };

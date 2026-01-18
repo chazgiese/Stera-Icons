@@ -14,5 +14,6 @@ const BookClosedFill = memo(
 
 BookClosedFill.displayName = 'BookClosedFill';
 
-export { BookClosedFill };
+// Triple export pattern (lucide-react style)
+export { BookClosedFill, BookClosedFill as BookClosedFillIcon, BookClosedFill as SiBookClosedFill };
 export type { BookClosedFillProps };

@@ -13,7 +13,8 @@ export interface KeyboardProps extends IconProps {
 }
 
 /**
- * Keyboard with dynamic weight and duotone props.
+ * Keyboard - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { KeyboardRegular } from 'stera-icons/KeyboardRegular';
  */
@@ -32,4 +33,5 @@ const Keyboard = memo(forwardRef<SVGSVGElement, KeyboardProps>(({
 
 Keyboard.displayName = 'Keyboard';
 
-export { Keyboard };
+// Triple export pattern (lucide-react style)
+export { Keyboard, Keyboard as KeyboardIcon, Keyboard as SiKeyboard };

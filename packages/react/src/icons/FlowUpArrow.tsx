@@ -13,7 +13,8 @@ export interface FlowUpArrowProps extends IconProps {
 }
 
 /**
- * FlowUpArrow with dynamic weight and duotone props.
+ * FlowUpArrow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowUpArrowRegular } from 'stera-icons/FlowUpArrowRegular';
  */
@@ -32,4 +33,5 @@ const FlowUpArrow = memo(forwardRef<SVGSVGElement, FlowUpArrowProps>(({
 
 FlowUpArrow.displayName = 'FlowUpArrow';
 
-export { FlowUpArrow };
+// Triple export pattern (lucide-react style)
+export { FlowUpArrow, FlowUpArrow as FlowUpArrowIcon, FlowUpArrow as SiFlowUpArrow };

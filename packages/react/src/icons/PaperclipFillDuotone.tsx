@@ -15,5 +15,6 @@ const PaperclipFillDuotone = memo(
 
 PaperclipFillDuotone.displayName = 'PaperclipFillDuotone';
 
-export { PaperclipFillDuotone };
+// Triple export pattern (lucide-react style)
+export { PaperclipFillDuotone, PaperclipFillDuotone as PaperclipFillDuotoneIcon, PaperclipFillDuotone as SiPaperclipFillDuotone };
 export type { PaperclipFillDuotoneProps };

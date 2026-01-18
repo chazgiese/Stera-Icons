@@ -14,5 +14,6 @@ const ForkKnifeBold = memo(
 
 ForkKnifeBold.displayName = 'ForkKnifeBold';
 
-export { ForkKnifeBold };
+// Triple export pattern (lucide-react style)
+export { ForkKnifeBold, ForkKnifeBold as ForkKnifeBoldIcon, ForkKnifeBold as SiForkKnifeBold };
 export type { ForkKnifeBoldProps };

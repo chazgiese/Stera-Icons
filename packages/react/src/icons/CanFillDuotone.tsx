@@ -15,5 +15,6 @@ const CanFillDuotone = memo(
 
 CanFillDuotone.displayName = 'CanFillDuotone';
 
-export { CanFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CanFillDuotone, CanFillDuotone as CanFillDuotoneIcon, CanFillDuotone as SiCanFillDuotone };
 export type { CanFillDuotoneProps };

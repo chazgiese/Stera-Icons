@@ -15,5 +15,6 @@ const ImagePanoramaBoldDuotone = memo(
 
 ImagePanoramaBoldDuotone.displayName = 'ImagePanoramaBoldDuotone';
 
-export { ImagePanoramaBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ImagePanoramaBoldDuotone, ImagePanoramaBoldDuotone as ImagePanoramaBoldDuotoneIcon, ImagePanoramaBoldDuotone as SiImagePanoramaBoldDuotone };
 export type { ImagePanoramaBoldDuotoneProps };

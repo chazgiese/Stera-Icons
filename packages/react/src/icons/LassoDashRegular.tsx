@@ -14,5 +14,6 @@ const LassoDashRegular = memo(
 
 LassoDashRegular.displayName = 'LassoDashRegular';
 
-export { LassoDashRegular };
+// Triple export pattern (lucide-react style)
+export { LassoDashRegular, LassoDashRegular as LassoDashRegularIcon, LassoDashRegular as SiLassoDashRegular };
 export type { LassoDashRegularProps };

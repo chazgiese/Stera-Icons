@@ -15,5 +15,6 @@ const MoonStarFillDuotone = memo(
 
 MoonStarFillDuotone.displayName = 'MoonStarFillDuotone';
 
-export { MoonStarFillDuotone };
+// Triple export pattern (lucide-react style)
+export { MoonStarFillDuotone, MoonStarFillDuotone as MoonStarFillDuotoneIcon, MoonStarFillDuotone as SiMoonStarFillDuotone };
 export type { MoonStarFillDuotoneProps };

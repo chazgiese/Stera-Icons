@@ -15,5 +15,6 @@ const PaintPaletteRegular = memo(
 
 PaintPaletteRegular.displayName = 'PaintPaletteRegular';
 
-export { PaintPaletteRegular };
+// Triple export pattern (lucide-react style)
+export { PaintPaletteRegular, PaintPaletteRegular as PaintPaletteRegularIcon, PaintPaletteRegular as SiPaintPaletteRegular };
 export type { PaintPaletteRegularProps };

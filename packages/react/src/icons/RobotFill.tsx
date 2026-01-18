@@ -14,5 +14,6 @@ const RobotFill = memo(
 
 RobotFill.displayName = 'RobotFill';
 
-export { RobotFill };
+// Triple export pattern (lucide-react style)
+export { RobotFill, RobotFill as RobotFillIcon, RobotFill as SiRobotFill };
 export type { RobotFillProps };

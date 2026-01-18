@@ -14,5 +14,6 @@ const BannerBold = memo(
 
 BannerBold.displayName = 'BannerBold';
 
-export { BannerBold };
+// Triple export pattern (lucide-react style)
+export { BannerBold, BannerBold as BannerBoldIcon, BannerBold as SiBannerBold };
 export type { BannerBoldProps };

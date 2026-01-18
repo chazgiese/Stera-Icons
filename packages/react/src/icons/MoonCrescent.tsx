@@ -13,7 +13,8 @@ export interface MoonCrescentProps extends IconProps {
 }
 
 /**
- * MoonCrescent with dynamic weight and duotone props.
+ * MoonCrescent - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MoonCrescentRegular } from 'stera-icons/MoonCrescentRegular';
  */
@@ -32,4 +33,5 @@ const MoonCrescent = memo(forwardRef<SVGSVGElement, MoonCrescentProps>(({
 
 MoonCrescent.displayName = 'MoonCrescent';
 
-export { MoonCrescent };
+// Triple export pattern (lucide-react style)
+export { MoonCrescent, MoonCrescent as MoonCrescentIcon, MoonCrescent as SiMoonCrescent };

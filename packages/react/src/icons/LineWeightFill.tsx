@@ -14,5 +14,6 @@ const LineWeightFill = memo(
 
 LineWeightFill.displayName = 'LineWeightFill';
 
-export { LineWeightFill };
+// Triple export pattern (lucide-react style)
+export { LineWeightFill, LineWeightFill as LineWeightFillIcon, LineWeightFill as SiLineWeightFill };
 export type { LineWeightFillProps };

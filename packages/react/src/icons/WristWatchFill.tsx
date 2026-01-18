@@ -14,5 +14,6 @@ const WristWatchFill = memo(
 
 WristWatchFill.displayName = 'WristWatchFill';
 
-export { WristWatchFill };
+// Triple export pattern (lucide-react style)
+export { WristWatchFill, WristWatchFill as WristWatchFillIcon, WristWatchFill as SiWristWatchFill };
 export type { WristWatchFillProps };

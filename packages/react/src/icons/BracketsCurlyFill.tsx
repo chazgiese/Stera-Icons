@@ -14,5 +14,6 @@ const BracketsCurlyFill = memo(
 
 BracketsCurlyFill.displayName = 'BracketsCurlyFill';
 
-export { BracketsCurlyFill };
+// Triple export pattern (lucide-react style)
+export { BracketsCurlyFill, BracketsCurlyFill as BracketsCurlyFillIcon, BracketsCurlyFill as SiBracketsCurlyFill };
 export type { BracketsCurlyFillProps };

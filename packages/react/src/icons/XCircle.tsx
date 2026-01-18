@@ -13,7 +13,8 @@ export interface XCircleProps extends IconProps {
 }
 
 /**
- * XCircle with dynamic weight and duotone props.
+ * XCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { XCircleRegular } from 'stera-icons/XCircleRegular';
  */
@@ -32,4 +33,5 @@ const XCircle = memo(forwardRef<SVGSVGElement, XCircleProps>(({
 
 XCircle.displayName = 'XCircle';
 
-export { XCircle };
+// Triple export pattern (lucide-react style)
+export { XCircle, XCircle as XCircleIcon, XCircle as SiXCircle };

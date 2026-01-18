@@ -13,7 +13,8 @@ export interface ShieldSlashProps extends IconProps {
 }
 
 /**
- * ShieldSlash with dynamic weight and duotone props.
+ * ShieldSlash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShieldSlashRegular } from 'stera-icons/ShieldSlashRegular';
  */
@@ -32,4 +33,5 @@ const ShieldSlash = memo(forwardRef<SVGSVGElement, ShieldSlashProps>(({
 
 ShieldSlash.displayName = 'ShieldSlash';
 
-export { ShieldSlash };
+// Triple export pattern (lucide-react style)
+export { ShieldSlash, ShieldSlash as ShieldSlashIcon, ShieldSlash as SiShieldSlash };

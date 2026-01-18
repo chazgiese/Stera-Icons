@@ -14,5 +14,6 @@ const ChartAreaFill = memo(
 
 ChartAreaFill.displayName = 'ChartAreaFill';
 
-export { ChartAreaFill };
+// Triple export pattern (lucide-react style)
+export { ChartAreaFill, ChartAreaFill as ChartAreaFillIcon, ChartAreaFill as SiChartAreaFill };
 export type { ChartAreaFillProps };

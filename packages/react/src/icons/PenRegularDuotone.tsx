@@ -15,5 +15,6 @@ const PenRegularDuotone = memo(
 
 PenRegularDuotone.displayName = 'PenRegularDuotone';
 
-export { PenRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { PenRegularDuotone, PenRegularDuotone as PenRegularDuotoneIcon, PenRegularDuotone as SiPenRegularDuotone };
 export type { PenRegularDuotoneProps };

@@ -15,5 +15,6 @@ const GhostBold = memo(
 
 GhostBold.displayName = 'GhostBold';
 
-export { GhostBold };
+// Triple export pattern (lucide-react style)
+export { GhostBold, GhostBold as GhostBoldIcon, GhostBold as SiGhostBold };
 export type { GhostBoldProps };

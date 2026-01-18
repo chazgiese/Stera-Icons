@@ -13,7 +13,8 @@ export interface ScanEyeProps extends IconProps {
 }
 
 /**
- * ScanEye with dynamic weight and duotone props.
+ * ScanEye - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScanEyeRegular } from 'stera-icons/ScanEyeRegular';
  */
@@ -32,4 +33,5 @@ const ScanEye = memo(forwardRef<SVGSVGElement, ScanEyeProps>(({
 
 ScanEye.displayName = 'ScanEye';
 
-export { ScanEye };
+// Triple export pattern (lucide-react style)
+export { ScanEye, ScanEye as ScanEyeIcon, ScanEye as SiScanEye };

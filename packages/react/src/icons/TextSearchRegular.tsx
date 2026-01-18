@@ -15,5 +15,6 @@ const TextSearchRegular = memo(
 
 TextSearchRegular.displayName = 'TextSearchRegular';
 
-export { TextSearchRegular };
+// Triple export pattern (lucide-react style)
+export { TextSearchRegular, TextSearchRegular as TextSearchRegularIcon, TextSearchRegular as SiTextSearchRegular };
 export type { TextSearchRegularProps };

@@ -14,5 +14,6 @@ const LineSegmentBold = memo(
 
 LineSegmentBold.displayName = 'LineSegmentBold';
 
-export { LineSegmentBold };
+// Triple export pattern (lucide-react style)
+export { LineSegmentBold, LineSegmentBold as LineSegmentBoldIcon, LineSegmentBold as SiLineSegmentBold };
 export type { LineSegmentBoldProps };

@@ -14,5 +14,6 @@ const OverlappingCirclesRegular = memo(
 
 OverlappingCirclesRegular.displayName = 'OverlappingCirclesRegular';
 
-export { OverlappingCirclesRegular };
+// Triple export pattern (lucide-react style)
+export { OverlappingCirclesRegular, OverlappingCirclesRegular as OverlappingCirclesRegularIcon, OverlappingCirclesRegular as SiOverlappingCirclesRegular };
 export type { OverlappingCirclesRegularProps };

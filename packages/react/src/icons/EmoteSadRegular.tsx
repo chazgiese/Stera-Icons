@@ -15,5 +15,6 @@ const EmoteSadRegular = memo(
 
 EmoteSadRegular.displayName = 'EmoteSadRegular';
 
-export { EmoteSadRegular };
+// Triple export pattern (lucide-react style)
+export { EmoteSadRegular, EmoteSadRegular as EmoteSadRegularIcon, EmoteSadRegular as SiEmoteSadRegular };
 export type { EmoteSadRegularProps };

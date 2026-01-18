@@ -14,5 +14,6 @@ const FlagFill = memo(
 
 FlagFill.displayName = 'FlagFill';
 
-export { FlagFill };
+// Triple export pattern (lucide-react style)
+export { FlagFill, FlagFill as FlagFillIcon, FlagFill as SiFlagFill };
 export type { FlagFillProps };

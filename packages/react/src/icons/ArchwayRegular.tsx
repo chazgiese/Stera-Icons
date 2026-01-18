@@ -14,5 +14,6 @@ const ArchwayRegular = memo(
 
 ArchwayRegular.displayName = 'ArchwayRegular';
 
-export { ArchwayRegular };
+// Triple export pattern (lucide-react style)
+export { ArchwayRegular, ArchwayRegular as ArchwayRegularIcon, ArchwayRegular as SiArchwayRegular };
 export type { ArchwayRegularProps };

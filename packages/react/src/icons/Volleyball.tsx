@@ -13,7 +13,8 @@ export interface VolleyballProps extends IconProps {
 }
 
 /**
- * Volleyball with dynamic weight and duotone props.
+ * Volleyball - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { VolleyballRegular } from 'stera-icons/VolleyballRegular';
  */
@@ -32,4 +33,5 @@ const Volleyball = memo(forwardRef<SVGSVGElement, VolleyballProps>(({
 
 Volleyball.displayName = 'Volleyball';
 
-export { Volleyball };
+// Triple export pattern (lucide-react style)
+export { Volleyball, Volleyball as VolleyballIcon, Volleyball as SiVolleyball };

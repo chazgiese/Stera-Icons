@@ -13,7 +13,8 @@ export interface CheckProps extends IconProps {
 }
 
 /**
- * Check with dynamic weight and duotone props.
+ * Check - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CheckRegular } from 'stera-icons/CheckRegular';
  */
@@ -32,4 +33,5 @@ const Check = memo(forwardRef<SVGSVGElement, CheckProps>(({
 
 Check.displayName = 'Check';
 
-export { Check };
+// Triple export pattern (lucide-react style)
+export { Check, Check as CheckIcon, Check as SiCheck };

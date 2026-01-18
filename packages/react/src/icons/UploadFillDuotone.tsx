@@ -15,5 +15,6 @@ const UploadFillDuotone = memo(
 
 UploadFillDuotone.displayName = 'UploadFillDuotone';
 
-export { UploadFillDuotone };
+// Triple export pattern (lucide-react style)
+export { UploadFillDuotone, UploadFillDuotone as UploadFillDuotoneIcon, UploadFillDuotone as SiUploadFillDuotone };
 export type { UploadFillDuotoneProps };

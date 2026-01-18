@@ -14,5 +14,6 @@ const RulerBold = memo(
 
 RulerBold.displayName = 'RulerBold';
 
-export { RulerBold };
+// Triple export pattern (lucide-react style)
+export { RulerBold, RulerBold as RulerBoldIcon, RulerBold as SiRulerBold };
 export type { RulerBoldProps };

@@ -13,7 +13,8 @@ export interface TvPlayAltProps extends IconProps {
 }
 
 /**
- * TvPlayAlt with dynamic weight and duotone props.
+ * TvPlayAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TvPlayAltRegular } from 'stera-icons/TvPlayAltRegular';
  */
@@ -32,4 +33,5 @@ const TvPlayAlt = memo(forwardRef<SVGSVGElement, TvPlayAltProps>(({
 
 TvPlayAlt.displayName = 'TvPlayAlt';
 
-export { TvPlayAlt };
+// Triple export pattern (lucide-react style)
+export { TvPlayAlt, TvPlayAlt as TvPlayAltIcon, TvPlayAlt as SiTvPlayAlt };

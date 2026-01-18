@@ -14,5 +14,6 @@ const CircleDivideCrossBold = memo(
 
 CircleDivideCrossBold.displayName = 'CircleDivideCrossBold';
 
-export { CircleDivideCrossBold };
+// Triple export pattern (lucide-react style)
+export { CircleDivideCrossBold, CircleDivideCrossBold as CircleDivideCrossBoldIcon, CircleDivideCrossBold as SiCircleDivideCrossBold };
 export type { CircleDivideCrossBoldProps };

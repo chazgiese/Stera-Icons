@@ -14,5 +14,6 @@ const CircleNotchFill = memo(
 
 CircleNotchFill.displayName = 'CircleNotchFill';
 
-export { CircleNotchFill };
+// Triple export pattern (lucide-react style)
+export { CircleNotchFill, CircleNotchFill as CircleNotchFillIcon, CircleNotchFill as SiCircleNotchFill };
 export type { CircleNotchFillProps };

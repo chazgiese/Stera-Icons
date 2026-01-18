@@ -13,7 +13,8 @@ export interface BatteryLowProps extends IconProps {
 }
 
 /**
- * BatteryLow with dynamic weight and duotone props.
+ * BatteryLow - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BatteryLowRegular } from 'stera-icons/BatteryLowRegular';
  */
@@ -32,4 +33,5 @@ const BatteryLow = memo(forwardRef<SVGSVGElement, BatteryLowProps>(({
 
 BatteryLow.displayName = 'BatteryLow';
 
-export { BatteryLow };
+// Triple export pattern (lucide-react style)
+export { BatteryLow, BatteryLow as BatteryLowIcon, BatteryLow as SiBatteryLow };

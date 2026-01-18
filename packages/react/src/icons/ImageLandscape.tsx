@@ -13,7 +13,8 @@ export interface ImageLandscapeProps extends IconProps {
 }
 
 /**
- * ImageLandscape with dynamic weight and duotone props.
+ * ImageLandscape - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ImageLandscapeRegular } from 'stera-icons/ImageLandscapeRegular';
  */
@@ -32,4 +33,5 @@ const ImageLandscape = memo(forwardRef<SVGSVGElement, ImageLandscapeProps>(({
 
 ImageLandscape.displayName = 'ImageLandscape';
 
-export { ImageLandscape };
+// Triple export pattern (lucide-react style)
+export { ImageLandscape, ImageLandscape as ImageLandscapeIcon, ImageLandscape as SiImageLandscape };

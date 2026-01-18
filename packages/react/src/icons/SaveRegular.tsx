@@ -15,5 +15,6 @@ const SaveRegular = memo(
 
 SaveRegular.displayName = 'SaveRegular';
 
-export { SaveRegular };
+// Triple export pattern (lucide-react style)
+export { SaveRegular, SaveRegular as SaveRegularIcon, SaveRegular as SiSaveRegular };
 export type { SaveRegularProps };

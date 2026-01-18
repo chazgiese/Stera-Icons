@@ -14,5 +14,6 @@ const ComponentRegular = memo(
 
 ComponentRegular.displayName = 'ComponentRegular';
 
-export { ComponentRegular };
+// Triple export pattern (lucide-react style)
+export { ComponentRegular, ComponentRegular as ComponentRegularIcon, ComponentRegular as SiComponentRegular };
 export type { ComponentRegularProps };

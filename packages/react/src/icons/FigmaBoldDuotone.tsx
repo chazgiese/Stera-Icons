@@ -15,5 +15,6 @@ const FigmaBoldDuotone = memo(
 
 FigmaBoldDuotone.displayName = 'FigmaBoldDuotone';
 
-export { FigmaBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FigmaBoldDuotone, FigmaBoldDuotone as FigmaBoldDuotoneIcon, FigmaBoldDuotone as SiFigmaBoldDuotone };
 export type { FigmaBoldDuotoneProps };

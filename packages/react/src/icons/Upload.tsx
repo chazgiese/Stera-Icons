@@ -13,7 +13,8 @@ export interface UploadProps extends IconProps {
 }
 
 /**
- * Upload with dynamic weight and duotone props.
+ * Upload - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UploadRegular } from 'stera-icons/UploadRegular';
  */
@@ -32,4 +33,5 @@ const Upload = memo(forwardRef<SVGSVGElement, UploadProps>(({
 
 Upload.displayName = 'Upload';
 
-export { Upload };
+// Triple export pattern (lucide-react style)
+export { Upload, Upload as UploadIcon, Upload as SiUpload };

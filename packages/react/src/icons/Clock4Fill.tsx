@@ -14,5 +14,6 @@ const Clock4Fill = memo(
 
 Clock4Fill.displayName = 'Clock4Fill';
 
-export { Clock4Fill };
+// Triple export pattern (lucide-react style)
+export { Clock4Fill, Clock4Fill as Clock4FillIcon, Clock4Fill as SiClock4Fill };
 export type { Clock4FillProps };

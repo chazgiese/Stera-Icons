@@ -14,5 +14,6 @@ const VideoOffFill = memo(
 
 VideoOffFill.displayName = 'VideoOffFill';
 
-export { VideoOffFill };
+// Triple export pattern (lucide-react style)
+export { VideoOffFill, VideoOffFill as VideoOffFillIcon, VideoOffFill as SiVideoOffFill };
 export type { VideoOffFillProps };

@@ -14,5 +14,6 @@ const CursorTextAltFill = memo(
 
 CursorTextAltFill.displayName = 'CursorTextAltFill';
 
-export { CursorTextAltFill };
+// Triple export pattern (lucide-react style)
+export { CursorTextAltFill, CursorTextAltFill as CursorTextAltFillIcon, CursorTextAltFill as SiCursorTextAltFill };
 export type { CursorTextAltFillProps };

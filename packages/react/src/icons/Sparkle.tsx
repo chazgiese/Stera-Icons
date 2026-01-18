@@ -13,7 +13,8 @@ export interface SparkleProps extends IconProps {
 }
 
 /**
- * Sparkle with dynamic weight and duotone props.
+ * Sparkle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SparkleRegular } from 'stera-icons/SparkleRegular';
  */
@@ -32,4 +33,5 @@ const Sparkle = memo(forwardRef<SVGSVGElement, SparkleProps>(({
 
 Sparkle.displayName = 'Sparkle';
 
-export { Sparkle };
+// Triple export pattern (lucide-react style)
+export { Sparkle, Sparkle as SparkleIcon, Sparkle as SiSparkle };

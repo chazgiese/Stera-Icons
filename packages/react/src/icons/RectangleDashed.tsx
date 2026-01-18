@@ -13,7 +13,8 @@ export interface RectangleDashedProps extends IconProps {
 }
 
 /**
- * RectangleDashed with dynamic weight and duotone props.
+ * RectangleDashed - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RectangleDashedRegular } from 'stera-icons/RectangleDashedRegular';
  */
@@ -32,4 +33,5 @@ const RectangleDashed = memo(forwardRef<SVGSVGElement, RectangleDashedProps>(({
 
 RectangleDashed.displayName = 'RectangleDashed';
 
-export { RectangleDashed };
+// Triple export pattern (lucide-react style)
+export { RectangleDashed, RectangleDashed as RectangleDashedIcon, RectangleDashed as SiRectangleDashed };

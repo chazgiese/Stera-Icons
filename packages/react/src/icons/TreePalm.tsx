@@ -13,7 +13,8 @@ export interface TreePalmProps extends IconProps {
 }
 
 /**
- * TreePalm with dynamic weight and duotone props.
+ * TreePalm - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TreePalmRegular } from 'stera-icons/TreePalmRegular';
  */
@@ -32,4 +33,5 @@ const TreePalm = memo(forwardRef<SVGSVGElement, TreePalmProps>(({
 
 TreePalm.displayName = 'TreePalm';
 
-export { TreePalm };
+// Triple export pattern (lucide-react style)
+export { TreePalm, TreePalm as TreePalmIcon, TreePalm as SiTreePalm };

@@ -16,5 +16,6 @@ const StopwatchBold = memo(
 
 StopwatchBold.displayName = 'StopwatchBold';
 
-export { StopwatchBold };
+// Triple export pattern (lucide-react style)
+export { StopwatchBold, StopwatchBold as StopwatchBoldIcon, StopwatchBold as SiStopwatchBold };
 export type { StopwatchBoldProps };

@@ -14,5 +14,6 @@ const CurveBezierFill = memo(
 
 CurveBezierFill.displayName = 'CurveBezierFill';
 
-export { CurveBezierFill };
+// Triple export pattern (lucide-react style)
+export { CurveBezierFill, CurveBezierFill as CurveBezierFillIcon, CurveBezierFill as SiCurveBezierFill };
 export type { CurveBezierFillProps };

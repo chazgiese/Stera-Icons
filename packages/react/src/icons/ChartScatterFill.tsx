@@ -15,5 +15,6 @@ const ChartScatterFill = memo(
 
 ChartScatterFill.displayName = 'ChartScatterFill';
 
-export { ChartScatterFill };
+// Triple export pattern (lucide-react style)
+export { ChartScatterFill, ChartScatterFill as ChartScatterFillIcon, ChartScatterFill as SiChartScatterFill };
 export type { ChartScatterFillProps };

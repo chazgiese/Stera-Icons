@@ -14,5 +14,6 @@ const FlowUpArrowFill = memo(
 
 FlowUpArrowFill.displayName = 'FlowUpArrowFill';
 
-export { FlowUpArrowFill };
+// Triple export pattern (lucide-react style)
+export { FlowUpArrowFill, FlowUpArrowFill as FlowUpArrowFillIcon, FlowUpArrowFill as SiFlowUpArrowFill };
 export type { FlowUpArrowFillProps };

@@ -15,5 +15,6 @@ const MoreFillDuotone = memo(
 
 MoreFillDuotone.displayName = 'MoreFillDuotone';
 
-export { MoreFillDuotone };
+// Triple export pattern (lucide-react style)
+export { MoreFillDuotone, MoreFillDuotone as MoreFillDuotoneIcon, MoreFillDuotone as SiMoreFillDuotone };
 export type { MoreFillDuotoneProps };

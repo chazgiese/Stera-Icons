@@ -14,5 +14,6 @@ const SquareRegular = memo(
 
 SquareRegular.displayName = 'SquareRegular';
 
-export { SquareRegular };
+// Triple export pattern (lucide-react style)
+export { SquareRegular, SquareRegular as SquareRegularIcon, SquareRegular as SiSquareRegular };
 export type { SquareRegularProps };

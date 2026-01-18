@@ -13,7 +13,8 @@ export interface AlertTriangleProps extends IconProps {
 }
 
 /**
- * AlertTriangle with dynamic weight and duotone props.
+ * AlertTriangle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertTriangleRegular } from 'stera-icons/AlertTriangleRegular';
  */
@@ -32,4 +33,5 @@ const AlertTriangle = memo(forwardRef<SVGSVGElement, AlertTriangleProps>(({
 
 AlertTriangle.displayName = 'AlertTriangle';
 
-export { AlertTriangle };
+// Triple export pattern (lucide-react style)
+export { AlertTriangle, AlertTriangle as AlertTriangleIcon, AlertTriangle as SiAlertTriangle };

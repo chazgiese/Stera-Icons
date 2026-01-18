@@ -13,7 +13,8 @@ export interface PenNibProps extends IconProps {
 }
 
 /**
- * PenNib with dynamic weight and duotone props.
+ * PenNib - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PenNibRegular } from 'stera-icons/PenNibRegular';
  */
@@ -32,4 +33,5 @@ const PenNib = memo(forwardRef<SVGSVGElement, PenNibProps>(({
 
 PenNib.displayName = 'PenNib';
 
-export { PenNib };
+// Triple export pattern (lucide-react style)
+export { PenNib, PenNib as PenNibIcon, PenNib as SiPenNib };

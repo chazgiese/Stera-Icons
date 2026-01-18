@@ -15,5 +15,6 @@ const StopCircleFillDuotone = memo(
 
 StopCircleFillDuotone.displayName = 'StopCircleFillDuotone';
 
-export { StopCircleFillDuotone };
+// Triple export pattern (lucide-react style)
+export { StopCircleFillDuotone, StopCircleFillDuotone as StopCircleFillDuotoneIcon, StopCircleFillDuotone as SiStopCircleFillDuotone };
 export type { StopCircleFillDuotoneProps };

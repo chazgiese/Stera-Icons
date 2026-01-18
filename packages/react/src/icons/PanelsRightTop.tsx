@@ -13,7 +13,8 @@ export interface PanelsRightTopProps extends IconProps {
 }
 
 /**
- * PanelsRightTop with dynamic weight and duotone props.
+ * PanelsRightTop - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PanelsRightTopRegular } from 'stera-icons/PanelsRightTopRegular';
  */
@@ -32,4 +33,5 @@ const PanelsRightTop = memo(forwardRef<SVGSVGElement, PanelsRightTopProps>(({
 
 PanelsRightTop.displayName = 'PanelsRightTop';
 
-export { PanelsRightTop };
+// Triple export pattern (lucide-react style)
+export { PanelsRightTop, PanelsRightTop as PanelsRightTopIcon, PanelsRightTop as SiPanelsRightTop };

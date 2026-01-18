@@ -15,5 +15,6 @@ const PlayBoldDuotone = memo(
 
 PlayBoldDuotone.displayName = 'PlayBoldDuotone';
 
-export { PlayBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PlayBoldDuotone, PlayBoldDuotone as PlayBoldDuotoneIcon, PlayBoldDuotone as SiPlayBoldDuotone };
 export type { PlayBoldDuotoneProps };

@@ -14,5 +14,6 @@ const SendBold = memo(
 
 SendBold.displayName = 'SendBold';
 
-export { SendBold };
+// Triple export pattern (lucide-react style)
+export { SendBold, SendBold as SendBoldIcon, SendBold as SiSendBold };
 export type { SendBoldProps };

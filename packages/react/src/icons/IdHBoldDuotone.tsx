@@ -16,5 +16,6 @@ const IdHBoldDuotone = memo(
 
 IdHBoldDuotone.displayName = 'IdHBoldDuotone';
 
-export { IdHBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { IdHBoldDuotone, IdHBoldDuotone as IdHBoldDuotoneIcon, IdHBoldDuotone as SiIdHBoldDuotone };
 export type { IdHBoldDuotoneProps };

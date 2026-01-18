@@ -15,5 +15,6 @@ const SignInAltFillDuotone = memo(
 
 SignInAltFillDuotone.displayName = 'SignInAltFillDuotone';
 
-export { SignInAltFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SignInAltFillDuotone, SignInAltFillDuotone as SignInAltFillDuotoneIcon, SignInAltFillDuotone as SiSignInAltFillDuotone };
 export type { SignInAltFillDuotoneProps };

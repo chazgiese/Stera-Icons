@@ -14,5 +14,6 @@ const WaveTriangleFill = memo(
 
 WaveTriangleFill.displayName = 'WaveTriangleFill';
 
-export { WaveTriangleFill };
+// Triple export pattern (lucide-react style)
+export { WaveTriangleFill, WaveTriangleFill as WaveTriangleFillIcon, WaveTriangleFill as SiWaveTriangleFill };
 export type { WaveTriangleFillProps };

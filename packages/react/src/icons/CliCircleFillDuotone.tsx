@@ -15,5 +15,6 @@ const CliCircleFillDuotone = memo(
 
 CliCircleFillDuotone.displayName = 'CliCircleFillDuotone';
 
-export { CliCircleFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CliCircleFillDuotone, CliCircleFillDuotone as CliCircleFillDuotoneIcon, CliCircleFillDuotone as SiCliCircleFillDuotone };
 export type { CliCircleFillDuotoneProps };

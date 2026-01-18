@@ -14,5 +14,6 @@ const SignalAltLowBold = memo(
 
 SignalAltLowBold.displayName = 'SignalAltLowBold';
 
-export { SignalAltLowBold };
+// Triple export pattern (lucide-react style)
+export { SignalAltLowBold, SignalAltLowBold as SignalAltLowBoldIcon, SignalAltLowBold as SiSignalAltLowBold };
 export type { SignalAltLowBoldProps };

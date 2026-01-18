@@ -15,5 +15,6 @@ const SwatchBookRegular = memo(
 
 SwatchBookRegular.displayName = 'SwatchBookRegular';
 
-export { SwatchBookRegular };
+// Triple export pattern (lucide-react style)
+export { SwatchBookRegular, SwatchBookRegular as SwatchBookRegularIcon, SwatchBookRegular as SiSwatchBookRegular };
 export type { SwatchBookRegularProps };

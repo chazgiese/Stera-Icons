@@ -15,5 +15,6 @@ const DatabaseSparkleRegular = memo(
 
 DatabaseSparkleRegular.displayName = 'DatabaseSparkleRegular';
 
-export { DatabaseSparkleRegular };
+// Triple export pattern (lucide-react style)
+export { DatabaseSparkleRegular, DatabaseSparkleRegular as DatabaseSparkleRegularIcon, DatabaseSparkleRegular as SiDatabaseSparkleRegular };
 export type { DatabaseSparkleRegularProps };

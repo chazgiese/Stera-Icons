@@ -15,5 +15,6 @@ const Clock12Bold = memo(
 
 Clock12Bold.displayName = 'Clock12Bold';
 
-export { Clock12Bold };
+// Triple export pattern (lucide-react style)
+export { Clock12Bold, Clock12Bold as Clock12BoldIcon, Clock12Bold as SiClock12Bold };
 export type { Clock12BoldProps };

@@ -14,5 +14,6 @@ const TrophyBold = memo(
 
 TrophyBold.displayName = 'TrophyBold';
 
-export { TrophyBold };
+// Triple export pattern (lucide-react style)
+export { TrophyBold, TrophyBold as TrophyBoldIcon, TrophyBold as SiTrophyBold };
 export type { TrophyBoldProps };

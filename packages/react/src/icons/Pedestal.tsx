@@ -13,7 +13,8 @@ export interface PedestalProps extends IconProps {
 }
 
 /**
- * Pedestal with dynamic weight and duotone props.
+ * Pedestal - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PedestalRegular } from 'stera-icons/PedestalRegular';
  */
@@ -32,4 +33,5 @@ const Pedestal = memo(forwardRef<SVGSVGElement, PedestalProps>(({
 
 Pedestal.displayName = 'Pedestal';
 
-export { Pedestal };
+// Triple export pattern (lucide-react style)
+export { Pedestal, Pedestal as PedestalIcon, Pedestal as SiPedestal };

@@ -15,5 +15,6 @@ const HomePlusBold = memo(
 
 HomePlusBold.displayName = 'HomePlusBold';
 
-export { HomePlusBold };
+// Triple export pattern (lucide-react style)
+export { HomePlusBold, HomePlusBold as HomePlusBoldIcon, HomePlusBold as SiHomePlusBold };
 export type { HomePlusBoldProps };

@@ -14,5 +14,6 @@ const GitMergeBold = memo(
 
 GitMergeBold.displayName = 'GitMergeBold';
 
-export { GitMergeBold };
+// Triple export pattern (lucide-react style)
+export { GitMergeBold, GitMergeBold as GitMergeBoldIcon, GitMergeBold as SiGitMergeBold };
 export type { GitMergeBoldProps };

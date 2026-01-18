@@ -15,5 +15,6 @@ const InfoSquareBold = memo(
 
 InfoSquareBold.displayName = 'InfoSquareBold';
 
-export { InfoSquareBold };
+// Triple export pattern (lucide-react style)
+export { InfoSquareBold, InfoSquareBold as InfoSquareBoldIcon, InfoSquareBold as SiInfoSquareBold };
 export type { InfoSquareBoldProps };

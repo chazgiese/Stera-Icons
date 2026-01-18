@@ -14,5 +14,6 @@ const OverlappingCirclesDashFill = memo(
 
 OverlappingCirclesDashFill.displayName = 'OverlappingCirclesDashFill';
 
-export { OverlappingCirclesDashFill };
+// Triple export pattern (lucide-react style)
+export { OverlappingCirclesDashFill, OverlappingCirclesDashFill as OverlappingCirclesDashFillIcon, OverlappingCirclesDashFill as SiOverlappingCirclesDashFill };
 export type { OverlappingCirclesDashFillProps };

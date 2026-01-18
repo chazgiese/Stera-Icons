@@ -14,5 +14,6 @@ const HashRegular = memo(
 
 HashRegular.displayName = 'HashRegular';
 
-export { HashRegular };
+// Triple export pattern (lucide-react style)
+export { HashRegular, HashRegular as HashRegularIcon, HashRegular as SiHashRegular };
 export type { HashRegularProps };

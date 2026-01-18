@@ -14,5 +14,6 @@ const DiamondFill = memo(
 
 DiamondFill.displayName = 'DiamondFill';
 
-export { DiamondFill };
+// Triple export pattern (lucide-react style)
+export { DiamondFill, DiamondFill as DiamondFillIcon, DiamondFill as SiDiamondFill };
 export type { DiamondFillProps };

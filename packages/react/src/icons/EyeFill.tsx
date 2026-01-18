@@ -14,5 +14,6 @@ const EyeFill = memo(
 
 EyeFill.displayName = 'EyeFill';
 
-export { EyeFill };
+// Triple export pattern (lucide-react style)
+export { EyeFill, EyeFill as EyeFillIcon, EyeFill as SiEyeFill };
 export type { EyeFillProps };

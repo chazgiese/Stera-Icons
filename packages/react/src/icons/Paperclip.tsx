@@ -13,7 +13,8 @@ export interface PaperclipProps extends IconProps {
 }
 
 /**
- * Paperclip with dynamic weight and duotone props.
+ * Paperclip - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PaperclipRegular } from 'stera-icons/PaperclipRegular';
  */
@@ -32,4 +33,5 @@ const Paperclip = memo(forwardRef<SVGSVGElement, PaperclipProps>(({
 
 Paperclip.displayName = 'Paperclip';
 
-export { Paperclip };
+// Triple export pattern (lucide-react style)
+export { Paperclip, Paperclip as PaperclipIcon, Paperclip as SiPaperclip };

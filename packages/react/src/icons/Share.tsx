@@ -13,7 +13,8 @@ export interface ShareProps extends IconProps {
 }
 
 /**
- * Share with dynamic weight and duotone props.
+ * Share - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShareRegular } from 'stera-icons/ShareRegular';
  */
@@ -32,4 +33,5 @@ const Share = memo(forwardRef<SVGSVGElement, ShareProps>(({
 
 Share.displayName = 'Share';
 
-export { Share };
+// Triple export pattern (lucide-react style)
+export { Share, Share as ShareIcon, Share as SiShare };

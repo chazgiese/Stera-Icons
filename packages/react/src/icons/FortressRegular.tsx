@@ -15,5 +15,6 @@ const FortressRegular = memo(
 
 FortressRegular.displayName = 'FortressRegular';
 
-export { FortressRegular };
+// Triple export pattern (lucide-react style)
+export { FortressRegular, FortressRegular as FortressRegularIcon, FortressRegular as SiFortressRegular };
 export type { FortressRegularProps };

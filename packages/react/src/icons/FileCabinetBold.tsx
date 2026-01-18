@@ -15,5 +15,6 @@ const FileCabinetBold = memo(
 
 FileCabinetBold.displayName = 'FileCabinetBold';
 
-export { FileCabinetBold };
+// Triple export pattern (lucide-react style)
+export { FileCabinetBold, FileCabinetBold as FileCabinetBoldIcon, FileCabinetBold as SiFileCabinetBold };
 export type { FileCabinetBoldProps };

@@ -15,5 +15,6 @@ const TreeDeciduousFillDuotone = memo(
 
 TreeDeciduousFillDuotone.displayName = 'TreeDeciduousFillDuotone';
 
-export { TreeDeciduousFillDuotone };
+// Triple export pattern (lucide-react style)
+export { TreeDeciduousFillDuotone, TreeDeciduousFillDuotone as TreeDeciduousFillDuotoneIcon, TreeDeciduousFillDuotone as SiTreeDeciduousFillDuotone };
 export type { TreeDeciduousFillDuotoneProps };

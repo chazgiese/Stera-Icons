@@ -13,7 +13,8 @@ export interface FortressProps extends IconProps {
 }
 
 /**
- * Fortress with dynamic weight and duotone props.
+ * Fortress - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FortressRegular } from 'stera-icons/FortressRegular';
  */
@@ -32,4 +33,5 @@ const Fortress = memo(forwardRef<SVGSVGElement, FortressProps>(({
 
 Fortress.displayName = 'Fortress';
 
-export { Fortress };
+// Triple export pattern (lucide-react style)
+export { Fortress, Fortress as FortressIcon, Fortress as SiFortress };

@@ -14,5 +14,6 @@ const PedestalFill = memo(
 
 PedestalFill.displayName = 'PedestalFill';
 
-export { PedestalFill };
+// Triple export pattern (lucide-react style)
+export { PedestalFill, PedestalFill as PedestalFillIcon, PedestalFill as SiPedestalFill };
 export type { PedestalFillProps };

@@ -13,7 +13,8 @@ export interface OptionKeyProps extends IconProps {
 }
 
 /**
- * OptionKey with dynamic weight and duotone props.
+ * OptionKey - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { OptionKeyRegular } from 'stera-icons/OptionKeyRegular';
  */
@@ -32,4 +33,5 @@ const OptionKey = memo(forwardRef<SVGSVGElement, OptionKeyProps>(({
 
 OptionKey.displayName = 'OptionKey';
 
-export { OptionKey };
+// Triple export pattern (lucide-react style)
+export { OptionKey, OptionKey as OptionKeyIcon, OptionKey as SiOptionKey };

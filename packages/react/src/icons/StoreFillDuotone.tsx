@@ -15,5 +15,6 @@ const StoreFillDuotone = memo(
 
 StoreFillDuotone.displayName = 'StoreFillDuotone';
 
-export { StoreFillDuotone };
+// Triple export pattern (lucide-react style)
+export { StoreFillDuotone, StoreFillDuotone as StoreFillDuotoneIcon, StoreFillDuotone as SiStoreFillDuotone };
 export type { StoreFillDuotoneProps };

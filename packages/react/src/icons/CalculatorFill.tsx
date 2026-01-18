@@ -14,5 +14,6 @@ const CalculatorFill = memo(
 
 CalculatorFill.displayName = 'CalculatorFill';
 
-export { CalculatorFill };
+// Triple export pattern (lucide-react style)
+export { CalculatorFill, CalculatorFill as CalculatorFillIcon, CalculatorFill as SiCalculatorFill };
 export type { CalculatorFillProps };

@@ -14,5 +14,6 @@ const WrenchFill = memo(
 
 WrenchFill.displayName = 'WrenchFill';
 
-export { WrenchFill };
+// Triple export pattern (lucide-react style)
+export { WrenchFill, WrenchFill as WrenchFillIcon, WrenchFill as SiWrenchFill };
 export type { WrenchFillProps };

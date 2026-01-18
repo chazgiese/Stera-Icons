@@ -13,7 +13,8 @@ export interface SignOutProps extends IconProps {
 }
 
 /**
- * SignOut with dynamic weight and duotone props.
+ * SignOut - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignOutRegular } from 'stera-icons/SignOutRegular';
  */
@@ -32,4 +33,5 @@ const SignOut = memo(forwardRef<SVGSVGElement, SignOutProps>(({
 
 SignOut.displayName = 'SignOut';
 
-export { SignOut };
+// Triple export pattern (lucide-react style)
+export { SignOut, SignOut as SignOutIcon, SignOut as SiSignOut };

@@ -15,5 +15,6 @@ const CpuBold = memo(
 
 CpuBold.displayName = 'CpuBold';
 
-export { CpuBold };
+// Triple export pattern (lucide-react style)
+export { CpuBold, CpuBold as CpuBoldIcon, CpuBold as SiCpuBold };
 export type { CpuBoldProps };

@@ -14,5 +14,6 @@ const ListCheckBold = memo(
 
 ListCheckBold.displayName = 'ListCheckBold';
 
-export { ListCheckBold };
+// Triple export pattern (lucide-react style)
+export { ListCheckBold, ListCheckBold as ListCheckBoldIcon, ListCheckBold as SiListCheckBold };
 export type { ListCheckBoldProps };

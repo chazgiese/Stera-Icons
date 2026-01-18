@@ -15,5 +15,6 @@ const SignOutFillDuotone = memo(
 
 SignOutFillDuotone.displayName = 'SignOutFillDuotone';
 
-export { SignOutFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SignOutFillDuotone, SignOutFillDuotone as SignOutFillDuotoneIcon, SignOutFillDuotone as SiSignOutFillDuotone };
 export type { SignOutFillDuotoneProps };

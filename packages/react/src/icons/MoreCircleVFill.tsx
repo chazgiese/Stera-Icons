@@ -14,5 +14,6 @@ const MoreCircleVFill = memo(
 
 MoreCircleVFill.displayName = 'MoreCircleVFill';
 
-export { MoreCircleVFill };
+// Triple export pattern (lucide-react style)
+export { MoreCircleVFill, MoreCircleVFill as MoreCircleVFillIcon, MoreCircleVFill as SiMoreCircleVFill };
 export type { MoreCircleVFillProps };

@@ -13,7 +13,8 @@ export interface TrophyProps extends IconProps {
 }
 
 /**
- * Trophy with dynamic weight and duotone props.
+ * Trophy - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TrophyRegular } from 'stera-icons/TrophyRegular';
  */
@@ -32,4 +33,5 @@ const Trophy = memo(forwardRef<SVGSVGElement, TrophyProps>(({
 
 Trophy.displayName = 'Trophy';
 
-export { Trophy };
+// Triple export pattern (lucide-react style)
+export { Trophy, Trophy as TrophyIcon, Trophy as SiTrophy };

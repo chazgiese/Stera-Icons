@@ -15,5 +15,6 @@ const ListXFill = memo(
 
 ListXFill.displayName = 'ListXFill';
 
-export { ListXFill };
+// Triple export pattern (lucide-react style)
+export { ListXFill, ListXFill as ListXFillIcon, ListXFill as SiListXFill };
 export type { ListXFillProps };

@@ -15,5 +15,6 @@ const ChartPieRegular = memo(
 
 ChartPieRegular.displayName = 'ChartPieRegular';
 
-export { ChartPieRegular };
+// Triple export pattern (lucide-react style)
+export { ChartPieRegular, ChartPieRegular as ChartPieRegularIcon, ChartPieRegular as SiChartPieRegular };
 export type { ChartPieRegularProps };

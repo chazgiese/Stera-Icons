@@ -15,5 +15,6 @@ const TextBFillDuotone = memo(
 
 TextBFillDuotone.displayName = 'TextBFillDuotone';
 
-export { TextBFillDuotone };
+// Triple export pattern (lucide-react style)
+export { TextBFillDuotone, TextBFillDuotone as TextBFillDuotoneIcon, TextBFillDuotone as SiTextBFillDuotone };
 export type { TextBFillDuotoneProps };

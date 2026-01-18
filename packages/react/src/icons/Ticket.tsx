@@ -13,7 +13,8 @@ export interface TicketProps extends IconProps {
 }
 
 /**
- * Ticket with dynamic weight and duotone props.
+ * Ticket - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TicketRegular } from 'stera-icons/TicketRegular';
  */
@@ -32,4 +33,5 @@ const Ticket = memo(forwardRef<SVGSVGElement, TicketProps>(({
 
 Ticket.displayName = 'Ticket';
 
-export { Ticket };
+// Triple export pattern (lucide-react style)
+export { Ticket, Ticket as TicketIcon, Ticket as SiTicket };

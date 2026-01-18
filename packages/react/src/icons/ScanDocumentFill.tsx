@@ -16,5 +16,6 @@ const ScanDocumentFill = memo(
 
 ScanDocumentFill.displayName = 'ScanDocumentFill';
 
-export { ScanDocumentFill };
+// Triple export pattern (lucide-react style)
+export { ScanDocumentFill, ScanDocumentFill as ScanDocumentFillIcon, ScanDocumentFill as SiScanDocumentFill };
 export type { ScanDocumentFillProps };

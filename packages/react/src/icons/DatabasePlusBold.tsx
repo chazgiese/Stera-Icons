@@ -15,5 +15,6 @@ const DatabasePlusBold = memo(
 
 DatabasePlusBold.displayName = 'DatabasePlusBold';
 
-export { DatabasePlusBold };
+// Triple export pattern (lucide-react style)
+export { DatabasePlusBold, DatabasePlusBold as DatabasePlusBoldIcon, DatabasePlusBold as SiDatabasePlusBold };
 export type { DatabasePlusBoldProps };

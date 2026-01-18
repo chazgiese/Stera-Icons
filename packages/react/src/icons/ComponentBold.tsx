@@ -14,5 +14,6 @@ const ComponentBold = memo(
 
 ComponentBold.displayName = 'ComponentBold';
 
-export { ComponentBold };
+// Triple export pattern (lucide-react style)
+export { ComponentBold, ComponentBold as ComponentBoldIcon, ComponentBold as SiComponentBold };
 export type { ComponentBoldProps };

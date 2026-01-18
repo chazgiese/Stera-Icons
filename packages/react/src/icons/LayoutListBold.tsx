@@ -17,5 +17,6 @@ const LayoutListBold = memo(
 
 LayoutListBold.displayName = 'LayoutListBold';
 
-export { LayoutListBold };
+// Triple export pattern (lucide-react style)
+export { LayoutListBold, LayoutListBold as LayoutListBoldIcon, LayoutListBold as SiLayoutListBold };
 export type { LayoutListBoldProps };

@@ -13,7 +13,8 @@ export interface HandWaveProps extends IconProps {
 }
 
 /**
- * HandWave with dynamic weight and duotone props.
+ * HandWave - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HandWaveRegular } from 'stera-icons/HandWaveRegular';
  */
@@ -32,4 +33,5 @@ const HandWave = memo(forwardRef<SVGSVGElement, HandWaveProps>(({
 
 HandWave.displayName = 'HandWave';
 
-export { HandWave };
+// Triple export pattern (lucide-react style)
+export { HandWave, HandWave as HandWaveIcon, HandWave as SiHandWave };

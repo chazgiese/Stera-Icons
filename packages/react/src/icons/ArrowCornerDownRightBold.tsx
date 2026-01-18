@@ -14,5 +14,6 @@ const ArrowCornerDownRightBold = memo(
 
 ArrowCornerDownRightBold.displayName = 'ArrowCornerDownRightBold';
 
-export { ArrowCornerDownRightBold };
+// Triple export pattern (lucide-react style)
+export { ArrowCornerDownRightBold, ArrowCornerDownRightBold as ArrowCornerDownRightBoldIcon, ArrowCornerDownRightBold as SiArrowCornerDownRightBold };
 export type { ArrowCornerDownRightBoldProps };

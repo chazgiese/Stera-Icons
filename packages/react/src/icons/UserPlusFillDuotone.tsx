@@ -15,5 +15,6 @@ const UserPlusFillDuotone = memo(
 
 UserPlusFillDuotone.displayName = 'UserPlusFillDuotone';
 
-export { UserPlusFillDuotone };
+// Triple export pattern (lucide-react style)
+export { UserPlusFillDuotone, UserPlusFillDuotone as UserPlusFillDuotoneIcon, UserPlusFillDuotone as SiUserPlusFillDuotone };
 export type { UserPlusFillDuotoneProps };

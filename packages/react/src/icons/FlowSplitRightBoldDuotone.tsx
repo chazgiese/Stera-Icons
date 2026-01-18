@@ -15,5 +15,6 @@ const FlowSplitRightBoldDuotone = memo(
 
 FlowSplitRightBoldDuotone.displayName = 'FlowSplitRightBoldDuotone';
 
-export { FlowSplitRightBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { FlowSplitRightBoldDuotone, FlowSplitRightBoldDuotone as FlowSplitRightBoldDuotoneIcon, FlowSplitRightBoldDuotone as SiFlowSplitRightBoldDuotone };
 export type { FlowSplitRightBoldDuotoneProps };

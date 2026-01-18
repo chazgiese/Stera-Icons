@@ -14,5 +14,6 @@ const VideoOffRegular = memo(
 
 VideoOffRegular.displayName = 'VideoOffRegular';
 
-export { VideoOffRegular };
+// Triple export pattern (lucide-react style)
+export { VideoOffRegular, VideoOffRegular as VideoOffRegularIcon, VideoOffRegular as SiVideoOffRegular };
 export type { VideoOffRegularProps };

@@ -14,5 +14,6 @@ const BriefcaseBold = memo(
 
 BriefcaseBold.displayName = 'BriefcaseBold';
 
-export { BriefcaseBold };
+// Triple export pattern (lucide-react style)
+export { BriefcaseBold, BriefcaseBold as BriefcaseBoldIcon, BriefcaseBold as SiBriefcaseBold };
 export type { BriefcaseBoldProps };

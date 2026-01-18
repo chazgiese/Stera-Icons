@@ -15,5 +15,6 @@ const AwardStarFillDuotone = memo(
 
 AwardStarFillDuotone.displayName = 'AwardStarFillDuotone';
 
-export { AwardStarFillDuotone };
+// Triple export pattern (lucide-react style)
+export { AwardStarFillDuotone, AwardStarFillDuotone as AwardStarFillDuotoneIcon, AwardStarFillDuotone as SiAwardStarFillDuotone };
 export type { AwardStarFillDuotoneProps };

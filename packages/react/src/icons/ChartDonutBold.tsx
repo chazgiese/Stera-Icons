@@ -14,5 +14,6 @@ const ChartDonutBold = memo(
 
 ChartDonutBold.displayName = 'ChartDonutBold';
 
-export { ChartDonutBold };
+// Triple export pattern (lucide-react style)
+export { ChartDonutBold, ChartDonutBold as ChartDonutBoldIcon, ChartDonutBold as SiChartDonutBold };
 export type { ChartDonutBoldProps };

@@ -14,5 +14,6 @@ const CanRegular = memo(
 
 CanRegular.displayName = 'CanRegular';
 
-export { CanRegular };
+// Triple export pattern (lucide-react style)
+export { CanRegular, CanRegular as CanRegularIcon, CanRegular as SiCanRegular };
 export type { CanRegularProps };

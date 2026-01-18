@@ -13,7 +13,8 @@ export interface AlertOctagonProps extends IconProps {
 }
 
 /**
- * AlertOctagon with dynamic weight and duotone props.
+ * AlertOctagon - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlertOctagonRegular } from 'stera-icons/AlertOctagonRegular';
  */
@@ -32,4 +33,5 @@ const AlertOctagon = memo(forwardRef<SVGSVGElement, AlertOctagonProps>(({
 
 AlertOctagon.displayName = 'AlertOctagon';
 
-export { AlertOctagon };
+// Triple export pattern (lucide-react style)
+export { AlertOctagon, AlertOctagon as AlertOctagonIcon, AlertOctagon as SiAlertOctagon };

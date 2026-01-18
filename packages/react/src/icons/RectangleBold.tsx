@@ -14,5 +14,6 @@ const RectangleBold = memo(
 
 RectangleBold.displayName = 'RectangleBold';
 
-export { RectangleBold };
+// Triple export pattern (lucide-react style)
+export { RectangleBold, RectangleBold as RectangleBoldIcon, RectangleBold as SiRectangleBold };
 export type { RectangleBoldProps };

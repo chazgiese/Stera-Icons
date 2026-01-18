@@ -13,7 +13,8 @@ export interface MoveProps extends IconProps {
 }
 
 /**
- * Move with dynamic weight and duotone props.
+ * Move - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MoveRegular } from 'stera-icons/MoveRegular';
  */
@@ -32,4 +33,5 @@ const Move = memo(forwardRef<SVGSVGElement, MoveProps>(({
 
 Move.displayName = 'Move';
 
-export { Move };
+// Triple export pattern (lucide-react style)
+export { Move, Move as MoveIcon, Move as SiMove };

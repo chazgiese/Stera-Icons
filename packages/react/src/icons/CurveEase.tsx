@@ -13,7 +13,8 @@ export interface CurveEaseProps extends IconProps {
 }
 
 /**
- * CurveEase with dynamic weight and duotone props.
+ * CurveEase - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CurveEaseRegular } from 'stera-icons/CurveEaseRegular';
  */
@@ -32,4 +33,5 @@ const CurveEase = memo(forwardRef<SVGSVGElement, CurveEaseProps>(({
 
 CurveEase.displayName = 'CurveEase';
 
-export { CurveEase };
+// Triple export pattern (lucide-react style)
+export { CurveEase, CurveEase as CurveEaseIcon, CurveEase as SiCurveEase };

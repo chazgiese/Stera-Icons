@@ -15,5 +15,6 @@ const PlayCircleBoldDuotone = memo(
 
 PlayCircleBoldDuotone.displayName = 'PlayCircleBoldDuotone';
 
-export { PlayCircleBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PlayCircleBoldDuotone, PlayCircleBoldDuotone as PlayCircleBoldDuotoneIcon, PlayCircleBoldDuotone as SiPlayCircleBoldDuotone };
 export type { PlayCircleBoldDuotoneProps };

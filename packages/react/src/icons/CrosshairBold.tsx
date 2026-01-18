@@ -14,5 +14,6 @@ const CrosshairBold = memo(
 
 CrosshairBold.displayName = 'CrosshairBold';
 
-export { CrosshairBold };
+// Triple export pattern (lucide-react style)
+export { CrosshairBold, CrosshairBold as CrosshairBoldIcon, CrosshairBold as SiCrosshairBold };
 export type { CrosshairBoldProps };

@@ -14,5 +14,6 @@ const ActivityRegular = memo(
 
 ActivityRegular.displayName = 'ActivityRegular';
 
-export { ActivityRegular };
+// Triple export pattern (lucide-react style)
+export { ActivityRegular, ActivityRegular as ActivityRegularIcon, ActivityRegular as SiActivityRegular };
 export type { ActivityRegularProps };

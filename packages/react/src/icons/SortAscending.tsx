@@ -13,7 +13,8 @@ export interface SortAscendingProps extends IconProps {
 }
 
 /**
- * SortAscending with dynamic weight and duotone props.
+ * SortAscending - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SortAscendingRegular } from 'stera-icons/SortAscendingRegular';
  */
@@ -32,4 +33,5 @@ const SortAscending = memo(forwardRef<SVGSVGElement, SortAscendingProps>(({
 
 SortAscending.displayName = 'SortAscending';
 
-export { SortAscending };
+// Triple export pattern (lucide-react style)
+export { SortAscending, SortAscending as SortAscendingIcon, SortAscending as SiSortAscending };

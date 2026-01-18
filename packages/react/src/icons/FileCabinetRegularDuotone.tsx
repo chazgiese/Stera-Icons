@@ -15,5 +15,6 @@ const FileCabinetRegularDuotone = memo(
 
 FileCabinetRegularDuotone.displayName = 'FileCabinetRegularDuotone';
 
-export { FileCabinetRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { FileCabinetRegularDuotone, FileCabinetRegularDuotone as FileCabinetRegularDuotoneIcon, FileCabinetRegularDuotone as SiFileCabinetRegularDuotone };
 export type { FileCabinetRegularDuotoneProps };

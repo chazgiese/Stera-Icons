@@ -13,7 +13,8 @@ export interface PushPinProps extends IconProps {
 }
 
 /**
- * PushPin with dynamic weight and duotone props.
+ * PushPin - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PushPinRegular } from 'stera-icons/PushPinRegular';
  */
@@ -32,4 +33,5 @@ const PushPin = memo(forwardRef<SVGSVGElement, PushPinProps>(({
 
 PushPin.displayName = 'PushPin';
 
-export { PushPin };
+// Triple export pattern (lucide-react style)
+export { PushPin, PushPin as PushPinIcon, PushPin as SiPushPin };

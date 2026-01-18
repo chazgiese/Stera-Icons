@@ -13,7 +13,8 @@ export interface BladeKunaiProps extends IconProps {
 }
 
 /**
- * BladeKunai with dynamic weight and duotone props.
+ * BladeKunai - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BladeKunaiRegular } from 'stera-icons/BladeKunaiRegular';
  */
@@ -32,4 +33,5 @@ const BladeKunai = memo(forwardRef<SVGSVGElement, BladeKunaiProps>(({
 
 BladeKunai.displayName = 'BladeKunai';
 
-export { BladeKunai };
+// Triple export pattern (lucide-react style)
+export { BladeKunai, BladeKunai as BladeKunaiIcon, BladeKunai as SiBladeKunai };

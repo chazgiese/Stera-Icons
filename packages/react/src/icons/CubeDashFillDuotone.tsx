@@ -15,5 +15,6 @@ const CubeDashFillDuotone = memo(
 
 CubeDashFillDuotone.displayName = 'CubeDashFillDuotone';
 
-export { CubeDashFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CubeDashFillDuotone, CubeDashFillDuotone as CubeDashFillDuotoneIcon, CubeDashFillDuotone as SiCubeDashFillDuotone };
 export type { CubeDashFillDuotoneProps };

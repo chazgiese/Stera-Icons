@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A lightweight React icon library with 700+ icons in 6 variants each.
+A modern, lightweight React icon library with 700+ icons, following lucide-react patterns. All icons available in 6 variants with triple-aliased exports for maximum flexibility.
 
 ## Installation
 
@@ -13,18 +13,7 @@ npm install stera-icons
 
 ## Usage
 
-### Namespace Import (Recommended)
-
-```tsx
-import * as Icons from 'stera-icons';
-
-<Icons.SearchBold size={24} />
-<Icons.HomeFill />
-```
-
-This is fully tree-shakable—modern bundlers only include the icons you actually use (~300 bytes per icon).
-
-### Named Imports
+### Direct Import (Recommended)
 
 ```tsx
 import { SearchBold, HomeFill } from 'stera-icons';
@@ -33,11 +22,38 @@ import { SearchBold, HomeFill } from 'stera-icons';
 <HomeFill />
 ```
 
-Both patterns tree-shake identically.
+Fully tree-shakeable—only ~300 bytes per icon variant in your bundle.
 
-**Available variants:** `{Name}Regular`, `{Name}Bold`, `{Name}Fill`, plus duotone versions (`{Name}RegularDuotone`, etc.)
+### Aliased Imports (Prevent Name Collisions)
 
-### Dynamic Variants
+All icons support 3 naming styles:
+
+```tsx
+// Base name
+import { Search } from 'stera-icons';
+
+// Icon suffix style
+import { SearchIcon } from 'stera-icons';
+
+// Si prefix style (recommended for consistency)
+import { SiSearch, SiHome, SiUser } from 'stera-icons';
+```
+
+All aliases point to the same component with zero bundle size overhead.
+
+### Variant Imports
+
+Each icon has 6 variants available:
+
+```tsx
+import { SearchRegular, SearchBold, SearchFill } from 'stera-icons';
+import { SearchRegularDuotone, SearchBoldDuotone, SearchFillDuotone } from 'stera-icons';
+
+// All variants also support triple aliasing
+import { SiSearchBold, SiSearchRegularDuotone } from 'stera-icons';
+```
+
+### Dynamic Variants (Convenience)
 
 Use wrapper components when you need to switch variants at runtime (~1KB per icon, includes all 6 variants):
 

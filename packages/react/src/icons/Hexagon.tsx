@@ -13,7 +13,8 @@ export interface HexagonProps extends IconProps {
 }
 
 /**
- * Hexagon with dynamic weight and duotone props.
+ * Hexagon - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HexagonRegular } from 'stera-icons/HexagonRegular';
  */
@@ -32,4 +33,5 @@ const Hexagon = memo(forwardRef<SVGSVGElement, HexagonProps>(({
 
 Hexagon.displayName = 'Hexagon';
 
-export { Hexagon };
+// Triple export pattern (lucide-react style)
+export { Hexagon, Hexagon as HexagonIcon, Hexagon as SiHexagon };

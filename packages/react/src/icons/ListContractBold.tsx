@@ -14,5 +14,6 @@ const ListContractBold = memo(
 
 ListContractBold.displayName = 'ListContractBold';
 
-export { ListContractBold };
+// Triple export pattern (lucide-react style)
+export { ListContractBold, ListContractBold as ListContractBoldIcon, ListContractBold as SiListContractBold };
 export type { ListContractBoldProps };

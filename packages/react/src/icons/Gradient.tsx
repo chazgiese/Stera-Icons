@@ -13,7 +13,8 @@ export interface GradientProps extends IconProps {
 }
 
 /**
- * Gradient with dynamic weight and duotone props.
+ * Gradient - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GradientRegular } from 'stera-icons/GradientRegular';
  */
@@ -32,4 +33,5 @@ const Gradient = memo(forwardRef<SVGSVGElement, GradientProps>(({
 
 Gradient.displayName = 'Gradient';
 
-export { Gradient };
+// Triple export pattern (lucide-react style)
+export { Gradient, Gradient as GradientIcon, Gradient as SiGradient };

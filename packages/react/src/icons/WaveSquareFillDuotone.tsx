@@ -15,5 +15,6 @@ const WaveSquareFillDuotone = memo(
 
 WaveSquareFillDuotone.displayName = 'WaveSquareFillDuotone';
 
-export { WaveSquareFillDuotone };
+// Triple export pattern (lucide-react style)
+export { WaveSquareFillDuotone, WaveSquareFillDuotone as WaveSquareFillDuotoneIcon, WaveSquareFillDuotone as SiWaveSquareFillDuotone };
 export type { WaveSquareFillDuotoneProps };

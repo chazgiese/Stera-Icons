@@ -15,5 +15,6 @@ const TicketBold = memo(
 
 TicketBold.displayName = 'TicketBold';
 
-export { TicketBold };
+// Triple export pattern (lucide-react style)
+export { TicketBold, TicketBold as TicketBoldIcon, TicketBold as SiTicketBold };
 export type { TicketBoldProps };

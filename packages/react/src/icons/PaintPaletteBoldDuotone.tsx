@@ -15,5 +15,6 @@ const PaintPaletteBoldDuotone = memo(
 
 PaintPaletteBoldDuotone.displayName = 'PaintPaletteBoldDuotone';
 
-export { PaintPaletteBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PaintPaletteBoldDuotone, PaintPaletteBoldDuotone as PaintPaletteBoldDuotoneIcon, PaintPaletteBoldDuotone as SiPaintPaletteBoldDuotone };
 export type { PaintPaletteBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface MedicalCrossProps extends IconProps {
 }
 
 /**
- * MedicalCross with dynamic weight and duotone props.
+ * MedicalCross - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MedicalCrossRegular } from 'stera-icons/MedicalCrossRegular';
  */
@@ -32,4 +33,5 @@ const MedicalCross = memo(forwardRef<SVGSVGElement, MedicalCrossProps>(({
 
 MedicalCross.displayName = 'MedicalCross';
 
-export { MedicalCross };
+// Triple export pattern (lucide-react style)
+export { MedicalCross, MedicalCross as MedicalCrossIcon, MedicalCross as SiMedicalCross };

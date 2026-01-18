@@ -14,5 +14,6 @@ const FlaskBold = memo(
 
 FlaskBold.displayName = 'FlaskBold';
 
-export { FlaskBold };
+// Triple export pattern (lucide-react style)
+export { FlaskBold, FlaskBold as FlaskBoldIcon, FlaskBold as SiFlaskBold };
 export type { FlaskBoldProps };

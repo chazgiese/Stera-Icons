@@ -15,5 +15,6 @@ const DeleteRegularDuotone = memo(
 
 DeleteRegularDuotone.displayName = 'DeleteRegularDuotone';
 
-export { DeleteRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { DeleteRegularDuotone, DeleteRegularDuotone as DeleteRegularDuotoneIcon, DeleteRegularDuotone as SiDeleteRegularDuotone };
 export type { DeleteRegularDuotoneProps };

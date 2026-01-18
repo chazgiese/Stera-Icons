@@ -14,5 +14,6 @@ const CupRegular = memo(
 
 CupRegular.displayName = 'CupRegular';
 
-export { CupRegular };
+// Triple export pattern (lucide-react style)
+export { CupRegular, CupRegular as CupRegularIcon, CupRegular as SiCupRegular };
 export type { CupRegularProps };

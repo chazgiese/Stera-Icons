@@ -14,5 +14,6 @@ const QuoteOpeningBold = memo(
 
 QuoteOpeningBold.displayName = 'QuoteOpeningBold';
 
-export { QuoteOpeningBold };
+// Triple export pattern (lucide-react style)
+export { QuoteOpeningBold, QuoteOpeningBold as QuoteOpeningBoldIcon, QuoteOpeningBold as SiQuoteOpeningBold };
 export type { QuoteOpeningBoldProps };

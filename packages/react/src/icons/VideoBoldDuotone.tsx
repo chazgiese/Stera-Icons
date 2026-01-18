@@ -15,5 +15,6 @@ const VideoBoldDuotone = memo(
 
 VideoBoldDuotone.displayName = 'VideoBoldDuotone';
 
-export { VideoBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { VideoBoldDuotone, VideoBoldDuotone as VideoBoldDuotoneIcon, VideoBoldDuotone as SiVideoBoldDuotone };
 export type { VideoBoldDuotoneProps };

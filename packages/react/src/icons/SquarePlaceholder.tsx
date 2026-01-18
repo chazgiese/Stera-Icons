@@ -13,7 +13,8 @@ export interface SquarePlaceholderProps extends IconProps {
 }
 
 /**
- * SquarePlaceholder with dynamic weight and duotone props.
+ * SquarePlaceholder - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SquarePlaceholderRegular } from 'stera-icons/SquarePlaceholderRegular';
  */
@@ -32,4 +33,5 @@ const SquarePlaceholder = memo(forwardRef<SVGSVGElement, SquarePlaceholderProps>
 
 SquarePlaceholder.displayName = 'SquarePlaceholder';
 
-export { SquarePlaceholder };
+// Triple export pattern (lucide-react style)
+export { SquarePlaceholder, SquarePlaceholder as SquarePlaceholderIcon, SquarePlaceholder as SiSquarePlaceholder };

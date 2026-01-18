@@ -14,5 +14,6 @@ const GitCommitFill = memo(
 
 GitCommitFill.displayName = 'GitCommitFill';
 
-export { GitCommitFill };
+// Triple export pattern (lucide-react style)
+export { GitCommitFill, GitCommitFill as GitCommitFillIcon, GitCommitFill as SiGitCommitFill };
 export type { GitCommitFillProps };

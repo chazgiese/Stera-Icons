@@ -13,7 +13,8 @@ export interface ChartBarXYProps extends IconProps {
 }
 
 /**
- * ChartBarXY with dynamic weight and duotone props.
+ * ChartBarXY - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarXYRegular } from 'stera-icons/ChartBarXYRegular';
  */
@@ -32,4 +33,5 @@ const ChartBarXY = memo(forwardRef<SVGSVGElement, ChartBarXYProps>(({
 
 ChartBarXY.displayName = 'ChartBarXY';
 
-export { ChartBarXY };
+// Triple export pattern (lucide-react style)
+export { ChartBarXY, ChartBarXY as ChartBarXYIcon, ChartBarXY as SiChartBarXY };

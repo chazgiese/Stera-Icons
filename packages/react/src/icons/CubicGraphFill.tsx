@@ -16,5 +16,6 @@ const CubicGraphFill = memo(
 
 CubicGraphFill.displayName = 'CubicGraphFill';
 
-export { CubicGraphFill };
+// Triple export pattern (lucide-react style)
+export { CubicGraphFill, CubicGraphFill as CubicGraphFillIcon, CubicGraphFill as SiCubicGraphFill };
 export type { CubicGraphFillProps };

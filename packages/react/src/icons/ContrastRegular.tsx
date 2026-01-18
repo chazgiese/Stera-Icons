@@ -14,5 +14,6 @@ const ContrastRegular = memo(
 
 ContrastRegular.displayName = 'ContrastRegular';
 
-export { ContrastRegular };
+// Triple export pattern (lucide-react style)
+export { ContrastRegular, ContrastRegular as ContrastRegularIcon, ContrastRegular as SiContrastRegular };
 export type { ContrastRegularProps };

@@ -13,7 +13,8 @@ export interface MenuSimpleAltProps extends IconProps {
 }
 
 /**
- * MenuSimpleAlt with dynamic weight and duotone props.
+ * MenuSimpleAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MenuSimpleAltRegular } from 'stera-icons/MenuSimpleAltRegular';
  */
@@ -32,4 +33,5 @@ const MenuSimpleAlt = memo(forwardRef<SVGSVGElement, MenuSimpleAltProps>(({
 
 MenuSimpleAlt.displayName = 'MenuSimpleAlt';
 
-export { MenuSimpleAlt };
+// Triple export pattern (lucide-react style)
+export { MenuSimpleAlt, MenuSimpleAlt as MenuSimpleAltIcon, MenuSimpleAlt as SiMenuSimpleAlt };

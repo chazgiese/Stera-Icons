@@ -15,5 +15,6 @@ const SkipBackRegular = memo(
 
 SkipBackRegular.displayName = 'SkipBackRegular';
 
-export { SkipBackRegular };
+// Triple export pattern (lucide-react style)
+export { SkipBackRegular, SkipBackRegular as SkipBackRegularIcon, SkipBackRegular as SiSkipBackRegular };
 export type { SkipBackRegularProps };

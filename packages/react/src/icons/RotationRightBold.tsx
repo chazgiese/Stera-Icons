@@ -14,5 +14,6 @@ const RotationRightBold = memo(
 
 RotationRightBold.displayName = 'RotationRightBold';
 
-export { RotationRightBold };
+// Triple export pattern (lucide-react style)
+export { RotationRightBold, RotationRightBold as RotationRightBoldIcon, RotationRightBold as SiRotationRightBold };
 export type { RotationRightBoldProps };

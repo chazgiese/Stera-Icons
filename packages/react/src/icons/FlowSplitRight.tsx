@@ -13,7 +13,8 @@ export interface FlowSplitRightProps extends IconProps {
 }
 
 /**
- * FlowSplitRight with dynamic weight and duotone props.
+ * FlowSplitRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowSplitRightRegular } from 'stera-icons/FlowSplitRightRegular';
  */
@@ -32,4 +33,5 @@ const FlowSplitRight = memo(forwardRef<SVGSVGElement, FlowSplitRightProps>(({
 
 FlowSplitRight.displayName = 'FlowSplitRight';
 
-export { FlowSplitRight };
+// Triple export pattern (lucide-react style)
+export { FlowSplitRight, FlowSplitRight as FlowSplitRightIcon, FlowSplitRight as SiFlowSplitRight };

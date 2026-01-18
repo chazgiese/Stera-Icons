@@ -15,5 +15,6 @@ const ChartBarSquareRegular = memo(
 
 ChartBarSquareRegular.displayName = 'ChartBarSquareRegular';
 
-export { ChartBarSquareRegular };
+// Triple export pattern (lucide-react style)
+export { ChartBarSquareRegular, ChartBarSquareRegular as ChartBarSquareRegularIcon, ChartBarSquareRegular as SiChartBarSquareRegular };
 export type { ChartBarSquareRegularProps };

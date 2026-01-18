@@ -13,7 +13,8 @@ export interface PushPinAltProps extends IconProps {
 }
 
 /**
- * PushPinAlt with dynamic weight and duotone props.
+ * PushPinAlt - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PushPinAltRegular } from 'stera-icons/PushPinAltRegular';
  */
@@ -32,4 +33,5 @@ const PushPinAlt = memo(forwardRef<SVGSVGElement, PushPinAltProps>(({
 
 PushPinAlt.displayName = 'PushPinAlt';
 
-export { PushPinAlt };
+// Triple export pattern (lucide-react style)
+export { PushPinAlt, PushPinAlt as PushPinAltIcon, PushPinAlt as SiPushPinAlt };

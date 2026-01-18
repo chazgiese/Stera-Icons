@@ -13,7 +13,8 @@ export interface RulersProps extends IconProps {
 }
 
 /**
- * Rulers with dynamic weight and duotone props.
+ * Rulers - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RulersRegular } from 'stera-icons/RulersRegular';
  */
@@ -32,4 +33,5 @@ const Rulers = memo(forwardRef<SVGSVGElement, RulersProps>(({
 
 Rulers.displayName = 'Rulers';
 
-export { Rulers };
+// Triple export pattern (lucide-react style)
+export { Rulers, Rulers as RulersIcon, Rulers as SiRulers };

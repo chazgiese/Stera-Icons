@@ -13,7 +13,8 @@ export interface MapPinPlusProps extends IconProps {
 }
 
 /**
- * MapPinPlus with dynamic weight and duotone props.
+ * MapPinPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MapPinPlusRegular } from 'stera-icons/MapPinPlusRegular';
  */
@@ -32,4 +33,5 @@ const MapPinPlus = memo(forwardRef<SVGSVGElement, MapPinPlusProps>(({
 
 MapPinPlus.displayName = 'MapPinPlus';
 
-export { MapPinPlus };
+// Triple export pattern (lucide-react style)
+export { MapPinPlus, MapPinPlus as MapPinPlusIcon, MapPinPlus as SiMapPinPlus };

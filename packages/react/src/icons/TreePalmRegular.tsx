@@ -14,5 +14,6 @@ const TreePalmRegular = memo(
 
 TreePalmRegular.displayName = 'TreePalmRegular';
 
-export { TreePalmRegular };
+// Triple export pattern (lucide-react style)
+export { TreePalmRegular, TreePalmRegular as TreePalmRegularIcon, TreePalmRegular as SiTreePalmRegular };
 export type { TreePalmRegularProps };

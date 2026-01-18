@@ -13,7 +13,8 @@ export interface EyeClosedProps extends IconProps {
 }
 
 /**
- * EyeClosed with dynamic weight and duotone props.
+ * EyeClosed - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EyeClosedRegular } from 'stera-icons/EyeClosedRegular';
  */
@@ -32,4 +33,5 @@ const EyeClosed = memo(forwardRef<SVGSVGElement, EyeClosedProps>(({
 
 EyeClosed.displayName = 'EyeClosed';
 
-export { EyeClosed };
+// Triple export pattern (lucide-react style)
+export { EyeClosed, EyeClosed as EyeClosedIcon, EyeClosed as SiEyeClosed };

@@ -14,5 +14,6 @@ const TvBold = memo(
 
 TvBold.displayName = 'TvBold';
 
-export { TvBold };
+// Triple export pattern (lucide-react style)
+export { TvBold, TvBold as TvBoldIcon, TvBold as SiTvBold };
 export type { TvBoldProps };

@@ -13,7 +13,8 @@ export interface NoteTextProps extends IconProps {
 }
 
 /**
- * NoteText with dynamic weight and duotone props.
+ * NoteText - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { NoteTextRegular } from 'stera-icons/NoteTextRegular';
  */
@@ -32,4 +33,5 @@ const NoteText = memo(forwardRef<SVGSVGElement, NoteTextProps>(({
 
 NoteText.displayName = 'NoteText';
 
-export { NoteText };
+// Triple export pattern (lucide-react style)
+export { NoteText, NoteText as NoteTextIcon, NoteText as SiNoteText };

@@ -16,5 +16,6 @@ const ScanEyeFill = memo(
 
 ScanEyeFill.displayName = 'ScanEyeFill';
 
-export { ScanEyeFill };
+// Triple export pattern (lucide-react style)
+export { ScanEyeFill, ScanEyeFill as ScanEyeFillIcon, ScanEyeFill as SiScanEyeFill };
 export type { ScanEyeFillProps };

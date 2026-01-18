@@ -13,7 +13,8 @@ export interface ListBulletProps extends IconProps {
 }
 
 /**
- * ListBullet with dynamic weight and duotone props.
+ * ListBullet - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListBulletRegular } from 'stera-icons/ListBulletRegular';
  */
@@ -32,4 +33,5 @@ const ListBullet = memo(forwardRef<SVGSVGElement, ListBulletProps>(({
 
 ListBullet.displayName = 'ListBullet';
 
-export { ListBullet };
+// Triple export pattern (lucide-react style)
+export { ListBullet, ListBullet as ListBulletIcon, ListBullet as SiListBullet };

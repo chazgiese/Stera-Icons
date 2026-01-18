@@ -14,5 +14,6 @@ const MinimizeRegular = memo(
 
 MinimizeRegular.displayName = 'MinimizeRegular';
 
-export { MinimizeRegular };
+// Triple export pattern (lucide-react style)
+export { MinimizeRegular, MinimizeRegular as MinimizeRegularIcon, MinimizeRegular as SiMinimizeRegular };
 export type { MinimizeRegularProps };

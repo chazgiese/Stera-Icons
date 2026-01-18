@@ -14,5 +14,6 @@ const AstriskAltBold = memo(
 
 AstriskAltBold.displayName = 'AstriskAltBold';
 
-export { AstriskAltBold };
+// Triple export pattern (lucide-react style)
+export { AstriskAltBold, AstriskAltBold as AstriskAltBoldIcon, AstriskAltBold as SiAstriskAltBold };
 export type { AstriskAltBoldProps };

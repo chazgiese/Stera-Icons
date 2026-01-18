@@ -14,5 +14,6 @@ const TextAlignLeftBold = memo(
 
 TextAlignLeftBold.displayName = 'TextAlignLeftBold';
 
-export { TextAlignLeftBold };
+// Triple export pattern (lucide-react style)
+export { TextAlignLeftBold, TextAlignLeftBold as TextAlignLeftBoldIcon, TextAlignLeftBold as SiTextAlignLeftBold };
 export type { TextAlignLeftBoldProps };

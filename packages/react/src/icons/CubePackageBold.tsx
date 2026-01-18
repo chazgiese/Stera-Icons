@@ -14,5 +14,6 @@ const CubePackageBold = memo(
 
 CubePackageBold.displayName = 'CubePackageBold';
 
-export { CubePackageBold };
+// Triple export pattern (lucide-react style)
+export { CubePackageBold, CubePackageBold as CubePackageBoldIcon, CubePackageBold as SiCubePackageBold };
 export type { CubePackageBoldProps };

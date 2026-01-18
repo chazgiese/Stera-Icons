@@ -13,7 +13,8 @@ export interface UsersProps extends IconProps {
 }
 
 /**
- * Users with dynamic weight and duotone props.
+ * Users - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UsersRegular } from 'stera-icons/UsersRegular';
  */
@@ -32,4 +33,5 @@ const Users = memo(forwardRef<SVGSVGElement, UsersProps>(({
 
 Users.displayName = 'Users';
 
-export { Users };
+// Triple export pattern (lucide-react style)
+export { Users, Users as UsersIcon, Users as SiUsers };

@@ -15,5 +15,6 @@ const ChartLineXYBold = memo(
 
 ChartLineXYBold.displayName = 'ChartLineXYBold';
 
-export { ChartLineXYBold };
+// Triple export pattern (lucide-react style)
+export { ChartLineXYBold, ChartLineXYBold as ChartLineXYBoldIcon, ChartLineXYBold as SiChartLineXYBold };
 export type { ChartLineXYBoldProps };

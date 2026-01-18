@@ -15,5 +15,6 @@ const UmbrellaFillDuotone = memo(
 
 UmbrellaFillDuotone.displayName = 'UmbrellaFillDuotone';
 
-export { UmbrellaFillDuotone };
+// Triple export pattern (lucide-react style)
+export { UmbrellaFillDuotone, UmbrellaFillDuotone as UmbrellaFillDuotoneIcon, UmbrellaFillDuotone as SiUmbrellaFillDuotone };
 export type { UmbrellaFillDuotoneProps };

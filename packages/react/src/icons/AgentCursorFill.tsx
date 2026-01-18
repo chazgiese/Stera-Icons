@@ -15,5 +15,6 @@ const AgentCursorFill = memo(
 
 AgentCursorFill.displayName = 'AgentCursorFill';
 
-export { AgentCursorFill };
+// Triple export pattern (lucide-react style)
+export { AgentCursorFill, AgentCursorFill as AgentCursorFillIcon, AgentCursorFill as SiAgentCursorFill };
 export type { AgentCursorFillProps };

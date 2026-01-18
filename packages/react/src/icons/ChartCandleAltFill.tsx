@@ -14,5 +14,6 @@ const ChartCandleAltFill = memo(
 
 ChartCandleAltFill.displayName = 'ChartCandleAltFill';
 
-export { ChartCandleAltFill };
+// Triple export pattern (lucide-react style)
+export { ChartCandleAltFill, ChartCandleAltFill as ChartCandleAltFillIcon, ChartCandleAltFill as SiChartCandleAltFill };
 export type { ChartCandleAltFillProps };

@@ -13,7 +13,8 @@ export interface ScanPlusProps extends IconProps {
 }
 
 /**
- * ScanPlus with dynamic weight and duotone props.
+ * ScanPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScanPlusRegular } from 'stera-icons/ScanPlusRegular';
  */
@@ -32,4 +33,5 @@ const ScanPlus = memo(forwardRef<SVGSVGElement, ScanPlusProps>(({
 
 ScanPlus.displayName = 'ScanPlus';
 
-export { ScanPlus };
+// Triple export pattern (lucide-react style)
+export { ScanPlus, ScanPlus as ScanPlusIcon, ScanPlus as SiScanPlus };

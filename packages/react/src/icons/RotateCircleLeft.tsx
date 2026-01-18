@@ -13,7 +13,8 @@ export interface RotateCircleLeftProps extends IconProps {
 }
 
 /**
- * RotateCircleLeft with dynamic weight and duotone props.
+ * RotateCircleLeft - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RotateCircleLeftRegular } from 'stera-icons/RotateCircleLeftRegular';
  */
@@ -32,4 +33,5 @@ const RotateCircleLeft = memo(forwardRef<SVGSVGElement, RotateCircleLeftProps>((
 
 RotateCircleLeft.displayName = 'RotateCircleLeft';
 
-export { RotateCircleLeft };
+// Triple export pattern (lucide-react style)
+export { RotateCircleLeft, RotateCircleLeft as RotateCircleLeftIcon, RotateCircleLeft as SiRotateCircleLeft };

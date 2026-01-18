@@ -13,7 +13,8 @@ export interface GavelProps extends IconProps {
 }
 
 /**
- * Gavel with dynamic weight and duotone props.
+ * Gavel - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { GavelRegular } from 'stera-icons/GavelRegular';
  */
@@ -32,4 +33,5 @@ const Gavel = memo(forwardRef<SVGSVGElement, GavelProps>(({
 
 Gavel.displayName = 'Gavel';
 
-export { Gavel };
+// Triple export pattern (lucide-react style)
+export { Gavel, Gavel as GavelIcon, Gavel as SiGavel };

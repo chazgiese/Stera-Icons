@@ -14,5 +14,6 @@ const PencilLineRegular = memo(
 
 PencilLineRegular.displayName = 'PencilLineRegular';
 
-export { PencilLineRegular };
+// Triple export pattern (lucide-react style)
+export { PencilLineRegular, PencilLineRegular as PencilLineRegularIcon, PencilLineRegular as SiPencilLineRegular };
 export type { PencilLineRegularProps };

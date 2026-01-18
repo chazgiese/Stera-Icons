@@ -14,5 +14,6 @@ const CollapseRegular = memo(
 
 CollapseRegular.displayName = 'CollapseRegular';
 
-export { CollapseRegular };
+// Triple export pattern (lucide-react style)
+export { CollapseRegular, CollapseRegular as CollapseRegularIcon, CollapseRegular as SiCollapseRegular };
 export type { CollapseRegularProps };

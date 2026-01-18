@@ -13,7 +13,8 @@ export interface EmoteSadProps extends IconProps {
 }
 
 /**
- * EmoteSad with dynamic weight and duotone props.
+ * EmoteSad - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSadRegular } from 'stera-icons/EmoteSadRegular';
  */
@@ -32,4 +33,5 @@ const EmoteSad = memo(forwardRef<SVGSVGElement, EmoteSadProps>(({
 
 EmoteSad.displayName = 'EmoteSad';
 
-export { EmoteSad };
+// Triple export pattern (lucide-react style)
+export { EmoteSad, EmoteSad as EmoteSadIcon, EmoteSad as SiEmoteSad };

@@ -14,5 +14,6 @@ const TriangleDownFill = memo(
 
 TriangleDownFill.displayName = 'TriangleDownFill';
 
-export { TriangleDownFill };
+// Triple export pattern (lucide-react style)
+export { TriangleDownFill, TriangleDownFill as TriangleDownFillIcon, TriangleDownFill as SiTriangleDownFill };
 export type { TriangleDownFillProps };

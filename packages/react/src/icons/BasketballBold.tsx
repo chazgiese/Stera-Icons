@@ -14,5 +14,6 @@ const BasketballBold = memo(
 
 BasketballBold.displayName = 'BasketballBold';
 
-export { BasketballBold };
+// Triple export pattern (lucide-react style)
+export { BasketballBold, BasketballBold as BasketballBoldIcon, BasketballBold as SiBasketballBold };
 export type { BasketballBoldProps };

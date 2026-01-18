@@ -15,5 +15,6 @@ const SearchCircleBoldDuotone = memo(
 
 SearchCircleBoldDuotone.displayName = 'SearchCircleBoldDuotone';
 
-export { SearchCircleBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { SearchCircleBoldDuotone, SearchCircleBoldDuotone as SearchCircleBoldDuotoneIcon, SearchCircleBoldDuotone as SiSearchCircleBoldDuotone };
 export type { SearchCircleBoldDuotoneProps };

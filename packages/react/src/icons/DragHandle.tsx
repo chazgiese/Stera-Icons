@@ -13,7 +13,8 @@ export interface DragHandleProps extends IconProps {
 }
 
 /**
- * DragHandle with dynamic weight and duotone props.
+ * DragHandle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DragHandleRegular } from 'stera-icons/DragHandleRegular';
  */
@@ -32,4 +33,5 @@ const DragHandle = memo(forwardRef<SVGSVGElement, DragHandleProps>(({
 
 DragHandle.displayName = 'DragHandle';
 
-export { DragHandle };
+// Triple export pattern (lucide-react style)
+export { DragHandle, DragHandle as DragHandleIcon, DragHandle as SiDragHandle };

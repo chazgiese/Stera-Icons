@@ -13,7 +13,8 @@ export interface BuildingProps extends IconProps {
 }
 
 /**
- * Building with dynamic weight and duotone props.
+ * Building - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BuildingRegular } from 'stera-icons/BuildingRegular';
  */
@@ -32,4 +33,5 @@ const Building = memo(forwardRef<SVGSVGElement, BuildingProps>(({
 
 Building.displayName = 'Building';
 
-export { Building };
+// Triple export pattern (lucide-react style)
+export { Building, Building as BuildingIcon, Building as SiBuilding };

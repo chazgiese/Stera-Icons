@@ -14,5 +14,6 @@ const SquareSlashBold = memo(
 
 SquareSlashBold.displayName = 'SquareSlashBold';
 
-export { SquareSlashBold };
+// Triple export pattern (lucide-react style)
+export { SquareSlashBold, SquareSlashBold as SquareSlashBoldIcon, SquareSlashBold as SiSquareSlashBold };
 export type { SquareSlashBoldProps };

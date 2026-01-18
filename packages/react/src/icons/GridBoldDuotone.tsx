@@ -15,5 +15,6 @@ const GridBoldDuotone = memo(
 
 GridBoldDuotone.displayName = 'GridBoldDuotone';
 
-export { GridBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { GridBoldDuotone, GridBoldDuotone as GridBoldDuotoneIcon, GridBoldDuotone as SiGridBoldDuotone };
 export type { GridBoldDuotoneProps };

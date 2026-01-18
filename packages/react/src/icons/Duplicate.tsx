@@ -13,7 +13,8 @@ export interface DuplicateProps extends IconProps {
 }
 
 /**
- * Duplicate with dynamic weight and duotone props.
+ * Duplicate - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DuplicateRegular } from 'stera-icons/DuplicateRegular';
  */
@@ -32,4 +33,5 @@ const Duplicate = memo(forwardRef<SVGSVGElement, DuplicateProps>(({
 
 Duplicate.displayName = 'Duplicate';
 
-export { Duplicate };
+// Triple export pattern (lucide-react style)
+export { Duplicate, Duplicate as DuplicateIcon, Duplicate as SiDuplicate };

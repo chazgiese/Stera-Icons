@@ -16,5 +16,6 @@ const StopwatchRegular = memo(
 
 StopwatchRegular.displayName = 'StopwatchRegular';
 
-export { StopwatchRegular };
+// Triple export pattern (lucide-react style)
+export { StopwatchRegular, StopwatchRegular as StopwatchRegularIcon, StopwatchRegular as SiStopwatchRegular };
 export type { StopwatchRegularProps };

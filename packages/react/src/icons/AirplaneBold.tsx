@@ -14,5 +14,6 @@ const AirplaneBold = memo(
 
 AirplaneBold.displayName = 'AirplaneBold';
 
-export { AirplaneBold };
+// Triple export pattern (lucide-react style)
+export { AirplaneBold, AirplaneBold as AirplaneBoldIcon, AirplaneBold as SiAirplaneBold };
 export type { AirplaneBoldProps };

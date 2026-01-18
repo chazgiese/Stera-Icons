@@ -14,5 +14,6 @@ const ToggleOffFill = memo(
 
 ToggleOffFill.displayName = 'ToggleOffFill';
 
-export { ToggleOffFill };
+// Triple export pattern (lucide-react style)
+export { ToggleOffFill, ToggleOffFill as ToggleOffFillIcon, ToggleOffFill as SiToggleOffFill };
 export type { ToggleOffFillProps };

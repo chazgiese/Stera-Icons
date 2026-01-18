@@ -13,7 +13,8 @@ export interface ChevronFullLeftProps extends IconProps {
 }
 
 /**
- * ChevronFullLeft with dynamic weight and duotone props.
+ * ChevronFullLeft - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullLeftRegular } from 'stera-icons/ChevronFullLeftRegular';
  */
@@ -32,4 +33,5 @@ const ChevronFullLeft = memo(forwardRef<SVGSVGElement, ChevronFullLeftProps>(({
 
 ChevronFullLeft.displayName = 'ChevronFullLeft';
 
-export { ChevronFullLeft };
+// Triple export pattern (lucide-react style)
+export { ChevronFullLeft, ChevronFullLeft as ChevronFullLeftIcon, ChevronFullLeft as SiChevronFullLeft };

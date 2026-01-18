@@ -14,5 +14,6 @@ const TextAlignRightBold = memo(
 
 TextAlignRightBold.displayName = 'TextAlignRightBold';
 
-export { TextAlignRightBold };
+// Triple export pattern (lucide-react style)
+export { TextAlignRightBold, TextAlignRightBold as TextAlignRightBoldIcon, TextAlignRightBold as SiTextAlignRightBold };
 export type { TextAlignRightBoldProps };

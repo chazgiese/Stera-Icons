@@ -15,5 +15,6 @@ const ReceiptRegular = memo(
 
 ReceiptRegular.displayName = 'ReceiptRegular';
 
-export { ReceiptRegular };
+// Triple export pattern (lucide-react style)
+export { ReceiptRegular, ReceiptRegular as ReceiptRegularIcon, ReceiptRegular as SiReceiptRegular };
 export type { ReceiptRegularProps };

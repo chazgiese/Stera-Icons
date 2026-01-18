@@ -13,7 +13,8 @@ export interface SkipForwardProps extends IconProps {
 }
 
 /**
- * SkipForward with dynamic weight and duotone props.
+ * SkipForward - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SkipForwardRegular } from 'stera-icons/SkipForwardRegular';
  */
@@ -32,4 +33,5 @@ const SkipForward = memo(forwardRef<SVGSVGElement, SkipForwardProps>(({
 
 SkipForward.displayName = 'SkipForward';
 
-export { SkipForward };
+// Triple export pattern (lucide-react style)
+export { SkipForward, SkipForward as SkipForwardIcon, SkipForward as SiSkipForward };

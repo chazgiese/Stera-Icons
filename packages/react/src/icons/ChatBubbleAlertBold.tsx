@@ -15,5 +15,6 @@ const ChatBubbleAlertBold = memo(
 
 ChatBubbleAlertBold.displayName = 'ChatBubbleAlertBold';
 
-export { ChatBubbleAlertBold };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleAlertBold, ChatBubbleAlertBold as ChatBubbleAlertBoldIcon, ChatBubbleAlertBold as SiChatBubbleAlertBold };
 export type { ChatBubbleAlertBoldProps };

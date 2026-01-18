@@ -15,5 +15,6 @@ const ShieldCheckRegular = memo(
 
 ShieldCheckRegular.displayName = 'ShieldCheckRegular';
 
-export { ShieldCheckRegular };
+// Triple export pattern (lucide-react style)
+export { ShieldCheckRegular, ShieldCheckRegular as ShieldCheckRegularIcon, ShieldCheckRegular as SiShieldCheckRegular };
 export type { ShieldCheckRegularProps };

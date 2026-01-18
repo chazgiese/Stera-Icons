@@ -13,7 +13,8 @@ export interface MoreProps extends IconProps {
 }
 
 /**
- * More with dynamic weight and duotone props.
+ * More - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { MoreRegular } from 'stera-icons/MoreRegular';
  */
@@ -32,4 +33,5 @@ const More = memo(forwardRef<SVGSVGElement, MoreProps>(({
 
 More.displayName = 'More';
 
-export { More };
+// Triple export pattern (lucide-react style)
+export { More, More as MoreIcon, More as SiMore };

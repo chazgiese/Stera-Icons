@@ -16,5 +16,6 @@ const CanLabelFill = memo(
 
 CanLabelFill.displayName = 'CanLabelFill';
 
-export { CanLabelFill };
+// Triple export pattern (lucide-react style)
+export { CanLabelFill, CanLabelFill as CanLabelFillIcon, CanLabelFill as SiCanLabelFill };
 export type { CanLabelFillProps };

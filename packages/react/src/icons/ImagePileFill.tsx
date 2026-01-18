@@ -14,5 +14,6 @@ const ImagePileFill = memo(
 
 ImagePileFill.displayName = 'ImagePileFill';
 
-export { ImagePileFill };
+// Triple export pattern (lucide-react style)
+export { ImagePileFill, ImagePileFill as ImagePileFillIcon, ImagePileFill as SiImagePileFill };
 export type { ImagePileFillProps };

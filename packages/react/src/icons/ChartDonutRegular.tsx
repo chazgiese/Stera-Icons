@@ -14,5 +14,6 @@ const ChartDonutRegular = memo(
 
 ChartDonutRegular.displayName = 'ChartDonutRegular';
 
-export { ChartDonutRegular };
+// Triple export pattern (lucide-react style)
+export { ChartDonutRegular, ChartDonutRegular as ChartDonutRegularIcon, ChartDonutRegular as SiChartDonutRegular };
 export type { ChartDonutRegularProps };

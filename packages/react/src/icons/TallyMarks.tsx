@@ -13,7 +13,8 @@ export interface TallyMarksProps extends IconProps {
 }
 
 /**
- * TallyMarks with dynamic weight and duotone props.
+ * TallyMarks - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TallyMarksRegular } from 'stera-icons/TallyMarksRegular';
  */
@@ -32,4 +33,5 @@ const TallyMarks = memo(forwardRef<SVGSVGElement, TallyMarksProps>(({
 
 TallyMarks.displayName = 'TallyMarks';
 
-export { TallyMarks };
+// Triple export pattern (lucide-react style)
+export { TallyMarks, TallyMarks as TallyMarksIcon, TallyMarks as SiTallyMarks };

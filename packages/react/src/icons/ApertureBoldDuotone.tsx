@@ -15,5 +15,6 @@ const ApertureBoldDuotone = memo(
 
 ApertureBoldDuotone.displayName = 'ApertureBoldDuotone';
 
-export { ApertureBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ApertureBoldDuotone, ApertureBoldDuotone as ApertureBoldDuotoneIcon, ApertureBoldDuotone as SiApertureBoldDuotone };
 export type { ApertureBoldDuotoneProps };

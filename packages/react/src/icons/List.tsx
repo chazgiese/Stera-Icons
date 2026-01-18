@@ -13,7 +13,8 @@ export interface ListProps extends IconProps {
 }
 
 /**
- * List with dynamic weight and duotone props.
+ * List - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListRegular } from 'stera-icons/ListRegular';
  */
@@ -32,4 +33,5 @@ const List = memo(forwardRef<SVGSVGElement, ListProps>(({
 
 List.displayName = 'List';
 
-export { List };
+// Triple export pattern (lucide-react style)
+export { List, List as ListIcon, List as SiList };

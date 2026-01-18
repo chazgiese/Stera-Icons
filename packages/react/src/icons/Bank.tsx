@@ -13,7 +13,8 @@ export interface BankProps extends IconProps {
 }
 
 /**
- * Bank with dynamic weight and duotone props.
+ * Bank - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BankRegular } from 'stera-icons/BankRegular';
  */
@@ -32,4 +33,5 @@ const Bank = memo(forwardRef<SVGSVGElement, BankProps>(({
 
 Bank.displayName = 'Bank';
 
-export { Bank };
+// Triple export pattern (lucide-react style)
+export { Bank, Bank as BankIcon, Bank as SiBank };

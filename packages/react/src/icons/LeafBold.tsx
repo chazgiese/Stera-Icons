@@ -14,5 +14,6 @@ const LeafBold = memo(
 
 LeafBold.displayName = 'LeafBold';
 
-export { LeafBold };
+// Triple export pattern (lucide-react style)
+export { LeafBold, LeafBold as LeafBoldIcon, LeafBold as SiLeafBold };
 export type { LeafBoldProps };

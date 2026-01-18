@@ -15,5 +15,6 @@ const SignInAltBoldDuotone = memo(
 
 SignInAltBoldDuotone.displayName = 'SignInAltBoldDuotone';
 
-export { SignInAltBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { SignInAltBoldDuotone, SignInAltBoldDuotone as SignInAltBoldDuotoneIcon, SignInAltBoldDuotone as SiSignInAltBoldDuotone };
 export type { SignInAltBoldDuotoneProps };

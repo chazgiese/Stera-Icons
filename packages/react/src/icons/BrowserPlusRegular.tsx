@@ -15,5 +15,6 @@ const BrowserPlusRegular = memo(
 
 BrowserPlusRegular.displayName = 'BrowserPlusRegular';
 
-export { BrowserPlusRegular };
+// Triple export pattern (lucide-react style)
+export { BrowserPlusRegular, BrowserPlusRegular as BrowserPlusRegularIcon, BrowserPlusRegular as SiBrowserPlusRegular };
 export type { BrowserPlusRegularProps };

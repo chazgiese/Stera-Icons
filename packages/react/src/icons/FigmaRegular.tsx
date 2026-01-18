@@ -14,5 +14,6 @@ const FigmaRegular = memo(
 
 FigmaRegular.displayName = 'FigmaRegular';
 
-export { FigmaRegular };
+// Triple export pattern (lucide-react style)
+export { FigmaRegular, FigmaRegular as FigmaRegularIcon, FigmaRegular as SiFigmaRegular };
 export type { FigmaRegularProps };

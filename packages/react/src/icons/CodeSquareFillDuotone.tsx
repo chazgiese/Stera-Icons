@@ -15,5 +15,6 @@ const CodeSquareFillDuotone = memo(
 
 CodeSquareFillDuotone.displayName = 'CodeSquareFillDuotone';
 
-export { CodeSquareFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CodeSquareFillDuotone, CodeSquareFillDuotone as CodeSquareFillDuotoneIcon, CodeSquareFillDuotone as SiCodeSquareFillDuotone };
 export type { CodeSquareFillDuotoneProps };

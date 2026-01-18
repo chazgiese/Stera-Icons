@@ -16,5 +16,6 @@ const LayoutGridPlusBold = memo(
 
 LayoutGridPlusBold.displayName = 'LayoutGridPlusBold';
 
-export { LayoutGridPlusBold };
+// Triple export pattern (lucide-react style)
+export { LayoutGridPlusBold, LayoutGridPlusBold as LayoutGridPlusBoldIcon, LayoutGridPlusBold as SiLayoutGridPlusBold };
 export type { LayoutGridPlusBoldProps };

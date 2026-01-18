@@ -15,5 +15,6 @@ const AlienRegularDuotone = memo(
 
 AlienRegularDuotone.displayName = 'AlienRegularDuotone';
 
-export { AlienRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { AlienRegularDuotone, AlienRegularDuotone as AlienRegularDuotoneIcon, AlienRegularDuotone as SiAlienRegularDuotone };
 export type { AlienRegularDuotoneProps };

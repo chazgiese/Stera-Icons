@@ -15,5 +15,6 @@ const ChatBubblePlusBoldDuotone = memo(
 
 ChatBubblePlusBoldDuotone.displayName = 'ChatBubblePlusBoldDuotone';
 
-export { ChatBubblePlusBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ChatBubblePlusBoldDuotone, ChatBubblePlusBoldDuotone as ChatBubblePlusBoldDuotoneIcon, ChatBubblePlusBoldDuotone as SiChatBubblePlusBoldDuotone };
 export type { ChatBubblePlusBoldDuotoneProps };

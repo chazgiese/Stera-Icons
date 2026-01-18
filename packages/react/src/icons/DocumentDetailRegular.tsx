@@ -15,5 +15,6 @@ const DocumentDetailRegular = memo(
 
 DocumentDetailRegular.displayName = 'DocumentDetailRegular';
 
-export { DocumentDetailRegular };
+// Triple export pattern (lucide-react style)
+export { DocumentDetailRegular, DocumentDetailRegular as DocumentDetailRegularIcon, DocumentDetailRegular as SiDocumentDetailRegular };
 export type { DocumentDetailRegularProps };

@@ -13,7 +13,8 @@ export interface FlashlightProps extends IconProps {
 }
 
 /**
- * Flashlight with dynamic weight and duotone props.
+ * Flashlight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlashlightRegular } from 'stera-icons/FlashlightRegular';
  */
@@ -32,4 +33,5 @@ const Flashlight = memo(forwardRef<SVGSVGElement, FlashlightProps>(({
 
 Flashlight.displayName = 'Flashlight';
 
-export { Flashlight };
+// Triple export pattern (lucide-react style)
+export { Flashlight, Flashlight as FlashlightIcon, Flashlight as SiFlashlight };

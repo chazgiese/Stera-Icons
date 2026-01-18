@@ -15,5 +15,6 @@ const GitMergeRegularDuotone = memo(
 
 GitMergeRegularDuotone.displayName = 'GitMergeRegularDuotone';
 
-export { GitMergeRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { GitMergeRegularDuotone, GitMergeRegularDuotone as GitMergeRegularDuotoneIcon, GitMergeRegularDuotone as SiGitMergeRegularDuotone };
 export type { GitMergeRegularDuotoneProps };

@@ -15,5 +15,6 @@ const ShieldAlertRegular = memo(
 
 ShieldAlertRegular.displayName = 'ShieldAlertRegular';
 
-export { ShieldAlertRegular };
+// Triple export pattern (lucide-react style)
+export { ShieldAlertRegular, ShieldAlertRegular as ShieldAlertRegularIcon, ShieldAlertRegular as SiShieldAlertRegular };
 export type { ShieldAlertRegularProps };

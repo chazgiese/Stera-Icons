@@ -15,5 +15,6 @@ const BrowserFill = memo(
 
 BrowserFill.displayName = 'BrowserFill';
 
-export { BrowserFill };
+// Triple export pattern (lucide-react style)
+export { BrowserFill, BrowserFill as BrowserFillIcon, BrowserFill as SiBrowserFill };
 export type { BrowserFillProps };

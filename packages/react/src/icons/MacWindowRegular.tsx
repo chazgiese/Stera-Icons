@@ -15,5 +15,6 @@ const MacWindowRegular = memo(
 
 MacWindowRegular.displayName = 'MacWindowRegular';
 
-export { MacWindowRegular };
+// Triple export pattern (lucide-react style)
+export { MacWindowRegular, MacWindowRegular as MacWindowRegularIcon, MacWindowRegular as SiMacWindowRegular };
 export type { MacWindowRegularProps };

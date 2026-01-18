@@ -13,7 +13,8 @@ export interface CoolSProps extends IconProps {
 }
 
 /**
- * CoolS with dynamic weight and duotone props.
+ * CoolS - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CoolSRegular } from 'stera-icons/CoolSRegular';
  */
@@ -32,4 +33,5 @@ const CoolS = memo(forwardRef<SVGSVGElement, CoolSProps>(({
 
 CoolS.displayName = 'CoolS';
 
-export { CoolS };
+// Triple export pattern (lucide-react style)
+export { CoolS, CoolS as CoolSIcon, CoolS as SiCoolS };

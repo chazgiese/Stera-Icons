@@ -14,5 +14,6 @@ const ChevronFullInwardBold = memo(
 
 ChevronFullInwardBold.displayName = 'ChevronFullInwardBold';
 
-export { ChevronFullInwardBold };
+// Triple export pattern (lucide-react style)
+export { ChevronFullInwardBold, ChevronFullInwardBold as ChevronFullInwardBoldIcon, ChevronFullInwardBold as SiChevronFullInwardBold };
 export type { ChevronFullInwardBoldProps };

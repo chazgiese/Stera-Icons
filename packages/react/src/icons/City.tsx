@@ -13,7 +13,8 @@ export interface CityProps extends IconProps {
 }
 
 /**
- * City with dynamic weight and duotone props.
+ * City - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CityRegular } from 'stera-icons/CityRegular';
  */
@@ -32,4 +33,5 @@ const City = memo(forwardRef<SVGSVGElement, CityProps>(({
 
 City.displayName = 'City';
 
-export { City };
+// Triple export pattern (lucide-react style)
+export { City, City as CityIcon, City as SiCity };

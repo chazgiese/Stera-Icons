@@ -15,5 +15,6 @@ const ChatBubbleCheckFillDuotone = memo(
 
 ChatBubbleCheckFillDuotone.displayName = 'ChatBubbleCheckFillDuotone';
 
-export { ChatBubbleCheckFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleCheckFillDuotone, ChatBubbleCheckFillDuotone as ChatBubbleCheckFillDuotoneIcon, ChatBubbleCheckFillDuotone as SiChatBubbleCheckFillDuotone };
 export type { ChatBubbleCheckFillDuotoneProps };

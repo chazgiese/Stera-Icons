@@ -13,7 +13,8 @@ export interface DatabasePlusProps extends IconProps {
 }
 
 /**
- * DatabasePlus with dynamic weight and duotone props.
+ * DatabasePlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DatabasePlusRegular } from 'stera-icons/DatabasePlusRegular';
  */
@@ -32,4 +33,5 @@ const DatabasePlus = memo(forwardRef<SVGSVGElement, DatabasePlusProps>(({
 
 DatabasePlus.displayName = 'DatabasePlus';
 
-export { DatabasePlus };
+// Triple export pattern (lucide-react style)
+export { DatabasePlus, DatabasePlus as DatabasePlusIcon, DatabasePlus as SiDatabasePlus };

@@ -14,5 +14,6 @@ const GlobeBold = memo(
 
 GlobeBold.displayName = 'GlobeBold';
 
-export { GlobeBold };
+// Triple export pattern (lucide-react style)
+export { GlobeBold, GlobeBold as GlobeBoldIcon, GlobeBold as SiGlobeBold };
 export type { GlobeBoldProps };

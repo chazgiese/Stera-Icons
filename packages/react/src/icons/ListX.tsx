@@ -13,7 +13,8 @@ export interface ListXProps extends IconProps {
 }
 
 /**
- * ListX with dynamic weight and duotone props.
+ * ListX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListXRegular } from 'stera-icons/ListXRegular';
  */
@@ -32,4 +33,5 @@ const ListX = memo(forwardRef<SVGSVGElement, ListXProps>(({
 
 ListX.displayName = 'ListX';
 
-export { ListX };
+// Triple export pattern (lucide-react style)
+export { ListX, ListX as ListXIcon, ListX as SiListX };

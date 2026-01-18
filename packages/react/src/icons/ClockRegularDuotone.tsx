@@ -15,5 +15,6 @@ const ClockRegularDuotone = memo(
 
 ClockRegularDuotone.displayName = 'ClockRegularDuotone';
 
-export { ClockRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ClockRegularDuotone, ClockRegularDuotone as ClockRegularDuotoneIcon, ClockRegularDuotone as SiClockRegularDuotone };
 export type { ClockRegularDuotoneProps };

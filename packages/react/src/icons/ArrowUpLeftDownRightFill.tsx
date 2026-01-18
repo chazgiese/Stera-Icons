@@ -14,5 +14,6 @@ const ArrowUpLeftDownRightFill = memo(
 
 ArrowUpLeftDownRightFill.displayName = 'ArrowUpLeftDownRightFill';
 
-export { ArrowUpLeftDownRightFill };
+// Triple export pattern (lucide-react style)
+export { ArrowUpLeftDownRightFill, ArrowUpLeftDownRightFill as ArrowUpLeftDownRightFillIcon, ArrowUpLeftDownRightFill as SiArrowUpLeftDownRightFill };
 export type { ArrowUpLeftDownRightFillProps };

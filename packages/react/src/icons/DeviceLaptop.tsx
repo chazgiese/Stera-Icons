@@ -13,7 +13,8 @@ export interface DeviceLaptopProps extends IconProps {
 }
 
 /**
- * DeviceLaptop with dynamic weight and duotone props.
+ * DeviceLaptop - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DeviceLaptopRegular } from 'stera-icons/DeviceLaptopRegular';
  */
@@ -32,4 +33,5 @@ const DeviceLaptop = memo(forwardRef<SVGSVGElement, DeviceLaptopProps>(({
 
 DeviceLaptop.displayName = 'DeviceLaptop';
 
-export { DeviceLaptop };
+// Triple export pattern (lucide-react style)
+export { DeviceLaptop, DeviceLaptop as DeviceLaptopIcon, DeviceLaptop as SiDeviceLaptop };

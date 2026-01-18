@@ -13,7 +13,8 @@ export interface ChecklistUncheckedProps extends IconProps {
 }
 
 /**
- * ChecklistUnchecked with dynamic weight and duotone props.
+ * ChecklistUnchecked - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChecklistUncheckedRegular } from 'stera-icons/ChecklistUncheckedRegular';
  */
@@ -32,4 +33,5 @@ const ChecklistUnchecked = memo(forwardRef<SVGSVGElement, ChecklistUncheckedProp
 
 ChecklistUnchecked.displayName = 'ChecklistUnchecked';
 
-export { ChecklistUnchecked };
+// Triple export pattern (lucide-react style)
+export { ChecklistUnchecked, ChecklistUnchecked as ChecklistUncheckedIcon, ChecklistUnchecked as SiChecklistUnchecked };

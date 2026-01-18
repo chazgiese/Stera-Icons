@@ -13,7 +13,8 @@ export interface SlashProps extends IconProps {
 }
 
 /**
- * Slash with dynamic weight and duotone props.
+ * Slash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SlashRegular } from 'stera-icons/SlashRegular';
  */
@@ -32,4 +33,5 @@ const Slash = memo(forwardRef<SVGSVGElement, SlashProps>(({
 
 Slash.displayName = 'Slash';
 
-export { Slash };
+// Triple export pattern (lucide-react style)
+export { Slash, Slash as SlashIcon, Slash as SiSlash };

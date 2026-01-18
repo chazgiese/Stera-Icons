@@ -14,5 +14,6 @@ const GitCommitBold = memo(
 
 GitCommitBold.displayName = 'GitCommitBold';
 
-export { GitCommitBold };
+// Triple export pattern (lucide-react style)
+export { GitCommitBold, GitCommitBold as GitCommitBoldIcon, GitCommitBold as SiGitCommitBold };
 export type { GitCommitBoldProps };

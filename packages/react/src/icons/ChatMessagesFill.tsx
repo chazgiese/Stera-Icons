@@ -14,5 +14,6 @@ const ChatMessagesFill = memo(
 
 ChatMessagesFill.displayName = 'ChatMessagesFill';
 
-export { ChatMessagesFill };
+// Triple export pattern (lucide-react style)
+export { ChatMessagesFill, ChatMessagesFill as ChatMessagesFillIcon, ChatMessagesFill as SiChatMessagesFill };
 export type { ChatMessagesFillProps };

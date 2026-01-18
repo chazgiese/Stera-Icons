@@ -15,5 +15,6 @@ const KeyRegular = memo(
 
 KeyRegular.displayName = 'KeyRegular';
 
-export { KeyRegular };
+// Triple export pattern (lucide-react style)
+export { KeyRegular, KeyRegular as KeyRegularIcon, KeyRegular as SiKeyRegular };
 export type { KeyRegularProps };

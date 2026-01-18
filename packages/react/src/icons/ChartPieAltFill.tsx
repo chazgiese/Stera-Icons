@@ -15,5 +15,6 @@ const ChartPieAltFill = memo(
 
 ChartPieAltFill.displayName = 'ChartPieAltFill';
 
-export { ChartPieAltFill };
+// Triple export pattern (lucide-react style)
+export { ChartPieAltFill, ChartPieAltFill as ChartPieAltFillIcon, ChartPieAltFill as SiChartPieAltFill };
 export type { ChartPieAltFillProps };

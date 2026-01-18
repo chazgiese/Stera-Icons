@@ -14,5 +14,6 @@ const AstriskAltFill = memo(
 
 AstriskAltFill.displayName = 'AstriskAltFill';
 
-export { AstriskAltFill };
+// Triple export pattern (lucide-react style)
+export { AstriskAltFill, AstriskAltFill as AstriskAltFillIcon, AstriskAltFill as SiAstriskAltFill };
 export type { AstriskAltFillProps };

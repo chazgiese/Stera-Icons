@@ -15,5 +15,6 @@ const SkipBackBold = memo(
 
 SkipBackBold.displayName = 'SkipBackBold';
 
-export { SkipBackBold };
+// Triple export pattern (lucide-react style)
+export { SkipBackBold, SkipBackBold as SkipBackBoldIcon, SkipBackBold as SiSkipBackBold };
 export type { SkipBackBoldProps };

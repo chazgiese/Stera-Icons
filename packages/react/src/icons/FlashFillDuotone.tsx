@@ -15,5 +15,6 @@ const FlashFillDuotone = memo(
 
 FlashFillDuotone.displayName = 'FlashFillDuotone';
 
-export { FlashFillDuotone };
+// Triple export pattern (lucide-react style)
+export { FlashFillDuotone, FlashFillDuotone as FlashFillDuotoneIcon, FlashFillDuotone as SiFlashFillDuotone };
 export type { FlashFillDuotoneProps };

@@ -14,5 +14,6 @@ const PilcrowBold = memo(
 
 PilcrowBold.displayName = 'PilcrowBold';
 
-export { PilcrowBold };
+// Triple export pattern (lucide-react style)
+export { PilcrowBold, PilcrowBold as PilcrowBoldIcon, PilcrowBold as SiPilcrowBold };
 export type { PilcrowBoldProps };

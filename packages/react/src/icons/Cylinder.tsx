@@ -13,7 +13,8 @@ export interface CylinderProps extends IconProps {
 }
 
 /**
- * Cylinder with dynamic weight and duotone props.
+ * Cylinder - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CylinderRegular } from 'stera-icons/CylinderRegular';
  */
@@ -32,4 +33,5 @@ const Cylinder = memo(forwardRef<SVGSVGElement, CylinderProps>(({
 
 Cylinder.displayName = 'Cylinder';
 
-export { Cylinder };
+// Triple export pattern (lucide-react style)
+export { Cylinder, Cylinder as CylinderIcon, Cylinder as SiCylinder };

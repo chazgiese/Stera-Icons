@@ -13,7 +13,8 @@ export interface NotebookProps extends IconProps {
 }
 
 /**
- * Notebook with dynamic weight and duotone props.
+ * Notebook - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { NotebookRegular } from 'stera-icons/NotebookRegular';
  */
@@ -32,4 +33,5 @@ const Notebook = memo(forwardRef<SVGSVGElement, NotebookProps>(({
 
 Notebook.displayName = 'Notebook';
 
-export { Notebook };
+// Triple export pattern (lucide-react style)
+export { Notebook, Notebook as NotebookIcon, Notebook as SiNotebook };

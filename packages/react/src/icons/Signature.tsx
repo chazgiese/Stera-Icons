@@ -13,7 +13,8 @@ export interface SignatureProps extends IconProps {
 }
 
 /**
- * Signature with dynamic weight and duotone props.
+ * Signature - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignatureRegular } from 'stera-icons/SignatureRegular';
  */
@@ -32,4 +33,5 @@ const Signature = memo(forwardRef<SVGSVGElement, SignatureProps>(({
 
 Signature.displayName = 'Signature';
 
-export { Signature };
+// Triple export pattern (lucide-react style)
+export { Signature, Signature as SignatureIcon, Signature as SiSignature };

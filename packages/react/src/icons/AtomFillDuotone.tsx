@@ -16,5 +16,6 @@ const AtomFillDuotone = memo(
 
 AtomFillDuotone.displayName = 'AtomFillDuotone';
 
-export { AtomFillDuotone };
+// Triple export pattern (lucide-react style)
+export { AtomFillDuotone, AtomFillDuotone as AtomFillDuotoneIcon, AtomFillDuotone as SiAtomFillDuotone };
 export type { AtomFillDuotoneProps };

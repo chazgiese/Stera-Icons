@@ -13,7 +13,8 @@ export interface AngleObtuseProps extends IconProps {
 }
 
 /**
- * AngleObtuse with dynamic weight and duotone props.
+ * AngleObtuse - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AngleObtuseRegular } from 'stera-icons/AngleObtuseRegular';
  */
@@ -32,4 +33,5 @@ const AngleObtuse = memo(forwardRef<SVGSVGElement, AngleObtuseProps>(({
 
 AngleObtuse.displayName = 'AngleObtuse';
 
-export { AngleObtuse };
+// Triple export pattern (lucide-react style)
+export { AngleObtuse, AngleObtuse as AngleObtuseIcon, AngleObtuse as SiAngleObtuse };

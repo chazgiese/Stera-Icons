@@ -14,5 +14,6 @@ const CheckFill = memo(
 
 CheckFill.displayName = 'CheckFill';
 
-export { CheckFill };
+// Triple export pattern (lucide-react style)
+export { CheckFill, CheckFill as CheckFillIcon, CheckFill as SiCheckFill };
 export type { CheckFillProps };

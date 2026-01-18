@@ -15,5 +15,6 @@ const MoreSquareVFillDuotone = memo(
 
 MoreSquareVFillDuotone.displayName = 'MoreSquareVFillDuotone';
 
-export { MoreSquareVFillDuotone };
+// Triple export pattern (lucide-react style)
+export { MoreSquareVFillDuotone, MoreSquareVFillDuotone as MoreSquareVFillDuotoneIcon, MoreSquareVFillDuotone as SiMoreSquareVFillDuotone };
 export type { MoreSquareVFillDuotoneProps };

@@ -15,5 +15,6 @@ const SparkleCircleBold = memo(
 
 SparkleCircleBold.displayName = 'SparkleCircleBold';
 
-export { SparkleCircleBold };
+// Triple export pattern (lucide-react style)
+export { SparkleCircleBold, SparkleCircleBold as SparkleCircleBoldIcon, SparkleCircleBold as SiSparkleCircleBold };
 export type { SparkleCircleBoldProps };

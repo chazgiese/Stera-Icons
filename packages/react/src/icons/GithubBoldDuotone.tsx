@@ -14,5 +14,6 @@ const GithubBoldDuotone = memo(
 
 GithubBoldDuotone.displayName = 'GithubBoldDuotone';
 
-export { GithubBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { GithubBoldDuotone, GithubBoldDuotone as GithubBoldDuotoneIcon, GithubBoldDuotone as SiGithubBoldDuotone };
 export type { GithubBoldDuotoneProps };

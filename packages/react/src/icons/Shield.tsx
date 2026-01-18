@@ -13,7 +13,8 @@ export interface ShieldProps extends IconProps {
 }
 
 /**
- * Shield with dynamic weight and duotone props.
+ * Shield - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ShieldRegular } from 'stera-icons/ShieldRegular';
  */
@@ -32,4 +33,5 @@ const Shield = memo(forwardRef<SVGSVGElement, ShieldProps>(({
 
 Shield.displayName = 'Shield';
 
-export { Shield };
+// Triple export pattern (lucide-react style)
+export { Shield, Shield as ShieldIcon, Shield as SiShield };

@@ -15,5 +15,6 @@ const BrainBoldDuotone = memo(
 
 BrainBoldDuotone.displayName = 'BrainBoldDuotone';
 
-export { BrainBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { BrainBoldDuotone, BrainBoldDuotone as BrainBoldDuotoneIcon, BrainBoldDuotone as SiBrainBoldDuotone };
 export type { BrainBoldDuotoneProps };

@@ -13,7 +13,8 @@ export interface StopwatchProps extends IconProps {
 }
 
 /**
- * Stopwatch with dynamic weight and duotone props.
+ * Stopwatch - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { StopwatchRegular } from 'stera-icons/StopwatchRegular';
  */
@@ -32,4 +33,5 @@ const Stopwatch = memo(forwardRef<SVGSVGElement, StopwatchProps>(({
 
 Stopwatch.displayName = 'Stopwatch';
 
-export { Stopwatch };
+// Triple export pattern (lucide-react style)
+export { Stopwatch, Stopwatch as StopwatchIcon, Stopwatch as SiStopwatch };

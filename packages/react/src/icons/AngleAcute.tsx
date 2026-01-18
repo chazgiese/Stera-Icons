@@ -13,7 +13,8 @@ export interface AngleAcuteProps extends IconProps {
 }
 
 /**
- * AngleAcute with dynamic weight and duotone props.
+ * AngleAcute - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AngleAcuteRegular } from 'stera-icons/AngleAcuteRegular';
  */
@@ -32,4 +33,5 @@ const AngleAcute = memo(forwardRef<SVGSVGElement, AngleAcuteProps>(({
 
 AngleAcute.displayName = 'AngleAcute';
 
-export { AngleAcute };
+// Triple export pattern (lucide-react style)
+export { AngleAcute, AngleAcute as AngleAcuteIcon, AngleAcute as SiAngleAcute };

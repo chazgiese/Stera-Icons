@@ -15,5 +15,6 @@ const TextAlignCenterBoldDuotone = memo(
 
 TextAlignCenterBoldDuotone.displayName = 'TextAlignCenterBoldDuotone';
 
-export { TextAlignCenterBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { TextAlignCenterBoldDuotone, TextAlignCenterBoldDuotone as TextAlignCenterBoldDuotoneIcon, TextAlignCenterBoldDuotone as SiTextAlignCenterBoldDuotone };
 export type { TextAlignCenterBoldDuotoneProps };

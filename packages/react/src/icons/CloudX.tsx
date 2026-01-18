@@ -13,7 +13,8 @@ export interface CloudXProps extends IconProps {
 }
 
 /**
- * CloudX with dynamic weight and duotone props.
+ * CloudX - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CloudXRegular } from 'stera-icons/CloudXRegular';
  */
@@ -32,4 +33,5 @@ const CloudX = memo(forwardRef<SVGSVGElement, CloudXProps>(({
 
 CloudX.displayName = 'CloudX';
 
-export { CloudX };
+// Triple export pattern (lucide-react style)
+export { CloudX, CloudX as CloudXIcon, CloudX as SiCloudX };

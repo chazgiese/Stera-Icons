@@ -15,5 +15,6 @@ const MinusRegularDuotone = memo(
 
 MinusRegularDuotone.displayName = 'MinusRegularDuotone';
 
-export { MinusRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { MinusRegularDuotone, MinusRegularDuotone as MinusRegularDuotoneIcon, MinusRegularDuotone as SiMinusRegularDuotone };
 export type { MinusRegularDuotoneProps };

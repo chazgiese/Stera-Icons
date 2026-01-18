@@ -13,7 +13,8 @@ export interface ListMinusProps extends IconProps {
 }
 
 /**
- * ListMinus with dynamic weight and duotone props.
+ * ListMinus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ListMinusRegular } from 'stera-icons/ListMinusRegular';
  */
@@ -32,4 +33,5 @@ const ListMinus = memo(forwardRef<SVGSVGElement, ListMinusProps>(({
 
 ListMinus.displayName = 'ListMinus';
 
-export { ListMinus };
+// Triple export pattern (lucide-react style)
+export { ListMinus, ListMinus as ListMinusIcon, ListMinus as SiListMinus };

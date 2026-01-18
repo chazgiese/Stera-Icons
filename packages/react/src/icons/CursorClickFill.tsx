@@ -14,5 +14,6 @@ const CursorClickFill = memo(
 
 CursorClickFill.displayName = 'CursorClickFill';
 
-export { CursorClickFill };
+// Triple export pattern (lucide-react style)
+export { CursorClickFill, CursorClickFill as CursorClickFillIcon, CursorClickFill as SiCursorClickFill };
 export type { CursorClickFillProps };

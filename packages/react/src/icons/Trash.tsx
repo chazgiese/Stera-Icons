@@ -13,7 +13,8 @@ export interface TrashProps extends IconProps {
 }
 
 /**
- * Trash with dynamic weight and duotone props.
+ * Trash - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TrashRegular } from 'stera-icons/TrashRegular';
  */
@@ -32,4 +33,5 @@ const Trash = memo(forwardRef<SVGSVGElement, TrashProps>(({
 
 Trash.displayName = 'Trash';
 
-export { Trash };
+// Triple export pattern (lucide-react style)
+export { Trash, Trash as TrashIcon, Trash as SiTrash };

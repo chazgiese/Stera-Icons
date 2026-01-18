@@ -14,5 +14,6 @@ const MoreSquareVFill = memo(
 
 MoreSquareVFill.displayName = 'MoreSquareVFill';
 
-export { MoreSquareVFill };
+// Triple export pattern (lucide-react style)
+export { MoreSquareVFill, MoreSquareVFill as MoreSquareVFillIcon, MoreSquareVFill as SiMoreSquareVFill };
 export type { MoreSquareVFillProps };

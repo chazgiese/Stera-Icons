@@ -15,5 +15,6 @@ const MailOpenFill = memo(
 
 MailOpenFill.displayName = 'MailOpenFill';
 
-export { MailOpenFill };
+// Triple export pattern (lucide-react style)
+export { MailOpenFill, MailOpenFill as MailOpenFillIcon, MailOpenFill as SiMailOpenFill };
 export type { MailOpenFillProps };

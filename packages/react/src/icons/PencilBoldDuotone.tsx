@@ -15,5 +15,6 @@ const PencilBoldDuotone = memo(
 
 PencilBoldDuotone.displayName = 'PencilBoldDuotone';
 
-export { PencilBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PencilBoldDuotone, PencilBoldDuotone as PencilBoldDuotoneIcon, PencilBoldDuotone as SiPencilBoldDuotone };
 export type { PencilBoldDuotoneProps };

@@ -14,5 +14,6 @@ const PlugBold = memo(
 
 PlugBold.displayName = 'PlugBold';
 
-export { PlugBold };
+// Triple export pattern (lucide-react style)
+export { PlugBold, PlugBold as PlugBoldIcon, PlugBold as SiPlugBold };
 export type { PlugBoldProps };

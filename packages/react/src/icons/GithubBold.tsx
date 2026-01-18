@@ -14,5 +14,6 @@ const GithubBold = memo(
 
 GithubBold.displayName = 'GithubBold';
 
-export { GithubBold };
+// Triple export pattern (lucide-react style)
+export { GithubBold, GithubBold as GithubBoldIcon, GithubBold as SiGithubBold };
 export type { GithubBoldProps };

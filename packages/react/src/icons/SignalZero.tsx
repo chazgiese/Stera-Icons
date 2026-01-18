@@ -13,7 +13,8 @@ export interface SignalZeroProps extends IconProps {
 }
 
 /**
- * SignalZero with dynamic weight and duotone props.
+ * SignalZero - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SignalZeroRegular } from 'stera-icons/SignalZeroRegular';
  */
@@ -32,4 +33,5 @@ const SignalZero = memo(forwardRef<SVGSVGElement, SignalZeroProps>(({
 
 SignalZero.displayName = 'SignalZero';
 
-export { SignalZero };
+// Triple export pattern (lucide-react style)
+export { SignalZero, SignalZero as SignalZeroIcon, SignalZero as SiSignalZero };

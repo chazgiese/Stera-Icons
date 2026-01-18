@@ -13,7 +13,8 @@ export interface ChatBubbleQuestionProps extends IconProps {
 }
 
 /**
- * ChatBubbleQuestion with dynamic weight and duotone props.
+ * ChatBubbleQuestion - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBubbleQuestionRegular } from 'stera-icons/ChatBubbleQuestionRegular';
  */
@@ -32,4 +33,5 @@ const ChatBubbleQuestion = memo(forwardRef<SVGSVGElement, ChatBubbleQuestionProp
 
 ChatBubbleQuestion.displayName = 'ChatBubbleQuestion';
 
-export { ChatBubbleQuestion };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleQuestion, ChatBubbleQuestion as ChatBubbleQuestionIcon, ChatBubbleQuestion as SiChatBubbleQuestion };

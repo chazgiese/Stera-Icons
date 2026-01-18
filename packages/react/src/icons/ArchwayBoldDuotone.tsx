@@ -15,5 +15,6 @@ const ArchwayBoldDuotone = memo(
 
 ArchwayBoldDuotone.displayName = 'ArchwayBoldDuotone';
 
-export { ArchwayBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { ArchwayBoldDuotone, ArchwayBoldDuotone as ArchwayBoldDuotoneIcon, ArchwayBoldDuotone as SiArchwayBoldDuotone };
 export type { ArchwayBoldDuotoneProps };

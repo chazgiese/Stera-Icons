@@ -14,5 +14,6 @@ const TextAlignLeftRegular = memo(
 
 TextAlignLeftRegular.displayName = 'TextAlignLeftRegular';
 
-export { TextAlignLeftRegular };
+// Triple export pattern (lucide-react style)
+export { TextAlignLeftRegular, TextAlignLeftRegular as TextAlignLeftRegularIcon, TextAlignLeftRegular as SiTextAlignLeftRegular };
 export type { TextAlignLeftRegularProps };

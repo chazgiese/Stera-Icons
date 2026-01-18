@@ -15,5 +15,6 @@ const CalendarPlusRegular = memo(
 
 CalendarPlusRegular.displayName = 'CalendarPlusRegular';
 
-export { CalendarPlusRegular };
+// Triple export pattern (lucide-react style)
+export { CalendarPlusRegular, CalendarPlusRegular as CalendarPlusRegularIcon, CalendarPlusRegular as SiCalendarPlusRegular };
 export type { CalendarPlusRegularProps };

@@ -13,7 +13,8 @@ export interface CoinProps extends IconProps {
 }
 
 /**
- * Coin with dynamic weight and duotone props.
+ * Coin - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CoinRegular } from 'stera-icons/CoinRegular';
  */
@@ -32,4 +33,5 @@ const Coin = memo(forwardRef<SVGSVGElement, CoinProps>(({
 
 Coin.displayName = 'Coin';
 
-export { Coin };
+// Triple export pattern (lucide-react style)
+export { Coin, Coin as CoinIcon, Coin as SiCoin };

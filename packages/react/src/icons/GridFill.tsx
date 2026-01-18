@@ -14,5 +14,6 @@ const GridFill = memo(
 
 GridFill.displayName = 'GridFill';
 
-export { GridFill };
+// Triple export pattern (lucide-react style)
+export { GridFill, GridFill as GridFillIcon, GridFill as SiGridFill };
 export type { GridFillProps };

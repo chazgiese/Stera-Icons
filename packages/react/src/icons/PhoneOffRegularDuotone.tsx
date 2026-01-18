@@ -15,5 +15,6 @@ const PhoneOffRegularDuotone = memo(
 
 PhoneOffRegularDuotone.displayName = 'PhoneOffRegularDuotone';
 
-export { PhoneOffRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { PhoneOffRegularDuotone, PhoneOffRegularDuotone as PhoneOffRegularDuotoneIcon, PhoneOffRegularDuotone as SiPhoneOffRegularDuotone };
 export type { PhoneOffRegularDuotoneProps };

@@ -14,5 +14,6 @@ const PlayFill = memo(
 
 PlayFill.displayName = 'PlayFill';
 
-export { PlayFill };
+// Triple export pattern (lucide-react style)
+export { PlayFill, PlayFill as PlayFillIcon, PlayFill as SiPlayFill };
 export type { PlayFillProps };

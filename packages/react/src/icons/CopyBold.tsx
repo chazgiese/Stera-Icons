@@ -14,5 +14,6 @@ const CopyBold = memo(
 
 CopyBold.displayName = 'CopyBold';
 
-export { CopyBold };
+// Triple export pattern (lucide-react style)
+export { CopyBold, CopyBold as CopyBoldIcon, CopyBold as SiCopyBold };
 export type { CopyBoldProps };

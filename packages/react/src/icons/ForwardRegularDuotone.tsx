@@ -15,5 +15,6 @@ const ForwardRegularDuotone = memo(
 
 ForwardRegularDuotone.displayName = 'ForwardRegularDuotone';
 
-export { ForwardRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ForwardRegularDuotone, ForwardRegularDuotone as ForwardRegularDuotoneIcon, ForwardRegularDuotone as SiForwardRegularDuotone };
 export type { ForwardRegularDuotoneProps };

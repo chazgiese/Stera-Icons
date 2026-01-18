@@ -13,7 +13,8 @@ export interface ChatBubbleOffProps extends IconProps {
 }
 
 /**
- * ChatBubbleOff with dynamic weight and duotone props.
+ * ChatBubbleOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBubbleOffRegular } from 'stera-icons/ChatBubbleOffRegular';
  */
@@ -32,4 +33,5 @@ const ChatBubbleOff = memo(forwardRef<SVGSVGElement, ChatBubbleOffProps>(({
 
 ChatBubbleOff.displayName = 'ChatBubbleOff';
 
-export { ChatBubbleOff };
+// Triple export pattern (lucide-react style)
+export { ChatBubbleOff, ChatBubbleOff as ChatBubbleOffIcon, ChatBubbleOff as SiChatBubbleOff };

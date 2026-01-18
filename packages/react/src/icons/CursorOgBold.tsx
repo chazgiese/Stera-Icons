@@ -14,5 +14,6 @@ const CursorOgBold = memo(
 
 CursorOgBold.displayName = 'CursorOgBold';
 
-export { CursorOgBold };
+// Triple export pattern (lucide-react style)
+export { CursorOgBold, CursorOgBold as CursorOgBoldIcon, CursorOgBold as SiCursorOgBold };
 export type { CursorOgBoldProps };

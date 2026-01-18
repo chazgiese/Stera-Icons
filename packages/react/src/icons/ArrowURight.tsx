@@ -13,7 +13,8 @@ export interface ArrowURightProps extends IconProps {
 }
 
 /**
- * ArrowURight with dynamic weight and duotone props.
+ * ArrowURight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowURightRegular } from 'stera-icons/ArrowURightRegular';
  */
@@ -32,4 +33,5 @@ const ArrowURight = memo(forwardRef<SVGSVGElement, ArrowURightProps>(({
 
 ArrowURight.displayName = 'ArrowURight';
 
-export { ArrowURight };
+// Triple export pattern (lucide-react style)
+export { ArrowURight, ArrowURight as ArrowURightIcon, ArrowURight as SiArrowURight };

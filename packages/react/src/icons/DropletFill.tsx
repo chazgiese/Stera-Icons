@@ -14,5 +14,6 @@ const DropletFill = memo(
 
 DropletFill.displayName = 'DropletFill';
 
-export { DropletFill };
+// Triple export pattern (lucide-react style)
+export { DropletFill, DropletFill as DropletFillIcon, DropletFill as SiDropletFill };
 export type { DropletFillProps };

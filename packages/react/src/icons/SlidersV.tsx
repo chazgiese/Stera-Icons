@@ -13,7 +13,8 @@ export interface SlidersVProps extends IconProps {
 }
 
 /**
- * SlidersV with dynamic weight and duotone props.
+ * SlidersV - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SlidersVRegular } from 'stera-icons/SlidersVRegular';
  */
@@ -32,4 +33,5 @@ const SlidersV = memo(forwardRef<SVGSVGElement, SlidersVProps>(({
 
 SlidersV.displayName = 'SlidersV';
 
-export { SlidersV };
+// Triple export pattern (lucide-react style)
+export { SlidersV, SlidersV as SlidersVIcon, SlidersV as SiSlidersV };

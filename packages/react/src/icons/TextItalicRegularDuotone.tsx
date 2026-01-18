@@ -15,5 +15,6 @@ const TextItalicRegularDuotone = memo(
 
 TextItalicRegularDuotone.displayName = 'TextItalicRegularDuotone';
 
-export { TextItalicRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { TextItalicRegularDuotone, TextItalicRegularDuotone as TextItalicRegularDuotoneIcon, TextItalicRegularDuotone as SiTextItalicRegularDuotone };
 export type { TextItalicRegularDuotoneProps };

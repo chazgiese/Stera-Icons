@@ -15,5 +15,6 @@ const ToolboxFill = memo(
 
 ToolboxFill.displayName = 'ToolboxFill';
 
-export { ToolboxFill };
+// Triple export pattern (lucide-react style)
+export { ToolboxFill, ToolboxFill as ToolboxFillIcon, ToolboxFill as SiToolboxFill };
 export type { ToolboxFillProps };

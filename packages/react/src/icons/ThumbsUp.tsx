@@ -13,7 +13,8 @@ export interface ThumbsUpProps extends IconProps {
 }
 
 /**
- * ThumbsUp with dynamic weight and duotone props.
+ * ThumbsUp - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ThumbsUpRegular } from 'stera-icons/ThumbsUpRegular';
  */
@@ -32,4 +33,5 @@ const ThumbsUp = memo(forwardRef<SVGSVGElement, ThumbsUpProps>(({
 
 ThumbsUp.displayName = 'ThumbsUp';
 
-export { ThumbsUp };
+// Triple export pattern (lucide-react style)
+export { ThumbsUp, ThumbsUp as ThumbsUpIcon, ThumbsUp as SiThumbsUp };

@@ -14,5 +14,6 @@ const StarHalfBold = memo(
 
 StarHalfBold.displayName = 'StarHalfBold';
 
-export { StarHalfBold };
+// Triple export pattern (lucide-react style)
+export { StarHalfBold, StarHalfBold as StarHalfBoldIcon, StarHalfBold as SiStarHalfBold };
 export type { StarHalfBoldProps };

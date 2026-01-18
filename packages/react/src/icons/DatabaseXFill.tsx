@@ -16,5 +16,6 @@ const DatabaseXFill = memo(
 
 DatabaseXFill.displayName = 'DatabaseXFill';
 
-export { DatabaseXFill };
+// Triple export pattern (lucide-react style)
+export { DatabaseXFill, DatabaseXFill as DatabaseXFillIcon, DatabaseXFill as SiDatabaseXFill };
 export type { DatabaseXFillProps };

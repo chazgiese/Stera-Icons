@@ -13,7 +13,8 @@ export interface StopCircleProps extends IconProps {
 }
 
 /**
- * StopCircle with dynamic weight and duotone props.
+ * StopCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { StopCircleRegular } from 'stera-icons/StopCircleRegular';
  */
@@ -32,4 +33,5 @@ const StopCircle = memo(forwardRef<SVGSVGElement, StopCircleProps>(({
 
 StopCircle.displayName = 'StopCircle';
 
-export { StopCircle };
+// Triple export pattern (lucide-react style)
+export { StopCircle, StopCircle as StopCircleIcon, StopCircle as SiStopCircle };

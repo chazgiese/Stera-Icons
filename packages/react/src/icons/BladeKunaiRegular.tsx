@@ -14,5 +14,6 @@ const BladeKunaiRegular = memo(
 
 BladeKunaiRegular.displayName = 'BladeKunaiRegular';
 
-export { BladeKunaiRegular };
+// Triple export pattern (lucide-react style)
+export { BladeKunaiRegular, BladeKunaiRegular as BladeKunaiRegularIcon, BladeKunaiRegular as SiBladeKunaiRegular };
 export type { BladeKunaiRegularProps };

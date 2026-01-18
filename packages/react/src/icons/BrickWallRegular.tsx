@@ -14,5 +14,6 @@ const BrickWallRegular = memo(
 
 BrickWallRegular.displayName = 'BrickWallRegular';
 
-export { BrickWallRegular };
+// Triple export pattern (lucide-react style)
+export { BrickWallRegular, BrickWallRegular as BrickWallRegularIcon, BrickWallRegular as SiBrickWallRegular };
 export type { BrickWallRegularProps };

@@ -15,5 +15,6 @@ const CylinderFillDuotone = memo(
 
 CylinderFillDuotone.displayName = 'CylinderFillDuotone';
 
-export { CylinderFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CylinderFillDuotone, CylinderFillDuotone as CylinderFillDuotoneIcon, CylinderFillDuotone as SiCylinderFillDuotone };
 export type { CylinderFillDuotoneProps };

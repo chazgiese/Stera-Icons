@@ -14,5 +14,6 @@ const BrainBold = memo(
 
 BrainBold.displayName = 'BrainBold';
 
-export { BrainBold };
+// Triple export pattern (lucide-react style)
+export { BrainBold, BrainBold as BrainBoldIcon, BrainBold as SiBrainBold };
 export type { BrainBoldProps };

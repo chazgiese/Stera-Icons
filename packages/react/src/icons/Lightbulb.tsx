@@ -13,7 +13,8 @@ export interface LightbulbProps extends IconProps {
 }
 
 /**
- * Lightbulb with dynamic weight and duotone props.
+ * Lightbulb - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LightbulbRegular } from 'stera-icons/LightbulbRegular';
  */
@@ -32,4 +33,5 @@ const Lightbulb = memo(forwardRef<SVGSVGElement, LightbulbProps>(({
 
 Lightbulb.displayName = 'Lightbulb';
 
-export { Lightbulb };
+// Triple export pattern (lucide-react style)
+export { Lightbulb, Lightbulb as LightbulbIcon, Lightbulb as SiLightbulb };

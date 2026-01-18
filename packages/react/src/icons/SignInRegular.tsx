@@ -15,5 +15,6 @@ const SignInRegular = memo(
 
 SignInRegular.displayName = 'SignInRegular';
 
-export { SignInRegular };
+// Triple export pattern (lucide-react style)
+export { SignInRegular, SignInRegular as SignInRegularIcon, SignInRegular as SiSignInRegular };
 export type { SignInRegularProps };

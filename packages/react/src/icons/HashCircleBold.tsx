@@ -15,5 +15,6 @@ const HashCircleBold = memo(
 
 HashCircleBold.displayName = 'HashCircleBold';
 
-export { HashCircleBold };
+// Triple export pattern (lucide-react style)
+export { HashCircleBold, HashCircleBold as HashCircleBoldIcon, HashCircleBold as SiHashCircleBold };
 export type { HashCircleBoldProps };

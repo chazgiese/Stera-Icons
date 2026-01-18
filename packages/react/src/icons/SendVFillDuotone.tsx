@@ -15,5 +15,6 @@ const SendVFillDuotone = memo(
 
 SendVFillDuotone.displayName = 'SendVFillDuotone';
 
-export { SendVFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SendVFillDuotone, SendVFillDuotone as SendVFillDuotoneIcon, SendVFillDuotone as SiSendVFillDuotone };
 export type { SendVFillDuotoneProps };

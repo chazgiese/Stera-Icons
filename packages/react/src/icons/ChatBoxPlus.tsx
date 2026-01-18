@@ -13,7 +13,8 @@ export interface ChatBoxPlusProps extends IconProps {
 }
 
 /**
- * ChatBoxPlus with dynamic weight and duotone props.
+ * ChatBoxPlus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChatBoxPlusRegular } from 'stera-icons/ChatBoxPlusRegular';
  */
@@ -32,4 +33,5 @@ const ChatBoxPlus = memo(forwardRef<SVGSVGElement, ChatBoxPlusProps>(({
 
 ChatBoxPlus.displayName = 'ChatBoxPlus';
 
-export { ChatBoxPlus };
+// Triple export pattern (lucide-react style)
+export { ChatBoxPlus, ChatBoxPlus as ChatBoxPlusIcon, ChatBoxPlus as SiChatBoxPlus };

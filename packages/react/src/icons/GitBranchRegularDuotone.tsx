@@ -15,5 +15,6 @@ const GitBranchRegularDuotone = memo(
 
 GitBranchRegularDuotone.displayName = 'GitBranchRegularDuotone';
 
-export { GitBranchRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { GitBranchRegularDuotone, GitBranchRegularDuotone as GitBranchRegularDuotoneIcon, GitBranchRegularDuotone as SiGitBranchRegularDuotone };
 export type { GitBranchRegularDuotoneProps };

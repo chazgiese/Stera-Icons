@@ -13,7 +13,8 @@ export interface TextUnderlineProps extends IconProps {
 }
 
 /**
- * TextUnderline with dynamic weight and duotone props.
+ * TextUnderline - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { TextUnderlineRegular } from 'stera-icons/TextUnderlineRegular';
  */
@@ -32,4 +33,5 @@ const TextUnderline = memo(forwardRef<SVGSVGElement, TextUnderlineProps>(({
 
 TextUnderline.displayName = 'TextUnderline';
 
-export { TextUnderline };
+// Triple export pattern (lucide-react style)
+export { TextUnderline, TextUnderline as TextUnderlineIcon, TextUnderline as SiTextUnderline };

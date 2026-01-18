@@ -14,5 +14,6 @@ const PushPinAltBold = memo(
 
 PushPinAltBold.displayName = 'PushPinAltBold';
 
-export { PushPinAltBold };
+// Triple export pattern (lucide-react style)
+export { PushPinAltBold, PushPinAltBold as PushPinAltBoldIcon, PushPinAltBold as SiPushPinAltBold };
 export type { PushPinAltBoldProps };

@@ -15,5 +15,6 @@ const CursorOgBoldDuotone = memo(
 
 CursorOgBoldDuotone.displayName = 'CursorOgBoldDuotone';
 
-export { CursorOgBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { CursorOgBoldDuotone, CursorOgBoldDuotone as CursorOgBoldDuotoneIcon, CursorOgBoldDuotone as SiCursorOgBoldDuotone };
 export type { CursorOgBoldDuotoneProps };

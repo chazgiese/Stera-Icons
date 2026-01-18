@@ -15,5 +15,6 @@ const CreditCardBold = memo(
 
 CreditCardBold.displayName = 'CreditCardBold';
 
-export { CreditCardBold };
+// Triple export pattern (lucide-react style)
+export { CreditCardBold, CreditCardBold as CreditCardBoldIcon, CreditCardBold as SiCreditCardBold };
 export type { CreditCardBoldProps };

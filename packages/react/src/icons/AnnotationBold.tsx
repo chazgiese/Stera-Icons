@@ -16,5 +16,6 @@ const AnnotationBold = memo(
 
 AnnotationBold.displayName = 'AnnotationBold';
 
-export { AnnotationBold };
+// Triple export pattern (lucide-react style)
+export { AnnotationBold, AnnotationBold as AnnotationBoldIcon, AnnotationBold as SiAnnotationBold };
 export type { AnnotationBoldProps };

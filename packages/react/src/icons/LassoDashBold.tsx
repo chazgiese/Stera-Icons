@@ -14,5 +14,6 @@ const LassoDashBold = memo(
 
 LassoDashBold.displayName = 'LassoDashBold';
 
-export { LassoDashBold };
+// Triple export pattern (lucide-react style)
+export { LassoDashBold, LassoDashBold as LassoDashBoldIcon, LassoDashBold as SiLassoDashBold };
 export type { LassoDashBoldProps };

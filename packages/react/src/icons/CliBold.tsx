@@ -14,5 +14,6 @@ const CliBold = memo(
 
 CliBold.displayName = 'CliBold';
 
-export { CliBold };
+// Triple export pattern (lucide-react style)
+export { CliBold, CliBold as CliBoldIcon, CliBold as SiCliBold };
 export type { CliBoldProps };

@@ -14,5 +14,6 @@ const ScanCubeFill = memo(
 
 ScanCubeFill.displayName = 'ScanCubeFill';
 
-export { ScanCubeFill };
+// Triple export pattern (lucide-react style)
+export { ScanCubeFill, ScanCubeFill as ScanCubeFillIcon, ScanCubeFill as SiScanCubeFill };
 export type { ScanCubeFillProps };

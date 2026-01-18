@@ -15,5 +15,6 @@ const EmoteGrinRegularDuotone = memo(
 
 EmoteGrinRegularDuotone.displayName = 'EmoteGrinRegularDuotone';
 
-export { EmoteGrinRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { EmoteGrinRegularDuotone, EmoteGrinRegularDuotone as EmoteGrinRegularDuotoneIcon, EmoteGrinRegularDuotone as SiEmoteGrinRegularDuotone };
 export type { EmoteGrinRegularDuotoneProps };

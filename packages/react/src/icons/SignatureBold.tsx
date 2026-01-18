@@ -14,5 +14,6 @@ const SignatureBold = memo(
 
 SignatureBold.displayName = 'SignatureBold';
 
-export { SignatureBold };
+// Triple export pattern (lucide-react style)
+export { SignatureBold, SignatureBold as SignatureBoldIcon, SignatureBold as SiSignatureBold };
 export type { SignatureBoldProps };

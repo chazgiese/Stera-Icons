@@ -14,5 +14,6 @@ const MinimizeBold = memo(
 
 MinimizeBold.displayName = 'MinimizeBold';
 
-export { MinimizeBold };
+// Triple export pattern (lucide-react style)
+export { MinimizeBold, MinimizeBold as MinimizeBoldIcon, MinimizeBold as SiMinimizeBold };
 export type { MinimizeBoldProps };

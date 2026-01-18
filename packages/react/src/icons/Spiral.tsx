@@ -13,7 +13,8 @@ export interface SpiralProps extends IconProps {
 }
 
 /**
- * Spiral with dynamic weight and duotone props.
+ * Spiral - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SpiralRegular } from 'stera-icons/SpiralRegular';
  */
@@ -32,4 +33,5 @@ const Spiral = memo(forwardRef<SVGSVGElement, SpiralProps>(({
 
 Spiral.displayName = 'Spiral';
 
-export { Spiral };
+// Triple export pattern (lucide-react style)
+export { Spiral, Spiral as SpiralIcon, Spiral as SiSpiral };

@@ -13,7 +13,8 @@ export interface HammerProps extends IconProps {
 }
 
 /**
- * Hammer with dynamic weight and duotone props.
+ * Hammer - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { HammerRegular } from 'stera-icons/HammerRegular';
  */
@@ -32,4 +33,5 @@ const Hammer = memo(forwardRef<SVGSVGElement, HammerProps>(({
 
 Hammer.displayName = 'Hammer';
 
-export { Hammer };
+// Triple export pattern (lucide-react style)
+export { Hammer, Hammer as HammerIcon, Hammer as SiHammer };

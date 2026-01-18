@@ -13,7 +13,8 @@ export interface WandProps extends IconProps {
 }
 
 /**
- * Wand with dynamic weight and duotone props.
+ * Wand - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WandRegular } from 'stera-icons/WandRegular';
  */
@@ -32,4 +33,5 @@ const Wand = memo(forwardRef<SVGSVGElement, WandProps>(({
 
 Wand.displayName = 'Wand';
 
-export { Wand };
+// Triple export pattern (lucide-react style)
+export { Wand, Wand as WandIcon, Wand as SiWand };

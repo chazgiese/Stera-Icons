@@ -15,5 +15,6 @@ const UserSettingsBoldDuotone = memo(
 
 UserSettingsBoldDuotone.displayName = 'UserSettingsBoldDuotone';
 
-export { UserSettingsBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { UserSettingsBoldDuotone, UserSettingsBoldDuotone as UserSettingsBoldDuotoneIcon, UserSettingsBoldDuotone as SiUserSettingsBoldDuotone };
 export type { UserSettingsBoldDuotoneProps };

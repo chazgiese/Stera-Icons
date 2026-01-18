@@ -13,7 +13,8 @@ export interface ChartBarRowAscProps extends IconProps {
 }
 
 /**
- * ChartBarRowAsc with dynamic weight and duotone props.
+ * ChartBarRowAsc - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarRowAscRegular } from 'stera-icons/ChartBarRowAscRegular';
  */
@@ -32,4 +33,5 @@ const ChartBarRowAsc = memo(forwardRef<SVGSVGElement, ChartBarRowAscProps>(({
 
 ChartBarRowAsc.displayName = 'ChartBarRowAsc';
 
-export { ChartBarRowAsc };
+// Triple export pattern (lucide-react style)
+export { ChartBarRowAsc, ChartBarRowAsc as ChartBarRowAscIcon, ChartBarRowAsc as SiChartBarRowAsc };

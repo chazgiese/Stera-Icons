@@ -13,7 +13,8 @@ export interface PaintPaletteProps extends IconProps {
 }
 
 /**
- * PaintPalette with dynamic weight and duotone props.
+ * PaintPalette - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PaintPaletteRegular } from 'stera-icons/PaintPaletteRegular';
  */
@@ -32,4 +33,5 @@ const PaintPalette = memo(forwardRef<SVGSVGElement, PaintPaletteProps>(({
 
 PaintPalette.displayName = 'PaintPalette';
 
-export { PaintPalette };
+// Triple export pattern (lucide-react style)
+export { PaintPalette, PaintPalette as PaintPaletteIcon, PaintPalette as SiPaintPalette };

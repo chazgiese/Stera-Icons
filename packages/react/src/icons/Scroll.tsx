@@ -13,7 +13,8 @@ export interface ScrollProps extends IconProps {
 }
 
 /**
- * Scroll with dynamic weight and duotone props.
+ * Scroll - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScrollRegular } from 'stera-icons/ScrollRegular';
  */
@@ -32,4 +33,5 @@ const Scroll = memo(forwardRef<SVGSVGElement, ScrollProps>(({
 
 Scroll.displayName = 'Scroll';
 
-export { Scroll };
+// Triple export pattern (lucide-react style)
+export { Scroll, Scroll as ScrollIcon, Scroll as SiScroll };

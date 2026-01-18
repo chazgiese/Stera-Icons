@@ -15,5 +15,6 @@ const PauseBoldDuotone = memo(
 
 PauseBoldDuotone.displayName = 'PauseBoldDuotone';
 
-export { PauseBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { PauseBoldDuotone, PauseBoldDuotone as PauseBoldDuotoneIcon, PauseBoldDuotone as SiPauseBoldDuotone };
 export type { PauseBoldDuotoneProps };

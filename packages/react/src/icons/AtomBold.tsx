@@ -15,5 +15,6 @@ const AtomBold = memo(
 
 AtomBold.displayName = 'AtomBold';
 
-export { AtomBold };
+// Triple export pattern (lucide-react style)
+export { AtomBold, AtomBold as AtomBoldIcon, AtomBold as SiAtomBold };
 export type { AtomBoldProps };

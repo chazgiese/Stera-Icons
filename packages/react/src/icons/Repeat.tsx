@@ -13,7 +13,8 @@ export interface RepeatProps extends IconProps {
 }
 
 /**
- * Repeat with dynamic weight and duotone props.
+ * Repeat - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RepeatRegular } from 'stera-icons/RepeatRegular';
  */
@@ -32,4 +33,5 @@ const Repeat = memo(forwardRef<SVGSVGElement, RepeatProps>(({
 
 Repeat.displayName = 'Repeat';
 
-export { Repeat };
+// Triple export pattern (lucide-react style)
+export { Repeat, Repeat as RepeatIcon, Repeat as SiRepeat };

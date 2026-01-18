@@ -15,5 +15,6 @@ const CliFillDuotone = memo(
 
 CliFillDuotone.displayName = 'CliFillDuotone';
 
-export { CliFillDuotone };
+// Triple export pattern (lucide-react style)
+export { CliFillDuotone, CliFillDuotone as CliFillDuotoneIcon, CliFillDuotone as SiCliFillDuotone };
 export type { CliFillDuotoneProps };

@@ -14,5 +14,6 @@ const FlowSplitSquareLeftBold = memo(
 
 FlowSplitSquareLeftBold.displayName = 'FlowSplitSquareLeftBold';
 
-export { FlowSplitSquareLeftBold };
+// Triple export pattern (lucide-react style)
+export { FlowSplitSquareLeftBold, FlowSplitSquareLeftBold as FlowSplitSquareLeftBoldIcon, FlowSplitSquareLeftBold as SiFlowSplitSquareLeftBold };
 export type { FlowSplitSquareLeftBoldProps };

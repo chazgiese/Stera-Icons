@@ -15,5 +15,6 @@ const BatteryHalfFillDuotone = memo(
 
 BatteryHalfFillDuotone.displayName = 'BatteryHalfFillDuotone';
 
-export { BatteryHalfFillDuotone };
+// Triple export pattern (lucide-react style)
+export { BatteryHalfFillDuotone, BatteryHalfFillDuotone as BatteryHalfFillDuotoneIcon, BatteryHalfFillDuotone as SiBatteryHalfFillDuotone };
 export type { BatteryHalfFillDuotoneProps };

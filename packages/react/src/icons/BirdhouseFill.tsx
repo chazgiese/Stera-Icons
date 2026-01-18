@@ -14,5 +14,6 @@ const BirdhouseFill = memo(
 
 BirdhouseFill.displayName = 'BirdhouseFill';
 
-export { BirdhouseFill };
+// Triple export pattern (lucide-react style)
+export { BirdhouseFill, BirdhouseFill as BirdhouseFillIcon, BirdhouseFill as SiBirdhouseFill };
 export type { BirdhouseFillProps };

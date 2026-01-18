@@ -14,5 +14,6 @@ const MoonCrescentBold = memo(
 
 MoonCrescentBold.displayName = 'MoonCrescentBold';
 
-export { MoonCrescentBold };
+// Triple export pattern (lucide-react style)
+export { MoonCrescentBold, MoonCrescentBold as MoonCrescentBoldIcon, MoonCrescentBold as SiMoonCrescentBold };
 export type { MoonCrescentBoldProps };

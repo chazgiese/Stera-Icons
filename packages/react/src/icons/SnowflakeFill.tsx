@@ -14,5 +14,6 @@ const SnowflakeFill = memo(
 
 SnowflakeFill.displayName = 'SnowflakeFill';
 
-export { SnowflakeFill };
+// Triple export pattern (lucide-react style)
+export { SnowflakeFill, SnowflakeFill as SnowflakeFillIcon, SnowflakeFill as SiSnowflakeFill };
 export type { SnowflakeFillProps };

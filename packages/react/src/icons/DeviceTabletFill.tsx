@@ -14,5 +14,6 @@ const DeviceTabletFill = memo(
 
 DeviceTabletFill.displayName = 'DeviceTabletFill';
 
-export { DeviceTabletFill };
+// Triple export pattern (lucide-react style)
+export { DeviceTabletFill, DeviceTabletFill as DeviceTabletFillIcon, DeviceTabletFill as SiDeviceTabletFill };
 export type { DeviceTabletFillProps };

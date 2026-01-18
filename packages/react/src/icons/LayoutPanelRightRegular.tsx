@@ -14,5 +14,6 @@ const LayoutPanelRightRegular = memo(
 
 LayoutPanelRightRegular.displayName = 'LayoutPanelRightRegular';
 
-export { LayoutPanelRightRegular };
+// Triple export pattern (lucide-react style)
+export { LayoutPanelRightRegular, LayoutPanelRightRegular as LayoutPanelRightRegularIcon, LayoutPanelRightRegular as SiLayoutPanelRightRegular };
 export type { LayoutPanelRightRegularProps };

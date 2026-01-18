@@ -15,5 +15,6 @@ const PieBold = memo(
 
 PieBold.displayName = 'PieBold';
 
-export { PieBold };
+// Triple export pattern (lucide-react style)
+export { PieBold, PieBold as PieBoldIcon, PieBold as SiPieBold };
 export type { PieBoldProps };

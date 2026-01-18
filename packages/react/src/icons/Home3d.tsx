@@ -13,7 +13,8 @@ export interface Home3dProps extends IconProps {
 }
 
 /**
- * Home3d with dynamic weight and duotone props.
+ * Home3d - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { Home3dRegular } from 'stera-icons/Home3dRegular';
  */
@@ -32,4 +33,5 @@ const Home3d = memo(forwardRef<SVGSVGElement, Home3dProps>(({
 
 Home3d.displayName = 'Home3d';
 
-export { Home3d };
+// Triple export pattern (lucide-react style)
+export { Home3d, Home3d as Home3dIcon, Home3d as SiHome3d };

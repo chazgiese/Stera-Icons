@@ -13,7 +13,8 @@ export interface DocumentProps extends IconProps {
 }
 
 /**
- * Document with dynamic weight and duotone props.
+ * Document - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DocumentRegular } from 'stera-icons/DocumentRegular';
  */
@@ -32,4 +33,5 @@ const Document = memo(forwardRef<SVGSVGElement, DocumentProps>(({
 
 Document.displayName = 'Document';
 
-export { Document };
+// Triple export pattern (lucide-react style)
+export { Document, Document as DocumentIcon, Document as SiDocument };

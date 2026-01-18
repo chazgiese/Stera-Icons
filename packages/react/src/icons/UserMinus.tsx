@@ -13,7 +13,8 @@ export interface UserMinusProps extends IconProps {
 }
 
 /**
- * UserMinus with dynamic weight and duotone props.
+ * UserMinus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { UserMinusRegular } from 'stera-icons/UserMinusRegular';
  */
@@ -32,4 +33,5 @@ const UserMinus = memo(forwardRef<SVGSVGElement, UserMinusProps>(({
 
 UserMinus.displayName = 'UserMinus';
 
-export { UserMinus };
+// Triple export pattern (lucide-react style)
+export { UserMinus, UserMinus as UserMinusIcon, UserMinus as SiUserMinus };

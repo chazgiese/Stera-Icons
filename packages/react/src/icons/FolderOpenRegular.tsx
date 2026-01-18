@@ -14,5 +14,6 @@ const FolderOpenRegular = memo(
 
 FolderOpenRegular.displayName = 'FolderOpenRegular';
 
-export { FolderOpenRegular };
+// Triple export pattern (lucide-react style)
+export { FolderOpenRegular, FolderOpenRegular as FolderOpenRegularIcon, FolderOpenRegular as SiFolderOpenRegular };
 export type { FolderOpenRegularProps };

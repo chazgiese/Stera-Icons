@@ -14,5 +14,6 @@ const FigmaBold = memo(
 
 FigmaBold.displayName = 'FigmaBold';
 
-export { FigmaBold };
+// Triple export pattern (lucide-react style)
+export { FigmaBold, FigmaBold as FigmaBoldIcon, FigmaBold as SiFigmaBold };
 export type { FigmaBoldProps };

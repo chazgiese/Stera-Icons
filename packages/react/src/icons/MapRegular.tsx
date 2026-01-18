@@ -14,5 +14,6 @@ const MapRegular = memo(
 
 MapRegular.displayName = 'MapRegular';
 
-export { MapRegular };
+// Triple export pattern (lucide-react style)
+export { MapRegular, MapRegular as MapRegularIcon, MapRegular as SiMapRegular };
 export type { MapRegularProps };

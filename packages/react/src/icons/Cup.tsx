@@ -13,7 +13,8 @@ export interface CupProps extends IconProps {
 }
 
 /**
- * Cup with dynamic weight and duotone props.
+ * Cup - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CupRegular } from 'stera-icons/CupRegular';
  */
@@ -32,4 +33,5 @@ const Cup = memo(forwardRef<SVGSVGElement, CupProps>(({
 
 Cup.displayName = 'Cup';
 
-export { Cup };
+// Triple export pattern (lucide-react style)
+export { Cup, Cup as CupIcon, Cup as SiCup };

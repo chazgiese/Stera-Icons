@@ -14,5 +14,6 @@ const ForwardFill = memo(
 
 ForwardFill.displayName = 'ForwardFill';
 
-export { ForwardFill };
+// Triple export pattern (lucide-react style)
+export { ForwardFill, ForwardFill as ForwardFillIcon, ForwardFill as SiForwardFill };
 export type { ForwardFillProps };

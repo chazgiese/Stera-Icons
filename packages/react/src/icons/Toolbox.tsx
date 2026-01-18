@@ -13,7 +13,8 @@ export interface ToolboxProps extends IconProps {
 }
 
 /**
- * Toolbox with dynamic weight and duotone props.
+ * Toolbox - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ToolboxRegular } from 'stera-icons/ToolboxRegular';
  */
@@ -32,4 +33,5 @@ const Toolbox = memo(forwardRef<SVGSVGElement, ToolboxProps>(({
 
 Toolbox.displayName = 'Toolbox';
 
-export { Toolbox };
+// Triple export pattern (lucide-react style)
+export { Toolbox, Toolbox as ToolboxIcon, Toolbox as SiToolbox };

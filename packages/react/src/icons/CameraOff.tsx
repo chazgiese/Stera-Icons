@@ -13,7 +13,8 @@ export interface CameraOffProps extends IconProps {
 }
 
 /**
- * CameraOff with dynamic weight and duotone props.
+ * CameraOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CameraOffRegular } from 'stera-icons/CameraOffRegular';
  */
@@ -32,4 +33,5 @@ const CameraOff = memo(forwardRef<SVGSVGElement, CameraOffProps>(({
 
 CameraOff.displayName = 'CameraOff';
 
-export { CameraOff };
+// Triple export pattern (lucide-react style)
+export { CameraOff, CameraOff as CameraOffIcon, CameraOff as SiCameraOff };

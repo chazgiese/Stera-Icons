@@ -13,7 +13,8 @@ export interface BracketsSquareSquareProps extends IconProps {
 }
 
 /**
- * BracketsSquareSquare with dynamic weight and duotone props.
+ * BracketsSquareSquare - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BracketsSquareSquareRegular } from 'stera-icons/BracketsSquareSquareRegular';
  */
@@ -32,4 +33,5 @@ const BracketsSquareSquare = memo(forwardRef<SVGSVGElement, BracketsSquareSquare
 
 BracketsSquareSquare.displayName = 'BracketsSquareSquare';
 
-export { BracketsSquareSquare };
+// Triple export pattern (lucide-react style)
+export { BracketsSquareSquare, BracketsSquareSquare as BracketsSquareSquareIcon, BracketsSquareSquare as SiBracketsSquareSquare };

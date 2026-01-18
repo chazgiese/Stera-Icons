@@ -13,7 +13,8 @@ export interface SoccerFieldProps extends IconProps {
 }
 
 /**
- * SoccerField with dynamic weight and duotone props.
+ * SoccerField - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SoccerFieldRegular } from 'stera-icons/SoccerFieldRegular';
  */
@@ -32,4 +33,5 @@ const SoccerField = memo(forwardRef<SVGSVGElement, SoccerFieldProps>(({
 
 SoccerField.displayName = 'SoccerField';
 
-export { SoccerField };
+// Triple export pattern (lucide-react style)
+export { SoccerField, SoccerField as SoccerFieldIcon, SoccerField as SiSoccerField };

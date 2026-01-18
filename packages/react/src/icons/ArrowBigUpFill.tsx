@@ -14,5 +14,6 @@ const ArrowBigUpFill = memo(
 
 ArrowBigUpFill.displayName = 'ArrowBigUpFill';
 
-export { ArrowBigUpFill };
+// Triple export pattern (lucide-react style)
+export { ArrowBigUpFill, ArrowBigUpFill as ArrowBigUpFillIcon, ArrowBigUpFill as SiArrowBigUpFill };
 export type { ArrowBigUpFillProps };

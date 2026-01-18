@@ -13,7 +13,8 @@ export interface LineSegmentVProps extends IconProps {
 }
 
 /**
- * LineSegmentV with dynamic weight and duotone props.
+ * LineSegmentV - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LineSegmentVRegular } from 'stera-icons/LineSegmentVRegular';
  */
@@ -32,4 +33,5 @@ const LineSegmentV = memo(forwardRef<SVGSVGElement, LineSegmentVProps>(({
 
 LineSegmentV.displayName = 'LineSegmentV';
 
-export { LineSegmentV };
+// Triple export pattern (lucide-react style)
+export { LineSegmentV, LineSegmentV as LineSegmentVIcon, LineSegmentV as SiLineSegmentV };

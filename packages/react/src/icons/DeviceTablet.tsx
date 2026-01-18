@@ -13,7 +13,8 @@ export interface DeviceTabletProps extends IconProps {
 }
 
 /**
- * DeviceTablet with dynamic weight and duotone props.
+ * DeviceTablet - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DeviceTabletRegular } from 'stera-icons/DeviceTabletRegular';
  */
@@ -32,4 +33,5 @@ const DeviceTablet = memo(forwardRef<SVGSVGElement, DeviceTabletProps>(({
 
 DeviceTablet.displayName = 'DeviceTablet';
 
-export { DeviceTablet };
+// Triple export pattern (lucide-react style)
+export { DeviceTablet, DeviceTablet as DeviceTabletIcon, DeviceTablet as SiDeviceTablet };

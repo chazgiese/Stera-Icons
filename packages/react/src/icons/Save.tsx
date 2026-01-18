@@ -13,7 +13,8 @@ export interface SaveProps extends IconProps {
 }
 
 /**
- * Save with dynamic weight and duotone props.
+ * Save - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SaveRegular } from 'stera-icons/SaveRegular';
  */
@@ -32,4 +33,5 @@ const Save = memo(forwardRef<SVGSVGElement, SaveProps>(({
 
 Save.displayName = 'Save';
 
-export { Save };
+// Triple export pattern (lucide-react style)
+export { Save, Save as SaveIcon, Save as SiSave };

@@ -14,5 +14,6 @@ const MedicalCrossBold = memo(
 
 MedicalCrossBold.displayName = 'MedicalCrossBold';
 
-export { MedicalCrossBold };
+// Triple export pattern (lucide-react style)
+export { MedicalCrossBold, MedicalCrossBold as MedicalCrossBoldIcon, MedicalCrossBold as SiMedicalCrossBold };
 export type { MedicalCrossBoldProps };

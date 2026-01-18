@@ -15,5 +15,6 @@ const SnowflakeFillDuotone = memo(
 
 SnowflakeFillDuotone.displayName = 'SnowflakeFillDuotone';
 
-export { SnowflakeFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SnowflakeFillDuotone, SnowflakeFillDuotone as SnowflakeFillDuotoneIcon, SnowflakeFillDuotone as SiSnowflakeFillDuotone };
 export type { SnowflakeFillDuotoneProps };

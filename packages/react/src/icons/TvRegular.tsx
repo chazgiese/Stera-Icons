@@ -14,5 +14,6 @@ const TvRegular = memo(
 
 TvRegular.displayName = 'TvRegular';
 
-export { TvRegular };
+// Triple export pattern (lucide-react style)
+export { TvRegular, TvRegular as TvRegularIcon, TvRegular as SiTvRegular };
 export type { TvRegularProps };

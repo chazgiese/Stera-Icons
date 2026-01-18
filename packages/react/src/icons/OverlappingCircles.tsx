@@ -13,7 +13,8 @@ export interface OverlappingCirclesProps extends IconProps {
 }
 
 /**
- * OverlappingCircles with dynamic weight and duotone props.
+ * OverlappingCircles - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { OverlappingCirclesRegular } from 'stera-icons/OverlappingCirclesRegular';
  */
@@ -32,4 +33,5 @@ const OverlappingCircles = memo(forwardRef<SVGSVGElement, OverlappingCirclesProp
 
 OverlappingCircles.displayName = 'OverlappingCircles';
 
-export { OverlappingCircles };
+// Triple export pattern (lucide-react style)
+export { OverlappingCircles, OverlappingCircles as OverlappingCirclesIcon, OverlappingCircles as SiOverlappingCircles };

@@ -15,5 +15,6 @@ const XCircleRegular = memo(
 
 XCircleRegular.displayName = 'XCircleRegular';
 
-export { XCircleRegular };
+// Triple export pattern (lucide-react style)
+export { XCircleRegular, XCircleRegular as XCircleRegularIcon, XCircleRegular as SiXCircleRegular };
 export type { XCircleRegularProps };

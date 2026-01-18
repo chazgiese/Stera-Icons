@@ -13,7 +13,8 @@ export interface BatteryHalfProps extends IconProps {
 }
 
 /**
- * BatteryHalf with dynamic weight and duotone props.
+ * BatteryHalf - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BatteryHalfRegular } from 'stera-icons/BatteryHalfRegular';
  */
@@ -32,4 +33,5 @@ const BatteryHalf = memo(forwardRef<SVGSVGElement, BatteryHalfProps>(({
 
 BatteryHalf.displayName = 'BatteryHalf';
 
-export { BatteryHalf };
+// Triple export pattern (lucide-react style)
+export { BatteryHalf, BatteryHalf as BatteryHalfIcon, BatteryHalf as SiBatteryHalf };

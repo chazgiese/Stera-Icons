@@ -15,5 +15,6 @@ const KeyFillDuotone = memo(
 
 KeyFillDuotone.displayName = 'KeyFillDuotone';
 
-export { KeyFillDuotone };
+// Triple export pattern (lucide-react style)
+export { KeyFillDuotone, KeyFillDuotone as KeyFillDuotoneIcon, KeyFillDuotone as SiKeyFillDuotone };
 export type { KeyFillDuotoneProps };

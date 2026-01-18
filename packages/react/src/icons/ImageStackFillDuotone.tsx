@@ -15,5 +15,6 @@ const ImageStackFillDuotone = memo(
 
 ImageStackFillDuotone.displayName = 'ImageStackFillDuotone';
 
-export { ImageStackFillDuotone };
+// Triple export pattern (lucide-react style)
+export { ImageStackFillDuotone, ImageStackFillDuotone as ImageStackFillDuotoneIcon, ImageStackFillDuotone as SiImageStackFillDuotone };
 export type { ImageStackFillDuotoneProps };

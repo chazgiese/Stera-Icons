@@ -13,7 +13,8 @@ export interface RobotProps extends IconProps {
 }
 
 /**
- * Robot with dynamic weight and duotone props.
+ * Robot - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { RobotRegular } from 'stera-icons/RobotRegular';
  */
@@ -32,4 +33,5 @@ const Robot = memo(forwardRef<SVGSVGElement, RobotProps>(({
 
 Robot.displayName = 'Robot';
 
-export { Robot };
+// Triple export pattern (lucide-react style)
+export { Robot, Robot as RobotIcon, Robot as SiRobot };

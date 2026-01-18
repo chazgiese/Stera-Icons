@@ -15,5 +15,6 @@ const ChevronSquareUpRegular = memo(
 
 ChevronSquareUpRegular.displayName = 'ChevronSquareUpRegular';
 
-export { ChevronSquareUpRegular };
+// Triple export pattern (lucide-react style)
+export { ChevronSquareUpRegular, ChevronSquareUpRegular as ChevronSquareUpRegularIcon, ChevronSquareUpRegular as SiChevronSquareUpRegular };
 export type { ChevronSquareUpRegularProps };

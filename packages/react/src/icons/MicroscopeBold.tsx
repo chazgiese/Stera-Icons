@@ -15,5 +15,6 @@ const MicroscopeBold = memo(
 
 MicroscopeBold.displayName = 'MicroscopeBold';
 
-export { MicroscopeBold };
+// Triple export pattern (lucide-react style)
+export { MicroscopeBold, MicroscopeBold as MicroscopeBoldIcon, MicroscopeBold as SiMicroscopeBold };
 export type { MicroscopeBoldProps };

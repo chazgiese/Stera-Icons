@@ -15,5 +15,6 @@ const TestTubeRegularDuotone = memo(
 
 TestTubeRegularDuotone.displayName = 'TestTubeRegularDuotone';
 
-export { TestTubeRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { TestTubeRegularDuotone, TestTubeRegularDuotone as TestTubeRegularDuotoneIcon, TestTubeRegularDuotone as SiTestTubeRegularDuotone };
 export type { TestTubeRegularDuotoneProps };

@@ -13,7 +13,8 @@ export interface FlagProps extends IconProps {
 }
 
 /**
- * Flag with dynamic weight and duotone props.
+ * Flag - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlagRegular } from 'stera-icons/FlagRegular';
  */
@@ -32,4 +33,5 @@ const Flag = memo(forwardRef<SVGSVGElement, FlagProps>(({
 
 Flag.displayName = 'Flag';
 
-export { Flag };
+// Triple export pattern (lucide-react style)
+export { Flag, Flag as FlagIcon, Flag as SiFlag };

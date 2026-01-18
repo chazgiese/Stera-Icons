@@ -14,5 +14,6 @@ const GithubRegular = memo(
 
 GithubRegular.displayName = 'GithubRegular';
 
-export { GithubRegular };
+// Triple export pattern (lucide-react style)
+export { GithubRegular, GithubRegular as GithubRegularIcon, GithubRegular as SiGithubRegular };
 export type { GithubRegularProps };

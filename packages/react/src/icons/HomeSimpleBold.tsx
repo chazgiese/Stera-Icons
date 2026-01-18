@@ -14,5 +14,6 @@ const HomeSimpleBold = memo(
 
 HomeSimpleBold.displayName = 'HomeSimpleBold';
 
-export { HomeSimpleBold };
+// Triple export pattern (lucide-react style)
+export { HomeSimpleBold, HomeSimpleBold as HomeSimpleBoldIcon, HomeSimpleBold as SiHomeSimpleBold };
 export type { HomeSimpleBoldProps };

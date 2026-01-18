@@ -13,7 +13,8 @@ export interface FlowerProps extends IconProps {
 }
 
 /**
- * Flower with dynamic weight and duotone props.
+ * Flower - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FlowerRegular } from 'stera-icons/FlowerRegular';
  */
@@ -32,4 +33,5 @@ const Flower = memo(forwardRef<SVGSVGElement, FlowerProps>(({
 
 Flower.displayName = 'Flower';
 
-export { Flower };
+// Triple export pattern (lucide-react style)
+export { Flower, Flower as FlowerIcon, Flower as SiFlower };

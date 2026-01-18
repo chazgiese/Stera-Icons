@@ -14,5 +14,6 @@ const CommandRegular = memo(
 
 CommandRegular.displayName = 'CommandRegular';
 
-export { CommandRegular };
+// Triple export pattern (lucide-react style)
+export { CommandRegular, CommandRegular as CommandRegularIcon, CommandRegular as SiCommandRegular };
 export type { CommandRegularProps };

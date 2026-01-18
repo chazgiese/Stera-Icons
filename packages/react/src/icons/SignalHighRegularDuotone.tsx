@@ -14,5 +14,6 @@ const SignalHighRegularDuotone = memo(
 
 SignalHighRegularDuotone.displayName = 'SignalHighRegularDuotone';
 
-export { SignalHighRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { SignalHighRegularDuotone, SignalHighRegularDuotone as SignalHighRegularDuotoneIcon, SignalHighRegularDuotone as SiSignalHighRegularDuotone };
 export type { SignalHighRegularDuotoneProps };

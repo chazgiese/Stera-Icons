@@ -13,7 +13,8 @@ export interface DeleteProps extends IconProps {
 }
 
 /**
- * Delete with dynamic weight and duotone props.
+ * Delete - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { DeleteRegular } from 'stera-icons/DeleteRegular';
  */
@@ -32,4 +33,5 @@ const Delete = memo(forwardRef<SVGSVGElement, DeleteProps>(({
 
 Delete.displayName = 'Delete';
 
-export { Delete };
+// Triple export pattern (lucide-react style)
+export { Delete, Delete as DeleteIcon, Delete as SiDelete };

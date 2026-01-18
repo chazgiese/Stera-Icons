@@ -15,5 +15,6 @@ const FootballRegularDuotone = memo(
 
 FootballRegularDuotone.displayName = 'FootballRegularDuotone';
 
-export { FootballRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { FootballRegularDuotone, FootballRegularDuotone as FootballRegularDuotoneIcon, FootballRegularDuotone as SiFootballRegularDuotone };
 export type { FootballRegularDuotoneProps };

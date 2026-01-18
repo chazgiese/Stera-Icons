@@ -13,7 +13,8 @@ export interface SpeakerMediumProps extends IconProps {
 }
 
 /**
- * SpeakerMedium with dynamic weight and duotone props.
+ * SpeakerMedium - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { SpeakerMediumRegular } from 'stera-icons/SpeakerMediumRegular';
  */
@@ -32,4 +33,5 @@ const SpeakerMedium = memo(forwardRef<SVGSVGElement, SpeakerMediumProps>(({
 
 SpeakerMedium.displayName = 'SpeakerMedium';
 
-export { SpeakerMedium };
+// Triple export pattern (lucide-react style)
+export { SpeakerMedium, SpeakerMedium as SpeakerMediumIcon, SpeakerMedium as SiSpeakerMedium };

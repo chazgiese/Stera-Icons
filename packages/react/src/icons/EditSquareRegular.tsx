@@ -15,5 +15,6 @@ const EditSquareRegular = memo(
 
 EditSquareRegular.displayName = 'EditSquareRegular';
 
-export { EditSquareRegular };
+// Triple export pattern (lucide-react style)
+export { EditSquareRegular, EditSquareRegular as EditSquareRegularIcon, EditSquareRegular as SiEditSquareRegular };
 export type { EditSquareRegularProps };

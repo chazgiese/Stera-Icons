@@ -15,5 +15,6 @@ const ShieldBanRegularDuotone = memo(
 
 ShieldBanRegularDuotone.displayName = 'ShieldBanRegularDuotone';
 
-export { ShieldBanRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ShieldBanRegularDuotone, ShieldBanRegularDuotone as ShieldBanRegularDuotoneIcon, ShieldBanRegularDuotone as SiShieldBanRegularDuotone };
 export type { ShieldBanRegularDuotoneProps };

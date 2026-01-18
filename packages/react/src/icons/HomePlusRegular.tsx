@@ -15,5 +15,6 @@ const HomePlusRegular = memo(
 
 HomePlusRegular.displayName = 'HomePlusRegular';
 
-export { HomePlusRegular };
+// Triple export pattern (lucide-react style)
+export { HomePlusRegular, HomePlusRegular as HomePlusRegularIcon, HomePlusRegular as SiHomePlusRegular };
 export type { HomePlusRegularProps };

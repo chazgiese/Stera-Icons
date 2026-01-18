@@ -13,7 +13,8 @@ export interface ArrowLeftProps extends IconProps {
 }
 
 /**
- * ArrowLeft with dynamic weight and duotone props.
+ * ArrowLeft - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArrowLeftRegular } from 'stera-icons/ArrowLeftRegular';
  */
@@ -32,4 +33,5 @@ const ArrowLeft = memo(forwardRef<SVGSVGElement, ArrowLeftProps>(({
 
 ArrowLeft.displayName = 'ArrowLeft';
 
-export { ArrowLeft };
+// Triple export pattern (lucide-react style)
+export { ArrowLeft, ArrowLeft as ArrowLeftIcon, ArrowLeft as SiArrowLeft };

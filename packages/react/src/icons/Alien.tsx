@@ -13,7 +13,8 @@ export interface AlienProps extends IconProps {
 }
 
 /**
- * Alien with dynamic weight and duotone props.
+ * Alien - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AlienRegular } from 'stera-icons/AlienRegular';
  */
@@ -32,4 +33,5 @@ const Alien = memo(forwardRef<SVGSVGElement, AlienProps>(({
 
 Alien.displayName = 'Alien';
 
-export { Alien };
+// Triple export pattern (lucide-react style)
+export { Alien, Alien as AlienIcon, Alien as SiAlien };

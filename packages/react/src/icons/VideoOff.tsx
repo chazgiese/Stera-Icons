@@ -13,7 +13,8 @@ export interface VideoOffProps extends IconProps {
 }
 
 /**
- * VideoOff with dynamic weight and duotone props.
+ * VideoOff - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { VideoOffRegular } from 'stera-icons/VideoOffRegular';
  */
@@ -32,4 +33,5 @@ const VideoOff = memo(forwardRef<SVGSVGElement, VideoOffProps>(({
 
 VideoOff.displayName = 'VideoOff';
 
-export { VideoOff };
+// Triple export pattern (lucide-react style)
+export { VideoOff, VideoOff as VideoOffIcon, VideoOff as SiVideoOff };

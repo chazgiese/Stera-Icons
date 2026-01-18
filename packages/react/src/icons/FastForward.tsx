@@ -13,7 +13,8 @@ export interface FastForwardProps extends IconProps {
 }
 
 /**
- * FastForward with dynamic weight and duotone props.
+ * FastForward - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { FastForwardRegular } from 'stera-icons/FastForwardRegular';
  */
@@ -32,4 +33,5 @@ const FastForward = memo(forwardRef<SVGSVGElement, FastForwardProps>(({
 
 FastForward.displayName = 'FastForward';
 
-export { FastForward };
+// Triple export pattern (lucide-react style)
+export { FastForward, FastForward as FastForwardIcon, FastForward as SiFastForward };

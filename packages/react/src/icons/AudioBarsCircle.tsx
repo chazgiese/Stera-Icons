@@ -13,7 +13,8 @@ export interface AudioBarsCircleProps extends IconProps {
 }
 
 /**
- * AudioBarsCircle with dynamic weight and duotone props.
+ * AudioBarsCircle - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AudioBarsCircleRegular } from 'stera-icons/AudioBarsCircleRegular';
  */
@@ -32,4 +33,5 @@ const AudioBarsCircle = memo(forwardRef<SVGSVGElement, AudioBarsCircleProps>(({
 
 AudioBarsCircle.displayName = 'AudioBarsCircle';
 
-export { AudioBarsCircle };
+// Triple export pattern (lucide-react style)
+export { AudioBarsCircle, AudioBarsCircle as AudioBarsCircleIcon, AudioBarsCircle as SiAudioBarsCircle };

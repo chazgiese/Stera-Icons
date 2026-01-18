@@ -14,5 +14,6 @@ const SnowflakeRegular = memo(
 
 SnowflakeRegular.displayName = 'SnowflakeRegular';
 
-export { SnowflakeRegular };
+// Triple export pattern (lucide-react style)
+export { SnowflakeRegular, SnowflakeRegular as SnowflakeRegularIcon, SnowflakeRegular as SiSnowflakeRegular };
 export type { SnowflakeRegularProps };

@@ -13,7 +13,8 @@ export interface ScanLineProps extends IconProps {
 }
 
 /**
- * ScanLine with dynamic weight and duotone props.
+ * ScanLine - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ScanLineRegular } from 'stera-icons/ScanLineRegular';
  */
@@ -32,4 +33,5 @@ const ScanLine = memo(forwardRef<SVGSVGElement, ScanLineProps>(({
 
 ScanLine.displayName = 'ScanLine';
 
-export { ScanLine };
+// Triple export pattern (lucide-react style)
+export { ScanLine, ScanLine as ScanLineIcon, ScanLine as SiScanLine };

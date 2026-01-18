@@ -14,5 +14,6 @@ const BagBold = memo(
 
 BagBold.displayName = 'BagBold';
 
-export { BagBold };
+// Triple export pattern (lucide-react style)
+export { BagBold, BagBold as BagBoldIcon, BagBold as SiBagBold };
 export type { BagBoldProps };

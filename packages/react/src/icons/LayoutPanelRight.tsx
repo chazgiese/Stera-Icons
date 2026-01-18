@@ -13,7 +13,8 @@ export interface LayoutPanelRightProps extends IconProps {
 }
 
 /**
- * LayoutPanelRight with dynamic weight and duotone props.
+ * LayoutPanelRight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutPanelRightRegular } from 'stera-icons/LayoutPanelRightRegular';
  */
@@ -32,4 +33,5 @@ const LayoutPanelRight = memo(forwardRef<SVGSVGElement, LayoutPanelRightProps>((
 
 LayoutPanelRight.displayName = 'LayoutPanelRight';
 
-export { LayoutPanelRight };
+// Triple export pattern (lucide-react style)
+export { LayoutPanelRight, LayoutPanelRight as LayoutPanelRightIcon, LayoutPanelRight as SiLayoutPanelRight };

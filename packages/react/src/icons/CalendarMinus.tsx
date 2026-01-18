@@ -13,7 +13,8 @@ export interface CalendarMinusProps extends IconProps {
 }
 
 /**
- * CalendarMinus with dynamic weight and duotone props.
+ * CalendarMinus - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CalendarMinusRegular } from 'stera-icons/CalendarMinusRegular';
  */
@@ -32,4 +33,5 @@ const CalendarMinus = memo(forwardRef<SVGSVGElement, CalendarMinusProps>(({
 
 CalendarMinus.displayName = 'CalendarMinus';
 
-export { CalendarMinus };
+// Triple export pattern (lucide-react style)
+export { CalendarMinus, CalendarMinus as CalendarMinusIcon, CalendarMinus as SiCalendarMinus };

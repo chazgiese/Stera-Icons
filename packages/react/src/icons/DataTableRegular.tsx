@@ -14,5 +14,6 @@ const DataTableRegular = memo(
 
 DataTableRegular.displayName = 'DataTableRegular';
 
-export { DataTableRegular };
+// Triple export pattern (lucide-react style)
+export { DataTableRegular, DataTableRegular as DataTableRegularIcon, DataTableRegular as SiDataTableRegular };
 export type { DataTableRegularProps };

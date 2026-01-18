@@ -15,5 +15,6 @@ const EmoteGrinRegular = memo(
 
 EmoteGrinRegular.displayName = 'EmoteGrinRegular';
 
-export { EmoteGrinRegular };
+// Triple export pattern (lucide-react style)
+export { EmoteGrinRegular, EmoteGrinRegular as EmoteGrinRegularIcon, EmoteGrinRegular as SiEmoteGrinRegular };
 export type { EmoteGrinRegularProps };

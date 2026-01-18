@@ -15,5 +15,6 @@ const LinkRegular = memo(
 
 LinkRegular.displayName = 'LinkRegular';
 
-export { LinkRegular };
+// Triple export pattern (lucide-react style)
+export { LinkRegular, LinkRegular as LinkRegularIcon, LinkRegular as SiLinkRegular };
 export type { LinkRegularProps };

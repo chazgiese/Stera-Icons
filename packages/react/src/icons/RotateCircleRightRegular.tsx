@@ -15,5 +15,6 @@ const RotateCircleRightRegular = memo(
 
 RotateCircleRightRegular.displayName = 'RotateCircleRightRegular';
 
-export { RotateCircleRightRegular };
+// Triple export pattern (lucide-react style)
+export { RotateCircleRightRegular, RotateCircleRightRegular as RotateCircleRightRegularIcon, RotateCircleRightRegular as SiRotateCircleRightRegular };
 export type { RotateCircleRightRegularProps };

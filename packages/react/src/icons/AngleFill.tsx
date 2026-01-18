@@ -15,5 +15,6 @@ const AngleFill = memo(
 
 AngleFill.displayName = 'AngleFill';
 
-export { AngleFill };
+// Triple export pattern (lucide-react style)
+export { AngleFill, AngleFill as AngleFillIcon, AngleFill as SiAngleFill };
 export type { AngleFillProps };

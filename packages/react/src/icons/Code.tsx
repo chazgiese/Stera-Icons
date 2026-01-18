@@ -13,7 +13,8 @@ export interface CodeProps extends IconProps {
 }
 
 /**
- * Code with dynamic weight and duotone props.
+ * Code - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { CodeRegular } from 'stera-icons/CodeRegular';
  */
@@ -32,4 +33,5 @@ const Code = memo(forwardRef<SVGSVGElement, CodeProps>(({
 
 Code.displayName = 'Code';
 
-export { Code };
+// Triple export pattern (lucide-react style)
+export { Code, Code as CodeIcon, Code as SiCode };

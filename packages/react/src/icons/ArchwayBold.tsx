@@ -14,5 +14,6 @@ const ArchwayBold = memo(
 
 ArchwayBold.displayName = 'ArchwayBold';
 
-export { ArchwayBold };
+// Triple export pattern (lucide-react style)
+export { ArchwayBold, ArchwayBold as ArchwayBoldIcon, ArchwayBold as SiArchwayBold };
 export type { ArchwayBoldProps };

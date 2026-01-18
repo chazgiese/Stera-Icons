@@ -13,7 +13,8 @@ export interface ForwardProps extends IconProps {
 }
 
 /**
- * Forward with dynamic weight and duotone props.
+ * Forward - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ForwardRegular } from 'stera-icons/ForwardRegular';
  */
@@ -32,4 +33,5 @@ const Forward = memo(forwardRef<SVGSVGElement, ForwardProps>(({
 
 Forward.displayName = 'Forward';
 
-export { Forward };
+// Triple export pattern (lucide-react style)
+export { Forward, Forward as ForwardIcon, Forward as SiForward };

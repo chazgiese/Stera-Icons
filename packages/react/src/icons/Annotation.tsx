@@ -13,7 +13,8 @@ export interface AnnotationProps extends IconProps {
 }
 
 /**
- * Annotation with dynamic weight and duotone props.
+ * Annotation - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AnnotationRegular } from 'stera-icons/AnnotationRegular';
  */
@@ -32,4 +33,5 @@ const Annotation = memo(forwardRef<SVGSVGElement, AnnotationProps>(({
 
 Annotation.displayName = 'Annotation';
 
-export { Annotation };
+// Triple export pattern (lucide-react style)
+export { Annotation, Annotation as AnnotationIcon, Annotation as SiAnnotation };

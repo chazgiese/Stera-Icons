@@ -15,5 +15,6 @@ const DropletFillDuotone = memo(
 
 DropletFillDuotone.displayName = 'DropletFillDuotone';
 
-export { DropletFillDuotone };
+// Triple export pattern (lucide-react style)
+export { DropletFillDuotone, DropletFillDuotone as DropletFillDuotoneIcon, DropletFillDuotone as SiDropletFillDuotone };
 export type { DropletFillDuotoneProps };

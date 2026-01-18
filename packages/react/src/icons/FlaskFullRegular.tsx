@@ -14,5 +14,6 @@ const FlaskFullRegular = memo(
 
 FlaskFullRegular.displayName = 'FlaskFullRegular';
 
-export { FlaskFullRegular };
+// Triple export pattern (lucide-react style)
+export { FlaskFullRegular, FlaskFullRegular as FlaskFullRegularIcon, FlaskFullRegular as SiFlaskFullRegular };
 export type { FlaskFullRegularProps };

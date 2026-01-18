@@ -14,5 +14,6 @@ const AstriskRegular = memo(
 
 AstriskRegular.displayName = 'AstriskRegular';
 
-export { AstriskRegular };
+// Triple export pattern (lucide-react style)
+export { AstriskRegular, AstriskRegular as AstriskRegularIcon, AstriskRegular as SiAstriskRegular };
 export type { AstriskRegularProps };

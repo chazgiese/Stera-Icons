@@ -15,5 +15,6 @@ const SendVRegularDuotone = memo(
 
 SendVRegularDuotone.displayName = 'SendVRegularDuotone';
 
-export { SendVRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { SendVRegularDuotone, SendVRegularDuotone as SendVRegularDuotoneIcon, SendVRegularDuotone as SiSendVRegularDuotone };
 export type { SendVRegularDuotoneProps };

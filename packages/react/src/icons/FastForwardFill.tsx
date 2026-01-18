@@ -14,5 +14,6 @@ const FastForwardFill = memo(
 
 FastForwardFill.displayName = 'FastForwardFill';
 
-export { FastForwardFill };
+// Triple export pattern (lucide-react style)
+export { FastForwardFill, FastForwardFill as FastForwardFillIcon, FastForwardFill as SiFastForwardFill };
 export type { FastForwardFillProps };

@@ -13,7 +13,8 @@ export interface BluetoothProps extends IconProps {
 }
 
 /**
- * Bluetooth with dynamic weight and duotone props.
+ * Bluetooth - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { BluetoothRegular } from 'stera-icons/BluetoothRegular';
  */
@@ -32,4 +33,5 @@ const Bluetooth = memo(forwardRef<SVGSVGElement, BluetoothProps>(({
 
 Bluetooth.displayName = 'Bluetooth';
 
-export { Bluetooth };
+// Triple export pattern (lucide-react style)
+export { Bluetooth, Bluetooth as BluetoothIcon, Bluetooth as SiBluetooth };

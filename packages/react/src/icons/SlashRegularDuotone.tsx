@@ -15,5 +15,6 @@ const SlashRegularDuotone = memo(
 
 SlashRegularDuotone.displayName = 'SlashRegularDuotone';
 
-export { SlashRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { SlashRegularDuotone, SlashRegularDuotone as SlashRegularDuotoneIcon, SlashRegularDuotone as SiSlashRegularDuotone };
 export type { SlashRegularDuotoneProps };

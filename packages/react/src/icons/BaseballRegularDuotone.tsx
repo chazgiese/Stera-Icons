@@ -15,5 +15,6 @@ const BaseballRegularDuotone = memo(
 
 BaseballRegularDuotone.displayName = 'BaseballRegularDuotone';
 
-export { BaseballRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { BaseballRegularDuotone, BaseballRegularDuotone as BaseballRegularDuotoneIcon, BaseballRegularDuotone as SiBaseballRegularDuotone };
 export type { BaseballRegularDuotoneProps };

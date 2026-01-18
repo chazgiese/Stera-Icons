@@ -14,5 +14,6 @@ const PlayRectangleFill = memo(
 
 PlayRectangleFill.displayName = 'PlayRectangleFill';
 
-export { PlayRectangleFill };
+// Triple export pattern (lucide-react style)
+export { PlayRectangleFill, PlayRectangleFill as PlayRectangleFillIcon, PlayRectangleFill as SiPlayRectangleFill };
 export type { PlayRectangleFillProps };

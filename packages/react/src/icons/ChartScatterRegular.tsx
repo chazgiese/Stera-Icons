@@ -15,5 +15,6 @@ const ChartScatterRegular = memo(
 
 ChartScatterRegular.displayName = 'ChartScatterRegular';
 
-export { ChartScatterRegular };
+// Triple export pattern (lucide-react style)
+export { ChartScatterRegular, ChartScatterRegular as ChartScatterRegularIcon, ChartScatterRegular as SiChartScatterRegular };
 export type { ChartScatterRegularProps };

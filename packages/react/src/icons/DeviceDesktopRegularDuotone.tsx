@@ -15,5 +15,6 @@ const DeviceDesktopRegularDuotone = memo(
 
 DeviceDesktopRegularDuotone.displayName = 'DeviceDesktopRegularDuotone';
 
-export { DeviceDesktopRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { DeviceDesktopRegularDuotone, DeviceDesktopRegularDuotone as DeviceDesktopRegularDuotoneIcon, DeviceDesktopRegularDuotone as SiDeviceDesktopRegularDuotone };
 export type { DeviceDesktopRegularDuotoneProps };

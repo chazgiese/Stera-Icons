@@ -14,5 +14,6 @@ const DeviceDesktopBold = memo(
 
 DeviceDesktopBold.displayName = 'DeviceDesktopBold';
 
-export { DeviceDesktopBold };
+// Triple export pattern (lucide-react style)
+export { DeviceDesktopBold, DeviceDesktopBold as DeviceDesktopBoldIcon, DeviceDesktopBold as SiDeviceDesktopBold };
 export type { DeviceDesktopBoldProps };

@@ -14,5 +14,6 @@ const PercentSquareFill = memo(
 
 PercentSquareFill.displayName = 'PercentSquareFill';
 
-export { PercentSquareFill };
+// Triple export pattern (lucide-react style)
+export { PercentSquareFill, PercentSquareFill as PercentSquareFillIcon, PercentSquareFill as SiPercentSquareFill };
 export type { PercentSquareFillProps };

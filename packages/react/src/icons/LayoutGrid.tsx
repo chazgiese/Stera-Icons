@@ -13,7 +13,8 @@ export interface LayoutGridProps extends IconProps {
 }
 
 /**
- * LayoutGrid with dynamic weight and duotone props.
+ * LayoutGrid - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridRegular } from 'stera-icons/LayoutGridRegular';
  */
@@ -32,4 +33,5 @@ const LayoutGrid = memo(forwardRef<SVGSVGElement, LayoutGridProps>(({
 
 LayoutGrid.displayName = 'LayoutGrid';
 
-export { LayoutGrid };
+// Triple export pattern (lucide-react style)
+export { LayoutGrid, LayoutGrid as LayoutGridIcon, LayoutGrid as SiLayoutGrid };

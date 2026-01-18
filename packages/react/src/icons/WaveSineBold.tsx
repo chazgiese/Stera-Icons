@@ -14,5 +14,6 @@ const WaveSineBold = memo(
 
 WaveSineBold.displayName = 'WaveSineBold';
 
-export { WaveSineBold };
+// Triple export pattern (lucide-react style)
+export { WaveSineBold, WaveSineBold as WaveSineBoldIcon, WaveSineBold as SiWaveSineBold };
 export type { WaveSineBoldProps };

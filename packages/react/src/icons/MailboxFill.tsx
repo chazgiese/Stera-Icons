@@ -15,5 +15,6 @@ const MailboxFill = memo(
 
 MailboxFill.displayName = 'MailboxFill';
 
-export { MailboxFill };
+// Triple export pattern (lucide-react style)
+export { MailboxFill, MailboxFill as MailboxFillIcon, MailboxFill as SiMailboxFill };
 export type { MailboxFillProps };

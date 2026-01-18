@@ -13,7 +13,8 @@ export interface AwardStarProps extends IconProps {
 }
 
 /**
- * AwardStar with dynamic weight and duotone props.
+ * AwardStar - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AwardStarRegular } from 'stera-icons/AwardStarRegular';
  */
@@ -32,4 +33,5 @@ const AwardStar = memo(forwardRef<SVGSVGElement, AwardStarProps>(({
 
 AwardStar.displayName = 'AwardStar';
 
-export { AwardStar };
+// Triple export pattern (lucide-react style)
+export { AwardStar, AwardStar as AwardStarIcon, AwardStar as SiAwardStar };

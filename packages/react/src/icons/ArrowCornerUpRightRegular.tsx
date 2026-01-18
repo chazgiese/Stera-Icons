@@ -14,5 +14,6 @@ const ArrowCornerUpRightRegular = memo(
 
 ArrowCornerUpRightRegular.displayName = 'ArrowCornerUpRightRegular';
 
-export { ArrowCornerUpRightRegular };
+// Triple export pattern (lucide-react style)
+export { ArrowCornerUpRightRegular, ArrowCornerUpRightRegular as ArrowCornerUpRightRegularIcon, ArrowCornerUpRightRegular as SiArrowCornerUpRightRegular };
 export type { ArrowCornerUpRightRegularProps };

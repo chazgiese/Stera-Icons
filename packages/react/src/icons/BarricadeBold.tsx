@@ -14,5 +14,6 @@ const BarricadeBold = memo(
 
 BarricadeBold.displayName = 'BarricadeBold';
 
-export { BarricadeBold };
+// Triple export pattern (lucide-react style)
+export { BarricadeBold, BarricadeBold as BarricadeBoldIcon, BarricadeBold as SiBarricadeBold };
 export type { BarricadeBoldProps };

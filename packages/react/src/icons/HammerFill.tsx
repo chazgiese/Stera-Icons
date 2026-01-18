@@ -14,5 +14,6 @@ const HammerFill = memo(
 
 HammerFill.displayName = 'HammerFill';
 
-export { HammerFill };
+// Triple export pattern (lucide-react style)
+export { HammerFill, HammerFill as HammerFillIcon, HammerFill as SiHammerFill };
 export type { HammerFillProps };

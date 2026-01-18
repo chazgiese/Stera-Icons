@@ -13,7 +13,8 @@ export interface PencilTipProps extends IconProps {
 }
 
 /**
- * PencilTip with dynamic weight and duotone props.
+ * PencilTip - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { PencilTipRegular } from 'stera-icons/PencilTipRegular';
  */
@@ -32,4 +33,5 @@ const PencilTip = memo(forwardRef<SVGSVGElement, PencilTipProps>(({
 
 PencilTip.displayName = 'PencilTip';
 
-export { PencilTip };
+// Triple export pattern (lucide-react style)
+export { PencilTip, PencilTip as PencilTipIcon, PencilTip as SiPencilTip };

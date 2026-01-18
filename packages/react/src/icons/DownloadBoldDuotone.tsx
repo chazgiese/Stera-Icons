@@ -15,5 +15,6 @@ const DownloadBoldDuotone = memo(
 
 DownloadBoldDuotone.displayName = 'DownloadBoldDuotone';
 
-export { DownloadBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { DownloadBoldDuotone, DownloadBoldDuotone as DownloadBoldDuotoneIcon, DownloadBoldDuotone as SiDownloadBoldDuotone };
 export type { DownloadBoldDuotoneProps };

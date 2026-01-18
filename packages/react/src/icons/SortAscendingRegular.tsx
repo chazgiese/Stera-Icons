@@ -15,5 +15,6 @@ const SortAscendingRegular = memo(
 
 SortAscendingRegular.displayName = 'SortAscendingRegular';
 
-export { SortAscendingRegular };
+// Triple export pattern (lucide-react style)
+export { SortAscendingRegular, SortAscendingRegular as SortAscendingRegularIcon, SortAscendingRegular as SiSortAscendingRegular };
 export type { SortAscendingRegularProps };

@@ -15,5 +15,6 @@ const XCircleRegularDuotone = memo(
 
 XCircleRegularDuotone.displayName = 'XCircleRegularDuotone';
 
-export { XCircleRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { XCircleRegularDuotone, XCircleRegularDuotone as XCircleRegularDuotoneIcon, XCircleRegularDuotone as SiXCircleRegularDuotone };
 export type { XCircleRegularDuotoneProps };

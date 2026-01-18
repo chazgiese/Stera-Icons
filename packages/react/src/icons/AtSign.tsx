@@ -13,7 +13,8 @@ export interface AtSignProps extends IconProps {
 }
 
 /**
- * AtSign with dynamic weight and duotone props.
+ * AtSign - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { AtSignRegular } from 'stera-icons/AtSignRegular';
  */
@@ -32,4 +33,5 @@ const AtSign = memo(forwardRef<SVGSVGElement, AtSignProps>(({
 
 AtSign.displayName = 'AtSign';
 
-export { AtSign };
+// Triple export pattern (lucide-react style)
+export { AtSign, AtSign as AtSignIcon, AtSign as SiAtSign };

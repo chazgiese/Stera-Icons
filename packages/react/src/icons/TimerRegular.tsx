@@ -15,5 +15,6 @@ const TimerRegular = memo(
 
 TimerRegular.displayName = 'TimerRegular';
 
-export { TimerRegular };
+// Triple export pattern (lucide-react style)
+export { TimerRegular, TimerRegular as TimerRegularIcon, TimerRegular as SiTimerRegular };
 export type { TimerRegularProps };

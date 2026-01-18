@@ -13,7 +13,8 @@ export interface ArchiveProps extends IconProps {
 }
 
 /**
- * Archive with dynamic weight and duotone props.
+ * Archive - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { ArchiveRegular } from 'stera-icons/ArchiveRegular';
  */
@@ -32,4 +33,5 @@ const Archive = memo(forwardRef<SVGSVGElement, ArchiveProps>(({
 
 Archive.displayName = 'Archive';
 
-export { Archive };
+// Triple export pattern (lucide-react style)
+export { Archive, Archive as ArchiveIcon, Archive as SiArchive };

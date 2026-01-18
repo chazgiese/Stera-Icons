@@ -13,7 +13,8 @@ export interface LineWeightProps extends IconProps {
 }
 
 /**
- * LineWeight with dynamic weight and duotone props.
+ * LineWeight - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { LineWeightRegular } from 'stera-icons/LineWeightRegular';
  */
@@ -32,4 +33,5 @@ const LineWeight = memo(forwardRef<SVGSVGElement, LineWeightProps>(({
 
 LineWeight.displayName = 'LineWeight';
 
-export { LineWeight };
+// Triple export pattern (lucide-react style)
+export { LineWeight, LineWeight as LineWeightIcon, LineWeight as SiLineWeight };

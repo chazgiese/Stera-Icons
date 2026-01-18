@@ -13,7 +13,8 @@ export interface WaveSineProps extends IconProps {
 }
 
 /**
- * WaveSine with dynamic weight and duotone props.
+ * WaveSine - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WaveSineRegular } from 'stera-icons/WaveSineRegular';
  */
@@ -32,4 +33,5 @@ const WaveSine = memo(forwardRef<SVGSVGElement, WaveSineProps>(({
 
 WaveSine.displayName = 'WaveSine';
 
-export { WaveSine };
+// Triple export pattern (lucide-react style)
+export { WaveSine, WaveSine as WaveSineIcon, WaveSine as SiWaveSine };

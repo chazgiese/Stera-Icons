@@ -15,5 +15,6 @@ const ScrewdriverBold = memo(
 
 ScrewdriverBold.displayName = 'ScrewdriverBold';
 
-export { ScrewdriverBold };
+// Triple export pattern (lucide-react style)
+export { ScrewdriverBold, ScrewdriverBold as ScrewdriverBoldIcon, ScrewdriverBold as SiScrewdriverBold };
 export type { ScrewdriverBoldProps };

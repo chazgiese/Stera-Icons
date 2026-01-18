@@ -15,5 +15,6 @@ const ShareRegularDuotone = memo(
 
 ShareRegularDuotone.displayName = 'ShareRegularDuotone';
 
-export { ShareRegularDuotone };
+// Triple export pattern (lucide-react style)
+export { ShareRegularDuotone, ShareRegularDuotone as ShareRegularDuotoneIcon, ShareRegularDuotone as SiShareRegularDuotone };
 export type { ShareRegularDuotoneProps };

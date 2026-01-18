@@ -14,5 +14,6 @@ const DataTableBold = memo(
 
 DataTableBold.displayName = 'DataTableBold';
 
-export { DataTableBold };
+// Triple export pattern (lucide-react style)
+export { DataTableBold, DataTableBold as DataTableBoldIcon, DataTableBold as SiDataTableBold };
 export type { DataTableBoldProps };

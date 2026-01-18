@@ -14,5 +14,6 @@ const AirplaneFill = memo(
 
 AirplaneFill.displayName = 'AirplaneFill';
 
-export { AirplaneFill };
+// Triple export pattern (lucide-react style)
+export { AirplaneFill, AirplaneFill as AirplaneFillIcon, AirplaneFill as SiAirplaneFill };
 export type { AirplaneFillProps };

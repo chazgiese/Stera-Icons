@@ -13,7 +13,8 @@ export interface WrenchProps extends IconProps {
 }
 
 /**
- * Wrench with dynamic weight and duotone props.
+ * Wrench - Dynamic wrapper component with convenience props.
+ * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
  * import { WrenchRegular } from 'stera-icons/WrenchRegular';
  */
@@ -32,4 +33,5 @@ const Wrench = memo(forwardRef<SVGSVGElement, WrenchProps>(({
 
 Wrench.displayName = 'Wrench';
 
-export { Wrench };
+// Triple export pattern (lucide-react style)
+export { Wrench, Wrench as WrenchIcon, Wrench as SiWrench };

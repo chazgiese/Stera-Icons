@@ -14,5 +14,6 @@ const PenNibBold = memo(
 
 PenNibBold.displayName = 'PenNibBold';
 
-export { PenNibBold };
+// Triple export pattern (lucide-react style)
+export { PenNibBold, PenNibBold as PenNibBoldIcon, PenNibBold as SiPenNibBold };
 export type { PenNibBoldProps };

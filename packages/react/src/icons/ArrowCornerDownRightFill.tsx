@@ -14,5 +14,6 @@ const ArrowCornerDownRightFill = memo(
 
 ArrowCornerDownRightFill.displayName = 'ArrowCornerDownRightFill';
 
-export { ArrowCornerDownRightFill };
+// Triple export pattern (lucide-react style)
+export { ArrowCornerDownRightFill, ArrowCornerDownRightFill as ArrowCornerDownRightFillIcon, ArrowCornerDownRightFill as SiArrowCornerDownRightFill };
 export type { ArrowCornerDownRightFillProps };

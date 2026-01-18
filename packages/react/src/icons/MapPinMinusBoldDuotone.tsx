@@ -15,5 +15,6 @@ const MapPinMinusBoldDuotone = memo(
 
 MapPinMinusBoldDuotone.displayName = 'MapPinMinusBoldDuotone';
 
-export { MapPinMinusBoldDuotone };
+// Triple export pattern (lucide-react style)
+export { MapPinMinusBoldDuotone, MapPinMinusBoldDuotone as MapPinMinusBoldDuotoneIcon, MapPinMinusBoldDuotone as SiMapPinMinusBoldDuotone };
 export type { MapPinMinusBoldDuotoneProps };

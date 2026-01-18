@@ -15,5 +15,6 @@ const SpeakerFillDuotone = memo(
 
 SpeakerFillDuotone.displayName = 'SpeakerFillDuotone';
 
-export { SpeakerFillDuotone };
+// Triple export pattern (lucide-react style)
+export { SpeakerFillDuotone, SpeakerFillDuotone as SpeakerFillDuotoneIcon, SpeakerFillDuotone as SiSpeakerFillDuotone };
 export type { SpeakerFillDuotoneProps };

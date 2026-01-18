@@ -14,5 +14,6 @@ const ScanTextBold = memo(
 
 ScanTextBold.displayName = 'ScanTextBold';
 
-export { ScanTextBold };
+// Triple export pattern (lucide-react style)
+export { ScanTextBold, ScanTextBold as ScanTextBoldIcon, ScanTextBold as SiScanTextBold };
 export type { ScanTextBoldProps };
