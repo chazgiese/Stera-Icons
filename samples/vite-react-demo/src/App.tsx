@@ -1,9 +1,8 @@
 // Subpath imports for optimal tree-shaking (recommended for production)
-import { Home } from 'stera-icons/Home';
-import { HomeIcon } from 'stera-icons/HomeIcon';
-import { SiHome } from 'stera-icons/SiHome';
-import { SiSearch } from 'stera-icons/SiSearch';
-import { SearchBold } from 'stera-icons/SearchBold';
+// Note: Subpath imports use the file name (base component name), but you can destructure any alias
+import { Home, HomeIcon, SiHome } from 'stera-icons/icons/Home';
+import { SiSearch } from 'stera-icons/icons/Search';
+import { SearchBold } from 'stera-icons/icons/SearchBold';
 
 function App() {
   return (
@@ -20,12 +19,15 @@ function App() {
         <div style={{ fontSize: '14px', color: '#666', marginBottom: '20px' }}>
           <p><strong>This demo uses subpath imports for optimal bundle size:</strong></p>
           <code style={{ background: '#f5f5f5', padding: '2px 6px', borderRadius: '3px' }}>
-            import {'{ Home }'} from 'stera-icons/Home'
+            import {'{ SiHome }'} from 'stera-icons/icons/Home'
           </code>
+          <p style={{ marginTop: '10px' }}>
+            Note: The file path uses the base name (Home), but you can destructure any alias (Home, HomeIcon, or SiHome).
+          </p>
           <p style={{ marginTop: '10px' }}>
             For quick prototyping, you can use barrel imports:<br />
             <code style={{ background: '#f5f5f5', padding: '2px 6px', borderRadius: '3px' }}>
-              import {'{ Home }'} from 'stera-icons'
+              import {'{ SiHome }'} from 'stera-icons'
             </code>
           </p>
         </div>

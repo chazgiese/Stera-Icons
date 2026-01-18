@@ -505,7 +505,6 @@ ${directVariantExports.join('\n')}
   const packageJsonPath = join(__dirname, '..', 'packages', 'react', 'package.json');
   const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
   
-  const subpathExports = {};
   const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
   
   // Collect all entry points for batched compilation
@@ -624,25 +623,6 @@ export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
 export declare const ${aliases.siPrefix}: typeof ${aliases.base};
 `;
     writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
-    
-    // Add subpath exports for base component
-    subpathExports[`./${componentName}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
-    
-    // Add subpath exports for aliases (pointing to same files)
-    subpathExports[`./${aliases.iconSuffix}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
-    subpathExports[`./${aliases.siPrefix}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
   }
   
   // Generate TypeScript definitions for variant components
@@ -663,30 +643,11 @@ export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
 export declare const ${aliases.siPrefix}: typeof ${aliases.base};
 `;
     writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
-    
-    // Add subpath exports for base component
-    subpathExports[`./${componentName}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
-    
-    // Add subpath exports for aliases (pointing to same files)
-    subpathExports[`./${aliases.iconSuffix}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
-    subpathExports[`./${aliases.siPrefix}`] = {
-      types: `./dist/icons/${componentName}.d.ts`,
-      import: `./dist/icons/${componentName}.mjs`,
-      require: `./dist/icons/${componentName}.cjs`
-    };
   }
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
-  // Update package.json with subpath exports
+  // Update package.json with wildcard exports (following lucide-react pattern)
   const existingExports = packageJson.exports?.['.'] || {
     types: './dist/index.d.ts',
     import: './dist/index.mjs',
@@ -696,11 +657,15 @@ export declare const ${aliases.siPrefix}: typeof ${aliases.base};
   packageJson.exports = {
     '.': existingExports,
     './package.json': './package.json',
-    ...subpathExports
+    './icons/*': {
+      types: './dist/icons/*.d.ts',
+      import: './dist/icons/*.mjs',
+      require: './dist/icons/*.cjs'
+    }
   };
   
   writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
-  console.log(`  ✅ Generated ${Object.keys(subpathExports).length} subpath exports`);
+  console.log(`  ✅ Using wildcard exports pattern (./icons/*)`);
   
   // Calculate summary statistics (using O(1) Map lookup)
   const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
@@ -714,7 +679,7 @@ export declare const ${aliases.siPrefix}: typeof ${aliases.base};
   console.log(`\n📊 Build Summary:`);
   console.log(`  ✅ Generated ${metadata.length} direct variant components (IconBase-based)`);
   console.log(`  🔗 Generated ${wrapperExports.length} dynamic wrapper components (convenience)`);
-  console.log(`  📦 Compiled ${Object.keys(subpathExports).length} individual bundles for subpath exports`);
+  console.log(`  📦 Using wildcard exports (./icons/*) for ${totalComponents} components`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
@@ -722,10 +687,9 @@ export declare const ${aliases.siPrefix}: typeof ${aliases.base};
   console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
   console.log(`\n🎯 Import patterns (all with triple aliasing):`);
-  console.log(`  • Aliased imports: import { SiSearch, SiHome } from 'stera-icons';`);
-  console.log(`  • Direct variant: import { SearchBold, SearchBoldIcon } from 'stera-icons';`);
-  console.log(`  • Dynamic wrapper: import { Search } from 'stera-icons/Search';`);
-  console.log(`  • Subpath import: import { SearchBold } from 'stera-icons/SearchBold';`);
+  console.log(`  • Barrel imports: import { SiSearch, SearchBold } from 'stera-icons';`);
+  console.log(`  • Subpath imports (lucide-react pattern): import { Search } from 'stera-icons/icons/Search';`);
+  console.log(`  • Variant subpath: import { SearchBold } from 'stera-icons/icons/SearchBold';`);
 }
 
 // Main execution

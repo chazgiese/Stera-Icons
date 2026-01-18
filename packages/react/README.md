@@ -1,10 +1,9 @@
 # Stera Icons
 
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
-[![minzipped size](https://img.shields.io/bundlephobia/minzip/stera-icons)](https://bundlephobia.com/package/stera-icons)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern, lightweight React icon library with 768+ icons, following lucide-react patterns. All icons available in 6 variants with triple-aliased exports for maximum flexibility.
+A modern, lightweight React icon library with 700+ icons. All icons available in 6 variants with triple-aliased exports for maximum flexibility.
 
 ## Installation
 
@@ -64,6 +63,21 @@ import { Search } from 'stera-icons';
 <Search />                        {/* Regular */}
 <Search weight="bold" />          {/* Bold */}
 <Search weight="fill" duotone />  {/* Fill + Duotone */}
+```
+
+### Subpath Imports
+
+For even better tree-shaking and smaller bundles, import directly from icon paths:
+
+```tsx
+// Import individual icons
+import { Search } from 'stera-icons/icons/Search';
+import { SearchBold } from 'stera-icons/icons/SearchBold';
+import { SiHome } from 'stera-icons/icons/SiHome';
+
+<Search size={24} />
+<SearchBold size={24} />
+<SiHome size={24} />
 ```
 
 ## Props
