@@ -1,5 +1,3 @@
-![Cover Image](./assets/Cover%20Image.png)
-
 # Stera Icons
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -42,7 +40,7 @@ function App() {
 }
 ```
 
-## Icon Naming
+### Icon Naming
 
 All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
 
@@ -106,7 +104,7 @@ All icons accept these props:
 | `aria-hidden` | `boolean` | - | Hide from screen readers |
 | `...props` | `SVGProps<SVGSVGElement>` | - | All other SVG props |
 
-### Dynamic Icon Loading
+## Dynamic Icon Loading
 
 ```tsx
 import { useState } from 'react';

@@ -40,7 +40,7 @@ function App() {
 }
 ```
 
-## Icon Naming
+### Icon Naming
 
 All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
 
@@ -89,7 +89,7 @@ For meaningful icons, provide context:
 <SearchIcon aria-label="Search products" />
 ```
 
-### API
+## API
 
 All icons accept these props:
 
@@ -104,7 +104,7 @@ All icons accept these props:
 | `aria-hidden` | `boolean` | - | Hide from screen readers |
 | `...props` | `SVGProps<SVGSVGElement>` | - | All other SVG props |
 
-### Dynamic Icon Loading
+## Dynamic Icon Loading
 
 ```tsx
 import { useState } from 'react';
