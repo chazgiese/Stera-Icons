@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 7.0.5
+
+### Patch Changes
+
+- 1f8fc37: Refactor build orchestration to root package.json - removes external script references from package-level scripts
+
 ## 7.0.4
 
 ### Patch Changes
