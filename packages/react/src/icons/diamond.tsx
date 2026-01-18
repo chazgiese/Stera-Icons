@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const DiamondIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M10.84 1.676a3.75 3.75 0 0 1 2.32 0c.473.154.88.427 1.297.782.411.35.883.821 1.468 1.406l4.21 4.211c.586.586 1.058 1.057 1.407 1.468.355.418.628.824.782 1.298a3.75 3.75 0 0 1 0 2.318c-.154.474-.427.88-.782 1.298-.35.411-.82.883-1.406 1.468l-4.211 4.21c-.585.586-1.057 1.058-1.468 1.407-.418.355-.824.628-1.298.782a3.75 3.75 0 0 1-2.318 0c-.474-.154-.88-.427-1.298-.782-.411-.35-.882-.82-1.468-1.406l-4.21-4.211c-.586-.585-1.058-1.057-1.407-1.468-.355-.418-.628-.824-.782-1.298a3.75 3.75 0 0 1 0-2.318c.154-.474.427-.88.782-1.298.35-.411.821-.882 1.406-1.468l4.211-4.21c.586-.586 1.057-1.058 1.468-1.407.418-.355.824-.628 1.298-.782m1.855 1.427a2.25 2.25 0 0 0-1.39 0c-.211.068-.444.204-.791.499-.354.3-.775.72-1.378 1.323l-4.211 4.21c-.603.604-1.023 1.025-1.323 1.379-.295.347-.43.58-.5.79a2.25 2.25 0 0 0 0 1.391c.07.211.205.444.5.791.3.354.72.776 1.323 1.378l4.21 4.211c.604.603 1.025 1.023 1.379 1.323.347.295.58.431.79.5a2.25 2.25 0 0 0 1.391 0c.211-.069.444-.205.791-.5.354-.3.775-.72 1.378-1.323l4.211-4.21c.603-.604 1.023-1.025 1.323-1.379.295-.347.431-.58.5-.79a2.25 2.25 0 0 0 0-1.391c-.069-.211-.205-.444-.5-.791-.3-.354-.72-.775-1.323-1.378l-4.21-4.211c-.603-.603-1.025-1.023-1.379-1.323-.347-.295-.58-.43-.79-.5"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-DiamondIcon.displayName = "DiamondIcon";
-export { DiamondIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { DiamondRegular } from './DiamondRegular';
+import { DiamondRegularDuotone } from './DiamondRegularDuotone';
+import { DiamondBold } from './DiamondBold';
+import { DiamondBoldDuotone } from './DiamondBoldDuotone';
+import { DiamondFill } from './DiamondFill';
+import { DiamondFillDuotone } from './DiamondFillDuotone';
+
+export interface DiamondProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Diamond with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { DiamondRegular } from 'stera-icons/DiamondRegular';
+ */
+const Diamond = memo(forwardRef<SVGSVGElement, DiamondProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <DiamondBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <DiamondBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <DiamondFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <DiamondFill ref={ref} {...rest} />;
+  if (duotone) return <DiamondRegularDuotone ref={ref} {...rest} />;
+  return <DiamondRegular ref={ref} {...rest} />;
+}));
+
+Diamond.displayName = 'Diamond';
+
+export { Diamond };

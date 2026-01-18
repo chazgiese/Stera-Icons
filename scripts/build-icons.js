@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { createHash } from 'crypto';
 import { optimize } from 'svgo';
-import { transform } from '@svgr/core';
 import { build } from 'esbuild';
 import { 
   normalizeSlug, 
@@ -26,11 +24,57 @@ const __dirname = dirname(__filename);
 // Load SVGO config
 const svgoConfig = (await import('./svgo.config.js')).default;
 
-// Load SVGR template
-const svgrTemplate = (await import('./svgr-template.js')).default;
+/**
+ * Parse optimized SVG and extract path elements as JSX
+ */
+function extractPathsFromSvg(svgString) {
+  // Extract all path elements from the SVG
+  const pathRegex = /<path\s+([^>]*)\/>/g;
+  const paths = [];
+  let match;
+  
+  while ((match = pathRegex.exec(svgString)) !== null) {
+    const attrsString = match[1];
+    const attrs = {};
+    
+    // Parse attributes
+    const attrRegex = /(\w+(?:-\w+)?)=["']([^"']*)["']/g;
+    let attrMatch;
+    while ((attrMatch = attrRegex.exec(attrsString)) !== null) {
+      const [, name, value] = attrMatch;
+      // Convert kebab-case to camelCase for JSX
+      const jsxName = name.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
+      attrs[jsxName] = value;
+    }
+    
+    paths.push(attrs);
+  }
+  
+  return paths;
+}
+
+/**
+ * Generate JSX for path elements
+ */
+function generatePathJsx(paths) {
+  if (paths.length === 0) {
+    return '<path d="" />';
+  }
+  
+  return paths.map(attrs => {
+    const attrStrings = Object.entries(attrs).map(([key, value]) => {
+      // Handle numeric values like opacity
+      if (key === 'opacity' && !isNaN(parseFloat(value))) {
+        return `${key}={${value}}`;
+      }
+      return `${key}="${value}"`;
+    });
+    return `<path ${attrStrings.join(' ')} />`;
+  }).join('\n        ');
+}
 
 async function buildIcons(iconsExportPath) {
-  console.log('🚀 Building Stera Icons with wrapper components...');
+  console.log('🚀 Building Stera Icons with optimized IconBase architecture...');
   
   // Read the icons export JSON
   const iconsExport = JSON.parse(readFileSync(iconsExportPath, 'utf8'));
@@ -65,8 +109,8 @@ async function buildIcons(iconsExportPath) {
   
   const takenSlugs = new Set();
   const metadata = [];
-  const exports = [];
   const wrapperExports = [];
+  const directVariantExports = [];
   const namingConflicts = [];
   
   // Load existing metadata to track version history
@@ -98,24 +142,23 @@ async function buildIcons(iconsExportPath) {
         conflictWith: Array.from(takenSlugs).find(slug => slug === normalizedSlug)
       });
       console.error(`❌ NAMING CONFLICT: Icon "${originalName}" normalizes to "${normalizedSlug}" which conflicts with an existing icon`);
-      continue; // Skip this icon to avoid further conflicts
+      continue;
     }
     
     const uniqueSlug = ensureUnique(normalizedSlug, takenSlugs);
-    
     
     // Track variants for this icon
     const iconVariants = [];
     
     // Generate the wrapper component name (user-facing API)
-    const baseComponentName = uniqueSlug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
+    const baseComponentName = uniqueSlug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
     
     // Process each variant (6 combinations: 3 weights × 2 duotone states)
     for (const variantData of icon.variants) {
       // Validate variant data structure
       if (!validateVariantData(variantData)) {
         console.error(`  ❌ Invalid variant data for ${originalName}: ${JSON.stringify(variantData)}`);
-        continue; // Skip this variant
+        continue;
       }
       
       // Extract weight and duotone from variant object
@@ -128,7 +171,7 @@ async function buildIcons(iconsExportPath) {
       // Validate that this is a recognized weight type
       if (!isValidWeight(weight)) {
         console.error(`  ❌ Unknown weight type "${exportWeight}" for ${originalName}`);
-        continue; // Skip this variant
+        continue;
       }
       
       const componentName = getComponentName(uniqueSlug, weight, duotone);
@@ -142,43 +185,47 @@ async function buildIcons(iconsExportPath) {
       try {
         optimizedSvg = optimize(variantData.svg, svgoConfig).data;
       } catch (error) {
-        console.error(`  ❌ Failed to optimize SVG for ${componentName} (${variant}): ${error.message}`);
+        console.error(`  ❌ Failed to optimize SVG for ${componentName}: ${error.message}`);
         console.error(`  ⚠️  Skipping this variant due to malformed SVG`);
-        continue; // Skip this variant and continue with the next one
+        continue;
       }
       
-      // Generate React component with SVGR
-      const componentCode = await transform(
-        optimizedSvg,
-        {
-          template: svgrTemplate,
-          typescript: true,
-          plugins: ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
-          svgProps: {
-            width: '{size}',
-            height: '{size}',
-            fill: '{color}',
-            className: '{className}',
-            'aria-label': '{ariaLabel}',
-            'aria-hidden': '{ariaHidden}',
-            ref: '{ref}'
-          }
-        },
-        { componentName }
-      );
+      // Extract path data from optimized SVG
+      const paths = extractPathsFromSvg(optimizedSvg);
+      const pathJsx = generatePathJsx(paths);
+      
+      // Generate thin variant component using IconBase
+      const componentCode = `import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type ${componentName}Props = Omit<IconBaseProps, 'children'>;
+
+const ${componentName} = memo(
+  forwardRef<SVGSVGElement, ${componentName}Props>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      ${pathJsx}
+    </IconBase>
+  ))
+);
+
+${componentName}.displayName = '${componentName}';
+
+export { ${componentName} };
+export type { ${componentName}Props };
+`;
       
       // Write component file
       const componentPath = join(iconsDir, `${fileName}.tsx`);
       writeFileSync(componentPath, componentCode);
       
-      // Individual variant components are no longer exported - only wrapper components are used
-      
       // Track variant for wrapper generation
       iconVariants.push({ weight, duotone, componentName, fileName });
       
+      // Add to direct variant exports
+      directVariantExports.push(`export { ${componentName} } from './icons/${fileName}';`);
       
       // Use hash-based versioning to determine icon status
-      // Find existing metadata entry matching name, weight, and duotone
       const existingItem = existingMetadata.find(item => 
         item.name === parsedIconName && 
         item.weight === weight && 
@@ -186,17 +233,17 @@ async function buildIcons(iconsExportPath) {
         item.componentName === baseComponentName
       );
       
-      const currentSvgHash = variantData.hash; // Use SHA-256 hash from export
-      const currentVersion = hashVersioning.getVersionForIcons().version;
+      const currentSvgHash = variantData.hash;
+      const versionForIcons = hashVersioning.getVersionForIcons().version;
       
       let changeAnalysis;
       if (!existingItem) {
         changeAnalysis = {
           status: 'new',
-          versionAdded: currentVersion,
+          versionAdded: versionForIcons,
           dateAdded: new Date().toISOString(),
           lastModified: new Date().toISOString(),
-          versionLastModified: currentVersion
+          versionLastModified: versionForIcons
         };
       } else {
         const isModified = existingItem.svgHash !== currentSvgHash;
@@ -206,7 +253,7 @@ async function buildIcons(iconsExportPath) {
             versionAdded: existingItem.versionAdded,
             dateAdded: existingItem.dateAdded,
             lastModified: new Date().toISOString(),
-            versionLastModified: currentVersion
+            versionLastModified: versionForIcons
           };
         } else {
           changeAnalysis = {
@@ -224,29 +271,30 @@ async function buildIcons(iconsExportPath) {
       // Log the status
       switch (changeAnalysis.status) {
         case 'new':
-          console.log(`  🆕 New icon: ${baseComponentName} ${variantLabel} (v${versionAdded})`);
+          console.log(`  🆕 New icon: ${componentName} (v${versionAdded})`);
           break;
         case 'modified':
-          console.log(`  🔄 Modified icon: ${baseComponentName} ${variantLabel} (last modified: v${currentVersion})`);
+          console.log(`  🔄 Modified icon: ${componentName} (last modified: v${versionForIcons})`);
           break;
         case 'unchanged':
-          console.log(`  ✅ Unchanged icon: ${baseComponentName} ${variantLabel}`);
+          console.log(`  ✅ Unchanged icon: ${componentName}`);
           break;
       }
       
-      // Add to metadata with the wrapper component name (user-facing API)
+      // Add to metadata
       metadata.push({
         name: parsedIconName,
         weight,
         duotone,
         tags: parseTags(icon.tags),
         componentName: baseComponentName,
+        variantComponentName: componentName,
         fileName: `${fileName}.tsx`,
         versionAdded,
         dateAdded,
         lastModified,
         versionLastModified,
-        svgHash: variantData.hash // Use SHA-256 hash from export
+        svgHash: variantData.hash
       });
     }
     
@@ -258,52 +306,47 @@ async function buildIcons(iconsExportPath) {
     });
   }
   
-  // Generate wrapper components
+  // Generate wrapper components (for backwards compatibility with dynamic weight prop)
   console.log('🔗 Generating wrapper components...');
   for (const [baseName, iconData] of iconsByBaseName) {
-    const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
+    const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
     
     console.log(`  📦 Creating wrapper for ${baseComponentName}`);
     
-    // Build imports and component mapping for all 6 variants
+    // Build imports for all variants (no aliases needed since all variants have unique names)
     const imports = [];
     const componentMap = new Map();
     
     for (const variantInfo of iconData.variants) {
       const { weight, duotone, componentName, fileName } = variantInfo;
-      const importAlias = weight === 'regular' && !duotone 
-        ? `Regular${baseComponentName}`
-        : componentName;
-      imports.push(`import { ${componentName} as ${importAlias} } from './${fileName}';`);
-      componentMap.set(`${weight}-${duotone}`, importAlias);
+      imports.push(`import { ${componentName} } from './${fileName}';`);
+      componentMap.set(`${weight}-${duotone}`, componentName);
     }
     
-    // Build the selection logic - order matters: check most specific first
+    // Build the selection logic
     const selectionLogic = [];
     
-    // Check for bold + duotone
     if (componentMap.has('bold-true')) {
-      selectionLogic.push(`if (weight === 'bold' && duotone) return <${componentMap.get('bold-true')} ref={ref} {...props} />;`);
+      selectionLogic.push(`if (weight === 'bold' && duotone) return <${componentMap.get('bold-true')} ref={ref} {...rest} />;`);
     }
-    // Check for bold (no duotone)
     if (componentMap.has('bold-false')) {
-      selectionLogic.push(`if (weight === 'bold') return <${componentMap.get('bold-false')} ref={ref} {...props} />;`);
+      selectionLogic.push(`if (weight === 'bold') return <${componentMap.get('bold-false')} ref={ref} {...rest} />;`);
     }
-    // Check for fill + duotone
     if (componentMap.has('fill-true')) {
-      selectionLogic.push(`if (weight === 'fill' && duotone) return <${componentMap.get('fill-true')} ref={ref} {...props} />;`);
+      selectionLogic.push(`if (weight === 'fill' && duotone) return <${componentMap.get('fill-true')} ref={ref} {...rest} />;`);
     }
-    // Check for fill (no duotone)
     if (componentMap.has('fill-false')) {
-      selectionLogic.push(`if (weight === 'fill') return <${componentMap.get('fill-false')} ref={ref} {...props} />;`);
+      selectionLogic.push(`if (weight === 'fill') return <${componentMap.get('fill-false')} ref={ref} {...rest} />;`);
     }
-    // Check for regular + duotone
     if (componentMap.has('regular-true')) {
-      selectionLogic.push(`if (duotone) return <${componentMap.get('regular-true')} ref={ref} {...props} />;`);
+      selectionLogic.push(`if (duotone) return <${componentMap.get('regular-true')} ref={ref} {...rest} />;`);
     }
-    // Default to regular (no duotone)
-    const defaultComponent = componentMap.get('regular-false') || `Regular${baseComponentName}`;
-    selectionLogic.push(`return <${defaultComponent} ref={ref} {...props} />;`);
+    
+    const defaultComponent = componentMap.get('regular-false') || componentMap.values().next().value;
+    selectionLogic.push(`return <${defaultComponent} ref={ref} {...rest} />;`);
+    
+    // Get the actual regular variant name for documentation
+    const regularVariantName = iconData.variants.find(v => v.weight === 'regular' && !v.duotone)?.componentName || baseComponentName;
     
     // Generate wrapper component code
     const wrapperCode = `import { forwardRef, memo } from 'react';
@@ -315,10 +358,15 @@ export interface ${baseComponentName}Props extends IconProps {
   duotone?: boolean;
 }
 
+/**
+ * ${baseComponentName} with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ${regularVariantName} } from 'stera-icons/${regularVariantName}';
+ */
 const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
   weight = 'regular',
   duotone = false,
-  ...props 
+  ...rest 
 }, ref) => {
   ${selectionLogic.join('\n  ')}
 }));
@@ -328,22 +376,37 @@ ${baseComponentName}.displayName = '${baseComponentName}';
 export { ${baseComponentName} };
 `;
     
-    // Write wrapper component file
-    const wrapperPath = join(iconsDir, `${baseName}-wrapper.tsx`);
+    // Write wrapper component file (PascalCase filename matching component name)
+    const wrapperPath = join(iconsDir, `${baseComponentName}.tsx`);
     writeFileSync(wrapperPath, wrapperCode);
     
     // Add to wrapper exports
-    wrapperExports.push(`export { ${baseComponentName} } from './icons/${baseName}-wrapper';`);
+    wrapperExports.push(`export { ${baseComponentName} } from './icons/${baseComponentName}';`);
   }
   
-  // Generate main index file
+  // Generate main index file with both wrapper and direct variant exports
   const indexContent = `// Auto-generated file - do not edit manually
-import type { IconProps } from './types';
+// Stera Icons - Optimized with IconBase architecture
 
-// Wrapper components with variant props
+// Re-export IconBase for advanced usage
+export { IconBase } from './IconBase';
+export type { IconBaseProps } from './IconBase';
+
+// Export types
+export type { IconProps, IconWeight, PathData, PathElement, IconPathData } from './types';
+
+// =============================================================================
+// WRAPPER COMPONENTS (backwards compatible, includes all 6 variants per icon)
+// Use these when you need dynamic weight/duotone props
+// =============================================================================
 ${wrapperExports.join('\n')}
 
-export type { IconProps } from './types';
+// =============================================================================
+// DIRECT VARIANT EXPORTS (optimal bundle size, ~300 bytes each)
+// Use these for maximum tree-shaking - import only the exact variant you need
+// Example: import { SearchBold } from 'stera-icons';
+// =============================================================================
+${directVariantExports.join('\n')}
 `;
   
   writeFileSync(join(__dirname, '..', 'packages', 'react', 'src', 'index.ts'), indexContent);
@@ -354,7 +417,6 @@ export type { IconProps } from './types';
     JSON.stringify(metadata, null, 2)
   );
   
-  
   // Check for naming conflicts and exit with error if any found
   if (namingConflicts.length > 0) {
     console.error(`\n❌ BUILD FAILED: Found ${namingConflicts.length} naming conflict(s):`);
@@ -363,35 +425,34 @@ export type { IconProps } from './types';
       console.error(`     Conflicts with existing icon: "${conflict.conflictWith}"`);
     });
     console.error(`\n💡 To fix naming conflicts, ensure all icon names in icons-export.json normalize to unique slugs.`);
-    console.error(`   Consider renaming conflicting icons to have distinct names.`);
     process.exit(1);
   }
   
-  // Compile individual icon wrappers for subpath exports
+  // Compile individual icon components for subpath exports
   console.log('\n📦 Compiling individual icon components for subpath exports...');
   const distIconsDir = join(distDir, 'icons');
   if (!existsSync(distIconsDir)) {
     mkdirSync(distIconsDir, { recursive: true });
   }
   
-  // Compile each wrapper component individually
   const packageJsonPath = join(__dirname, '..', 'packages', 'react', 'package.json');
   const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
   
   const subpathExports = {};
+  const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
   
+  // Compile wrapper components
   for (const [baseName] of iconsByBaseName) {
-    const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('') + 'Icon';
-    const wrapperPath = join(iconsDir, `${baseName}-wrapper.tsx`);
+    const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
+    const wrapperPath = join(iconsDir, `${componentName}.tsx`);
     
     if (!existsSync(wrapperPath)) {
       console.warn(`  ⚠️  Wrapper not found: ${wrapperPath}`);
       continue;
     }
     
-    // Compile ESM version
     try {
-      const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
+      // Compile ESM version
       await build({
         entryPoints: [wrapperPath],
         bundle: true,
@@ -421,9 +482,7 @@ export type { IconProps } from './types';
         jsx: 'automatic',
         resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
         absWorkingDir: srcDir,
-        banner: {
-          js: '"use strict";',
-        },
+        banner: { js: '"use strict";' },
       });
       
       // Generate TypeScript definitions
@@ -439,24 +498,84 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
 `;
       writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
       
-      // Add to exports
       subpathExports[`./${componentName}`] = {
         types: `./dist/icons/${componentName}.d.ts`,
         import: `./dist/icons/${componentName}.mjs`,
         require: `./dist/icons/${componentName}.cjs`
       };
     } catch (error) {
-      console.error(`  ❌ Failed to compile ${componentName}: ${error.message}`);
+      console.error(`  ❌ Failed to compile wrapper ${componentName}: ${error.message}`);
+    }
+  }
+  
+  // Compile direct variant components
+  console.log('\n📦 Compiling direct variant components for subpath exports...');
+  for (const [baseName, iconData] of iconsByBaseName) {
+    for (const variantInfo of iconData.variants) {
+      const { componentName, fileName } = variantInfo;
+      const variantPath = join(iconsDir, `${fileName}.tsx`);
+      
+      if (!existsSync(variantPath)) {
+        continue;
+      }
+      
+      try {
+        // Compile ESM version
+        await build({
+          entryPoints: [variantPath],
+          bundle: true,
+          format: 'esm',
+          outfile: join(distIconsDir, `${componentName}.mjs`),
+          external: ['react'],
+          minify: true,
+          treeShaking: true,
+          platform: 'neutral',
+          target: 'es2020',
+          jsx: 'automatic',
+          resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+          absWorkingDir: srcDir,
+        });
+        
+        // Compile CJS version
+        await build({
+          entryPoints: [variantPath],
+          bundle: true,
+          format: 'cjs',
+          outfile: join(distIconsDir, `${componentName}.cjs`),
+          external: ['react'],
+          minify: true,
+          treeShaking: true,
+          platform: 'neutral',
+          target: 'es2020',
+          jsx: 'automatic',
+          resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+          absWorkingDir: srcDir,
+          banner: { js: '"use strict";' },
+        });
+        
+        // Generate TypeScript definitions
+        const variantTypesContent = `import type { IconBaseProps } from '../IconBase';
+import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
+
+export type ${componentName}Props = Omit<IconBaseProps, 'children'>;
+
+export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+`;
+        writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
+        
+        subpathExports[`./${componentName}`] = {
+          types: `./dist/icons/${componentName}.d.ts`,
+          import: `./dist/icons/${componentName}.mjs`,
+          require: `./dist/icons/${componentName}.cjs`
+        };
+      } catch (error) {
+        console.error(`  ❌ Failed to compile variant ${componentName}: ${error.message}`);
+      }
     }
   }
   
   // Update package.json with subpath exports
-  if (!packageJson.exports) {
-    packageJson.exports = {};
-  }
-  
-  // Keep existing main exports
-  const existingExports = packageJson.exports['.'] || {
+  const existingExports = packageJson.exports?.['.'] || {
     types: './dist/index.d.ts',
     import: './dist/index.mjs',
     require: './dist/index.cjs'
@@ -485,17 +604,19 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;
   
   console.log(`\n📊 Build Summary:`);
-  console.log(`  ✅ Generated ${metadata.length} individual icon components (internal use only)`);
-  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components (public API)`);
-  console.log(`  📦 Compiled ${Object.keys(subpathExports).length} individual icon bundles for subpath exports`);
+  console.log(`  ✅ Generated ${metadata.length} direct variant components (IconBase-based)`);
+  console.log(`  🔗 Generated ${wrapperExports.length} wrapper components (backwards compatible)`);
+  console.log(`  📦 Compiled ${Object.keys(subpathExports).length} individual bundles for subpath exports`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`  🎯 Public API: Wrapper components with variant props are exported`);
-  console.log(`  🎯 Per-icon imports: Available via 'stera-icons/IconName' subpath exports`);
+  console.log(`\n🎯 Import patterns:`);
+  console.log(`  • Direct variant (smallest): import { SearchBold } from 'stera-icons/SearchBold';`);
+  console.log(`  • Wrapper (dynamic props): import { Search } from 'stera-icons/Search';`);
+  console.log(`  • From index: import { Search, SearchBold } from 'stera-icons';`);
 }
 
 // Main execution

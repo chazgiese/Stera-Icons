@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const VideoIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M13.324 5.255q.505.006.907.038c.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47q.024.31.031.68l3.793-3.034a.75.75 0 0 1 1.211.48L22.75 7v10a.75.75 0 0 1-1.219.586l-3.793-3.034q-.007.37-.031.68c-.045.546-.14 1.026-.366 1.47a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H6.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032v-2.4c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366.538-.044 1.204-.043 2.032-.043h5.4zM6.8 6.75c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.038.462-.038 1.056-.038 1.909v2.4c0 .853 0 1.447.038 1.91.037.453.106.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h5.4c.853 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.983c.1-.198.17-.459.207-.913.038-.462.038-1.056.038-1.909v-2.4c0-.853 0-1.447-.038-1.91-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207a13 13 0 0 0-.808-.033l-1.1-.005zm10.95 4.61v1.279l3.5 2.8V8.56z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-VideoIcon.displayName = "VideoIcon";
-export { VideoIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { VideoRegular } from './VideoRegular';
+import { VideoRegularDuotone } from './VideoRegularDuotone';
+import { VideoBold } from './VideoBold';
+import { VideoBoldDuotone } from './VideoBoldDuotone';
+import { VideoFill } from './VideoFill';
+import { VideoFillDuotone } from './VideoFillDuotone';
+
+export interface VideoProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Video with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { VideoRegular } from 'stera-icons/VideoRegular';
+ */
+const Video = memo(forwardRef<SVGSVGElement, VideoProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <VideoBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <VideoBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <VideoFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <VideoFill ref={ref} {...rest} />;
+  if (duotone) return <VideoRegularDuotone ref={ref} {...rest} />;
+  return <VideoRegular ref={ref} {...rest} />;
+}));
+
+Video.displayName = 'Video';
+
+export { Video };

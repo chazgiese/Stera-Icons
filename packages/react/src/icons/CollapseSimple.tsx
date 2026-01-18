@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CollapseSimpleRegular } from './CollapseSimpleRegular';
+import { CollapseSimpleRegularDuotone } from './CollapseSimpleRegularDuotone';
+import { CollapseSimpleBold } from './CollapseSimpleBold';
+import { CollapseSimpleBoldDuotone } from './CollapseSimpleBoldDuotone';
+import { CollapseSimpleFill } from './CollapseSimpleFill';
+import { CollapseSimpleFillDuotone } from './CollapseSimpleFillDuotone';
+
+export interface CollapseSimpleProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * CollapseSimple with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CollapseSimpleRegular } from 'stera-icons/CollapseSimpleRegular';
+ */
+const CollapseSimple = memo(forwardRef<SVGSVGElement, CollapseSimpleProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CollapseSimpleBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CollapseSimpleBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CollapseSimpleFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CollapseSimpleFill ref={ref} {...rest} />;
+  if (duotone) return <CollapseSimpleRegularDuotone ref={ref} {...rest} />;
+  return <CollapseSimpleRegular ref={ref} {...rest} />;
+}));
+
+CollapseSimple.displayName = 'CollapseSimple';
+
+export { CollapseSimple };

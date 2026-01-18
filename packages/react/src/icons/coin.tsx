@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CoinIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 6.25c2.813 0 5.389.341 7.286.91.944.283 1.763.636 2.362 1.06.58.412 1.102 1.002 1.102 1.78v4c0 .778-.522 1.368-1.102 1.78-.599.424-1.418.777-2.362 1.06-1.897.569-4.473.91-7.286.91s-5.389-.341-7.286-.91c-.944-.283-1.763-.636-2.362-1.06-.58-.412-1.102-1.002-1.102-1.78v-4c0-.778.522-1.368 1.102-1.78.599-.424 1.418-.777 2.362-1.06C6.61 6.591 9.187 6.25 12 6.25m-1.75 9.95c.566.03 1.151.05 1.75.05s1.184-.02 1.75-.05v-2.496a34 34 0 0 1-3.5 0zm7.5-2.98c-.77.156-1.61.281-2.5.37v2.49a23 23 0 0 0 2.5-.393zm-11.5 2.467c.752.165 1.593.297 2.5.393v-2.49a25 25 0 0 1-2.5-.37zM2.75 14c0 .05.038.25.47.556.347.246.86.493 1.53.72V12.85l-.036-.01c-.75-.225-1.42-.495-1.964-.809zm18.5-1.969c-.544.314-1.215.584-1.964.809l-.036.01v2.426c.67-.227 1.183-.474 1.53-.72.432-.307.47-.505.47-.556zM12 7.75c-2.71 0-5.133.33-6.855.847-.866.26-1.512.555-1.925.847-.432.307-.47.505-.47.556 0 .05.038.25.47.556.413.293 1.059.588 1.925.847 1.722.517 4.146.847 6.855.847s5.133-.33 6.855-.847c.866-.26 1.512-.555 1.925-.847.432-.307.47-.505.47-.556 0-.05-.038-.25-.47-.556-.413-.292-1.059-.588-1.925-.847C17.133 8.08 14.71 7.75 12 7.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CoinIcon.displayName = "CoinIcon";
-export { CoinIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CoinRegular } from './CoinRegular';
+import { CoinRegularDuotone } from './CoinRegularDuotone';
+import { CoinBold } from './CoinBold';
+import { CoinBoldDuotone } from './CoinBoldDuotone';
+import { CoinFill } from './CoinFill';
+import { CoinFillDuotone } from './CoinFillDuotone';
+
+export interface CoinProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Coin with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CoinRegular } from 'stera-icons/CoinRegular';
+ */
+const Coin = memo(forwardRef<SVGSVGElement, CoinProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CoinBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CoinBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CoinFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CoinFill ref={ref} {...rest} />;
+  if (duotone) return <CoinRegularDuotone ref={ref} {...rest} />;
+  return <CoinRegular ref={ref} {...rest} />;
+}));
+
+Coin.displayName = 'Coin';
+
+export { Coin };

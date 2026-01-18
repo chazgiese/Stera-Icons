@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const GridIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M16.2 2.25c.828 0 1.494-.001 2.031.043.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47.044.538.043 1.204.043 2.032v8.4c0 .828.001 1.494-.043 2.031-.045.547-.14 1.027-.366 1.471a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H7.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032V7.8c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366.538-.044 1.204-.043 2.032-.043zM3.75 15.75v.45c0 .852 0 1.447.038 1.91.037.453.106.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h.45v-4.5zm6 0v4.5h4.5v-4.5zm6 0v4.5h.45c.852 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.983c.1-.198.17-.459.207-.913.038-.462.038-1.057.038-1.909v-.45zm-12-1.5h4.5v-4.5h-4.5zm6 0h4.5v-4.5h-4.5zm6 0h4.5v-4.5h-4.5zM7.8 3.75c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.038.462-.038 1.056-.038 1.909v.45h4.5v-4.5zm1.95 4.5h4.5v-4.5h-4.5zm6 0h4.5V7.8c0-.853 0-1.447-.038-1.91-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207-.462-.038-1.057-.038-1.909-.038h-.45z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-GridIcon.displayName = "GridIcon";
-export { GridIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { GridRegular } from './GridRegular';
+import { GridRegularDuotone } from './GridRegularDuotone';
+import { GridBold } from './GridBold';
+import { GridBoldDuotone } from './GridBoldDuotone';
+import { GridFill } from './GridFill';
+import { GridFillDuotone } from './GridFillDuotone';
+
+export interface GridProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Grid with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { GridRegular } from 'stera-icons/GridRegular';
+ */
+const Grid = memo(forwardRef<SVGSVGElement, GridProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <GridBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <GridBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <GridFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <GridFill ref={ref} {...rest} />;
+  if (duotone) return <GridRegularDuotone ref={ref} {...rest} />;
+  return <GridRegular ref={ref} {...rest} />;
+}));
+
+Grid.displayName = 'Grid';
+
+export { Grid };

@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BatteryIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M15 5.25c.921 0 1.65 0 2.24.04.595.04 1.103.125 1.577.321a4.75 4.75 0 0 1 2.572 2.572c.195.47.279.976.32 1.567h.791c.69 0 1.25.56 1.25 1.25v2c0 .69-.56 1.25-1.25 1.25h-.791c-.041.591-.125 1.096-.32 1.567a4.75 4.75 0 0 1-2.572 2.572c-.474.196-.982.28-1.578.321-.589.04-1.318.04-2.239.04H7c-.921 0-1.65 0-2.24-.04-.595-.04-1.103-.125-1.577-.321A4.75 4.75 0 0 1 .61 15.817c-.196-.474-.28-.982-.321-1.578C.25 13.65.25 12.921.25 12s0-1.65.04-2.24c.04-.595.125-1.103.321-1.577A4.75 4.75 0 0 1 3.183 5.61c.474-.196.982-.28 1.578-.321.589-.04 1.318-.04 2.239-.04zm-8 1.5c-.942 0-1.611 0-2.138.036-.52.036-.845.103-1.106.211a3.25 3.25 0 0 0-1.759 1.759c-.108.26-.175.587-.21 1.106-.037.527-.037 1.196-.037 2.138s0 1.611.036 2.138c.036.52.103.845.211 1.106a3.25 3.25 0 0 0 1.759 1.759c.26.108.587.175 1.106.21.527.037 1.196.037 2.138.037h8c.942 0 1.611 0 2.138-.036.52-.036.845-.103 1.106-.211a3.25 3.25 0 0 0 1.759-1.759c.108-.26.175-.587.21-1.106.037-.527.037-1.196.037-2.138s0-1.611-.036-2.138c-.036-.52-.103-.845-.211-1.106a3.25 3.25 0 0 0-1.759-1.759c-.26-.108-.587-.175-1.106-.21C16.61 6.75 15.942 6.75 15 6.75z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BatteryIcon.displayName = "BatteryIcon";
-export { BatteryIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BatteryRegular } from './BatteryRegular';
+import { BatteryRegularDuotone } from './BatteryRegularDuotone';
+import { BatteryBold } from './BatteryBold';
+import { BatteryBoldDuotone } from './BatteryBoldDuotone';
+import { BatteryFill } from './BatteryFill';
+import { BatteryFillDuotone } from './BatteryFillDuotone';
+
+export interface BatteryProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Battery with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BatteryRegular } from 'stera-icons/BatteryRegular';
+ */
+const Battery = memo(forwardRef<SVGSVGElement, BatteryProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BatteryBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BatteryBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BatteryFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BatteryFill ref={ref} {...rest} />;
+  if (duotone) return <BatteryRegularDuotone ref={ref} {...rest} />;
+  return <BatteryRegular ref={ref} {...rest} />;
+}));
+
+Battery.displayName = 'Battery';
+
+export { Battery };

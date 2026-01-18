@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const MenuIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M21 17.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM21 11.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM21 5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z"
-        />
-      </svg>
-    ))
-);
-MenuIcon.displayName = "MenuIcon";
-export { MenuIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { MenuRegular } from './MenuRegular';
+import { MenuRegularDuotone } from './MenuRegularDuotone';
+import { MenuBold } from './MenuBold';
+import { MenuBoldDuotone } from './MenuBoldDuotone';
+import { MenuFill } from './MenuFill';
+import { MenuFillDuotone } from './MenuFillDuotone';
+
+export interface MenuProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Menu with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { MenuRegular } from 'stera-icons/MenuRegular';
+ */
+const Menu = memo(forwardRef<SVGSVGElement, MenuProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <MenuBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <MenuBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <MenuFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <MenuFill ref={ref} {...rest} />;
+  if (duotone) return <MenuRegularDuotone ref={ref} {...rest} />;
+  return <MenuRegular ref={ref} {...rest} />;
+}));
+
+Menu.displayName = 'Menu';
+
+export { Menu };

@@ -1,45 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const SettingsIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 8.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5"
-          clipRule="evenodd"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M14.62 2.63a1.75 1.75 0 0 1 2.132-.3l1.246.72a1.75 1.75 0 0 1 .808 1.997l-.113.39a3.25 3.25 0 0 0 2.336 4.047l.396.099a1.75 1.75 0 0 1 1.325 1.697v1.439a1.75 1.75 0 0 1-1.325 1.698l-.395.098a3.25 3.25 0 0 0-2.337 4.047l.113.391a1.75 1.75 0 0 1-.808 1.997l-1.245.719a1.75 1.75 0 0 1-2.134-.299l-.282-.292a3.25 3.25 0 0 0-4.674 0l-.282.292a1.75 1.75 0 0 1-2.134.299l-1.245-.719a1.75 1.75 0 0 1-.807-1.997l.112-.39a3.25 3.25 0 0 0-2.337-4.047l-.394-.1A1.75 1.75 0 0 1 1.25 12.72V11.28a1.75 1.75 0 0 1 1.325-1.697l.396-.099a3.25 3.25 0 0 0 2.336-4.048l-.112-.39a1.75 1.75 0 0 1 .807-1.996l1.246-.72a1.75 1.75 0 0 1 2.133.3l.282.292a3.25 3.25 0 0 0 4.674 0zm1.382 1a.25.25 0 0 0-.305.043l-.282.292a4.75 4.75 0 0 1-6.83 0l-.282-.292a.25.25 0 0 0-.305-.043l-1.246.719a.25.25 0 0 0-.115.285l.112.39a4.75 4.75 0 0 1-3.414 5.915l-.396.099a.25.25 0 0 0-.189.242v1.439a.25.25 0 0 0 .19.243l.394.098a4.75 4.75 0 0 1 3.415 5.916l-.112.39a.25.25 0 0 0 .115.285l1.246.719c.1.057.225.04.305-.043l.282-.292a4.75 4.75 0 0 1 6.83 0l.282.292c.08.082.206.1.305.043l1.246-.719a.25.25 0 0 0 .115-.285l-.112-.392a4.75 4.75 0 0 1 3.415-5.914l.395-.098a.25.25 0 0 0 .189-.243V11.28a.25.25 0 0 0-.19-.242l-.395-.099a4.75 4.75 0 0 1-3.414-5.914l.112-.391a.25.25 0 0 0-.115-.285z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-SettingsIcon.displayName = "SettingsIcon";
-export { SettingsIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SettingsRegular } from './SettingsRegular';
+import { SettingsRegularDuotone } from './SettingsRegularDuotone';
+import { SettingsBold } from './SettingsBold';
+import { SettingsBoldDuotone } from './SettingsBoldDuotone';
+import { SettingsFill } from './SettingsFill';
+import { SettingsFillDuotone } from './SettingsFillDuotone';
+
+export interface SettingsProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Settings with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SettingsRegular } from 'stera-icons/SettingsRegular';
+ */
+const Settings = memo(forwardRef<SVGSVGElement, SettingsProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SettingsBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SettingsBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SettingsFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SettingsFill ref={ref} {...rest} />;
+  if (duotone) return <SettingsRegularDuotone ref={ref} {...rest} />;
+  return <SettingsRegular ref={ref} {...rest} />;
+}));
+
+Settings.displayName = 'Settings';
+
+export { Settings };

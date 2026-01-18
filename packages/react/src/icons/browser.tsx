@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BrowserIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M16 6.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M17.2 3.25c.828 0 1.494-.001 2.031.043.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47.044.538.043 1.204.043 2.032v6.4c0 .828.001 1.494-.043 2.031-.045.547-.14 1.027-.366 1.471a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H6.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032V8.8c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366.538-.044 1.204-.043 2.032-.043zm-14.45 7.5v4.45c0 .852 0 1.447.038 1.91.037.453.106.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h10.4c.852 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.983c.1-.198.17-.459.207-.913.038-.462.038-1.057.038-1.909v-4.45zm4.05-6c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.038.462-.038 1.056-.038 1.909v.45h18.5V8.8c0-.853 0-1.447-.038-1.91-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207-.462-.038-1.057-.038-1.909-.038z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BrowserIcon.displayName = "BrowserIcon";
-export { BrowserIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BrowserRegular } from './BrowserRegular';
+import { BrowserRegularDuotone } from './BrowserRegularDuotone';
+import { BrowserBold } from './BrowserBold';
+import { BrowserBoldDuotone } from './BrowserBoldDuotone';
+import { BrowserFill } from './BrowserFill';
+import { BrowserFillDuotone } from './BrowserFillDuotone';
+
+export interface BrowserProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Browser with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BrowserRegular } from 'stera-icons/BrowserRegular';
+ */
+const Browser = memo(forwardRef<SVGSVGElement, BrowserProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BrowserBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BrowserBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BrowserFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BrowserFill ref={ref} {...rest} />;
+  if (duotone) return <BrowserRegularDuotone ref={ref} {...rest} />;
+  return <BrowserRegular ref={ref} {...rest} />;
+}));
+
+Browser.displayName = 'Browser';
+
+export { Browser };

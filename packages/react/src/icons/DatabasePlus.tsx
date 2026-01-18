@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { DatabasePlusRegular } from './DatabasePlusRegular';
+import { DatabasePlusRegularDuotone } from './DatabasePlusRegularDuotone';
+import { DatabasePlusBold } from './DatabasePlusBold';
+import { DatabasePlusBoldDuotone } from './DatabasePlusBoldDuotone';
+import { DatabasePlusFill } from './DatabasePlusFill';
+import { DatabasePlusFillDuotone } from './DatabasePlusFillDuotone';
+
+export interface DatabasePlusProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * DatabasePlus with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { DatabasePlusRegular } from 'stera-icons/DatabasePlusRegular';
+ */
+const DatabasePlus = memo(forwardRef<SVGSVGElement, DatabasePlusProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <DatabasePlusBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <DatabasePlusBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <DatabasePlusFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <DatabasePlusFill ref={ref} {...rest} />;
+  if (duotone) return <DatabasePlusRegularDuotone ref={ref} {...rest} />;
+  return <DatabasePlusRegular ref={ref} {...rest} />;
+}));
+
+DatabasePlus.displayName = 'DatabasePlus';
+
+export { DatabasePlus };

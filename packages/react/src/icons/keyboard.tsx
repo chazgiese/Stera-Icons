@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const KeyboardIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M6.5 13.25a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5zM14.25 13.25a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5zM17.999 13.25a.75.75 0 0 1 0 1.5H17.5a.75.75 0 0 1 0-1.5zM6.5 9.25a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5zM10.25 9.25a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5zM14.25 9.25a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5zM18.001 9.25a.75.75 0 0 1 0 1.5H17.5a.75.75 0 0 1 0-1.5z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M20 5.25A2.75 2.75 0 0 1 22.75 8v8A2.75 2.75 0 0 1 20 18.75H4A2.75 2.75 0 0 1 1.25 16V8A2.75 2.75 0 0 1 4 5.25zM4 6.75c-.69 0-1.25.56-1.25 1.25v8c0 .69.56 1.25 1.25 1.25h16c.69 0 1.25-.56 1.25-1.25V8c0-.69-.56-1.25-1.25-1.25z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-KeyboardIcon.displayName = "KeyboardIcon";
-export { KeyboardIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { KeyboardRegular } from './KeyboardRegular';
+import { KeyboardRegularDuotone } from './KeyboardRegularDuotone';
+import { KeyboardBold } from './KeyboardBold';
+import { KeyboardBoldDuotone } from './KeyboardBoldDuotone';
+import { KeyboardFill } from './KeyboardFill';
+import { KeyboardFillDuotone } from './KeyboardFillDuotone';
+
+export interface KeyboardProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Keyboard with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { KeyboardRegular } from 'stera-icons/KeyboardRegular';
+ */
+const Keyboard = memo(forwardRef<SVGSVGElement, KeyboardProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <KeyboardBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <KeyboardBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <KeyboardFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <KeyboardFill ref={ref} {...rest} />;
+  if (duotone) return <KeyboardRegularDuotone ref={ref} {...rest} />;
+  return <KeyboardRegular ref={ref} {...rest} />;
+}));
+
+Keyboard.displayName = 'Keyboard';
+
+export { Keyboard };

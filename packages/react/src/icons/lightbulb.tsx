@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const LightbulbIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25a6.75 6.75 0 0 1 6.018 9.812c-.251.492-.529.983-.79 1.455-.266.478-.519.941-.74 1.407-.445.934-.738 1.824-.738 2.734V19c0 1.308-.914 2.4-2.138 2.679a1.75 1.75 0 0 1-3.225 0A2.75 2.75 0 0 1 8.25 19v-2.342c0-.91-.293-1.8-.737-2.734-.222-.466-.475-.93-.74-1.407-.263-.472-.54-.963-.79-1.455A6.75 6.75 0 0 1 12 1.25M9.75 19c0 .69.56 1.25 1.25 1.25h2c.69 0 1.25-.56 1.25-1.25v-2.25h-4.5zM12 2.75a5.25 5.25 0 0 0-4.68 7.63c.235.462.494.922.764 1.408.266.48.54.98.783 1.491.295.62.555 1.276.715 1.971h4.836c.16-.695.42-1.352.715-1.97.244-.513.517-1.012.783-1.492.27-.486.53-.946.765-1.408A5.25 5.25 0 0 0 12 2.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-LightbulbIcon.displayName = "LightbulbIcon";
-export { LightbulbIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { LightbulbRegular } from './LightbulbRegular';
+import { LightbulbRegularDuotone } from './LightbulbRegularDuotone';
+import { LightbulbBold } from './LightbulbBold';
+import { LightbulbBoldDuotone } from './LightbulbBoldDuotone';
+import { LightbulbFill } from './LightbulbFill';
+import { LightbulbFillDuotone } from './LightbulbFillDuotone';
+
+export interface LightbulbProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Lightbulb with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { LightbulbRegular } from 'stera-icons/LightbulbRegular';
+ */
+const Lightbulb = memo(forwardRef<SVGSVGElement, LightbulbProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <LightbulbBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <LightbulbBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <LightbulbFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <LightbulbFill ref={ref} {...rest} />;
+  if (duotone) return <LightbulbRegularDuotone ref={ref} {...rest} />;
+  return <LightbulbRegular ref={ref} {...rest} />;
+}));
+
+Lightbulb.displayName = 'Lightbulb';
+
+export { Lightbulb };

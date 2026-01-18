@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BriefcaseIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M14.266 2.25c.296 0 .56 0 .78.017.229.017.465.056.701.164a2 2 0 0 1 .852.739c.14.218.212.446.262.67.048.216.084.478.126.771l.163 1.139h.05c.828 0 1.494-.001 2.031.043.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47.044.538.043 1.204.043 2.032v3.9c0 .828.001 1.494-.043 2.031-.045.547-.14 1.027-.366 1.471a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H6.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032v-3.9c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366.538-.044 1.204-.043 2.032-.043h.05l.163-1.139c.042-.293.078-.555.126-.77A2 2 0 0 1 7.4 3.17a2 2 0 0 1 .852-.74c.236-.107.472-.146.701-.163.22-.017.484-.017.78-.017zm6.947 9.781c-.635.19-1.523.443-2.538.696-1.33.333-2.906.67-4.425.863v.91l-.004.077a.75.75 0 0 1-.746.673h-3a.75.75 0 0 1-.75-.75v-.91c-1.519-.192-3.095-.53-4.425-.863a58 58 0 0 1-2.538-.696l-.037-.011v3.18c0 .853 0 1.447.038 1.91.037.453.107.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h10.4c.852 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.983c.1-.198.17-.459.207-.913.038-.462.038-1.056.038-1.909v-3.18zM6.8 7.25c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.024.29-.032.633-.035 1.06q.2.062.465.143c.618.185 1.483.432 2.47.679 1.992.497 4.418.977 6.312.977s4.32-.48 6.311-.977a56 56 0 0 0 2.471-.68q.264-.08.464-.143a15 15 0 0 0-.034-1.06c-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207-.462-.038-1.057-.038-1.909-.038zm2.934-3.5c-.318 0-.515 0-.665.012a.6.6 0 0 0-.193.033.5.5 0 0 0-.213.184.6.6 0 0 0-.06.187 10 10 0 0 0-.106.657l-.133.927h7.272l-.133-.927a10 10 0 0 0-.107-.657.6.6 0 0 0-.06-.187.5.5 0 0 0-.212-.184.6.6 0 0 0-.193-.033 10 10 0 0 0-.665-.012z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BriefcaseIcon.displayName = "BriefcaseIcon";
-export { BriefcaseIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BriefcaseRegular } from './BriefcaseRegular';
+import { BriefcaseRegularDuotone } from './BriefcaseRegularDuotone';
+import { BriefcaseBold } from './BriefcaseBold';
+import { BriefcaseBoldDuotone } from './BriefcaseBoldDuotone';
+import { BriefcaseFill } from './BriefcaseFill';
+import { BriefcaseFillDuotone } from './BriefcaseFillDuotone';
+
+export interface BriefcaseProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Briefcase with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BriefcaseRegular } from 'stera-icons/BriefcaseRegular';
+ */
+const Briefcase = memo(forwardRef<SVGSVGElement, BriefcaseProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BriefcaseBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BriefcaseBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BriefcaseFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BriefcaseFill ref={ref} {...rest} />;
+  if (duotone) return <BriefcaseRegularDuotone ref={ref} {...rest} />;
+  return <BriefcaseRegular ref={ref} {...rest} />;
+}));
+
+Briefcase.displayName = 'Briefcase';
+
+export { Briefcase };

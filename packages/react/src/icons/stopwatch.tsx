@@ -1,47 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const StopwatchIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M15.22 9.22a.75.75 0 1 1 1.06 1.06l-2.833 2.832q.051.187.053.388a1.5 1.5 0 1 1-1.113-1.448z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 4.25a9.25 9.25 0 1 1 0 18.5 9.25 9.25 0 0 1 0-18.5m0 1.5a7.75 7.75 0 1 0 0 15.5 7.75 7.75 0 0 0 0-15.5"
-          clipRule="evenodd"
-        />
-        <path
-          fill="currentColor"
-          d="M14 1.25a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5z"
-        />
-      </svg>
-    ))
-);
-StopwatchIcon.displayName = "StopwatchIcon";
-export { StopwatchIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { StopwatchRegular } from './StopwatchRegular';
+import { StopwatchRegularDuotone } from './StopwatchRegularDuotone';
+import { StopwatchBold } from './StopwatchBold';
+import { StopwatchBoldDuotone } from './StopwatchBoldDuotone';
+import { StopwatchFill } from './StopwatchFill';
+import { StopwatchFillDuotone } from './StopwatchFillDuotone';
+
+export interface StopwatchProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Stopwatch with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { StopwatchRegular } from 'stera-icons/StopwatchRegular';
+ */
+const Stopwatch = memo(forwardRef<SVGSVGElement, StopwatchProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <StopwatchBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <StopwatchBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <StopwatchFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <StopwatchFill ref={ref} {...rest} />;
+  if (duotone) return <StopwatchRegularDuotone ref={ref} {...rest} />;
+  return <StopwatchRegular ref={ref} {...rest} />;
+}));
+
+Stopwatch.displayName = 'Stopwatch';
+
+export { Stopwatch };

@@ -6,6 +6,15 @@ export default {
         overrides: {
           // Keep viewBox for responsive scaling
           removeViewBox: false,
+          // Optimize path data with reduced precision
+          convertPathData: {
+            floatPrecision: 2,
+            transformPrecision: 2,
+          },
+          // Clean up numeric values
+          cleanupNumericValues: {
+            floatPrecision: 2,
+          },
         },
       },
     },

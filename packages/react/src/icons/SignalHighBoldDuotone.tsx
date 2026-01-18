@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type SignalHighBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const SignalHighBoldDuotone = memo(
+  forwardRef<SVGSVGElement, SignalHighBoldDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M3.5 17c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-1A1.5 1.5 0 0 1 1 19.5v-1c0-.83.67-1.5 1.5-1.5zM9.5 12.33c.83 0 1.5.67 1.5 1.5v5.67c0 .83-.67 1.5-1.5 1.5h-1A1.5 1.5 0 0 1 7 19.5v-5.67c0-.83.67-1.5 1.5-1.5zM15.5 7.66c.83 0 1.5.68 1.5 1.5V19.5c0 .83-.67 1.5-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5V9.16c0-.82.67-1.5 1.5-1.5zM21.5 3c.83 0 1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-15c0-.83.67-1.5 1.5-1.5z" />
+    </IconBase>
+  ))
+);
+
+SignalHighBoldDuotone.displayName = 'SignalHighBoldDuotone';
+
+export { SignalHighBoldDuotone };
+export type { SignalHighBoldDuotoneProps };

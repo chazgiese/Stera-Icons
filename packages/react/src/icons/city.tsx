@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CityIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M6 14.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75M6 10.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75M6 6.25a.75.75 0 0 1 .75.75v1a.75.75 0 1 1-1.5 0V7A.75.75 0 0 1 6 6.25M12 14.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75M18 14.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75M18 10.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M7 3.25c.338 0 .636 0 .882.02.255.02.52.067.776.198a2 2 0 0 1 .874.874c.131.257.178.521.198.776.02.246.02.544.02.882v5.323q.186-.04.368-.053c.246-.02.544-.02.882-.02h2c.338 0 .636 0 .882.02q.182.013.368.053V10c0-.338 0-.636.02-.882.02-.255.067-.52.198-.776a2 2 0 0 1 .874-.874c.257-.131.521-.178.776-.198.246-.02.544-.02.882-.02h2c.338 0 .636 0 .882.02.255.02.52.067.776.198a2 2 0 0 1 .874.874c.131.257.178.521.198.776.02.246.02.544.02.882v9.25H22a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1 0-1.5h.25V6c0-.338 0-.636.02-.882.02-.255.067-.52.198-.776a2 2 0 0 1 .874-.874c.257-.131.521-.178.776-.198.246-.02.544-.02.882-.02zm-2 1.5c-.362 0-.589 0-.76.015a.6.6 0 0 0-.217.04.5.5 0 0 0-.218.218.6.6 0 0 0-.04.217c-.014.171-.015.398-.015.76v13.25h4.5V6c0-.362 0-.589-.015-.76a.6.6 0 0 0-.04-.217.5.5 0 0 0-.218-.218.6.6 0 0 0-.217-.04C7.589 4.75 7.362 4.75 7 4.75zm6 8c-.362 0-.589 0-.76.015a.6.6 0 0 0-.217.04.5.5 0 0 0-.218.218.6.6 0 0 0-.04.217c-.014.171-.015.398-.015.76v5.25h4.5V14c0-.362 0-.589-.015-.76a.6.6 0 0 0-.04-.217.5.5 0 0 0-.218-.218.6.6 0 0 0-.217-.04c-.171-.014-.398-.015-.76-.015zm6-4c-.362 0-.589 0-.76.015a.6.6 0 0 0-.217.04.5.5 0 0 0-.218.218.6.6 0 0 0-.04.217c-.014.171-.015.398-.015.76v9.25h4.5V10c0-.362 0-.589-.015-.76a.6.6 0 0 0-.04-.217.5.5 0 0 0-.218-.218.6.6 0 0 0-.217-.04c-.171-.014-.398-.015-.76-.015z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CityIcon.displayName = "CityIcon";
-export { CityIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CityRegular } from './CityRegular';
+import { CityRegularDuotone } from './CityRegularDuotone';
+import { CityBold } from './CityBold';
+import { CityBoldDuotone } from './CityBoldDuotone';
+import { CityFill } from './CityFill';
+import { CityFillDuotone } from './CityFillDuotone';
+
+export interface CityProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * City with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CityRegular } from 'stera-icons/CityRegular';
+ */
+const City = memo(forwardRef<SVGSVGElement, CityProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CityBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CityBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CityFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CityFill ref={ref} {...rest} />;
+  if (duotone) return <CityRegularDuotone ref={ref} {...rest} />;
+  return <CityRegular ref={ref} {...rest} />;
+}));
+
+City.displayName = 'City';
+
+export { City };

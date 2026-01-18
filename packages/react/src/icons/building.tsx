@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BuildingIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M10.077 11.754a.75.75 0 0 1 .673.746v.5l-.004.077a.75.75 0 0 1-.746.673h-.5a.75.75 0 0 1-.75-.75v-.5a.75.75 0 0 1 .75-.75h.5zM14.577 11.754a.75.75 0 0 1 .673.746v.5l-.004.077a.75.75 0 0 1-.746.673H14a.75.75 0 0 1-.75-.75v-.5a.75.75 0 0 1 .75-.75h.5zM10.077 8.254A.75.75 0 0 1 10.75 9v.5l-.004.077a.75.75 0 0 1-.746.673h-.5a.75.75 0 0 1-.75-.75V9a.75.75 0 0 1 .75-.75h.5zM14.577 8.254A.75.75 0 0 1 15.25 9v.5l-.004.077a.75.75 0 0 1-.746.673H14a.75.75 0 0 1-.75-.75V9a.75.75 0 0 1 .75-.75h.5zM10.077 4.754a.75.75 0 0 1 .673.746V6l-.004.077A.75.75 0 0 1 10 6.75h-.5A.75.75 0 0 1 8.75 6v-.5a.75.75 0 0 1 .75-.75h.5zM14.577 4.754a.75.75 0 0 1 .673.746V6l-.004.077a.75.75 0 0 1-.746.673H14a.75.75 0 0 1-.75-.75v-.5a.75.75 0 0 1 .75-.75h.5z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M15.8.25c.547 0 1.004-.001 1.375.03.38.03.736.098 1.073.27.517.263.938.685 1.202 1.202.172.337.24.693.27 1.073.031.371.03.828.03 1.375v15.6c0 .547.001 1.004-.03 1.375-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.202 1.202c-.337.172-.694.24-1.073.27-.371.031-.828.03-1.375.03H8.2c-.547 0-1.004.001-1.375-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.202c-.172-.337-.24-.694-.27-1.073-.031-.371-.03-.828-.03-1.375V4.2c0-.547-.001-1.004.03-1.375.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 5.752.55c.337-.172.693-.24 1.073-.27C7.196.248 7.653.25 8.2.25zm-7.6 1.5c-.572 0-.957 0-1.253.024-.287.024-.424.067-.514.113a1.25 1.25 0 0 0-.546.546c-.046.09-.09.227-.113.514-.024.296-.024.68-.024 1.253v15.6c0 .572 0 .957.024 1.253.024.287.067.424.113.514.12.235.31.427.546.546.09.046.227.09.514.113.296.024.68.024 1.253.024h.05v-3a2 2 0 0 1 2-2h3.5a2 2 0 0 1 2 2v3h.05c.572 0 .957 0 1.253-.024.287-.024.424-.067.514-.113.235-.12.427-.31.546-.546.046-.09.09-.227.113-.514.024-.296.024-.68.024-1.253V4.2c0-.572 0-.957-.024-1.253-.024-.287-.067-.424-.113-.514a1.25 1.25 0 0 0-.546-.546c-.09-.046-.227-.09-.514-.113-.296-.024-.68-.024-1.253-.024zm2.05 17a.5.5 0 0 0-.5.5v3h4.5v-3a.5.5 0 0 0-.5-.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BuildingIcon.displayName = "BuildingIcon";
-export { BuildingIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BuildingRegular } from './BuildingRegular';
+import { BuildingRegularDuotone } from './BuildingRegularDuotone';
+import { BuildingBold } from './BuildingBold';
+import { BuildingBoldDuotone } from './BuildingBoldDuotone';
+import { BuildingFill } from './BuildingFill';
+import { BuildingFillDuotone } from './BuildingFillDuotone';
+
+export interface BuildingProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Building with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BuildingRegular } from 'stera-icons/BuildingRegular';
+ */
+const Building = memo(forwardRef<SVGSVGElement, BuildingProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BuildingBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BuildingBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BuildingFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BuildingFill ref={ref} {...rest} />;
+  if (duotone) return <BuildingRegularDuotone ref={ref} {...rest} />;
+  return <BuildingRegular ref={ref} {...rest} />;
+}));
+
+Building.displayName = 'Building';
+
+export { Building };

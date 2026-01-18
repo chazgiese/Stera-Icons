@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const PilcrowIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M19 3.25a.75.75 0 0 1 0 1.5h-1.25V20a.75.75 0 0 1-1.5 0V4.75h-2.5V20a.75.75 0 0 1-1.5 0v-5.25H10a5.75 5.75 0 0 1 0-11.5zm-9 1.5a4.25 4.25 0 0 0 0 8.5h2.25v-8.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-PilcrowIcon.displayName = "PilcrowIcon";
-export { PilcrowIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PilcrowRegular } from './PilcrowRegular';
+import { PilcrowRegularDuotone } from './PilcrowRegularDuotone';
+import { PilcrowBold } from './PilcrowBold';
+import { PilcrowBoldDuotone } from './PilcrowBoldDuotone';
+import { PilcrowFill } from './PilcrowFill';
+import { PilcrowFillDuotone } from './PilcrowFillDuotone';
+
+export interface PilcrowProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Pilcrow with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PilcrowRegular } from 'stera-icons/PilcrowRegular';
+ */
+const Pilcrow = memo(forwardRef<SVGSVGElement, PilcrowProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PilcrowBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PilcrowBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PilcrowFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PilcrowFill ref={ref} {...rest} />;
+  if (duotone) return <PilcrowRegularDuotone ref={ref} {...rest} />;
+  return <PilcrowRegular ref={ref} {...rest} />;
+}));
+
+Pilcrow.displayName = 'Pilcrow';
+
+export { Pilcrow };

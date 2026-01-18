@@ -1,41 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const DuplicateIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M15.5 20.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5zM7.965 18.282a.75.75 0 0 1 .935.5q.041.134.095.24c.216.423.56.767.984.983q.104.053.239.095a.75.75 0 0 1-.436 1.435 3 3 0 0 1-.484-.194 3.75 3.75 0 0 1-1.639-1.639 3 3 0 0 1-.194-.484.75.75 0 0 1 .5-.936M20.1 18.782a.75.75 0 0 1 1.435.436 3 3 0 0 1-.194.484 3.75 3.75 0 0 1-1.639 1.639 3 3 0 0 1-.484.194.75.75 0 0 1-.436-1.435 1.5 1.5 0 0 0 .24-.095 2.25 2.25 0 0 0 .983-.983q.053-.106.095-.24M11 2.25c.893 0 1.45-.004 1.927.09a4.75 4.75 0 0 1 3.732 3.733c.095.477.091 1.034.091 1.927a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.746c-.005-.442-.018-.681-.059-.884a3.25 3.25 0 0 0-2.553-2.553c-.296-.06-.669-.063-1.634-.063H9.4c-1.132 0-1.937 0-2.566.052-.62.05-1.005.147-1.31.303a3.25 3.25 0 0 0-1.42 1.42c-.155.304-.252.688-.302 1.309-.052.63-.052 1.434-.052 2.566V11c0 .965.004 1.338.063 1.634a3.25 3.25 0 0 0 2.553 2.553c.203.04.442.053.884.058V13.5a.75.75 0 0 1 1.5 0V16a.75.75 0 0 1-.75.75c-.893 0-1.45.004-1.927-.09a4.75 4.75 0 0 1-3.732-3.733C2.246 12.45 2.25 11.893 2.25 11V9.4c0-1.107 0-1.983.057-2.688.058-.713.18-1.317.46-1.868a4.75 4.75 0 0 1 2.077-2.076c.55-.281 1.155-.403 1.868-.461.705-.058 1.58-.057 2.688-.057zM21 12.75a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 1 .75-.75"
-        />
-        <path
-          fill="currentColor"
-          d="M9.782 7.465a.75.75 0 0 1 .436 1.435q-.134.041-.24.095a2.25 2.25 0 0 0-.983.984q-.053.104-.095.239a.75.75 0 0 1-1.435-.436 3 3 0 0 1 .194-.484 3.75 3.75 0 0 1 1.639-1.639 3 3 0 0 1 .484-.194M18.282 7.965a.75.75 0 0 1 .936-.5q.252.075.484.194a3.75 3.75 0 0 1 1.639 1.639q.119.232.194.484a.75.75 0 0 1-1.435.436 1.5 1.5 0 0 0-.095-.24 2.25 2.25 0 0 0-.983-.983 1.5 1.5 0 0 0-.24-.095.75.75 0 0 1-.5-.935"
-        />
-      </svg>
-    ))
-);
-DuplicateIcon.displayName = "DuplicateIcon";
-export { DuplicateIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { DuplicateRegular } from './DuplicateRegular';
+import { DuplicateRegularDuotone } from './DuplicateRegularDuotone';
+import { DuplicateBold } from './DuplicateBold';
+import { DuplicateBoldDuotone } from './DuplicateBoldDuotone';
+import { DuplicateFill } from './DuplicateFill';
+import { DuplicateFillDuotone } from './DuplicateFillDuotone';
+
+export interface DuplicateProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Duplicate with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { DuplicateRegular } from 'stera-icons/DuplicateRegular';
+ */
+const Duplicate = memo(forwardRef<SVGSVGElement, DuplicateProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <DuplicateBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <DuplicateBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <DuplicateFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <DuplicateFill ref={ref} {...rest} />;
+  if (duotone) return <DuplicateRegularDuotone ref={ref} {...rest} />;
+  return <DuplicateRegular ref={ref} {...rest} />;
+}));
+
+Duplicate.displayName = 'Duplicate';
+
+export { Duplicate };

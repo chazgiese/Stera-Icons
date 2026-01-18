@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CandleIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M11.509 1.434a.75.75 0 0 1 .982 0l.004.003.009.008.028.025.105.094a14.954 14.954 0 0 1 1.446 1.54A9.8 9.8 0 0 1 15.2 4.782c.31.61.55 1.305.55 2.017 0 1.459-.763 2.767-1.92 3.45.534 0 .98 0 1.345.03.38.03.736.099 1.073.27.517.264.939.685 1.202 1.202.172.337.24.694.27 1.074.031.37.03.827.03 1.375v4.6c0 .547.001 1.003-.03 1.374-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.202 1.203c-.337.171-.694.239-1.073.27-.371.03-.828.03-1.375.03h-3.6c-.547 0-1.004 0-1.375-.03-.38-.031-.736-.099-1.073-.27a2.75 2.75 0 0 1-1.202-1.203c-.172-.337-.24-.693-.27-1.073-.031-.37-.03-.827-.03-1.375v-4.6c0-.547-.001-1.003.03-1.374.03-.38.098-.737.27-1.074a2.75 2.75 0 0 1 1.202-1.202c.337-.171.693-.24 1.073-.27.364-.03.81-.03 1.345-.03-1.157-.683-1.92-1.992-1.92-3.45 0-.712.24-1.408.55-2.017a9.8 9.8 0 0 1 1.117-1.68 15 15 0 0 1 1.446-1.54l.105-.093.028-.025.009-.008zM10.2 11.75c-.572 0-.957 0-1.253.025-.287.023-.424.066-.514.112a1.25 1.25 0 0 0-.546.546c-.046.09-.09.228-.113.515-.024.295-.024.68-.024 1.253v4.6c0 .571 0 .956.024 1.252.024.287.067.424.113.515.12.235.31.426.546.546.09.046.227.088.514.112.296.024.68.024 1.253.024h3.6c.572 0 .957 0 1.253-.024.287-.023.424-.066.514-.112.235-.12.426-.311.546-.546.046-.09.09-.228.113-.515.024-.296.024-.68.024-1.253v-4.6c0-.572 0-.957-.024-1.252-.024-.287-.067-.425-.113-.515a1.25 1.25 0 0 0-.546-.546c-.09-.046-.227-.089-.514-.112-.296-.024-.68-.025-1.253-.025zM12 3.033c-.26.26-.59.61-.917 1.014a8.3 8.3 0 0 0-.945 1.415c-.253.497-.388.951-.388 1.338 0 1.4 1.052 2.45 2.25 2.45s2.25-1.05 2.25-2.45c0-.387-.135-.841-.388-1.338-.25-.49-.59-.977-.945-1.415A13 13 0 0 0 12 3.033"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CandleIcon.displayName = "CandleIcon";
-export { CandleIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CandleRegular } from './CandleRegular';
+import { CandleRegularDuotone } from './CandleRegularDuotone';
+import { CandleBold } from './CandleBold';
+import { CandleBoldDuotone } from './CandleBoldDuotone';
+import { CandleFill } from './CandleFill';
+import { CandleFillDuotone } from './CandleFillDuotone';
+
+export interface CandleProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Candle with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CandleRegular } from 'stera-icons/CandleRegular';
+ */
+const Candle = memo(forwardRef<SVGSVGElement, CandleProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CandleBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CandleBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CandleFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CandleFill ref={ref} {...rest} />;
+  if (duotone) return <CandleRegularDuotone ref={ref} {...rest} />;
+  return <CandleRegular ref={ref} {...rest} />;
+}));
+
+Candle.displayName = 'Candle';
+
+export { Candle };

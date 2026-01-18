@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BookOpenFoldRegular } from './BookOpenFoldRegular';
+import { BookOpenFoldRegularDuotone } from './BookOpenFoldRegularDuotone';
+import { BookOpenFoldBold } from './BookOpenFoldBold';
+import { BookOpenFoldBoldDuotone } from './BookOpenFoldBoldDuotone';
+import { BookOpenFoldFill } from './BookOpenFoldFill';
+import { BookOpenFoldFillDuotone } from './BookOpenFoldFillDuotone';
+
+export interface BookOpenFoldProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * BookOpenFold with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BookOpenFoldRegular } from 'stera-icons/BookOpenFoldRegular';
+ */
+const BookOpenFold = memo(forwardRef<SVGSVGElement, BookOpenFoldProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BookOpenFoldBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BookOpenFoldBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BookOpenFoldFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BookOpenFoldFill ref={ref} {...rest} />;
+  if (duotone) return <BookOpenFoldRegularDuotone ref={ref} {...rest} />;
+  return <BookOpenFoldRegular ref={ref} {...rest} />;
+}));
+
+BookOpenFold.displayName = 'BookOpenFold';
+
+export { BookOpenFold };

@@ -1,0 +1,19 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type ChevronFullRightFillDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const ChevronFullRightFillDuotone = memo(
+  forwardRef<SVGSVGElement, ChevronFullRightFillDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" fillRule="evenodd" d="M8.62 4.08a1 1 0 0 1 1.09.21l7 7a1 1 0 0 1 0 1.42l-7 7A1 1 0 0 1 8 19V5a1 1 0 0 1 .62-.92M10 16.58 14.59 12 10 7.41z" clipRule="evenodd" />
+        <path fill="currentColor" d="M14.59 12 10 16.59V7.4z" opacity={.4} />
+    </IconBase>
+  ))
+);
+
+ChevronFullRightFillDuotone.displayName = 'ChevronFullRightFillDuotone';
+
+export { ChevronFullRightFillDuotone };
+export type { ChevronFullRightFillDuotoneProps };

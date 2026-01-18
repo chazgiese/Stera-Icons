@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CubeIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M11.043 1.923a4.75 4.75 0 0 1 1.914 0c.74.152 1.424.542 2.516 1.148l2.6 1.445c1.152.64 1.883 1.036 2.42 1.619a4.75 4.75 0 0 1 1.017 1.729c.248.752.24 1.583.24 2.902v2.469c0 1.318.009 2.149-.24 2.902a4.75 4.75 0 0 1-1.017 1.728c-.537.584-1.268.98-2.42 1.62l-2.6 1.444c-1.092.607-1.776.996-2.516 1.148-.631.13-1.283.13-1.914 0-.74-.152-1.424-.542-2.516-1.148l-2.6-1.444c-1.152-.64-1.883-1.036-2.42-1.62a4.75 4.75 0 0 1-1.017-1.728c-.249-.753-.24-1.584-.24-2.902v-2.47c0-1.318-.009-2.149.24-2.902a4.75 4.75 0 0 1 1.017-1.728c.537-.583 1.268-.979 2.42-1.62l2.6-1.443c1.092-.607 1.776-.997 2.516-1.149M3.906 8.361c-.147.463-.156 1.01-.156 2.405v2.469c0 1.422.009 1.962.164 2.431.145.44.383.843.696 1.183.335.363.803.634 2.046 1.324l2.6 1.444c1.095.609 1.563.858 1.994.966v-8.141zm8.844 4.08v8.142c.431-.108.899-.357 1.994-.966l2.6-1.444c1.243-.69 1.71-.96 2.046-1.324a3.25 3.25 0 0 0 .696-1.183c.155-.47.164-1.01.164-2.431v-2.47c0-1.395-.01-1.94-.157-2.404zm-.096-9.048a3.25 3.25 0 0 0-1.308 0c-.462.095-.913.336-2.09.99l-2.6 1.444c-1.156.643-1.64.922-1.972 1.25L12 11.142l7.315-4.065c-.331-.328-.816-.608-1.971-1.25l-2.6-1.444c-1.177-.654-1.628-.895-2.09-.99"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CubeIcon.displayName = "CubeIcon";
-export { CubeIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CubeRegular } from './CubeRegular';
+import { CubeRegularDuotone } from './CubeRegularDuotone';
+import { CubeBold } from './CubeBold';
+import { CubeBoldDuotone } from './CubeBoldDuotone';
+import { CubeFill } from './CubeFill';
+import { CubeFillDuotone } from './CubeFillDuotone';
+
+export interface CubeProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Cube with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CubeRegular } from 'stera-icons/CubeRegular';
+ */
+const Cube = memo(forwardRef<SVGSVGElement, CubeProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CubeBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CubeBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CubeFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CubeFill ref={ref} {...rest} />;
+  if (duotone) return <CubeRegularDuotone ref={ref} {...rest} />;
+  return <CubeRegular ref={ref} {...rest} />;
+}));
+
+Cube.displayName = 'Cube';
+
+export { Cube };

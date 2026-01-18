@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const FinderIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M7 6.75a.75.75 0 0 1 .75.75V9a.75.75 0 0 1-1.5 0V7.5A.75.75 0 0 1 7 6.75M16 6.75a.75.75 0 0 1 .75.75V9a.75.75 0 0 1-1.5 0V7.5a.75.75 0 0 1 .75-.75"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M13 2.25c1.388 0 2.473 0 3.345.07.88.072 1.607.222 2.265.557a5.75 5.75 0 0 1 2.513 2.513c.335.658.485 1.385.557 2.265.07.872.07 1.957.07 3.345v2c0 1.388 0 2.473-.07 3.345-.072.88-.222 1.607-.557 2.265a5.75 5.75 0 0 1-2.513 2.513c-.658.335-1.385.485-2.265.557-.636.052-1.387.06-2.285.064a1 1 0 0 1-.123.001q-.444.003-.937.005h-2c-1.388 0-2.473 0-3.345-.07-.88-.072-1.607-.222-2.265-.557a5.75 5.75 0 0 1-2.513-2.513c-.335-.658-.485-1.385-.557-2.265-.07-.872-.07-1.957-.07-3.345v-2c0-1.388 0-2.473.07-3.345.072-.88.222-1.607.557-2.265A5.75 5.75 0 0 1 5.39 2.877c.658-.335 1.385-.485 2.265-.557.872-.07 1.957-.07 3.345-.07zm-2 1.5c-1.412 0-2.427 0-3.223.065-.787.065-1.295.188-1.707.398A4.25 4.25 0 0 0 4.213 6.07c-.21.412-.333.92-.398 1.707-.065.796-.065 1.81-.065 3.223v2c0 1.412 0 2.427.065 3.223.065.787.188 1.295.398 1.707a4.25 4.25 0 0 0 1.857 1.857c.412.21.92.333 1.707.398.796.065 1.81.065 3.223.065h1.85a14 14 0 0 1-.322-.981c-.128-.449-.255-.97-.368-1.566a9.25 9.25 0 0 1-5.6-1.77.75.75 0 0 1 .88-1.214 7.76 7.76 0 0 0 4.493 1.485c-.081-.681-.141-1.433-.167-2.257q-.052.007-.103.012a6.6 6.6 0 0 1-1.112-.025 10 10 0 0 1-1.127-.182q-.048-.01-.074-.017l-.022-.005-.007-.002H9.32a.75.75 0 0 1-.547-.91c.511-2.043 1.4-4.577 2.15-6.582.372-.99.714-1.86.965-2.486zm2.29.528c-.248.622-.59 1.492-.963 2.486-.652 1.74-1.392 3.837-1.894 5.643q.128.02.266.034c.287.029.585.041.857.022.28-.02.483-.07.609-.134A.75.75 0 0 1 13.25 13c0 1.163.07 2.185.178 3.071a7.8 7.8 0 0 0 3.132-1.352.75.75 0 0 1 .88 1.215 9.3 9.3 0 0 1-3.779 1.619q.148.745.31 1.303c.178.623.354 1.076.481 1.366l.01.02c.697-.006 1.27-.017 1.76-.057.788-.065 1.296-.188 1.708-.398a4.25 4.25 0 0 0 1.857-1.857c.21-.412.333-.92.398-1.707.065-.796.065-1.81.065-3.223v-2c0-1.412 0-2.427-.065-3.223-.065-.787-.188-1.295-.398-1.707a4.25 4.25 0 0 0-1.857-1.857c-.412-.21-.92-.333-1.707-.398-.699-.057-1.565-.062-2.72-.063z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-FinderIcon.displayName = "FinderIcon";
-export { FinderIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { FinderRegular } from './FinderRegular';
+import { FinderRegularDuotone } from './FinderRegularDuotone';
+import { FinderBold } from './FinderBold';
+import { FinderBoldDuotone } from './FinderBoldDuotone';
+import { FinderFill } from './FinderFill';
+import { FinderFillDuotone } from './FinderFillDuotone';
+
+export interface FinderProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Finder with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { FinderRegular } from 'stera-icons/FinderRegular';
+ */
+const Finder = memo(forwardRef<SVGSVGElement, FinderProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <FinderBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <FinderBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <FinderFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <FinderFill ref={ref} {...rest} />;
+  if (duotone) return <FinderRegularDuotone ref={ref} {...rest} />;
+  return <FinderRegular ref={ref} {...rest} />;
+}));
+
+Finder.displayName = 'Finder';
+
+export { Finder };

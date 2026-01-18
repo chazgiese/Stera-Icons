@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const NotebookIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M14 12.25a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1 0-1.5zM16 8.25a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M16 2.25c.688 0 1.249-.001 1.703.036.463.038.882.12 1.273.318a3.25 3.25 0 0 1 1.42 1.42c.199.391.28.81.318 1.273.037.454.036 1.015.036 1.703v10c0 .688.001 1.249-.036 1.703-.038.463-.12.882-.319 1.273a3.25 3.25 0 0 1-1.42 1.42c-.39.199-.809.28-1.272.318-.454.037-1.015.036-1.703.036H8c-.688 0-1.249.001-1.703-.036-.463-.038-.882-.12-1.273-.319a3.25 3.25 0 0 1-1.42-1.42c-.199-.39-.28-.809-.318-1.272C3.25 18.25 3.25 17.688 3.25 17V7c0-.688-.001-1.249.036-1.703.038-.463.12-.882.318-1.273a3.25 3.25 0 0 1 1.42-1.42c.391-.199.81-.28 1.273-.318C6.75 2.25 7.312 2.25 8 2.25zm-7.75 18H16c.712 0 1.202 0 1.581-.031.37-.03.57-.086.714-.16.329-.167.597-.435.765-.764.073-.144.129-.344.159-.714.03-.38.031-.869.031-1.581V7c0-.712 0-1.202-.031-1.581-.03-.37-.086-.57-.16-.714a1.75 1.75 0 0 0-.764-.765c-.144-.073-.344-.128-.714-.159-.38-.03-.869-.031-1.581-.031H8.25zM6.75 3.763q-.18.006-.331.018c-.37.03-.57.086-.714.16a1.75 1.75 0 0 0-.765.764c-.073.144-.128.344-.159.714-.03.38-.031.869-.031 1.581v10c0 .712 0 1.202.031 1.581.03.37.086.57.16.714.167.329.435.597.764.765.144.073.344.129.714.159q.152.012.331.017z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-NotebookIcon.displayName = "NotebookIcon";
-export { NotebookIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { NotebookRegular } from './NotebookRegular';
+import { NotebookRegularDuotone } from './NotebookRegularDuotone';
+import { NotebookBold } from './NotebookBold';
+import { NotebookBoldDuotone } from './NotebookBoldDuotone';
+import { NotebookFill } from './NotebookFill';
+import { NotebookFillDuotone } from './NotebookFillDuotone';
+
+export interface NotebookProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Notebook with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { NotebookRegular } from 'stera-icons/NotebookRegular';
+ */
+const Notebook = memo(forwardRef<SVGSVGElement, NotebookProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <NotebookBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <NotebookBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <NotebookFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <NotebookFill ref={ref} {...rest} />;
+  if (duotone) return <NotebookRegularDuotone ref={ref} {...rest} />;
+  return <NotebookRegular ref={ref} {...rest} />;
+}));
+
+Notebook.displayName = 'Notebook';
+
+export { Notebook };

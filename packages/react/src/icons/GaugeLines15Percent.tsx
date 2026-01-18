@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { GaugeLines15PercentRegular } from './GaugeLines15PercentRegular';
+import { GaugeLines15PercentRegularDuotone } from './GaugeLines15PercentRegularDuotone';
+import { GaugeLines15PercentBold } from './GaugeLines15PercentBold';
+import { GaugeLines15PercentBoldDuotone } from './GaugeLines15PercentBoldDuotone';
+import { GaugeLines15PercentFill } from './GaugeLines15PercentFill';
+import { GaugeLines15PercentFillDuotone } from './GaugeLines15PercentFillDuotone';
+
+export interface GaugeLines15PercentProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * GaugeLines15Percent with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { GaugeLines15PercentRegular } from 'stera-icons/GaugeLines15PercentRegular';
+ */
+const GaugeLines15Percent = memo(forwardRef<SVGSVGElement, GaugeLines15PercentProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <GaugeLines15PercentBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <GaugeLines15PercentBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <GaugeLines15PercentFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <GaugeLines15PercentFill ref={ref} {...rest} />;
+  if (duotone) return <GaugeLines15PercentRegularDuotone ref={ref} {...rest} />;
+  return <GaugeLines15PercentRegular ref={ref} {...rest} />;
+}));
+
+GaugeLines15Percent.displayName = 'GaugeLines15Percent';
+
+export { GaugeLines15Percent };

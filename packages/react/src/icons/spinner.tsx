@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const SpinnerIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M12 18.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75M6.517 16.423a.75.75 0 1 1 1.06 1.06l-2.12 2.122a.75.75 0 1 1-1.061-1.061zM16.416 16.423a.75.75 0 0 1 1.06 0l2.122 2.12a.75.75 0 0 1-1.06 1.062l-2.122-2.122a.75.75 0 0 1 0-1.06M5 11.25a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1 0-1.5zM22 11.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5zM4.396 4.4a.75.75 0 0 1 1.06 0l2.121 2.12a.75.75 0 0 1-1.06 1.061L4.396 5.46a.75.75 0 0 1 0-1.06M18.537 4.4a.75.75 0 0 1 1.06 1.06l-2.12 2.121a.75.75 0 1 1-1.061-1.06zM12 1.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75"
-        />
-      </svg>
-    ))
-);
-SpinnerIcon.displayName = "SpinnerIcon";
-export { SpinnerIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SpinnerRegular } from './SpinnerRegular';
+import { SpinnerRegularDuotone } from './SpinnerRegularDuotone';
+import { SpinnerBold } from './SpinnerBold';
+import { SpinnerBoldDuotone } from './SpinnerBoldDuotone';
+import { SpinnerFill } from './SpinnerFill';
+import { SpinnerFillDuotone } from './SpinnerFillDuotone';
+
+export interface SpinnerProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Spinner with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SpinnerRegular } from 'stera-icons/SpinnerRegular';
+ */
+const Spinner = memo(forwardRef<SVGSVGElement, SpinnerProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SpinnerBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SpinnerBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SpinnerFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SpinnerFill ref={ref} {...rest} />;
+  if (duotone) return <SpinnerRegularDuotone ref={ref} {...rest} />;
+  return <SpinnerRegular ref={ref} {...rest} />;
+}));
+
+Spinner.displayName = 'Spinner';
+
+export { Spinner };

@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BasketballIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25c1.68 0 3.271.386 4.69 1.074a10.77 10.77 0 0 1 5.798 7.308c.172.762.262 1.555.262 2.368a10.7 10.7 0 0 1-1.197 4.935 10.8 10.8 0 0 1-5.62 5.073c-1.219.48-2.546.742-3.933.742-2.194 0-4.238-.658-5.94-1.788a10.78 10.78 0 0 1-4.306-5.7A10.7 10.7 0 0 1 1.25 12c0-1.71.4-3.33 1.112-4.768a10.77 10.77 0 0 1 7.097-5.68A10.8 10.8 0 0 1 12 1.25m-2.805 9.264q-.915.369-1.754.845c.166.482.275.987.309 1.506.091 1.383-.096 2.675-.268 3.882-.154 1.087-.297 2.108-.273 3.167A9.2 9.2 0 0 0 12 21.25c.804 0 1.582-.106 2.324-.298-2.3-2.722-4.184-6.585-5.129-10.438m3.847-1.001c-.829.11-1.639.28-2.42.508.939 3.926 2.907 7.842 5.225 10.392a9.3 9.3 0 0 0 4.117-3.71c-.738-.752-1.595-1.446-2.485-2.165-1.712-1.38-3.626-2.897-4.437-5.025m-6.911 2.695a11.9 11.9 0 0 0-2.835 2.93 9.26 9.26 0 0 0 2.44 3.665c.05-.788.159-1.544.262-2.268.175-1.227.335-2.368.256-3.572a4 4 0 0 0-.123-.755m14.97-1.85a17.6 17.6 0 0 0-6.484-.981c.71 1.468 2.14 2.651 3.804 3.994.74.597 1.515 1.223 2.231 1.906a9.2 9.2 0 0 0 .45-4.92M3.385 8.635a9.2 9.2 0 0 0-.548 4.62 13.7 13.7 0 0 1 2.685-2.457C5 9.952 4.243 9.2 3.384 8.636M8.668 3.37A9.28 9.28 0 0 0 4.046 7.28C5.13 7.96 6.11 8.9 6.792 10.004a16 16 0 0 1 2.087-.977c-.353-1.946-.453-3.883-.211-5.656m7.722.487c-.794.508-1.417 1.094-1.803 1.768-.357.623-.535 1.363-.414 2.272 2.11-.126 4.295.106 6.438.729a9.28 9.28 0 0 0-4.221-4.769M12 2.75q-.892.001-1.736.163c-.333 1.676-.293 3.615.053 5.636a18 18 0 0 1 2.363-.5c-.15-1.2.082-2.257.605-3.17.379-.66.897-1.222 1.49-1.703A9.2 9.2 0 0 0 12 2.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BasketballIcon.displayName = "BasketballIcon";
-export { BasketballIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BasketballRegular } from './BasketballRegular';
+import { BasketballRegularDuotone } from './BasketballRegularDuotone';
+import { BasketballBold } from './BasketballBold';
+import { BasketballBoldDuotone } from './BasketballBoldDuotone';
+import { BasketballFill } from './BasketballFill';
+import { BasketballFillDuotone } from './BasketballFillDuotone';
+
+export interface BasketballProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Basketball with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BasketballRegular } from 'stera-icons/BasketballRegular';
+ */
+const Basketball = memo(forwardRef<SVGSVGElement, BasketballProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BasketballBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BasketballBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BasketballFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BasketballFill ref={ref} {...rest} />;
+  if (duotone) return <BasketballRegularDuotone ref={ref} {...rest} />;
+  return <BasketballRegular ref={ref} {...rest} />;
+}));
+
+Basketball.displayName = 'Basketball';
+
+export { Basketball };

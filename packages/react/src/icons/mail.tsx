@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const MailIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M19.16 3.254h.041q.081.006.161.014l.05.004.096.012A3.75 3.75 0 0 1 22.75 7v10A3.75 3.75 0 0 1 19 20.75H5A3.75 3.75 0 0 1 1.25 17V7a3.75 3.75 0 0 1 3.241-3.716q.049-.007.097-.012l.049-.004q.08-.009.16-.013l.043-.001q.057-.003.113-.004h14.094q.056.001.112.004m2.09 5.277a3 3 0 0 1-.266.242l-6.016 4.814a4.75 4.75 0 0 1-5.936 0L3.016 8.773a3 3 0 0 1-.266-.242V17A2.25 2.25 0 0 0 5 19.25h14A2.25 2.25 0 0 0 21.25 17zM5 4.75a2 2 0 0 0-.367.032 1.602 1.602 0 0 0-.68 2.82l6.017 4.813a3.25 3.25 0 0 0 4.06 0l6.017-4.813a1.602 1.602 0 0 0-.68-2.82A2 2 0 0 0 19 4.75z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-MailIcon.displayName = "MailIcon";
-export { MailIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { MailRegular } from './MailRegular';
+import { MailRegularDuotone } from './MailRegularDuotone';
+import { MailBold } from './MailBold';
+import { MailBoldDuotone } from './MailBoldDuotone';
+import { MailFill } from './MailFill';
+import { MailFillDuotone } from './MailFillDuotone';
+
+export interface MailProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Mail with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { MailRegular } from 'stera-icons/MailRegular';
+ */
+const Mail = memo(forwardRef<SVGSVGElement, MailProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <MailBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <MailBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <MailFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <MailFill ref={ref} {...rest} />;
+  if (duotone) return <MailRegularDuotone ref={ref} {...rest} />;
+  return <MailRegular ref={ref} {...rest} />;
+}));
+
+Mail.displayName = 'Mail';
+
+export { Mail };

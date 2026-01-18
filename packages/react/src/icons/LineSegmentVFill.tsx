@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type LineSegmentVFillProps = Omit<IconBaseProps, 'children'>;
+
+const LineSegmentVFill = memo(
+  forwardRef<SVGSVGElement, LineSegmentVFillProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M12 1a3.5 3.5 0 0 1 1 6.85v8.3a3.5 3.5 0 1 1-2 0v-8.3A3.5 3.5 0 0 1 12 1" />
+    </IconBase>
+  ))
+);
+
+LineSegmentVFill.displayName = 'LineSegmentVFill';
+
+export { LineSegmentVFill };
+export type { LineSegmentVFillProps };

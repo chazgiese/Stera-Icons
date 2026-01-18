@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const SignatureIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M6.8 3.25c.867 0 1.62.201 2.23.614.613.415 1.028 1.005 1.28 1.683.491 1.323.39 3.038-.03 4.783a19 19 0 0 1-.8 2.488c.271-.053.555-.133.85-.248.929-.361 1.475-.636 1.938-1.008.465-.376.891-.886 1.514-1.794a.751.751 0 0 1 1.368.424c0 .664.134 1.508.418 2.159.298.68.632.899.933.899.234 0 .581-.08 1.022-.273a8 8 0 0 0 1.391-.802c.97-.682 1.896-1.574 2.468-2.407a.75.75 0 0 1 1.237.848c-.694 1.013-1.76 2.026-2.843 2.786a9.7 9.7 0 0 1-1.653.95c-.534.233-1.097.398-1.622.398-1.22 0-1.935-.946-2.308-1.799a6 6 0 0 1-.296-.874 6 6 0 0 1-.689.653c-.646.52-1.366.862-2.336 1.239a6 6 0 0 1-2.076.426c-.301.628-.634 1.25-.99 1.855H22a.75.75 0 0 1 0 1.5H6.85c-.718 1.037-1.504 1.989-2.327 2.788a.75.75 0 0 1-1.045-1.076A16 16 0 0 0 4.99 17.75H2a.75.75 0 0 1 0-1.5h4.045c.43-.67.83-1.371 1.19-2.084a5 5 0 0 1-1.268-.618c-1.28-.866-2.144-2.271-2.578-3.714-.433-1.438-.47-3.023.037-4.295.257-.644.662-1.224 1.241-1.642.584-.42 1.304-.647 2.134-.647m0 1.5c-.546 0-.952.145-1.255.364-.308.222-.554.551-.726.98-.35.877-.357 2.1.006 3.307.362 1.202 1.058 2.279 1.983 2.905.32.216.674.382 1.065.483.404-.954.73-1.906.948-2.811.395-1.639.42-3.001.082-3.909-.162-.437-.401-.752-.713-.963-.313-.211-.756-.356-1.39-.356"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-SignatureIcon.displayName = "SignatureIcon";
-export { SignatureIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SignatureRegular } from './SignatureRegular';
+import { SignatureRegularDuotone } from './SignatureRegularDuotone';
+import { SignatureBold } from './SignatureBold';
+import { SignatureBoldDuotone } from './SignatureBoldDuotone';
+import { SignatureFill } from './SignatureFill';
+import { SignatureFillDuotone } from './SignatureFillDuotone';
+
+export interface SignatureProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Signature with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SignatureRegular } from 'stera-icons/SignatureRegular';
+ */
+const Signature = memo(forwardRef<SVGSVGElement, SignatureProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SignatureBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SignatureBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SignatureFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SignatureFill ref={ref} {...rest} />;
+  if (duotone) return <SignatureRegularDuotone ref={ref} {...rest} />;
+  return <SignatureRegular ref={ref} {...rest} />;
+}));
+
+Signature.displayName = 'Signature';
+
+export { Signature };

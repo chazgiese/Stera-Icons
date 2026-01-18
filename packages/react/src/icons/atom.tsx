@@ -1,40 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const AtomIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path fill="currentColor" d="M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M3.304 3.304c1.548-1.548 3.842-1.195 5.97-.2.888.416 1.807.97 2.726 1.62.918-.65 1.837-1.204 2.726-1.62 2.128-.995 4.421-1.347 5.969.2s1.195 3.842.2 5.97c-.416.889-.97 1.807-1.62 2.726.65.919 1.204 1.837 1.62 2.726.995 2.128 1.349 4.422-.2 5.97-1.547 1.548-3.841 1.195-5.969.2-.889-.417-1.808-.97-2.726-1.62-.92.65-1.838 1.203-2.727 1.62-2.128.995-4.422 1.348-5.97-.2-1.547-1.548-1.194-3.842-.199-5.97.416-.889.97-1.807 1.62-2.726-.65-.919-1.204-1.838-1.62-2.727-.995-2.127-1.347-4.422.2-5.97m2.37 9.956a16 16 0 0 0-1.211 2.102c-.95 2.03-.918 3.453-.098 4.273s2.243.851 4.272-.098a16 16 0 0 0 2.102-1.213 33 33 0 0 1-2.666-2.397 33 33 0 0 1-2.399-2.667m12.65 0a33 33 0 0 1-2.398 2.667 33 33 0 0 1-2.667 2.397c.72.485 1.426.896 2.103 1.213 2.03.95 3.453.917 4.272.098s.852-2.243-.097-4.273a16 16 0 0 0-1.213-2.102M12 6.59a31 31 0 0 0-2.867 2.544A31 31 0 0 0 6.59 12a31 31 0 0 0 2.543 2.866c.929.928 1.9 1.79 2.867 2.542a31 31 0 0 0 2.866-2.542A31 31 0 0 0 17.408 12a31 31 0 0 0-2.542-2.866A31 31 0 0 0 12 6.59M8.637 4.464c-2.029-.95-3.452-.918-4.272-.098s-.852 2.243.098 4.273c.316.676.727 1.383 1.211 2.101a33 33 0 0 1 2.399-2.666 33 33 0 0 1 2.666-2.398 16 16 0 0 0-2.102-1.212m10.997-.098c-.82-.82-2.243-.851-4.272.098-.677.316-1.384.727-2.103 1.212a33 33 0 0 1 2.667 2.398 33 33 0 0 1 2.398 2.666c.485-.719.896-1.425 1.213-2.101.949-2.03.917-3.453.097-4.273"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-AtomIcon.displayName = "AtomIcon";
-export { AtomIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { AtomRegular } from './AtomRegular';
+import { AtomRegularDuotone } from './AtomRegularDuotone';
+import { AtomBold } from './AtomBold';
+import { AtomBoldDuotone } from './AtomBoldDuotone';
+import { AtomFill } from './AtomFill';
+import { AtomFillDuotone } from './AtomFillDuotone';
+
+export interface AtomProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Atom with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { AtomRegular } from 'stera-icons/AtomRegular';
+ */
+const Atom = memo(forwardRef<SVGSVGElement, AtomProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <AtomBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <AtomBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <AtomFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <AtomFill ref={ref} {...rest} />;
+  if (duotone) return <AtomRegularDuotone ref={ref} {...rest} />;
+  return <AtomRegular ref={ref} {...rest} />;
+}));
+
+Atom.displayName = 'Atom';
+
+export { Atom };

@@ -1,0 +1,20 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type CupFillDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const CupFillDuotone = memo(
+  forwardRef<SVGSVGElement, CupFillDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M19.99 6.17 19.5 13l-.04.57A8 8 0 0 1 11.48 21H9.52a8 8 0 0 1-7.98-7.43L1 6.17c.09.78.74 1.24 1.17 1.48.55.3 1.27.55 2.08.74C5.9 8.77 8.1 9 10.5 9s4.6-.23 6.24-.61c.8-.2 1.53-.43 2.08-.74.43-.24 1.08-.7 1.17-1.48" opacity={.4} />
+        <path fill="currentColor" d="M19.86 8.02A3.5 3.5 0 0 1 19.5 15h-.27q.18-.7.23-1.43l.04-.57a1.5 1.5 0 0 0 .21-2.98z" />
+        <path fill="currentColor" fillRule="evenodd" d="M10.5 3c2.4 0 4.6.23 6.24.61.8.2 1.53.43 2.08.74C19.28 4.6 20 5.12 20 6s-.72 1.4-1.18 1.65q-.84.45-2.08.74C15.1 8.77 12.9 9 10.5 9s-4.6-.23-6.24-.61a8 8 0 0 1-2.08-.74C1.72 7.4 1 6.88 1 6s.72-1.4 1.18-1.65c.55-.3 1.27-.55 2.08-.74C5.9 3.23 8.1 3 10.5 3m0 2c-2.3 0-4.34.22-5.78.56q-.9.22-1.38.44.48.23 1.38.44C6.16 6.78 8.2 7 10.5 7s4.34-.22 5.78-.56A8 8 0 0 0 17.65 6a8 8 0 0 0-1.37-.44A27 27 0 0 0 10.5 5" clipRule="evenodd" />
+    </IconBase>
+  ))
+);
+
+CupFillDuotone.displayName = 'CupFillDuotone';
+
+export { CupFillDuotone };
+export type { CupFillDuotoneProps };

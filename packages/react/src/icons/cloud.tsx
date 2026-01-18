@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CloudIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 4.25a6.75 6.75 0 0 1 6.165 4.004A5.749 5.749 0 0 1 18 19.75H5a4.75 4.75 0 1 1 .291-9.491A6.75 6.75 0 0 1 12 4.25m0 1.5A5.25 5.25 0 0 0 6.75 11l.003.11a.75.75 0 0 1-.938.742A3.25 3.25 0 1 0 5 18.25h13a4.25 4.25 0 1 0-.29-8.49.75.75 0 0 1-.757-.5A5.25 5.25 0 0 0 12 5.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CloudIcon.displayName = "CloudIcon";
-export { CloudIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CloudRegular } from './CloudRegular';
+import { CloudRegularDuotone } from './CloudRegularDuotone';
+import { CloudBold } from './CloudBold';
+import { CloudBoldDuotone } from './CloudBoldDuotone';
+import { CloudFill } from './CloudFill';
+import { CloudFillDuotone } from './CloudFillDuotone';
+
+export interface CloudProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Cloud with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CloudRegular } from 'stera-icons/CloudRegular';
+ */
+const Cloud = memo(forwardRef<SVGSVGElement, CloudProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CloudBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CloudBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CloudFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CloudFill ref={ref} {...rest} />;
+  if (duotone) return <CloudRegularDuotone ref={ref} {...rest} />;
+  return <CloudRegular ref={ref} {...rest} />;
+}));
+
+Cloud.displayName = 'Cloud';
+
+export { Cloud };

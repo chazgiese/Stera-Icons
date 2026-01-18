@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const StairsIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M22.5 2.75a.75.75 0 0 1 0 1.5h-4.917v5.917a.75.75 0 0 1-.75.75h-5.916v5.916a.75.75 0 0 1-.75.75H4.25V22.5a.75.75 0 0 1-1.5 0v-5.667a.75.75 0 0 1 .75-.75h5.917v-5.916a.75.75 0 0 1 .75-.75h5.916V3.5a.75.75 0 0 1 .75-.75z"
-        />
-      </svg>
-    ))
-);
-StairsIcon.displayName = "StairsIcon";
-export { StairsIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { StairsRegular } from './StairsRegular';
+import { StairsRegularDuotone } from './StairsRegularDuotone';
+import { StairsBold } from './StairsBold';
+import { StairsBoldDuotone } from './StairsBoldDuotone';
+import { StairsFill } from './StairsFill';
+import { StairsFillDuotone } from './StairsFillDuotone';
+
+export interface StairsProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Stairs with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { StairsRegular } from 'stera-icons/StairsRegular';
+ */
+const Stairs = memo(forwardRef<SVGSVGElement, StairsProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <StairsBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <StairsBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <StairsFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <StairsFill ref={ref} {...rest} />;
+  if (duotone) return <StairsRegularDuotone ref={ref} {...rest} />;
+  return <StairsRegular ref={ref} {...rest} />;
+}));
+
+Stairs.displayName = 'Stairs';
+
+export { Stairs };

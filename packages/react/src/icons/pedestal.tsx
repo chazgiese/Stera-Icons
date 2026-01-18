@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const PedestalIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M19 2.25c.338 0 .636 0 .882.02.255.02.52.067.776.198a2 2 0 0 1 .874.874c.131.257.178.521.198.776.02.246.02.544.02.882v1c0 .338 0 .636-.02.882-.02.255-.067.52-.198.776a2 2 0 0 1-.874.874 2 2 0 0 1-.776.198 7 7 0 0 1-.436.018c.193.376.304.8.304 1.252a2.75 2.75 0 0 1-2.096 2.668q.06.227.076.45c.02.246.02.544.02.882v7a.75.75 0 0 1-1.5 0v-7c0-.362 0-.589-.015-.76a.6.6 0 0 0-.04-.217.5.5 0 0 0-.218-.218.6.6 0 0 0-.217-.04c-.171-.014-.398-.015-.76-.015H9c-.362 0-.589 0-.76.015a.6.6 0 0 0-.217.04.5.5 0 0 0-.218.218.6.6 0 0 0-.04.217c-.014.171-.015.398-.015.76v7a.75.75 0 0 1-1.5 0v-7c0-.338 0-.636.02-.882a2.5 2.5 0 0 1 .075-.45 2.748 2.748 0 0 1-1.792-3.92 7 7 0 0 1-.435-.018 2 2 0 0 1-.776-.198 2 2 0 0 1-.874-.874 2 2 0 0 1-.198-.776c-.02-.246-.02-.544-.02-.882V5c0-.338 0-.636.02-.882.02-.255.067-.52.198-.776a2 2 0 0 1 .874-.874c.257-.131.521-.178.776-.198.246-.02.544-.02.882-.02zM7 8.75a1.25 1.25 0 0 0 0 2.5h10a1.25 1.25 0 1 0 0-2.5zm-2-5c-.362 0-.589 0-.76.015a.6.6 0 0 0-.217.04.5.5 0 0 0-.218.218.6.6 0 0 0-.04.217c-.014.171-.015.398-.015.76v1c0 .362 0 .589.015.76.013.16.034.206.04.217.048.094.124.17.218.218.011.006.057.027.217.04.171.014.398.015.76.015h14c.362 0 .589 0 .76-.015a.6.6 0 0 0 .217-.04.5.5 0 0 0 .218-.218.6.6 0 0 0 .04-.217c.014-.171.015-.398.015-.76V5c0-.362 0-.589-.015-.76a.6.6 0 0 0-.04-.217.5.5 0 0 0-.218-.218.6.6 0 0 0-.217-.04c-.171-.014-.398-.015-.76-.015z"
-          clipRule="evenodd"
-        />
-        <path
-          fill="currentColor"
-          d="M10.25 14.25A.75.75 0 0 1 11 15v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75M13.75 14.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75"
-        />
-      </svg>
-    ))
-);
-PedestalIcon.displayName = "PedestalIcon";
-export { PedestalIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PedestalRegular } from './PedestalRegular';
+import { PedestalRegularDuotone } from './PedestalRegularDuotone';
+import { PedestalBold } from './PedestalBold';
+import { PedestalBoldDuotone } from './PedestalBoldDuotone';
+import { PedestalFill } from './PedestalFill';
+import { PedestalFillDuotone } from './PedestalFillDuotone';
+
+export interface PedestalProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Pedestal with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PedestalRegular } from 'stera-icons/PedestalRegular';
+ */
+const Pedestal = memo(forwardRef<SVGSVGElement, PedestalProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PedestalBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PedestalBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PedestalFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PedestalFill ref={ref} {...rest} />;
+  if (duotone) return <PedestalRegularDuotone ref={ref} {...rest} />;
+  return <PedestalRegular ref={ref} {...rest} />;
+}));
+
+Pedestal.displayName = 'Pedestal';
+
+export { Pedestal };

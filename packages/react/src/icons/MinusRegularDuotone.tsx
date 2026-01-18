@@ -1,0 +1,19 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type MinusRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const MinusRegularDuotone = memo(
+  forwardRef<SVGSVGElement, MinusRegularDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M21 11.25a.75.75 0 0 1 0 1.5h-9v-1.5z" opacity={.4} />
+        <path fill="currentColor" d="M12 12.75H3a.75.75 0 0 1 0-1.5h9z" />
+    </IconBase>
+  ))
+);
+
+MinusRegularDuotone.displayName = 'MinusRegularDuotone';
+
+export { MinusRegularDuotone };
+export type { MinusRegularDuotoneProps };

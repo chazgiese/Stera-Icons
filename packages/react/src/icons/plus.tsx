@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const PlusIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M12 3.25a.75.75 0 0 1 .75.75v7.25H20a.75.75 0 0 1 0 1.5h-7.25V20a.75.75 0 0 1-1.5 0v-7.25H4a.75.75 0 0 1 0-1.5h7.25V4a.75.75 0 0 1 .75-.75"
-        />
-      </svg>
-    ))
-);
-PlusIcon.displayName = "PlusIcon";
-export { PlusIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PlusRegular } from './PlusRegular';
+import { PlusRegularDuotone } from './PlusRegularDuotone';
+import { PlusBold } from './PlusBold';
+import { PlusBoldDuotone } from './PlusBoldDuotone';
+import { PlusFill } from './PlusFill';
+import { PlusFillDuotone } from './PlusFillDuotone';
+
+export interface PlusProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Plus with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PlusRegular } from 'stera-icons/PlusRegular';
+ */
+const Plus = memo(forwardRef<SVGSVGElement, PlusProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PlusBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PlusBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PlusFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PlusFill ref={ref} {...rest} />;
+  if (duotone) return <PlusRegularDuotone ref={ref} {...rest} />;
+  return <PlusRegular ref={ref} {...rest} />;
+}));
+
+Plus.displayName = 'Plus';
+
+export { Plus };

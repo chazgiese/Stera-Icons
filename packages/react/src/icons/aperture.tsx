@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ApertureIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25c2.598 0 4.982.923 6.84 2.457A10.73 10.73 0 0 1 22.75 12q-.001.908-.146 1.776a10.77 10.77 0 0 1-6.841 8.297c-1.172.438-2.44.677-3.763.677-2.598 0-4.982-.923-6.84-2.457A10.73 10.73 0 0 1 1.25 12q.001-.908.146-1.776a10.77 10.77 0 0 1 6.841-8.297A10.7 10.7 0 0 1 12 1.25m2.69 14.037q-.045.037-.09.073l-.147.108q-.047.034-.096.067-.081.054-.167.105-.032.02-.065.04l-.057.032q-.008.006-.015.01l-.008.004-7.035 4.062A9.2 9.2 0 0 0 12 21.25c.959 0 1.882-.148 2.75-.418v-5.594zm1.49-4.049q.035.186.05.372l.001.022q.007.058.01.116l.006.164q.001.045.003.088v8.217a9.27 9.27 0 0 0 4.773-6.183zM2.75 12a9.22 9.22 0 0 0 2.977 6.797L10.569 16l-.106-.041q-.04-.014-.08-.03-.09-.037-.177-.08l-.098-.045a4 4 0 0 1-.169-.09l-.064-.034-.059-.033-7.056-4.076q-.01.213-.01.428m9.083-2.745a3 3 0 0 0-.18.016l-.025.004-.136.022-.033.007-.122.027-.04.01a3 3 0 0 0-.153.045q-.008.002-.016.006a3 3 0 0 0-.453.196l-.041.025-.054.033a2.8 2.8 0 0 0-.525.41q-.037.037-.07.075l-.074.08q-.106.124-.2.262-.034.053-.066.109l-.015.025-.025.04-.075.142-.02.042a3 3 0 0 0-.155.413l-.043.171a3 3 0 0 0-.062.53l.002.104a2.8 2.8 0 0 0 .113.742l.022.065q.082.253.214.489l.048.08q.03.05.062.098l.009.013a2.7 2.7 0 0 0 .335.408l.063.06a2.8 2.8 0 0 0 .661.46l.075.035a3 3 0 0 0 .277.11l.006.002.173.052.167.037q.049.01.1.017a3 3 0 0 0 .422.033 2.8 2.8 0 0 0 .712-.093l.048-.014q.053-.014.104-.032l.087-.03a3 3 0 0 0 .378-.173l.103-.061.09-.057.078-.055a3 3 0 0 0 .373-.317q.169-.174.308-.38l.084-.133.005-.007.001-.003.006-.011a2.8 2.8 0 0 0 .293-.718l.01-.044a2.7 2.7 0 0 0 .06-.858l-.01-.104a3 3 0 0 0-.067-.352 2.7 2.7 0 0 0-.29-.7l-.007-.012v-.001a2.752 2.752 0 0 0-.414-.534 2.8 2.8 0 0 0-.453-.366q-.034-.023-.07-.046l-.015-.008a3 3 0 0 0-.19-.104q-.049-.023-.097-.045t-.098-.043l-.06-.021q-.06-.025-.124-.046a2.7 2.7 0 0 0-.703-.13h-.006a3 3 0 0 0-.302.003M7.75 3.782a9.27 9.27 0 0 0-4.774 6.183l4.844 2.797-.016-.096q-.006-.025-.01-.052a4 4 0 0 1-.026-.244q-.005-.038-.007-.075a4 4 0 0 1-.008-.22L7.75 12zM13.429 8l.044.016q.06.022.123.047.088.036.174.076.054.024.108.05.083.042.166.088l.081.043.062.035 7.052 4.073q.01-.213.011-.427a9.22 9.22 0 0 0-2.977-6.798zM12 2.75c-.959 0-1.882.147-2.75.417V8.76q.045-.038.09-.073.038-.031.074-.061.098-.075.2-.144l.043-.029q.113-.075.23-.141l.005-.002.046-.028 7.051-4.071A9.2 9.2 0 0 0 12 2.75M9.843 8.339l.015-.01z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-ApertureIcon.displayName = "ApertureIcon";
-export { ApertureIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ApertureRegular } from './ApertureRegular';
+import { ApertureRegularDuotone } from './ApertureRegularDuotone';
+import { ApertureBold } from './ApertureBold';
+import { ApertureBoldDuotone } from './ApertureBoldDuotone';
+import { ApertureFill } from './ApertureFill';
+import { ApertureFillDuotone } from './ApertureFillDuotone';
+
+export interface ApertureProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Aperture with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ApertureRegular } from 'stera-icons/ApertureRegular';
+ */
+const Aperture = memo(forwardRef<SVGSVGElement, ApertureProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ApertureBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ApertureBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ApertureFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ApertureFill ref={ref} {...rest} />;
+  if (duotone) return <ApertureRegularDuotone ref={ref} {...rest} />;
+  return <ApertureRegular ref={ref} {...rest} />;
+}));
+
+Aperture.displayName = 'Aperture';
+
+export { Aperture };

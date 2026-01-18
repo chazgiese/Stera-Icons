@@ -13,6 +13,7 @@
     "build:icons": "node scripts/build-icons.js icons-export.json",
     "dev": "pnpm -F stera-icons-react-demo dev",
     "test": "pnpm -r test",
+    "test:tree-shaking": "node scripts/verify-tree-shaking.js",
     "lint": "eslint packages/react/src --ext .ts,.tsx",
     "changeset": "changeset",
     "version-packages": "changeset version",

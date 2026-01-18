@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const XIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M18.47 4.47a.75.75 0 1 1 1.06 1.06L13.06 12l6.47 6.47a.75.75 0 1 1-1.06 1.06L12 13.06l-6.47 6.47a.75.75 0 0 1-1.06-1.06L10.94 12 4.47 5.53a.75.75 0 1 1 1.06-1.06L12 10.94z"
-        />
-      </svg>
-    ))
-);
-XIcon.displayName = "XIcon";
-export { XIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { XRegular } from './XRegular';
+import { XRegularDuotone } from './XRegularDuotone';
+import { XBold } from './XBold';
+import { XBoldDuotone } from './XBoldDuotone';
+import { XFill } from './XFill';
+import { XFillDuotone } from './XFillDuotone';
+
+export interface XProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * X with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { XRegular } from 'stera-icons/XRegular';
+ */
+const X = memo(forwardRef<SVGSVGElement, XProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <XBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <XBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <XFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <XFill ref={ref} {...rest} />;
+  if (duotone) return <XRegularDuotone ref={ref} {...rest} />;
+  return <XRegular ref={ref} {...rest} />;
+}));
+
+X.displayName = 'X';
+
+export { X };

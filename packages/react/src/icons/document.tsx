@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const DocumentIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12.675 1.25c.453 0 .802-.005 1.138.076.281.067.55.178.795.33.295.18.54.43.86.751l4.125 4.125c.32.32.57.564.752.86.15.246.262.514.329.794.08.337.076.686.076 1.14V17.2c0 .828.001 1.494-.043 2.031-.045.547-.14 1.027-.366 1.471a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H8.8c-.828 0-1.494 0-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47-.044-.538-.043-1.204-.043-2.032V6.8c0-.828-.001-1.494.043-2.032.045-.546.14-1.026.366-1.47a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366.538-.044 1.204-.043 2.032-.043zM8.8 2.75c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.983c-.1.198-.17.459-.207.913-.038.462-.038 1.056-.038 1.909v10.4c0 .852 0 1.447.038 1.91.037.453.106.714.207.911.216.424.56.768.984.984.197.1.458.17.912.207.462.038 1.056.038 1.909.038h6.4c.852 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.984c.1-.197.17-.458.207-.912.038-.462.038-1.057.038-1.909V9.75H16.2c-.547 0-1.004 0-1.375-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.202c-.172-.337-.24-.694-.27-1.073-.031-.371-.03-.828-.03-1.375V2.75zm4.95 3.05c0 .572 0 .957.024 1.253.024.287.067.424.113.514.12.235.31.426.546.546.09.046.227.09.514.113.296.024.68.024 1.253.024h2.904q-.018-.038-.039-.074c-.066-.109-.162-.212-.533-.583l-4.125-4.125c-.37-.371-.474-.467-.583-.534q-.037-.02-.074-.038z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-DocumentIcon.displayName = "DocumentIcon";
-export { DocumentIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { DocumentRegular } from './DocumentRegular';
+import { DocumentRegularDuotone } from './DocumentRegularDuotone';
+import { DocumentBold } from './DocumentBold';
+import { DocumentBoldDuotone } from './DocumentBoldDuotone';
+import { DocumentFill } from './DocumentFill';
+import { DocumentFillDuotone } from './DocumentFillDuotone';
+
+export interface DocumentProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Document with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { DocumentRegular } from 'stera-icons/DocumentRegular';
+ */
+const Document = memo(forwardRef<SVGSVGElement, DocumentProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <DocumentBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <DocumentBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <DocumentFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <DocumentFill ref={ref} {...rest} />;
+  if (duotone) return <DocumentRegularDuotone ref={ref} {...rest} />;
+  return <DocumentRegular ref={ref} {...rest} />;
+}));
+
+Document.displayName = 'Document';
+
+export { Document };

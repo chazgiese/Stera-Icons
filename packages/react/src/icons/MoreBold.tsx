@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type MoreBoldProps = Omit<IconBaseProps, 'children'>;
+
+const MoreBold = memo(
+  forwardRef<SVGSVGElement, MoreBoldProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M4 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M20 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+    </IconBase>
+  ))
+);
+
+MoreBold.displayName = 'MoreBold';
+
+export { MoreBold };
+export type { MoreBoldProps };

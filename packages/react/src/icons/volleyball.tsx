@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const VolleyballIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25c1.888 0 3.665.488 5.208 1.344a10.8 10.8 0 0 1 4.198 4.198A10.7 10.7 0 0 1 22.75 12a10.747 10.747 0 0 1-11.576 10.719c-5.436-.414-9.74-4.868-9.918-10.367a10.705 10.705 0 0 1 1.368-5.615A10.75 10.75 0 0 1 12 1.25M6.265 11.71c.562 4.63 2.644 7.475 5.247 9.525q.242.014.488.015c1.063 0 2.083-.18 3.032-.51-1.009-.595-1.762-1.425-2.32-2.321l-.161-.27-.219-.407a11.5 11.5 0 0 1-.87-2.379 15 15 0 0 1-.344-1.858q-.028-.226-.048-.414c-2.017-.858-3.583-1.268-4.805-1.38m-1.508.025c-.87.127-1.498.457-1.985.893a9.25 9.25 0 0 0 5.853 7.984c-1.96-2.131-3.42-4.945-3.868-8.877m16.3-1.616c-.856 2.835-2.997 5.636-6.8 7.911.614.84 1.438 1.52 2.56 1.867a9.24 9.24 0 0 0 4.24-9.778m-3.239-5.311c-.082 1.346-.73 2.709-1.609 3.983-.954 1.382-2.253 2.766-3.653 4.085a15 15 0 0 0 .34 2.035c.085.349.188.712.317 1.076q.13.373.297.743c4.655-2.792 6.41-6.286 6.486-9.38a9.3 9.3 0 0 0-2.178-2.542m-7.563 1.627c-2.067-.463-4.362-.308-6.4 1.178a9.2 9.2 0 0 0-1.026 3.171c.71-.363 1.56-.584 2.588-.604q.636-.014 1.362.079a12 12 0 0 1 1.147.203c1.084.241 2.308.644 3.697 1.232 1.133-1.073 2.158-2.158 2.962-3.22-.97-.78-2.535-1.637-4.33-2.04M12 2.75a9.2 9.2 0 0 0-6.02 2.228c1.577-.4 3.165-.33 4.603-.007 1.954.437 3.686 1.35 4.845 2.257.787-1.334 1.065-2.49.797-3.46A9.2 9.2 0 0 0 12 2.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-VolleyballIcon.displayName = "VolleyballIcon";
-export { VolleyballIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { VolleyballRegular } from './VolleyballRegular';
+import { VolleyballRegularDuotone } from './VolleyballRegularDuotone';
+import { VolleyballBold } from './VolleyballBold';
+import { VolleyballBoldDuotone } from './VolleyballBoldDuotone';
+import { VolleyballFill } from './VolleyballFill';
+import { VolleyballFillDuotone } from './VolleyballFillDuotone';
+
+export interface VolleyballProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Volleyball with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { VolleyballRegular } from 'stera-icons/VolleyballRegular';
+ */
+const Volleyball = memo(forwardRef<SVGSVGElement, VolleyballProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <VolleyballBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <VolleyballBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <VolleyballFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <VolleyballFill ref={ref} {...rest} />;
+  if (duotone) return <VolleyballRegularDuotone ref={ref} {...rest} />;
+  return <VolleyballRegular ref={ref} {...rest} />;
+}));
+
+Volleyball.displayName = 'Volleyball';
+
+export { Volleyball };

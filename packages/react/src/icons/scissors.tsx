@@ -1,49 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ScissorsIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M20.38 6.093a1.544 1.544 0 0 1 1.842.766.25.25 0 0 1-.097.331L7.613 15.568a3.25 3.25 0 1 1-.75-1.299l1.95-1.125L9.92 10.3a2.25 2.25 0 0 1 1.413-1.327zM6.017 15.626a1.75 1.75 0 1 0-3.032 1.751 1.75 1.75 0 0 0 3.032-1.751M11.5 10.5A.75.75 0 1 0 11.501 12 .75.75 0 0 0 11.5 10.5"
-          clipRule="evenodd"
-        />
-        <path
-          fill="currentColor"
-          d="M22.157 16.693a.25.25 0 0 1 .097.331c-.345.67-1.121.998-1.842.778l-9.038-2.77a2.3 2.3 0 0 1-.703-.363l3.991-2.304z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M1.718 5.755a3.25 3.25 0 0 1 5.927 2.558l1.903 1.1q-.198.286-.326.615l-.33.846-.05-.137-1.95-1.125a3.25 3.25 0 0 1-5.174-3.857m3.69.11a1.75 1.75 0 1 0-1.752 3.031 1.75 1.75 0 0 0 1.751-3.031"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-ScissorsIcon.displayName = "ScissorsIcon";
-export { ScissorsIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ScissorsRegular } from './ScissorsRegular';
+import { ScissorsRegularDuotone } from './ScissorsRegularDuotone';
+import { ScissorsBold } from './ScissorsBold';
+import { ScissorsBoldDuotone } from './ScissorsBoldDuotone';
+import { ScissorsFill } from './ScissorsFill';
+import { ScissorsFillDuotone } from './ScissorsFillDuotone';
+
+export interface ScissorsProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Scissors with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ScissorsRegular } from 'stera-icons/ScissorsRegular';
+ */
+const Scissors = memo(forwardRef<SVGSVGElement, ScissorsProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ScissorsBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ScissorsBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ScissorsFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ScissorsFill ref={ref} {...rest} />;
+  if (duotone) return <ScissorsRegularDuotone ref={ref} {...rest} />;
+  return <ScissorsRegular ref={ref} {...rest} />;
+}));
+
+Scissors.displayName = 'Scissors';
+
+export { Scissors };

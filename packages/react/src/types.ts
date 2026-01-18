@@ -45,3 +45,29 @@ export interface IconsExport {
 export interface NameMapping {
   [originalName: string]: string;
 }
+
+/**
+ * Path data for a single icon variant.
+ * Can be a simple string for single-path icons,
+ * or an array of path objects for multi-path icons (e.g., duotone).
+ */
+export interface PathElement {
+  d: string;
+  opacity?: number;
+  fillRule?: 'nonzero' | 'evenodd';
+  clipRule?: 'nonzero' | 'evenodd';
+}
+
+export type PathData = string | PathElement | PathElement[];
+
+/**
+ * All path variants for a single icon.
+ */
+export interface IconPathData {
+  regular?: PathData;
+  regularDuotone?: PathData;
+  bold?: PathData;
+  boldDuotone?: PathData;
+  fill?: PathData;
+  fillDuotone?: PathData;
+}

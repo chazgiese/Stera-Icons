@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ToggleOffRegular } from './ToggleOffRegular';
+import { ToggleOffRegularDuotone } from './ToggleOffRegularDuotone';
+import { ToggleOffBold } from './ToggleOffBold';
+import { ToggleOffBoldDuotone } from './ToggleOffBoldDuotone';
+import { ToggleOffFill } from './ToggleOffFill';
+import { ToggleOffFillDuotone } from './ToggleOffFillDuotone';
+
+export interface ToggleOffProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * ToggleOff with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ToggleOffRegular } from 'stera-icons/ToggleOffRegular';
+ */
+const ToggleOff = memo(forwardRef<SVGSVGElement, ToggleOffProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ToggleOffBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ToggleOffBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ToggleOffFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ToggleOffFill ref={ref} {...rest} />;
+  if (duotone) return <ToggleOffRegularDuotone ref={ref} {...rest} />;
+  return <ToggleOffRegular ref={ref} {...rest} />;
+}));
+
+ToggleOff.displayName = 'ToggleOff';
+
+export { ToggleOff };

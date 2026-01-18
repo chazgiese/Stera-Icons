@@ -46,32 +46,24 @@ export function toPascalCase(slug) {
 
 export function getComponentName(slug, weight, duotone) {
   const baseName = toPascalCase(slug);
-  const iconName = `${baseName}Icon`;
   
-  if (weight === 'regular' && !duotone) {
-    return iconName; // base component, no suffix
-  }
-  
-  const weightSuffix = weight === 'regular' ? '' : weight.charAt(0).toUpperCase() + weight.slice(1);
+  // All direct variants get a suffix to avoid collision with wrapper components
+  // Wrapper: Search (dynamic weight prop)
+  // Direct variants: SearchRegular, SearchBold, SearchBoldDuotone, etc.
+  const weightSuffix = weight.charAt(0).toUpperCase() + weight.slice(1);
   const duotoneSuffix = duotone ? 'Duotone' : '';
   
-  return `${iconName}${weightSuffix}${duotoneSuffix}`;
+  return `${baseName}${weightSuffix}${duotoneSuffix}`;
 }
 
 export function getFileName(slug, weight, duotone) {
-  if (weight === 'regular' && !duotone) {
-    return slug; // base component, no suffix
-  }
+  // File names match component names in PascalCase
+  // e.g., SearchRegular.tsx exports SearchRegular
+  const baseName = toPascalCase(slug);
+  const weightSuffix = weight.charAt(0).toUpperCase() + weight.slice(1);
+  const duotoneSuffix = duotone ? 'Duotone' : '';
   
-  const parts = [];
-  if (weight !== 'regular') {
-    parts.push(weight);
-  }
-  if (duotone) {
-    parts.push('duotone');
-  }
-  
-  return parts.length > 0 ? `${slug}-${parts.join('-')}` : slug;
+  return `${baseName}${weightSuffix}${duotoneSuffix}`;
 }
 
 /**

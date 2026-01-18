@@ -1,132 +1,71 @@
 # Stera Icons
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/stera-icons)](https://bundlephobia.com/package/stera-icons)
-[![npm downloads](https://img.shields.io/npm/dm/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A lightweight React icon library with TypeScript support and five variants for every icon.
+A lightweight React icon library with 768 icons in 6 variants each.
 
 ## Installation
 
 ```bash
 npm install stera-icons
-# or
-yarn add stera-icons
-# or
-pnpm add stera-icons
 ```
-
-## Features
-
-- Three weights: Regular, Bold, Fill
-- Duotone style option
-- Tree-shakeable imports - only bundle what you use
-- TypeScript support with full type safety
-- Accessible by default with ARIA support
-- Optimized SVGs
 
 ## Usage
 
-```tsx
-import { HeartIcon } from 'stera-icons';
-
-function App() {
-  return (
-    <div>
-      <HeartIcon />
-    </div>
-  );
-}
-```
-
-### Icon Naming
-
-All icon components use the `{Name}Icon` pattern (e.g., `SearchIcon`, `HomeIcon`, `UserIcon`) to avoid naming conflicts.
-
-
-### Using Variants
+### Namespace Import (Recommended)
 
 ```tsx
-import { SearchIcon } from 'stera-icons';
+import * as Icons from 'stera-icons';
 
-function SearchExamples() {
-  return (
-    <div>
-      {/* Regular weight, no duotone (default) */}
-      <SearchIcon />
-      
-      {/* Regular weight with duotone */}
-      <SearchIcon duotone />
-      
-      {/* Bold weight, no duotone */}
-      <SearchIcon weight="bold" />
-      
-      {/* Bold weight with duotone */}
-      <SearchIcon weight="bold" duotone />
-      
-      {/* Fill weight, no duotone */}
-      <SearchIcon weight="fill" />
-      
-      {/* Fill weight with duotone */}
-      <SearchIcon weight="fill" duotone />
-    </div>
-  );
-}
+<Icons.SearchBold size={24} />
+<Icons.HomeFill />
 ```
 
-### Accessibility
+This is fully tree-shakable—modern bundlers only include the icons you actually use (~300 bytes per icon).
 
-For decorative icons, hide them from screen readers:
+### Named Imports
 
 ```tsx
-<SearchIcon aria-hidden="true" />
+import { SearchBold, HomeFill } from 'stera-icons';
+
+<SearchBold size={24} />
+<HomeFill />
 ```
 
-For meaningful icons, provide context:
+Both patterns tree-shake identically.
+
+**Available variants:** `{Name}Regular`, `{Name}Bold`, `{Name}Fill`, plus duotone versions (`{Name}RegularDuotone`, etc.)
+
+### Dynamic Variants
+
+Use wrapper components when you need to switch variants at runtime (~1KB per icon, includes all 6 variants):
 
 ```tsx
-<SearchIcon aria-label="Search products" />
+import { Search } from 'stera-icons';
+
+<Search />                        {/* Regular */}
+<Search weight="bold" />          {/* Bold */}
+<Search weight="fill" duotone />  {/* Fill + Duotone */}
 ```
 
-## API
-
-All icons accept these props:
+## Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight style |
-| `duotone` | `boolean` | `false` | Whether to use duotone variant |
 | `size` | `number \| string` | `24` | Icon size in pixels |
-| `color` | `string` | `'currentColor'` | Icon color (inherits text color by default) |
-| `className` | `string` | - | Additional CSS class |
-| `aria-label` | `string` | - | Accessible label for screen readers |
-| `aria-hidden` | `boolean` | - | Hide from screen readers |
-| `...props` | `SVGProps<SVGSVGElement>` | - | All other SVG props |
+| `color` | `string` | `'currentColor'` | Icon color |
+| `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight (wrapper only) |
+| `duotone` | `boolean` | `false` | Use duotone variant (wrapper only) |
 
-## Dynamic Icon Loading
+All standard SVG props are also supported.
+
+## Accessibility
 
 ```tsx
-import { useState } from 'react';
-import * as Icons from 'stera-icons';
-
-const iconNames = ['SearchIcon', 'HeartIcon', 'StarIcon'] as const;
-
-function IconSelector() {
-  const [selectedIcon, setSelectedIcon] = useState('SearchIcon');
-  const IconComponent = Icons[selectedIcon as keyof typeof Icons];
-  
-  return (
-    <div>
-      <select onChange={(e) => setSelectedIcon(e.target.value)}>
-        {iconNames.map(name => (
-          <option key={name} value={name}>{name}</option>
-        ))}
-      </select>
-      <IconComponent size={32} />
-    </div>
-  );
-}
+<Search aria-hidden="true" />           {/* Decorative */}
+<Search aria-label="Search products" /> {/* Meaningful */}
 ```
 
 ## License

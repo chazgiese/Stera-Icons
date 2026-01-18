@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const SpiralIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M12 2.25c5.937 0 10.75 4.813 10.75 10.75a.75.75 0 0 1-1.5 0 9.25 9.25 0 0 0-18.5 0 7.25 7.25 0 1 0 14.5 0 5.25 5.25 0 1 0-10.5 0 3.25 3.25 0 0 0 6.5 0 1.25 1.25 0 1 0-2.5 0 .75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 5.5 0 4.75 4.75 0 1 1-9.5 0 6.75 6.75 0 0 1 13.5 0 8.75 8.75 0 1 1-17.5 0C1.25 7.063 6.063 2.25 12 2.25"
-        />
-      </svg>
-    ))
-);
-SpiralIcon.displayName = "SpiralIcon";
-export { SpiralIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SpiralRegular } from './SpiralRegular';
+import { SpiralRegularDuotone } from './SpiralRegularDuotone';
+import { SpiralBold } from './SpiralBold';
+import { SpiralBoldDuotone } from './SpiralBoldDuotone';
+import { SpiralFill } from './SpiralFill';
+import { SpiralFillDuotone } from './SpiralFillDuotone';
+
+export interface SpiralProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Spiral with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SpiralRegular } from 'stera-icons/SpiralRegular';
+ */
+const Spiral = memo(forwardRef<SVGSVGElement, SpiralProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SpiralBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SpiralBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SpiralFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SpiralFill ref={ref} {...rest} />;
+  if (duotone) return <SpiralRegularDuotone ref={ref} {...rest} />;
+  return <SpiralRegular ref={ref} {...rest} />;
+}));
+
+Spiral.displayName = 'Spiral';
+
+export { Spiral };

@@ -1,0 +1,19 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type BackslashBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const BackslashBoldDuotone = memo(
+  forwardRef<SVGSVGElement, BackslashBoldDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="m11.25 12.66 8 9a1 1 0 1 0 1.5-1.32l-8-9z" opacity={.4} />
+        <path fill="currentColor" d="M4.75 2.34a1 1 0 1 0-1.5 1.32l8 9 1.5-1.32z" />
+    </IconBase>
+  ))
+);
+
+BackslashBoldDuotone.displayName = 'BackslashBoldDuotone';
+
+export { BackslashBoldDuotone };
+export type { BackslashBoldDuotoneProps };

@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { AgentWorkflowRegular } from './AgentWorkflowRegular';
+import { AgentWorkflowRegularDuotone } from './AgentWorkflowRegularDuotone';
+import { AgentWorkflowBold } from './AgentWorkflowBold';
+import { AgentWorkflowBoldDuotone } from './AgentWorkflowBoldDuotone';
+import { AgentWorkflowFill } from './AgentWorkflowFill';
+import { AgentWorkflowFillDuotone } from './AgentWorkflowFillDuotone';
+
+export interface AgentWorkflowProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * AgentWorkflow with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { AgentWorkflowRegular } from 'stera-icons/AgentWorkflowRegular';
+ */
+const AgentWorkflow = memo(forwardRef<SVGSVGElement, AgentWorkflowProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <AgentWorkflowBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <AgentWorkflowBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <AgentWorkflowFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <AgentWorkflowFill ref={ref} {...rest} />;
+  if (duotone) return <AgentWorkflowRegularDuotone ref={ref} {...rest} />;
+  return <AgentWorkflowRegular ref={ref} {...rest} />;
+}));
+
+AgentWorkflow.displayName = 'AgentWorkflow';
+
+export { AgentWorkflow };

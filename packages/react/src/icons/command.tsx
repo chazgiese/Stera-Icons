@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CommandIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M18 2.25a3.75 3.75 0 1 1 0 7.5h-2.25v4.5H18A3.75 3.75 0 1 1 14.25 18v-2.25h-4.5V18A3.75 3.75 0 1 1 6 14.25h2.25v-4.5H6A3.75 3.75 0 1 1 9.75 6v2.25h4.5V6A3.75 3.75 0 0 1 18 2.25M6 15.75A2.25 2.25 0 1 0 8.25 18v-2.25zM15.75 18A2.25 2.25 0 1 0 18 15.75h-2.25zm-6-3.75h4.5v-4.5h-4.5zM6 3.75a2.25 2.25 0 0 0 0 4.5h2.25V6A2.25 2.25 0 0 0 6 3.75m12 0A2.25 2.25 0 0 0 15.75 6v2.25H18a2.25 2.25 0 0 0 0-4.5"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CommandIcon.displayName = "CommandIcon";
-export { CommandIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CommandRegular } from './CommandRegular';
+import { CommandRegularDuotone } from './CommandRegularDuotone';
+import { CommandBold } from './CommandBold';
+import { CommandBoldDuotone } from './CommandBoldDuotone';
+import { CommandFill } from './CommandFill';
+import { CommandFillDuotone } from './CommandFillDuotone';
+
+export interface CommandProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Command with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CommandRegular } from 'stera-icons/CommandRegular';
+ */
+const Command = memo(forwardRef<SVGSVGElement, CommandProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CommandBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CommandBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CommandFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CommandFill ref={ref} {...rest} />;
+  if (duotone) return <CommandRegularDuotone ref={ref} {...rest} />;
+  return <CommandRegular ref={ref} {...rest} />;
+}));
+
+Command.displayName = 'Command';
+
+export { Command };

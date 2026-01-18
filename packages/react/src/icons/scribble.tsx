@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ScribbleIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M9.586 2.273a.772.772 0 0 1 .962.707 1 1 0 0 1-.008.203 2.3 2.3 0 0 1-.168.521c-.16.377-.47 1.012-1.016 2.058-.55 1.053-1.344 2.55-2.023 3.924-.25.505-.481.989-.678 1.424.461-.415.977-.892 1.503-1.364 1.527-1.368 2.77-2.346 3.687-3.002q.69-.489 1.137-.757c.28-.168.529-.302.708-.365l.071-.021a.766.766 0 0 1 .95.65c.01.077.007.142.003.184a1.5 1.5 0 0 1-.084.354 9 9 0 0 1-.306.719 88 88 0 0 1-1.085 2.213c-.612 1.219-1.217 3.663-1.911 6.968a15 15 0 0 0-.11.576c.302-.341.688-.794 1.177-1.388 1.576-1.915 4.126-5.14 5.592-6.958.852-1.057 1.412-1.701 1.795-2.086.19-.19.36-.34.518-.448.156-.105.366-.213.622-.222l.095.002a.79.79 0 0 1 .617.394.9.9 0 0 1 .116.44c.003.178-.035.385-.084.597-.105.45-.33 1.196-.744 2.415-.846 2.482-2.496 6.958-3.232 9.222q-.044.136-.08.258a.745.745 0 0 1 .456 1.325c-.277.23-.567.469-.854.681-.032.023-.09.066-.153.105a1 1 0 0 1-.357.137.806.806 0 0 1-.781-.313.93.93 0 0 1-.175-.538c-.006-.22.047-.494.123-.794.08-.323.209-.754.394-1.325.732-2.25 2.426-6.855 3.239-9.242l.05-.155q-.185.225-.397.489c-1.447 1.793-4.021 5.05-5.6 6.97-.787.955-1.349 1.607-1.754 2.009-.198.197-.394.37-.587.487-.171.104-.522.274-.921.122-.39-.148-.542-.49-.6-.687a2.3 2.3 0 0 1-.072-.663c.007-.444.094-1.028.239-1.719.681-3.242 1.32-5.902 2.038-7.332.131-.26.256-.515.376-.756a45 45 0 0 0-3.115 2.572c-.8.717-1.72 1.594-2.389 2.124a6 6 0 0 1-.504.364c-.147.093-.341.2-.55.25-.202.05-.67.09-.973-.332-.224-.311-.184-.672-.16-.833.059-.383.26-.918.495-1.467.246-.575.566-1.251.91-1.948.689-1.394 1.495-2.914 2.038-3.954q.125-.242.232-.452a65.455 65.455 0 0 0-4.804 3.275.751.751 0 0 1-.91-1.193A67 67 0 0 1 6.3 4.076c.675-.438 1.33-.843 1.883-1.156.52-.294 1.039-.56 1.403-.647"
-        />
-      </svg>
-    ))
-);
-ScribbleIcon.displayName = "ScribbleIcon";
-export { ScribbleIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ScribbleRegular } from './ScribbleRegular';
+import { ScribbleRegularDuotone } from './ScribbleRegularDuotone';
+import { ScribbleBold } from './ScribbleBold';
+import { ScribbleBoldDuotone } from './ScribbleBoldDuotone';
+import { ScribbleFill } from './ScribbleFill';
+import { ScribbleFillDuotone } from './ScribbleFillDuotone';
+
+export interface ScribbleProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Scribble with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ScribbleRegular } from 'stera-icons/ScribbleRegular';
+ */
+const Scribble = memo(forwardRef<SVGSVGElement, ScribbleProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ScribbleBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ScribbleBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ScribbleFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ScribbleFill ref={ref} {...rest} />;
+  if (duotone) return <ScribbleRegularDuotone ref={ref} {...rest} />;
+  return <ScribbleRegular ref={ref} {...rest} />;
+}));
+
+Scribble.displayName = 'Scribble';
+
+export { Scribble };

@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type MenuSimpleAltRegularProps = Omit<IconBaseProps, 'children'>;
+
+const MenuSimpleAltRegular = memo(
+  forwardRef<SVGSVGElement, MenuSimpleAltRegularProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M15 15.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM21 7.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" />
+    </IconBase>
+  ))
+);
+
+MenuSimpleAltRegular.displayName = 'MenuSimpleAltRegular';
+
+export { MenuSimpleAltRegular };
+export type { MenuSimpleAltRegularProps };

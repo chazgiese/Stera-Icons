@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CircleDashSimpleRegular } from './CircleDashSimpleRegular';
+import { CircleDashSimpleRegularDuotone } from './CircleDashSimpleRegularDuotone';
+import { CircleDashSimpleBold } from './CircleDashSimpleBold';
+import { CircleDashSimpleBoldDuotone } from './CircleDashSimpleBoldDuotone';
+import { CircleDashSimpleFill } from './CircleDashSimpleFill';
+import { CircleDashSimpleFillDuotone } from './CircleDashSimpleFillDuotone';
+
+export interface CircleDashSimpleProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * CircleDashSimple with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CircleDashSimpleRegular } from 'stera-icons/CircleDashSimpleRegular';
+ */
+const CircleDashSimple = memo(forwardRef<SVGSVGElement, CircleDashSimpleProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CircleDashSimpleBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CircleDashSimpleBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CircleDashSimpleFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CircleDashSimpleFill ref={ref} {...rest} />;
+  if (duotone) return <CircleDashSimpleRegularDuotone ref={ref} {...rest} />;
+  return <CircleDashSimpleRegular ref={ref} {...rest} />;
+}));
+
+CircleDashSimple.displayName = 'CircleDashSimple';
+
+export { CircleDashSimple };

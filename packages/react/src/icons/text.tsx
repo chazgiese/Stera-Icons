@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const TextIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M18 2.25A2.75 2.75 0 0 1 20.75 5v1a.75.75 0 0 1-1.5 0V5c0-.69-.56-1.25-1.25-1.25h-4c-.69 0-1.25.56-1.25 1.25v14c0 .69.56 1.25 1.25 1.25h1a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5h1c.69 0 1.25-.56 1.25-1.25V5c0-.69-.56-1.25-1.25-1.25H6c-.69 0-1.25.56-1.25 1.25v1a.75.75 0 0 1-1.5 0V5A2.75 2.75 0 0 1 6 2.25z"
-        />
-      </svg>
-    ))
-);
-TextIcon.displayName = "TextIcon";
-export { TextIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { TextRegular } from './TextRegular';
+import { TextRegularDuotone } from './TextRegularDuotone';
+import { TextBold } from './TextBold';
+import { TextBoldDuotone } from './TextBoldDuotone';
+import { TextFill } from './TextFill';
+import { TextFillDuotone } from './TextFillDuotone';
+
+export interface TextProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Text with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { TextRegular } from 'stera-icons/TextRegular';
+ */
+const Text = memo(forwardRef<SVGSVGElement, TextProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <TextBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <TextBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <TextFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <TextFill ref={ref} {...rest} />;
+  if (duotone) return <TextRegularDuotone ref={ref} {...rest} />;
+  return <TextRegular ref={ref} {...rest} />;
+}));
+
+Text.displayName = 'Text';
+
+export { Text };

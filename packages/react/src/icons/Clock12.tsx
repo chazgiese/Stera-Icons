@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { Clock12Regular } from './Clock12Regular';
+import { Clock12RegularDuotone } from './Clock12RegularDuotone';
+import { Clock12Bold } from './Clock12Bold';
+import { Clock12BoldDuotone } from './Clock12BoldDuotone';
+import { Clock12Fill } from './Clock12Fill';
+import { Clock12FillDuotone } from './Clock12FillDuotone';
+
+export interface Clock12Props extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Clock12 with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { Clock12Regular } from 'stera-icons/Clock12Regular';
+ */
+const Clock12 = memo(forwardRef<SVGSVGElement, Clock12Props>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <Clock12BoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <Clock12Bold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <Clock12FillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <Clock12Fill ref={ref} {...rest} />;
+  if (duotone) return <Clock12RegularDuotone ref={ref} {...rest} />;
+  return <Clock12Regular ref={ref} {...rest} />;
+}));
+
+Clock12.displayName = 'Clock12';
+
+export { Clock12 };

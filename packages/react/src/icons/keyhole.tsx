@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const KeyholeIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 2.25a6.25 6.25 0 0 1 6.25 6.25 6.23 6.23 0 0 1-1.913 4.497l2.43 4.858c.665 1.33-.303 2.895-1.79 2.895H7.024a2 2 0 0 1-1.79-2.895l2.43-4.858A6.25 6.25 0 0 1 12 2.25m0 1.5a4.75 4.75 0 0 0-2.943 8.479.75.75 0 0 1 .206.923l-2.687 5.374a.5.5 0 0 0 .447.724h9.955a.5.5 0 0 0 .447-.724l-2.687-5.374a.75.75 0 0 1 .206-.923A4.75 4.75 0 0 0 12 3.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-KeyholeIcon.displayName = "KeyholeIcon";
-export { KeyholeIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { KeyholeRegular } from './KeyholeRegular';
+import { KeyholeRegularDuotone } from './KeyholeRegularDuotone';
+import { KeyholeBold } from './KeyholeBold';
+import { KeyholeBoldDuotone } from './KeyholeBoldDuotone';
+import { KeyholeFill } from './KeyholeFill';
+import { KeyholeFillDuotone } from './KeyholeFillDuotone';
+
+export interface KeyholeProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Keyhole with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { KeyholeRegular } from 'stera-icons/KeyholeRegular';
+ */
+const Keyhole = memo(forwardRef<SVGSVGElement, KeyholeProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <KeyholeBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <KeyholeBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <KeyholeFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <KeyholeFill ref={ref} {...rest} />;
+  if (duotone) return <KeyholeRegularDuotone ref={ref} {...rest} />;
+  return <KeyholeRegular ref={ref} {...rest} />;
+}));
+
+Keyhole.displayName = 'Keyhole';
+
+export { Keyhole };

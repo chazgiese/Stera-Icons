@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type LayoutGridCircleFillProps = Omit<IconBaseProps, 'children'>;
+
+const LayoutGridCircleFill = memo(
+  forwardRef<SVGSVGElement, LayoutGridCircleFillProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M6.5 13a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9M17.5 13a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9M6.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9M17.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9" />
+    </IconBase>
+  ))
+);
+
+LayoutGridCircleFill.displayName = 'LayoutGridCircleFill';
+
+export { LayoutGridCircleFill };
+export type { LayoutGridCircleFillProps };

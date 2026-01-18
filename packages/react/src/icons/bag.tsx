@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BagIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25A4.75 4.75 0 0 1 16.75 6v.266q.256.009.481.027c.547.045 1.027.14 1.471.366a3.75 3.75 0 0 1 1.639 1.639c.226.444.321.924.366 1.47.044.538.043 1.204.043 2.032v5.4c0 .828.001 1.494-.043 2.031-.045.547-.14 1.027-.366 1.471a3.75 3.75 0 0 1-1.639 1.639c-.444.226-.924.321-1.47.366-.538.044-1.204.043-2.032.043H8.8c-.828 0-1.494.001-2.031-.043-.547-.045-1.027-.14-1.471-.366a3.75 3.75 0 0 1-1.639-1.639c-.226-.444-.321-.924-.366-1.47q-.032-.403-.038-.908L3.25 17.2v-5.4c0-.828-.001-1.494.043-2.031.045-.547.14-1.027.366-1.471a3.75 3.75 0 0 1 1.639-1.639c.444-.226.924-.321 1.47-.366q.225-.018.482-.027V6A4.75 4.75 0 0 1 12 1.25m-3.2 6.5c-.853 0-1.447 0-1.91.038-.453.037-.714.106-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.038.462-.038 1.056-.038 1.909v5.4l.005 1.1c.005.314.014.578.033.81.037.453.106.714.207.912.216.423.56.767.984.983.197.1.458.17.912.207.462.038 1.056.038 1.909.038h6.4c.852 0 1.447 0 1.91-.038.453-.037.714-.107.912-.207a2.25 2.25 0 0 0 .983-.983c.1-.198.17-.459.207-.913.038-.462.038-1.057.038-1.909v-5.4c0-.853 0-1.447-.038-1.91-.037-.453-.107-.714-.207-.911a2.25 2.25 0 0 0-.983-.984c-.198-.1-.459-.17-.913-.207-.462-.038-1.057-.038-1.909-.038zm3.2-5A3.25 3.25 0 0 0 8.75 6v.25h6.5V6A3.25 3.25 0 0 0 12 2.75"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-BagIcon.displayName = "BagIcon";
-export { BagIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BagRegular } from './BagRegular';
+import { BagRegularDuotone } from './BagRegularDuotone';
+import { BagBold } from './BagBold';
+import { BagBoldDuotone } from './BagBoldDuotone';
+import { BagFill } from './BagFill';
+import { BagFillDuotone } from './BagFillDuotone';
+
+export interface BagProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Bag with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BagRegular } from 'stera-icons/BagRegular';
+ */
+const Bag = memo(forwardRef<SVGSVGElement, BagProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BagBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BagBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BagFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BagFill ref={ref} {...rest} />;
+  if (duotone) return <BagRegularDuotone ref={ref} {...rest} />;
+  return <BagRegular ref={ref} {...rest} />;
+}));
+
+Bag.displayName = 'Bag';
+
+export { Bag };

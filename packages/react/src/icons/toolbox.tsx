@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ToolboxIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M14.416 2.75a2 2 0 0 1 1.98 1.717l.254 1.783h2.15c.547 0 1.004-.001 1.375.03.38.03.736.098 1.073.27.517.263.938.685 1.202 1.202.172.337.24.693.27 1.073.031.371.03.828.03 1.375v6.6c0 .547.001 1.004-.03 1.375-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.202 1.202c-.337.172-.694.24-1.073.27-.371.031-.828.03-1.375.03H5.2c-.547 0-1.004.001-1.375-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.202c-.172-.337-.24-.694-.27-1.073-.031-.371-.03-.828-.03-1.375v-6.6c0-.547-.001-1.004.03-1.375.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 2.752 6.55c.337-.172.693-.24 1.073-.27.371-.031.828-.03 1.375-.03h2.15l.255-1.783A2 2 0 0 1 9.584 2.75zm3.334 11v.75a.75.75 0 0 1-1.5 0v-.75h-8.5v.75a.75.75 0 0 1-1.5 0v-.75h-3.5v3.05c0 .572 0 .957.024 1.253.024.287.067.424.113.514.12.235.31.427.546.546.09.046.227.09.514.113.296.024.68.024 1.253.024h13.6c.572 0 .957 0 1.253-.024.287-.024.424-.067.514-.113.235-.12.427-.31.546-.546.046-.09.09-.227.113-.514.024-.296.024-.68.024-1.253v-3.05zm-12.55-6c-.572 0-.957 0-1.253.024-.287.024-.424.067-.514.113a1.25 1.25 0 0 0-.546.546c-.046.09-.09.227-.113.514-.024.296-.024.68-.024 1.253v2.05h3.5v-.75a.75.75 0 0 1 1.5 0v.75h8.5v-.75a.75.75 0 0 1 1.5 0v.75h3.5V10.2c0-.572 0-.957-.024-1.253-.024-.287-.067-.424-.113-.514a1.25 1.25 0 0 0-.546-.546c-.09-.046-.227-.09-.514-.113-.296-.024-.68-.024-1.253-.024zm4.384-3.5a.5.5 0 0 0-.495.43l-.225 1.57h6.272l-.225-1.57a.5.5 0 0 0-.495-.43z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-ToolboxIcon.displayName = "ToolboxIcon";
-export { ToolboxIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ToolboxRegular } from './ToolboxRegular';
+import { ToolboxRegularDuotone } from './ToolboxRegularDuotone';
+import { ToolboxBold } from './ToolboxBold';
+import { ToolboxBoldDuotone } from './ToolboxBoldDuotone';
+import { ToolboxFill } from './ToolboxFill';
+import { ToolboxFillDuotone } from './ToolboxFillDuotone';
+
+export interface ToolboxProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Toolbox with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ToolboxRegular } from 'stera-icons/ToolboxRegular';
+ */
+const Toolbox = memo(forwardRef<SVGSVGElement, ToolboxProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ToolboxBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ToolboxBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ToolboxFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ToolboxFill ref={ref} {...rest} />;
+  if (duotone) return <ToolboxRegularDuotone ref={ref} {...rest} />;
+  return <ToolboxRegular ref={ref} {...rest} />;
+}));
+
+Toolbox.displayName = 'Toolbox';
+
+export { Toolbox };

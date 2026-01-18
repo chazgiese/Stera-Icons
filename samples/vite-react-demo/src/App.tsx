@@ -1,4 +1,4 @@
-import { HomeIcon } from 'stera-icons';
+import { Home } from 'stera-icons';
 
 function App() {
   return (
@@ -11,30 +11,30 @@ function App() {
       </div>
 
       <div className="icon-demo">
-        <h2>HomeIcon Variants</h2>
+        <h2>Home Variants</h2>
         <div className="variant-grid">
           <div className="variant-item">
-            <HomeIcon size={48} />
+            <Home size={48} />
             <span>regular</span>
           </div>
           <div className="variant-item">
-            <HomeIcon duotone size={48} />
+            <Home duotone size={48} />
             <span>regular duotone</span>
           </div>
           <div className="variant-item">
-            <HomeIcon weight="bold" size={48} />
+            <Home weight="bold" size={48} />
             <span>bold</span>
           </div>
           <div className="variant-item">
-            <HomeIcon weight="bold" duotone size={48} />
+            <Home weight="bold" duotone size={48} />
             <span>bold duotone</span>
           </div>
           <div className="variant-item">
-            <HomeIcon weight="fill" size={48} />
+            <Home weight="fill" size={48} />
             <span>fill</span>
           </div>
           <div className="variant-item">
-            <HomeIcon weight="fill" duotone size={48} />
+            <Home weight="fill" duotone size={48} />
             <span>fill duotone</span>
           </div>
         </div>

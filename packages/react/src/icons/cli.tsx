@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CliIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M2.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 0 1-1.06-1.06L8.94 12 2.47 5.53a.75.75 0 0 1 0-1.06M22 18.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1 0-1.5z"
-        />
-      </svg>
-    ))
-);
-CliIcon.displayName = "CliIcon";
-export { CliIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CliRegular } from './CliRegular';
+import { CliRegularDuotone } from './CliRegularDuotone';
+import { CliBold } from './CliBold';
+import { CliBoldDuotone } from './CliBoldDuotone';
+import { CliFill } from './CliFill';
+import { CliFillDuotone } from './CliFillDuotone';
+
+export interface CliProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Cli with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CliRegular } from 'stera-icons/CliRegular';
+ */
+const Cli = memo(forwardRef<SVGSVGElement, CliProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CliBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CliBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CliFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CliFill ref={ref} {...rest} />;
+  if (duotone) return <CliRegularDuotone ref={ref} {...rest} />;
+  return <CliRegular ref={ref} {...rest} />;
+}));
+
+Cli.displayName = 'Cli';
+
+export { Cli };

@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const MinusIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M21 11.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z"
-        />
-      </svg>
-    ))
-);
-MinusIcon.displayName = "MinusIcon";
-export { MinusIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { MinusRegular } from './MinusRegular';
+import { MinusRegularDuotone } from './MinusRegularDuotone';
+import { MinusBold } from './MinusBold';
+import { MinusBoldDuotone } from './MinusBoldDuotone';
+import { MinusFill } from './MinusFill';
+import { MinusFillDuotone } from './MinusFillDuotone';
+
+export interface MinusProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Minus with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { MinusRegular } from 'stera-icons/MinusRegular';
+ */
+const Minus = memo(forwardRef<SVGSVGElement, MinusProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <MinusBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <MinusBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <MinusFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <MinusFill ref={ref} {...rest} />;
+  if (duotone) return <MinusRegularDuotone ref={ref} {...rest} />;
+  return <MinusRegular ref={ref} {...rest} />;
+}));
+
+Minus.displayName = 'Minus';
+
+export { Minus };

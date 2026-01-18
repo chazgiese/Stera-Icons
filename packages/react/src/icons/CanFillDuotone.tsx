@@ -1,0 +1,19 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type CanFillDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const CanFillDuotone = memo(
+  forwardRef<SVGSVGElement, CanFillDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M18.47 5.31A4 4 0 0 1 19 7.3v9.4a4 4 0 0 1-.53 1.99l-1.31 2.3A2 2 0 0 1 15.42 22H8.58a2 2 0 0 1-1.74-1l-1.31-2.31A4 4 0 0 1 5 16.7V7.3a4 4 0 0 1 .53-1.99l.76-1.33.21.02h11l.21-.02z" opacity={.4} />
+        <path fill="currentColor" d="M17.5 2a1 1 0 1 1 0 2h-11a1 1 0 0 1 0-2z" />
+    </IconBase>
+  ))
+);
+
+CanFillDuotone.displayName = 'CanFillDuotone';
+
+export { CanFillDuotone };
+export type { CanFillDuotoneProps };

@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SquareSlashRegular } from './SquareSlashRegular';
+import { SquareSlashRegularDuotone } from './SquareSlashRegularDuotone';
+import { SquareSlashBold } from './SquareSlashBold';
+import { SquareSlashBoldDuotone } from './SquareSlashBoldDuotone';
+import { SquareSlashFill } from './SquareSlashFill';
+import { SquareSlashFillDuotone } from './SquareSlashFillDuotone';
+
+export interface SquareSlashProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * SquareSlash with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SquareSlashRegular } from 'stera-icons/SquareSlashRegular';
+ */
+const SquareSlash = memo(forwardRef<SVGSVGElement, SquareSlashProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SquareSlashBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SquareSlashBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SquareSlashFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SquareSlashFill ref={ref} {...rest} />;
+  if (duotone) return <SquareSlashRegularDuotone ref={ref} {...rest} />;
+  return <SquareSlashRegular ref={ref} {...rest} />;
+}));
+
+SquareSlash.displayName = 'SquareSlash';
+
+export { SquareSlash };

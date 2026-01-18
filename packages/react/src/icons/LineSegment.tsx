@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { LineSegmentRegular } from './LineSegmentRegular';
+import { LineSegmentRegularDuotone } from './LineSegmentRegularDuotone';
+import { LineSegmentBold } from './LineSegmentBold';
+import { LineSegmentBoldDuotone } from './LineSegmentBoldDuotone';
+import { LineSegmentFill } from './LineSegmentFill';
+import { LineSegmentFillDuotone } from './LineSegmentFillDuotone';
+
+export interface LineSegmentProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * LineSegment with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { LineSegmentRegular } from 'stera-icons/LineSegmentRegular';
+ */
+const LineSegment = memo(forwardRef<SVGSVGElement, LineSegmentProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <LineSegmentBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <LineSegmentBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <LineSegmentFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <LineSegmentFill ref={ref} {...rest} />;
+  if (duotone) return <LineSegmentRegularDuotone ref={ref} {...rest} />;
+  return <LineSegmentRegular ref={ref} {...rest} />;
+}));
+
+LineSegment.displayName = 'LineSegment';
+
+export { LineSegment };

@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const NoteIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M14.6 2.25c1.107 0 1.984 0 2.688.057.713.058 1.317.18 1.868.46a4.75 4.75 0 0 1 2.076 2.077c.281.55.403 1.155.461 1.868.058.705.057 1.58.057 2.688v4.275c0 .453.005.802-.076 1.138-.067.281-.178.55-.33.795-.18.295-.43.54-.751.86l-4.125 4.125c-.32.32-.565.57-.86.752-.246.15-.514.262-.795.329-.336.08-.685.076-1.138.076H9.4c-1.107 0-1.983 0-2.688-.057-.713-.058-1.317-.18-1.868-.46a4.75 4.75 0 0 1-2.076-2.077c-.281-.55-.403-1.155-.461-1.868-.058-.704-.057-1.58-.057-2.688V9.4c0-1.107 0-1.983.057-2.688.058-.713.18-1.317.46-1.868a4.75 4.75 0 0 1 2.077-2.076c.55-.281 1.155-.403 1.868-.461.705-.058 1.58-.057 2.688-.057zm-5.2 1.5c-1.132 0-1.937 0-2.566.052-.62.05-1.005.147-1.31.302a3.25 3.25 0 0 0-1.42 1.42c-.155.305-.252.69-.302 1.31-.052.63-.052 1.434-.052 2.566v5.2c0 1.132 0 1.937.052 2.566.05.62.147 1.005.302 1.31a3.25 3.25 0 0 0 1.42 1.42c.305.155.69.252 1.31.302.63.052 1.434.052 2.566.052h3.85V17.2c0-.547-.001-1.004.03-1.375.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.371-.031.828-.03 1.375-.03h3.05V9.4c0-1.132 0-1.937-.052-2.566-.05-.62-.147-1.005-.303-1.31a3.25 3.25 0 0 0-1.42-1.42c-.304-.155-.688-.252-1.309-.302-.63-.052-1.434-.052-2.566-.052zm7.8 11c-.572 0-.957 0-1.253.024-.287.024-.424.067-.514.113-.236.12-.426.31-.546.546-.046.09-.09.227-.113.514-.024.296-.024.68-.024 1.253v2.904c.025-.014.05-.024.074-.039.109-.066.212-.162.583-.533l4.125-4.125c.371-.37.467-.474.533-.583.015-.024.025-.05.038-.074z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-NoteIcon.displayName = "NoteIcon";
-export { NoteIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { NoteRegular } from './NoteRegular';
+import { NoteRegularDuotone } from './NoteRegularDuotone';
+import { NoteBold } from './NoteBold';
+import { NoteBoldDuotone } from './NoteBoldDuotone';
+import { NoteFill } from './NoteFill';
+import { NoteFillDuotone } from './NoteFillDuotone';
+
+export interface NoteProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Note with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { NoteRegular } from 'stera-icons/NoteRegular';
+ */
+const Note = memo(forwardRef<SVGSVGElement, NoteProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <NoteBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <NoteBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <NoteFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <NoteFill ref={ref} {...rest} />;
+  if (duotone) return <NoteRegularDuotone ref={ref} {...rest} />;
+  return <NoteRegular ref={ref} {...rest} />;
+}));
+
+Note.displayName = 'Note';
+
+export { Note };

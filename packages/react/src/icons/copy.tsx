@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CopyIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M15.4 2.25c.968 0 1.739-.001 2.36.05.63.051 1.172.16 1.67.413a4.25 4.25 0 0 1 1.857 1.857c.254.498.362 1.04.413 1.67.05.621.05 1.392.05 2.36V11c0 1.333.01 2.191-.238 2.903a4.25 4.25 0 0 1-2.609 2.609c-.57.2-1.234.23-2.16.236-.007.376-.018.711-.043 1.012-.051.63-.16 1.172-.413 1.67a4.25 4.25 0 0 1-1.857 1.857c-.498.254-1.04.362-1.67.413-.621.05-1.392.05-2.36.05H8.6c-.968 0-1.739 0-2.36-.05-.63-.051-1.172-.16-1.67-.413a4.25 4.25 0 0 1-1.857-1.857c-.254-.498-.362-1.04-.413-1.67-.05-.621-.05-1.392-.05-2.36v-1.8c0-.968 0-1.739.05-2.36.051-.63.16-1.172.413-1.67A4.25 4.25 0 0 1 4.57 7.713c.498-.254 1.04-.362 1.67-.413q.45-.036 1.011-.043c.005-.927.038-1.59.237-2.16a4.25 4.25 0 0 1 2.609-2.609c.712-.249 1.57-.238 2.903-.238zm-6.8 6.5c-.993 0-1.692 0-2.238.045-.537.044-.86.127-1.11.255a2.75 2.75 0 0 0-1.202 1.202c-.128.25-.211.573-.255 1.11-.045.546-.045 1.245-.045 2.238v1.8c0 .992 0 1.692.045 2.238.044.537.127.859.255 1.11.263.517.685.938 1.202 1.202.25.128.573.211 1.11.255.546.045 1.245.045 2.238.045h1.8c.993 0 1.692 0 2.238-.045.537-.044.86-.127 1.11-.255a2.75 2.75 0 0 0 1.202-1.202c.128-.251.211-.573.255-1.11.045-.546.045-1.246.045-2.238v-1.8c0-.993 0-1.692-.045-2.238-.044-.537-.127-.86-.255-1.11a2.75 2.75 0 0 0-1.202-1.202c-.25-.128-.573-.211-1.11-.255-.546-.045-1.245-.045-2.238-.045zm4.4-5c-1.46 0-1.998.01-2.408.154a2.75 2.75 0 0 0-1.688 1.688c-.116.33-.144.745-.151 1.658H10.4c.968 0 1.739-.001 2.36.05.63.051 1.172.16 1.67.413a4.25 4.25 0 0 1 1.857 1.857c.254.498.362 1.04.413 1.67.05.621.05 1.392.05 2.36v1.646c.913-.007 1.327-.035 1.658-.15a2.75 2.75 0 0 0 1.688-1.688c.143-.41.154-.949.154-2.408V8.6c0-.993 0-1.692-.045-2.238-.044-.537-.127-.86-.255-1.11a2.75 2.75 0 0 0-1.202-1.202c-.25-.128-.573-.211-1.11-.255-.546-.045-1.245-.045-2.238-.045z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CopyIcon.displayName = "CopyIcon";
-export { CopyIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CopyRegular } from './CopyRegular';
+import { CopyRegularDuotone } from './CopyRegularDuotone';
+import { CopyBold } from './CopyBold';
+import { CopyBoldDuotone } from './CopyBoldDuotone';
+import { CopyFill } from './CopyFill';
+import { CopyFillDuotone } from './CopyFillDuotone';
+
+export interface CopyProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Copy with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CopyRegular } from 'stera-icons/CopyRegular';
+ */
+const Copy = memo(forwardRef<SVGSVGElement, CopyProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CopyBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CopyBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CopyFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CopyFill ref={ref} {...rest} />;
+  if (duotone) return <CopyRegularDuotone ref={ref} {...rest} />;
+  return <CopyRegular ref={ref} {...rest} />;
+}));
+
+Copy.displayName = 'Copy';
+
+export { Copy };

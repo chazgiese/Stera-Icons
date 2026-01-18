@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const BackslashIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M4.56 2.502a.75.75 0 0 0-1.12.996l16 18a.75.75 0 0 0 1.12-.996z"
-        />
-      </svg>
-    ))
-);
-BackslashIcon.displayName = "BackslashIcon";
-export { BackslashIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { BackslashRegular } from './BackslashRegular';
+import { BackslashRegularDuotone } from './BackslashRegularDuotone';
+import { BackslashBold } from './BackslashBold';
+import { BackslashBoldDuotone } from './BackslashBoldDuotone';
+import { BackslashFill } from './BackslashFill';
+import { BackslashFillDuotone } from './BackslashFillDuotone';
+
+export interface BackslashProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Backslash with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { BackslashRegular } from 'stera-icons/BackslashRegular';
+ */
+const Backslash = memo(forwardRef<SVGSVGElement, BackslashProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <BackslashBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <BackslashBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <BackslashFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <BackslashFill ref={ref} {...rest} />;
+  if (duotone) return <BackslashRegularDuotone ref={ref} {...rest} />;
+  return <BackslashRegular ref={ref} {...rest} />;
+}));
+
+Backslash.displayName = 'Backslash';
+
+export { Backslash };

@@ -1,0 +1,19 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type MoreCircleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
+
+const MoreCircleRegularDuotone = memo(
+  forwardRef<SVGSVGElement, MoreCircleRegularDuotoneProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M8.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M13.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M18.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+    </IconBase>
+  ))
+);
+
+MoreCircleRegularDuotone.displayName = 'MoreCircleRegularDuotone';
+
+export { MoreCircleRegularDuotone };
+export type { MoreCircleRegularDuotoneProps };

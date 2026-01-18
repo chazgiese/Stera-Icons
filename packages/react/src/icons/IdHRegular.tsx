@@ -1,0 +1,20 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type IdHRegularProps = Omit<IconBaseProps, 'children'>;
+
+const IdHRegular = memo(
+  forwardRef<SVGSVGElement, IdHRegularProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" fillRule="evenodd" d="M8.83 8.25a2.75 2.75 0 0 1 2.03 4.6c.69.45 1.23 1.11 1.5 1.9a.75.75 0 1 1-1.4.5 2.25 2.25 0 0 0-4.25 0 .75.75 0 1 1-1.42-.5c.28-.79.82-1.45 1.5-1.9a2.75 2.75 0 0 1 2.03-4.6m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5" clipRule="evenodd" />
+        <path fill="currentColor" d="M18 13.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5zM18 9.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5z" />
+        <path fill="currentColor" fillRule="evenodd" d="M19 3.25A3.75 3.75 0 0 1 22.75 7v10A3.75 3.75 0 0 1 19 20.75H5A3.75 3.75 0 0 1 1.25 17V7A3.75 3.75 0 0 1 5 3.25zM5 4.75c-1.24 0-2.25 1-2.25 2.25v10c0 1.24 1 2.25 2.25 2.25h14c1.24 0 2.25-1 2.25-2.25V7c0-1.24-1-2.25-2.25-2.25z" clipRule="evenodd" />
+    </IconBase>
+  ))
+);
+
+IdHRegular.displayName = 'IdHRegular';
+
+export { IdHRegular };
+export type { IdHRegularProps };

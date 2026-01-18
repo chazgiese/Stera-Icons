@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ActivityIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M9 2.25a.75.75 0 0 1 .712.513L15 18.627l2.004-6.01A2 2 0 0 1 18.9 11.25H22a.75.75 0 0 1 0 1.5h-3.099a.5.5 0 0 0-.474.342l-2.715 8.145a.75.75 0 0 1-1.424 0L9 5.372l-2.003 6.01A2 2 0 0 1 5.1 12.75H2a.75.75 0 0 1 0-1.5h3.099a.5.5 0 0 0 .474-.342l2.715-8.145.047-.11A.75.75 0 0 1 9 2.25"
-        />
-      </svg>
-    ))
-);
-ActivityIcon.displayName = "ActivityIcon";
-export { ActivityIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ActivityRegular } from './ActivityRegular';
+import { ActivityRegularDuotone } from './ActivityRegularDuotone';
+import { ActivityBold } from './ActivityBold';
+import { ActivityBoldDuotone } from './ActivityBoldDuotone';
+import { ActivityFill } from './ActivityFill';
+import { ActivityFillDuotone } from './ActivityFillDuotone';
+
+export interface ActivityProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Activity with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ActivityRegular } from 'stera-icons/ActivityRegular';
+ */
+const Activity = memo(forwardRef<SVGSVGElement, ActivityProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ActivityBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ActivityBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ActivityFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ActivityFill ref={ref} {...rest} />;
+  if (duotone) return <ActivityRegularDuotone ref={ref} {...rest} />;
+  return <ActivityRegular ref={ref} {...rest} />;
+}));
+
+Activity.displayName = 'Activity';
+
+export { Activity };

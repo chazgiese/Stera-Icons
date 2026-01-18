@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const PenIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M18.25 1.871c.998 0 2.032.35 2.78 1.099.749.748 1.1 1.782 1.1 2.78-.001.998-.351 2.032-1.1 2.78l-12.5 12.5a.75.75 0 0 1-.456.215l-5 .5a.75.75 0 0 1-.82-.82l.5-5 .024-.127a.75.75 0 0 1 .192-.33L15.47 2.97c.748-.748 1.782-1.099 2.78-1.099M4.22 16.34l-.382 3.821 3.821-.382 9.78-9.78L14 6.559zM18.25 3.37c-.666 0-1.296.236-1.72.66l-1.47 1.468 3.44 3.44 1.47-1.47c.423-.423.659-1.053.66-1.719 0-.666-.237-1.296-.66-1.72s-1.054-.659-1.72-.659"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-PenIcon.displayName = "PenIcon";
-export { PenIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PenRegular } from './PenRegular';
+import { PenRegularDuotone } from './PenRegularDuotone';
+import { PenBold } from './PenBold';
+import { PenBoldDuotone } from './PenBoldDuotone';
+import { PenFill } from './PenFill';
+import { PenFillDuotone } from './PenFillDuotone';
+
+export interface PenProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Pen with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PenRegular } from 'stera-icons/PenRegular';
+ */
+const Pen = memo(forwardRef<SVGSVGElement, PenProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PenBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PenBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PenFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PenFill ref={ref} {...rest} />;
+  if (duotone) return <PenRegularDuotone ref={ref} {...rest} />;
+  return <PenRegular ref={ref} {...rest} />;
+}));
+
+Pen.displayName = 'Pen';
+
+export { Pen };

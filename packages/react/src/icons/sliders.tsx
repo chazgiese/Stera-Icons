@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const SlidersIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M15 13.25a3.75 3.75 0 0 1 3.675 3H22a.75.75 0 0 1 0 1.5h-3.325a3.751 3.751 0 0 1-7.35 0H2a.75.75 0 0 1 0-1.5h9.325c.348-1.712 1.86-3 3.675-3m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5M9 3.25a3.75 3.75 0 0 1 3.675 3H22a.75.75 0 0 1 0 1.5h-9.325a3.751 3.751 0 0 1-7.35 0H2a.75.75 0 0 1 0-1.5h3.325c.348-1.712 1.86-3 3.675-3m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-SlidersIcon.displayName = "SlidersIcon";
-export { SlidersIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { SlidersRegular } from './SlidersRegular';
+import { SlidersRegularDuotone } from './SlidersRegularDuotone';
+import { SlidersBold } from './SlidersBold';
+import { SlidersBoldDuotone } from './SlidersBoldDuotone';
+import { SlidersFill } from './SlidersFill';
+import { SlidersFillDuotone } from './SlidersFillDuotone';
+
+export interface SlidersProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Sliders with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { SlidersRegular } from 'stera-icons/SlidersRegular';
+ */
+const Sliders = memo(forwardRef<SVGSVGElement, SlidersProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <SlidersBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <SlidersBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <SlidersFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <SlidersFill ref={ref} {...rest} />;
+  if (duotone) return <SlidersRegularDuotone ref={ref} {...rest} />;
+  return <SlidersRegular ref={ref} {...rest} />;
+}));
+
+Sliders.displayName = 'Sliders';
+
+export { Sliders };

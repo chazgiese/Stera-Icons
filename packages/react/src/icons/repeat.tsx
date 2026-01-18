@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const RepeatIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M22 10.75a.75.75 0 0 1 .75.75V13A5.75 5.75 0 0 1 17 18.75H3.81l1.72 1.72a.75.75 0 1 1-1.06 1.06l-3-3a.745.745 0 0 1 0-1.06l3-3a.75.75 0 1 1 1.06 1.06l-1.72 1.72H17A4.25 4.25 0 0 0 21.25 13v-1.5a.75.75 0 0 1 .75-.75M18.47 2.47a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H7A4.25 4.25 0 0 0 2.75 11v1.5a.75.75 0 0 1-1.5 0V11A5.75 5.75 0 0 1 7 5.25h13.19l-1.72-1.72a.75.75 0 0 1 0-1.06"
-        />
-      </svg>
-    ))
-);
-RepeatIcon.displayName = "RepeatIcon";
-export { RepeatIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { RepeatRegular } from './RepeatRegular';
+import { RepeatRegularDuotone } from './RepeatRegularDuotone';
+import { RepeatBold } from './RepeatBold';
+import { RepeatBoldDuotone } from './RepeatBoldDuotone';
+import { RepeatFill } from './RepeatFill';
+import { RepeatFillDuotone } from './RepeatFillDuotone';
+
+export interface RepeatProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Repeat with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { RepeatRegular } from 'stera-icons/RepeatRegular';
+ */
+const Repeat = memo(forwardRef<SVGSVGElement, RepeatProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <RepeatBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <RepeatBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <RepeatFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <RepeatFill ref={ref} {...rest} />;
+  if (duotone) return <RepeatRegularDuotone ref={ref} {...rest} />;
+  return <RepeatRegular ref={ref} {...rest} />;
+}));
+
+Repeat.displayName = 'Repeat';
+
+export { Repeat };

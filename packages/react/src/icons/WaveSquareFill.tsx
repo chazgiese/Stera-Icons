@@ -1,0 +1,18 @@
+import { memo, forwardRef } from 'react';
+import { IconBase } from '../IconBase';
+import type { IconBaseProps } from '../IconBase';
+
+type WaveSquareFillProps = Omit<IconBaseProps, 'children'>;
+
+const WaveSquareFill = memo(
+  forwardRef<SVGSVGElement, WaveSquareFillProps>((props, ref) => (
+    <IconBase ref={ref} {...props}>
+      <path fill="currentColor" d="M10.75 2.5a2.75 2.75 0 0 1 2.75 2.75V18.5h7V12a1.5 1.5 0 0 1 3 0v6.75a2.75 2.75 0 0 1-2.75 2.75h-7.5a2.75 2.75 0 0 1-2.75-2.75V5.5h-7V12a1.5 1.5 0 0 1-3 0V5.25A2.75 2.75 0 0 1 3.25 2.5z" />
+    </IconBase>
+  ))
+);
+
+WaveSquareFill.displayName = 'WaveSquareFill';
+
+export { WaveSquareFill };
+export type { WaveSquareFillProps };

@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ArrowCircleRightRegular } from './ArrowCircleRightRegular';
+import { ArrowCircleRightRegularDuotone } from './ArrowCircleRightRegularDuotone';
+import { ArrowCircleRightBold } from './ArrowCircleRightBold';
+import { ArrowCircleRightBoldDuotone } from './ArrowCircleRightBoldDuotone';
+import { ArrowCircleRightFill } from './ArrowCircleRightFill';
+import { ArrowCircleRightFillDuotone } from './ArrowCircleRightFillDuotone';
+
+export interface ArrowCircleRightProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * ArrowCircleRight with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ArrowCircleRightRegular } from 'stera-icons/ArrowCircleRightRegular';
+ */
+const ArrowCircleRight = memo(forwardRef<SVGSVGElement, ArrowCircleRightProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ArrowCircleRightBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ArrowCircleRightBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ArrowCircleRightFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ArrowCircleRightFill ref={ref} {...rest} />;
+  if (duotone) return <ArrowCircleRightRegularDuotone ref={ref} {...rest} />;
+  return <ArrowCircleRightRegular ref={ref} {...rest} />;
+}));
+
+ArrowCircleRight.displayName = 'ArrowCircleRight';
+
+export { ArrowCircleRight };

@@ -1,43 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const PercentIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M19.47 3.47a.75.75 0 1 1 1.06 1.06l-16 16a.75.75 0 1 1-1.06-1.06z"
-        />
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M17.5 14.25a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5m0 1.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5M6.5 3.25a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5m0 1.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-PercentIcon.displayName = "PercentIcon";
-export { PercentIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PercentRegular } from './PercentRegular';
+import { PercentRegularDuotone } from './PercentRegularDuotone';
+import { PercentBold } from './PercentBold';
+import { PercentBoldDuotone } from './PercentBoldDuotone';
+import { PercentFill } from './PercentFill';
+import { PercentFillDuotone } from './PercentFillDuotone';
+
+export interface PercentProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Percent with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PercentRegular } from 'stera-icons/PercentRegular';
+ */
+const Percent = memo(forwardRef<SVGSVGElement, PercentProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PercentBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PercentBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PercentFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PercentFill ref={ref} {...rest} />;
+  if (duotone) return <PercentRegularDuotone ref={ref} {...rest} />;
+  return <PercentRegular ref={ref} {...rest} />;
+}));
+
+Percent.displayName = 'Percent';
+
+export { Percent };

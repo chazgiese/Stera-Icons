@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const MoreIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M21 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M13.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-        />
-      </svg>
-    ))
-);
-MoreIcon.displayName = "MoreIcon";
-export { MoreIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { MoreRegular } from './MoreRegular';
+import { MoreRegularDuotone } from './MoreRegularDuotone';
+import { MoreBold } from './MoreBold';
+import { MoreBoldDuotone } from './MoreBoldDuotone';
+import { MoreFill } from './MoreFill';
+import { MoreFillDuotone } from './MoreFillDuotone';
+
+export interface MoreProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * More with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { MoreRegular } from 'stera-icons/MoreRegular';
+ */
+const More = memo(forwardRef<SVGSVGElement, MoreProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <MoreBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <MoreBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <MoreFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <MoreFill ref={ref} {...rest} />;
+  if (duotone) return <MoreRegularDuotone ref={ref} {...rest} />;
+  return <MoreRegular ref={ref} {...rest} />;
+}));
+
+More.displayName = 'More';
+
+export { More };

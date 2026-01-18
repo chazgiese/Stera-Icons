@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CodeIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M13.784 3.776a.75.75 0 0 1 1.432.448l-5 16a.75.75 0 1 1-1.432-.448zM5.97 6.97a.75.75 0 0 1 1.06 1.06L3.06 12l3.97 3.97a.75.75 0 0 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06zM16.97 6.97a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06L20.94 12l-3.97-3.97a.75.75 0 0 1 0-1.06"
-        />
-      </svg>
-    ))
-);
-CodeIcon.displayName = "CodeIcon";
-export { CodeIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CodeRegular } from './CodeRegular';
+import { CodeRegularDuotone } from './CodeRegularDuotone';
+import { CodeBold } from './CodeBold';
+import { CodeBoldDuotone } from './CodeBoldDuotone';
+import { CodeFill } from './CodeFill';
+import { CodeFillDuotone } from './CodeFillDuotone';
+
+export interface CodeProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Code with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CodeRegular } from 'stera-icons/CodeRegular';
+ */
+const Code = memo(forwardRef<SVGSVGElement, CodeProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CodeBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CodeBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CodeFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CodeFill ref={ref} {...rest} />;
+  if (duotone) return <CodeRegularDuotone ref={ref} {...rest} />;
+  return <CodeRegular ref={ref} {...rest} />;
+}));
+
+Code.displayName = 'Code';
+
+export { Code };

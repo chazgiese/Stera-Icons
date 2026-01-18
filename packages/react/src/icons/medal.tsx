@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const MedalIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M16.8 1.25c.547 0 1.004-.001 1.375.03.38.03.736.098 1.073.27.517.263.938.685 1.202 1.202.172.337.24.693.27 1.073.03.371.03.828.03 1.375v1.822c0 .664.01 1.174-.15 1.638-.133.385-.35.737-.635 1.028-.344.351-.805.571-1.399.868l-1.816.908v.036h-.072l-1.464.731a5.75 5.75 0 1 1-6.429 0L7.322 11.5H7.25v-.036l-1.817-.908c-.593-.297-1.054-.517-1.398-.868A2.75 2.75 0 0 1 3.4 8.66c-.16-.464-.15-.974-.15-1.638V5.2c0-.547-.001-1.004.03-1.375.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 4.752 1.55c.337-.172.693-.24 1.073-.27.371-.031.827-.03 1.375-.03zM12 12.75A4.253 4.253 0 0 0 7.75 17 4.25 4.25 0 1 0 12 12.75m-3.25-2.214 1.798.9.014-.004q.502-.13 1.034-.167l.084-.005a6 6 0 0 1 .64 0l.083.005q.54.038 1.048.17l1.799-.899V2.75h-6.5zM7.2 2.75c-.572 0-.957 0-1.253.024-.287.024-.424.067-.515.113a1.25 1.25 0 0 0-.545.546c-.047.09-.09.227-.113.514-.024.296-.024.68-.024 1.253v1.822c0 .773.01.98.068 1.15.06.175.16.334.29.467.125.128.306.23.996.575l1.146.572V2.75zm9.55 7.036 1.145-.572c.69-.345.872-.447.997-.575a1.25 1.25 0 0 0 .29-.467c.058-.17.068-.377.068-1.15V5.2c0-.572 0-.957-.024-1.253-.024-.287-.067-.424-.113-.514a1.25 1.25 0 0 0-.546-.546c-.09-.046-.227-.09-.514-.113-.296-.024-.681-.024-1.253-.024h-.05z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-MedalIcon.displayName = "MedalIcon";
-export { MedalIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { MedalRegular } from './MedalRegular';
+import { MedalRegularDuotone } from './MedalRegularDuotone';
+import { MedalBold } from './MedalBold';
+import { MedalBoldDuotone } from './MedalBoldDuotone';
+import { MedalFill } from './MedalFill';
+import { MedalFillDuotone } from './MedalFillDuotone';
+
+export interface MedalProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Medal with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { MedalRegular } from 'stera-icons/MedalRegular';
+ */
+const Medal = memo(forwardRef<SVGSVGElement, MedalProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <MedalBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <MedalBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <MedalFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <MedalFill ref={ref} {...rest} />;
+  if (duotone) return <MedalRegularDuotone ref={ref} {...rest} />;
+  return <MedalRegular ref={ref} {...rest} />;
+}));
+
+Medal.displayName = 'Medal';
+
+export { Medal };

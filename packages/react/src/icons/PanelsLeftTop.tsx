@@ -1,0 +1,35 @@
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { PanelsLeftTopRegular } from './PanelsLeftTopRegular';
+import { PanelsLeftTopRegularDuotone } from './PanelsLeftTopRegularDuotone';
+import { PanelsLeftTopBold } from './PanelsLeftTopBold';
+import { PanelsLeftTopBoldDuotone } from './PanelsLeftTopBoldDuotone';
+import { PanelsLeftTopFill } from './PanelsLeftTopFill';
+import { PanelsLeftTopFillDuotone } from './PanelsLeftTopFillDuotone';
+
+export interface PanelsLeftTopProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * PanelsLeftTop with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { PanelsLeftTopRegular } from 'stera-icons/PanelsLeftTopRegular';
+ */
+const PanelsLeftTop = memo(forwardRef<SVGSVGElement, PanelsLeftTopProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <PanelsLeftTopBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <PanelsLeftTopBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <PanelsLeftTopFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <PanelsLeftTopFill ref={ref} {...rest} />;
+  if (duotone) return <PanelsLeftTopRegularDuotone ref={ref} {...rest} />;
+  return <PanelsLeftTopRegular ref={ref} {...rest} />;
+}));
+
+PanelsLeftTop.displayName = 'PanelsLeftTop';
+
+export { PanelsLeftTop };

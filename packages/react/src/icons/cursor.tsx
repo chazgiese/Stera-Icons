@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const CursorIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M3.35 4.996c-.494-1.48.914-2.889 2.394-2.396l15.711 5.238c1.759.586 1.714 3.089-.064 3.612l-7.104 2.089-2.089 7.103c-.523 1.778-3.024 1.823-3.611.066zm1.92-.972a.393.393 0 0 0-.497.497l5.237 15.712a.393.393 0 0 0 .75-.014l2.204-7.496a.75.75 0 0 1 .508-.507l7.496-2.204a.393.393 0 0 0 .014-.75z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-CursorIcon.displayName = "CursorIcon";
-export { CursorIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { CursorRegular } from './CursorRegular';
+import { CursorRegularDuotone } from './CursorRegularDuotone';
+import { CursorBold } from './CursorBold';
+import { CursorBoldDuotone } from './CursorBoldDuotone';
+import { CursorFill } from './CursorFill';
+import { CursorFillDuotone } from './CursorFillDuotone';
+
+export interface CursorProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Cursor with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { CursorRegular } from 'stera-icons/CursorRegular';
+ */
+const Cursor = memo(forwardRef<SVGSVGElement, CursorProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <CursorBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <CursorBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <CursorFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <CursorFill ref={ref} {...rest} />;
+  if (duotone) return <CursorRegularDuotone ref={ref} {...rest} />;
+  return <CursorRegular ref={ref} {...rest} />;
+}));
+
+Cursor.displayName = 'Cursor';
+
+export { Cursor };

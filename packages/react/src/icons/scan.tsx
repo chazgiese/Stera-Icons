@@ -1,37 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const ScanIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          d="M3 16.25a.75.75 0 0 1 .75.75v2c0 .69.56 1.25 1.25 1.25h2a.75.75 0 0 1 0 1.5H5A2.75 2.75 0 0 1 2.25 19v-2a.75.75 0 0 1 .75-.75M21 16.25a.75.75 0 0 1 .75.75v2A2.75 2.75 0 0 1 19 21.75h-2a.75.75 0 0 1 0-1.5h2c.69 0 1.25-.56 1.25-1.25v-2a.75.75 0 0 1 .75-.75M7 2.25a.75.75 0 0 1 0 1.5H5c-.69 0-1.25.56-1.25 1.25v2a.75.75 0 0 1-1.5 0V5A2.75 2.75 0 0 1 5 2.25zM19 2.25A2.75 2.75 0 0 1 21.75 5v2a.75.75 0 0 1-1.5 0V5c0-.69-.56-1.25-1.25-1.25h-2a.75.75 0 0 1 0-1.5z"
-        />
-      </svg>
-    ))
-);
-ScanIcon.displayName = "ScanIcon";
-export { ScanIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { ScanRegular } from './ScanRegular';
+import { ScanRegularDuotone } from './ScanRegularDuotone';
+import { ScanBold } from './ScanBold';
+import { ScanBoldDuotone } from './ScanBoldDuotone';
+import { ScanFill } from './ScanFill';
+import { ScanFillDuotone } from './ScanFillDuotone';
+
+export interface ScanProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Scan with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { ScanRegular } from 'stera-icons/ScanRegular';
+ */
+const Scan = memo(forwardRef<SVGSVGElement, ScanProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <ScanBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <ScanBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <ScanFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <ScanFill ref={ref} {...rest} />;
+  if (duotone) return <ScanRegularDuotone ref={ref} {...rest} />;
+  return <ScanRegular ref={ref} {...rest} />;
+}));
+
+Scan.displayName = 'Scan';
+
+export { Scan };

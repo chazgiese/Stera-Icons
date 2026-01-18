@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const UsersIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M14.86 3c3.028 0 5.483 2.376 5.483 5.308 0 1.819-.947 3.423-2.388 4.38 2.243.715 3.931 2.254 4.735 4.487.226.63.422 1.133.235 1.881-.076.306-.25.615-.432.862a2.7 2.7 0 0 1-.698.678c-.685.427-1.428.404-2.358.404H4.563c-.93 0-1.673.023-2.358-.404a2.7 2.7 0 0 1-.698-.678c-.181-.247-.356-.555-.432-.862-.187-.748.008-1.251.235-1.881.804-2.233 2.491-3.772 4.734-4.487-1.441-.957-2.387-2.561-2.387-4.38C3.657 5.376 6.11 3 9.139 3c1.049 0 2.029.285 2.862.779A5.6 5.6 0 0 1 14.86 3m-.74 10.566c1.303.838 2.29 2.056 2.849 3.609.226.63.422 1.133.235 1.881-.047.191-.135.382-.237.56h2.47c1.07 0 1.326-.024 1.584-.185.065-.04.185-.15.307-.315.121-.166.188-.311.206-.384.077-.306.04-.446-.195-1.102-.909-2.523-3.216-4.015-6.478-4.015l-.231-.004a6 6 0 0 1-.51-.045m-4.98.05c-3.263 0-5.57 1.49-6.479 4.014-.236.656-.272.796-.195 1.102.018.073.085.218.206.384.122.165.242.275.307.315.258.16.514.184 1.584.184h9.153c1.07 0 1.326-.023 1.584-.184.065-.04.185-.15.306-.315a1.3 1.3 0 0 0 .207-.384c.076-.306.04-.446-.195-1.102-.909-2.523-3.216-4.015-6.479-4.015m0-9.231c-2.239 0-4.053 1.756-4.053 3.923S6.9 12.23 9.139 12.23c2.239 0 4.053-1.757 4.053-3.923s-1.815-3.923-4.053-3.923m5.72 0a4.15 4.15 0 0 0-1.668.348 5.2 5.2 0 0 1 1.43 3.575c0 1.376-.542 2.63-1.43 3.573a4.15 4.15 0 0 0 1.669.35c2.238 0 4.052-1.757 4.052-3.923S17.1 4.385 14.861 4.385"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-UsersIcon.displayName = "UsersIcon";
-export { UsersIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { UsersRegular } from './UsersRegular';
+import { UsersRegularDuotone } from './UsersRegularDuotone';
+import { UsersBold } from './UsersBold';
+import { UsersBoldDuotone } from './UsersBoldDuotone';
+import { UsersFill } from './UsersFill';
+import { UsersFillDuotone } from './UsersFillDuotone';
+
+export interface UsersProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Users with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { UsersRegular } from 'stera-icons/UsersRegular';
+ */
+const Users = memo(forwardRef<SVGSVGElement, UsersProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <UsersBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <UsersBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <UsersFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <UsersFill ref={ref} {...rest} />;
+  if (duotone) return <UsersRegularDuotone ref={ref} {...rest} />;
+  return <UsersRegular ref={ref} {...rest} />;
+}));
+
+Users.displayName = 'Users';
+
+export { Users };

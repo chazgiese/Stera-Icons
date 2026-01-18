@@ -1,39 +1,35 @@
-import { forwardRef, memo } from "react";
-import { jsx, jsxs } from "react/jsx-runtime";
-import type { IconProps } from "../types";
-const FlameIcon = memo(
-  forwardRef < SVGSVGElement,
-  IconProps >
-    ((
-      {
-        size = 24,
-        color = "currentColor",
-        className,
-        "aria-label": ariaLabel,
-        "aria-hidden": ariaHidden,
-        ...props
-      },
-      ref
-    ) => (
-      <svg
-        fill={color}
-        viewBox="0 0 24 24"
-        width={size}
-        height={size}
-        className={className}
-        aria-label={ariaLabel}
-        aria-hidden={ariaHidden}
-        ref={ref}
-        {...props}
-      >
-        <path
-          fill="currentColor"
-          fillRule="evenodd"
-          d="M12 1.25q.058 0 .114.01.009 0 .018.002.03.006.056.014a.7.7 0 0 1 .255.122l.03.02v.001h.003l.024.02.07.06q.093.077.263.223a37.236 37.236 0 0 1 3.734 3.726c1.021 1.18 2.058 2.553 2.842 4C20.19 10.886 20.75 12.45 20.75 14a8.75 8.75 0 0 1-17.5 0c0-1.549.56-3.113 1.34-4.553.785-1.446 1.822-2.82 2.843-4A37 37 0 0 1 11.43 1.5l.07-.06.024-.02h.002l.002.002.001-.001-.002-.002.029-.02.053-.037q.03-.018.06-.032a1 1 0 0 1 .141-.053l.057-.014.018-.002A1 1 0 0 1 12 1.25m-.017 12.296a14 14 0 0 0-1.141 1.29C9.99 15.93 9.25 17.262 9.25 18.5c0 1.025.399 1.688.912 2.107A2.98 2.98 0 0 0 12 21.25c.6 0 1.301-.204 1.838-.643.513-.42.912-1.082.912-2.107 0-1.238-.74-2.569-1.592-3.664a14 14 0 0 0-1.141-1.29L12 13.529zM11.26 3.65a36 36 0 0 0-2.693 2.777C7.588 7.56 6.625 8.843 5.91 10.162 5.19 11.488 4.75 12.8 4.75 14a7.24 7.24 0 0 0 3.255 6.049A4.6 4.6 0 0 1 7.75 18.5c0-1.761 1.01-3.431 1.908-4.586a15.6 15.6 0 0 1 1.84-1.97l.009-.01.003-.002.002-.001a.75.75 0 0 1 .976 0h.001l.004.004.01.008.033.03.121.109a15.547 15.547 0 0 1 1.685 1.832c.898 1.155 1.908 2.825 1.908 4.586 0 .575-.093 1.091-.256 1.549A7.24 7.24 0 0 0 19.25 14c0-1.201-.44-2.512-1.16-3.838-.715-1.319-1.678-2.602-2.657-3.734A36 36 0 0 0 12 2.985c-.198.173-.45.397-.74.666"
-          clipRule="evenodd"
-        />
-      </svg>
-    ))
-);
-FlameIcon.displayName = "FlameIcon";
-export { FlameIcon };
+import { forwardRef, memo } from 'react';
+import type { IconProps } from '../types';
+import { FlameRegular } from './FlameRegular';
+import { FlameRegularDuotone } from './FlameRegularDuotone';
+import { FlameBold } from './FlameBold';
+import { FlameBoldDuotone } from './FlameBoldDuotone';
+import { FlameFill } from './FlameFill';
+import { FlameFillDuotone } from './FlameFillDuotone';
+
+export interface FlameProps extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+/**
+ * Flame with dynamic weight and duotone props.
+ * For smaller bundle size, import specific variants directly:
+ * import { FlameRegular } from 'stera-icons/FlameRegular';
+ */
+const Flame = memo(forwardRef<SVGSVGElement, FlameProps>(({ 
+  weight = 'regular',
+  duotone = false,
+  ...rest 
+}, ref) => {
+  if (weight === 'bold' && duotone) return <FlameBoldDuotone ref={ref} {...rest} />;
+  if (weight === 'bold') return <FlameBold ref={ref} {...rest} />;
+  if (weight === 'fill' && duotone) return <FlameFillDuotone ref={ref} {...rest} />;
+  if (weight === 'fill') return <FlameFill ref={ref} {...rest} />;
+  if (duotone) return <FlameRegularDuotone ref={ref} {...rest} />;
+  return <FlameRegular ref={ref} {...rest} />;
+}));
+
+Flame.displayName = 'Flame';
+
+export { Flame };
