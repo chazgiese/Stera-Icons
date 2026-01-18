@@ -9,7 +9,7 @@
     "samples/*"
   ],
   "scripts": {
-    "build": "pnpm --filter stera-icons build && pnpm --filter stera-icons-react-demo build",
+    "build": "pnpm --filter stera-icons build && node scripts/generate-declarations.js && node scripts/build-icons.js icons-export.json && pnpm --filter stera-icons-react-demo build",
     "build:icons": "node scripts/build-icons.js icons-export.json",
     "dev": "pnpm -F stera-icons-react-demo dev",
     "test": "pnpm -r test",
