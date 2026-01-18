@@ -19,6 +19,11 @@
       "import": "./dist/icons/AccessibilityIcon.mjs",
       "require": "./dist/icons/AccessibilityIcon.cjs"
     },
+    "./ActivityIcon": {
+      "types": "./dist/icons/ActivityIcon.d.ts",
+      "import": "./dist/icons/ActivityIcon.mjs",
+      "require": "./dist/icons/ActivityIcon.cjs"
+    },
     "./AgentCursorIcon": {
       "types": "./dist/icons/AgentCursorIcon.d.ts",
       "import": "./dist/icons/AgentCursorIcon.mjs",
@@ -114,10 +119,30 @@
       "import": "./dist/icons/AlignVerticalTopIcon.mjs",
       "require": "./dist/icons/AlignVerticalTopIcon.cjs"
     },
+    "./AngleIcon": {
+      "types": "./dist/icons/AngleIcon.d.ts",
+      "import": "./dist/icons/AngleIcon.mjs",
+      "require": "./dist/icons/AngleIcon.cjs"
+    },
+    "./AngleAcuteIcon": {
+      "types": "./dist/icons/AngleAcuteIcon.d.ts",
+      "import": "./dist/icons/AngleAcuteIcon.mjs",
+      "require": "./dist/icons/AngleAcuteIcon.cjs"
+    },
+    "./AngleObtuseIcon": {
+      "types": "./dist/icons/AngleObtuseIcon.d.ts",
+      "import": "./dist/icons/AngleObtuseIcon.mjs",
+      "require": "./dist/icons/AngleObtuseIcon.cjs"
+    },
     "./AnnotationIcon": {
       "types": "./dist/icons/AnnotationIcon.d.ts",
       "import": "./dist/icons/AnnotationIcon.mjs",
       "require": "./dist/icons/AnnotationIcon.cjs"
+    },
+    "./ApertureIcon": {
+      "types": "./dist/icons/ApertureIcon.d.ts",
+      "import": "./dist/icons/ApertureIcon.mjs",
+      "require": "./dist/icons/ApertureIcon.cjs"
     },
     "./ArchiveIcon": {
       "types": "./dist/icons/ArchiveIcon.d.ts",
@@ -724,6 +749,11 @@
       "import": "./dist/icons/CanLabelIcon.mjs",
       "require": "./dist/icons/CanLabelIcon.cjs"
     },
+    "./CandleIcon": {
+      "types": "./dist/icons/CandleIcon.d.ts",
+      "import": "./dist/icons/CandleIcon.mjs",
+      "require": "./dist/icons/CandleIcon.cjs"
+    },
     "./CapsLockIcon": {
       "types": "./dist/icons/CapsLockIcon.d.ts",
       "import": "./dist/icons/CapsLockIcon.mjs",
@@ -783,6 +813,11 @@
       "types": "./dist/icons/ChartCandleIcon.d.ts",
       "import": "./dist/icons/ChartCandleIcon.mjs",
       "require": "./dist/icons/ChartCandleIcon.cjs"
+    },
+    "./ChartCandleAltIcon": {
+      "types": "./dist/icons/ChartCandleAltIcon.d.ts",
+      "import": "./dist/icons/ChartCandleAltIcon.mjs",
+      "require": "./dist/icons/ChartCandleAltIcon.cjs"
     },
     "./ChartDonutIcon": {
       "types": "./dist/icons/ChartDonutIcon.d.ts",
@@ -849,6 +884,16 @@
       "import": "./dist/icons/ChatBoxIcon.mjs",
       "require": "./dist/icons/ChatBoxIcon.cjs"
     },
+    "./ChatBoxAlertIcon": {
+      "types": "./dist/icons/ChatBoxAlertIcon.d.ts",
+      "import": "./dist/icons/ChatBoxAlertIcon.mjs",
+      "require": "./dist/icons/ChatBoxAlertIcon.cjs"
+    },
+    "./ChatBoxCheckIcon": {
+      "types": "./dist/icons/ChatBoxCheckIcon.d.ts",
+      "import": "./dist/icons/ChatBoxCheckIcon.mjs",
+      "require": "./dist/icons/ChatBoxCheckIcon.cjs"
+    },
     "./ChatBoxDashedIcon": {
       "types": "./dist/icons/ChatBoxDashedIcon.d.ts",
       "import": "./dist/icons/ChatBoxDashedIcon.mjs",
@@ -863,6 +908,16 @@
       "types": "./dist/icons/ChatBoxDotsIcon.d.ts",
       "import": "./dist/icons/ChatBoxDotsIcon.mjs",
       "require": "./dist/icons/ChatBoxDotsIcon.cjs"
+    },
+    "./ChatBoxOffIcon": {
+      "types": "./dist/icons/ChatBoxOffIcon.d.ts",
+      "import": "./dist/icons/ChatBoxOffIcon.mjs",
+      "require": "./dist/icons/ChatBoxOffIcon.cjs"
+    },
+    "./ChatBoxPlusIcon": {
+      "types": "./dist/icons/ChatBoxPlusIcon.d.ts",
+      "import": "./dist/icons/ChatBoxPlusIcon.mjs",
+      "require": "./dist/icons/ChatBoxPlusIcon.cjs"
     },
     "./ChatBoxQuestionIcon": {
       "types": "./dist/icons/ChatBoxQuestionIcon.d.ts",
@@ -879,6 +934,16 @@
       "import": "./dist/icons/ChatBubbleIcon.mjs",
       "require": "./dist/icons/ChatBubbleIcon.cjs"
     },
+    "./ChatBubbleAlertIcon": {
+      "types": "./dist/icons/ChatBubbleAlertIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleAlertIcon.mjs",
+      "require": "./dist/icons/ChatBubbleAlertIcon.cjs"
+    },
+    "./ChatBubbleCheckIcon": {
+      "types": "./dist/icons/ChatBubbleCheckIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleCheckIcon.mjs",
+      "require": "./dist/icons/ChatBubbleCheckIcon.cjs"
+    },
     "./ChatBubbleDashedIcon": {
       "types": "./dist/icons/ChatBubbleDashedIcon.d.ts",
       "import": "./dist/icons/ChatBubbleDashedIcon.mjs",
@@ -893,6 +958,16 @@
       "types": "./dist/icons/ChatBubbleDotsIcon.d.ts",
       "import": "./dist/icons/ChatBubbleDotsIcon.mjs",
       "require": "./dist/icons/ChatBubbleDotsIcon.cjs"
+    },
+    "./ChatBubbleOffIcon": {
+      "types": "./dist/icons/ChatBubbleOffIcon.d.ts",
+      "import": "./dist/icons/ChatBubbleOffIcon.mjs",
+      "require": "./dist/icons/ChatBubbleOffIcon.cjs"
+    },
+    "./ChatBubblePlusIcon": {
+      "types": "./dist/icons/ChatBubblePlusIcon.d.ts",
+      "import": "./dist/icons/ChatBubblePlusIcon.mjs",
+      "require": "./dist/icons/ChatBubblePlusIcon.cjs"
     },
     "./ChatBubbleQuestionIcon": {
       "types": "./dist/icons/ChatBubbleQuestionIcon.d.ts",
@@ -1153,6 +1228,11 @@
       "types": "./dist/icons/CircleNotchIcon.d.ts",
       "import": "./dist/icons/CircleNotchIcon.mjs",
       "require": "./dist/icons/CircleNotchIcon.cjs"
+    },
+    "./CirclePlaceholderIcon": {
+      "types": "./dist/icons/CirclePlaceholderIcon.d.ts",
+      "import": "./dist/icons/CirclePlaceholderIcon.mjs",
+      "require": "./dist/icons/CirclePlaceholderIcon.cjs"
     },
     "./CircleSlashIcon": {
       "types": "./dist/icons/CircleSlashIcon.d.ts",
@@ -1684,6 +1764,11 @@
       "import": "./dist/icons/EyeOffIcon.mjs",
       "require": "./dist/icons/EyeOffIcon.cjs"
     },
+    "./FastForwardIcon": {
+      "types": "./dist/icons/FastForwardIcon.d.ts",
+      "import": "./dist/icons/FastForwardIcon.mjs",
+      "require": "./dist/icons/FastForwardIcon.cjs"
+    },
     "./FigmaIcon": {
       "types": "./dist/icons/FigmaIcon.d.ts",
       "import": "./dist/icons/FigmaIcon.mjs",
@@ -1869,6 +1954,11 @@
       "import": "./dist/icons/FortressIcon.mjs",
       "require": "./dist/icons/FortressIcon.cjs"
     },
+    "./ForwardIcon": {
+      "types": "./dist/icons/ForwardIcon.d.ts",
+      "import": "./dist/icons/ForwardIcon.mjs",
+      "require": "./dist/icons/ForwardIcon.cjs"
+    },
     "./FrameIcon": {
       "types": "./dist/icons/FrameIcon.d.ts",
       "import": "./dist/icons/FrameIcon.mjs",
@@ -2008,6 +2098,11 @@
       "types": "./dist/icons/GlobeIcon.d.ts",
       "import": "./dist/icons/GlobeIcon.mjs",
       "require": "./dist/icons/GlobeIcon.cjs"
+    },
+    "./GradientIcon": {
+      "types": "./dist/icons/GradientIcon.d.ts",
+      "import": "./dist/icons/GradientIcon.mjs",
+      "require": "./dist/icons/GradientIcon.cjs"
     },
     "./GridIcon": {
       "types": "./dist/icons/GridIcon.d.ts",
@@ -2424,6 +2519,11 @@
       "import": "./dist/icons/MailXIcon.mjs",
       "require": "./dist/icons/MailXIcon.cjs"
     },
+    "./MailboxIcon": {
+      "types": "./dist/icons/MailboxIcon.d.ts",
+      "import": "./dist/icons/MailboxIcon.mjs",
+      "require": "./dist/icons/MailboxIcon.cjs"
+    },
     "./MapIcon": {
       "types": "./dist/icons/MapIcon.d.ts",
       "import": "./dist/icons/MapIcon.mjs",
@@ -2754,6 +2854,11 @@
       "import": "./dist/icons/PieIcon.mjs",
       "require": "./dist/icons/PieIcon.cjs"
     },
+    "./PilcrowIcon": {
+      "types": "./dist/icons/PilcrowIcon.d.ts",
+      "import": "./dist/icons/PilcrowIcon.mjs",
+      "require": "./dist/icons/PilcrowIcon.cjs"
+    },
     "./PlayIcon": {
       "types": "./dist/icons/PlayIcon.d.ts",
       "import": "./dist/icons/PlayIcon.mjs",
@@ -2829,6 +2934,16 @@
       "import": "./dist/icons/QuestionMarkCircleIcon.mjs",
       "require": "./dist/icons/QuestionMarkCircleIcon.cjs"
     },
+    "./QuoteIcon": {
+      "types": "./dist/icons/QuoteIcon.d.ts",
+      "import": "./dist/icons/QuoteIcon.mjs",
+      "require": "./dist/icons/QuoteIcon.cjs"
+    },
+    "./QuoteOpeningIcon": {
+      "types": "./dist/icons/QuoteOpeningIcon.d.ts",
+      "import": "./dist/icons/QuoteOpeningIcon.mjs",
+      "require": "./dist/icons/QuoteOpeningIcon.cjs"
+    },
     "./ReceiptIcon": {
       "types": "./dist/icons/ReceiptIcon.d.ts",
       "import": "./dist/icons/ReceiptIcon.mjs",
@@ -2849,10 +2964,20 @@
       "import": "./dist/icons/RectangleDashedIcon.mjs",
       "require": "./dist/icons/RectangleDashedIcon.cjs"
     },
+    "./RepeatIcon": {
+      "types": "./dist/icons/RepeatIcon.d.ts",
+      "import": "./dist/icons/RepeatIcon.mjs",
+      "require": "./dist/icons/RepeatIcon.cjs"
+    },
     "./ReplyIcon": {
       "types": "./dist/icons/ReplyIcon.d.ts",
       "import": "./dist/icons/ReplyIcon.mjs",
       "require": "./dist/icons/ReplyIcon.cjs"
+    },
+    "./RewindIcon": {
+      "types": "./dist/icons/RewindIcon.d.ts",
+      "import": "./dist/icons/RewindIcon.mjs",
+      "require": "./dist/icons/RewindIcon.cjs"
     },
     "./RobotIcon": {
       "types": "./dist/icons/RobotIcon.d.ts",
@@ -3084,6 +3209,21 @@
       "import": "./dist/icons/ShieldSlashIcon.mjs",
       "require": "./dist/icons/ShieldSlashIcon.cjs"
     },
+    "./ShipBackIcon": {
+      "types": "./dist/icons/ShipBackIcon.d.ts",
+      "import": "./dist/icons/ShipBackIcon.mjs",
+      "require": "./dist/icons/ShipBackIcon.cjs"
+    },
+    "./ShipForwardIcon": {
+      "types": "./dist/icons/ShipForwardIcon.d.ts",
+      "import": "./dist/icons/ShipForwardIcon.mjs",
+      "require": "./dist/icons/ShipForwardIcon.cjs"
+    },
+    "./ShuffleIcon": {
+      "types": "./dist/icons/ShuffleIcon.d.ts",
+      "import": "./dist/icons/ShuffleIcon.mjs",
+      "require": "./dist/icons/ShuffleIcon.cjs"
+    },
     "./SidebarLeftIcon": {
       "types": "./dist/icons/SidebarLeftIcon.d.ts",
       "import": "./dist/icons/SidebarLeftIcon.mjs",
@@ -3279,6 +3419,16 @@
       "import": "./dist/icons/SquareDashedIcon.mjs",
       "require": "./dist/icons/SquareDashedIcon.cjs"
     },
+    "./SquarePlaceholderIcon": {
+      "types": "./dist/icons/SquarePlaceholderIcon.d.ts",
+      "import": "./dist/icons/SquarePlaceholderIcon.mjs",
+      "require": "./dist/icons/SquarePlaceholderIcon.cjs"
+    },
+    "./SquareSlashIcon": {
+      "types": "./dist/icons/SquareSlashIcon.d.ts",
+      "import": "./dist/icons/SquareSlashIcon.mjs",
+      "require": "./dist/icons/SquareSlashIcon.cjs"
+    },
     "./StairsIcon": {
       "types": "./dist/icons/StairsIcon.d.ts",
       "import": "./dist/icons/StairsIcon.mjs",
@@ -3298,6 +3448,11 @@
       "types": "./dist/icons/StopCircleIcon.d.ts",
       "import": "./dist/icons/StopCircleIcon.mjs",
       "require": "./dist/icons/StopCircleIcon.cjs"
+    },
+    "./StopwatchIcon": {
+      "types": "./dist/icons/StopwatchIcon.d.ts",
+      "import": "./dist/icons/StopwatchIcon.mjs",
+      "require": "./dist/icons/StopwatchIcon.cjs"
     },
     "./StoreIcon": {
       "types": "./dist/icons/StoreIcon.d.ts",
@@ -3378,6 +3533,11 @@
       "types": "./dist/icons/TextBIcon.d.ts",
       "import": "./dist/icons/TextBIcon.mjs",
       "require": "./dist/icons/TextBIcon.cjs"
+    },
+    "./TextFieldIcon": {
+      "types": "./dist/icons/TextFieldIcon.d.ts",
+      "import": "./dist/icons/TextFieldIcon.mjs",
+      "require": "./dist/icons/TextFieldIcon.cjs"
     },
     "./TextItalicIcon": {
       "types": "./dist/icons/TextItalicIcon.d.ts",

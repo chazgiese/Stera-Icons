@@ -1,0 +1,44 @@
+import { forwardRef, memo } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
+import type { IconProps } from "../types";
+const ForwardIconFillDuotone = memo(
+  forwardRef < SVGSVGElement,
+  IconProps >
+    ((
+      {
+        size = 24,
+        color = "currentColor",
+        className,
+        "aria-label": ariaLabel,
+        "aria-hidden": ariaHidden,
+        ...props
+      },
+      ref
+    ) => (
+      <svg
+        fill={color}
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        className={className}
+        aria-label={ariaLabel}
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...props}
+      >
+        <path
+          fill="currentColor"
+          d="M19.586 12 14 17.586V14.5a1 1 0 0 0-1-1h-2c-3.187 0-5.384 1.172-6.799 2.403.275-1.808.832-2.964 1.663-3.73C7.122 11.018 9.266 10.5 13 10.5a1 1 0 0 0 1-1V6.414z"
+          opacity={0.4}
+        />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M12.617 3.076a1 1 0 0 1 1.09.217l8 8a1 1 0 0 1 0 1.414l-8 8A1 1 0 0 1 12 20v-4.5h-1c-2.722 0-4.49 1.012-5.581 1.993a7.3 7.3 0 0 0-1.18 1.359 6 6 0 0 0-.317.537l-.008.016A1 1 0 0 1 2 19c0-3.798.619-6.558 2.51-8.299C6.21 9.14 8.727 8.6 12 8.514V4a1 1 0 0 1 .617-.924M14 9.5a1 1 0 0 1-1 1c-3.734 0-5.878.517-7.136 1.674-.831.765-1.388 1.921-1.663 3.73C5.616 14.671 7.813 13.5 11 13.5h2a1 1 0 0 1 1 1v3.086L19.586 12 14 6.414z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ))
+);
+ForwardIconFillDuotone.displayName = "ForwardIconFillDuotone";
+export { ForwardIconFillDuotone };

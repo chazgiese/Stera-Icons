@@ -132,6 +132,138 @@
     "svgHash": "2d860699"
   },
   {
+    "name": "activity",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.034Z",
+    "lastModified": "2026-01-18T05:28:00.034Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0284e51c"
+  },
+  {
+    "name": "activity",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.040Z",
+    "lastModified": "2026-01-18T05:28:00.040Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2beabc15"
+  },
+  {
+    "name": "activity",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.049Z",
+    "lastModified": "2026-01-18T05:28:00.049Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "05f71c16"
+  },
+  {
+    "name": "activity",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.056Z",
+    "lastModified": "2026-01-18T05:28:00.056Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "70b36fcd"
+  },
+  {
+    "name": "activity",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.063Z",
+    "lastModified": "2026-01-18T05:28:00.063Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4d047d25"
+  },
+  {
+    "name": "activity",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "analytics",
+      "heartbeat",
+      "live",
+      "monitoring",
+      "performance",
+      "pulse",
+      "signal"
+    ],
+    "componentName": "ActivityIcon",
+    "fileName": "activity-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.070Z",
+    "lastModified": "2026-01-18T05:28:00.070Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2863f76d"
+  },
+  {
     "name": "agent-cursor",
     "weight": "regular",
     "duotone": false,
@@ -2664,6 +2796,384 @@
     "svgHash": "2eb59659"
   },
   {
+    "name": "angle",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.946Z",
+    "lastModified": "2026-01-18T05:28:00.946Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "421a09f0"
+  },
+  {
+    "name": "angle",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.950Z",
+    "lastModified": "2026-01-18T05:28:00.950Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5d77e83c"
+  },
+  {
+    "name": "angle",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.955Z",
+    "lastModified": "2026-01-18T05:28:00.955Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "21e6b788"
+  },
+  {
+    "name": "angle",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.964Z",
+    "lastModified": "2026-01-18T05:28:00.964Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "79c784a6"
+  },
+  {
+    "name": "angle",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.969Z",
+    "lastModified": "2026-01-18T05:28:00.969Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "38e12346"
+  },
+  {
+    "name": "angle",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "right",
+      "rotate"
+    ],
+    "componentName": "AngleIcon",
+    "fileName": "angle-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.976Z",
+    "lastModified": "2026-01-18T05:28:00.976Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "39663283"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.980Z",
+    "lastModified": "2026-01-18T05:28:00.980Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "11719f6b"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.989Z",
+    "lastModified": "2026-01-18T05:28:00.989Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2c89b745"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:00.995Z",
+    "lastModified": "2026-01-18T05:28:00.995Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1d9aa71b"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.000Z",
+    "lastModified": "2026-01-18T05:28:01.000Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3732ef8b"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.006Z",
+    "lastModified": "2026-01-18T05:28:01.006Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "19ec49ff"
+  },
+  {
+    "name": "angle-acute",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "acute",
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleAcuteIcon",
+    "fileName": "angle-acute-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.010Z",
+    "lastModified": "2026-01-18T05:28:01.010Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3c7d7976"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.016Z",
+    "lastModified": "2026-01-18T05:28:01.016Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5a270ab6"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.023Z",
+    "lastModified": "2026-01-18T05:28:01.023Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "16bccd71"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.047Z",
+    "lastModified": "2026-01-18T05:28:01.047Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "656d2572"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.110Z",
+    "lastModified": "2026-01-18T05:28:01.110Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7bd78acc"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.119Z",
+    "lastModified": "2026-01-18T05:28:01.119Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7c57011b"
+  },
+  {
+    "name": "angle-obtuse",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "angle",
+      "corner",
+      "geometry",
+      "measurement",
+      "obtuse",
+      "orientation",
+      "rotate"
+    ],
+    "componentName": "AngleObtuseIcon",
+    "fileName": "angle-obtuse-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.138Z",
+    "lastModified": "2026-01-18T05:28:01.138Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "542122d1"
+  },
+  {
     "name": "annotation",
     "weight": "regular",
     "duotone": false,
@@ -2800,6 +3310,132 @@
     "lastModified": "2026-01-06T09:41:14.785Z",
     "versionLastModified": "5.13.0",
     "svgHash": "788ccdda"
+  },
+  {
+    "name": "aperture",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.169Z",
+    "lastModified": "2026-01-18T05:28:01.169Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "18e581b0"
+  },
+  {
+    "name": "aperture",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.175Z",
+    "lastModified": "2026-01-18T05:28:01.175Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "66b84f49"
+  },
+  {
+    "name": "aperture",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.181Z",
+    "lastModified": "2026-01-18T05:28:01.181Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7f50cf0a"
+  },
+  {
+    "name": "aperture",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.186Z",
+    "lastModified": "2026-01-18T05:28:01.186Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7d188170"
+  },
+  {
+    "name": "aperture",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.193Z",
+    "lastModified": "2026-01-18T05:28:01.193Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "775661e5"
+  },
+  {
+    "name": "aperture",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "camera",
+      "exposure",
+      "focus",
+      "image settings",
+      "lens",
+      "photography",
+      "shutter"
+    ],
+    "componentName": "ApertureIcon",
+    "fileName": "aperture-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:01.198Z",
+    "lastModified": "2026-01-18T05:28:01.199Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5fd88d50"
   },
   {
     "name": "archive",
@@ -12241,9 +12877,9 @@
     "fileName": "bell-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:16.857Z",
-    "lastModified": "2026-01-11T11:05:39.066Z",
-    "versionLastModified": "6.1.0",
-    "svgHash": "423f78b3"
+    "lastModified": "2026-01-18T05:28:03.112Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6814eef3"
   },
   {
     "name": "bell-dot",
@@ -14595,9 +15231,9 @@
     "fileName": "boxes-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.330Z",
-    "lastModified": "2026-01-06T09:41:17.330Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "45195923"
+    "lastModified": "2026-01-18T05:28:03.512Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "14ee0ad3"
   },
   {
     "name": "boxes",
@@ -14617,9 +15253,9 @@
     "fileName": "boxes-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.334Z",
-    "lastModified": "2026-01-06T09:41:17.334Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "31a7aa3f"
+    "lastModified": "2026-01-18T05:28:03.515Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7798ea70"
   },
   {
     "name": "brackets-curly",
@@ -15971,9 +16607,9 @@
     "fileName": "brightness-high.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.602Z",
-    "lastModified": "2026-01-06T09:41:17.602Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "3ec4e671"
+    "lastModified": "2026-01-18T05:28:03.758Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3c2b2f7a"
   },
   {
     "name": "brightness-high",
@@ -15993,9 +16629,9 @@
     "fileName": "brightness-high-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.609Z",
-    "lastModified": "2026-01-06T09:41:17.609Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "5cf57790"
+    "lastModified": "2026-01-18T05:28:03.762Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2b502abd"
   },
   {
     "name": "brightness-high",
@@ -16015,9 +16651,9 @@
     "fileName": "brightness-high-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.613Z",
-    "lastModified": "2026-01-06T09:41:17.613Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "49c9d8d8"
+    "lastModified": "2026-01-18T05:28:03.766Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "03190f29"
   },
   {
     "name": "brightness-high",
@@ -16037,9 +16673,9 @@
     "fileName": "brightness-high-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.618Z",
-    "lastModified": "2026-01-06T09:41:17.618Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "562b5983"
+    "lastModified": "2026-01-18T05:28:03.769Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4b131eb0"
   },
   {
     "name": "brightness-high",
@@ -16059,9 +16695,9 @@
     "fileName": "brightness-high-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.622Z",
-    "lastModified": "2026-01-06T09:41:17.622Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4e1eaf4c"
+    "lastModified": "2026-01-18T05:28:03.774Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "741ea20f"
   },
   {
     "name": "brightness-high",
@@ -16081,9 +16717,9 @@
     "fileName": "brightness-high-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.626Z",
-    "lastModified": "2026-01-06T09:41:17.626Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7a148cf7"
+    "lastModified": "2026-01-18T05:28:03.778Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2abff39e"
   },
   {
     "name": "brightness-low",
@@ -16101,9 +16737,9 @@
     "fileName": "brightness-low.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.631Z",
-    "lastModified": "2026-01-06T09:41:17.631Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6bfb2bde"
+    "lastModified": "2026-01-18T05:28:03.782Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3c692b47"
   },
   {
     "name": "brightness-low",
@@ -16121,9 +16757,9 @@
     "fileName": "brightness-low-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.635Z",
-    "lastModified": "2026-01-06T09:41:17.635Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "2f4c1219"
+    "lastModified": "2026-01-18T05:28:03.786Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "075ea39f"
   },
   {
     "name": "brightness-low",
@@ -16141,9 +16777,9 @@
     "fileName": "brightness-low-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.640Z",
-    "lastModified": "2026-01-06T09:41:17.640Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4f6a4d75"
+    "lastModified": "2026-01-18T05:28:03.789Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "45aa0453"
   },
   {
     "name": "brightness-low",
@@ -16161,9 +16797,9 @@
     "fileName": "brightness-low-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.644Z",
-    "lastModified": "2026-01-06T09:41:17.644Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "56d894a2"
+    "lastModified": "2026-01-18T05:28:03.793Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "075ea39f"
   },
   {
     "name": "brightness-low",
@@ -16181,9 +16817,9 @@
     "fileName": "brightness-low-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.648Z",
-    "lastModified": "2026-01-06T09:41:17.648Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0f4c2245"
+    "lastModified": "2026-01-18T05:28:03.797Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4302d8d7"
   },
   {
     "name": "brightness-low",
@@ -16201,9 +16837,9 @@
     "fileName": "brightness-low-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.652Z",
-    "lastModified": "2026-01-06T09:41:17.652Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "5ea29dda"
+    "lastModified": "2026-01-18T05:28:03.801Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "40c2bdcb"
   },
   {
     "name": "brightness-medium",
@@ -16221,9 +16857,9 @@
     "fileName": "brightness-medium.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.657Z",
-    "lastModified": "2026-01-06T09:41:17.657Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "615b8448"
+    "lastModified": "2026-01-18T05:28:03.804Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5048301d"
   },
   {
     "name": "brightness-medium",
@@ -16241,9 +16877,9 @@
     "fileName": "brightness-medium-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.666Z",
-    "lastModified": "2026-01-06T09:41:17.666Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0a216849"
+    "lastModified": "2026-01-18T05:28:03.808Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "68cac730"
   },
   {
     "name": "brightness-medium",
@@ -16261,9 +16897,9 @@
     "fileName": "brightness-medium-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.671Z",
-    "lastModified": "2026-01-06T09:41:17.671Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4ff35ce1"
+    "lastModified": "2026-01-18T05:28:03.812Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "053cc6c3"
   },
   {
     "name": "brightness-medium",
@@ -16281,9 +16917,9 @@
     "fileName": "brightness-medium-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.676Z",
-    "lastModified": "2026-01-06T09:41:17.676Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "35b70e3a"
+    "lastModified": "2026-01-18T05:28:03.817Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "42200aca"
   },
   {
     "name": "brightness-medium",
@@ -16301,9 +16937,9 @@
     "fileName": "brightness-medium-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.680Z",
-    "lastModified": "2026-01-06T09:41:17.680Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6f3f9dc7"
+    "lastModified": "2026-01-18T05:28:03.821Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4124a7ad"
   },
   {
     "name": "brightness-medium",
@@ -16321,9 +16957,9 @@
     "fileName": "brightness-medium-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:17.685Z",
-    "lastModified": "2026-01-06T09:41:17.685Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7c917742"
+    "lastModified": "2026-01-18T05:28:03.825Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "70c895a0"
   },
   {
     "name": "browser",
@@ -18900,6 +19536,138 @@
     "svgHash": "306d1db8"
   },
   {
+    "name": "candle",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.282Z",
+    "lastModified": "2026-01-18T05:28:04.282Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "63fdf216"
+  },
+  {
+    "name": "candle",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.285Z",
+    "lastModified": "2026-01-18T05:28:04.285Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7867ab2b"
+  },
+  {
+    "name": "candle",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.289Z",
+    "lastModified": "2026-01-18T05:28:04.289Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "78d88535"
+  },
+  {
+    "name": "candle",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.293Z",
+    "lastModified": "2026-01-18T05:28:04.293Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "129e9bba"
+  },
+  {
+    "name": "candle",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.297Z",
+    "lastModified": "2026-01-18T05:28:04.297Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5d52bd33"
+  },
+  {
+    "name": "candle",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "ambiance",
+      "candle",
+      "decor",
+      "flame",
+      "light",
+      "memorial",
+      "night",
+      "wax"
+    ],
+    "componentName": "CandleIcon",
+    "fileName": "candle-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.304Z",
+    "lastModified": "2026-01-18T05:28:04.304Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0517576e"
+  },
+  {
     "name": "caps-lock",
     "weight": "regular",
     "duotone": false,
@@ -20548,6 +21316,144 @@
     "lastModified": "2026-01-06T09:41:18.469Z",
     "versionLastModified": "5.13.0",
     "svgHash": "1ac2045c"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.642Z",
+    "lastModified": "2026-01-18T05:28:04.642Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "03468ad5"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.646Z",
+    "lastModified": "2026-01-18T05:28:04.646Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "340f192b"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.650Z",
+    "lastModified": "2026-01-18T05:28:04.650Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "21791ab6"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.654Z",
+    "lastModified": "2026-01-18T05:28:04.654Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4b72260a"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.658Z",
+    "lastModified": "2026-01-18T05:28:04.658Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5721541e"
+  },
+  {
+    "name": "chart-candle-alt",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "analytics",
+      "data",
+      "finance",
+      "investment",
+      "market",
+      "performance",
+      "stocks",
+      "trading",
+      "visualization"
+    ],
+    "componentName": "ChartCandleAltIcon",
+    "fileName": "chart-candle-alt-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.662Z",
+    "lastModified": "2026-01-18T05:28:04.662Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "54a63510"
   },
   {
     "name": "chart-donut",
@@ -22380,6 +23286,276 @@
     "svgHash": "2af07d48"
   },
   {
+    "name": "chat-box-alert",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.949Z",
+    "lastModified": "2026-01-18T05:28:04.949Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0809315a"
+  },
+  {
+    "name": "chat-box-alert",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.952Z",
+    "lastModified": "2026-01-18T05:28:04.952Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3cd25572"
+  },
+  {
+    "name": "chat-box-alert",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.956Z",
+    "lastModified": "2026-01-18T05:28:04.956Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0abbf851"
+  },
+  {
+    "name": "chat-box-alert",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.960Z",
+    "lastModified": "2026-01-18T05:28:04.960Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "15d33333"
+  },
+  {
+    "name": "chat-box-alert",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.963Z",
+    "lastModified": "2026-01-18T05:28:04.963Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4da523e6"
+  },
+  {
+    "name": "chat-box-alert",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBoxAlertIcon",
+    "fileName": "chat-box-alert-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.967Z",
+    "lastModified": "2026-01-18T05:28:04.967Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "16b277c1"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.971Z",
+    "lastModified": "2026-01-18T05:28:04.971Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "055fb8b9"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.978Z",
+    "lastModified": "2026-01-18T05:28:04.978Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0615e81f"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.982Z",
+    "lastModified": "2026-01-18T05:28:04.982Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "30e15163"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.986Z",
+    "lastModified": "2026-01-18T05:28:04.986Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0ae6829f"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.990Z",
+    "lastModified": "2026-01-18T05:28:04.990Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "46141a5f"
+  },
+  {
+    "name": "chat-box-check",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBoxCheckIcon",
+    "fileName": "chat-box-check-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:04.994Z",
+    "lastModified": "2026-01-18T05:28:04.994Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4437ba4a"
+  },
+  {
     "name": "chat-box-dashed",
     "weight": "regular",
     "duotone": false,
@@ -22812,6 +23988,264 @@
     "svgHash": "75013045"
   },
   {
+    "name": "chat-box-off",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.063Z",
+    "lastModified": "2026-01-18T05:28:05.063Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "243025bf"
+  },
+  {
+    "name": "chat-box-off",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.067Z",
+    "lastModified": "2026-01-18T05:28:05.067Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "513cfe8e"
+  },
+  {
+    "name": "chat-box-off",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.071Z",
+    "lastModified": "2026-01-18T05:28:05.071Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2df45456"
+  },
+  {
+    "name": "chat-box-off",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.075Z",
+    "lastModified": "2026-01-18T05:28:05.075Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "23d53c29"
+  },
+  {
+    "name": "chat-box-off",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.078Z",
+    "lastModified": "2026-01-18T05:28:05.078Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5448af04"
+  },
+  {
+    "name": "chat-box-off",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBoxOffIcon",
+    "fileName": "chat-box-off-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.082Z",
+    "lastModified": "2026-01-18T05:28:05.082Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "682e8e3f"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.086Z",
+    "lastModified": "2026-01-18T05:28:05.086Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0d6f0b07"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.093Z",
+    "lastModified": "2026-01-18T05:28:05.093Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3f166da5"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.097Z",
+    "lastModified": "2026-01-18T05:28:05.097Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6f689903"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.101Z",
+    "lastModified": "2026-01-18T05:28:05.101Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "288d4a9f"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.104Z",
+    "lastModified": "2026-01-18T05:28:05.104Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "21b9b3c4"
+  },
+  {
+    "name": "chat-box-plus",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBoxPlusIcon",
+    "fileName": "chat-box-plus-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.107Z",
+    "lastModified": "2026-01-18T05:28:05.108Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5341bd5a"
+  },
+  {
     "name": "chat-box-question",
     "weight": "regular",
     "duotone": false,
@@ -23206,6 +24640,276 @@
     "lastModified": "2026-01-06T09:41:18.917Z",
     "versionLastModified": "5.13.0",
     "svgHash": "20db1746"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.180Z",
+    "lastModified": "2026-01-18T05:28:05.180Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "575505d1"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.183Z",
+    "lastModified": "2026-01-18T05:28:05.183Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6902fc23"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.186Z",
+    "lastModified": "2026-01-18T05:28:05.186Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "077c836e"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.191Z",
+    "lastModified": "2026-01-18T05:28:05.191Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2ef5f738"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.194Z",
+    "lastModified": "2026-01-18T05:28:05.194Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "56cf3e60"
+  },
+  {
+    "name": "chat-bubble-alert",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "alert",
+      "chat",
+      "comment",
+      "error",
+      "feedback",
+      "message",
+      "notification",
+      "warning"
+    ],
+    "componentName": "ChatBubbleAlertIcon",
+    "fileName": "chat-bubble-alert-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.197Z",
+    "lastModified": "2026-01-18T05:28:05.197Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2c3dbe9c"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.201Z",
+    "lastModified": "2026-01-18T05:28:05.201Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "36bf417c"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.204Z",
+    "lastModified": "2026-01-18T05:28:05.204Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "61af6577"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.208Z",
+    "lastModified": "2026-01-18T05:28:05.208Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5097d2fb"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.212Z",
+    "lastModified": "2026-01-18T05:28:05.212Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2cf6eaa5"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.219Z",
+    "lastModified": "2026-01-18T05:28:05.219Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a2fcb9a"
+  },
+  {
+    "name": "chat-bubble-check",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "approved",
+      "check",
+      "comment",
+      "complete",
+      "confirmation",
+      "feedback",
+      "read",
+      "resolved",
+      "review"
+    ],
+    "componentName": "ChatBubbleCheckIcon",
+    "fileName": "chat-bubble-check-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.223Z",
+    "lastModified": "2026-01-18T05:28:05.223Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "26244763"
   },
   {
     "name": "chat-bubble-dashed",
@@ -23644,6 +25348,264 @@
     "lastModified": "2026-01-06T09:41:19.001Z",
     "versionLastModified": "5.13.0",
     "svgHash": "25168862"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.293Z",
+    "lastModified": "2026-01-18T05:28:05.293Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7fdb83f8"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.297Z",
+    "lastModified": "2026-01-18T05:28:05.297Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "474d226e"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.300Z",
+    "lastModified": "2026-01-18T05:28:05.300Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1adc2c1a"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.303Z",
+    "lastModified": "2026-01-18T05:28:05.303Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "763683d0"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.307Z",
+    "lastModified": "2026-01-18T05:28:05.307Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "60417c85"
+  },
+  {
+    "name": "chat-bubble-off",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "chat",
+      "conversation",
+      "disable",
+      "message",
+      "mute",
+      "silence"
+    ],
+    "componentName": "ChatBubbleOffIcon",
+    "fileName": "chat-bubble-off-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.311Z",
+    "lastModified": "2026-01-18T05:28:05.311Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1d255d90"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.314Z",
+    "lastModified": "2026-01-18T05:28:05.314Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5104dc33"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.317Z",
+    "lastModified": "2026-01-18T05:28:05.317Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7bd107c5"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.321Z",
+    "lastModified": "2026-01-18T05:28:05.321Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6aa0ffd3"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.325Z",
+    "lastModified": "2026-01-18T05:28:05.325Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "670df32d"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.328Z",
+    "lastModified": "2026-01-18T05:28:05.328Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "382c5d09"
+  },
+  {
+    "name": "chat-bubble-plus",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "add",
+      "annotation",
+      "chat",
+      "comment",
+      "feedback",
+      "message",
+      "new",
+      "reply"
+    ],
+    "componentName": "ChatBubblePlusIcon",
+    "fileName": "chat-bubble-plus-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:05.331Z",
+    "lastModified": "2026-01-18T05:28:05.331Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0d38eebe"
   },
   {
     "name": "chat-bubble-question",
@@ -30424,6 +32386,132 @@
     "lastModified": "2026-01-11T11:05:41.928Z",
     "versionLastModified": "6.1.0",
     "svgHash": "600fb36e"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.507Z",
+    "lastModified": "2026-01-18T05:28:06.507Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1ccadadc"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.511Z",
+    "lastModified": "2026-01-18T05:28:06.511Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "64fe7248"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.514Z",
+    "lastModified": "2026-01-18T05:28:06.514Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "42c8698d"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.517Z",
+    "lastModified": "2026-01-18T05:28:06.517Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "000834e7"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.520Z",
+    "lastModified": "2026-01-18T05:28:06.520Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "77da4366"
+  },
+  {
+    "name": "circle-placeholder",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "CirclePlaceholderIcon",
+    "fileName": "circle-placeholder-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:06.525Z",
+    "lastModified": "2026-01-18T05:28:06.525Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "55fccb16"
   },
   {
     "name": "circle-slash",
@@ -40200,9 +42288,9 @@
     "fileName": "database-sparkle.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.040Z",
-    "lastModified": "2026-01-06T09:41:22.040Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7287f7ad"
+    "lastModified": "2026-01-18T05:28:08.223Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2b0a1a0a"
   },
   {
     "name": "database-sparkle",
@@ -40223,9 +42311,9 @@
     "fileName": "database-sparkle-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.044Z",
-    "lastModified": "2026-01-06T09:41:22.044Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "303ed1e1"
+    "lastModified": "2026-01-18T05:28:08.228Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6c280d60"
   },
   {
     "name": "database-sparkle",
@@ -40246,9 +42334,9 @@
     "fileName": "database-sparkle-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.048Z",
-    "lastModified": "2026-01-06T09:41:22.048Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7c0b8515"
+    "lastModified": "2026-01-18T05:28:08.231Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "54fb6824"
   },
   {
     "name": "database-sparkle",
@@ -40269,9 +42357,9 @@
     "fileName": "database-sparkle-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.051Z",
-    "lastModified": "2026-01-06T09:41:22.051Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7a93a585"
+    "lastModified": "2026-01-18T05:28:08.235Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4afbe632"
   },
   {
     "name": "database-sparkle",
@@ -40292,9 +42380,9 @@
     "fileName": "database-sparkle-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.055Z",
-    "lastModified": "2026-01-06T09:41:22.055Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6424b3b7"
+    "lastModified": "2026-01-18T05:28:08.238Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0ae60d37"
   },
   {
     "name": "database-sparkle",
@@ -40315,9 +42403,9 @@
     "fileName": "database-sparkle-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:22.059Z",
-    "lastModified": "2026-01-06T09:41:22.059Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "394d147e"
+    "lastModified": "2026-01-18T05:28:08.242Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1d3d0568"
   },
   {
     "name": "database-x",
@@ -44550,6 +46638,168 @@
     "svgHash": "5aae85f5"
   },
   {
+    "name": "fast-forward",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.007Z",
+    "lastModified": "2026-01-18T05:28:09.007Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0750ecd2"
+  },
+  {
+    "name": "fast-forward",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.011Z",
+    "lastModified": "2026-01-18T05:28:09.011Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "622e6f14"
+  },
+  {
+    "name": "fast-forward",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.015Z",
+    "lastModified": "2026-01-18T05:28:09.015Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "59802636"
+  },
+  {
+    "name": "fast-forward",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.019Z",
+    "lastModified": "2026-01-18T05:28:09.019Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2e768230"
+  },
+  {
+    "name": "fast-forward",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.023Z",
+    "lastModified": "2026-01-18T05:28:09.023Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1946977e"
+  },
+  {
+    "name": "fast-forward",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "ahead",
+      "arrow",
+      "audio",
+      "control",
+      "fast",
+      "forward",
+      "media",
+      "music",
+      "playback",
+      "right",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "FastForwardIcon",
+    "fileName": "fast-forward-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.027Z",
+    "lastModified": "2026-01-18T05:28:09.027Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "42d6206f"
+  },
+  {
     "name": "figma",
     "weight": "regular",
     "duotone": false,
@@ -45216,9 +47466,9 @@
     "fileName": "flame.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:23.505Z",
-    "lastModified": "2026-01-06T09:41:23.505Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "75cf7291"
+    "lastModified": "2026-01-18T05:28:09.143Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4312a2da"
   },
   {
     "name": "flame",
@@ -45262,9 +47512,9 @@
     "fileName": "flame-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:23.513Z",
-    "lastModified": "2026-01-06T09:41:23.513Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6d6606b7"
+    "lastModified": "2026-01-18T05:28:09.150Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "053cfbae"
   },
   {
     "name": "flame",
@@ -49518,6 +51768,132 @@
     "svgHash": "65f4bf48"
   },
   {
+    "name": "forward",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.818Z",
+    "lastModified": "2026-01-18T05:28:09.818Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "353427d9"
+  },
+  {
+    "name": "forward",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.821Z",
+    "lastModified": "2026-01-18T05:28:09.821Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "34a0db13"
+  },
+  {
+    "name": "forward",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.824Z",
+    "lastModified": "2026-01-18T05:28:09.824Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6b82138b"
+  },
+  {
+    "name": "forward",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.831Z",
+    "lastModified": "2026-01-18T05:28:09.831Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "247f9236"
+  },
+  {
+    "name": "forward",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.835Z",
+    "lastModified": "2026-01-18T05:28:09.835Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "16fc0fc7"
+  },
+  {
+    "name": "forward",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "export",
+      "external",
+      "forward",
+      "open",
+      "redirect",
+      "send",
+      "share"
+    ],
+    "componentName": "ForwardIcon",
+    "fileName": "forward-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:09.839Z",
+    "lastModified": "2026-01-18T05:28:09.839Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2706408b"
+  },
+  {
     "name": "frame",
     "weight": "regular",
     "duotone": false,
@@ -53610,6 +55986,144 @@
     "svgHash": "199610d4"
   },
   {
+    "name": "gradient",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.454Z",
+    "lastModified": "2026-01-18T05:28:10.454Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "679f6617"
+  },
+  {
+    "name": "gradient",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.458Z",
+    "lastModified": "2026-01-18T05:28:10.458Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1fcafc9e"
+  },
+  {
+    "name": "gradient",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.462Z",
+    "lastModified": "2026-01-18T05:28:10.462Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "403fe4eb"
+  },
+  {
+    "name": "gradient",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.466Z",
+    "lastModified": "2026-01-18T05:28:10.466Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "245e9ebf"
+  },
+  {
+    "name": "gradient",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.470Z",
+    "lastModified": "2026-01-18T05:28:10.470Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "43ef5b34"
+  },
+  {
+    "name": "gradient",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "background",
+      "blend",
+      "color stop",
+      "fill",
+      "gradient",
+      "ombre",
+      "styling",
+      "theme",
+      "transition"
+    ],
+    "componentName": "GradientIcon",
+    "fileName": "gradient-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:10.474Z",
+    "lastModified": "2026-01-18T05:28:10.474Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "296a6a26"
+  },
+  {
     "name": "grid",
     "weight": "regular",
     "duotone": false,
@@ -54987,9 +57501,9 @@
     "fileName": "headphones-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:24.783Z",
-    "lastModified": "2026-01-12T14:51:36.316Z",
-    "versionLastModified": "6.1.1",
-    "svgHash": "5d7a8e78"
+    "lastModified": "2026-01-18T05:28:10.731Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "676dc8e7"
   },
   {
     "name": "headphones",
@@ -60265,9 +62779,9 @@
     "fileName": "lightbulb-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:25.869Z",
-    "lastModified": "2026-01-12T14:51:37.205Z",
-    "versionLastModified": "6.1.1",
-    "svgHash": "5fe35af7"
+    "lastModified": "2026-01-18T05:28:11.739Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4c9cbca8"
   },
   {
     "name": "lightbulb",
@@ -62855,7 +65369,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock.tsx",
@@ -62877,7 +65392,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock-duotone.tsx",
@@ -62899,7 +65415,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock-bold.tsx",
@@ -62921,7 +65438,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock-bold-duotone.tsx",
@@ -62943,7 +65461,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock-fill.tsx",
@@ -62965,7 +65484,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockIcon",
     "fileName": "lock-fill-duotone.tsx",
@@ -63119,7 +65639,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password.tsx",
@@ -63141,7 +65662,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password-duotone.tsx",
@@ -63163,7 +65685,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password-bold.tsx",
@@ -63185,7 +65708,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password-bold-duotone.tsx",
@@ -63207,7 +65731,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password-fill.tsx",
@@ -63229,7 +65754,8 @@
       "privacy",
       "restricted",
       "safety",
-      "secure"
+      "secure",
+      "security"
     ],
     "componentName": "LockPasswordIcon",
     "fileName": "lock-password-fill-duotone.tsx",
@@ -64528,6 +67054,132 @@
     "lastModified": "2026-01-06T09:41:26.576Z",
     "versionLastModified": "5.13.0",
     "svgHash": "233ff492"
+  },
+  {
+    "name": "mailbox",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.420Z",
+    "lastModified": "2026-01-18T05:28:12.420Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "55afba1d"
+  },
+  {
+    "name": "mailbox",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.424Z",
+    "lastModified": "2026-01-18T05:28:12.424Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "66c555fd"
+  },
+  {
+    "name": "mailbox",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.427Z",
+    "lastModified": "2026-01-18T05:28:12.427Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "187af3d3"
+  },
+  {
+    "name": "mailbox",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.431Z",
+    "lastModified": "2026-01-18T05:28:12.431Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "55dd208a"
+  },
+  {
+    "name": "mailbox",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.434Z",
+    "lastModified": "2026-01-18T05:28:12.434Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0c6b8071"
+  },
+  {
+    "name": "mailbox",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "email",
+      "inbox",
+      "mail",
+      "mailbox",
+      "messages",
+      "postal",
+      "receive"
+    ],
+    "componentName": "MailboxIcon",
+    "fileName": "mailbox-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:12.439Z",
+    "lastModified": "2026-01-18T05:28:12.439Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "59f73cf0"
   },
   {
     "name": "map",
@@ -73188,6 +75840,132 @@
     "svgHash": "06760436"
   },
   {
+    "name": "pilcrow",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.942Z",
+    "lastModified": "2026-01-18T05:28:13.942Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "23da77fb"
+  },
+  {
+    "name": "pilcrow",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.946Z",
+    "lastModified": "2026-01-18T05:28:13.946Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "67eb86ed"
+  },
+  {
+    "name": "pilcrow",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.949Z",
+    "lastModified": "2026-01-18T05:28:13.949Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "07235052"
+  },
+  {
+    "name": "pilcrow",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.953Z",
+    "lastModified": "2026-01-18T05:28:13.953Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "13754c57"
+  },
+  {
+    "name": "pilcrow",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.957Z",
+    "lastModified": "2026-01-18T05:28:13.957Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "14c13bde"
+  },
+  {
+    "name": "pilcrow",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "content",
+      "editor",
+      "format",
+      "paragraph",
+      "text",
+      "typography",
+      "writing"
+    ],
+    "componentName": "PilcrowIcon",
+    "fileName": "pilcrow-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:13.960Z",
+    "lastModified": "2026-01-18T05:28:13.960Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "733c7951"
+  },
+  {
     "name": "play",
     "weight": "regular",
     "duotone": false,
@@ -75034,9 +77812,9 @@
     "fileName": "question-mark-circle.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.766Z",
-    "lastModified": "2026-01-06T09:41:28.766Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "52e633c8"
+    "lastModified": "2026-01-18T05:28:14.318Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "26554fd4"
   },
   {
     "name": "question-mark-circle",
@@ -75055,9 +77833,9 @@
     "fileName": "question-mark-circle-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.770Z",
-    "lastModified": "2026-01-06T09:41:28.770Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "09108661"
+    "lastModified": "2026-01-18T05:28:14.322Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3dbbd37c"
   },
   {
     "name": "question-mark-circle",
@@ -75076,9 +77854,9 @@
     "fileName": "question-mark-circle-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.773Z",
-    "lastModified": "2026-01-06T09:41:28.773Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4ae3abae"
+    "lastModified": "2026-01-18T05:28:14.326Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3ee55cf8"
   },
   {
     "name": "question-mark-circle",
@@ -75097,9 +77875,9 @@
     "fileName": "question-mark-circle-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.777Z",
-    "lastModified": "2026-01-06T09:41:28.777Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "2e77d0a1"
+    "lastModified": "2026-01-18T05:28:14.330Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a3b035f"
   },
   {
     "name": "question-mark-circle",
@@ -75118,9 +77896,9 @@
     "fileName": "question-mark-circle-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.780Z",
-    "lastModified": "2026-01-06T09:41:28.780Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "5056c7bb"
+    "lastModified": "2026-01-18T05:28:14.333Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "421c6d29"
   },
   {
     "name": "question-mark-circle",
@@ -75139,9 +77917,273 @@
     "fileName": "question-mark-circle-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:28.783Z",
-    "lastModified": "2026-01-06T09:41:28.783Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "02aee9c6"
+    "lastModified": "2026-01-18T05:28:14.337Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3d4aca90"
+  },
+  {
+    "name": "quote",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.341Z",
+    "lastModified": "2026-01-18T05:28:14.341Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1247ba81"
+  },
+  {
+    "name": "quote",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.345Z",
+    "lastModified": "2026-01-18T05:28:14.345Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "71f1085b"
+  },
+  {
+    "name": "quote",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.349Z",
+    "lastModified": "2026-01-18T05:28:14.349Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5b4dcf6c"
+  },
+  {
+    "name": "quote",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.353Z",
+    "lastModified": "2026-01-18T05:28:14.353Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5656bd30"
+  },
+  {
+    "name": "quote",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.355Z",
+    "lastModified": "2026-01-18T05:28:14.355Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "73a109bc"
+  },
+  {
+    "name": "quote",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteIcon",
+    "fileName": "quote-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.359Z",
+    "lastModified": "2026-01-18T05:28:14.359Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "16fcecc2"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.363Z",
+    "lastModified": "2026-01-18T05:28:14.363Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6711a041"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.371Z",
+    "lastModified": "2026-01-18T05:28:14.371Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1adddd17"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.375Z",
+    "lastModified": "2026-01-18T05:28:14.375Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "491293a8"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.378Z",
+    "lastModified": "2026-01-18T05:28:14.378Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5f5dae52"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.381Z",
+    "lastModified": "2026-01-18T05:28:14.381Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7d009a64"
+  },
+  {
+    "name": "quote-opening",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "blockquote",
+      "citation",
+      "comment",
+      "feedback",
+      "quotation",
+      "quote",
+      "testimonial",
+      "text"
+    ],
+    "componentName": "QuoteOpeningIcon",
+    "fileName": "quote-opening-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.385Z",
+    "lastModified": "2026-01-18T05:28:14.385Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "30d93540"
   },
   {
     "name": "receipt",
@@ -75678,6 +78720,162 @@
     "svgHash": "4c3ce0a6"
   },
   {
+    "name": "repeat",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.482Z",
+    "lastModified": "2026-01-18T05:28:14.482Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a07035e"
+  },
+  {
+    "name": "repeat",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.485Z",
+    "lastModified": "2026-01-18T05:28:14.485Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "29d374f9"
+  },
+  {
+    "name": "repeat",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.492Z",
+    "lastModified": "2026-01-18T05:28:14.492Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "61f3f97e"
+  },
+  {
+    "name": "repeat",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.495Z",
+    "lastModified": "2026-01-18T05:28:14.495Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5fa32268"
+  },
+  {
+    "name": "repeat",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.499Z",
+    "lastModified": "2026-01-18T05:28:14.499Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "115f82f5"
+  },
+  {
+    "name": "repeat",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "bidirectional",
+      "loop",
+      "media",
+      "music",
+      "playback",
+      "refresh",
+      "repeat",
+      "replay",
+      "sync",
+      "update",
+      "video"
+    ],
+    "componentName": "RepeatIcon",
+    "fileName": "repeat-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.502Z",
+    "lastModified": "2026-01-18T05:28:14.502Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "64938902"
+  },
+  {
     "name": "reply",
     "weight": "regular",
     "duotone": false,
@@ -75802,6 +79000,168 @@
     "lastModified": "2026-01-06T09:41:28.899Z",
     "versionLastModified": "5.13.0",
     "svgHash": "07ffce06"
+  },
+  {
+    "name": "rewind",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.526Z",
+    "lastModified": "2026-01-18T05:28:14.526Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "33134d25"
+  },
+  {
+    "name": "rewind",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.529Z",
+    "lastModified": "2026-01-18T05:28:14.529Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "40b8e408"
+  },
+  {
+    "name": "rewind",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.533Z",
+    "lastModified": "2026-01-18T05:28:14.533Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "61766261"
+  },
+  {
+    "name": "rewind",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.536Z",
+    "lastModified": "2026-01-18T05:28:14.536Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5d4d8dcd"
+  },
+  {
+    "name": "rewind",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.540Z",
+    "lastModified": "2026-01-18T05:28:14.540Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7481ad3b"
+  },
+  {
+    "name": "rewind",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "arrow",
+      "audio",
+      "back",
+      "backward",
+      "control",
+      "left",
+      "media",
+      "music",
+      "playback",
+      "rewind",
+      "seek",
+      "skip",
+      "video"
+    ],
+    "componentName": "RewindIcon",
+    "fileName": "rewind-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:14.544Z",
+    "lastModified": "2026-01-18T05:28:14.544Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "19349258"
   },
   {
     "name": "robot",
@@ -81978,6 +85338,438 @@
     "svgHash": "3bb805b4"
   },
   {
+    "name": "ship-back",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.613Z",
+    "lastModified": "2026-01-18T05:28:15.613Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "47be5247"
+  },
+  {
+    "name": "ship-back",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.617Z",
+    "lastModified": "2026-01-18T05:28:15.617Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "06b98260"
+  },
+  {
+    "name": "ship-back",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.620Z",
+    "lastModified": "2026-01-18T05:28:15.620Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "25d6e10d"
+  },
+  {
+    "name": "ship-back",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.624Z",
+    "lastModified": "2026-01-18T05:28:15.624Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2eebfd06"
+  },
+  {
+    "name": "ship-back",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.628Z",
+    "lastModified": "2026-01-18T05:28:15.628Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "41fcc1f1"
+  },
+  {
+    "name": "ship-back",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "backward",
+      "control",
+      "media",
+      "music",
+      "playback",
+      "previous",
+      "rewind",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipBackIcon",
+    "fileName": "ship-back-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.635Z",
+    "lastModified": "2026-01-18T05:28:15.635Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2a184ebd"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.639Z",
+    "lastModified": "2026-01-18T05:28:15.639Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1d00f437"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.643Z",
+    "lastModified": "2026-01-18T05:28:15.643Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2c543ca6"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.646Z",
+    "lastModified": "2026-01-18T05:28:15.646Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3d772776"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.650Z",
+    "lastModified": "2026-01-18T05:28:15.650Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0facdd7e"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.653Z",
+    "lastModified": "2026-01-18T05:28:15.653Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7d0992e5"
+  },
+  {
+    "name": "ship-forward",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "control",
+      "fast-forward",
+      "media",
+      "music",
+      "next",
+      "playback",
+      "skip",
+      "track",
+      "video"
+    ],
+    "componentName": "ShipForwardIcon",
+    "fileName": "ship-forward-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.656Z",
+    "lastModified": "2026-01-18T05:28:15.656Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7c299539"
+  },
+  {
+    "name": "shuffle",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.660Z",
+    "lastModified": "2026-01-18T05:28:15.660Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "58c064be"
+  },
+  {
+    "name": "shuffle",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.663Z",
+    "lastModified": "2026-01-18T05:28:15.663Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4f1e5329"
+  },
+  {
+    "name": "shuffle",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.667Z",
+    "lastModified": "2026-01-18T05:28:15.667Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3521dcae"
+  },
+  {
+    "name": "shuffle",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.671Z",
+    "lastModified": "2026-01-18T05:28:15.671Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3fe978dd"
+  },
+  {
+    "name": "shuffle",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.675Z",
+    "lastModified": "2026-01-18T05:28:15.675Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "13138967"
+  },
+  {
+    "name": "shuffle",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "audio",
+      "media",
+      "mix",
+      "music",
+      "playback",
+      "playlist",
+      "randomize",
+      "reorder",
+      "shuffle"
+    ],
+    "componentName": "ShuffleIcon",
+    "fileName": "shuffle-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:15.678Z",
+    "lastModified": "2026-01-18T05:28:15.678Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "72ec9e3f"
+  },
+  {
     "name": "sidebar-left",
     "weight": "regular",
     "duotone": false,
@@ -82838,9 +86630,9 @@
     "fileName": "signal-alt-high.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.108Z",
-    "lastModified": "2026-01-06T09:41:30.108Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4ce4e9be"
+    "lastModified": "2026-01-18T05:28:15.824Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2ea4a6e9"
   },
   {
     "name": "signal-alt-high",
@@ -82863,9 +86655,9 @@
     "fileName": "signal-alt-high-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.110Z",
-    "lastModified": "2026-01-06T09:41:30.110Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4ce4e9be"
+    "lastModified": "2026-01-18T05:28:15.827Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2ea4a6e9"
   },
   {
     "name": "signal-alt-high",
@@ -82888,9 +86680,9 @@
     "fileName": "signal-alt-high-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.113Z",
-    "lastModified": "2026-01-06T09:41:30.113Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7e37129f"
+    "lastModified": "2026-01-18T05:28:15.830Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "50dd1988"
   },
   {
     "name": "signal-alt-high",
@@ -82913,9 +86705,9 @@
     "fileName": "signal-alt-high-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.116Z",
-    "lastModified": "2026-01-06T09:41:30.116Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "7e37129f"
+    "lastModified": "2026-01-18T05:28:15.833Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "50dd1988"
   },
   {
     "name": "signal-alt-high",
@@ -82938,9 +86730,9 @@
     "fileName": "signal-alt-high-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.118Z",
-    "lastModified": "2026-01-06T09:41:30.118Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "642a6c77"
+    "lastModified": "2026-01-18T05:28:15.837Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7a04dded"
   },
   {
     "name": "signal-alt-high",
@@ -82963,9 +86755,9 @@
     "fileName": "signal-alt-high-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.121Z",
-    "lastModified": "2026-01-06T09:41:30.121Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "642a6c77"
+    "lastModified": "2026-01-18T05:28:15.841Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7a04dded"
   },
   {
     "name": "signal-alt-low",
@@ -82988,9 +86780,9 @@
     "fileName": "signal-alt-low.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.124Z",
-    "lastModified": "2026-01-06T09:41:30.124Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "464bc9e5"
+    "lastModified": "2026-01-18T05:28:15.844Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4f634f3a"
   },
   {
     "name": "signal-alt-low",
@@ -83013,9 +86805,9 @@
     "fileName": "signal-alt-low-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.127Z",
-    "lastModified": "2026-01-06T09:41:30.127Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6fe48ed7"
+    "lastModified": "2026-01-18T05:28:15.847Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1b92147a"
   },
   {
     "name": "signal-alt-low",
@@ -83038,9 +86830,9 @@
     "fileName": "signal-alt-low-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.130Z",
-    "lastModified": "2026-01-06T09:41:30.130Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0dbc3b11"
+    "lastModified": "2026-01-18T05:28:15.849Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "55af970b"
   },
   {
     "name": "signal-alt-low",
@@ -83063,9 +86855,9 @@
     "fileName": "signal-alt-low-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.132Z",
-    "lastModified": "2026-01-06T09:41:30.132Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "2e710aac"
+    "lastModified": "2026-01-18T05:28:15.853Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2bde169f"
   },
   {
     "name": "signal-alt-low",
@@ -83088,9 +86880,9 @@
     "fileName": "signal-alt-low-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.135Z",
-    "lastModified": "2026-01-06T09:41:30.135Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "15777585"
+    "lastModified": "2026-01-18T05:28:15.857Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a10ceb2"
   },
   {
     "name": "signal-alt-low",
@@ -83113,9 +86905,9 @@
     "fileName": "signal-alt-low-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.139Z",
-    "lastModified": "2026-01-06T09:41:30.139Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0892cc1c"
+    "lastModified": "2026-01-18T05:28:15.861Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7dcccb7a"
   },
   {
     "name": "signal-alt-medium",
@@ -83138,9 +86930,9 @@
     "fileName": "signal-alt-medium.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.141Z",
-    "lastModified": "2026-01-06T09:41:30.141Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "2137c648"
+    "lastModified": "2026-01-18T05:28:15.864Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5e3db320"
   },
   {
     "name": "signal-alt-medium",
@@ -83163,9 +86955,9 @@
     "fileName": "signal-alt-medium-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.144Z",
-    "lastModified": "2026-01-06T09:41:30.144Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "556f6138"
+    "lastModified": "2026-01-18T05:28:15.868Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7b115da5"
   },
   {
     "name": "signal-alt-medium",
@@ -83188,9 +86980,9 @@
     "fileName": "signal-alt-medium-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.147Z",
-    "lastModified": "2026-01-06T09:41:30.147Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "13dc37da"
+    "lastModified": "2026-01-18T05:28:15.871Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3d7f1086"
   },
   {
     "name": "signal-alt-medium",
@@ -83213,9 +87005,9 @@
     "fileName": "signal-alt-medium-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.150Z",
-    "lastModified": "2026-01-06T09:41:30.150Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4f2d2151"
+    "lastModified": "2026-01-18T05:28:15.875Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "33b7a814"
   },
   {
     "name": "signal-alt-medium",
@@ -83238,9 +87030,9 @@
     "fileName": "signal-alt-medium-fill.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.152Z",
-    "lastModified": "2026-01-06T09:41:30.152Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4b1528a3"
+    "lastModified": "2026-01-18T05:28:15.878Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "488e5bb2"
   },
   {
     "name": "signal-alt-medium",
@@ -83263,9 +87055,9 @@
     "fileName": "signal-alt-medium-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.155Z",
-    "lastModified": "2026-01-06T09:41:30.155Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "1c05602f"
+    "lastModified": "2026-01-18T05:28:15.881Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "21295647"
   },
   {
     "name": "signal-high",
@@ -85650,9 +89442,9 @@
     "fileName": "sparkle-circle.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.577Z",
-    "lastModified": "2026-01-06T09:41:30.577Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "30c5f179"
+    "lastModified": "2026-01-18T05:28:16.339Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "32516067"
   },
   {
     "name": "sparkle-circle",
@@ -85673,9 +89465,9 @@
     "fileName": "sparkle-circle-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.581Z",
-    "lastModified": "2026-01-06T09:41:30.581Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4e2f554d"
+    "lastModified": "2026-01-18T05:28:16.344Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3e9a645c"
   },
   {
     "name": "sparkle-circle",
@@ -85696,9 +89488,9 @@
     "fileName": "sparkle-circle-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.584Z",
-    "lastModified": "2026-01-06T09:41:30.584Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0a0e1c43"
+    "lastModified": "2026-01-18T05:28:16.349Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "0cd7e0a3"
   },
   {
     "name": "sparkle-circle",
@@ -85719,9 +89511,9 @@
     "fileName": "sparkle-circle-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.588Z",
-    "lastModified": "2026-01-06T09:41:30.588Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "1a1e5917"
+    "lastModified": "2026-01-18T05:28:16.353Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "1408f612"
   },
   {
     "name": "sparkle-circle",
@@ -85765,9 +89557,9 @@
     "fileName": "sparkle-circle-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.595Z",
-    "lastModified": "2026-01-06T09:41:30.595Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "2fb5863c"
+    "lastModified": "2026-01-18T05:28:16.361Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6f513c53"
   },
   {
     "name": "sparkle-square",
@@ -85788,9 +89580,9 @@
     "fileName": "sparkle-square.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.599Z",
-    "lastModified": "2026-01-06T09:41:30.599Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "5e78f5b7"
+    "lastModified": "2026-01-18T05:28:16.364Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2ed25da9"
   },
   {
     "name": "sparkle-square",
@@ -85811,9 +89603,9 @@
     "fileName": "sparkle-square-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.602Z",
-    "lastModified": "2026-01-06T09:41:30.602Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "6f4c38a1"
+    "lastModified": "2026-01-18T05:28:16.367Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "454b43f8"
   },
   {
     "name": "sparkle-square",
@@ -85834,9 +89626,9 @@
     "fileName": "sparkle-square-bold.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.609Z",
-    "lastModified": "2026-01-06T09:41:30.609Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "0cadbd5b"
+    "lastModified": "2026-01-18T05:28:16.371Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "55c59205"
   },
   {
     "name": "sparkle-square",
@@ -85857,9 +89649,9 @@
     "fileName": "sparkle-square-bold-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.612Z",
-    "lastModified": "2026-01-06T09:41:30.612Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "4d561e0f"
+    "lastModified": "2026-01-18T05:28:16.374Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "41cbace6"
   },
   {
     "name": "sparkle-square",
@@ -85903,9 +89695,9 @@
     "fileName": "sparkle-square-fill-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:30.620Z",
-    "lastModified": "2026-01-06T09:41:30.620Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "29f3fe5a"
+    "lastModified": "2026-01-18T05:28:16.381Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "46fc75c3"
   },
   {
     "name": "sparkles",
@@ -87432,6 +91224,258 @@
     "svgHash": "0bd72b74"
   },
   {
+    "name": "square-placeholder",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.618Z",
+    "lastModified": "2026-01-18T05:28:16.618Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "532aa0ef"
+  },
+  {
+    "name": "square-placeholder",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.621Z",
+    "lastModified": "2026-01-18T05:28:16.621Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "3ffa2d81"
+  },
+  {
+    "name": "square-placeholder",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.625Z",
+    "lastModified": "2026-01-18T05:28:16.625Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "4dbb27e8"
+  },
+  {
+    "name": "square-placeholder",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.629Z",
+    "lastModified": "2026-01-18T05:28:16.629Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "761d893e"
+  },
+  {
+    "name": "square-placeholder",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.632Z",
+    "lastModified": "2026-01-18T05:28:16.632Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "60f3ac67"
+  },
+  {
+    "name": "square-placeholder",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "draft",
+      "empty",
+      "loading",
+      "pattern",
+      "placeholder",
+      "skeleton",
+      "striped"
+    ],
+    "componentName": "SquarePlaceholderIcon",
+    "fileName": "square-placeholder-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.636Z",
+    "lastModified": "2026-01-18T05:28:16.636Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2cf59fc1"
+  },
+  {
+    "name": "square-slash",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.639Z",
+    "lastModified": "2026-01-18T05:28:16.639Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "410a5d9c"
+  },
+  {
+    "name": "square-slash",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.643Z",
+    "lastModified": "2026-01-18T05:28:16.643Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "754f22e0"
+  },
+  {
+    "name": "square-slash",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.646Z",
+    "lastModified": "2026-01-18T05:28:16.646Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "240bbfa5"
+  },
+  {
+    "name": "square-slash",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.650Z",
+    "lastModified": "2026-01-18T05:28:16.650Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "5bf3a9cf"
+  },
+  {
+    "name": "square-slash",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.653Z",
+    "lastModified": "2026-01-18T05:28:16.653Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "76828959"
+  },
+  {
+    "name": "square-slash",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "blocked",
+      "disabled",
+      "off",
+      "placeholder",
+      "prohibited",
+      "restricted",
+      "unavailable"
+    ],
+    "componentName": "SquareSlashIcon",
+    "fileName": "square-slash-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.656Z",
+    "lastModified": "2026-01-18T05:28:16.656Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "140f560d"
+  },
+  {
     "name": "stairs",
     "weight": "regular",
     "duotone": false,
@@ -87934,6 +91978,138 @@
     "lastModified": "2026-01-06T09:41:30.936Z",
     "versionLastModified": "5.13.0",
     "svgHash": "03c10bea"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.772Z",
+    "lastModified": "2026-01-18T05:28:16.772Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2dc97d11"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.776Z",
+    "lastModified": "2026-01-18T05:28:16.776Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "7607315f"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.779Z",
+    "lastModified": "2026-01-18T05:28:16.779Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a0811b2"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.782Z",
+    "lastModified": "2026-01-18T05:28:16.782Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "295b8e08"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.785Z",
+    "lastModified": "2026-01-18T05:28:16.785Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "03f7d069"
+  },
+  {
+    "name": "stopwatch",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "duration",
+      "elapsed",
+      "performance",
+      "speed",
+      "stopwatch",
+      "test",
+      "timer",
+      "track"
+    ],
+    "componentName": "StopwatchIcon",
+    "fileName": "stopwatch-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:16.788Z",
+    "lastModified": "2026-01-18T05:28:16.788Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "374e4e80"
   },
   {
     "name": "store",
@@ -90052,6 +94228,132 @@
     "lastModified": "2026-01-06T09:41:31.226Z",
     "versionLastModified": "5.13.0",
     "svgHash": "056fa5e0"
+  },
+  {
+    "name": "text-field",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.127Z",
+    "lastModified": "2026-01-18T05:28:17.127Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "71ebb251"
+  },
+  {
+    "name": "text-field",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.131Z",
+    "lastModified": "2026-01-18T05:28:17.131Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6a469314"
+  },
+  {
+    "name": "text-field",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field-bold.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.134Z",
+    "lastModified": "2026-01-18T05:28:17.134Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "621f2c52"
+  },
+  {
+    "name": "text-field",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field-bold-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.138Z",
+    "lastModified": "2026-01-18T05:28:17.138Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "6d75ecf8"
+  },
+  {
+    "name": "text-field",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field-fill.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.143Z",
+    "lastModified": "2026-01-18T05:28:17.143Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "219b13db"
+  },
+  {
+    "name": "text-field",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "cursor",
+      "editor",
+      "field",
+      "form",
+      "input",
+      "text",
+      "typing"
+    ],
+    "componentName": "TextFieldIcon",
+    "fileName": "text-field-fill-duotone.tsx",
+    "versionAdded": "6.2.0",
+    "dateAdded": "2026-01-18T05:28:17.147Z",
+    "lastModified": "2026-01-18T05:28:17.147Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "2e09a7fb"
   },
   {
     "name": "text-italic",
@@ -95935,9 +100237,9 @@
     "fileName": "video-duotone.tsx",
     "versionAdded": "5.13.0",
     "dateAdded": "2026-01-06T09:41:32.277Z",
-    "lastModified": "2026-01-06T09:41:32.277Z",
-    "versionLastModified": "5.13.0",
-    "svgHash": "3a49b9a0"
+    "lastModified": "2026-01-18T05:28:18.140Z",
+    "versionLastModified": "6.2.0",
+    "svgHash": "086aabb0"
   },
   {
     "name": "video",
