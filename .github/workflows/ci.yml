@@ -36,15 +36,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         
-      - name: Build icons (if icons-export.json exists)
-        run: |
-          if [ -f "icons-export.json" ]; then
-            pnpm build:icons icons-export.json
-          else
-            echo "No icons-export.json found, skipping icon build"
-          fi
-        continue-on-error: true
-        
       - name: Lint
         run: pnpm lint
         
@@ -52,15 +43,7 @@ jobs:
         run: pnpm test
         
       - name: Build
-        run: |
-          # Build the stera-icons package first
-          pnpm --filter stera-icons build
-          # Ensure workspace dependencies are properly linked
-          pnpm install --frozen-lockfile
-          # Verify the built package exists
-          ls -la packages/react/dist/
-          # Build the demo
-          pnpm --filter stera-icons-react-demo build
+        run: pnpm build
 
   build-icons:
     name: Build Icons
