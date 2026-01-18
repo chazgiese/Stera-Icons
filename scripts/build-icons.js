@@ -25,29 +25,67 @@ const __dirname = dirname(__filename);
 const svgoConfig = (await import('./svgo.config.js')).default;
 
 /**
+ * Parse path attributes string into an object with camelCase keys
+ */
+function parsePathAttributes(attrsString) {
+  const attrs = {};
+  const attrRegex = /(\w+(?:-\w+)?)=["']([^"']*)["']/g;
+  let attrMatch;
+  while ((attrMatch = attrRegex.exec(attrsString)) !== null) {
+    const [, name, value] = attrMatch;
+    // Convert kebab-case to camelCase for JSX
+    const jsxName = name.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
+    attrs[jsxName] = value;
+  }
+  return attrs;
+}
+
+/**
  * Parse optimized SVG and extract path elements as JSX
+ * Handles both direct path opacity and group-level opacity (for duotone icons)
  */
 function extractPathsFromSvg(svgString) {
-  // Extract all path elements from the SVG
-  const pathRegex = /<path\s+([^>]*)\/>/g;
   const paths = [];
-  let match;
   
-  while ((match = pathRegex.exec(svgString)) !== null) {
-    const attrsString = match[1];
-    const attrs = {};
+  // Track paths we've already processed (to avoid duplicates)
+  const processedPathStrings = new Set();
+  
+  // Handle paths inside opacity groups: <g ... opacity="X" ...><path .../></g>
+  // This is used by duotone icons to apply 40% opacity to secondary paths
+  // Note: opacity attribute can appear anywhere in the <g> tag attributes
+  const groupRegex = /<g\s+([^>]*)>([\s\S]*?)<\/g>/g;
+  let groupMatch;
+  
+  while ((groupMatch = groupRegex.exec(svgString)) !== null) {
+    const groupAttrs = groupMatch[1];
+    const groupContent = groupMatch[2];
     
-    // Parse attributes
-    const attrRegex = /(\w+(?:-\w+)?)=["']([^"']*)["']/g;
-    let attrMatch;
-    while ((attrMatch = attrRegex.exec(attrsString)) !== null) {
-      const [, name, value] = attrMatch;
-      // Convert kebab-case to camelCase for JSX
-      const jsxName = name.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
-      attrs[jsxName] = value;
+    // Check if this group has an opacity attribute
+    const opacityMatch = groupAttrs.match(/opacity=["']([^"']*)["']/);
+    if (opacityMatch) {
+      const groupOpacity = opacityMatch[1];
+      
+      // Extract paths within this opacity group
+      const pathRegex = /<path\s+([^>]*)\/>/g;
+      let pathMatch;
+      while ((pathMatch = pathRegex.exec(groupContent)) !== null) {
+        const attrs = parsePathAttributes(pathMatch[1]);
+        // Apply group opacity (multiply if path has its own opacity)
+        const pathOpacity = attrs.opacity ? parseFloat(attrs.opacity) : 1;
+        attrs.opacity = String(parseFloat(groupOpacity) * pathOpacity);
+        paths.push(attrs);
+        processedPathStrings.add(pathMatch[0]); // Track to avoid duplicates
+      }
     }
-    
-    paths.push(attrs);
+  }
+  
+  // Extract remaining paths not inside opacity groups
+  const pathRegex = /<path\s+([^>]*)\/>/g;
+  let match;
+  while ((match = pathRegex.exec(svgString)) !== null) {
+    if (!processedPathStrings.has(match[0])) {
+      paths.push(parsePathAttributes(match[1]));
+    }
   }
   
   return paths;
