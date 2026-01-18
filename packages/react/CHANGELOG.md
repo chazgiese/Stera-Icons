@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 6.2.1
+
+### Patch Changes
+
+- b1f159b: Patch icon SVG paths for improved precision
+
 ## 6.2.0
 
 ### Minor Changes
