@@ -14,6 +14,11 @@
       "require": "./dist/index.cjs"
     },
     "./package.json": "./package.json",
+    "./base": {
+      "types": "./dist/base.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.cjs"
+    },
     "./Accessibility": {
       "types": "./dist/icons/Accessibility.d.ts",
       "import": "./dist/icons/Accessibility.mjs",

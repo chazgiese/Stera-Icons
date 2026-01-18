@@ -14,6 +14,7 @@
     "dev": "pnpm -F stera-icons-react-demo dev",
     "test": "pnpm -r test",
     "test:tree-shaking": "node scripts/verify-tree-shaking.js",
+    "analyze:bundle": "node scripts/analyze-bundle-size.js",
     "lint": "eslint packages/react/src --ext .ts,.tsx",
     "changeset": "changeset",
     "version-packages": "changeset version",

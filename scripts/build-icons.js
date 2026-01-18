@@ -412,10 +412,7 @@ export { ${baseComponentName} };
   // Generate main index file with both wrapper and direct variant exports
   const indexContent = `// Auto-generated file - do not edit manually
 // Stera Icons - Optimized with IconBase architecture
-
-// Re-export IconBase for advanced usage
-export { IconBase } from './IconBase';
-export type { IconBaseProps } from './IconBase';
+// Note: IconBase is available via 'stera-icons/base' for advanced usage
 
 // Export types
 export type { IconProps, IconWeight, PathData, PathElement, IconPathData } from './types';

@@ -9,6 +9,7 @@
  * Generated files:
  * - dist/types.d.ts - Core type definitions
  * - dist/IconBase.d.ts - IconBase component declaration
+ * - dist/base.d.ts - Separate entry point for IconBase (advanced usage)
  * - dist/index.d.ts - Main entry re-exporting all icons
  */
 
@@ -116,6 +117,20 @@ export declare const IconBase: MemoExoticComponent<ForwardRefExoticComponent<Ico
 }
 
 /**
+ * Generate base.d.ts - separate entry point for IconBase
+ */
+function generateBaseDeclaration() {
+  const baseContent = `// Separate entry point for IconBase (advanced usage)
+// Import via: import { IconBase } from 'stera-icons/base';
+
+export { IconBase } from './IconBase';
+export type { IconBaseProps } from './IconBase';
+`;
+
+  return baseContent;
+}
+
+/**
  * Parse src/index.ts and generate index.d.ts
  */
 function generateIndexDeclaration() {
@@ -182,6 +197,11 @@ function main() {
   const iconBaseDeclaration = generateIconBaseDeclaration();
   writeFileSync(join(DIST_DIR, 'IconBase.d.ts'), iconBaseDeclaration);
   console.log('  ✅ Generated dist/IconBase.d.ts');
+  
+  // Generate base.d.ts (separate entry point for IconBase)
+  const baseDeclaration = generateBaseDeclaration();
+  writeFileSync(join(DIST_DIR, 'base.d.ts'), baseDeclaration);
+  console.log('  ✅ Generated dist/base.d.ts');
   
   // Generate index.d.ts
   const indexDeclaration = generateIndexDeclaration();
