@@ -610,7 +610,7 @@ ${directVariantExports.join('\n')}
       siPrefix: `Si${componentName}`
     };
     
-    const typesContent = `import type { IconProps } from '../index';
+    const typesContent = `import type { IconProps } from '../types';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export interface ${componentName}Props extends IconProps {
