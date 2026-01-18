@@ -125,11 +125,27 @@ async function buildIcons(iconsExportPath) {
     }
   }
   
+  // Create a Map for O(1) metadata lookup (instead of O(n) find calls)
+  const existingMetadataMap = new Map();
+  for (const item of existingMetadata) {
+    const key = `${item.name}|${item.weight}|${item.duotone}|${item.componentName}`;
+    existingMetadataMap.set(key, item);
+  }
+  
   // Track icons by base name for wrapper generation
   const iconsByBaseName = new Map();
   
-  // Process each icon
+  // Process each icon with progress reporting
+  const totalIcons = iconsExport.icons.length;
+  let processedIcons = 0;
+  console.log(`\n🔄 Processing ${totalIcons} icons...`);
+  
   for (const icon of iconsExport.icons) {
+    processedIcons++;
+    // Show progress every 100 icons or at the end
+    if (processedIcons % 100 === 0 || processedIcons === totalIcons) {
+      process.stdout.write(`\r  📊 Progress: ${processedIcons}/${totalIcons} icons processed`);
+    }
     const originalName = icon.name;
     const parsedIconName = parseIconName(originalName);
     const normalizedSlug = normalizeSlug(parsedIconName);
@@ -177,8 +193,7 @@ async function buildIcons(iconsExportPath) {
       const componentName = getComponentName(uniqueSlug, weight, duotone);
       const fileName = getFileName(uniqueSlug, weight, duotone);
       
-      const variantLabel = duotone ? `${weight}-duotone` : weight;
-      console.log(`  📝 Processing ${componentName} (${variantLabel})`);
+      // Reduced logging - progress shown per icon, not per variant
       
       // Optimize SVG with SVGO
       let optimizedSvg;
@@ -225,25 +240,20 @@ export type { ${componentName}Props };
       // Add to direct variant exports
       directVariantExports.push(`export { ${componentName} } from './icons/${fileName}';`);
       
-      // Use hash-based versioning to determine icon status
-      const existingItem = existingMetadata.find(item => 
-        item.name === parsedIconName && 
-        item.weight === weight && 
-        item.duotone === duotone &&
-        item.componentName === baseComponentName
-      );
+      // Use hash-based versioning to determine icon status (O(1) Map lookup)
+      const metadataKey = `${parsedIconName}|${weight}|${duotone}|${baseComponentName}`;
+      const existingItem = existingMetadataMap.get(metadataKey);
       
       const currentSvgHash = variantData.hash;
-      const versionForIcons = hashVersioning.getVersionForIcons().version;
       
       let changeAnalysis;
       if (!existingItem) {
         changeAnalysis = {
           status: 'new',
-          versionAdded: versionForIcons,
-          dateAdded: new Date().toISOString(),
-          lastModified: new Date().toISOString(),
-          versionLastModified: versionForIcons
+          versionAdded: currentVersion,
+          dateAdded: currentDate,
+          lastModified: currentDate,
+          versionLastModified: currentVersion
         };
       } else {
         const isModified = existingItem.svgHash !== currentSvgHash;
@@ -252,8 +262,8 @@ export type { ${componentName}Props };
             status: 'modified',
             versionAdded: existingItem.versionAdded,
             dateAdded: existingItem.dateAdded,
-            lastModified: new Date().toISOString(),
-            versionLastModified: versionForIcons
+            lastModified: currentDate,
+            versionLastModified: currentVersion
           };
         } else {
           changeAnalysis = {
@@ -268,16 +278,16 @@ export type { ${componentName}Props };
       
       const { versionAdded, dateAdded, lastModified, versionLastModified } = changeAnalysis;
       
-      // Log the status
+      // Track status counts instead of logging every variant
       switch (changeAnalysis.status) {
         case 'new':
-          console.log(`  🆕 New icon: ${componentName} (v${versionAdded})`);
+          // Will log in summary
           break;
         case 'modified':
-          console.log(`  🔄 Modified icon: ${componentName} (last modified: v${versionForIcons})`);
+          // Will log in summary
           break;
         case 'unchanged':
-          console.log(`  ✅ Unchanged icon: ${componentName}`);
+          // Will log in summary
           break;
       }
       
@@ -306,12 +316,23 @@ export type { ${componentName}Props };
     });
   }
   
+  // Finish progress line
+  console.log(''); // Newline after progress indicator
+  console.log(`  ✅ Generated ${metadata.length} variant components`);
+  
   // Generate wrapper components (for backwards compatibility with dynamic weight prop)
-  console.log('🔗 Generating wrapper components...');
+  const totalWrappers = iconsByBaseName.size;
+  let wrappersGenerated = 0;
+  console.log('\n🔗 Generating wrapper components...');
+  
   for (const [baseName, iconData] of iconsByBaseName) {
     const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
+    wrappersGenerated++;
     
-    console.log(`  📦 Creating wrapper for ${baseComponentName}`);
+    // Show progress every 100 wrappers or at the end
+    if (wrappersGenerated % 100 === 0 || wrappersGenerated === totalWrappers) {
+      process.stdout.write(`\r  📊 Progress: ${wrappersGenerated}/${totalWrappers} wrappers generated`);
+    }
     
     // Build imports for all variants (no aliases needed since all variants have unique names)
     const imports = [];
@@ -384,6 +405,10 @@ export { ${baseComponentName} };
     wrapperExports.push(`export { ${baseComponentName} } from './icons/${baseComponentName}';`);
   }
   
+  // Finish wrapper progress line
+  console.log(''); // Newline after progress indicator
+  console.log(`  ✅ Generated ${wrapperExports.length} wrapper components`);
+  
   // Generate main index file with both wrapper and direct variant exports
   const indexContent = `// Auto-generated file - do not edit manually
 // Stera Icons - Optimized with IconBase architecture
@@ -428,8 +453,8 @@ ${directVariantExports.join('\n')}
     process.exit(1);
   }
   
-  // Compile individual icon components for subpath exports
-  console.log('\n📦 Compiling individual icon components for subpath exports...');
+  // Compile individual icon components for subpath exports (BATCHED for performance)
+  console.log('\n📦 Preparing icon components for compilation...');
   const distIconsDir = join(distDir, 'icons');
   if (!existsSync(distIconsDir)) {
     mkdirSync(distIconsDir, { recursive: true });
@@ -441,7 +466,13 @@ ${directVariantExports.join('\n')}
   const subpathExports = {};
   const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
   
-  // Compile wrapper components
+  // Collect all entry points for batched compilation
+  const wrapperEntryPoints = [];
+  const wrapperComponents = []; // For TypeScript definitions
+  const variantEntryPoints = [];
+  const variantComponents = []; // For TypeScript definitions
+  
+  // Collect wrapper components
   for (const [baseName] of iconsByBaseName) {
     const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
     const wrapperPath = join(iconsDir, `${componentName}.tsx`);
@@ -451,65 +482,11 @@ ${directVariantExports.join('\n')}
       continue;
     }
     
-    try {
-      // Compile ESM version
-      await build({
-        entryPoints: [wrapperPath],
-        bundle: true,
-        format: 'esm',
-        outfile: join(distIconsDir, `${componentName}.mjs`),
-        external: ['react'],
-        minify: true,
-        treeShaking: true,
-        platform: 'neutral',
-        target: 'es2020',
-        jsx: 'automatic',
-        resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-        absWorkingDir: srcDir,
-      });
-      
-      // Compile CJS version
-      await build({
-        entryPoints: [wrapperPath],
-        bundle: true,
-        format: 'cjs',
-        outfile: join(distIconsDir, `${componentName}.cjs`),
-        external: ['react'],
-        minify: true,
-        treeShaking: true,
-        platform: 'neutral',
-        target: 'es2020',
-        jsx: 'automatic',
-        resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-        absWorkingDir: srcDir,
-        banner: { js: '"use strict";' },
-      });
-      
-      // Generate TypeScript definitions
-      const typesContent = `import type { IconProps } from '../index';
-import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
-
-export interface ${componentName}Props extends IconProps {
-  weight?: 'regular' | 'bold' | 'fill';
-  duotone?: boolean;
-}
-
-export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
-`;
-      writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
-      
-      subpathExports[`./${componentName}`] = {
-        types: `./dist/icons/${componentName}.d.ts`,
-        import: `./dist/icons/${componentName}.mjs`,
-        require: `./dist/icons/${componentName}.cjs`
-      };
-    } catch (error) {
-      console.error(`  ❌ Failed to compile wrapper ${componentName}: ${error.message}`);
-    }
+    wrapperEntryPoints.push({ in: wrapperPath, out: componentName });
+    wrapperComponents.push(componentName);
   }
   
-  // Compile direct variant components
-  console.log('\n📦 Compiling direct variant components for subpath exports...');
+  // Collect variant components
   for (const [baseName, iconData] of iconsByBaseName) {
     for (const variantInfo of iconData.variants) {
       const { componentName, fileName } = variantInfo;
@@ -519,60 +496,111 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
         continue;
       }
       
-      try {
-        // Compile ESM version
-        await build({
-          entryPoints: [variantPath],
-          bundle: true,
-          format: 'esm',
-          outfile: join(distIconsDir, `${componentName}.mjs`),
-          external: ['react'],
-          minify: true,
-          treeShaking: true,
-          platform: 'neutral',
-          target: 'es2020',
-          jsx: 'automatic',
-          resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-          absWorkingDir: srcDir,
-        });
-        
-        // Compile CJS version
-        await build({
-          entryPoints: [variantPath],
-          bundle: true,
-          format: 'cjs',
-          outfile: join(distIconsDir, `${componentName}.cjs`),
-          external: ['react'],
-          minify: true,
-          treeShaking: true,
-          platform: 'neutral',
-          target: 'es2020',
-          jsx: 'automatic',
-          resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-          absWorkingDir: srcDir,
-          banner: { js: '"use strict";' },
-        });
-        
-        // Generate TypeScript definitions
-        const variantTypesContent = `import type { IconBaseProps } from '../IconBase';
+      variantEntryPoints.push({ in: variantPath, out: componentName });
+      variantComponents.push(componentName);
+    }
+  }
+  
+  const totalComponents = wrapperEntryPoints.length + variantEntryPoints.length;
+  console.log(`  📋 Found ${wrapperEntryPoints.length} wrapper components`);
+  console.log(`  📋 Found ${variantEntryPoints.length} variant components`);
+  console.log(`  📋 Total: ${totalComponents} components to compile`);
+  
+  // Combine all entry points for a single batched build
+  const allEntryPoints = [...wrapperEntryPoints, ...variantEntryPoints];
+  
+  // Batch compile ESM versions (single esbuild call for all components)
+  console.log('\n⚡ Compiling ESM bundles (batched)...');
+  const esmStartTime = Date.now();
+  try {
+    await build({
+      entryPoints: allEntryPoints,
+      bundle: true,
+      format: 'esm',
+      outdir: distIconsDir,
+      outExtension: { '.js': '.mjs' },
+      external: ['react'],
+      minify: true,
+      treeShaking: true,
+      platform: 'neutral',
+      target: 'es2020',
+      jsx: 'automatic',
+      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+      absWorkingDir: srcDir,
+    });
+    console.log(`  ✅ ESM compilation complete (${Date.now() - esmStartTime}ms)`);
+  } catch (error) {
+    console.error(`  ❌ ESM compilation failed: ${error.message}`);
+    throw error;
+  }
+  
+  // Batch compile CJS versions (single esbuild call for all components)
+  console.log('⚡ Compiling CJS bundles (batched)...');
+  const cjsStartTime = Date.now();
+  try {
+    await build({
+      entryPoints: allEntryPoints,
+      bundle: true,
+      format: 'cjs',
+      outdir: distIconsDir,
+      outExtension: { '.js': '.cjs' },
+      external: ['react'],
+      minify: true,
+      treeShaking: true,
+      platform: 'neutral',
+      target: 'es2020',
+      jsx: 'automatic',
+      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+      absWorkingDir: srcDir,
+      banner: { js: '"use strict";' },
+    });
+    console.log(`  ✅ CJS compilation complete (${Date.now() - cjsStartTime}ms)`);
+  } catch (error) {
+    console.error(`  ❌ CJS compilation failed: ${error.message}`);
+    throw error;
+  }
+  
+  // Generate TypeScript definitions for wrapper components
+  console.log('📝 Generating TypeScript definitions...');
+  for (const componentName of wrapperComponents) {
+    const typesContent = `import type { IconProps } from '../index';
+import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
+
+export interface ${componentName}Props extends IconProps {
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+}
+
+export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
+`;
+    writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
+    
+    subpathExports[`./${componentName}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
+  }
+  
+  // Generate TypeScript definitions for variant components
+  for (const componentName of variantComponents) {
+    const variantTypesContent = `import type { IconBaseProps } from '../IconBase';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export type ${componentName}Props = Omit<IconBaseProps, 'children'>;
 
 export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
 `;
-        writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
-        
-        subpathExports[`./${componentName}`] = {
-          types: `./dist/icons/${componentName}.d.ts`,
-          import: `./dist/icons/${componentName}.mjs`,
-          require: `./dist/icons/${componentName}.cjs`
-        };
-      } catch (error) {
-        console.error(`  ❌ Failed to compile variant ${componentName}: ${error.message}`);
-      }
-    }
+    writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
+    
+    subpathExports[`./${componentName}`] = {
+      types: `./dist/icons/${componentName}.d.ts`,
+      import: `./dist/icons/${componentName}.mjs`,
+      require: `./dist/icons/${componentName}.cjs`
+    };
   }
+  
+  console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
   // Update package.json with subpath exports
   const existingExports = packageJson.exports?.['.'] || {
@@ -590,15 +618,11 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
   writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
   console.log(`  ✅ Generated ${Object.keys(subpathExports).length} subpath exports`);
   
-  // Calculate summary statistics
+  // Calculate summary statistics (using O(1) Map lookup)
   const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
   const modifiedIcons = metadata.filter(item => {
-    const existing = existingMetadata.find(e => 
-      e.name === item.name && 
-      e.weight === item.weight && 
-      e.duotone === item.duotone &&
-      e.componentName === item.componentName
-    );
+    const key = `${item.name}|${item.weight}|${item.duotone}|${item.componentName}`;
+    const existing = existingMetadataMap.get(key);
     return existing && existing.svgHash && item.svgHash !== existing.svgHash;
   }).length;
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;
