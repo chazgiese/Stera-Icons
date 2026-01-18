@@ -1,7 +1,7 @@
 import { forwardRef, memo } from "react";
 import { jsx, jsxs } from "react/jsx-runtime";
 import type { IconProps } from "../types";
-const ShipBackIconDuotone = memo(
+const SkipBackIconDuotone = memo(
   forwardRef < SVGSVGElement,
   IconProps >
     ((
@@ -40,5 +40,5 @@ const ShipBackIconDuotone = memo(
       </svg>
     ))
 );
-ShipBackIconDuotone.displayName = "ShipBackIconDuotone";
-export { ShipBackIconDuotone };
+SkipBackIconDuotone.displayName = "SkipBackIconDuotone";
+export { SkipBackIconDuotone };

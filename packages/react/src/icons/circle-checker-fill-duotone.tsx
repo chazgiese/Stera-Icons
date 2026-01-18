@@ -34,6 +34,13 @@ const CircleCheckerIconFillDuotone = memo(
             clipRule="evenodd"
           />
         </g>
+        <path fill="currentColor" d="M22 12H12V2c5.523 0 10 4.477 10 10" />
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M12 22C6.477 22 2 17.523 2 12h10z"
+          clipRule="evenodd"
+        />
       </svg>
     ))
 );

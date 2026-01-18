@@ -38,7 +38,7 @@ const AnnotationIconBold = memo(
         />
         <path
           fill="currentColor"
-          d="M13 12a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2zM16 8a1 1 0 1 1 0 2h-6a1 1 0 0 1 0-2z"
+          d="M13 12a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2zM16 8a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2z"
         />
       </svg>
     ))

@@ -3209,16 +3209,6 @@
       "import": "./dist/icons/ShieldSlashIcon.mjs",
       "require": "./dist/icons/ShieldSlashIcon.cjs"
     },
-    "./ShipBackIcon": {
-      "types": "./dist/icons/ShipBackIcon.d.ts",
-      "import": "./dist/icons/ShipBackIcon.mjs",
-      "require": "./dist/icons/ShipBackIcon.cjs"
-    },
-    "./ShipForwardIcon": {
-      "types": "./dist/icons/ShipForwardIcon.d.ts",
-      "import": "./dist/icons/ShipForwardIcon.mjs",
-      "require": "./dist/icons/ShipForwardIcon.cjs"
-    },
     "./ShuffleIcon": {
       "types": "./dist/icons/ShuffleIcon.d.ts",
       "import": "./dist/icons/ShuffleIcon.mjs",
@@ -3298,6 +3288,16 @@
       "types": "./dist/icons/SignatureXIcon.d.ts",
       "import": "./dist/icons/SignatureXIcon.mjs",
       "require": "./dist/icons/SignatureXIcon.cjs"
+    },
+    "./SkipBackIcon": {
+      "types": "./dist/icons/SkipBackIcon.d.ts",
+      "import": "./dist/icons/SkipBackIcon.mjs",
+      "require": "./dist/icons/SkipBackIcon.cjs"
+    },
+    "./SkipForwardIcon": {
+      "types": "./dist/icons/SkipForwardIcon.d.ts",
+      "import": "./dist/icons/SkipForwardIcon.mjs",
+      "require": "./dist/icons/SkipForwardIcon.cjs"
     },
     "./SlashIcon": {
       "types": "./dist/icons/SlashIcon.d.ts",

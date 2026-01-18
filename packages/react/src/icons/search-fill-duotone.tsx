@@ -28,7 +28,7 @@ const SearchIconFillDuotone = memo(
       >
         <path
           fill="currentColor"
-          d="M22.164 19.336a2 2 0 1 1-2.828 2.828l-3.435-3.434A9.55 9.55 0 0 0 18.73 15.9z"
+          d="M22.164 19.336a2 2 0 1 1-2.828 2.828L15.9 18.73A9.55 9.55 0 0 0 18.73 15.9z"
           opacity={0.4}
         />
         <path

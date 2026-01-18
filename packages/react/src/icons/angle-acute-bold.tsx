@@ -28,7 +28,7 @@ const AngleAcuteIconBold = memo(
       >
         <path
           fill="currentColor"
-          d="M11.134 4.573a1 1 0 0 1 1.732 1L5.732 17.929H20a1 1 0 0 1 0 2H4a1 1 0 0 1-.866-1.5z"
+          d="M11.134 4.573a1 1 0 0 1 1.732 1L5.732 17.929H20a1 1 0 1 1 0 2H4a1 1 0 0 1-.866-1.5z"
         />
         <path
           fill="currentColor"

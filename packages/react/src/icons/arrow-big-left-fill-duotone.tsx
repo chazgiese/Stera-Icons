@@ -34,7 +34,7 @@ const ArrowBigLeftIconFillDuotone = memo(
         />
         <path
           fill="currentColor"
-          d="M12.5 8a1 1 0 0 0 1 1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a1 1 0 0 0-1 1v3.586l-7.41-7.41a.25.25 0 0 1 0-.353l7.41-7.409z"
+          d="M12.5 8a1 1 0 0 0 1 1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a1 1 0 0 0-1 1v3.586l-7.409-7.41a.25.25 0 0 1 0-.353l7.41-7.409z"
           opacity={0.4}
         />
       </svg>

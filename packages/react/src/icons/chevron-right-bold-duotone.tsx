@@ -33,7 +33,7 @@ const ChevronRightIconBoldDuotone = memo(
         />
         <path
           fill="currentColor"
-          d="M8.293 4.293a1 1 0 0 1 1.414 0l7 7a1 1 0 1 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414"
+          d="M8.293 4.293a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414"
         />
       </svg>
     ))
