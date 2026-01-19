@@ -40,9 +40,10 @@ export async function getIconComponent(
   duotone: boolean = false,
   dynamicIconImports: DynamicIconImports
 ): Promise<ComponentType<IconProps>> {
-  // Build the variant key: name-weight-duotone or name-weight
-  const variantSuffix = duotone ? `-${weight}-duotone` : `-${weight}`;
-  const iconKey = `${name}${variantSuffix}`;
+  // Build the variant suffix: regular weight uses no suffix, others use -weight
+  const weightSuffix = weight === 'regular' ? '' : `-${weight}`;
+  const duotoneSuffix = duotone ? '-duotone' : '';
+  const iconKey = `${name}${weightSuffix}${duotoneSuffix}`;
   
   // Try exact match first
   if (iconKey in dynamicIconImports) {
