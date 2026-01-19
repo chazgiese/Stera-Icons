@@ -27,7 +27,7 @@ export class HashVersioning {
    * Get the current version from package.json
    */
   getCurrentVersion() {
-    const packageJsonPath = join(this.projectRoot, 'packages', 'react', 'package.json');
+    const packageJsonPath = join(this.projectRoot, 'package.json');
     const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
     return packageJson.version;
   }

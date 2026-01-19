@@ -109,7 +109,7 @@ async function analyzeFullPackage() {
   }
   
   const code = `
-import * as SteraIcons from '../packages/react/src/index';
+import * as SteraIcons from '../src/index';
 export { SteraIcons };
 `;
   
@@ -156,7 +156,7 @@ async function analyzeSingleIcon(iconName) {
   
   for (const file of matchingFiles) {
     const componentName = file.replace('.tsx', '');
-    const importPath = `../packages/react/src/icons/${componentName}`;
+    const importPath = `../src/icons/${componentName}`;
     
     const code = `
 import { ${componentName} } from '${importPath}';
@@ -223,7 +223,7 @@ async function compareIcons() {
     
     // Analyze the first variant (usually the wrapper or main component)
     const mainVariant = variants.find(v => v === baseName) || variants[0];
-    const importPath = `../packages/react/src/icons/${mainVariant}`;
+    const importPath = `../src/icons/${mainVariant}`;
     
     const code = `
 import { ${mainVariant} } from '${importPath}';
@@ -268,21 +268,21 @@ async function analyzeTreeShakingEffectiveness() {
     {
       name: '1 icon import',
       code: `
-import { Activity } from '../packages/react/src/index';
+import { Activity } from '../src/index';
 export { Activity };
 `,
     },
     {
       name: '5 icon imports',
       code: `
-import { Activity, Accessibility, Airplane, AlarmClock, AlertCircle } from '../packages/react/src/index';
+import { Activity, Accessibility, Airplane, AlarmClock, AlertCircle } from '../src/index';
 export { Activity, Accessibility, Airplane, AlarmClock, AlertCircle };
 `,
     },
     {
       name: '10 icon imports',
       code: `
-import { Activity, Accessibility, Airplane, AlarmClock, AlertCircle, AlertDiamond, AlertHexagon, AlertOctagon, AlertSquare, AlertTriangle } from '../packages/react/src/index';
+import { Activity, Accessibility, Airplane, AlarmClock, AlertCircle, AlertDiamond, AlertHexagon, AlertOctagon, AlertSquare, AlertTriangle } from '../src/index';
 export { Activity, Accessibility, Airplane, AlarmClock, AlertCircle, AlertDiamond, AlertHexagon, AlertOctagon, AlertSquare, AlertTriangle };
 `,
     },

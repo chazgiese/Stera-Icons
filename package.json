@@ -1,24 +1,55 @@
 {
   "name": "stera-icons",
-  "version": "1.0.0",
+  "version": "7.0.6",
   "type": "module",
-  "description": "A lightweight, tree-shakeable React icon library built from Figma",
-  "private": true,
-  "workspaces": [
-    "packages/*",
-    "samples/*"
+  "description": "A lightweight, tree-shakeable React icon library",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./base": {
+      "types": "./dist/base.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.cjs"
+    },
+    "./dynamic": {
+      "types": "./dist/dynamic.d.ts",
+      "import": "./dist/dynamic.mjs",
+      "require": "./dist/dynamic.cjs"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.mjs",
+      "require": "./dist/icons/*.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
   ],
   "scripts": {
-    "build": "pnpm --filter stera-icons build && node scripts/generate-declarations.js && node scripts/build-icons.js icons-export.json && pnpm --filter stera-icons-react-demo build",
+    "build": "rm -f dist/*.{cjs,mjs,d.ts,d.cts} && tsup && node scripts/generate-declarations.js && node scripts/build-icons.js icons-export.json",
     "build:icons": "node scripts/build-icons.js icons-export.json",
-    "dev": "pnpm -F stera-icons-react-demo dev",
-    "test": "pnpm -r test",
+    "build:dev": "tsup --config tsup.config.dev.ts",
+    "dev": "tsup --watch --config tsup.config.dev.ts",
+    "test": "vitest",
     "test:tree-shaking": "node scripts/verify-tree-shaking.js",
     "analyze:bundle": "node scripts/analyze-bundle-size.js",
-    "lint": "eslint packages/react/src --ext .ts,.tsx",
+    "lint": "eslint src --ext .ts,.tsx",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.23.0",
@@ -27,18 +58,37 @@
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-prettier": "^8.1.0",
+    "@testing-library/jest-dom": "^6.1.0",
+    "@testing-library/react": "^14.1.0",
     "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "esbuild": "^0.25.0",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
+    "jsdom": "^23.0.0",
+    "react": "^18.2.0",
     "svgo": "^3.0.0",
+    "tsup": "^8.0.0",
     "typescript": "^5.3.0",
     "typescript-eslint": "^8.43.0",
     "vitest": "^1.0.0"
   },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "typescript",
+    "tree-shakeable"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chazgiese/Stera-Icons.git"
+  },
+  "license": "MIT",
   "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=18.0.0",

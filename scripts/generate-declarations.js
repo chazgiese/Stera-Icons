@@ -20,17 +20,33 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const REACT_PACKAGE_DIR = join(__dirname, '..', 'packages', 'react');
-const SRC_DIR = join(REACT_PACKAGE_DIR, 'src');
-const DIST_DIR = join(REACT_PACKAGE_DIR, 'dist');
+const PACKAGE_DIR = join(__dirname, '..');
+const SRC_DIR = join(PACKAGE_DIR, 'src');
+const DIST_DIR = join(PACKAGE_DIR, 'dist');
 
 /**
- * Generate types.d.ts from src/types.ts
+ * Generate types.d.ts from src/types.ts (enhanced with new types)
  */
 function generateTypesDeclaration() {
-  const typesContent = `import { SVGProps } from 'react';
+  const typesContent = `import { SVGProps, RefAttributes, ForwardRefExoticComponent } from 'react';
+
+export type SVGElementType = 
+  | 'circle' 
+  | 'ellipse' 
+  | 'g' 
+  | 'line' 
+  | 'path' 
+  | 'polygon' 
+  | 'polyline' 
+  | 'rect';
+
+export type IconNode = Array<[elementName: SVGElementType, attrs: Record<string, string>]>;
 
 export type IconWeight = 'regular' | 'bold' | 'fill';
+
+export type SVGAttributes = Partial<SVGProps<SVGSVGElement>>;
+
+export type ElementAttributes = RefAttributes<SVGSVGElement> & SVGAttributes;
 
 export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   size?: number | string;
@@ -39,7 +55,12 @@ export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   duotone?: boolean;
   'aria-label'?: string;
   'aria-hidden'?: boolean;
+  title?: string;
 }
+
+export type SteraIcon = ForwardRefExoticComponent<
+  Omit<IconProps, 'ref'> & RefAttributes<SVGSVGElement>
+>;
 
 export interface IconMetadata {
   name: string;
@@ -108,6 +129,7 @@ import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } fr
 
 export interface IconBaseProps extends Omit<IconProps, 'weight' | 'duotone'> {
   children: ReactNode;
+  iconName?: string;
 }
 
 export declare const IconBase: MemoExoticComponent<ForwardRefExoticComponent<IconBaseProps & RefAttributes<SVGSVGElement>>>;
@@ -131,6 +153,38 @@ export type { IconBaseProps } from './IconBase';
 }
 
 /**
+ * Generate dynamic.d.ts - dynamic icon loading entry point
+ */
+function generateDynamicDeclaration() {
+  const dynamicContent = `import type { ComponentType, ReactNode } from 'react';
+import type { IconProps } from './types';
+import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
+
+export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone'> {
+  name: string;
+  fallback?: ComponentType | ReactNode;
+  weight?: 'regular' | 'bold' | 'fill';
+  duotone?: boolean;
+  onError?: (error: Error) => void;
+}
+
+export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
+
+export declare const DynamicIcon: MemoExoticComponent<
+  ForwardRefExoticComponent<DynamicIconProps & RefAttributes<SVGSVGElement>>
+>;
+
+export declare const dynamicIconImports: DynamicIconImports;
+
+export declare const iconNames: string[];
+
+export type { DynamicIconProps as DynamicIconPropsType };
+`;
+
+  return dynamicContent;
+}
+
+/**
  * Parse src/index.ts and generate index.d.ts
  */
 function generateIndexDeclaration() {
@@ -146,7 +200,11 @@ function generateIndexDeclaration() {
   declarationLines.push('// Triple-aliased exports: Base, Icon suffix, Si prefix');
   declarationLines.push('');
   
-  for (const line of lines) {
+  let inMultilineExport = false;
+  let multilineExport = [];
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     const trimmedLine = line.trim();
     
     // Skip empty lines and comments in source, but preserve section comments
@@ -154,6 +212,24 @@ function generateIndexDeclaration() {
       // Preserve section divider comments
       if (trimmedLine.includes('===') || trimmedLine.includes('WRAPPER') || trimmedLine.includes('DIRECT VARIANT')) {
         declarationLines.push(line);
+      }
+      continue;
+    }
+    
+    // Handle multiline exports
+    if (trimmedLine.startsWith('export type {') && !trimmedLine.includes('} from')) {
+      inMultilineExport = true;
+      multilineExport = [line];
+      continue;
+    }
+    
+    if (inMultilineExport) {
+      multilineExport.push(line);
+      if (trimmedLine.includes('} from')) {
+        // End of multiline export
+        declarationLines.push(multilineExport.join('\n'));
+        inMultilineExport = false;
+        multilineExport = [];
       }
       continue;
     }
@@ -204,6 +280,11 @@ function main() {
   const baseDeclaration = generateBaseDeclaration();
   writeFileSync(join(DIST_DIR, 'base.d.ts'), baseDeclaration);
   console.log('  ✅ Generated dist/base.d.ts');
+  
+  // Generate dynamic.d.ts (dynamic icon loading entry point)
+  const dynamicDeclaration = generateDynamicDeclaration();
+  writeFileSync(join(DIST_DIR, 'dynamic.d.ts'), dynamicDeclaration);
+  console.log('  ✅ Generated dist/dynamic.d.ts');
   
   // Generate index.d.ts
   const indexDeclaration = generateIndexDeclaration();

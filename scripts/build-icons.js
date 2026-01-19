@@ -249,6 +249,9 @@ async function buildIcons(iconsExportPath) {
       const paths = extractPathsFromSvg(optimizedSvg);
       const pathJsx = generatePathJsx(paths);
       
+      // Generate kebab-case icon name for CSS classes
+      const kebabIconName = uniqueSlug + (weight !== 'regular' ? `-${weight}` : '') + (duotone ? '-duotone' : '');
+      
       // Generate thin variant component using IconBase
       const componentCode = `import { memo, forwardRef } from 'react';
 import { IconBase } from '../IconBase';
@@ -258,7 +261,7 @@ type ${componentName}Props = Omit<IconBaseProps, 'children'>;
 
 const ${componentName} = memo(
   forwardRef<SVGSVGElement, ${componentName}Props>((props, ref) => (
-    <IconBase ref={ref} {...props}>
+    <IconBase ref={ref} iconName="${kebabIconName}" {...props}>
       ${pathJsx}
     </IconBase>
   ))
@@ -424,7 +427,7 @@ export interface ${baseComponentName}Props extends IconProps {
  * ${baseComponentName} - Dynamic wrapper component with convenience props.
  * Allows switching between weights and duotone variants at runtime.
  * For smaller bundle size, import specific variants directly:
- * import { ${regularVariantName} } from 'stera-icons/${regularVariantName}';
+ * import { ${regularVariantName} } from 'stera-icons/icons/${regularVariantName}';
  */
 const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
   weight = 'regular',
@@ -458,7 +461,21 @@ ${generateTripleExport(baseComponentName)}
 // Import patterns: { Search }, { SearchIcon }, { SiSearch }
 
 // Export types
-export type { IconProps, IconWeight, PathData, PathElement, IconPathData } from './types';
+export type { 
+  IconProps, 
+  IconWeight, 
+  PathData, 
+  PathElement, 
+  IconPathData,
+  IconNode,
+  SVGElementType,
+  SteraIcon,
+  SVGAttributes,
+  ElementAttributes
+} from './types';
+
+// Export utility functions
+export { mergeClasses, hasA11yProp, toKebabCase, toCamelCase, toPascalCase } from './utils';
 
 // =============================================================================
 // DYNAMIC WRAPPER COMPONENTS (convenience, includes all 6 variants per icon)
@@ -484,6 +501,68 @@ ${directVariantExports.join('\n')}
     JSON.stringify(metadata, null, 2)
   );
   
+  // Generate dynamic icon imports map for lazy loading
+  console.log('\n🔄 Generating dynamic icon imports map...');
+  const dynamicImportsMap = new Map();
+  
+  // Add wrapper components (base names)
+  for (const [baseName] of iconsByBaseName) {
+    const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
+    const kebabName = baseName; // Already in kebab-case
+    dynamicImportsMap.set(kebabName, componentName);
+  }
+  
+  // Add all variant components
+  for (const [baseName, iconData] of iconsByBaseName) {
+    for (const variantInfo of iconData.variants) {
+      const { weight, duotone, componentName } = variantInfo;
+      // Create kebab-case key: icon-name-weight or icon-name-weight-duotone
+      const weightSuffix = weight === 'regular' ? '' : `-${weight}`;
+      const duotoneSuffix = duotone ? '-duotone' : '';
+      const kebabKey = `${baseName}${weightSuffix}${duotoneSuffix}`;
+      dynamicImportsMap.set(kebabKey, componentName);
+    }
+  }
+  
+  // Generate the dynamicIconImports.ts file
+  const dynamicImportsEntries = Array.from(dynamicImportsMap.entries())
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([key, componentName]) => `  '${key}': () => import('./icons/${componentName}')`)
+    .join(',\n');
+  
+  const dynamicImportsContent = `// Auto-generated file - do not edit manually
+// Dynamic icon imports map for lazy loading icons at runtime
+
+import type { DynamicIconImports } from './DynamicIcon';
+
+/**
+ * Map of icon names to dynamic import functions.
+ * Enables lazy-loading of icon components at runtime.
+ * 
+ * @example
+ * import { dynamicIconImports } from 'stera-icons/dynamic';
+ * const SearchIcon = await dynamicIconImports['search']();
+ */
+export const dynamicIconImports: DynamicIconImports = {
+${dynamicImportsEntries}
+};
+
+/**
+ * List of all available icon names.
+ * Useful for building icon pickers or validating icon names.
+ */
+export const iconNames = Object.keys(dynamicIconImports);
+
+export default dynamicIconImports;
+`;
+  
+  writeFileSync(
+    join(__dirname, '..', 'packages', 'react', 'src', 'dynamicIconImports.ts'),
+    dynamicImportsContent
+  );
+  
+  console.log(`  ✅ Generated dynamic imports map with ${dynamicImportsMap.size} entries`);
+  
   // Check for naming conflicts and exit with error if any found
   if (namingConflicts.length > 0) {
     console.error(`\n❌ BUILD FAILED: Found ${namingConflicts.length} naming conflict(s):`);
@@ -502,10 +581,10 @@ ${directVariantExports.join('\n')}
     mkdirSync(distIconsDir, { recursive: true });
   }
   
-  const packageJsonPath = join(__dirname, '..', 'packages', 'react', 'package.json');
+  const packageJsonPath = join(__dirname, '..', 'package.json');
   const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
   
-  const srcDir = join(__dirname, '..', 'packages', 'react', 'src');
+  const srcDir = join(__dirname, '..', 'src');
   
   // Collect all entry points for batched compilation
   const wrapperEntryPoints = [];
@@ -648,6 +727,7 @@ export declare const ${aliases.siPrefix}: typeof ${aliases.base};
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
   // Update package.json with wildcard exports (following lucide-react pattern)
+  // Preserve existing exports (./base, ./dynamic, etc.) and only update ./icons/*
   const existingExports = packageJson.exports?.['.'] || {
     types: './dist/index.d.ts',
     import: './dist/index.mjs',
@@ -655,8 +735,8 @@ export declare const ${aliases.siPrefix}: typeof ${aliases.base};
   };
   
   packageJson.exports = {
+    ...packageJson.exports, // Preserve all existing exports
     '.': existingExports,
-    './package.json': './package.json',
     './icons/*': {
       types: './dist/icons/*.d.ts',
       import: './dist/icons/*.mjs',

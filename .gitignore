@@ -4,16 +4,8 @@ node_modules/
 
 # Build outputs
 dist/
-# But track metadata files for version history and backward compatibility
-!packages/
-!packages/react/
-!packages/react/dist/
-!packages/react/dist/icons.meta.json
-!packages/react/dist/name_map.json
-# Re-ignore other files in dist
-packages/react/dist/*
-!packages/react/dist/icons.meta.json
-!packages/react/dist/name_map.json
+!dist/icons.meta.json
+!dist/name_map.json
 build/
 *.tsbuildinfo
 

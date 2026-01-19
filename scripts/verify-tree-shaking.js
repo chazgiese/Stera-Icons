@@ -32,7 +32,7 @@ const testScenarios = [
     name: 'single-direct-variant',
     description: 'Import 1 direct variant component (SearchIconRegular)',
     code: `
-import { SearchIconRegular } from '../packages/react/src/icons/search-regular';
+import { SearchIconRegular } from '../src/icons/search-regular';
 export { SearchIconRegular };
 `,
     expectedMaxBytes: 900,  // Should be very small (~700-800 bytes)
@@ -41,7 +41,7 @@ export { SearchIconRegular };
     name: 'single-wrapper',
     description: 'Import 1 wrapper component (includes all 6 variants)',
     code: `
-import { SearchIcon } from '../packages/react/src/icons/search-wrapper';
+import { SearchIcon } from '../src/icons/search-wrapper';
 export { SearchIcon };
 `,
     expectedMaxBytes: 3500,  // Larger due to all variants (~3KB)
@@ -50,9 +50,9 @@ export { SearchIcon };
     name: 'three-direct-variants',
     description: 'Import 3 direct variant components from different icons',
     code: `
-import { SearchIconRegular } from '../packages/react/src/icons/search-regular';
-import { HomeIconRegular } from '../packages/react/src/icons/home-regular';
-import { UserIconRegular } from '../packages/react/src/icons/user-regular';
+import { SearchIconRegular } from '../src/icons/search-regular';
+import { HomeIconRegular } from '../src/icons/home-regular';
+import { UserIconRegular } from '../src/icons/user-regular';
 export { SearchIconRegular, HomeIconRegular, UserIconRegular };
 `,
     expectedMaxBytes: 2500,  // ~800 bytes each, IconBase shared
@@ -61,9 +61,9 @@ export { SearchIconRegular, HomeIconRegular, UserIconRegular };
     name: 'three-wrappers',
     description: 'Import 3 wrapper components',
     code: `
-import { SearchIcon } from '../packages/react/src/icons/search-wrapper';
-import { HomeIcon } from '../packages/react/src/icons/home-wrapper';
-import { UserIcon } from '../packages/react/src/icons/user-wrapper';
+import { SearchIcon } from '../src/icons/search-wrapper';
+import { HomeIcon } from '../src/icons/home-wrapper';
+import { UserIcon } from '../src/icons/user-wrapper';
 export { SearchIcon, HomeIcon, UserIcon };
 `,
     expectedMaxBytes: 13000,  // ~3-4KB each, IconBase shared
@@ -72,9 +72,9 @@ export { SearchIcon, HomeIcon, UserIcon };
     name: 'mixed-imports',
     description: 'Mix of direct variants and wrappers',
     code: `
-import { SearchIcon } from '../packages/react/src/icons/search-wrapper';
-import { HomeIconRegular } from '../packages/react/src/icons/home-regular';
-import { UserIconBold } from '../packages/react/src/icons/user-bold';
+import { SearchIcon } from '../src/icons/search-wrapper';
+import { HomeIconRegular } from '../src/icons/home-regular';
+import { UserIconBold } from '../src/icons/user-bold';
 export { SearchIcon, HomeIconRegular, UserIconBold };
 `,
     expectedMaxBytes: 5000,  // Wrapper + 2 direct variants
@@ -83,7 +83,7 @@ export { SearchIcon, HomeIconRegular, UserIconBold };
     name: 'unused-exports-removed',
     description: 'Import from index but only use one (tree-shaking test)',
     code: `
-import { SearchIcon, HomeIcon } from '../packages/react/src/index';
+import { SearchIcon, HomeIcon } from '../src/index';
 // Only re-export SearchIcon, HomeIcon should be tree-shaken
 export { SearchIcon };
 `,

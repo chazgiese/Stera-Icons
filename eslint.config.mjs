@@ -55,7 +55,7 @@ export default [
     },
   },
   {
-    files: ['packages/react/src/icons/**/*.tsx'],
+    files: ['src/icons/**/*.tsx'],
     rules: {
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-unused-vars': ['error', { 
@@ -73,8 +73,7 @@ export default [
       '*.cjs',
       'samples/',
       'scripts/',
-      'packages/react/dist/',
-      'packages/react/node_modules/',
+      'dist/',
     ],
   },
 ];
