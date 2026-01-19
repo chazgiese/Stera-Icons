@@ -50,7 +50,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": ">=16.8.0"
+    "react": ">=17.0.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.23.0",
