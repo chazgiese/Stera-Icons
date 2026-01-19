@@ -15,7 +15,7 @@ Each icon variant (regular, bold, filled, filltone, linetone) has metadata track
 **Critical:** Metadata MUST be tracked in git to preserve version history.
 
 **Files:**
-- `packages/react/dist/icons.meta.json` - Version history for all icons
+- `dist/icons.meta.json` - Version history for all icons
 
 ### Why Git Tracking is Critical
 
@@ -48,10 +48,8 @@ The `.gitignore` is configured to track metadata while ignoring other build arti
 
 ```gitignore
 dist/                                    # Ignore all dist files
-!packages/react/dist/                    # But allow this directory
-!packages/react/dist/icons.meta.json     # Track metadata
-packages/react/dist/*                    # Re-ignore other files
-!packages/react/dist/icons.meta.json     # Re-allow metadata
+!dist/icons.meta.json                    # But track metadata
+!dist/name_map.json                      # And name mapping
 ```
 
 ## Version Detection Algorithm
@@ -199,35 +197,35 @@ const unchangedIcons = metadata.length - newIcons - modifiedIcons;
 **Diagnosis:**
 ```bash
 # Check if metadata file exists
-ls packages/react/dist/icons.meta.json
+ls dist/icons.meta.json
 
 # Check if it's tracked in git
-git ls-files packages/react/dist/icons.meta.json
+git ls-files dist/icons.meta.json
 ```
 
 **Solutions:**
 
 1. **Metadata was deleted**: Restore from git
    ```bash
-   git checkout HEAD -- packages/react/dist/icons.meta.json
+   git checkout HEAD -- dist/icons.meta.json
    ```
 
 2. **Metadata not committed**: Check git status
    ```bash
-   git status packages/react/dist/icons.meta.json
-   git add packages/react/dist/icons.meta.json
+   git status dist/icons.meta.json
+   git add dist/icons.meta.json
    git commit -m "chore: track icon metadata"
    ```
 
 3. **Gitignore blocking**: Verify gitignore configuration
    ```bash
-   git check-ignore -v packages/react/dist/icons.meta.json
+   git check-ignore -v dist/icons.meta.json
    # Should show: (no output, meaning it's not ignored)
    ```
 
 4. **Fresh clone without metadata**: Restore from git history
    ```bash
-   git checkout HEAD -- packages/react/dist/icons.meta.json
+   git checkout HEAD -- dist/icons.meta.json
    ```
 
 ### Problem: Wrong version assigned to new icons
@@ -290,7 +288,7 @@ node scripts/hash-versioning.js info
    # Check specific icon hash from metadata
    node -e "
    const {readFileSync} = require('fs');
-   const metadata = JSON.parse(readFileSync('packages/react/dist/icons.meta.json', 'utf8'));
+   const metadata = JSON.parse(readFileSync('dist/icons.meta.json', 'utf8'));
    const icon = metadata.find(item => item.name === 'heart' && item.variant === 'regular');
    console.log('Current hash:', icon?.svgHash);
    "
@@ -299,8 +297,8 @@ node scripts/hash-versioning.js info
 2. **Force rebuild**: Delete metadata and rebuild (not recommended)
    ```bash
    # Backup first!
-   cp packages/react/dist/icons.meta.json icons.meta.backup.json
-   rm packages/react/dist/icons.meta.json
+   cp dist/icons.meta.json icons.meta.backup.json
+   rm dist/icons.meta.json
    node scripts/build-icons.js icons-export.json
    ```
 
@@ -333,33 +331,33 @@ The version history was restored based on CHANGELOG analysis, with older icons d
 node scripts/metadata-utils.js summary
 
 # Detailed breakdown
-cat packages/react/dist/icons.meta.json | jq '[.[] | .versionAdded] | group_by(.) | map({version: .[0], count: length})'
+cat dist/icons.meta.json | jq '[.[] | .versionAdded] | group_by(.) | map({version: .[0], count: length})'
 ```
 
 ### Auditing Metadata Integrity
 
 ```bash
 # Check for missing version data
-cat packages/react/dist/icons.meta.json | jq '.[] | select(.versionAdded == null or .versionAdded == "")'
+cat dist/icons.meta.json | jq '.[] | select(.versionAdded == null or .versionAdded == "")'
 
 # Check for missing hashes
-cat packages/react/dist/icons.meta.json | jq '.[] | select(.svgHash == null or .svgHash == "")'
+cat dist/icons.meta.json | jq '.[] | select(.svgHash == null or .svgHash == "")'
 
 # Verify date formats
-cat packages/react/dist/icons.meta.json | jq '.[] | select(.dateAdded | test("^[0-9]{4}-[0-9]{2}-[0-9]{2}T") | not)'
+cat dist/icons.meta.json | jq '.[] | select(.dateAdded | test("^[0-9]{4}-[0-9]{2}-[0-9]{2}T") | not)'
 ```
 
 ### Comparing Builds
 
 ```bash
 # Before
-cp packages/react/dist/icons.meta.json meta-before.json
+cp dist/icons.meta.json meta-before.json
 
 # Make changes and rebuild
 node scripts/build-icons.js icons-export.json
 
 # After
-cp packages/react/dist/icons.meta.json meta-after.json
+cp dist/icons.meta.json meta-after.json
 
 # Compare
 diff <(jq -S . meta-before.json) <(jq -S . meta-after.json)

@@ -35,9 +35,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const TEMP_DIR = join(__dirname, '..', '.bundle-analysis');
-const PACKAGES_DIR = join(__dirname, '..', 'packages', 'react');
-const SRC_DIR = join(PACKAGES_DIR, 'src');
-const DIST_DIR = join(PACKAGES_DIR, 'dist');
+const PACKAGE_DIR = join(__dirname, '..');
+const SRC_DIR = join(PACKAGE_DIR, 'src');
+const DIST_DIR = join(PACKAGE_DIR, 'dist');
 
 // Parse CLI arguments
 const args = process.argv.slice(2);

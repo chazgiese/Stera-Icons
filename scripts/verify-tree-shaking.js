@@ -24,7 +24,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const TEMP_DIR = join(__dirname, '..', '.tree-shaking-test');
-const DIST_DIR = join(__dirname, '..', 'packages', 'react', 'dist');
+const DIST_DIR = join(__dirname, '..', 'dist');
 
 // Test scenarios to verify tree-shaking
 const testScenarios = [
@@ -206,7 +206,7 @@ async function main() {
   mkdirSync(TEMP_DIR, { recursive: true });
   
   // Check if source files exist (using new naming convention: search-regular.tsx)
-  const searchIconPath = join(__dirname, '..', 'packages', 'react', 'src', 'icons', 'search-regular.tsx');
+  const searchIconPath = join(__dirname, '..', 'src', 'icons', 'search-regular.tsx');
   if (!existsSync(searchIconPath)) {
     console.log('⚠️  Icon source files not found. Run build:icons first.');
     console.log('   Run: pnpm build:icons icons-export.json\n');

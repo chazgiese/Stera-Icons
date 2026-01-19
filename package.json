@@ -42,6 +42,7 @@
     "test": "vitest",
     "test:tree-shaking": "node scripts/verify-tree-shaking.js",
     "analyze:bundle": "node scripts/analyze-bundle-size.js",
+    "benchmark": "node scripts/benchmark-build.js icons-export.json",
     "lint": "eslint src --ext .ts,.tsx",
     "changeset": "changeset",
     "version-packages": "changeset version",

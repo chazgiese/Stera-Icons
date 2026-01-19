@@ -4,7 +4,6 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { optimize } from 'svgo';
-import { build } from 'esbuild';
 import { 
   normalizeSlug, 
   ensureUnique, 
@@ -19,6 +18,10 @@ import {
   generateTripleExportWithPath
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
+import { parsePathAttributes, extractPathsFromSvg } from './icon-build/svg-parser.js';
+import { generatePathJsx, generateVariantComponent, generateWrapperComponent, buildSelectionLogic } from './icon-build/jsx-generator.js';
+import { compileIcons, generateWrapperDeclarations, generateVariantDeclarations, collectEntryPoints } from './icon-build/compiler.js';
+import { PROGRESS_INTERVAL } from './icon-build/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -27,92 +30,10 @@ const __dirname = dirname(__filename);
 const svgoConfig = (await import('./svgo.config.js')).default;
 
 /**
- * Parse path attributes string into an object with camelCase keys
+ * Main function to build icon components from Figma export
+ * @param {string} iconsExportPath - Path to icons-export.json file
+ * @returns {Promise<void>}
  */
-function parsePathAttributes(attrsString) {
-  const attrs = {};
-  const attrRegex = /(\w+(?:-\w+)?)=["']([^"']*)["']/g;
-  let attrMatch;
-  while ((attrMatch = attrRegex.exec(attrsString)) !== null) {
-    const [, name, value] = attrMatch;
-    // Convert kebab-case to camelCase for JSX
-    const jsxName = name.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
-    attrs[jsxName] = value;
-  }
-  return attrs;
-}
-
-/**
- * Parse optimized SVG and extract path elements as JSX
- * Handles both direct path opacity and group-level opacity (for duotone icons)
- */
-function extractPathsFromSvg(svgString) {
-  const paths = [];
-  
-  // Track paths we've already processed (to avoid duplicates)
-  const processedPathStrings = new Set();
-  
-  // Handle paths inside opacity groups: <g ... opacity="X" ...><path .../></g>
-  // This is used by duotone icons to apply 40% opacity to secondary paths
-  // Note: opacity attribute can appear anywhere in the <g> tag attributes
-  const groupRegex = /<g\s+([^>]*)>([\s\S]*?)<\/g>/g;
-  let groupMatch;
-  
-  while ((groupMatch = groupRegex.exec(svgString)) !== null) {
-    const groupAttrs = groupMatch[1];
-    const groupContent = groupMatch[2];
-    
-    // Check if this group has an opacity attribute
-    const opacityMatch = groupAttrs.match(/opacity=["']([^"']*)["']/);
-    if (opacityMatch) {
-      const groupOpacity = opacityMatch[1];
-      
-      // Extract paths within this opacity group
-      const pathRegex = /<path\s+([^>]*)\/>/g;
-      let pathMatch;
-      while ((pathMatch = pathRegex.exec(groupContent)) !== null) {
-        const attrs = parsePathAttributes(pathMatch[1]);
-        // Apply group opacity (multiply if path has its own opacity)
-        const pathOpacity = attrs.opacity ? parseFloat(attrs.opacity) : 1;
-        attrs.opacity = String(parseFloat(groupOpacity) * pathOpacity);
-        paths.push(attrs);
-        processedPathStrings.add(pathMatch[0]); // Track to avoid duplicates
-      }
-    }
-  }
-  
-  // Extract remaining paths not inside opacity groups
-  const pathRegex = /<path\s+([^>]*)\/>/g;
-  let match;
-  while ((match = pathRegex.exec(svgString)) !== null) {
-    if (!processedPathStrings.has(match[0])) {
-      paths.push(parsePathAttributes(match[1]));
-    }
-  }
-  
-  return paths;
-}
-
-/**
- * Generate JSX for path elements
- */
-function generatePathJsx(paths) {
-  if (paths.length === 0) {
-    return '<path d="" />';
-  }
-  
-  return paths.map(attrs => {
-    const attrStrings = Object.entries(attrs).map(([key, value]) => {
-      // Handle numeric values like opacity
-      if (key === 'opacity' && !isNaN(parseFloat(value))) {
-        return `${key}={${value}}`;
-      }
-      return `${key}="${value}"`;
-    });
-    return `<path ${attrStrings.join(' ')} />`;
-  }).join('\n        ');
-}
-
 async function buildIcons(iconsExportPath) {
   console.log('🚀 Building Stera Icons with optimized IconBase architecture...');
   
@@ -132,8 +53,8 @@ async function buildIcons(iconsExportPath) {
   }
   console.log(`📅 Build date: ${currentDate}`);
   
-  const iconsDir = join(__dirname, '..', 'packages', 'react', 'src', 'icons');
-  const distDir = join(__dirname, '..', 'packages', 'react', 'dist');
+  const iconsDir = join(__dirname, '..', 'src', 'icons');
+  const distDir = join(__dirname, '..', 'dist');
   
   // Clean up existing files to ensure only current icons are present
   console.log('🧹 Cleaning up existing icon files...');
@@ -182,8 +103,8 @@ async function buildIcons(iconsExportPath) {
   
   for (const icon of iconsExport.icons) {
     processedIcons++;
-    // Show progress every 100 icons or at the end
-    if (processedIcons % 100 === 0 || processedIcons === totalIcons) {
+    // Show progress every PROGRESS_INTERVAL icons or at the end
+    if (processedIcons % PROGRESS_INTERVAL === 0 || processedIcons === totalIcons) {
       process.stdout.write(`\r  📊 Progress: ${processedIcons}/${totalIcons} icons processed`);
     }
     const originalName = icon.name;
@@ -253,26 +174,11 @@ async function buildIcons(iconsExportPath) {
       const kebabIconName = uniqueSlug + (weight !== 'regular' ? `-${weight}` : '') + (duotone ? '-duotone' : '');
       
       // Generate thin variant component using IconBase
-      const componentCode = `import { memo, forwardRef } from 'react';
-import { IconBase } from '../IconBase';
-import type { IconBaseProps } from '../IconBase';
-
-type ${componentName}Props = Omit<IconBaseProps, 'children'>;
-
-const ${componentName} = memo(
-  forwardRef<SVGSVGElement, ${componentName}Props>((props, ref) => (
-    <IconBase ref={ref} iconName="${kebabIconName}" {...props}>
-      ${pathJsx}
-    </IconBase>
-  ))
-);
-
-${componentName}.displayName = '${componentName}';
-
-// Triple export pattern (lucide-react style)
-${generateTripleExport(componentName)}
-export type { ${componentName}Props };
-`;
+      const componentCode = generateVariantComponent({
+        componentName,
+        kebabIconName,
+        pathJsx
+      });
       
       // Write component file
       const componentPath = join(iconsDir, `${fileName}.tsx`);
@@ -373,8 +279,8 @@ export type { ${componentName}Props };
     const baseComponentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
     wrappersGenerated++;
     
-    // Show progress every 100 wrappers or at the end
-    if (wrappersGenerated % 100 === 0 || wrappersGenerated === totalWrappers) {
+    // Show progress every PROGRESS_INTERVAL wrappers or at the end
+    if (wrappersGenerated % PROGRESS_INTERVAL === 0 || wrappersGenerated === totalWrappers) {
       process.stdout.write(`\r  📊 Progress: ${wrappersGenerated}/${totalWrappers} wrappers generated`);
     }
     
@@ -389,23 +295,7 @@ export type { ${componentName}Props };
     }
     
     // Build the selection logic
-    const selectionLogic = [];
-    
-    if (componentMap.has('bold-true')) {
-      selectionLogic.push(`if (weight === 'bold' && duotone) return <${componentMap.get('bold-true')} ref={ref} {...rest} />;`);
-    }
-    if (componentMap.has('bold-false')) {
-      selectionLogic.push(`if (weight === 'bold') return <${componentMap.get('bold-false')} ref={ref} {...rest} />;`);
-    }
-    if (componentMap.has('fill-true')) {
-      selectionLogic.push(`if (weight === 'fill' && duotone) return <${componentMap.get('fill-true')} ref={ref} {...rest} />;`);
-    }
-    if (componentMap.has('fill-false')) {
-      selectionLogic.push(`if (weight === 'fill') return <${componentMap.get('fill-false')} ref={ref} {...rest} />;`);
-    }
-    if (componentMap.has('regular-true')) {
-      selectionLogic.push(`if (duotone) return <${componentMap.get('regular-true')} ref={ref} {...rest} />;`);
-    }
+    const selectionLogic = buildSelectionLogic(componentMap);
     
     const defaultComponent = componentMap.get('regular-false') || componentMap.values().next().value;
     selectionLogic.push(`return <${defaultComponent} ref={ref} {...rest} />;`);
@@ -414,34 +304,14 @@ export type { ${componentName}Props };
     const regularVariantName = iconData.variants.find(v => v.weight === 'regular' && !v.duotone)?.componentName || baseComponentName;
     
     // Generate wrapper component code with triple exports
-    const wrapperCode = `import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-${imports.join('\n')}
-
-export interface ${baseComponentName}Props extends IconProps {
-  weight?: 'regular' | 'bold' | 'fill';
-  duotone?: boolean;
-}
-
-/**
- * ${baseComponentName} - Dynamic wrapper component with convenience props.
- * Allows switching between weights and duotone variants at runtime.
- * For smaller bundle size, import specific variants directly:
- * import { ${regularVariantName} } from 'stera-icons/icons/${regularVariantName}';
- */
-const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
-  weight = 'regular',
-  duotone = false,
-  ...rest 
-}, ref) => {
-  ${selectionLogic.join('\n  ')}
-}));
-
-${baseComponentName}.displayName = '${baseComponentName}';
-
-// Triple export pattern (lucide-react style)
-${generateTripleExport(baseComponentName)}
-`;
+    const wrapperCode = generateWrapperComponent({
+      baseComponentName,
+      imports,
+      componentMap,
+      selectionLogic,
+      defaultComponent,
+      regularVariantName
+    });
     
     // Write wrapper component file (PascalCase filename matching component name)
     const wrapperPath = join(iconsDir, `${baseComponentName}.tsx`);
@@ -493,7 +363,7 @@ ${wrapperExports.join('\n')}
 ${directVariantExports.join('\n')}
 `;
   
-  writeFileSync(join(__dirname, '..', 'packages', 'react', 'src', 'index.ts'), indexContent);
+  writeFileSync(join(__dirname, '..', 'src', 'index.ts'), indexContent);
   
   // Generate metadata JSON
   writeFileSync(
@@ -557,7 +427,7 @@ export default dynamicIconImports;
 `;
   
   writeFileSync(
-    join(__dirname, '..', 'packages', 'react', 'src', 'dynamicIconImports.ts'),
+    join(__dirname, '..', 'src', 'dynamicIconImports.ts'),
     dynamicImportsContent
   );
   
@@ -587,39 +457,8 @@ export default dynamicIconImports;
   const srcDir = join(__dirname, '..', 'src');
   
   // Collect all entry points for batched compilation
-  const wrapperEntryPoints = [];
-  const wrapperComponents = []; // For TypeScript definitions
-  const variantEntryPoints = [];
-  const variantComponents = []; // For TypeScript definitions
-  
-  // Collect wrapper components
-  for (const [baseName] of iconsByBaseName) {
-    const componentName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
-    const wrapperPath = join(iconsDir, `${componentName}.tsx`);
-    
-    if (!existsSync(wrapperPath)) {
-      console.warn(`  ⚠️  Wrapper not found: ${wrapperPath}`);
-      continue;
-    }
-    
-    wrapperEntryPoints.push({ in: wrapperPath, out: componentName });
-    wrapperComponents.push(componentName);
-  }
-  
-  // Collect variant components
-  for (const [baseName, iconData] of iconsByBaseName) {
-    for (const variantInfo of iconData.variants) {
-      const { componentName, fileName } = variantInfo;
-      const variantPath = join(iconsDir, `${fileName}.tsx`);
-      
-      if (!existsSync(variantPath)) {
-        continue;
-      }
-      
-      variantEntryPoints.push({ in: variantPath, out: componentName });
-      variantComponents.push(componentName);
-    }
-  }
+  const { wrapperEntryPoints, variantEntryPoints, wrapperComponents, variantComponents } = 
+    collectEntryPoints(iconsByBaseName, iconsDir);
   
   const totalComponents = wrapperEntryPoints.length + variantEntryPoints.length;
   console.log(`  📋 Found ${wrapperEntryPoints.length} wrapper components`);
@@ -629,100 +468,16 @@ export default dynamicIconImports;
   // Combine all entry points for a single batched build
   const allEntryPoints = [...wrapperEntryPoints, ...variantEntryPoints];
   
-  // Batch compile ESM versions (single esbuild call for all components)
-  console.log('\n⚡ Compiling ESM bundles (batched)...');
-  const esmStartTime = Date.now();
-  try {
-    await build({
-      entryPoints: allEntryPoints,
-      bundle: true,
-      format: 'esm',
-      outdir: distIconsDir,
-      outExtension: { '.js': '.mjs' },
-      external: ['react'],
-      minify: true,
-      treeShaking: true,
-      platform: 'neutral',
-      target: 'es2020',
-      jsx: 'automatic',
-      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-      absWorkingDir: srcDir,
-    });
-    console.log(`  ✅ ESM compilation complete (${Date.now() - esmStartTime}ms)`);
-  } catch (error) {
-    console.error(`  ❌ ESM compilation failed: ${error.message}`);
-    throw error;
-  }
+  // Compile icons to ESM and CJS
+  await compileIcons({
+    entryPoints: allEntryPoints,
+    outDir: distIconsDir,
+    srcDir
+  });
   
-  // Batch compile CJS versions (single esbuild call for all components)
-  console.log('⚡ Compiling CJS bundles (batched)...');
-  const cjsStartTime = Date.now();
-  try {
-    await build({
-      entryPoints: allEntryPoints,
-      bundle: true,
-      format: 'cjs',
-      outdir: distIconsDir,
-      outExtension: { '.js': '.cjs' },
-      external: ['react'],
-      minify: true,
-      treeShaking: true,
-      platform: 'neutral',
-      target: 'es2020',
-      jsx: 'automatic',
-      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
-      absWorkingDir: srcDir,
-      banner: { js: '"use strict";' },
-    });
-    console.log(`  ✅ CJS compilation complete (${Date.now() - cjsStartTime}ms)`);
-  } catch (error) {
-    console.error(`  ❌ CJS compilation failed: ${error.message}`);
-    throw error;
-  }
-  
-  // Generate TypeScript definitions for wrapper components
-  console.log('📝 Generating TypeScript definitions...');
-  for (const componentName of wrapperComponents) {
-    const aliases = {
-      base: componentName,
-      iconSuffix: `${componentName}Icon`,
-      siPrefix: `Si${componentName}`
-    };
-    
-    const typesContent = `import type { IconProps } from '../types';
-import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
-
-export interface ${componentName}Props extends IconProps {
-  weight?: 'regular' | 'bold' | 'fill';
-  duotone?: boolean;
-}
-
-export declare const ${aliases.base}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
-export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
-export declare const ${aliases.siPrefix}: typeof ${aliases.base};
-`;
-    writeFileSync(join(distIconsDir, `${componentName}.d.ts`), typesContent);
-  }
-  
-  // Generate TypeScript definitions for variant components
-  for (const componentName of variantComponents) {
-    const aliases = {
-      base: componentName,
-      iconSuffix: `${componentName}Icon`,
-      siPrefix: `Si${componentName}`
-    };
-    
-    const variantTypesContent = `import type { IconBaseProps } from '../IconBase';
-import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
-
-export type ${componentName}Props = Omit<IconBaseProps, 'children'>;
-
-export declare const ${aliases.base}: MemoExoticComponent<ForwardRefExoticComponent<${componentName}Props & RefAttributes<SVGSVGElement>>>;
-export declare const ${aliases.iconSuffix}: typeof ${aliases.base};
-export declare const ${aliases.siPrefix}: typeof ${aliases.base};
-`;
-    writeFileSync(join(distIconsDir, `${componentName}.d.ts`), variantTypesContent);
-  }
+  // Generate TypeScript declarations
+  generateWrapperDeclarations(wrapperComponents, distIconsDir);
+  generateVariantDeclarations(variantComponents, distIconsDir);
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   

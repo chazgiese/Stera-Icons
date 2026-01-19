@@ -180,7 +180,7 @@ function main() {
   const args = process.argv.slice(2);
   const command = args[0];
   
-  const metadataPath = join(__dirname, '..', 'packages', 'react', 'dist', 'icons.meta.json');
+  const metadataPath = join(__dirname, '..', 'dist', 'icons.meta.json');
   const utils = new IconMetadataUtils(metadataPath);
   
   switch (command) {

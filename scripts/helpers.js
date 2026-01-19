@@ -12,6 +12,13 @@ const WEIGHT_MAPPING = {
   'Fill': 'fill'
 };
 
+/**
+ * Normalize an icon name into a kebab-case slug
+ * @param {string} name - The raw icon name
+ * @returns {string} - Normalized slug (lowercase, hyphens only)
+ * @example
+ * normalizeSlug("My Icon—Name") // Returns: "my-icon-name"
+ */
 export function normalizeSlug(name) {
   // Replace unicode dashes with ASCII hyphen
   const unified = name.replace(/[‒–—―−]/g, '-');
@@ -21,6 +28,14 @@ export function normalizeSlug(name) {
   return stripped.replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
 
+/**
+ * Ensure a slug is unique by appending a number if needed
+ * @param {string} slug - The base slug to check
+ * @param {Set<string>} taken - Set of already-used slugs (modified in place)
+ * @returns {string} - Unique slug (original or with -2, -3, etc. suffix)
+ * @example
+ * ensureUnique("icon", new Set(["icon"])) // Returns: "icon-2"
+ */
 export function ensureUnique(slug, taken) {
   if (!taken.has(slug)) {
     taken.add(slug);
@@ -37,6 +52,13 @@ export function ensureUnique(slug, taken) {
   return unique;
 }
 
+/**
+ * Convert a kebab-case slug to PascalCase
+ * @param {string} slug - Kebab-case string (e.g., "my-icon-name")
+ * @returns {string} - PascalCase string (e.g., "MyIconName")
+ * @example
+ * toPascalCase("search-icon") // Returns: "SearchIcon"
+ */
 export function toPascalCase(slug) {
   return slug
     .split('-')
@@ -44,6 +66,15 @@ export function toPascalCase(slug) {
     .join('');
 }
 
+/**
+ * Generate component name from slug, weight, and duotone flag
+ * @param {string} slug - Kebab-case icon slug
+ * @param {string} weight - Weight type ('regular', 'bold', 'fill')
+ * @param {boolean} duotone - Whether icon is duotone variant
+ * @returns {string} - Component name in PascalCase with suffixes
+ * @example
+ * getComponentName("search", "bold", true) // Returns: "SearchBoldDuotone"
+ */
 export function getComponentName(slug, weight, duotone) {
   const baseName = toPascalCase(slug);
   
@@ -56,6 +87,15 @@ export function getComponentName(slug, weight, duotone) {
   return `${baseName}${weightSuffix}${duotoneSuffix}`;
 }
 
+/**
+ * Generate file name for icon component (matches component name)
+ * @param {string} slug - Kebab-case icon slug
+ * @param {string} weight - Weight type ('regular', 'bold', 'fill')
+ * @param {boolean} duotone - Whether icon is duotone variant
+ * @returns {string} - File name in PascalCase (without .tsx extension)
+ * @example
+ * getFileName("search", "regular", false) // Returns: "SearchRegular"
+ */
 export function getFileName(slug, weight, duotone) {
   // File names match component names in PascalCase
   // e.g., SearchRegular.tsx exports SearchRegular
@@ -113,6 +153,13 @@ export function validateVariantData(variantData) {
          variantData.svg.trim().length > 0;
 }
 
+/**
+ * Parse and normalize tag array
+ * @param {string[]} tags - Array of tag strings
+ * @returns {string[]} - Normalized tags (lowercase, trimmed, non-empty)
+ * @example
+ * parseTags(["  Search ", "UI", ""]) // Returns: ["search", "ui"]
+ */
 export function parseTags(tags) {
   // Tags are always in array format
   return tags.map(tag => tag.trim().toLowerCase()).filter(tag => tag.length > 0);
