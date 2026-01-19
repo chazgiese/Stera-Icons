@@ -16,4 +16,5 @@ BoltFill.displayName = 'BoltFill';
 
 // Triple export pattern (lucide-react style)
 export { BoltFill, BoltFill as BoltFillIcon, BoltFill as SiBoltFill };
+export default BoltFill;
 export type { BoltFillProps };

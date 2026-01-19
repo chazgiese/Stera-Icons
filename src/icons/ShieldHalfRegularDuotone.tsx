@@ -17,4 +17,5 @@ ShieldHalfRegularDuotone.displayName = 'ShieldHalfRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldHalfRegularDuotone, ShieldHalfRegularDuotone as ShieldHalfRegularDuotoneIcon, ShieldHalfRegularDuotone as SiShieldHalfRegularDuotone };
+export default ShieldHalfRegularDuotone;
 export type { ShieldHalfRegularDuotoneProps };

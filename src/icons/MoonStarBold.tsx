@@ -17,4 +17,5 @@ MoonStarBold.displayName = 'MoonStarBold';
 
 // Triple export pattern (lucide-react style)
 export { MoonStarBold, MoonStarBold as MoonStarBoldIcon, MoonStarBold as SiMoonStarBold };
+export default MoonStarBold;
 export type { MoonStarBoldProps };

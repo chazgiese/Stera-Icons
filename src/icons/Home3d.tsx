@@ -35,3 +35,4 @@ Home3d.displayName = 'Home3d';
 
 // Triple export pattern (lucide-react style)
 export { Home3d, Home3d as Home3dIcon, Home3d as SiHome3d };
+export default Home3d;

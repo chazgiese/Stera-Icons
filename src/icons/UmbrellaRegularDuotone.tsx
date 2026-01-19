@@ -17,4 +17,5 @@ UmbrellaRegularDuotone.displayName = 'UmbrellaRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UmbrellaRegularDuotone, UmbrellaRegularDuotone as UmbrellaRegularDuotoneIcon, UmbrellaRegularDuotone as SiUmbrellaRegularDuotone };
+export default UmbrellaRegularDuotone;
 export type { UmbrellaRegularDuotoneProps };

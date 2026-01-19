@@ -17,4 +17,5 @@ HomeHeartBold.displayName = 'HomeHeartBold';
 
 // Triple export pattern (lucide-react style)
 export { HomeHeartBold, HomeHeartBold as HomeHeartBoldIcon, HomeHeartBold as SiHomeHeartBold };
+export default HomeHeartBold;
 export type { HomeHeartBoldProps };

@@ -18,4 +18,5 @@ AgentWorkflowFill.displayName = 'AgentWorkflowFill';
 
 // Triple export pattern (lucide-react style)
 export { AgentWorkflowFill, AgentWorkflowFill as AgentWorkflowFillIcon, AgentWorkflowFill as SiAgentWorkflowFill };
+export default AgentWorkflowFill;
 export type { AgentWorkflowFillProps };

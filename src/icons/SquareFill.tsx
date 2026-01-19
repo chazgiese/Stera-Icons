@@ -16,4 +16,5 @@ SquareFill.displayName = 'SquareFill';
 
 // Triple export pattern (lucide-react style)
 export { SquareFill, SquareFill as SquareFillIcon, SquareFill as SiSquareFill };
+export default SquareFill;
 export type { SquareFillProps };

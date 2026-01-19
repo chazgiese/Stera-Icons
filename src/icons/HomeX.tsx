@@ -35,3 +35,4 @@ HomeX.displayName = 'HomeX';
 
 // Triple export pattern (lucide-react style)
 export { HomeX, HomeX as HomeXIcon, HomeX as SiHomeX };
+export default HomeX;

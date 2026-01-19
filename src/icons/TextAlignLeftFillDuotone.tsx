@@ -17,4 +17,5 @@ TextAlignLeftFillDuotone.displayName = 'TextAlignLeftFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignLeftFillDuotone, TextAlignLeftFillDuotone as TextAlignLeftFillDuotoneIcon, TextAlignLeftFillDuotone as SiTextAlignLeftFillDuotone };
+export default TextAlignLeftFillDuotone;
 export type { TextAlignLeftFillDuotoneProps };

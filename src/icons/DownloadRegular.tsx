@@ -17,4 +17,5 @@ DownloadRegular.displayName = 'DownloadRegular';
 
 // Triple export pattern (lucide-react style)
 export { DownloadRegular, DownloadRegular as DownloadRegularIcon, DownloadRegular as SiDownloadRegular };
+export default DownloadRegular;
 export type { DownloadRegularProps };

@@ -35,3 +35,4 @@ CirclesThree.displayName = 'CirclesThree';
 
 // Triple export pattern (lucide-react style)
 export { CirclesThree, CirclesThree as CirclesThreeIcon, CirclesThree as SiCirclesThree };
+export default CirclesThree;

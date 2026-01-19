@@ -16,4 +16,5 @@ BasketballFill.displayName = 'BasketballFill';
 
 // Triple export pattern (lucide-react style)
 export { BasketballFill, BasketballFill as BasketballFillIcon, BasketballFill as SiBasketballFill };
+export default BasketballFill;
 export type { BasketballFillProps };

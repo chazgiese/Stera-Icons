@@ -17,4 +17,5 @@ ScanFaceFillDuotone.displayName = 'ScanFaceFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanFaceFillDuotone, ScanFaceFillDuotone as ScanFaceFillDuotoneIcon, ScanFaceFillDuotone as SiScanFaceFillDuotone };
+export default ScanFaceFillDuotone;
 export type { ScanFaceFillDuotoneProps };

@@ -16,4 +16,5 @@ FlaskFullBold.displayName = 'FlaskFullBold';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFullBold, FlaskFullBold as FlaskFullBoldIcon, FlaskFullBold as SiFlaskFullBold };
+export default FlaskFullBold;
 export type { FlaskFullBoldProps };

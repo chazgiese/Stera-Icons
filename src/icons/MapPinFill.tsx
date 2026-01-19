@@ -16,4 +16,5 @@ MapPinFill.displayName = 'MapPinFill';
 
 // Triple export pattern (lucide-react style)
 export { MapPinFill, MapPinFill as MapPinFillIcon, MapPinFill as SiMapPinFill };
+export default MapPinFill;
 export type { MapPinFillProps };

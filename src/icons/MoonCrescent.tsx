@@ -35,3 +35,4 @@ MoonCrescent.displayName = 'MoonCrescent';
 
 // Triple export pattern (lucide-react style)
 export { MoonCrescent, MoonCrescent as MoonCrescentIcon, MoonCrescent as SiMoonCrescent };
+export default MoonCrescent;

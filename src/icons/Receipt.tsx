@@ -35,3 +35,4 @@ Receipt.displayName = 'Receipt';
 
 // Triple export pattern (lucide-react style)
 export { Receipt, Receipt as ReceiptIcon, Receipt as SiReceipt };
+export default Receipt;

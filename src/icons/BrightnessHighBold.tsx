@@ -18,4 +18,5 @@ BrightnessHighBold.displayName = 'BrightnessHighBold';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessHighBold, BrightnessHighBold as BrightnessHighBoldIcon, BrightnessHighBold as SiBrightnessHighBold };
+export default BrightnessHighBold;
 export type { BrightnessHighBoldProps };

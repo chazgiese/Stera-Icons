@@ -16,4 +16,5 @@ EmoteSadFill.displayName = 'EmoteSadFill';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSadFill, EmoteSadFill as EmoteSadFillIcon, EmoteSadFill as SiEmoteSadFill };
+export default EmoteSadFill;
 export type { EmoteSadFillProps };

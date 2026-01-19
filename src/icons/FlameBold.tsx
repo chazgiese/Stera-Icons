@@ -16,4 +16,5 @@ FlameBold.displayName = 'FlameBold';
 
 // Triple export pattern (lucide-react style)
 export { FlameBold, FlameBold as FlameBoldIcon, FlameBold as SiFlameBold };
+export default FlameBold;
 export type { FlameBoldProps };

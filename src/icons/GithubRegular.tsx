@@ -16,4 +16,5 @@ GithubRegular.displayName = 'GithubRegular';
 
 // Triple export pattern (lucide-react style)
 export { GithubRegular, GithubRegular as GithubRegularIcon, GithubRegular as SiGithubRegular };
+export default GithubRegular;
 export type { GithubRegularProps };

@@ -35,3 +35,4 @@ Heart.displayName = 'Heart';
 
 // Triple export pattern (lucide-react style)
 export { Heart, Heart as HeartIcon, Heart as SiHeart };
+export default Heart;

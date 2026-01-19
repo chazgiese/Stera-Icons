@@ -17,4 +17,5 @@ TextSearchRegular.displayName = 'TextSearchRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextSearchRegular, TextSearchRegular as TextSearchRegularIcon, TextSearchRegular as SiTextSearchRegular };
+export default TextSearchRegular;
 export type { TextSearchRegularProps };

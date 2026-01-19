@@ -16,4 +16,5 @@ VideoOffRegular.displayName = 'VideoOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { VideoOffRegular, VideoOffRegular as VideoOffRegularIcon, VideoOffRegular as SiVideoOffRegular };
+export default VideoOffRegular;
 export type { VideoOffRegularProps };

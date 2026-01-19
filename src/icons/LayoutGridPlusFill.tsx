@@ -16,4 +16,5 @@ LayoutGridPlusFill.displayName = 'LayoutGridPlusFill';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridPlusFill, LayoutGridPlusFill as LayoutGridPlusFillIcon, LayoutGridPlusFill as SiLayoutGridPlusFill };
+export default LayoutGridPlusFill;
 export type { LayoutGridPlusFillProps };

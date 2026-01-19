@@ -16,4 +16,5 @@ PanelsLeftTopRegular.displayName = 'PanelsLeftTopRegular';
 
 // Triple export pattern (lucide-react style)
 export { PanelsLeftTopRegular, PanelsLeftTopRegular as PanelsLeftTopRegularIcon, PanelsLeftTopRegular as SiPanelsLeftTopRegular };
+export default PanelsLeftTopRegular;
 export type { PanelsLeftTopRegularProps };

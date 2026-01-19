@@ -18,4 +18,5 @@ SelectFieldBoldDuotone.displayName = 'SelectFieldBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SelectFieldBoldDuotone, SelectFieldBoldDuotone as SelectFieldBoldDuotoneIcon, SelectFieldBoldDuotone as SiSelectFieldBoldDuotone };
+export default SelectFieldBoldDuotone;
 export type { SelectFieldBoldDuotoneProps };

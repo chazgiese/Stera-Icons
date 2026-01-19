@@ -17,4 +17,5 @@ ScribbleBoldDuotone.displayName = 'ScribbleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScribbleBoldDuotone, ScribbleBoldDuotone as ScribbleBoldDuotoneIcon, ScribbleBoldDuotone as SiScribbleBoldDuotone };
+export default ScribbleBoldDuotone;
 export type { ScribbleBoldDuotoneProps };

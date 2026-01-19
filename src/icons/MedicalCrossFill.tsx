@@ -16,4 +16,5 @@ MedicalCrossFill.displayName = 'MedicalCrossFill';
 
 // Triple export pattern (lucide-react style)
 export { MedicalCrossFill, MedicalCrossFill as MedicalCrossFillIcon, MedicalCrossFill as SiMedicalCrossFill };
+export default MedicalCrossFill;
 export type { MedicalCrossFillProps };

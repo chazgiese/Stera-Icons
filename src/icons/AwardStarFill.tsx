@@ -16,4 +16,5 @@ AwardStarFill.displayName = 'AwardStarFill';
 
 // Triple export pattern (lucide-react style)
 export { AwardStarFill, AwardStarFill as AwardStarFillIcon, AwardStarFill as SiAwardStarFill };
+export default AwardStarFill;
 export type { AwardStarFillProps };

@@ -16,4 +16,5 @@ CubePackageRegular.displayName = 'CubePackageRegular';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageRegular, CubePackageRegular as CubePackageRegularIcon, CubePackageRegular as SiCubePackageRegular };
+export default CubePackageRegular;
 export type { CubePackageRegularProps };

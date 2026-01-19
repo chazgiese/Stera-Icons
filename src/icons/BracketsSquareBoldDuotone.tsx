@@ -17,4 +17,5 @@ BracketsSquareBoldDuotone.displayName = 'BracketsSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BracketsSquareBoldDuotone, BracketsSquareBoldDuotone as BracketsSquareBoldDuotoneIcon, BracketsSquareBoldDuotone as SiBracketsSquareBoldDuotone };
+export default BracketsSquareBoldDuotone;
 export type { BracketsSquareBoldDuotoneProps };

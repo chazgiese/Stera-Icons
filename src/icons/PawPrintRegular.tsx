@@ -16,4 +16,5 @@ PawPrintRegular.displayName = 'PawPrintRegular';
 
 // Triple export pattern (lucide-react style)
 export { PawPrintRegular, PawPrintRegular as PawPrintRegularIcon, PawPrintRegular as SiPawPrintRegular };
+export default PawPrintRegular;
 export type { PawPrintRegularProps };

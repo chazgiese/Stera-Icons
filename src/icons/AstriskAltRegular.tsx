@@ -16,4 +16,5 @@ AstriskAltRegular.displayName = 'AstriskAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAltRegular, AstriskAltRegular as AstriskAltRegularIcon, AstriskAltRegular as SiAstriskAltRegular };
+export default AstriskAltRegular;
 export type { AstriskAltRegularProps };

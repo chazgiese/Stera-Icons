@@ -18,4 +18,5 @@ FlowSplitArrowUpBoldDuotone.displayName = 'FlowSplitArrowUpBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitArrowUpBoldDuotone, FlowSplitArrowUpBoldDuotone as FlowSplitArrowUpBoldDuotoneIcon, FlowSplitArrowUpBoldDuotone as SiFlowSplitArrowUpBoldDuotone };
+export default FlowSplitArrowUpBoldDuotone;
 export type { FlowSplitArrowUpBoldDuotoneProps };

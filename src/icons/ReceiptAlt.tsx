@@ -35,3 +35,4 @@ ReceiptAlt.displayName = 'ReceiptAlt';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptAlt, ReceiptAlt as ReceiptAltIcon, ReceiptAlt as SiReceiptAlt };
+export default ReceiptAlt;

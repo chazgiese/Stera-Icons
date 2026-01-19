@@ -16,4 +16,5 @@ ToolsBold.displayName = 'ToolsBold';
 
 // Triple export pattern (lucide-react style)
 export { ToolsBold, ToolsBold as ToolsBoldIcon, ToolsBold as SiToolsBold };
+export default ToolsBold;
 export type { ToolsBoldProps };

@@ -16,4 +16,5 @@ GavelRegular.displayName = 'GavelRegular';
 
 // Triple export pattern (lucide-react style)
 export { GavelRegular, GavelRegular as GavelRegularIcon, GavelRegular as SiGavelRegular };
+export default GavelRegular;
 export type { GavelRegularProps };

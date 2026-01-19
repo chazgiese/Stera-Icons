@@ -18,4 +18,5 @@ BriefcaseFillDuotone.displayName = 'BriefcaseFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BriefcaseFillDuotone, BriefcaseFillDuotone as BriefcaseFillDuotoneIcon, BriefcaseFillDuotone as SiBriefcaseFillDuotone };
+export default BriefcaseFillDuotone;
 export type { BriefcaseFillDuotoneProps };

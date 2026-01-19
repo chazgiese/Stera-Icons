@@ -17,4 +17,5 @@ PlayCircleRegular.displayName = 'PlayCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { PlayCircleRegular, PlayCircleRegular as PlayCircleRegularIcon, PlayCircleRegular as SiPlayCircleRegular };
+export default PlayCircleRegular;
 export type { PlayCircleRegularProps };

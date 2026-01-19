@@ -16,4 +16,5 @@ BarricadeBold.displayName = 'BarricadeBold';
 
 // Triple export pattern (lucide-react style)
 export { BarricadeBold, BarricadeBold as BarricadeBoldIcon, BarricadeBold as SiBarricadeBold };
+export default BarricadeBold;
 export type { BarricadeBoldProps };

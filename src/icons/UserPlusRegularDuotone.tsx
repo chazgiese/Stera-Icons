@@ -17,4 +17,5 @@ UserPlusRegularDuotone.displayName = 'UserPlusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserPlusRegularDuotone, UserPlusRegularDuotone as UserPlusRegularDuotoneIcon, UserPlusRegularDuotone as SiUserPlusRegularDuotone };
+export default UserPlusRegularDuotone;
 export type { UserPlusRegularDuotoneProps };

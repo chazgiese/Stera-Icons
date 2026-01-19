@@ -17,4 +17,5 @@ RocketRegular.displayName = 'RocketRegular';
 
 // Triple export pattern (lucide-react style)
 export { RocketRegular, RocketRegular as RocketRegularIcon, RocketRegular as SiRocketRegular };
+export default RocketRegular;
 export type { RocketRegularProps };

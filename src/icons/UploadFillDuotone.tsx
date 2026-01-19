@@ -17,4 +17,5 @@ UploadFillDuotone.displayName = 'UploadFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UploadFillDuotone, UploadFillDuotone as UploadFillDuotoneIcon, UploadFillDuotone as SiUploadFillDuotone };
+export default UploadFillDuotone;
 export type { UploadFillDuotoneProps };

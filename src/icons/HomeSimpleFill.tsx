@@ -16,4 +16,5 @@ HomeSimpleFill.displayName = 'HomeSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimpleFill, HomeSimpleFill as HomeSimpleFillIcon, HomeSimpleFill as SiHomeSimpleFill };
+export default HomeSimpleFill;
 export type { HomeSimpleFillProps };

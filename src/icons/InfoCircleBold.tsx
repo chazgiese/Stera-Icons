@@ -17,4 +17,5 @@ InfoCircleBold.displayName = 'InfoCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { InfoCircleBold, InfoCircleBold as InfoCircleBoldIcon, InfoCircleBold as SiInfoCircleBold };
+export default InfoCircleBold;
 export type { InfoCircleBoldProps };

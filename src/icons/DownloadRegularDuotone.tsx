@@ -17,4 +17,5 @@ DownloadRegularDuotone.displayName = 'DownloadRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DownloadRegularDuotone, DownloadRegularDuotone as DownloadRegularDuotoneIcon, DownloadRegularDuotone as SiDownloadRegularDuotone };
+export default DownloadRegularDuotone;
 export type { DownloadRegularDuotoneProps };

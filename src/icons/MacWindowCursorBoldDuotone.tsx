@@ -18,4 +18,5 @@ MacWindowCursorBoldDuotone.displayName = 'MacWindowCursorBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowCursorBoldDuotone, MacWindowCursorBoldDuotone as MacWindowCursorBoldDuotoneIcon, MacWindowCursorBoldDuotone as SiMacWindowCursorBoldDuotone };
+export default MacWindowCursorBoldDuotone;
 export type { MacWindowCursorBoldDuotoneProps };

@@ -17,4 +17,5 @@ MicFillDuotone.displayName = 'MicFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MicFillDuotone, MicFillDuotone as MicFillDuotoneIcon, MicFillDuotone as SiMicFillDuotone };
+export default MicFillDuotone;
 export type { MicFillDuotoneProps };

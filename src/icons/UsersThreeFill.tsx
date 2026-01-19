@@ -17,4 +17,5 @@ UsersThreeFill.displayName = 'UsersThreeFill';
 
 // Triple export pattern (lucide-react style)
 export { UsersThreeFill, UsersThreeFill as UsersThreeFillIcon, UsersThreeFill as SiUsersThreeFill };
+export default UsersThreeFill;
 export type { UsersThreeFillProps };

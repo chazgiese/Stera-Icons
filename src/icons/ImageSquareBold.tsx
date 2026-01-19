@@ -17,4 +17,5 @@ ImageSquareBold.displayName = 'ImageSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { ImageSquareBold, ImageSquareBold as ImageSquareBoldIcon, ImageSquareBold as SiImageSquareBold };
+export default ImageSquareBold;
 export type { ImageSquareBoldProps };

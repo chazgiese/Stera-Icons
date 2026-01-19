@@ -35,3 +35,4 @@ ChartWaterfallXY.displayName = 'ChartWaterfallXY';
 
 // Triple export pattern (lucide-react style)
 export { ChartWaterfallXY, ChartWaterfallXY as ChartWaterfallXYIcon, ChartWaterfallXY as SiChartWaterfallXY };
+export default ChartWaterfallXY;

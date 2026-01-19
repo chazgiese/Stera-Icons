@@ -18,4 +18,5 @@ MacWindowCursorFillDuotone.displayName = 'MacWindowCursorFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowCursorFillDuotone, MacWindowCursorFillDuotone as MacWindowCursorFillDuotoneIcon, MacWindowCursorFillDuotone as SiMacWindowCursorFillDuotone };
+export default MacWindowCursorFillDuotone;
 export type { MacWindowCursorFillDuotoneProps };

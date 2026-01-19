@@ -17,4 +17,5 @@ DraftingCompassRegular.displayName = 'DraftingCompassRegular';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompassRegular, DraftingCompassRegular as DraftingCompassRegularIcon, DraftingCompassRegular as SiDraftingCompassRegular };
+export default DraftingCompassRegular;
 export type { DraftingCompassRegularProps };

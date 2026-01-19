@@ -16,4 +16,5 @@ SquareSlashFill.displayName = 'SquareSlashFill';
 
 // Triple export pattern (lucide-react style)
 export { SquareSlashFill, SquareSlashFill as SquareSlashFillIcon, SquareSlashFill as SiSquareSlashFill };
+export default SquareSlashFill;
 export type { SquareSlashFillProps };

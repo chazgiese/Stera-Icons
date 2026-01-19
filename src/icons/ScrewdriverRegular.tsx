@@ -17,4 +17,5 @@ ScrewdriverRegular.displayName = 'ScrewdriverRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScrewdriverRegular, ScrewdriverRegular as ScrewdriverRegularIcon, ScrewdriverRegular as SiScrewdriverRegular };
+export default ScrewdriverRegular;
 export type { ScrewdriverRegularProps };

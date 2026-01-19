@@ -35,3 +35,4 @@ Angle.displayName = 'Angle';
 
 // Triple export pattern (lucide-react style)
 export { Angle, Angle as AngleIcon, Angle as SiAngle };
+export default Angle;

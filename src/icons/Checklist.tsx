@@ -35,3 +35,4 @@ Checklist.displayName = 'Checklist';
 
 // Triple export pattern (lucide-react style)
 export { Checklist, Checklist as ChecklistIcon, Checklist as SiChecklist };
+export default Checklist;

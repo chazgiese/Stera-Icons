@@ -17,4 +17,5 @@ PoundSterlingRegularDuotone.displayName = 'PoundSterlingRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingRegularDuotone, PoundSterlingRegularDuotone as PoundSterlingRegularDuotoneIcon, PoundSterlingRegularDuotone as SiPoundSterlingRegularDuotone };
+export default PoundSterlingRegularDuotone;
 export type { PoundSterlingRegularDuotoneProps };

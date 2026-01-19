@@ -17,4 +17,5 @@ FlameFillDuotone.displayName = 'FlameFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlameFillDuotone, FlameFillDuotone as FlameFillDuotoneIcon, FlameFillDuotone as SiFlameFillDuotone };
+export default FlameFillDuotone;
 export type { FlameFillDuotoneProps };

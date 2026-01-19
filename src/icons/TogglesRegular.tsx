@@ -18,4 +18,5 @@ TogglesRegular.displayName = 'TogglesRegular';
 
 // Triple export pattern (lucide-react style)
 export { TogglesRegular, TogglesRegular as TogglesRegularIcon, TogglesRegular as SiTogglesRegular };
+export default TogglesRegular;
 export type { TogglesRegularProps };

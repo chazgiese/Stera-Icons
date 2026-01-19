@@ -17,4 +17,5 @@ EmoteNeutralBold.displayName = 'EmoteNeutralBold';
 
 // Triple export pattern (lucide-react style)
 export { EmoteNeutralBold, EmoteNeutralBold as EmoteNeutralBoldIcon, EmoteNeutralBold as SiEmoteNeutralBold };
+export default EmoteNeutralBold;
 export type { EmoteNeutralBoldProps };

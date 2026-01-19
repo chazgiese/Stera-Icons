@@ -17,4 +17,5 @@ PlayCircleBoldDuotone.displayName = 'PlayCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlayCircleBoldDuotone, PlayCircleBoldDuotone as PlayCircleBoldDuotoneIcon, PlayCircleBoldDuotone as SiPlayCircleBoldDuotone };
+export default PlayCircleBoldDuotone;
 export type { PlayCircleBoldDuotoneProps };

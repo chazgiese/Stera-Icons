@@ -18,4 +18,5 @@ DatabaseBanFill.displayName = 'DatabaseBanFill';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBanFill, DatabaseBanFill as DatabaseBanFillIcon, DatabaseBanFill as SiDatabaseBanFill };
+export default DatabaseBanFill;
 export type { DatabaseBanFillProps };

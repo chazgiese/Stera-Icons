@@ -17,4 +17,5 @@ WarehouseBoldDuotone.displayName = 'WarehouseBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WarehouseBoldDuotone, WarehouseBoldDuotone as WarehouseBoldDuotoneIcon, WarehouseBoldDuotone as SiWarehouseBoldDuotone };
+export default WarehouseBoldDuotone;
 export type { WarehouseBoldDuotoneProps };

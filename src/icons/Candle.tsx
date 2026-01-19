@@ -35,3 +35,4 @@ Candle.displayName = 'Candle';
 
 // Triple export pattern (lucide-react style)
 export { Candle, Candle as CandleIcon, Candle as SiCandle };
+export default Candle;

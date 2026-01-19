@@ -35,3 +35,4 @@ Lightbulb.displayName = 'Lightbulb';
 
 // Triple export pattern (lucide-react style)
 export { Lightbulb, Lightbulb as LightbulbIcon, Lightbulb as SiLightbulb };
+export default Lightbulb;

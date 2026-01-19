@@ -18,4 +18,5 @@ SpeakerMediumBold.displayName = 'SpeakerMediumBold';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerMediumBold, SpeakerMediumBold as SpeakerMediumBoldIcon, SpeakerMediumBold as SiSpeakerMediumBold };
+export default SpeakerMediumBold;
 export type { SpeakerMediumBoldProps };

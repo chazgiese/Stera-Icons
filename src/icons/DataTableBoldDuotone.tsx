@@ -17,4 +17,5 @@ DataTableBoldDuotone.displayName = 'DataTableBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DataTableBoldDuotone, DataTableBoldDuotone as DataTableBoldDuotoneIcon, DataTableBoldDuotone as SiDataTableBoldDuotone };
+export default DataTableBoldDuotone;
 export type { DataTableBoldDuotoneProps };

@@ -17,4 +17,5 @@ BuildingRegular.displayName = 'BuildingRegular';
 
 // Triple export pattern (lucide-react style)
 export { BuildingRegular, BuildingRegular as BuildingRegularIcon, BuildingRegular as SiBuildingRegular };
+export default BuildingRegular;
 export type { BuildingRegularProps };

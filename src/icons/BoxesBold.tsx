@@ -16,4 +16,5 @@ BoxesBold.displayName = 'BoxesBold';
 
 // Triple export pattern (lucide-react style)
 export { BoxesBold, BoxesBold as BoxesBoldIcon, BoxesBold as SiBoxesBold };
+export default BoxesBold;
 export type { BoxesBoldProps };

@@ -16,4 +16,5 @@ BagFill.displayName = 'BagFill';
 
 // Triple export pattern (lucide-react style)
 export { BagFill, BagFill as BagFillIcon, BagFill as SiBagFill };
+export default BagFill;
 export type { BagFillProps };

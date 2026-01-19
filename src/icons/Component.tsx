@@ -35,3 +35,4 @@ Component.displayName = 'Component';
 
 // Triple export pattern (lucide-react style)
 export { Component, Component as ComponentIcon, Component as SiComponent };
+export default Component;

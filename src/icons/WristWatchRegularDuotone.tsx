@@ -18,4 +18,5 @@ WristWatchRegularDuotone.displayName = 'WristWatchRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WristWatchRegularDuotone, WristWatchRegularDuotone as WristWatchRegularDuotoneIcon, WristWatchRegularDuotone as SiWristWatchRegularDuotone };
+export default WristWatchRegularDuotone;
 export type { WristWatchRegularDuotoneProps };

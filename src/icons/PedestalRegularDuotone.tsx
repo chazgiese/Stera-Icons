@@ -18,4 +18,5 @@ PedestalRegularDuotone.displayName = 'PedestalRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PedestalRegularDuotone, PedestalRegularDuotone as PedestalRegularDuotoneIcon, PedestalRegularDuotone as SiPedestalRegularDuotone };
+export default PedestalRegularDuotone;
 export type { PedestalRegularDuotoneProps };

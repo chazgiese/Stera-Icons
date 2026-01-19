@@ -18,4 +18,5 @@ CanLabelFill.displayName = 'CanLabelFill';
 
 // Triple export pattern (lucide-react style)
 export { CanLabelFill, CanLabelFill as CanLabelFillIcon, CanLabelFill as SiCanLabelFill };
+export default CanLabelFill;
 export type { CanLabelFillProps };

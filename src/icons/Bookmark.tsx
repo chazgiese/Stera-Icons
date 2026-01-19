@@ -35,3 +35,4 @@ Bookmark.displayName = 'Bookmark';
 
 // Triple export pattern (lucide-react style)
 export { Bookmark, Bookmark as BookmarkIcon, Bookmark as SiBookmark };
+export default Bookmark;

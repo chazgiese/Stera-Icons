@@ -17,4 +17,5 @@ CircleNotchFillDuotone.displayName = 'CircleNotchFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleNotchFillDuotone, CircleNotchFillDuotone as CircleNotchFillDuotoneIcon, CircleNotchFillDuotone as SiCircleNotchFillDuotone };
+export default CircleNotchFillDuotone;
 export type { CircleNotchFillDuotoneProps };

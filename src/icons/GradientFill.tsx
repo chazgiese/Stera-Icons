@@ -16,4 +16,5 @@ GradientFill.displayName = 'GradientFill';
 
 // Triple export pattern (lucide-react style)
 export { GradientFill, GradientFill as GradientFillIcon, GradientFill as SiGradientFill };
+export default GradientFill;
 export type { GradientFillProps };

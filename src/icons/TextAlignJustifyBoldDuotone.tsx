@@ -17,4 +17,5 @@ TextAlignJustifyBoldDuotone.displayName = 'TextAlignJustifyBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignJustifyBoldDuotone, TextAlignJustifyBoldDuotone as TextAlignJustifyBoldDuotoneIcon, TextAlignJustifyBoldDuotone as SiTextAlignJustifyBoldDuotone };
+export default TextAlignJustifyBoldDuotone;
 export type { TextAlignJustifyBoldDuotoneProps };

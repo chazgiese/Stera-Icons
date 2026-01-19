@@ -35,3 +35,4 @@ ImagePile.displayName = 'ImagePile';
 
 // Triple export pattern (lucide-react style)
 export { ImagePile, ImagePile as ImagePileIcon, ImagePile as SiImagePile };
+export default ImagePile;

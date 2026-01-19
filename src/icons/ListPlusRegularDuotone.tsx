@@ -17,4 +17,5 @@ ListPlusRegularDuotone.displayName = 'ListPlusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListPlusRegularDuotone, ListPlusRegularDuotone as ListPlusRegularDuotoneIcon, ListPlusRegularDuotone as SiListPlusRegularDuotone };
+export default ListPlusRegularDuotone;
 export type { ListPlusRegularDuotoneProps };

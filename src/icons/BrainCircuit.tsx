@@ -35,3 +35,4 @@ BrainCircuit.displayName = 'BrainCircuit';
 
 // Triple export pattern (lucide-react style)
 export { BrainCircuit, BrainCircuit as BrainCircuitIcon, BrainCircuit as SiBrainCircuit };
+export default BrainCircuit;

@@ -35,3 +35,4 @@ Bubble.displayName = 'Bubble';
 
 // Triple export pattern (lucide-react style)
 export { Bubble, Bubble as BubbleIcon, Bubble as SiBubble };
+export default Bubble;

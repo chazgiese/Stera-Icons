@@ -35,3 +35,4 @@ Toolbox.displayName = 'Toolbox';
 
 // Triple export pattern (lucide-react style)
 export { Toolbox, Toolbox as ToolboxIcon, Toolbox as SiToolbox };
+export default Toolbox;

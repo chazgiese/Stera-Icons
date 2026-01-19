@@ -16,4 +16,5 @@ ChatBoxDashedRegular.displayName = 'ChatBoxDashedRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxDashedRegular, ChatBoxDashedRegular as ChatBoxDashedRegularIcon, ChatBoxDashedRegular as SiChatBoxDashedRegular };
+export default ChatBoxDashedRegular;
 export type { ChatBoxDashedRegularProps };

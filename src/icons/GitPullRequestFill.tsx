@@ -16,4 +16,5 @@ GitPullRequestFill.displayName = 'GitPullRequestFill';
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestFill, GitPullRequestFill as GitPullRequestFillIcon, GitPullRequestFill as SiGitPullRequestFill };
+export default GitPullRequestFill;
 export type { GitPullRequestFillProps };

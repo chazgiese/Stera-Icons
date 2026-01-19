@@ -17,4 +17,5 @@ MailboxBold.displayName = 'MailboxBold';
 
 // Triple export pattern (lucide-react style)
 export { MailboxBold, MailboxBold as MailboxBoldIcon, MailboxBold as SiMailboxBold };
+export default MailboxBold;
 export type { MailboxBoldProps };

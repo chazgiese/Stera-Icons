@@ -17,4 +17,5 @@ CandleRegularDuotone.displayName = 'CandleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CandleRegularDuotone, CandleRegularDuotone as CandleRegularDuotoneIcon, CandleRegularDuotone as SiCandleRegularDuotone };
+export default CandleRegularDuotone;
 export type { CandleRegularDuotoneProps };

@@ -17,4 +17,5 @@ CurrencyEuroBoldDuotone.displayName = 'CurrencyEuroBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyEuroBoldDuotone, CurrencyEuroBoldDuotone as CurrencyEuroBoldDuotoneIcon, CurrencyEuroBoldDuotone as SiCurrencyEuroBoldDuotone };
+export default CurrencyEuroBoldDuotone;
 export type { CurrencyEuroBoldDuotoneProps };

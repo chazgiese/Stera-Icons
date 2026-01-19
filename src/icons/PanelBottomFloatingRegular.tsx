@@ -17,4 +17,5 @@ PanelBottomFloatingRegular.displayName = 'PanelBottomFloatingRegular';
 
 // Triple export pattern (lucide-react style)
 export { PanelBottomFloatingRegular, PanelBottomFloatingRegular as PanelBottomFloatingRegularIcon, PanelBottomFloatingRegular as SiPanelBottomFloatingRegular };
+export default PanelBottomFloatingRegular;
 export type { PanelBottomFloatingRegularProps };

@@ -17,4 +17,5 @@ BluetoothFillDuotone.displayName = 'BluetoothFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BluetoothFillDuotone, BluetoothFillDuotone as BluetoothFillDuotoneIcon, BluetoothFillDuotone as SiBluetoothFillDuotone };
+export default BluetoothFillDuotone;
 export type { BluetoothFillDuotoneProps };

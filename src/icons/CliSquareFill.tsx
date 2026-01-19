@@ -16,4 +16,5 @@ CliSquareFill.displayName = 'CliSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { CliSquareFill, CliSquareFill as CliSquareFillIcon, CliSquareFill as SiCliSquareFill };
+export default CliSquareFill;
 export type { CliSquareFillProps };

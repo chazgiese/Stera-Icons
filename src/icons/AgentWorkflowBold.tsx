@@ -18,4 +18,5 @@ AgentWorkflowBold.displayName = 'AgentWorkflowBold';
 
 // Triple export pattern (lucide-react style)
 export { AgentWorkflowBold, AgentWorkflowBold as AgentWorkflowBoldIcon, AgentWorkflowBold as SiAgentWorkflowBold };
+export default AgentWorkflowBold;
 export type { AgentWorkflowBoldProps };

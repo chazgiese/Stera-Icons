@@ -35,3 +35,4 @@ DatabaseBan.displayName = 'DatabaseBan';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBan, DatabaseBan as DatabaseBanIcon, DatabaseBan as SiDatabaseBan };
+export default DatabaseBan;

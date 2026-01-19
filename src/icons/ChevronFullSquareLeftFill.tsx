@@ -16,4 +16,5 @@ ChevronFullSquareLeftFill.displayName = 'ChevronFullSquareLeftFill';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullSquareLeftFill, ChevronFullSquareLeftFill as ChevronFullSquareLeftFillIcon, ChevronFullSquareLeftFill as SiChevronFullSquareLeftFill };
+export default ChevronFullSquareLeftFill;
 export type { ChevronFullSquareLeftFillProps };

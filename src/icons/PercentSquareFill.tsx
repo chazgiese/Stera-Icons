@@ -16,4 +16,5 @@ PercentSquareFill.displayName = 'PercentSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { PercentSquareFill, PercentSquareFill as PercentSquareFillIcon, PercentSquareFill as SiPercentSquareFill };
+export default PercentSquareFill;
 export type { PercentSquareFillProps };

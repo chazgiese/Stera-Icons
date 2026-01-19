@@ -17,4 +17,5 @@ ListTreeBoldDuotone.displayName = 'ListTreeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListTreeBoldDuotone, ListTreeBoldDuotone as ListTreeBoldDuotoneIcon, ListTreeBoldDuotone as SiListTreeBoldDuotone };
+export default ListTreeBoldDuotone;
 export type { ListTreeBoldDuotoneProps };

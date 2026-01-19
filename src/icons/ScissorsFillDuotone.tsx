@@ -18,4 +18,5 @@ ScissorsFillDuotone.displayName = 'ScissorsFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsFillDuotone, ScissorsFillDuotone as ScissorsFillDuotoneIcon, ScissorsFillDuotone as SiScissorsFillDuotone };
+export default ScissorsFillDuotone;
 export type { ScissorsFillDuotoneProps };

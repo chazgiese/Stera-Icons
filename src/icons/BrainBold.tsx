@@ -16,4 +16,5 @@ BrainBold.displayName = 'BrainBold';
 
 // Triple export pattern (lucide-react style)
 export { BrainBold, BrainBold as BrainBoldIcon, BrainBold as SiBrainBold };
+export default BrainBold;
 export type { BrainBoldProps };

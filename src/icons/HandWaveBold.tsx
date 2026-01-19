@@ -18,4 +18,5 @@ HandWaveBold.displayName = 'HandWaveBold';
 
 // Triple export pattern (lucide-react style)
 export { HandWaveBold, HandWaveBold as HandWaveBoldIcon, HandWaveBold as SiHandWaveBold };
+export default HandWaveBold;
 export type { HandWaveBoldProps };

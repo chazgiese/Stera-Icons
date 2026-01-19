@@ -35,3 +35,4 @@ HashItalic.displayName = 'HashItalic';
 
 // Triple export pattern (lucide-react style)
 export { HashItalic, HashItalic as HashItalicIcon, HashItalic as SiHashItalic };
+export default HashItalic;

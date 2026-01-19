@@ -17,4 +17,5 @@ WifiRegular.displayName = 'WifiRegular';
 
 // Triple export pattern (lucide-react style)
 export { WifiRegular, WifiRegular as WifiRegularIcon, WifiRegular as SiWifiRegular };
+export default WifiRegular;
 export type { WifiRegularProps };

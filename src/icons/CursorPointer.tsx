@@ -35,3 +35,4 @@ CursorPointer.displayName = 'CursorPointer';
 
 // Triple export pattern (lucide-react style)
 export { CursorPointer, CursorPointer as CursorPointerIcon, CursorPointer as SiCursorPointer };
+export default CursorPointer;

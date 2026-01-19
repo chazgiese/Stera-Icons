@@ -17,4 +17,5 @@ UsersThreeBold.displayName = 'UsersThreeBold';
 
 // Triple export pattern (lucide-react style)
 export { UsersThreeBold, UsersThreeBold as UsersThreeBoldIcon, UsersThreeBold as SiUsersThreeBold };
+export default UsersThreeBold;
 export type { UsersThreeBoldProps };

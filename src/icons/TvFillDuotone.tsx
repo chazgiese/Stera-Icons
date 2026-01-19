@@ -17,4 +17,5 @@ TvFillDuotone.displayName = 'TvFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TvFillDuotone, TvFillDuotone as TvFillDuotoneIcon, TvFillDuotone as SiTvFillDuotone };
+export default TvFillDuotone;
 export type { TvFillDuotoneProps };

@@ -17,4 +17,5 @@ EmoteFrownRegular.displayName = 'EmoteFrownRegular';
 
 // Triple export pattern (lucide-react style)
 export { EmoteFrownRegular, EmoteFrownRegular as EmoteFrownRegularIcon, EmoteFrownRegular as SiEmoteFrownRegular };
+export default EmoteFrownRegular;
 export type { EmoteFrownRegularProps };

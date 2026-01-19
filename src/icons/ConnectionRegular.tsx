@@ -18,4 +18,5 @@ ConnectionRegular.displayName = 'ConnectionRegular';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionRegular, ConnectionRegular as ConnectionRegularIcon, ConnectionRegular as SiConnectionRegular };
+export default ConnectionRegular;
 export type { ConnectionRegularProps };

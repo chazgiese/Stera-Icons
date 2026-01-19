@@ -35,3 +35,4 @@ XSquare.displayName = 'XSquare';
 
 // Triple export pattern (lucide-react style)
 export { XSquare, XSquare as XSquareIcon, XSquare as SiXSquare };
+export default XSquare;

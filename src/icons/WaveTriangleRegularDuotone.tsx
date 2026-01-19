@@ -17,4 +17,5 @@ WaveTriangleRegularDuotone.displayName = 'WaveTriangleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WaveTriangleRegularDuotone, WaveTriangleRegularDuotone as WaveTriangleRegularDuotoneIcon, WaveTriangleRegularDuotone as SiWaveTriangleRegularDuotone };
+export default WaveTriangleRegularDuotone;
 export type { WaveTriangleRegularDuotoneProps };

@@ -35,3 +35,4 @@ QrCode.displayName = 'QrCode';
 
 // Triple export pattern (lucide-react style)
 export { QrCode, QrCode as QrCodeIcon, QrCode as SiQrCode };
+export default QrCode;

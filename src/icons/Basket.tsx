@@ -35,3 +35,4 @@ Basket.displayName = 'Basket';
 
 // Triple export pattern (lucide-react style)
 export { Basket, Basket as BasketIcon, Basket as SiBasket };
+export default Basket;

@@ -17,4 +17,5 @@ PaperclipFillDuotone.displayName = 'PaperclipFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PaperclipFillDuotone, PaperclipFillDuotone as PaperclipFillDuotoneIcon, PaperclipFillDuotone as SiPaperclipFillDuotone };
+export default PaperclipFillDuotone;
 export type { PaperclipFillDuotoneProps };

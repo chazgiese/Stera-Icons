@@ -17,4 +17,5 @@ ImagePileRegular.displayName = 'ImagePileRegular';
 
 // Triple export pattern (lucide-react style)
 export { ImagePileRegular, ImagePileRegular as ImagePileRegularIcon, ImagePileRegular as SiImagePileRegular };
+export default ImagePileRegular;
 export type { ImagePileRegularProps };

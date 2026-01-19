@@ -16,4 +16,5 @@ SpinnerBold.displayName = 'SpinnerBold';
 
 // Triple export pattern (lucide-react style)
 export { SpinnerBold, SpinnerBold as SpinnerBoldIcon, SpinnerBold as SiSpinnerBold };
+export default SpinnerBold;
 export type { SpinnerBoldProps };

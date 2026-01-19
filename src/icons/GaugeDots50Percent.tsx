@@ -35,3 +35,4 @@ GaugeDots50Percent.displayName = 'GaugeDots50Percent';
 
 // Triple export pattern (lucide-react style)
 export { GaugeDots50Percent, GaugeDots50Percent as GaugeDots50PercentIcon, GaugeDots50Percent as SiGaugeDots50Percent };
+export default GaugeDots50Percent;

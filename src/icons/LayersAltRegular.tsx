@@ -18,4 +18,5 @@ LayersAltRegular.displayName = 'LayersAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayersAltRegular, LayersAltRegular as LayersAltRegularIcon, LayersAltRegular as SiLayersAltRegular };
+export default LayersAltRegular;
 export type { LayersAltRegularProps };

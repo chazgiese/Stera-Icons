@@ -16,4 +16,5 @@ GitPullRequestClosedFill.displayName = 'GitPullRequestClosedFill';
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestClosedFill, GitPullRequestClosedFill as GitPullRequestClosedFillIcon, GitPullRequestClosedFill as SiGitPullRequestClosedFill };
+export default GitPullRequestClosedFill;
 export type { GitPullRequestClosedFillProps };

@@ -17,4 +17,5 @@ ScribbleRegularDuotone.displayName = 'ScribbleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScribbleRegularDuotone, ScribbleRegularDuotone as ScribbleRegularDuotoneIcon, ScribbleRegularDuotone as SiScribbleRegularDuotone };
+export default ScribbleRegularDuotone;
 export type { ScribbleRegularDuotoneProps };

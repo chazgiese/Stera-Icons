@@ -17,4 +17,5 @@ AirplaneRegularDuotone.displayName = 'AirplaneRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AirplaneRegularDuotone, AirplaneRegularDuotone as AirplaneRegularDuotoneIcon, AirplaneRegularDuotone as SiAirplaneRegularDuotone };
+export default AirplaneRegularDuotone;
 export type { AirplaneRegularDuotoneProps };

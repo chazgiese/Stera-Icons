@@ -35,3 +35,4 @@ AlertCircle.displayName = 'AlertCircle';
 
 // Triple export pattern (lucide-react style)
 export { AlertCircle, AlertCircle as AlertCircleIcon, AlertCircle as SiAlertCircle };
+export default AlertCircle;

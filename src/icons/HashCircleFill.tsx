@@ -17,4 +17,5 @@ HashCircleFill.displayName = 'HashCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { HashCircleFill, HashCircleFill as HashCircleFillIcon, HashCircleFill as SiHashCircleFill };
+export default HashCircleFill;
 export type { HashCircleFillProps };

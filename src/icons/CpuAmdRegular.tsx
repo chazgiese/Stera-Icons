@@ -17,4 +17,5 @@ CpuAmdRegular.displayName = 'CpuAmdRegular';
 
 // Triple export pattern (lucide-react style)
 export { CpuAmdRegular, CpuAmdRegular as CpuAmdRegularIcon, CpuAmdRegular as SiCpuAmdRegular };
+export default CpuAmdRegular;
 export type { CpuAmdRegularProps };

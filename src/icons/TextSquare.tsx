@@ -35,3 +35,4 @@ TextSquare.displayName = 'TextSquare';
 
 // Triple export pattern (lucide-react style)
 export { TextSquare, TextSquare as TextSquareIcon, TextSquare as SiTextSquare };
+export default TextSquare;

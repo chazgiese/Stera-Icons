@@ -16,4 +16,5 @@ SquareDashedRegular.displayName = 'SquareDashedRegular';
 
 // Triple export pattern (lucide-react style)
 export { SquareDashedRegular, SquareDashedRegular as SquareDashedRegularIcon, SquareDashedRegular as SiSquareDashedRegular };
+export default SquareDashedRegular;
 export type { SquareDashedRegularProps };

@@ -17,4 +17,5 @@ ChartPieAltRegular.displayName = 'ChartPieAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieAltRegular, ChartPieAltRegular as ChartPieAltRegularIcon, ChartPieAltRegular as SiChartPieAltRegular };
+export default ChartPieAltRegular;
 export type { ChartPieAltRegularProps };

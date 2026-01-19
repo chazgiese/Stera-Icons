@@ -16,4 +16,5 @@ IdVFill.displayName = 'IdVFill';
 
 // Triple export pattern (lucide-react style)
 export { IdVFill, IdVFill as IdVFillIcon, IdVFill as SiIdVFill };
+export default IdVFill;
 export type { IdVFillProps };

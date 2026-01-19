@@ -16,4 +16,5 @@ FlowBranchFill.displayName = 'FlowBranchFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowBranchFill, FlowBranchFill as FlowBranchFillIcon, FlowBranchFill as SiFlowBranchFill };
+export default FlowBranchFill;
 export type { FlowBranchFillProps };

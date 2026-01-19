@@ -17,4 +17,5 @@ ReceiptRegular.displayName = 'ReceiptRegular';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptRegular, ReceiptRegular as ReceiptRegularIcon, ReceiptRegular as SiReceiptRegular };
+export default ReceiptRegular;
 export type { ReceiptRegularProps };

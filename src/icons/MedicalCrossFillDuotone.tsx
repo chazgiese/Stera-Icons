@@ -17,4 +17,5 @@ MedicalCrossFillDuotone.displayName = 'MedicalCrossFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MedicalCrossFillDuotone, MedicalCrossFillDuotone as MedicalCrossFillDuotoneIcon, MedicalCrossFillDuotone as SiMedicalCrossFillDuotone };
+export default MedicalCrossFillDuotone;
 export type { MedicalCrossFillDuotoneProps };

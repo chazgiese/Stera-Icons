@@ -16,4 +16,5 @@ RotateRightFill.displayName = 'RotateRightFill';
 
 // Triple export pattern (lucide-react style)
 export { RotateRightFill, RotateRightFill as RotateRightFillIcon, RotateRightFill as SiRotateRightFill };
+export default RotateRightFill;
 export type { RotateRightFillProps };

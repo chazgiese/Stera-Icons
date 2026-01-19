@@ -35,3 +35,4 @@ ChartLineDesc.displayName = 'ChartLineDesc';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineDesc, ChartLineDesc as ChartLineDescIcon, ChartLineDesc as SiChartLineDesc };
+export default ChartLineDesc;

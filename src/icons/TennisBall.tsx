@@ -35,3 +35,4 @@ TennisBall.displayName = 'TennisBall';
 
 // Triple export pattern (lucide-react style)
 export { TennisBall, TennisBall as TennisBallIcon, TennisBall as SiTennisBall };
+export default TennisBall;

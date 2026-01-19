@@ -16,4 +16,5 @@ QuoteOpeningRegular.displayName = 'QuoteOpeningRegular';
 
 // Triple export pattern (lucide-react style)
 export { QuoteOpeningRegular, QuoteOpeningRegular as QuoteOpeningRegularIcon, QuoteOpeningRegular as SiQuoteOpeningRegular };
+export default QuoteOpeningRegular;
 export type { QuoteOpeningRegularProps };

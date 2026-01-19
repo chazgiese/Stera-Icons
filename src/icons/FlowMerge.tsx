@@ -35,3 +35,4 @@ FlowMerge.displayName = 'FlowMerge';
 
 // Triple export pattern (lucide-react style)
 export { FlowMerge, FlowMerge as FlowMergeIcon, FlowMerge as SiFlowMerge };
+export default FlowMerge;

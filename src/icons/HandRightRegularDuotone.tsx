@@ -17,4 +17,5 @@ HandRightRegularDuotone.displayName = 'HandRightRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HandRightRegularDuotone, HandRightRegularDuotone as HandRightRegularDuotoneIcon, HandRightRegularDuotone as SiHandRightRegularDuotone };
+export default HandRightRegularDuotone;
 export type { HandRightRegularDuotoneProps };

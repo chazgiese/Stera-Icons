@@ -17,4 +17,5 @@ SignInBold.displayName = 'SignInBold';
 
 // Triple export pattern (lucide-react style)
 export { SignInBold, SignInBold as SignInBoldIcon, SignInBold as SiSignInBold };
+export default SignInBold;
 export type { SignInBoldProps };

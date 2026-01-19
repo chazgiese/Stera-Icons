@@ -17,4 +17,5 @@ ListMinusRegular.displayName = 'ListMinusRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListMinusRegular, ListMinusRegular as ListMinusRegularIcon, ListMinusRegular as SiListMinusRegular };
+export default ListMinusRegular;
 export type { ListMinusRegularProps };

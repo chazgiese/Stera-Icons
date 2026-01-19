@@ -18,4 +18,5 @@ SwatchBookBoldDuotone.displayName = 'SwatchBookBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SwatchBookBoldDuotone, SwatchBookBoldDuotone as SwatchBookBoldDuotoneIcon, SwatchBookBoldDuotone as SiSwatchBookBoldDuotone };
+export default SwatchBookBoldDuotone;
 export type { SwatchBookBoldDuotoneProps };

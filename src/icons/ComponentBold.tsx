@@ -16,4 +16,5 @@ ComponentBold.displayName = 'ComponentBold';
 
 // Triple export pattern (lucide-react style)
 export { ComponentBold, ComponentBold as ComponentBoldIcon, ComponentBold as SiComponentBold };
+export default ComponentBold;
 export type { ComponentBoldProps };

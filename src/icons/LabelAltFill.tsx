@@ -16,4 +16,5 @@ LabelAltFill.displayName = 'LabelAltFill';
 
 // Triple export pattern (lucide-react style)
 export { LabelAltFill, LabelAltFill as LabelAltFillIcon, LabelAltFill as SiLabelAltFill };
+export default LabelAltFill;
 export type { LabelAltFillProps };

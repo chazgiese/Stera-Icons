@@ -35,3 +35,4 @@ ToggleOff.displayName = 'ToggleOff';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOff, ToggleOff as ToggleOffIcon, ToggleOff as SiToggleOff };
+export default ToggleOff;

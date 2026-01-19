@@ -17,4 +17,5 @@ DatabaseBanBold.displayName = 'DatabaseBanBold';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBanBold, DatabaseBanBold as DatabaseBanBoldIcon, DatabaseBanBold as SiDatabaseBanBold };
+export default DatabaseBanBold;
 export type { DatabaseBanBoldProps };

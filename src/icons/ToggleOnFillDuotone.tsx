@@ -17,4 +17,5 @@ ToggleOnFillDuotone.displayName = 'ToggleOnFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOnFillDuotone, ToggleOnFillDuotone as ToggleOnFillDuotoneIcon, ToggleOnFillDuotone as SiToggleOnFillDuotone };
+export default ToggleOnFillDuotone;
 export type { ToggleOnFillDuotoneProps };

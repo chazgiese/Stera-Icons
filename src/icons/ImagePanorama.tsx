@@ -35,3 +35,4 @@ ImagePanorama.displayName = 'ImagePanorama';
 
 // Triple export pattern (lucide-react style)
 export { ImagePanorama, ImagePanorama as ImagePanoramaIcon, ImagePanorama as SiImagePanorama };
+export default ImagePanorama;

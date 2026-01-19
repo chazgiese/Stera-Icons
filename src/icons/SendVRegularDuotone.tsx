@@ -17,4 +17,5 @@ SendVRegularDuotone.displayName = 'SendVRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SendVRegularDuotone, SendVRegularDuotone as SendVRegularDuotoneIcon, SendVRegularDuotone as SiSendVRegularDuotone };
+export default SendVRegularDuotone;
 export type { SendVRegularDuotoneProps };

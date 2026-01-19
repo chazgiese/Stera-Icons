@@ -16,4 +16,5 @@ FlowBranchBold.displayName = 'FlowBranchBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowBranchBold, FlowBranchBold as FlowBranchBoldIcon, FlowBranchBold as SiFlowBranchBold };
+export default FlowBranchBold;
 export type { FlowBranchBoldProps };

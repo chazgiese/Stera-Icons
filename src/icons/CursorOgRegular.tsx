@@ -16,4 +16,5 @@ CursorOgRegular.displayName = 'CursorOgRegular';
 
 // Triple export pattern (lucide-react style)
 export { CursorOgRegular, CursorOgRegular as CursorOgRegularIcon, CursorOgRegular as SiCursorOgRegular };
+export default CursorOgRegular;
 export type { CursorOgRegularProps };

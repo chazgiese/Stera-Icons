@@ -17,4 +17,5 @@ MailMinusBoldDuotone.displayName = 'MailMinusBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MailMinusBoldDuotone, MailMinusBoldDuotone as MailMinusBoldDuotoneIcon, MailMinusBoldDuotone as SiMailMinusBoldDuotone };
+export default MailMinusBoldDuotone;
 export type { MailMinusBoldDuotoneProps };

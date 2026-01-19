@@ -17,4 +17,5 @@ YinYangFill.displayName = 'YinYangFill';
 
 // Triple export pattern (lucide-react style)
 export { YinYangFill, YinYangFill as YinYangFillIcon, YinYangFill as SiYinYangFill };
+export default YinYangFill;
 export type { YinYangFillProps };

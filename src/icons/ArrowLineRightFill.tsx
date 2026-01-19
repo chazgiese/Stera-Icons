@@ -16,4 +16,5 @@ ArrowLineRightFill.displayName = 'ArrowLineRightFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineRightFill, ArrowLineRightFill as ArrowLineRightFillIcon, ArrowLineRightFill as SiArrowLineRightFill };
+export default ArrowLineRightFill;
 export type { ArrowLineRightFillProps };

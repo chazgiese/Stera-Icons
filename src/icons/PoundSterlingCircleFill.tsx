@@ -16,4 +16,5 @@ PoundSterlingCircleFill.displayName = 'PoundSterlingCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingCircleFill, PoundSterlingCircleFill as PoundSterlingCircleFillIcon, PoundSterlingCircleFill as SiPoundSterlingCircleFill };
+export default PoundSterlingCircleFill;
 export type { PoundSterlingCircleFillProps };

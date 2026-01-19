@@ -16,4 +16,5 @@ ThumbsUpFill.displayName = 'ThumbsUpFill';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsUpFill, ThumbsUpFill as ThumbsUpFillIcon, ThumbsUpFill as SiThumbsUpFill };
+export default ThumbsUpFill;
 export type { ThumbsUpFillProps };

@@ -17,4 +17,5 @@ TextFieldRegularDuotone.displayName = 'TextFieldRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextFieldRegularDuotone, TextFieldRegularDuotone as TextFieldRegularDuotoneIcon, TextFieldRegularDuotone as SiTextFieldRegularDuotone };
+export default TextFieldRegularDuotone;
 export type { TextFieldRegularDuotoneProps };

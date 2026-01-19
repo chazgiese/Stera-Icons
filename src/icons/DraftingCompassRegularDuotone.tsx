@@ -17,4 +17,5 @@ DraftingCompassRegularDuotone.displayName = 'DraftingCompassRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompassRegularDuotone, DraftingCompassRegularDuotone as DraftingCompassRegularDuotoneIcon, DraftingCompassRegularDuotone as SiDraftingCompassRegularDuotone };
+export default DraftingCompassRegularDuotone;
 export type { DraftingCompassRegularDuotoneProps };

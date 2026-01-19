@@ -17,4 +17,5 @@ AlignVerticalTopRegular.displayName = 'AlignVerticalTopRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalTopRegular, AlignVerticalTopRegular as AlignVerticalTopRegularIcon, AlignVerticalTopRegular as SiAlignVerticalTopRegular };
+export default AlignVerticalTopRegular;
 export type { AlignVerticalTopRegularProps };

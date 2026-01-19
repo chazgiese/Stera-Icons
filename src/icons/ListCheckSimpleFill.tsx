@@ -16,4 +16,5 @@ ListCheckSimpleFill.displayName = 'ListCheckSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckSimpleFill, ListCheckSimpleFill as ListCheckSimpleFillIcon, ListCheckSimpleFill as SiListCheckSimpleFill };
+export default ListCheckSimpleFill;
 export type { ListCheckSimpleFillProps };

@@ -17,4 +17,5 @@ UserMinusFillDuotone.displayName = 'UserMinusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserMinusFillDuotone, UserMinusFillDuotone as UserMinusFillDuotoneIcon, UserMinusFillDuotone as SiUserMinusFillDuotone };
+export default UserMinusFillDuotone;
 export type { UserMinusFillDuotoneProps };

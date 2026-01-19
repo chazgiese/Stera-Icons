@@ -35,3 +35,4 @@ CircleSlash.displayName = 'CircleSlash';
 
 // Triple export pattern (lucide-react style)
 export { CircleSlash, CircleSlash as CircleSlashIcon, CircleSlash as SiCircleSlash };
+export default CircleSlash;

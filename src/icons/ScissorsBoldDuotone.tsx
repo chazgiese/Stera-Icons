@@ -18,4 +18,5 @@ ScissorsBoldDuotone.displayName = 'ScissorsBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsBoldDuotone, ScissorsBoldDuotone as ScissorsBoldDuotoneIcon, ScissorsBoldDuotone as SiScissorsBoldDuotone };
+export default ScissorsBoldDuotone;
 export type { ScissorsBoldDuotoneProps };

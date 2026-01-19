@@ -17,4 +17,5 @@ HashCircleBold.displayName = 'HashCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { HashCircleBold, HashCircleBold as HashCircleBoldIcon, HashCircleBold as SiHashCircleBold };
+export default HashCircleBold;
 export type { HashCircleBoldProps };

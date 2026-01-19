@@ -35,3 +35,4 @@ BookClosed.displayName = 'BookClosed';
 
 // Triple export pattern (lucide-react style)
 export { BookClosed, BookClosed as BookClosedIcon, BookClosed as SiBookClosed };
+export default BookClosed;

@@ -35,3 +35,4 @@ CliCircle.displayName = 'CliCircle';
 
 // Triple export pattern (lucide-react style)
 export { CliCircle, CliCircle as CliCircleIcon, CliCircle as SiCliCircle };
+export default CliCircle;

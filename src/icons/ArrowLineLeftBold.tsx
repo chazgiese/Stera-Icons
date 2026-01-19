@@ -16,4 +16,5 @@ ArrowLineLeftBold.displayName = 'ArrowLineLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineLeftBold, ArrowLineLeftBold as ArrowLineLeftBoldIcon, ArrowLineLeftBold as SiArrowLineLeftBold };
+export default ArrowLineLeftBold;
 export type { ArrowLineLeftBoldProps };

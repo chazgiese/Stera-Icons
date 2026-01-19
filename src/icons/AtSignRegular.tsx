@@ -16,4 +16,5 @@ AtSignRegular.displayName = 'AtSignRegular';
 
 // Triple export pattern (lucide-react style)
 export { AtSignRegular, AtSignRegular as AtSignRegularIcon, AtSignRegular as SiAtSignRegular };
+export default AtSignRegular;
 export type { AtSignRegularProps };

@@ -18,4 +18,5 @@ GavelRegularDuotone.displayName = 'GavelRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GavelRegularDuotone, GavelRegularDuotone as GavelRegularDuotoneIcon, GavelRegularDuotone as SiGavelRegularDuotone };
+export default GavelRegularDuotone;
 export type { GavelRegularDuotoneProps };

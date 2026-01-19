@@ -16,4 +16,5 @@ TextItalicFill.displayName = 'TextItalicFill';
 
 // Triple export pattern (lucide-react style)
 export { TextItalicFill, TextItalicFill as TextItalicFillIcon, TextItalicFill as SiTextItalicFill };
+export default TextItalicFill;
 export type { TextItalicFillProps };

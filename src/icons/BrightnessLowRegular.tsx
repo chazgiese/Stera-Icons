@@ -18,4 +18,5 @@ BrightnessLowRegular.displayName = 'BrightnessLowRegular';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessLowRegular, BrightnessLowRegular as BrightnessLowRegularIcon, BrightnessLowRegular as SiBrightnessLowRegular };
+export default BrightnessLowRegular;
 export type { BrightnessLowRegularProps };

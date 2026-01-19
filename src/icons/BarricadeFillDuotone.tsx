@@ -17,4 +17,5 @@ BarricadeFillDuotone.displayName = 'BarricadeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BarricadeFillDuotone, BarricadeFillDuotone as BarricadeFillDuotoneIcon, BarricadeFillDuotone as SiBarricadeFillDuotone };
+export default BarricadeFillDuotone;
 export type { BarricadeFillDuotoneProps };

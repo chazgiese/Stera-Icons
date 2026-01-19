@@ -17,4 +17,5 @@ MoreCircleVFillDuotone.displayName = 'MoreCircleVFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreCircleVFillDuotone, MoreCircleVFillDuotone as MoreCircleVFillDuotoneIcon, MoreCircleVFillDuotone as SiMoreCircleVFillDuotone };
+export default MoreCircleVFillDuotone;
 export type { MoreCircleVFillDuotoneProps };

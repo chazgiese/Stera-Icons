@@ -16,4 +16,5 @@ DocumentRegular.displayName = 'DocumentRegular';
 
 // Triple export pattern (lucide-react style)
 export { DocumentRegular, DocumentRegular as DocumentRegularIcon, DocumentRegular as SiDocumentRegular };
+export default DocumentRegular;
 export type { DocumentRegularProps };

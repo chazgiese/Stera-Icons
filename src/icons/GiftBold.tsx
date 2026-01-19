@@ -16,4 +16,5 @@ GiftBold.displayName = 'GiftBold';
 
 // Triple export pattern (lucide-react style)
 export { GiftBold, GiftBold as GiftBoldIcon, GiftBold as SiGiftBold };
+export default GiftBold;
 export type { GiftBoldProps };

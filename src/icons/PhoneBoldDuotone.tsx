@@ -17,4 +17,5 @@ PhoneBoldDuotone.displayName = 'PhoneBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PhoneBoldDuotone, PhoneBoldDuotone as PhoneBoldDuotoneIcon, PhoneBoldDuotone as SiPhoneBoldDuotone };
+export default PhoneBoldDuotone;
 export type { PhoneBoldDuotoneProps };

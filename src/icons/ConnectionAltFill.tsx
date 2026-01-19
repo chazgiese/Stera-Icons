@@ -18,4 +18,5 @@ ConnectionAltFill.displayName = 'ConnectionAltFill';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionAltFill, ConnectionAltFill as ConnectionAltFillIcon, ConnectionAltFill as SiConnectionAltFill };
+export default ConnectionAltFill;
 export type { ConnectionAltFillProps };

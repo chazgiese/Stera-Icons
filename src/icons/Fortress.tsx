@@ -35,3 +35,4 @@ Fortress.displayName = 'Fortress';
 
 // Triple export pattern (lucide-react style)
 export { Fortress, Fortress as FortressIcon, Fortress as SiFortress };
+export default Fortress;

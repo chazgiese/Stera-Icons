@@ -16,4 +16,5 @@ CurrencyCentBold.displayName = 'CurrencyCentBold';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyCentBold, CurrencyCentBold as CurrencyCentBoldIcon, CurrencyCentBold as SiCurrencyCentBold };
+export default CurrencyCentBold;
 export type { CurrencyCentBoldProps };

@@ -16,4 +16,5 @@ NoteTextFill.displayName = 'NoteTextFill';
 
 // Triple export pattern (lucide-react style)
 export { NoteTextFill, NoteTextFill as NoteTextFillIcon, NoteTextFill as SiNoteTextFill };
+export default NoteTextFill;
 export type { NoteTextFillProps };

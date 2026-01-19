@@ -35,3 +35,4 @@ UserCircle.displayName = 'UserCircle';
 
 // Triple export pattern (lucide-react style)
 export { UserCircle, UserCircle as UserCircleIcon, UserCircle as SiUserCircle };
+export default UserCircle;

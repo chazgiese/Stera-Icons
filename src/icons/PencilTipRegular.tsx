@@ -16,4 +16,5 @@ PencilTipRegular.displayName = 'PencilTipRegular';
 
 // Triple export pattern (lucide-react style)
 export { PencilTipRegular, PencilTipRegular as PencilTipRegularIcon, PencilTipRegular as SiPencilTipRegular };
+export default PencilTipRegular;
 export type { PencilTipRegularProps };

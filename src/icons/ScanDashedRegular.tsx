@@ -16,4 +16,5 @@ ScanDashedRegular.displayName = 'ScanDashedRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScanDashedRegular, ScanDashedRegular as ScanDashedRegularIcon, ScanDashedRegular as SiScanDashedRegular };
+export default ScanDashedRegular;
 export type { ScanDashedRegularProps };

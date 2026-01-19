@@ -17,4 +17,5 @@ FlaskFullFillDuotone.displayName = 'FlaskFullFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFullFillDuotone, FlaskFullFillDuotone as FlaskFullFillDuotoneIcon, FlaskFullFillDuotone as SiFlaskFullFillDuotone };
+export default FlaskFullFillDuotone;
 export type { FlaskFullFillDuotoneProps };

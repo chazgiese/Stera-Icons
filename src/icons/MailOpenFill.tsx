@@ -17,4 +17,5 @@ MailOpenFill.displayName = 'MailOpenFill';
 
 // Triple export pattern (lucide-react style)
 export { MailOpenFill, MailOpenFill as MailOpenFillIcon, MailOpenFill as SiMailOpenFill };
+export default MailOpenFill;
 export type { MailOpenFillProps };

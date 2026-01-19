@@ -16,4 +16,5 @@ EyeClosedBold.displayName = 'EyeClosedBold';
 
 // Triple export pattern (lucide-react style)
 export { EyeClosedBold, EyeClosedBold as EyeClosedBoldIcon, EyeClosedBold as SiEyeClosedBold };
+export default EyeClosedBold;
 export type { EyeClosedBoldProps };

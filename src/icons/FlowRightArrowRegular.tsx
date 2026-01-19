@@ -16,4 +16,5 @@ FlowRightArrowRegular.displayName = 'FlowRightArrowRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlowRightArrowRegular, FlowRightArrowRegular as FlowRightArrowRegularIcon, FlowRightArrowRegular as SiFlowRightArrowRegular };
+export default FlowRightArrowRegular;
 export type { FlowRightArrowRegularProps };

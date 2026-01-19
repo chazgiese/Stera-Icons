@@ -35,3 +35,4 @@ SelectField.displayName = 'SelectField';
 
 // Triple export pattern (lucide-react style)
 export { SelectField, SelectField as SelectFieldIcon, SelectField as SiSelectField };
+export default SelectField;

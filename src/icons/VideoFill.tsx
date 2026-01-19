@@ -16,4 +16,5 @@ VideoFill.displayName = 'VideoFill';
 
 // Triple export pattern (lucide-react style)
 export { VideoFill, VideoFill as VideoFillIcon, VideoFill as SiVideoFill };
+export default VideoFill;
 export type { VideoFillProps };

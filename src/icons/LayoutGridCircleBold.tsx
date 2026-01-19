@@ -16,4 +16,5 @@ LayoutGridCircleBold.displayName = 'LayoutGridCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridCircleBold, LayoutGridCircleBold as LayoutGridCircleBoldIcon, LayoutGridCircleBold as SiLayoutGridCircleBold };
+export default LayoutGridCircleBold;
 export type { LayoutGridCircleBoldProps };

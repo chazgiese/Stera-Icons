@@ -16,4 +16,5 @@ OptionKeyBold.displayName = 'OptionKeyBold';
 
 // Triple export pattern (lucide-react style)
 export { OptionKeyBold, OptionKeyBold as OptionKeyBoldIcon, OptionKeyBold as SiOptionKeyBold };
+export default OptionKeyBold;
 export type { OptionKeyBoldProps };

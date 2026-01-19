@@ -35,3 +35,4 @@ Coin.displayName = 'Coin';
 
 // Triple export pattern (lucide-react style)
 export { Coin, Coin as CoinIcon, Coin as SiCoin };
+export default Coin;

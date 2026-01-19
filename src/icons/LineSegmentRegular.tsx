@@ -16,4 +16,5 @@ LineSegmentRegular.displayName = 'LineSegmentRegular';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentRegular, LineSegmentRegular as LineSegmentRegularIcon, LineSegmentRegular as SiLineSegmentRegular };
+export default LineSegmentRegular;
 export type { LineSegmentRegularProps };

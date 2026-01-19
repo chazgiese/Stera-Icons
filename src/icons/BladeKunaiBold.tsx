@@ -16,4 +16,5 @@ BladeKunaiBold.displayName = 'BladeKunaiBold';
 
 // Triple export pattern (lucide-react style)
 export { BladeKunaiBold, BladeKunaiBold as BladeKunaiBoldIcon, BladeKunaiBold as SiBladeKunaiBold };
+export default BladeKunaiBold;
 export type { BladeKunaiBoldProps };

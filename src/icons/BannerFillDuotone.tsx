@@ -17,4 +17,5 @@ BannerFillDuotone.displayName = 'BannerFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BannerFillDuotone, BannerFillDuotone as BannerFillDuotoneIcon, BannerFillDuotone as SiBannerFillDuotone };
+export default BannerFillDuotone;
 export type { BannerFillDuotoneProps };

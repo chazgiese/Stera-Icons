@@ -35,3 +35,4 @@ ChevronFullRight.displayName = 'ChevronFullRight';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullRight, ChevronFullRight as ChevronFullRightIcon, ChevronFullRight as SiChevronFullRight };
+export default ChevronFullRight;

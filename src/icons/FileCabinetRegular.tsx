@@ -17,4 +17,5 @@ FileCabinetRegular.displayName = 'FileCabinetRegular';
 
 // Triple export pattern (lucide-react style)
 export { FileCabinetRegular, FileCabinetRegular as FileCabinetRegularIcon, FileCabinetRegular as SiFileCabinetRegular };
+export default FileCabinetRegular;
 export type { FileCabinetRegularProps };

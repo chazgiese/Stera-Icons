@@ -35,3 +35,4 @@ LassoDash.displayName = 'LassoDash';
 
 // Triple export pattern (lucide-react style)
 export { LassoDash, LassoDash as LassoDashIcon, LassoDash as SiLassoDash };
+export default LassoDash;

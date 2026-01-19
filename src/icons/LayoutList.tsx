@@ -35,3 +35,4 @@ LayoutList.displayName = 'LayoutList';
 
 // Triple export pattern (lucide-react style)
 export { LayoutList, LayoutList as LayoutListIcon, LayoutList as SiLayoutList };
+export default LayoutList;

@@ -17,4 +17,5 @@ SendVBoldDuotone.displayName = 'SendVBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SendVBoldDuotone, SendVBoldDuotone as SendVBoldDuotoneIcon, SendVBoldDuotone as SiSendVBoldDuotone };
+export default SendVBoldDuotone;
 export type { SendVBoldDuotoneProps };

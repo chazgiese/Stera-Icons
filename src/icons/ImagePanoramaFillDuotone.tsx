@@ -17,4 +17,5 @@ ImagePanoramaFillDuotone.displayName = 'ImagePanoramaFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImagePanoramaFillDuotone, ImagePanoramaFillDuotone as ImagePanoramaFillDuotoneIcon, ImagePanoramaFillDuotone as SiImagePanoramaFillDuotone };
+export default ImagePanoramaFillDuotone;
 export type { ImagePanoramaFillDuotoneProps };

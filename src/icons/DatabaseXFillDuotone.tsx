@@ -18,4 +18,5 @@ DatabaseXFillDuotone.displayName = 'DatabaseXFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseXFillDuotone, DatabaseXFillDuotone as DatabaseXFillDuotoneIcon, DatabaseXFillDuotone as SiDatabaseXFillDuotone };
+export default DatabaseXFillDuotone;
 export type { DatabaseXFillDuotoneProps };

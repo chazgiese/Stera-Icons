@@ -35,3 +35,4 @@ AtSign.displayName = 'AtSign';
 
 // Triple export pattern (lucide-react style)
 export { AtSign, AtSign as AtSignIcon, AtSign as SiAtSign };
+export default AtSign;

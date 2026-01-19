@@ -16,4 +16,5 @@ SoccerBallBold.displayName = 'SoccerBallBold';
 
 // Triple export pattern (lucide-react style)
 export { SoccerBallBold, SoccerBallBold as SoccerBallBoldIcon, SoccerBallBold as SiSoccerBallBold };
+export default SoccerBallBold;
 export type { SoccerBallBoldProps };

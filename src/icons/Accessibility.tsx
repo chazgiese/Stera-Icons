@@ -35,3 +35,4 @@ Accessibility.displayName = 'Accessibility';
 
 // Triple export pattern (lucide-react style)
 export { Accessibility, Accessibility as AccessibilityIcon, Accessibility as SiAccessibility };
+export default Accessibility;

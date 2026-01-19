@@ -16,4 +16,5 @@ ContrastBold.displayName = 'ContrastBold';
 
 // Triple export pattern (lucide-react style)
 export { ContrastBold, ContrastBold as ContrastBoldIcon, ContrastBold as SiContrastBold };
+export default ContrastBold;
 export type { ContrastBoldProps };

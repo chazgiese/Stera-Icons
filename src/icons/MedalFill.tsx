@@ -16,4 +16,5 @@ MedalFill.displayName = 'MedalFill';
 
 // Triple export pattern (lucide-react style)
 export { MedalFill, MedalFill as MedalFillIcon, MedalFill as SiMedalFill };
+export default MedalFill;
 export type { MedalFillProps };

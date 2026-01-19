@@ -16,4 +16,5 @@ ShareFill.displayName = 'ShareFill';
 
 // Triple export pattern (lucide-react style)
 export { ShareFill, ShareFill as ShareFillIcon, ShareFill as SiShareFill };
+export default ShareFill;
 export type { ShareFillProps };

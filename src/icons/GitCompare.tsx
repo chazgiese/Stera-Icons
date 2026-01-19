@@ -35,3 +35,4 @@ GitCompare.displayName = 'GitCompare';
 
 // Triple export pattern (lucide-react style)
 export { GitCompare, GitCompare as GitCompareIcon, GitCompare as SiGitCompare };
+export default GitCompare;

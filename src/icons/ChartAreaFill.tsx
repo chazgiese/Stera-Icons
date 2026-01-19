@@ -16,4 +16,5 @@ ChartAreaFill.displayName = 'ChartAreaFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartAreaFill, ChartAreaFill as ChartAreaFillIcon, ChartAreaFill as SiChartAreaFill };
+export default ChartAreaFill;
 export type { ChartAreaFillProps };

@@ -35,3 +35,4 @@ PlusCircle.displayName = 'PlusCircle';
 
 // Triple export pattern (lucide-react style)
 export { PlusCircle, PlusCircle as PlusCircleIcon, PlusCircle as SiPlusCircle };
+export default PlusCircle;

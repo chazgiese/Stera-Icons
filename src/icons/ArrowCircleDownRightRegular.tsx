@@ -17,4 +17,5 @@ ArrowCircleDownRightRegular.displayName = 'ArrowCircleDownRightRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCircleDownRightRegular, ArrowCircleDownRightRegular as ArrowCircleDownRightRegularIcon, ArrowCircleDownRightRegular as SiArrowCircleDownRightRegular };
+export default ArrowCircleDownRightRegular;
 export type { ArrowCircleDownRightRegularProps };

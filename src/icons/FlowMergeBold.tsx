@@ -16,4 +16,5 @@ FlowMergeBold.displayName = 'FlowMergeBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowMergeBold, FlowMergeBold as FlowMergeBoldIcon, FlowMergeBold as SiFlowMergeBold };
+export default FlowMergeBold;
 export type { FlowMergeBoldProps };

@@ -17,4 +17,5 @@ KeyboardRegular.displayName = 'KeyboardRegular';
 
 // Triple export pattern (lucide-react style)
 export { KeyboardRegular, KeyboardRegular as KeyboardRegularIcon, KeyboardRegular as SiKeyboardRegular };
+export default KeyboardRegular;
 export type { KeyboardRegularProps };

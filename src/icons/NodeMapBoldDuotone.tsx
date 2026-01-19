@@ -17,4 +17,5 @@ NodeMapBoldDuotone.displayName = 'NodeMapBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { NodeMapBoldDuotone, NodeMapBoldDuotone as NodeMapBoldDuotoneIcon, NodeMapBoldDuotone as SiNodeMapBoldDuotone };
+export default NodeMapBoldDuotone;
 export type { NodeMapBoldDuotoneProps };

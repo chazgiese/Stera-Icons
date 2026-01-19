@@ -35,3 +35,4 @@ DragHandle.displayName = 'DragHandle';
 
 // Triple export pattern (lucide-react style)
 export { DragHandle, DragHandle as DragHandleIcon, DragHandle as SiDragHandle };
+export default DragHandle;

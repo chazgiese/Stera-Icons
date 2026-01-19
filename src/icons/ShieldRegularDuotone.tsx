@@ -17,4 +17,5 @@ ShieldRegularDuotone.displayName = 'ShieldRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldRegularDuotone, ShieldRegularDuotone as ShieldRegularDuotoneIcon, ShieldRegularDuotone as SiShieldRegularDuotone };
+export default ShieldRegularDuotone;
 export type { ShieldRegularDuotoneProps };

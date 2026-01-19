@@ -17,4 +17,5 @@ ScanEyeFillDuotone.displayName = 'ScanEyeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanEyeFillDuotone, ScanEyeFillDuotone as ScanEyeFillDuotoneIcon, ScanEyeFillDuotone as SiScanEyeFillDuotone };
+export default ScanEyeFillDuotone;
 export type { ScanEyeFillDuotoneProps };

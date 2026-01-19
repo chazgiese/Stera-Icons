@@ -35,3 +35,4 @@ AtomAi.displayName = 'AtomAi';
 
 // Triple export pattern (lucide-react style)
 export { AtomAi, AtomAi as AtomAiIcon, AtomAi as SiAtomAi };
+export default AtomAi;

@@ -35,3 +35,4 @@ HomeHeart.displayName = 'HomeHeart';
 
 // Triple export pattern (lucide-react style)
 export { HomeHeart, HomeHeart as HomeHeartIcon, HomeHeart as SiHomeHeart };
+export default HomeHeart;

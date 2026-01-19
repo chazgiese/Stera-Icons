@@ -17,4 +17,5 @@ ChartLineXYDescBold.displayName = 'ChartLineXYDescBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineXYDescBold, ChartLineXYDescBold as ChartLineXYDescBoldIcon, ChartLineXYDescBold as SiChartLineXYDescBold };
+export default ChartLineXYDescBold;
 export type { ChartLineXYDescBoldProps };

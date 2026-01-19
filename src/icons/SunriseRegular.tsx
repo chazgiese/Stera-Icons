@@ -17,4 +17,5 @@ SunriseRegular.displayName = 'SunriseRegular';
 
 // Triple export pattern (lucide-react style)
 export { SunriseRegular, SunriseRegular as SunriseRegularIcon, SunriseRegular as SiSunriseRegular };
+export default SunriseRegular;
 export type { SunriseRegularProps };

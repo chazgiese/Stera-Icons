@@ -19,4 +19,5 @@ ChecklistCheckedFill.displayName = 'ChecklistCheckedFill';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistCheckedFill, ChecklistCheckedFill as ChecklistCheckedFillIcon, ChecklistCheckedFill as SiChecklistCheckedFill };
+export default ChecklistCheckedFill;
 export type { ChecklistCheckedFillProps };

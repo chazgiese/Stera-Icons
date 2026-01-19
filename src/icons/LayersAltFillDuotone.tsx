@@ -18,4 +18,5 @@ LayersAltFillDuotone.displayName = 'LayersAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayersAltFillDuotone, LayersAltFillDuotone as LayersAltFillDuotoneIcon, LayersAltFillDuotone as SiLayersAltFillDuotone };
+export default LayersAltFillDuotone;
 export type { LayersAltFillDuotoneProps };

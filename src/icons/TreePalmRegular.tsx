@@ -16,4 +16,5 @@ TreePalmRegular.displayName = 'TreePalmRegular';
 
 // Triple export pattern (lucide-react style)
 export { TreePalmRegular, TreePalmRegular as TreePalmRegularIcon, TreePalmRegular as SiTreePalmRegular };
+export default TreePalmRegular;
 export type { TreePalmRegularProps };

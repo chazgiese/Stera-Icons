@@ -17,4 +17,5 @@ SkipForwardRegular.displayName = 'SkipForwardRegular';
 
 // Triple export pattern (lucide-react style)
 export { SkipForwardRegular, SkipForwardRegular as SkipForwardRegularIcon, SkipForwardRegular as SiSkipForwardRegular };
+export default SkipForwardRegular;
 export type { SkipForwardRegularProps };

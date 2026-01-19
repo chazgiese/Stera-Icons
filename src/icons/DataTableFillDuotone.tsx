@@ -17,4 +17,5 @@ DataTableFillDuotone.displayName = 'DataTableFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DataTableFillDuotone, DataTableFillDuotone as DataTableFillDuotoneIcon, DataTableFillDuotone as SiDataTableFillDuotone };
+export default DataTableFillDuotone;
 export type { DataTableFillDuotoneProps };

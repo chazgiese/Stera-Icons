@@ -17,4 +17,5 @@ ListXRegular.displayName = 'ListXRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListXRegular, ListXRegular as ListXRegularIcon, ListXRegular as SiListXRegular };
+export default ListXRegular;
 export type { ListXRegularProps };

@@ -16,4 +16,5 @@ FilmStripFill.displayName = 'FilmStripFill';
 
 // Triple export pattern (lucide-react style)
 export { FilmStripFill, FilmStripFill as FilmStripFillIcon, FilmStripFill as SiFilmStripFill };
+export default FilmStripFill;
 export type { FilmStripFillProps };

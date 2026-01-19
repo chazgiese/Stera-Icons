@@ -17,4 +17,5 @@ MinimizeBoldDuotone.displayName = 'MinimizeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MinimizeBoldDuotone, MinimizeBoldDuotone as MinimizeBoldDuotoneIcon, MinimizeBoldDuotone as SiMinimizeBoldDuotone };
+export default MinimizeBoldDuotone;
 export type { MinimizeBoldDuotoneProps };

@@ -16,4 +16,5 @@ ScanTextRegular.displayName = 'ScanTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScanTextRegular, ScanTextRegular as ScanTextRegularIcon, ScanTextRegular as SiScanTextRegular };
+export default ScanTextRegular;
 export type { ScanTextRegularProps };

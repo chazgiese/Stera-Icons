@@ -17,4 +17,5 @@ HashFillDuotone.displayName = 'HashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashFillDuotone, HashFillDuotone as HashFillDuotoneIcon, HashFillDuotone as SiHashFillDuotone };
+export default HashFillDuotone;
 export type { HashFillDuotoneProps };

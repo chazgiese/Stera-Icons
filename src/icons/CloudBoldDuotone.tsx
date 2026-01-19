@@ -17,4 +17,5 @@ CloudBoldDuotone.displayName = 'CloudBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CloudBoldDuotone, CloudBoldDuotone as CloudBoldDuotoneIcon, CloudBoldDuotone as SiCloudBoldDuotone };
+export default CloudBoldDuotone;
 export type { CloudBoldDuotoneProps };

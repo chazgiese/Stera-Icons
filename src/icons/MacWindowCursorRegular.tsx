@@ -18,4 +18,5 @@ MacWindowCursorRegular.displayName = 'MacWindowCursorRegular';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowCursorRegular, MacWindowCursorRegular as MacWindowCursorRegularIcon, MacWindowCursorRegular as SiMacWindowCursorRegular };
+export default MacWindowCursorRegular;
 export type { MacWindowCursorRegularProps };

@@ -17,4 +17,5 @@ ToggleOnBold.displayName = 'ToggleOnBold';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOnBold, ToggleOnBold as ToggleOnBoldIcon, ToggleOnBold as SiToggleOnBold };
+export default ToggleOnBold;
 export type { ToggleOnBoldProps };

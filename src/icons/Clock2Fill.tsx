@@ -16,4 +16,5 @@ Clock2Fill.displayName = 'Clock2Fill';
 
 // Triple export pattern (lucide-react style)
 export { Clock2Fill, Clock2Fill as Clock2FillIcon, Clock2Fill as SiClock2Fill };
+export default Clock2Fill;
 export type { Clock2FillProps };

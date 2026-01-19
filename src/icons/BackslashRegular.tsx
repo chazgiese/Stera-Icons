@@ -16,4 +16,5 @@ BackslashRegular.displayName = 'BackslashRegular';
 
 // Triple export pattern (lucide-react style)
 export { BackslashRegular, BackslashRegular as BackslashRegularIcon, BackslashRegular as SiBackslashRegular };
+export default BackslashRegular;
 export type { BackslashRegularProps };

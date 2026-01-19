@@ -35,3 +35,4 @@ SignInAlt.displayName = 'SignInAlt';
 
 // Triple export pattern (lucide-react style)
 export { SignInAlt, SignInAlt as SignInAltIcon, SignInAlt as SiSignInAlt };
+export default SignInAlt;

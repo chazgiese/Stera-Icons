@@ -17,4 +17,5 @@ XSquareRegularDuotone.displayName = 'XSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { XSquareRegularDuotone, XSquareRegularDuotone as XSquareRegularDuotoneIcon, XSquareRegularDuotone as SiXSquareRegularDuotone };
+export default XSquareRegularDuotone;
 export type { XSquareRegularDuotoneProps };

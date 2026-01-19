@@ -17,4 +17,5 @@ MenuBoldDuotone.displayName = 'MenuBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MenuBoldDuotone, MenuBoldDuotone as MenuBoldDuotoneIcon, MenuBoldDuotone as SiMenuBoldDuotone };
+export default MenuBoldDuotone;
 export type { MenuBoldDuotoneProps };

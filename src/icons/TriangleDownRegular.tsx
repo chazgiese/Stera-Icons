@@ -16,4 +16,5 @@ TriangleDownRegular.displayName = 'TriangleDownRegular';
 
 // Triple export pattern (lucide-react style)
 export { TriangleDownRegular, TriangleDownRegular as TriangleDownRegularIcon, TriangleDownRegular as SiTriangleDownRegular };
+export default TriangleDownRegular;
 export type { TriangleDownRegularProps };

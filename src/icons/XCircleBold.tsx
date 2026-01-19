@@ -17,4 +17,5 @@ XCircleBold.displayName = 'XCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { XCircleBold, XCircleBold as XCircleBoldIcon, XCircleBold as SiXCircleBold };
+export default XCircleBold;
 export type { XCircleBoldProps };

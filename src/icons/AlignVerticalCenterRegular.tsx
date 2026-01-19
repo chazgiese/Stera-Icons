@@ -16,4 +16,5 @@ AlignVerticalCenterRegular.displayName = 'AlignVerticalCenterRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalCenterRegular, AlignVerticalCenterRegular as AlignVerticalCenterRegularIcon, AlignVerticalCenterRegular as SiAlignVerticalCenterRegular };
+export default AlignVerticalCenterRegular;
 export type { AlignVerticalCenterRegularProps };

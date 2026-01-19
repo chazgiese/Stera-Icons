@@ -17,4 +17,5 @@ DropletRegularDuotone.displayName = 'DropletRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DropletRegularDuotone, DropletRegularDuotone as DropletRegularDuotoneIcon, DropletRegularDuotone as SiDropletRegularDuotone };
+export default DropletRegularDuotone;
 export type { DropletRegularDuotoneProps };

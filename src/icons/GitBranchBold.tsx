@@ -16,4 +16,5 @@ GitBranchBold.displayName = 'GitBranchBold';
 
 // Triple export pattern (lucide-react style)
 export { GitBranchBold, GitBranchBold as GitBranchBoldIcon, GitBranchBold as SiGitBranchBold };
+export default GitBranchBold;
 export type { GitBranchBoldProps };

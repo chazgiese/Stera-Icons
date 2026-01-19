@@ -16,4 +16,5 @@ SparklesFill.displayName = 'SparklesFill';
 
 // Triple export pattern (lucide-react style)
 export { SparklesFill, SparklesFill as SparklesFillIcon, SparklesFill as SiSparklesFill };
+export default SparklesFill;
 export type { SparklesFillProps };

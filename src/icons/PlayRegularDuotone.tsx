@@ -17,4 +17,5 @@ PlayRegularDuotone.displayName = 'PlayRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlayRegularDuotone, PlayRegularDuotone as PlayRegularDuotoneIcon, PlayRegularDuotone as SiPlayRegularDuotone };
+export default PlayRegularDuotone;
 export type { PlayRegularDuotoneProps };

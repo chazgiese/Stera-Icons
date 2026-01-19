@@ -16,4 +16,5 @@ TextBold.displayName = 'TextBold';
 
 // Triple export pattern (lucide-react style)
 export { TextBold, TextBold as TextBoldIcon, TextBold as SiTextBold };
+export default TextBold;
 export type { TextBoldProps };

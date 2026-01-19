@@ -17,4 +17,5 @@ CursorClickRegular.displayName = 'CursorClickRegular';
 
 // Triple export pattern (lucide-react style)
 export { CursorClickRegular, CursorClickRegular as CursorClickRegularIcon, CursorClickRegular as SiCursorClickRegular };
+export default CursorClickRegular;
 export type { CursorClickRegularProps };

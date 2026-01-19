@@ -35,3 +35,4 @@ CreditCard.displayName = 'CreditCard';
 
 // Triple export pattern (lucide-react style)
 export { CreditCard, CreditCard as CreditCardIcon, CreditCard as SiCreditCard };
+export default CreditCard;

@@ -16,4 +16,5 @@ ReplyFill.displayName = 'ReplyFill';
 
 // Triple export pattern (lucide-react style)
 export { ReplyFill, ReplyFill as ReplyFillIcon, ReplyFill as SiReplyFill };
+export default ReplyFill;
 export type { ReplyFillProps };

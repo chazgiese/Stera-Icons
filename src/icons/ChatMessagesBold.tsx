@@ -16,4 +16,5 @@ ChatMessagesBold.displayName = 'ChatMessagesBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessagesBold, ChatMessagesBold as ChatMessagesBoldIcon, ChatMessagesBold as SiChatMessagesBold };
+export default ChatMessagesBold;
 export type { ChatMessagesBoldProps };

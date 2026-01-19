@@ -35,3 +35,4 @@ ScrollText.displayName = 'ScrollText';
 
 // Triple export pattern (lucide-react style)
 export { ScrollText, ScrollText as ScrollTextIcon, ScrollText as SiScrollText };
+export default ScrollText;

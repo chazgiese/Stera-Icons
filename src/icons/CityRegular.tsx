@@ -17,4 +17,5 @@ CityRegular.displayName = 'CityRegular';
 
 // Triple export pattern (lucide-react style)
 export { CityRegular, CityRegular as CityRegularIcon, CityRegular as SiCityRegular };
+export default CityRegular;
 export type { CityRegularProps };

@@ -17,4 +17,5 @@ InfoCircleBoldDuotone.displayName = 'InfoCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { InfoCircleBoldDuotone, InfoCircleBoldDuotone as InfoCircleBoldDuotoneIcon, InfoCircleBoldDuotone as SiInfoCircleBoldDuotone };
+export default InfoCircleBoldDuotone;
 export type { InfoCircleBoldDuotoneProps };

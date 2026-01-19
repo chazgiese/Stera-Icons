@@ -17,4 +17,5 @@ MapPinnedFill.displayName = 'MapPinnedFill';
 
 // Triple export pattern (lucide-react style)
 export { MapPinnedFill, MapPinnedFill as MapPinnedFillIcon, MapPinnedFill as SiMapPinnedFill };
+export default MapPinnedFill;
 export type { MapPinnedFillProps };

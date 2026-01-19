@@ -17,4 +17,5 @@ ChatBoxAlertBoldDuotone.displayName = 'ChatBoxAlertBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxAlertBoldDuotone, ChatBoxAlertBoldDuotone as ChatBoxAlertBoldDuotoneIcon, ChatBoxAlertBoldDuotone as SiChatBoxAlertBoldDuotone };
+export default ChatBoxAlertBoldDuotone;
 export type { ChatBoxAlertBoldDuotoneProps };

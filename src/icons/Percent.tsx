@@ -35,3 +35,4 @@ Percent.displayName = 'Percent';
 
 // Triple export pattern (lucide-react style)
 export { Percent, Percent as PercentIcon, Percent as SiPercent };
+export default Percent;

@@ -17,4 +17,5 @@ CliCircleBoldDuotone.displayName = 'CliCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CliCircleBoldDuotone, CliCircleBoldDuotone as CliCircleBoldDuotoneIcon, CliCircleBoldDuotone as SiCliCircleBoldDuotone };
+export default CliCircleBoldDuotone;
 export type { CliCircleBoldDuotoneProps };

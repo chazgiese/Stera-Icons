@@ -17,4 +17,5 @@ PlaylistBold.displayName = 'PlaylistBold';
 
 // Triple export pattern (lucide-react style)
 export { PlaylistBold, PlaylistBold as PlaylistBoldIcon, PlaylistBold as SiPlaylistBold };
+export default PlaylistBold;
 export type { PlaylistBoldProps };

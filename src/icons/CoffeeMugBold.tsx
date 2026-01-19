@@ -16,4 +16,5 @@ CoffeeMugBold.displayName = 'CoffeeMugBold';
 
 // Triple export pattern (lucide-react style)
 export { CoffeeMugBold, CoffeeMugBold as CoffeeMugBoldIcon, CoffeeMugBold as SiCoffeeMugBold };
+export default CoffeeMugBold;
 export type { CoffeeMugBoldProps };

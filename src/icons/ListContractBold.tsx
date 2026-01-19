@@ -16,4 +16,5 @@ ListContractBold.displayName = 'ListContractBold';
 
 // Triple export pattern (lucide-react style)
 export { ListContractBold, ListContractBold as ListContractBoldIcon, ListContractBold as SiListContractBold };
+export default ListContractBold;
 export type { ListContractBoldProps };

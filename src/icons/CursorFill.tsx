@@ -16,4 +16,5 @@ CursorFill.displayName = 'CursorFill';
 
 // Triple export pattern (lucide-react style)
 export { CursorFill, CursorFill as CursorFillIcon, CursorFill as SiCursorFill };
+export default CursorFill;
 export type { CursorFillProps };

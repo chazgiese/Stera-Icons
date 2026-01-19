@@ -16,4 +16,5 @@ CupRegular.displayName = 'CupRegular';
 
 // Triple export pattern (lucide-react style)
 export { CupRegular, CupRegular as CupRegularIcon, CupRegular as SiCupRegular };
+export default CupRegular;
 export type { CupRegularProps };

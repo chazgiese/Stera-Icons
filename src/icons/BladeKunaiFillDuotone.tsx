@@ -17,4 +17,5 @@ BladeKunaiFillDuotone.displayName = 'BladeKunaiFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BladeKunaiFillDuotone, BladeKunaiFillDuotone as BladeKunaiFillDuotoneIcon, BladeKunaiFillDuotone as SiBladeKunaiFillDuotone };
+export default BladeKunaiFillDuotone;
 export type { BladeKunaiFillDuotoneProps };

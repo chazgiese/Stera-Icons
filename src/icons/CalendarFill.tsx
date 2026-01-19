@@ -17,4 +17,5 @@ CalendarFill.displayName = 'CalendarFill';
 
 // Triple export pattern (lucide-react style)
 export { CalendarFill, CalendarFill as CalendarFillIcon, CalendarFill as SiCalendarFill };
+export default CalendarFill;
 export type { CalendarFillProps };

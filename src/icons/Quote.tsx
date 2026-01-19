@@ -35,3 +35,4 @@ Quote.displayName = 'Quote';
 
 // Triple export pattern (lucide-react style)
 export { Quote, Quote as QuoteIcon, Quote as SiQuote };
+export default Quote;

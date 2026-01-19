@@ -18,4 +18,5 @@ CupRegularDuotone.displayName = 'CupRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CupRegularDuotone, CupRegularDuotone as CupRegularDuotoneIcon, CupRegularDuotone as SiCupRegularDuotone };
+export default CupRegularDuotone;
 export type { CupRegularDuotoneProps };

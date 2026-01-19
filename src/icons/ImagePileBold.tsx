@@ -17,4 +17,5 @@ ImagePileBold.displayName = 'ImagePileBold';
 
 // Triple export pattern (lucide-react style)
 export { ImagePileBold, ImagePileBold as ImagePileBoldIcon, ImagePileBold as SiImagePileBold };
+export default ImagePileBold;
 export type { ImagePileBoldProps };

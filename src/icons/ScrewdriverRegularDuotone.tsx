@@ -17,4 +17,5 @@ ScrewdriverRegularDuotone.displayName = 'ScrewdriverRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScrewdriverRegularDuotone, ScrewdriverRegularDuotone as ScrewdriverRegularDuotoneIcon, ScrewdriverRegularDuotone as SiScrewdriverRegularDuotone };
+export default ScrewdriverRegularDuotone;
 export type { ScrewdriverRegularDuotoneProps };

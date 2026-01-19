@@ -17,4 +17,5 @@ PencilTipRegularDuotone.displayName = 'PencilTipRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PencilTipRegularDuotone, PencilTipRegularDuotone as PencilTipRegularDuotoneIcon, PencilTipRegularDuotone as SiPencilTipRegularDuotone };
+export default PencilTipRegularDuotone;
 export type { PencilTipRegularDuotoneProps };

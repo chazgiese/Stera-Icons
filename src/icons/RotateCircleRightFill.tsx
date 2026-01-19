@@ -16,4 +16,5 @@ RotateCircleRightFill.displayName = 'RotateCircleRightFill';
 
 // Triple export pattern (lucide-react style)
 export { RotateCircleRightFill, RotateCircleRightFill as RotateCircleRightFillIcon, RotateCircleRightFill as SiRotateCircleRightFill };
+export default RotateCircleRightFill;
 export type { RotateCircleRightFillProps };

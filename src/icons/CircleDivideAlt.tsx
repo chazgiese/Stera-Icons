@@ -35,3 +35,4 @@ CircleDivideAlt.displayName = 'CircleDivideAlt';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideAlt, CircleDivideAlt as CircleDivideAltIcon, CircleDivideAlt as SiCircleDivideAlt };
+export default CircleDivideAlt;

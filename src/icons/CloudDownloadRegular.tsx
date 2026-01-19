@@ -17,4 +17,5 @@ CloudDownloadRegular.displayName = 'CloudDownloadRegular';
 
 // Triple export pattern (lucide-react style)
 export { CloudDownloadRegular, CloudDownloadRegular as CloudDownloadRegularIcon, CloudDownloadRegular as SiCloudDownloadRegular };
+export default CloudDownloadRegular;
 export type { CloudDownloadRegularProps };

@@ -16,4 +16,5 @@ AlertDiamondFill.displayName = 'AlertDiamondFill';
 
 // Triple export pattern (lucide-react style)
 export { AlertDiamondFill, AlertDiamondFill as AlertDiamondFillIcon, AlertDiamondFill as SiAlertDiamondFill };
+export default AlertDiamondFill;
 export type { AlertDiamondFillProps };

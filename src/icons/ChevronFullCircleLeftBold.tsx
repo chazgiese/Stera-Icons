@@ -17,4 +17,5 @@ ChevronFullCircleLeftBold.displayName = 'ChevronFullCircleLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullCircleLeftBold, ChevronFullCircleLeftBold as ChevronFullCircleLeftBoldIcon, ChevronFullCircleLeftBold as SiChevronFullCircleLeftBold };
+export default ChevronFullCircleLeftBold;
 export type { ChevronFullCircleLeftBoldProps };

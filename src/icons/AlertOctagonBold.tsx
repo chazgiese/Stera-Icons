@@ -17,4 +17,5 @@ AlertOctagonBold.displayName = 'AlertOctagonBold';
 
 // Triple export pattern (lucide-react style)
 export { AlertOctagonBold, AlertOctagonBold as AlertOctagonBoldIcon, AlertOctagonBold as SiAlertOctagonBold };
+export default AlertOctagonBold;
 export type { AlertOctagonBoldProps };

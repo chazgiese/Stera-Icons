@@ -19,4 +19,5 @@ FinderRegularDuotone.displayName = 'FinderRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FinderRegularDuotone, FinderRegularDuotone as FinderRegularDuotoneIcon, FinderRegularDuotone as SiFinderRegularDuotone };
+export default FinderRegularDuotone;
 export type { FinderRegularDuotoneProps };

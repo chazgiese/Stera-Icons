@@ -16,4 +16,5 @@ TrendUpBold.displayName = 'TrendUpBold';
 
 // Triple export pattern (lucide-react style)
 export { TrendUpBold, TrendUpBold as TrendUpBoldIcon, TrendUpBold as SiTrendUpBold };
+export default TrendUpBold;
 export type { TrendUpBoldProps };

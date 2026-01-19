@@ -35,3 +35,4 @@ Volleyball.displayName = 'Volleyball';
 
 // Triple export pattern (lucide-react style)
 export { Volleyball, Volleyball as VolleyballIcon, Volleyball as SiVolleyball };
+export default Volleyball;

@@ -17,4 +17,5 @@ NoteTextBold.displayName = 'NoteTextBold';
 
 // Triple export pattern (lucide-react style)
 export { NoteTextBold, NoteTextBold as NoteTextBoldIcon, NoteTextBold as SiNoteTextBold };
+export default NoteTextBold;
 export type { NoteTextBoldProps };

@@ -17,4 +17,5 @@ ShieldSlashBoldDuotone.displayName = 'ShieldSlashBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldSlashBoldDuotone, ShieldSlashBoldDuotone as ShieldSlashBoldDuotoneIcon, ShieldSlashBoldDuotone as SiShieldSlashBoldDuotone };
+export default ShieldSlashBoldDuotone;
 export type { ShieldSlashBoldDuotoneProps };

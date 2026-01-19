@@ -18,4 +18,5 @@ MicOffBoldDuotone.displayName = 'MicOffBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MicOffBoldDuotone, MicOffBoldDuotone as MicOffBoldDuotoneIcon, MicOffBoldDuotone as SiMicOffBoldDuotone };
+export default MicOffBoldDuotone;
 export type { MicOffBoldDuotoneProps };

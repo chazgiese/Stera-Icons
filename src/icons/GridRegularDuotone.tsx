@@ -17,4 +17,5 @@ GridRegularDuotone.displayName = 'GridRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GridRegularDuotone, GridRegularDuotone as GridRegularDuotoneIcon, GridRegularDuotone as SiGridRegularDuotone };
+export default GridRegularDuotone;
 export type { GridRegularDuotoneProps };

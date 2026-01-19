@@ -17,4 +17,5 @@ CodeCircleFillDuotone.displayName = 'CodeCircleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CodeCircleFillDuotone, CodeCircleFillDuotone as CodeCircleFillDuotoneIcon, CodeCircleFillDuotone as SiCodeCircleFillDuotone };
+export default CodeCircleFillDuotone;
 export type { CodeCircleFillDuotoneProps };

@@ -55,6 +55,7 @@ ${componentName}.displayName = '${componentName}';
 
 // Triple export pattern (lucide-react style)
 ${generateTripleExport(componentName)}
+export default ${componentName};
 export type { ${componentName}Props };
 `;
 }
@@ -105,6 +106,7 @@ ${baseComponentName}.displayName = '${baseComponentName}';
 
 // Triple export pattern (lucide-react style)
 ${generateTripleExport(baseComponentName)}
+export default ${baseComponentName};
 `;
 }
 

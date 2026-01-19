@@ -16,4 +16,5 @@ StoreBold.displayName = 'StoreBold';
 
 // Triple export pattern (lucide-react style)
 export { StoreBold, StoreBold as StoreBoldIcon, StoreBold as SiStoreBold };
+export default StoreBold;
 export type { StoreBoldProps };

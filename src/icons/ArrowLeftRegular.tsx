@@ -16,4 +16,5 @@ ArrowLeftRegular.displayName = 'ArrowLeftRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLeftRegular, ArrowLeftRegular as ArrowLeftRegularIcon, ArrowLeftRegular as SiArrowLeftRegular };
+export default ArrowLeftRegular;
 export type { ArrowLeftRegularProps };

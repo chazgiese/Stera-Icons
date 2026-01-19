@@ -16,4 +16,5 @@ FlowMergeFill.displayName = 'FlowMergeFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowMergeFill, FlowMergeFill as FlowMergeFillIcon, FlowMergeFill as SiFlowMergeFill };
+export default FlowMergeFill;
 export type { FlowMergeFillProps };

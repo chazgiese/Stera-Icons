@@ -35,3 +35,4 @@ WaveTriangle.displayName = 'WaveTriangle';
 
 // Triple export pattern (lucide-react style)
 export { WaveTriangle, WaveTriangle as WaveTriangleIcon, WaveTriangle as SiWaveTriangle };
+export default WaveTriangle;

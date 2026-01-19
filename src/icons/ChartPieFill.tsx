@@ -17,4 +17,5 @@ ChartPieFill.displayName = 'ChartPieFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieFill, ChartPieFill as ChartPieFillIcon, ChartPieFill as SiChartPieFill };
+export default ChartPieFill;
 export type { ChartPieFillProps };

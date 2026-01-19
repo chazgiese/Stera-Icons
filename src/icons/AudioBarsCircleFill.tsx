@@ -16,4 +16,5 @@ AudioBarsCircleFill.displayName = 'AudioBarsCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsCircleFill, AudioBarsCircleFill as AudioBarsCircleFillIcon, AudioBarsCircleFill as SiAudioBarsCircleFill };
+export default AudioBarsCircleFill;
 export type { AudioBarsCircleFillProps };

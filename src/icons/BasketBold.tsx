@@ -17,4 +17,5 @@ BasketBold.displayName = 'BasketBold';
 
 // Triple export pattern (lucide-react style)
 export { BasketBold, BasketBold as BasketBoldIcon, BasketBold as SiBasketBold };
+export default BasketBold;
 export type { BasketBoldProps };

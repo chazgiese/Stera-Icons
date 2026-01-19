@@ -35,3 +35,4 @@ AlertSquare.displayName = 'AlertSquare';
 
 // Triple export pattern (lucide-react style)
 export { AlertSquare, AlertSquare as AlertSquareIcon, AlertSquare as SiAlertSquare };
+export default AlertSquare;

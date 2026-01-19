@@ -35,3 +35,4 @@ LockOpen.displayName = 'LockOpen';
 
 // Triple export pattern (lucide-react style)
 export { LockOpen, LockOpen as LockOpenIcon, LockOpen as SiLockOpen };
+export default LockOpen;

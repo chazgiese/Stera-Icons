@@ -35,3 +35,4 @@ Wand.displayName = 'Wand';
 
 // Triple export pattern (lucide-react style)
 export { Wand, Wand as WandIcon, Wand as SiWand };
+export default Wand;

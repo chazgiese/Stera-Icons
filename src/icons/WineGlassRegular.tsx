@@ -16,4 +16,5 @@ WineGlassRegular.displayName = 'WineGlassRegular';
 
 // Triple export pattern (lucide-react style)
 export { WineGlassRegular, WineGlassRegular as WineGlassRegularIcon, WineGlassRegular as SiWineGlassRegular };
+export default WineGlassRegular;
 export type { WineGlassRegularProps };

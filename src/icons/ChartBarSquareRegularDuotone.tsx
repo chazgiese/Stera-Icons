@@ -17,4 +17,5 @@ ChartBarSquareRegularDuotone.displayName = 'ChartBarSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarSquareRegularDuotone, ChartBarSquareRegularDuotone as ChartBarSquareRegularDuotoneIcon, ChartBarSquareRegularDuotone as SiChartBarSquareRegularDuotone };
+export default ChartBarSquareRegularDuotone;
 export type { ChartBarSquareRegularDuotoneProps };

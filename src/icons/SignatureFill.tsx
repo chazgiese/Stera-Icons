@@ -16,4 +16,5 @@ SignatureFill.displayName = 'SignatureFill';
 
 // Triple export pattern (lucide-react style)
 export { SignatureFill, SignatureFill as SignatureFillIcon, SignatureFill as SiSignatureFill };
+export default SignatureFill;
 export type { SignatureFillProps };

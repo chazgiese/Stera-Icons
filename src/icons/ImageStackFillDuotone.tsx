@@ -17,4 +17,5 @@ ImageStackFillDuotone.displayName = 'ImageStackFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImageStackFillDuotone, ImageStackFillDuotone as ImageStackFillDuotoneIcon, ImageStackFillDuotone as SiImageStackFillDuotone };
+export default ImageStackFillDuotone;
 export type { ImageStackFillDuotoneProps };

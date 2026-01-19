@@ -17,4 +17,5 @@ HexagonBoldDuotone.displayName = 'HexagonBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HexagonBoldDuotone, HexagonBoldDuotone as HexagonBoldDuotoneIcon, HexagonBoldDuotone as SiHexagonBoldDuotone };
+export default HexagonBoldDuotone;
 export type { HexagonBoldDuotoneProps };

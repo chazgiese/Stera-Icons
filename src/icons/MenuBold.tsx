@@ -16,4 +16,5 @@ MenuBold.displayName = 'MenuBold';
 
 // Triple export pattern (lucide-react style)
 export { MenuBold, MenuBold as MenuBoldIcon, MenuBold as SiMenuBold };
+export default MenuBold;
 export type { MenuBoldProps };

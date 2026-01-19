@@ -16,4 +16,5 @@ CircleSlashRegular.displayName = 'CircleSlashRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleSlashRegular, CircleSlashRegular as CircleSlashRegularIcon, CircleSlashRegular as SiCircleSlashRegular };
+export default CircleSlashRegular;
 export type { CircleSlashRegularProps };

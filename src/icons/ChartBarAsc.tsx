@@ -35,3 +35,4 @@ ChartBarAsc.displayName = 'ChartBarAsc';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarAsc, ChartBarAsc as ChartBarAscIcon, ChartBarAsc as SiChartBarAsc };
+export default ChartBarAsc;

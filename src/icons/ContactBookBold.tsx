@@ -17,4 +17,5 @@ ContactBookBold.displayName = 'ContactBookBold';
 
 // Triple export pattern (lucide-react style)
 export { ContactBookBold, ContactBookBold as ContactBookBoldIcon, ContactBookBold as SiContactBookBold };
+export default ContactBookBold;
 export type { ContactBookBoldProps };

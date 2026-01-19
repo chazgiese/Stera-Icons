@@ -35,3 +35,4 @@ SparkleCircle.displayName = 'SparkleCircle';
 
 // Triple export pattern (lucide-react style)
 export { SparkleCircle, SparkleCircle as SparkleCircleIcon, SparkleCircle as SiSparkleCircle };
+export default SparkleCircle;

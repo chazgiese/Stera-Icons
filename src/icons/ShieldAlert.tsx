@@ -35,3 +35,4 @@ ShieldAlert.displayName = 'ShieldAlert';
 
 // Triple export pattern (lucide-react style)
 export { ShieldAlert, ShieldAlert as ShieldAlertIcon, ShieldAlert as SiShieldAlert };
+export default ShieldAlert;

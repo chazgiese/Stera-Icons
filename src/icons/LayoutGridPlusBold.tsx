@@ -18,4 +18,5 @@ LayoutGridPlusBold.displayName = 'LayoutGridPlusBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridPlusBold, LayoutGridPlusBold as LayoutGridPlusBoldIcon, LayoutGridPlusBold as SiLayoutGridPlusBold };
+export default LayoutGridPlusBold;
 export type { LayoutGridPlusBoldProps };

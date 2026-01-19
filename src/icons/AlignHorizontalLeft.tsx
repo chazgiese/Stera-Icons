@@ -35,3 +35,4 @@ AlignHorizontalLeft.displayName = 'AlignHorizontalLeft';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalLeft, AlignHorizontalLeft as AlignHorizontalLeftIcon, AlignHorizontalLeft as SiAlignHorizontalLeft };
+export default AlignHorizontalLeft;

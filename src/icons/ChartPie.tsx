@@ -35,3 +35,4 @@ ChartPie.displayName = 'ChartPie';
 
 // Triple export pattern (lucide-react style)
 export { ChartPie, ChartPie as ChartPieIcon, ChartPie as SiChartPie };
+export default ChartPie;

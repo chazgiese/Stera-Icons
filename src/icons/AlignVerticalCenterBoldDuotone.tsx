@@ -17,4 +17,5 @@ AlignVerticalCenterBoldDuotone.displayName = 'AlignVerticalCenterBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalCenterBoldDuotone, AlignVerticalCenterBoldDuotone as AlignVerticalCenterBoldDuotoneIcon, AlignVerticalCenterBoldDuotone as SiAlignVerticalCenterBoldDuotone };
+export default AlignVerticalCenterBoldDuotone;
 export type { AlignVerticalCenterBoldDuotoneProps };

@@ -16,4 +16,5 @@ CheckCircleFill.displayName = 'CheckCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { CheckCircleFill, CheckCircleFill as CheckCircleFillIcon, CheckCircleFill as SiCheckCircleFill };
+export default CheckCircleFill;
 export type { CheckCircleFillProps };

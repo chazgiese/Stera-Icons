@@ -16,4 +16,5 @@ DocumentBold.displayName = 'DocumentBold';
 
 // Triple export pattern (lucide-react style)
 export { DocumentBold, DocumentBold as DocumentBoldIcon, DocumentBold as SiDocumentBold };
+export default DocumentBold;
 export type { DocumentBoldProps };

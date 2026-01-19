@@ -35,3 +35,4 @@ XCircle.displayName = 'XCircle';
 
 // Triple export pattern (lucide-react style)
 export { XCircle, XCircle as XCircleIcon, XCircle as SiXCircle };
+export default XCircle;

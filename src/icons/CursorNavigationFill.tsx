@@ -16,4 +16,5 @@ CursorNavigationFill.displayName = 'CursorNavigationFill';
 
 // Triple export pattern (lucide-react style)
 export { CursorNavigationFill, CursorNavigationFill as CursorNavigationFillIcon, CursorNavigationFill as SiCursorNavigationFill };
+export default CursorNavigationFill;
 export type { CursorNavigationFillProps };

@@ -35,3 +35,4 @@ Rewind.displayName = 'Rewind';
 
 // Triple export pattern (lucide-react style)
 export { Rewind, Rewind as RewindIcon, Rewind as SiRewind };
+export default Rewind;

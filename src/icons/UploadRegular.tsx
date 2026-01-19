@@ -17,4 +17,5 @@ UploadRegular.displayName = 'UploadRegular';
 
 // Triple export pattern (lucide-react style)
 export { UploadRegular, UploadRegular as UploadRegularIcon, UploadRegular as SiUploadRegular };
+export default UploadRegular;
 export type { UploadRegularProps };

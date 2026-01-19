@@ -35,3 +35,4 @@ DollarBill.displayName = 'DollarBill';
 
 // Triple export pattern (lucide-react style)
 export { DollarBill, DollarBill as DollarBillIcon, DollarBill as SiDollarBill };
+export default DollarBill;

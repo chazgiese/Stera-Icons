@@ -35,3 +35,4 @@ Blocks.displayName = 'Blocks';
 
 // Triple export pattern (lucide-react style)
 export { Blocks, Blocks as BlocksIcon, Blocks as SiBlocks };
+export default Blocks;

@@ -16,4 +16,5 @@ ForkKnifeBold.displayName = 'ForkKnifeBold';
 
 // Triple export pattern (lucide-react style)
 export { ForkKnifeBold, ForkKnifeBold as ForkKnifeBoldIcon, ForkKnifeBold as SiForkKnifeBold };
+export default ForkKnifeBold;
 export type { ForkKnifeBoldProps };

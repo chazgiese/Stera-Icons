@@ -16,4 +16,5 @@ TextBFill.displayName = 'TextBFill';
 
 // Triple export pattern (lucide-react style)
 export { TextBFill, TextBFill as TextBFillIcon, TextBFill as SiTextBFill };
+export default TextBFill;
 export type { TextBFillProps };

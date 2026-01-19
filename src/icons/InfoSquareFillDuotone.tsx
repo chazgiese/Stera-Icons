@@ -17,4 +17,5 @@ InfoSquareFillDuotone.displayName = 'InfoSquareFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { InfoSquareFillDuotone, InfoSquareFillDuotone as InfoSquareFillDuotoneIcon, InfoSquareFillDuotone as SiInfoSquareFillDuotone };
+export default InfoSquareFillDuotone;
 export type { InfoSquareFillDuotoneProps };

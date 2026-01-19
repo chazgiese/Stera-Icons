@@ -18,4 +18,5 @@ WandRegular.displayName = 'WandRegular';
 
 // Triple export pattern (lucide-react style)
 export { WandRegular, WandRegular as WandRegularIcon, WandRegular as SiWandRegular };
+export default WandRegular;
 export type { WandRegularProps };

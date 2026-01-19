@@ -35,3 +35,4 @@ BellOff.displayName = 'BellOff';
 
 // Triple export pattern (lucide-react style)
 export { BellOff, BellOff as BellOffIcon, BellOff as SiBellOff };
+export default BellOff;

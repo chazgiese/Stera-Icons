@@ -17,4 +17,5 @@ BoltFillDuotone.displayName = 'BoltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BoltFillDuotone, BoltFillDuotone as BoltFillDuotoneIcon, BoltFillDuotone as SiBoltFillDuotone };
+export default BoltFillDuotone;
 export type { BoltFillDuotoneProps };

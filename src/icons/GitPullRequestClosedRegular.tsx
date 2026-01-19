@@ -17,4 +17,5 @@ GitPullRequestClosedRegular.displayName = 'GitPullRequestClosedRegular';
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestClosedRegular, GitPullRequestClosedRegular as GitPullRequestClosedRegularIcon, GitPullRequestClosedRegular as SiGitPullRequestClosedRegular };
+export default GitPullRequestClosedRegular;
 export type { GitPullRequestClosedRegularProps };

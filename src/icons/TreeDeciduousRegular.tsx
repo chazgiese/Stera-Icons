@@ -16,4 +16,5 @@ TreeDeciduousRegular.displayName = 'TreeDeciduousRegular';
 
 // Triple export pattern (lucide-react style)
 export { TreeDeciduousRegular, TreeDeciduousRegular as TreeDeciduousRegularIcon, TreeDeciduousRegular as SiTreeDeciduousRegular };
+export default TreeDeciduousRegular;
 export type { TreeDeciduousRegularProps };

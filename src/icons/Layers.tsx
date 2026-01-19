@@ -35,3 +35,4 @@ Layers.displayName = 'Layers';
 
 // Triple export pattern (lucide-react style)
 export { Layers, Layers as LayersIcon, Layers as SiLayers };
+export default Layers;

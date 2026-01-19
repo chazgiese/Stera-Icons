@@ -17,4 +17,5 @@ ToolboxFillDuotone.displayName = 'ToolboxFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToolboxFillDuotone, ToolboxFillDuotone as ToolboxFillDuotoneIcon, ToolboxFillDuotone as SiToolboxFillDuotone };
+export default ToolboxFillDuotone;
 export type { ToolboxFillDuotoneProps };

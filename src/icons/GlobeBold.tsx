@@ -16,4 +16,5 @@ GlobeBold.displayName = 'GlobeBold';
 
 // Triple export pattern (lucide-react style)
 export { GlobeBold, GlobeBold as GlobeBoldIcon, GlobeBold as SiGlobeBold };
+export default GlobeBold;
 export type { GlobeBoldProps };

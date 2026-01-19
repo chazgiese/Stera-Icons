@@ -17,4 +17,5 @@ SpeakerBoldDuotone.displayName = 'SpeakerBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerBoldDuotone, SpeakerBoldDuotone as SpeakerBoldDuotoneIcon, SpeakerBoldDuotone as SiSpeakerBoldDuotone };
+export default SpeakerBoldDuotone;
 export type { SpeakerBoldDuotoneProps };

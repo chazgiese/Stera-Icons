@@ -16,4 +16,5 @@ GithubFill.displayName = 'GithubFill';
 
 // Triple export pattern (lucide-react style)
 export { GithubFill, GithubFill as GithubFillIcon, GithubFill as SiGithubFill };
+export default GithubFill;
 export type { GithubFillProps };

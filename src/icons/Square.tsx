@@ -35,3 +35,4 @@ Square.displayName = 'Square';
 
 // Triple export pattern (lucide-react style)
 export { Square, Square as SquareIcon, Square as SiSquare };
+export default Square;

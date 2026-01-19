@@ -35,3 +35,4 @@ OverlappingCircles.displayName = 'OverlappingCircles';
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCircles, OverlappingCircles as OverlappingCirclesIcon, OverlappingCircles as SiOverlappingCircles };
+export default OverlappingCircles;

@@ -17,4 +17,5 @@ ImageLandscapeBold.displayName = 'ImageLandscapeBold';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscapeBold, ImageLandscapeBold as ImageLandscapeBoldIcon, ImageLandscapeBold as SiImageLandscapeBold };
+export default ImageLandscapeBold;
 export type { ImageLandscapeBoldProps };

@@ -35,3 +35,4 @@ SortAscending.displayName = 'SortAscending';
 
 // Triple export pattern (lucide-react style)
 export { SortAscending, SortAscending as SortAscendingIcon, SortAscending as SiSortAscending };
+export default SortAscending;

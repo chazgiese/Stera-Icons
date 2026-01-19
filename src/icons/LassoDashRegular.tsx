@@ -16,4 +16,5 @@ LassoDashRegular.displayName = 'LassoDashRegular';
 
 // Triple export pattern (lucide-react style)
 export { LassoDashRegular, LassoDashRegular as LassoDashRegularIcon, LassoDashRegular as SiLassoDashRegular };
+export default LassoDashRegular;
 export type { LassoDashRegularProps };

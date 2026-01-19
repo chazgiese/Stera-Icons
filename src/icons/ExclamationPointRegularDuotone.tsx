@@ -17,4 +17,5 @@ ExclamationPointRegularDuotone.displayName = 'ExclamationPointRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ExclamationPointRegularDuotone, ExclamationPointRegularDuotone as ExclamationPointRegularDuotoneIcon, ExclamationPointRegularDuotone as SiExclamationPointRegularDuotone };
+export default ExclamationPointRegularDuotone;
 export type { ExclamationPointRegularDuotoneProps };

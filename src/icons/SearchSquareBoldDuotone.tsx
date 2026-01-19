@@ -17,4 +17,5 @@ SearchSquareBoldDuotone.displayName = 'SearchSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SearchSquareBoldDuotone, SearchSquareBoldDuotone as SearchSquareBoldDuotoneIcon, SearchSquareBoldDuotone as SiSearchSquareBoldDuotone };
+export default SearchSquareBoldDuotone;
 export type { SearchSquareBoldDuotoneProps };

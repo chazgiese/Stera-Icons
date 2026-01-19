@@ -17,4 +17,5 @@ GlobeRegularDuotone.displayName = 'GlobeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GlobeRegularDuotone, GlobeRegularDuotone as GlobeRegularDuotoneIcon, GlobeRegularDuotone as SiGlobeRegularDuotone };
+export default GlobeRegularDuotone;
 export type { GlobeRegularDuotoneProps };

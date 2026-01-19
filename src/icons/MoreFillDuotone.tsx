@@ -17,4 +17,5 @@ MoreFillDuotone.displayName = 'MoreFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreFillDuotone, MoreFillDuotone as MoreFillDuotoneIcon, MoreFillDuotone as SiMoreFillDuotone };
+export default MoreFillDuotone;
 export type { MoreFillDuotoneProps };

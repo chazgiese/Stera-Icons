@@ -35,3 +35,4 @@ NotebookLog.displayName = 'NotebookLog';
 
 // Triple export pattern (lucide-react style)
 export { NotebookLog, NotebookLog as NotebookLogIcon, NotebookLog as SiNotebookLog };
+export default NotebookLog;

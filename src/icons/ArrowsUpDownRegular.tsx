@@ -16,4 +16,5 @@ ArrowsUpDownRegular.displayName = 'ArrowsUpDownRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowsUpDownRegular, ArrowsUpDownRegular as ArrowsUpDownRegularIcon, ArrowsUpDownRegular as SiArrowsUpDownRegular };
+export default ArrowsUpDownRegular;
 export type { ArrowsUpDownRegularProps };

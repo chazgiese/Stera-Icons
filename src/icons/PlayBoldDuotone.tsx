@@ -17,4 +17,5 @@ PlayBoldDuotone.displayName = 'PlayBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlayBoldDuotone, PlayBoldDuotone as PlayBoldDuotoneIcon, PlayBoldDuotone as SiPlayBoldDuotone };
+export default PlayBoldDuotone;
 export type { PlayBoldDuotoneProps };

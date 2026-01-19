@@ -19,4 +19,5 @@ TargetFillDuotone.displayName = 'TargetFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TargetFillDuotone, TargetFillDuotone as TargetFillDuotoneIcon, TargetFillDuotone as SiTargetFillDuotone };
+export default TargetFillDuotone;
 export type { TargetFillDuotoneProps };

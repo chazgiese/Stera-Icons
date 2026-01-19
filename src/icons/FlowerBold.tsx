@@ -16,4 +16,5 @@ FlowerBold.displayName = 'FlowerBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowerBold, FlowerBold as FlowerBoldIcon, FlowerBold as SiFlowerBold };
+export default FlowerBold;
 export type { FlowerBoldProps };

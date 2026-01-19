@@ -17,4 +17,5 @@ ChartScatterFill.displayName = 'ChartScatterFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartScatterFill, ChartScatterFill as ChartScatterFillIcon, ChartScatterFill as SiChartScatterFill };
+export default ChartScatterFill;
 export type { ChartScatterFillProps };

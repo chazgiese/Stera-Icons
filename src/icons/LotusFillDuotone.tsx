@@ -18,4 +18,5 @@ LotusFillDuotone.displayName = 'LotusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LotusFillDuotone, LotusFillDuotone as LotusFillDuotoneIcon, LotusFillDuotone as SiLotusFillDuotone };
+export default LotusFillDuotone;
 export type { LotusFillDuotoneProps };

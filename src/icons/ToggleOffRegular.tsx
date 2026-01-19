@@ -17,4 +17,5 @@ ToggleOffRegular.displayName = 'ToggleOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOffRegular, ToggleOffRegular as ToggleOffRegularIcon, ToggleOffRegular as SiToggleOffRegular };
+export default ToggleOffRegular;
 export type { ToggleOffRegularProps };

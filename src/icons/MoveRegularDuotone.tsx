@@ -17,4 +17,5 @@ MoveRegularDuotone.displayName = 'MoveRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoveRegularDuotone, MoveRegularDuotone as MoveRegularDuotoneIcon, MoveRegularDuotone as SiMoveRegularDuotone };
+export default MoveRegularDuotone;
 export type { MoveRegularDuotoneProps };

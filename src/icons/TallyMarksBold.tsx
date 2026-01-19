@@ -16,4 +16,5 @@ TallyMarksBold.displayName = 'TallyMarksBold';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarksBold, TallyMarksBold as TallyMarksBoldIcon, TallyMarksBold as SiTallyMarksBold };
+export default TallyMarksBold;
 export type { TallyMarksBoldProps };

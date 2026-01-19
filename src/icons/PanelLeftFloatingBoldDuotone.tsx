@@ -17,4 +17,5 @@ PanelLeftFloatingBoldDuotone.displayName = 'PanelLeftFloatingBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PanelLeftFloatingBoldDuotone, PanelLeftFloatingBoldDuotone as PanelLeftFloatingBoldDuotoneIcon, PanelLeftFloatingBoldDuotone as SiPanelLeftFloatingBoldDuotone };
+export default PanelLeftFloatingBoldDuotone;
 export type { PanelLeftFloatingBoldDuotoneProps };

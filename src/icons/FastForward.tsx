@@ -35,3 +35,4 @@ FastForward.displayName = 'FastForward';
 
 // Triple export pattern (lucide-react style)
 export { FastForward, FastForward as FastForwardIcon, FastForward as SiFastForward };
+export default FastForward;

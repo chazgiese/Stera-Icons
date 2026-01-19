@@ -35,3 +35,4 @@ CircleDashSimple.displayName = 'CircleDashSimple';
 
 // Triple export pattern (lucide-react style)
 export { CircleDashSimple, CircleDashSimple as CircleDashSimpleIcon, CircleDashSimple as SiCircleDashSimple };
+export default CircleDashSimple;

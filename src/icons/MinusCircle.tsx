@@ -35,3 +35,4 @@ MinusCircle.displayName = 'MinusCircle';
 
 // Triple export pattern (lucide-react style)
 export { MinusCircle, MinusCircle as MinusCircleIcon, MinusCircle as SiMinusCircle };
+export default MinusCircle;

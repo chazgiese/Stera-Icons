@@ -16,4 +16,5 @@ FlaskBold.displayName = 'FlaskBold';
 
 // Triple export pattern (lucide-react style)
 export { FlaskBold, FlaskBold as FlaskBoldIcon, FlaskBold as SiFlaskBold };
+export default FlaskBold;
 export type { FlaskBoldProps };

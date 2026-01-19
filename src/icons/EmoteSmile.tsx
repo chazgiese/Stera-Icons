@@ -35,3 +35,4 @@ EmoteSmile.displayName = 'EmoteSmile';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSmile, EmoteSmile as EmoteSmileIcon, EmoteSmile as SiEmoteSmile };
+export default EmoteSmile;

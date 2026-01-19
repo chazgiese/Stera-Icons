@@ -17,4 +17,5 @@ YinYangBoldDuotone.displayName = 'YinYangBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { YinYangBoldDuotone, YinYangBoldDuotone as YinYangBoldDuotoneIcon, YinYangBoldDuotone as SiYinYangBoldDuotone };
+export default YinYangBoldDuotone;
 export type { YinYangBoldDuotoneProps };

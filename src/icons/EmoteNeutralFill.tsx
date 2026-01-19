@@ -16,4 +16,5 @@ EmoteNeutralFill.displayName = 'EmoteNeutralFill';
 
 // Triple export pattern (lucide-react style)
 export { EmoteNeutralFill, EmoteNeutralFill as EmoteNeutralFillIcon, EmoteNeutralFill as SiEmoteNeutralFill };
+export default EmoteNeutralFill;
 export type { EmoteNeutralFillProps };

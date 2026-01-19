@@ -17,4 +17,5 @@ ChartPieAltFill.displayName = 'ChartPieAltFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieAltFill, ChartPieAltFill as ChartPieAltFillIcon, ChartPieAltFill as SiChartPieAltFill };
+export default ChartPieAltFill;
 export type { ChartPieAltFillProps };

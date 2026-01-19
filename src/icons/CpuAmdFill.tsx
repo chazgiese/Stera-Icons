@@ -17,4 +17,5 @@ CpuAmdFill.displayName = 'CpuAmdFill';
 
 // Triple export pattern (lucide-react style)
 export { CpuAmdFill, CpuAmdFill as CpuAmdFillIcon, CpuAmdFill as SiCpuAmdFill };
+export default CpuAmdFill;
 export type { CpuAmdFillProps };

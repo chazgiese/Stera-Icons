@@ -35,3 +35,4 @@ CollapseSimpleAlt.displayName = 'CollapseSimpleAlt';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleAlt, CollapseSimpleAlt as CollapseSimpleAltIcon, CollapseSimpleAlt as SiCollapseSimpleAlt };
+export default CollapseSimpleAlt;

@@ -16,4 +16,5 @@ SwatchBookFill.displayName = 'SwatchBookFill';
 
 // Triple export pattern (lucide-react style)
 export { SwatchBookFill, SwatchBookFill as SwatchBookFillIcon, SwatchBookFill as SiSwatchBookFill };
+export default SwatchBookFill;
 export type { SwatchBookFillProps };

@@ -17,4 +17,5 @@ DuplicatePlusBold.displayName = 'DuplicatePlusBold';
 
 // Triple export pattern (lucide-react style)
 export { DuplicatePlusBold, DuplicatePlusBold as DuplicatePlusBoldIcon, DuplicatePlusBold as SiDuplicatePlusBold };
+export default DuplicatePlusBold;
 export type { DuplicatePlusBoldProps };

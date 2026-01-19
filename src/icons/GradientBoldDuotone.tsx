@@ -17,4 +17,5 @@ GradientBoldDuotone.displayName = 'GradientBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GradientBoldDuotone, GradientBoldDuotone as GradientBoldDuotoneIcon, GradientBoldDuotone as SiGradientBoldDuotone };
+export default GradientBoldDuotone;
 export type { GradientBoldDuotoneProps };

@@ -17,4 +17,5 @@ CloudUploadBold.displayName = 'CloudUploadBold';
 
 // Triple export pattern (lucide-react style)
 export { CloudUploadBold, CloudUploadBold as CloudUploadBoldIcon, CloudUploadBold as SiCloudUploadBold };
+export default CloudUploadBold;
 export type { CloudUploadBoldProps };

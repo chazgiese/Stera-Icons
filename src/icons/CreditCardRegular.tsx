@@ -17,4 +17,5 @@ CreditCardRegular.displayName = 'CreditCardRegular';
 
 // Triple export pattern (lucide-react style)
 export { CreditCardRegular, CreditCardRegular as CreditCardRegularIcon, CreditCardRegular as SiCreditCardRegular };
+export default CreditCardRegular;
 export type { CreditCardRegularProps };

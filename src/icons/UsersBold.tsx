@@ -16,4 +16,5 @@ UsersBold.displayName = 'UsersBold';
 
 // Triple export pattern (lucide-react style)
 export { UsersBold, UsersBold as UsersBoldIcon, UsersBold as SiUsersBold };
+export default UsersBold;
 export type { UsersBoldProps };

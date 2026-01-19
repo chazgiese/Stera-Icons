@@ -17,4 +17,5 @@ MailPlusFillDuotone.displayName = 'MailPlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MailPlusFillDuotone, MailPlusFillDuotone as MailPlusFillDuotoneIcon, MailPlusFillDuotone as SiMailPlusFillDuotone };
+export default MailPlusFillDuotone;
 export type { MailPlusFillDuotoneProps };

@@ -17,4 +17,5 @@ ChartScatterRegular.displayName = 'ChartScatterRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartScatterRegular, ChartScatterRegular as ChartScatterRegularIcon, ChartScatterRegular as SiChartScatterRegular };
+export default ChartScatterRegular;
 export type { ChartScatterRegularProps };

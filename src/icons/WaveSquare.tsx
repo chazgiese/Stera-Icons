@@ -35,3 +35,4 @@ WaveSquare.displayName = 'WaveSquare';
 
 // Triple export pattern (lucide-react style)
 export { WaveSquare, WaveSquare as WaveSquareIcon, WaveSquare as SiWaveSquare };
+export default WaveSquare;

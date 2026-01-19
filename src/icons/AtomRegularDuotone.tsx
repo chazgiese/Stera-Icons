@@ -16,4 +16,5 @@ AtomRegularDuotone.displayName = 'AtomRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AtomRegularDuotone, AtomRegularDuotone as AtomRegularDuotoneIcon, AtomRegularDuotone as SiAtomRegularDuotone };
+export default AtomRegularDuotone;
 export type { AtomRegularDuotoneProps };

@@ -17,4 +17,5 @@ AlertTriangleBold.displayName = 'AlertTriangleBold';
 
 // Triple export pattern (lucide-react style)
 export { AlertTriangleBold, AlertTriangleBold as AlertTriangleBoldIcon, AlertTriangleBold as SiAlertTriangleBold };
+export default AlertTriangleBold;
 export type { AlertTriangleBoldProps };

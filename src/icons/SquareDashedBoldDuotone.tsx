@@ -17,4 +17,5 @@ SquareDashedBoldDuotone.displayName = 'SquareDashedBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SquareDashedBoldDuotone, SquareDashedBoldDuotone as SquareDashedBoldDuotoneIcon, SquareDashedBoldDuotone as SiSquareDashedBoldDuotone };
+export default SquareDashedBoldDuotone;
 export type { SquareDashedBoldDuotoneProps };

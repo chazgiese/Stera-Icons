@@ -17,4 +17,5 @@ DeleteBold.displayName = 'DeleteBold';
 
 // Triple export pattern (lucide-react style)
 export { DeleteBold, DeleteBold as DeleteBoldIcon, DeleteBold as SiDeleteBold };
+export default DeleteBold;
 export type { DeleteBoldProps };

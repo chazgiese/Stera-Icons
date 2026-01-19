@@ -17,4 +17,5 @@ LabelFillDuotone.displayName = 'LabelFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LabelFillDuotone, LabelFillDuotone as LabelFillDuotoneIcon, LabelFillDuotone as SiLabelFillDuotone };
+export default LabelFillDuotone;
 export type { LabelFillDuotoneProps };

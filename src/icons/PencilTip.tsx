@@ -35,3 +35,4 @@ PencilTip.displayName = 'PencilTip';
 
 // Triple export pattern (lucide-react style)
 export { PencilTip, PencilTip as PencilTipIcon, PencilTip as SiPencilTip };
+export default PencilTip;

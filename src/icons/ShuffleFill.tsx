@@ -17,4 +17,5 @@ ShuffleFill.displayName = 'ShuffleFill';
 
 // Triple export pattern (lucide-react style)
 export { ShuffleFill, ShuffleFill as ShuffleFillIcon, ShuffleFill as SiShuffleFill };
+export default ShuffleFill;
 export type { ShuffleFillProps };

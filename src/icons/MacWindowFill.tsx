@@ -16,4 +16,5 @@ MacWindowFill.displayName = 'MacWindowFill';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowFill, MacWindowFill as MacWindowFillIcon, MacWindowFill as SiMacWindowFill };
+export default MacWindowFill;
 export type { MacWindowFillProps };

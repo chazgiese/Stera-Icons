@@ -16,4 +16,5 @@ BracketsSquareBold.displayName = 'BracketsSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { BracketsSquareBold, BracketsSquareBold as BracketsSquareBoldIcon, BracketsSquareBold as SiBracketsSquareBold };
+export default BracketsSquareBold;
 export type { BracketsSquareBoldProps };

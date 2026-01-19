@@ -16,4 +16,5 @@ MinimizeRegular.displayName = 'MinimizeRegular';
 
 // Triple export pattern (lucide-react style)
 export { MinimizeRegular, MinimizeRegular as MinimizeRegularIcon, MinimizeRegular as SiMinimizeRegular };
+export default MinimizeRegular;
 export type { MinimizeRegularProps };

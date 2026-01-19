@@ -35,3 +35,4 @@ LabelAlt.displayName = 'LabelAlt';
 
 // Triple export pattern (lucide-react style)
 export { LabelAlt, LabelAlt as LabelAltIcon, LabelAlt as SiLabelAlt };
+export default LabelAlt;

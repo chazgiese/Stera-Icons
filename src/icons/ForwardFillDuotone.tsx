@@ -17,4 +17,5 @@ ForwardFillDuotone.displayName = 'ForwardFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ForwardFillDuotone, ForwardFillDuotone as ForwardFillDuotoneIcon, ForwardFillDuotone as SiForwardFillDuotone };
+export default ForwardFillDuotone;
 export type { ForwardFillDuotoneProps };

@@ -16,4 +16,5 @@ DollarBillFill.displayName = 'DollarBillFill';
 
 // Triple export pattern (lucide-react style)
 export { DollarBillFill, DollarBillFill as DollarBillFillIcon, DollarBillFill as SiDollarBillFill };
+export default DollarBillFill;
 export type { DollarBillFillProps };

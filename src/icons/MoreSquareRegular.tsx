@@ -17,4 +17,5 @@ MoreSquareRegular.displayName = 'MoreSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { MoreSquareRegular, MoreSquareRegular as MoreSquareRegularIcon, MoreSquareRegular as SiMoreSquareRegular };
+export default MoreSquareRegular;
 export type { MoreSquareRegularProps };

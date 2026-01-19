@@ -17,4 +17,5 @@ LayoutGridRegularDuotone.displayName = 'LayoutGridRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridRegularDuotone, LayoutGridRegularDuotone as LayoutGridRegularDuotoneIcon, LayoutGridRegularDuotone as SiLayoutGridRegularDuotone };
+export default LayoutGridRegularDuotone;
 export type { LayoutGridRegularDuotoneProps };

@@ -16,4 +16,5 @@ PeaceBold.displayName = 'PeaceBold';
 
 // Triple export pattern (lucide-react style)
 export { PeaceBold, PeaceBold as PeaceBoldIcon, PeaceBold as SiPeaceBold };
+export default PeaceBold;
 export type { PeaceBoldProps };

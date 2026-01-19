@@ -16,4 +16,5 @@ SnowflakeRegular.displayName = 'SnowflakeRegular';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeRegular, SnowflakeRegular as SnowflakeRegularIcon, SnowflakeRegular as SiSnowflakeRegular };
+export default SnowflakeRegular;
 export type { SnowflakeRegularProps };

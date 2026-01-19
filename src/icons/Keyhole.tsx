@@ -35,3 +35,4 @@ Keyhole.displayName = 'Keyhole';
 
 // Triple export pattern (lucide-react style)
 export { Keyhole, Keyhole as KeyholeIcon, Keyhole as SiKeyhole };
+export default Keyhole;

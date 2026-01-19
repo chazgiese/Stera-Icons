@@ -17,4 +17,5 @@ ReceiptFillDuotone.displayName = 'ReceiptFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptFillDuotone, ReceiptFillDuotone as ReceiptFillDuotoneIcon, ReceiptFillDuotone as SiReceiptFillDuotone };
+export default ReceiptFillDuotone;
 export type { ReceiptFillDuotoneProps };

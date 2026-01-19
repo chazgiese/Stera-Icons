@@ -17,4 +17,5 @@ PercentFillDuotone.displayName = 'PercentFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PercentFillDuotone, PercentFillDuotone as PercentFillDuotoneIcon, PercentFillDuotone as SiPercentFillDuotone };
+export default PercentFillDuotone;
 export type { PercentFillDuotoneProps };

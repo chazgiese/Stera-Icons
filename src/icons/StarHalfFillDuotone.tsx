@@ -17,4 +17,5 @@ StarHalfFillDuotone.displayName = 'StarHalfFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StarHalfFillDuotone, StarHalfFillDuotone as StarHalfFillDuotoneIcon, StarHalfFillDuotone as SiStarHalfFillDuotone };
+export default StarHalfFillDuotone;
 export type { StarHalfFillDuotoneProps };

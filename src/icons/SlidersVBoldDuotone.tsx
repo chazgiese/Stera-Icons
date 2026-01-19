@@ -17,4 +17,5 @@ SlidersVBoldDuotone.displayName = 'SlidersVBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SlidersVBoldDuotone, SlidersVBoldDuotone as SlidersVBoldDuotoneIcon, SlidersVBoldDuotone as SiSlidersVBoldDuotone };
+export default SlidersVBoldDuotone;
 export type { SlidersVBoldDuotoneProps };

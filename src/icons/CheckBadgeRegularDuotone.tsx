@@ -17,4 +17,5 @@ CheckBadgeRegularDuotone.displayName = 'CheckBadgeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CheckBadgeRegularDuotone, CheckBadgeRegularDuotone as CheckBadgeRegularDuotoneIcon, CheckBadgeRegularDuotone as SiCheckBadgeRegularDuotone };
+export default CheckBadgeRegularDuotone;
 export type { CheckBadgeRegularDuotoneProps };

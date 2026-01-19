@@ -17,4 +17,5 @@ ChatBoxDotFill.displayName = 'ChatBoxDotFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxDotFill, ChatBoxDotFill as ChatBoxDotFillIcon, ChatBoxDotFill as SiChatBoxDotFill };
+export default ChatBoxDotFill;
 export type { ChatBoxDotFillProps };

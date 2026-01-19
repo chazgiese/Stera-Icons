@@ -16,4 +16,5 @@ ToolsRegular.displayName = 'ToolsRegular';
 
 // Triple export pattern (lucide-react style)
 export { ToolsRegular, ToolsRegular as ToolsRegularIcon, ToolsRegular as SiToolsRegular };
+export default ToolsRegular;
 export type { ToolsRegularProps };

@@ -16,4 +16,5 @@ PlusCircleFill.displayName = 'PlusCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { PlusCircleFill, PlusCircleFill as PlusCircleFillIcon, PlusCircleFill as SiPlusCircleFill };
+export default PlusCircleFill;
 export type { PlusCircleFillProps };

@@ -17,4 +17,5 @@ MusicFillDuotone.displayName = 'MusicFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MusicFillDuotone, MusicFillDuotone as MusicFillDuotoneIcon, MusicFillDuotone as SiMusicFillDuotone };
+export default MusicFillDuotone;
 export type { MusicFillDuotoneProps };

@@ -17,4 +17,5 @@ PanelsRightBottomRegularDuotone.displayName = 'PanelsRightBottomRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PanelsRightBottomRegularDuotone, PanelsRightBottomRegularDuotone as PanelsRightBottomRegularDuotoneIcon, PanelsRightBottomRegularDuotone as SiPanelsRightBottomRegularDuotone };
+export default PanelsRightBottomRegularDuotone;
 export type { PanelsRightBottomRegularDuotoneProps };

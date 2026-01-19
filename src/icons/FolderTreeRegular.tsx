@@ -18,4 +18,5 @@ FolderTreeRegular.displayName = 'FolderTreeRegular';
 
 // Triple export pattern (lucide-react style)
 export { FolderTreeRegular, FolderTreeRegular as FolderTreeRegularIcon, FolderTreeRegular as SiFolderTreeRegular };
+export default FolderTreeRegular;
 export type { FolderTreeRegularProps };

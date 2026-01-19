@@ -16,4 +16,5 @@ LassoDashBold.displayName = 'LassoDashBold';
 
 // Triple export pattern (lucide-react style)
 export { LassoDashBold, LassoDashBold as LassoDashBoldIcon, LassoDashBold as SiLassoDashBold };
+export default LassoDashBold;
 export type { LassoDashBoldProps };

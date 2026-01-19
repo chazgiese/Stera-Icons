@@ -17,4 +17,5 @@ MatchaBoldDuotone.displayName = 'MatchaBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MatchaBoldDuotone, MatchaBoldDuotone as MatchaBoldDuotoneIcon, MatchaBoldDuotone as SiMatchaBoldDuotone };
+export default MatchaBoldDuotone;
 export type { MatchaBoldDuotoneProps };

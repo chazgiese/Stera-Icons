@@ -17,4 +17,5 @@ CopyRegularDuotone.displayName = 'CopyRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CopyRegularDuotone, CopyRegularDuotone as CopyRegularDuotoneIcon, CopyRegularDuotone as SiCopyRegularDuotone };
+export default CopyRegularDuotone;
 export type { CopyRegularDuotoneProps };

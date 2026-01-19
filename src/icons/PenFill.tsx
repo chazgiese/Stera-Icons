@@ -16,4 +16,5 @@ PenFill.displayName = 'PenFill';
 
 // Triple export pattern (lucide-react style)
 export { PenFill, PenFill as PenFillIcon, PenFill as SiPenFill };
+export default PenFill;
 export type { PenFillProps };

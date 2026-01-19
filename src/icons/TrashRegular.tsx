@@ -17,4 +17,5 @@ TrashRegular.displayName = 'TrashRegular';
 
 // Triple export pattern (lucide-react style)
 export { TrashRegular, TrashRegular as TrashRegularIcon, TrashRegular as SiTrashRegular };
+export default TrashRegular;
 export type { TrashRegularProps };

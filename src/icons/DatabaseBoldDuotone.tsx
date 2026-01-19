@@ -17,4 +17,5 @@ DatabaseBoldDuotone.displayName = 'DatabaseBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBoldDuotone, DatabaseBoldDuotone as DatabaseBoldDuotoneIcon, DatabaseBoldDuotone as SiDatabaseBoldDuotone };
+export default DatabaseBoldDuotone;
 export type { DatabaseBoldDuotoneProps };

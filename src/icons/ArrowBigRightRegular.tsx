@@ -16,4 +16,5 @@ ArrowBigRightRegular.displayName = 'ArrowBigRightRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowBigRightRegular, ArrowBigRightRegular as ArrowBigRightRegularIcon, ArrowBigRightRegular as SiArrowBigRightRegular };
+export default ArrowBigRightRegular;
 export type { ArrowBigRightRegularProps };

@@ -16,4 +16,5 @@ ShieldSlashBold.displayName = 'ShieldSlashBold';
 
 // Triple export pattern (lucide-react style)
 export { ShieldSlashBold, ShieldSlashBold as ShieldSlashBoldIcon, ShieldSlashBold as SiShieldSlashBold };
+export default ShieldSlashBold;
 export type { ShieldSlashBoldProps };

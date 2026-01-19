@@ -17,4 +17,5 @@ ArrowSquareUpBold.displayName = 'ArrowSquareUpBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowSquareUpBold, ArrowSquareUpBold as ArrowSquareUpBoldIcon, ArrowSquareUpBold as SiArrowSquareUpBold };
+export default ArrowSquareUpBold;
 export type { ArrowSquareUpBoldProps };

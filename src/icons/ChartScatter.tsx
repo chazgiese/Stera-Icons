@@ -35,3 +35,4 @@ ChartScatter.displayName = 'ChartScatter';
 
 // Triple export pattern (lucide-react style)
 export { ChartScatter, ChartScatter as ChartScatterIcon, ChartScatter as SiChartScatter };
+export default ChartScatter;

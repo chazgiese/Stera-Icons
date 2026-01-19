@@ -35,3 +35,4 @@ Github.displayName = 'Github';
 
 // Triple export pattern (lucide-react style)
 export { Github, Github as GithubIcon, Github as SiGithub };
+export default Github;

@@ -18,4 +18,5 @@ ToolsFill.displayName = 'ToolsFill';
 
 // Triple export pattern (lucide-react style)
 export { ToolsFill, ToolsFill as ToolsFillIcon, ToolsFill as SiToolsFill };
+export default ToolsFill;
 export type { ToolsFillProps };

@@ -35,3 +35,4 @@ HomeSimple.displayName = 'HomeSimple';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimple, HomeSimple as HomeSimpleIcon, HomeSimple as SiHomeSimple };
+export default HomeSimple;

@@ -16,4 +16,5 @@ MoveRegular.displayName = 'MoveRegular';
 
 // Triple export pattern (lucide-react style)
 export { MoveRegular, MoveRegular as MoveRegularIcon, MoveRegular as SiMoveRegular };
+export default MoveRegular;
 export type { MoveRegularProps };

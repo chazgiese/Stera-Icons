@@ -16,4 +16,5 @@ DeviceLaptopBold.displayName = 'DeviceLaptopBold';
 
 // Triple export pattern (lucide-react style)
 export { DeviceLaptopBold, DeviceLaptopBold as DeviceLaptopBoldIcon, DeviceLaptopBold as SiDeviceLaptopBold };
+export default DeviceLaptopBold;
 export type { DeviceLaptopBoldProps };

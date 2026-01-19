@@ -35,3 +35,4 @@ Airplane.displayName = 'Airplane';
 
 // Triple export pattern (lucide-react style)
 export { Airplane, Airplane as AirplaneIcon, Airplane as SiAirplane };
+export default Airplane;

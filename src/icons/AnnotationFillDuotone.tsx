@@ -18,4 +18,5 @@ AnnotationFillDuotone.displayName = 'AnnotationFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationFillDuotone, AnnotationFillDuotone as AnnotationFillDuotoneIcon, AnnotationFillDuotone as SiAnnotationFillDuotone };
+export default AnnotationFillDuotone;
 export type { AnnotationFillDuotoneProps };

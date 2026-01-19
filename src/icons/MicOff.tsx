@@ -35,3 +35,4 @@ MicOff.displayName = 'MicOff';
 
 // Triple export pattern (lucide-react style)
 export { MicOff, MicOff as MicOffIcon, MicOff as SiMicOff };
+export default MicOff;

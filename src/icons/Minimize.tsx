@@ -35,3 +35,4 @@ Minimize.displayName = 'Minimize';
 
 // Triple export pattern (lucide-react style)
 export { Minimize, Minimize as MinimizeIcon, Minimize as SiMinimize };
+export default Minimize;

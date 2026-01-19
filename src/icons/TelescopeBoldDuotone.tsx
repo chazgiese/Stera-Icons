@@ -19,4 +19,5 @@ TelescopeBoldDuotone.displayName = 'TelescopeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TelescopeBoldDuotone, TelescopeBoldDuotone as TelescopeBoldDuotoneIcon, TelescopeBoldDuotone as SiTelescopeBoldDuotone };
+export default TelescopeBoldDuotone;
 export type { TelescopeBoldDuotoneProps };

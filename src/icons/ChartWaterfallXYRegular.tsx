@@ -17,4 +17,5 @@ ChartWaterfallXYRegular.displayName = 'ChartWaterfallXYRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartWaterfallXYRegular, ChartWaterfallXYRegular as ChartWaterfallXYRegularIcon, ChartWaterfallXYRegular as SiChartWaterfallXYRegular };
+export default ChartWaterfallXYRegular;
 export type { ChartWaterfallXYRegularProps };

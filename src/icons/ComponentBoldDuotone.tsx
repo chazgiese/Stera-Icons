@@ -17,4 +17,5 @@ ComponentBoldDuotone.displayName = 'ComponentBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ComponentBoldDuotone, ComponentBoldDuotone as ComponentBoldDuotoneIcon, ComponentBoldDuotone as SiComponentBoldDuotone };
+export default ComponentBoldDuotone;
 export type { ComponentBoldDuotoneProps };

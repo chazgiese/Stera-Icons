@@ -16,4 +16,5 @@ TriangleBold.displayName = 'TriangleBold';
 
 // Triple export pattern (lucide-react style)
 export { TriangleBold, TriangleBold as TriangleBoldIcon, TriangleBold as SiTriangleBold };
+export default TriangleBold;
 export type { TriangleBoldProps };

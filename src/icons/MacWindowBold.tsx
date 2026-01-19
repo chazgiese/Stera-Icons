@@ -17,4 +17,5 @@ MacWindowBold.displayName = 'MacWindowBold';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowBold, MacWindowBold as MacWindowBoldIcon, MacWindowBold as SiMacWindowBold };
+export default MacWindowBold;
 export type { MacWindowBoldProps };

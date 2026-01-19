@@ -35,3 +35,4 @@ ExpandSimple.displayName = 'ExpandSimple';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimple, ExpandSimple as ExpandSimpleIcon, ExpandSimple as SiExpandSimple };
+export default ExpandSimple;

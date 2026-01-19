@@ -18,4 +18,5 @@ MailBadgeFillDuotone.displayName = 'MailBadgeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MailBadgeFillDuotone, MailBadgeFillDuotone as MailBadgeFillDuotoneIcon, MailBadgeFillDuotone as SiMailBadgeFillDuotone };
+export default MailBadgeFillDuotone;
 export type { MailBadgeFillDuotoneProps };

@@ -16,4 +16,5 @@ SeedlingRegular.displayName = 'SeedlingRegular';
 
 // Triple export pattern (lucide-react style)
 export { SeedlingRegular, SeedlingRegular as SeedlingRegularIcon, SeedlingRegular as SiSeedlingRegular };
+export default SeedlingRegular;
 export type { SeedlingRegularProps };

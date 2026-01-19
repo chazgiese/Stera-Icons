@@ -17,4 +17,5 @@ ScanBarcodeBoldDuotone.displayName = 'ScanBarcodeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanBarcodeBoldDuotone, ScanBarcodeBoldDuotone as ScanBarcodeBoldDuotoneIcon, ScanBarcodeBoldDuotone as SiScanBarcodeBoldDuotone };
+export default ScanBarcodeBoldDuotone;
 export type { ScanBarcodeBoldDuotoneProps };

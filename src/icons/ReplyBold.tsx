@@ -16,4 +16,5 @@ ReplyBold.displayName = 'ReplyBold';
 
 // Triple export pattern (lucide-react style)
 export { ReplyBold, ReplyBold as ReplyBoldIcon, ReplyBold as SiReplyBold };
+export default ReplyBold;
 export type { ReplyBoldProps };

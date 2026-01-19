@@ -35,3 +35,4 @@ Music.displayName = 'Music';
 
 // Triple export pattern (lucide-react style)
 export { Music, Music as MusicIcon, Music as SiMusic };
+export default Music;

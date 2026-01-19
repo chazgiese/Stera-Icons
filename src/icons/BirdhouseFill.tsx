@@ -16,4 +16,5 @@ BirdhouseFill.displayName = 'BirdhouseFill';
 
 // Triple export pattern (lucide-react style)
 export { BirdhouseFill, BirdhouseFill as BirdhouseFillIcon, BirdhouseFill as SiBirdhouseFill };
+export default BirdhouseFill;
 export type { BirdhouseFillProps };

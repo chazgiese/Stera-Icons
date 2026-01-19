@@ -16,4 +16,5 @@ CubePackageBold.displayName = 'CubePackageBold';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageBold, CubePackageBold as CubePackageBoldIcon, CubePackageBold as SiCubePackageBold };
+export default CubePackageBold;
 export type { CubePackageBoldProps };

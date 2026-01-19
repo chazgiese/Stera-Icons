@@ -17,4 +17,5 @@ CircleRegularDuotone.displayName = 'CircleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleRegularDuotone, CircleRegularDuotone as CircleRegularDuotoneIcon, CircleRegularDuotone as SiCircleRegularDuotone };
+export default CircleRegularDuotone;
 export type { CircleRegularDuotoneProps };

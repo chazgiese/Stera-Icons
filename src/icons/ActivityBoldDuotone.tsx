@@ -17,4 +17,5 @@ ActivityBoldDuotone.displayName = 'ActivityBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ActivityBoldDuotone, ActivityBoldDuotone as ActivityBoldDuotoneIcon, ActivityBoldDuotone as SiActivityBoldDuotone };
+export default ActivityBoldDuotone;
 export type { ActivityBoldDuotoneProps };

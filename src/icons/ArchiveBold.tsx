@@ -17,4 +17,5 @@ ArchiveBold.displayName = 'ArchiveBold';
 
 // Triple export pattern (lucide-react style)
 export { ArchiveBold, ArchiveBold as ArchiveBoldIcon, ArchiveBold as SiArchiveBold };
+export default ArchiveBold;
 export type { ArchiveBoldProps };

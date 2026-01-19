@@ -16,4 +16,5 @@ CirclePlaceholderFill.displayName = 'CirclePlaceholderFill';
 
 // Triple export pattern (lucide-react style)
 export { CirclePlaceholderFill, CirclePlaceholderFill as CirclePlaceholderFillIcon, CirclePlaceholderFill as SiCirclePlaceholderFill };
+export default CirclePlaceholderFill;
 export type { CirclePlaceholderFillProps };

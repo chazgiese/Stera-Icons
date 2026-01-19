@@ -35,3 +35,4 @@ Playlist.displayName = 'Playlist';
 
 // Triple export pattern (lucide-react style)
 export { Playlist, Playlist as PlaylistIcon, Playlist as SiPlaylist };
+export default Playlist;

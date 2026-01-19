@@ -16,4 +16,5 @@ BannerBold.displayName = 'BannerBold';
 
 // Triple export pattern (lucide-react style)
 export { BannerBold, BannerBold as BannerBoldIcon, BannerBold as SiBannerBold };
+export default BannerBold;
 export type { BannerBoldProps };

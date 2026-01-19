@@ -17,4 +17,5 @@ GlobeFillDuotone.displayName = 'GlobeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GlobeFillDuotone, GlobeFillDuotone as GlobeFillDuotoneIcon, GlobeFillDuotone as SiGlobeFillDuotone };
+export default GlobeFillDuotone;
 export type { GlobeFillDuotoneProps };

@@ -35,3 +35,4 @@ Aperture.displayName = 'Aperture';
 
 // Triple export pattern (lucide-react style)
 export { Aperture, Aperture as ApertureIcon, Aperture as SiAperture };
+export default Aperture;

@@ -17,4 +17,5 @@ BracketsSquareCircleRegular.displayName = 'BracketsSquareCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { BracketsSquareCircleRegular, BracketsSquareCircleRegular as BracketsSquareCircleRegularIcon, BracketsSquareCircleRegular as SiBracketsSquareCircleRegular };
+export default BracketsSquareCircleRegular;
 export type { BracketsSquareCircleRegularProps };

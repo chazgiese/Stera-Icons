@@ -35,3 +35,4 @@ CalendarBlank.displayName = 'CalendarBlank';
 
 // Triple export pattern (lucide-react style)
 export { CalendarBlank, CalendarBlank as CalendarBlankIcon, CalendarBlank as SiCalendarBlank };
+export default CalendarBlank;

@@ -16,4 +16,5 @@ SignalZeroRegular.displayName = 'SignalZeroRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignalZeroRegular, SignalZeroRegular as SignalZeroRegularIcon, SignalZeroRegular as SiSignalZeroRegular };
+export default SignalZeroRegular;
 export type { SignalZeroRegularProps };

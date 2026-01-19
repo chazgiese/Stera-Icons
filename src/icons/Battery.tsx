@@ -35,3 +35,4 @@ Battery.displayName = 'Battery';
 
 // Triple export pattern (lucide-react style)
 export { Battery, Battery as BatteryIcon, Battery as SiBattery };
+export default Battery;

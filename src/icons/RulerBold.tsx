@@ -16,4 +16,5 @@ RulerBold.displayName = 'RulerBold';
 
 // Triple export pattern (lucide-react style)
 export { RulerBold, RulerBold as RulerBoldIcon, RulerBold as SiRulerBold };
+export default RulerBold;
 export type { RulerBoldProps };

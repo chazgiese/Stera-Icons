@@ -16,4 +16,5 @@ HammerBold.displayName = 'HammerBold';
 
 // Triple export pattern (lucide-react style)
 export { HammerBold, HammerBold as HammerBoldIcon, HammerBold as SiHammerBold };
+export default HammerBold;
 export type { HammerBoldProps };

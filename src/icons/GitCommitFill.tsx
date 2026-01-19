@@ -16,4 +16,5 @@ GitCommitFill.displayName = 'GitCommitFill';
 
 // Triple export pattern (lucide-react style)
 export { GitCommitFill, GitCommitFill as GitCommitFillIcon, GitCommitFill as SiGitCommitFill };
+export default GitCommitFill;
 export type { GitCommitFillProps };

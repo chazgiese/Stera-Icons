@@ -16,4 +16,5 @@ LightbulbOnFill.displayName = 'LightbulbOnFill';
 
 // Triple export pattern (lucide-react style)
 export { LightbulbOnFill, LightbulbOnFill as LightbulbOnFillIcon, LightbulbOnFill as SiLightbulbOnFill };
+export default LightbulbOnFill;
 export type { LightbulbOnFillProps };

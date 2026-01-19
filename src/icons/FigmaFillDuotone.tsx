@@ -17,4 +17,5 @@ FigmaFillDuotone.displayName = 'FigmaFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FigmaFillDuotone, FigmaFillDuotone as FigmaFillDuotoneIcon, FigmaFillDuotone as SiFigmaFillDuotone };
+export default FigmaFillDuotone;
 export type { FigmaFillDuotoneProps };

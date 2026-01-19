@@ -17,4 +17,5 @@ LayersSimpleBoldDuotone.displayName = 'LayersSimpleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayersSimpleBoldDuotone, LayersSimpleBoldDuotone as LayersSimpleBoldDuotoneIcon, LayersSimpleBoldDuotone as SiLayersSimpleBoldDuotone };
+export default LayersSimpleBoldDuotone;
 export type { LayersSimpleBoldDuotoneProps };

@@ -17,4 +17,5 @@ TagBold.displayName = 'TagBold';
 
 // Triple export pattern (lucide-react style)
 export { TagBold, TagBold as TagBoldIcon, TagBold as SiTagBold };
+export default TagBold;
 export type { TagBoldProps };

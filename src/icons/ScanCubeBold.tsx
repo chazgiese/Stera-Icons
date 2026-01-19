@@ -18,4 +18,5 @@ ScanCubeBold.displayName = 'ScanCubeBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanCubeBold, ScanCubeBold as ScanCubeBoldIcon, ScanCubeBold as SiScanCubeBold };
+export default ScanCubeBold;
 export type { ScanCubeBoldProps };

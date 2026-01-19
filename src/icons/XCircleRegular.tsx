@@ -17,4 +17,5 @@ XCircleRegular.displayName = 'XCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { XCircleRegular, XCircleRegular as XCircleRegularIcon, XCircleRegular as SiXCircleRegular };
+export default XCircleRegular;
 export type { XCircleRegularProps };

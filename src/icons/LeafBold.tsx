@@ -16,4 +16,5 @@ LeafBold.displayName = 'LeafBold';
 
 // Triple export pattern (lucide-react style)
 export { LeafBold, LeafBold as LeafBoldIcon, LeafBold as SiLeafBold };
+export default LeafBold;
 export type { LeafBoldProps };

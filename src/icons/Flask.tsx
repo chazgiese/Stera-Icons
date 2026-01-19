@@ -35,3 +35,4 @@ Flask.displayName = 'Flask';
 
 // Triple export pattern (lucide-react style)
 export { Flask, Flask as FlaskIcon, Flask as SiFlask };
+export default Flask;

@@ -17,4 +17,5 @@ FlashlightRegular.displayName = 'FlashlightRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlashlightRegular, FlashlightRegular as FlashlightRegularIcon, FlashlightRegular as SiFlashlightRegular };
+export default FlashlightRegular;
 export type { FlashlightRegularProps };

@@ -16,4 +16,5 @@ CursorTextAltFill.displayName = 'CursorTextAltFill';
 
 // Triple export pattern (lucide-react style)
 export { CursorTextAltFill, CursorTextAltFill as CursorTextAltFillIcon, CursorTextAltFill as SiCursorTextAltFill };
+export default CursorTextAltFill;
 export type { CursorTextAltFillProps };

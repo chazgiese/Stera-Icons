@@ -35,3 +35,4 @@ Matcha.displayName = 'Matcha';
 
 // Triple export pattern (lucide-react style)
 export { Matcha, Matcha as MatchaIcon, Matcha as SiMatcha };
+export default Matcha;

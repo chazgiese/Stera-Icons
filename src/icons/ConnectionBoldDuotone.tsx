@@ -17,4 +17,5 @@ ConnectionBoldDuotone.displayName = 'ConnectionBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionBoldDuotone, ConnectionBoldDuotone as ConnectionBoldDuotoneIcon, ConnectionBoldDuotone as SiConnectionBoldDuotone };
+export default ConnectionBoldDuotone;
 export type { ConnectionBoldDuotoneProps };

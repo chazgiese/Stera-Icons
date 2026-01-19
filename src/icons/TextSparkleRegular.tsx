@@ -16,4 +16,5 @@ TextSparkleRegular.displayName = 'TextSparkleRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextSparkleRegular, TextSparkleRegular as TextSparkleRegularIcon, TextSparkleRegular as SiTextSparkleRegular };
+export default TextSparkleRegular;
 export type { TextSparkleRegularProps };

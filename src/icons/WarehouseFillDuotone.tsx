@@ -18,4 +18,5 @@ WarehouseFillDuotone.displayName = 'WarehouseFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WarehouseFillDuotone, WarehouseFillDuotone as WarehouseFillDuotoneIcon, WarehouseFillDuotone as SiWarehouseFillDuotone };
+export default WarehouseFillDuotone;
 export type { WarehouseFillDuotoneProps };

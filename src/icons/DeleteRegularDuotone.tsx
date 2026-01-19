@@ -17,4 +17,5 @@ DeleteRegularDuotone.displayName = 'DeleteRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DeleteRegularDuotone, DeleteRegularDuotone as DeleteRegularDuotoneIcon, DeleteRegularDuotone as SiDeleteRegularDuotone };
+export default DeleteRegularDuotone;
 export type { DeleteRegularDuotoneProps };

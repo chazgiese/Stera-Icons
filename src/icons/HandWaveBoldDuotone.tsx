@@ -17,4 +17,5 @@ HandWaveBoldDuotone.displayName = 'HandWaveBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HandWaveBoldDuotone, HandWaveBoldDuotone as HandWaveBoldDuotoneIcon, HandWaveBoldDuotone as SiHandWaveBoldDuotone };
+export default HandWaveBoldDuotone;
 export type { HandWaveBoldDuotoneProps };

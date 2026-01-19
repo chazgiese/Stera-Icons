@@ -17,4 +17,5 @@ MedicalCrossRegularDuotone.displayName = 'MedicalCrossRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MedicalCrossRegularDuotone, MedicalCrossRegularDuotone as MedicalCrossRegularDuotoneIcon, MedicalCrossRegularDuotone as SiMedicalCrossRegularDuotone };
+export default MedicalCrossRegularDuotone;
 export type { MedicalCrossRegularDuotoneProps };

@@ -16,4 +16,5 @@ RectangleBold.displayName = 'RectangleBold';
 
 // Triple export pattern (lucide-react style)
 export { RectangleBold, RectangleBold as RectangleBoldIcon, RectangleBold as SiRectangleBold };
+export default RectangleBold;
 export type { RectangleBoldProps };

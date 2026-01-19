@@ -16,4 +16,5 @@ TriangleFill.displayName = 'TriangleFill';
 
 // Triple export pattern (lucide-react style)
 export { TriangleFill, TriangleFill as TriangleFillIcon, TriangleFill as SiTriangleFill };
+export default TriangleFill;
 export type { TriangleFillProps };

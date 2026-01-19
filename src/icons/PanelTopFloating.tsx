@@ -35,3 +35,4 @@ PanelTopFloating.displayName = 'PanelTopFloating';
 
 // Triple export pattern (lucide-react style)
 export { PanelTopFloating, PanelTopFloating as PanelTopFloatingIcon, PanelTopFloating as SiPanelTopFloating };
+export default PanelTopFloating;

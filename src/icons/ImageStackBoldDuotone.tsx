@@ -18,4 +18,5 @@ ImageStackBoldDuotone.displayName = 'ImageStackBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImageStackBoldDuotone, ImageStackBoldDuotone as ImageStackBoldDuotoneIcon, ImageStackBoldDuotone as SiImageStackBoldDuotone };
+export default ImageStackBoldDuotone;
 export type { ImageStackBoldDuotoneProps };

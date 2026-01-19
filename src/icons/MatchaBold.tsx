@@ -16,4 +16,5 @@ MatchaBold.displayName = 'MatchaBold';
 
 // Triple export pattern (lucide-react style)
 export { MatchaBold, MatchaBold as MatchaBoldIcon, MatchaBold as SiMatchaBold };
+export default MatchaBold;
 export type { MatchaBoldProps };

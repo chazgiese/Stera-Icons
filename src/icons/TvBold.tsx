@@ -16,4 +16,5 @@ TvBold.displayName = 'TvBold';
 
 // Triple export pattern (lucide-react style)
 export { TvBold, TvBold as TvBoldIcon, TvBold as SiTvBold };
+export default TvBold;
 export type { TvBoldProps };

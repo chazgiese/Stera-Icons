@@ -16,4 +16,5 @@ StairsBold.displayName = 'StairsBold';
 
 // Triple export pattern (lucide-react style)
 export { StairsBold, StairsBold as StairsBoldIcon, StairsBold as SiStairsBold };
+export default StairsBold;
 export type { StairsBoldProps };

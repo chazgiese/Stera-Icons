@@ -17,4 +17,5 @@ ChatMessagesBoldDuotone.displayName = 'ChatMessagesBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessagesBoldDuotone, ChatMessagesBoldDuotone as ChatMessagesBoldDuotoneIcon, ChatMessagesBoldDuotone as SiChatMessagesBoldDuotone };
+export default ChatMessagesBoldDuotone;
 export type { ChatMessagesBoldDuotoneProps };

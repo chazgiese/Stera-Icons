@@ -16,4 +16,5 @@ SpeakerOffFill.displayName = 'SpeakerOffFill';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerOffFill, SpeakerOffFill as SpeakerOffFillIcon, SpeakerOffFill as SiSpeakerOffFill };
+export default SpeakerOffFill;
 export type { SpeakerOffFillProps };

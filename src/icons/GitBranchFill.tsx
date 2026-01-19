@@ -16,4 +16,5 @@ GitBranchFill.displayName = 'GitBranchFill';
 
 // Triple export pattern (lucide-react style)
 export { GitBranchFill, GitBranchFill as GitBranchFillIcon, GitBranchFill as SiGitBranchFill };
+export default GitBranchFill;
 export type { GitBranchFillProps };

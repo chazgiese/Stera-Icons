@@ -17,4 +17,5 @@ TextItalicBoldDuotone.displayName = 'TextItalicBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextItalicBoldDuotone, TextItalicBoldDuotone as TextItalicBoldDuotoneIcon, TextItalicBoldDuotone as SiTextItalicBoldDuotone };
+export default TextItalicBoldDuotone;
 export type { TextItalicBoldDuotoneProps };

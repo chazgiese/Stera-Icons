@@ -17,4 +17,5 @@ XSquareBold.displayName = 'XSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { XSquareBold, XSquareBold as XSquareBoldIcon, XSquareBold as SiXSquareBold };
+export default XSquareBold;
 export type { XSquareBoldProps };

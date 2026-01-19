@@ -35,3 +35,4 @@ Hash.displayName = 'Hash';
 
 // Triple export pattern (lucide-react style)
 export { Hash, Hash as HashIcon, Hash as SiHash };
+export default Hash;

@@ -16,4 +16,5 @@ FigmaRegular.displayName = 'FigmaRegular';
 
 // Triple export pattern (lucide-react style)
 export { FigmaRegular, FigmaRegular as FigmaRegularIcon, FigmaRegular as SiFigmaRegular };
+export default FigmaRegular;
 export type { FigmaRegularProps };

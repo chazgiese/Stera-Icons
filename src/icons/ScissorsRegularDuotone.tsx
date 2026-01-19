@@ -18,4 +18,5 @@ ScissorsRegularDuotone.displayName = 'ScissorsRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsRegularDuotone, ScissorsRegularDuotone as ScissorsRegularDuotoneIcon, ScissorsRegularDuotone as SiScissorsRegularDuotone };
+export default ScissorsRegularDuotone;
 export type { ScissorsRegularDuotoneProps };

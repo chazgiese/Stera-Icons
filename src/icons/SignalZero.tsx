@@ -35,3 +35,4 @@ SignalZero.displayName = 'SignalZero';
 
 // Triple export pattern (lucide-react style)
 export { SignalZero, SignalZero as SignalZeroIcon, SignalZero as SiSignalZero };
+export default SignalZero;

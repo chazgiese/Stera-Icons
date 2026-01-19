@@ -17,4 +17,5 @@ CursorBoldDuotone.displayName = 'CursorBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CursorBoldDuotone, CursorBoldDuotone as CursorBoldDuotoneIcon, CursorBoldDuotone as SiCursorBoldDuotone };
+export default CursorBoldDuotone;
 export type { CursorBoldDuotoneProps };

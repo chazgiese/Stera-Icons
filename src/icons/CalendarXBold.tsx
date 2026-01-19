@@ -17,4 +17,5 @@ CalendarXBold.displayName = 'CalendarXBold';
 
 // Triple export pattern (lucide-react style)
 export { CalendarXBold, CalendarXBold as CalendarXBoldIcon, CalendarXBold as SiCalendarXBold };
+export default CalendarXBold;
 export type { CalendarXBoldProps };

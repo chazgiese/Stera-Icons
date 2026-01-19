@@ -17,4 +17,5 @@ ImageStackBold.displayName = 'ImageStackBold';
 
 // Triple export pattern (lucide-react style)
 export { ImageStackBold, ImageStackBold as ImageStackBoldIcon, ImageStackBold as SiImageStackBold };
+export default ImageStackBold;
 export type { ImageStackBoldProps };

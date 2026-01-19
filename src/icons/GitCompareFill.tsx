@@ -16,4 +16,5 @@ GitCompareFill.displayName = 'GitCompareFill';
 
 // Triple export pattern (lucide-react style)
 export { GitCompareFill, GitCompareFill as GitCompareFillIcon, GitCompareFill as SiGitCompareFill };
+export default GitCompareFill;
 export type { GitCompareFillProps };

@@ -17,4 +17,5 @@ CalendarSlashBold.displayName = 'CalendarSlashBold';
 
 // Triple export pattern (lucide-react style)
 export { CalendarSlashBold, CalendarSlashBold as CalendarSlashBoldIcon, CalendarSlashBold as SiCalendarSlashBold };
+export default CalendarSlashBold;
 export type { CalendarSlashBoldProps };

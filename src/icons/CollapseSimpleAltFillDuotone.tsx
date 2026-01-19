@@ -17,4 +17,5 @@ CollapseSimpleAltFillDuotone.displayName = 'CollapseSimpleAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleAltFillDuotone, CollapseSimpleAltFillDuotone as CollapseSimpleAltFillDuotoneIcon, CollapseSimpleAltFillDuotone as SiCollapseSimpleAltFillDuotone };
+export default CollapseSimpleAltFillDuotone;
 export type { CollapseSimpleAltFillDuotoneProps };

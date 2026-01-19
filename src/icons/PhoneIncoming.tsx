@@ -35,3 +35,4 @@ PhoneIncoming.displayName = 'PhoneIncoming';
 
 // Triple export pattern (lucide-react style)
 export { PhoneIncoming, PhoneIncoming as PhoneIncomingIcon, PhoneIncoming as SiPhoneIncoming };
+export default PhoneIncoming;

@@ -17,4 +17,5 @@ RectangleDashedBoldDuotone.displayName = 'RectangleDashedBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RectangleDashedBoldDuotone, RectangleDashedBoldDuotone as RectangleDashedBoldDuotoneIcon, RectangleDashedBoldDuotone as SiRectangleDashedBoldDuotone };
+export default RectangleDashedBoldDuotone;
 export type { RectangleDashedBoldDuotoneProps };

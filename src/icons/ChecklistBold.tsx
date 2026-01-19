@@ -17,4 +17,5 @@ ChecklistBold.displayName = 'ChecklistBold';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistBold, ChecklistBold as ChecklistBoldIcon, ChecklistBold as SiChecklistBold };
+export default ChecklistBold;
 export type { ChecklistBoldProps };

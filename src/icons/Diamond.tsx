@@ -35,3 +35,4 @@ Diamond.displayName = 'Diamond';
 
 // Triple export pattern (lucide-react style)
 export { Diamond, Diamond as DiamondIcon, Diamond as SiDiamond };
+export default Diamond;

@@ -16,4 +16,5 @@ CopyBold.displayName = 'CopyBold';
 
 // Triple export pattern (lucide-react style)
 export { CopyBold, CopyBold as CopyBoldIcon, CopyBold as SiCopyBold };
+export default CopyBold;
 export type { CopyBoldProps };

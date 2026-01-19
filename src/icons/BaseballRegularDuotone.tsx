@@ -17,4 +17,5 @@ BaseballRegularDuotone.displayName = 'BaseballRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BaseballRegularDuotone, BaseballRegularDuotone as BaseballRegularDuotoneIcon, BaseballRegularDuotone as SiBaseballRegularDuotone };
+export default BaseballRegularDuotone;
 export type { BaseballRegularDuotoneProps };

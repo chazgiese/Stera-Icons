@@ -17,4 +17,5 @@ ListExpandFillDuotone.displayName = 'ListExpandFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListExpandFillDuotone, ListExpandFillDuotone as ListExpandFillDuotoneIcon, ListExpandFillDuotone as SiListExpandFillDuotone };
+export default ListExpandFillDuotone;
 export type { ListExpandFillDuotoneProps };

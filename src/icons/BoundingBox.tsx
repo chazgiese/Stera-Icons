@@ -35,3 +35,4 @@ BoundingBox.displayName = 'BoundingBox';
 
 // Triple export pattern (lucide-react style)
 export { BoundingBox, BoundingBox as BoundingBoxIcon, BoundingBox as SiBoundingBox };
+export default BoundingBox;

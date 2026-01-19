@@ -35,3 +35,4 @@ BracketsCurlyCircle.displayName = 'BracketsCurlyCircle';
 
 // Triple export pattern (lucide-react style)
 export { BracketsCurlyCircle, BracketsCurlyCircle as BracketsCurlyCircleIcon, BracketsCurlyCircle as SiBracketsCurlyCircle };
+export default BracketsCurlyCircle;

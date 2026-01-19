@@ -16,4 +16,5 @@ PenBold.displayName = 'PenBold';
 
 // Triple export pattern (lucide-react style)
 export { PenBold, PenBold as PenBoldIcon, PenBold as SiPenBold };
+export default PenBold;
 export type { PenBoldProps };

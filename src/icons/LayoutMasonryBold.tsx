@@ -16,4 +16,5 @@ LayoutMasonryBold.displayName = 'LayoutMasonryBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutMasonryBold, LayoutMasonryBold as LayoutMasonryBoldIcon, LayoutMasonryBold as SiLayoutMasonryBold };
+export default LayoutMasonryBold;
 export type { LayoutMasonryBoldProps };

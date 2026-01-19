@@ -17,4 +17,5 @@ NoteTextRegular.displayName = 'NoteTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { NoteTextRegular, NoteTextRegular as NoteTextRegularIcon, NoteTextRegular as SiNoteTextRegular };
+export default NoteTextRegular;
 export type { NoteTextRegularProps };

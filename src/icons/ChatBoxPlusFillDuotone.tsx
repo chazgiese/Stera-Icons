@@ -17,4 +17,5 @@ ChatBoxPlusFillDuotone.displayName = 'ChatBoxPlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxPlusFillDuotone, ChatBoxPlusFillDuotone as ChatBoxPlusFillDuotoneIcon, ChatBoxPlusFillDuotone as SiChatBoxPlusFillDuotone };
+export default ChatBoxPlusFillDuotone;
 export type { ChatBoxPlusFillDuotoneProps };

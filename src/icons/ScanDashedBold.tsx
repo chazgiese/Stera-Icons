@@ -16,4 +16,5 @@ ScanDashedBold.displayName = 'ScanDashedBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanDashedBold, ScanDashedBold as ScanDashedBoldIcon, ScanDashedBold as SiScanDashedBold };
+export default ScanDashedBold;
 export type { ScanDashedBoldProps };

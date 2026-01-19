@@ -17,4 +17,5 @@ GaugeLines66PercentRegularDuotone.displayName = 'GaugeLines66PercentRegularDuoto
 
 // Triple export pattern (lucide-react style)
 export { GaugeLines66PercentRegularDuotone, GaugeLines66PercentRegularDuotone as GaugeLines66PercentRegularDuotoneIcon, GaugeLines66PercentRegularDuotone as SiGaugeLines66PercentRegularDuotone };
+export default GaugeLines66PercentRegularDuotone;
 export type { GaugeLines66PercentRegularDuotoneProps };

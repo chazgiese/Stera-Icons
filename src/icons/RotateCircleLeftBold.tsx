@@ -17,4 +17,5 @@ RotateCircleLeftBold.displayName = 'RotateCircleLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { RotateCircleLeftBold, RotateCircleLeftBold as RotateCircleLeftBoldIcon, RotateCircleLeftBold as SiRotateCircleLeftBold };
+export default RotateCircleLeftBold;
 export type { RotateCircleLeftBoldProps };

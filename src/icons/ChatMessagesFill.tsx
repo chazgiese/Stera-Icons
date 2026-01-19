@@ -16,4 +16,5 @@ ChatMessagesFill.displayName = 'ChatMessagesFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessagesFill, ChatMessagesFill as ChatMessagesFillIcon, ChatMessagesFill as SiChatMessagesFill };
+export default ChatMessagesFill;
 export type { ChatMessagesFillProps };

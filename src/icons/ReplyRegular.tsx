@@ -16,4 +16,5 @@ ReplyRegular.displayName = 'ReplyRegular';
 
 // Triple export pattern (lucide-react style)
 export { ReplyRegular, ReplyRegular as ReplyRegularIcon, ReplyRegular as SiReplyRegular };
+export default ReplyRegular;
 export type { ReplyRegularProps };

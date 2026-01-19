@@ -17,4 +17,5 @@ ChartLineFillDuotone.displayName = 'ChartLineFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineFillDuotone, ChartLineFillDuotone as ChartLineFillDuotoneIcon, ChartLineFillDuotone as SiChartLineFillDuotone };
+export default ChartLineFillDuotone;
 export type { ChartLineFillDuotoneProps };

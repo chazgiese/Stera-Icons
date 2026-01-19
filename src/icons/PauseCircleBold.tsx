@@ -17,4 +17,5 @@ PauseCircleBold.displayName = 'PauseCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { PauseCircleBold, PauseCircleBold as PauseCircleBoldIcon, PauseCircleBold as SiPauseCircleBold };
+export default PauseCircleBold;
 export type { PauseCircleBoldProps };

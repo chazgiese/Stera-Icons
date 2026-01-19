@@ -16,4 +16,5 @@ ContactBookFill.displayName = 'ContactBookFill';
 
 // Triple export pattern (lucide-react style)
 export { ContactBookFill, ContactBookFill as ContactBookFillIcon, ContactBookFill as SiContactBookFill };
+export default ContactBookFill;
 export type { ContactBookFillProps };

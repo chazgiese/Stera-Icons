@@ -16,4 +16,5 @@ PaintPaletteFill.displayName = 'PaintPaletteFill';
 
 // Triple export pattern (lucide-react style)
 export { PaintPaletteFill, PaintPaletteFill as PaintPaletteFillIcon, PaintPaletteFill as SiPaintPaletteFill };
+export default PaintPaletteFill;
 export type { PaintPaletteFillProps };

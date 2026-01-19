@@ -35,3 +35,4 @@ PencilLine.displayName = 'PencilLine';
 
 // Triple export pattern (lucide-react style)
 export { PencilLine, PencilLine as PencilLineIcon, PencilLine as SiPencilLine };
+export default PencilLine;

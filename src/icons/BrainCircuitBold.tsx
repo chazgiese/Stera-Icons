@@ -16,4 +16,5 @@ BrainCircuitBold.displayName = 'BrainCircuitBold';
 
 // Triple export pattern (lucide-react style)
 export { BrainCircuitBold, BrainCircuitBold as BrainCircuitBoldIcon, BrainCircuitBold as SiBrainCircuitBold };
+export default BrainCircuitBold;
 export type { BrainCircuitBoldProps };

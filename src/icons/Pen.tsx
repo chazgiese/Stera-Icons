@@ -35,3 +35,4 @@ Pen.displayName = 'Pen';
 
 // Triple export pattern (lucide-react style)
 export { Pen, Pen as PenIcon, Pen as SiPen };
+export default Pen;

@@ -35,3 +35,4 @@ TextAlignJustify.displayName = 'TextAlignJustify';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignJustify, TextAlignJustify as TextAlignJustifyIcon, TextAlignJustify as SiTextAlignJustify };
+export default TextAlignJustify;

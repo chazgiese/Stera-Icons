@@ -17,4 +17,5 @@ HomePlusBold.displayName = 'HomePlusBold';
 
 // Triple export pattern (lucide-react style)
 export { HomePlusBold, HomePlusBold as HomePlusBoldIcon, HomePlusBold as SiHomePlusBold };
+export default HomePlusBold;
 export type { HomePlusBoldProps };

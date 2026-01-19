@@ -17,4 +17,5 @@ CurrencyDollarRegularDuotone.displayName = 'CurrencyDollarRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyDollarRegularDuotone, CurrencyDollarRegularDuotone as CurrencyDollarRegularDuotoneIcon, CurrencyDollarRegularDuotone as SiCurrencyDollarRegularDuotone };
+export default CurrencyDollarRegularDuotone;
 export type { CurrencyDollarRegularDuotoneProps };

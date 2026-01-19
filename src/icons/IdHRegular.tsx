@@ -18,4 +18,5 @@ IdHRegular.displayName = 'IdHRegular';
 
 // Triple export pattern (lucide-react style)
 export { IdHRegular, IdHRegular as IdHRegularIcon, IdHRegular as SiIdHRegular };
+export default IdHRegular;
 export type { IdHRegularProps };

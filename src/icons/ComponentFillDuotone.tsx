@@ -17,4 +17,5 @@ ComponentFillDuotone.displayName = 'ComponentFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ComponentFillDuotone, ComponentFillDuotone as ComponentFillDuotoneIcon, ComponentFillDuotone as SiComponentFillDuotone };
+export default ComponentFillDuotone;
 export type { ComponentFillDuotoneProps };

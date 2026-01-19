@@ -17,4 +17,5 @@ SignInAltBold.displayName = 'SignInAltBold';
 
 // Triple export pattern (lucide-react style)
 export { SignInAltBold, SignInAltBold as SignInAltBoldIcon, SignInAltBold as SiSignInAltBold };
+export default SignInAltBold;
 export type { SignInAltBoldProps };

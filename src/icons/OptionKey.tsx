@@ -35,3 +35,4 @@ OptionKey.displayName = 'OptionKey';
 
 // Triple export pattern (lucide-react style)
 export { OptionKey, OptionKey as OptionKeyIcon, OptionKey as SiOptionKey };
+export default OptionKey;

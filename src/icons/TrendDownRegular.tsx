@@ -16,4 +16,5 @@ TrendDownRegular.displayName = 'TrendDownRegular';
 
 // Triple export pattern (lucide-react style)
 export { TrendDownRegular, TrendDownRegular as TrendDownRegularIcon, TrendDownRegular as SiTrendDownRegular };
+export default TrendDownRegular;
 export type { TrendDownRegularProps };

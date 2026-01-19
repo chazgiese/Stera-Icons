@@ -16,4 +16,5 @@ CursorTextRegular.displayName = 'CursorTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { CursorTextRegular, CursorTextRegular as CursorTextRegularIcon, CursorTextRegular as SiCursorTextRegular };
+export default CursorTextRegular;
 export type { CursorTextRegularProps };

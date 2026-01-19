@@ -16,4 +16,5 @@ GithubBold.displayName = 'GithubBold';
 
 // Triple export pattern (lucide-react style)
 export { GithubBold, GithubBold as GithubBoldIcon, GithubBold as SiGithubBold };
+export default GithubBold;
 export type { GithubBoldProps };

@@ -16,4 +16,5 @@ WarehouseRegular.displayName = 'WarehouseRegular';
 
 // Triple export pattern (lucide-react style)
 export { WarehouseRegular, WarehouseRegular as WarehouseRegularIcon, WarehouseRegular as SiWarehouseRegular };
+export default WarehouseRegular;
 export type { WarehouseRegularProps };

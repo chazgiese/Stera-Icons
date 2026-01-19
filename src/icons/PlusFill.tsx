@@ -16,4 +16,5 @@ PlusFill.displayName = 'PlusFill';
 
 // Triple export pattern (lucide-react style)
 export { PlusFill, PlusFill as PlusFillIcon, PlusFill as SiPlusFill };
+export default PlusFill;
 export type { PlusFillProps };

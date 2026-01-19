@@ -17,4 +17,5 @@ VolleyballRegularDuotone.displayName = 'VolleyballRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { VolleyballRegularDuotone, VolleyballRegularDuotone as VolleyballRegularDuotoneIcon, VolleyballRegularDuotone as SiVolleyballRegularDuotone };
+export default VolleyballRegularDuotone;
 export type { VolleyballRegularDuotoneProps };

@@ -16,4 +16,5 @@ CurrencyEuroBold.displayName = 'CurrencyEuroBold';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyEuroBold, CurrencyEuroBold as CurrencyEuroBoldIcon, CurrencyEuroBold as SiCurrencyEuroBold };
+export default CurrencyEuroBold;
 export type { CurrencyEuroBoldProps };

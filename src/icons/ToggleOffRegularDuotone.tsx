@@ -17,4 +17,5 @@ ToggleOffRegularDuotone.displayName = 'ToggleOffRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOffRegularDuotone, ToggleOffRegularDuotone as ToggleOffRegularDuotoneIcon, ToggleOffRegularDuotone as SiToggleOffRegularDuotone };
+export default ToggleOffRegularDuotone;
 export type { ToggleOffRegularDuotoneProps };

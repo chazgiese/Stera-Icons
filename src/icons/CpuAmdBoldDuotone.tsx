@@ -17,4 +17,5 @@ CpuAmdBoldDuotone.displayName = 'CpuAmdBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CpuAmdBoldDuotone, CpuAmdBoldDuotone as CpuAmdBoldDuotoneIcon, CpuAmdBoldDuotone as SiCpuAmdBoldDuotone };
+export default CpuAmdBoldDuotone;
 export type { CpuAmdBoldDuotoneProps };

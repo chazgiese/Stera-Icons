@@ -35,3 +35,4 @@ Tv.displayName = 'Tv';
 
 // Triple export pattern (lucide-react style)
 export { Tv, Tv as TvIcon, Tv as SiTv };
+export default Tv;

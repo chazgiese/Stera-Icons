@@ -35,3 +35,4 @@ Compass.displayName = 'Compass';
 
 // Triple export pattern (lucide-react style)
 export { Compass, Compass as CompassIcon, Compass as SiCompass };
+export default Compass;

@@ -16,4 +16,5 @@ CliFill.displayName = 'CliFill';
 
 // Triple export pattern (lucide-react style)
 export { CliFill, CliFill as CliFillIcon, CliFill as SiCliFill };
+export default CliFill;
 export type { CliFillProps };

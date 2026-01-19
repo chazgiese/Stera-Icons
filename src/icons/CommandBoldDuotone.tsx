@@ -17,4 +17,5 @@ CommandBoldDuotone.displayName = 'CommandBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CommandBoldDuotone, CommandBoldDuotone as CommandBoldDuotoneIcon, CommandBoldDuotone as SiCommandBoldDuotone };
+export default CommandBoldDuotone;
 export type { CommandBoldDuotoneProps };

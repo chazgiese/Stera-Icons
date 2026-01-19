@@ -17,4 +17,5 @@ SpeakerFillDuotone.displayName = 'SpeakerFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerFillDuotone, SpeakerFillDuotone as SpeakerFillDuotoneIcon, SpeakerFillDuotone as SiSpeakerFillDuotone };
+export default SpeakerFillDuotone;
 export type { SpeakerFillDuotoneProps };

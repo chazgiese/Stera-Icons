@@ -35,3 +35,4 @@ AgentWorkflow.displayName = 'AgentWorkflow';
 
 // Triple export pattern (lucide-react style)
 export { AgentWorkflow, AgentWorkflow as AgentWorkflowIcon, AgentWorkflow as SiAgentWorkflow };
+export default AgentWorkflow;

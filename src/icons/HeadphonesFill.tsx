@@ -16,4 +16,5 @@ HeadphonesFill.displayName = 'HeadphonesFill';
 
 // Triple export pattern (lucide-react style)
 export { HeadphonesFill, HeadphonesFill as HeadphonesFillIcon, HeadphonesFill as SiHeadphonesFill };
+export default HeadphonesFill;
 export type { HeadphonesFillProps };

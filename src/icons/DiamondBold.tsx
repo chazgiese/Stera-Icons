@@ -16,4 +16,5 @@ DiamondBold.displayName = 'DiamondBold';
 
 // Triple export pattern (lucide-react style)
 export { DiamondBold, DiamondBold as DiamondBoldIcon, DiamondBold as SiDiamondBold };
+export default DiamondBold;
 export type { DiamondBoldProps };

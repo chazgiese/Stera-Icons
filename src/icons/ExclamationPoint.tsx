@@ -35,3 +35,4 @@ ExclamationPoint.displayName = 'ExclamationPoint';
 
 // Triple export pattern (lucide-react style)
 export { ExclamationPoint, ExclamationPoint as ExclamationPointIcon, ExclamationPoint as SiExclamationPoint };
+export default ExclamationPoint;

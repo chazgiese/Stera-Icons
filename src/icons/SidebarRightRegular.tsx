@@ -16,4 +16,5 @@ SidebarRightRegular.displayName = 'SidebarRightRegular';
 
 // Triple export pattern (lucide-react style)
 export { SidebarRightRegular, SidebarRightRegular as SidebarRightRegularIcon, SidebarRightRegular as SiSidebarRightRegular };
+export default SidebarRightRegular;
 export type { SidebarRightRegularProps };

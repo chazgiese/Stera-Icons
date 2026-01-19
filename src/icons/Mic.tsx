@@ -35,3 +35,4 @@ Mic.displayName = 'Mic';
 
 // Triple export pattern (lucide-react style)
 export { Mic, Mic as MicIcon, Mic as SiMic };
+export default Mic;

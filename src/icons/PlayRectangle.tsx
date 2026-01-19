@@ -35,3 +35,4 @@ PlayRectangle.displayName = 'PlayRectangle';
 
 // Triple export pattern (lucide-react style)
 export { PlayRectangle, PlayRectangle as PlayRectangleIcon, PlayRectangle as SiPlayRectangle };
+export default PlayRectangle;

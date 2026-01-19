@@ -16,4 +16,5 @@ LayoutGridBold.displayName = 'LayoutGridBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridBold, LayoutGridBold as LayoutGridBoldIcon, LayoutGridBold as SiLayoutGridBold };
+export default LayoutGridBold;
 export type { LayoutGridBoldProps };

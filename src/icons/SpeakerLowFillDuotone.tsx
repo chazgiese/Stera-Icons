@@ -17,4 +17,5 @@ SpeakerLowFillDuotone.displayName = 'SpeakerLowFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerLowFillDuotone, SpeakerLowFillDuotone as SpeakerLowFillDuotoneIcon, SpeakerLowFillDuotone as SiSpeakerLowFillDuotone };
+export default SpeakerLowFillDuotone;
 export type { SpeakerLowFillDuotoneProps };

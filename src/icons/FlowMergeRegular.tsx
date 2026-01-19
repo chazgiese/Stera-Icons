@@ -16,4 +16,5 @@ FlowMergeRegular.displayName = 'FlowMergeRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlowMergeRegular, FlowMergeRegular as FlowMergeRegularIcon, FlowMergeRegular as SiFlowMergeRegular };
+export default FlowMergeRegular;
 export type { FlowMergeRegularProps };

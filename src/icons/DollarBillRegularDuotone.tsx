@@ -19,4 +19,5 @@ DollarBillRegularDuotone.displayName = 'DollarBillRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DollarBillRegularDuotone, DollarBillRegularDuotone as DollarBillRegularDuotoneIcon, DollarBillRegularDuotone as SiDollarBillRegularDuotone };
+export default DollarBillRegularDuotone;
 export type { DollarBillRegularDuotoneProps };

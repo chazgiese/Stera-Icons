@@ -35,3 +35,4 @@ Shuffle.displayName = 'Shuffle';
 
 // Triple export pattern (lucide-react style)
 export { Shuffle, Shuffle as ShuffleIcon, Shuffle as SiShuffle };
+export default Shuffle;

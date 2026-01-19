@@ -17,4 +17,5 @@ AlignHorizontalCenterRegularDuotone.displayName = 'AlignHorizontalCenterRegularD
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalCenterRegularDuotone, AlignHorizontalCenterRegularDuotone as AlignHorizontalCenterRegularDuotoneIcon, AlignHorizontalCenterRegularDuotone as SiAlignHorizontalCenterRegularDuotone };
+export default AlignHorizontalCenterRegularDuotone;
 export type { AlignHorizontalCenterRegularDuotoneProps };

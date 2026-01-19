@@ -16,4 +16,5 @@ BagRegular.displayName = 'BagRegular';
 
 // Triple export pattern (lucide-react style)
 export { BagRegular, BagRegular as BagRegularIcon, BagRegular as SiBagRegular };
+export default BagRegular;
 export type { BagRegularProps };

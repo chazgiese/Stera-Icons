@@ -17,4 +17,5 @@ TennisBallBoldDuotone.displayName = 'TennisBallBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TennisBallBoldDuotone, TennisBallBoldDuotone as TennisBallBoldDuotoneIcon, TennisBallBoldDuotone as SiTennisBallBoldDuotone };
+export default TennisBallBoldDuotone;
 export type { TennisBallBoldDuotoneProps };

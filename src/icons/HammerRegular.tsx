@@ -16,4 +16,5 @@ HammerRegular.displayName = 'HammerRegular';
 
 // Triple export pattern (lucide-react style)
 export { HammerRegular, HammerRegular as HammerRegularIcon, HammerRegular as SiHammerRegular };
+export default HammerRegular;
 export type { HammerRegularProps };

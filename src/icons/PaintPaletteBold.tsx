@@ -17,4 +17,5 @@ PaintPaletteBold.displayName = 'PaintPaletteBold';
 
 // Triple export pattern (lucide-react style)
 export { PaintPaletteBold, PaintPaletteBold as PaintPaletteBoldIcon, PaintPaletteBold as SiPaintPaletteBold };
+export default PaintPaletteBold;
 export type { PaintPaletteBoldProps };

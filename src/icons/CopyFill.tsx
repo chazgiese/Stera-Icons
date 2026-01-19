@@ -16,4 +16,5 @@ CopyFill.displayName = 'CopyFill';
 
 // Triple export pattern (lucide-react style)
 export { CopyFill, CopyFill as CopyFillIcon, CopyFill as SiCopyFill };
+export default CopyFill;
 export type { CopyFillProps };

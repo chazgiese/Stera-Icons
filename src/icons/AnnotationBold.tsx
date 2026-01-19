@@ -18,4 +18,5 @@ AnnotationBold.displayName = 'AnnotationBold';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationBold, AnnotationBold as AnnotationBoldIcon, AnnotationBold as SiAnnotationBold };
+export default AnnotationBold;
 export type { AnnotationBoldProps };

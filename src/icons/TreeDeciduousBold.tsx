@@ -16,4 +16,5 @@ TreeDeciduousBold.displayName = 'TreeDeciduousBold';
 
 // Triple export pattern (lucide-react style)
 export { TreeDeciduousBold, TreeDeciduousBold as TreeDeciduousBoldIcon, TreeDeciduousBold as SiTreeDeciduousBold };
+export default TreeDeciduousBold;
 export type { TreeDeciduousBoldProps };

@@ -16,4 +16,5 @@ PanelsRightTopFill.displayName = 'PanelsRightTopFill';
 
 // Triple export pattern (lucide-react style)
 export { PanelsRightTopFill, PanelsRightTopFill as PanelsRightTopFillIcon, PanelsRightTopFill as SiPanelsRightTopFill };
+export default PanelsRightTopFill;
 export type { PanelsRightTopFillProps };

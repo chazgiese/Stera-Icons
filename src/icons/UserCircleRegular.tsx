@@ -16,4 +16,5 @@ UserCircleRegular.displayName = 'UserCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { UserCircleRegular, UserCircleRegular as UserCircleRegularIcon, UserCircleRegular as SiUserCircleRegular };
+export default UserCircleRegular;
 export type { UserCircleRegularProps };

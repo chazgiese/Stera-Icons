@@ -17,4 +17,5 @@ FlameRegularDuotone.displayName = 'FlameRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlameRegularDuotone, FlameRegularDuotone as FlameRegularDuotoneIcon, FlameRegularDuotone as SiFlameRegularDuotone };
+export default FlameRegularDuotone;
 export type { FlameRegularDuotoneProps };

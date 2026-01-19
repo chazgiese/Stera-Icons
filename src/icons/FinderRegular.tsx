@@ -17,4 +17,5 @@ FinderRegular.displayName = 'FinderRegular';
 
 // Triple export pattern (lucide-react style)
 export { FinderRegular, FinderRegular as FinderRegularIcon, FinderRegular as SiFinderRegular };
+export default FinderRegular;
 export type { FinderRegularProps };

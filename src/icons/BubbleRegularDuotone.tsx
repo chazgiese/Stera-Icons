@@ -17,4 +17,5 @@ BubbleRegularDuotone.displayName = 'BubbleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BubbleRegularDuotone, BubbleRegularDuotone as BubbleRegularDuotoneIcon, BubbleRegularDuotone as SiBubbleRegularDuotone };
+export default BubbleRegularDuotone;
 export type { BubbleRegularDuotoneProps };

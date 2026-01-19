@@ -17,4 +17,5 @@ MenuAltFillDuotone.displayName = 'MenuAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MenuAltFillDuotone, MenuAltFillDuotone as MenuAltFillDuotoneIcon, MenuAltFillDuotone as SiMenuAltFillDuotone };
+export default MenuAltFillDuotone;
 export type { MenuAltFillDuotoneProps };

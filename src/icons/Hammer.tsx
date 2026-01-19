@@ -35,3 +35,4 @@ Hammer.displayName = 'Hammer';
 
 // Triple export pattern (lucide-react style)
 export { Hammer, Hammer as HammerIcon, Hammer as SiHammer };
+export default Hammer;

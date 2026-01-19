@@ -17,4 +17,5 @@ HashSquareBold.displayName = 'HashSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { HashSquareBold, HashSquareBold as HashSquareBoldIcon, HashSquareBold as SiHashSquareBold };
+export default HashSquareBold;
 export type { HashSquareBoldProps };

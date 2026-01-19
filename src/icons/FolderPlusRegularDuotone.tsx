@@ -17,4 +17,5 @@ FolderPlusRegularDuotone.displayName = 'FolderPlusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FolderPlusRegularDuotone, FolderPlusRegularDuotone as FolderPlusRegularDuotoneIcon, FolderPlusRegularDuotone as SiFolderPlusRegularDuotone };
+export default FolderPlusRegularDuotone;
 export type { FolderPlusRegularDuotoneProps };

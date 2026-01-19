@@ -17,4 +17,5 @@ InfoSquareBold.displayName = 'InfoSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { InfoSquareBold, InfoSquareBold as InfoSquareBoldIcon, InfoSquareBold as SiInfoSquareBold };
+export default InfoSquareBold;
 export type { InfoSquareBoldProps };

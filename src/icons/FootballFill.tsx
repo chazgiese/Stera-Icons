@@ -16,4 +16,5 @@ FootballFill.displayName = 'FootballFill';
 
 // Triple export pattern (lucide-react style)
 export { FootballFill, FootballFill as FootballFillIcon, FootballFill as SiFootballFill };
+export default FootballFill;
 export type { FootballFillProps };

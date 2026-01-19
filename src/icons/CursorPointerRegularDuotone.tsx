@@ -17,4 +17,5 @@ CursorPointerRegularDuotone.displayName = 'CursorPointerRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CursorPointerRegularDuotone, CursorPointerRegularDuotone as CursorPointerRegularDuotoneIcon, CursorPointerRegularDuotone as SiCursorPointerRegularDuotone };
+export default CursorPointerRegularDuotone;
 export type { CursorPointerRegularDuotoneProps };

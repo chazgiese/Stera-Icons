@@ -17,4 +17,5 @@ BladeSwordBoldDuotone.displayName = 'BladeSwordBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BladeSwordBoldDuotone, BladeSwordBoldDuotone as BladeSwordBoldDuotoneIcon, BladeSwordBoldDuotone as SiBladeSwordBoldDuotone };
+export default BladeSwordBoldDuotone;
 export type { BladeSwordBoldDuotoneProps };

@@ -17,4 +17,5 @@ LineSegmentRegularDuotone.displayName = 'LineSegmentRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentRegularDuotone, LineSegmentRegularDuotone as LineSegmentRegularDuotoneIcon, LineSegmentRegularDuotone as SiLineSegmentRegularDuotone };
+export default LineSegmentRegularDuotone;
 export type { LineSegmentRegularDuotoneProps };

@@ -16,4 +16,5 @@ SignalHighBold.displayName = 'SignalHighBold';
 
 // Triple export pattern (lucide-react style)
 export { SignalHighBold, SignalHighBold as SignalHighBoldIcon, SignalHighBold as SiSignalHighBold };
+export default SignalHighBold;
 export type { SignalHighBoldProps };

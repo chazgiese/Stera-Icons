@@ -16,4 +16,5 @@ CoinRegular.displayName = 'CoinRegular';
 
 // Triple export pattern (lucide-react style)
 export { CoinRegular, CoinRegular as CoinRegularIcon, CoinRegular as SiCoinRegular };
+export default CoinRegular;
 export type { CoinRegularProps };

@@ -16,4 +16,5 @@ FigmaBold.displayName = 'FigmaBold';
 
 // Triple export pattern (lucide-react style)
 export { FigmaBold, FigmaBold as FigmaBoldIcon, FigmaBold as SiFigmaBold };
+export default FigmaBold;
 export type { FigmaBoldProps };

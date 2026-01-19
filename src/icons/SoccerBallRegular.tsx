@@ -16,4 +16,5 @@ SoccerBallRegular.displayName = 'SoccerBallRegular';
 
 // Triple export pattern (lucide-react style)
 export { SoccerBallRegular, SoccerBallRegular as SoccerBallRegularIcon, SoccerBallRegular as SiSoccerBallRegular };
+export default SoccerBallRegular;
 export type { SoccerBallRegularProps };

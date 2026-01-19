@@ -16,4 +16,5 @@ SoccerBallFill.displayName = 'SoccerBallFill';
 
 // Triple export pattern (lucide-react style)
 export { SoccerBallFill, SoccerBallFill as SoccerBallFillIcon, SoccerBallFill as SiSoccerBallFill };
+export default SoccerBallFill;
 export type { SoccerBallFillProps };

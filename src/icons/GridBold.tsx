@@ -16,4 +16,5 @@ GridBold.displayName = 'GridBold';
 
 // Triple export pattern (lucide-react style)
 export { GridBold, GridBold as GridBoldIcon, GridBold as SiGridBold };
+export default GridBold;
 export type { GridBoldProps };

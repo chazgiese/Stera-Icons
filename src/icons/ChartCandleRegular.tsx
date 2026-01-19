@@ -16,4 +16,5 @@ ChartCandleRegular.displayName = 'ChartCandleRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartCandleRegular, ChartCandleRegular as ChartCandleRegularIcon, ChartCandleRegular as SiChartCandleRegular };
+export default ChartCandleRegular;
 export type { ChartCandleRegularProps };

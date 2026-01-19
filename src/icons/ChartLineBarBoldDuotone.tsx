@@ -17,4 +17,5 @@ ChartLineBarBoldDuotone.displayName = 'ChartLineBarBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineBarBoldDuotone, ChartLineBarBoldDuotone as ChartLineBarBoldDuotoneIcon, ChartLineBarBoldDuotone as SiChartLineBarBoldDuotone };
+export default ChartLineBarBoldDuotone;
 export type { ChartLineBarBoldDuotoneProps };

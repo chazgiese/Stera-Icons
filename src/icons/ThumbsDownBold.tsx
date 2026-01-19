@@ -16,4 +16,5 @@ ThumbsDownBold.displayName = 'ThumbsDownBold';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsDownBold, ThumbsDownBold as ThumbsDownBoldIcon, ThumbsDownBold as SiThumbsDownBold };
+export default ThumbsDownBold;
 export type { ThumbsDownBoldProps };

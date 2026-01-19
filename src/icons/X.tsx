@@ -35,3 +35,4 @@ X.displayName = 'X';
 
 // Triple export pattern (lucide-react style)
 export { X, X as XIcon, X as SiX };
+export default X;

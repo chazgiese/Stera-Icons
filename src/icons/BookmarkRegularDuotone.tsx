@@ -17,4 +17,5 @@ BookmarkRegularDuotone.displayName = 'BookmarkRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BookmarkRegularDuotone, BookmarkRegularDuotone as BookmarkRegularDuotoneIcon, BookmarkRegularDuotone as SiBookmarkRegularDuotone };
+export default BookmarkRegularDuotone;
 export type { BookmarkRegularDuotoneProps };

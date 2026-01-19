@@ -17,4 +17,5 @@ CpuFillDuotone.displayName = 'CpuFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CpuFillDuotone, CpuFillDuotone as CpuFillDuotoneIcon, CpuFillDuotone as SiCpuFillDuotone };
+export default CpuFillDuotone;
 export type { CpuFillDuotoneProps };

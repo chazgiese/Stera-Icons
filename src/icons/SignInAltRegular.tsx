@@ -17,4 +17,5 @@ SignInAltRegular.displayName = 'SignInAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignInAltRegular, SignInAltRegular as SignInAltRegularIcon, SignInAltRegular as SiSignInAltRegular };
+export default SignInAltRegular;
 export type { SignInAltRegularProps };

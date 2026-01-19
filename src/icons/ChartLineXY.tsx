@@ -35,3 +35,4 @@ ChartLineXY.displayName = 'ChartLineXY';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineXY, ChartLineXY as ChartLineXYIcon, ChartLineXY as SiChartLineXY };
+export default ChartLineXY;

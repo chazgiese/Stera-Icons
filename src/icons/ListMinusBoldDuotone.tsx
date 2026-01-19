@@ -17,4 +17,5 @@ ListMinusBoldDuotone.displayName = 'ListMinusBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListMinusBoldDuotone, ListMinusBoldDuotone as ListMinusBoldDuotoneIcon, ListMinusBoldDuotone as SiListMinusBoldDuotone };
+export default ListMinusBoldDuotone;
 export type { ListMinusBoldDuotoneProps };

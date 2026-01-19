@@ -17,4 +17,5 @@ DevicePhoneRegular.displayName = 'DevicePhoneRegular';
 
 // Triple export pattern (lucide-react style)
 export { DevicePhoneRegular, DevicePhoneRegular as DevicePhoneRegularIcon, DevicePhoneRegular as SiDevicePhoneRegular };
+export default DevicePhoneRegular;
 export type { DevicePhoneRegularProps };

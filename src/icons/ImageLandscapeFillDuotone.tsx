@@ -21,4 +21,5 @@ ImageLandscapeFillDuotone.displayName = 'ImageLandscapeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscapeFillDuotone, ImageLandscapeFillDuotone as ImageLandscapeFillDuotoneIcon, ImageLandscapeFillDuotone as SiImageLandscapeFillDuotone };
+export default ImageLandscapeFillDuotone;
 export type { ImageLandscapeFillDuotoneProps };

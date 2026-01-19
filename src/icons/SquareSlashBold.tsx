@@ -16,4 +16,5 @@ SquareSlashBold.displayName = 'SquareSlashBold';
 
 // Triple export pattern (lucide-react style)
 export { SquareSlashBold, SquareSlashBold as SquareSlashBoldIcon, SquareSlashBold as SiSquareSlashBold };
+export default SquareSlashBold;
 export type { SquareSlashBoldProps };

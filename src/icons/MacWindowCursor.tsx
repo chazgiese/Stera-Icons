@@ -35,3 +35,4 @@ MacWindowCursor.displayName = 'MacWindowCursor';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowCursor, MacWindowCursor as MacWindowCursorIcon, MacWindowCursor as SiMacWindowCursor };
+export default MacWindowCursor;

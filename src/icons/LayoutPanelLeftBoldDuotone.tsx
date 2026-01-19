@@ -17,4 +17,5 @@ LayoutPanelLeftBoldDuotone.displayName = 'LayoutPanelLeftBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelLeftBoldDuotone, LayoutPanelLeftBoldDuotone as LayoutPanelLeftBoldDuotoneIcon, LayoutPanelLeftBoldDuotone as SiLayoutPanelLeftBoldDuotone };
+export default LayoutPanelLeftBoldDuotone;
 export type { LayoutPanelLeftBoldDuotoneProps };

@@ -18,4 +18,5 @@ FinderFillDuotone.displayName = 'FinderFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FinderFillDuotone, FinderFillDuotone as FinderFillDuotoneIcon, FinderFillDuotone as SiFinderFillDuotone };
+export default FinderFillDuotone;
 export type { FinderFillDuotoneProps };

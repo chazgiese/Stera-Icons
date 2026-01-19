@@ -18,4 +18,5 @@ CalendarMinusRegularDuotone.displayName = 'CalendarMinusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalendarMinusRegularDuotone, CalendarMinusRegularDuotone as CalendarMinusRegularDuotoneIcon, CalendarMinusRegularDuotone as SiCalendarMinusRegularDuotone };
+export default CalendarMinusRegularDuotone;
 export type { CalendarMinusRegularDuotoneProps };

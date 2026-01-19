@@ -16,4 +16,5 @@ BluetoothBold.displayName = 'BluetoothBold';
 
 // Triple export pattern (lucide-react style)
 export { BluetoothBold, BluetoothBold as BluetoothBoldIcon, BluetoothBold as SiBluetoothBold };
+export default BluetoothBold;
 export type { BluetoothBoldProps };

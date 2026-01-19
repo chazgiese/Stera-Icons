@@ -17,4 +17,5 @@ ExpandBoldDuotone.displayName = 'ExpandBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ExpandBoldDuotone, ExpandBoldDuotone as ExpandBoldDuotoneIcon, ExpandBoldDuotone as SiExpandBoldDuotone };
+export default ExpandBoldDuotone;
 export type { ExpandBoldDuotoneProps };

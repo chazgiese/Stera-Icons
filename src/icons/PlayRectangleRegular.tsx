@@ -17,4 +17,5 @@ PlayRectangleRegular.displayName = 'PlayRectangleRegular';
 
 // Triple export pattern (lucide-react style)
 export { PlayRectangleRegular, PlayRectangleRegular as PlayRectangleRegularIcon, PlayRectangleRegular as SiPlayRectangleRegular };
+export default PlayRectangleRegular;
 export type { PlayRectangleRegularProps };

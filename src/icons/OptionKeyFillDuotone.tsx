@@ -17,4 +17,5 @@ OptionKeyFillDuotone.displayName = 'OptionKeyFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { OptionKeyFillDuotone, OptionKeyFillDuotone as OptionKeyFillDuotoneIcon, OptionKeyFillDuotone as SiOptionKeyFillDuotone };
+export default OptionKeyFillDuotone;
 export type { OptionKeyFillDuotoneProps };

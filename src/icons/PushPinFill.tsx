@@ -16,4 +16,5 @@ PushPinFill.displayName = 'PushPinFill';
 
 // Triple export pattern (lucide-react style)
 export { PushPinFill, PushPinFill as PushPinFillIcon, PushPinFill as SiPushPinFill };
+export default PushPinFill;
 export type { PushPinFillProps };

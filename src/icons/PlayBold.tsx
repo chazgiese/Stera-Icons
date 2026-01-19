@@ -16,4 +16,5 @@ PlayBold.displayName = 'PlayBold';
 
 // Triple export pattern (lucide-react style)
 export { PlayBold, PlayBold as PlayBoldIcon, PlayBold as SiPlayBold };
+export default PlayBold;
 export type { PlayBoldProps };

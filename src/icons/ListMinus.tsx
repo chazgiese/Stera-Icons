@@ -35,3 +35,4 @@ ListMinus.displayName = 'ListMinus';
 
 // Triple export pattern (lucide-react style)
 export { ListMinus, ListMinus as ListMinusIcon, ListMinus as SiListMinus };
+export default ListMinus;

@@ -17,4 +17,5 @@ TextUnderlineFillDuotone.displayName = 'TextUnderlineFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextUnderlineFillDuotone, TextUnderlineFillDuotone as TextUnderlineFillDuotoneIcon, TextUnderlineFillDuotone as SiTextUnderlineFillDuotone };
+export default TextUnderlineFillDuotone;
 export type { TextUnderlineFillDuotoneProps };

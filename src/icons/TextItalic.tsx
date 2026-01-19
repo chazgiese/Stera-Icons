@@ -35,3 +35,4 @@ TextItalic.displayName = 'TextItalic';
 
 // Triple export pattern (lucide-react style)
 export { TextItalic, TextItalic as TextItalicIcon, TextItalic as SiTextItalic };
+export default TextItalic;

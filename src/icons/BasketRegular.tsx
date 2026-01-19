@@ -17,4 +17,5 @@ BasketRegular.displayName = 'BasketRegular';
 
 // Triple export pattern (lucide-react style)
 export { BasketRegular, BasketRegular as BasketRegularIcon, BasketRegular as SiBasketRegular };
+export default BasketRegular;
 export type { BasketRegularProps };

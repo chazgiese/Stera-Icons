@@ -35,3 +35,4 @@ ListExpand.displayName = 'ListExpand';
 
 // Triple export pattern (lucide-react style)
 export { ListExpand, ListExpand as ListExpandIcon, ListExpand as SiListExpand };
+export default ListExpand;

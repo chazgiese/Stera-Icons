@@ -16,4 +16,5 @@ ImagePileFill.displayName = 'ImagePileFill';
 
 // Triple export pattern (lucide-react style)
 export { ImagePileFill, ImagePileFill as ImagePileFillIcon, ImagePileFill as SiImagePileFill };
+export default ImagePileFill;
 export type { ImagePileFillProps };

@@ -16,4 +16,5 @@ MoreVRegularDuotone.displayName = 'MoreVRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreVRegularDuotone, MoreVRegularDuotone as MoreVRegularDuotoneIcon, MoreVRegularDuotone as SiMoreVRegularDuotone };
+export default MoreVRegularDuotone;
 export type { MoreVRegularDuotoneProps };

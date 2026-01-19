@@ -16,4 +16,5 @@ CollapseSimpleAltFill.displayName = 'CollapseSimpleAltFill';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleAltFill, CollapseSimpleAltFill as CollapseSimpleAltFillIcon, CollapseSimpleAltFill as SiCollapseSimpleAltFill };
+export default CollapseSimpleAltFill;
 export type { CollapseSimpleAltFillProps };

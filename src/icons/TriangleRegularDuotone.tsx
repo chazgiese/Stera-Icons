@@ -17,4 +17,5 @@ TriangleRegularDuotone.displayName = 'TriangleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TriangleRegularDuotone, TriangleRegularDuotone as TriangleRegularDuotoneIcon, TriangleRegularDuotone as SiTriangleRegularDuotone };
+export default TriangleRegularDuotone;
 export type { TriangleRegularDuotoneProps };

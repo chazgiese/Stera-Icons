@@ -17,4 +17,5 @@ CircleDashRegularDuotone.displayName = 'CircleDashRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleDashRegularDuotone, CircleDashRegularDuotone as CircleDashRegularDuotoneIcon, CircleDashRegularDuotone as SiCircleDashRegularDuotone };
+export default CircleDashRegularDuotone;
 export type { CircleDashRegularDuotoneProps };

@@ -16,4 +16,5 @@ CanFill.displayName = 'CanFill';
 
 // Triple export pattern (lucide-react style)
 export { CanFill, CanFill as CanFillIcon, CanFill as SiCanFill };
+export default CanFill;
 export type { CanFillProps };

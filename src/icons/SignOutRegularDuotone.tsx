@@ -17,4 +17,5 @@ SignOutRegularDuotone.displayName = 'SignOutRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignOutRegularDuotone, SignOutRegularDuotone as SignOutRegularDuotoneIcon, SignOutRegularDuotone as SiSignOutRegularDuotone };
+export default SignOutRegularDuotone;
 export type { SignOutRegularDuotoneProps };

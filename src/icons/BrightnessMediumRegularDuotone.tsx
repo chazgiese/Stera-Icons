@@ -17,4 +17,5 @@ BrightnessMediumRegularDuotone.displayName = 'BrightnessMediumRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessMediumRegularDuotone, BrightnessMediumRegularDuotone as BrightnessMediumRegularDuotoneIcon, BrightnessMediumRegularDuotone as SiBrightnessMediumRegularDuotone };
+export default BrightnessMediumRegularDuotone;
 export type { BrightnessMediumRegularDuotoneProps };

@@ -17,4 +17,5 @@ ChatBoxAlertRegular.displayName = 'ChatBoxAlertRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxAlertRegular, ChatBoxAlertRegular as ChatBoxAlertRegularIcon, ChatBoxAlertRegular as SiChatBoxAlertRegular };
+export default ChatBoxAlertRegular;
 export type { ChatBoxAlertRegularProps };

@@ -17,4 +17,5 @@ UsersThreeBoldDuotone.displayName = 'UsersThreeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UsersThreeBoldDuotone, UsersThreeBoldDuotone as UsersThreeBoldDuotoneIcon, UsersThreeBoldDuotone as SiUsersThreeBoldDuotone };
+export default UsersThreeBoldDuotone;
 export type { UsersThreeBoldDuotoneProps };

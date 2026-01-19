@@ -16,4 +16,5 @@ CupBold.displayName = 'CupBold';
 
 // Triple export pattern (lucide-react style)
 export { CupBold, CupBold as CupBoldIcon, CupBold as SiCupBold };
+export default CupBold;
 export type { CupBoldProps };

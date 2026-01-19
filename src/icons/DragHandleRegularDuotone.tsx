@@ -17,4 +17,5 @@ DragHandleRegularDuotone.displayName = 'DragHandleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DragHandleRegularDuotone, DragHandleRegularDuotone as DragHandleRegularDuotoneIcon, DragHandleRegularDuotone as SiDragHandleRegularDuotone };
+export default DragHandleRegularDuotone;
 export type { DragHandleRegularDuotoneProps };

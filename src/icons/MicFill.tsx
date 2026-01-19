@@ -17,4 +17,5 @@ MicFill.displayName = 'MicFill';
 
 // Triple export pattern (lucide-react style)
 export { MicFill, MicFill as MicFillIcon, MicFill as SiMicFill };
+export default MicFill;
 export type { MicFillProps };

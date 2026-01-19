@@ -17,4 +17,5 @@ LabelBoldDuotone.displayName = 'LabelBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LabelBoldDuotone, LabelBoldDuotone as LabelBoldDuotoneIcon, LabelBoldDuotone as SiLabelBoldDuotone };
+export default LabelBoldDuotone;
 export type { LabelBoldDuotoneProps };

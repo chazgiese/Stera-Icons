@@ -35,3 +35,4 @@ IdH.displayName = 'IdH';
 
 // Triple export pattern (lucide-react style)
 export { IdH, IdH as IdHIcon, IdH as SiIdH };
+export default IdH;

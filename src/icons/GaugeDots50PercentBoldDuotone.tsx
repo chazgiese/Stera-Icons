@@ -18,4 +18,5 @@ GaugeDots50PercentBoldDuotone.displayName = 'GaugeDots50PercentBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GaugeDots50PercentBoldDuotone, GaugeDots50PercentBoldDuotone as GaugeDots50PercentBoldDuotoneIcon, GaugeDots50PercentBoldDuotone as SiGaugeDots50PercentBoldDuotone };
+export default GaugeDots50PercentBoldDuotone;
 export type { GaugeDots50PercentBoldDuotoneProps };

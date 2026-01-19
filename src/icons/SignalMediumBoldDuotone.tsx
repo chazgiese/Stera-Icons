@@ -17,4 +17,5 @@ SignalMediumBoldDuotone.displayName = 'SignalMediumBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalMediumBoldDuotone, SignalMediumBoldDuotone as SignalMediumBoldDuotoneIcon, SignalMediumBoldDuotone as SiSignalMediumBoldDuotone };
+export default SignalMediumBoldDuotone;
 export type { SignalMediumBoldDuotoneProps };

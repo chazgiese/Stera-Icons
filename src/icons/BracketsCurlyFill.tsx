@@ -16,4 +16,5 @@ BracketsCurlyFill.displayName = 'BracketsCurlyFill';
 
 // Triple export pattern (lucide-react style)
 export { BracketsCurlyFill, BracketsCurlyFill as BracketsCurlyFillIcon, BracketsCurlyFill as SiBracketsCurlyFill };
+export default BracketsCurlyFill;
 export type { BracketsCurlyFillProps };

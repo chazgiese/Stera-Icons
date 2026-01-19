@@ -17,4 +17,5 @@ CircleDivideBoldDuotone.displayName = 'CircleDivideBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideBoldDuotone, CircleDivideBoldDuotone as CircleDivideBoldDuotoneIcon, CircleDivideBoldDuotone as SiCircleDivideBoldDuotone };
+export default CircleDivideBoldDuotone;
 export type { CircleDivideBoldDuotoneProps };

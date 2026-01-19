@@ -16,4 +16,5 @@ BrickWallRegular.displayName = 'BrickWallRegular';
 
 // Triple export pattern (lucide-react style)
 export { BrickWallRegular, BrickWallRegular as BrickWallRegularIcon, BrickWallRegular as SiBrickWallRegular };
+export default BrickWallRegular;
 export type { BrickWallRegularProps };

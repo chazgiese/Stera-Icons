@@ -16,4 +16,5 @@ CursorNavigationRegular.displayName = 'CursorNavigationRegular';
 
 // Triple export pattern (lucide-react style)
 export { CursorNavigationRegular, CursorNavigationRegular as CursorNavigationRegularIcon, CursorNavigationRegular as SiCursorNavigationRegular };
+export default CursorNavigationRegular;
 export type { CursorNavigationRegularProps };

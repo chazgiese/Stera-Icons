@@ -35,3 +35,4 @@ LayersSimple.displayName = 'LayersSimple';
 
 // Triple export pattern (lucide-react style)
 export { LayersSimple, LayersSimple as LayersSimpleIcon, LayersSimple as SiLayersSimple };
+export default LayersSimple;

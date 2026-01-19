@@ -17,4 +17,5 @@ LightbulbFillDuotone.displayName = 'LightbulbFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LightbulbFillDuotone, LightbulbFillDuotone as LightbulbFillDuotoneIcon, LightbulbFillDuotone as SiLightbulbFillDuotone };
+export default LightbulbFillDuotone;
 export type { LightbulbFillDuotoneProps };

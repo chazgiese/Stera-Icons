@@ -16,4 +16,5 @@ SkipBackFill.displayName = 'SkipBackFill';
 
 // Triple export pattern (lucide-react style)
 export { SkipBackFill, SkipBackFill as SkipBackFillIcon, SkipBackFill as SiSkipBackFill };
+export default SkipBackFill;
 export type { SkipBackFillProps };

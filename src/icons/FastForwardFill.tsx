@@ -16,4 +16,5 @@ FastForwardFill.displayName = 'FastForwardFill';
 
 // Triple export pattern (lucide-react style)
 export { FastForwardFill, FastForwardFill as FastForwardFillIcon, FastForwardFill as SiFastForwardFill };
+export default FastForwardFill;
 export type { FastForwardFillProps };

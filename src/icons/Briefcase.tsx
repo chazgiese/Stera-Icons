@@ -35,3 +35,4 @@ Briefcase.displayName = 'Briefcase';
 
 // Triple export pattern (lucide-react style)
 export { Briefcase, Briefcase as BriefcaseIcon, Briefcase as SiBriefcase };
+export default Briefcase;

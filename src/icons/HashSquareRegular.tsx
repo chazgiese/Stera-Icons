@@ -17,4 +17,5 @@ HashSquareRegular.displayName = 'HashSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { HashSquareRegular, HashSquareRegular as HashSquareRegularIcon, HashSquareRegular as SiHashSquareRegular };
+export default HashSquareRegular;
 export type { HashSquareRegularProps };

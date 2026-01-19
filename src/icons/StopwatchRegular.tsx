@@ -18,4 +18,5 @@ StopwatchRegular.displayName = 'StopwatchRegular';
 
 // Triple export pattern (lucide-react style)
 export { StopwatchRegular, StopwatchRegular as StopwatchRegularIcon, StopwatchRegular as SiStopwatchRegular };
+export default StopwatchRegular;
 export type { StopwatchRegularProps };

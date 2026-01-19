@@ -35,3 +35,4 @@ Cloud.displayName = 'Cloud';
 
 // Triple export pattern (lucide-react style)
 export { Cloud, Cloud as CloudIcon, Cloud as SiCloud };
+export default Cloud;

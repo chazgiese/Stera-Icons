@@ -16,4 +16,5 @@ XRegular.displayName = 'XRegular';
 
 // Triple export pattern (lucide-react style)
 export { XRegular, XRegular as XRegularIcon, XRegular as SiXRegular };
+export default XRegular;
 export type { XRegularProps };

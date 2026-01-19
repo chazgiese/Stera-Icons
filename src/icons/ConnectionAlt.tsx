@@ -35,3 +35,4 @@ ConnectionAlt.displayName = 'ConnectionAlt';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionAlt, ConnectionAlt as ConnectionAltIcon, ConnectionAlt as SiConnectionAlt };
+export default ConnectionAlt;

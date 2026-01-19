@@ -35,3 +35,4 @@ Barricade.displayName = 'Barricade';
 
 // Triple export pattern (lucide-react style)
 export { Barricade, Barricade as BarricadeIcon, Barricade as SiBarricade };
+export default Barricade;

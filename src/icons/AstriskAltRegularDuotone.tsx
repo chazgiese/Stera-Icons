@@ -17,4 +17,5 @@ AstriskAltRegularDuotone.displayName = 'AstriskAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAltRegularDuotone, AstriskAltRegularDuotone as AstriskAltRegularDuotoneIcon, AstriskAltRegularDuotone as SiAstriskAltRegularDuotone };
+export default AstriskAltRegularDuotone;
 export type { AstriskAltRegularDuotoneProps };

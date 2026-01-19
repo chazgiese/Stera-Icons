@@ -16,4 +16,5 @@ LockFill.displayName = 'LockFill';
 
 // Triple export pattern (lucide-react style)
 export { LockFill, LockFill as LockFillIcon, LockFill as SiLockFill };
+export default LockFill;
 export type { LockFillProps };

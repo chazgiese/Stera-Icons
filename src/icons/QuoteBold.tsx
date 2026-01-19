@@ -16,4 +16,5 @@ QuoteBold.displayName = 'QuoteBold';
 
 // Triple export pattern (lucide-react style)
 export { QuoteBold, QuoteBold as QuoteBoldIcon, QuoteBold as SiQuoteBold };
+export default QuoteBold;
 export type { QuoteBoldProps };

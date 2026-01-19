@@ -35,3 +35,4 @@ Trash.displayName = 'Trash';
 
 // Triple export pattern (lucide-react style)
 export { Trash, Trash as TrashIcon, Trash as SiTrash };
+export default Trash;

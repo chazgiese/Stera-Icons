@@ -18,4 +18,5 @@ LayoutGridPlusRegular.displayName = 'LayoutGridPlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridPlusRegular, LayoutGridPlusRegular as LayoutGridPlusRegularIcon, LayoutGridPlusRegular as SiLayoutGridPlusRegular };
+export default LayoutGridPlusRegular;
 export type { LayoutGridPlusRegularProps };

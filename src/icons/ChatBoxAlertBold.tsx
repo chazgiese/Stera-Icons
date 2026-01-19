@@ -17,4 +17,5 @@ ChatBoxAlertBold.displayName = 'ChatBoxAlertBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxAlertBold, ChatBoxAlertBold as ChatBoxAlertBoldIcon, ChatBoxAlertBold as SiChatBoxAlertBold };
+export default ChatBoxAlertBold;
 export type { ChatBoxAlertBoldProps };

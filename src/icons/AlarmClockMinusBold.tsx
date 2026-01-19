@@ -18,4 +18,5 @@ AlarmClockMinusBold.displayName = 'AlarmClockMinusBold';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockMinusBold, AlarmClockMinusBold as AlarmClockMinusBoldIcon, AlarmClockMinusBold as SiAlarmClockMinusBold };
+export default AlarmClockMinusBold;
 export type { AlarmClockMinusBoldProps };

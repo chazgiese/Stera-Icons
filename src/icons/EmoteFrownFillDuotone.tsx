@@ -17,4 +17,5 @@ EmoteFrownFillDuotone.displayName = 'EmoteFrownFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EmoteFrownFillDuotone, EmoteFrownFillDuotone as EmoteFrownFillDuotoneIcon, EmoteFrownFillDuotone as SiEmoteFrownFillDuotone };
+export default EmoteFrownFillDuotone;
 export type { EmoteFrownFillDuotoneProps };

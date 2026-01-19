@@ -17,4 +17,5 @@ TimerRegular.displayName = 'TimerRegular';
 
 // Triple export pattern (lucide-react style)
 export { TimerRegular, TimerRegular as TimerRegularIcon, TimerRegular as SiTimerRegular };
+export default TimerRegular;
 export type { TimerRegularProps };

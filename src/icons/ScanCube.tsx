@@ -35,3 +35,4 @@ ScanCube.displayName = 'ScanCube';
 
 // Triple export pattern (lucide-react style)
 export { ScanCube, ScanCube as ScanCubeIcon, ScanCube as SiScanCube };
+export default ScanCube;

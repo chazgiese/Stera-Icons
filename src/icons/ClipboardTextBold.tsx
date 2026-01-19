@@ -17,4 +17,5 @@ ClipboardTextBold.displayName = 'ClipboardTextBold';
 
 // Triple export pattern (lucide-react style)
 export { ClipboardTextBold, ClipboardTextBold as ClipboardTextBoldIcon, ClipboardTextBold as SiClipboardTextBold };
+export default ClipboardTextBold;
 export type { ClipboardTextBoldProps };

@@ -16,4 +16,5 @@ ActivityBold.displayName = 'ActivityBold';
 
 // Triple export pattern (lucide-react style)
 export { ActivityBold, ActivityBold as ActivityBoldIcon, ActivityBold as SiActivityBold };
+export default ActivityBold;
 export type { ActivityBoldProps };

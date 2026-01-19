@@ -35,3 +35,4 @@ BrowserX.displayName = 'BrowserX';
 
 // Triple export pattern (lucide-react style)
 export { BrowserX, BrowserX as BrowserXIcon, BrowserX as SiBrowserX };
+export default BrowserX;

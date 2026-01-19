@@ -17,4 +17,5 @@ AtSignBoldDuotone.displayName = 'AtSignBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AtSignBoldDuotone, AtSignBoldDuotone as AtSignBoldDuotoneIcon, AtSignBoldDuotone as SiAtSignBoldDuotone };
+export default AtSignBoldDuotone;
 export type { AtSignBoldDuotoneProps };

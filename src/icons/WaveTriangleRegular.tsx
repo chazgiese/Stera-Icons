@@ -16,4 +16,5 @@ WaveTriangleRegular.displayName = 'WaveTriangleRegular';
 
 // Triple export pattern (lucide-react style)
 export { WaveTriangleRegular, WaveTriangleRegular as WaveTriangleRegularIcon, WaveTriangleRegular as SiWaveTriangleRegular };
+export default WaveTriangleRegular;
 export type { WaveTriangleRegularProps };

@@ -16,4 +16,5 @@ VideoBold.displayName = 'VideoBold';
 
 // Triple export pattern (lucide-react style)
 export { VideoBold, VideoBold as VideoBoldIcon, VideoBold as SiVideoBold };
+export default VideoBold;
 export type { VideoBoldProps };

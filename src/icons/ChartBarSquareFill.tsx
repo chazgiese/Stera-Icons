@@ -16,4 +16,5 @@ ChartBarSquareFill.displayName = 'ChartBarSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarSquareFill, ChartBarSquareFill as ChartBarSquareFillIcon, ChartBarSquareFill as SiChartBarSquareFill };
+export default ChartBarSquareFill;
 export type { ChartBarSquareFillProps };

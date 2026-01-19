@@ -17,4 +17,5 @@ LightbulbOnRegular.displayName = 'LightbulbOnRegular';
 
 // Triple export pattern (lucide-react style)
 export { LightbulbOnRegular, LightbulbOnRegular as LightbulbOnRegularIcon, LightbulbOnRegular as SiLightbulbOnRegular };
+export default LightbulbOnRegular;
 export type { LightbulbOnRegularProps };

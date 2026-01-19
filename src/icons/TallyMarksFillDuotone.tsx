@@ -17,4 +17,5 @@ TallyMarksFillDuotone.displayName = 'TallyMarksFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarksFillDuotone, TallyMarksFillDuotone as TallyMarksFillDuotoneIcon, TallyMarksFillDuotone as SiTallyMarksFillDuotone };
+export default TallyMarksFillDuotone;
 export type { TallyMarksFillDuotoneProps };

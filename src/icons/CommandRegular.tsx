@@ -16,4 +16,5 @@ CommandRegular.displayName = 'CommandRegular';
 
 // Triple export pattern (lucide-react style)
 export { CommandRegular, CommandRegular as CommandRegularIcon, CommandRegular as SiCommandRegular };
+export default CommandRegular;
 export type { CommandRegularProps };

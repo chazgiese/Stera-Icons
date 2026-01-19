@@ -18,4 +18,5 @@ MicOffRegularDuotone.displayName = 'MicOffRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MicOffRegularDuotone, MicOffRegularDuotone as MicOffRegularDuotoneIcon, MicOffRegularDuotone as SiMicOffRegularDuotone };
+export default MicOffRegularDuotone;
 export type { MicOffRegularDuotoneProps };

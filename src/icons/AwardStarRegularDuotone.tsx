@@ -18,4 +18,5 @@ AwardStarRegularDuotone.displayName = 'AwardStarRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AwardStarRegularDuotone, AwardStarRegularDuotone as AwardStarRegularDuotoneIcon, AwardStarRegularDuotone as SiAwardStarRegularDuotone };
+export default AwardStarRegularDuotone;
 export type { AwardStarRegularDuotoneProps };

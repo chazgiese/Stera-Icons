@@ -17,4 +17,5 @@ FootballBold.displayName = 'FootballBold';
 
 // Triple export pattern (lucide-react style)
 export { FootballBold, FootballBold as FootballBoldIcon, FootballBold as SiFootballBold };
+export default FootballBold;
 export type { FootballBoldProps };

@@ -17,4 +17,5 @@ ChartDonutFill.displayName = 'ChartDonutFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartDonutFill, ChartDonutFill as ChartDonutFillIcon, ChartDonutFill as SiChartDonutFill };
+export default ChartDonutFill;
 export type { ChartDonutFillProps };

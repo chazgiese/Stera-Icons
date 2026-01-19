@@ -17,4 +17,5 @@ ChartBarDescBoldDuotone.displayName = 'ChartBarDescBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarDescBoldDuotone, ChartBarDescBoldDuotone as ChartBarDescBoldDuotoneIcon, ChartBarDescBoldDuotone as SiChartBarDescBoldDuotone };
+export default ChartBarDescBoldDuotone;
 export type { ChartBarDescBoldDuotoneProps };

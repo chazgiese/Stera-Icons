@@ -16,4 +16,5 @@ VolleyballBold.displayName = 'VolleyballBold';
 
 // Triple export pattern (lucide-react style)
 export { VolleyballBold, VolleyballBold as VolleyballBoldIcon, VolleyballBold as SiVolleyballBold };
+export default VolleyballBold;
 export type { VolleyballBoldProps };

@@ -17,4 +17,5 @@ RobotHumanoidFillDuotone.displayName = 'RobotHumanoidFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RobotHumanoidFillDuotone, RobotHumanoidFillDuotone as RobotHumanoidFillDuotoneIcon, RobotHumanoidFillDuotone as SiRobotHumanoidFillDuotone };
+export default RobotHumanoidFillDuotone;
 export type { RobotHumanoidFillDuotoneProps };

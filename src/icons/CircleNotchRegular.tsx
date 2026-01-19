@@ -16,4 +16,5 @@ CircleNotchRegular.displayName = 'CircleNotchRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleNotchRegular, CircleNotchRegular as CircleNotchRegularIcon, CircleNotchRegular as SiCircleNotchRegular };
+export default CircleNotchRegular;
 export type { CircleNotchRegularProps };

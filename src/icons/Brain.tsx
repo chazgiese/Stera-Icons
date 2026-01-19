@@ -35,3 +35,4 @@ Brain.displayName = 'Brain';
 
 // Triple export pattern (lucide-react style)
 export { Brain, Brain as BrainIcon, Brain as SiBrain };
+export default Brain;

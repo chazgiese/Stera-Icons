@@ -17,4 +17,5 @@ ListXBoldDuotone.displayName = 'ListXBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListXBoldDuotone, ListXBoldDuotone as ListXBoldDuotoneIcon, ListXBoldDuotone as SiListXBoldDuotone };
+export default ListXBoldDuotone;
 export type { ListXBoldDuotoneProps };

@@ -16,4 +16,5 @@ GitCompareRegular.displayName = 'GitCompareRegular';
 
 // Triple export pattern (lucide-react style)
 export { GitCompareRegular, GitCompareRegular as GitCompareRegularIcon, GitCompareRegular as SiGitCompareRegular };
+export default GitCompareRegular;
 export type { GitCompareRegularProps };

@@ -16,4 +16,5 @@ WarehouseBold.displayName = 'WarehouseBold';
 
 // Triple export pattern (lucide-react style)
 export { WarehouseBold, WarehouseBold as WarehouseBoldIcon, WarehouseBold as SiWarehouseBold };
+export default WarehouseBold;
 export type { WarehouseBoldProps };

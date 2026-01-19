@@ -17,4 +17,5 @@ TogglesBoldDuotone.displayName = 'TogglesBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TogglesBoldDuotone, TogglesBoldDuotone as TogglesBoldDuotoneIcon, TogglesBoldDuotone as SiTogglesBoldDuotone };
+export default TogglesBoldDuotone;
 export type { TogglesBoldDuotoneProps };

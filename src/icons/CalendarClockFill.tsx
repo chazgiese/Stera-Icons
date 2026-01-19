@@ -17,4 +17,5 @@ CalendarClockFill.displayName = 'CalendarClockFill';
 
 // Triple export pattern (lucide-react style)
 export { CalendarClockFill, CalendarClockFill as CalendarClockFillIcon, CalendarClockFill as SiCalendarClockFill };
+export default CalendarClockFill;
 export type { CalendarClockFillProps };

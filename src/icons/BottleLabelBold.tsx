@@ -16,4 +16,5 @@ BottleLabelBold.displayName = 'BottleLabelBold';
 
 // Triple export pattern (lucide-react style)
 export { BottleLabelBold, BottleLabelBold as BottleLabelBoldIcon, BottleLabelBold as SiBottleLabelBold };
+export default BottleLabelBold;
 export type { BottleLabelBoldProps };

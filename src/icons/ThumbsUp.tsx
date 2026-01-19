@@ -35,3 +35,4 @@ ThumbsUp.displayName = 'ThumbsUp';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsUp, ThumbsUp as ThumbsUpIcon, ThumbsUp as SiThumbsUp };
+export default ThumbsUp;

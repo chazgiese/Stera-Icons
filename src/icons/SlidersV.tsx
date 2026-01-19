@@ -35,3 +35,4 @@ SlidersV.displayName = 'SlidersV';
 
 // Triple export pattern (lucide-react style)
 export { SlidersV, SlidersV as SlidersVIcon, SlidersV as SiSlidersV };
+export default SlidersV;

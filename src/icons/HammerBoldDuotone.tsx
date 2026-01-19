@@ -17,4 +17,5 @@ HammerBoldDuotone.displayName = 'HammerBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HammerBoldDuotone, HammerBoldDuotone as HammerBoldDuotoneIcon, HammerBoldDuotone as SiHammerBoldDuotone };
+export default HammerBoldDuotone;
 export type { HammerBoldDuotoneProps };

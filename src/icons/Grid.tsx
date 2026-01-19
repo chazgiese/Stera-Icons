@@ -35,3 +35,4 @@ Grid.displayName = 'Grid';
 
 // Triple export pattern (lucide-react style)
 export { Grid, Grid as GridIcon, Grid as SiGrid };
+export default Grid;

@@ -17,4 +17,5 @@ SparklesAltBoldDuotone.displayName = 'SparklesAltBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SparklesAltBoldDuotone, SparklesAltBoldDuotone as SparklesAltBoldDuotoneIcon, SparklesAltBoldDuotone as SiSparklesAltBoldDuotone };
+export default SparklesAltBoldDuotone;
 export type { SparklesAltBoldDuotoneProps };

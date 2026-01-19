@@ -17,4 +17,5 @@ CityRegularDuotone.displayName = 'CityRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CityRegularDuotone, CityRegularDuotone as CityRegularDuotoneIcon, CityRegularDuotone as SiCityRegularDuotone };
+export default CityRegularDuotone;
 export type { CityRegularDuotoneProps };

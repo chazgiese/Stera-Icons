@@ -17,4 +17,5 @@ SaveBold.displayName = 'SaveBold';
 
 // Triple export pattern (lucide-react style)
 export { SaveBold, SaveBold as SaveBoldIcon, SaveBold as SiSaveBold };
+export default SaveBold;
 export type { SaveBoldProps };

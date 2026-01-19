@@ -17,4 +17,5 @@ DropletBoldDuotone.displayName = 'DropletBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DropletBoldDuotone, DropletBoldDuotone as DropletBoldDuotoneIcon, DropletBoldDuotone as SiDropletBoldDuotone };
+export default DropletBoldDuotone;
 export type { DropletBoldDuotoneProps };

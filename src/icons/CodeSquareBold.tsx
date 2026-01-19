@@ -17,4 +17,5 @@ CodeSquareBold.displayName = 'CodeSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { CodeSquareBold, CodeSquareBold as CodeSquareBoldIcon, CodeSquareBold as SiCodeSquareBold };
+export default CodeSquareBold;
 export type { CodeSquareBoldProps };

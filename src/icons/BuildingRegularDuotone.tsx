@@ -17,4 +17,5 @@ BuildingRegularDuotone.displayName = 'BuildingRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BuildingRegularDuotone, BuildingRegularDuotone as BuildingRegularDuotoneIcon, BuildingRegularDuotone as SiBuildingRegularDuotone };
+export default BuildingRegularDuotone;
 export type { BuildingRegularDuotoneProps };

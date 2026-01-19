@@ -16,4 +16,5 @@ MatchaFill.displayName = 'MatchaFill';
 
 // Triple export pattern (lucide-react style)
 export { MatchaFill, MatchaFill as MatchaFillIcon, MatchaFill as SiMatchaFill };
+export default MatchaFill;
 export type { MatchaFillProps };

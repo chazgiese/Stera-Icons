@@ -17,4 +17,5 @@ BatteryFillDuotone.displayName = 'BatteryFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BatteryFillDuotone, BatteryFillDuotone as BatteryFillDuotoneIcon, BatteryFillDuotone as SiBatteryFillDuotone };
+export default BatteryFillDuotone;
 export type { BatteryFillDuotoneProps };

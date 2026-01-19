@@ -35,3 +35,4 @@ CalendarFold.displayName = 'CalendarFold';
 
 // Triple export pattern (lucide-react style)
 export { CalendarFold, CalendarFold as CalendarFoldIcon, CalendarFold as SiCalendarFold };
+export default CalendarFold;

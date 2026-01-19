@@ -35,3 +35,4 @@ ChevronFullOutward.displayName = 'ChevronFullOutward';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullOutward, ChevronFullOutward as ChevronFullOutwardIcon, ChevronFullOutward as SiChevronFullOutward };
+export default ChevronFullOutward;

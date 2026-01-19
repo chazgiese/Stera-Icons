@@ -17,4 +17,5 @@ CalendarOffBold.displayName = 'CalendarOffBold';
 
 // Triple export pattern (lucide-react style)
 export { CalendarOffBold, CalendarOffBold as CalendarOffBoldIcon, CalendarOffBold as SiCalendarOffBold };
+export default CalendarOffBold;
 export type { CalendarOffBoldProps };

@@ -35,3 +35,4 @@ Sparkles.displayName = 'Sparkles';
 
 // Triple export pattern (lucide-react style)
 export { Sparkles, Sparkles as SparklesIcon, Sparkles as SiSparkles };
+export default Sparkles;

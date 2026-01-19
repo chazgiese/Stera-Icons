@@ -18,4 +18,5 @@ TrashFillDuotone.displayName = 'TrashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TrashFillDuotone, TrashFillDuotone as TrashFillDuotoneIcon, TrashFillDuotone as SiTrashFillDuotone };
+export default TrashFillDuotone;
 export type { TrashFillDuotoneProps };

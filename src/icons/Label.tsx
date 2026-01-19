@@ -35,3 +35,4 @@ Label.displayName = 'Label';
 
 // Triple export pattern (lucide-react style)
 export { Label, Label as LabelIcon, Label as SiLabel };
+export default Label;

@@ -16,4 +16,5 @@ TextAlignCenterRegular.displayName = 'TextAlignCenterRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignCenterRegular, TextAlignCenterRegular as TextAlignCenterRegularIcon, TextAlignCenterRegular as SiTextAlignCenterRegular };
+export default TextAlignCenterRegular;
 export type { TextAlignCenterRegularProps };

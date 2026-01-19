@@ -35,3 +35,4 @@ NodeMap.displayName = 'NodeMap';
 
 // Triple export pattern (lucide-react style)
 export { NodeMap, NodeMap as NodeMapIcon, NodeMap as SiNodeMap };
+export default NodeMap;

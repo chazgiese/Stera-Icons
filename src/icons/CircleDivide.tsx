@@ -35,3 +35,4 @@ CircleDivide.displayName = 'CircleDivide';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivide, CircleDivide as CircleDivideIcon, CircleDivide as SiCircleDivide };
+export default CircleDivide;

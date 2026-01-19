@@ -16,4 +16,5 @@ PlugBold.displayName = 'PlugBold';
 
 // Triple export pattern (lucide-react style)
 export { PlugBold, PlugBold as PlugBoldIcon, PlugBold as SiPlugBold };
+export default PlugBold;
 export type { PlugBoldProps };

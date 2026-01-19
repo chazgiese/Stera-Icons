@@ -35,3 +35,4 @@ CircleDots.displayName = 'CircleDots';
 
 // Triple export pattern (lucide-react style)
 export { CircleDots, CircleDots as CircleDotsIcon, CircleDots as SiCircleDots };
+export default CircleDots;

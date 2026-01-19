@@ -18,4 +18,5 @@ MapPinnedBoldDuotone.displayName = 'MapPinnedBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MapPinnedBoldDuotone, MapPinnedBoldDuotone as MapPinnedBoldDuotoneIcon, MapPinnedBoldDuotone as SiMapPinnedBoldDuotone };
+export default MapPinnedBoldDuotone;
 export type { MapPinnedBoldDuotoneProps };

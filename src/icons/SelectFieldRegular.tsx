@@ -17,4 +17,5 @@ SelectFieldRegular.displayName = 'SelectFieldRegular';
 
 // Triple export pattern (lucide-react style)
 export { SelectFieldRegular, SelectFieldRegular as SelectFieldRegularIcon, SelectFieldRegular as SiSelectFieldRegular };
+export default SelectFieldRegular;
 export type { SelectFieldRegularProps };

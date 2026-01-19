@@ -35,3 +35,4 @@ Calendar.displayName = 'Calendar';
 
 // Triple export pattern (lucide-react style)
 export { Calendar, Calendar as CalendarIcon, Calendar as SiCalendar };
+export default Calendar;

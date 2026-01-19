@@ -16,4 +16,5 @@ CommentBubbleRegular.displayName = 'CommentBubbleRegular';
 
 // Triple export pattern (lucide-react style)
 export { CommentBubbleRegular, CommentBubbleRegular as CommentBubbleRegularIcon, CommentBubbleRegular as SiCommentBubbleRegular };
+export default CommentBubbleRegular;
 export type { CommentBubbleRegularProps };

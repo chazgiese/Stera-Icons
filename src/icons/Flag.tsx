@@ -35,3 +35,4 @@ Flag.displayName = 'Flag';
 
 // Triple export pattern (lucide-react style)
 export { Flag, Flag as FlagIcon, Flag as SiFlag };
+export default Flag;

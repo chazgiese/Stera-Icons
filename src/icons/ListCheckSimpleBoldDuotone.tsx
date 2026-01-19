@@ -17,4 +17,5 @@ ListCheckSimpleBoldDuotone.displayName = 'ListCheckSimpleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckSimpleBoldDuotone, ListCheckSimpleBoldDuotone as ListCheckSimpleBoldDuotoneIcon, ListCheckSimpleBoldDuotone as SiListCheckSimpleBoldDuotone };
+export default ListCheckSimpleBoldDuotone;
 export type { ListCheckSimpleBoldDuotoneProps };

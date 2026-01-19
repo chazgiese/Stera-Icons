@@ -17,4 +17,5 @@ SidebarRightBoldDuotone.displayName = 'SidebarRightBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SidebarRightBoldDuotone, SidebarRightBoldDuotone as SidebarRightBoldDuotoneIcon, SidebarRightBoldDuotone as SiSidebarRightBoldDuotone };
+export default SidebarRightBoldDuotone;
 export type { SidebarRightBoldDuotoneProps };

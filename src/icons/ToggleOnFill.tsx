@@ -16,4 +16,5 @@ ToggleOnFill.displayName = 'ToggleOnFill';
 
 // Triple export pattern (lucide-react style)
 export { ToggleOnFill, ToggleOnFill as ToggleOnFillIcon, ToggleOnFill as SiToggleOnFill };
+export default ToggleOnFill;
 export type { ToggleOnFillProps };

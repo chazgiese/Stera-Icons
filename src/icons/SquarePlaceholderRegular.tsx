@@ -16,4 +16,5 @@ SquarePlaceholderRegular.displayName = 'SquarePlaceholderRegular';
 
 // Triple export pattern (lucide-react style)
 export { SquarePlaceholderRegular, SquarePlaceholderRegular as SquarePlaceholderRegularIcon, SquarePlaceholderRegular as SiSquarePlaceholderRegular };
+export default SquarePlaceholderRegular;
 export type { SquarePlaceholderRegularProps };

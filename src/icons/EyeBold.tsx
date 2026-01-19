@@ -17,4 +17,5 @@ EyeBold.displayName = 'EyeBold';
 
 // Triple export pattern (lucide-react style)
 export { EyeBold, EyeBold as EyeBoldIcon, EyeBold as SiEyeBold };
+export default EyeBold;
 export type { EyeBoldProps };

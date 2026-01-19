@@ -16,4 +16,5 @@ AngleObtuseRegular.displayName = 'AngleObtuseRegular';
 
 // Triple export pattern (lucide-react style)
 export { AngleObtuseRegular, AngleObtuseRegular as AngleObtuseRegularIcon, AngleObtuseRegular as SiAngleObtuseRegular };
+export default AngleObtuseRegular;
 export type { AngleObtuseRegularProps };

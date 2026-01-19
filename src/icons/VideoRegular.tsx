@@ -16,4 +16,5 @@ VideoRegular.displayName = 'VideoRegular';
 
 // Triple export pattern (lucide-react style)
 export { VideoRegular, VideoRegular as VideoRegularIcon, VideoRegular as SiVideoRegular };
+export default VideoRegular;
 export type { VideoRegularProps };

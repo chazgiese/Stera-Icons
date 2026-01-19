@@ -16,4 +16,5 @@ FlaskFullFill.displayName = 'FlaskFullFill';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFullFill, FlaskFullFill as FlaskFullFillIcon, FlaskFullFill as SiFlaskFullFill };
+export default FlaskFullFill;
 export type { FlaskFullFillProps };

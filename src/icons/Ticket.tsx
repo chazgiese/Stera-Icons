@@ -35,3 +35,4 @@ Ticket.displayName = 'Ticket';
 
 // Triple export pattern (lucide-react style)
 export { Ticket, Ticket as TicketIcon, Ticket as SiTicket };
+export default Ticket;

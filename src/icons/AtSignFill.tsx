@@ -16,4 +16,5 @@ AtSignFill.displayName = 'AtSignFill';
 
 // Triple export pattern (lucide-react style)
 export { AtSignFill, AtSignFill as AtSignFillIcon, AtSignFill as SiAtSignFill };
+export default AtSignFill;
 export type { AtSignFillProps };

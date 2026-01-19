@@ -16,4 +16,5 @@ GitMergeFill.displayName = 'GitMergeFill';
 
 // Triple export pattern (lucide-react style)
 export { GitMergeFill, GitMergeFill as GitMergeFillIcon, GitMergeFill as SiGitMergeFill };
+export default GitMergeFill;
 export type { GitMergeFillProps };

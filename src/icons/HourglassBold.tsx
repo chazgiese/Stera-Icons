@@ -17,4 +17,5 @@ HourglassBold.displayName = 'HourglassBold';
 
 // Triple export pattern (lucide-react style)
 export { HourglassBold, HourglassBold as HourglassBoldIcon, HourglassBold as SiHourglassBold };
+export default HourglassBold;
 export type { HourglassBoldProps };

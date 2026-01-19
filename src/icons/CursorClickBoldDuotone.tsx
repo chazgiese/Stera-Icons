@@ -17,4 +17,5 @@ CursorClickBoldDuotone.displayName = 'CursorClickBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CursorClickBoldDuotone, CursorClickBoldDuotone as CursorClickBoldDuotoneIcon, CursorClickBoldDuotone as SiCursorClickBoldDuotone };
+export default CursorClickBoldDuotone;
 export type { CursorClickBoldDuotoneProps };

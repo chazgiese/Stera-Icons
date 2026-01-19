@@ -17,4 +17,5 @@ QuoteOpeningFillDuotone.displayName = 'QuoteOpeningFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { QuoteOpeningFillDuotone, QuoteOpeningFillDuotone as QuoteOpeningFillDuotoneIcon, QuoteOpeningFillDuotone as SiQuoteOpeningFillDuotone };
+export default QuoteOpeningFillDuotone;
 export type { QuoteOpeningFillDuotoneProps };

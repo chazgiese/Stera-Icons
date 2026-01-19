@@ -16,4 +16,5 @@ BasketballRegular.displayName = 'BasketballRegular';
 
 // Triple export pattern (lucide-react style)
 export { BasketballRegular, BasketballRegular as BasketballRegularIcon, BasketballRegular as SiBasketballRegular };
+export default BasketballRegular;
 export type { BasketballRegularProps };

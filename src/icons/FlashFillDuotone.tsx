@@ -17,4 +17,5 @@ FlashFillDuotone.displayName = 'FlashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlashFillDuotone, FlashFillDuotone as FlashFillDuotoneIcon, FlashFillDuotone as SiFlashFillDuotone };
+export default FlashFillDuotone;
 export type { FlashFillDuotoneProps };

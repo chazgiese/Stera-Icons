@@ -35,3 +35,4 @@ PanelsLeftTop.displayName = 'PanelsLeftTop';
 
 // Triple export pattern (lucide-react style)
 export { PanelsLeftTop, PanelsLeftTop as PanelsLeftTopIcon, PanelsLeftTop as SiPanelsLeftTop };
+export default PanelsLeftTop;

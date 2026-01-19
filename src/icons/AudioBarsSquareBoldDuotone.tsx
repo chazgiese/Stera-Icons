@@ -17,4 +17,5 @@ AudioBarsSquareBoldDuotone.displayName = 'AudioBarsSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsSquareBoldDuotone, AudioBarsSquareBoldDuotone as AudioBarsSquareBoldDuotoneIcon, AudioBarsSquareBoldDuotone as SiAudioBarsSquareBoldDuotone };
+export default AudioBarsSquareBoldDuotone;
 export type { AudioBarsSquareBoldDuotoneProps };

@@ -17,4 +17,5 @@ RobotRegular.displayName = 'RobotRegular';
 
 // Triple export pattern (lucide-react style)
 export { RobotRegular, RobotRegular as RobotRegularIcon, RobotRegular as SiRobotRegular };
+export default RobotRegular;
 export type { RobotRegularProps };

@@ -16,4 +16,5 @@ FolderOpenRegular.displayName = 'FolderOpenRegular';
 
 // Triple export pattern (lucide-react style)
 export { FolderOpenRegular, FolderOpenRegular as FolderOpenRegularIcon, FolderOpenRegular as SiFolderOpenRegular };
+export default FolderOpenRegular;
 export type { FolderOpenRegularProps };

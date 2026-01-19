@@ -17,4 +17,5 @@ HashItalicFillDuotone.displayName = 'HashItalicFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashItalicFillDuotone, HashItalicFillDuotone as HashItalicFillDuotoneIcon, HashItalicFillDuotone as SiHashItalicFillDuotone };
+export default HashItalicFillDuotone;
 export type { HashItalicFillDuotoneProps };

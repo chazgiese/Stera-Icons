@@ -35,3 +35,4 @@ ListCheckSimple.displayName = 'ListCheckSimple';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckSimple, ListCheckSimple as ListCheckSimpleIcon, ListCheckSimple as SiListCheckSimple };
+export default ListCheckSimple;

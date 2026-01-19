@@ -16,4 +16,5 @@ GitCompareBold.displayName = 'GitCompareBold';
 
 // Triple export pattern (lucide-react style)
 export { GitCompareBold, GitCompareBold as GitCompareBoldIcon, GitCompareBold as SiGitCompareBold };
+export default GitCompareBold;
 export type { GitCompareBoldProps };

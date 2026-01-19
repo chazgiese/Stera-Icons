@@ -17,4 +17,5 @@ SortAscendingFillDuotone.displayName = 'SortAscendingFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingFillDuotone, SortAscendingFillDuotone as SortAscendingFillDuotoneIcon, SortAscendingFillDuotone as SiSortAscendingFillDuotone };
+export default SortAscendingFillDuotone;
 export type { SortAscendingFillDuotoneProps };

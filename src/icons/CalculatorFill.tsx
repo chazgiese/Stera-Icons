@@ -16,4 +16,5 @@ CalculatorFill.displayName = 'CalculatorFill';
 
 // Triple export pattern (lucide-react style)
 export { CalculatorFill, CalculatorFill as CalculatorFillIcon, CalculatorFill as SiCalculatorFill };
+export default CalculatorFill;
 export type { CalculatorFillProps };

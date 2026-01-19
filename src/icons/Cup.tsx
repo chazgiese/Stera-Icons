@@ -35,3 +35,4 @@ Cup.displayName = 'Cup';
 
 // Triple export pattern (lucide-react style)
 export { Cup, Cup as CupIcon, Cup as SiCup };
+export default Cup;

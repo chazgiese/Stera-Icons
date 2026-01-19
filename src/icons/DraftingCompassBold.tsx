@@ -17,4 +17,5 @@ DraftingCompassBold.displayName = 'DraftingCompassBold';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompassBold, DraftingCompassBold as DraftingCompassBoldIcon, DraftingCompassBold as SiDraftingCompassBold };
+export default DraftingCompassBold;
 export type { DraftingCompassBoldProps };

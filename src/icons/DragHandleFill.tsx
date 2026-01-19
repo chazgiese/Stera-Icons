@@ -16,4 +16,5 @@ DragHandleFill.displayName = 'DragHandleFill';
 
 // Triple export pattern (lucide-react style)
 export { DragHandleFill, DragHandleFill as DragHandleFillIcon, DragHandleFill as SiDragHandleFill };
+export default DragHandleFill;
 export type { DragHandleFillProps };

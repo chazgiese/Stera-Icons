@@ -16,4 +16,5 @@ TextStrikethroughFill.displayName = 'TextStrikethroughFill';
 
 // Triple export pattern (lucide-react style)
 export { TextStrikethroughFill, TextStrikethroughFill as TextStrikethroughFillIcon, TextStrikethroughFill as SiTextStrikethroughFill };
+export default TextStrikethroughFill;
 export type { TextStrikethroughFillProps };

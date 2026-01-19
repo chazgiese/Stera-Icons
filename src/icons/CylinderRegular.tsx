@@ -16,4 +16,5 @@ CylinderRegular.displayName = 'CylinderRegular';
 
 // Triple export pattern (lucide-react style)
 export { CylinderRegular, CylinderRegular as CylinderRegularIcon, CylinderRegular as SiCylinderRegular };
+export default CylinderRegular;
 export type { CylinderRegularProps };

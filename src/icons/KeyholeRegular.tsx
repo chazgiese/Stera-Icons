@@ -16,4 +16,5 @@ KeyholeRegular.displayName = 'KeyholeRegular';
 
 // Triple export pattern (lucide-react style)
 export { KeyholeRegular, KeyholeRegular as KeyholeRegularIcon, KeyholeRegular as SiKeyholeRegular };
+export default KeyholeRegular;
 export type { KeyholeRegularProps };

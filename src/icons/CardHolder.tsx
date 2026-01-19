@@ -35,3 +35,4 @@ CardHolder.displayName = 'CardHolder';
 
 // Triple export pattern (lucide-react style)
 export { CardHolder, CardHolder as CardHolderIcon, CardHolder as SiCardHolder };
+export default CardHolder;

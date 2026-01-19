@@ -17,4 +17,5 @@ QuestionMarkCircleBold.displayName = 'QuestionMarkCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { QuestionMarkCircleBold, QuestionMarkCircleBold as QuestionMarkCircleBoldIcon, QuestionMarkCircleBold as SiQuestionMarkCircleBold };
+export default QuestionMarkCircleBold;
 export type { QuestionMarkCircleBoldProps };

@@ -16,4 +16,5 @@ FlowSplitUpBold.displayName = 'FlowSplitUpBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitUpBold, FlowSplitUpBold as FlowSplitUpBoldIcon, FlowSplitUpBold as SiFlowSplitUpBold };
+export default FlowSplitUpBold;
 export type { FlowSplitUpBoldProps };

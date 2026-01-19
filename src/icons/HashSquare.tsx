@@ -35,3 +35,4 @@ HashSquare.displayName = 'HashSquare';
 
 // Triple export pattern (lucide-react style)
 export { HashSquare, HashSquare as HashSquareIcon, HashSquare as SiHashSquare };
+export default HashSquare;

@@ -35,3 +35,4 @@ Seedling.displayName = 'Seedling';
 
 // Triple export pattern (lucide-react style)
 export { Seedling, Seedling as SeedlingIcon, Seedling as SiSeedling };
+export default Seedling;

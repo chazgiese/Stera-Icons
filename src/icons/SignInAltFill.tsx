@@ -16,4 +16,5 @@ SignInAltFill.displayName = 'SignInAltFill';
 
 // Triple export pattern (lucide-react style)
 export { SignInAltFill, SignInAltFill as SignInAltFillIcon, SignInAltFill as SiSignInAltFill };
+export default SignInAltFill;
 export type { SignInAltFillProps };

@@ -17,4 +17,5 @@ GiftFillDuotone.displayName = 'GiftFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GiftFillDuotone, GiftFillDuotone as GiftFillDuotoneIcon, GiftFillDuotone as SiGiftFillDuotone };
+export default GiftFillDuotone;
 export type { GiftFillDuotoneProps };

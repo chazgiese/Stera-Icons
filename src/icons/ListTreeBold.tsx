@@ -16,4 +16,5 @@ ListTreeBold.displayName = 'ListTreeBold';
 
 // Triple export pattern (lucide-react style)
 export { ListTreeBold, ListTreeBold as ListTreeBoldIcon, ListTreeBold as SiListTreeBold };
+export default ListTreeBold;
 export type { ListTreeBoldProps };

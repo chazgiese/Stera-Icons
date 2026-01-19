@@ -35,3 +35,4 @@ Document.displayName = 'Document';
 
 // Triple export pattern (lucide-react style)
 export { Document, Document as DocumentIcon, Document as SiDocument };
+export default Document;

@@ -17,4 +17,5 @@ WrenchFillDuotone.displayName = 'WrenchFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WrenchFillDuotone, WrenchFillDuotone as WrenchFillDuotoneIcon, WrenchFillDuotone as SiWrenchFillDuotone };
+export default WrenchFillDuotone;
 export type { WrenchFillDuotoneProps };

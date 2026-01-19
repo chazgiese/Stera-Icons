@@ -17,4 +17,5 @@ PeaceBoldDuotone.displayName = 'PeaceBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PeaceBoldDuotone, PeaceBoldDuotone as PeaceBoldDuotoneIcon, PeaceBoldDuotone as SiPeaceBoldDuotone };
+export default PeaceBoldDuotone;
 export type { PeaceBoldDuotoneProps };

@@ -35,3 +35,4 @@ CodeSquare.displayName = 'CodeSquare';
 
 // Triple export pattern (lucide-react style)
 export { CodeSquare, CodeSquare as CodeSquareIcon, CodeSquare as SiCodeSquare };
+export default CodeSquare;

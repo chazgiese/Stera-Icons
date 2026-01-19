@@ -35,3 +35,4 @@ CurveBezier.displayName = 'CurveBezier';
 
 // Triple export pattern (lucide-react style)
 export { CurveBezier, CurveBezier as CurveBezierIcon, CurveBezier as SiCurveBezier };
+export default CurveBezier;

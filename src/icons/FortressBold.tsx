@@ -17,4 +17,5 @@ FortressBold.displayName = 'FortressBold';
 
 // Triple export pattern (lucide-react style)
 export { FortressBold, FortressBold as FortressBoldIcon, FortressBold as SiFortressBold };
+export default FortressBold;
 export type { FortressBoldProps };

@@ -16,4 +16,5 @@ ArrowLineUpRegular.displayName = 'ArrowLineUpRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineUpRegular, ArrowLineUpRegular as ArrowLineUpRegularIcon, ArrowLineUpRegular as SiArrowLineUpRegular };
+export default ArrowLineUpRegular;
 export type { ArrowLineUpRegularProps };

@@ -17,4 +17,5 @@ SnowflakeBoldDuotone.displayName = 'SnowflakeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeBoldDuotone, SnowflakeBoldDuotone as SnowflakeBoldDuotoneIcon, SnowflakeBoldDuotone as SiSnowflakeBoldDuotone };
+export default SnowflakeBoldDuotone;
 export type { SnowflakeBoldDuotoneProps };

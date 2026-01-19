@@ -17,4 +17,5 @@ CopyBoldDuotone.displayName = 'CopyBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CopyBoldDuotone, CopyBoldDuotone as CopyBoldDuotoneIcon, CopyBoldDuotone as SiCopyBoldDuotone };
+export default CopyBoldDuotone;
 export type { CopyBoldDuotoneProps };

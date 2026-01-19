@@ -16,4 +16,5 @@ DataTableBold.displayName = 'DataTableBold';
 
 // Triple export pattern (lucide-react style)
 export { DataTableBold, DataTableBold as DataTableBoldIcon, DataTableBold as SiDataTableBold };
+export default DataTableBold;
 export type { DataTableBoldProps };

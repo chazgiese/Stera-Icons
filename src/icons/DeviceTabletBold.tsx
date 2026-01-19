@@ -17,4 +17,5 @@ DeviceTabletBold.displayName = 'DeviceTabletBold';
 
 // Triple export pattern (lucide-react style)
 export { DeviceTabletBold, DeviceTabletBold as DeviceTabletBoldIcon, DeviceTabletBold as SiDeviceTabletBold };
+export default DeviceTabletBold;
 export type { DeviceTabletBoldProps };

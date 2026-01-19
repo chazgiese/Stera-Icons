@@ -16,4 +16,5 @@ ChartBarRowDescBold.displayName = 'ChartBarRowDescBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRowDescBold, ChartBarRowDescBold as ChartBarRowDescBoldIcon, ChartBarRowDescBold as SiChartBarRowDescBold };
+export default ChartBarRowDescBold;
 export type { ChartBarRowDescBoldProps };

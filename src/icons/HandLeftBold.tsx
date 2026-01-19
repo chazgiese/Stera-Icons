@@ -16,4 +16,5 @@ HandLeftBold.displayName = 'HandLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { HandLeftBold, HandLeftBold as HandLeftBoldIcon, HandLeftBold as SiHandLeftBold };
+export default HandLeftBold;
 export type { HandLeftBoldProps };

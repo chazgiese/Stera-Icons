@@ -16,4 +16,5 @@ MoreFill.displayName = 'MoreFill';
 
 // Triple export pattern (lucide-react style)
 export { MoreFill, MoreFill as MoreFillIcon, MoreFill as SiMoreFill };
+export default MoreFill;
 export type { MoreFillProps };

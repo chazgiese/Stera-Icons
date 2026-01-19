@@ -35,3 +35,4 @@ CalendarMinus.displayName = 'CalendarMinus';
 
 // Triple export pattern (lucide-react style)
 export { CalendarMinus, CalendarMinus as CalendarMinusIcon, CalendarMinus as SiCalendarMinus };
+export default CalendarMinus;

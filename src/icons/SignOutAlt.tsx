@@ -35,3 +35,4 @@ SignOutAlt.displayName = 'SignOutAlt';
 
 // Triple export pattern (lucide-react style)
 export { SignOutAlt, SignOutAlt as SignOutAltIcon, SignOutAlt as SiSignOutAlt };
+export default SignOutAlt;

@@ -16,4 +16,5 @@ AlignVerticalCenterFill.displayName = 'AlignVerticalCenterFill';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalCenterFill, AlignVerticalCenterFill as AlignVerticalCenterFillIcon, AlignVerticalCenterFill as SiAlignVerticalCenterFill };
+export default AlignVerticalCenterFill;
 export type { AlignVerticalCenterFillProps };

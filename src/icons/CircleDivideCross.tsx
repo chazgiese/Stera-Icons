@@ -35,3 +35,4 @@ CircleDivideCross.displayName = 'CircleDivideCross';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideCross, CircleDivideCross as CircleDivideCrossIcon, CircleDivideCross as SiCircleDivideCross };
+export default CircleDivideCross;

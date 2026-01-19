@@ -17,4 +17,5 @@ SignInBoldDuotone.displayName = 'SignInBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignInBoldDuotone, SignInBoldDuotone as SignInBoldDuotoneIcon, SignInBoldDuotone as SiSignInBoldDuotone };
+export default SignInBoldDuotone;
 export type { SignInBoldDuotoneProps };

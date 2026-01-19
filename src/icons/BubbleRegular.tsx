@@ -17,4 +17,5 @@ BubbleRegular.displayName = 'BubbleRegular';
 
 // Triple export pattern (lucide-react style)
 export { BubbleRegular, BubbleRegular as BubbleRegularIcon, BubbleRegular as SiBubbleRegular };
+export default BubbleRegular;
 export type { BubbleRegularProps };

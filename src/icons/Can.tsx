@@ -35,3 +35,4 @@ Can.displayName = 'Can';
 
 // Triple export pattern (lucide-react style)
 export { Can, Can as CanIcon, Can as SiCan };
+export default Can;

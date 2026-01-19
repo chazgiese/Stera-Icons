@@ -16,4 +16,5 @@ SquareSlashRegular.displayName = 'SquareSlashRegular';
 
 // Triple export pattern (lucide-react style)
 export { SquareSlashRegular, SquareSlashRegular as SquareSlashRegularIcon, SquareSlashRegular as SiSquareSlashRegular };
+export default SquareSlashRegular;
 export type { SquareSlashRegularProps };

@@ -35,3 +35,4 @@ WifiSlash.displayName = 'WifiSlash';
 
 // Triple export pattern (lucide-react style)
 export { WifiSlash, WifiSlash as WifiSlashIcon, WifiSlash as SiWifiSlash };
+export default WifiSlash;

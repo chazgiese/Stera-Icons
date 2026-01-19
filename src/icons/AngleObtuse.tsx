@@ -35,3 +35,4 @@ AngleObtuse.displayName = 'AngleObtuse';
 
 // Triple export pattern (lucide-react style)
 export { AngleObtuse, AngleObtuse as AngleObtuseIcon, AngleObtuse as SiAngleObtuse };
+export default AngleObtuse;

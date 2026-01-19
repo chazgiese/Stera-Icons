@@ -16,4 +16,5 @@ MoonStarFill.displayName = 'MoonStarFill';
 
 // Triple export pattern (lucide-react style)
 export { MoonStarFill, MoonStarFill as MoonStarFillIcon, MoonStarFill as SiMoonStarFill };
+export default MoonStarFill;
 export type { MoonStarFillProps };

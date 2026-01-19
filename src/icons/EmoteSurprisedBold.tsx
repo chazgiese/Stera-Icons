@@ -17,4 +17,5 @@ EmoteSurprisedBold.displayName = 'EmoteSurprisedBold';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSurprisedBold, EmoteSurprisedBold as EmoteSurprisedBoldIcon, EmoteSurprisedBold as SiEmoteSurprisedBold };
+export default EmoteSurprisedBold;
 export type { EmoteSurprisedBoldProps };

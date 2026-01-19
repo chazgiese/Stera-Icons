@@ -35,3 +35,4 @@ TextField.displayName = 'TextField';
 
 // Triple export pattern (lucide-react style)
 export { TextField, TextField as TextFieldIcon, TextField as SiTextField };
+export default TextField;

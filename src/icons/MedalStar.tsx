@@ -35,3 +35,4 @@ MedalStar.displayName = 'MedalStar';
 
 // Triple export pattern (lucide-react style)
 export { MedalStar, MedalStar as MedalStarIcon, MedalStar as SiMedalStar };
+export default MedalStar;

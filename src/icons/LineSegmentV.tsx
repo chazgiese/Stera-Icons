@@ -35,3 +35,4 @@ LineSegmentV.displayName = 'LineSegmentV';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentV, LineSegmentV as LineSegmentVIcon, LineSegmentV as SiLineSegmentV };
+export default LineSegmentV;

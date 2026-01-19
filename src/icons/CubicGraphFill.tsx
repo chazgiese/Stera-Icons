@@ -18,4 +18,5 @@ CubicGraphFill.displayName = 'CubicGraphFill';
 
 // Triple export pattern (lucide-react style)
 export { CubicGraphFill, CubicGraphFill as CubicGraphFillIcon, CubicGraphFill as SiCubicGraphFill };
+export default CubicGraphFill;
 export type { CubicGraphFillProps };

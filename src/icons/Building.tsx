@@ -35,3 +35,4 @@ Building.displayName = 'Building';
 
 // Triple export pattern (lucide-react style)
 export { Building, Building as BuildingIcon, Building as SiBuilding };
+export default Building;

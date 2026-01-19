@@ -16,4 +16,5 @@ TextAlignRightBold.displayName = 'TextAlignRightBold';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignRightBold, TextAlignRightBold as TextAlignRightBoldIcon, TextAlignRightBold as SiTextAlignRightBold };
+export default TextAlignRightBold;
 export type { TextAlignRightBoldProps };

@@ -16,4 +16,5 @@ PushPinAltBold.displayName = 'PushPinAltBold';
 
 // Triple export pattern (lucide-react style)
 export { PushPinAltBold, PushPinAltBold as PushPinAltBoldIcon, PushPinAltBold as SiPushPinAltBold };
+export default PushPinAltBold;
 export type { PushPinAltBoldProps };

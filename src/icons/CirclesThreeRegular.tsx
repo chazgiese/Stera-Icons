@@ -16,4 +16,5 @@ CirclesThreeRegular.displayName = 'CirclesThreeRegular';
 
 // Triple export pattern (lucide-react style)
 export { CirclesThreeRegular, CirclesThreeRegular as CirclesThreeRegularIcon, CirclesThreeRegular as SiCirclesThreeRegular };
+export default CirclesThreeRegular;
 export type { CirclesThreeRegularProps };

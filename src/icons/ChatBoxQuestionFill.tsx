@@ -16,4 +16,5 @@ ChatBoxQuestionFill.displayName = 'ChatBoxQuestionFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxQuestionFill, ChatBoxQuestionFill as ChatBoxQuestionFillIcon, ChatBoxQuestionFill as SiChatBoxQuestionFill };
+export default ChatBoxQuestionFill;
 export type { ChatBoxQuestionFillProps };

@@ -35,3 +35,4 @@ Bank.displayName = 'Bank';
 
 // Triple export pattern (lucide-react style)
 export { Bank, Bank as BankIcon, Bank as SiBank };
+export default Bank;

@@ -35,3 +35,4 @@ FlaskFull.displayName = 'FlaskFull';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFull, FlaskFull as FlaskFullIcon, FlaskFull as SiFlaskFull };
+export default FlaskFull;

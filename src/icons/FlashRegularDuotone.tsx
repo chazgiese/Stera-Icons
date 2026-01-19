@@ -17,4 +17,5 @@ FlashRegularDuotone.displayName = 'FlashRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlashRegularDuotone, FlashRegularDuotone as FlashRegularDuotoneIcon, FlashRegularDuotone as SiFlashRegularDuotone };
+export default FlashRegularDuotone;
 export type { FlashRegularDuotoneProps };

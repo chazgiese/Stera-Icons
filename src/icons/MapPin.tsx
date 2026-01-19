@@ -35,3 +35,4 @@ MapPin.displayName = 'MapPin';
 
 // Triple export pattern (lucide-react style)
 export { MapPin, MapPin as MapPinIcon, MapPin as SiMapPin };
+export default MapPin;

@@ -17,4 +17,5 @@ AlertHexagonBold.displayName = 'AlertHexagonBold';
 
 // Triple export pattern (lucide-react style)
 export { AlertHexagonBold, AlertHexagonBold as AlertHexagonBoldIcon, AlertHexagonBold as SiAlertHexagonBold };
+export default AlertHexagonBold;
 export type { AlertHexagonBoldProps };

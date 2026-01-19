@@ -16,4 +16,5 @@ ArrowURightTopBold.displayName = 'ArrowURightTopBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowURightTopBold, ArrowURightTopBold as ArrowURightTopBoldIcon, ArrowURightTopBold as SiArrowURightTopBold };
+export default ArrowURightTopBold;
 export type { ArrowURightTopBoldProps };

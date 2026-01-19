@@ -35,3 +35,4 @@ Contrast.displayName = 'Contrast';
 
 // Triple export pattern (lucide-react style)
 export { Contrast, Contrast as ContrastIcon, Contrast as SiContrast };
+export default Contrast;

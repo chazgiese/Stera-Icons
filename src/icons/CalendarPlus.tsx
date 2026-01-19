@@ -35,3 +35,4 @@ CalendarPlus.displayName = 'CalendarPlus';
 
 // Triple export pattern (lucide-react style)
 export { CalendarPlus, CalendarPlus as CalendarPlusIcon, CalendarPlus as SiCalendarPlus };
+export default CalendarPlus;

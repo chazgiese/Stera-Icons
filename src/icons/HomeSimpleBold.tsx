@@ -16,4 +16,5 @@ HomeSimpleBold.displayName = 'HomeSimpleBold';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimpleBold, HomeSimpleBold as HomeSimpleBoldIcon, HomeSimpleBold as SiHomeSimpleBold };
+export default HomeSimpleBold;
 export type { HomeSimpleBoldProps };

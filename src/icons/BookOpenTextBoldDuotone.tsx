@@ -18,4 +18,5 @@ BookOpenTextBoldDuotone.displayName = 'BookOpenTextBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BookOpenTextBoldDuotone, BookOpenTextBoldDuotone as BookOpenTextBoldDuotoneIcon, BookOpenTextBoldDuotone as SiBookOpenTextBoldDuotone };
+export default BookOpenTextBoldDuotone;
 export type { BookOpenTextBoldDuotoneProps };

@@ -35,3 +35,4 @@ Upload.displayName = 'Upload';
 
 // Triple export pattern (lucide-react style)
 export { Upload, Upload as UploadIcon, Upload as SiUpload };
+export default Upload;

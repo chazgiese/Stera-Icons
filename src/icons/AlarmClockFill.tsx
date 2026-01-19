@@ -17,4 +17,5 @@ AlarmClockFill.displayName = 'AlarmClockFill';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockFill, AlarmClockFill as AlarmClockFillIcon, AlarmClockFill as SiAlarmClockFill };
+export default AlarmClockFill;
 export type { AlarmClockFillProps };

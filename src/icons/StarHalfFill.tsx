@@ -16,4 +16,5 @@ StarHalfFill.displayName = 'StarHalfFill';
 
 // Triple export pattern (lucide-react style)
 export { StarHalfFill, StarHalfFill as StarHalfFillIcon, StarHalfFill as SiStarHalfFill };
+export default StarHalfFill;
 export type { StarHalfFillProps };

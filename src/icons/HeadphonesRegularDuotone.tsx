@@ -17,4 +17,5 @@ HeadphonesRegularDuotone.displayName = 'HeadphonesRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HeadphonesRegularDuotone, HeadphonesRegularDuotone as HeadphonesRegularDuotoneIcon, HeadphonesRegularDuotone as SiHeadphonesRegularDuotone };
+export default HeadphonesRegularDuotone;
 export type { HeadphonesRegularDuotoneProps };

@@ -19,4 +19,5 @@ FinderBoldDuotone.displayName = 'FinderBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FinderBoldDuotone, FinderBoldDuotone as FinderBoldDuotoneIcon, FinderBoldDuotone as SiFinderBoldDuotone };
+export default FinderBoldDuotone;
 export type { FinderBoldDuotoneProps };

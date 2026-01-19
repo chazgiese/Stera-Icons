@@ -16,4 +16,5 @@ PlaylistFill.displayName = 'PlaylistFill';
 
 // Triple export pattern (lucide-react style)
 export { PlaylistFill, PlaylistFill as PlaylistFillIcon, PlaylistFill as SiPlaylistFill };
+export default PlaylistFill;
 export type { PlaylistFillProps };

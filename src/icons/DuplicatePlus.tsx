@@ -35,3 +35,4 @@ DuplicatePlus.displayName = 'DuplicatePlus';
 
 // Triple export pattern (lucide-react style)
 export { DuplicatePlus, DuplicatePlus as DuplicatePlusIcon, DuplicatePlus as SiDuplicatePlus };
+export default DuplicatePlus;

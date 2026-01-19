@@ -16,4 +16,5 @@ WaveTriangleFill.displayName = 'WaveTriangleFill';
 
 // Triple export pattern (lucide-react style)
 export { WaveTriangleFill, WaveTriangleFill as WaveTriangleFillIcon, WaveTriangleFill as SiWaveTriangleFill };
+export default WaveTriangleFill;
 export type { WaveTriangleFillProps };

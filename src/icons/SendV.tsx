@@ -35,3 +35,4 @@ SendV.displayName = 'SendV';
 
 // Triple export pattern (lucide-react style)
 export { SendV, SendV as SendVIcon, SendV as SiSendV };
+export default SendV;

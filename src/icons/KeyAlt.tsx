@@ -35,3 +35,4 @@ KeyAlt.displayName = 'KeyAlt';
 
 // Triple export pattern (lucide-react style)
 export { KeyAlt, KeyAlt as KeyAltIcon, KeyAlt as SiKeyAlt };
+export default KeyAlt;

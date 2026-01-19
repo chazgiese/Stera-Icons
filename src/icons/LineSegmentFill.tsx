@@ -16,4 +16,5 @@ LineSegmentFill.displayName = 'LineSegmentFill';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentFill, LineSegmentFill as LineSegmentFillIcon, LineSegmentFill as SiLineSegmentFill };
+export default LineSegmentFill;
 export type { LineSegmentFillProps };

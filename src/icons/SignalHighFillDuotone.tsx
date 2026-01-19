@@ -16,4 +16,5 @@ SignalHighFillDuotone.displayName = 'SignalHighFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalHighFillDuotone, SignalHighFillDuotone as SignalHighFillDuotoneIcon, SignalHighFillDuotone as SiSignalHighFillDuotone };
+export default SignalHighFillDuotone;
 export type { SignalHighFillDuotoneProps };

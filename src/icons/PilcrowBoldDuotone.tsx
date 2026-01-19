@@ -17,4 +17,5 @@ PilcrowBoldDuotone.displayName = 'PilcrowBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PilcrowBoldDuotone, PilcrowBoldDuotone as PilcrowBoldDuotoneIcon, PilcrowBoldDuotone as SiPilcrowBoldDuotone };
+export default PilcrowBoldDuotone;
 export type { PilcrowBoldDuotoneProps };

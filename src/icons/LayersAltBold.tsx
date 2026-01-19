@@ -18,4 +18,5 @@ LayersAltBold.displayName = 'LayersAltBold';
 
 // Triple export pattern (lucide-react style)
 export { LayersAltBold, LayersAltBold as LayersAltBoldIcon, LayersAltBold as SiLayersAltBold };
+export default LayersAltBold;
 export type { LayersAltBoldProps };

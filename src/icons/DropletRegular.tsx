@@ -16,4 +16,5 @@ DropletRegular.displayName = 'DropletRegular';
 
 // Triple export pattern (lucide-react style)
 export { DropletRegular, DropletRegular as DropletRegularIcon, DropletRegular as SiDropletRegular };
+export default DropletRegular;
 export type { DropletRegularProps };

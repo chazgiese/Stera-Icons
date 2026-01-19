@@ -18,4 +18,5 @@ SpeakerMediumBoldDuotone.displayName = 'SpeakerMediumBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerMediumBoldDuotone, SpeakerMediumBoldDuotone as SpeakerMediumBoldDuotoneIcon, SpeakerMediumBoldDuotone as SiSpeakerMediumBoldDuotone };
+export default SpeakerMediumBoldDuotone;
 export type { SpeakerMediumBoldDuotoneProps };

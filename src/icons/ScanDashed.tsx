@@ -35,3 +35,4 @@ ScanDashed.displayName = 'ScanDashed';
 
 // Triple export pattern (lucide-react style)
 export { ScanDashed, ScanDashed as ScanDashedIcon, ScanDashed as SiScanDashed };
+export default ScanDashed;

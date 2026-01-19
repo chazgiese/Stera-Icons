@@ -17,4 +17,5 @@ FastForwardRegularDuotone.displayName = 'FastForwardRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FastForwardRegularDuotone, FastForwardRegularDuotone as FastForwardRegularDuotoneIcon, FastForwardRegularDuotone as SiFastForwardRegularDuotone };
+export default FastForwardRegularDuotone;
 export type { FastForwardRegularDuotoneProps };

@@ -35,3 +35,4 @@ SkipBack.displayName = 'SkipBack';
 
 // Triple export pattern (lucide-react style)
 export { SkipBack, SkipBack as SkipBackIcon, SkipBack as SiSkipBack };
+export default SkipBack;

@@ -18,4 +18,5 @@ WifiRegularDuotone.displayName = 'WifiRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WifiRegularDuotone, WifiRegularDuotone as WifiRegularDuotoneIcon, WifiRegularDuotone as SiWifiRegularDuotone };
+export default WifiRegularDuotone;
 export type { WifiRegularDuotoneProps };

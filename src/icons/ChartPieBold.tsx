@@ -17,4 +17,5 @@ ChartPieBold.displayName = 'ChartPieBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieBold, ChartPieBold as ChartPieBoldIcon, ChartPieBold as SiChartPieBold };
+export default ChartPieBold;
 export type { ChartPieBoldProps };

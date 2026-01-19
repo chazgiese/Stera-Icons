@@ -17,4 +17,5 @@ ShieldBanFillDuotone.displayName = 'ShieldBanFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldBanFillDuotone, ShieldBanFillDuotone as ShieldBanFillDuotoneIcon, ShieldBanFillDuotone as SiShieldBanFillDuotone };
+export default ShieldBanFillDuotone;
 export type { ShieldBanFillDuotoneProps };

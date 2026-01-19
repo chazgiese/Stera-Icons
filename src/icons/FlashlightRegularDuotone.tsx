@@ -17,4 +17,5 @@ FlashlightRegularDuotone.displayName = 'FlashlightRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlashlightRegularDuotone, FlashlightRegularDuotone as FlashlightRegularDuotoneIcon, FlashlightRegularDuotone as SiFlashlightRegularDuotone };
+export default FlashlightRegularDuotone;
 export type { FlashlightRegularDuotoneProps };

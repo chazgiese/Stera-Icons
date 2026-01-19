@@ -17,4 +17,5 @@ SortAscendingBold.displayName = 'SortAscendingBold';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingBold, SortAscendingBold as SortAscendingBoldIcon, SortAscendingBold as SiSortAscendingBold };
+export default SortAscendingBold;
 export type { SortAscendingBoldProps };

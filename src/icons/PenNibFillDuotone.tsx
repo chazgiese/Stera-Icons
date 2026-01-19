@@ -17,4 +17,5 @@ PenNibFillDuotone.displayName = 'PenNibFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PenNibFillDuotone, PenNibFillDuotone as PenNibFillDuotoneIcon, PenNibFillDuotone as SiPenNibFillDuotone };
+export default PenNibFillDuotone;
 export type { PenNibFillDuotoneProps };

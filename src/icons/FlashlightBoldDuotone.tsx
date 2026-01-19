@@ -17,4 +17,5 @@ FlashlightBoldDuotone.displayName = 'FlashlightBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlashlightBoldDuotone, FlashlightBoldDuotone as FlashlightBoldDuotoneIcon, FlashlightBoldDuotone as SiFlashlightBoldDuotone };
+export default FlashlightBoldDuotone;
 export type { FlashlightBoldDuotoneProps };

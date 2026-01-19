@@ -35,3 +35,4 @@ ArrowCornerUpRight.displayName = 'ArrowCornerUpRight';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCornerUpRight, ArrowCornerUpRight as ArrowCornerUpRightIcon, ArrowCornerUpRight as SiArrowCornerUpRight };
+export default ArrowCornerUpRight;

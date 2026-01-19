@@ -16,4 +16,5 @@ ChartDonutRegular.displayName = 'ChartDonutRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartDonutRegular, ChartDonutRegular as ChartDonutRegularIcon, ChartDonutRegular as SiChartDonutRegular };
+export default ChartDonutRegular;
 export type { ChartDonutRegularProps };

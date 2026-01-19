@@ -17,4 +17,5 @@ BoxesFillDuotone.displayName = 'BoxesFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BoxesFillDuotone, BoxesFillDuotone as BoxesFillDuotoneIcon, BoxesFillDuotone as SiBoxesFillDuotone };
+export default BoxesFillDuotone;
 export type { BoxesFillDuotoneProps };

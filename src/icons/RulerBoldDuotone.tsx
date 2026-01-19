@@ -17,4 +17,5 @@ RulerBoldDuotone.displayName = 'RulerBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RulerBoldDuotone, RulerBoldDuotone as RulerBoldDuotoneIcon, RulerBoldDuotone as SiRulerBoldDuotone };
+export default RulerBoldDuotone;
 export type { RulerBoldDuotoneProps };

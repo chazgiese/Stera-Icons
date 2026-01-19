@@ -16,4 +16,5 @@ ShieldHalfFill.displayName = 'ShieldHalfFill';
 
 // Triple export pattern (lucide-react style)
 export { ShieldHalfFill, ShieldHalfFill as ShieldHalfFillIcon, ShieldHalfFill as SiShieldHalfFill };
+export default ShieldHalfFill;
 export type { ShieldHalfFillProps };

@@ -17,4 +17,5 @@ UserMinusRegular.displayName = 'UserMinusRegular';
 
 // Triple export pattern (lucide-react style)
 export { UserMinusRegular, UserMinusRegular as UserMinusRegularIcon, UserMinusRegular as SiUserMinusRegular };
+export default UserMinusRegular;
 export type { UserMinusRegularProps };

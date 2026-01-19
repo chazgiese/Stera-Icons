@@ -16,4 +16,5 @@ BriefcaseBold.displayName = 'BriefcaseBold';
 
 // Triple export pattern (lucide-react style)
 export { BriefcaseBold, BriefcaseBold as BriefcaseBoldIcon, BriefcaseBold as SiBriefcaseBold };
+export default BriefcaseBold;
 export type { BriefcaseBoldProps };

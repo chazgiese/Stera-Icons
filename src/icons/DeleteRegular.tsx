@@ -17,4 +17,5 @@ DeleteRegular.displayName = 'DeleteRegular';
 
 // Triple export pattern (lucide-react style)
 export { DeleteRegular, DeleteRegular as DeleteRegularIcon, DeleteRegular as SiDeleteRegular };
+export default DeleteRegular;
 export type { DeleteRegularProps };

@@ -16,4 +16,5 @@ TestTubeRegular.displayName = 'TestTubeRegular';
 
 // Triple export pattern (lucide-react style)
 export { TestTubeRegular, TestTubeRegular as TestTubeRegularIcon, TestTubeRegular as SiTestTubeRegular };
+export default TestTubeRegular;
 export type { TestTubeRegularProps };

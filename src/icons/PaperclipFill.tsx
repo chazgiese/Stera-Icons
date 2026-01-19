@@ -16,4 +16,5 @@ PaperclipFill.displayName = 'PaperclipFill';
 
 // Triple export pattern (lucide-react style)
 export { PaperclipFill, PaperclipFill as PaperclipFillIcon, PaperclipFill as SiPaperclipFill };
+export default PaperclipFill;
 export type { PaperclipFillProps };

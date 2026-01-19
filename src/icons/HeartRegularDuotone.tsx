@@ -17,4 +17,5 @@ HeartRegularDuotone.displayName = 'HeartRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HeartRegularDuotone, HeartRegularDuotone as HeartRegularDuotoneIcon, HeartRegularDuotone as SiHeartRegularDuotone };
+export default HeartRegularDuotone;
 export type { HeartRegularDuotoneProps };

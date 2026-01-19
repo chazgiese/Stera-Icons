@@ -17,4 +17,5 @@ ChecklistCheckedBoldDuotone.displayName = 'ChecklistCheckedBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistCheckedBoldDuotone, ChecklistCheckedBoldDuotone as ChecklistCheckedBoldDuotoneIcon, ChecklistCheckedBoldDuotone as SiChecklistCheckedBoldDuotone };
+export default ChecklistCheckedBoldDuotone;
 export type { ChecklistCheckedBoldDuotoneProps };

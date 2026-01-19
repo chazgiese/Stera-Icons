@@ -17,4 +17,5 @@ CityBold.displayName = 'CityBold';
 
 // Triple export pattern (lucide-react style)
 export { CityBold, CityBold as CityBoldIcon, CityBold as SiCityBold };
+export default CityBold;
 export type { CityBoldProps };

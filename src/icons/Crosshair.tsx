@@ -35,3 +35,4 @@ Crosshair.displayName = 'Crosshair';
 
 // Triple export pattern (lucide-react style)
 export { Crosshair, Crosshair as CrosshairIcon, Crosshair as SiCrosshair };
+export default Crosshair;

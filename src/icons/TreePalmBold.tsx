@@ -16,4 +16,5 @@ TreePalmBold.displayName = 'TreePalmBold';
 
 // Triple export pattern (lucide-react style)
 export { TreePalmBold, TreePalmBold as TreePalmBoldIcon, TreePalmBold as SiTreePalmBold };
+export default TreePalmBold;
 export type { TreePalmBoldProps };

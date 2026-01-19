@@ -16,4 +16,5 @@ ToyBrickFill.displayName = 'ToyBrickFill';
 
 // Triple export pattern (lucide-react style)
 export { ToyBrickFill, ToyBrickFill as ToyBrickFillIcon, ToyBrickFill as SiToyBrickFill };
+export default ToyBrickFill;
 export type { ToyBrickFillProps };

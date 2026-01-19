@@ -16,4 +16,5 @@ TvRegular.displayName = 'TvRegular';
 
 // Triple export pattern (lucide-react style)
 export { TvRegular, TvRegular as TvRegularIcon, TvRegular as SiTvRegular };
+export default TvRegular;
 export type { TvRegularProps };

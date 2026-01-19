@@ -35,3 +35,4 @@ Rectangle.displayName = 'Rectangle';
 
 // Triple export pattern (lucide-react style)
 export { Rectangle, Rectangle as RectangleIcon, Rectangle as SiRectangle };
+export default Rectangle;

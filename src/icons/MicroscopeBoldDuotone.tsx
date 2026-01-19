@@ -18,4 +18,5 @@ MicroscopeBoldDuotone.displayName = 'MicroscopeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MicroscopeBoldDuotone, MicroscopeBoldDuotone as MicroscopeBoldDuotoneIcon, MicroscopeBoldDuotone as SiMicroscopeBoldDuotone };
+export default MicroscopeBoldDuotone;
 export type { MicroscopeBoldDuotoneProps };

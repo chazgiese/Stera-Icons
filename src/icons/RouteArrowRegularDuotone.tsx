@@ -18,4 +18,5 @@ RouteArrowRegularDuotone.displayName = 'RouteArrowRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RouteArrowRegularDuotone, RouteArrowRegularDuotone as RouteArrowRegularDuotoneIcon, RouteArrowRegularDuotone as SiRouteArrowRegularDuotone };
+export default RouteArrowRegularDuotone;
 export type { RouteArrowRegularDuotoneProps };

@@ -17,4 +17,5 @@ BatteryFullBold.displayName = 'BatteryFullBold';
 
 // Triple export pattern (lucide-react style)
 export { BatteryFullBold, BatteryFullBold as BatteryFullBoldIcon, BatteryFullBold as SiBatteryFullBold };
+export default BatteryFullBold;
 export type { BatteryFullBoldProps };

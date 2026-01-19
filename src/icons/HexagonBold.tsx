@@ -16,4 +16,5 @@ HexagonBold.displayName = 'HexagonBold';
 
 // Triple export pattern (lucide-react style)
 export { HexagonBold, HexagonBold as HexagonBoldIcon, HexagonBold as SiHexagonBold };
+export default HexagonBold;
 export type { HexagonBoldProps };

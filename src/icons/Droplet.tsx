@@ -35,3 +35,4 @@ Droplet.displayName = 'Droplet';
 
 // Triple export pattern (lucide-react style)
 export { Droplet, Droplet as DropletIcon, Droplet as SiDroplet };
+export default Droplet;

@@ -17,4 +17,5 @@ EmoteSurprisedFillDuotone.displayName = 'EmoteSurprisedFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSurprisedFillDuotone, EmoteSurprisedFillDuotone as EmoteSurprisedFillDuotoneIcon, EmoteSurprisedFillDuotone as SiEmoteSurprisedFillDuotone };
+export default EmoteSurprisedFillDuotone;
 export type { EmoteSurprisedFillDuotoneProps };

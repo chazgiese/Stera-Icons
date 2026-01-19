@@ -17,4 +17,5 @@ UserMinusFill.displayName = 'UserMinusFill';
 
 // Triple export pattern (lucide-react style)
 export { UserMinusFill, UserMinusFill as UserMinusFillIcon, UserMinusFill as SiUserMinusFill };
+export default UserMinusFill;
 export type { UserMinusFillProps };

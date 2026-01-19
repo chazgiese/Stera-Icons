@@ -16,4 +16,5 @@ ToolboxRegular.displayName = 'ToolboxRegular';
 
 // Triple export pattern (lucide-react style)
 export { ToolboxRegular, ToolboxRegular as ToolboxRegularIcon, ToolboxRegular as SiToolboxRegular };
+export default ToolboxRegular;
 export type { ToolboxRegularProps };

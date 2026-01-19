@@ -18,4 +18,5 @@ MapPinnedBold.displayName = 'MapPinnedBold';
 
 // Triple export pattern (lucide-react style)
 export { MapPinnedBold, MapPinnedBold as MapPinnedBoldIcon, MapPinnedBold as SiMapPinnedBold };
+export default MapPinnedBold;
 export type { MapPinnedBoldProps };

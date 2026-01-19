@@ -18,4 +18,5 @@ LayersAltRegularDuotone.displayName = 'LayersAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayersAltRegularDuotone, LayersAltRegularDuotone as LayersAltRegularDuotoneIcon, LayersAltRegularDuotone as SiLayersAltRegularDuotone };
+export default LayersAltRegularDuotone;
 export type { LayersAltRegularDuotoneProps };

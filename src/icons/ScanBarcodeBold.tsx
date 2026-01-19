@@ -18,4 +18,5 @@ ScanBarcodeBold.displayName = 'ScanBarcodeBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanBarcodeBold, ScanBarcodeBold as ScanBarcodeBoldIcon, ScanBarcodeBold as SiScanBarcodeBold };
+export default ScanBarcodeBold;
 export type { ScanBarcodeBoldProps };

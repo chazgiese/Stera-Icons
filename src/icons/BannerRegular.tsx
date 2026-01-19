@@ -16,4 +16,5 @@ BannerRegular.displayName = 'BannerRegular';
 
 // Triple export pattern (lucide-react style)
 export { BannerRegular, BannerRegular as BannerRegularIcon, BannerRegular as SiBannerRegular };
+export default BannerRegular;
 export type { BannerRegularProps };

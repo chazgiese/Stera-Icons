@@ -18,4 +18,5 @@ SoccerFieldBoldDuotone.displayName = 'SoccerFieldBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SoccerFieldBoldDuotone, SoccerFieldBoldDuotone as SoccerFieldBoldDuotoneIcon, SoccerFieldBoldDuotone as SiSoccerFieldBoldDuotone };
+export default SoccerFieldBoldDuotone;
 export type { SoccerFieldBoldDuotoneProps };

@@ -17,4 +17,5 @@ ShareRegular.displayName = 'ShareRegular';
 
 // Triple export pattern (lucide-react style)
 export { ShareRegular, ShareRegular as ShareRegularIcon, ShareRegular as SiShareRegular };
+export default ShareRegular;
 export type { ShareRegularProps };

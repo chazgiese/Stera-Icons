@@ -16,4 +16,5 @@ ArrowSquareUpFill.displayName = 'ArrowSquareUpFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowSquareUpFill, ArrowSquareUpFill as ArrowSquareUpFillIcon, ArrowSquareUpFill as SiArrowSquareUpFill };
+export default ArrowSquareUpFill;
 export type { ArrowSquareUpFillProps };

@@ -16,4 +16,5 @@ BottleRegular.displayName = 'BottleRegular';
 
 // Triple export pattern (lucide-react style)
 export { BottleRegular, BottleRegular as BottleRegularIcon, BottleRegular as SiBottleRegular };
+export default BottleRegular;
 export type { BottleRegularProps };

@@ -17,4 +17,5 @@ SlashFillDuotone.displayName = 'SlashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SlashFillDuotone, SlashFillDuotone as SlashFillDuotoneIcon, SlashFillDuotone as SiSlashFillDuotone };
+export default SlashFillDuotone;
 export type { SlashFillDuotoneProps };

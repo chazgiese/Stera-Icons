@@ -16,4 +16,5 @@ ChatBoxAlertFill.displayName = 'ChatBoxAlertFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxAlertFill, ChatBoxAlertFill as ChatBoxAlertFillIcon, ChatBoxAlertFill as SiChatBoxAlertFill };
+export default ChatBoxAlertFill;
 export type { ChatBoxAlertFillProps };

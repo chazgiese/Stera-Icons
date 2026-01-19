@@ -35,3 +35,4 @@ Pencil.displayName = 'Pencil';
 
 // Triple export pattern (lucide-react style)
 export { Pencil, Pencil as PencilIcon, Pencil as SiPencil };
+export default Pencil;

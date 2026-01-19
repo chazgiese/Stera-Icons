@@ -16,4 +16,5 @@ MinusCircleFill.displayName = 'MinusCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { MinusCircleFill, MinusCircleFill as MinusCircleFillIcon, MinusCircleFill as SiMinusCircleFill };
+export default MinusCircleFill;
 export type { MinusCircleFillProps };

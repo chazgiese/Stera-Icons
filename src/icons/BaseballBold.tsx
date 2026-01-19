@@ -17,4 +17,5 @@ BaseballBold.displayName = 'BaseballBold';
 
 // Triple export pattern (lucide-react style)
 export { BaseballBold, BaseballBold as BaseballBoldIcon, BaseballBold as SiBaseballBold };
+export default BaseballBold;
 export type { BaseballBoldProps };

@@ -35,3 +35,4 @@ StopCircle.displayName = 'StopCircle';
 
 // Triple export pattern (lucide-react style)
 export { StopCircle, StopCircle as StopCircleIcon, StopCircle as SiStopCircle };
+export default StopCircle;

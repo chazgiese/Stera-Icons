@@ -18,4 +18,5 @@ AnnotationRegularDuotone.displayName = 'AnnotationRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationRegularDuotone, AnnotationRegularDuotone as AnnotationRegularDuotoneIcon, AnnotationRegularDuotone as SiAnnotationRegularDuotone };
+export default AnnotationRegularDuotone;
 export type { AnnotationRegularDuotoneProps };

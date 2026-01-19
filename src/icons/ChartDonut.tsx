@@ -35,3 +35,4 @@ ChartDonut.displayName = 'ChartDonut';
 
 // Triple export pattern (lucide-react style)
 export { ChartDonut, ChartDonut as ChartDonutIcon, ChartDonut as SiChartDonut };
+export default ChartDonut;

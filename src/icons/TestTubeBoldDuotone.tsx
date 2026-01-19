@@ -17,4 +17,5 @@ TestTubeBoldDuotone.displayName = 'TestTubeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TestTubeBoldDuotone, TestTubeBoldDuotone as TestTubeBoldDuotoneIcon, TestTubeBoldDuotone as SiTestTubeBoldDuotone };
+export default TestTubeBoldDuotone;
 export type { TestTubeBoldDuotoneProps };

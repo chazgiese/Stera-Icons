@@ -16,4 +16,5 @@ ChartBarRowDescFill.displayName = 'ChartBarRowDescFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRowDescFill, ChartBarRowDescFill as ChartBarRowDescFillIcon, ChartBarRowDescFill as SiChartBarRowDescFill };
+export default ChartBarRowDescFill;
 export type { ChartBarRowDescFillProps };

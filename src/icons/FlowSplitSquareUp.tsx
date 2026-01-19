@@ -35,3 +35,4 @@ FlowSplitSquareUp.displayName = 'FlowSplitSquareUp';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitSquareUp, FlowSplitSquareUp as FlowSplitSquareUpIcon, FlowSplitSquareUp as SiFlowSplitSquareUp };
+export default FlowSplitSquareUp;

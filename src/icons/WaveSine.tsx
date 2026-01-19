@@ -35,3 +35,4 @@ WaveSine.displayName = 'WaveSine';
 
 // Triple export pattern (lucide-react style)
 export { WaveSine, WaveSine as WaveSineIcon, WaveSine as SiWaveSine };
+export default WaveSine;

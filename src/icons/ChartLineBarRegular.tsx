@@ -17,4 +17,5 @@ ChartLineBarRegular.displayName = 'ChartLineBarRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineBarRegular, ChartLineBarRegular as ChartLineBarRegularIcon, ChartLineBarRegular as SiChartLineBarRegular };
+export default ChartLineBarRegular;
 export type { ChartLineBarRegularProps };

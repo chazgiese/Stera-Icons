@@ -17,4 +17,5 @@ PushPinBoldDuotone.displayName = 'PushPinBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PushPinBoldDuotone, PushPinBoldDuotone as PushPinBoldDuotoneIcon, PushPinBoldDuotone as SiPushPinBoldDuotone };
+export default PushPinBoldDuotone;
 export type { PushPinBoldDuotoneProps };

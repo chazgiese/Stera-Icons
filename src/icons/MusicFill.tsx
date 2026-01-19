@@ -16,4 +16,5 @@ MusicFill.displayName = 'MusicFill';
 
 // Triple export pattern (lucide-react style)
 export { MusicFill, MusicFill as MusicFillIcon, MusicFill as SiMusicFill };
+export default MusicFill;
 export type { MusicFillProps };

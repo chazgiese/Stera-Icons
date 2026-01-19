@@ -16,4 +16,5 @@ FlowDiagramBold.displayName = 'FlowDiagramBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowDiagramBold, FlowDiagramBold as FlowDiagramBoldIcon, FlowDiagramBold as SiFlowDiagramBold };
+export default FlowDiagramBold;
 export type { FlowDiagramBoldProps };

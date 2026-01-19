@@ -17,4 +17,5 @@ TagRegularDuotone.displayName = 'TagRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TagRegularDuotone, TagRegularDuotone as TagRegularDuotoneIcon, TagRegularDuotone as SiTagRegularDuotone };
+export default TagRegularDuotone;
 export type { TagRegularDuotoneProps };

@@ -17,4 +17,5 @@ SignInAltRegularDuotone.displayName = 'SignInAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignInAltRegularDuotone, SignInAltRegularDuotone as SignInAltRegularDuotoneIcon, SignInAltRegularDuotone as SiSignInAltRegularDuotone };
+export default SignInAltRegularDuotone;
 export type { SignInAltRegularDuotoneProps };

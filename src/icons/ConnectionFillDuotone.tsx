@@ -17,4 +17,5 @@ ConnectionFillDuotone.displayName = 'ConnectionFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionFillDuotone, ConnectionFillDuotone as ConnectionFillDuotoneIcon, ConnectionFillDuotone as SiConnectionFillDuotone };
+export default ConnectionFillDuotone;
 export type { ConnectionFillDuotoneProps };

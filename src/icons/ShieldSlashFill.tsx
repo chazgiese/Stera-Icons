@@ -16,4 +16,5 @@ ShieldSlashFill.displayName = 'ShieldSlashFill';
 
 // Triple export pattern (lucide-react style)
 export { ShieldSlashFill, ShieldSlashFill as ShieldSlashFillIcon, ShieldSlashFill as SiShieldSlashFill };
+export default ShieldSlashFill;
 export type { ShieldSlashFillProps };

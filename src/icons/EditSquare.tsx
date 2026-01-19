@@ -35,3 +35,4 @@ EditSquare.displayName = 'EditSquare';
 
 // Triple export pattern (lucide-react style)
 export { EditSquare, EditSquare as EditSquareIcon, EditSquare as SiEditSquare };
+export default EditSquare;

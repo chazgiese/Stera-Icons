@@ -16,4 +16,5 @@ DeviceDesktopFill.displayName = 'DeviceDesktopFill';
 
 // Triple export pattern (lucide-react style)
 export { DeviceDesktopFill, DeviceDesktopFill as DeviceDesktopFillIcon, DeviceDesktopFill as SiDeviceDesktopFill };
+export default DeviceDesktopFill;
 export type { DeviceDesktopFillProps };

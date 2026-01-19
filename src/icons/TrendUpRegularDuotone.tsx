@@ -17,4 +17,5 @@ TrendUpRegularDuotone.displayName = 'TrendUpRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TrendUpRegularDuotone, TrendUpRegularDuotone as TrendUpRegularDuotoneIcon, TrendUpRegularDuotone as SiTrendUpRegularDuotone };
+export default TrendUpRegularDuotone;
 export type { TrendUpRegularDuotoneProps };

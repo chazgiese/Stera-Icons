@@ -17,4 +17,5 @@ CompassRegular.displayName = 'CompassRegular';
 
 // Triple export pattern (lucide-react style)
 export { CompassRegular, CompassRegular as CompassRegularIcon, CompassRegular as SiCompassRegular };
+export default CompassRegular;
 export type { CompassRegularProps };

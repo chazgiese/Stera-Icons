@@ -16,4 +16,5 @@ ScanBarcodeRegular.displayName = 'ScanBarcodeRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScanBarcodeRegular, ScanBarcodeRegular as ScanBarcodeRegularIcon, ScanBarcodeRegular as SiScanBarcodeRegular };
+export default ScanBarcodeRegular;
 export type { ScanBarcodeRegularProps };

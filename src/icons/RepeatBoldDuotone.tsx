@@ -17,4 +17,5 @@ RepeatBoldDuotone.displayName = 'RepeatBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RepeatBoldDuotone, RepeatBoldDuotone as RepeatBoldDuotoneIcon, RepeatBoldDuotone as SiRepeatBoldDuotone };
+export default RepeatBoldDuotone;
 export type { RepeatBoldDuotoneProps };

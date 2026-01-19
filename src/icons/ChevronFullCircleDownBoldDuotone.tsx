@@ -17,4 +17,5 @@ ChevronFullCircleDownBoldDuotone.displayName = 'ChevronFullCircleDownBoldDuotone
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullCircleDownBoldDuotone, ChevronFullCircleDownBoldDuotone as ChevronFullCircleDownBoldDuotoneIcon, ChevronFullCircleDownBoldDuotone as SiChevronFullCircleDownBoldDuotone };
+export default ChevronFullCircleDownBoldDuotone;
 export type { ChevronFullCircleDownBoldDuotoneProps };

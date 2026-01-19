@@ -16,4 +16,5 @@ AudioBarsFill.displayName = 'AudioBarsFill';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsFill, AudioBarsFill as AudioBarsFillIcon, AudioBarsFill as SiAudioBarsFill };
+export default AudioBarsFill;
 export type { AudioBarsFillProps };

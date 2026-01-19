@@ -16,4 +16,5 @@ CapsLockBold.displayName = 'CapsLockBold';
 
 // Triple export pattern (lucide-react style)
 export { CapsLockBold, CapsLockBold as CapsLockBoldIcon, CapsLockBold as SiCapsLockBold };
+export default CapsLockBold;
 export type { CapsLockBoldProps };

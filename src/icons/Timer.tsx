@@ -35,3 +35,4 @@ Timer.displayName = 'Timer';
 
 // Triple export pattern (lucide-react style)
 export { Timer, Timer as TimerIcon, Timer as SiTimer };
+export default Timer;

@@ -17,4 +17,5 @@ UserPlusFill.displayName = 'UserPlusFill';
 
 // Triple export pattern (lucide-react style)
 export { UserPlusFill, UserPlusFill as UserPlusFillIcon, UserPlusFill as SiUserPlusFill };
+export default UserPlusFill;
 export type { UserPlusFillProps };

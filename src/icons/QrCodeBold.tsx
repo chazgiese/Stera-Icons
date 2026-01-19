@@ -18,4 +18,5 @@ QrCodeBold.displayName = 'QrCodeBold';
 
 // Triple export pattern (lucide-react style)
 export { QrCodeBold, QrCodeBold as QrCodeBoldIcon, QrCodeBold as SiQrCodeBold };
+export default QrCodeBold;
 export type { QrCodeBoldProps };

@@ -17,4 +17,5 @@ SwatchBookRegular.displayName = 'SwatchBookRegular';
 
 // Triple export pattern (lucide-react style)
 export { SwatchBookRegular, SwatchBookRegular as SwatchBookRegularIcon, SwatchBookRegular as SiSwatchBookRegular };
+export default SwatchBookRegular;
 export type { SwatchBookRegularProps };

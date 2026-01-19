@@ -17,4 +17,5 @@ DatabaseSparkleRegularDuotone.displayName = 'DatabaseSparkleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseSparkleRegularDuotone, DatabaseSparkleRegularDuotone as DatabaseSparkleRegularDuotoneIcon, DatabaseSparkleRegularDuotone as SiDatabaseSparkleRegularDuotone };
+export default DatabaseSparkleRegularDuotone;
 export type { DatabaseSparkleRegularDuotoneProps };

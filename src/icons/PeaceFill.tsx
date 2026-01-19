@@ -16,4 +16,5 @@ PeaceFill.displayName = 'PeaceFill';
 
 // Triple export pattern (lucide-react style)
 export { PeaceFill, PeaceFill as PeaceFillIcon, PeaceFill as SiPeaceFill };
+export default PeaceFill;
 export type { PeaceFillProps };

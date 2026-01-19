@@ -16,4 +16,5 @@ KeyholeFill.displayName = 'KeyholeFill';
 
 // Triple export pattern (lucide-react style)
 export { KeyholeFill, KeyholeFill as KeyholeFillIcon, KeyholeFill as SiKeyholeFill };
+export default KeyholeFill;
 export type { KeyholeFillProps };

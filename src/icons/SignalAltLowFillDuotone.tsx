@@ -17,4 +17,5 @@ SignalAltLowFillDuotone.displayName = 'SignalAltLowFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalAltLowFillDuotone, SignalAltLowFillDuotone as SignalAltLowFillDuotoneIcon, SignalAltLowFillDuotone as SiSignalAltLowFillDuotone };
+export default SignalAltLowFillDuotone;
 export type { SignalAltLowFillDuotoneProps };

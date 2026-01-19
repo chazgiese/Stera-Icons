@@ -18,4 +18,5 @@ IdHBoldDuotone.displayName = 'IdHBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { IdHBoldDuotone, IdHBoldDuotone as IdHBoldDuotoneIcon, IdHBoldDuotone as SiIdHBoldDuotone };
+export default IdHBoldDuotone;
 export type { IdHBoldDuotoneProps };

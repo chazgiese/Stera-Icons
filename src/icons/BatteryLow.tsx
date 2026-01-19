@@ -35,3 +35,4 @@ BatteryLow.displayName = 'BatteryLow';
 
 // Triple export pattern (lucide-react style)
 export { BatteryLow, BatteryLow as BatteryLowIcon, BatteryLow as SiBatteryLow };
+export default BatteryLow;

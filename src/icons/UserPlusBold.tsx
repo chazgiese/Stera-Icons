@@ -17,4 +17,5 @@ UserPlusBold.displayName = 'UserPlusBold';
 
 // Triple export pattern (lucide-react style)
 export { UserPlusBold, UserPlusBold as UserPlusBoldIcon, UserPlusBold as SiUserPlusBold };
+export default UserPlusBold;
 export type { UserPlusBoldProps };

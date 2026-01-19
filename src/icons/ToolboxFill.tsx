@@ -17,4 +17,5 @@ ToolboxFill.displayName = 'ToolboxFill';
 
 // Triple export pattern (lucide-react style)
 export { ToolboxFill, ToolboxFill as ToolboxFillIcon, ToolboxFill as SiToolboxFill };
+export default ToolboxFill;
 export type { ToolboxFillProps };

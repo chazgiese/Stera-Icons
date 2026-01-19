@@ -17,4 +17,5 @@ FrameFillDuotone.displayName = 'FrameFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FrameFillDuotone, FrameFillDuotone as FrameFillDuotoneIcon, FrameFillDuotone as SiFrameFillDuotone };
+export default FrameFillDuotone;
 export type { FrameFillDuotoneProps };

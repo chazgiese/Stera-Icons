@@ -17,4 +17,5 @@ SignatureXRegularDuotone.displayName = 'SignatureXRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignatureXRegularDuotone, SignatureXRegularDuotone as SignatureXRegularDuotoneIcon, SignatureXRegularDuotone as SiSignatureXRegularDuotone };
+export default SignatureXRegularDuotone;
 export type { SignatureXRegularDuotoneProps };

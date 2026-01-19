@@ -35,3 +35,4 @@ Play.displayName = 'Play';
 
 // Triple export pattern (lucide-react style)
 export { Play, Play as PlayIcon, Play as SiPlay };
+export default Play;

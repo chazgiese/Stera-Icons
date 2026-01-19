@@ -18,4 +18,5 @@ AgentCursorRegular.displayName = 'AgentCursorRegular';
 
 // Triple export pattern (lucide-react style)
 export { AgentCursorRegular, AgentCursorRegular as AgentCursorRegularIcon, AgentCursorRegular as SiAgentCursorRegular };
+export default AgentCursorRegular;
 export type { AgentCursorRegularProps };

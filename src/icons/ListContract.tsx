@@ -35,3 +35,4 @@ ListContract.displayName = 'ListContract';
 
 // Triple export pattern (lucide-react style)
 export { ListContract, ListContract as ListContractIcon, ListContract as SiListContract };
+export default ListContract;

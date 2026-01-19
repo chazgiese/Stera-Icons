@@ -16,4 +16,5 @@ CloudFill.displayName = 'CloudFill';
 
 // Triple export pattern (lucide-react style)
 export { CloudFill, CloudFill as CloudFillIcon, CloudFill as SiCloudFill };
+export default CloudFill;
 export type { CloudFillProps };

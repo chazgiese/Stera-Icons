@@ -16,4 +16,5 @@ MusicRegular.displayName = 'MusicRegular';
 
 // Triple export pattern (lucide-react style)
 export { MusicRegular, MusicRegular as MusicRegularIcon, MusicRegular as SiMusicRegular };
+export default MusicRegular;
 export type { MusicRegularProps };

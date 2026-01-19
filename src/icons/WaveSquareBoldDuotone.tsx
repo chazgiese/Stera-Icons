@@ -17,4 +17,5 @@ WaveSquareBoldDuotone.displayName = 'WaveSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WaveSquareBoldDuotone, WaveSquareBoldDuotone as WaveSquareBoldDuotoneIcon, WaveSquareBoldDuotone as SiWaveSquareBoldDuotone };
+export default WaveSquareBoldDuotone;
 export type { WaveSquareBoldDuotoneProps };

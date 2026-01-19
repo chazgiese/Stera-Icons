@@ -16,4 +16,5 @@ EyeFill.displayName = 'EyeFill';
 
 // Triple export pattern (lucide-react style)
 export { EyeFill, EyeFill as EyeFillIcon, EyeFill as SiEyeFill };
+export default EyeFill;
 export type { EyeFillProps };

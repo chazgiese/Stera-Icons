@@ -17,4 +17,5 @@ StopCircleFillDuotone.displayName = 'StopCircleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StopCircleFillDuotone, StopCircleFillDuotone as StopCircleFillDuotoneIcon, StopCircleFillDuotone as SiStopCircleFillDuotone };
+export default StopCircleFillDuotone;
 export type { StopCircleFillDuotoneProps };

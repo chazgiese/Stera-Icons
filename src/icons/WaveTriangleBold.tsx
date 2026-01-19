@@ -16,4 +16,5 @@ WaveTriangleBold.displayName = 'WaveTriangleBold';
 
 // Triple export pattern (lucide-react style)
 export { WaveTriangleBold, WaveTriangleBold as WaveTriangleBoldIcon, WaveTriangleBold as SiWaveTriangleBold };
+export default WaveTriangleBold;
 export type { WaveTriangleBoldProps };

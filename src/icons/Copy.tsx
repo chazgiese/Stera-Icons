@@ -35,3 +35,4 @@ Copy.displayName = 'Copy';
 
 // Triple export pattern (lucide-react style)
 export { Copy, Copy as CopyIcon, Copy as SiCopy };
+export default Copy;

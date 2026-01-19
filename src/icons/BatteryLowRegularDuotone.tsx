@@ -17,4 +17,5 @@ BatteryLowRegularDuotone.displayName = 'BatteryLowRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BatteryLowRegularDuotone, BatteryLowRegularDuotone as BatteryLowRegularDuotoneIcon, BatteryLowRegularDuotone as SiBatteryLowRegularDuotone };
+export default BatteryLowRegularDuotone;
 export type { BatteryLowRegularDuotoneProps };

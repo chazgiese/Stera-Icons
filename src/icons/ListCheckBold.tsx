@@ -16,4 +16,5 @@ ListCheckBold.displayName = 'ListCheckBold';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckBold, ListCheckBold as ListCheckBoldIcon, ListCheckBold as SiListCheckBold };
+export default ListCheckBold;
 export type { ListCheckBoldProps };

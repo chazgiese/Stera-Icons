@@ -18,4 +18,5 @@ WandBold.displayName = 'WandBold';
 
 // Triple export pattern (lucide-react style)
 export { WandBold, WandBold as WandBoldIcon, WandBold as SiWandBold };
+export default WandBold;
 export type { WandBoldProps };

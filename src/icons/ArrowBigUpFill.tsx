@@ -16,4 +16,5 @@ ArrowBigUpFill.displayName = 'ArrowBigUpFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowBigUpFill, ArrowBigUpFill as ArrowBigUpFillIcon, ArrowBigUpFill as SiArrowBigUpFill };
+export default ArrowBigUpFill;
 export type { ArrowBigUpFillProps };

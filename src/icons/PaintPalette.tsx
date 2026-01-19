@@ -35,3 +35,4 @@ PaintPalette.displayName = 'PaintPalette';
 
 // Triple export pattern (lucide-react style)
 export { PaintPalette, PaintPalette as PaintPaletteIcon, PaintPalette as SiPaintPalette };
+export default PaintPalette;

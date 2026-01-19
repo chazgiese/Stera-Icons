@@ -16,4 +16,5 @@ RobotFill.displayName = 'RobotFill';
 
 // Triple export pattern (lucide-react style)
 export { RobotFill, RobotFill as RobotFillIcon, RobotFill as SiRobotFill };
+export default RobotFill;
 export type { RobotFillProps };

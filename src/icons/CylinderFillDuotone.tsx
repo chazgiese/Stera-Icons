@@ -17,4 +17,5 @@ CylinderFillDuotone.displayName = 'CylinderFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CylinderFillDuotone, CylinderFillDuotone as CylinderFillDuotoneIcon, CylinderFillDuotone as SiCylinderFillDuotone };
+export default CylinderFillDuotone;
 export type { CylinderFillDuotoneProps };

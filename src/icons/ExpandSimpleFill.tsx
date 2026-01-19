@@ -16,4 +16,5 @@ ExpandSimpleFill.displayName = 'ExpandSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimpleFill, ExpandSimpleFill as ExpandSimpleFillIcon, ExpandSimpleFill as SiExpandSimpleFill };
+export default ExpandSimpleFill;
 export type { ExpandSimpleFillProps };

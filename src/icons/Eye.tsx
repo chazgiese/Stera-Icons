@@ -35,3 +35,4 @@ Eye.displayName = 'Eye';
 
 // Triple export pattern (lucide-react style)
 export { Eye, Eye as EyeIcon, Eye as SiEye };
+export default Eye;

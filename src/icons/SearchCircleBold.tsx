@@ -17,4 +17,5 @@ SearchCircleBold.displayName = 'SearchCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { SearchCircleBold, SearchCircleBold as SearchCircleBoldIcon, SearchCircleBold as SiSearchCircleBold };
+export default SearchCircleBold;
 export type { SearchCircleBoldProps };

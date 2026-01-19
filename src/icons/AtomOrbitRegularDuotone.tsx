@@ -19,4 +19,5 @@ AtomOrbitRegularDuotone.displayName = 'AtomOrbitRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AtomOrbitRegularDuotone, AtomOrbitRegularDuotone as AtomOrbitRegularDuotoneIcon, AtomOrbitRegularDuotone as SiAtomOrbitRegularDuotone };
+export default AtomOrbitRegularDuotone;
 export type { AtomOrbitRegularDuotoneProps };

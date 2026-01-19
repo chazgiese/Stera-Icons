@@ -18,4 +18,5 @@ CalendarXRegularDuotone.displayName = 'CalendarXRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalendarXRegularDuotone, CalendarXRegularDuotone as CalendarXRegularDuotoneIcon, CalendarXRegularDuotone as SiCalendarXRegularDuotone };
+export default CalendarXRegularDuotone;
 export type { CalendarXRegularDuotoneProps };

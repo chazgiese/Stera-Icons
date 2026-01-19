@@ -35,3 +35,4 @@ PushPinAlt.displayName = 'PushPinAlt';
 
 // Triple export pattern (lucide-react style)
 export { PushPinAlt, PushPinAlt as PushPinAltIcon, PushPinAlt as SiPushPinAlt };
+export default PushPinAlt;

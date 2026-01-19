@@ -17,4 +17,5 @@ MailOpenBoldDuotone.displayName = 'MailOpenBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MailOpenBoldDuotone, MailOpenBoldDuotone as MailOpenBoldDuotoneIcon, MailOpenBoldDuotone as SiMailOpenBoldDuotone };
+export default MailOpenBoldDuotone;
 export type { MailOpenBoldDuotoneProps };

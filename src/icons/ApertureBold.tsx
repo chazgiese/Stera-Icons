@@ -16,4 +16,5 @@ ApertureBold.displayName = 'ApertureBold';
 
 // Triple export pattern (lucide-react style)
 export { ApertureBold, ApertureBold as ApertureBoldIcon, ApertureBold as SiApertureBold };
+export default ApertureBold;
 export type { ApertureBoldProps };

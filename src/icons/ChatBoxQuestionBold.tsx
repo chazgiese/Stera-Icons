@@ -17,4 +17,5 @@ ChatBoxQuestionBold.displayName = 'ChatBoxQuestionBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxQuestionBold, ChatBoxQuestionBold as ChatBoxQuestionBoldIcon, ChatBoxQuestionBold as SiChatBoxQuestionBold };
+export default ChatBoxQuestionBold;
 export type { ChatBoxQuestionBoldProps };

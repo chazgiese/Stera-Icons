@@ -16,4 +16,5 @@ WaveSquareRegular.displayName = 'WaveSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { WaveSquareRegular, WaveSquareRegular as WaveSquareRegularIcon, WaveSquareRegular as SiWaveSquareRegular };
+export default WaveSquareRegular;
 export type { WaveSquareRegularProps };

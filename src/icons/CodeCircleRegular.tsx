@@ -17,4 +17,5 @@ CodeCircleRegular.displayName = 'CodeCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { CodeCircleRegular, CodeCircleRegular as CodeCircleRegularIcon, CodeCircleRegular as SiCodeCircleRegular };
+export default CodeCircleRegular;
 export type { CodeCircleRegularProps };

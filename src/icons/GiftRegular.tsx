@@ -16,4 +16,5 @@ GiftRegular.displayName = 'GiftRegular';
 
 // Triple export pattern (lucide-react style)
 export { GiftRegular, GiftRegular as GiftRegularIcon, GiftRegular as SiGiftRegular };
+export default GiftRegular;
 export type { GiftRegularProps };

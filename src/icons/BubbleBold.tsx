@@ -17,4 +17,5 @@ BubbleBold.displayName = 'BubbleBold';
 
 // Triple export pattern (lucide-react style)
 export { BubbleBold, BubbleBold as BubbleBoldIcon, BubbleBold as SiBubbleBold };
+export default BubbleBold;
 export type { BubbleBoldProps };

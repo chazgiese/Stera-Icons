@@ -17,4 +17,5 @@ FilmStripBoldDuotone.displayName = 'FilmStripBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FilmStripBoldDuotone, FilmStripBoldDuotone as FilmStripBoldDuotoneIcon, FilmStripBoldDuotone as SiFilmStripBoldDuotone };
+export default FilmStripBoldDuotone;
 export type { FilmStripBoldDuotoneProps };

@@ -35,3 +35,4 @@ ExpandSimpleAlt.displayName = 'ExpandSimpleAlt';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimpleAlt, ExpandSimpleAlt as ExpandSimpleAltIcon, ExpandSimpleAlt as SiExpandSimpleAlt };
+export default ExpandSimpleAlt;

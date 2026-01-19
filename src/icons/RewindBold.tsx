@@ -16,4 +16,5 @@ RewindBold.displayName = 'RewindBold';
 
 // Triple export pattern (lucide-react style)
 export { RewindBold, RewindBold as RewindBoldIcon, RewindBold as SiRewindBold };
+export default RewindBold;
 export type { RewindBoldProps };

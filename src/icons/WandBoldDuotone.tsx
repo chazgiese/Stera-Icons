@@ -17,4 +17,5 @@ WandBoldDuotone.displayName = 'WandBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WandBoldDuotone, WandBoldDuotone as WandBoldDuotoneIcon, WandBoldDuotone as SiWandBoldDuotone };
+export default WandBoldDuotone;
 export type { WandBoldDuotoneProps };

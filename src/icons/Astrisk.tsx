@@ -35,3 +35,4 @@ Astrisk.displayName = 'Astrisk';
 
 // Triple export pattern (lucide-react style)
 export { Astrisk, Astrisk as AstriskIcon, Astrisk as SiAstrisk };
+export default Astrisk;

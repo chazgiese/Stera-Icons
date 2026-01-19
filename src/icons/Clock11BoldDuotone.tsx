@@ -17,4 +17,5 @@ Clock11BoldDuotone.displayName = 'Clock11BoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { Clock11BoldDuotone, Clock11BoldDuotone as Clock11BoldDuotoneIcon, Clock11BoldDuotone as SiClock11BoldDuotone };
+export default Clock11BoldDuotone;
 export type { Clock11BoldDuotoneProps };

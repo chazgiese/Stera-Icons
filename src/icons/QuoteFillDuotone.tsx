@@ -17,4 +17,5 @@ QuoteFillDuotone.displayName = 'QuoteFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { QuoteFillDuotone, QuoteFillDuotone as QuoteFillDuotoneIcon, QuoteFillDuotone as SiQuoteFillDuotone };
+export default QuoteFillDuotone;
 export type { QuoteFillDuotoneProps };

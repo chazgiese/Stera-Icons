@@ -35,3 +35,4 @@ Key.displayName = 'Key';
 
 // Triple export pattern (lucide-react style)
 export { Key, Key as KeyIcon, Key as SiKey };
+export default Key;

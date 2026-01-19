@@ -17,4 +17,5 @@ RobotBoldDuotone.displayName = 'RobotBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RobotBoldDuotone, RobotBoldDuotone as RobotBoldDuotoneIcon, RobotBoldDuotone as SiRobotBoldDuotone };
+export default RobotBoldDuotone;
 export type { RobotBoldDuotoneProps };

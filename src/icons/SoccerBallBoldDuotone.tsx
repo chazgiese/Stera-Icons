@@ -17,4 +17,5 @@ SoccerBallBoldDuotone.displayName = 'SoccerBallBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SoccerBallBoldDuotone, SoccerBallBoldDuotone as SoccerBallBoldDuotoneIcon, SoccerBallBoldDuotone as SiSoccerBallBoldDuotone };
+export default SoccerBallBoldDuotone;
 export type { SoccerBallBoldDuotoneProps };

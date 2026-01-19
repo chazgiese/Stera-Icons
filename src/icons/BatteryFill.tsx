@@ -16,4 +16,5 @@ BatteryFill.displayName = 'BatteryFill';
 
 // Triple export pattern (lucide-react style)
 export { BatteryFill, BatteryFill as BatteryFillIcon, BatteryFill as SiBatteryFill };
+export default BatteryFill;
 export type { BatteryFillProps };

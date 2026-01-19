@@ -16,4 +16,5 @@ SignatureRegular.displayName = 'SignatureRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignatureRegular, SignatureRegular as SignatureRegularIcon, SignatureRegular as SiSignatureRegular };
+export default SignatureRegular;
 export type { SignatureRegularProps };

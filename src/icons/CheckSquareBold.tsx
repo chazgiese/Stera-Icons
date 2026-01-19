@@ -17,4 +17,5 @@ CheckSquareBold.displayName = 'CheckSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { CheckSquareBold, CheckSquareBold as CheckSquareBoldIcon, CheckSquareBold as SiCheckSquareBold };
+export default CheckSquareBold;
 export type { CheckSquareBoldProps };

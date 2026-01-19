@@ -17,4 +17,5 @@ CircleDivideAltFillDuotone.displayName = 'CircleDivideAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideAltFillDuotone, CircleDivideAltFillDuotone as CircleDivideAltFillDuotoneIcon, CircleDivideAltFillDuotone as SiCircleDivideAltFillDuotone };
+export default CircleDivideAltFillDuotone;
 export type { CircleDivideAltFillDuotoneProps };

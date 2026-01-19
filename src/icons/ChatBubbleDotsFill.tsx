@@ -16,4 +16,5 @@ ChatBubbleDotsFill.displayName = 'ChatBubbleDotsFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleDotsFill, ChatBubbleDotsFill as ChatBubbleDotsFillIcon, ChatBubbleDotsFill as SiChatBubbleDotsFill };
+export default ChatBubbleDotsFill;
 export type { ChatBubbleDotsFillProps };

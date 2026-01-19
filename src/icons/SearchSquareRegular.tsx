@@ -17,4 +17,5 @@ SearchSquareRegular.displayName = 'SearchSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { SearchSquareRegular, SearchSquareRegular as SearchSquareRegularIcon, SearchSquareRegular as SiSearchSquareRegular };
+export default SearchSquareRegular;
 export type { SearchSquareRegularProps };

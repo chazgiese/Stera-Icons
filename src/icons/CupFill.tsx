@@ -16,4 +16,5 @@ CupFill.displayName = 'CupFill';
 
 // Triple export pattern (lucide-react style)
 export { CupFill, CupFill as CupFillIcon, CupFill as SiCupFill };
+export default CupFill;
 export type { CupFillProps };

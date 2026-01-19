@@ -17,4 +17,5 @@ LabelAltBoldDuotone.displayName = 'LabelAltBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LabelAltBoldDuotone, LabelAltBoldDuotone as LabelAltBoldDuotoneIcon, LabelAltBoldDuotone as SiLabelAltBoldDuotone };
+export default LabelAltBoldDuotone;
 export type { LabelAltBoldDuotoneProps };

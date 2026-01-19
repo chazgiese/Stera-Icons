@@ -17,4 +17,5 @@ LinkFill.displayName = 'LinkFill';
 
 // Triple export pattern (lucide-react style)
 export { LinkFill, LinkFill as LinkFillIcon, LinkFill as SiLinkFill };
+export default LinkFill;
 export type { LinkFillProps };

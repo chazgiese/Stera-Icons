@@ -16,4 +16,5 @@ BladeKunaiRegular.displayName = 'BladeKunaiRegular';
 
 // Triple export pattern (lucide-react style)
 export { BladeKunaiRegular, BladeKunaiRegular as BladeKunaiRegularIcon, BladeKunaiRegular as SiBladeKunaiRegular };
+export default BladeKunaiRegular;
 export type { BladeKunaiRegularProps };

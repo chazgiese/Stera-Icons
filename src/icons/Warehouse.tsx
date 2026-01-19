@@ -35,3 +35,4 @@ Warehouse.displayName = 'Warehouse';
 
 // Triple export pattern (lucide-react style)
 export { Warehouse, Warehouse as WarehouseIcon, Warehouse as SiWarehouse };
+export default Warehouse;

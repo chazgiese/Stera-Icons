@@ -16,4 +16,5 @@ ShieldBanRegular.displayName = 'ShieldBanRegular';
 
 // Triple export pattern (lucide-react style)
 export { ShieldBanRegular, ShieldBanRegular as ShieldBanRegularIcon, ShieldBanRegular as SiShieldBanRegular };
+export default ShieldBanRegular;
 export type { ShieldBanRegularProps };

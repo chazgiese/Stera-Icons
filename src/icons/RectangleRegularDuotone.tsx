@@ -17,4 +17,5 @@ RectangleRegularDuotone.displayName = 'RectangleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RectangleRegularDuotone, RectangleRegularDuotone as RectangleRegularDuotoneIcon, RectangleRegularDuotone as SiRectangleRegularDuotone };
+export default RectangleRegularDuotone;
 export type { RectangleRegularDuotoneProps };

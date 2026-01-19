@@ -16,4 +16,5 @@ BoundingBoxFill.displayName = 'BoundingBoxFill';
 
 // Triple export pattern (lucide-react style)
 export { BoundingBoxFill, BoundingBoxFill as BoundingBoxFillIcon, BoundingBoxFill as SiBoundingBoxFill };
+export default BoundingBoxFill;
 export type { BoundingBoxFillProps };

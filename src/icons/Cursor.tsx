@@ -35,3 +35,4 @@ Cursor.displayName = 'Cursor';
 
 // Triple export pattern (lucide-react style)
 export { Cursor, Cursor as CursorIcon, Cursor as SiCursor };
+export default Cursor;

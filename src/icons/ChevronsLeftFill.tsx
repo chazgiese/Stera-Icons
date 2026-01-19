@@ -17,4 +17,5 @@ ChevronsLeftFill.displayName = 'ChevronsLeftFill';
 
 // Triple export pattern (lucide-react style)
 export { ChevronsLeftFill, ChevronsLeftFill as ChevronsLeftFillIcon, ChevronsLeftFill as SiChevronsLeftFill };
+export default ChevronsLeftFill;
 export type { ChevronsLeftFillProps };

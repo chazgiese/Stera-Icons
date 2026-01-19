@@ -17,4 +17,5 @@ BlocksFillDuotone.displayName = 'BlocksFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BlocksFillDuotone, BlocksFillDuotone as BlocksFillDuotoneIcon, BlocksFillDuotone as SiBlocksFillDuotone };
+export default BlocksFillDuotone;
 export type { BlocksFillDuotoneProps };

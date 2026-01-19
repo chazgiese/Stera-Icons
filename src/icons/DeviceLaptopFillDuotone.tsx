@@ -17,4 +17,5 @@ DeviceLaptopFillDuotone.displayName = 'DeviceLaptopFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DeviceLaptopFillDuotone, DeviceLaptopFillDuotone as DeviceLaptopFillDuotoneIcon, DeviceLaptopFillDuotone as SiDeviceLaptopFillDuotone };
+export default DeviceLaptopFillDuotone;
 export type { DeviceLaptopFillDuotoneProps };

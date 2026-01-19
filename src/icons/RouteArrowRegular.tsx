@@ -16,4 +16,5 @@ RouteArrowRegular.displayName = 'RouteArrowRegular';
 
 // Triple export pattern (lucide-react style)
 export { RouteArrowRegular, RouteArrowRegular as RouteArrowRegularIcon, RouteArrowRegular as SiRouteArrowRegular };
+export default RouteArrowRegular;
 export type { RouteArrowRegularProps };

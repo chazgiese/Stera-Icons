@@ -35,3 +35,4 @@ RectangleDashed.displayName = 'RectangleDashed';
 
 // Triple export pattern (lucide-react style)
 export { RectangleDashed, RectangleDashed as RectangleDashedIcon, RectangleDashed as SiRectangleDashed };
+export default RectangleDashed;

@@ -16,4 +16,5 @@ ChatMessagesRegular.displayName = 'ChatMessagesRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessagesRegular, ChatMessagesRegular as ChatMessagesRegularIcon, ChatMessagesRegular as SiChatMessagesRegular };
+export default ChatMessagesRegular;
 export type { ChatMessagesRegularProps };

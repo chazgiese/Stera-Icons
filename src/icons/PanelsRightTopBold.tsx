@@ -16,4 +16,5 @@ PanelsRightTopBold.displayName = 'PanelsRightTopBold';
 
 // Triple export pattern (lucide-react style)
 export { PanelsRightTopBold, PanelsRightTopBold as PanelsRightTopBoldIcon, PanelsRightTopBold as SiPanelsRightTopBold };
+export default PanelsRightTopBold;
 export type { PanelsRightTopBoldProps };

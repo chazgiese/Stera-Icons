@@ -35,3 +35,4 @@ EyeOff.displayName = 'EyeOff';
 
 // Triple export pattern (lucide-react style)
 export { EyeOff, EyeOff as EyeOffIcon, EyeOff as SiEyeOff };
+export default EyeOff;

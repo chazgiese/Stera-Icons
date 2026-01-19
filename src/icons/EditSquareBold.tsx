@@ -17,4 +17,5 @@ EditSquareBold.displayName = 'EditSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { EditSquareBold, EditSquareBold as EditSquareBoldIcon, EditSquareBold as SiEditSquareBold };
+export default EditSquareBold;
 export type { EditSquareBoldProps };

@@ -35,3 +35,4 @@ EmoteSad.displayName = 'EmoteSad';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSad, EmoteSad as EmoteSadIcon, EmoteSad as SiEmoteSad };
+export default EmoteSad;

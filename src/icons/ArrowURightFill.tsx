@@ -16,4 +16,5 @@ ArrowURightFill.displayName = 'ArrowURightFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowURightFill, ArrowURightFill as ArrowURightFillIcon, ArrowURightFill as SiArrowURightFill };
+export default ArrowURightFill;
 export type { ArrowURightFillProps };

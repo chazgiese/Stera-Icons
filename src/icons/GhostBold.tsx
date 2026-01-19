@@ -17,4 +17,5 @@ GhostBold.displayName = 'GhostBold';
 
 // Triple export pattern (lucide-react style)
 export { GhostBold, GhostBold as GhostBoldIcon, GhostBold as SiGhostBold };
+export default GhostBold;
 export type { GhostBoldProps };

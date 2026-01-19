@@ -17,4 +17,5 @@ TennisBallFill.displayName = 'TennisBallFill';
 
 // Triple export pattern (lucide-react style)
 export { TennisBallFill, TennisBallFill as TennisBallFillIcon, TennisBallFill as SiTennisBallFill };
+export default TennisBallFill;
 export type { TennisBallFillProps };

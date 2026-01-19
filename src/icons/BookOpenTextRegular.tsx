@@ -17,4 +17,5 @@ BookOpenTextRegular.displayName = 'BookOpenTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { BookOpenTextRegular, BookOpenTextRegular as BookOpenTextRegularIcon, BookOpenTextRegular as SiBookOpenTextRegular };
+export default BookOpenTextRegular;
 export type { BookOpenTextRegularProps };

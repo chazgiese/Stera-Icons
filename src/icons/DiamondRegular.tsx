@@ -16,4 +16,5 @@ DiamondRegular.displayName = 'DiamondRegular';
 
 // Triple export pattern (lucide-react style)
 export { DiamondRegular, DiamondRegular as DiamondRegularIcon, DiamondRegular as SiDiamondRegular };
+export default DiamondRegular;
 export type { DiamondRegularProps };

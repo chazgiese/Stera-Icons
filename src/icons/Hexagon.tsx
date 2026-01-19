@@ -35,3 +35,4 @@ Hexagon.displayName = 'Hexagon';
 
 // Triple export pattern (lucide-react style)
 export { Hexagon, Hexagon as HexagonIcon, Hexagon as SiHexagon };
+export default Hexagon;

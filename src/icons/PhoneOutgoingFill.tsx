@@ -17,4 +17,5 @@ PhoneOutgoingFill.displayName = 'PhoneOutgoingFill';
 
 // Triple export pattern (lucide-react style)
 export { PhoneOutgoingFill, PhoneOutgoingFill as PhoneOutgoingFillIcon, PhoneOutgoingFill as SiPhoneOutgoingFill };
+export default PhoneOutgoingFill;
 export type { PhoneOutgoingFillProps };

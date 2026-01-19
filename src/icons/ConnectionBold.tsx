@@ -18,4 +18,5 @@ ConnectionBold.displayName = 'ConnectionBold';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionBold, ConnectionBold as ConnectionBoldIcon, ConnectionBold as SiConnectionBold };
+export default ConnectionBold;
 export type { ConnectionBoldProps };

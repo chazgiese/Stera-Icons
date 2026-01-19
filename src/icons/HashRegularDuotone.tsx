@@ -17,4 +17,5 @@ HashRegularDuotone.displayName = 'HashRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashRegularDuotone, HashRegularDuotone as HashRegularDuotoneIcon, HashRegularDuotone as SiHashRegularDuotone };
+export default HashRegularDuotone;
 export type { HashRegularDuotoneProps };

@@ -16,4 +16,5 @@ PoundSterlingFill.displayName = 'PoundSterlingFill';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingFill, PoundSterlingFill as PoundSterlingFillIcon, PoundSterlingFill as SiPoundSterlingFill };
+export default PoundSterlingFill;
 export type { PoundSterlingFillProps };

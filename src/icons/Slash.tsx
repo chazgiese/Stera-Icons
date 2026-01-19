@@ -35,3 +35,4 @@ Slash.displayName = 'Slash';
 
 // Triple export pattern (lucide-react style)
 export { Slash, Slash as SlashIcon, Slash as SiSlash };
+export default Slash;

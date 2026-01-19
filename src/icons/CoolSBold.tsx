@@ -16,4 +16,5 @@ CoolSBold.displayName = 'CoolSBold';
 
 // Triple export pattern (lucide-react style)
 export { CoolSBold, CoolSBold as CoolSBoldIcon, CoolSBold as SiCoolSBold };
+export default CoolSBold;
 export type { CoolSBoldProps };

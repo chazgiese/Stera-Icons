@@ -17,4 +17,5 @@ PanelRightFloatingRegular.displayName = 'PanelRightFloatingRegular';
 
 // Triple export pattern (lucide-react style)
 export { PanelRightFloatingRegular, PanelRightFloatingRegular as PanelRightFloatingRegularIcon, PanelRightFloatingRegular as SiPanelRightFloatingRegular };
+export default PanelRightFloatingRegular;
 export type { PanelRightFloatingRegularProps };

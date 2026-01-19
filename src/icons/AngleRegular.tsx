@@ -16,4 +16,5 @@ AngleRegular.displayName = 'AngleRegular';
 
 // Triple export pattern (lucide-react style)
 export { AngleRegular, AngleRegular as AngleRegularIcon, AngleRegular as SiAngleRegular };
+export default AngleRegular;
 export type { AngleRegularProps };

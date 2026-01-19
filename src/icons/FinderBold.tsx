@@ -17,4 +17,5 @@ FinderBold.displayName = 'FinderBold';
 
 // Triple export pattern (lucide-react style)
 export { FinderBold, FinderBold as FinderBoldIcon, FinderBold as SiFinderBold };
+export default FinderBold;
 export type { FinderBoldProps };

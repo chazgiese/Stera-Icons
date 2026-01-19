@@ -18,4 +18,5 @@ ScanCameraRegularDuotone.displayName = 'ScanCameraRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanCameraRegularDuotone, ScanCameraRegularDuotone as ScanCameraRegularDuotoneIcon, ScanCameraRegularDuotone as SiScanCameraRegularDuotone };
+export default ScanCameraRegularDuotone;
 export type { ScanCameraRegularDuotoneProps };

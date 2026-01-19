@@ -17,4 +17,5 @@ PieBold.displayName = 'PieBold';
 
 // Triple export pattern (lucide-react style)
 export { PieBold, PieBold as PieBoldIcon, PieBold as SiPieBold };
+export default PieBold;
 export type { PieBoldProps };

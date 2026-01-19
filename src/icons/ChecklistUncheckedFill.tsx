@@ -16,4 +16,5 @@ ChecklistUncheckedFill.displayName = 'ChecklistUncheckedFill';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistUncheckedFill, ChecklistUncheckedFill as ChecklistUncheckedFillIcon, ChecklistUncheckedFill as SiChecklistUncheckedFill };
+export default ChecklistUncheckedFill;
 export type { ChecklistUncheckedFillProps };

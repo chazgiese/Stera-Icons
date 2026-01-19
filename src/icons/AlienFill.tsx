@@ -16,4 +16,5 @@ AlienFill.displayName = 'AlienFill';
 
 // Triple export pattern (lucide-react style)
 export { AlienFill, AlienFill as AlienFillIcon, AlienFill as SiAlienFill };
+export default AlienFill;
 export type { AlienFillProps };

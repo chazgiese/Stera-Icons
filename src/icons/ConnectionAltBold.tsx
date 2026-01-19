@@ -18,4 +18,5 @@ ConnectionAltBold.displayName = 'ConnectionAltBold';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionAltBold, ConnectionAltBold as ConnectionAltBoldIcon, ConnectionAltBold as SiConnectionAltBold };
+export default ConnectionAltBold;
 export type { ConnectionAltBoldProps };

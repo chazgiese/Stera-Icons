@@ -18,4 +18,5 @@ DocumentSearchRegularDuotone.displayName = 'DocumentSearchRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DocumentSearchRegularDuotone, DocumentSearchRegularDuotone as DocumentSearchRegularDuotoneIcon, DocumentSearchRegularDuotone as SiDocumentSearchRegularDuotone };
+export default DocumentSearchRegularDuotone;
 export type { DocumentSearchRegularDuotoneProps };

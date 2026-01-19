@@ -16,4 +16,5 @@ GithubRegularDuotone.displayName = 'GithubRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GithubRegularDuotone, GithubRegularDuotone as GithubRegularDuotoneIcon, GithubRegularDuotone as SiGithubRegularDuotone };
+export default GithubRegularDuotone;
 export type { GithubRegularDuotoneProps };

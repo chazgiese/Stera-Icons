@@ -16,4 +16,5 @@ BellXFill.displayName = 'BellXFill';
 
 // Triple export pattern (lucide-react style)
 export { BellXFill, BellXFill as BellXFillIcon, BellXFill as SiBellXFill };
+export default BellXFill;
 export type { BellXFillProps };

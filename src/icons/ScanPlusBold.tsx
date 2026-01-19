@@ -16,4 +16,5 @@ ScanPlusBold.displayName = 'ScanPlusBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanPlusBold, ScanPlusBold as ScanPlusBoldIcon, ScanPlusBold as SiScanPlusBold };
+export default ScanPlusBold;
 export type { ScanPlusBoldProps };

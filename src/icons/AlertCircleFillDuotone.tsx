@@ -17,4 +17,5 @@ AlertCircleFillDuotone.displayName = 'AlertCircleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlertCircleFillDuotone, AlertCircleFillDuotone as AlertCircleFillDuotoneIcon, AlertCircleFillDuotone as SiAlertCircleFillDuotone };
+export default AlertCircleFillDuotone;
 export type { AlertCircleFillDuotoneProps };

@@ -17,4 +17,5 @@ BlocksBold.displayName = 'BlocksBold';
 
 // Triple export pattern (lucide-react style)
 export { BlocksBold, BlocksBold as BlocksBoldIcon, BlocksBold as SiBlocksBold };
+export default BlocksBold;
 export type { BlocksBoldProps };

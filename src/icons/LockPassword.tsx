@@ -35,3 +35,4 @@ LockPassword.displayName = 'LockPassword';
 
 // Triple export pattern (lucide-react style)
 export { LockPassword, LockPassword as LockPasswordIcon, LockPassword as SiLockPassword };
+export default LockPassword;

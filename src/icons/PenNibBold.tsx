@@ -16,4 +16,5 @@ PenNibBold.displayName = 'PenNibBold';
 
 // Triple export pattern (lucide-react style)
 export { PenNibBold, PenNibBold as PenNibBoldIcon, PenNibBold as SiPenNibBold };
+export default PenNibBold;
 export type { PenNibBoldProps };

@@ -17,4 +17,5 @@ TagBoldDuotone.displayName = 'TagBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TagBoldDuotone, TagBoldDuotone as TagBoldDuotoneIcon, TagBoldDuotone as SiTagBoldDuotone };
+export default TagBoldDuotone;
 export type { TagBoldDuotoneProps };

@@ -16,4 +16,5 @@ CollapseSimpleFill.displayName = 'CollapseSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleFill, CollapseSimpleFill as CollapseSimpleFillIcon, CollapseSimpleFill as SiCollapseSimpleFill };
+export default CollapseSimpleFill;
 export type { CollapseSimpleFillProps };

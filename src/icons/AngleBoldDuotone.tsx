@@ -17,4 +17,5 @@ AngleBoldDuotone.displayName = 'AngleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AngleBoldDuotone, AngleBoldDuotone as AngleBoldDuotoneIcon, AngleBoldDuotone as SiAngleBoldDuotone };
+export default AngleBoldDuotone;
 export type { AngleBoldDuotoneProps };

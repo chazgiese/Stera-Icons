@@ -16,4 +16,5 @@ DeviceTabletFill.displayName = 'DeviceTabletFill';
 
 // Triple export pattern (lucide-react style)
 export { DeviceTabletFill, DeviceTabletFill as DeviceTabletFillIcon, DeviceTabletFill as SiDeviceTabletFill };
+export default DeviceTabletFill;
 export type { DeviceTabletFillProps };

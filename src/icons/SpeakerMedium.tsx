@@ -35,3 +35,4 @@ SpeakerMedium.displayName = 'SpeakerMedium';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerMedium, SpeakerMedium as SpeakerMediumIcon, SpeakerMedium as SiSpeakerMedium };
+export default SpeakerMedium;

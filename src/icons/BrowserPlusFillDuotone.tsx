@@ -17,4 +17,5 @@ BrowserPlusFillDuotone.displayName = 'BrowserPlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrowserPlusFillDuotone, BrowserPlusFillDuotone as BrowserPlusFillDuotoneIcon, BrowserPlusFillDuotone as SiBrowserPlusFillDuotone };
+export default BrowserPlusFillDuotone;
 export type { BrowserPlusFillDuotoneProps };

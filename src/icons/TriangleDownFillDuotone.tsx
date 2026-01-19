@@ -17,4 +17,5 @@ TriangleDownFillDuotone.displayName = 'TriangleDownFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TriangleDownFillDuotone, TriangleDownFillDuotone as TriangleDownFillDuotoneIcon, TriangleDownFillDuotone as SiTriangleDownFillDuotone };
+export default TriangleDownFillDuotone;
 export type { TriangleDownFillDuotoneProps };

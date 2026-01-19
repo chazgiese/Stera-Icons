@@ -35,3 +35,4 @@ Flower.displayName = 'Flower';
 
 // Triple export pattern (lucide-react style)
 export { Flower, Flower as FlowerIcon, Flower as SiFlower };
+export default Flower;

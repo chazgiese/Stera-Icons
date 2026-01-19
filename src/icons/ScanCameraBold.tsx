@@ -18,4 +18,5 @@ ScanCameraBold.displayName = 'ScanCameraBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanCameraBold, ScanCameraBold as ScanCameraBoldIcon, ScanCameraBold as SiScanCameraBold };
+export default ScanCameraBold;
 export type { ScanCameraBoldProps };

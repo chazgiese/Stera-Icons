@@ -16,4 +16,5 @@ ArchwayRegular.displayName = 'ArchwayRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArchwayRegular, ArchwayRegular as ArchwayRegularIcon, ArchwayRegular as SiArchwayRegular };
+export default ArchwayRegular;
 export type { ArchwayRegularProps };

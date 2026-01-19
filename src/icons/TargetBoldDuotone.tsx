@@ -18,4 +18,5 @@ TargetBoldDuotone.displayName = 'TargetBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TargetBoldDuotone, TargetBoldDuotone as TargetBoldDuotoneIcon, TargetBoldDuotone as SiTargetBoldDuotone };
+export default TargetBoldDuotone;
 export type { TargetBoldDuotoneProps };

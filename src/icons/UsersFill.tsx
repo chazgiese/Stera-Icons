@@ -17,4 +17,5 @@ UsersFill.displayName = 'UsersFill';
 
 // Triple export pattern (lucide-react style)
 export { UsersFill, UsersFill as UsersFillIcon, UsersFill as SiUsersFill };
+export default UsersFill;
 export type { UsersFillProps };

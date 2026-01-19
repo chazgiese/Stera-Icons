@@ -17,4 +17,5 @@ ThermometerLowRegularDuotone.displayName = 'ThermometerLowRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerLowRegularDuotone, ThermometerLowRegularDuotone as ThermometerLowRegularDuotoneIcon, ThermometerLowRegularDuotone as SiThermometerLowRegularDuotone };
+export default ThermometerLowRegularDuotone;
 export type { ThermometerLowRegularDuotoneProps };

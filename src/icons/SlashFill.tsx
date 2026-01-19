@@ -16,4 +16,5 @@ SlashFill.displayName = 'SlashFill';
 
 // Triple export pattern (lucide-react style)
 export { SlashFill, SlashFill as SlashFillIcon, SlashFill as SiSlashFill };
+export default SlashFill;
 export type { SlashFillProps };

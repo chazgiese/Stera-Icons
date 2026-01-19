@@ -16,4 +16,5 @@ LineWeightFill.displayName = 'LineWeightFill';
 
 // Triple export pattern (lucide-react style)
 export { LineWeightFill, LineWeightFill as LineWeightFillIcon, LineWeightFill as SiLineWeightFill };
+export default LineWeightFill;
 export type { LineWeightFillProps };

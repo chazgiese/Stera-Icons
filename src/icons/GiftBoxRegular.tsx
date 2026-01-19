@@ -16,4 +16,5 @@ GiftBoxRegular.displayName = 'GiftBoxRegular';
 
 // Triple export pattern (lucide-react style)
 export { GiftBoxRegular, GiftBoxRegular as GiftBoxRegularIcon, GiftBoxRegular as SiGiftBoxRegular };
+export default GiftBoxRegular;
 export type { GiftBoxRegularProps };

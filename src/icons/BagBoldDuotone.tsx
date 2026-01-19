@@ -17,4 +17,5 @@ BagBoldDuotone.displayName = 'BagBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BagBoldDuotone, BagBoldDuotone as BagBoldDuotoneIcon, BagBoldDuotone as SiBagBoldDuotone };
+export default BagBoldDuotone;
 export type { BagBoldDuotoneProps };

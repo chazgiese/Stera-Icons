@@ -17,4 +17,5 @@ FolderPlusRegular.displayName = 'FolderPlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { FolderPlusRegular, FolderPlusRegular as FolderPlusRegularIcon, FolderPlusRegular as SiFolderPlusRegular };
+export default FolderPlusRegular;
 export type { FolderPlusRegularProps };

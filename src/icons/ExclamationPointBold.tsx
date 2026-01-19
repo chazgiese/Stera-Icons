@@ -16,4 +16,5 @@ ExclamationPointBold.displayName = 'ExclamationPointBold';
 
 // Triple export pattern (lucide-react style)
 export { ExclamationPointBold, ExclamationPointBold as ExclamationPointBoldIcon, ExclamationPointBold as SiExclamationPointBold };
+export default ExclamationPointBold;
 export type { ExclamationPointBoldProps };

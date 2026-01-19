@@ -17,4 +17,5 @@ CompassFill.displayName = 'CompassFill';
 
 // Triple export pattern (lucide-react style)
 export { CompassFill, CompassFill as CompassFillIcon, CompassFill as SiCompassFill };
+export default CompassFill;
 export type { CompassFillProps };

@@ -16,4 +16,5 @@ MoonCrescentFill.displayName = 'MoonCrescentFill';
 
 // Triple export pattern (lucide-react style)
 export { MoonCrescentFill, MoonCrescentFill as MoonCrescentFillIcon, MoonCrescentFill as SiMoonCrescentFill };
+export default MoonCrescentFill;
 export type { MoonCrescentFillProps };

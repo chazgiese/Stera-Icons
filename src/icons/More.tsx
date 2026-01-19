@@ -35,3 +35,4 @@ More.displayName = 'More';
 
 // Triple export pattern (lucide-react style)
 export { More, More as MoreIcon, More as SiMore };
+export default More;

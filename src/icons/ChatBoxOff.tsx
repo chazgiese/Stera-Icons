@@ -35,3 +35,4 @@ ChatBoxOff.displayName = 'ChatBoxOff';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxOff, ChatBoxOff as ChatBoxOffIcon, ChatBoxOff as SiChatBoxOff };
+export default ChatBoxOff;

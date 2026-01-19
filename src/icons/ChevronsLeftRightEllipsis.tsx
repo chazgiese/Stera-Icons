@@ -35,3 +35,4 @@ ChevronsLeftRightEllipsis.displayName = 'ChevronsLeftRightEllipsis';
 
 // Triple export pattern (lucide-react style)
 export { ChevronsLeftRightEllipsis, ChevronsLeftRightEllipsis as ChevronsLeftRightEllipsisIcon, ChevronsLeftRightEllipsis as SiChevronsLeftRightEllipsis };
+export default ChevronsLeftRightEllipsis;

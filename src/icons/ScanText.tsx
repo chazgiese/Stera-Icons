@@ -35,3 +35,4 @@ ScanText.displayName = 'ScanText';
 
 // Triple export pattern (lucide-react style)
 export { ScanText, ScanText as ScanTextIcon, ScanText as SiScanText };
+export default ScanText;

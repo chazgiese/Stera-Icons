@@ -16,4 +16,5 @@ CircleNotchBold.displayName = 'CircleNotchBold';
 
 // Triple export pattern (lucide-react style)
 export { CircleNotchBold, CircleNotchBold as CircleNotchBoldIcon, CircleNotchBold as SiCircleNotchBold };
+export default CircleNotchBold;
 export type { CircleNotchBoldProps };

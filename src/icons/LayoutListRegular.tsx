@@ -19,4 +19,5 @@ LayoutListRegular.displayName = 'LayoutListRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayoutListRegular, LayoutListRegular as LayoutListRegularIcon, LayoutListRegular as SiLayoutListRegular };
+export default LayoutListRegular;
 export type { LayoutListRegularProps };

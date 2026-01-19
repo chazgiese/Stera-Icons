@@ -17,4 +17,5 @@ VideoRegularDuotone.displayName = 'VideoRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { VideoRegularDuotone, VideoRegularDuotone as VideoRegularDuotoneIcon, VideoRegularDuotone as SiVideoRegularDuotone };
+export default VideoRegularDuotone;
 export type { VideoRegularDuotoneProps };

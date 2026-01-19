@@ -18,4 +18,5 @@ UserCircleDashedRegular.displayName = 'UserCircleDashedRegular';
 
 // Triple export pattern (lucide-react style)
 export { UserCircleDashedRegular, UserCircleDashedRegular as UserCircleDashedRegularIcon, UserCircleDashedRegular as SiUserCircleDashedRegular };
+export default UserCircleDashedRegular;
 export type { UserCircleDashedRegularProps };

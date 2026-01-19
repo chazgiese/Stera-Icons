@@ -16,4 +16,5 @@ TrendDownFill.displayName = 'TrendDownFill';
 
 // Triple export pattern (lucide-react style)
 export { TrendDownFill, TrendDownFill as TrendDownFillIcon, TrendDownFill as SiTrendDownFill };
+export default TrendDownFill;
 export type { TrendDownFillProps };

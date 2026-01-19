@@ -35,3 +35,4 @@ CanLabel.displayName = 'CanLabel';
 
 // Triple export pattern (lucide-react style)
 export { CanLabel, CanLabel as CanLabelIcon, CanLabel as SiCanLabel };
+export default CanLabel;

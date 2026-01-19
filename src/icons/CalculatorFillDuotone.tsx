@@ -17,4 +17,5 @@ CalculatorFillDuotone.displayName = 'CalculatorFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalculatorFillDuotone, CalculatorFillDuotone as CalculatorFillDuotoneIcon, CalculatorFillDuotone as SiCalculatorFillDuotone };
+export default CalculatorFillDuotone;
 export type { CalculatorFillDuotoneProps };

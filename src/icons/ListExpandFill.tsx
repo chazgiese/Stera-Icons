@@ -16,4 +16,5 @@ ListExpandFill.displayName = 'ListExpandFill';
 
 // Triple export pattern (lucide-react style)
 export { ListExpandFill, ListExpandFill as ListExpandFillIcon, ListExpandFill as SiListExpandFill };
+export default ListExpandFill;
 export type { ListExpandFillProps };

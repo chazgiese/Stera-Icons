@@ -35,3 +35,4 @@ BellDot.displayName = 'BellDot';
 
 // Triple export pattern (lucide-react style)
 export { BellDot, BellDot as BellDotIcon, BellDot as SiBellDot };
+export default BellDot;

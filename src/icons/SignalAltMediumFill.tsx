@@ -16,4 +16,5 @@ SignalAltMediumFill.displayName = 'SignalAltMediumFill';
 
 // Triple export pattern (lucide-react style)
 export { SignalAltMediumFill, SignalAltMediumFill as SignalAltMediumFillIcon, SignalAltMediumFill as SiSignalAltMediumFill };
+export default SignalAltMediumFill;
 export type { SignalAltMediumFillProps };

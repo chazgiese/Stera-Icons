@@ -16,4 +16,5 @@ BuildingFill.displayName = 'BuildingFill';
 
 // Triple export pattern (lucide-react style)
 export { BuildingFill, BuildingFill as BuildingFillIcon, BuildingFill as SiBuildingFill };
+export default BuildingFill;
 export type { BuildingFillProps };

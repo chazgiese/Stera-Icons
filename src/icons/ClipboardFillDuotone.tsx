@@ -17,4 +17,5 @@ ClipboardFillDuotone.displayName = 'ClipboardFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ClipboardFillDuotone, ClipboardFillDuotone as ClipboardFillDuotoneIcon, ClipboardFillDuotone as SiClipboardFillDuotone };
+export default ClipboardFillDuotone;
 export type { ClipboardFillDuotoneProps };

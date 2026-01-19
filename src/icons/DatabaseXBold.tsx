@@ -17,4 +17,5 @@ DatabaseXBold.displayName = 'DatabaseXBold';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseXBold, DatabaseXBold as DatabaseXBoldIcon, DatabaseXBold as SiDatabaseXBold };
+export default DatabaseXBold;
 export type { DatabaseXBoldProps };

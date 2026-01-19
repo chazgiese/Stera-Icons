@@ -16,4 +16,5 @@ SkipForwardFill.displayName = 'SkipForwardFill';
 
 // Triple export pattern (lucide-react style)
 export { SkipForwardFill, SkipForwardFill as SkipForwardFillIcon, SkipForwardFill as SiSkipForwardFill };
+export default SkipForwardFill;
 export type { SkipForwardFillProps };

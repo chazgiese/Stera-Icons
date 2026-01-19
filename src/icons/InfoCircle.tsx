@@ -35,3 +35,4 @@ InfoCircle.displayName = 'InfoCircle';
 
 // Triple export pattern (lucide-react style)
 export { InfoCircle, InfoCircle as InfoCircleIcon, InfoCircle as SiInfoCircle };
+export default InfoCircle;

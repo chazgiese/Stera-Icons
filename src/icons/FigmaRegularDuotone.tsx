@@ -17,4 +17,5 @@ FigmaRegularDuotone.displayName = 'FigmaRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FigmaRegularDuotone, FigmaRegularDuotone as FigmaRegularDuotoneIcon, FigmaRegularDuotone as SiFigmaRegularDuotone };
+export default FigmaRegularDuotone;
 export type { FigmaRegularDuotoneProps };

@@ -16,4 +16,5 @@ BottleFill.displayName = 'BottleFill';
 
 // Triple export pattern (lucide-react style)
 export { BottleFill, BottleFill as BottleFillIcon, BottleFill as SiBottleFill };
+export default BottleFill;
 export type { BottleFillProps };

@@ -35,3 +35,4 @@ FilmStrip.displayName = 'FilmStrip';
 
 // Triple export pattern (lucide-react style)
 export { FilmStrip, FilmStrip as FilmStripIcon, FilmStrip as SiFilmStrip };
+export default FilmStrip;

@@ -17,4 +17,5 @@ DeleteFillDuotone.displayName = 'DeleteFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DeleteFillDuotone, DeleteFillDuotone as DeleteFillDuotoneIcon, DeleteFillDuotone as SiDeleteFillDuotone };
+export default DeleteFillDuotone;
 export type { DeleteFillDuotoneProps };

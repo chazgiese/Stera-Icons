@@ -17,4 +17,5 @@ KeyAltBold.displayName = 'KeyAltBold';
 
 // Triple export pattern (lucide-react style)
 export { KeyAltBold, KeyAltBold as KeyAltBoldIcon, KeyAltBold as SiKeyAltBold };
+export default KeyAltBold;
 export type { KeyAltBoldProps };

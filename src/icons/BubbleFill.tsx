@@ -16,4 +16,5 @@ BubbleFill.displayName = 'BubbleFill';
 
 // Triple export pattern (lucide-react style)
 export { BubbleFill, BubbleFill as BubbleFillIcon, BubbleFill as SiBubbleFill };
+export default BubbleFill;
 export type { BubbleFillProps };

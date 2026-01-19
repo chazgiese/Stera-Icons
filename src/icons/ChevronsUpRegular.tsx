@@ -17,4 +17,5 @@ ChevronsUpRegular.displayName = 'ChevronsUpRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChevronsUpRegular, ChevronsUpRegular as ChevronsUpRegularIcon, ChevronsUpRegular as SiChevronsUpRegular };
+export default ChevronsUpRegular;
 export type { ChevronsUpRegularProps };

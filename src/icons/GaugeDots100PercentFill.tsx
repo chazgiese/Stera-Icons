@@ -16,4 +16,5 @@ GaugeDots100PercentFill.displayName = 'GaugeDots100PercentFill';
 
 // Triple export pattern (lucide-react style)
 export { GaugeDots100PercentFill, GaugeDots100PercentFill as GaugeDots100PercentFillIcon, GaugeDots100PercentFill as SiGaugeDots100PercentFill };
+export default GaugeDots100PercentFill;
 export type { GaugeDots100PercentFillProps };

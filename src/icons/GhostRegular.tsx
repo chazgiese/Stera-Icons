@@ -17,4 +17,5 @@ GhostRegular.displayName = 'GhostRegular';
 
 // Triple export pattern (lucide-react style)
 export { GhostRegular, GhostRegular as GhostRegularIcon, GhostRegular as SiGhostRegular };
+export default GhostRegular;
 export type { GhostRegularProps };

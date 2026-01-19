@@ -16,4 +16,5 @@ TextSparkleBold.displayName = 'TextSparkleBold';
 
 // Triple export pattern (lucide-react style)
 export { TextSparkleBold, TextSparkleBold as TextSparkleBoldIcon, TextSparkleBold as SiTextSparkleBold };
+export default TextSparkleBold;
 export type { TextSparkleBoldProps };

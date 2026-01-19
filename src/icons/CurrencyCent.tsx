@@ -35,3 +35,4 @@ CurrencyCent.displayName = 'CurrencyCent';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyCent, CurrencyCent as CurrencyCentIcon, CurrencyCent as SiCurrencyCent };
+export default CurrencyCent;

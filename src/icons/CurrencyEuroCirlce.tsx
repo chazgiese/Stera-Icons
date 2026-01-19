@@ -35,3 +35,4 @@ CurrencyEuroCirlce.displayName = 'CurrencyEuroCirlce';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyEuroCirlce, CurrencyEuroCirlce as CurrencyEuroCirlceIcon, CurrencyEuroCirlce as SiCurrencyEuroCirlce };
+export default CurrencyEuroCirlce;

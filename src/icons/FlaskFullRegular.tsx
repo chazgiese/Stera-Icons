@@ -16,4 +16,5 @@ FlaskFullRegular.displayName = 'FlaskFullRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFullRegular, FlaskFullRegular as FlaskFullRegularIcon, FlaskFullRegular as SiFlaskFullRegular };
+export default FlaskFullRegular;
 export type { FlaskFullRegularProps };

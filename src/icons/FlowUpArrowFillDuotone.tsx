@@ -17,4 +17,5 @@ FlowUpArrowFillDuotone.displayName = 'FlowUpArrowFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowUpArrowFillDuotone, FlowUpArrowFillDuotone as FlowUpArrowFillDuotoneIcon, FlowUpArrowFillDuotone as SiFlowUpArrowFillDuotone };
+export default FlowUpArrowFillDuotone;
 export type { FlowUpArrowFillDuotoneProps };

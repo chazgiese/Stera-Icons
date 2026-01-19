@@ -35,3 +35,4 @@ HandLeft.displayName = 'HandLeft';
 
 // Triple export pattern (lucide-react style)
 export { HandLeft, HandLeft as HandLeftIcon, HandLeft as SiHandLeft };
+export default HandLeft;

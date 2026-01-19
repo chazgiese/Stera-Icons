@@ -17,4 +17,5 @@ BoltRegular.displayName = 'BoltRegular';
 
 // Triple export pattern (lucide-react style)
 export { BoltRegular, BoltRegular as BoltRegularIcon, BoltRegular as SiBoltRegular };
+export default BoltRegular;
 export type { BoltRegularProps };

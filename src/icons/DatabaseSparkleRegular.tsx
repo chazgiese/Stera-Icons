@@ -17,4 +17,5 @@ DatabaseSparkleRegular.displayName = 'DatabaseSparkleRegular';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseSparkleRegular, DatabaseSparkleRegular as DatabaseSparkleRegularIcon, DatabaseSparkleRegular as SiDatabaseSparkleRegular };
+export default DatabaseSparkleRegular;
 export type { DatabaseSparkleRegularProps };

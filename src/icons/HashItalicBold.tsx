@@ -16,4 +16,5 @@ HashItalicBold.displayName = 'HashItalicBold';
 
 // Triple export pattern (lucide-react style)
 export { HashItalicBold, HashItalicBold as HashItalicBoldIcon, HashItalicBold as SiHashItalicBold };
+export default HashItalicBold;
 export type { HashItalicBoldProps };

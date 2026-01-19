@@ -17,4 +17,5 @@ DeviceDesktopBoldDuotone.displayName = 'DeviceDesktopBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DeviceDesktopBoldDuotone, DeviceDesktopBoldDuotone as DeviceDesktopBoldDuotoneIcon, DeviceDesktopBoldDuotone as SiDeviceDesktopBoldDuotone };
+export default DeviceDesktopBoldDuotone;
 export type { DeviceDesktopBoldDuotoneProps };

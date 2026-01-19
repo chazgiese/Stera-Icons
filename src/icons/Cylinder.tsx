@@ -35,3 +35,4 @@ Cylinder.displayName = 'Cylinder';
 
 // Triple export pattern (lucide-react style)
 export { Cylinder, Cylinder as CylinderIcon, Cylinder as SiCylinder };
+export default Cylinder;

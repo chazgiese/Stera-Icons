@@ -17,4 +17,5 @@ CommandFillDuotone.displayName = 'CommandFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CommandFillDuotone, CommandFillDuotone as CommandFillDuotoneIcon, CommandFillDuotone as SiCommandFillDuotone };
+export default CommandFillDuotone;
 export type { CommandFillDuotoneProps };

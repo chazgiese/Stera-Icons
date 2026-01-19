@@ -16,4 +16,5 @@ EmoteFrownFill.displayName = 'EmoteFrownFill';
 
 // Triple export pattern (lucide-react style)
 export { EmoteFrownFill, EmoteFrownFill as EmoteFrownFillIcon, EmoteFrownFill as SiEmoteFrownFill };
+export default EmoteFrownFill;
 export type { EmoteFrownFillProps };

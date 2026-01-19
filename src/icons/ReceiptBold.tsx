@@ -17,4 +17,5 @@ ReceiptBold.displayName = 'ReceiptBold';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptBold, ReceiptBold as ReceiptBoldIcon, ReceiptBold as SiReceiptBold };
+export default ReceiptBold;
 export type { ReceiptBoldProps };

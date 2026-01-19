@@ -17,4 +17,5 @@ GaugeLines15PercentBold.displayName = 'GaugeLines15PercentBold';
 
 // Triple export pattern (lucide-react style)
 export { GaugeLines15PercentBold, GaugeLines15PercentBold as GaugeLines15PercentBoldIcon, GaugeLines15PercentBold as SiGaugeLines15PercentBold };
+export default GaugeLines15PercentBold;
 export type { GaugeLines15PercentBoldProps };

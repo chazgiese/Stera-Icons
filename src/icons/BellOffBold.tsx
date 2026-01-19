@@ -17,4 +17,5 @@ BellOffBold.displayName = 'BellOffBold';
 
 // Triple export pattern (lucide-react style)
 export { BellOffBold, BellOffBold as BellOffBoldIcon, BellOffBold as SiBellOffBold };
+export default BellOffBold;
 export type { BellOffBoldProps };

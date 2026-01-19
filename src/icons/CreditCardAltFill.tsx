@@ -17,4 +17,5 @@ CreditCardAltFill.displayName = 'CreditCardAltFill';
 
 // Triple export pattern (lucide-react style)
 export { CreditCardAltFill, CreditCardAltFill as CreditCardAltFillIcon, CreditCardAltFill as SiCreditCardAltFill };
+export default CreditCardAltFill;
 export type { CreditCardAltFillProps };

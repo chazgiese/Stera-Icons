@@ -16,4 +16,5 @@ LockPasswordOpenFill.displayName = 'LockPasswordOpenFill';
 
 // Triple export pattern (lucide-react style)
 export { LockPasswordOpenFill, LockPasswordOpenFill as LockPasswordOpenFillIcon, LockPasswordOpenFill as SiLockPasswordOpenFill };
+export default LockPasswordOpenFill;
 export type { LockPasswordOpenFillProps };

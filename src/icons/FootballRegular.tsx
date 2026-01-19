@@ -17,4 +17,5 @@ FootballRegular.displayName = 'FootballRegular';
 
 // Triple export pattern (lucide-react style)
 export { FootballRegular, FootballRegular as FootballRegularIcon, FootballRegular as SiFootballRegular };
+export default FootballRegular;
 export type { FootballRegularProps };

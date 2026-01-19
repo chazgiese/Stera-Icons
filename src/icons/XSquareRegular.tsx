@@ -17,4 +17,5 @@ XSquareRegular.displayName = 'XSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { XSquareRegular, XSquareRegular as XSquareRegularIcon, XSquareRegular as SiXSquareRegular };
+export default XSquareRegular;
 export type { XSquareRegularProps };

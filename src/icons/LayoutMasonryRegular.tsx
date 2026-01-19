@@ -16,4 +16,5 @@ LayoutMasonryRegular.displayName = 'LayoutMasonryRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayoutMasonryRegular, LayoutMasonryRegular as LayoutMasonryRegularIcon, LayoutMasonryRegular as SiLayoutMasonryRegular };
+export default LayoutMasonryRegular;
 export type { LayoutMasonryRegularProps };

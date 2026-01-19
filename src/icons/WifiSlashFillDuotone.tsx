@@ -17,4 +17,5 @@ WifiSlashFillDuotone.displayName = 'WifiSlashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WifiSlashFillDuotone, WifiSlashFillDuotone as WifiSlashFillDuotoneIcon, WifiSlashFillDuotone as SiWifiSlashFillDuotone };
+export default WifiSlashFillDuotone;
 export type { WifiSlashFillDuotoneProps };

@@ -16,4 +16,5 @@ ChatBubbleAlertFill.displayName = 'ChatBubbleAlertFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleAlertFill, ChatBubbleAlertFill as ChatBubbleAlertFillIcon, ChatBubbleAlertFill as SiChatBubbleAlertFill };
+export default ChatBubbleAlertFill;
 export type { ChatBubbleAlertFillProps };

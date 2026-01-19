@@ -35,3 +35,4 @@ SparklesAlt.displayName = 'SparklesAlt';
 
 // Triple export pattern (lucide-react style)
 export { SparklesAlt, SparklesAlt as SparklesAltIcon, SparklesAlt as SiSparklesAlt };
+export default SparklesAlt;

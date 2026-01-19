@@ -16,4 +16,5 @@ AngleObtuseFill.displayName = 'AngleObtuseFill';
 
 // Triple export pattern (lucide-react style)
 export { AngleObtuseFill, AngleObtuseFill as AngleObtuseFillIcon, AngleObtuseFill as SiAngleObtuseFill };
+export default AngleObtuseFill;
 export type { AngleObtuseFillProps };

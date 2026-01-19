@@ -17,4 +17,5 @@ CanLabelBold.displayName = 'CanLabelBold';
 
 // Triple export pattern (lucide-react style)
 export { CanLabelBold, CanLabelBold as CanLabelBoldIcon, CanLabelBold as SiCanLabelBold };
+export default CanLabelBold;
 export type { CanLabelBoldProps };

@@ -16,4 +16,5 @@ QuestionMarkBold.displayName = 'QuestionMarkBold';
 
 // Triple export pattern (lucide-react style)
 export { QuestionMarkBold, QuestionMarkBold as QuestionMarkBoldIcon, QuestionMarkBold as SiQuestionMarkBold };
+export default QuestionMarkBold;
 export type { QuestionMarkBoldProps };

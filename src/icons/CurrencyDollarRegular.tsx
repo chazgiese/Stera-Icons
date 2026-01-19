@@ -16,4 +16,5 @@ CurrencyDollarRegular.displayName = 'CurrencyDollarRegular';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyDollarRegular, CurrencyDollarRegular as CurrencyDollarRegularIcon, CurrencyDollarRegular as SiCurrencyDollarRegular };
+export default CurrencyDollarRegular;
 export type { CurrencyDollarRegularProps };

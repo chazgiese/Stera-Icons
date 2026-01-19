@@ -17,4 +17,5 @@ Clock3Regular.displayName = 'Clock3Regular';
 
 // Triple export pattern (lucide-react style)
 export { Clock3Regular, Clock3Regular as Clock3RegularIcon, Clock3Regular as SiClock3Regular };
+export default Clock3Regular;
 export type { Clock3RegularProps };

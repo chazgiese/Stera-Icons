@@ -17,4 +17,5 @@ CanLabelRegular.displayName = 'CanLabelRegular';
 
 // Triple export pattern (lucide-react style)
 export { CanLabelRegular, CanLabelRegular as CanLabelRegularIcon, CanLabelRegular as SiCanLabelRegular };
+export default CanLabelRegular;
 export type { CanLabelRegularProps };

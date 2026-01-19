@@ -17,4 +17,5 @@ SaveBoldDuotone.displayName = 'SaveBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SaveBoldDuotone, SaveBoldDuotone as SaveBoldDuotoneIcon, SaveBoldDuotone as SiSaveBoldDuotone };
+export default SaveBoldDuotone;
 export type { SaveBoldDuotoneProps };

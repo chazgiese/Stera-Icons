@@ -16,4 +16,5 @@ CanBold.displayName = 'CanBold';
 
 // Triple export pattern (lucide-react style)
 export { CanBold, CanBold as CanBoldIcon, CanBold as SiCanBold };
+export default CanBold;
 export type { CanBoldProps };

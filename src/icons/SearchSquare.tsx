@@ -35,3 +35,4 @@ SearchSquare.displayName = 'SearchSquare';
 
 // Triple export pattern (lucide-react style)
 export { SearchSquare, SearchSquare as SearchSquareIcon, SearchSquare as SiSearchSquare };
+export default SearchSquare;

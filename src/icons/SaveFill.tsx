@@ -16,4 +16,5 @@ SaveFill.displayName = 'SaveFill';
 
 // Triple export pattern (lucide-react style)
 export { SaveFill, SaveFill as SaveFillIcon, SaveFill as SiSaveFill };
+export default SaveFill;
 export type { SaveFillProps };

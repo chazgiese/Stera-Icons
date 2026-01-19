@@ -16,4 +16,5 @@ WrenchBold.displayName = 'WrenchBold';
 
 // Triple export pattern (lucide-react style)
 export { WrenchBold, WrenchBold as WrenchBoldIcon, WrenchBold as SiWrenchBold };
+export default WrenchBold;
 export type { WrenchBoldProps };

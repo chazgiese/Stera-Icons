@@ -18,4 +18,5 @@ CreditCardFillDuotone.displayName = 'CreditCardFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CreditCardFillDuotone, CreditCardFillDuotone as CreditCardFillDuotoneIcon, CreditCardFillDuotone as SiCreditCardFillDuotone };
+export default CreditCardFillDuotone;
 export type { CreditCardFillDuotoneProps };

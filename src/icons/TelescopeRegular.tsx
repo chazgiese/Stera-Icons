@@ -16,4 +16,5 @@ TelescopeRegular.displayName = 'TelescopeRegular';
 
 // Triple export pattern (lucide-react style)
 export { TelescopeRegular, TelescopeRegular as TelescopeRegularIcon, TelescopeRegular as SiTelescopeRegular };
+export default TelescopeRegular;
 export type { TelescopeRegularProps };

@@ -17,4 +17,5 @@ EmoteGrinBold.displayName = 'EmoteGrinBold';
 
 // Triple export pattern (lucide-react style)
 export { EmoteGrinBold, EmoteGrinBold as EmoteGrinBoldIcon, EmoteGrinBold as SiEmoteGrinBold };
+export default EmoteGrinBold;
 export type { EmoteGrinBoldProps };

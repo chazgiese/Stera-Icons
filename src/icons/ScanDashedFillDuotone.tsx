@@ -17,4 +17,5 @@ ScanDashedFillDuotone.displayName = 'ScanDashedFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanDashedFillDuotone, ScanDashedFillDuotone as ScanDashedFillDuotoneIcon, ScanDashedFillDuotone as SiScanDashedFillDuotone };
+export default ScanDashedFillDuotone;
 export type { ScanDashedFillDuotoneProps };

@@ -17,4 +17,5 @@ ChatBubbleTextRegular.displayName = 'ChatBubbleTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleTextRegular, ChatBubbleTextRegular as ChatBubbleTextRegularIcon, ChatBubbleTextRegular as SiChatBubbleTextRegular };
+export default ChatBubbleTextRegular;
 export type { ChatBubbleTextRegularProps };

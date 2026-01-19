@@ -17,4 +17,5 @@ CubicGraphBoldDuotone.displayName = 'CubicGraphBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CubicGraphBoldDuotone, CubicGraphBoldDuotone as CubicGraphBoldDuotoneIcon, CubicGraphBoldDuotone as SiCubicGraphBoldDuotone };
+export default CubicGraphBoldDuotone;
 export type { CubicGraphBoldDuotoneProps };

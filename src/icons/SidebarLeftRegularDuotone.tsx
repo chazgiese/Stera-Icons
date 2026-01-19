@@ -17,4 +17,5 @@ SidebarLeftRegularDuotone.displayName = 'SidebarLeftRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SidebarLeftRegularDuotone, SidebarLeftRegularDuotone as SidebarLeftRegularDuotoneIcon, SidebarLeftRegularDuotone as SiSidebarLeftRegularDuotone };
+export default SidebarLeftRegularDuotone;
 export type { SidebarLeftRegularDuotoneProps };

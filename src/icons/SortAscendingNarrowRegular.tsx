@@ -17,4 +17,5 @@ SortAscendingNarrowRegular.displayName = 'SortAscendingNarrowRegular';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingNarrowRegular, SortAscendingNarrowRegular as SortAscendingNarrowRegularIcon, SortAscendingNarrowRegular as SiSortAscendingNarrowRegular };
+export default SortAscendingNarrowRegular;
 export type { SortAscendingNarrowRegularProps };

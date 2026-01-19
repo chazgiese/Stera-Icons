@@ -35,3 +35,4 @@ Telescope.displayName = 'Telescope';
 
 // Triple export pattern (lucide-react style)
 export { Telescope, Telescope as TelescopeIcon, Telescope as SiTelescope };
+export default Telescope;

@@ -17,4 +17,5 @@ SnowflakeFillDuotone.displayName = 'SnowflakeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeFillDuotone, SnowflakeFillDuotone as SnowflakeFillDuotoneIcon, SnowflakeFillDuotone as SiSnowflakeFillDuotone };
+export default SnowflakeFillDuotone;
 export type { SnowflakeFillDuotoneProps };

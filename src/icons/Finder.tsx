@@ -35,3 +35,4 @@ Finder.displayName = 'Finder';
 
 // Triple export pattern (lucide-react style)
 export { Finder, Finder as FinderIcon, Finder as SiFinder };
+export default Finder;

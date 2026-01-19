@@ -18,4 +18,5 @@ DataTableRegularDuotone.displayName = 'DataTableRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DataTableRegularDuotone, DataTableRegularDuotone as DataTableRegularDuotoneIcon, DataTableRegularDuotone as SiDataTableRegularDuotone };
+export default DataTableRegularDuotone;
 export type { DataTableRegularDuotoneProps };

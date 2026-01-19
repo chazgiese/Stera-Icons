@@ -17,4 +17,5 @@ ArrowCornerDownRightBoldDuotone.displayName = 'ArrowCornerDownRightBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCornerDownRightBoldDuotone, ArrowCornerDownRightBoldDuotone as ArrowCornerDownRightBoldDuotoneIcon, ArrowCornerDownRightBoldDuotone as SiArrowCornerDownRightBoldDuotone };
+export default ArrowCornerDownRightBoldDuotone;
 export type { ArrowCornerDownRightBoldDuotoneProps };

@@ -17,4 +17,5 @@ MoonCrescentBoldDuotone.displayName = 'MoonCrescentBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoonCrescentBoldDuotone, MoonCrescentBoldDuotone as MoonCrescentBoldDuotoneIcon, MoonCrescentBoldDuotone as SiMoonCrescentBoldDuotone };
+export default MoonCrescentBoldDuotone;
 export type { MoonCrescentBoldDuotoneProps };

@@ -35,3 +35,4 @@ ChartLineBar.displayName = 'ChartLineBar';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineBar, ChartLineBar as ChartLineBarIcon, ChartLineBar as SiChartLineBar };
+export default ChartLineBar;

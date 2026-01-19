@@ -16,4 +16,5 @@ HeadphonesBold.displayName = 'HeadphonesBold';
 
 // Triple export pattern (lucide-react style)
 export { HeadphonesBold, HeadphonesBold as HeadphonesBoldIcon, HeadphonesBold as SiHeadphonesBold };
+export default HeadphonesBold;
 export type { HeadphonesBoldProps };

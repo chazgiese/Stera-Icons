@@ -17,4 +17,5 @@ GitCommitFillDuotone.displayName = 'GitCommitFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitCommitFillDuotone, GitCommitFillDuotone as GitCommitFillDuotoneIcon, GitCommitFillDuotone as SiGitCommitFillDuotone };
+export default GitCommitFillDuotone;
 export type { GitCommitFillDuotoneProps };

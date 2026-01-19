@@ -17,4 +17,5 @@ SpinnerRegularDuotone.displayName = 'SpinnerRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpinnerRegularDuotone, SpinnerRegularDuotone as SpinnerRegularDuotoneIcon, SpinnerRegularDuotone as SiSpinnerRegularDuotone };
+export default SpinnerRegularDuotone;
 export type { SpinnerRegularDuotoneProps };

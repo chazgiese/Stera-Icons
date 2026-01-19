@@ -16,4 +16,5 @@ SoccerFieldRegular.displayName = 'SoccerFieldRegular';
 
 // Triple export pattern (lucide-react style)
 export { SoccerFieldRegular, SoccerFieldRegular as SoccerFieldRegularIcon, SoccerFieldRegular as SiSoccerFieldRegular };
+export default SoccerFieldRegular;
 export type { SoccerFieldRegularProps };

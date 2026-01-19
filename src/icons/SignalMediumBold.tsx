@@ -16,4 +16,5 @@ SignalMediumBold.displayName = 'SignalMediumBold';
 
 // Triple export pattern (lucide-react style)
 export { SignalMediumBold, SignalMediumBold as SignalMediumBoldIcon, SignalMediumBold as SiSignalMediumBold };
+export default SignalMediumBold;
 export type { SignalMediumBoldProps };

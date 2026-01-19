@@ -16,4 +16,5 @@ StarFill.displayName = 'StarFill';
 
 // Triple export pattern (lucide-react style)
 export { StarFill, StarFill as StarFillIcon, StarFill as SiStarFill };
+export default StarFill;
 export type { StarFillProps };

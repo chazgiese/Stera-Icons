@@ -17,4 +17,5 @@ BrowserRegular.displayName = 'BrowserRegular';
 
 // Triple export pattern (lucide-react style)
 export { BrowserRegular, BrowserRegular as BrowserRegularIcon, BrowserRegular as SiBrowserRegular };
+export default BrowserRegular;
 export type { BrowserRegularProps };

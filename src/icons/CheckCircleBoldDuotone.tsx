@@ -17,4 +17,5 @@ CheckCircleBoldDuotone.displayName = 'CheckCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CheckCircleBoldDuotone, CheckCircleBoldDuotone as CheckCircleBoldDuotoneIcon, CheckCircleBoldDuotone as SiCheckCircleBoldDuotone };
+export default CheckCircleBoldDuotone;
 export type { CheckCircleBoldDuotoneProps };

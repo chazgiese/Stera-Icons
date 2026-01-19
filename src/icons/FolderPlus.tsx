@@ -35,3 +35,4 @@ FolderPlus.displayName = 'FolderPlus';
 
 // Triple export pattern (lucide-react style)
 export { FolderPlus, FolderPlus as FolderPlusIcon, FolderPlus as SiFolderPlus };
+export default FolderPlus;

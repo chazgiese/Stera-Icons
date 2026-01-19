@@ -35,3 +35,4 @@ Basketball.displayName = 'Basketball';
 
 // Triple export pattern (lucide-react style)
 export { Basketball, Basketball as BasketballIcon, Basketball as SiBasketball };
+export default Basketball;

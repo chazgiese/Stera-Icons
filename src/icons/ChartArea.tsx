@@ -35,3 +35,4 @@ ChartArea.displayName = 'ChartArea';
 
 // Triple export pattern (lucide-react style)
 export { ChartArea, ChartArea as ChartAreaIcon, ChartArea as SiChartArea };
+export default ChartArea;

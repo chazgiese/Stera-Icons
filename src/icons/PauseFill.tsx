@@ -16,4 +16,5 @@ PauseFill.displayName = 'PauseFill';
 
 // Triple export pattern (lucide-react style)
 export { PauseFill, PauseFill as PauseFillIcon, PauseFill as SiPauseFill };
+export default PauseFill;
 export type { PauseFillProps };

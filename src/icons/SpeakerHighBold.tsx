@@ -19,4 +19,5 @@ SpeakerHighBold.displayName = 'SpeakerHighBold';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerHighBold, SpeakerHighBold as SpeakerHighBoldIcon, SpeakerHighBold as SiSpeakerHighBold };
+export default SpeakerHighBold;
 export type { SpeakerHighBoldProps };

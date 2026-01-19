@@ -16,4 +16,5 @@ WristWatchFill.displayName = 'WristWatchFill';
 
 // Triple export pattern (lucide-react style)
 export { WristWatchFill, WristWatchFill as WristWatchFillIcon, WristWatchFill as SiWristWatchFill };
+export default WristWatchFill;
 export type { WristWatchFillProps };

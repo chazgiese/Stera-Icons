@@ -17,4 +17,5 @@ PieRegular.displayName = 'PieRegular';
 
 // Triple export pattern (lucide-react style)
 export { PieRegular, PieRegular as PieRegularIcon, PieRegular as SiPieRegular };
+export default PieRegular;
 export type { PieRegularProps };

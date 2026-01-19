@@ -16,4 +16,5 @@ PenRegular.displayName = 'PenRegular';
 
 // Triple export pattern (lucide-react style)
 export { PenRegular, PenRegular as PenRegularIcon, PenRegular as SiPenRegular };
+export default PenRegular;
 export type { PenRegularProps };

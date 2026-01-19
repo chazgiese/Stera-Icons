@@ -35,3 +35,4 @@ ScanEye.displayName = 'ScanEye';
 
 // Triple export pattern (lucide-react style)
 export { ScanEye, ScanEye as ScanEyeIcon, ScanEye as SiScanEye };
+export default ScanEye;

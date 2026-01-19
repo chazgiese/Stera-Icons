@@ -35,3 +35,4 @@ Robot.displayName = 'Robot';
 
 // Triple export pattern (lucide-react style)
 export { Robot, Robot as RobotIcon, Robot as SiRobot };
+export default Robot;

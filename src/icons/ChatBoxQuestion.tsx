@@ -35,3 +35,4 @@ ChatBoxQuestion.displayName = 'ChatBoxQuestion';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxQuestion, ChatBoxQuestion as ChatBoxQuestionIcon, ChatBoxQuestion as SiChatBoxQuestion };
+export default ChatBoxQuestion;

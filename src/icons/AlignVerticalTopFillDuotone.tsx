@@ -17,4 +17,5 @@ AlignVerticalTopFillDuotone.displayName = 'AlignVerticalTopFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalTopFillDuotone, AlignVerticalTopFillDuotone as AlignVerticalTopFillDuotoneIcon, AlignVerticalTopFillDuotone as SiAlignVerticalTopFillDuotone };
+export default AlignVerticalTopFillDuotone;
 export type { AlignVerticalTopFillDuotoneProps };

@@ -16,4 +16,5 @@ ForwardRegular.displayName = 'ForwardRegular';
 
 // Triple export pattern (lucide-react style)
 export { ForwardRegular, ForwardRegular as ForwardRegularIcon, ForwardRegular as SiForwardRegular };
+export default ForwardRegular;
 export type { ForwardRegularProps };

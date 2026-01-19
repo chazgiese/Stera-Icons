@@ -35,3 +35,4 @@ Ruler.displayName = 'Ruler';
 
 // Triple export pattern (lucide-react style)
 export { Ruler, Ruler as RulerIcon, Ruler as SiRuler };
+export default Ruler;

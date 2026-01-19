@@ -35,3 +35,4 @@ AngleAcute.displayName = 'AngleAcute';
 
 // Triple export pattern (lucide-react style)
 export { AngleAcute, AngleAcute as AngleAcuteIcon, AngleAcute as SiAngleAcute };
+export default AngleAcute;

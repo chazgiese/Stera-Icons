@@ -17,4 +17,5 @@ ArchiveFillDuotone.displayName = 'ArchiveFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArchiveFillDuotone, ArchiveFillDuotone as ArchiveFillDuotoneIcon, ArchiveFillDuotone as SiArchiveFillDuotone };
+export default ArchiveFillDuotone;
 export type { ArchiveFillDuotoneProps };

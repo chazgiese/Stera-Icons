@@ -17,4 +17,5 @@ PercentSquareBoldDuotone.displayName = 'PercentSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PercentSquareBoldDuotone, PercentSquareBoldDuotone as PercentSquareBoldDuotoneIcon, PercentSquareBoldDuotone as SiPercentSquareBoldDuotone };
+export default PercentSquareBoldDuotone;
 export type { PercentSquareBoldDuotoneProps };

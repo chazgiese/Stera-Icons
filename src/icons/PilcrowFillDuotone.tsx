@@ -17,4 +17,5 @@ PilcrowFillDuotone.displayName = 'PilcrowFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PilcrowFillDuotone, PilcrowFillDuotone as PilcrowFillDuotoneIcon, PilcrowFillDuotone as SiPilcrowFillDuotone };
+export default PilcrowFillDuotone;
 export type { PilcrowFillDuotoneProps };

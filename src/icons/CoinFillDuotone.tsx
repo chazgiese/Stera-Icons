@@ -17,4 +17,5 @@ CoinFillDuotone.displayName = 'CoinFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CoinFillDuotone, CoinFillDuotone as CoinFillDuotoneIcon, CoinFillDuotone as SiCoinFillDuotone };
+export default CoinFillDuotone;
 export type { CoinFillDuotoneProps };

@@ -17,4 +17,5 @@ FortressRegular.displayName = 'FortressRegular';
 
 // Triple export pattern (lucide-react style)
 export { FortressRegular, FortressRegular as FortressRegularIcon, FortressRegular as SiFortressRegular };
+export default FortressRegular;
 export type { FortressRegularProps };

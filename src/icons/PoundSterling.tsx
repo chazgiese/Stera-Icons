@@ -35,3 +35,4 @@ PoundSterling.displayName = 'PoundSterling';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterling, PoundSterling as PoundSterlingIcon, PoundSterling as SiPoundSterling };
+export default PoundSterling;

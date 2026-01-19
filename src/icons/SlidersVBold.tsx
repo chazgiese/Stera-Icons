@@ -16,4 +16,5 @@ SlidersVBold.displayName = 'SlidersVBold';
 
 // Triple export pattern (lucide-react style)
 export { SlidersVBold, SlidersVBold as SlidersVBoldIcon, SlidersVBold as SiSlidersVBold };
+export default SlidersVBold;
 export type { SlidersVBoldProps };

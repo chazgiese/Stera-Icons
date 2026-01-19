@@ -35,3 +35,4 @@ SpeakerOff.displayName = 'SpeakerOff';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerOff, SpeakerOff as SpeakerOffIcon, SpeakerOff as SiSpeakerOff };
+export default SpeakerOff;

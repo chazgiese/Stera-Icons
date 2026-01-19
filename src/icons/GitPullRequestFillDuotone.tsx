@@ -17,4 +17,5 @@ GitPullRequestFillDuotone.displayName = 'GitPullRequestFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestFillDuotone, GitPullRequestFillDuotone as GitPullRequestFillDuotoneIcon, GitPullRequestFillDuotone as SiGitPullRequestFillDuotone };
+export default GitPullRequestFillDuotone;
 export type { GitPullRequestFillDuotoneProps };

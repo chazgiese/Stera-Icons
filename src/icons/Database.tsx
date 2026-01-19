@@ -35,3 +35,4 @@ Database.displayName = 'Database';
 
 // Triple export pattern (lucide-react style)
 export { Database, Database as DatabaseIcon, Database as SiDatabase };
+export default Database;

@@ -35,3 +35,4 @@ DevicePhone.displayName = 'DevicePhone';
 
 // Triple export pattern (lucide-react style)
 export { DevicePhone, DevicePhone as DevicePhoneIcon, DevicePhone as SiDevicePhone };
+export default DevicePhone;

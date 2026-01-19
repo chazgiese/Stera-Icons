@@ -35,3 +35,4 @@ BatteryFull.displayName = 'BatteryFull';
 
 // Triple export pattern (lucide-react style)
 export { BatteryFull, BatteryFull as BatteryFullIcon, BatteryFull as SiBatteryFull };
+export default BatteryFull;

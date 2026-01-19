@@ -35,3 +35,4 @@ ImageStack.displayName = 'ImageStack';
 
 // Triple export pattern (lucide-react style)
 export { ImageStack, ImageStack as ImageStackIcon, ImageStack as SiImageStack };
+export default ImageStack;

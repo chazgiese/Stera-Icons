@@ -35,3 +35,4 @@ Rulers.displayName = 'Rulers';
 
 // Triple export pattern (lucide-react style)
 export { Rulers, Rulers as RulersIcon, Rulers as SiRulers };
+export default Rulers;

@@ -35,3 +35,4 @@ WristWatch.displayName = 'WristWatch';
 
 // Triple export pattern (lucide-react style)
 export { WristWatch, WristWatch as WristWatchIcon, WristWatch as SiWristWatch };
+export default WristWatch;

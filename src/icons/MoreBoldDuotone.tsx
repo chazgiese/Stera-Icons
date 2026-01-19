@@ -17,4 +17,5 @@ MoreBoldDuotone.displayName = 'MoreBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreBoldDuotone, MoreBoldDuotone as MoreBoldDuotoneIcon, MoreBoldDuotone as SiMoreBoldDuotone };
+export default MoreBoldDuotone;
 export type { MoreBoldDuotoneProps };

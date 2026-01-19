@@ -35,3 +35,4 @@ CheckCircle.displayName = 'CheckCircle';
 
 // Triple export pattern (lucide-react style)
 export { CheckCircle, CheckCircle as CheckCircleIcon, CheckCircle as SiCheckCircle };
+export default CheckCircle;

@@ -17,4 +17,5 @@ AngleBold.displayName = 'AngleBold';
 
 // Triple export pattern (lucide-react style)
 export { AngleBold, AngleBold as AngleBoldIcon, AngleBold as SiAngleBold };
+export default AngleBold;
 export type { AngleBoldProps };

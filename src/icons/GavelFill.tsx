@@ -16,4 +16,5 @@ GavelFill.displayName = 'GavelFill';
 
 // Triple export pattern (lucide-react style)
 export { GavelFill, GavelFill as GavelFillIcon, GavelFill as SiGavelFill };
+export default GavelFill;
 export type { GavelFillProps };

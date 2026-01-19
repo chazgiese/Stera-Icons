@@ -17,4 +17,5 @@ TextItalicFillDuotone.displayName = 'TextItalicFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextItalicFillDuotone, TextItalicFillDuotone as TextItalicFillDuotoneIcon, TextItalicFillDuotone as SiTextItalicFillDuotone };
+export default TextItalicFillDuotone;
 export type { TextItalicFillDuotoneProps };

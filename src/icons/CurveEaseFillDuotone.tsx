@@ -17,4 +17,5 @@ CurveEaseFillDuotone.displayName = 'CurveEaseFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurveEaseFillDuotone, CurveEaseFillDuotone as CurveEaseFillDuotoneIcon, CurveEaseFillDuotone as SiCurveEaseFillDuotone };
+export default CurveEaseFillDuotone;
 export type { CurveEaseFillDuotoneProps };

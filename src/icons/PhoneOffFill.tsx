@@ -16,4 +16,5 @@ PhoneOffFill.displayName = 'PhoneOffFill';
 
 // Triple export pattern (lucide-react style)
 export { PhoneOffFill, PhoneOffFill as PhoneOffFillIcon, PhoneOffFill as SiPhoneOffFill };
+export default PhoneOffFill;
 export type { PhoneOffFillProps };

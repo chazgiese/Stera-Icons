@@ -16,4 +16,5 @@ ScribbleBold.displayName = 'ScribbleBold';
 
 // Triple export pattern (lucide-react style)
 export { ScribbleBold, ScribbleBold as ScribbleBoldIcon, ScribbleBold as SiScribbleBold };
+export default ScribbleBold;
 export type { ScribbleBoldProps };

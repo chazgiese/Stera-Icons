@@ -17,4 +17,5 @@ TreeBoldDuotone.displayName = 'TreeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TreeBoldDuotone, TreeBoldDuotone as TreeBoldDuotoneIcon, TreeBoldDuotone as SiTreeBoldDuotone };
+export default TreeBoldDuotone;
 export type { TreeBoldDuotoneProps };

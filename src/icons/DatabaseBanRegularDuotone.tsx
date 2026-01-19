@@ -17,4 +17,5 @@ DatabaseBanRegularDuotone.displayName = 'DatabaseBanRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBanRegularDuotone, DatabaseBanRegularDuotone as DatabaseBanRegularDuotoneIcon, DatabaseBanRegularDuotone as SiDatabaseBanRegularDuotone };
+export default DatabaseBanRegularDuotone;
 export type { DatabaseBanRegularDuotoneProps };

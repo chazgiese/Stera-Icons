@@ -17,4 +17,5 @@ ChartLineXYRegular.displayName = 'ChartLineXYRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineXYRegular, ChartLineXYRegular as ChartLineXYRegularIcon, ChartLineXYRegular as SiChartLineXYRegular };
+export default ChartLineXYRegular;
 export type { ChartLineXYRegularProps };

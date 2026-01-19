@@ -17,4 +17,5 @@ CanLabelRegularDuotone.displayName = 'CanLabelRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CanLabelRegularDuotone, CanLabelRegularDuotone as CanLabelRegularDuotoneIcon, CanLabelRegularDuotone as SiCanLabelRegularDuotone };
+export default CanLabelRegularDuotone;
 export type { CanLabelRegularDuotoneProps };

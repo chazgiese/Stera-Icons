@@ -35,3 +35,4 @@ SortAscendingNarrow.displayName = 'SortAscendingNarrow';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingNarrow, SortAscendingNarrow as SortAscendingNarrowIcon, SortAscendingNarrow as SiSortAscendingNarrow };
+export default SortAscendingNarrow;

@@ -16,4 +16,5 @@ PauseCircleFill.displayName = 'PauseCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { PauseCircleFill, PauseCircleFill as PauseCircleFillIcon, PauseCircleFill as SiPauseCircleFill };
+export default PauseCircleFill;
 export type { PauseCircleFillProps };

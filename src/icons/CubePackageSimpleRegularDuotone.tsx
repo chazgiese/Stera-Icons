@@ -17,4 +17,5 @@ CubePackageSimpleRegularDuotone.displayName = 'CubePackageSimpleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageSimpleRegularDuotone, CubePackageSimpleRegularDuotone as CubePackageSimpleRegularDuotoneIcon, CubePackageSimpleRegularDuotone as SiCubePackageSimpleRegularDuotone };
+export default CubePackageSimpleRegularDuotone;
 export type { CubePackageSimpleRegularDuotoneProps };

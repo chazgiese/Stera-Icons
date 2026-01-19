@@ -17,4 +17,5 @@ InfoCircleRegular.displayName = 'InfoCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { InfoCircleRegular, InfoCircleRegular as InfoCircleRegularIcon, InfoCircleRegular as SiInfoCircleRegular };
+export default InfoCircleRegular;
 export type { InfoCircleRegularProps };

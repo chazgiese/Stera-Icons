@@ -16,4 +16,5 @@ SparklesAltFill.displayName = 'SparklesAltFill';
 
 // Triple export pattern (lucide-react style)
 export { SparklesAltFill, SparklesAltFill as SparklesAltFillIcon, SparklesAltFill as SiSparklesAltFill };
+export default SparklesAltFill;
 export type { SparklesAltFillProps };

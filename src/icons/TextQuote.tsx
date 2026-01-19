@@ -35,3 +35,4 @@ TextQuote.displayName = 'TextQuote';
 
 // Triple export pattern (lucide-react style)
 export { TextQuote, TextQuote as TextQuoteIcon, TextQuote as SiTextQuote };
+export default TextQuote;

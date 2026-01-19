@@ -16,4 +16,5 @@ MoreSquareFill.displayName = 'MoreSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { MoreSquareFill, MoreSquareFill as MoreSquareFillIcon, MoreSquareFill as SiMoreSquareFill };
+export default MoreSquareFill;
 export type { MoreSquareFillProps };

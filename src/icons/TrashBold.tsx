@@ -17,4 +17,5 @@ TrashBold.displayName = 'TrashBold';
 
 // Triple export pattern (lucide-react style)
 export { TrashBold, TrashBold as TrashBoldIcon, TrashBold as SiTrashBold };
+export default TrashBold;
 export type { TrashBoldProps };

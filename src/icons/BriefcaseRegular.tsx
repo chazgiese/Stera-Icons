@@ -16,4 +16,5 @@ BriefcaseRegular.displayName = 'BriefcaseRegular';
 
 // Triple export pattern (lucide-react style)
 export { BriefcaseRegular, BriefcaseRegular as BriefcaseRegularIcon, BriefcaseRegular as SiBriefcaseRegular };
+export default BriefcaseRegular;
 export type { BriefcaseRegularProps };

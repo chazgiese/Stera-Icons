@@ -16,4 +16,5 @@ WaveSquareBold.displayName = 'WaveSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { WaveSquareBold, WaveSquareBold as WaveSquareBoldIcon, WaveSquareBold as SiWaveSquareBold };
+export default WaveSquareBold;
 export type { WaveSquareBoldProps };

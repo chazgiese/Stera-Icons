@@ -17,4 +17,5 @@ GitMergeFillDuotone.displayName = 'GitMergeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitMergeFillDuotone, GitMergeFillDuotone as GitMergeFillDuotoneIcon, GitMergeFillDuotone as SiGitMergeFillDuotone };
+export default GitMergeFillDuotone;
 export type { GitMergeFillDuotoneProps };

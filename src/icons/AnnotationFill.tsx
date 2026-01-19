@@ -17,4 +17,5 @@ AnnotationFill.displayName = 'AnnotationFill';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationFill, AnnotationFill as AnnotationFillIcon, AnnotationFill as SiAnnotationFill };
+export default AnnotationFill;
 export type { AnnotationFillProps };

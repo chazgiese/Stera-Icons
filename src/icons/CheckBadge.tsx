@@ -35,3 +35,4 @@ CheckBadge.displayName = 'CheckBadge';
 
 // Triple export pattern (lucide-react style)
 export { CheckBadge, CheckBadge as CheckBadgeIcon, CheckBadge as SiCheckBadge };
+export default CheckBadge;

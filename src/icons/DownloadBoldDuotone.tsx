@@ -17,4 +17,5 @@ DownloadBoldDuotone.displayName = 'DownloadBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DownloadBoldDuotone, DownloadBoldDuotone as DownloadBoldDuotoneIcon, DownloadBoldDuotone as SiDownloadBoldDuotone };
+export default DownloadBoldDuotone;
 export type { DownloadBoldDuotoneProps };

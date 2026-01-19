@@ -35,3 +35,4 @@ LineWeight.displayName = 'LineWeight';
 
 // Triple export pattern (lucide-react style)
 export { LineWeight, LineWeight as LineWeightIcon, LineWeight as SiLineWeight };
+export default LineWeight;

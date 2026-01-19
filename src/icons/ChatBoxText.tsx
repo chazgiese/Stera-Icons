@@ -35,3 +35,4 @@ ChatBoxText.displayName = 'ChatBoxText';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxText, ChatBoxText as ChatBoxTextIcon, ChatBoxText as SiChatBoxText };
+export default ChatBoxText;

@@ -17,4 +17,5 @@ PhoneOffRegular.displayName = 'PhoneOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { PhoneOffRegular, PhoneOffRegular as PhoneOffRegularIcon, PhoneOffRegular as SiPhoneOffRegular };
+export default PhoneOffRegular;
 export type { PhoneOffRegularProps };

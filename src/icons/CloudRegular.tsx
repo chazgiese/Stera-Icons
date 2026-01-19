@@ -16,4 +16,5 @@ CloudRegular.displayName = 'CloudRegular';
 
 // Triple export pattern (lucide-react style)
 export { CloudRegular, CloudRegular as CloudRegularIcon, CloudRegular as SiCloudRegular };
+export default CloudRegular;
 export type { CloudRegularProps };

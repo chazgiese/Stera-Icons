@@ -16,4 +16,5 @@ CircleDivideAltBold.displayName = 'CircleDivideAltBold';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideAltBold, CircleDivideAltBold as CircleDivideAltBoldIcon, CircleDivideAltBold as SiCircleDivideAltBold };
+export default CircleDivideAltBold;
 export type { CircleDivideAltBoldProps };

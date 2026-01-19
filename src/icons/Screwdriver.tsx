@@ -35,3 +35,4 @@ Screwdriver.displayName = 'Screwdriver';
 
 // Triple export pattern (lucide-react style)
 export { Screwdriver, Screwdriver as ScrewdriverIcon, Screwdriver as SiScrewdriver };
+export default Screwdriver;

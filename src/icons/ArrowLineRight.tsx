@@ -35,3 +35,4 @@ ArrowLineRight.displayName = 'ArrowLineRight';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineRight, ArrowLineRight as ArrowLineRightIcon, ArrowLineRight as SiArrowLineRight };
+export default ArrowLineRight;

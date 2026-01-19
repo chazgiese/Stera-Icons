@@ -16,4 +16,5 @@ FrameFill.displayName = 'FrameFill';
 
 // Triple export pattern (lucide-react style)
 export { FrameFill, FrameFill as FrameFillIcon, FrameFill as SiFrameFill };
+export default FrameFill;
 export type { FrameFillProps };

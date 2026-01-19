@@ -17,4 +17,5 @@ ScanLineBoldDuotone.displayName = 'ScanLineBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScanLineBoldDuotone, ScanLineBoldDuotone as ScanLineBoldDuotoneIcon, ScanLineBoldDuotone as SiScanLineBoldDuotone };
+export default ScanLineBoldDuotone;
 export type { ScanLineBoldDuotoneProps };

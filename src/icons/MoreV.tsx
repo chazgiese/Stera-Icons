@@ -35,3 +35,4 @@ MoreV.displayName = 'MoreV';
 
 // Triple export pattern (lucide-react style)
 export { MoreV, MoreV as MoreVIcon, MoreV as SiMoreV };
+export default MoreV;

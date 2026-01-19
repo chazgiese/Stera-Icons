@@ -16,4 +16,5 @@ MedalBold.displayName = 'MedalBold';
 
 // Triple export pattern (lucide-react style)
 export { MedalBold, MedalBold as MedalBoldIcon, MedalBold as SiMedalBold };
+export default MedalBold;
 export type { MedalBoldProps };

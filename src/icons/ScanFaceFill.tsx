@@ -18,4 +18,5 @@ ScanFaceFill.displayName = 'ScanFaceFill';
 
 // Triple export pattern (lucide-react style)
 export { ScanFaceFill, ScanFaceFill as ScanFaceFillIcon, ScanFaceFill as SiScanFaceFill };
+export default ScanFaceFill;
 export type { ScanFaceFillProps };

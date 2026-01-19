@@ -17,4 +17,5 @@ LeafFillDuotone.displayName = 'LeafFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LeafFillDuotone, LeafFillDuotone as LeafFillDuotoneIcon, LeafFillDuotone as SiLeafFillDuotone };
+export default LeafFillDuotone;
 export type { LeafFillDuotoneProps };

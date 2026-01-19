@@ -18,4 +18,5 @@ ChartCandleAltFillDuotone.displayName = 'ChartCandleAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartCandleAltFillDuotone, ChartCandleAltFillDuotone as ChartCandleAltFillDuotoneIcon, ChartCandleAltFillDuotone as SiChartCandleAltFillDuotone };
+export default ChartCandleAltFillDuotone;
 export type { ChartCandleAltFillDuotoneProps };

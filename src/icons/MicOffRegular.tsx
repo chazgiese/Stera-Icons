@@ -17,4 +17,5 @@ MicOffRegular.displayName = 'MicOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { MicOffRegular, MicOffRegular as MicOffRegularIcon, MicOffRegular as SiMicOffRegular };
+export default MicOffRegular;
 export type { MicOffRegularProps };

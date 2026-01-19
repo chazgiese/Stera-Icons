@@ -17,4 +17,5 @@ ApertureRegularDuotone.displayName = 'ApertureRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ApertureRegularDuotone, ApertureRegularDuotone as ApertureRegularDuotoneIcon, ApertureRegularDuotone as SiApertureRegularDuotone };
+export default ApertureRegularDuotone;
 export type { ApertureRegularDuotoneProps };

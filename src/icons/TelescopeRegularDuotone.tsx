@@ -19,4 +19,5 @@ TelescopeRegularDuotone.displayName = 'TelescopeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TelescopeRegularDuotone, TelescopeRegularDuotone as TelescopeRegularDuotoneIcon, TelescopeRegularDuotone as SiTelescopeRegularDuotone };
+export default TelescopeRegularDuotone;
 export type { TelescopeRegularDuotoneProps };

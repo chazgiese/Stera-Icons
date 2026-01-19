@@ -18,4 +18,5 @@ ScanSearchFill.displayName = 'ScanSearchFill';
 
 // Triple export pattern (lucide-react style)
 export { ScanSearchFill, ScanSearchFill as ScanSearchFillIcon, ScanSearchFill as SiScanSearchFill };
+export default ScanSearchFill;
 export type { ScanSearchFillProps };

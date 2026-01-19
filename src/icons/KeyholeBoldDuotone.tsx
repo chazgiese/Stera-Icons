@@ -17,4 +17,5 @@ KeyholeBoldDuotone.displayName = 'KeyholeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { KeyholeBoldDuotone, KeyholeBoldDuotone as KeyholeBoldDuotoneIcon, KeyholeBoldDuotone as SiKeyholeBoldDuotone };
+export default KeyholeBoldDuotone;
 export type { KeyholeBoldDuotoneProps };

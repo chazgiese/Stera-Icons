@@ -17,4 +17,5 @@ DuplicatePlusFillDuotone.displayName = 'DuplicatePlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DuplicatePlusFillDuotone, DuplicatePlusFillDuotone as DuplicatePlusFillDuotoneIcon, DuplicatePlusFillDuotone as SiDuplicatePlusFillDuotone };
+export default DuplicatePlusFillDuotone;
 export type { DuplicatePlusFillDuotoneProps };

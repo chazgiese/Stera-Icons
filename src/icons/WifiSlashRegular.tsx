@@ -16,4 +16,5 @@ WifiSlashRegular.displayName = 'WifiSlashRegular';
 
 // Triple export pattern (lucide-react style)
 export { WifiSlashRegular, WifiSlashRegular as WifiSlashRegularIcon, WifiSlashRegular as SiWifiSlashRegular };
+export default WifiSlashRegular;
 export type { WifiSlashRegularProps };

@@ -16,4 +16,5 @@ TextSquareFill.displayName = 'TextSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { TextSquareFill, TextSquareFill as TextSquareFillIcon, TextSquareFill as SiTextSquareFill };
+export default TextSquareFill;
 export type { TextSquareFillProps };

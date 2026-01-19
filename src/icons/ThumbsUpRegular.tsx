@@ -16,4 +16,5 @@ ThumbsUpRegular.displayName = 'ThumbsUpRegular';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsUpRegular, ThumbsUpRegular as ThumbsUpRegularIcon, ThumbsUpRegular as SiThumbsUpRegular };
+export default ThumbsUpRegular;
 export type { ThumbsUpRegularProps };

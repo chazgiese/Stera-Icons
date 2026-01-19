@@ -18,4 +18,5 @@ SpeakerMediumRegularDuotone.displayName = 'SpeakerMediumRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerMediumRegularDuotone, SpeakerMediumRegularDuotone as SpeakerMediumRegularDuotoneIcon, SpeakerMediumRegularDuotone as SiSpeakerMediumRegularDuotone };
+export default SpeakerMediumRegularDuotone;
 export type { SpeakerMediumRegularDuotoneProps };

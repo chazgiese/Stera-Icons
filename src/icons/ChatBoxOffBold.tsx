@@ -17,4 +17,5 @@ ChatBoxOffBold.displayName = 'ChatBoxOffBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxOffBold, ChatBoxOffBold as ChatBoxOffBoldIcon, ChatBoxOffBold as SiChatBoxOffBold };
+export default ChatBoxOffBold;
 export type { ChatBoxOffBoldProps };

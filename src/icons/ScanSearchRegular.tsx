@@ -18,4 +18,5 @@ ScanSearchRegular.displayName = 'ScanSearchRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScanSearchRegular, ScanSearchRegular as ScanSearchRegularIcon, ScanSearchRegular as SiScanSearchRegular };
+export default ScanSearchRegular;
 export type { ScanSearchRegularProps };

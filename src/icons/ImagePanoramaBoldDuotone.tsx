@@ -17,4 +17,5 @@ ImagePanoramaBoldDuotone.displayName = 'ImagePanoramaBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImagePanoramaBoldDuotone, ImagePanoramaBoldDuotone as ImagePanoramaBoldDuotoneIcon, ImagePanoramaBoldDuotone as SiImagePanoramaBoldDuotone };
+export default ImagePanoramaBoldDuotone;
 export type { ImagePanoramaBoldDuotoneProps };

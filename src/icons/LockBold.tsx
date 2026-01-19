@@ -17,4 +17,5 @@ LockBold.displayName = 'LockBold';
 
 // Triple export pattern (lucide-react style)
 export { LockBold, LockBold as LockBoldIcon, LockBold as SiLockBold };
+export default LockBold;
 export type { LockBoldProps };

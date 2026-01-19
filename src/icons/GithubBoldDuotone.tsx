@@ -16,4 +16,5 @@ GithubBoldDuotone.displayName = 'GithubBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GithubBoldDuotone, GithubBoldDuotone as GithubBoldDuotoneIcon, GithubBoldDuotone as SiGithubBoldDuotone };
+export default GithubBoldDuotone;
 export type { GithubBoldDuotoneProps };

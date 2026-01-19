@@ -35,3 +35,4 @@ SoccerBall.displayName = 'SoccerBall';
 
 // Triple export pattern (lucide-react style)
 export { SoccerBall, SoccerBall as SoccerBallIcon, SoccerBall as SiSoccerBall };
+export default SoccerBall;

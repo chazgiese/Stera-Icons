@@ -17,4 +17,5 @@ HammerRegularDuotone.displayName = 'HammerRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HammerRegularDuotone, HammerRegularDuotone as HammerRegularDuotoneIcon, HammerRegularDuotone as SiHammerRegularDuotone };
+export default HammerRegularDuotone;
 export type { HammerRegularDuotoneProps };

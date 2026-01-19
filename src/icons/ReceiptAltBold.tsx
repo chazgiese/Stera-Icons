@@ -17,4 +17,5 @@ ReceiptAltBold.displayName = 'ReceiptAltBold';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptAltBold, ReceiptAltBold as ReceiptAltBoldIcon, ReceiptAltBold as SiReceiptAltBold };
+export default ReceiptAltBold;
 export type { ReceiptAltBoldProps };

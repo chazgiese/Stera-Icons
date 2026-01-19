@@ -17,4 +17,5 @@ GaugeDots66PercentBold.displayName = 'GaugeDots66PercentBold';
 
 // Triple export pattern (lucide-react style)
 export { GaugeDots66PercentBold, GaugeDots66PercentBold as GaugeDots66PercentBoldIcon, GaugeDots66PercentBold as SiGaugeDots66PercentBold };
+export default GaugeDots66PercentBold;
 export type { GaugeDots66PercentBoldProps };

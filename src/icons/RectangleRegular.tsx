@@ -16,4 +16,5 @@ RectangleRegular.displayName = 'RectangleRegular';
 
 // Triple export pattern (lucide-react style)
 export { RectangleRegular, RectangleRegular as RectangleRegularIcon, RectangleRegular as SiRectangleRegular };
+export default RectangleRegular;
 export type { RectangleRegularProps };

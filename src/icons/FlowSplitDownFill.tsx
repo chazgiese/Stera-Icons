@@ -16,4 +16,5 @@ FlowSplitDownFill.displayName = 'FlowSplitDownFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitDownFill, FlowSplitDownFill as FlowSplitDownFillIcon, FlowSplitDownFill as SiFlowSplitDownFill };
+export default FlowSplitDownFill;
 export type { FlowSplitDownFillProps };

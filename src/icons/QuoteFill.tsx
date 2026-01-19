@@ -16,4 +16,5 @@ QuoteFill.displayName = 'QuoteFill';
 
 // Triple export pattern (lucide-react style)
 export { QuoteFill, QuoteFill as QuoteFillIcon, QuoteFill as SiQuoteFill };
+export default QuoteFill;
 export type { QuoteFillProps };

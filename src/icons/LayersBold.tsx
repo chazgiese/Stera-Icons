@@ -16,4 +16,5 @@ LayersBold.displayName = 'LayersBold';
 
 // Triple export pattern (lucide-react style)
 export { LayersBold, LayersBold as LayersBoldIcon, LayersBold as SiLayersBold };
+export default LayersBold;
 export type { LayersBoldProps };

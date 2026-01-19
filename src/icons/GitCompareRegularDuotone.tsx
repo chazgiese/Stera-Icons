@@ -20,4 +20,5 @@ GitCompareRegularDuotone.displayName = 'GitCompareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitCompareRegularDuotone, GitCompareRegularDuotone as GitCompareRegularDuotoneIcon, GitCompareRegularDuotone as SiGitCompareRegularDuotone };
+export default GitCompareRegularDuotone;
 export type { GitCompareRegularDuotoneProps };

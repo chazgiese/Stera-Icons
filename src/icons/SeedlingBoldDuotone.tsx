@@ -17,4 +17,5 @@ SeedlingBoldDuotone.displayName = 'SeedlingBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SeedlingBoldDuotone, SeedlingBoldDuotone as SeedlingBoldDuotoneIcon, SeedlingBoldDuotone as SiSeedlingBoldDuotone };
+export default SeedlingBoldDuotone;
 export type { SeedlingBoldDuotoneProps };

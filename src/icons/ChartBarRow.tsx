@@ -35,3 +35,4 @@ ChartBarRow.displayName = 'ChartBarRow';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRow, ChartBarRow as ChartBarRowIcon, ChartBarRow as SiChartBarRow };
+export default ChartBarRow;

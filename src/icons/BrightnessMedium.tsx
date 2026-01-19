@@ -35,3 +35,4 @@ BrightnessMedium.displayName = 'BrightnessMedium';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessMedium, BrightnessMedium as BrightnessMediumIcon, BrightnessMedium as SiBrightnessMedium };
+export default BrightnessMedium;

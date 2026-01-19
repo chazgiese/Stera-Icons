@@ -35,3 +35,4 @@ UserSettings.displayName = 'UserSettings';
 
 // Triple export pattern (lucide-react style)
 export { UserSettings, UserSettings as UserSettingsIcon, UserSettings as SiUserSettings };
+export default UserSettings;

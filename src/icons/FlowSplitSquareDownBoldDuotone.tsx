@@ -17,4 +17,5 @@ FlowSplitSquareDownBoldDuotone.displayName = 'FlowSplitSquareDownBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitSquareDownBoldDuotone, FlowSplitSquareDownBoldDuotone as FlowSplitSquareDownBoldDuotoneIcon, FlowSplitSquareDownBoldDuotone as SiFlowSplitSquareDownBoldDuotone };
+export default FlowSplitSquareDownBoldDuotone;
 export type { FlowSplitSquareDownBoldDuotoneProps };

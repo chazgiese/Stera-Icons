@@ -16,4 +16,5 @@ ArrowsUpDownBold.displayName = 'ArrowsUpDownBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowsUpDownBold, ArrowsUpDownBold as ArrowsUpDownBoldIcon, ArrowsUpDownBold as SiArrowsUpDownBold };
+export default ArrowsUpDownBold;
 export type { ArrowsUpDownBoldProps };

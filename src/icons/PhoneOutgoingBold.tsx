@@ -17,4 +17,5 @@ PhoneOutgoingBold.displayName = 'PhoneOutgoingBold';
 
 // Triple export pattern (lucide-react style)
 export { PhoneOutgoingBold, PhoneOutgoingBold as PhoneOutgoingBoldIcon, PhoneOutgoingBold as SiPhoneOutgoingBold };
+export default PhoneOutgoingBold;
 export type { PhoneOutgoingBoldProps };

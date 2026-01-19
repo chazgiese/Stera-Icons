@@ -35,3 +35,4 @@ Globe.displayName = 'Globe';
 
 // Triple export pattern (lucide-react style)
 export { Globe, Globe as GlobeIcon, Globe as SiGlobe };
+export default Globe;

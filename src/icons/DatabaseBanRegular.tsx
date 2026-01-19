@@ -17,4 +17,5 @@ DatabaseBanRegular.displayName = 'DatabaseBanRegular';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseBanRegular, DatabaseBanRegular as DatabaseBanRegularIcon, DatabaseBanRegular as SiDatabaseBanRegular };
+export default DatabaseBanRegular;
 export type { DatabaseBanRegularProps };

@@ -17,4 +17,5 @@ RotateLeftRegularDuotone.displayName = 'RotateLeftRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RotateLeftRegularDuotone, RotateLeftRegularDuotone as RotateLeftRegularDuotoneIcon, RotateLeftRegularDuotone as SiRotateLeftRegularDuotone };
+export default RotateLeftRegularDuotone;
 export type { RotateLeftRegularDuotoneProps };

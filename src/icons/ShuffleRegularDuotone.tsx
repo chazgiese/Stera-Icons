@@ -17,4 +17,5 @@ ShuffleRegularDuotone.displayName = 'ShuffleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShuffleRegularDuotone, ShuffleRegularDuotone as ShuffleRegularDuotoneIcon, ShuffleRegularDuotone as SiShuffleRegularDuotone };
+export default ShuffleRegularDuotone;
 export type { ShuffleRegularDuotoneProps };

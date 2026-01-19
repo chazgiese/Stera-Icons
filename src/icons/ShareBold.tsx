@@ -17,4 +17,5 @@ ShareBold.displayName = 'ShareBold';
 
 // Triple export pattern (lucide-react style)
 export { ShareBold, ShareBold as ShareBoldIcon, ShareBold as SiShareBold };
+export default ShareBold;
 export type { ShareBoldProps };

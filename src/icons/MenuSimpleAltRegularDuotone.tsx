@@ -17,4 +17,5 @@ MenuSimpleAltRegularDuotone.displayName = 'MenuSimpleAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MenuSimpleAltRegularDuotone, MenuSimpleAltRegularDuotone as MenuSimpleAltRegularDuotoneIcon, MenuSimpleAltRegularDuotone as SiMenuSimpleAltRegularDuotone };
+export default MenuSimpleAltRegularDuotone;
 export type { MenuSimpleAltRegularDuotoneProps };

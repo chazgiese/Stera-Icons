@@ -16,4 +16,5 @@ StarHalfBold.displayName = 'StarHalfBold';
 
 // Triple export pattern (lucide-react style)
 export { StarHalfBold, StarHalfBold as StarHalfBoldIcon, StarHalfBold as SiStarHalfBold };
+export default StarHalfBold;
 export type { StarHalfBoldProps };

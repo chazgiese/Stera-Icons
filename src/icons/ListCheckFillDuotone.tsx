@@ -17,4 +17,5 @@ ListCheckFillDuotone.displayName = 'ListCheckFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckFillDuotone, ListCheckFillDuotone as ListCheckFillDuotoneIcon, ListCheckFillDuotone as SiListCheckFillDuotone };
+export default ListCheckFillDuotone;
 export type { ListCheckFillDuotoneProps };

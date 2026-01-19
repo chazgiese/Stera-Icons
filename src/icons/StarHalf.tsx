@@ -35,3 +35,4 @@ StarHalf.displayName = 'StarHalf';
 
 // Triple export pattern (lucide-react style)
 export { StarHalf, StarHalf as StarHalfIcon, StarHalf as SiStarHalf };
+export default StarHalf;

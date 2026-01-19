@@ -16,4 +16,5 @@ CanRegular.displayName = 'CanRegular';
 
 // Triple export pattern (lucide-react style)
 export { CanRegular, CanRegular as CanRegularIcon, CanRegular as SiCanRegular };
+export default CanRegular;
 export type { CanRegularProps };

@@ -35,3 +35,4 @@ Shield.displayName = 'Shield';
 
 // Triple export pattern (lucide-react style)
 export { Shield, Shield as ShieldIcon, Shield as SiShield };
+export default Shield;

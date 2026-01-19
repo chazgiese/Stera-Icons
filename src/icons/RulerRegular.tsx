@@ -16,4 +16,5 @@ RulerRegular.displayName = 'RulerRegular';
 
 // Triple export pattern (lucide-react style)
 export { RulerRegular, RulerRegular as RulerRegularIcon, RulerRegular as SiRulerRegular };
+export default RulerRegular;
 export type { RulerRegularProps };

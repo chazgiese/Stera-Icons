@@ -17,4 +17,5 @@ SortBoldDuotone.displayName = 'SortBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SortBoldDuotone, SortBoldDuotone as SortBoldDuotoneIcon, SortBoldDuotone as SiSortBoldDuotone };
+export default SortBoldDuotone;
 export type { SortBoldDuotoneProps };

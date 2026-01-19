@@ -19,4 +19,5 @@ BladeKunaiRegularDuotone.displayName = 'BladeKunaiRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BladeKunaiRegularDuotone, BladeKunaiRegularDuotone as BladeKunaiRegularDuotoneIcon, BladeKunaiRegularDuotone as SiBladeKunaiRegularDuotone };
+export default BladeKunaiRegularDuotone;
 export type { BladeKunaiRegularDuotoneProps };

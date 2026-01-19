@@ -16,4 +16,5 @@ DocumentDetailFill.displayName = 'DocumentDetailFill';
 
 // Triple export pattern (lucide-react style)
 export { DocumentDetailFill, DocumentDetailFill as DocumentDetailFillIcon, DocumentDetailFill as SiDocumentDetailFill };
+export default DocumentDetailFill;
 export type { DocumentDetailFillProps };

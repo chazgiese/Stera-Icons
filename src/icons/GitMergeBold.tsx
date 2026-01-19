@@ -16,4 +16,5 @@ GitMergeBold.displayName = 'GitMergeBold';
 
 // Triple export pattern (lucide-react style)
 export { GitMergeBold, GitMergeBold as GitMergeBoldIcon, GitMergeBold as SiGitMergeBold };
+export default GitMergeBold;
 export type { GitMergeBoldProps };

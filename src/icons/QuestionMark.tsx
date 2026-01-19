@@ -35,3 +35,4 @@ QuestionMark.displayName = 'QuestionMark';
 
 // Triple export pattern (lucide-react style)
 export { QuestionMark, QuestionMark as QuestionMarkIcon, QuestionMark as SiQuestionMark };
+export default QuestionMark;

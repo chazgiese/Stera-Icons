@@ -17,4 +17,5 @@ ContactBookRegularDuotone.displayName = 'ContactBookRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ContactBookRegularDuotone, ContactBookRegularDuotone as ContactBookRegularDuotoneIcon, ContactBookRegularDuotone as SiContactBookRegularDuotone };
+export default ContactBookRegularDuotone;
 export type { ContactBookRegularDuotoneProps };

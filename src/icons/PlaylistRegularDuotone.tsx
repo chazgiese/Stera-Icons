@@ -17,4 +17,5 @@ PlaylistRegularDuotone.displayName = 'PlaylistRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlaylistRegularDuotone, PlaylistRegularDuotone as PlaylistRegularDuotoneIcon, PlaylistRegularDuotone as SiPlaylistRegularDuotone };
+export default PlaylistRegularDuotone;
 export type { PlaylistRegularDuotoneProps };

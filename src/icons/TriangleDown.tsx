@@ -35,3 +35,4 @@ TriangleDown.displayName = 'TriangleDown';
 
 // Triple export pattern (lucide-react style)
 export { TriangleDown, TriangleDown as TriangleDownIcon, TriangleDown as SiTriangleDown };
+export default TriangleDown;

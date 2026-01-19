@@ -35,3 +35,4 @@ Forward.displayName = 'Forward';
 
 // Triple export pattern (lucide-react style)
 export { Forward, Forward as ForwardIcon, Forward as SiForward };
+export default Forward;

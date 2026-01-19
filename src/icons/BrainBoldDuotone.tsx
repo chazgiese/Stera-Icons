@@ -17,4 +17,5 @@ BrainBoldDuotone.displayName = 'BrainBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrainBoldDuotone, BrainBoldDuotone as BrainBoldDuotoneIcon, BrainBoldDuotone as SiBrainBoldDuotone };
+export default BrainBoldDuotone;
 export type { BrainBoldDuotoneProps };

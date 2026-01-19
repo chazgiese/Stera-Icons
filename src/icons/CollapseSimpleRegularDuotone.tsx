@@ -17,4 +17,5 @@ CollapseSimpleRegularDuotone.displayName = 'CollapseSimpleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleRegularDuotone, CollapseSimpleRegularDuotone as CollapseSimpleRegularDuotoneIcon, CollapseSimpleRegularDuotone as SiCollapseSimpleRegularDuotone };
+export default CollapseSimpleRegularDuotone;
 export type { CollapseSimpleRegularDuotoneProps };

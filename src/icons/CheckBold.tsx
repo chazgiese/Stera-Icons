@@ -16,4 +16,5 @@ CheckBold.displayName = 'CheckBold';
 
 // Triple export pattern (lucide-react style)
 export { CheckBold, CheckBold as CheckBoldIcon, CheckBold as SiCheckBold };
+export default CheckBold;
 export type { CheckBoldProps };

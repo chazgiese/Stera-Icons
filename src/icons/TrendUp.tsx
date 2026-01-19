@@ -35,3 +35,4 @@ TrendUp.displayName = 'TrendUp';
 
 // Triple export pattern (lucide-react style)
 export { TrendUp, TrendUp as TrendUpIcon, TrendUp as SiTrendUp };
+export default TrendUp;

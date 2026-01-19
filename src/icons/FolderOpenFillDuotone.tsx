@@ -17,4 +17,5 @@ FolderOpenFillDuotone.displayName = 'FolderOpenFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FolderOpenFillDuotone, FolderOpenFillDuotone as FolderOpenFillDuotoneIcon, FolderOpenFillDuotone as SiFolderOpenFillDuotone };
+export default FolderOpenFillDuotone;
 export type { FolderOpenFillDuotoneProps };

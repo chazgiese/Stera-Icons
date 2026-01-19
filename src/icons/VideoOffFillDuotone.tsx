@@ -17,4 +17,5 @@ VideoOffFillDuotone.displayName = 'VideoOffFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { VideoOffFillDuotone, VideoOffFillDuotone as VideoOffFillDuotoneIcon, VideoOffFillDuotone as SiVideoOffFillDuotone };
+export default VideoOffFillDuotone;
 export type { VideoOffFillDuotoneProps };

@@ -17,4 +17,5 @@ UserCircleDashedFillDuotone.displayName = 'UserCircleDashedFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserCircleDashedFillDuotone, UserCircleDashedFillDuotone as UserCircleDashedFillDuotoneIcon, UserCircleDashedFillDuotone as SiUserCircleDashedFillDuotone };
+export default UserCircleDashedFillDuotone;
 export type { UserCircleDashedFillDuotoneProps };

@@ -16,4 +16,5 @@ CurveBezierRegular.displayName = 'CurveBezierRegular';
 
 // Triple export pattern (lucide-react style)
 export { CurveBezierRegular, CurveBezierRegular as CurveBezierRegularIcon, CurveBezierRegular as SiCurveBezierRegular };
+export default CurveBezierRegular;
 export type { CurveBezierRegularProps };

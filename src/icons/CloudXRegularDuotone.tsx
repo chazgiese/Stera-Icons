@@ -17,4 +17,5 @@ CloudXRegularDuotone.displayName = 'CloudXRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CloudXRegularDuotone, CloudXRegularDuotone as CloudXRegularDuotoneIcon, CloudXRegularDuotone as SiCloudXRegularDuotone };
+export default CloudXRegularDuotone;
 export type { CloudXRegularDuotoneProps };

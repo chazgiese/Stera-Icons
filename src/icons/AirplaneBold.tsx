@@ -16,4 +16,5 @@ AirplaneBold.displayName = 'AirplaneBold';
 
 // Triple export pattern (lucide-react style)
 export { AirplaneBold, AirplaneBold as AirplaneBoldIcon, AirplaneBold as SiAirplaneBold };
+export default AirplaneBold;
 export type { AirplaneBoldProps };

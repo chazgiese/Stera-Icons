@@ -16,4 +16,5 @@ ListBold.displayName = 'ListBold';
 
 // Triple export pattern (lucide-react style)
 export { ListBold, ListBold as ListBoldIcon, ListBold as SiListBold };
+export default ListBold;
 export type { ListBoldProps };

@@ -17,4 +17,5 @@ CompassBold.displayName = 'CompassBold';
 
 // Triple export pattern (lucide-react style)
 export { CompassBold, CompassBold as CompassBoldIcon, CompassBold as SiCompassBold };
+export default CompassBold;
 export type { CompassBoldProps };

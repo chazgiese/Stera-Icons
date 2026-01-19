@@ -35,3 +35,4 @@ Scroll.displayName = 'Scroll';
 
 // Triple export pattern (lucide-react style)
 export { Scroll, Scroll as ScrollIcon, Scroll as SiScroll };
+export default Scroll;

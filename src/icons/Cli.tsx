@@ -35,3 +35,4 @@ Cli.displayName = 'Cli';
 
 // Triple export pattern (lucide-react style)
 export { Cli, Cli as CliIcon, Cli as SiCli };
+export default Cli;

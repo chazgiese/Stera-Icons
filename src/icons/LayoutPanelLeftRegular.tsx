@@ -16,4 +16,5 @@ LayoutPanelLeftRegular.displayName = 'LayoutPanelLeftRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelLeftRegular, LayoutPanelLeftRegular as LayoutPanelLeftRegularIcon, LayoutPanelLeftRegular as SiLayoutPanelLeftRegular };
+export default LayoutPanelLeftRegular;
 export type { LayoutPanelLeftRegularProps };

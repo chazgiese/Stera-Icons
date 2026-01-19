@@ -17,4 +17,5 @@ CrosshairBoldDuotone.displayName = 'CrosshairBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CrosshairBoldDuotone, CrosshairBoldDuotone as CrosshairBoldDuotoneIcon, CrosshairBoldDuotone as SiCrosshairBoldDuotone };
+export default CrosshairBoldDuotone;
 export type { CrosshairBoldDuotoneProps };

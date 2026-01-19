@@ -16,4 +16,5 @@ PaperclipRegular.displayName = 'PaperclipRegular';
 
 // Triple export pattern (lucide-react style)
 export { PaperclipRegular, PaperclipRegular as PaperclipRegularIcon, PaperclipRegular as SiPaperclipRegular };
+export default PaperclipRegular;
 export type { PaperclipRegularProps };

@@ -18,4 +18,5 @@ LayersAltFill.displayName = 'LayersAltFill';
 
 // Triple export pattern (lucide-react style)
 export { LayersAltFill, LayersAltFill as LayersAltFillIcon, LayersAltFill as SiLayersAltFill };
+export default LayersAltFill;
 export type { LayersAltFillProps };

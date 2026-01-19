@@ -17,4 +17,5 @@ ArrowUpDownRegularDuotone.displayName = 'ArrowUpDownRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArrowUpDownRegularDuotone, ArrowUpDownRegularDuotone as ArrowUpDownRegularDuotoneIcon, ArrowUpDownRegularDuotone as SiArrowUpDownRegularDuotone };
+export default ArrowUpDownRegularDuotone;
 export type { ArrowUpDownRegularDuotoneProps };

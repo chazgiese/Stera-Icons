@@ -35,3 +35,4 @@ ScanSearch.displayName = 'ScanSearch';
 
 // Triple export pattern (lucide-react style)
 export { ScanSearch, ScanSearch as ScanSearchIcon, ScanSearch as SiScanSearch };
+export default ScanSearch;

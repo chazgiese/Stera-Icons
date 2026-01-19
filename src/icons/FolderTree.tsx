@@ -35,3 +35,4 @@ FolderTree.displayName = 'FolderTree';
 
 // Triple export pattern (lucide-react style)
 export { FolderTree, FolderTree as FolderTreeIcon, FolderTree as SiFolderTree };
+export default FolderTree;

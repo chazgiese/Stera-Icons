@@ -35,3 +35,4 @@ Flashlight.displayName = 'Flashlight';
 
 // Triple export pattern (lucide-react style)
 export { Flashlight, Flashlight as FlashlightIcon, Flashlight as SiFlashlight };
+export default Flashlight;

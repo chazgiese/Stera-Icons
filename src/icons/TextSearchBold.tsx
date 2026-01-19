@@ -17,4 +17,5 @@ TextSearchBold.displayName = 'TextSearchBold';
 
 // Triple export pattern (lucide-react style)
 export { TextSearchBold, TextSearchBold as TextSearchBoldIcon, TextSearchBold as SiTextSearchBold };
+export default TextSearchBold;
 export type { TextSearchBoldProps };

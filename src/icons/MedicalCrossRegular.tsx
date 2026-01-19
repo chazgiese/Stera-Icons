@@ -16,4 +16,5 @@ MedicalCrossRegular.displayName = 'MedicalCrossRegular';
 
 // Triple export pattern (lucide-react style)
 export { MedicalCrossRegular, MedicalCrossRegular as MedicalCrossRegularIcon, MedicalCrossRegular as SiMedicalCrossRegular };
+export default MedicalCrossRegular;
 export type { MedicalCrossRegularProps };

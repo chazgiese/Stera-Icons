@@ -16,4 +16,5 @@ PencilRulerRegular.displayName = 'PencilRulerRegular';
 
 // Triple export pattern (lucide-react style)
 export { PencilRulerRegular, PencilRulerRegular as PencilRulerRegularIcon, PencilRulerRegular as SiPencilRulerRegular };
+export default PencilRulerRegular;
 export type { PencilRulerRegularProps };

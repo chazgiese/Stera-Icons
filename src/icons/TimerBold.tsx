@@ -17,4 +17,5 @@ TimerBold.displayName = 'TimerBold';
 
 // Triple export pattern (lucide-react style)
 export { TimerBold, TimerBold as TimerBoldIcon, TimerBold as SiTimerBold };
+export default TimerBold;
 export type { TimerBoldProps };

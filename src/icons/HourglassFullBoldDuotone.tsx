@@ -17,4 +17,5 @@ HourglassFullBoldDuotone.displayName = 'HourglassFullBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HourglassFullBoldDuotone, HourglassFullBoldDuotone as HourglassFullBoldDuotoneIcon, HourglassFullBoldDuotone as SiHourglassFullBoldDuotone };
+export default HourglassFullBoldDuotone;
 export type { HourglassFullBoldDuotoneProps };

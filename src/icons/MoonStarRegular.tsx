@@ -17,4 +17,5 @@ MoonStarRegular.displayName = 'MoonStarRegular';
 
 // Triple export pattern (lucide-react style)
 export { MoonStarRegular, MoonStarRegular as MoonStarRegularIcon, MoonStarRegular as SiMoonStarRegular };
+export default MoonStarRegular;
 export type { MoonStarRegularProps };

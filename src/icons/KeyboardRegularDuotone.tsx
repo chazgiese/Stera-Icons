@@ -17,4 +17,5 @@ KeyboardRegularDuotone.displayName = 'KeyboardRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { KeyboardRegularDuotone, KeyboardRegularDuotone as KeyboardRegularDuotoneIcon, KeyboardRegularDuotone as SiKeyboardRegularDuotone };
+export default KeyboardRegularDuotone;
 export type { KeyboardRegularDuotoneProps };

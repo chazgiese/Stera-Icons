@@ -35,3 +35,4 @@ Spiral.displayName = 'Spiral';
 
 // Triple export pattern (lucide-react style)
 export { Spiral, Spiral as SpiralIcon, Spiral as SiSpiral };
+export default Spiral;

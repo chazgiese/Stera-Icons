@@ -17,4 +17,5 @@ BrightnessHighRegularDuotone.displayName = 'BrightnessHighRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessHighRegularDuotone, BrightnessHighRegularDuotone as BrightnessHighRegularDuotoneIcon, BrightnessHighRegularDuotone as SiBrightnessHighRegularDuotone };
+export default BrightnessHighRegularDuotone;
 export type { BrightnessHighRegularDuotoneProps };

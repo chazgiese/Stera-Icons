@@ -17,4 +17,5 @@ MicRegular.displayName = 'MicRegular';
 
 // Triple export pattern (lucide-react style)
 export { MicRegular, MicRegular as MicRegularIcon, MicRegular as SiMicRegular };
+export default MicRegular;
 export type { MicRegularProps };

@@ -17,4 +17,5 @@ ExpandFillDuotone.displayName = 'ExpandFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ExpandFillDuotone, ExpandFillDuotone as ExpandFillDuotoneIcon, ExpandFillDuotone as SiExpandFillDuotone };
+export default ExpandFillDuotone;
 export type { ExpandFillDuotoneProps };

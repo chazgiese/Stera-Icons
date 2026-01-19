@@ -35,3 +35,4 @@ CubeDash.displayName = 'CubeDash';
 
 // Triple export pattern (lucide-react style)
 export { CubeDash, CubeDash as CubeDashIcon, CubeDash as SiCubeDash };
+export default CubeDash;

@@ -35,3 +35,4 @@ SendH.displayName = 'SendH';
 
 // Triple export pattern (lucide-react style)
 export { SendH, SendH as SendHIcon, SendH as SiSendH };
+export default SendH;

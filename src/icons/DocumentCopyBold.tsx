@@ -16,4 +16,5 @@ DocumentCopyBold.displayName = 'DocumentCopyBold';
 
 // Triple export pattern (lucide-react style)
 export { DocumentCopyBold, DocumentCopyBold as DocumentCopyBoldIcon, DocumentCopyBold as SiDocumentCopyBold };
+export default DocumentCopyBold;
 export type { DocumentCopyBoldProps };

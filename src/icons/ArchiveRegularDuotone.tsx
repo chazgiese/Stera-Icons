@@ -18,4 +18,5 @@ ArchiveRegularDuotone.displayName = 'ArchiveRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArchiveRegularDuotone, ArchiveRegularDuotone as ArchiveRegularDuotoneIcon, ArchiveRegularDuotone as SiArchiveRegularDuotone };
+export default ArchiveRegularDuotone;
 export type { ArchiveRegularDuotoneProps };

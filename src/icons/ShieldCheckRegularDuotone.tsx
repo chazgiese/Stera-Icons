@@ -17,4 +17,5 @@ ShieldCheckRegularDuotone.displayName = 'ShieldCheckRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldCheckRegularDuotone, ShieldCheckRegularDuotone as ShieldCheckRegularDuotoneIcon, ShieldCheckRegularDuotone as SiShieldCheckRegularDuotone };
+export default ShieldCheckRegularDuotone;
 export type { ShieldCheckRegularDuotoneProps };

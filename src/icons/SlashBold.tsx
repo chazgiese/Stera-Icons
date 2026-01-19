@@ -16,4 +16,5 @@ SlashBold.displayName = 'SlashBold';
 
 // Triple export pattern (lucide-react style)
 export { SlashBold, SlashBold as SlashBoldIcon, SlashBold as SiSlashBold };
+export default SlashBold;
 export type { SlashBoldProps };

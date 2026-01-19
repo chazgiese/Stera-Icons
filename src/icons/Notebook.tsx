@@ -35,3 +35,4 @@ Notebook.displayName = 'Notebook';
 
 // Triple export pattern (lucide-react style)
 export { Notebook, Notebook as NotebookIcon, Notebook as SiNotebook };
+export default Notebook;

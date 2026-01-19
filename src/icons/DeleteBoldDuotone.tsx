@@ -17,4 +17,5 @@ DeleteBoldDuotone.displayName = 'DeleteBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DeleteBoldDuotone, DeleteBoldDuotone as DeleteBoldDuotoneIcon, DeleteBoldDuotone as SiDeleteBoldDuotone };
+export default DeleteBoldDuotone;
 export type { DeleteBoldDuotoneProps };

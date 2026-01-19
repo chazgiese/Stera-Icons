@@ -16,4 +16,5 @@ CropRegular.displayName = 'CropRegular';
 
 // Triple export pattern (lucide-react style)
 export { CropRegular, CropRegular as CropRegularIcon, CropRegular as SiCropRegular };
+export default CropRegular;
 export type { CropRegularProps };

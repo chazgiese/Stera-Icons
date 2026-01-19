@@ -16,4 +16,5 @@ BrickWallBold.displayName = 'BrickWallBold';
 
 // Triple export pattern (lucide-react style)
 export { BrickWallBold, BrickWallBold as BrickWallBoldIcon, BrickWallBold as SiBrickWallBold };
+export default BrickWallBold;
 export type { BrickWallBoldProps };

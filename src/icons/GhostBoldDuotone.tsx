@@ -17,4 +17,5 @@ GhostBoldDuotone.displayName = 'GhostBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GhostBoldDuotone, GhostBoldDuotone as GhostBoldDuotoneIcon, GhostBoldDuotone as SiGhostBoldDuotone };
+export default GhostBoldDuotone;
 export type { GhostBoldDuotoneProps };

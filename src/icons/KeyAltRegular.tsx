@@ -17,4 +17,5 @@ KeyAltRegular.displayName = 'KeyAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { KeyAltRegular, KeyAltRegular as KeyAltRegularIcon, KeyAltRegular as SiKeyAltRegular };
+export default KeyAltRegular;
 export type { KeyAltRegularProps };

@@ -16,4 +16,5 @@ TruckFill.displayName = 'TruckFill';
 
 // Triple export pattern (lucide-react style)
 export { TruckFill, TruckFill as TruckFillIcon, TruckFill as SiTruckFill };
+export default TruckFill;
 export type { TruckFillProps };

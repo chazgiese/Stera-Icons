@@ -35,3 +35,4 @@ CursorClick.displayName = 'CursorClick';
 
 // Triple export pattern (lucide-react style)
 export { CursorClick, CursorClick as CursorClickIcon, CursorClick as SiCursorClick };
+export default CursorClick;

@@ -35,3 +35,4 @@ ArrowLineUp.displayName = 'ArrowLineUp';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineUp, ArrowLineUp as ArrowLineUpIcon, ArrowLineUp as SiArrowLineUp };
+export default ArrowLineUp;

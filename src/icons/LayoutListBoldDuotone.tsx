@@ -17,4 +17,5 @@ LayoutListBoldDuotone.displayName = 'LayoutListBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayoutListBoldDuotone, LayoutListBoldDuotone as LayoutListBoldDuotoneIcon, LayoutListBoldDuotone as SiLayoutListBoldDuotone };
+export default LayoutListBoldDuotone;
 export type { LayoutListBoldDuotoneProps };

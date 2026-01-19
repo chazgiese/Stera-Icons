@@ -16,4 +16,5 @@ GitCommitRegular.displayName = 'GitCommitRegular';
 
 // Triple export pattern (lucide-react style)
 export { GitCommitRegular, GitCommitRegular as GitCommitRegularIcon, GitCommitRegular as SiGitCommitRegular };
+export default GitCommitRegular;
 export type { GitCommitRegularProps };

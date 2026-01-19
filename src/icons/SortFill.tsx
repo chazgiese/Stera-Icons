@@ -17,4 +17,5 @@ SortFill.displayName = 'SortFill';
 
 // Triple export pattern (lucide-react style)
 export { SortFill, SortFill as SortFillIcon, SortFill as SiSortFill };
+export default SortFill;
 export type { SortFillProps };

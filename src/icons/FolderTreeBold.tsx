@@ -18,4 +18,5 @@ FolderTreeBold.displayName = 'FolderTreeBold';
 
 // Triple export pattern (lucide-react style)
 export { FolderTreeBold, FolderTreeBold as FolderTreeBoldIcon, FolderTreeBold as SiFolderTreeBold };
+export default FolderTreeBold;
 export type { FolderTreeBoldProps };

@@ -17,4 +17,5 @@ CloudUploadBoldDuotone.displayName = 'CloudUploadBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CloudUploadBoldDuotone, CloudUploadBoldDuotone as CloudUploadBoldDuotoneIcon, CloudUploadBoldDuotone as SiCloudUploadBoldDuotone };
+export default CloudUploadBoldDuotone;
 export type { CloudUploadBoldDuotoneProps };

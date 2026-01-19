@@ -16,4 +16,5 @@ AlertTriangleFill.displayName = 'AlertTriangleFill';
 
 // Triple export pattern (lucide-react style)
 export { AlertTriangleFill, AlertTriangleFill as AlertTriangleFillIcon, AlertTriangleFill as SiAlertTriangleFill };
+export default AlertTriangleFill;
 export type { AlertTriangleFillProps };

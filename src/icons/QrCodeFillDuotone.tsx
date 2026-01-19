@@ -17,4 +17,5 @@ QrCodeFillDuotone.displayName = 'QrCodeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { QrCodeFillDuotone, QrCodeFillDuotone as QrCodeFillDuotoneIcon, QrCodeFillDuotone as SiQrCodeFillDuotone };
+export default QrCodeFillDuotone;
 export type { QrCodeFillDuotoneProps };

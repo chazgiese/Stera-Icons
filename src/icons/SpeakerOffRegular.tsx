@@ -17,4 +17,5 @@ SpeakerOffRegular.displayName = 'SpeakerOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerOffRegular, SpeakerOffRegular as SpeakerOffRegularIcon, SpeakerOffRegular as SiSpeakerOffRegular };
+export default SpeakerOffRegular;
 export type { SpeakerOffRegularProps };

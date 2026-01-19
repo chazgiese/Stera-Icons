@@ -35,3 +35,4 @@ GitBranch.displayName = 'GitBranch';
 
 // Triple export pattern (lucide-react style)
 export { GitBranch, GitBranch as GitBranchIcon, GitBranch as SiGitBranch };
+export default GitBranch;

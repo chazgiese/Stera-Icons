@@ -16,4 +16,5 @@ FlowSplitArrowDownRegular.displayName = 'FlowSplitArrowDownRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitArrowDownRegular, FlowSplitArrowDownRegular as FlowSplitArrowDownRegularIcon, FlowSplitArrowDownRegular as SiFlowSplitArrowDownRegular };
+export default FlowSplitArrowDownRegular;
 export type { FlowSplitArrowDownRegularProps };

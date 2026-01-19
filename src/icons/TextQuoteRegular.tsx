@@ -16,4 +16,5 @@ TextQuoteRegular.displayName = 'TextQuoteRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextQuoteRegular, TextQuoteRegular as TextQuoteRegularIcon, TextQuoteRegular as SiTextQuoteRegular };
+export default TextQuoteRegular;
 export type { TextQuoteRegularProps };

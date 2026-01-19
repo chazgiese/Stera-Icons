@@ -16,4 +16,5 @@ TextQuoteBold.displayName = 'TextQuoteBold';
 
 // Triple export pattern (lucide-react style)
 export { TextQuoteBold, TextQuoteBold as TextQuoteBoldIcon, TextQuoteBold as SiTextQuoteBold };
+export default TextQuoteBold;
 export type { TextQuoteBoldProps };

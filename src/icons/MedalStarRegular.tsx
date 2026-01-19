@@ -16,4 +16,5 @@ MedalStarRegular.displayName = 'MedalStarRegular';
 
 // Triple export pattern (lucide-react style)
 export { MedalStarRegular, MedalStarRegular as MedalStarRegularIcon, MedalStarRegular as SiMedalStarRegular };
+export default MedalStarRegular;
 export type { MedalStarRegularProps };

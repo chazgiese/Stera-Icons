@@ -17,4 +17,5 @@ EyeClosedBoldDuotone.displayName = 'EyeClosedBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EyeClosedBoldDuotone, EyeClosedBoldDuotone as EyeClosedBoldDuotoneIcon, EyeClosedBoldDuotone as SiEyeClosedBoldDuotone };
+export default EyeClosedBoldDuotone;
 export type { EyeClosedBoldDuotoneProps };

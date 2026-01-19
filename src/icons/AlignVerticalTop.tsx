@@ -35,3 +35,4 @@ AlignVerticalTop.displayName = 'AlignVerticalTop';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalTop, AlignVerticalTop as AlignVerticalTopIcon, AlignVerticalTop as SiAlignVerticalTop };
+export default AlignVerticalTop;

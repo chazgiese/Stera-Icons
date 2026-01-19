@@ -35,3 +35,4 @@ Microscope.displayName = 'Microscope';
 
 // Triple export pattern (lucide-react style)
 export { Microscope, Microscope as MicroscopeIcon, Microscope as SiMicroscope };
+export default Microscope;

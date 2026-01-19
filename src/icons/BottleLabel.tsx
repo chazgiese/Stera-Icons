@@ -35,3 +35,4 @@ BottleLabel.displayName = 'BottleLabel';
 
 // Triple export pattern (lucide-react style)
 export { BottleLabel, BottleLabel as BottleLabelIcon, BottleLabel as SiBottleLabel };
+export default BottleLabel;

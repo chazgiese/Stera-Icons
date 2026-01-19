@@ -16,4 +16,5 @@ FlagFill.displayName = 'FlagFill';
 
 // Triple export pattern (lucide-react style)
 export { FlagFill, FlagFill as FlagFillIcon, FlagFill as SiFlagFill };
+export default FlagFill;
 export type { FlagFillProps };

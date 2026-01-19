@@ -35,3 +35,4 @@ Circle.displayName = 'Circle';
 
 // Triple export pattern (lucide-react style)
 export { Circle, Circle as CircleIcon, Circle as SiCircle };
+export default Circle;

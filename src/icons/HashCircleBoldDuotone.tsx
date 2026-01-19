@@ -17,4 +17,5 @@ HashCircleBoldDuotone.displayName = 'HashCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashCircleBoldDuotone, HashCircleBoldDuotone as HashCircleBoldDuotoneIcon, HashCircleBoldDuotone as SiHashCircleBoldDuotone };
+export default HashCircleBoldDuotone;
 export type { HashCircleBoldDuotoneProps };

@@ -17,4 +17,5 @@ ListBulletFillDuotone.displayName = 'ListBulletFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListBulletFillDuotone, ListBulletFillDuotone as ListBulletFillDuotoneIcon, ListBulletFillDuotone as SiListBulletFillDuotone };
+export default ListBulletFillDuotone;
 export type { ListBulletFillDuotoneProps };

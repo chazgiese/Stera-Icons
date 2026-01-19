@@ -17,4 +17,5 @@ HexagonFillDuotone.displayName = 'HexagonFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HexagonFillDuotone, HexagonFillDuotone as HexagonFillDuotoneIcon, HexagonFillDuotone as SiHexagonFillDuotone };
+export default HexagonFillDuotone;
 export type { HexagonFillDuotoneProps };

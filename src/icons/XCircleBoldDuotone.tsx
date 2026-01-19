@@ -17,4 +17,5 @@ XCircleBoldDuotone.displayName = 'XCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { XCircleBoldDuotone, XCircleBoldDuotone as XCircleBoldDuotoneIcon, XCircleBoldDuotone as SiXCircleBoldDuotone };
+export default XCircleBoldDuotone;
 export type { XCircleBoldDuotoneProps };

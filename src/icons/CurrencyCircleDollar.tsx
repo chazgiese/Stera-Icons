@@ -35,3 +35,4 @@ CurrencyCircleDollar.displayName = 'CurrencyCircleDollar';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyCircleDollar, CurrencyCircleDollar as CurrencyCircleDollarIcon, CurrencyCircleDollar as SiCurrencyCircleDollar };
+export default CurrencyCircleDollar;

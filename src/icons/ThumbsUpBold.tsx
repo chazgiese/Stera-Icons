@@ -16,4 +16,5 @@ ThumbsUpBold.displayName = 'ThumbsUpBold';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsUpBold, ThumbsUpBold as ThumbsUpBoldIcon, ThumbsUpBold as SiThumbsUpBold };
+export default ThumbsUpBold;
 export type { ThumbsUpBoldProps };

@@ -17,4 +17,5 @@ TreePalmRegularDuotone.displayName = 'TreePalmRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TreePalmRegularDuotone, TreePalmRegularDuotone as TreePalmRegularDuotoneIcon, TreePalmRegularDuotone as SiTreePalmRegularDuotone };
+export default TreePalmRegularDuotone;
 export type { TreePalmRegularDuotoneProps };

@@ -18,4 +18,5 @@ ImagePileBoldDuotone.displayName = 'ImagePileBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImagePileBoldDuotone, ImagePileBoldDuotone as ImagePileBoldDuotoneIcon, ImagePileBoldDuotone as SiImagePileBoldDuotone };
+export default ImagePileBoldDuotone;
 export type { ImagePileBoldDuotoneProps };

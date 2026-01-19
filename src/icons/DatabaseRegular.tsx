@@ -16,4 +16,5 @@ DatabaseRegular.displayName = 'DatabaseRegular';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseRegular, DatabaseRegular as DatabaseRegularIcon, DatabaseRegular as SiDatabaseRegular };
+export default DatabaseRegular;
 export type { DatabaseRegularProps };

@@ -17,4 +17,5 @@ EmoteGrinBoldDuotone.displayName = 'EmoteGrinBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EmoteGrinBoldDuotone, EmoteGrinBoldDuotone as EmoteGrinBoldDuotoneIcon, EmoteGrinBoldDuotone as SiEmoteGrinBoldDuotone };
+export default EmoteGrinBoldDuotone;
 export type { EmoteGrinBoldDuotoneProps };

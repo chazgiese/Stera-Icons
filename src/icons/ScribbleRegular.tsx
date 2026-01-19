@@ -16,4 +16,5 @@ ScribbleRegular.displayName = 'ScribbleRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScribbleRegular, ScribbleRegular as ScribbleRegularIcon, ScribbleRegular as SiScribbleRegular };
+export default ScribbleRegular;
 export type { ScribbleRegularProps };

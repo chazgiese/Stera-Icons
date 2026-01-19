@@ -18,4 +18,5 @@ AnnotationBoldDuotone.displayName = 'AnnotationBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationBoldDuotone, AnnotationBoldDuotone as AnnotationBoldDuotoneIcon, AnnotationBoldDuotone as SiAnnotationBoldDuotone };
+export default AnnotationBoldDuotone;
 export type { AnnotationBoldDuotoneProps };

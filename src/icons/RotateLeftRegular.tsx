@@ -16,4 +16,5 @@ RotateLeftRegular.displayName = 'RotateLeftRegular';
 
 // Triple export pattern (lucide-react style)
 export { RotateLeftRegular, RotateLeftRegular as RotateLeftRegularIcon, RotateLeftRegular as SiRotateLeftRegular };
+export default RotateLeftRegular;
 export type { RotateLeftRegularProps };

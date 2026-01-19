@@ -18,4 +18,5 @@ FlowRightArrowRegularDuotone.displayName = 'FlowRightArrowRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowRightArrowRegularDuotone, FlowRightArrowRegularDuotone as FlowRightArrowRegularDuotoneIcon, FlowRightArrowRegularDuotone as SiFlowRightArrowRegularDuotone };
+export default FlowRightArrowRegularDuotone;
 export type { FlowRightArrowRegularDuotoneProps };

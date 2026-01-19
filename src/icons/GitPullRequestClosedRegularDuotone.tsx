@@ -18,4 +18,5 @@ GitPullRequestClosedRegularDuotone.displayName = 'GitPullRequestClosedRegularDuo
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestClosedRegularDuotone, GitPullRequestClosedRegularDuotone as GitPullRequestClosedRegularDuotoneIcon, GitPullRequestClosedRegularDuotone as SiGitPullRequestClosedRegularDuotone };
+export default GitPullRequestClosedRegularDuotone;
 export type { GitPullRequestClosedRegularDuotoneProps };

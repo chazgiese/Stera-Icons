@@ -17,4 +17,5 @@ HomePlusRegularDuotone.displayName = 'HomePlusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomePlusRegularDuotone, HomePlusRegularDuotone as HomePlusRegularDuotoneIcon, HomePlusRegularDuotone as SiHomePlusRegularDuotone };
+export default HomePlusRegularDuotone;
 export type { HomePlusRegularDuotoneProps };

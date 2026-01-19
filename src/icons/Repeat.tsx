@@ -35,3 +35,4 @@ Repeat.displayName = 'Repeat';
 
 // Triple export pattern (lucide-react style)
 export { Repeat, Repeat as RepeatIcon, Repeat as SiRepeat };
+export default Repeat;

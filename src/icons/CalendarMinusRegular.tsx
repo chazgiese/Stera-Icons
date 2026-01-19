@@ -17,4 +17,5 @@ CalendarMinusRegular.displayName = 'CalendarMinusRegular';
 
 // Triple export pattern (lucide-react style)
 export { CalendarMinusRegular, CalendarMinusRegular as CalendarMinusRegularIcon, CalendarMinusRegular as SiCalendarMinusRegular };
+export default CalendarMinusRegular;
 export type { CalendarMinusRegularProps };

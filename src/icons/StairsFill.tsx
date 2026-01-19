@@ -16,4 +16,5 @@ StairsFill.displayName = 'StairsFill';
 
 // Triple export pattern (lucide-react style)
 export { StairsFill, StairsFill as StairsFillIcon, StairsFill as SiStairsFill };
+export default StairsFill;
 export type { StairsFillProps };

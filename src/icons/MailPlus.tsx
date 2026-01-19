@@ -35,3 +35,4 @@ MailPlus.displayName = 'MailPlus';
 
 // Triple export pattern (lucide-react style)
 export { MailPlus, MailPlus as MailPlusIcon, MailPlus as SiMailPlus };
+export default MailPlus;

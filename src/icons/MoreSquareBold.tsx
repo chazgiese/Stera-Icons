@@ -17,4 +17,5 @@ MoreSquareBold.displayName = 'MoreSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { MoreSquareBold, MoreSquareBold as MoreSquareBoldIcon, MoreSquareBold as SiMoreSquareBold };
+export default MoreSquareBold;
 export type { MoreSquareBoldProps };

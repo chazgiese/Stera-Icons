@@ -16,4 +16,5 @@ CursorOgBold.displayName = 'CursorOgBold';
 
 // Triple export pattern (lucide-react style)
 export { CursorOgBold, CursorOgBold as CursorOgBoldIcon, CursorOgBold as SiCursorOgBold };
+export default CursorOgBold;
 export type { CursorOgBoldProps };

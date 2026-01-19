@@ -35,3 +35,4 @@ DeviceDesktop.displayName = 'DeviceDesktop';
 
 // Triple export pattern (lucide-react style)
 export { DeviceDesktop, DeviceDesktop as DeviceDesktopIcon, DeviceDesktop as SiDeviceDesktop };
+export default DeviceDesktop;

@@ -16,4 +16,5 @@ LabelAltBold.displayName = 'LabelAltBold';
 
 // Triple export pattern (lucide-react style)
 export { LabelAltBold, LabelAltBold as LabelAltBoldIcon, LabelAltBold as SiLabelAltBold };
+export default LabelAltBold;
 export type { LabelAltBoldProps };

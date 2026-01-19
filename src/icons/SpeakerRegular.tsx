@@ -16,4 +16,5 @@ SpeakerRegular.displayName = 'SpeakerRegular';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerRegular, SpeakerRegular as SpeakerRegularIcon, SpeakerRegular as SiSpeakerRegular };
+export default SpeakerRegular;
 export type { SpeakerRegularProps };

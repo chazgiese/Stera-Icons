@@ -17,4 +17,5 @@ HomePlusFillDuotone.displayName = 'HomePlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomePlusFillDuotone, HomePlusFillDuotone as HomePlusFillDuotoneIcon, HomePlusFillDuotone as SiHomePlusFillDuotone };
+export default HomePlusFillDuotone;
 export type { HomePlusFillDuotoneProps };

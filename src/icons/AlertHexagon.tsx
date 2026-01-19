@@ -35,3 +35,4 @@ AlertHexagon.displayName = 'AlertHexagon';
 
 // Triple export pattern (lucide-react style)
 export { AlertHexagon, AlertHexagon as AlertHexagonIcon, AlertHexagon as SiAlertHexagon };
+export default AlertHexagon;

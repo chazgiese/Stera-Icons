@@ -35,3 +35,4 @@ MailBadge.displayName = 'MailBadge';
 
 // Triple export pattern (lucide-react style)
 export { MailBadge, MailBadge as MailBadgeIcon, MailBadge as SiMailBadge };
+export default MailBadge;

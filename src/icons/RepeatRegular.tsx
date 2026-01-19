@@ -16,4 +16,5 @@ RepeatRegular.displayName = 'RepeatRegular';
 
 // Triple export pattern (lucide-react style)
 export { RepeatRegular, RepeatRegular as RepeatRegularIcon, RepeatRegular as SiRepeatRegular };
+export default RepeatRegular;
 export type { RepeatRegularProps };

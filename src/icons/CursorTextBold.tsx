@@ -16,4 +16,5 @@ CursorTextBold.displayName = 'CursorTextBold';
 
 // Triple export pattern (lucide-react style)
 export { CursorTextBold, CursorTextBold as CursorTextBoldIcon, CursorTextBold as SiCursorTextBold };
+export default CursorTextBold;
 export type { CursorTextBoldProps };

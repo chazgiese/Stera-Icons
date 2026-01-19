@@ -16,4 +16,5 @@ CollapseSimpleBold.displayName = 'CollapseSimpleBold';
 
 // Triple export pattern (lucide-react style)
 export { CollapseSimpleBold, CollapseSimpleBold as CollapseSimpleBoldIcon, CollapseSimpleBold as SiCollapseSimpleBold };
+export default CollapseSimpleBold;
 export type { CollapseSimpleBoldProps };

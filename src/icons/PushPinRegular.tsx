@@ -16,4 +16,5 @@ PushPinRegular.displayName = 'PushPinRegular';
 
 // Triple export pattern (lucide-react style)
 export { PushPinRegular, PushPinRegular as PushPinRegularIcon, PushPinRegular as SiPushPinRegular };
+export default PushPinRegular;
 export type { PushPinRegularProps };

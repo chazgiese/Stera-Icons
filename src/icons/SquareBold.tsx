@@ -16,4 +16,5 @@ SquareBold.displayName = 'SquareBold';
 
 // Triple export pattern (lucide-react style)
 export { SquareBold, SquareBold as SquareBoldIcon, SquareBold as SiSquareBold };
+export default SquareBold;
 export type { SquareBoldProps };

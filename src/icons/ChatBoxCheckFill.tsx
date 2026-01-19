@@ -16,4 +16,5 @@ ChatBoxCheckFill.displayName = 'ChatBoxCheckFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxCheckFill, ChatBoxCheckFill as ChatBoxCheckFillIcon, ChatBoxCheckFill as SiChatBoxCheckFill };
+export default ChatBoxCheckFill;
 export type { ChatBoxCheckFillProps };

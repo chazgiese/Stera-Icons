@@ -16,4 +16,5 @@ PilcrowBold.displayName = 'PilcrowBold';
 
 // Triple export pattern (lucide-react style)
 export { PilcrowBold, PilcrowBold as PilcrowBoldIcon, PilcrowBold as SiPilcrowBold };
+export default PilcrowBold;
 export type { PilcrowBoldProps };

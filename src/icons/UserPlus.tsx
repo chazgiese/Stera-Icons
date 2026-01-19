@@ -35,3 +35,4 @@ UserPlus.displayName = 'UserPlus';
 
 // Triple export pattern (lucide-react style)
 export { UserPlus, UserPlus as UserPlusIcon, UserPlus as SiUserPlus };
+export default UserPlus;

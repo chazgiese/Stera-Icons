@@ -16,4 +16,5 @@ AstriskRegular.displayName = 'AstriskRegular';
 
 // Triple export pattern (lucide-react style)
 export { AstriskRegular, AstriskRegular as AstriskRegularIcon, AstriskRegular as SiAstriskRegular };
+export default AstriskRegular;
 export type { AstriskRegularProps };

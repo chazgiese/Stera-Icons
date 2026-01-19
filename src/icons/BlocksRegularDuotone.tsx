@@ -17,4 +17,5 @@ BlocksRegularDuotone.displayName = 'BlocksRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BlocksRegularDuotone, BlocksRegularDuotone as BlocksRegularDuotoneIcon, BlocksRegularDuotone as SiBlocksRegularDuotone };
+export default BlocksRegularDuotone;
 export type { BlocksRegularDuotoneProps };

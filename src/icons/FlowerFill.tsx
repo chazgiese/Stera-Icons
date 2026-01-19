@@ -16,4 +16,5 @@ FlowerFill.displayName = 'FlowerFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowerFill, FlowerFill as FlowerFillIcon, FlowerFill as SiFlowerFill };
+export default FlowerFill;
 export type { FlowerFillProps };

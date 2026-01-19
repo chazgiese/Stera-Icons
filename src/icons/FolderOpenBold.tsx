@@ -16,4 +16,5 @@ FolderOpenBold.displayName = 'FolderOpenBold';
 
 // Triple export pattern (lucide-react style)
 export { FolderOpenBold, FolderOpenBold as FolderOpenBoldIcon, FolderOpenBold as SiFolderOpenBold };
+export default FolderOpenBold;
 export type { FolderOpenBoldProps };

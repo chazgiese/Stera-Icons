@@ -35,3 +35,4 @@ Toggles.displayName = 'Toggles';
 
 // Triple export pattern (lucide-react style)
 export { Toggles, Toggles as TogglesIcon, Toggles as SiToggles };
+export default Toggles;

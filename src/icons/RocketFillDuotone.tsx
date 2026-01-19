@@ -17,4 +17,5 @@ RocketFillDuotone.displayName = 'RocketFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RocketFillDuotone, RocketFillDuotone as RocketFillDuotoneIcon, RocketFillDuotone as SiRocketFillDuotone };
+export default RocketFillDuotone;
 export type { RocketFillDuotoneProps };

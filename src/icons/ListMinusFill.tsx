@@ -17,4 +17,5 @@ ListMinusFill.displayName = 'ListMinusFill';
 
 // Triple export pattern (lucide-react style)
 export { ListMinusFill, ListMinusFill as ListMinusFillIcon, ListMinusFill as SiListMinusFill };
+export default ListMinusFill;
 export type { ListMinusFillProps };

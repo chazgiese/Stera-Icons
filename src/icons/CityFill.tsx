@@ -16,4 +16,5 @@ CityFill.displayName = 'CityFill';
 
 // Triple export pattern (lucide-react style)
 export { CityFill, CityFill as CityFillIcon, CityFill as SiCityFill };
+export default CityFill;
 export type { CityFillProps };

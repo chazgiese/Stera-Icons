@@ -16,4 +16,5 @@ DragHandleRegular.displayName = 'DragHandleRegular';
 
 // Triple export pattern (lucide-react style)
 export { DragHandleRegular, DragHandleRegular as DragHandleRegularIcon, DragHandleRegular as SiDragHandleRegular };
+export default DragHandleRegular;
 export type { DragHandleRegularProps };

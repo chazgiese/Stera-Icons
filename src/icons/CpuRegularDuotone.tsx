@@ -17,4 +17,5 @@ CpuRegularDuotone.displayName = 'CpuRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CpuRegularDuotone, CpuRegularDuotone as CpuRegularDuotoneIcon, CpuRegularDuotone as SiCpuRegularDuotone };
+export default CpuRegularDuotone;
 export type { CpuRegularDuotoneProps };

@@ -35,3 +35,4 @@ City.displayName = 'City';
 
 // Triple export pattern (lucide-react style)
 export { City, City as CityIcon, City as SiCity };
+export default City;

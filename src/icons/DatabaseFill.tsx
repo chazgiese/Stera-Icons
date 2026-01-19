@@ -17,4 +17,5 @@ DatabaseFill.displayName = 'DatabaseFill';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseFill, DatabaseFill as DatabaseFillIcon, DatabaseFill as SiDatabaseFill };
+export default DatabaseFill;
 export type { DatabaseFillProps };

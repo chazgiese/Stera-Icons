@@ -16,4 +16,5 @@ PencilRulerBold.displayName = 'PencilRulerBold';
 
 // Triple export pattern (lucide-react style)
 export { PencilRulerBold, PencilRulerBold as PencilRulerBoldIcon, PencilRulerBold as SiPencilRulerBold };
+export default PencilRulerBold;
 export type { PencilRulerBoldProps };

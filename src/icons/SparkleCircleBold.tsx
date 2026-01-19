@@ -17,4 +17,5 @@ SparkleCircleBold.displayName = 'SparkleCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { SparkleCircleBold, SparkleCircleBold as SparkleCircleBoldIcon, SparkleCircleBold as SiSparkleCircleBold };
+export default SparkleCircleBold;
 export type { SparkleCircleBoldProps };

@@ -17,4 +17,5 @@ TimerFill.displayName = 'TimerFill';
 
 // Triple export pattern (lucide-react style)
 export { TimerFill, TimerFill as TimerFillIcon, TimerFill as SiTimerFill };
+export default TimerFill;
 export type { TimerFillProps };

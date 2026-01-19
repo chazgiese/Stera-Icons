@@ -17,4 +17,5 @@ PlusSquareRegularDuotone.displayName = 'PlusSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlusSquareRegularDuotone, PlusSquareRegularDuotone as PlusSquareRegularDuotoneIcon, PlusSquareRegularDuotone as SiPlusSquareRegularDuotone };
+export default PlusSquareRegularDuotone;
 export type { PlusSquareRegularDuotoneProps };

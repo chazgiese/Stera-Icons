@@ -17,4 +17,5 @@ SpeakerLowRegular.displayName = 'SpeakerLowRegular';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerLowRegular, SpeakerLowRegular as SpeakerLowRegularIcon, SpeakerLowRegular as SiSpeakerLowRegular };
+export default SpeakerLowRegular;
 export type { SpeakerLowRegularProps };

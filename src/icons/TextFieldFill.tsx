@@ -17,4 +17,5 @@ TextFieldFill.displayName = 'TextFieldFill';
 
 // Triple export pattern (lucide-react style)
 export { TextFieldFill, TextFieldFill as TextFieldFillIcon, TextFieldFill as SiTextFieldFill };
+export default TextFieldFill;
 export type { TextFieldFillProps };

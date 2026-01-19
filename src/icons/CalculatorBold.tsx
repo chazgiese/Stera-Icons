@@ -17,4 +17,5 @@ CalculatorBold.displayName = 'CalculatorBold';
 
 // Triple export pattern (lucide-react style)
 export { CalculatorBold, CalculatorBold as CalculatorBoldIcon, CalculatorBold as SiCalculatorBold };
+export default CalculatorBold;
 export type { CalculatorBoldProps };

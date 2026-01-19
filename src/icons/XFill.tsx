@@ -16,4 +16,5 @@ XFill.displayName = 'XFill';
 
 // Triple export pattern (lucide-react style)
 export { XFill, XFill as XFillIcon, XFill as SiXFill };
+export default XFill;
 export type { XFillProps };

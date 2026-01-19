@@ -17,4 +17,5 @@ CurrencyCircleDollarFillDuotone.displayName = 'CurrencyCircleDollarFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyCircleDollarFillDuotone, CurrencyCircleDollarFillDuotone as CurrencyCircleDollarFillDuotoneIcon, CurrencyCircleDollarFillDuotone as SiCurrencyCircleDollarFillDuotone };
+export default CurrencyCircleDollarFillDuotone;
 export type { CurrencyCircleDollarFillDuotoneProps };

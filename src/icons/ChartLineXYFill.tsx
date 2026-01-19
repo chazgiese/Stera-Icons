@@ -17,4 +17,5 @@ ChartLineXYFill.displayName = 'ChartLineXYFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineXYFill, ChartLineXYFill as ChartLineXYFillIcon, ChartLineXYFill as SiChartLineXYFill };
+export default ChartLineXYFill;
 export type { ChartLineXYFillProps };

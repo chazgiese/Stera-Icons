@@ -17,4 +17,5 @@ AlertCircleBold.displayName = 'AlertCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { AlertCircleBold, AlertCircleBold as AlertCircleBoldIcon, AlertCircleBold as SiAlertCircleBold };
+export default AlertCircleBold;
 export type { AlertCircleBoldProps };

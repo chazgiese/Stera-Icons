@@ -35,3 +35,4 @@ SearchCircle.displayName = 'SearchCircle';
 
 // Triple export pattern (lucide-react style)
 export { SearchCircle, SearchCircle as SearchCircleIcon, SearchCircle as SiSearchCircle };
+export default SearchCircle;

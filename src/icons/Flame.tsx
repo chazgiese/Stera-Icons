@@ -35,3 +35,4 @@ Flame.displayName = 'Flame';
 
 // Triple export pattern (lucide-react style)
 export { Flame, Flame as FlameIcon, Flame as SiFlame };
+export default Flame;

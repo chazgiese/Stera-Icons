@@ -16,4 +16,5 @@ RouteArrowFill.displayName = 'RouteArrowFill';
 
 // Triple export pattern (lucide-react style)
 export { RouteArrowFill, RouteArrowFill as RouteArrowFillIcon, RouteArrowFill as SiRouteArrowFill };
+export default RouteArrowFill;
 export type { RouteArrowFillProps };

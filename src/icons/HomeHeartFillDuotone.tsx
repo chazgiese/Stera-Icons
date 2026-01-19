@@ -17,4 +17,5 @@ HomeHeartFillDuotone.displayName = 'HomeHeartFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomeHeartFillDuotone, HomeHeartFillDuotone as HomeHeartFillDuotoneIcon, HomeHeartFillDuotone as SiHomeHeartFillDuotone };
+export default HomeHeartFillDuotone;
 export type { HomeHeartFillDuotoneProps };

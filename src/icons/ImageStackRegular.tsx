@@ -17,4 +17,5 @@ ImageStackRegular.displayName = 'ImageStackRegular';
 
 // Triple export pattern (lucide-react style)
 export { ImageStackRegular, ImageStackRegular as ImageStackRegularIcon, ImageStackRegular as SiImageStackRegular };
+export default ImageStackRegular;
 export type { ImageStackRegularProps };

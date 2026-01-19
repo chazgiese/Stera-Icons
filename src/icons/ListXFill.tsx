@@ -17,4 +17,5 @@ ListXFill.displayName = 'ListXFill';
 
 // Triple export pattern (lucide-react style)
 export { ListXFill, ListXFill as ListXFillIcon, ListXFill as SiListXFill };
+export default ListXFill;
 export type { ListXFillProps };

@@ -35,3 +35,4 @@ Figma.displayName = 'Figma';
 
 // Triple export pattern (lucide-react style)
 export { Figma, Figma as FigmaIcon, Figma as SiFigma };
+export default Figma;

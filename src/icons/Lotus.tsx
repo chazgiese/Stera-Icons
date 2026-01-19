@@ -35,3 +35,4 @@ Lotus.displayName = 'Lotus';
 
 // Triple export pattern (lucide-react style)
 export { Lotus, Lotus as LotusIcon, Lotus as SiLotus };
+export default Lotus;

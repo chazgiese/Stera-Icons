@@ -35,3 +35,4 @@ ScanCamera.displayName = 'ScanCamera';
 
 // Triple export pattern (lucide-react style)
 export { ScanCamera, ScanCamera as ScanCameraIcon, ScanCamera as SiScanCamera };
+export default ScanCamera;

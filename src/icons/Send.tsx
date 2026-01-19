@@ -35,3 +35,4 @@ Send.displayName = 'Send';
 
 // Triple export pattern (lucide-react style)
 export { Send, Send as SendIcon, Send as SiSend };
+export default Send;

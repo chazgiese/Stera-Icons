@@ -35,3 +35,4 @@ RotationLeft.displayName = 'RotationLeft';
 
 // Triple export pattern (lucide-react style)
 export { RotationLeft, RotationLeft as RotationLeftIcon, RotationLeft as SiRotationLeft };
+export default RotationLeft;

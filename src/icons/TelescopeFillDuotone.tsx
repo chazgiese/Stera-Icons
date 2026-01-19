@@ -17,4 +17,5 @@ TelescopeFillDuotone.displayName = 'TelescopeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TelescopeFillDuotone, TelescopeFillDuotone as TelescopeFillDuotoneIcon, TelescopeFillDuotone as SiTelescopeFillDuotone };
+export default TelescopeFillDuotone;
 export type { TelescopeFillDuotoneProps };

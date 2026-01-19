@@ -17,4 +17,5 @@ UsersThreeRegular.displayName = 'UsersThreeRegular';
 
 // Triple export pattern (lucide-react style)
 export { UsersThreeRegular, UsersThreeRegular as UsersThreeRegularIcon, UsersThreeRegular as SiUsersThreeRegular };
+export default UsersThreeRegular;
 export type { UsersThreeRegularProps };

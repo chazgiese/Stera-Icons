@@ -35,3 +35,4 @@ CalendarSlash.displayName = 'CalendarSlash';
 
 // Triple export pattern (lucide-react style)
 export { CalendarSlash, CalendarSlash as CalendarSlashIcon, CalendarSlash as SiCalendarSlash };
+export default CalendarSlash;

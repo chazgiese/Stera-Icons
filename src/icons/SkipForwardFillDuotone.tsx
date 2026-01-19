@@ -17,4 +17,5 @@ SkipForwardFillDuotone.displayName = 'SkipForwardFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SkipForwardFillDuotone, SkipForwardFillDuotone as SkipForwardFillDuotoneIcon, SkipForwardFillDuotone as SiSkipForwardFillDuotone };
+export default SkipForwardFillDuotone;
 export type { SkipForwardFillDuotoneProps };

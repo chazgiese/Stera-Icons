@@ -35,3 +35,4 @@ TvPlayAlt.displayName = 'TvPlayAlt';
 
 // Triple export pattern (lucide-react style)
 export { TvPlayAlt, TvPlayAlt as TvPlayAltIcon, TvPlayAlt as SiTvPlayAlt };
+export default TvPlayAlt;

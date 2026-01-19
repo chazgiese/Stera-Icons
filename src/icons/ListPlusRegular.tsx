@@ -17,4 +17,5 @@ ListPlusRegular.displayName = 'ListPlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListPlusRegular, ListPlusRegular as ListPlusRegularIcon, ListPlusRegular as SiListPlusRegular };
+export default ListPlusRegular;
 export type { ListPlusRegularProps };

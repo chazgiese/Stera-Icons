@@ -17,4 +17,5 @@ MinusCircleRegularDuotone.displayName = 'MinusCircleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MinusCircleRegularDuotone, MinusCircleRegularDuotone as MinusCircleRegularDuotoneIcon, MinusCircleRegularDuotone as SiMinusCircleRegularDuotone };
+export default MinusCircleRegularDuotone;
 export type { MinusCircleRegularDuotoneProps };

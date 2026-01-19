@@ -17,4 +17,5 @@ PercentSquareRegular.displayName = 'PercentSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { PercentSquareRegular, PercentSquareRegular as PercentSquareRegularIcon, PercentSquareRegular as SiPercentSquareRegular };
+export default PercentSquareRegular;
 export type { PercentSquareRegularProps };

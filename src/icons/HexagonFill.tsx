@@ -16,4 +16,5 @@ HexagonFill.displayName = 'HexagonFill';
 
 // Triple export pattern (lucide-react style)
 export { HexagonFill, HexagonFill as HexagonFillIcon, HexagonFill as SiHexagonFill };
+export default HexagonFill;
 export type { HexagonFillProps };

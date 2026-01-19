@@ -17,4 +17,5 @@ BatteryHalfFillDuotone.displayName = 'BatteryHalfFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BatteryHalfFillDuotone, BatteryHalfFillDuotone as BatteryHalfFillDuotoneIcon, BatteryHalfFillDuotone as SiBatteryHalfFillDuotone };
+export default BatteryHalfFillDuotone;
 export type { BatteryHalfFillDuotoneProps };

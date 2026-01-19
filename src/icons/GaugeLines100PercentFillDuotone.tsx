@@ -17,4 +17,5 @@ GaugeLines100PercentFillDuotone.displayName = 'GaugeLines100PercentFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GaugeLines100PercentFillDuotone, GaugeLines100PercentFillDuotone as GaugeLines100PercentFillDuotoneIcon, GaugeLines100PercentFillDuotone as SiGaugeLines100PercentFillDuotone };
+export default GaugeLines100PercentFillDuotone;
 export type { GaugeLines100PercentFillDuotoneProps };

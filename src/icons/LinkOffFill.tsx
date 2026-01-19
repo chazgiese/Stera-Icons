@@ -16,4 +16,5 @@ LinkOffFill.displayName = 'LinkOffFill';
 
 // Triple export pattern (lucide-react style)
 export { LinkOffFill, LinkOffFill as LinkOffFillIcon, LinkOffFill as SiLinkOffFill };
+export default LinkOffFill;
 export type { LinkOffFillProps };

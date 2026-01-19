@@ -35,3 +35,4 @@ SquarePlaceholder.displayName = 'SquarePlaceholder';
 
 // Triple export pattern (lucide-react style)
 export { SquarePlaceholder, SquarePlaceholder as SquarePlaceholderIcon, SquarePlaceholder as SiSquarePlaceholder };
+export default SquarePlaceholder;

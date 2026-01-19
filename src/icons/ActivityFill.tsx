@@ -16,4 +16,5 @@ ActivityFill.displayName = 'ActivityFill';
 
 // Triple export pattern (lucide-react style)
 export { ActivityFill, ActivityFill as ActivityFillIcon, ActivityFill as SiActivityFill };
+export default ActivityFill;
 export type { ActivityFillProps };

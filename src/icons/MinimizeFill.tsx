@@ -16,4 +16,5 @@ MinimizeFill.displayName = 'MinimizeFill';
 
 // Triple export pattern (lucide-react style)
 export { MinimizeFill, MinimizeFill as MinimizeFillIcon, MinimizeFill as SiMinimizeFill };
+export default MinimizeFill;
 export type { MinimizeFillProps };

@@ -17,4 +17,5 @@ XFillDuotone.displayName = 'XFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { XFillDuotone, XFillDuotone as XFillDuotoneIcon, XFillDuotone as SiXFillDuotone };
+export default XFillDuotone;
 export type { XFillDuotoneProps };

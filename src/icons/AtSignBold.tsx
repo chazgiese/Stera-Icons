@@ -16,4 +16,5 @@ AtSignBold.displayName = 'AtSignBold';
 
 // Triple export pattern (lucide-react style)
 export { AtSignBold, AtSignBold as AtSignBoldIcon, AtSignBold as SiAtSignBold };
+export default AtSignBold;
 export type { AtSignBoldProps };

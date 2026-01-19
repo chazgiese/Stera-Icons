@@ -16,4 +16,5 @@ ChatBubbleBold.displayName = 'ChatBubbleBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleBold, ChatBubbleBold as ChatBubbleBoldIcon, ChatBubbleBold as SiChatBubbleBold };
+export default ChatBubbleBold;
 export type { ChatBubbleBoldProps };

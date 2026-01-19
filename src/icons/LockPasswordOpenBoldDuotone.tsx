@@ -17,4 +17,5 @@ LockPasswordOpenBoldDuotone.displayName = 'LockPasswordOpenBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LockPasswordOpenBoldDuotone, LockPasswordOpenBoldDuotone as LockPasswordOpenBoldDuotoneIcon, LockPasswordOpenBoldDuotone as SiLockPasswordOpenBoldDuotone };
+export default LockPasswordOpenBoldDuotone;
 export type { LockPasswordOpenBoldDuotoneProps };

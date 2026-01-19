@@ -17,4 +17,5 @@ FlowSplitUpFillDuotone.displayName = 'FlowSplitUpFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitUpFillDuotone, FlowSplitUpFillDuotone as FlowSplitUpFillDuotoneIcon, FlowSplitUpFillDuotone as SiFlowSplitUpFillDuotone };
+export default FlowSplitUpFillDuotone;
 export type { FlowSplitUpFillDuotoneProps };

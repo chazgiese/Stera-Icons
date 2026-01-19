@@ -16,4 +16,5 @@ MenuAltBold.displayName = 'MenuAltBold';
 
 // Triple export pattern (lucide-react style)
 export { MenuAltBold, MenuAltBold as MenuAltBoldIcon, MenuAltBold as SiMenuAltBold };
+export default MenuAltBold;
 export type { MenuAltBoldProps };

@@ -16,4 +16,5 @@ AstriskAltFill.displayName = 'AstriskAltFill';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAltFill, AstriskAltFill as AstriskAltFillIcon, AstriskAltFill as SiAstriskAltFill };
+export default AstriskAltFill;
 export type { AstriskAltFillProps };

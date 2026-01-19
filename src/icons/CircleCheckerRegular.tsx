@@ -16,4 +16,5 @@ CircleCheckerRegular.displayName = 'CircleCheckerRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleCheckerRegular, CircleCheckerRegular as CircleCheckerRegularIcon, CircleCheckerRegular as SiCircleCheckerRegular };
+export default CircleCheckerRegular;
 export type { CircleCheckerRegularProps };

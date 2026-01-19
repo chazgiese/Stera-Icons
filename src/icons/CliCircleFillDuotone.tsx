@@ -17,4 +17,5 @@ CliCircleFillDuotone.displayName = 'CliCircleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CliCircleFillDuotone, CliCircleFillDuotone as CliCircleFillDuotoneIcon, CliCircleFillDuotone as SiCliCircleFillDuotone };
+export default CliCircleFillDuotone;
 export type { CliCircleFillDuotoneProps };

@@ -35,3 +35,4 @@ Cube.displayName = 'Cube';
 
 // Triple export pattern (lucide-react style)
 export { Cube, Cube as CubeIcon, Cube as SiCube };
+export default Cube;

@@ -35,3 +35,4 @@ Activity.displayName = 'Activity';
 
 // Triple export pattern (lucide-react style)
 export { Activity, Activity as ActivityIcon, Activity as SiActivity };
+export default Activity;

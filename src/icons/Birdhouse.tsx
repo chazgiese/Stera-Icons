@@ -35,3 +35,4 @@ Birdhouse.displayName = 'Birdhouse';
 
 // Triple export pattern (lucide-react style)
 export { Birdhouse, Birdhouse as BirdhouseIcon, Birdhouse as SiBirdhouse };
+export default Birdhouse;

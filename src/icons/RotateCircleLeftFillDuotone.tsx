@@ -17,4 +17,5 @@ RotateCircleLeftFillDuotone.displayName = 'RotateCircleLeftFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RotateCircleLeftFillDuotone, RotateCircleLeftFillDuotone as RotateCircleLeftFillDuotoneIcon, RotateCircleLeftFillDuotone as SiRotateCircleLeftFillDuotone };
+export default RotateCircleLeftFillDuotone;
 export type { RotateCircleLeftFillDuotoneProps };

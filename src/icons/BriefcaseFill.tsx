@@ -17,4 +17,5 @@ BriefcaseFill.displayName = 'BriefcaseFill';
 
 // Triple export pattern (lucide-react style)
 export { BriefcaseFill, BriefcaseFill as BriefcaseFillIcon, BriefcaseFill as SiBriefcaseFill };
+export default BriefcaseFill;
 export type { BriefcaseFillProps };

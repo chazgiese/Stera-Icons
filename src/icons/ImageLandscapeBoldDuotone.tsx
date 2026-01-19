@@ -17,4 +17,5 @@ ImageLandscapeBoldDuotone.displayName = 'ImageLandscapeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscapeBoldDuotone, ImageLandscapeBoldDuotone as ImageLandscapeBoldDuotoneIcon, ImageLandscapeBoldDuotone as SiImageLandscapeBoldDuotone };
+export default ImageLandscapeBoldDuotone;
 export type { ImageLandscapeBoldDuotoneProps };

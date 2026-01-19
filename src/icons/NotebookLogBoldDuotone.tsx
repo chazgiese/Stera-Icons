@@ -18,4 +18,5 @@ NotebookLogBoldDuotone.displayName = 'NotebookLogBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { NotebookLogBoldDuotone, NotebookLogBoldDuotone as NotebookLogBoldDuotoneIcon, NotebookLogBoldDuotone as SiNotebookLogBoldDuotone };
+export default NotebookLogBoldDuotone;
 export type { NotebookLogBoldDuotoneProps };

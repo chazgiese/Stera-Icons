@@ -35,3 +35,4 @@ Frame.displayName = 'Frame';
 
 // Triple export pattern (lucide-react style)
 export { Frame, Frame as FrameIcon, Frame as SiFrame };
+export default Frame;

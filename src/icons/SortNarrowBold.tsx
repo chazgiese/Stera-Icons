@@ -17,4 +17,5 @@ SortNarrowBold.displayName = 'SortNarrowBold';
 
 // Triple export pattern (lucide-react style)
 export { SortNarrowBold, SortNarrowBold as SortNarrowBoldIcon, SortNarrowBold as SiSortNarrowBold };
+export default SortNarrowBold;
 export type { SortNarrowBoldProps };

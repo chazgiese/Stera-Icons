@@ -17,4 +17,5 @@ PauseBoldDuotone.displayName = 'PauseBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PauseBoldDuotone, PauseBoldDuotone as PauseBoldDuotoneIcon, PauseBoldDuotone as SiPauseBoldDuotone };
+export default PauseBoldDuotone;
 export type { PauseBoldDuotoneProps };

@@ -16,4 +16,5 @@ ListContractFill.displayName = 'ListContractFill';
 
 // Triple export pattern (lucide-react style)
 export { ListContractFill, ListContractFill as ListContractFillIcon, ListContractFill as SiListContractFill };
+export default ListContractFill;
 export type { ListContractFillProps };

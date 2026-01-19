@@ -35,3 +35,4 @@ TextB.displayName = 'TextB';
 
 // Triple export pattern (lucide-react style)
 export { TextB, TextB as TextBIcon, TextB as SiTextB };
+export default TextB;

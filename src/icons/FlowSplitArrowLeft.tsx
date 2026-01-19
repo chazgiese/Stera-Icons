@@ -35,3 +35,4 @@ FlowSplitArrowLeft.displayName = 'FlowSplitArrowLeft';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitArrowLeft, FlowSplitArrowLeft as FlowSplitArrowLeftIcon, FlowSplitArrowLeft as SiFlowSplitArrowLeft };
+export default FlowSplitArrowLeft;

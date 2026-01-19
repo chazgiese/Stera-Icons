@@ -16,4 +16,5 @@ StarRegular.displayName = 'StarRegular';
 
 // Triple export pattern (lucide-react style)
 export { StarRegular, StarRegular as StarRegularIcon, StarRegular as SiStarRegular };
+export default StarRegular;
 export type { StarRegularProps };

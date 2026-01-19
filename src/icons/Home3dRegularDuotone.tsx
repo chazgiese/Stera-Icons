@@ -17,4 +17,5 @@ Home3dRegularDuotone.displayName = 'Home3dRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { Home3dRegularDuotone, Home3dRegularDuotone as Home3dRegularDuotoneIcon, Home3dRegularDuotone as SiHome3dRegularDuotone };
+export default Home3dRegularDuotone;
 export type { Home3dRegularDuotoneProps };

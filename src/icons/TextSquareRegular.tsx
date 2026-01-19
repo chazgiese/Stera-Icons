@@ -17,4 +17,5 @@ TextSquareRegular.displayName = 'TextSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextSquareRegular, TextSquareRegular as TextSquareRegularIcon, TextSquareRegular as SiTextSquareRegular };
+export default TextSquareRegular;
 export type { TextSquareRegularProps };

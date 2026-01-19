@@ -16,4 +16,5 @@ TreeFill.displayName = 'TreeFill';
 
 // Triple export pattern (lucide-react style)
 export { TreeFill, TreeFill as TreeFillIcon, TreeFill as SiTreeFill };
+export default TreeFill;
 export type { TreeFillProps };

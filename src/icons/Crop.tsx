@@ -35,3 +35,4 @@ Crop.displayName = 'Crop';
 
 // Triple export pattern (lucide-react style)
 export { Crop, Crop as CropIcon, Crop as SiCrop };
+export default Crop;

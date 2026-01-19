@@ -17,4 +17,5 @@ FootballFillDuotone.displayName = 'FootballFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FootballFillDuotone, FootballFillDuotone as FootballFillDuotoneIcon, FootballFillDuotone as SiFootballFillDuotone };
+export default FootballFillDuotone;
 export type { FootballFillDuotoneProps };

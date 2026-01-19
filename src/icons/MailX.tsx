@@ -35,3 +35,4 @@ MailX.displayName = 'MailX';
 
 // Triple export pattern (lucide-react style)
 export { MailX, MailX as MailXIcon, MailX as SiMailX };
+export default MailX;

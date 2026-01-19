@@ -17,4 +17,5 @@ CalendarOffRegular.displayName = 'CalendarOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { CalendarOffRegular, CalendarOffRegular as CalendarOffRegularIcon, CalendarOffRegular as SiCalendarOffRegular };
+export default CalendarOffRegular;
 export type { CalendarOffRegularProps };

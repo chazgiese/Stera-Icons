@@ -16,4 +16,5 @@ CoolSFill.displayName = 'CoolSFill';
 
 // Triple export pattern (lucide-react style)
 export { CoolSFill, CoolSFill as CoolSFillIcon, CoolSFill as SiCoolSFill };
+export default CoolSFill;
 export type { CoolSFillProps };

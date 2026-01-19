@@ -35,3 +35,4 @@ CpuAmd.displayName = 'CpuAmd';
 
 // Triple export pattern (lucide-react style)
 export { CpuAmd, CpuAmd as CpuAmdIcon, CpuAmd as SiCpuAmd };
+export default CpuAmd;

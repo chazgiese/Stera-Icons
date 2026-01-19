@@ -17,4 +17,5 @@ WifiSlashBoldDuotone.displayName = 'WifiSlashBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WifiSlashBoldDuotone, WifiSlashBoldDuotone as WifiSlashBoldDuotoneIcon, WifiSlashBoldDuotone as SiWifiSlashBoldDuotone };
+export default WifiSlashBoldDuotone;
 export type { WifiSlashBoldDuotoneProps };

@@ -16,4 +16,5 @@ MoreVFill.displayName = 'MoreVFill';
 
 // Triple export pattern (lucide-react style)
 export { MoreVFill, MoreVFill as MoreVFillIcon, MoreVFill as SiMoreVFill };
+export default MoreVFill;
 export type { MoreVFillProps };

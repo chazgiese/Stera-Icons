@@ -35,3 +35,4 @@ Snowflake.displayName = 'Snowflake';
 
 // Triple export pattern (lucide-react style)
 export { Snowflake, Snowflake as SnowflakeIcon, Snowflake as SiSnowflake };
+export default Snowflake;

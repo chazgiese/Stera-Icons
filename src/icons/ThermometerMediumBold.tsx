@@ -17,4 +17,5 @@ ThermometerMediumBold.displayName = 'ThermometerMediumBold';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerMediumBold, ThermometerMediumBold as ThermometerMediumBoldIcon, ThermometerMediumBold as SiThermometerMediumBold };
+export default ThermometerMediumBold;
 export type { ThermometerMediumBoldProps };

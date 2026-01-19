@@ -16,4 +16,5 @@ ForwardBold.displayName = 'ForwardBold';
 
 // Triple export pattern (lucide-react style)
 export { ForwardBold, ForwardBold as ForwardBoldIcon, ForwardBold as SiForwardBold };
+export default ForwardBold;
 export type { ForwardBoldProps };

@@ -16,4 +16,5 @@ TriangleDownBold.displayName = 'TriangleDownBold';
 
 // Triple export pattern (lucide-react style)
 export { TriangleDownBold, TriangleDownBold as TriangleDownBoldIcon, TriangleDownBold as SiTriangleDownBold };
+export default TriangleDownBold;
 export type { TriangleDownBoldProps };

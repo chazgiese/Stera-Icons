@@ -16,4 +16,5 @@ BackslashBold.displayName = 'BackslashBold';
 
 // Triple export pattern (lucide-react style)
 export { BackslashBold, BackslashBold as BackslashBoldIcon, BackslashBold as SiBackslashBold };
+export default BackslashBold;
 export type { BackslashBoldProps };

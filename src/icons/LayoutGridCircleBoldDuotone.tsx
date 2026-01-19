@@ -17,4 +17,5 @@ LayoutGridCircleBoldDuotone.displayName = 'LayoutGridCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridCircleBoldDuotone, LayoutGridCircleBoldDuotone as LayoutGridCircleBoldDuotoneIcon, LayoutGridCircleBoldDuotone as SiLayoutGridCircleBoldDuotone };
+export default LayoutGridCircleBoldDuotone;
 export type { LayoutGridCircleBoldDuotoneProps };

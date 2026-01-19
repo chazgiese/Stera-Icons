@@ -17,4 +17,5 @@ CircleDashSimpleBoldDuotone.displayName = 'CircleDashSimpleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleDashSimpleBoldDuotone, CircleDashSimpleBoldDuotone as CircleDashSimpleBoldDuotoneIcon, CircleDashSimpleBoldDuotone as SiCircleDashSimpleBoldDuotone };
+export default CircleDashSimpleBoldDuotone;
 export type { CircleDashSimpleBoldDuotoneProps };

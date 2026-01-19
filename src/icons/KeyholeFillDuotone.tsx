@@ -17,4 +17,5 @@ KeyholeFillDuotone.displayName = 'KeyholeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { KeyholeFillDuotone, KeyholeFillDuotone as KeyholeFillDuotoneIcon, KeyholeFillDuotone as SiKeyholeFillDuotone };
+export default KeyholeFillDuotone;
 export type { KeyholeFillDuotoneProps };

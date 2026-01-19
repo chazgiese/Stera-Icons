@@ -35,3 +35,4 @@ Store.displayName = 'Store';
 
 // Triple export pattern (lucide-react style)
 export { Store, Store as StoreIcon, Store as SiStore };
+export default Store;

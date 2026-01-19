@@ -17,4 +17,5 @@ GradientBold.displayName = 'GradientBold';
 
 // Triple export pattern (lucide-react style)
 export { GradientBold, GradientBold as GradientBoldIcon, GradientBold as SiGradientBold };
+export default GradientBold;
 export type { GradientBoldProps };

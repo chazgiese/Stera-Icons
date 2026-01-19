@@ -35,3 +35,4 @@ OverlappingCirclesDash.displayName = 'OverlappingCirclesDash';
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCirclesDash, OverlappingCirclesDash as OverlappingCirclesDashIcon, OverlappingCirclesDash as SiOverlappingCirclesDash };
+export default OverlappingCirclesDash;

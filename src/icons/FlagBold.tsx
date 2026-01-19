@@ -16,4 +16,5 @@ FlagBold.displayName = 'FlagBold';
 
 // Triple export pattern (lucide-react style)
 export { FlagBold, FlagBold as FlagBoldIcon, FlagBold as SiFlagBold };
+export default FlagBold;
 export type { FlagBoldProps };

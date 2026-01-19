@@ -17,4 +17,5 @@ ReplyFillDuotone.displayName = 'ReplyFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ReplyFillDuotone, ReplyFillDuotone as ReplyFillDuotoneIcon, ReplyFillDuotone as SiReplyFillDuotone };
+export default ReplyFillDuotone;
 export type { ReplyFillDuotoneProps };

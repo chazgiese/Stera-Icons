@@ -35,3 +35,4 @@ Link.displayName = 'Link';
 
 // Triple export pattern (lucide-react style)
 export { Link, Link as LinkIcon, Link as SiLink };
+export default Link;

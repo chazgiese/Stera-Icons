@@ -35,3 +35,4 @@ TextUnderline.displayName = 'TextUnderline';
 
 // Triple export pattern (lucide-react style)
 export { TextUnderline, TextUnderline as TextUnderlineIcon, TextUnderline as SiTextUnderline };
+export default TextUnderline;

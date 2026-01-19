@@ -16,4 +16,5 @@ CylinderFill.displayName = 'CylinderFill';
 
 // Triple export pattern (lucide-react style)
 export { CylinderFill, CylinderFill as CylinderFillIcon, CylinderFill as SiCylinderFill };
+export default CylinderFill;
 export type { CylinderFillProps };

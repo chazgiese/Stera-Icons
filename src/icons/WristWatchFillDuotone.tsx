@@ -17,4 +17,5 @@ WristWatchFillDuotone.displayName = 'WristWatchFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WristWatchFillDuotone, WristWatchFillDuotone as WristWatchFillDuotoneIcon, WristWatchFillDuotone as SiWristWatchFillDuotone };
+export default WristWatchFillDuotone;
 export type { WristWatchFillDuotoneProps };

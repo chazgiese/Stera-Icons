@@ -18,4 +18,5 @@ ConnectionFill.displayName = 'ConnectionFill';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionFill, ConnectionFill as ConnectionFillIcon, ConnectionFill as SiConnectionFill };
+export default ConnectionFill;
 export type { ConnectionFillProps };

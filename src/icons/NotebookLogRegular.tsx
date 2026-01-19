@@ -17,4 +17,5 @@ NotebookLogRegular.displayName = 'NotebookLogRegular';
 
 // Triple export pattern (lucide-react style)
 export { NotebookLogRegular, NotebookLogRegular as NotebookLogRegularIcon, NotebookLogRegular as SiNotebookLogRegular };
+export default NotebookLogRegular;
 export type { NotebookLogRegularProps };

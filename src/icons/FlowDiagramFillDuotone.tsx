@@ -19,4 +19,5 @@ FlowDiagramFillDuotone.displayName = 'FlowDiagramFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowDiagramFillDuotone, FlowDiagramFillDuotone as FlowDiagramFillDuotoneIcon, FlowDiagramFillDuotone as SiFlowDiagramFillDuotone };
+export default FlowDiagramFillDuotone;
 export type { FlowDiagramFillDuotoneProps };

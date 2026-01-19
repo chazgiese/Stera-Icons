@@ -17,4 +17,5 @@ ChatBoxCheckBoldDuotone.displayName = 'ChatBoxCheckBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxCheckBoldDuotone, ChatBoxCheckBoldDuotone as ChatBoxCheckBoldDuotoneIcon, ChatBoxCheckBoldDuotone as SiChatBoxCheckBoldDuotone };
+export default ChatBoxCheckBoldDuotone;
 export type { ChatBoxCheckBoldDuotoneProps };

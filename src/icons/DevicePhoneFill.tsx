@@ -16,4 +16,5 @@ DevicePhoneFill.displayName = 'DevicePhoneFill';
 
 // Triple export pattern (lucide-react style)
 export { DevicePhoneFill, DevicePhoneFill as DevicePhoneFillIcon, DevicePhoneFill as SiDevicePhoneFill };
+export default DevicePhoneFill;
 export type { DevicePhoneFillProps };

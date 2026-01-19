@@ -18,4 +18,5 @@ ToolboxBoldDuotone.displayName = 'ToolboxBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToolboxBoldDuotone, ToolboxBoldDuotone as ToolboxBoldDuotoneIcon, ToolboxBoldDuotone as SiToolboxBoldDuotone };
+export default ToolboxBoldDuotone;
 export type { ToolboxBoldDuotoneProps };

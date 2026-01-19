@@ -16,4 +16,5 @@ BasketFill.displayName = 'BasketFill';
 
 // Triple export pattern (lucide-react style)
 export { BasketFill, BasketFill as BasketFillIcon, BasketFill as SiBasketFill };
+export default BasketFill;
 export type { BasketFillProps };

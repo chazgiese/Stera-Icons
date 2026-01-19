@@ -35,3 +35,4 @@ CoolS.displayName = 'CoolS';
 
 // Triple export pattern (lucide-react style)
 export { CoolS, CoolS as CoolSIcon, CoolS as SiCoolS };
+export default CoolS;

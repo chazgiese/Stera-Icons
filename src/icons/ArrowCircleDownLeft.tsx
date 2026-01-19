@@ -35,3 +35,4 @@ ArrowCircleDownLeft.displayName = 'ArrowCircleDownLeft';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCircleDownLeft, ArrowCircleDownLeft as ArrowCircleDownLeftIcon, ArrowCircleDownLeft as SiArrowCircleDownLeft };
+export default ArrowCircleDownLeft;

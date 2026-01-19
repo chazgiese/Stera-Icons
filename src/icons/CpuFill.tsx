@@ -17,4 +17,5 @@ CpuFill.displayName = 'CpuFill';
 
 // Triple export pattern (lucide-react style)
 export { CpuFill, CpuFill as CpuFillIcon, CpuFill as SiCpuFill };
+export default CpuFill;
 export type { CpuFillProps };

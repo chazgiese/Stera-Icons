@@ -19,4 +19,5 @@ CanLabelFillDuotone.displayName = 'CanLabelFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CanLabelFillDuotone, CanLabelFillDuotone as CanLabelFillDuotoneIcon, CanLabelFillDuotone as SiCanLabelFillDuotone };
+export default CanLabelFillDuotone;
 export type { CanLabelFillDuotoneProps };

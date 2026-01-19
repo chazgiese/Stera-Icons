@@ -17,4 +17,5 @@ SignatureXFillDuotone.displayName = 'SignatureXFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignatureXFillDuotone, SignatureXFillDuotone as SignatureXFillDuotoneIcon, SignatureXFillDuotone as SiSignatureXFillDuotone };
+export default SignatureXFillDuotone;
 export type { SignatureXFillDuotoneProps };

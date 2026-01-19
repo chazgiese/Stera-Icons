@@ -18,4 +18,5 @@ WandFill.displayName = 'WandFill';
 
 // Triple export pattern (lucide-react style)
 export { WandFill, WandFill as WandFillIcon, WandFill as SiWandFill };
+export default WandFill;
 export type { WandFillProps };

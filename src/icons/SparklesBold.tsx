@@ -17,4 +17,5 @@ SparklesBold.displayName = 'SparklesBold';
 
 // Triple export pattern (lucide-react style)
 export { SparklesBold, SparklesBold as SparklesBoldIcon, SparklesBold as SiSparklesBold };
+export default SparklesBold;
 export type { SparklesBoldProps };

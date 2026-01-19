@@ -16,4 +16,5 @@ SlidersFill.displayName = 'SlidersFill';
 
 // Triple export pattern (lucide-react style)
 export { SlidersFill, SlidersFill as SlidersFillIcon, SlidersFill as SiSlidersFill };
+export default SlidersFill;
 export type { SlidersFillProps };

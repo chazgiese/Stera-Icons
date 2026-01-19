@@ -17,4 +17,5 @@ FlowBranchFillDuotone.displayName = 'FlowBranchFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowBranchFillDuotone, FlowBranchFillDuotone as FlowBranchFillDuotoneIcon, FlowBranchFillDuotone as SiFlowBranchFillDuotone };
+export default FlowBranchFillDuotone;
 export type { FlowBranchFillDuotoneProps };

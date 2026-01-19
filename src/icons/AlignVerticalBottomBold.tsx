@@ -17,4 +17,5 @@ AlignVerticalBottomBold.displayName = 'AlignVerticalBottomBold';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalBottomBold, AlignVerticalBottomBold as AlignVerticalBottomBoldIcon, AlignVerticalBottomBold as SiAlignVerticalBottomBold };
+export default AlignVerticalBottomBold;
 export type { AlignVerticalBottomBoldProps };

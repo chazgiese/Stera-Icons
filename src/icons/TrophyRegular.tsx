@@ -16,4 +16,5 @@ TrophyRegular.displayName = 'TrophyRegular';
 
 // Triple export pattern (lucide-react style)
 export { TrophyRegular, TrophyRegular as TrophyRegularIcon, TrophyRegular as SiTrophyRegular };
+export default TrophyRegular;
 export type { TrophyRegularProps };

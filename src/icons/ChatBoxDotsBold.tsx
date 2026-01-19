@@ -17,4 +17,5 @@ ChatBoxDotsBold.displayName = 'ChatBoxDotsBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxDotsBold, ChatBoxDotsBold as ChatBoxDotsBoldIcon, ChatBoxDotsBold as SiChatBoxDotsBold };
+export default ChatBoxDotsBold;
 export type { ChatBoxDotsBoldProps };

@@ -35,3 +35,4 @@ LinkOff.displayName = 'LinkOff';
 
 // Triple export pattern (lucide-react style)
 export { LinkOff, LinkOff as LinkOffIcon, LinkOff as SiLinkOff };
+export default LinkOff;

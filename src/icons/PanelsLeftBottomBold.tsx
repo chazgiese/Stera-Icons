@@ -16,4 +16,5 @@ PanelsLeftBottomBold.displayName = 'PanelsLeftBottomBold';
 
 // Triple export pattern (lucide-react style)
 export { PanelsLeftBottomBold, PanelsLeftBottomBold as PanelsLeftBottomBoldIcon, PanelsLeftBottomBold as SiPanelsLeftBottomBold };
+export default PanelsLeftBottomBold;
 export type { PanelsLeftBottomBoldProps };

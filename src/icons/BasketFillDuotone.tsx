@@ -17,4 +17,5 @@ BasketFillDuotone.displayName = 'BasketFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BasketFillDuotone, BasketFillDuotone as BasketFillDuotoneIcon, BasketFillDuotone as SiBasketFillDuotone };
+export default BasketFillDuotone;
 export type { BasketFillDuotoneProps };

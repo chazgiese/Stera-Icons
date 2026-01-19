@@ -35,3 +35,4 @@ LayoutGrid.displayName = 'LayoutGrid';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGrid, LayoutGrid as LayoutGridIcon, LayoutGrid as SiLayoutGrid };
+export default LayoutGrid;

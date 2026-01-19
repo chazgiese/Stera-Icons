@@ -16,4 +16,5 @@ ChartCandleAltBold.displayName = 'ChartCandleAltBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartCandleAltBold, ChartCandleAltBold as ChartCandleAltBoldIcon, ChartCandleAltBold as SiChartCandleAltBold };
+export default ChartCandleAltBold;
 export type { ChartCandleAltBoldProps };

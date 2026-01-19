@@ -17,4 +17,5 @@ LineWeightRegular.displayName = 'LineWeightRegular';
 
 // Triple export pattern (lucide-react style)
 export { LineWeightRegular, LineWeightRegular as LineWeightRegularIcon, LineWeightRegular as SiLineWeightRegular };
+export default LineWeightRegular;
 export type { LineWeightRegularProps };

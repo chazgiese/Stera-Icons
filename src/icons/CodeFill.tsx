@@ -16,4 +16,5 @@ CodeFill.displayName = 'CodeFill';
 
 // Triple export pattern (lucide-react style)
 export { CodeFill, CodeFill as CodeFillIcon, CodeFill as SiCodeFill };
+export default CodeFill;
 export type { CodeFillProps };

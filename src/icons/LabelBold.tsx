@@ -16,4 +16,5 @@ LabelBold.displayName = 'LabelBold';
 
 // Triple export pattern (lucide-react style)
 export { LabelBold, LabelBold as LabelBoldIcon, LabelBold as SiLabelBold };
+export default LabelBold;
 export type { LabelBoldProps };

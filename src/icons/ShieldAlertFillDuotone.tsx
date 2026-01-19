@@ -17,4 +17,5 @@ ShieldAlertFillDuotone.displayName = 'ShieldAlertFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShieldAlertFillDuotone, ShieldAlertFillDuotone as ShieldAlertFillDuotoneIcon, ShieldAlertFillDuotone as SiShieldAlertFillDuotone };
+export default ShieldAlertFillDuotone;
 export type { ShieldAlertFillDuotoneProps };

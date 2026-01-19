@@ -35,3 +35,4 @@ Minus.displayName = 'Minus';
 
 // Triple export pattern (lucide-react style)
 export { Minus, Minus as MinusIcon, Minus as SiMinus };
+export default Minus;

@@ -16,4 +16,5 @@ CircleDotsFill.displayName = 'CircleDotsFill';
 
 // Triple export pattern (lucide-react style)
 export { CircleDotsFill, CircleDotsFill as CircleDotsFillIcon, CircleDotsFill as SiCircleDotsFill };
+export default CircleDotsFill;
 export type { CircleDotsFillProps };

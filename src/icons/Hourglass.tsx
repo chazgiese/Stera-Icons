@@ -35,3 +35,4 @@ Hourglass.displayName = 'Hourglass';
 
 // Triple export pattern (lucide-react style)
 export { Hourglass, Hourglass as HourglassIcon, Hourglass as SiHourglass };
+export default Hourglass;

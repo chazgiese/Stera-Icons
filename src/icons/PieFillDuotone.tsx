@@ -17,4 +17,5 @@ PieFillDuotone.displayName = 'PieFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PieFillDuotone, PieFillDuotone as PieFillDuotoneIcon, PieFillDuotone as SiPieFillDuotone };
+export default PieFillDuotone;
 export type { PieFillDuotoneProps };

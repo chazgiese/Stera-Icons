@@ -16,4 +16,5 @@ CubePackageFill.displayName = 'CubePackageFill';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageFill, CubePackageFill as CubePackageFillIcon, CubePackageFill as SiCubePackageFill };
+export default CubePackageFill;
 export type { CubePackageFillProps };

@@ -35,3 +35,4 @@ Atom.displayName = 'Atom';
 
 // Triple export pattern (lucide-react style)
 export { Atom, Atom as AtomIcon, Atom as SiAtom };
+export default Atom;

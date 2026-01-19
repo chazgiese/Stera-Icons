@@ -16,4 +16,5 @@ CardHolderFill.displayName = 'CardHolderFill';
 
 // Triple export pattern (lucide-react style)
 export { CardHolderFill, CardHolderFill as CardHolderFillIcon, CardHolderFill as SiCardHolderFill };
+export default CardHolderFill;
 export type { CardHolderFillProps };

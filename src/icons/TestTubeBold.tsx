@@ -16,4 +16,5 @@ TestTubeBold.displayName = 'TestTubeBold';
 
 // Triple export pattern (lucide-react style)
 export { TestTubeBold, TestTubeBold as TestTubeBoldIcon, TestTubeBold as SiTestTubeBold };
+export default TestTubeBold;
 export type { TestTubeBoldProps };

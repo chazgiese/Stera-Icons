@@ -17,4 +17,5 @@ AlertOctagonRegularDuotone.displayName = 'AlertOctagonRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlertOctagonRegularDuotone, AlertOctagonRegularDuotone as AlertOctagonRegularDuotoneIcon, AlertOctagonRegularDuotone as SiAlertOctagonRegularDuotone };
+export default AlertOctagonRegularDuotone;
 export type { AlertOctagonRegularDuotoneProps };

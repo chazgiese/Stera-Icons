@@ -17,4 +17,5 @@ XSquareBoldDuotone.displayName = 'XSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { XSquareBoldDuotone, XSquareBoldDuotone as XSquareBoldDuotoneIcon, XSquareBoldDuotone as SiXSquareBoldDuotone };
+export default XSquareBoldDuotone;
 export type { XSquareBoldDuotoneProps };

@@ -17,4 +17,5 @@ PieRegularDuotone.displayName = 'PieRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PieRegularDuotone, PieRegularDuotone as PieRegularDuotoneIcon, PieRegularDuotone as SiPieRegularDuotone };
+export default PieRegularDuotone;
 export type { PieRegularDuotoneProps };

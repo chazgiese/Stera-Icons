@@ -16,4 +16,5 @@ SlashRegular.displayName = 'SlashRegular';
 
 // Triple export pattern (lucide-react style)
 export { SlashRegular, SlashRegular as SlashRegularIcon, SlashRegular as SiSlashRegular };
+export default SlashRegular;
 export type { SlashRegularProps };

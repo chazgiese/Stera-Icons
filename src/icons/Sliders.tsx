@@ -35,3 +35,4 @@ Sliders.displayName = 'Sliders';
 
 // Triple export pattern (lucide-react style)
 export { Sliders, Sliders as SlidersIcon, Sliders as SiSliders };
+export default Sliders;

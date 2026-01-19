@@ -17,4 +17,5 @@ ConnectionAltRegularDuotone.displayName = 'ConnectionAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionAltRegularDuotone, ConnectionAltRegularDuotone as ConnectionAltRegularDuotoneIcon, ConnectionAltRegularDuotone as SiConnectionAltRegularDuotone };
+export default ConnectionAltRegularDuotone;
 export type { ConnectionAltRegularDuotoneProps };

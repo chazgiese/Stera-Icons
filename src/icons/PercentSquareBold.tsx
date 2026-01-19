@@ -17,4 +17,5 @@ PercentSquareBold.displayName = 'PercentSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { PercentSquareBold, PercentSquareBold as PercentSquareBoldIcon, PercentSquareBold as SiPercentSquareBold };
+export default PercentSquareBold;
 export type { PercentSquareBoldProps };

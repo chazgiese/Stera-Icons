@@ -17,4 +17,5 @@ GridFillDuotone.displayName = 'GridFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GridFillDuotone, GridFillDuotone as GridFillDuotoneIcon, GridFillDuotone as SiGridFillDuotone };
+export default GridFillDuotone;
 export type { GridFillDuotoneProps };

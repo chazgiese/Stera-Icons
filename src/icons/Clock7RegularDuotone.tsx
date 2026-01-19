@@ -17,4 +17,5 @@ Clock7RegularDuotone.displayName = 'Clock7RegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { Clock7RegularDuotone, Clock7RegularDuotone as Clock7RegularDuotoneIcon, Clock7RegularDuotone as SiClock7RegularDuotone };
+export default Clock7RegularDuotone;
 export type { Clock7RegularDuotoneProps };

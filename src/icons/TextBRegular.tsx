@@ -16,4 +16,5 @@ TextBRegular.displayName = 'TextBRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextBRegular, TextBRegular as TextBRegularIcon, TextBRegular as SiTextBRegular };
+export default TextBRegular;
 export type { TextBRegularProps };

@@ -17,4 +17,5 @@ ApertureFillDuotone.displayName = 'ApertureFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ApertureFillDuotone, ApertureFillDuotone as ApertureFillDuotoneIcon, ApertureFillDuotone as SiApertureFillDuotone };
+export default ApertureFillDuotone;
 export type { ApertureFillDuotoneProps };

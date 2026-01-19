@@ -17,4 +17,5 @@ ExpandSimpleAltRegularDuotone.displayName = 'ExpandSimpleAltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimpleAltRegularDuotone, ExpandSimpleAltRegularDuotone as ExpandSimpleAltRegularDuotoneIcon, ExpandSimpleAltRegularDuotone as SiExpandSimpleAltRegularDuotone };
+export default ExpandSimpleAltRegularDuotone;
 export type { ExpandSimpleAltRegularDuotoneProps };

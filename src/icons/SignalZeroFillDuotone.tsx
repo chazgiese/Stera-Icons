@@ -17,4 +17,5 @@ SignalZeroFillDuotone.displayName = 'SignalZeroFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalZeroFillDuotone, SignalZeroFillDuotone as SignalZeroFillDuotoneIcon, SignalZeroFillDuotone as SiSignalZeroFillDuotone };
+export default SignalZeroFillDuotone;
 export type { SignalZeroFillDuotoneProps };

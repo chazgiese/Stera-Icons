@@ -17,4 +17,5 @@ ConnectionRegularDuotone.displayName = 'ConnectionRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionRegularDuotone, ConnectionRegularDuotone as ConnectionRegularDuotoneIcon, ConnectionRegularDuotone as SiConnectionRegularDuotone };
+export default ConnectionRegularDuotone;
 export type { ConnectionRegularDuotoneProps };

@@ -17,4 +17,5 @@ ChatBubbleOffRegular.displayName = 'ChatBubbleOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleOffRegular, ChatBubbleOffRegular as ChatBubbleOffRegularIcon, ChatBubbleOffRegular as SiChatBubbleOffRegular };
+export default ChatBubbleOffRegular;
 export type { ChatBubbleOffRegularProps };

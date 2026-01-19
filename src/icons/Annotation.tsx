@@ -35,3 +35,4 @@ Annotation.displayName = 'Annotation';
 
 // Triple export pattern (lucide-react style)
 export { Annotation, Annotation as AnnotationIcon, Annotation as SiAnnotation };
+export default Annotation;

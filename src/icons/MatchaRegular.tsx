@@ -16,4 +16,5 @@ MatchaRegular.displayName = 'MatchaRegular';
 
 // Triple export pattern (lucide-react style)
 export { MatchaRegular, MatchaRegular as MatchaRegularIcon, MatchaRegular as SiMatchaRegular };
+export default MatchaRegular;
 export type { MatchaRegularProps };

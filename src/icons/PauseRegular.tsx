@@ -16,4 +16,5 @@ PauseRegular.displayName = 'PauseRegular';
 
 // Triple export pattern (lucide-react style)
 export { PauseRegular, PauseRegular as PauseRegularIcon, PauseRegular as SiPauseRegular };
+export default PauseRegular;
 export type { PauseRegularProps };

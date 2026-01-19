@@ -16,4 +16,5 @@ CursorPointerRegular.displayName = 'CursorPointerRegular';
 
 // Triple export pattern (lucide-react style)
 export { CursorPointerRegular, CursorPointerRegular as CursorPointerRegularIcon, CursorPointerRegular as SiCursorPointerRegular };
+export default CursorPointerRegular;
 export type { CursorPointerRegularProps };

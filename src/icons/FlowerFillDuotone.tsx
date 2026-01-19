@@ -17,4 +17,5 @@ FlowerFillDuotone.displayName = 'FlowerFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlowerFillDuotone, FlowerFillDuotone as FlowerFillDuotoneIcon, FlowerFillDuotone as SiFlowerFillDuotone };
+export default FlowerFillDuotone;
 export type { FlowerFillDuotoneProps };

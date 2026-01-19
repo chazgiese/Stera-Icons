@@ -17,4 +17,5 @@ TargetFill.displayName = 'TargetFill';
 
 // Triple export pattern (lucide-react style)
 export { TargetFill, TargetFill as TargetFillIcon, TargetFill as SiTargetFill };
+export default TargetFill;
 export type { TargetFillProps };

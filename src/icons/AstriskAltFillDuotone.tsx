@@ -17,4 +17,5 @@ AstriskAltFillDuotone.displayName = 'AstriskAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAltFillDuotone, AstriskAltFillDuotone as AstriskAltFillDuotoneIcon, AstriskAltFillDuotone as SiAstriskAltFillDuotone };
+export default AstriskAltFillDuotone;
 export type { AstriskAltFillDuotoneProps };

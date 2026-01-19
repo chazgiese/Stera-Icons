@@ -16,4 +16,5 @@ SparkleSquareFill.displayName = 'SparkleSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { SparkleSquareFill, SparkleSquareFill as SparkleSquareFillIcon, SparkleSquareFill as SiSparkleSquareFill };
+export default SparkleSquareFill;
 export type { SparkleSquareFillProps };

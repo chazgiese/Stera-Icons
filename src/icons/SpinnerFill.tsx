@@ -16,4 +16,5 @@ SpinnerFill.displayName = 'SpinnerFill';
 
 // Triple export pattern (lucide-react style)
 export { SpinnerFill, SpinnerFill as SpinnerFillIcon, SpinnerFill as SiSpinnerFill };
+export default SpinnerFill;
 export type { SpinnerFillProps };

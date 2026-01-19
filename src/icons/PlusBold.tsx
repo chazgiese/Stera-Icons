@@ -16,4 +16,5 @@ PlusBold.displayName = 'PlusBold';
 
 // Triple export pattern (lucide-react style)
 export { PlusBold, PlusBold as PlusBoldIcon, PlusBold as SiPlusBold };
+export default PlusBold;
 export type { PlusBoldProps };

@@ -17,4 +17,5 @@ SparkleCircleRegularDuotone.displayName = 'SparkleCircleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SparkleCircleRegularDuotone, SparkleCircleRegularDuotone as SparkleCircleRegularDuotoneIcon, SparkleCircleRegularDuotone as SiSparkleCircleRegularDuotone };
+export default SparkleCircleRegularDuotone;
 export type { SparkleCircleRegularDuotoneProps };

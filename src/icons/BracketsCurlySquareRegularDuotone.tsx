@@ -17,4 +17,5 @@ BracketsCurlySquareRegularDuotone.displayName = 'BracketsCurlySquareRegularDuoto
 
 // Triple export pattern (lucide-react style)
 export { BracketsCurlySquareRegularDuotone, BracketsCurlySquareRegularDuotone as BracketsCurlySquareRegularDuotoneIcon, BracketsCurlySquareRegularDuotone as SiBracketsCurlySquareRegularDuotone };
+export default BracketsCurlySquareRegularDuotone;
 export type { BracketsCurlySquareRegularDuotoneProps };

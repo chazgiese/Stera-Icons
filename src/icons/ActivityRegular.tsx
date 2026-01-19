@@ -16,4 +16,5 @@ ActivityRegular.displayName = 'ActivityRegular';
 
 // Triple export pattern (lucide-react style)
 export { ActivityRegular, ActivityRegular as ActivityRegularIcon, ActivityRegular as SiActivityRegular };
+export default ActivityRegular;
 export type { ActivityRegularProps };

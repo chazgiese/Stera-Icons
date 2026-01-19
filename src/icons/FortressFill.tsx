@@ -16,4 +16,5 @@ FortressFill.displayName = 'FortressFill';
 
 // Triple export pattern (lucide-react style)
 export { FortressFill, FortressFill as FortressFillIcon, FortressFill as SiFortressFill };
+export default FortressFill;
 export type { FortressFillProps };

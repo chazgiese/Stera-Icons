@@ -17,4 +17,5 @@ DiamondFillDuotone.displayName = 'DiamondFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DiamondFillDuotone, DiamondFillDuotone as DiamondFillDuotoneIcon, DiamondFillDuotone as SiDiamondFillDuotone };
+export default DiamondFillDuotone;
 export type { DiamondFillDuotoneProps };

@@ -16,4 +16,5 @@ GridFill.displayName = 'GridFill';
 
 // Triple export pattern (lucide-react style)
 export { GridFill, GridFill as GridFillIcon, GridFill as SiGridFill };
+export default GridFill;
 export type { GridFillProps };

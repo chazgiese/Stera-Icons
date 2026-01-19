@@ -16,4 +16,5 @@ FolderTreeFill.displayName = 'FolderTreeFill';
 
 // Triple export pattern (lucide-react style)
 export { FolderTreeFill, FolderTreeFill as FolderTreeFillIcon, FolderTreeFill as SiFolderTreeFill };
+export default FolderTreeFill;
 export type { FolderTreeFillProps };

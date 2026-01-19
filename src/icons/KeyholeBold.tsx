@@ -16,4 +16,5 @@ KeyholeBold.displayName = 'KeyholeBold';
 
 // Triple export pattern (lucide-react style)
 export { KeyholeBold, KeyholeBold as KeyholeBoldIcon, KeyholeBold as SiKeyholeBold };
+export default KeyholeBold;
 export type { KeyholeBoldProps };

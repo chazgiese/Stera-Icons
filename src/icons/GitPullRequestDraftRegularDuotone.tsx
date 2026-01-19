@@ -17,4 +17,5 @@ GitPullRequestDraftRegularDuotone.displayName = 'GitPullRequestDraftRegularDuoto
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequestDraftRegularDuotone, GitPullRequestDraftRegularDuotone as GitPullRequestDraftRegularDuotoneIcon, GitPullRequestDraftRegularDuotone as SiGitPullRequestDraftRegularDuotone };
+export default GitPullRequestDraftRegularDuotone;
 export type { GitPullRequestDraftRegularDuotoneProps };

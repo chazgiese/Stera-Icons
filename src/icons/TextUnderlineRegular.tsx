@@ -16,4 +16,5 @@ TextUnderlineRegular.displayName = 'TextUnderlineRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextUnderlineRegular, TextUnderlineRegular as TextUnderlineRegularIcon, TextUnderlineRegular as SiTextUnderlineRegular };
+export default TextUnderlineRegular;
 export type { TextUnderlineRegularProps };

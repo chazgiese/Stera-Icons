@@ -17,4 +17,5 @@ MailBadgeRegular.displayName = 'MailBadgeRegular';
 
 // Triple export pattern (lucide-react style)
 export { MailBadgeRegular, MailBadgeRegular as MailBadgeRegularIcon, MailBadgeRegular as SiMailBadgeRegular };
+export default MailBadgeRegular;
 export type { MailBadgeRegularProps };

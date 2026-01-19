@@ -17,4 +17,5 @@ ConnectionAltRegular.displayName = 'ConnectionAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { ConnectionAltRegular, ConnectionAltRegular as ConnectionAltRegularIcon, ConnectionAltRegular as SiConnectionAltRegular };
+export default ConnectionAltRegular;
 export type { ConnectionAltRegularProps };

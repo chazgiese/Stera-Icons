@@ -17,4 +17,5 @@ BrowserPlusBold.displayName = 'BrowserPlusBold';
 
 // Triple export pattern (lucide-react style)
 export { BrowserPlusBold, BrowserPlusBold as BrowserPlusBoldIcon, BrowserPlusBold as SiBrowserPlusBold };
+export default BrowserPlusBold;
 export type { BrowserPlusBoldProps };

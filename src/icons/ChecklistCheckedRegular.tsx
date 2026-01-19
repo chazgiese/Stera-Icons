@@ -19,4 +19,5 @@ ChecklistCheckedRegular.displayName = 'ChecklistCheckedRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistCheckedRegular, ChecklistCheckedRegular as ChecklistCheckedRegularIcon, ChecklistCheckedRegular as SiChecklistCheckedRegular };
+export default ChecklistCheckedRegular;
 export type { ChecklistCheckedRegularProps };

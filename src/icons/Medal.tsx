@@ -35,3 +35,4 @@ Medal.displayName = 'Medal';
 
 // Triple export pattern (lucide-react style)
 export { Medal, Medal as MedalIcon, Medal as SiMedal };
+export default Medal;

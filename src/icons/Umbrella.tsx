@@ -35,3 +35,4 @@ Umbrella.displayName = 'Umbrella';
 
 // Triple export pattern (lucide-react style)
 export { Umbrella, Umbrella as UmbrellaIcon, Umbrella as SiUmbrella };
+export default Umbrella;

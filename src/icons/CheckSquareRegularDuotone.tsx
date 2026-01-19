@@ -17,4 +17,5 @@ CheckSquareRegularDuotone.displayName = 'CheckSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CheckSquareRegularDuotone, CheckSquareRegularDuotone as CheckSquareRegularDuotoneIcon, CheckSquareRegularDuotone as SiCheckSquareRegularDuotone };
+export default CheckSquareRegularDuotone;
 export type { CheckSquareRegularDuotoneProps };

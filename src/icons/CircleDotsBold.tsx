@@ -16,4 +16,5 @@ CircleDotsBold.displayName = 'CircleDotsBold';
 
 // Triple export pattern (lucide-react style)
 export { CircleDotsBold, CircleDotsBold as CircleDotsBoldIcon, CircleDotsBold as SiCircleDotsBold };
+export default CircleDotsBold;
 export type { CircleDotsBoldProps };

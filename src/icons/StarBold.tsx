@@ -16,4 +16,5 @@ StarBold.displayName = 'StarBold';
 
 // Triple export pattern (lucide-react style)
 export { StarBold, StarBold as StarBoldIcon, StarBold as SiStarBold };
+export default StarBold;
 export type { StarBoldProps };

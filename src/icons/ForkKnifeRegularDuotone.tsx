@@ -18,4 +18,5 @@ ForkKnifeRegularDuotone.displayName = 'ForkKnifeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ForkKnifeRegularDuotone, ForkKnifeRegularDuotone as ForkKnifeRegularDuotoneIcon, ForkKnifeRegularDuotone as SiForkKnifeRegularDuotone };
+export default ForkKnifeRegularDuotone;
 export type { ForkKnifeRegularDuotoneProps };

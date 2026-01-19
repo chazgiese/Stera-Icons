@@ -17,4 +17,5 @@ BrowserBold.displayName = 'BrowserBold';
 
 // Triple export pattern (lucide-react style)
 export { BrowserBold, BrowserBold as BrowserBoldIcon, BrowserBold as SiBrowserBold };
+export default BrowserBold;
 export type { BrowserBoldProps };

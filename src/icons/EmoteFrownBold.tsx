@@ -17,4 +17,5 @@ EmoteFrownBold.displayName = 'EmoteFrownBold';
 
 // Triple export pattern (lucide-react style)
 export { EmoteFrownBold, EmoteFrownBold as EmoteFrownBoldIcon, EmoteFrownBold as SiEmoteFrownBold };
+export default EmoteFrownBold;
 export type { EmoteFrownBoldProps };

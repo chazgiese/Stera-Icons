@@ -16,4 +16,5 @@ CandleBold.displayName = 'CandleBold';
 
 // Triple export pattern (lucide-react style)
 export { CandleBold, CandleBold as CandleBoldIcon, CandleBold as SiCandleBold };
+export default CandleBold;
 export type { CandleBoldProps };

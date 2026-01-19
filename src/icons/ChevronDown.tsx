@@ -35,3 +35,4 @@ ChevronDown.displayName = 'ChevronDown';
 
 // Triple export pattern (lucide-react style)
 export { ChevronDown, ChevronDown as ChevronDownIcon, ChevronDown as SiChevronDown };
+export default ChevronDown;

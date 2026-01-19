@@ -16,4 +16,5 @@ AlignVerticalCenterBold.displayName = 'AlignVerticalCenterBold';
 
 // Triple export pattern (lucide-react style)
 export { AlignVerticalCenterBold, AlignVerticalCenterBold as AlignVerticalCenterBoldIcon, AlignVerticalCenterBold as SiAlignVerticalCenterBold };
+export default AlignVerticalCenterBold;
 export type { AlignVerticalCenterBoldProps };

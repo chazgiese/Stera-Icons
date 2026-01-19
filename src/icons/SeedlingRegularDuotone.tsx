@@ -17,4 +17,5 @@ SeedlingRegularDuotone.displayName = 'SeedlingRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SeedlingRegularDuotone, SeedlingRegularDuotone as SeedlingRegularDuotoneIcon, SeedlingRegularDuotone as SiSeedlingRegularDuotone };
+export default SeedlingRegularDuotone;
 export type { SeedlingRegularDuotoneProps };

@@ -35,3 +35,4 @@ SquareDashed.displayName = 'SquareDashed';
 
 // Triple export pattern (lucide-react style)
 export { SquareDashed, SquareDashed as SquareDashedIcon, SquareDashed as SiSquareDashed };
+export default SquareDashed;

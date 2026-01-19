@@ -16,4 +16,5 @@ AwardStarBold.displayName = 'AwardStarBold';
 
 // Triple export pattern (lucide-react style)
 export { AwardStarBold, AwardStarBold as AwardStarBoldIcon, AwardStarBold as SiAwardStarBold };
+export default AwardStarBold;
 export type { AwardStarBoldProps };

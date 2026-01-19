@@ -18,4 +18,5 @@ CubicGraphRegular.displayName = 'CubicGraphRegular';
 
 // Triple export pattern (lucide-react style)
 export { CubicGraphRegular, CubicGraphRegular as CubicGraphRegularIcon, CubicGraphRegular as SiCubicGraphRegular };
+export default CubicGraphRegular;
 export type { CubicGraphRegularProps };

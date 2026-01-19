@@ -16,4 +16,5 @@ TrophyBold.displayName = 'TrophyBold';
 
 // Triple export pattern (lucide-react style)
 export { TrophyBold, TrophyBold as TrophyBoldIcon, TrophyBold as SiTrophyBold };
+export default TrophyBold;
 export type { TrophyBoldProps };

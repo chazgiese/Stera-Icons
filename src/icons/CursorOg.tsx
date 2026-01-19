@@ -35,3 +35,4 @@ CursorOg.displayName = 'CursorOg';
 
 // Triple export pattern (lucide-react style)
 export { CursorOg, CursorOg as CursorOgIcon, CursorOg as SiCursorOg };
+export default CursorOg;

@@ -35,3 +35,4 @@ Leaf.displayName = 'Leaf';
 
 // Triple export pattern (lucide-react style)
 export { Leaf, Leaf as LeafIcon, Leaf as SiLeaf };
+export default Leaf;

@@ -35,3 +35,4 @@ Boxes.displayName = 'Boxes';
 
 // Triple export pattern (lucide-react style)
 export { Boxes, Boxes as BoxesIcon, Boxes as SiBoxes };
+export default Boxes;

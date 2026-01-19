@@ -16,4 +16,5 @@ FlowSplitSquareDownBold.displayName = 'FlowSplitSquareDownBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowSplitSquareDownBold, FlowSplitSquareDownBold as FlowSplitSquareDownBoldIcon, FlowSplitSquareDownBold as SiFlowSplitSquareDownBold };
+export default FlowSplitSquareDownBold;
 export type { FlowSplitSquareDownBoldProps };

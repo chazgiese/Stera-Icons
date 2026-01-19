@@ -17,4 +17,5 @@ LotusBoldDuotone.displayName = 'LotusBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LotusBoldDuotone, LotusBoldDuotone as LotusBoldDuotoneIcon, LotusBoldDuotone as SiLotusBoldDuotone };
+export default LotusBoldDuotone;
 export type { LotusBoldDuotoneProps };

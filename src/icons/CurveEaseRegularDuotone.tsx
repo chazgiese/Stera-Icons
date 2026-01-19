@@ -17,4 +17,5 @@ CurveEaseRegularDuotone.displayName = 'CurveEaseRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurveEaseRegularDuotone, CurveEaseRegularDuotone as CurveEaseRegularDuotoneIcon, CurveEaseRegularDuotone as SiCurveEaseRegularDuotone };
+export default CurveEaseRegularDuotone;
 export type { CurveEaseRegularDuotoneProps };

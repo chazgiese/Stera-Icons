@@ -16,4 +16,5 @@ MenuAltFill.displayName = 'MenuAltFill';
 
 // Triple export pattern (lucide-react style)
 export { MenuAltFill, MenuAltFill as MenuAltFillIcon, MenuAltFill as SiMenuAltFill };
+export default MenuAltFill;
 export type { MenuAltFillProps };

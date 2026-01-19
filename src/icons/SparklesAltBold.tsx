@@ -16,4 +16,5 @@ SparklesAltBold.displayName = 'SparklesAltBold';
 
 // Triple export pattern (lucide-react style)
 export { SparklesAltBold, SparklesAltBold as SparklesAltBoldIcon, SparklesAltBold as SiSparklesAltBold };
+export default SparklesAltBold;
 export type { SparklesAltBoldProps };

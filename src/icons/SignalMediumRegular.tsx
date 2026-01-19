@@ -16,4 +16,5 @@ SignalMediumRegular.displayName = 'SignalMediumRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignalMediumRegular, SignalMediumRegular as SignalMediumRegularIcon, SignalMediumRegular as SiSignalMediumRegular };
+export default SignalMediumRegular;
 export type { SignalMediumRegularProps };

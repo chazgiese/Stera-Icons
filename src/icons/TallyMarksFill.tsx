@@ -16,4 +16,5 @@ TallyMarksFill.displayName = 'TallyMarksFill';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarksFill, TallyMarksFill as TallyMarksFillIcon, TallyMarksFill as SiTallyMarksFill };
+export default TallyMarksFill;
 export type { TallyMarksFillProps };

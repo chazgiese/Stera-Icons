@@ -18,4 +18,5 @@ ArchiveBoldDuotone.displayName = 'ArchiveBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArchiveBoldDuotone, ArchiveBoldDuotone as ArchiveBoldDuotoneIcon, ArchiveBoldDuotone as SiArchiveBoldDuotone };
+export default ArchiveBoldDuotone;
 export type { ArchiveBoldDuotoneProps };

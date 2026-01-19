@@ -17,4 +17,5 @@ ThumbsUpFillDuotone.displayName = 'ThumbsUpFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsUpFillDuotone, ThumbsUpFillDuotone as ThumbsUpFillDuotoneIcon, ThumbsUpFillDuotone as SiThumbsUpFillDuotone };
+export default ThumbsUpFillDuotone;
 export type { ThumbsUpFillDuotoneProps };

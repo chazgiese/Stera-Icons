@@ -16,4 +16,5 @@ FilmStripRegular.displayName = 'FilmStripRegular';
 
 // Triple export pattern (lucide-react style)
 export { FilmStripRegular, FilmStripRegular as FilmStripRegularIcon, FilmStripRegular as SiFilmStripRegular };
+export default FilmStripRegular;
 export type { FilmStripRegularProps };

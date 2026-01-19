@@ -16,4 +16,5 @@ LassoDashFill.displayName = 'LassoDashFill';
 
 // Triple export pattern (lucide-react style)
 export { LassoDashFill, LassoDashFill as LassoDashFillIcon, LassoDashFill as SiLassoDashFill };
+export default LassoDashFill;
 export type { LassoDashFillProps };

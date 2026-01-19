@@ -35,3 +35,4 @@ Pilcrow.displayName = 'Pilcrow';
 
 // Triple export pattern (lucide-react style)
 export { Pilcrow, Pilcrow as PilcrowIcon, Pilcrow as SiPilcrow };
+export default Pilcrow;

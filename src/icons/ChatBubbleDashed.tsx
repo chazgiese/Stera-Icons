@@ -35,3 +35,4 @@ ChatBubbleDashed.displayName = 'ChatBubbleDashed';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleDashed, ChatBubbleDashed as ChatBubbleDashedIcon, ChatBubbleDashed as SiChatBubbleDashed };
+export default ChatBubbleDashed;

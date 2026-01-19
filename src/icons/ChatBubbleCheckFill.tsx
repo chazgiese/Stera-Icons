@@ -16,4 +16,5 @@ ChatBubbleCheckFill.displayName = 'ChatBubbleCheckFill';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleCheckFill, ChatBubbleCheckFill as ChatBubbleCheckFillIcon, ChatBubbleCheckFill as SiChatBubbleCheckFill };
+export default ChatBubbleCheckFill;
 export type { ChatBubbleCheckFillProps };

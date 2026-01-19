@@ -17,4 +17,5 @@ ThermometerHighBold.displayName = 'ThermometerHighBold';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerHighBold, ThermometerHighBold as ThermometerHighBoldIcon, ThermometerHighBold as SiThermometerHighBold };
+export default ThermometerHighBold;
 export type { ThermometerHighBoldProps };

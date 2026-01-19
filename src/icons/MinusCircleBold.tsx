@@ -17,4 +17,5 @@ MinusCircleBold.displayName = 'MinusCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { MinusCircleBold, MinusCircleBold as MinusCircleBoldIcon, MinusCircleBold as SiMinusCircleBold };
+export default MinusCircleBold;
 export type { MinusCircleBoldProps };

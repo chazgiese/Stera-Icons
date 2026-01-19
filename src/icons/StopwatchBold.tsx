@@ -18,4 +18,5 @@ StopwatchBold.displayName = 'StopwatchBold';
 
 // Triple export pattern (lucide-react style)
 export { StopwatchBold, StopwatchBold as StopwatchBoldIcon, StopwatchBold as SiStopwatchBold };
+export default StopwatchBold;
 export type { StopwatchBoldProps };

@@ -35,3 +35,4 @@ CalendarClock.displayName = 'CalendarClock';
 
 // Triple export pattern (lucide-react style)
 export { CalendarClock, CalendarClock as CalendarClockIcon, CalendarClock as SiCalendarClock };
+export default CalendarClock;

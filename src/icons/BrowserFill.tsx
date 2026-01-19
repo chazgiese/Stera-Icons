@@ -17,4 +17,5 @@ BrowserFill.displayName = 'BrowserFill';
 
 // Triple export pattern (lucide-react style)
 export { BrowserFill, BrowserFill as BrowserFillIcon, BrowserFill as SiBrowserFill };
+export default BrowserFill;
 export type { BrowserFillProps };

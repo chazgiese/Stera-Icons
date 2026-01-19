@@ -17,4 +17,5 @@ BoundingBoxBoldDuotone.displayName = 'BoundingBoxBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BoundingBoxBoldDuotone, BoundingBoxBoldDuotone as BoundingBoxBoldDuotoneIcon, BoundingBoxBoldDuotone as SiBoundingBoxBoldDuotone };
+export default BoundingBoxBoldDuotone;
 export type { BoundingBoxBoldDuotoneProps };

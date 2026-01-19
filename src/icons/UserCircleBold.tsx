@@ -16,4 +16,5 @@ UserCircleBold.displayName = 'UserCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { UserCircleBold, UserCircleBold as UserCircleBoldIcon, UserCircleBold as SiUserCircleBold };
+export default UserCircleBold;
 export type { UserCircleBoldProps };

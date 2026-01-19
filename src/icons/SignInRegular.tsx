@@ -17,4 +17,5 @@ SignInRegular.displayName = 'SignInRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignInRegular, SignInRegular as SignInRegularIcon, SignInRegular as SiSignInRegular };
+export default SignInRegular;
 export type { SignInRegularProps };

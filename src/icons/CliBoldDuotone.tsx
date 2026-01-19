@@ -17,4 +17,5 @@ CliBoldDuotone.displayName = 'CliBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CliBoldDuotone, CliBoldDuotone as CliBoldDuotoneIcon, CliBoldDuotone as SiCliBoldDuotone };
+export default CliBoldDuotone;
 export type { CliBoldDuotoneProps };

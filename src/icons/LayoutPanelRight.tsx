@@ -35,3 +35,4 @@ LayoutPanelRight.displayName = 'LayoutPanelRight';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelRight, LayoutPanelRight as LayoutPanelRightIcon, LayoutPanelRight as SiLayoutPanelRight };
+export default LayoutPanelRight;

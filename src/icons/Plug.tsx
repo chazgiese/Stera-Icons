@@ -35,3 +35,4 @@ Plug.displayName = 'Plug';
 
 // Triple export pattern (lucide-react style)
 export { Plug, Plug as PlugIcon, Plug as SiPlug };
+export default Plug;

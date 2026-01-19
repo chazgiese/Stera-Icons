@@ -17,4 +17,5 @@ RewindFillDuotone.displayName = 'RewindFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RewindFillDuotone, RewindFillDuotone as RewindFillDuotoneIcon, RewindFillDuotone as SiRewindFillDuotone };
+export default RewindFillDuotone;
 export type { RewindFillDuotoneProps };

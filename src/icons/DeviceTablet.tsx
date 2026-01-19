@@ -35,3 +35,4 @@ DeviceTablet.displayName = 'DeviceTablet';
 
 // Triple export pattern (lucide-react style)
 export { DeviceTablet, DeviceTablet as DeviceTabletIcon, DeviceTablet as SiDeviceTablet };
+export default DeviceTablet;

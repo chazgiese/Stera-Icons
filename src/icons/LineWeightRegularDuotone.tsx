@@ -18,4 +18,5 @@ LineWeightRegularDuotone.displayName = 'LineWeightRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LineWeightRegularDuotone, LineWeightRegularDuotone as LineWeightRegularDuotoneIcon, LineWeightRegularDuotone as SiLineWeightRegularDuotone };
+export default LineWeightRegularDuotone;
 export type { LineWeightRegularDuotoneProps };

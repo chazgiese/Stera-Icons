@@ -35,3 +35,4 @@ Ghost.displayName = 'Ghost';
 
 // Triple export pattern (lucide-react style)
 export { Ghost, Ghost as GhostIcon, Ghost as SiGhost };
+export default Ghost;

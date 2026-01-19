@@ -17,4 +17,5 @@ MicroscopeRegular.displayName = 'MicroscopeRegular';
 
 // Triple export pattern (lucide-react style)
 export { MicroscopeRegular, MicroscopeRegular as MicroscopeRegularIcon, MicroscopeRegular as SiMicroscopeRegular };
+export default MicroscopeRegular;
 export type { MicroscopeRegularProps };

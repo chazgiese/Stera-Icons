@@ -18,4 +18,5 @@ BookOpenTextBold.displayName = 'BookOpenTextBold';
 
 // Triple export pattern (lucide-react style)
 export { BookOpenTextBold, BookOpenTextBold as BookOpenTextBoldIcon, BookOpenTextBold as SiBookOpenTextBold };
+export default BookOpenTextBold;
 export type { BookOpenTextBoldProps };

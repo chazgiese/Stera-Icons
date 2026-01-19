@@ -17,4 +17,5 @@ QuestionMarkCircleRegularDuotone.displayName = 'QuestionMarkCircleRegularDuotone
 
 // Triple export pattern (lucide-react style)
 export { QuestionMarkCircleRegularDuotone, QuestionMarkCircleRegularDuotone as QuestionMarkCircleRegularDuotoneIcon, QuestionMarkCircleRegularDuotone as SiQuestionMarkCircleRegularDuotone };
+export default QuestionMarkCircleRegularDuotone;
 export type { QuestionMarkCircleRegularDuotoneProps };

@@ -17,4 +17,5 @@ ChartBarRowAscFillDuotone.displayName = 'ChartBarRowAscFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRowAscFillDuotone, ChartBarRowAscFillDuotone as ChartBarRowAscFillDuotoneIcon, ChartBarRowAscFillDuotone as SiChartBarRowAscFillDuotone };
+export default ChartBarRowAscFillDuotone;
 export type { ChartBarRowAscFillDuotoneProps };

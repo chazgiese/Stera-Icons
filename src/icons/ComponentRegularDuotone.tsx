@@ -17,4 +17,5 @@ ComponentRegularDuotone.displayName = 'ComponentRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ComponentRegularDuotone, ComponentRegularDuotone as ComponentRegularDuotoneIcon, ComponentRegularDuotone as SiComponentRegularDuotone };
+export default ComponentRegularDuotone;
 export type { ComponentRegularDuotoneProps };

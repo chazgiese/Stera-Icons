@@ -35,3 +35,4 @@ GitMerge.displayName = 'GitMerge';
 
 // Triple export pattern (lucide-react style)
 export { GitMerge, GitMerge as GitMergeIcon, GitMerge as SiGitMerge };
+export default GitMerge;

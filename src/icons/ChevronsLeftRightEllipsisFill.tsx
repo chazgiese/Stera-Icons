@@ -17,4 +17,5 @@ ChevronsLeftRightEllipsisFill.displayName = 'ChevronsLeftRightEllipsisFill';
 
 // Triple export pattern (lucide-react style)
 export { ChevronsLeftRightEllipsisFill, ChevronsLeftRightEllipsisFill as ChevronsLeftRightEllipsisFillIcon, ChevronsLeftRightEllipsisFill as SiChevronsLeftRightEllipsisFill };
+export default ChevronsLeftRightEllipsisFill;
 export type { ChevronsLeftRightEllipsisFillProps };

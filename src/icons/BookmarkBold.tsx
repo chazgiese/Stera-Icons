@@ -16,4 +16,5 @@ BookmarkBold.displayName = 'BookmarkBold';
 
 // Triple export pattern (lucide-react style)
 export { BookmarkBold, BookmarkBold as BookmarkBoldIcon, BookmarkBold as SiBookmarkBold };
+export default BookmarkBold;
 export type { BookmarkBoldProps };

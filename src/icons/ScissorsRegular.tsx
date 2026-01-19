@@ -18,4 +18,5 @@ ScissorsRegular.displayName = 'ScissorsRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsRegular, ScissorsRegular as ScissorsRegularIcon, ScissorsRegular as SiScissorsRegular };
+export default ScissorsRegular;
 export type { ScissorsRegularProps };

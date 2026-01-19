@@ -17,4 +17,5 @@ WristWatchBold.displayName = 'WristWatchBold';
 
 // Triple export pattern (lucide-react style)
 export { WristWatchBold, WristWatchBold as WristWatchBoldIcon, WristWatchBold as SiWristWatchBold };
+export default WristWatchBold;
 export type { WristWatchBoldProps };

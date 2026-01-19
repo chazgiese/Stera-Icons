@@ -18,4 +18,5 @@ IdHBold.displayName = 'IdHBold';
 
 // Triple export pattern (lucide-react style)
 export { IdHBold, IdHBold as IdHBoldIcon, IdHBold as SiIdHBold };
+export default IdHBold;
 export type { IdHBoldProps };

@@ -17,4 +17,5 @@ FolderBoldDuotone.displayName = 'FolderBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FolderBoldDuotone, FolderBoldDuotone as FolderBoldDuotoneIcon, FolderBoldDuotone as SiFolderBoldDuotone };
+export default FolderBoldDuotone;
 export type { FolderBoldDuotoneProps };

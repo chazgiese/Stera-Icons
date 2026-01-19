@@ -35,3 +35,4 @@ Cpu.displayName = 'Cpu';
 
 // Triple export pattern (lucide-react style)
 export { Cpu, Cpu as CpuIcon, Cpu as SiCpu };
+export default Cpu;

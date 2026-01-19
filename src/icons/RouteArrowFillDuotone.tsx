@@ -17,4 +17,5 @@ RouteArrowFillDuotone.displayName = 'RouteArrowFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RouteArrowFillDuotone, RouteArrowFillDuotone as RouteArrowFillDuotoneIcon, RouteArrowFillDuotone as SiRouteArrowFillDuotone };
+export default RouteArrowFillDuotone;
 export type { RouteArrowFillDuotoneProps };

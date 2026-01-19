@@ -16,4 +16,5 @@ PoundSterlingRegular.displayName = 'PoundSterlingRegular';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingRegular, PoundSterlingRegular as PoundSterlingRegularIcon, PoundSterlingRegular as SiPoundSterlingRegular };
+export default PoundSterlingRegular;
 export type { PoundSterlingRegularProps };

@@ -16,4 +16,5 @@ FlowBranchRegular.displayName = 'FlowBranchRegular';
 
 // Triple export pattern (lucide-react style)
 export { FlowBranchRegular, FlowBranchRegular as FlowBranchRegularIcon, FlowBranchRegular as SiFlowBranchRegular };
+export default FlowBranchRegular;
 export type { FlowBranchRegularProps };

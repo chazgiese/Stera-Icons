@@ -19,4 +19,5 @@ CurveEaseRegular.displayName = 'CurveEaseRegular';
 
 // Triple export pattern (lucide-react style)
 export { CurveEaseRegular, CurveEaseRegular as CurveEaseRegularIcon, CurveEaseRegular as SiCurveEaseRegular };
+export default CurveEaseRegular;
 export type { CurveEaseRegularProps };

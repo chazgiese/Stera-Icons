@@ -35,3 +35,4 @@ DraftingCompass.displayName = 'DraftingCompass';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompass, DraftingCompass as DraftingCompassIcon, DraftingCompass as SiDraftingCompass };
+export default DraftingCompass;

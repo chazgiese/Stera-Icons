@@ -16,4 +16,5 @@ PoundSterlingBold.displayName = 'PoundSterlingBold';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingBold, PoundSterlingBold as PoundSterlingBoldIcon, PoundSterlingBold as SiPoundSterlingBold };
+export default PoundSterlingBold;
 export type { PoundSterlingBoldProps };

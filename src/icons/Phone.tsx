@@ -35,3 +35,4 @@ Phone.displayName = 'Phone';
 
 // Triple export pattern (lucide-react style)
 export { Phone, Phone as PhoneIcon, Phone as SiPhone };
+export default Phone;

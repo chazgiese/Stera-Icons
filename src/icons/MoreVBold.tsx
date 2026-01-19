@@ -16,4 +16,5 @@ MoreVBold.displayName = 'MoreVBold';
 
 // Triple export pattern (lucide-react style)
 export { MoreVBold, MoreVBold as MoreVBoldIcon, MoreVBold as SiMoreVBold };
+export default MoreVBold;
 export type { MoreVBoldProps };

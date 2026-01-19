@@ -16,4 +16,5 @@ BoxesFill.displayName = 'BoxesFill';
 
 // Triple export pattern (lucide-react style)
 export { BoxesFill, BoxesFill as BoxesFillIcon, BoxesFill as SiBoxesFill };
+export default BoxesFill;
 export type { BoxesFillProps };

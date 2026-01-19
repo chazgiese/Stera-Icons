@@ -17,4 +17,5 @@ CloudUploadRegular.displayName = 'CloudUploadRegular';
 
 // Triple export pattern (lucide-react style)
 export { CloudUploadRegular, CloudUploadRegular as CloudUploadRegularIcon, CloudUploadRegular as SiCloudUploadRegular };
+export default CloudUploadRegular;
 export type { CloudUploadRegularProps };

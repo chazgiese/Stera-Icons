@@ -17,4 +17,5 @@ IdVFillDuotone.displayName = 'IdVFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { IdVFillDuotone, IdVFillDuotone as IdVFillDuotoneIcon, IdVFillDuotone as SiIdVFillDuotone };
+export default IdVFillDuotone;
 export type { IdVFillDuotoneProps };

@@ -16,4 +16,5 @@ ArrowLineDownRegular.displayName = 'ArrowLineDownRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineDownRegular, ArrowLineDownRegular as ArrowLineDownRegularIcon, ArrowLineDownRegular as SiArrowLineDownRegular };
+export default ArrowLineDownRegular;
 export type { ArrowLineDownRegularProps };

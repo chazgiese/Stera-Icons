@@ -18,4 +18,5 @@ ScissorsBold.displayName = 'ScissorsBold';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsBold, ScissorsBold as ScissorsBoldIcon, ScissorsBold as SiScissorsBold };
+export default ScissorsBold;
 export type { ScissorsBoldProps };

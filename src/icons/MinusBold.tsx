@@ -16,4 +16,5 @@ MinusBold.displayName = 'MinusBold';
 
 // Triple export pattern (lucide-react style)
 export { MinusBold, MinusBold as MinusBoldIcon, MinusBold as SiMinusBold };
+export default MinusBold;
 export type { MinusBoldProps };

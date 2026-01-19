@@ -16,4 +16,5 @@ NotebookFill.displayName = 'NotebookFill';
 
 // Triple export pattern (lucide-react style)
 export { NotebookFill, NotebookFill as NotebookFillIcon, NotebookFill as SiNotebookFill };
+export default NotebookFill;
 export type { NotebookFillProps };

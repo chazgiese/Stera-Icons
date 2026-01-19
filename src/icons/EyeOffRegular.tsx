@@ -16,4 +16,5 @@ EyeOffRegular.displayName = 'EyeOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { EyeOffRegular, EyeOffRegular as EyeOffRegularIcon, EyeOffRegular as SiEyeOffRegular };
+export default EyeOffRegular;
 export type { EyeOffRegularProps };

@@ -16,4 +16,5 @@ FolderBold.displayName = 'FolderBold';
 
 // Triple export pattern (lucide-react style)
 export { FolderBold, FolderBold as FolderBoldIcon, FolderBold as SiFolderBold };
+export default FolderBold;
 export type { FolderBoldProps };

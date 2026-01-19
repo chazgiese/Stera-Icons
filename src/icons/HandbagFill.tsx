@@ -16,4 +16,5 @@ HandbagFill.displayName = 'HandbagFill';
 
 // Triple export pattern (lucide-react style)
 export { HandbagFill, HandbagFill as HandbagFillIcon, HandbagFill as SiHandbagFill };
+export default HandbagFill;
 export type { HandbagFillProps };

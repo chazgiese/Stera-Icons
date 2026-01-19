@@ -17,4 +17,5 @@ TruckFillDuotone.displayName = 'TruckFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TruckFillDuotone, TruckFillDuotone as TruckFillDuotoneIcon, TruckFillDuotone as SiTruckFillDuotone };
+export default TruckFillDuotone;
 export type { TruckFillDuotoneProps };

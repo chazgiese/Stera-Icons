@@ -16,4 +16,5 @@ CropFill.displayName = 'CropFill';
 
 // Triple export pattern (lucide-react style)
 export { CropFill, CropFill as CropFillIcon, CropFill as SiCropFill };
+export default CropFill;
 export type { CropFillProps };

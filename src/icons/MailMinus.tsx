@@ -35,3 +35,4 @@ MailMinus.displayName = 'MailMinus';
 
 // Triple export pattern (lucide-react style)
 export { MailMinus, MailMinus as MailMinusIcon, MailMinus as SiMailMinus };
+export default MailMinus;

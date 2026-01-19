@@ -17,4 +17,5 @@ PedestalFillDuotone.displayName = 'PedestalFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PedestalFillDuotone, PedestalFillDuotone as PedestalFillDuotoneIcon, PedestalFillDuotone as SiPedestalFillDuotone };
+export default PedestalFillDuotone;
 export type { PedestalFillDuotoneProps };

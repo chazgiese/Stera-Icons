@@ -17,4 +17,5 @@ BackslashFillDuotone.displayName = 'BackslashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BackslashFillDuotone, BackslashFillDuotone as BackslashFillDuotoneIcon, BackslashFillDuotone as SiBackslashFillDuotone };
+export default BackslashFillDuotone;
 export type { BackslashFillDuotoneProps };

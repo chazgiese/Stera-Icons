@@ -18,4 +18,5 @@ AtomOrbitRegular.displayName = 'AtomOrbitRegular';
 
 // Triple export pattern (lucide-react style)
 export { AtomOrbitRegular, AtomOrbitRegular as AtomOrbitRegularIcon, AtomOrbitRegular as SiAtomOrbitRegular };
+export default AtomOrbitRegular;
 export type { AtomOrbitRegularProps };

@@ -18,4 +18,5 @@ FlaskFullBoldDuotone.displayName = 'FlaskFullBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlaskFullBoldDuotone, FlaskFullBoldDuotone as FlaskFullBoldDuotoneIcon, FlaskFullBoldDuotone as SiFlaskFullBoldDuotone };
+export default FlaskFullBoldDuotone;
 export type { FlaskFullBoldDuotoneProps };

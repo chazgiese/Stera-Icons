@@ -16,4 +16,5 @@ BladeSwordBold.displayName = 'BladeSwordBold';
 
 // Triple export pattern (lucide-react style)
 export { BladeSwordBold, BladeSwordBold as BladeSwordBoldIcon, BladeSwordBold as SiBladeSwordBold };
+export default BladeSwordBold;
 export type { BladeSwordBoldProps };

@@ -16,4 +16,5 @@ CloudBold.displayName = 'CloudBold';
 
 // Triple export pattern (lucide-react style)
 export { CloudBold, CloudBold as CloudBoldIcon, CloudBold as SiCloudBold };
+export default CloudBold;
 export type { CloudBoldProps };

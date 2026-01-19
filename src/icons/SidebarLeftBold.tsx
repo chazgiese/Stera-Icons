@@ -16,4 +16,5 @@ SidebarLeftBold.displayName = 'SidebarLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { SidebarLeftBold, SidebarLeftBold as SidebarLeftBoldIcon, SidebarLeftBold as SiSidebarLeftBold };
+export default SidebarLeftBold;
 export type { SidebarLeftBoldProps };

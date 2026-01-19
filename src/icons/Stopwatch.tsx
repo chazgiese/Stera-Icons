@@ -35,3 +35,4 @@ Stopwatch.displayName = 'Stopwatch';
 
 // Triple export pattern (lucide-react style)
 export { Stopwatch, Stopwatch as StopwatchIcon, Stopwatch as SiStopwatch };
+export default Stopwatch;

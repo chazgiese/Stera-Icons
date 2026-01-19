@@ -35,3 +35,4 @@ PlayCircle.displayName = 'PlayCircle';
 
 // Triple export pattern (lucide-react style)
 export { PlayCircle, PlayCircle as PlayCircleIcon, PlayCircle as SiPlayCircle };
+export default PlayCircle;

@@ -16,4 +16,5 @@ ChevronOutwardBold.displayName = 'ChevronOutwardBold';
 
 // Triple export pattern (lucide-react style)
 export { ChevronOutwardBold, ChevronOutwardBold as ChevronOutwardBoldIcon, ChevronOutwardBold as SiChevronOutwardBold };
+export default ChevronOutwardBold;
 export type { ChevronOutwardBoldProps };

@@ -17,4 +17,5 @@ ForwardRegularDuotone.displayName = 'ForwardRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ForwardRegularDuotone, ForwardRegularDuotone as ForwardRegularDuotoneIcon, ForwardRegularDuotone as SiForwardRegularDuotone };
+export default ForwardRegularDuotone;
 export type { ForwardRegularDuotoneProps };

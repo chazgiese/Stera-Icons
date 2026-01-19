@@ -16,4 +16,5 @@ SquarePlaceholderFill.displayName = 'SquarePlaceholderFill';
 
 // Triple export pattern (lucide-react style)
 export { SquarePlaceholderFill, SquarePlaceholderFill as SquarePlaceholderFillIcon, SquarePlaceholderFill as SiSquarePlaceholderFill };
+export default SquarePlaceholderFill;
 export type { SquarePlaceholderFillProps };

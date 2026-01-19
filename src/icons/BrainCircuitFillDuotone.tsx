@@ -17,4 +17,5 @@ BrainCircuitFillDuotone.displayName = 'BrainCircuitFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrainCircuitFillDuotone, BrainCircuitFillDuotone as BrainCircuitFillDuotoneIcon, BrainCircuitFillDuotone as SiBrainCircuitFillDuotone };
+export default BrainCircuitFillDuotone;
 export type { BrainCircuitFillDuotoneProps };

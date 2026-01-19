@@ -16,4 +16,5 @@ ChartBarRowDescRegular.displayName = 'ChartBarRowDescRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRowDescRegular, ChartBarRowDescRegular as ChartBarRowDescRegularIcon, ChartBarRowDescRegular as SiChartBarRowDescRegular };
+export default ChartBarRowDescRegular;
 export type { ChartBarRowDescRegularProps };

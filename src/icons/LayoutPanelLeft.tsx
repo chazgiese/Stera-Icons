@@ -35,3 +35,4 @@ LayoutPanelLeft.displayName = 'LayoutPanelLeft';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelLeft, LayoutPanelLeft as LayoutPanelLeftIcon, LayoutPanelLeft as SiLayoutPanelLeft };
+export default LayoutPanelLeft;

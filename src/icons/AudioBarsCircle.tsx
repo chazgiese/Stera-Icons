@@ -35,3 +35,4 @@ AudioBarsCircle.displayName = 'AudioBarsCircle';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsCircle, AudioBarsCircle as AudioBarsCircleIcon, AudioBarsCircle as SiAudioBarsCircle };
+export default AudioBarsCircle;

@@ -16,4 +16,5 @@ SignalZeroBold.displayName = 'SignalZeroBold';
 
 // Triple export pattern (lucide-react style)
 export { SignalZeroBold, SignalZeroBold as SignalZeroBoldIcon, SignalZeroBold as SiSignalZeroBold };
+export default SignalZeroBold;
 export type { SignalZeroBoldProps };

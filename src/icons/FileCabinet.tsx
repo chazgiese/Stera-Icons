@@ -35,3 +35,4 @@ FileCabinet.displayName = 'FileCabinet';
 
 // Triple export pattern (lucide-react style)
 export { FileCabinet, FileCabinet as FileCabinetIcon, FileCabinet as SiFileCabinet };
+export default FileCabinet;

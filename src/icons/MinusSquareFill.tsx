@@ -16,4 +16,5 @@ MinusSquareFill.displayName = 'MinusSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { MinusSquareFill, MinusSquareFill as MinusSquareFillIcon, MinusSquareFill as SiMinusSquareFill };
+export default MinusSquareFill;
 export type { MinusSquareFillProps };

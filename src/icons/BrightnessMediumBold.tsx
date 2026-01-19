@@ -18,4 +18,5 @@ BrightnessMediumBold.displayName = 'BrightnessMediumBold';
 
 // Triple export pattern (lucide-react style)
 export { BrightnessMediumBold, BrightnessMediumBold as BrightnessMediumBoldIcon, BrightnessMediumBold as SiBrightnessMediumBold };
+export default BrightnessMediumBold;
 export type { BrightnessMediumBoldProps };

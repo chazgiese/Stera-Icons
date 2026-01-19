@@ -16,4 +16,5 @@ MusicBold.displayName = 'MusicBold';
 
 // Triple export pattern (lucide-react style)
 export { MusicBold, MusicBold as MusicBoldIcon, MusicBold as SiMusicBold };
+export default MusicBold;
 export type { MusicBoldProps };

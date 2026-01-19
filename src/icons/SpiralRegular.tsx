@@ -16,4 +16,5 @@ SpiralRegular.displayName = 'SpiralRegular';
 
 // Triple export pattern (lucide-react style)
 export { SpiralRegular, SpiralRegular as SpiralRegularIcon, SpiralRegular as SiSpiralRegular };
+export default SpiralRegular;
 export type { SpiralRegularProps };

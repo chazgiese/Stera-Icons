@@ -17,4 +17,5 @@ ScrollTextRegular.displayName = 'ScrollTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { ScrollTextRegular, ScrollTextRegular as ScrollTextRegularIcon, ScrollTextRegular as SiScrollTextRegular };
+export default ScrollTextRegular;
 export type { ScrollTextRegularProps };

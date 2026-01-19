@@ -35,3 +35,4 @@ MapPinned.displayName = 'MapPinned';
 
 // Triple export pattern (lucide-react style)
 export { MapPinned, MapPinned as MapPinnedIcon, MapPinned as SiMapPinned };
+export default MapPinned;

@@ -17,4 +17,5 @@ Clock2Bold.displayName = 'Clock2Bold';
 
 // Triple export pattern (lucide-react style)
 export { Clock2Bold, Clock2Bold as Clock2BoldIcon, Clock2Bold as SiClock2Bold };
+export default Clock2Bold;
 export type { Clock2BoldProps };

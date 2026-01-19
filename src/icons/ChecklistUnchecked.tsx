@@ -35,3 +35,4 @@ ChecklistUnchecked.displayName = 'ChecklistUnchecked';
 
 // Triple export pattern (lucide-react style)
 export { ChecklistUnchecked, ChecklistUnchecked as ChecklistUncheckedIcon, ChecklistUnchecked as SiChecklistUnchecked };
+export default ChecklistUnchecked;

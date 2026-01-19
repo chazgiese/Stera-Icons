@@ -17,4 +17,5 @@ MailPlusRegular.displayName = 'MailPlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { MailPlusRegular, MailPlusRegular as MailPlusRegularIcon, MailPlusRegular as SiMailPlusRegular };
+export default MailPlusRegular;
 export type { MailPlusRegularProps };

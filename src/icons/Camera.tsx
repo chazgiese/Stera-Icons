@@ -35,3 +35,4 @@ Camera.displayName = 'Camera';
 
 // Triple export pattern (lucide-react style)
 export { Camera, Camera as CameraIcon, Camera as SiCamera };
+export default Camera;

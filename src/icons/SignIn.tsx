@@ -35,3 +35,4 @@ SignIn.displayName = 'SignIn';
 
 // Triple export pattern (lucide-react style)
 export { SignIn, SignIn as SignInIcon, SignIn as SiSignIn };
+export default SignIn;

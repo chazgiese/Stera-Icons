@@ -35,3 +35,4 @@ CloudX.displayName = 'CloudX';
 
 // Triple export pattern (lucide-react style)
 export { CloudX, CloudX as CloudXIcon, CloudX as SiCloudX };
+export default CloudX;

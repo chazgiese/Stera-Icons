@@ -17,4 +17,5 @@ ListContractRegularDuotone.displayName = 'ListContractRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListContractRegularDuotone, ListContractRegularDuotone as ListContractRegularDuotoneIcon, ListContractRegularDuotone as SiListContractRegularDuotone };
+export default ListContractRegularDuotone;
 export type { ListContractRegularDuotoneProps };

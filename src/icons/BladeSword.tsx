@@ -35,3 +35,4 @@ BladeSword.displayName = 'BladeSword';
 
 // Triple export pattern (lucide-react style)
 export { BladeSword, BladeSword as BladeSwordIcon, BladeSword as SiBladeSword };
+export default BladeSword;

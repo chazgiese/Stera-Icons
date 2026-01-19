@@ -19,4 +19,5 @@ BirdhouseBoldDuotone.displayName = 'BirdhouseBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BirdhouseBoldDuotone, BirdhouseBoldDuotone as BirdhouseBoldDuotoneIcon, BirdhouseBoldDuotone as SiBirdhouseBoldDuotone };
+export default BirdhouseBoldDuotone;
 export type { BirdhouseBoldDuotoneProps };

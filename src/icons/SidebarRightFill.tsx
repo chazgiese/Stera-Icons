@@ -16,4 +16,5 @@ SidebarRightFill.displayName = 'SidebarRightFill';
 
 // Triple export pattern (lucide-react style)
 export { SidebarRightFill, SidebarRightFill as SidebarRightFillIcon, SidebarRightFill as SiSidebarRightFill };
+export default SidebarRightFill;
 export type { SidebarRightFillProps };

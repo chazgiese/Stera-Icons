@@ -16,4 +16,5 @@ PlayCircleFill.displayName = 'PlayCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { PlayCircleFill, PlayCircleFill as PlayCircleFillIcon, PlayCircleFill as SiPlayCircleFill };
+export default PlayCircleFill;
 export type { PlayCircleFillProps };

@@ -35,3 +35,4 @@ ScanPlus.displayName = 'ScanPlus';
 
 // Triple export pattern (lucide-react style)
 export { ScanPlus, ScanPlus as ScanPlusIcon, ScanPlus as SiScanPlus };
+export default ScanPlus;

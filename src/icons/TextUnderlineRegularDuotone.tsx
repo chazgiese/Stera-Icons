@@ -17,4 +17,5 @@ TextUnderlineRegularDuotone.displayName = 'TextUnderlineRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextUnderlineRegularDuotone, TextUnderlineRegularDuotone as TextUnderlineRegularDuotoneIcon, TextUnderlineRegularDuotone as SiTextUnderlineRegularDuotone };
+export default TextUnderlineRegularDuotone;
 export type { TextUnderlineRegularDuotoneProps };

@@ -17,4 +17,5 @@ ChatBoxCheckBold.displayName = 'ChatBoxCheckBold';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxCheckBold, ChatBoxCheckBold as ChatBoxCheckBoldIcon, ChatBoxCheckBold as SiChatBoxCheckBold };
+export default ChatBoxCheckBold;
 export type { ChatBoxCheckBoldProps };

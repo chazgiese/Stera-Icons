@@ -18,4 +18,5 @@ AgentWorkflowRegularDuotone.displayName = 'AgentWorkflowRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AgentWorkflowRegularDuotone, AgentWorkflowRegularDuotone as AgentWorkflowRegularDuotoneIcon, AgentWorkflowRegularDuotone as SiAgentWorkflowRegularDuotone };
+export default AgentWorkflowRegularDuotone;
 export type { AgentWorkflowRegularDuotoneProps };

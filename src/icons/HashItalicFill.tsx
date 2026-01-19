@@ -16,4 +16,5 @@ HashItalicFill.displayName = 'HashItalicFill';
 
 // Triple export pattern (lucide-react style)
 export { HashItalicFill, HashItalicFill as HashItalicFillIcon, HashItalicFill as SiHashItalicFill };
+export default HashItalicFill;
 export type { HashItalicFillProps };

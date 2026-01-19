@@ -17,4 +17,5 @@ RocketFill.displayName = 'RocketFill';
 
 // Triple export pattern (lucide-react style)
 export { RocketFill, RocketFill as RocketFillIcon, RocketFill as SiRocketFill };
+export default RocketFill;
 export type { RocketFillProps };

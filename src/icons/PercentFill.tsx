@@ -16,4 +16,5 @@ PercentFill.displayName = 'PercentFill';
 
 // Triple export pattern (lucide-react style)
 export { PercentFill, PercentFill as PercentFillIcon, PercentFill as SiPercentFill };
+export default PercentFill;
 export type { PercentFillProps };

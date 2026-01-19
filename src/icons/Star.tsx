@@ -35,3 +35,4 @@ Star.displayName = 'Star';
 
 // Triple export pattern (lucide-react style)
 export { Star, Star as StarIcon, Star as SiStar };
+export default Star;

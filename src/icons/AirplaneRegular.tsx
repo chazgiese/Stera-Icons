@@ -16,4 +16,5 @@ AirplaneRegular.displayName = 'AirplaneRegular';
 
 // Triple export pattern (lucide-react style)
 export { AirplaneRegular, AirplaneRegular as AirplaneRegularIcon, AirplaneRegular as SiAirplaneRegular };
+export default AirplaneRegular;
 export type { AirplaneRegularProps };

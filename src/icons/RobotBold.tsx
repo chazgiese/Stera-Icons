@@ -17,4 +17,5 @@ RobotBold.displayName = 'RobotBold';
 
 // Triple export pattern (lucide-react style)
 export { RobotBold, RobotBold as RobotBoldIcon, RobotBold as SiRobotBold };
+export default RobotBold;
 export type { RobotBoldProps };

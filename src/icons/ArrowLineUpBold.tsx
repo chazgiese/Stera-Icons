@@ -16,4 +16,5 @@ ArrowLineUpBold.displayName = 'ArrowLineUpBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowLineUpBold, ArrowLineUpBold as ArrowLineUpBoldIcon, ArrowLineUpBold as SiArrowLineUpBold };
+export default ArrowLineUpBold;
 export type { ArrowLineUpBoldProps };

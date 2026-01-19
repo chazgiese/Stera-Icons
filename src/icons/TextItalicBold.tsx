@@ -16,4 +16,5 @@ TextItalicBold.displayName = 'TextItalicBold';
 
 // Triple export pattern (lucide-react style)
 export { TextItalicBold, TextItalicBold as TextItalicBoldIcon, TextItalicBold as SiTextItalicBold };
+export default TextItalicBold;
 export type { TextItalicBoldProps };

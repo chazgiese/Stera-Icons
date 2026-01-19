@@ -16,4 +16,5 @@ ImageLandscapeFill.displayName = 'ImageLandscapeFill';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscapeFill, ImageLandscapeFill as ImageLandscapeFillIcon, ImageLandscapeFill as SiImageLandscapeFill };
+export default ImageLandscapeFill;
 export type { ImageLandscapeFillProps };

@@ -35,3 +35,4 @@ Archive.displayName = 'Archive';
 
 // Triple export pattern (lucide-react style)
 export { Archive, Archive as ArchiveIcon, Archive as SiArchive };
+export default Archive;

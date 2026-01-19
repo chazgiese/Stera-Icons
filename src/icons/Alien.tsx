@@ -35,3 +35,4 @@ Alien.displayName = 'Alien';
 
 // Triple export pattern (lucide-react style)
 export { Alien, Alien as AlienIcon, Alien as SiAlien };
+export default Alien;

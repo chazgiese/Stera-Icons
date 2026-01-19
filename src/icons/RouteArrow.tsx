@@ -35,3 +35,4 @@ RouteArrow.displayName = 'RouteArrow';
 
 // Triple export pattern (lucide-react style)
 export { RouteArrow, RouteArrow as RouteArrowIcon, RouteArrow as SiRouteArrow };
+export default RouteArrow;

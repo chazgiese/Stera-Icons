@@ -16,4 +16,5 @@ BookOpenFoldFill.displayName = 'BookOpenFoldFill';
 
 // Triple export pattern (lucide-react style)
 export { BookOpenFoldFill, BookOpenFoldFill as BookOpenFoldFillIcon, BookOpenFoldFill as SiBookOpenFoldFill };
+export default BookOpenFoldFill;
 export type { BookOpenFoldFillProps };

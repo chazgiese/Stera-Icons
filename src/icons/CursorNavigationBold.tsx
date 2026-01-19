@@ -16,4 +16,5 @@ CursorNavigationBold.displayName = 'CursorNavigationBold';
 
 // Triple export pattern (lucide-react style)
 export { CursorNavigationBold, CursorNavigationBold as CursorNavigationBoldIcon, CursorNavigationBold as SiCursorNavigationBold };
+export default CursorNavigationBold;
 export type { CursorNavigationBoldProps };

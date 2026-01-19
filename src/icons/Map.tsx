@@ -35,3 +35,4 @@ Map.displayName = 'Map';
 
 // Triple export pattern (lucide-react style)
 export { Map, Map as MapIcon, Map as SiMap };
+export default Map;

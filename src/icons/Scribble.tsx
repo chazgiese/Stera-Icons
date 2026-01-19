@@ -35,3 +35,4 @@ Scribble.displayName = 'Scribble';
 
 // Triple export pattern (lucide-react style)
 export { Scribble, Scribble as ScribbleIcon, Scribble as SiScribble };
+export default Scribble;

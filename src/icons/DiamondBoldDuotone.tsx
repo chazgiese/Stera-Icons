@@ -17,4 +17,5 @@ DiamondBoldDuotone.displayName = 'DiamondBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DiamondBoldDuotone, DiamondBoldDuotone as DiamondBoldDuotoneIcon, DiamondBoldDuotone as SiDiamondBoldDuotone };
+export default DiamondBoldDuotone;
 export type { DiamondBoldDuotoneProps };

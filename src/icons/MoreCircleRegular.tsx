@@ -17,4 +17,5 @@ MoreCircleRegular.displayName = 'MoreCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { MoreCircleRegular, MoreCircleRegular as MoreCircleRegularIcon, MoreCircleRegular as SiMoreCircleRegular };
+export default MoreCircleRegular;
 export type { MoreCircleRegularProps };

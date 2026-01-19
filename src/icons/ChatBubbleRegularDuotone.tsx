@@ -17,4 +17,5 @@ ChatBubbleRegularDuotone.displayName = 'ChatBubbleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleRegularDuotone, ChatBubbleRegularDuotone as ChatBubbleRegularDuotoneIcon, ChatBubbleRegularDuotone as SiChatBubbleRegularDuotone };
+export default ChatBubbleRegularDuotone;
 export type { ChatBubbleRegularDuotoneProps };

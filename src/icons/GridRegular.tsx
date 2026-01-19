@@ -16,4 +16,5 @@ GridRegular.displayName = 'GridRegular';
 
 // Triple export pattern (lucide-react style)
 export { GridRegular, GridRegular as GridRegularIcon, GridRegular as SiGridRegular };
+export default GridRegular;
 export type { GridRegularProps };

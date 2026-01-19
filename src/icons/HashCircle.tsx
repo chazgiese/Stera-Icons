@@ -35,3 +35,4 @@ HashCircle.displayName = 'HashCircle';
 
 // Triple export pattern (lucide-react style)
 export { HashCircle, HashCircle as HashCircleIcon, HashCircle as SiHashCircle };
+export default HashCircle;

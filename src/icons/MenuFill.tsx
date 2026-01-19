@@ -16,4 +16,5 @@ MenuFill.displayName = 'MenuFill';
 
 // Triple export pattern (lucide-react style)
 export { MenuFill, MenuFill as MenuFillIcon, MenuFill as SiMenuFill };
+export default MenuFill;
 export type { MenuFillProps };

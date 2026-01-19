@@ -17,4 +17,5 @@ BannerRegularDuotone.displayName = 'BannerRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BannerRegularDuotone, BannerRegularDuotone as BannerRegularDuotoneIcon, BannerRegularDuotone as SiBannerRegularDuotone };
+export default BannerRegularDuotone;
 export type { BannerRegularDuotoneProps };

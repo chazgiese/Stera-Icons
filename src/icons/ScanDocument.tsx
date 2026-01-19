@@ -35,3 +35,4 @@ ScanDocument.displayName = 'ScanDocument';
 
 // Triple export pattern (lucide-react style)
 export { ScanDocument, ScanDocument as ScanDocumentIcon, ScanDocument as SiScanDocument };
+export default ScanDocument;

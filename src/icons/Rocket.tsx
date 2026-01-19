@@ -35,3 +35,4 @@ Rocket.displayName = 'Rocket';
 
 // Triple export pattern (lucide-react style)
 export { Rocket, Rocket as RocketIcon, Rocket as SiRocket };
+export default Rocket;

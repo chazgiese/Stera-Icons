@@ -35,3 +35,4 @@ CircleChecker.displayName = 'CircleChecker';
 
 // Triple export pattern (lucide-react style)
 export { CircleChecker, CircleChecker as CircleCheckerIcon, CircleChecker as SiCircleChecker };
+export default CircleChecker;

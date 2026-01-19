@@ -35,3 +35,4 @@ LayoutMasonry.displayName = 'LayoutMasonry';
 
 // Triple export pattern (lucide-react style)
 export { LayoutMasonry, LayoutMasonry as LayoutMasonryIcon, LayoutMasonry as SiLayoutMasonry };
+export default LayoutMasonry;

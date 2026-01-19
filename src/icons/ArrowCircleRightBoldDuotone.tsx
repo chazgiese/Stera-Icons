@@ -17,4 +17,5 @@ ArrowCircleRightBoldDuotone.displayName = 'ArrowCircleRightBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCircleRightBoldDuotone, ArrowCircleRightBoldDuotone as ArrowCircleRightBoldDuotoneIcon, ArrowCircleRightBoldDuotone as SiArrowCircleRightBoldDuotone };
+export default ArrowCircleRightBoldDuotone;
 export type { ArrowCircleRightBoldDuotoneProps };

@@ -17,4 +17,5 @@ SettingsRegular.displayName = 'SettingsRegular';
 
 // Triple export pattern (lucide-react style)
 export { SettingsRegular, SettingsRegular as SettingsRegularIcon, SettingsRegular as SiSettingsRegular };
+export default SettingsRegular;
 export type { SettingsRegularProps };

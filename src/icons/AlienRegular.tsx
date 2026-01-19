@@ -17,4 +17,5 @@ AlienRegular.displayName = 'AlienRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlienRegular, AlienRegular as AlienRegularIcon, AlienRegular as SiAlienRegular };
+export default AlienRegular;
 export type { AlienRegularProps };

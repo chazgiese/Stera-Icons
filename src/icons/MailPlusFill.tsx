@@ -17,4 +17,5 @@ MailPlusFill.displayName = 'MailPlusFill';
 
 // Triple export pattern (lucide-react style)
 export { MailPlusFill, MailPlusFill as MailPlusFillIcon, MailPlusFill as SiMailPlusFill };
+export default MailPlusFill;
 export type { MailPlusFillProps };

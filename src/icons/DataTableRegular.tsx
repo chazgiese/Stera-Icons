@@ -16,4 +16,5 @@ DataTableRegular.displayName = 'DataTableRegular';
 
 // Triple export pattern (lucide-react style)
 export { DataTableRegular, DataTableRegular as DataTableRegularIcon, DataTableRegular as SiDataTableRegular };
+export default DataTableRegular;
 export type { DataTableRegularProps };

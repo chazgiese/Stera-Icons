@@ -17,4 +17,5 @@ CliSquareRegularDuotone.displayName = 'CliSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CliSquareRegularDuotone, CliSquareRegularDuotone as CliSquareRegularDuotoneIcon, CliSquareRegularDuotone as SiCliSquareRegularDuotone };
+export default CliSquareRegularDuotone;
 export type { CliSquareRegularDuotoneProps };

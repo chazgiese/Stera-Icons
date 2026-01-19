@@ -17,4 +17,5 @@ ArrowURightTopBoldDuotone.displayName = 'ArrowURightTopBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ArrowURightTopBoldDuotone, ArrowURightTopBoldDuotone as ArrowURightTopBoldDuotoneIcon, ArrowURightTopBoldDuotone as SiArrowURightTopBoldDuotone };
+export default ArrowURightTopBoldDuotone;
 export type { ArrowURightTopBoldDuotoneProps };

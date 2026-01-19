@@ -16,4 +16,5 @@ ChartBarFill.displayName = 'ChartBarFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarFill, ChartBarFill as ChartBarFillIcon, ChartBarFill as SiChartBarFill };
+export default ChartBarFill;
 export type { ChartBarFillProps };

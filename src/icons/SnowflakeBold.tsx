@@ -16,4 +16,5 @@ SnowflakeBold.displayName = 'SnowflakeBold';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeBold, SnowflakeBold as SnowflakeBoldIcon, SnowflakeBold as SiSnowflakeBold };
+export default SnowflakeBold;
 export type { SnowflakeBoldProps };

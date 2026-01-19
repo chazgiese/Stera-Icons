@@ -17,4 +17,5 @@ EmoteSadBoldDuotone.displayName = 'EmoteSadBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSadBoldDuotone, EmoteSadBoldDuotone as EmoteSadBoldDuotoneIcon, EmoteSadBoldDuotone as SiEmoteSadBoldDuotone };
+export default EmoteSadBoldDuotone;
 export type { EmoteSadBoldDuotoneProps };

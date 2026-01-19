@@ -17,4 +17,5 @@ CurrencyCircleDollarRegular.displayName = 'CurrencyCircleDollarRegular';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyCircleDollarRegular, CurrencyCircleDollarRegular as CurrencyCircleDollarRegularIcon, CurrencyCircleDollarRegular as SiCurrencyCircleDollarRegular };
+export default CurrencyCircleDollarRegular;
 export type { CurrencyCircleDollarRegularProps };

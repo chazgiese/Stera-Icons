@@ -18,4 +18,5 @@ TvPlayAltBoldDuotone.displayName = 'TvPlayAltBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TvPlayAltBoldDuotone, TvPlayAltBoldDuotone as TvPlayAltBoldDuotoneIcon, TvPlayAltBoldDuotone as SiTvPlayAltBoldDuotone };
+export default TvPlayAltBoldDuotone;
 export type { TvPlayAltBoldDuotoneProps };

@@ -35,3 +35,4 @@ DatabasePlus.displayName = 'DatabasePlus';
 
 // Triple export pattern (lucide-react style)
 export { DatabasePlus, DatabasePlus as DatabasePlusIcon, DatabasePlus as SiDatabasePlus };
+export default DatabasePlus;

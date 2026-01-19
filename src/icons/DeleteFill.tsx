@@ -16,4 +16,5 @@ DeleteFill.displayName = 'DeleteFill';
 
 // Triple export pattern (lucide-react style)
 export { DeleteFill, DeleteFill as DeleteFillIcon, DeleteFill as SiDeleteFill };
+export default DeleteFill;
 export type { DeleteFillProps };

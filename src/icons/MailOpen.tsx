@@ -35,3 +35,4 @@ MailOpen.displayName = 'MailOpen';
 
 // Triple export pattern (lucide-react style)
 export { MailOpen, MailOpen as MailOpenIcon, MailOpen as SiMailOpen };
+export default MailOpen;

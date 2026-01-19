@@ -35,3 +35,4 @@ SoccerField.displayName = 'SoccerField';
 
 // Triple export pattern (lucide-react style)
 export { SoccerField, SoccerField as SoccerFieldIcon, SoccerField as SiSoccerField };
+export default SoccerField;

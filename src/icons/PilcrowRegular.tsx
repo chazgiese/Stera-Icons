@@ -16,4 +16,5 @@ PilcrowRegular.displayName = 'PilcrowRegular';
 
 // Triple export pattern (lucide-react style)
 export { PilcrowRegular, PilcrowRegular as PilcrowRegularIcon, PilcrowRegular as SiPilcrowRegular };
+export default PilcrowRegular;
 export type { PilcrowRegularProps };

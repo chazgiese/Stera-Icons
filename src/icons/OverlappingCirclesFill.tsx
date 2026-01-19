@@ -16,4 +16,5 @@ OverlappingCirclesFill.displayName = 'OverlappingCirclesFill';
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCirclesFill, OverlappingCirclesFill as OverlappingCirclesFillIcon, OverlappingCirclesFill as SiOverlappingCirclesFill };
+export default OverlappingCirclesFill;
 export type { OverlappingCirclesFillProps };

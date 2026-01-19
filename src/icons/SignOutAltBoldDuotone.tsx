@@ -17,4 +17,5 @@ SignOutAltBoldDuotone.displayName = 'SignOutAltBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignOutAltBoldDuotone, SignOutAltBoldDuotone as SignOutAltBoldDuotoneIcon, SignOutAltBoldDuotone as SiSignOutAltBoldDuotone };
+export default SignOutAltBoldDuotone;
 export type { SignOutAltBoldDuotoneProps };

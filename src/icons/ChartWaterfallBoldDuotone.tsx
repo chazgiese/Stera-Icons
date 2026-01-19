@@ -17,4 +17,5 @@ ChartWaterfallBoldDuotone.displayName = 'ChartWaterfallBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartWaterfallBoldDuotone, ChartWaterfallBoldDuotone as ChartWaterfallBoldDuotoneIcon, ChartWaterfallBoldDuotone as SiChartWaterfallBoldDuotone };
+export default ChartWaterfallBoldDuotone;
 export type { ChartWaterfallBoldDuotoneProps };

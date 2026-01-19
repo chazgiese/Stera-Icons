@@ -35,3 +35,4 @@ Handbag.displayName = 'Handbag';
 
 // Triple export pattern (lucide-react style)
 export { Handbag, Handbag as HandbagIcon, Handbag as SiHandbag };
+export default Handbag;

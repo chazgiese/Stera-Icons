@@ -35,3 +35,4 @@ ChatMessages.displayName = 'ChatMessages';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessages, ChatMessages as ChatMessagesIcon, ChatMessages as SiChatMessages };
+export default ChatMessages;

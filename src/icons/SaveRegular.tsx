@@ -17,4 +17,5 @@ SaveRegular.displayName = 'SaveRegular';
 
 // Triple export pattern (lucide-react style)
 export { SaveRegular, SaveRegular as SaveRegularIcon, SaveRegular as SiSaveRegular };
+export default SaveRegular;
 export type { SaveRegularProps };

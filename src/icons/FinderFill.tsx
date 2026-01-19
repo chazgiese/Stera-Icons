@@ -17,4 +17,5 @@ FinderFill.displayName = 'FinderFill';
 
 // Triple export pattern (lucide-react style)
 export { FinderFill, FinderFill as FinderFillIcon, FinderFill as SiFinderFill };
+export default FinderFill;
 export type { FinderFillProps };

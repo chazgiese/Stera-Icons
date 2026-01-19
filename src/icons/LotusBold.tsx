@@ -16,4 +16,5 @@ LotusBold.displayName = 'LotusBold';
 
 // Triple export pattern (lucide-react style)
 export { LotusBold, LotusBold as LotusBoldIcon, LotusBold as SiLotusBold };
+export default LotusBold;
 export type { LotusBoldProps };

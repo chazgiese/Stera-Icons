@@ -16,4 +16,5 @@ TelescopeBold.displayName = 'TelescopeBold';
 
 // Triple export pattern (lucide-react style)
 export { TelescopeBold, TelescopeBold as TelescopeBoldIcon, TelescopeBold as SiTelescopeBold };
+export default TelescopeBold;
 export type { TelescopeBoldProps };

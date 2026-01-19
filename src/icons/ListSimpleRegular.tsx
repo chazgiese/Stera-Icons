@@ -16,4 +16,5 @@ ListSimpleRegular.displayName = 'ListSimpleRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListSimpleRegular, ListSimpleRegular as ListSimpleRegularIcon, ListSimpleRegular as SiListSimpleRegular };
+export default ListSimpleRegular;
 export type { ListSimpleRegularProps };

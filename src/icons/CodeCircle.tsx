@@ -35,3 +35,4 @@ CodeCircle.displayName = 'CodeCircle';
 
 // Triple export pattern (lucide-react style)
 export { CodeCircle, CodeCircle as CodeCircleIcon, CodeCircle as SiCodeCircle };
+export default CodeCircle;

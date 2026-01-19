@@ -35,3 +35,4 @@ TextSparkle.displayName = 'TextSparkle';
 
 // Triple export pattern (lucide-react style)
 export { TextSparkle, TextSparkle as TextSparkleIcon, TextSparkle as SiTextSparkle };
+export default TextSparkle;

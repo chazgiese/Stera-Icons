@@ -17,4 +17,5 @@ SignOutBold.displayName = 'SignOutBold';
 
 // Triple export pattern (lucide-react style)
 export { SignOutBold, SignOutBold as SignOutBoldIcon, SignOutBold as SiSignOutBold };
+export default SignOutBold;
 export type { SignOutBoldProps };

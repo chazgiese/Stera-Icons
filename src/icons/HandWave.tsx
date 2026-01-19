@@ -35,3 +35,4 @@ HandWave.displayName = 'HandWave';
 
 // Triple export pattern (lucide-react style)
 export { HandWave, HandWave as HandWaveIcon, HandWave as SiHandWave };
+export default HandWave;

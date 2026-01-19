@@ -16,4 +16,5 @@ ListExpandRegular.displayName = 'ListExpandRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListExpandRegular, ListExpandRegular as ListExpandRegularIcon, ListExpandRegular as SiListExpandRegular };
+export default ListExpandRegular;
 export type { ListExpandRegularProps };

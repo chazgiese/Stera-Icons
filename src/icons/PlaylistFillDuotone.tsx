@@ -17,4 +17,5 @@ PlaylistFillDuotone.displayName = 'PlaylistFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlaylistFillDuotone, PlaylistFillDuotone as PlaylistFillDuotoneIcon, PlaylistFillDuotone as SiPlaylistFillDuotone };
+export default PlaylistFillDuotone;
 export type { PlaylistFillDuotoneProps };

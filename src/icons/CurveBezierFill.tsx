@@ -16,4 +16,5 @@ CurveBezierFill.displayName = 'CurveBezierFill';
 
 // Triple export pattern (lucide-react style)
 export { CurveBezierFill, CurveBezierFill as CurveBezierFillIcon, CurveBezierFill as SiCurveBezierFill };
+export default CurveBezierFill;
 export type { CurveBezierFillProps };

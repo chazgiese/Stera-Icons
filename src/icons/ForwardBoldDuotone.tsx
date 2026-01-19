@@ -17,4 +17,5 @@ ForwardBoldDuotone.displayName = 'ForwardBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ForwardBoldDuotone, ForwardBoldDuotone as ForwardBoldDuotoneIcon, ForwardBoldDuotone as SiForwardBoldDuotone };
+export default ForwardBoldDuotone;
 export type { ForwardBoldDuotoneProps };

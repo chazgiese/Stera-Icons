@@ -35,3 +35,4 @@ ScanBarcode.displayName = 'ScanBarcode';
 
 // Triple export pattern (lucide-react style)
 export { ScanBarcode, ScanBarcode as ScanBarcodeIcon, ScanBarcode as SiScanBarcode };
+export default ScanBarcode;

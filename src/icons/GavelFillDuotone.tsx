@@ -17,4 +17,5 @@ GavelFillDuotone.displayName = 'GavelFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GavelFillDuotone, GavelFillDuotone as GavelFillDuotoneIcon, GavelFillDuotone as SiGavelFillDuotone };
+export default GavelFillDuotone;
 export type { GavelFillDuotoneProps };

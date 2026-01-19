@@ -18,4 +18,5 @@ AgentCursorRegularDuotone.displayName = 'AgentCursorRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AgentCursorRegularDuotone, AgentCursorRegularDuotone as AgentCursorRegularDuotoneIcon, AgentCursorRegularDuotone as SiAgentCursorRegularDuotone };
+export default AgentCursorRegularDuotone;
 export type { AgentCursorRegularDuotoneProps };

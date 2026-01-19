@@ -16,4 +16,5 @@ RectangleFill.displayName = 'RectangleFill';
 
 // Triple export pattern (lucide-react style)
 export { RectangleFill, RectangleFill as RectangleFillIcon, RectangleFill as SiRectangleFill };
+export default RectangleFill;
 export type { RectangleFillProps };

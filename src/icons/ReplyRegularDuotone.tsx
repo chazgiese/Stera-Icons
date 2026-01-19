@@ -17,4 +17,5 @@ ReplyRegularDuotone.displayName = 'ReplyRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ReplyRegularDuotone, ReplyRegularDuotone as ReplyRegularDuotoneIcon, ReplyRegularDuotone as SiReplyRegularDuotone };
+export default ReplyRegularDuotone;
 export type { ReplyRegularDuotoneProps };

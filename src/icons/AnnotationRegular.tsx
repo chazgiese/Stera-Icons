@@ -18,4 +18,5 @@ AnnotationRegular.displayName = 'AnnotationRegular';
 
 // Triple export pattern (lucide-react style)
 export { AnnotationRegular, AnnotationRegular as AnnotationRegularIcon, AnnotationRegular as SiAnnotationRegular };
+export default AnnotationRegular;
 export type { AnnotationRegularProps };

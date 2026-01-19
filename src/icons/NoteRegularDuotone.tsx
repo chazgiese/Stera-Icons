@@ -17,4 +17,5 @@ NoteRegularDuotone.displayName = 'NoteRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { NoteRegularDuotone, NoteRegularDuotone as NoteRegularDuotoneIcon, NoteRegularDuotone as SiNoteRegularDuotone };
+export default NoteRegularDuotone;
 export type { NoteRegularDuotoneProps };

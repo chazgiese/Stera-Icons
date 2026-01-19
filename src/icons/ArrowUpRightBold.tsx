@@ -16,4 +16,5 @@ ArrowUpRightBold.displayName = 'ArrowUpRightBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowUpRightBold, ArrowUpRightBold as ArrowUpRightBoldIcon, ArrowUpRightBold as SiArrowUpRightBold };
+export default ArrowUpRightBold;
 export type { ArrowUpRightBoldProps };

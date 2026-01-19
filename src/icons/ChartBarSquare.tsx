@@ -35,3 +35,4 @@ ChartBarSquare.displayName = 'ChartBarSquare';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarSquare, ChartBarSquare as ChartBarSquareIcon, ChartBarSquare as SiChartBarSquare };
+export default ChartBarSquare;

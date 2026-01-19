@@ -16,4 +16,5 @@ HandRightFill.displayName = 'HandRightFill';
 
 // Triple export pattern (lucide-react style)
 export { HandRightFill, HandRightFill as HandRightFillIcon, HandRightFill as SiHandRightFill };
+export default HandRightFill;
 export type { HandRightFillProps };

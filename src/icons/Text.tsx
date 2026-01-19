@@ -35,3 +35,4 @@ Text.displayName = 'Text';
 
 // Triple export pattern (lucide-react style)
 export { Text, Text as TextIcon, Text as SiText };
+export default Text;

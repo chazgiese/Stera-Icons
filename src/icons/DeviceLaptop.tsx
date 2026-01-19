@@ -35,3 +35,4 @@ DeviceLaptop.displayName = 'DeviceLaptop';
 
 // Triple export pattern (lucide-react style)
 export { DeviceLaptop, DeviceLaptop as DeviceLaptopIcon, DeviceLaptop as SiDeviceLaptop };
+export default DeviceLaptop;

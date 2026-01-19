@@ -35,3 +35,4 @@ LayersAlt.displayName = 'LayersAlt';
 
 // Triple export pattern (lucide-react style)
 export { LayersAlt, LayersAlt as LayersAltIcon, LayersAlt as SiLayersAlt };
+export default LayersAlt;

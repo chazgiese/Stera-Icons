@@ -16,4 +16,5 @@ TextAlignCenterBold.displayName = 'TextAlignCenterBold';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignCenterBold, TextAlignCenterBold as TextAlignCenterBoldIcon, TextAlignCenterBold as SiTextAlignCenterBold };
+export default TextAlignCenterBold;
 export type { TextAlignCenterBoldProps };

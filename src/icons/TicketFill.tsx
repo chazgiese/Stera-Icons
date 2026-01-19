@@ -16,4 +16,5 @@ TicketFill.displayName = 'TicketFill';
 
 // Triple export pattern (lucide-react style)
 export { TicketFill, TicketFill as TicketFillIcon, TicketFill as SiTicketFill };
+export default TicketFill;
 export type { TicketFillProps };

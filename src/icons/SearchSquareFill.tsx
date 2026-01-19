@@ -17,4 +17,5 @@ SearchSquareFill.displayName = 'SearchSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { SearchSquareFill, SearchSquareFill as SearchSquareFillIcon, SearchSquareFill as SiSearchSquareFill };
+export default SearchSquareFill;
 export type { SearchSquareFillProps };

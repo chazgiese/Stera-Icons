@@ -35,3 +35,4 @@ Clipboard.displayName = 'Clipboard';
 
 // Triple export pattern (lucide-react style)
 export { Clipboard, Clipboard as ClipboardIcon, Clipboard as SiClipboard };
+export default Clipboard;

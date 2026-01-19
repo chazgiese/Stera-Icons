@@ -18,4 +18,5 @@ MicroscopeRegularDuotone.displayName = 'MicroscopeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MicroscopeRegularDuotone, MicroscopeRegularDuotone as MicroscopeRegularDuotoneIcon, MicroscopeRegularDuotone as SiMicroscopeRegularDuotone };
+export default MicroscopeRegularDuotone;
 export type { MicroscopeRegularDuotoneProps };

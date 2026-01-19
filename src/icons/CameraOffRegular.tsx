@@ -17,4 +17,5 @@ CameraOffRegular.displayName = 'CameraOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { CameraOffRegular, CameraOffRegular as CameraOffRegularIcon, CameraOffRegular as SiCameraOffRegular };
+export default CameraOffRegular;
 export type { CameraOffRegularProps };

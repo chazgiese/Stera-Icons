@@ -16,4 +16,5 @@ HashFill.displayName = 'HashFill';
 
 // Triple export pattern (lucide-react style)
 export { HashFill, HashFill as HashFillIcon, HashFill as SiHashFill };
+export default HashFill;
 export type { HashFillProps };

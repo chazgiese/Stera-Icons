@@ -17,4 +17,5 @@ FileCabinetBoldDuotone.displayName = 'FileCabinetBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FileCabinetBoldDuotone, FileCabinetBoldDuotone as FileCabinetBoldDuotoneIcon, FileCabinetBoldDuotone as SiFileCabinetBoldDuotone };
+export default FileCabinetBoldDuotone;
 export type { FileCabinetBoldDuotoneProps };

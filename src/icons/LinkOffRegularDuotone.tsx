@@ -17,4 +17,5 @@ LinkOffRegularDuotone.displayName = 'LinkOffRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LinkOffRegularDuotone, LinkOffRegularDuotone as LinkOffRegularDuotoneIcon, LinkOffRegularDuotone as SiLinkOffRegularDuotone };
+export default LinkOffRegularDuotone;
 export type { LinkOffRegularDuotoneProps };

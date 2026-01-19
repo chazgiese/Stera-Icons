@@ -16,4 +16,5 @@ PenNibRegular.displayName = 'PenNibRegular';
 
 // Triple export pattern (lucide-react style)
 export { PenNibRegular, PenNibRegular as PenNibRegularIcon, PenNibRegular as SiPenNibRegular };
+export default PenNibRegular;
 export type { PenNibRegularProps };

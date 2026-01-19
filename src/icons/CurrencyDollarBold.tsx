@@ -16,4 +16,5 @@ CurrencyDollarBold.displayName = 'CurrencyDollarBold';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyDollarBold, CurrencyDollarBold as CurrencyDollarBoldIcon, CurrencyDollarBold as SiCurrencyDollarBold };
+export default CurrencyDollarBold;
 export type { CurrencyDollarBoldProps };

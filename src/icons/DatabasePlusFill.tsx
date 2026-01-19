@@ -17,4 +17,5 @@ DatabasePlusFill.displayName = 'DatabasePlusFill';
 
 // Triple export pattern (lucide-react style)
 export { DatabasePlusFill, DatabasePlusFill as DatabasePlusFillIcon, DatabasePlusFill as SiDatabasePlusFill };
+export default DatabasePlusFill;
 export type { DatabasePlusFillProps };

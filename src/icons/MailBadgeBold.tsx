@@ -17,4 +17,5 @@ MailBadgeBold.displayName = 'MailBadgeBold';
 
 // Triple export pattern (lucide-react style)
 export { MailBadgeBold, MailBadgeBold as MailBadgeBoldIcon, MailBadgeBold as SiMailBadgeBold };
+export default MailBadgeBold;
 export type { MailBadgeBoldProps };

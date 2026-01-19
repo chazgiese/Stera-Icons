@@ -16,4 +16,5 @@ EyeClosedFill.displayName = 'EyeClosedFill';
 
 // Triple export pattern (lucide-react style)
 export { EyeClosedFill, EyeClosedFill as EyeClosedFillIcon, EyeClosedFill as SiEyeClosedFill };
+export default EyeClosedFill;
 export type { EyeClosedFillProps };

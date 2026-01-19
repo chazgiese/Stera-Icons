@@ -17,4 +17,5 @@ CapsLockFillDuotone.displayName = 'CapsLockFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CapsLockFillDuotone, CapsLockFillDuotone as CapsLockFillDuotoneIcon, CapsLockFillDuotone as SiCapsLockFillDuotone };
+export default CapsLockFillDuotone;
 export type { CapsLockFillDuotoneProps };

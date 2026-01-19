@@ -35,3 +35,4 @@ DataTable.displayName = 'DataTable';
 
 // Triple export pattern (lucide-react style)
 export { DataTable, DataTable as DataTableIcon, DataTable as SiDataTable };
+export default DataTable;

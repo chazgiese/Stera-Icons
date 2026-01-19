@@ -17,4 +17,5 @@ BellXBold.displayName = 'BellXBold';
 
 // Triple export pattern (lucide-react style)
 export { BellXBold, BellXBold as BellXBoldIcon, BellXBold as SiBellXBold };
+export default BellXBold;
 export type { BellXBoldProps };

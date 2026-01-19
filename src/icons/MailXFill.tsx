@@ -17,4 +17,5 @@ MailXFill.displayName = 'MailXFill';
 
 // Triple export pattern (lucide-react style)
 export { MailXFill, MailXFill as MailXFillIcon, MailXFill as SiMailXFill };
+export default MailXFill;
 export type { MailXFillProps };

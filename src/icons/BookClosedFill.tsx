@@ -16,4 +16,5 @@ BookClosedFill.displayName = 'BookClosedFill';
 
 // Triple export pattern (lucide-react style)
 export { BookClosedFill, BookClosedFill as BookClosedFillIcon, BookClosedFill as SiBookClosedFill };
+export default BookClosedFill;
 export type { BookClosedFillProps };

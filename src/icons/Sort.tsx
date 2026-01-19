@@ -35,3 +35,4 @@ Sort.displayName = 'Sort';
 
 // Triple export pattern (lucide-react style)
 export { Sort, Sort as SortIcon, Sort as SiSort };
+export default Sort;

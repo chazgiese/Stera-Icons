@@ -17,4 +17,5 @@ PushPinAltFillDuotone.displayName = 'PushPinAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PushPinAltFillDuotone, PushPinAltFillDuotone as PushPinAltFillDuotoneIcon, PushPinAltFillDuotone as SiPushPinAltFillDuotone };
+export default PushPinAltFillDuotone;
 export type { PushPinAltFillDuotoneProps };

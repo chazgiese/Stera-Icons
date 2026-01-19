@@ -17,4 +17,5 @@ StopwatchFill.displayName = 'StopwatchFill';
 
 // Triple export pattern (lucide-react style)
 export { StopwatchFill, StopwatchFill as StopwatchFillIcon, StopwatchFill as SiStopwatchFill };
+export default StopwatchFill;
 export type { StopwatchFillProps };

@@ -16,4 +16,5 @@ BatteryHalfFill.displayName = 'BatteryHalfFill';
 
 // Triple export pattern (lucide-react style)
 export { BatteryHalfFill, BatteryHalfFill as BatteryHalfFillIcon, BatteryHalfFill as SiBatteryHalfFill };
+export default BatteryHalfFill;
 export type { BatteryHalfFillProps };

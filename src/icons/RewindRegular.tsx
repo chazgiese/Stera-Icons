@@ -16,4 +16,5 @@ RewindRegular.displayName = 'RewindRegular';
 
 // Triple export pattern (lucide-react style)
 export { RewindRegular, RewindRegular as RewindRegularIcon, RewindRegular as SiRewindRegular };
+export default RewindRegular;
 export type { RewindRegularProps };

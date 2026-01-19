@@ -16,4 +16,5 @@ CubeDashBold.displayName = 'CubeDashBold';
 
 // Triple export pattern (lucide-react style)
 export { CubeDashBold, CubeDashBold as CubeDashBoldIcon, CubeDashBold as SiCubeDashBold };
+export default CubeDashBold;
 export type { CubeDashBoldProps };

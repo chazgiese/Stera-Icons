@@ -16,4 +16,5 @@ LineSegmentBold.displayName = 'LineSegmentBold';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentBold, LineSegmentBold as LineSegmentBoldIcon, LineSegmentBold as SiLineSegmentBold };
+export default LineSegmentBold;
 export type { LineSegmentBoldProps };

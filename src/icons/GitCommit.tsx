@@ -35,3 +35,4 @@ GitCommit.displayName = 'GitCommit';
 
 // Triple export pattern (lucide-react style)
 export { GitCommit, GitCommit as GitCommitIcon, GitCommit as SiGitCommit };
+export default GitCommit;

@@ -17,4 +17,5 @@ ChartLineBarBold.displayName = 'ChartLineBarBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineBarBold, ChartLineBarBold as ChartLineBarBoldIcon, ChartLineBarBold as SiChartLineBarBold };
+export default ChartLineBarBold;
 export type { ChartLineBarBoldProps };

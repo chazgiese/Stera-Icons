@@ -17,4 +17,5 @@ LabelAltFillDuotone.displayName = 'LabelAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LabelAltFillDuotone, LabelAltFillDuotone as LabelAltFillDuotoneIcon, LabelAltFillDuotone as SiLabelAltFillDuotone };
+export default LabelAltFillDuotone;
 export type { LabelAltFillDuotoneProps };

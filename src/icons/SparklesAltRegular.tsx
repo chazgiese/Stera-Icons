@@ -16,4 +16,5 @@ SparklesAltRegular.displayName = 'SparklesAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { SparklesAltRegular, SparklesAltRegular as SparklesAltRegularIcon, SparklesAltRegular as SiSparklesAltRegular };
+export default SparklesAltRegular;
 export type { SparklesAltRegularProps };

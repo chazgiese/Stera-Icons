@@ -17,4 +17,5 @@ RotateRightFillDuotone.displayName = 'RotateRightFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RotateRightFillDuotone, RotateRightFillDuotone as RotateRightFillDuotoneIcon, RotateRightFillDuotone as SiRotateRightFillDuotone };
+export default RotateRightFillDuotone;
 export type { RotateRightFillDuotoneProps };

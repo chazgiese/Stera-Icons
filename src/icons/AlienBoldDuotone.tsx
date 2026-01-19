@@ -17,4 +17,5 @@ AlienBoldDuotone.displayName = 'AlienBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlienBoldDuotone, AlienBoldDuotone as AlienBoldDuotoneIcon, AlienBoldDuotone as SiAlienBoldDuotone };
+export default AlienBoldDuotone;
 export type { AlienBoldDuotoneProps };

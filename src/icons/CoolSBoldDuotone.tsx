@@ -17,4 +17,5 @@ CoolSBoldDuotone.displayName = 'CoolSBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CoolSBoldDuotone, CoolSBoldDuotone as CoolSBoldDuotoneIcon, CoolSBoldDuotone as SiCoolSBoldDuotone };
+export default CoolSBoldDuotone;
 export type { CoolSBoldDuotoneProps };

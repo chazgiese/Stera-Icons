@@ -35,3 +35,4 @@ HomePlus.displayName = 'HomePlus';
 
 // Triple export pattern (lucide-react style)
 export { HomePlus, HomePlus as HomePlusIcon, HomePlus as SiHomePlus };
+export default HomePlus;

@@ -35,3 +35,4 @@ Wifi.displayName = 'Wifi';
 
 // Triple export pattern (lucide-react style)
 export { Wifi, Wifi as WifiIcon, Wifi as SiWifi };
+export default Wifi;

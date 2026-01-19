@@ -17,4 +17,5 @@ UploadRegularDuotone.displayName = 'UploadRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UploadRegularDuotone, UploadRegularDuotone as UploadRegularDuotoneIcon, UploadRegularDuotone as SiUploadRegularDuotone };
+export default UploadRegularDuotone;
 export type { UploadRegularDuotoneProps };

@@ -35,3 +35,4 @@ TextStrikethrough.displayName = 'TextStrikethrough';
 
 // Triple export pattern (lucide-react style)
 export { TextStrikethrough, TextStrikethrough as TextStrikethroughIcon, TextStrikethrough as SiTextStrikethrough };
+export default TextStrikethrough;

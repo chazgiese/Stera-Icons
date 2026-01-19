@@ -17,4 +17,5 @@ MinimizeFillDuotone.displayName = 'MinimizeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MinimizeFillDuotone, MinimizeFillDuotone as MinimizeFillDuotoneIcon, MinimizeFillDuotone as SiMinimizeFillDuotone };
+export default MinimizeFillDuotone;
 export type { MinimizeFillDuotoneProps };

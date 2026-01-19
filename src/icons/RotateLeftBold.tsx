@@ -16,4 +16,5 @@ RotateLeftBold.displayName = 'RotateLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { RotateLeftBold, RotateLeftBold as RotateLeftBoldIcon, RotateLeftBold as SiRotateLeftBold };
+export default RotateLeftBold;
 export type { RotateLeftBoldProps };

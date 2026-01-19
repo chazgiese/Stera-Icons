@@ -16,4 +16,5 @@ CoinBold.displayName = 'CoinBold';
 
 // Triple export pattern (lucide-react style)
 export { CoinBold, CoinBold as CoinBoldIcon, CoinBold as SiCoinBold };
+export default CoinBold;
 export type { CoinBoldProps };

@@ -18,4 +18,5 @@ CalendarFoldRegularDuotone.displayName = 'CalendarFoldRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalendarFoldRegularDuotone, CalendarFoldRegularDuotone as CalendarFoldRegularDuotoneIcon, CalendarFoldRegularDuotone as SiCalendarFoldRegularDuotone };
+export default CalendarFoldRegularDuotone;
 export type { CalendarFoldRegularDuotoneProps };

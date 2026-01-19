@@ -17,4 +17,5 @@ ClipboardTextRegular.displayName = 'ClipboardTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { ClipboardTextRegular, ClipboardTextRegular as ClipboardTextRegularIcon, ClipboardTextRegular as SiClipboardTextRegular };
+export default ClipboardTextRegular;
 export type { ClipboardTextRegularProps };

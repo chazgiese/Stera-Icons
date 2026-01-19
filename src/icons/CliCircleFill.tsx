@@ -16,4 +16,5 @@ CliCircleFill.displayName = 'CliCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { CliCircleFill, CliCircleFill as CliCircleFillIcon, CliCircleFill as SiCliCircleFill };
+export default CliCircleFill;
 export type { CliCircleFillProps };

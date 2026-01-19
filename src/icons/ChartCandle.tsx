@@ -35,3 +35,4 @@ ChartCandle.displayName = 'ChartCandle';
 
 // Triple export pattern (lucide-react style)
 export { ChartCandle, ChartCandle as ChartCandleIcon, ChartCandle as SiChartCandle };
+export default ChartCandle;

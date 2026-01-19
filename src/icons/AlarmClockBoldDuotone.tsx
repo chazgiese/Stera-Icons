@@ -17,4 +17,5 @@ AlarmClockBoldDuotone.displayName = 'AlarmClockBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockBoldDuotone, AlarmClockBoldDuotone as AlarmClockBoldDuotoneIcon, AlarmClockBoldDuotone as SiAlarmClockBoldDuotone };
+export default AlarmClockBoldDuotone;
 export type { AlarmClockBoldDuotoneProps };

@@ -35,3 +35,4 @@ AudioBarsSquare.displayName = 'AudioBarsSquare';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsSquare, AudioBarsSquare as AudioBarsSquareIcon, AudioBarsSquare as SiAudioBarsSquare };
+export default AudioBarsSquare;

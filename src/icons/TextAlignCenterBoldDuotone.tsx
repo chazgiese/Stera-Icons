@@ -17,4 +17,5 @@ TextAlignCenterBoldDuotone.displayName = 'TextAlignCenterBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignCenterBoldDuotone, TextAlignCenterBoldDuotone as TextAlignCenterBoldDuotoneIcon, TextAlignCenterBoldDuotone as SiTextAlignCenterBoldDuotone };
+export default TextAlignCenterBoldDuotone;
 export type { TextAlignCenterBoldDuotoneProps };

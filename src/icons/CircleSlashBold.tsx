@@ -16,4 +16,5 @@ CircleSlashBold.displayName = 'CircleSlashBold';
 
 // Triple export pattern (lucide-react style)
 export { CircleSlashBold, CircleSlashBold as CircleSlashBoldIcon, CircleSlashBold as SiCircleSlashBold };
+export default CircleSlashBold;
 export type { CircleSlashBoldProps };

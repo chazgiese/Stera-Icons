@@ -17,4 +17,5 @@ ChatMessagesFillDuotone.displayName = 'ChatMessagesFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatMessagesFillDuotone, ChatMessagesFillDuotone as ChatMessagesFillDuotoneIcon, ChatMessagesFillDuotone as SiChatMessagesFillDuotone };
+export default ChatMessagesFillDuotone;
 export type { ChatMessagesFillDuotoneProps };

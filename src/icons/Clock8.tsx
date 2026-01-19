@@ -35,3 +35,4 @@ Clock8.displayName = 'Clock8';
 
 // Triple export pattern (lucide-react style)
 export { Clock8, Clock8 as Clock8Icon, Clock8 as SiClock8 };
+export default Clock8;

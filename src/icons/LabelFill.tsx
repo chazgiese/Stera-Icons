@@ -16,4 +16,5 @@ LabelFill.displayName = 'LabelFill';
 
 // Triple export pattern (lucide-react style)
 export { LabelFill, LabelFill as LabelFillIcon, LabelFill as SiLabelFill };
+export default LabelFill;
 export type { LabelFillProps };

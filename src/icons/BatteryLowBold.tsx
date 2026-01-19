@@ -17,4 +17,5 @@ BatteryLowBold.displayName = 'BatteryLowBold';
 
 // Triple export pattern (lucide-react style)
 export { BatteryLowBold, BatteryLowBold as BatteryLowBoldIcon, BatteryLowBold as SiBatteryLowBold };
+export default BatteryLowBold;
 export type { BatteryLowBoldProps };

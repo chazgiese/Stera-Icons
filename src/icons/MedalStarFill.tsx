@@ -17,4 +17,5 @@ MedalStarFill.displayName = 'MedalStarFill';
 
 // Triple export pattern (lucide-react style)
 export { MedalStarFill, MedalStarFill as MedalStarFillIcon, MedalStarFill as SiMedalStarFill };
+export default MedalStarFill;
 export type { MedalStarFillProps };

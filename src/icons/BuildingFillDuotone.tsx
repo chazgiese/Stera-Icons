@@ -17,4 +17,5 @@ BuildingFillDuotone.displayName = 'BuildingFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BuildingFillDuotone, BuildingFillDuotone as BuildingFillDuotoneIcon, BuildingFillDuotone as SiBuildingFillDuotone };
+export default BuildingFillDuotone;
 export type { BuildingFillDuotoneProps };

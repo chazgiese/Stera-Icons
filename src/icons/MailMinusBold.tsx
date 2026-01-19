@@ -17,4 +17,5 @@ MailMinusBold.displayName = 'MailMinusBold';
 
 // Triple export pattern (lucide-react style)
 export { MailMinusBold, MailMinusBold as MailMinusBoldIcon, MailMinusBold as SiMailMinusBold };
+export default MailMinusBold;
 export type { MailMinusBoldProps };

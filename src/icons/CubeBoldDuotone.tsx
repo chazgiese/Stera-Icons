@@ -17,4 +17,5 @@ CubeBoldDuotone.displayName = 'CubeBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CubeBoldDuotone, CubeBoldDuotone as CubeBoldDuotoneIcon, CubeBoldDuotone as SiCubeBoldDuotone };
+export default CubeBoldDuotone;
 export type { CubeBoldDuotoneProps };

@@ -17,4 +17,5 @@ SkipForwardBold.displayName = 'SkipForwardBold';
 
 // Triple export pattern (lucide-react style)
 export { SkipForwardBold, SkipForwardBold as SkipForwardBoldIcon, SkipForwardBold as SiSkipForwardBold };
+export default SkipForwardBold;
 export type { SkipForwardBoldProps };

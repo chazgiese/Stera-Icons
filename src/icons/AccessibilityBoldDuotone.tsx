@@ -17,4 +17,5 @@ AccessibilityBoldDuotone.displayName = 'AccessibilityBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AccessibilityBoldDuotone, AccessibilityBoldDuotone as AccessibilityBoldDuotoneIcon, AccessibilityBoldDuotone as SiAccessibilityBoldDuotone };
+export default AccessibilityBoldDuotone;
 export type { AccessibilityBoldDuotoneProps };

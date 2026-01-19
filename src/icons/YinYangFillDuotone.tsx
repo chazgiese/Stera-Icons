@@ -19,4 +19,5 @@ YinYangFillDuotone.displayName = 'YinYangFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { YinYangFillDuotone, YinYangFillDuotone as YinYangFillDuotoneIcon, YinYangFillDuotone as SiYinYangFillDuotone };
+export default YinYangFillDuotone;
 export type { YinYangFillDuotoneProps };

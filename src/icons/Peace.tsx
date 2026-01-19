@@ -35,3 +35,4 @@ Peace.displayName = 'Peace';
 
 // Triple export pattern (lucide-react style)
 export { Peace, Peace as PeaceIcon, Peace as SiPeace };
+export default Peace;

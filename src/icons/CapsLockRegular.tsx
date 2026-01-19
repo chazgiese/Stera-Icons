@@ -16,4 +16,5 @@ CapsLockRegular.displayName = 'CapsLockRegular';
 
 // Triple export pattern (lucide-react style)
 export { CapsLockRegular, CapsLockRegular as CapsLockRegularIcon, CapsLockRegular as SiCapsLockRegular };
+export default CapsLockRegular;
 export type { CapsLockRegularProps };

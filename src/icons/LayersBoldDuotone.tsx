@@ -17,4 +17,5 @@ LayersBoldDuotone.displayName = 'LayersBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayersBoldDuotone, LayersBoldDuotone as LayersBoldDuotoneIcon, LayersBoldDuotone as SiLayersBoldDuotone };
+export default LayersBoldDuotone;
 export type { LayersBoldDuotoneProps };

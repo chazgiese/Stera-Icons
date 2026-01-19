@@ -16,4 +16,5 @@ MailOpenBold.displayName = 'MailOpenBold';
 
 // Triple export pattern (lucide-react style)
 export { MailOpenBold, MailOpenBold as MailOpenBoldIcon, MailOpenBold as SiMailOpenBold };
+export default MailOpenBold;
 export type { MailOpenBoldProps };

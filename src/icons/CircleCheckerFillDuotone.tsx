@@ -19,4 +19,5 @@ CircleCheckerFillDuotone.displayName = 'CircleCheckerFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleCheckerFillDuotone, CircleCheckerFillDuotone as CircleCheckerFillDuotoneIcon, CircleCheckerFillDuotone as SiCircleCheckerFillDuotone };
+export default CircleCheckerFillDuotone;
 export type { CircleCheckerFillDuotoneProps };

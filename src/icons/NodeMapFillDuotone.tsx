@@ -17,4 +17,5 @@ NodeMapFillDuotone.displayName = 'NodeMapFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { NodeMapFillDuotone, NodeMapFillDuotone as NodeMapFillDuotoneIcon, NodeMapFillDuotone as SiNodeMapFillDuotone };
+export default NodeMapFillDuotone;
 export type { NodeMapFillDuotoneProps };

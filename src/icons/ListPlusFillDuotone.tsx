@@ -17,4 +17,5 @@ ListPlusFillDuotone.displayName = 'ListPlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListPlusFillDuotone, ListPlusFillDuotone as ListPlusFillDuotoneIcon, ListPlusFillDuotone as SiListPlusFillDuotone };
+export default ListPlusFillDuotone;
 export type { ListPlusFillDuotoneProps };

@@ -35,3 +35,4 @@ AstriskAlt.displayName = 'AstriskAlt';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAlt, AstriskAlt as AstriskAltIcon, AstriskAlt as SiAstriskAlt };
+export default AstriskAlt;

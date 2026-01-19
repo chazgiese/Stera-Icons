@@ -16,4 +16,5 @@ LayersFill.displayName = 'LayersFill';
 
 // Triple export pattern (lucide-react style)
 export { LayersFill, LayersFill as LayersFillIcon, LayersFill as SiLayersFill };
+export default LayersFill;
 export type { LayersFillProps };

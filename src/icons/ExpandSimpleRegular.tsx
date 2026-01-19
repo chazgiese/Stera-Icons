@@ -16,4 +16,5 @@ ExpandSimpleRegular.displayName = 'ExpandSimpleRegular';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimpleRegular, ExpandSimpleRegular as ExpandSimpleRegularIcon, ExpandSimpleRegular as SiExpandSimpleRegular };
+export default ExpandSimpleRegular;
 export type { ExpandSimpleRegularProps };

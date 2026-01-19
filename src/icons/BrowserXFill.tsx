@@ -16,4 +16,5 @@ BrowserXFill.displayName = 'BrowserXFill';
 
 // Triple export pattern (lucide-react style)
 export { BrowserXFill, BrowserXFill as BrowserXFillIcon, BrowserXFill as SiBrowserXFill };
+export default BrowserXFill;
 export type { BrowserXFillProps };

@@ -17,4 +17,5 @@ DocumentSearchFill.displayName = 'DocumentSearchFill';
 
 // Triple export pattern (lucide-react style)
 export { DocumentSearchFill, DocumentSearchFill as DocumentSearchFillIcon, DocumentSearchFill as SiDocumentSearchFill };
+export default DocumentSearchFill;
 export type { DocumentSearchFillProps };

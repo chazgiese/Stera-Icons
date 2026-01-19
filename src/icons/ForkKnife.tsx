@@ -35,3 +35,4 @@ ForkKnife.displayName = 'ForkKnife';
 
 // Triple export pattern (lucide-react style)
 export { ForkKnife, ForkKnife as ForkKnifeIcon, ForkKnife as SiForkKnife };
+export default ForkKnife;

@@ -35,3 +35,4 @@ CircleNotch.displayName = 'CircleNotch';
 
 // Triple export pattern (lucide-react style)
 export { CircleNotch, CircleNotch as CircleNotchIcon, CircleNotch as SiCircleNotch };
+export default CircleNotch;

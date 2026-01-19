@@ -16,4 +16,5 @@ ChevronDownBold.displayName = 'ChevronDownBold';
 
 // Triple export pattern (lucide-react style)
 export { ChevronDownBold, ChevronDownBold as ChevronDownBoldIcon, ChevronDownBold as SiChevronDownBold };
+export default ChevronDownBold;
 export type { ChevronDownBoldProps };

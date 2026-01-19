@@ -17,4 +17,5 @@ BubbleBoldDuotone.displayName = 'BubbleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BubbleBoldDuotone, BubbleBoldDuotone as BubbleBoldDuotoneIcon, BubbleBoldDuotone as SiBubbleBoldDuotone };
+export default BubbleBoldDuotone;
 export type { BubbleBoldDuotoneProps };

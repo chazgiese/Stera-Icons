@@ -16,4 +16,5 @@ TextStrikethroughRegular.displayName = 'TextStrikethroughRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextStrikethroughRegular, TextStrikethroughRegular as TextStrikethroughRegularIcon, TextStrikethroughRegular as SiTextStrikethroughRegular };
+export default TextStrikethroughRegular;
 export type { TextStrikethroughRegularProps };

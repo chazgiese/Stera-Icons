@@ -35,3 +35,4 @@ Target.displayName = 'Target';
 
 // Triple export pattern (lucide-react style)
 export { Target, Target as TargetIcon, Target as SiTarget };
+export default Target;

@@ -35,3 +35,4 @@ SwatchBook.displayName = 'SwatchBook';
 
 // Triple export pattern (lucide-react style)
 export { SwatchBook, SwatchBook as SwatchBookIcon, SwatchBook as SiSwatchBook };
+export default SwatchBook;

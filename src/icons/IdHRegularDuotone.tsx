@@ -18,4 +18,5 @@ IdHRegularDuotone.displayName = 'IdHRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { IdHRegularDuotone, IdHRegularDuotone as IdHRegularDuotoneIcon, IdHRegularDuotone as SiIdHRegularDuotone };
+export default IdHRegularDuotone;
 export type { IdHRegularDuotoneProps };

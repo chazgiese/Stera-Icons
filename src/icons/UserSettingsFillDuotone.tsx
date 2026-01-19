@@ -17,4 +17,5 @@ UserSettingsFillDuotone.displayName = 'UserSettingsFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserSettingsFillDuotone, UserSettingsFillDuotone as UserSettingsFillDuotoneIcon, UserSettingsFillDuotone as SiUserSettingsFillDuotone };
+export default UserSettingsFillDuotone;
 export type { UserSettingsFillDuotoneProps };

@@ -16,4 +16,5 @@ ArchwayFill.displayName = 'ArchwayFill';
 
 // Triple export pattern (lucide-react style)
 export { ArchwayFill, ArchwayFill as ArchwayFillIcon, ArchwayFill as SiArchwayFill };
+export default ArchwayFill;
 export type { ArchwayFillProps };

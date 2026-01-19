@@ -35,3 +35,4 @@ BrowserPlus.displayName = 'BrowserPlus';
 
 // Triple export pattern (lucide-react style)
 export { BrowserPlus, BrowserPlus as BrowserPlusIcon, BrowserPlus as SiBrowserPlus };
+export default BrowserPlus;

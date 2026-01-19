@@ -35,3 +35,4 @@ GiftBox.displayName = 'GiftBox';
 
 // Triple export pattern (lucide-react style)
 export { GiftBox, GiftBox as GiftBoxIcon, GiftBox as SiGiftBox };
+export default GiftBox;

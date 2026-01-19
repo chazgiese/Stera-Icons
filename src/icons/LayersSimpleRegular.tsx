@@ -16,4 +16,5 @@ LayersSimpleRegular.displayName = 'LayersSimpleRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayersSimpleRegular, LayersSimpleRegular as LayersSimpleRegularIcon, LayersSimpleRegular as SiLayersSimpleRegular };
+export default LayersSimpleRegular;
 export type { LayersSimpleRegularProps };

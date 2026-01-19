@@ -17,4 +17,5 @@ DatabaseSparkleBold.displayName = 'DatabaseSparkleBold';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseSparkleBold, DatabaseSparkleBold as DatabaseSparkleBoldIcon, DatabaseSparkleBold as SiDatabaseSparkleBold };
+export default DatabaseSparkleBold;
 export type { DatabaseSparkleBoldProps };

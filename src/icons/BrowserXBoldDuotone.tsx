@@ -17,4 +17,5 @@ BrowserXBoldDuotone.displayName = 'BrowserXBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrowserXBoldDuotone, BrowserXBoldDuotone as BrowserXBoldDuotoneIcon, BrowserXBoldDuotone as SiBrowserXBoldDuotone };
+export default BrowserXBoldDuotone;
 export type { BrowserXBoldDuotoneProps };

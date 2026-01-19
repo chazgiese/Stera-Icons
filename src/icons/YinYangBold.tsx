@@ -17,4 +17,5 @@ YinYangBold.displayName = 'YinYangBold';
 
 // Triple export pattern (lucide-react style)
 export { YinYangBold, YinYangBold as YinYangBoldIcon, YinYangBold as SiYinYangBold };
+export default YinYangBold;
 export type { YinYangBoldProps };

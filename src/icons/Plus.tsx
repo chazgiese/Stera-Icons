@@ -35,3 +35,4 @@ Plus.displayName = 'Plus';
 
 // Triple export pattern (lucide-react style)
 export { Plus, Plus as PlusIcon, Plus as SiPlus };
+export default Plus;

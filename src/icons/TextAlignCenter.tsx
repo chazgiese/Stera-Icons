@@ -35,3 +35,4 @@ TextAlignCenter.displayName = 'TextAlignCenter';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignCenter, TextAlignCenter as TextAlignCenterIcon, TextAlignCenter as SiTextAlignCenter };
+export default TextAlignCenter;

@@ -17,4 +17,5 @@ LotusRegularDuotone.displayName = 'LotusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LotusRegularDuotone, LotusRegularDuotone as LotusRegularDuotoneIcon, LotusRegularDuotone as SiLotusRegularDuotone };
+export default LotusRegularDuotone;
 export type { LotusRegularDuotoneProps };

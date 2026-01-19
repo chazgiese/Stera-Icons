@@ -18,4 +18,5 @@ ClipboardTextBoldDuotone.displayName = 'ClipboardTextBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ClipboardTextBoldDuotone, ClipboardTextBoldDuotone as ClipboardTextBoldDuotoneIcon, ClipboardTextBoldDuotone as SiClipboardTextBoldDuotone };
+export default ClipboardTextBoldDuotone;
 export type { ClipboardTextBoldDuotoneProps };

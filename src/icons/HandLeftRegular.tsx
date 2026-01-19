@@ -16,4 +16,5 @@ HandLeftRegular.displayName = 'HandLeftRegular';
 
 // Triple export pattern (lucide-react style)
 export { HandLeftRegular, HandLeftRegular as HandLeftRegularIcon, HandLeftRegular as SiHandLeftRegular };
+export default HandLeftRegular;
 export type { HandLeftRegularProps };

@@ -17,4 +17,5 @@ HandLeftBoldDuotone.displayName = 'HandLeftBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HandLeftBoldDuotone, HandLeftBoldDuotone as HandLeftBoldDuotoneIcon, HandLeftBoldDuotone as SiHandLeftBoldDuotone };
+export default HandLeftBoldDuotone;
 export type { HandLeftBoldDuotoneProps };

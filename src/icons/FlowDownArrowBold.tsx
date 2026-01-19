@@ -16,4 +16,5 @@ FlowDownArrowBold.displayName = 'FlowDownArrowBold';
 
 // Triple export pattern (lucide-react style)
 export { FlowDownArrowBold, FlowDownArrowBold as FlowDownArrowBoldIcon, FlowDownArrowBold as SiFlowDownArrowBold };
+export default FlowDownArrowBold;
 export type { FlowDownArrowBoldProps };

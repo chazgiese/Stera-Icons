@@ -17,4 +17,5 @@ AngleFill.displayName = 'AngleFill';
 
 // Triple export pattern (lucide-react style)
 export { AngleFill, AngleFill as AngleFillIcon, AngleFill as SiAngleFill };
+export default AngleFill;
 export type { AngleFillProps };

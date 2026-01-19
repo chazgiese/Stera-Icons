@@ -35,3 +35,4 @@ Pause.displayName = 'Pause';
 
 // Triple export pattern (lucide-react style)
 export { Pause, Pause as PauseIcon, Pause as SiPause };
+export default Pause;

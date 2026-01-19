@@ -17,4 +17,5 @@ CrosshairRegularDuotone.displayName = 'CrosshairRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CrosshairRegularDuotone, CrosshairRegularDuotone as CrosshairRegularDuotoneIcon, CrosshairRegularDuotone as SiCrosshairRegularDuotone };
+export default CrosshairRegularDuotone;
 export type { CrosshairRegularDuotoneProps };

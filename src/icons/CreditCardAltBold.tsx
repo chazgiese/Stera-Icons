@@ -17,4 +17,5 @@ CreditCardAltBold.displayName = 'CreditCardAltBold';
 
 // Triple export pattern (lucide-react style)
 export { CreditCardAltBold, CreditCardAltBold as CreditCardAltBoldIcon, CreditCardAltBold as SiCreditCardAltBold };
+export default CreditCardAltBold;
 export type { CreditCardAltBoldProps };

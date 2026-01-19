@@ -16,4 +16,5 @@ SpinnerRegular.displayName = 'SpinnerRegular';
 
 // Triple export pattern (lucide-react style)
 export { SpinnerRegular, SpinnerRegular as SpinnerRegularIcon, SpinnerRegular as SiSpinnerRegular };
+export default SpinnerRegular;
 export type { SpinnerRegularProps };

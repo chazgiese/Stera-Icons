@@ -35,3 +35,4 @@ Banner.displayName = 'Banner';
 
 // Triple export pattern (lucide-react style)
 export { Banner, Banner as BannerIcon, Banner as SiBanner };
+export default Banner;

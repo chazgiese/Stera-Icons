@@ -17,4 +17,5 @@ MicOffFill.displayName = 'MicOffFill';
 
 // Triple export pattern (lucide-react style)
 export { MicOffFill, MicOffFill as MicOffFillIcon, MicOffFill as SiMicOffFill };
+export default MicOffFill;
 export type { MicOffFillProps };

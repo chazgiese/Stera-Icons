@@ -16,4 +16,5 @@ ChartBarRowAscFill.displayName = 'ChartBarRowAscFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarRowAscFill, ChartBarRowAscFill as ChartBarRowAscFillIcon, ChartBarRowAscFill as SiChartBarRowAscFill };
+export default ChartBarRowAscFill;
 export type { ChartBarRowAscFillProps };

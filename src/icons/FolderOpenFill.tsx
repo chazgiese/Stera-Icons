@@ -16,4 +16,5 @@ FolderOpenFill.displayName = 'FolderOpenFill';
 
 // Triple export pattern (lucide-react style)
 export { FolderOpenFill, FolderOpenFill as FolderOpenFillIcon, FolderOpenFill as SiFolderOpenFill };
+export default FolderOpenFill;
 export type { FolderOpenFillProps };

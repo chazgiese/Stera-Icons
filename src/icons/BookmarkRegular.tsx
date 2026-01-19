@@ -16,4 +16,5 @@ BookmarkRegular.displayName = 'BookmarkRegular';
 
 // Triple export pattern (lucide-react style)
 export { BookmarkRegular, BookmarkRegular as BookmarkRegularIcon, BookmarkRegular as SiBookmarkRegular };
+export default BookmarkRegular;
 export type { BookmarkRegularProps };

@@ -17,4 +17,5 @@ ShareBoldDuotone.displayName = 'ShareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ShareBoldDuotone, ShareBoldDuotone as ShareBoldDuotoneIcon, ShareBoldDuotone as SiShareBoldDuotone };
+export default ShareBoldDuotone;
 export type { ShareBoldDuotoneProps };

@@ -16,4 +16,5 @@ SpiralBold.displayName = 'SpiralBold';
 
 // Triple export pattern (lucide-react style)
 export { SpiralBold, SpiralBold as SpiralBoldIcon, SpiralBold as SiSpiralBold };
+export default SpiralBold;
 export type { SpiralBoldProps };

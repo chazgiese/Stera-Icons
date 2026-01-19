@@ -17,4 +17,5 @@ OverlappingCirclesDashBoldDuotone.displayName = 'OverlappingCirclesDashBoldDuoto
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCirclesDashBoldDuotone, OverlappingCirclesDashBoldDuotone as OverlappingCirclesDashBoldDuotoneIcon, OverlappingCirclesDashBoldDuotone as SiOverlappingCirclesDashBoldDuotone };
+export default OverlappingCirclesDashBoldDuotone;
 export type { OverlappingCirclesDashBoldDuotoneProps };

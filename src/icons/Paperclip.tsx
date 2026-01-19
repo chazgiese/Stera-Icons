@@ -35,3 +35,4 @@ Paperclip.displayName = 'Paperclip';
 
 // Triple export pattern (lucide-react style)
 export { Paperclip, Paperclip as PaperclipIcon, Paperclip as SiPaperclip };
+export default Paperclip;

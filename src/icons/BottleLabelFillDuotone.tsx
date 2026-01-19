@@ -17,4 +17,5 @@ BottleLabelFillDuotone.displayName = 'BottleLabelFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BottleLabelFillDuotone, BottleLabelFillDuotone as BottleLabelFillDuotoneIcon, BottleLabelFillDuotone as SiBottleLabelFillDuotone };
+export default BottleLabelFillDuotone;
 export type { BottleLabelFillDuotoneProps };

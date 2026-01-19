@@ -16,4 +16,5 @@ LightbulbBold.displayName = 'LightbulbBold';
 
 // Triple export pattern (lucide-react style)
 export { LightbulbBold, LightbulbBold as LightbulbBoldIcon, LightbulbBold as SiLightbulbBold };
+export default LightbulbBold;
 export type { LightbulbBoldProps };

@@ -18,4 +18,5 @@ ScissorsFill.displayName = 'ScissorsFill';
 
 // Triple export pattern (lucide-react style)
 export { ScissorsFill, ScissorsFill as ScissorsFillIcon, ScissorsFill as SiScissorsFill };
+export default ScissorsFill;
 export type { ScissorsFillProps };

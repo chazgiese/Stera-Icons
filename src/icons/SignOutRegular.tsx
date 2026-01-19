@@ -17,4 +17,5 @@ SignOutRegular.displayName = 'SignOutRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignOutRegular, SignOutRegular as SignOutRegularIcon, SignOutRegular as SiSignOutRegular };
+export default SignOutRegular;
 export type { SignOutRegularProps };

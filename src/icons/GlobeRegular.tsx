@@ -16,4 +16,5 @@ GlobeRegular.displayName = 'GlobeRegular';
 
 // Triple export pattern (lucide-react style)
 export { GlobeRegular, GlobeRegular as GlobeRegularIcon, GlobeRegular as SiGlobeRegular };
+export default GlobeRegular;
 export type { GlobeRegularProps };

@@ -16,4 +16,5 @@ TreePalmFill.displayName = 'TreePalmFill';
 
 // Triple export pattern (lucide-react style)
 export { TreePalmFill, TreePalmFill as TreePalmFillIcon, TreePalmFill as SiTreePalmFill };
+export default TreePalmFill;
 export type { TreePalmFillProps };

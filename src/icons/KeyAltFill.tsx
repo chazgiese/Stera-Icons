@@ -16,4 +16,5 @@ KeyAltFill.displayName = 'KeyAltFill';
 
 // Triple export pattern (lucide-react style)
 export { KeyAltFill, KeyAltFill as KeyAltFillIcon, KeyAltFill as SiKeyAltFill };
+export default KeyAltFill;
 export type { KeyAltFillProps };

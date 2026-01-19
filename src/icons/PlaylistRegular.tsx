@@ -17,4 +17,5 @@ PlaylistRegular.displayName = 'PlaylistRegular';
 
 // Triple export pattern (lucide-react style)
 export { PlaylistRegular, PlaylistRegular as PlaylistRegularIcon, PlaylistRegular as SiPlaylistRegular };
+export default PlaylistRegular;
 export type { PlaylistRegularProps };

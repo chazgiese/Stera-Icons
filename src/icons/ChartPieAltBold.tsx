@@ -17,4 +17,5 @@ ChartPieAltBold.displayName = 'ChartPieAltBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieAltBold, ChartPieAltBold as ChartPieAltBoldIcon, ChartPieAltBold as SiChartPieAltBold };
+export default ChartPieAltBold;
 export type { ChartPieAltBoldProps };

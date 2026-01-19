@@ -17,4 +17,5 @@ PieFill.displayName = 'PieFill';
 
 // Triple export pattern (lucide-react style)
 export { PieFill, PieFill as PieFillIcon, PieFill as SiPieFill };
+export default PieFill;
 export type { PieFillProps };

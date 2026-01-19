@@ -16,4 +16,5 @@ LayoutPanelLeftFill.displayName = 'LayoutPanelLeftFill';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelLeftFill, LayoutPanelLeftFill as LayoutPanelLeftFillIcon, LayoutPanelLeftFill as SiLayoutPanelLeftFill };
+export default LayoutPanelLeftFill;
 export type { LayoutPanelLeftFillProps };

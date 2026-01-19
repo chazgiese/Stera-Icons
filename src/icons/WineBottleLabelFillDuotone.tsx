@@ -18,4 +18,5 @@ WineBottleLabelFillDuotone.displayName = 'WineBottleLabelFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WineBottleLabelFillDuotone, WineBottleLabelFillDuotone as WineBottleLabelFillDuotoneIcon, WineBottleLabelFillDuotone as SiWineBottleLabelFillDuotone };
+export default WineBottleLabelFillDuotone;
 export type { WineBottleLabelFillDuotoneProps };

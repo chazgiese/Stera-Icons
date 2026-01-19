@@ -16,4 +16,5 @@ LinkOffRegular.displayName = 'LinkOffRegular';
 
 // Triple export pattern (lucide-react style)
 export { LinkOffRegular, LinkOffRegular as LinkOffRegularIcon, LinkOffRegular as SiLinkOffRegular };
+export default LinkOffRegular;
 export type { LinkOffRegularProps };

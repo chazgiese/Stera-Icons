@@ -16,4 +16,5 @@ DropletBold.displayName = 'DropletBold';
 
 // Triple export pattern (lucide-react style)
 export { DropletBold, DropletBold as DropletBoldIcon, DropletBold as SiDropletBold };
+export default DropletBold;
 export type { DropletBoldProps };

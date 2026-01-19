@@ -17,4 +17,5 @@ AudioBarsSquareBold.displayName = 'AudioBarsSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { AudioBarsSquareBold, AudioBarsSquareBold as AudioBarsSquareBoldIcon, AudioBarsSquareBold as SiAudioBarsSquareBold };
+export default AudioBarsSquareBold;
 export type { AudioBarsSquareBoldProps };

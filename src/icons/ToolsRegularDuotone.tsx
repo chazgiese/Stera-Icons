@@ -17,4 +17,5 @@ ToolsRegularDuotone.displayName = 'ToolsRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToolsRegularDuotone, ToolsRegularDuotone as ToolsRegularDuotoneIcon, ToolsRegularDuotone as SiToolsRegularDuotone };
+export default ToolsRegularDuotone;
 export type { ToolsRegularDuotoneProps };

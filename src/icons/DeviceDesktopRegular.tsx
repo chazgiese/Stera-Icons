@@ -16,4 +16,5 @@ DeviceDesktopRegular.displayName = 'DeviceDesktopRegular';
 
 // Triple export pattern (lucide-react style)
 export { DeviceDesktopRegular, DeviceDesktopRegular as DeviceDesktopRegularIcon, DeviceDesktopRegular as SiDeviceDesktopRegular };
+export default DeviceDesktopRegular;
 export type { DeviceDesktopRegularProps };

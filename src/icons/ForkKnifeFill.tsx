@@ -16,4 +16,5 @@ ForkKnifeFill.displayName = 'ForkKnifeFill';
 
 // Triple export pattern (lucide-react style)
 export { ForkKnifeFill, ForkKnifeFill as ForkKnifeFillIcon, ForkKnifeFill as SiForkKnifeFill };
+export default ForkKnifeFill;
 export type { ForkKnifeFillProps };

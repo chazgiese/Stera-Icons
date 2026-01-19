@@ -17,4 +17,5 @@ TextStrikethroughBoldDuotone.displayName = 'TextStrikethroughBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextStrikethroughBoldDuotone, TextStrikethroughBoldDuotone as TextStrikethroughBoldDuotoneIcon, TextStrikethroughBoldDuotone as SiTextStrikethroughBoldDuotone };
+export default TextStrikethroughBoldDuotone;
 export type { TextStrikethroughBoldDuotoneProps };

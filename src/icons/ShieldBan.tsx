@@ -35,3 +35,4 @@ ShieldBan.displayName = 'ShieldBan';
 
 // Triple export pattern (lucide-react style)
 export { ShieldBan, ShieldBan as ShieldBanIcon, ShieldBan as SiShieldBan };
+export default ShieldBan;

@@ -17,4 +17,5 @@ LockOpenRegularDuotone.displayName = 'LockOpenRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LockOpenRegularDuotone, LockOpenRegularDuotone as LockOpenRegularDuotoneIcon, LockOpenRegularDuotone as SiLockOpenRegularDuotone };
+export default LockOpenRegularDuotone;
 export type { LockOpenRegularDuotoneProps };

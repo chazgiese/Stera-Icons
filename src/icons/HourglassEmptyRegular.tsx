@@ -17,4 +17,5 @@ HourglassEmptyRegular.displayName = 'HourglassEmptyRegular';
 
 // Triple export pattern (lucide-react style)
 export { HourglassEmptyRegular, HourglassEmptyRegular as HourglassEmptyRegularIcon, HourglassEmptyRegular as SiHourglassEmptyRegular };
+export default HourglassEmptyRegular;
 export type { HourglassEmptyRegularProps };

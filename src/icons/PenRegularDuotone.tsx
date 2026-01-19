@@ -17,4 +17,5 @@ PenRegularDuotone.displayName = 'PenRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PenRegularDuotone, PenRegularDuotone as PenRegularDuotoneIcon, PenRegularDuotone as SiPenRegularDuotone };
+export default PenRegularDuotone;
 export type { PenRegularDuotoneProps };

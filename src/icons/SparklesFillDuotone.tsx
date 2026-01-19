@@ -17,4 +17,5 @@ SparklesFillDuotone.displayName = 'SparklesFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SparklesFillDuotone, SparklesFillDuotone as SparklesFillDuotoneIcon, SparklesFillDuotone as SiSparklesFillDuotone };
+export default SparklesFillDuotone;
 export type { SparklesFillDuotoneProps };

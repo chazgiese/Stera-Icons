@@ -20,4 +20,5 @@ QrCodeRegularDuotone.displayName = 'QrCodeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { QrCodeRegularDuotone, QrCodeRegularDuotone as QrCodeRegularDuotoneIcon, QrCodeRegularDuotone as SiQrCodeRegularDuotone };
+export default QrCodeRegularDuotone;
 export type { QrCodeRegularDuotoneProps };

@@ -35,3 +35,4 @@ MacWindow.displayName = 'MacWindow';
 
 // Triple export pattern (lucide-react style)
 export { MacWindow, MacWindow as MacWindowIcon, MacWindow as SiMacWindow };
+export default MacWindow;

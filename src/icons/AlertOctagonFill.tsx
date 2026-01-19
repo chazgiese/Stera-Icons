@@ -16,4 +16,5 @@ AlertOctagonFill.displayName = 'AlertOctagonFill';
 
 // Triple export pattern (lucide-react style)
 export { AlertOctagonFill, AlertOctagonFill as AlertOctagonFillIcon, AlertOctagonFill as SiAlertOctagonFill };
+export default AlertOctagonFill;
 export type { AlertOctagonFillProps };

@@ -17,4 +17,5 @@ BuildingBold.displayName = 'BuildingBold';
 
 // Triple export pattern (lucide-react style)
 export { BuildingBold, BuildingBold as BuildingBoldIcon, BuildingBold as SiBuildingBold };
+export default BuildingBold;
 export type { BuildingBoldProps };

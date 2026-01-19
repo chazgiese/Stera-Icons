@@ -16,4 +16,5 @@ CheckSquareFill.displayName = 'CheckSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { CheckSquareFill, CheckSquareFill as CheckSquareFillIcon, CheckSquareFill as SiCheckSquareFill };
+export default CheckSquareFill;
 export type { CheckSquareFillProps };

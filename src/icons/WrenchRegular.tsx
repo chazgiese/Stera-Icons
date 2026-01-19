@@ -16,4 +16,5 @@ WrenchRegular.displayName = 'WrenchRegular';
 
 // Triple export pattern (lucide-react style)
 export { WrenchRegular, WrenchRegular as WrenchRegularIcon, WrenchRegular as SiWrenchRegular };
+export default WrenchRegular;
 export type { WrenchRegularProps };

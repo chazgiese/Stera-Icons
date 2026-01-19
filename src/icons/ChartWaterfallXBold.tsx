@@ -17,4 +17,5 @@ ChartWaterfallXBold.displayName = 'ChartWaterfallXBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartWaterfallXBold, ChartWaterfallXBold as ChartWaterfallXBoldIcon, ChartWaterfallXBold as SiChartWaterfallXBold };
+export default ChartWaterfallXBold;
 export type { ChartWaterfallXBoldProps };

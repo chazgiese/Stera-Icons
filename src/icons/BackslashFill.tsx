@@ -16,4 +16,5 @@ BackslashFill.displayName = 'BackslashFill';
 
 // Triple export pattern (lucide-react style)
 export { BackslashFill, BackslashFill as BackslashFillIcon, BackslashFill as SiBackslashFill };
+export default BackslashFill;
 export type { BackslashFillProps };

@@ -17,4 +17,5 @@ TicketFillDuotone.displayName = 'TicketFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TicketFillDuotone, TicketFillDuotone as TicketFillDuotoneIcon, TicketFillDuotone as SiTicketFillDuotone };
+export default TicketFillDuotone;
 export type { TicketFillDuotoneProps };

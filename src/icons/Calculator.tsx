@@ -35,3 +35,4 @@ Calculator.displayName = 'Calculator';
 
 // Triple export pattern (lucide-react style)
 export { Calculator, Calculator as CalculatorIcon, Calculator as SiCalculator };
+export default Calculator;

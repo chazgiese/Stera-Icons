@@ -16,4 +16,5 @@ CameraOffFill.displayName = 'CameraOffFill';
 
 // Triple export pattern (lucide-react style)
 export { CameraOffFill, CameraOffFill as CameraOffFillIcon, CameraOffFill as SiCameraOffFill };
+export default CameraOffFill;
 export type { CameraOffFillProps };

@@ -35,3 +35,4 @@ Sunrise.displayName = 'Sunrise';
 
 // Triple export pattern (lucide-react style)
 export { Sunrise, Sunrise as SunriseIcon, Sunrise as SiSunrise };
+export default Sunrise;

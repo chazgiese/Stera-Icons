@@ -17,4 +17,5 @@ ChartPieBoldDuotone.displayName = 'ChartPieBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieBoldDuotone, ChartPieBoldDuotone as ChartPieBoldDuotoneIcon, ChartPieBoldDuotone as SiChartPieBoldDuotone };
+export default ChartPieBoldDuotone;
 export type { ChartPieBoldDuotoneProps };

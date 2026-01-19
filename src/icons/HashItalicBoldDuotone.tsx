@@ -17,4 +17,5 @@ HashItalicBoldDuotone.displayName = 'HashItalicBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashItalicBoldDuotone, HashItalicBoldDuotone as HashItalicBoldDuotoneIcon, HashItalicBoldDuotone as SiHashItalicBoldDuotone };
+export default HashItalicBoldDuotone;
 export type { HashItalicBoldDuotoneProps };

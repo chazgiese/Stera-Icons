@@ -16,4 +16,5 @@ RepeatBold.displayName = 'RepeatBold';
 
 // Triple export pattern (lucide-react style)
 export { RepeatBold, RepeatBold as RepeatBoldIcon, RepeatBold as SiRepeatBold };
+export default RepeatBold;
 export type { RepeatBoldProps };

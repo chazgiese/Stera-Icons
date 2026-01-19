@@ -35,3 +35,4 @@ PercentSquare.displayName = 'PercentSquare';
 
 // Triple export pattern (lucide-react style)
 export { PercentSquare, PercentSquare as PercentSquareIcon, PercentSquare as SiPercentSquare };
+export default PercentSquare;

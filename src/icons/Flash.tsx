@@ -35,3 +35,4 @@ Flash.displayName = 'Flash';
 
 // Triple export pattern (lucide-react style)
 export { Flash, Flash as FlashIcon, Flash as SiFlash };
+export default Flash;

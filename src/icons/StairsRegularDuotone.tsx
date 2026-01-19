@@ -19,4 +19,5 @@ StairsRegularDuotone.displayName = 'StairsRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StairsRegularDuotone, StairsRegularDuotone as StairsRegularDuotoneIcon, StairsRegularDuotone as SiStairsRegularDuotone };
+export default StairsRegularDuotone;
 export type { StairsRegularDuotoneProps };

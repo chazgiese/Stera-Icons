@@ -17,4 +17,5 @@ ChatBoxOffBoldDuotone.displayName = 'ChatBoxOffBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxOffBoldDuotone, ChatBoxOffBoldDuotone as ChatBoxOffBoldDuotoneIcon, ChatBoxOffBoldDuotone as SiChatBoxOffBoldDuotone };
+export default ChatBoxOffBoldDuotone;
 export type { ChatBoxOffBoldDuotoneProps };

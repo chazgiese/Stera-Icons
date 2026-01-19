@@ -17,4 +17,5 @@ CircleDivideCrossFillDuotone.displayName = 'CircleDivideCrossFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideCrossFillDuotone, CircleDivideCrossFillDuotone as CircleDivideCrossFillDuotoneIcon, CircleDivideCrossFillDuotone as SiCircleDivideCrossFillDuotone };
+export default CircleDivideCrossFillDuotone;
 export type { CircleDivideCrossFillDuotoneProps };

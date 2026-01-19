@@ -35,3 +35,4 @@ PawPrint.displayName = 'PawPrint';
 
 // Triple export pattern (lucide-react style)
 export { PawPrint, PawPrint as PawPrintIcon, PawPrint as SiPawPrint };
+export default PawPrint;

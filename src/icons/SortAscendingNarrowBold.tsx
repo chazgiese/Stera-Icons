@@ -17,4 +17,5 @@ SortAscendingNarrowBold.displayName = 'SortAscendingNarrowBold';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingNarrowBold, SortAscendingNarrowBold as SortAscendingNarrowBoldIcon, SortAscendingNarrowBold as SiSortAscendingNarrowBold };
+export default SortAscendingNarrowBold;
 export type { SortAscendingNarrowBoldProps };

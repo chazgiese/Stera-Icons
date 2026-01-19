@@ -17,4 +17,5 @@ DocumentDetailFillDuotone.displayName = 'DocumentDetailFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DocumentDetailFillDuotone, DocumentDetailFillDuotone as DocumentDetailFillDuotoneIcon, DocumentDetailFillDuotone as SiDocumentDetailFillDuotone };
+export default DocumentDetailFillDuotone;
 export type { DocumentDetailFillDuotoneProps };

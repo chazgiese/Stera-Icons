@@ -16,4 +16,5 @@ MenuSimpleAltRegular.displayName = 'MenuSimpleAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { MenuSimpleAltRegular, MenuSimpleAltRegular as MenuSimpleAltRegularIcon, MenuSimpleAltRegular as SiMenuSimpleAltRegular };
+export default MenuSimpleAltRegular;
 export type { MenuSimpleAltRegularProps };

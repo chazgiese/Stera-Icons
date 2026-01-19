@@ -17,4 +17,5 @@ CliFillDuotone.displayName = 'CliFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CliFillDuotone, CliFillDuotone as CliFillDuotoneIcon, CliFillDuotone as SiCliFillDuotone };
+export default CliFillDuotone;
 export type { CliFillDuotoneProps };

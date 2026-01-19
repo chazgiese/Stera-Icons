@@ -35,3 +35,4 @@ ShieldCheck.displayName = 'ShieldCheck';
 
 // Triple export pattern (lucide-react style)
 export { ShieldCheck, ShieldCheck as ShieldCheckIcon, ShieldCheck as SiShieldCheck };
+export default ShieldCheck;

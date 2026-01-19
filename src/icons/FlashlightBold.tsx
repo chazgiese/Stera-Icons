@@ -17,4 +17,5 @@ FlashlightBold.displayName = 'FlashlightBold';
 
 // Triple export pattern (lucide-react style)
 export { FlashlightBold, FlashlightBold as FlashlightBoldIcon, FlashlightBold as SiFlashlightBold };
+export default FlashlightBold;
 export type { FlashlightBoldProps };

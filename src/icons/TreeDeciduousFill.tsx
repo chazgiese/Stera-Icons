@@ -16,4 +16,5 @@ TreeDeciduousFill.displayName = 'TreeDeciduousFill';
 
 // Triple export pattern (lucide-react style)
 export { TreeDeciduousFill, TreeDeciduousFill as TreeDeciduousFillIcon, TreeDeciduousFill as SiTreeDeciduousFill };
+export default TreeDeciduousFill;
 export type { TreeDeciduousFillProps };

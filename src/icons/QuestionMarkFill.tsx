@@ -16,4 +16,5 @@ QuestionMarkFill.displayName = 'QuestionMarkFill';
 
 // Triple export pattern (lucide-react style)
 export { QuestionMarkFill, QuestionMarkFill as QuestionMarkFillIcon, QuestionMarkFill as SiQuestionMarkFill };
+export default QuestionMarkFill;
 export type { QuestionMarkFillProps };

@@ -16,4 +16,5 @@ PawPrintFill.displayName = 'PawPrintFill';
 
 // Triple export pattern (lucide-react style)
 export { PawPrintFill, PawPrintFill as PawPrintFillIcon, PawPrintFill as SiPawPrintFill };
+export default PawPrintFill;
 export type { PawPrintFillProps };

@@ -17,4 +17,5 @@ BlocksRegular.displayName = 'BlocksRegular';
 
 // Triple export pattern (lucide-react style)
 export { BlocksRegular, BlocksRegular as BlocksRegularIcon, BlocksRegular as SiBlocksRegular };
+export default BlocksRegular;
 export type { BlocksRegularProps };

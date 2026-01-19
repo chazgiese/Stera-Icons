@@ -35,3 +35,4 @@ TallyMarks.displayName = 'TallyMarks';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarks, TallyMarks as TallyMarksIcon, TallyMarks as SiTallyMarks };
+export default TallyMarks;

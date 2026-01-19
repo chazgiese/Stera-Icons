@@ -16,4 +16,5 @@ StopCircleFill.displayName = 'StopCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { StopCircleFill, StopCircleFill as StopCircleFillIcon, StopCircleFill as SiStopCircleFill };
+export default StopCircleFill;
 export type { StopCircleFillProps };

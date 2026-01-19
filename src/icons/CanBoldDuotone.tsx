@@ -17,4 +17,5 @@ CanBoldDuotone.displayName = 'CanBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CanBoldDuotone, CanBoldDuotone as CanBoldDuotoneIcon, CanBoldDuotone as SiCanBoldDuotone };
+export default CanBoldDuotone;
 export type { CanBoldDuotoneProps };

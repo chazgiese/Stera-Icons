@@ -17,4 +17,5 @@ AlertSquareRegular.displayName = 'AlertSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlertSquareRegular, AlertSquareRegular as AlertSquareRegularIcon, AlertSquareRegular as SiAlertSquareRegular };
+export default AlertSquareRegular;
 export type { AlertSquareRegularProps };

@@ -16,4 +16,5 @@ AlignHorizontalCenterRegular.displayName = 'AlignHorizontalCenterRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalCenterRegular, AlignHorizontalCenterRegular as AlignHorizontalCenterRegularIcon, AlignHorizontalCenterRegular as SiAlignHorizontalCenterRegular };
+export default AlignHorizontalCenterRegular;
 export type { AlignHorizontalCenterRegularProps };

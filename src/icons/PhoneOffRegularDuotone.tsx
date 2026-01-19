@@ -17,4 +17,5 @@ PhoneOffRegularDuotone.displayName = 'PhoneOffRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PhoneOffRegularDuotone, PhoneOffRegularDuotone as PhoneOffRegularDuotoneIcon, PhoneOffRegularDuotone as SiPhoneOffRegularDuotone };
+export default PhoneOffRegularDuotone;
 export type { PhoneOffRegularDuotoneProps };

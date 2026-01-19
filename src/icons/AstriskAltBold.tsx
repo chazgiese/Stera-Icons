@@ -16,4 +16,5 @@ AstriskAltBold.displayName = 'AstriskAltBold';
 
 // Triple export pattern (lucide-react style)
 export { AstriskAltBold, AstriskAltBold as AstriskAltBoldIcon, AstriskAltBold as SiAstriskAltBold };
+export default AstriskAltBold;
 export type { AstriskAltBoldProps };

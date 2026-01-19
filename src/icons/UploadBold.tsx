@@ -17,4 +17,5 @@ UploadBold.displayName = 'UploadBold';
 
 // Triple export pattern (lucide-react style)
 export { UploadBold, UploadBold as UploadBoldIcon, UploadBold as SiUploadBold };
+export default UploadBold;
 export type { UploadBoldProps };

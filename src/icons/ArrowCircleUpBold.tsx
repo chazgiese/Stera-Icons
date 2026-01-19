@@ -17,4 +17,5 @@ ArrowCircleUpBold.displayName = 'ArrowCircleUpBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCircleUpBold, ArrowCircleUpBold as ArrowCircleUpBoldIcon, ArrowCircleUpBold as SiArrowCircleUpBold };
+export default ArrowCircleUpBold;
 export type { ArrowCircleUpBoldProps };

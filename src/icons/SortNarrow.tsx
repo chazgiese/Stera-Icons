@@ -35,3 +35,4 @@ SortNarrow.displayName = 'SortNarrow';
 
 // Triple export pattern (lucide-react style)
 export { SortNarrow, SortNarrow as SortNarrowIcon, SortNarrow as SiSortNarrow };
+export default SortNarrow;

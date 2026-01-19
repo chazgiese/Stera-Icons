@@ -16,4 +16,5 @@ ListBulletSimpleFill.displayName = 'ListBulletSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { ListBulletSimpleFill, ListBulletSimpleFill as ListBulletSimpleFillIcon, ListBulletSimpleFill as SiListBulletSimpleFill };
+export default ListBulletSimpleFill;
 export type { ListBulletSimpleFillProps };

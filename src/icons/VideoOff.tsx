@@ -35,3 +35,4 @@ VideoOff.displayName = 'VideoOff';
 
 // Triple export pattern (lucide-react style)
 export { VideoOff, VideoOff as VideoOffIcon, VideoOff as SiVideoOff };
+export default VideoOff;

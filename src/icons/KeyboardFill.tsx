@@ -16,4 +16,5 @@ KeyboardFill.displayName = 'KeyboardFill';
 
 // Triple export pattern (lucide-react style)
 export { KeyboardFill, KeyboardFill as KeyboardFillIcon, KeyboardFill as SiKeyboardFill };
+export default KeyboardFill;
 export type { KeyboardFillProps };

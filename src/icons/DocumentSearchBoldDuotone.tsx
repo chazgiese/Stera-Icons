@@ -18,4 +18,5 @@ DocumentSearchBoldDuotone.displayName = 'DocumentSearchBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DocumentSearchBoldDuotone, DocumentSearchBoldDuotone as DocumentSearchBoldDuotoneIcon, DocumentSearchBoldDuotone as SiDocumentSearchBoldDuotone };
+export default DocumentSearchBoldDuotone;
 export type { DocumentSearchBoldDuotoneProps };

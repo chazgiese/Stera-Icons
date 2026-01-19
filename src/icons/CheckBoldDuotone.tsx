@@ -17,4 +17,5 @@ CheckBoldDuotone.displayName = 'CheckBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CheckBoldDuotone, CheckBoldDuotone as CheckBoldDuotoneIcon, CheckBoldDuotone as SiCheckBoldDuotone };
+export default CheckBoldDuotone;
 export type { CheckBoldDuotoneProps };

@@ -17,4 +17,5 @@ SortAscendingFill.displayName = 'SortAscendingFill';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingFill, SortAscendingFill as SortAscendingFillIcon, SortAscendingFill as SiSortAscendingFill };
+export default SortAscendingFill;
 export type { SortAscendingFillProps };

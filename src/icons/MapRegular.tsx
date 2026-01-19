@@ -16,4 +16,5 @@ MapRegular.displayName = 'MapRegular';
 
 // Triple export pattern (lucide-react style)
 export { MapRegular, MapRegular as MapRegularIcon, MapRegular as SiMapRegular };
+export default MapRegular;
 export type { MapRegularProps };

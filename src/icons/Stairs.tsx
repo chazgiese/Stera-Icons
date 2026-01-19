@@ -35,3 +35,4 @@ Stairs.displayName = 'Stairs';
 
 // Triple export pattern (lucide-react style)
 export { Stairs, Stairs as StairsIcon, Stairs as SiStairs };
+export default Stairs;

@@ -35,3 +35,4 @@ TreeDeciduous.displayName = 'TreeDeciduous';
 
 // Triple export pattern (lucide-react style)
 export { TreeDeciduous, TreeDeciduous as TreeDeciduousIcon, TreeDeciduous as SiTreeDeciduous };
+export default TreeDeciduous;

@@ -17,4 +17,5 @@ AlignHorizontalRightBold.displayName = 'AlignHorizontalRightBold';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalRightBold, AlignHorizontalRightBold as AlignHorizontalRightBoldIcon, AlignHorizontalRightBold as SiAlignHorizontalRightBold };
+export default AlignHorizontalRightBold;
 export type { AlignHorizontalRightBoldProps };

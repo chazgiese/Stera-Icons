@@ -17,4 +17,5 @@ MoreSquareBoldDuotone.displayName = 'MoreSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreSquareBoldDuotone, MoreSquareBoldDuotone as MoreSquareBoldDuotoneIcon, MoreSquareBoldDuotone as SiMoreSquareBoldDuotone };
+export default MoreSquareBoldDuotone;
 export type { MoreSquareBoldDuotoneProps };

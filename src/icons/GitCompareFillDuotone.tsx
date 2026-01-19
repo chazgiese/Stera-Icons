@@ -17,4 +17,5 @@ GitCompareFillDuotone.displayName = 'GitCompareFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitCompareFillDuotone, GitCompareFillDuotone as GitCompareFillDuotoneIcon, GitCompareFillDuotone as SiGitCompareFillDuotone };
+export default GitCompareFillDuotone;
 export type { GitCompareFillDuotoneProps };

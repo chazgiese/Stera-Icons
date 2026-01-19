@@ -35,3 +35,4 @@ Connection.displayName = 'Connection';
 
 // Triple export pattern (lucide-react style)
 export { Connection, Connection as ConnectionIcon, Connection as SiConnection };
+export default Connection;

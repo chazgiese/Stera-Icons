@@ -16,4 +16,5 @@ MoonCrescentBold.displayName = 'MoonCrescentBold';
 
 // Triple export pattern (lucide-react style)
 export { MoonCrescentBold, MoonCrescentBold as MoonCrescentBoldIcon, MoonCrescentBold as SiMoonCrescentBold };
+export default MoonCrescentBold;
 export type { MoonCrescentBoldProps };

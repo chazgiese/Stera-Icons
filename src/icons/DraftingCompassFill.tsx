@@ -16,4 +16,5 @@ DraftingCompassFill.displayName = 'DraftingCompassFill';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompassFill, DraftingCompassFill as DraftingCompassFillIcon, DraftingCompassFill as SiDraftingCompassFill };
+export default DraftingCompassFill;
 export type { DraftingCompassFillProps };

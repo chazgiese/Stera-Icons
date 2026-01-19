@@ -17,4 +17,5 @@ MapPinMinusBold.displayName = 'MapPinMinusBold';
 
 // Triple export pattern (lucide-react style)
 export { MapPinMinusBold, MapPinMinusBold as MapPinMinusBoldIcon, MapPinMinusBold as SiMapPinMinusBold };
+export default MapPinMinusBold;
 export type { MapPinMinusBoldProps };

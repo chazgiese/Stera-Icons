@@ -17,4 +17,5 @@ HandbagFillDuotone.displayName = 'HandbagFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HandbagFillDuotone, HandbagFillDuotone as HandbagFillDuotoneIcon, HandbagFillDuotone as SiHandbagFillDuotone };
+export default HandbagFillDuotone;
 export type { HandbagFillDuotoneProps };

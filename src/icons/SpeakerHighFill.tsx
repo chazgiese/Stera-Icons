@@ -16,4 +16,5 @@ SpeakerHighFill.displayName = 'SpeakerHighFill';
 
 // Triple export pattern (lucide-react style)
 export { SpeakerHighFill, SpeakerHighFill as SpeakerHighFillIcon, SpeakerHighFill as SiSpeakerHighFill };
+export default SpeakerHighFill;
 export type { SpeakerHighFillProps };

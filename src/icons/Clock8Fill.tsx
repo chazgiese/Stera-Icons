@@ -16,4 +16,5 @@ Clock8Fill.displayName = 'Clock8Fill';
 
 // Triple export pattern (lucide-react style)
 export { Clock8Fill, Clock8Fill as Clock8FillIcon, Clock8Fill as SiClock8Fill };
+export default Clock8Fill;
 export type { Clock8FillProps };

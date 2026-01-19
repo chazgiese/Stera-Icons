@@ -16,4 +16,5 @@ SnowflakeFill.displayName = 'SnowflakeFill';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeFill, SnowflakeFill as SnowflakeFillIcon, SnowflakeFill as SiSnowflakeFill };
+export default SnowflakeFill;
 export type { SnowflakeFillProps };

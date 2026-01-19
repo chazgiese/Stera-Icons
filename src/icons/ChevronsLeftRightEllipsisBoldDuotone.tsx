@@ -17,4 +17,5 @@ ChevronsLeftRightEllipsisBoldDuotone.displayName = 'ChevronsLeftRightEllipsisBol
 
 // Triple export pattern (lucide-react style)
 export { ChevronsLeftRightEllipsisBoldDuotone, ChevronsLeftRightEllipsisBoldDuotone as ChevronsLeftRightEllipsisBoldDuotoneIcon, ChevronsLeftRightEllipsisBoldDuotone as SiChevronsLeftRightEllipsisBoldDuotone };
+export default ChevronsLeftRightEllipsisBoldDuotone;
 export type { ChevronsLeftRightEllipsisBoldDuotoneProps };

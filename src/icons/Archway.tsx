@@ -35,3 +35,4 @@ Archway.displayName = 'Archway';
 
 // Triple export pattern (lucide-react style)
 export { Archway, Archway as ArchwayIcon, Archway as SiArchway };
+export default Archway;

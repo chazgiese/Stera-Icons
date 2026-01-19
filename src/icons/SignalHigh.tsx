@@ -35,3 +35,4 @@ SignalHigh.displayName = 'SignalHigh';
 
 // Triple export pattern (lucide-react style)
 export { SignalHigh, SignalHigh as SignalHighIcon, SignalHigh as SiSignalHigh };
+export default SignalHigh;

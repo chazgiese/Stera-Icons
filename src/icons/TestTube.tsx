@@ -35,3 +35,4 @@ TestTube.displayName = 'TestTube';
 
 // Triple export pattern (lucide-react style)
 export { TestTube, TestTube as TestTubeIcon, TestTube as SiTestTube };
+export default TestTube;

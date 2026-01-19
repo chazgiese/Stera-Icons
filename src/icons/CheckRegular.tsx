@@ -16,4 +16,5 @@ CheckRegular.displayName = 'CheckRegular';
 
 // Triple export pattern (lucide-react style)
 export { CheckRegular, CheckRegular as CheckRegularIcon, CheckRegular as SiCheckRegular };
+export default CheckRegular;
 export type { CheckRegularProps };

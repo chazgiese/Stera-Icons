@@ -35,3 +35,4 @@ BrickWall.displayName = 'BrickWall';
 
 // Triple export pattern (lucide-react style)
 export { BrickWall, BrickWall as BrickWallIcon, BrickWall as SiBrickWall };
+export default BrickWall;

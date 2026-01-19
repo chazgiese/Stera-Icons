@@ -35,3 +35,4 @@ PushPin.displayName = 'PushPin';
 
 // Triple export pattern (lucide-react style)
 export { PushPin, PushPin as PushPinIcon, PushPin as SiPushPin };
+export default PushPin;

@@ -16,4 +16,5 @@ LayersSimpleFill.displayName = 'LayersSimpleFill';
 
 // Triple export pattern (lucide-react style)
 export { LayersSimpleFill, LayersSimpleFill as LayersSimpleFillIcon, LayersSimpleFill as SiLayersSimpleFill };
+export default LayersSimpleFill;
 export type { LayersSimpleFillProps };

@@ -35,3 +35,4 @@ Share.displayName = 'Share';
 
 // Triple export pattern (lucide-react style)
 export { Share, Share as ShareIcon, Share as SiShare };
+export default Share;

@@ -35,3 +35,4 @@ SidebarLeft.displayName = 'SidebarLeft';
 
 // Triple export pattern (lucide-react style)
 export { SidebarLeft, SidebarLeft as SidebarLeftIcon, SidebarLeft as SiSidebarLeft };
+export default SidebarLeft;

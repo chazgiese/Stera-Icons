@@ -17,4 +17,5 @@ MapBoldDuotone.displayName = 'MapBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MapBoldDuotone, MapBoldDuotone as MapBoldDuotoneIcon, MapBoldDuotone as SiMapBoldDuotone };
+export default MapBoldDuotone;
 export type { MapBoldDuotoneProps };

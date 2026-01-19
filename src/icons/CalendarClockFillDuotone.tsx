@@ -18,4 +18,5 @@ CalendarClockFillDuotone.displayName = 'CalendarClockFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalendarClockFillDuotone, CalendarClockFillDuotone as CalendarClockFillDuotoneIcon, CalendarClockFillDuotone as SiCalendarClockFillDuotone };
+export default CalendarClockFillDuotone;
 export type { CalendarClockFillDuotoneProps };

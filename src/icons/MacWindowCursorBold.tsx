@@ -18,4 +18,5 @@ MacWindowCursorBold.displayName = 'MacWindowCursorBold';
 
 // Triple export pattern (lucide-react style)
 export { MacWindowCursorBold, MacWindowCursorBold as MacWindowCursorBoldIcon, MacWindowCursorBold as SiMacWindowCursorBold };
+export default MacWindowCursorBold;
 export type { MacWindowCursorBoldProps };

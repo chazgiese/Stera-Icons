@@ -16,4 +16,5 @@ TextRegular.displayName = 'TextRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextRegular, TextRegular as TextRegularIcon, TextRegular as SiTextRegular };
+export default TextRegular;
 export type { TextRegularProps };

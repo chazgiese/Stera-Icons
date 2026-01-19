@@ -16,4 +16,5 @@ TextAlignRightFill.displayName = 'TextAlignRightFill';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignRightFill, TextAlignRightFill as TextAlignRightFillIcon, TextAlignRightFill as SiTextAlignRightFill };
+export default TextAlignRightFill;
 export type { TextAlignRightFillProps };

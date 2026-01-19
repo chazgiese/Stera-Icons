@@ -35,3 +35,4 @@ Mail.displayName = 'Mail';
 
 // Triple export pattern (lucide-react style)
 export { Mail, Mail as MailIcon, Mail as SiMail };
+export default Mail;

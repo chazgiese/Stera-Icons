@@ -17,4 +17,5 @@ BasketballBoldDuotone.displayName = 'BasketballBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BasketballBoldDuotone, BasketballBoldDuotone as BasketballBoldDuotoneIcon, BasketballBoldDuotone as SiBasketballBoldDuotone };
+export default BasketballBoldDuotone;
 export type { BasketballBoldDuotoneProps };

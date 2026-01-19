@@ -16,4 +16,5 @@ SlidersVRegular.displayName = 'SlidersVRegular';
 
 // Triple export pattern (lucide-react style)
 export { SlidersVRegular, SlidersVRegular as SlidersVRegularIcon, SlidersVRegular as SiSlidersVRegular };
+export default SlidersVRegular;
 export type { SlidersVRegularProps };

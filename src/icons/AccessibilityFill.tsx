@@ -17,4 +17,5 @@ AccessibilityFill.displayName = 'AccessibilityFill';
 
 // Triple export pattern (lucide-react style)
 export { AccessibilityFill, AccessibilityFill as AccessibilityFillIcon, AccessibilityFill as SiAccessibilityFill };
+export default AccessibilityFill;
 export type { AccessibilityFillProps };

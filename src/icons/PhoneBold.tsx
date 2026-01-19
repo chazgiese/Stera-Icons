@@ -16,4 +16,5 @@ PhoneBold.displayName = 'PhoneBold';
 
 // Triple export pattern (lucide-react style)
 export { PhoneBold, PhoneBold as PhoneBoldIcon, PhoneBold as SiPhoneBold };
+export default PhoneBold;
 export type { PhoneBoldProps };

@@ -16,4 +16,5 @@ FileCabinetFill.displayName = 'FileCabinetFill';
 
 // Triple export pattern (lucide-react style)
 export { FileCabinetFill, FileCabinetFill as FileCabinetFillIcon, FileCabinetFill as SiFileCabinetFill };
+export default FileCabinetFill;
 export type { FileCabinetFillProps };

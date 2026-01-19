@@ -35,3 +35,4 @@ WineBottle.displayName = 'WineBottle';
 
 // Triple export pattern (lucide-react style)
 export { WineBottle, WineBottle as WineBottleIcon, WineBottle as SiWineBottle };
+export default WineBottle;

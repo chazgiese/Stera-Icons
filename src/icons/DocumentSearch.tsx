@@ -35,3 +35,4 @@ DocumentSearch.displayName = 'DocumentSearch';
 
 // Triple export pattern (lucide-react style)
 export { DocumentSearch, DocumentSearch as DocumentSearchIcon, DocumentSearch as SiDocumentSearch };
+export default DocumentSearch;

@@ -17,4 +17,5 @@ TicketRegular.displayName = 'TicketRegular';
 
 // Triple export pattern (lucide-react style)
 export { TicketRegular, TicketRegular as TicketRegularIcon, TicketRegular as SiTicketRegular };
+export default TicketRegular;
 export type { TicketRegularProps };

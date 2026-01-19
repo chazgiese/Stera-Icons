@@ -35,3 +35,4 @@ SquareSlash.displayName = 'SquareSlash';
 
 // Triple export pattern (lucide-react style)
 export { SquareSlash, SquareSlash as SquareSlashIcon, SquareSlash as SiSquareSlash };
+export default SquareSlash;

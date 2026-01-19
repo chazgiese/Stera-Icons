@@ -35,3 +35,4 @@ Gradient.displayName = 'Gradient';
 
 // Triple export pattern (lucide-react style)
 export { Gradient, Gradient as GradientIcon, Gradient as SiGradient };
+export default Gradient;

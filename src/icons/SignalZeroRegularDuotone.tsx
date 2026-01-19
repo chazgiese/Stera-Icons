@@ -17,4 +17,5 @@ SignalZeroRegularDuotone.displayName = 'SignalZeroRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalZeroRegularDuotone, SignalZeroRegularDuotone as SignalZeroRegularDuotoneIcon, SignalZeroRegularDuotone as SiSignalZeroRegularDuotone };
+export default SignalZeroRegularDuotone;
 export type { SignalZeroRegularDuotoneProps };

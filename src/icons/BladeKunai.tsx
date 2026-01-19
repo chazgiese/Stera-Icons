@@ -35,3 +35,4 @@ BladeKunai.displayName = 'BladeKunai';
 
 // Triple export pattern (lucide-react style)
 export { BladeKunai, BladeKunai as BladeKunaiIcon, BladeKunai as SiBladeKunai };
+export default BladeKunai;

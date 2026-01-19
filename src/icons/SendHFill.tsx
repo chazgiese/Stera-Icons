@@ -16,4 +16,5 @@ SendHFill.displayName = 'SendHFill';
 
 // Triple export pattern (lucide-react style)
 export { SendHFill, SendHFill as SendHFillIcon, SendHFill as SiSendHFill };
+export default SendHFill;
 export type { SendHFillProps };

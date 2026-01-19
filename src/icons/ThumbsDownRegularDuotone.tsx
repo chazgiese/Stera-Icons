@@ -17,4 +17,5 @@ ThumbsDownRegularDuotone.displayName = 'ThumbsDownRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ThumbsDownRegularDuotone, ThumbsDownRegularDuotone as ThumbsDownRegularDuotoneIcon, ThumbsDownRegularDuotone as SiThumbsDownRegularDuotone };
+export default ThumbsDownRegularDuotone;
 export type { ThumbsDownRegularDuotoneProps };

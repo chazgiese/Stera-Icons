@@ -16,4 +16,5 @@ VideoOffFill.displayName = 'VideoOffFill';
 
 // Triple export pattern (lucide-react style)
 export { VideoOffFill, VideoOffFill as VideoOffFillIcon, VideoOffFill as SiVideoOffFill };
+export default VideoOffFill;
 export type { VideoOffFillProps };

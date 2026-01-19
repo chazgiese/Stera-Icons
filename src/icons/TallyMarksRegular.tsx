@@ -16,4 +16,5 @@ TallyMarksRegular.displayName = 'TallyMarksRegular';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarksRegular, TallyMarksRegular as TallyMarksRegularIcon, TallyMarksRegular as SiTallyMarksRegular };
+export default TallyMarksRegular;
 export type { TallyMarksRegularProps };

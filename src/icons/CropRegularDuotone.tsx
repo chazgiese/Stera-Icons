@@ -17,4 +17,5 @@ CropRegularDuotone.displayName = 'CropRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CropRegularDuotone, CropRegularDuotone as CropRegularDuotoneIcon, CropRegularDuotone as SiCropRegularDuotone };
+export default CropRegularDuotone;
 export type { CropRegularDuotoneProps };

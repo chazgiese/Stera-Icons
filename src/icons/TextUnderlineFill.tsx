@@ -16,4 +16,5 @@ TextUnderlineFill.displayName = 'TextUnderlineFill';
 
 // Triple export pattern (lucide-react style)
 export { TextUnderlineFill, TextUnderlineFill as TextUnderlineFillIcon, TextUnderlineFill as SiTextUnderlineFill };
+export default TextUnderlineFill;
 export type { TextUnderlineFillProps };

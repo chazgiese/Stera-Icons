@@ -17,4 +17,5 @@ SortAscendingNarrowBoldDuotone.displayName = 'SortAscendingNarrowBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SortAscendingNarrowBoldDuotone, SortAscendingNarrowBoldDuotone as SortAscendingNarrowBoldDuotoneIcon, SortAscendingNarrowBoldDuotone as SiSortAscendingNarrowBoldDuotone };
+export default SortAscendingNarrowBoldDuotone;
 export type { SortAscendingNarrowBoldDuotoneProps };

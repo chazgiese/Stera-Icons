@@ -17,4 +17,5 @@ AlienFillDuotone.displayName = 'AlienFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlienFillDuotone, AlienFillDuotone as AlienFillDuotoneIcon, AlienFillDuotone as SiAlienFillDuotone };
+export default AlienFillDuotone;
 export type { AlienFillDuotoneProps };

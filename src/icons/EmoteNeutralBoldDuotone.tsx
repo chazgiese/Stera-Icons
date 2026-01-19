@@ -17,4 +17,5 @@ EmoteNeutralBoldDuotone.displayName = 'EmoteNeutralBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EmoteNeutralBoldDuotone, EmoteNeutralBoldDuotone as EmoteNeutralBoldDuotoneIcon, EmoteNeutralBoldDuotone as SiEmoteNeutralBoldDuotone };
+export default EmoteNeutralBoldDuotone;
 export type { EmoteNeutralBoldDuotoneProps };

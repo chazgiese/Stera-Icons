@@ -17,4 +17,5 @@ TrophyBoldDuotone.displayName = 'TrophyBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TrophyBoldDuotone, TrophyBoldDuotone as TrophyBoldDuotoneIcon, TrophyBoldDuotone as SiTrophyBoldDuotone };
+export default TrophyBoldDuotone;
 export type { TrophyBoldDuotoneProps };

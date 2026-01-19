@@ -35,3 +35,4 @@ AwardStar.displayName = 'AwardStar';
 
 // Triple export pattern (lucide-react style)
 export { AwardStar, AwardStar as AwardStarIcon, AwardStar as SiAwardStar };
+export default AwardStar;

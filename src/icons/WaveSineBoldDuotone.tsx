@@ -17,4 +17,5 @@ WaveSineBoldDuotone.displayName = 'WaveSineBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WaveSineBoldDuotone, WaveSineBoldDuotone as WaveSineBoldDuotoneIcon, WaveSineBoldDuotone as SiWaveSineBoldDuotone };
+export default WaveSineBoldDuotone;
 export type { WaveSineBoldDuotoneProps };

@@ -17,4 +17,5 @@ MapPinPlusFillDuotone.displayName = 'MapPinPlusFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MapPinPlusFillDuotone, MapPinPlusFillDuotone as MapPinPlusFillDuotoneIcon, MapPinPlusFillDuotone as SiMapPinPlusFillDuotone };
+export default MapPinPlusFillDuotone;
 export type { MapPinPlusFillDuotoneProps };

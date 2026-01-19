@@ -35,3 +35,4 @@ IdV.displayName = 'IdV';
 
 // Triple export pattern (lucide-react style)
 export { IdV, IdV as IdVIcon, IdV as SiIdV };
+export default IdV;

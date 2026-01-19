@@ -17,4 +17,5 @@ TicketBold.displayName = 'TicketBold';
 
 // Triple export pattern (lucide-react style)
 export { TicketBold, TicketBold as TicketBoldIcon, TicketBold as SiTicketBold };
+export default TicketBold;
 export type { TicketBoldProps };

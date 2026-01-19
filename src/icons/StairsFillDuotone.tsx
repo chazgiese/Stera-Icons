@@ -17,4 +17,5 @@ StairsFillDuotone.displayName = 'StairsFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StairsFillDuotone, StairsFillDuotone as StairsFillDuotoneIcon, StairsFillDuotone as SiStairsFillDuotone };
+export default StairsFillDuotone;
 export type { StairsFillDuotoneProps };

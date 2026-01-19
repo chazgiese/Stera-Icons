@@ -18,4 +18,5 @@ CalendarClockRegular.displayName = 'CalendarClockRegular';
 
 // Triple export pattern (lucide-react style)
 export { CalendarClockRegular, CalendarClockRegular as CalendarClockRegularIcon, CalendarClockRegular as SiCalendarClockRegular };
+export default CalendarClockRegular;
 export type { CalendarClockRegularProps };

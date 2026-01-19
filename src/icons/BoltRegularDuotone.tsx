@@ -17,4 +17,5 @@ BoltRegularDuotone.displayName = 'BoltRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BoltRegularDuotone, BoltRegularDuotone as BoltRegularDuotoneIcon, BoltRegularDuotone as SiBoltRegularDuotone };
+export default BoltRegularDuotone;
 export type { BoltRegularDuotoneProps };

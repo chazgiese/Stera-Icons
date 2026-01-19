@@ -17,4 +17,5 @@ CodeSquareRegular.displayName = 'CodeSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { CodeSquareRegular, CodeSquareRegular as CodeSquareRegularIcon, CodeSquareRegular as SiCodeSquareRegular };
+export default CodeSquareRegular;
 export type { CodeSquareRegularProps };

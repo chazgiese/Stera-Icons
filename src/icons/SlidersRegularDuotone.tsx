@@ -17,4 +17,5 @@ SlidersRegularDuotone.displayName = 'SlidersRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SlidersRegularDuotone, SlidersRegularDuotone as SlidersRegularDuotoneIcon, SlidersRegularDuotone as SiSlidersRegularDuotone };
+export default SlidersRegularDuotone;
 export type { SlidersRegularDuotoneProps };

@@ -16,4 +16,5 @@ BoundingBoxRegular.displayName = 'BoundingBoxRegular';
 
 // Triple export pattern (lucide-react style)
 export { BoundingBoxRegular, BoundingBoxRegular as BoundingBoxRegularIcon, BoundingBoxRegular as SiBoundingBoxRegular };
+export default BoundingBoxRegular;
 export type { BoundingBoxRegularProps };

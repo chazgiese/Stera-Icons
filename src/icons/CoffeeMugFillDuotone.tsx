@@ -18,4 +18,5 @@ CoffeeMugFillDuotone.displayName = 'CoffeeMugFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CoffeeMugFillDuotone, CoffeeMugFillDuotone as CoffeeMugFillDuotoneIcon, CoffeeMugFillDuotone as SiCoffeeMugFillDuotone };
+export default CoffeeMugFillDuotone;
 export type { CoffeeMugFillDuotoneProps };

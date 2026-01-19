@@ -17,4 +17,5 @@ FolderTreeRegularDuotone.displayName = 'FolderTreeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FolderTreeRegularDuotone, FolderTreeRegularDuotone as FolderTreeRegularDuotoneIcon, FolderTreeRegularDuotone as SiFolderTreeRegularDuotone };
+export default FolderTreeRegularDuotone;
 export type { FolderTreeRegularDuotoneProps };

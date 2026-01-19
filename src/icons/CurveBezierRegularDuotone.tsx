@@ -19,4 +19,5 @@ CurveBezierRegularDuotone.displayName = 'CurveBezierRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CurveBezierRegularDuotone, CurveBezierRegularDuotone as CurveBezierRegularDuotoneIcon, CurveBezierRegularDuotone as SiCurveBezierRegularDuotone };
+export default CurveBezierRegularDuotone;
 export type { CurveBezierRegularDuotoneProps };

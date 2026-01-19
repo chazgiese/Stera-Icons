@@ -17,4 +17,5 @@ HammerFillDuotone.displayName = 'HammerFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HammerFillDuotone, HammerFillDuotone as HammerFillDuotoneIcon, HammerFillDuotone as SiHammerFillDuotone };
+export default HammerFillDuotone;
 export type { HammerFillDuotoneProps };

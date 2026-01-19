@@ -16,4 +16,5 @@ ChartAreaRegular.displayName = 'ChartAreaRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChartAreaRegular, ChartAreaRegular as ChartAreaRegularIcon, ChartAreaRegular as SiChartAreaRegular };
+export default ChartAreaRegular;
 export type { ChartAreaRegularProps };

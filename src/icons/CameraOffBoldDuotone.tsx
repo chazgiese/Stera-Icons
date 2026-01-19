@@ -18,4 +18,5 @@ CameraOffBoldDuotone.displayName = 'CameraOffBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CameraOffBoldDuotone, CameraOffBoldDuotone as CameraOffBoldDuotoneIcon, CameraOffBoldDuotone as SiCameraOffBoldDuotone };
+export default CameraOffBoldDuotone;
 export type { CameraOffBoldDuotoneProps };

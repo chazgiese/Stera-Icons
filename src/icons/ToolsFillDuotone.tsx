@@ -17,4 +17,5 @@ ToolsFillDuotone.displayName = 'ToolsFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ToolsFillDuotone, ToolsFillDuotone as ToolsFillDuotoneIcon, ToolsFillDuotone as SiToolsFillDuotone };
+export default ToolsFillDuotone;
 export type { ToolsFillDuotoneProps };

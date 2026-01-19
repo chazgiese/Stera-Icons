@@ -17,4 +17,5 @@ MatchaFillDuotone.displayName = 'MatchaFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MatchaFillDuotone, MatchaFillDuotone as MatchaFillDuotoneIcon, MatchaFillDuotone as SiMatchaFillDuotone };
+export default MatchaFillDuotone;
 export type { MatchaFillDuotoneProps };

@@ -16,4 +16,5 @@ DeviceDesktopBold.displayName = 'DeviceDesktopBold';
 
 // Triple export pattern (lucide-react style)
 export { DeviceDesktopBold, DeviceDesktopBold as DeviceDesktopBoldIcon, DeviceDesktopBold as SiDeviceDesktopBold };
+export default DeviceDesktopBold;
 export type { DeviceDesktopBoldProps };

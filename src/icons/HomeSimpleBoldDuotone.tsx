@@ -17,4 +17,5 @@ HomeSimpleBoldDuotone.displayName = 'HomeSimpleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimpleBoldDuotone, HomeSimpleBoldDuotone as HomeSimpleBoldDuotoneIcon, HomeSimpleBoldDuotone as SiHomeSimpleBoldDuotone };
+export default HomeSimpleBoldDuotone;
 export type { HomeSimpleBoldDuotoneProps };

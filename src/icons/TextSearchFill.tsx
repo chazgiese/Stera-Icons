@@ -17,4 +17,5 @@ TextSearchFill.displayName = 'TextSearchFill';
 
 // Triple export pattern (lucide-react style)
 export { TextSearchFill, TextSearchFill as TextSearchFillIcon, TextSearchFill as SiTextSearchFill };
+export default TextSearchFill;
 export type { TextSearchFillProps };

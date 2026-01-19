@@ -16,4 +16,5 @@ BrainRegular.displayName = 'BrainRegular';
 
 // Triple export pattern (lucide-react style)
 export { BrainRegular, BrainRegular as BrainRegularIcon, BrainRegular as SiBrainRegular };
+export default BrainRegular;
 export type { BrainRegularProps };

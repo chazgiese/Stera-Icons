@@ -16,4 +16,5 @@ StoreRegular.displayName = 'StoreRegular';
 
 // Triple export pattern (lucide-react style)
 export { StoreRegular, StoreRegular as StoreRegularIcon, StoreRegular as SiStoreRegular };
+export default StoreRegular;
 export type { StoreRegularProps };

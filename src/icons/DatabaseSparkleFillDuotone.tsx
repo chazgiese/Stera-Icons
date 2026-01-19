@@ -18,4 +18,5 @@ DatabaseSparkleFillDuotone.displayName = 'DatabaseSparkleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseSparkleFillDuotone, DatabaseSparkleFillDuotone as DatabaseSparkleFillDuotoneIcon, DatabaseSparkleFillDuotone as SiDatabaseSparkleFillDuotone };
+export default DatabaseSparkleFillDuotone;
 export type { DatabaseSparkleFillDuotoneProps };

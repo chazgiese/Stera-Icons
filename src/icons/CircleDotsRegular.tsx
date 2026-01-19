@@ -16,4 +16,5 @@ CircleDotsRegular.displayName = 'CircleDotsRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleDotsRegular, CircleDotsRegular as CircleDotsRegularIcon, CircleDotsRegular as SiCircleDotsRegular };
+export default CircleDotsRegular;
 export type { CircleDotsRegularProps };

@@ -35,3 +35,4 @@ UserBan.displayName = 'UserBan';
 
 // Triple export pattern (lucide-react style)
 export { UserBan, UserBan as UserBanIcon, UserBan as SiUserBan };
+export default UserBan;

@@ -35,3 +35,4 @@ AtomOrbit.displayName = 'AtomOrbit';
 
 // Triple export pattern (lucide-react style)
 export { AtomOrbit, AtomOrbit as AtomOrbitIcon, AtomOrbit as SiAtomOrbit };
+export default AtomOrbit;

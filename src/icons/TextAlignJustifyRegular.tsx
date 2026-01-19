@@ -16,4 +16,5 @@ TextAlignJustifyRegular.displayName = 'TextAlignJustifyRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignJustifyRegular, TextAlignJustifyRegular as TextAlignJustifyRegularIcon, TextAlignJustifyRegular as SiTextAlignJustifyRegular };
+export default TextAlignJustifyRegular;
 export type { TextAlignJustifyRegularProps };

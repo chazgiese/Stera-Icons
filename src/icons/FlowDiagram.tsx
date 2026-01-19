@@ -35,3 +35,4 @@ FlowDiagram.displayName = 'FlowDiagram';
 
 // Triple export pattern (lucide-react style)
 export { FlowDiagram, FlowDiagram as FlowDiagramIcon, FlowDiagram as SiFlowDiagram };
+export default FlowDiagram;

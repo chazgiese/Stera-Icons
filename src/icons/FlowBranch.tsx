@@ -35,3 +35,4 @@ FlowBranch.displayName = 'FlowBranch';
 
 // Triple export pattern (lucide-react style)
 export { FlowBranch, FlowBranch as FlowBranchIcon, FlowBranch as SiFlowBranch };
+export default FlowBranch;

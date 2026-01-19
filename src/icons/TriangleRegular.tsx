@@ -16,4 +16,5 @@ TriangleRegular.displayName = 'TriangleRegular';
 
 // Triple export pattern (lucide-react style)
 export { TriangleRegular, TriangleRegular as TriangleRegularIcon, TriangleRegular as SiTriangleRegular };
+export default TriangleRegular;
 export type { TriangleRegularProps };

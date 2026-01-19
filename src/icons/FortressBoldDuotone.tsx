@@ -17,4 +17,5 @@ FortressBoldDuotone.displayName = 'FortressBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FortressBoldDuotone, FortressBoldDuotone as FortressBoldDuotoneIcon, FortressBoldDuotone as SiFortressBoldDuotone };
+export default FortressBoldDuotone;
 export type { FortressBoldDuotoneProps };

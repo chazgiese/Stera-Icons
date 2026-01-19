@@ -16,4 +16,5 @@ TennisBallRegular.displayName = 'TennisBallRegular';
 
 // Triple export pattern (lucide-react style)
 export { TennisBallRegular, TennisBallRegular as TennisBallRegularIcon, TennisBallRegular as SiTennisBallRegular };
+export default TennisBallRegular;
 export type { TennisBallRegularProps };

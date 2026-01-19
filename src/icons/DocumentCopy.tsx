@@ -35,3 +35,4 @@ DocumentCopy.displayName = 'DocumentCopy';
 
 // Triple export pattern (lucide-react style)
 export { DocumentCopy, DocumentCopy as DocumentCopyIcon, DocumentCopy as SiDocumentCopy };
+export default DocumentCopy;

@@ -35,3 +35,4 @@ CreditCardAlt.displayName = 'CreditCardAlt';
 
 // Triple export pattern (lucide-react style)
 export { CreditCardAlt, CreditCardAlt as CreditCardAltIcon, CreditCardAlt as SiCreditCardAlt };
+export default CreditCardAlt;

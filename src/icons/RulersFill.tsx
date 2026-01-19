@@ -16,4 +16,5 @@ RulersFill.displayName = 'RulersFill';
 
 // Triple export pattern (lucide-react style)
 export { RulersFill, RulersFill as RulersFillIcon, RulersFill as SiRulersFill };
+export default RulersFill;
 export type { RulersFillProps };

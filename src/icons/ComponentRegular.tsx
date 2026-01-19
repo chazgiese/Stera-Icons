@@ -16,4 +16,5 @@ ComponentRegular.displayName = 'ComponentRegular';
 
 // Triple export pattern (lucide-react style)
 export { ComponentRegular, ComponentRegular as ComponentRegularIcon, ComponentRegular as SiComponentRegular };
+export default ComponentRegular;
 export type { ComponentRegularProps };

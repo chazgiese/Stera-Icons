@@ -17,4 +17,5 @@ BracketsCurlyCircleBold.displayName = 'BracketsCurlyCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { BracketsCurlyCircleBold, BracketsCurlyCircleBold as BracketsCurlyCircleBoldIcon, BracketsCurlyCircleBold as SiBracketsCurlyCircleBold };
+export default BracketsCurlyCircleBold;
 export type { BracketsCurlyCircleBoldProps };

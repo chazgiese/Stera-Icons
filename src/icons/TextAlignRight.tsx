@@ -35,3 +35,4 @@ TextAlignRight.displayName = 'TextAlignRight';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignRight, TextAlignRight as TextAlignRightIcon, TextAlignRight as SiTextAlignRight };
+export default TextAlignRight;

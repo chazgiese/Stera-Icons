@@ -17,4 +17,5 @@ MoveBoldDuotone.displayName = 'MoveBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoveBoldDuotone, MoveBoldDuotone as MoveBoldDuotoneIcon, MoveBoldDuotone as SiMoveBoldDuotone };
+export default MoveBoldDuotone;
 export type { MoveBoldDuotoneProps };

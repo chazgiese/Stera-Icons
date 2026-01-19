@@ -17,4 +17,5 @@ FlagBoldDuotone.displayName = 'FlagBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlagBoldDuotone, FlagBoldDuotone as FlagBoldDuotoneIcon, FlagBoldDuotone as SiFlagBoldDuotone };
+export default FlagBoldDuotone;
 export type { FlagBoldDuotoneProps };

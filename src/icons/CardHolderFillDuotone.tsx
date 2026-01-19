@@ -17,4 +17,5 @@ CardHolderFillDuotone.displayName = 'CardHolderFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CardHolderFillDuotone, CardHolderFillDuotone as CardHolderFillDuotoneIcon, CardHolderFillDuotone as SiCardHolderFillDuotone };
+export default CardHolderFillDuotone;
 export type { CardHolderFillDuotoneProps };

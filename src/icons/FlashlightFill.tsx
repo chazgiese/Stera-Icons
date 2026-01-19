@@ -17,4 +17,5 @@ FlashlightFill.displayName = 'FlashlightFill';
 
 // Triple export pattern (lucide-react style)
 export { FlashlightFill, FlashlightFill as FlashlightFillIcon, FlashlightFill as SiFlashlightFill };
+export default FlashlightFill;
 export type { FlashlightFillProps };

@@ -16,4 +16,5 @@ LayoutMasonryFill.displayName = 'LayoutMasonryFill';
 
 // Triple export pattern (lucide-react style)
 export { LayoutMasonryFill, LayoutMasonryFill as LayoutMasonryFillIcon, LayoutMasonryFill as SiLayoutMasonryFill };
+export default LayoutMasonryFill;
 export type { LayoutMasonryFillProps };

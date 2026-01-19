@@ -17,4 +17,5 @@ UploadFill.displayName = 'UploadFill';
 
 // Triple export pattern (lucide-react style)
 export { UploadFill, UploadFill as UploadFillIcon, UploadFill as SiUploadFill };
+export default UploadFill;
 export type { UploadFillProps };

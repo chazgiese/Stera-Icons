@@ -16,4 +16,5 @@ FigmaFill.displayName = 'FigmaFill';
 
 // Triple export pattern (lucide-react style)
 export { FigmaFill, FigmaFill as FigmaFillIcon, FigmaFill as SiFigmaFill };
+export default FigmaFill;
 export type { FigmaFillProps };

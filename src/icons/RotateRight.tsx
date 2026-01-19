@@ -35,3 +35,4 @@ RotateRight.displayName = 'RotateRight';
 
 // Triple export pattern (lucide-react style)
 export { RotateRight, RotateRight as RotateRightIcon, RotateRight as SiRotateRight };
+export default RotateRight;

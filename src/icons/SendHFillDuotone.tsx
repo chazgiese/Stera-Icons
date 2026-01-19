@@ -17,4 +17,5 @@ SendHFillDuotone.displayName = 'SendHFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SendHFillDuotone, SendHFillDuotone as SendHFillDuotoneIcon, SendHFillDuotone as SiSendHFillDuotone };
+export default SendHFillDuotone;
 export type { SendHFillDuotoneProps };

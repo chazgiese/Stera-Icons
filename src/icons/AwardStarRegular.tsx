@@ -16,4 +16,5 @@ AwardStarRegular.displayName = 'AwardStarRegular';
 
 // Triple export pattern (lucide-react style)
 export { AwardStarRegular, AwardStarRegular as AwardStarRegularIcon, AwardStarRegular as SiAwardStarRegular };
+export default AwardStarRegular;
 export type { AwardStarRegularProps };

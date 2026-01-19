@@ -35,3 +35,4 @@ AgentCursor.displayName = 'AgentCursor';
 
 // Triple export pattern (lucide-react style)
 export { AgentCursor, AgentCursor as AgentCursorIcon, AgentCursor as SiAgentCursor };
+export default AgentCursor;

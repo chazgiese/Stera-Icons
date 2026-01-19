@@ -16,4 +16,5 @@ CollapseRegular.displayName = 'CollapseRegular';
 
 // Triple export pattern (lucide-react style)
 export { CollapseRegular, CollapseRegular as CollapseRegularIcon, CollapseRegular as SiCollapseRegular };
+export default CollapseRegular;
 export type { CollapseRegularProps };

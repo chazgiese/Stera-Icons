@@ -16,4 +16,5 @@ CylinderBold.displayName = 'CylinderBold';
 
 // Triple export pattern (lucide-react style)
 export { CylinderBold, CylinderBold as CylinderBoldIcon, CylinderBold as SiCylinderBold };
+export default CylinderBold;
 export type { CylinderBoldProps };

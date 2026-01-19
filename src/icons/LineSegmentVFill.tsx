@@ -16,4 +16,5 @@ LineSegmentVFill.displayName = 'LineSegmentVFill';
 
 // Triple export pattern (lucide-react style)
 export { LineSegmentVFill, LineSegmentVFill as LineSegmentVFillIcon, LineSegmentVFill as SiLineSegmentVFill };
+export default LineSegmentVFill;
 export type { LineSegmentVFillProps };

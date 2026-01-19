@@ -17,4 +17,5 @@ WifiBold.displayName = 'WifiBold';
 
 // Triple export pattern (lucide-react style)
 export { WifiBold, WifiBold as WifiBoldIcon, WifiBold as SiWifiBold };
+export default WifiBold;
 export type { WifiBoldProps };

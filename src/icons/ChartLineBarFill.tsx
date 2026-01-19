@@ -17,4 +17,5 @@ ChartLineBarFill.displayName = 'ChartLineBarFill';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineBarFill, ChartLineBarFill as ChartLineBarFillIcon, ChartLineBarFill as SiChartLineBarFill };
+export default ChartLineBarFill;
 export type { ChartLineBarFillProps };

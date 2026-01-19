@@ -17,4 +17,5 @@ EmoteGrinRegular.displayName = 'EmoteGrinRegular';
 
 // Triple export pattern (lucide-react style)
 export { EmoteGrinRegular, EmoteGrinRegular as EmoteGrinRegularIcon, EmoteGrinRegular as SiEmoteGrinRegular };
+export default EmoteGrinRegular;
 export type { EmoteGrinRegularProps };

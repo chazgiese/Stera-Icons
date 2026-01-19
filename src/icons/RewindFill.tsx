@@ -16,4 +16,5 @@ RewindFill.displayName = 'RewindFill';
 
 // Triple export pattern (lucide-react style)
 export { RewindFill, RewindFill as RewindFillIcon, RewindFill as SiRewindFill };
+export default RewindFill;
 export type { RewindFillProps };

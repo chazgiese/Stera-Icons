@@ -16,4 +16,5 @@ MinimizeBold.displayName = 'MinimizeBold';
 
 // Triple export pattern (lucide-react style)
 export { MinimizeBold, MinimizeBold as MinimizeBoldIcon, MinimizeBold as SiMinimizeBold };
+export default MinimizeBold;
 export type { MinimizeBoldProps };

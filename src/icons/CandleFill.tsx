@@ -16,4 +16,5 @@ CandleFill.displayName = 'CandleFill';
 
 // Triple export pattern (lucide-react style)
 export { CandleFill, CandleFill as CandleFillIcon, CandleFill as SiCandleFill };
+export default CandleFill;
 export type { CandleFillProps };

@@ -35,3 +35,4 @@ CubicGraph.displayName = 'CubicGraph';
 
 // Triple export pattern (lucide-react style)
 export { CubicGraph, CubicGraph as CubicGraphIcon, CubicGraph as SiCubicGraph };
+export default CubicGraph;

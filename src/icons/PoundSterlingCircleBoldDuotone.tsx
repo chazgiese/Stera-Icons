@@ -17,4 +17,5 @@ PoundSterlingCircleBoldDuotone.displayName = 'PoundSterlingCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PoundSterlingCircleBoldDuotone, PoundSterlingCircleBoldDuotone as PoundSterlingCircleBoldDuotoneIcon, PoundSterlingCircleBoldDuotone as SiPoundSterlingCircleBoldDuotone };
+export default PoundSterlingCircleBoldDuotone;
 export type { PoundSterlingCircleBoldDuotoneProps };

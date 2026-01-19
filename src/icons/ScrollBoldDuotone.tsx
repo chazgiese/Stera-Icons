@@ -18,4 +18,5 @@ ScrollBoldDuotone.displayName = 'ScrollBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScrollBoldDuotone, ScrollBoldDuotone as ScrollBoldDuotoneIcon, ScrollBoldDuotone as SiScrollBoldDuotone };
+export default ScrollBoldDuotone;
 export type { ScrollBoldDuotoneProps };

@@ -17,4 +17,5 @@ AlienRegularDuotone.displayName = 'AlienRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlienRegularDuotone, AlienRegularDuotone as AlienRegularDuotoneIcon, AlienRegularDuotone as SiAlienRegularDuotone };
+export default AlienRegularDuotone;
 export type { AlienRegularDuotoneProps };

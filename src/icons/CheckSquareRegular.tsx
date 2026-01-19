@@ -17,4 +17,5 @@ CheckSquareRegular.displayName = 'CheckSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { CheckSquareRegular, CheckSquareRegular as CheckSquareRegularIcon, CheckSquareRegular as SiCheckSquareRegular };
+export default CheckSquareRegular;
 export type { CheckSquareRegularProps };

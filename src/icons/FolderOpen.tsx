@@ -35,3 +35,4 @@ FolderOpen.displayName = 'FolderOpen';
 
 // Triple export pattern (lucide-react style)
 export { FolderOpen, FolderOpen as FolderOpenIcon, FolderOpen as SiFolderOpen };
+export default FolderOpen;

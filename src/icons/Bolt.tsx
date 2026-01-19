@@ -35,3 +35,4 @@ Bolt.displayName = 'Bolt';
 
 // Triple export pattern (lucide-react style)
 export { Bolt, Bolt as BoltIcon, Bolt as SiBolt };
+export default Bolt;

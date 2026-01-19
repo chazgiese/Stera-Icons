@@ -18,4 +18,5 @@ ScanDocumentBold.displayName = 'ScanDocumentBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanDocumentBold, ScanDocumentBold as ScanDocumentBoldIcon, ScanDocumentBold as SiScanDocumentBold };
+export default ScanDocumentBold;
 export type { ScanDocumentBoldProps };

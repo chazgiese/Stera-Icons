@@ -17,4 +17,5 @@ GavelBoldDuotone.displayName = 'GavelBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GavelBoldDuotone, GavelBoldDuotone as GavelBoldDuotoneIcon, GavelBoldDuotone as SiGavelBoldDuotone };
+export default GavelBoldDuotone;
 export type { GavelBoldDuotoneProps };

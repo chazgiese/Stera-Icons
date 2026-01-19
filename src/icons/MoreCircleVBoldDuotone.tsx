@@ -17,4 +17,5 @@ MoreCircleVBoldDuotone.displayName = 'MoreCircleVBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreCircleVBoldDuotone, MoreCircleVBoldDuotone as MoreCircleVBoldDuotoneIcon, MoreCircleVBoldDuotone as SiMoreCircleVBoldDuotone };
+export default MoreCircleVBoldDuotone;
 export type { MoreCircleVBoldDuotoneProps };

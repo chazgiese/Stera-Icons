@@ -35,3 +35,4 @@ Menu.displayName = 'Menu';
 
 // Triple export pattern (lucide-react style)
 export { Menu, Menu as MenuIcon, Menu as SiMenu };
+export default Menu;

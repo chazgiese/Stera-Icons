@@ -17,4 +17,5 @@ WandFillDuotone.displayName = 'WandFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WandFillDuotone, WandFillDuotone as WandFillDuotoneIcon, WandFillDuotone as SiWandFillDuotone };
+export default WandFillDuotone;
 export type { WandFillDuotoneProps };

@@ -16,4 +16,5 @@ ArrowCircleRightFill.displayName = 'ArrowCircleRightFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowCircleRightFill, ArrowCircleRightFill as ArrowCircleRightFillIcon, ArrowCircleRightFill as SiArrowCircleRightFill };
+export default ArrowCircleRightFill;
 export type { ArrowCircleRightFillProps };

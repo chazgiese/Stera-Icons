@@ -17,4 +17,5 @@ StopwatchRegularDuotone.displayName = 'StopwatchRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StopwatchRegularDuotone, StopwatchRegularDuotone as StopwatchRegularDuotoneIcon, StopwatchRegularDuotone as SiStopwatchRegularDuotone };
+export default StopwatchRegularDuotone;
 export type { StopwatchRegularDuotoneProps };

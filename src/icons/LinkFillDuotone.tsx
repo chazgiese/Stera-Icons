@@ -17,4 +17,5 @@ LinkFillDuotone.displayName = 'LinkFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LinkFillDuotone, LinkFillDuotone as LinkFillDuotoneIcon, LinkFillDuotone as SiLinkFillDuotone };
+export default LinkFillDuotone;
 export type { LinkFillDuotoneProps };

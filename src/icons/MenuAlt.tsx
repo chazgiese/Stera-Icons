@@ -35,3 +35,4 @@ MenuAlt.displayName = 'MenuAlt';
 
 // Triple export pattern (lucide-react style)
 export { MenuAlt, MenuAlt as MenuAltIcon, MenuAlt as SiMenuAlt };
+export default MenuAlt;

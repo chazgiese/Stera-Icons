@@ -17,4 +17,5 @@ CalculatorRegular.displayName = 'CalculatorRegular';
 
 // Triple export pattern (lucide-react style)
 export { CalculatorRegular, CalculatorRegular as CalculatorRegularIcon, CalculatorRegular as SiCalculatorRegular };
+export default CalculatorRegular;
 export type { CalculatorRegularProps };

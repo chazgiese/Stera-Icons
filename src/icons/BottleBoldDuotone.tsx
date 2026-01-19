@@ -17,4 +17,5 @@ BottleBoldDuotone.displayName = 'BottleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BottleBoldDuotone, BottleBoldDuotone as BottleBoldDuotoneIcon, BottleBoldDuotone as SiBottleBoldDuotone };
+export default BottleBoldDuotone;
 export type { BottleBoldDuotoneProps };

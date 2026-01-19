@@ -16,4 +16,5 @@ RectangleDashedBold.displayName = 'RectangleDashedBold';
 
 // Triple export pattern (lucide-react style)
 export { RectangleDashedBold, RectangleDashedBold as RectangleDashedBoldIcon, RectangleDashedBold as SiRectangleDashedBold };
+export default RectangleDashedBold;
 export type { RectangleDashedBoldProps };

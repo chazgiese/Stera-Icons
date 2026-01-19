@@ -19,4 +19,5 @@ LayoutListBold.displayName = 'LayoutListBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutListBold, LayoutListBold as LayoutListBoldIcon, LayoutListBold as SiLayoutListBold };
+export default LayoutListBold;
 export type { LayoutListBoldProps };

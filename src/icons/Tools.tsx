@@ -35,3 +35,4 @@ Tools.displayName = 'Tools';
 
 // Triple export pattern (lucide-react style)
 export { Tools, Tools as ToolsIcon, Tools as SiTools };
+export default Tools;

@@ -18,4 +18,5 @@ AgentCursorBold.displayName = 'AgentCursorBold';
 
 // Triple export pattern (lucide-react style)
 export { AgentCursorBold, AgentCursorBold as AgentCursorBoldIcon, AgentCursorBold as SiAgentCursorBold };
+export default AgentCursorBold;
 export type { AgentCursorBoldProps };

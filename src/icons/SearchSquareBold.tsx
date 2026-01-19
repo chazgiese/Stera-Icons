@@ -17,4 +17,5 @@ SearchSquareBold.displayName = 'SearchSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { SearchSquareBold, SearchSquareBold as SearchSquareBoldIcon, SearchSquareBold as SiSearchSquareBold };
+export default SearchSquareBold;
 export type { SearchSquareBoldProps };

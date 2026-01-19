@@ -16,4 +16,5 @@ CircleDivideCrossRegular.displayName = 'CircleDivideCrossRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleDivideCrossRegular, CircleDivideCrossRegular as CircleDivideCrossRegularIcon, CircleDivideCrossRegular as SiCircleDivideCrossRegular };
+export default CircleDivideCrossRegular;
 export type { CircleDivideCrossRegularProps };

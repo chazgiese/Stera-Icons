@@ -16,4 +16,5 @@ SignatureBold.displayName = 'SignatureBold';
 
 // Triple export pattern (lucide-react style)
 export { SignatureBold, SignatureBold as SignatureBoldIcon, SignatureBold as SiSignatureBold };
+export default SignatureBold;
 export type { SignatureBoldProps };

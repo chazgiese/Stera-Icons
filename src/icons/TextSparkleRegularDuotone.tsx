@@ -17,4 +17,5 @@ TextSparkleRegularDuotone.displayName = 'TextSparkleRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextSparkleRegularDuotone, TextSparkleRegularDuotone as TextSparkleRegularDuotoneIcon, TextSparkleRegularDuotone as SiTextSparkleRegularDuotone };
+export default TextSparkleRegularDuotone;
 export type { TextSparkleRegularDuotoneProps };

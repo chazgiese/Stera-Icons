@@ -35,3 +35,4 @@ TreePalm.displayName = 'TreePalm';
 
 // Triple export pattern (lucide-react style)
 export { TreePalm, TreePalm as TreePalmIcon, TreePalm as SiTreePalm };
+export default TreePalm;

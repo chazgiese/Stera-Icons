@@ -17,4 +17,5 @@ CliSquareBold.displayName = 'CliSquareBold';
 
 // Triple export pattern (lucide-react style)
 export { CliSquareBold, CliSquareBold as CliSquareBoldIcon, CliSquareBold as SiCliSquareBold };
+export default CliSquareBold;
 export type { CliSquareBoldProps };

@@ -16,4 +16,5 @@ ArrowsLeftRightFill.displayName = 'ArrowsLeftRightFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowsLeftRightFill, ArrowsLeftRightFill as ArrowsLeftRightFillIcon, ArrowsLeftRightFill as SiArrowsLeftRightFill };
+export default ArrowsLeftRightFill;
 export type { ArrowsLeftRightFillProps };

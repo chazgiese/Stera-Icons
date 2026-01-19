@@ -35,3 +35,4 @@ PenNib.displayName = 'PenNib';
 
 // Triple export pattern (lucide-react style)
 export { PenNib, PenNib as PenNibIcon, PenNib as SiPenNib };
+export default PenNib;

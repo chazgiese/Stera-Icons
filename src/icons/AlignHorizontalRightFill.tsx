@@ -16,4 +16,5 @@ AlignHorizontalRightFill.displayName = 'AlignHorizontalRightFill';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalRightFill, AlignHorizontalRightFill as AlignHorizontalRightFillIcon, AlignHorizontalRightFill as SiAlignHorizontalRightFill };
+export default AlignHorizontalRightFill;
 export type { AlignHorizontalRightFillProps };

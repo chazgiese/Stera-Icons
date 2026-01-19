@@ -17,4 +17,5 @@ TextFieldFillDuotone.displayName = 'TextFieldFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TextFieldFillDuotone, TextFieldFillDuotone as TextFieldFillDuotoneIcon, TextFieldFillDuotone as SiTextFieldFillDuotone };
+export default TextFieldFillDuotone;
 export type { TextFieldFillDuotoneProps };

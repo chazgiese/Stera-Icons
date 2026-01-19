@@ -17,4 +17,5 @@ AccessibilityFillDuotone.displayName = 'AccessibilityFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AccessibilityFillDuotone, AccessibilityFillDuotone as AccessibilityFillDuotoneIcon, AccessibilityFillDuotone as SiAccessibilityFillDuotone };
+export default AccessibilityFillDuotone;
 export type { AccessibilityFillDuotoneProps };

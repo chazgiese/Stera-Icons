@@ -17,4 +17,5 @@ BoxesBoldDuotone.displayName = 'BoxesBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BoxesBoldDuotone, BoxesBoldDuotone as BoxesBoldDuotoneIcon, BoxesBoldDuotone as SiBoxesBoldDuotone };
+export default BoxesBoldDuotone;
 export type { BoxesBoldDuotoneProps };

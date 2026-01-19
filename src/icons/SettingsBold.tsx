@@ -17,4 +17,5 @@ SettingsBold.displayName = 'SettingsBold';
 
 // Triple export pattern (lucide-react style)
 export { SettingsBold, SettingsBold as SettingsBoldIcon, SettingsBold as SiSettingsBold };
+export default SettingsBold;
 export type { SettingsBoldProps };

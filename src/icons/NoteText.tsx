@@ -35,3 +35,4 @@ NoteText.displayName = 'NoteText';
 
 // Triple export pattern (lucide-react style)
 export { NoteText, NoteText as NoteTextIcon, NoteText as SiNoteText };
+export default NoteText;

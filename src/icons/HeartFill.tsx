@@ -16,4 +16,5 @@ HeartFill.displayName = 'HeartFill';
 
 // Triple export pattern (lucide-react style)
 export { HeartFill, HeartFill as HeartFillIcon, HeartFill as SiHeartFill };
+export default HeartFill;
 export type { HeartFillProps };

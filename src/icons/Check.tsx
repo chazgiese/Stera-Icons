@@ -35,3 +35,4 @@ Check.displayName = 'Check';
 
 // Triple export pattern (lucide-react style)
 export { Check, Check as CheckIcon, Check as SiCheck };
+export default Check;

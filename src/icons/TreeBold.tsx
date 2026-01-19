@@ -16,4 +16,5 @@ TreeBold.displayName = 'TreeBold';
 
 // Triple export pattern (lucide-react style)
 export { TreeBold, TreeBold as TreeBoldIcon, TreeBold as SiTreeBold };
+export default TreeBold;
 export type { TreeBoldProps };

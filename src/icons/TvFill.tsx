@@ -16,4 +16,5 @@ TvFill.displayName = 'TvFill';
 
 // Triple export pattern (lucide-react style)
 export { TvFill, TvFill as TvFillIcon, TvFill as SiTvFill };
+export default TvFill;
 export type { TvFillProps };

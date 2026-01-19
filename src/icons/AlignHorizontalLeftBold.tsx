@@ -17,4 +17,5 @@ AlignHorizontalLeftBold.displayName = 'AlignHorizontalLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalLeftBold, AlignHorizontalLeftBold as AlignHorizontalLeftBoldIcon, AlignHorizontalLeftBold as SiAlignHorizontalLeftBold };
+export default AlignHorizontalLeftBold;
 export type { AlignHorizontalLeftBoldProps };

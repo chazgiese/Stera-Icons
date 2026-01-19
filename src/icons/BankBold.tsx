@@ -17,4 +17,5 @@ BankBold.displayName = 'BankBold';
 
 // Triple export pattern (lucide-react style)
 export { BankBold, BankBold as BankBoldIcon, BankBold as SiBankBold };
+export default BankBold;
 export type { BankBoldProps };

@@ -17,4 +17,5 @@ LassoDashRegularDuotone.displayName = 'LassoDashRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LassoDashRegularDuotone, LassoDashRegularDuotone as LassoDashRegularDuotoneIcon, LassoDashRegularDuotone as SiLassoDashRegularDuotone };
+export default LassoDashRegularDuotone;
 export type { LassoDashRegularDuotoneProps };

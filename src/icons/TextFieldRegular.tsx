@@ -17,4 +17,5 @@ TextFieldRegular.displayName = 'TextFieldRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextFieldRegular, TextFieldRegular as TextFieldRegularIcon, TextFieldRegular as SiTextFieldRegular };
+export default TextFieldRegular;
 export type { TextFieldRegularProps };

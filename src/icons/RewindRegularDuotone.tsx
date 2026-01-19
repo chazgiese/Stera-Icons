@@ -17,4 +17,5 @@ RewindRegularDuotone.displayName = 'RewindRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { RewindRegularDuotone, RewindRegularDuotone as RewindRegularDuotoneIcon, RewindRegularDuotone as SiRewindRegularDuotone };
+export default RewindRegularDuotone;
 export type { RewindRegularDuotoneProps };

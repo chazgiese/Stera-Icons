@@ -17,4 +17,5 @@ HomeSimpleFillDuotone.displayName = 'HomeSimpleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimpleFillDuotone, HomeSimpleFillDuotone as HomeSimpleFillDuotoneIcon, HomeSimpleFillDuotone as SiHomeSimpleFillDuotone };
+export default HomeSimpleFillDuotone;
 export type { HomeSimpleFillDuotoneProps };

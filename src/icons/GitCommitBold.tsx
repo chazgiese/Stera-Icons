@@ -16,4 +16,5 @@ GitCommitBold.displayName = 'GitCommitBold';
 
 // Triple export pattern (lucide-react style)
 export { GitCommitBold, GitCommitBold as GitCommitBoldIcon, GitCommitBold as SiGitCommitBold };
+export default GitCommitBold;
 export type { GitCommitBoldProps };

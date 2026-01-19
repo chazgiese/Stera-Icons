@@ -17,4 +17,5 @@ FolderPlusBold.displayName = 'FolderPlusBold';
 
 // Triple export pattern (lucide-react style)
 export { FolderPlusBold, FolderPlusBold as FolderPlusBoldIcon, FolderPlusBold as SiFolderPlusBold };
+export default FolderPlusBold;
 export type { FolderPlusBoldProps };

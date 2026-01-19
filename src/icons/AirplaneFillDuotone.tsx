@@ -17,4 +17,5 @@ AirplaneFillDuotone.displayName = 'AirplaneFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AirplaneFillDuotone, AirplaneFillDuotone as AirplaneFillDuotoneIcon, AirplaneFillDuotone as SiAirplaneFillDuotone };
+export default AirplaneFillDuotone;
 export type { AirplaneFillDuotoneProps };

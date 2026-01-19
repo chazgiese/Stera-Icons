@@ -35,3 +35,4 @@ CliSquare.displayName = 'CliSquare';
 
 // Triple export pattern (lucide-react style)
 export { CliSquare, CliSquare as CliSquareIcon, CliSquare as SiCliSquare };
+export default CliSquare;

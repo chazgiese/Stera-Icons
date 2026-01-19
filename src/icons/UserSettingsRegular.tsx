@@ -16,4 +16,5 @@ UserSettingsRegular.displayName = 'UserSettingsRegular';
 
 // Triple export pattern (lucide-react style)
 export { UserSettingsRegular, UserSettingsRegular as UserSettingsRegularIcon, UserSettingsRegular as SiUserSettingsRegular };
+export default UserSettingsRegular;
 export type { UserSettingsRegularProps };

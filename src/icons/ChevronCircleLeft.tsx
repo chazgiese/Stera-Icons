@@ -35,3 +35,4 @@ ChevronCircleLeft.displayName = 'ChevronCircleLeft';
 
 // Triple export pattern (lucide-react style)
 export { ChevronCircleLeft, ChevronCircleLeft as ChevronCircleLeftIcon, ChevronCircleLeft as SiChevronCircleLeft };
+export default ChevronCircleLeft;

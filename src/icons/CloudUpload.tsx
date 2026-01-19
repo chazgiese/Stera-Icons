@@ -35,3 +35,4 @@ CloudUpload.displayName = 'CloudUpload';
 
 // Triple export pattern (lucide-react style)
 export { CloudUpload, CloudUpload as CloudUploadIcon, CloudUpload as SiCloudUpload };
+export default CloudUpload;

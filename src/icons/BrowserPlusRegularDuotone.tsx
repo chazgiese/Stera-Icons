@@ -17,4 +17,5 @@ BrowserPlusRegularDuotone.displayName = 'BrowserPlusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrowserPlusRegularDuotone, BrowserPlusRegularDuotone as BrowserPlusRegularDuotoneIcon, BrowserPlusRegularDuotone as SiBrowserPlusRegularDuotone };
+export default BrowserPlusRegularDuotone;
 export type { BrowserPlusRegularDuotoneProps };

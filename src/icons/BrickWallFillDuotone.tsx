@@ -17,4 +17,5 @@ BrickWallFillDuotone.displayName = 'BrickWallFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BrickWallFillDuotone, BrickWallFillDuotone as BrickWallFillDuotoneIcon, BrickWallFillDuotone as SiBrickWallFillDuotone };
+export default BrickWallFillDuotone;
 export type { BrickWallFillDuotoneProps };

@@ -16,4 +16,5 @@ ArrowUpDownFill.displayName = 'ArrowUpDownFill';
 
 // Triple export pattern (lucide-react style)
 export { ArrowUpDownFill, ArrowUpDownFill as ArrowUpDownFillIcon, ArrowUpDownFill as SiArrowUpDownFill };
+export default ArrowUpDownFill;
 export type { ArrowUpDownFillProps };

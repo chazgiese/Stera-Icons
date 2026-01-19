@@ -17,4 +17,5 @@ GithubFillDuotone.displayName = 'GithubFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GithubFillDuotone, GithubFillDuotone as GithubFillDuotoneIcon, GithubFillDuotone as SiGithubFillDuotone };
+export default GithubFillDuotone;
 export type { GithubFillDuotoneProps };

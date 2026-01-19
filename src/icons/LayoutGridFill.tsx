@@ -16,4 +16,5 @@ LayoutGridFill.displayName = 'LayoutGridFill';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridFill, LayoutGridFill as LayoutGridFillIcon, LayoutGridFill as SiLayoutGridFill };
+export default LayoutGridFill;
 export type { LayoutGridFillProps };

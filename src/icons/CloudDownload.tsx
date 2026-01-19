@@ -35,3 +35,4 @@ CloudDownload.displayName = 'CloudDownload';
 
 // Triple export pattern (lucide-react style)
 export { CloudDownload, CloudDownload as CloudDownloadIcon, CloudDownload as SiCloudDownload };
+export default CloudDownload;

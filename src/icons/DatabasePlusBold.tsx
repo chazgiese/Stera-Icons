@@ -17,4 +17,5 @@ DatabasePlusBold.displayName = 'DatabasePlusBold';
 
 // Triple export pattern (lucide-react style)
 export { DatabasePlusBold, DatabasePlusBold as DatabasePlusBoldIcon, DatabasePlusBold as SiDatabasePlusBold };
+export default DatabasePlusBold;
 export type { DatabasePlusBoldProps };

@@ -35,3 +35,4 @@ ArrowDown.displayName = 'ArrowDown';
 
 // Triple export pattern (lucide-react style)
 export { ArrowDown, ArrowDown as ArrowDownIcon, ArrowDown as SiArrowDown };
+export default ArrowDown;

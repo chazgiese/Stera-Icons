@@ -17,4 +17,5 @@ PercentCircleRegular.displayName = 'PercentCircleRegular';
 
 // Triple export pattern (lucide-react style)
 export { PercentCircleRegular, PercentCircleRegular as PercentCircleRegularIcon, PercentCircleRegular as SiPercentCircleRegular };
+export default PercentCircleRegular;
 export type { PercentCircleRegularProps };

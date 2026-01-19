@@ -16,4 +16,5 @@ FlowDiagramFill.displayName = 'FlowDiagramFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowDiagramFill, FlowDiagramFill as FlowDiagramFillIcon, FlowDiagramFill as SiFlowDiagramFill };
+export default FlowDiagramFill;
 export type { FlowDiagramFillProps };

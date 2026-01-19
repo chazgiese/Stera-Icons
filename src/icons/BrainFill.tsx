@@ -16,4 +16,5 @@ BrainFill.displayName = 'BrainFill';
 
 // Triple export pattern (lucide-react style)
 export { BrainFill, BrainFill as BrainFillIcon, BrainFill as SiBrainFill };
+export default BrainFill;
 export type { BrainFillProps };

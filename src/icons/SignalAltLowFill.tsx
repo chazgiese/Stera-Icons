@@ -16,4 +16,5 @@ SignalAltLowFill.displayName = 'SignalAltLowFill';
 
 // Triple export pattern (lucide-react style)
 export { SignalAltLowFill, SignalAltLowFill as SignalAltLowFillIcon, SignalAltLowFill as SiSignalAltLowFill };
+export default SignalAltLowFill;
 export type { SignalAltLowFillProps };

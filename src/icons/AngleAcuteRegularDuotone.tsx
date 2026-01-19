@@ -17,4 +17,5 @@ AngleAcuteRegularDuotone.displayName = 'AngleAcuteRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AngleAcuteRegularDuotone, AngleAcuteRegularDuotone as AngleAcuteRegularDuotoneIcon, AngleAcuteRegularDuotone as SiAngleAcuteRegularDuotone };
+export default AngleAcuteRegularDuotone;
 export type { AngleAcuteRegularDuotoneProps };

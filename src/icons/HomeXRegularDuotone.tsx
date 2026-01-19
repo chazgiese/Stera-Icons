@@ -17,4 +17,5 @@ HomeXRegularDuotone.displayName = 'HomeXRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HomeXRegularDuotone, HomeXRegularDuotone as HomeXRegularDuotoneIcon, HomeXRegularDuotone as SiHomeXRegularDuotone };
+export default HomeXRegularDuotone;
 export type { HomeXRegularDuotoneProps };

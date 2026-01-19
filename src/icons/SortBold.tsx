@@ -17,4 +17,5 @@ SortBold.displayName = 'SortBold';
 
 // Triple export pattern (lucide-react style)
 export { SortBold, SortBold as SortBoldIcon, SortBold as SiSortBold };
+export default SortBold;
 export type { SortBoldProps };

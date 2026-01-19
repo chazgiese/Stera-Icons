@@ -35,3 +35,4 @@ Backslash.displayName = 'Backslash';
 
 // Triple export pattern (lucide-react style)
 export { Backslash, Backslash as BackslashIcon, Backslash as SiBackslash };
+export default Backslash;

@@ -16,4 +16,5 @@ TruckBold.displayName = 'TruckBold';
 
 // Triple export pattern (lucide-react style)
 export { TruckBold, TruckBold as TruckBoldIcon, TruckBold as SiTruckBold };
+export default TruckBold;
 export type { TruckBoldProps };

@@ -18,4 +18,5 @@ QrCodeFill.displayName = 'QrCodeFill';
 
 // Triple export pattern (lucide-react style)
 export { QrCodeFill, QrCodeFill as QrCodeFillIcon, QrCodeFill as SiQrCodeFill };
+export default QrCodeFill;
 export type { QrCodeFillProps };

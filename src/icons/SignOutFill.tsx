@@ -16,4 +16,5 @@ SignOutFill.displayName = 'SignOutFill';
 
 // Triple export pattern (lucide-react style)
 export { SignOutFill, SignOutFill as SignOutFillIcon, SignOutFill as SiSignOutFill };
+export default SignOutFill;
 export type { SignOutFillProps };

@@ -18,4 +18,5 @@ DraftingCompassFillDuotone.displayName = 'DraftingCompassFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DraftingCompassFillDuotone, DraftingCompassFillDuotone as DraftingCompassFillDuotoneIcon, DraftingCompassFillDuotone as SiDraftingCompassFillDuotone };
+export default DraftingCompassFillDuotone;
 export type { DraftingCompassFillDuotoneProps };

@@ -17,4 +17,5 @@ MailRegularDuotone.displayName = 'MailRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MailRegularDuotone, MailRegularDuotone as MailRegularDuotoneIcon, MailRegularDuotone as SiMailRegularDuotone };
+export default MailRegularDuotone;
 export type { MailRegularDuotoneProps };

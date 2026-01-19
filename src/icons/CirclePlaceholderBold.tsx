@@ -16,4 +16,5 @@ CirclePlaceholderBold.displayName = 'CirclePlaceholderBold';
 
 // Triple export pattern (lucide-react style)
 export { CirclePlaceholderBold, CirclePlaceholderBold as CirclePlaceholderBoldIcon, CirclePlaceholderBold as SiCirclePlaceholderBold };
+export default CirclePlaceholderBold;
 export type { CirclePlaceholderBoldProps };

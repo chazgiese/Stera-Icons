@@ -17,4 +17,5 @@ SnowflakeRegularDuotone.displayName = 'SnowflakeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SnowflakeRegularDuotone, SnowflakeRegularDuotone as SnowflakeRegularDuotoneIcon, SnowflakeRegularDuotone as SiSnowflakeRegularDuotone };
+export default SnowflakeRegularDuotone;
 export type { SnowflakeRegularDuotoneProps };

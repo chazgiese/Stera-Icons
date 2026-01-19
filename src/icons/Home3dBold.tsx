@@ -17,4 +17,5 @@ Home3dBold.displayName = 'Home3dBold';
 
 // Triple export pattern (lucide-react style)
 export { Home3dBold, Home3dBold as Home3dBoldIcon, Home3dBold as SiHome3dBold };
+export default Home3dBold;
 export type { Home3dBoldProps };

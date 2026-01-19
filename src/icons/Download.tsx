@@ -35,3 +35,4 @@ Download.displayName = 'Download';
 
 // Triple export pattern (lucide-react style)
 export { Download, Download as DownloadIcon, Download as SiDownload };
+export default Download;

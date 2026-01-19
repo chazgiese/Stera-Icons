@@ -35,3 +35,4 @@ Reply.displayName = 'Reply';
 
 // Triple export pattern (lucide-react style)
 export { Reply, Reply as ReplyIcon, Reply as SiReply };
+export default Reply;

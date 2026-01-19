@@ -16,4 +16,5 @@ EyeOffBold.displayName = 'EyeOffBold';
 
 // Triple export pattern (lucide-react style)
 export { EyeOffBold, EyeOffBold as EyeOffBoldIcon, EyeOffBold as SiEyeOffBold };
+export default EyeOffBold;
 export type { EyeOffBoldProps };

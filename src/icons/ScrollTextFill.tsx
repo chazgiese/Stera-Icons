@@ -17,4 +17,5 @@ ScrollTextFill.displayName = 'ScrollTextFill';
 
 // Triple export pattern (lucide-react style)
 export { ScrollTextFill, ScrollTextFill as ScrollTextFillIcon, ScrollTextFill as SiScrollTextFill };
+export default ScrollTextFill;
 export type { ScrollTextFillProps };

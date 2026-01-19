@@ -17,4 +17,5 @@ NoteFillDuotone.displayName = 'NoteFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { NoteFillDuotone, NoteFillDuotone as NoteFillDuotoneIcon, NoteFillDuotone as SiNoteFillDuotone };
+export default NoteFillDuotone;
 export type { NoteFillDuotoneProps };

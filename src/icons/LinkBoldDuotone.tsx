@@ -17,4 +17,5 @@ LinkBoldDuotone.displayName = 'LinkBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LinkBoldDuotone, LinkBoldDuotone as LinkBoldDuotoneIcon, LinkBoldDuotone as SiLinkBoldDuotone };
+export default LinkBoldDuotone;
 export type { LinkBoldDuotoneProps };

@@ -18,4 +18,5 @@ MedalStarFillDuotone.displayName = 'MedalStarFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MedalStarFillDuotone, MedalStarFillDuotone as MedalStarFillDuotoneIcon, MedalStarFillDuotone as SiMedalStarFillDuotone };
+export default MedalStarFillDuotone;
 export type { MedalStarFillDuotoneProps };

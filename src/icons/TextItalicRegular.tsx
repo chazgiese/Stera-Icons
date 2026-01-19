@@ -16,4 +16,5 @@ TextItalicRegular.displayName = 'TextItalicRegular';
 
 // Triple export pattern (lucide-react style)
 export { TextItalicRegular, TextItalicRegular as TextItalicRegularIcon, TextItalicRegular as SiTextItalicRegular };
+export default TextItalicRegular;
 export type { TextItalicRegularProps };

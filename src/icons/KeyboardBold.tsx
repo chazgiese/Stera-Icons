@@ -17,4 +17,5 @@ KeyboardBold.displayName = 'KeyboardBold';
 
 // Triple export pattern (lucide-react style)
 export { KeyboardBold, KeyboardBold as KeyboardBoldIcon, KeyboardBold as SiKeyboardBold };
+export default KeyboardBold;
 export type { KeyboardBoldProps };

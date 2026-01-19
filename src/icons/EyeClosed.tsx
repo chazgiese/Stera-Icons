@@ -35,3 +35,4 @@ EyeClosed.displayName = 'EyeClosed';
 
 // Triple export pattern (lucide-react style)
 export { EyeClosed, EyeClosed as EyeClosedIcon, EyeClosed as SiEyeClosed };
+export default EyeClosed;

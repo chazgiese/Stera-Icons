@@ -17,4 +17,5 @@ InfoSquareRegular.displayName = 'InfoSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { InfoSquareRegular, InfoSquareRegular as InfoSquareRegularIcon, InfoSquareRegular as SiInfoSquareRegular };
+export default InfoSquareRegular;
 export type { InfoSquareRegularProps };

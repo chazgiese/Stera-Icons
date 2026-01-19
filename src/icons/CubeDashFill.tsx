@@ -16,4 +16,5 @@ CubeDashFill.displayName = 'CubeDashFill';
 
 // Triple export pattern (lucide-react style)
 export { CubeDashFill, CubeDashFill as CubeDashFillIcon, CubeDashFill as SiCubeDashFill };
+export default CubeDashFill;
 export type { CubeDashFillProps };

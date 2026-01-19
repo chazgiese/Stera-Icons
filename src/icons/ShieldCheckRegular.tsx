@@ -17,4 +17,5 @@ ShieldCheckRegular.displayName = 'ShieldCheckRegular';
 
 // Triple export pattern (lucide-react style)
 export { ShieldCheckRegular, ShieldCheckRegular as ShieldCheckRegularIcon, ShieldCheckRegular as SiShieldCheckRegular };
+export default ShieldCheckRegular;
 export type { ShieldCheckRegularProps };

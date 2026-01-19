@@ -35,3 +35,4 @@ ChatBubbleOff.displayName = 'ChatBubbleOff';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleOff, ChatBubbleOff as ChatBubbleOffIcon, ChatBubbleOff as SiChatBubbleOff };
+export default ChatBubbleOff;

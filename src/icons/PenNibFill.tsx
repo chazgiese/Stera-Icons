@@ -16,4 +16,5 @@ PenNibFill.displayName = 'PenNibFill';
 
 // Triple export pattern (lucide-react style)
 export { PenNibFill, PenNibFill as PenNibFillIcon, PenNibFill as SiPenNibFill };
+export default PenNibFill;
 export type { PenNibFillProps };

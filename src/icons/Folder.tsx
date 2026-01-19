@@ -35,3 +35,4 @@ Folder.displayName = 'Folder';
 
 // Triple export pattern (lucide-react style)
 export { Folder, Folder as FolderIcon, Folder as SiFolder };
+export default Folder;

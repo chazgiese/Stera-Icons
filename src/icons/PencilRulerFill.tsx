@@ -16,4 +16,5 @@ PencilRulerFill.displayName = 'PencilRulerFill';
 
 // Triple export pattern (lucide-react style)
 export { PencilRulerFill, PencilRulerFill as PencilRulerFillIcon, PencilRulerFill as SiPencilRulerFill };
+export default PencilRulerFill;
 export type { PencilRulerFillProps };

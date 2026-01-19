@@ -17,4 +17,5 @@ CodeFillDuotone.displayName = 'CodeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CodeFillDuotone, CodeFillDuotone as CodeFillDuotoneIcon, CodeFillDuotone as SiCodeFillDuotone };
+export default CodeFillDuotone;
 export type { CodeFillDuotoneProps };

@@ -18,4 +18,5 @@ AtomAiBold.displayName = 'AtomAiBold';
 
 // Triple export pattern (lucide-react style)
 export { AtomAiBold, AtomAiBold as AtomAiBoldIcon, AtomAiBold as SiAtomAiBold };
+export default AtomAiBold;
 export type { AtomAiBoldProps };

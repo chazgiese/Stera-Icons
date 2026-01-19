@@ -18,4 +18,5 @@ WineGlassRegularDuotone.displayName = 'WineGlassRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { WineGlassRegularDuotone, WineGlassRegularDuotone as WineGlassRegularDuotoneIcon, WineGlassRegularDuotone as SiWineGlassRegularDuotone };
+export default WineGlassRegularDuotone;
 export type { WineGlassRegularDuotoneProps };

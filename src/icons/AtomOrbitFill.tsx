@@ -16,4 +16,5 @@ AtomOrbitFill.displayName = 'AtomOrbitFill';
 
 // Triple export pattern (lucide-react style)
 export { AtomOrbitFill, AtomOrbitFill as AtomOrbitFillIcon, AtomOrbitFill as SiAtomOrbitFill };
+export default AtomOrbitFill;
 export type { AtomOrbitFillProps };

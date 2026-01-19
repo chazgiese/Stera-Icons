@@ -17,4 +17,5 @@ CubePackageFillDuotone.displayName = 'CubePackageFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageFillDuotone, CubePackageFillDuotone as CubePackageFillDuotoneIcon, CubePackageFillDuotone as SiCubePackageFillDuotone };
+export default CubePackageFillDuotone;
 export type { CubePackageFillDuotoneProps };

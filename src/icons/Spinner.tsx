@@ -35,3 +35,4 @@ Spinner.displayName = 'Spinner';
 
 // Triple export pattern (lucide-react style)
 export { Spinner, Spinner as SpinnerIcon, Spinner as SiSpinner };
+export default Spinner;

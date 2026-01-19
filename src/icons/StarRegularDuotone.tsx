@@ -17,4 +17,5 @@ StarRegularDuotone.displayName = 'StarRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { StarRegularDuotone, StarRegularDuotone as StarRegularDuotoneIcon, StarRegularDuotone as SiStarRegularDuotone };
+export default StarRegularDuotone;
 export type { StarRegularDuotoneProps };

@@ -17,4 +17,5 @@ UserXRegular.displayName = 'UserXRegular';
 
 // Triple export pattern (lucide-react style)
 export { UserXRegular, UserXRegular as UserXRegularIcon, UserXRegular as SiUserXRegular };
+export default UserXRegular;
 export type { UserXRegularProps };

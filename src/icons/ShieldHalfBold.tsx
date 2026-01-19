@@ -16,4 +16,5 @@ ShieldHalfBold.displayName = 'ShieldHalfBold';
 
 // Triple export pattern (lucide-react style)
 export { ShieldHalfBold, ShieldHalfBold as ShieldHalfBoldIcon, ShieldHalfBold as SiShieldHalfBold };
+export default ShieldHalfBold;
 export type { ShieldHalfBoldProps };

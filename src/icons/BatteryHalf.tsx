@@ -35,3 +35,4 @@ BatteryHalf.displayName = 'BatteryHalf';
 
 // Triple export pattern (lucide-react style)
 export { BatteryHalf, BatteryHalf as BatteryHalfIcon, BatteryHalf as SiBatteryHalf };
+export default BatteryHalf;

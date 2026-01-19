@@ -16,4 +16,5 @@ SeedlingBold.displayName = 'SeedlingBold';
 
 // Triple export pattern (lucide-react style)
 export { SeedlingBold, SeedlingBold as SeedlingBoldIcon, SeedlingBold as SiSeedlingBold };
+export default SeedlingBold;
 export type { SeedlingBoldProps };

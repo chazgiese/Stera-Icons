@@ -35,3 +35,4 @@ ListPlus.displayName = 'ListPlus';
 
 // Triple export pattern (lucide-react style)
 export { ListPlus, ListPlus as ListPlusIcon, ListPlus as SiListPlus };
+export default ListPlus;

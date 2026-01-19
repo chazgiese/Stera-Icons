@@ -18,4 +18,5 @@ BankRegularDuotone.displayName = 'BankRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BankRegularDuotone, BankRegularDuotone as BankRegularDuotoneIcon, BankRegularDuotone as SiBankRegularDuotone };
+export default BankRegularDuotone;
 export type { BankRegularDuotoneProps };

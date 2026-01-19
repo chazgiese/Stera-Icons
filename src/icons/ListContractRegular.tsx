@@ -16,4 +16,5 @@ ListContractRegular.displayName = 'ListContractRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListContractRegular, ListContractRegular as ListContractRegularIcon, ListContractRegular as SiListContractRegular };
+export default ListContractRegular;
 export type { ListContractRegularProps };

@@ -16,4 +16,5 @@ FilmStripBold.displayName = 'FilmStripBold';
 
 // Triple export pattern (lucide-react style)
 export { FilmStripBold, FilmStripBold as FilmStripBoldIcon, FilmStripBold as SiFilmStripBold };
+export default FilmStripBold;
 export type { FilmStripBoldProps };

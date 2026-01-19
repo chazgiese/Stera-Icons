@@ -17,4 +17,5 @@ ChartPieRegularDuotone.displayName = 'ChartPieRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartPieRegularDuotone, ChartPieRegularDuotone as ChartPieRegularDuotoneIcon, ChartPieRegularDuotone as SiChartPieRegularDuotone };
+export default ChartPieRegularDuotone;
 export type { ChartPieRegularDuotoneProps };

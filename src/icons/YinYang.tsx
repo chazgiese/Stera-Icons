@@ -35,3 +35,4 @@ YinYang.displayName = 'YinYang';
 
 // Triple export pattern (lucide-react style)
 export { YinYang, YinYang as YinYangIcon, YinYang as SiYinYang };
+export default YinYang;

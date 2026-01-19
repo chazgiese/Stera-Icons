@@ -17,4 +17,5 @@ EditSquareRegularDuotone.displayName = 'EditSquareRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EditSquareRegularDuotone, EditSquareRegularDuotone as EditSquareRegularDuotoneIcon, EditSquareRegularDuotone as SiEditSquareRegularDuotone };
+export default EditSquareRegularDuotone;
 export type { EditSquareRegularDuotoneProps };

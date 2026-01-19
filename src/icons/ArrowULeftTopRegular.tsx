@@ -16,4 +16,5 @@ ArrowULeftTopRegular.displayName = 'ArrowULeftTopRegular';
 
 // Triple export pattern (lucide-react style)
 export { ArrowULeftTopRegular, ArrowULeftTopRegular as ArrowULeftTopRegularIcon, ArrowULeftTopRegular as SiArrowULeftTopRegular };
+export default ArrowULeftTopRegular;
 export type { ArrowULeftTopRegularProps };

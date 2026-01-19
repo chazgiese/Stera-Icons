@@ -17,4 +17,5 @@ ChatBubbleAlertBoldDuotone.displayName = 'ChatBubbleAlertBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBubbleAlertBoldDuotone, ChatBubbleAlertBoldDuotone as ChatBubbleAlertBoldDuotoneIcon, ChatBubbleAlertBoldDuotone as SiChatBubbleAlertBoldDuotone };
+export default ChatBubbleAlertBoldDuotone;
 export type { ChatBubbleAlertBoldDuotoneProps };

@@ -16,4 +16,5 @@ XBold.displayName = 'XBold';
 
 // Triple export pattern (lucide-react style)
 export { XBold, XBold as XBoldIcon, XBold as SiXBold };
+export default XBold;
 export type { XBoldProps };

@@ -35,3 +35,4 @@ SignOut.displayName = 'SignOut';
 
 // Triple export pattern (lucide-react style)
 export { SignOut, SignOut as SignOutIcon, SignOut as SiSignOut };
+export default SignOut;

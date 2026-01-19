@@ -18,4 +18,5 @@ AlarmClockBold.displayName = 'AlarmClockBold';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockBold, AlarmClockBold as AlarmClockBoldIcon, AlarmClockBold as SiAlarmClockBold };
+export default AlarmClockBold;
 export type { AlarmClockBoldProps };

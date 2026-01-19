@@ -17,4 +17,5 @@ CodeSquareBoldDuotone.displayName = 'CodeSquareBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CodeSquareBoldDuotone, CodeSquareBoldDuotone as CodeSquareBoldDuotoneIcon, CodeSquareBoldDuotone as SiCodeSquareBoldDuotone };
+export default CodeSquareBoldDuotone;
 export type { CodeSquareBoldDuotoneProps };

@@ -16,4 +16,5 @@ FlowLeftArrowFill.displayName = 'FlowLeftArrowFill';
 
 // Triple export pattern (lucide-react style)
 export { FlowLeftArrowFill, FlowLeftArrowFill as FlowLeftArrowFillIcon, FlowLeftArrowFill as SiFlowLeftArrowFill };
+export default FlowLeftArrowFill;
 export type { FlowLeftArrowFillProps };

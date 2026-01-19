@@ -16,4 +16,5 @@ ChartAreaBold.displayName = 'ChartAreaBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartAreaBold, ChartAreaBold as ChartAreaBoldIcon, ChartAreaBold as SiChartAreaBold };
+export default ChartAreaBold;
 export type { ChartAreaBoldProps };

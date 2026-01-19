@@ -16,4 +16,5 @@ ScribbleFill.displayName = 'ScribbleFill';
 
 // Triple export pattern (lucide-react style)
 export { ScribbleFill, ScribbleFill as ScribbleFillIcon, ScribbleFill as SiScribbleFill };
+export default ScribbleFill;
 export type { ScribbleFillProps };

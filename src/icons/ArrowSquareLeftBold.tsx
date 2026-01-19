@@ -17,4 +17,5 @@ ArrowSquareLeftBold.displayName = 'ArrowSquareLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { ArrowSquareLeftBold, ArrowSquareLeftBold as ArrowSquareLeftBoldIcon, ArrowSquareLeftBold as SiArrowSquareLeftBold };
+export default ArrowSquareLeftBold;
 export type { ArrowSquareLeftBoldProps };

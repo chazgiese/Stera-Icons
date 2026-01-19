@@ -17,4 +17,5 @@ HomeXRegular.displayName = 'HomeXRegular';
 
 // Triple export pattern (lucide-react style)
 export { HomeXRegular, HomeXRegular as HomeXRegularIcon, HomeXRegular as SiHomeXRegular };
+export default HomeXRegular;
 export type { HomeXRegularProps };

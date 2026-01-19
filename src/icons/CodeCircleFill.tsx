@@ -16,4 +16,5 @@ CodeCircleFill.displayName = 'CodeCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { CodeCircleFill, CodeCircleFill as CodeCircleFillIcon, CodeCircleFill as SiCodeCircleFill };
+export default CodeCircleFill;
 export type { CodeCircleFillProps };

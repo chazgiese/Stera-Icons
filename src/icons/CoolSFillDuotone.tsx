@@ -17,4 +17,5 @@ CoolSFillDuotone.displayName = 'CoolSFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CoolSFillDuotone, CoolSFillDuotone as CoolSFillDuotoneIcon, CoolSFillDuotone as SiCoolSFillDuotone };
+export default CoolSFillDuotone;
 export type { CoolSFillDuotoneProps };

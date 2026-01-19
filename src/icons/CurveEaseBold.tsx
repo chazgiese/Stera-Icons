@@ -19,4 +19,5 @@ CurveEaseBold.displayName = 'CurveEaseBold';
 
 // Triple export pattern (lucide-react style)
 export { CurveEaseBold, CurveEaseBold as CurveEaseBoldIcon, CurveEaseBold as SiCurveEaseBold };
+export default CurveEaseBold;
 export type { CurveEaseBoldProps };

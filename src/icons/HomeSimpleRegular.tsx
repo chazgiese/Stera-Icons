@@ -16,4 +16,5 @@ HomeSimpleRegular.displayName = 'HomeSimpleRegular';
 
 // Triple export pattern (lucide-react style)
 export { HomeSimpleRegular, HomeSimpleRegular as HomeSimpleRegularIcon, HomeSimpleRegular as SiHomeSimpleRegular };
+export default HomeSimpleRegular;
 export type { HomeSimpleRegularProps };

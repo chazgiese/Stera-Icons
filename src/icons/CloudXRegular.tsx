@@ -17,4 +17,5 @@ CloudXRegular.displayName = 'CloudXRegular';
 
 // Triple export pattern (lucide-react style)
 export { CloudXRegular, CloudXRegular as CloudXRegularIcon, CloudXRegular as SiCloudXRegular };
+export default CloudXRegular;
 export type { CloudXRegularProps };

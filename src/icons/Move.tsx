@@ -35,3 +35,4 @@ Move.displayName = 'Move';
 
 // Triple export pattern (lucide-react style)
 export { Move, Move as MoveIcon, Move as SiMove };
+export default Move;

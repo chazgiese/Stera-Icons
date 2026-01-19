@@ -16,4 +16,5 @@ CrosshairFill.displayName = 'CrosshairFill';
 
 // Triple export pattern (lucide-react style)
 export { CrosshairFill, CrosshairFill as CrosshairFillIcon, CrosshairFill as SiCrosshairFill };
+export default CrosshairFill;
 export type { CrosshairFillProps };

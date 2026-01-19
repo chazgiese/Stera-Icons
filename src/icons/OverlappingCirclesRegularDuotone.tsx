@@ -18,4 +18,5 @@ OverlappingCirclesRegularDuotone.displayName = 'OverlappingCirclesRegularDuotone
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCirclesRegularDuotone, OverlappingCirclesRegularDuotone as OverlappingCirclesRegularDuotoneIcon, OverlappingCirclesRegularDuotone as SiOverlappingCirclesRegularDuotone };
+export default OverlappingCirclesRegularDuotone;
 export type { OverlappingCirclesRegularDuotoneProps };

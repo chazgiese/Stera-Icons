@@ -17,4 +17,5 @@ BellRegularDuotone.displayName = 'BellRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BellRegularDuotone, BellRegularDuotone as BellRegularDuotoneIcon, BellRegularDuotone as SiBellRegularDuotone };
+export default BellRegularDuotone;
 export type { BellRegularDuotoneProps };

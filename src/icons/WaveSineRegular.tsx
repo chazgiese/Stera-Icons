@@ -16,4 +16,5 @@ WaveSineRegular.displayName = 'WaveSineRegular';
 
 // Triple export pattern (lucide-react style)
 export { WaveSineRegular, WaveSineRegular as WaveSineRegularIcon, WaveSineRegular as SiWaveSineRegular };
+export default WaveSineRegular;
 export type { WaveSineRegularProps };

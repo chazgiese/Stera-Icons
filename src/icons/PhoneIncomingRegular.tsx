@@ -17,4 +17,5 @@ PhoneIncomingRegular.displayName = 'PhoneIncomingRegular';
 
 // Triple export pattern (lucide-react style)
 export { PhoneIncomingRegular, PhoneIncomingRegular as PhoneIncomingRegularIcon, PhoneIncomingRegular as SiPhoneIncomingRegular };
+export default PhoneIncomingRegular;
 export type { PhoneIncomingRegularProps };

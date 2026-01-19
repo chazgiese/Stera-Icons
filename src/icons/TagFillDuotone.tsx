@@ -17,4 +17,5 @@ TagFillDuotone.displayName = 'TagFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TagFillDuotone, TagFillDuotone as TagFillDuotoneIcon, TagFillDuotone as SiTagFillDuotone };
+export default TagFillDuotone;
 export type { TagFillDuotoneProps };

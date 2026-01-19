@@ -35,3 +35,4 @@ Trophy.displayName = 'Trophy';
 
 // Triple export pattern (lucide-react style)
 export { Trophy, Trophy as TrophyIcon, Trophy as SiTrophy };
+export default Trophy;

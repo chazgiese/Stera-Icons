@@ -16,4 +16,5 @@ AirplaneFill.displayName = 'AirplaneFill';
 
 // Triple export pattern (lucide-react style)
 export { AirplaneFill, AirplaneFill as AirplaneFillIcon, AirplaneFill as SiAirplaneFill };
+export default AirplaneFill;
 export type { AirplaneFillProps };

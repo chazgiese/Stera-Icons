@@ -35,3 +35,4 @@ MoonStar.displayName = 'MoonStar';
 
 // Triple export pattern (lucide-react style)
 export { MoonStar, MoonStar as MoonStarIcon, MoonStar as SiMoonStar };
+export default MoonStar;

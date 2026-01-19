@@ -35,3 +35,4 @@ ListTree.displayName = 'ListTree';
 
 // Triple export pattern (lucide-react style)
 export { ListTree, ListTree as ListTreeIcon, ListTree as SiListTree };
+export default ListTree;

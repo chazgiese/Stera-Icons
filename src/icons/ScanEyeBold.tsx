@@ -19,4 +19,5 @@ ScanEyeBold.displayName = 'ScanEyeBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanEyeBold, ScanEyeBold as ScanEyeBoldIcon, ScanEyeBold as SiScanEyeBold };
+export default ScanEyeBold;
 export type { ScanEyeBoldProps };

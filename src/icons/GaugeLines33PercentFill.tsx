@@ -16,4 +16,5 @@ GaugeLines33PercentFill.displayName = 'GaugeLines33PercentFill';
 
 // Triple export pattern (lucide-react style)
 export { GaugeLines33PercentFill, GaugeLines33PercentFill as GaugeLines33PercentFillIcon, GaugeLines33PercentFill as SiGaugeLines33PercentFill };
+export default GaugeLines33PercentFill;
 export type { GaugeLines33PercentFillProps };

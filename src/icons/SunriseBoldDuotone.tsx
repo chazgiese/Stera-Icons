@@ -17,4 +17,5 @@ SunriseBoldDuotone.displayName = 'SunriseBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SunriseBoldDuotone, SunriseBoldDuotone as SunriseBoldDuotoneIcon, SunriseBoldDuotone as SiSunriseBoldDuotone };
+export default SunriseBoldDuotone;
 export type { SunriseBoldDuotoneProps };

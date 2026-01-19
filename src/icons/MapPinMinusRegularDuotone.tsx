@@ -17,4 +17,5 @@ MapPinMinusRegularDuotone.displayName = 'MapPinMinusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MapPinMinusRegularDuotone, MapPinMinusRegularDuotone as MapPinMinusRegularDuotoneIcon, MapPinMinusRegularDuotone as SiMapPinMinusRegularDuotone };
+export default MapPinMinusRegularDuotone;
 export type { MapPinMinusRegularDuotoneProps };

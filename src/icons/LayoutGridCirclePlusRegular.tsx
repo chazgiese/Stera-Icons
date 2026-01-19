@@ -18,4 +18,5 @@ LayoutGridCirclePlusRegular.displayName = 'LayoutGridCirclePlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridCirclePlusRegular, LayoutGridCirclePlusRegular as LayoutGridCirclePlusRegularIcon, LayoutGridCirclePlusRegular as SiLayoutGridCirclePlusRegular };
+export default LayoutGridCirclePlusRegular;
 export type { LayoutGridCirclePlusRegularProps };

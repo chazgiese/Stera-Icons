@@ -16,4 +16,5 @@ BellFill.displayName = 'BellFill';
 
 // Triple export pattern (lucide-react style)
 export { BellFill, BellFill as BellFillIcon, BellFill as SiBellFill };
+export default BellFill;
 export type { BellFillProps };

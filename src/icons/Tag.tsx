@@ -35,3 +35,4 @@ Tag.displayName = 'Tag';
 
 // Triple export pattern (lucide-react style)
 export { Tag, Tag as TagIcon, Tag as SiTag };
+export default Tag;

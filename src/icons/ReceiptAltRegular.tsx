@@ -17,4 +17,5 @@ ReceiptAltRegular.displayName = 'ReceiptAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { ReceiptAltRegular, ReceiptAltRegular as ReceiptAltRegularIcon, ReceiptAltRegular as SiReceiptAltRegular };
+export default ReceiptAltRegular;
 export type { ReceiptAltRegularProps };

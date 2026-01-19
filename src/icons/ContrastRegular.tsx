@@ -16,4 +16,5 @@ ContrastRegular.displayName = 'ContrastRegular';
 
 // Triple export pattern (lucide-react style)
 export { ContrastRegular, ContrastRegular as ContrastRegularIcon, ContrastRegular as SiContrastRegular };
+export default ContrastRegular;
 export type { ContrastRegularProps };

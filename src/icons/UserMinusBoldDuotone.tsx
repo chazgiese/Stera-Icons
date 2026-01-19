@@ -17,4 +17,5 @@ UserMinusBoldDuotone.displayName = 'UserMinusBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserMinusBoldDuotone, UserMinusBoldDuotone as UserMinusBoldDuotoneIcon, UserMinusBoldDuotone as SiUserMinusBoldDuotone };
+export default UserMinusBoldDuotone;
 export type { UserMinusBoldDuotoneProps };

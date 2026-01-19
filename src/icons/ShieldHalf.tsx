@@ -35,3 +35,4 @@ ShieldHalf.displayName = 'ShieldHalf';
 
 // Triple export pattern (lucide-react style)
 export { ShieldHalf, ShieldHalf as ShieldHalfIcon, ShieldHalf as SiShieldHalf };
+export default ShieldHalf;

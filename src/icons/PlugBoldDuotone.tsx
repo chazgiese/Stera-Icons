@@ -19,4 +19,5 @@ PlugBoldDuotone.displayName = 'PlugBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PlugBoldDuotone, PlugBoldDuotone as PlugBoldDuotoneIcon, PlugBoldDuotone as SiPlugBoldDuotone };
+export default PlugBoldDuotone;
 export type { PlugBoldDuotoneProps };

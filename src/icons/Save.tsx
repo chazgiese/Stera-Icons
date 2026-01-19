@@ -35,3 +35,4 @@ Save.displayName = 'Save';
 
 // Triple export pattern (lucide-react style)
 export { Save, Save as SaveIcon, Save as SiSave };
+export default Save;

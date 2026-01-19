@@ -35,3 +35,4 @@ TextSearch.displayName = 'TextSearch';
 
 // Triple export pattern (lucide-react style)
 export { TextSearch, TextSearch as TextSearchIcon, TextSearch as SiTextSearch };
+export default TextSearch;

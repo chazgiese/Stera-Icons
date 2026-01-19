@@ -16,4 +16,5 @@ AstriskFill.displayName = 'AstriskFill';
 
 // Triple export pattern (lucide-react style)
 export { AstriskFill, AstriskFill as AstriskFillIcon, AstriskFill as SiAstriskFill };
+export default AstriskFill;
 export type { AstriskFillProps };

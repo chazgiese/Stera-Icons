@@ -16,4 +16,5 @@ CircleCheckerBold.displayName = 'CircleCheckerBold';
 
 // Triple export pattern (lucide-react style)
 export { CircleCheckerBold, CircleCheckerBold as CircleCheckerBoldIcon, CircleCheckerBold as SiCircleCheckerBold };
+export default CircleCheckerBold;
 export type { CircleCheckerBoldProps };

@@ -35,3 +35,4 @@ CubePackageSimple.displayName = 'CubePackageSimple';
 
 // Triple export pattern (lucide-react style)
 export { CubePackageSimple, CubePackageSimple as CubePackageSimpleIcon, CubePackageSimple as SiCubePackageSimple };
+export default CubePackageSimple;

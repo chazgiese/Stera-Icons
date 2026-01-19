@@ -20,4 +20,5 @@ SpiralBoldDuotone.displayName = 'SpiralBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SpiralBoldDuotone, SpiralBoldDuotone as SpiralBoldDuotoneIcon, SpiralBoldDuotone as SiSpiralBoldDuotone };
+export default SpiralBoldDuotone;
 export type { SpiralBoldDuotoneProps };

@@ -16,4 +16,5 @@ SquareDashedBold.displayName = 'SquareDashedBold';
 
 // Triple export pattern (lucide-react style)
 export { SquareDashedBold, SquareDashedBold as SquareDashedBoldIcon, SquareDashedBold as SiSquareDashedBold };
+export default SquareDashedBold;
 export type { SquareDashedBoldProps };

@@ -17,4 +17,5 @@ PercentCircleBold.displayName = 'PercentCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { PercentCircleBold, PercentCircleBold as PercentCircleBoldIcon, PercentCircleBold as SiPercentCircleBold };
+export default PercentCircleBold;
 export type { PercentCircleBoldProps };

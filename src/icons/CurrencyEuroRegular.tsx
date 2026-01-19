@@ -16,4 +16,5 @@ CurrencyEuroRegular.displayName = 'CurrencyEuroRegular';
 
 // Triple export pattern (lucide-react style)
 export { CurrencyEuroRegular, CurrencyEuroRegular as CurrencyEuroRegularIcon, CurrencyEuroRegular as SiCurrencyEuroRegular };
+export default CurrencyEuroRegular;
 export type { CurrencyEuroRegularProps };

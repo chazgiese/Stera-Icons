@@ -35,3 +35,4 @@ Collapse.displayName = 'Collapse';
 
 // Triple export pattern (lucide-react style)
 export { Collapse, Collapse as CollapseIcon, Collapse as SiCollapse };
+export default Collapse;

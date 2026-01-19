@@ -17,4 +17,5 @@ ActivityFillDuotone.displayName = 'ActivityFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ActivityFillDuotone, ActivityFillDuotone as ActivityFillDuotoneIcon, ActivityFillDuotone as SiActivityFillDuotone };
+export default ActivityFillDuotone;
 export type { ActivityFillDuotoneProps };

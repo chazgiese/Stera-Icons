@@ -35,3 +35,4 @@ GitPullRequest.displayName = 'GitPullRequest';
 
 // Triple export pattern (lucide-react style)
 export { GitPullRequest, GitPullRequest as GitPullRequestIcon, GitPullRequest as SiGitPullRequest };
+export default GitPullRequest;

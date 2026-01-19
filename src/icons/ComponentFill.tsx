@@ -16,4 +16,5 @@ ComponentFill.displayName = 'ComponentFill';
 
 // Triple export pattern (lucide-react style)
 export { ComponentFill, ComponentFill as ComponentFillIcon, ComponentFill as SiComponentFill };
+export default ComponentFill;
 export type { ComponentFillProps };

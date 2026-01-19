@@ -16,4 +16,5 @@ LabelAltRegular.displayName = 'LabelAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { LabelAltRegular, LabelAltRegular as LabelAltRegularIcon, LabelAltRegular as SiLabelAltRegular };
+export default LabelAltRegular;
 export type { LabelAltRegularProps };

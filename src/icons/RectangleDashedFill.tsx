@@ -16,4 +16,5 @@ RectangleDashedFill.displayName = 'RectangleDashedFill';
 
 // Triple export pattern (lucide-react style)
 export { RectangleDashedFill, RectangleDashedFill as RectangleDashedFillIcon, RectangleDashedFill as SiRectangleDashedFill };
+export default RectangleDashedFill;
 export type { RectangleDashedFillProps };

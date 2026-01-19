@@ -16,4 +16,5 @@ ListTreeFill.displayName = 'ListTreeFill';
 
 // Triple export pattern (lucide-react style)
 export { ListTreeFill, ListTreeFill as ListTreeFillIcon, ListTreeFill as SiListTreeFill };
+export default ListTreeFill;
 export type { ListTreeFillProps };

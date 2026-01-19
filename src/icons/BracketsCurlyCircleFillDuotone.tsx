@@ -17,4 +17,5 @@ BracketsCurlyCircleFillDuotone.displayName = 'BracketsCurlyCircleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { BracketsCurlyCircleFillDuotone, BracketsCurlyCircleFillDuotone as BracketsCurlyCircleFillDuotoneIcon, BracketsCurlyCircleFillDuotone as SiBracketsCurlyCircleFillDuotone };
+export default BracketsCurlyCircleFillDuotone;
 export type { BracketsCurlyCircleFillDuotoneProps };

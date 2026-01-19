@@ -35,3 +35,4 @@ ImageLandscape.displayName = 'ImageLandscape';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscape, ImageLandscape as ImageLandscapeIcon, ImageLandscape as SiImageLandscape };
+export default ImageLandscape;

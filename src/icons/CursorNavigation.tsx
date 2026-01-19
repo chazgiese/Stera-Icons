@@ -35,3 +35,4 @@ CursorNavigation.displayName = 'CursorNavigation';
 
 // Triple export pattern (lucide-react style)
 export { CursorNavigation, CursorNavigation as CursorNavigationIcon, CursorNavigation as SiCursorNavigation };
+export default CursorNavigation;

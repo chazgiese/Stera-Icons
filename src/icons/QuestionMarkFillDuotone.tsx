@@ -17,4 +17,5 @@ QuestionMarkFillDuotone.displayName = 'QuestionMarkFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { QuestionMarkFillDuotone, QuestionMarkFillDuotone as QuestionMarkFillDuotoneIcon, QuestionMarkFillDuotone as SiQuestionMarkFillDuotone };
+export default QuestionMarkFillDuotone;
 export type { QuestionMarkFillDuotoneProps };

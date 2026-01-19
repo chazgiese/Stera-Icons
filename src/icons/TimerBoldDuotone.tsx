@@ -17,4 +17,5 @@ TimerBoldDuotone.displayName = 'TimerBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TimerBoldDuotone, TimerBoldDuotone as TimerBoldDuotoneIcon, TimerBoldDuotone as SiTimerBoldDuotone };
+export default TimerBoldDuotone;
 export type { TimerBoldDuotoneProps };

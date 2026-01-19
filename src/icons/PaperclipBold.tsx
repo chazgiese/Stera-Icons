@@ -16,4 +16,5 @@ PaperclipBold.displayName = 'PaperclipBold';
 
 // Triple export pattern (lucide-react style)
 export { PaperclipBold, PaperclipBold as PaperclipBoldIcon, PaperclipBold as SiPaperclipBold };
+export default PaperclipBold;
 export type { PaperclipBoldProps };

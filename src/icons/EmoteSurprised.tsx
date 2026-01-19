@@ -35,3 +35,4 @@ EmoteSurprised.displayName = 'EmoteSurprised';
 
 // Triple export pattern (lucide-react style)
 export { EmoteSurprised, EmoteSurprised as EmoteSurprisedIcon, EmoteSurprised as SiEmoteSurprised };
+export default EmoteSurprised;

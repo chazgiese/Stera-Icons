@@ -16,4 +16,5 @@ WineBottleLabelFill.displayName = 'WineBottleLabelFill';
 
 // Triple export pattern (lucide-react style)
 export { WineBottleLabelFill, WineBottleLabelFill as WineBottleLabelFillIcon, WineBottleLabelFill as SiWineBottleLabelFill };
+export default WineBottleLabelFill;
 export type { WineBottleLabelFillProps };

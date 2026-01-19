@@ -16,4 +16,5 @@ ExpandSimpleBold.displayName = 'ExpandSimpleBold';
 
 // Triple export pattern (lucide-react style)
 export { ExpandSimpleBold, ExpandSimpleBold as ExpandSimpleBoldIcon, ExpandSimpleBold as SiExpandSimpleBold };
+export default ExpandSimpleBold;
 export type { ExpandSimpleBoldProps };

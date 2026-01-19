@@ -16,4 +16,5 @@ HomeFill.displayName = 'HomeFill';
 
 // Triple export pattern (lucide-react style)
 export { HomeFill, HomeFill as HomeFillIcon, HomeFill as SiHomeFill };
+export default HomeFill;
 export type { HomeFillProps };

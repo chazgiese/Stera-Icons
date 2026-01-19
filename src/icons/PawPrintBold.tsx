@@ -16,4 +16,5 @@ PawPrintBold.displayName = 'PawPrintBold';
 
 // Triple export pattern (lucide-react style)
 export { PawPrintBold, PawPrintBold as PawPrintBoldIcon, PawPrintBold as SiPawPrintBold };
+export default PawPrintBold;
 export type { PawPrintBoldProps };

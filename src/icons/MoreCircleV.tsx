@@ -35,3 +35,4 @@ MoreCircleV.displayName = 'MoreCircleV';
 
 // Triple export pattern (lucide-react style)
 export { MoreCircleV, MoreCircleV as MoreCircleVIcon, MoreCircleV as SiMoreCircleV };
+export default MoreCircleV;

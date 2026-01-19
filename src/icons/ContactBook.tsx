@@ -35,3 +35,4 @@ ContactBook.displayName = 'ContactBook';
 
 // Triple export pattern (lucide-react style)
 export { ContactBook, ContactBook as ContactBookIcon, ContactBook as SiContactBook };
+export default ContactBook;

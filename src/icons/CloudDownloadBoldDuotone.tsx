@@ -17,4 +17,5 @@ CloudDownloadBoldDuotone.displayName = 'CloudDownloadBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CloudDownloadBoldDuotone, CloudDownloadBoldDuotone as CloudDownloadBoldDuotoneIcon, CloudDownloadBoldDuotone as SiCloudDownloadBoldDuotone };
+export default CloudDownloadBoldDuotone;
 export type { CloudDownloadBoldDuotoneProps };

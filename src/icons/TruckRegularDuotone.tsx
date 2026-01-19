@@ -18,4 +18,5 @@ TruckRegularDuotone.displayName = 'TruckRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TruckRegularDuotone, TruckRegularDuotone as TruckRegularDuotoneIcon, TruckRegularDuotone as SiTruckRegularDuotone };
+export default TruckRegularDuotone;
 export type { TruckRegularDuotoneProps };

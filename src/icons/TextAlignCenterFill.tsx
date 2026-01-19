@@ -16,4 +16,5 @@ TextAlignCenterFill.displayName = 'TextAlignCenterFill';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignCenterFill, TextAlignCenterFill as TextAlignCenterFillIcon, TextAlignCenterFill as SiTextAlignCenterFill };
+export default TextAlignCenterFill;
 export type { TextAlignCenterFillProps };

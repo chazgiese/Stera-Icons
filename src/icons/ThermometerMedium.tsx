@@ -35,3 +35,4 @@ ThermometerMedium.displayName = 'ThermometerMedium';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerMedium, ThermometerMedium as ThermometerMediumIcon, ThermometerMedium as SiThermometerMedium };
+export default ThermometerMedium;

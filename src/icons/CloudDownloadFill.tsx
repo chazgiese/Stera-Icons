@@ -16,4 +16,5 @@ CloudDownloadFill.displayName = 'CloudDownloadFill';
 
 // Triple export pattern (lucide-react style)
 export { CloudDownloadFill, CloudDownloadFill as CloudDownloadFillIcon, CloudDownloadFill as SiCloudDownloadFill };
+export default CloudDownloadFill;
 export type { CloudDownloadFillProps };

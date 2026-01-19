@@ -35,3 +35,4 @@ SignalAltLow.displayName = 'SignalAltLow';
 
 // Triple export pattern (lucide-react style)
 export { SignalAltLow, SignalAltLow as SignalAltLowIcon, SignalAltLow as SiSignalAltLow };
+export default SignalAltLow;

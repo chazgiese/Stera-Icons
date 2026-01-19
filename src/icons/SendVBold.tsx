@@ -16,4 +16,5 @@ SendVBold.displayName = 'SendVBold';
 
 // Triple export pattern (lucide-react style)
 export { SendVBold, SendVBold as SendVBoldIcon, SendVBold as SiSendVBold };
+export default SendVBold;
 export type { SendVBoldProps };

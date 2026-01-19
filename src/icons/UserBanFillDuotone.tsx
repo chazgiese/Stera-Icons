@@ -17,4 +17,5 @@ UserBanFillDuotone.displayName = 'UserBanFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UserBanFillDuotone, UserBanFillDuotone as UserBanFillDuotoneIcon, UserBanFillDuotone as SiUserBanFillDuotone };
+export default UserBanFillDuotone;
 export type { UserBanFillDuotoneProps };

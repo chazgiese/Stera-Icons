@@ -16,4 +16,5 @@ OverlappingCirclesBold.displayName = 'OverlappingCirclesBold';
 
 // Triple export pattern (lucide-react style)
 export { OverlappingCirclesBold, OverlappingCirclesBold as OverlappingCirclesBoldIcon, OverlappingCirclesBold as SiOverlappingCirclesBold };
+export default OverlappingCirclesBold;
 export type { OverlappingCirclesBoldProps };

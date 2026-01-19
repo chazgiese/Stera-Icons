@@ -18,4 +18,5 @@ DatabaseXFill.displayName = 'DatabaseXFill';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseXFill, DatabaseXFill as DatabaseXFillIcon, DatabaseXFill as SiDatabaseXFill };
+export default DatabaseXFill;
 export type { DatabaseXFillProps };

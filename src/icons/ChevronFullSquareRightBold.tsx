@@ -17,4 +17,5 @@ ChevronFullSquareRightBold.displayName = 'ChevronFullSquareRightBold';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullSquareRightBold, ChevronFullSquareRightBold as ChevronFullSquareRightBoldIcon, ChevronFullSquareRightBold as SiChevronFullSquareRightBold };
+export default ChevronFullSquareRightBold;
 export type { ChevronFullSquareRightBoldProps };

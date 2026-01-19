@@ -35,3 +35,4 @@ SignatureX.displayName = 'SignatureX';
 
 // Triple export pattern (lucide-react style)
 export { SignatureX, SignatureX as SignatureXIcon, SignatureX as SiSignatureX };
+export default SignatureX;

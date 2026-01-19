@@ -17,4 +17,5 @@ MapPinRegular.displayName = 'MapPinRegular';
 
 // Triple export pattern (lucide-react style)
 export { MapPinRegular, MapPinRegular as MapPinRegularIcon, MapPinRegular as SiMapPinRegular };
+export default MapPinRegular;
 export type { MapPinRegularProps };

@@ -16,4 +16,5 @@ SquareDashedFill.displayName = 'SquareDashedFill';
 
 // Triple export pattern (lucide-react style)
 export { SquareDashedFill, SquareDashedFill as SquareDashedFillIcon, SquareDashedFill as SiSquareDashedFill };
+export default SquareDashedFill;
 export type { SquareDashedFillProps };

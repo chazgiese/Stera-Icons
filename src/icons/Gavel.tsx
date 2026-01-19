@@ -35,3 +35,4 @@ Gavel.displayName = 'Gavel';
 
 // Triple export pattern (lucide-react style)
 export { Gavel, Gavel as GavelIcon, Gavel as SiGavel };
+export default Gavel;

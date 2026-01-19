@@ -16,4 +16,5 @@ SpiralFill.displayName = 'SpiralFill';
 
 // Triple export pattern (lucide-react style)
 export { SpiralFill, SpiralFill as SpiralFillIcon, SpiralFill as SiSpiralFill };
+export default SpiralFill;
 export type { SpiralFillProps };

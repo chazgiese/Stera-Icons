@@ -16,4 +16,5 @@ HandbagRegular.displayName = 'HandbagRegular';
 
 // Triple export pattern (lucide-react style)
 export { HandbagRegular, HandbagRegular as HandbagRegularIcon, HandbagRegular as SiHandbagRegular };
+export default HandbagRegular;
 export type { HandbagRegularProps };

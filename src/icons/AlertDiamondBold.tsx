@@ -17,4 +17,5 @@ AlertDiamondBold.displayName = 'AlertDiamondBold';
 
 // Triple export pattern (lucide-react style)
 export { AlertDiamondBold, AlertDiamondBold as AlertDiamondBoldIcon, AlertDiamondBold as SiAlertDiamondBold };
+export default AlertDiamondBold;
 export type { AlertDiamondBoldProps };

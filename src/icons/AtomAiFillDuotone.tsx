@@ -17,4 +17,5 @@ AtomAiFillDuotone.displayName = 'AtomAiFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AtomAiFillDuotone, AtomAiFillDuotone as AtomAiFillDuotoneIcon, AtomAiFillDuotone as SiAtomAiFillDuotone };
+export default AtomAiFillDuotone;
 export type { AtomAiFillDuotoneProps };

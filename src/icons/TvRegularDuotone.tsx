@@ -17,4 +17,5 @@ TvRegularDuotone.displayName = 'TvRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TvRegularDuotone, TvRegularDuotone as TvRegularDuotoneIcon, TvRegularDuotone as SiTvRegularDuotone };
+export default TvRegularDuotone;
 export type { TvRegularDuotoneProps };

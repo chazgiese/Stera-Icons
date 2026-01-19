@@ -18,4 +18,5 @@ WifiFill.displayName = 'WifiFill';
 
 // Triple export pattern (lucide-react style)
 export { WifiFill, WifiFill as WifiFillIcon, WifiFill as SiWifiFill };
+export default WifiFill;
 export type { WifiFillProps };

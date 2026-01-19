@@ -35,3 +35,4 @@ Bell.displayName = 'Bell';
 
 // Triple export pattern (lucide-react style)
 export { Bell, Bell as BellIcon, Bell as SiBell };
+export default Bell;

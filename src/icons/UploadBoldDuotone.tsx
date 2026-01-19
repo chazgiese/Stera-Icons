@@ -17,4 +17,5 @@ UploadBoldDuotone.displayName = 'UploadBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UploadBoldDuotone, UploadBoldDuotone as UploadBoldDuotoneIcon, UploadBoldDuotone as SiUploadBoldDuotone };
+export default UploadBoldDuotone;
 export type { UploadBoldDuotoneProps };

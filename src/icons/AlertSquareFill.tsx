@@ -16,4 +16,5 @@ AlertSquareFill.displayName = 'AlertSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { AlertSquareFill, AlertSquareFill as AlertSquareFillIcon, AlertSquareFill as SiAlertSquareFill };
+export default AlertSquareFill;
 export type { AlertSquareFillProps };

@@ -35,3 +35,4 @@ Delete.displayName = 'Delete';
 
 // Triple export pattern (lucide-react style)
 export { Delete, Delete as DeleteIcon, Delete as SiDelete };
+export default Delete;

@@ -16,4 +16,5 @@ SignalAltHighRegularDuotone.displayName = 'SignalAltHighRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignalAltHighRegularDuotone, SignalAltHighRegularDuotone as SignalAltHighRegularDuotoneIcon, SignalAltHighRegularDuotone as SiSignalAltHighRegularDuotone };
+export default SignalAltHighRegularDuotone;
 export type { SignalAltHighRegularDuotoneProps };

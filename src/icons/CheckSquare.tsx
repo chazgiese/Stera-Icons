@@ -35,3 +35,4 @@ CheckSquare.displayName = 'CheckSquare';
 
 // Triple export pattern (lucide-react style)
 export { CheckSquare, CheckSquare as CheckSquareIcon, CheckSquare as SiCheckSquare };
+export default CheckSquare;

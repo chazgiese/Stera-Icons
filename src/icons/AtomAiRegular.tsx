@@ -18,4 +18,5 @@ AtomAiRegular.displayName = 'AtomAiRegular';
 
 // Triple export pattern (lucide-react style)
 export { AtomAiRegular, AtomAiRegular as AtomAiRegularIcon, AtomAiRegular as SiAtomAiRegular };
+export default AtomAiRegular;
 export type { AtomAiRegularProps };

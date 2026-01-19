@@ -16,4 +16,5 @@ CircleDashRegular.displayName = 'CircleDashRegular';
 
 // Triple export pattern (lucide-react style)
 export { CircleDashRegular, CircleDashRegular as CircleDashRegularIcon, CircleDashRegular as SiCircleDashRegular };
+export default CircleDashRegular;
 export type { CircleDashRegularProps };

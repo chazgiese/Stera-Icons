@@ -16,4 +16,5 @@ HexagonRegular.displayName = 'HexagonRegular';
 
 // Triple export pattern (lucide-react style)
 export { HexagonRegular, HexagonRegular as HexagonRegularIcon, HexagonRegular as SiHexagonRegular };
+export default HexagonRegular;
 export type { HexagonRegularProps };

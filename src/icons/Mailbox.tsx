@@ -35,3 +35,4 @@ Mailbox.displayName = 'Mailbox';
 
 // Triple export pattern (lucide-react style)
 export { Mailbox, Mailbox as MailboxIcon, Mailbox as SiMailbox };
+export default Mailbox;

@@ -19,4 +19,5 @@ CalendarSlashFillDuotone.displayName = 'CalendarSlashFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CalendarSlashFillDuotone, CalendarSlashFillDuotone as CalendarSlashFillDuotoneIcon, CalendarSlashFillDuotone as SiCalendarSlashFillDuotone };
+export default CalendarSlashFillDuotone;
 export type { CalendarSlashFillDuotoneProps };

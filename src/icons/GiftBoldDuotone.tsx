@@ -18,4 +18,5 @@ GiftBoldDuotone.displayName = 'GiftBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GiftBoldDuotone, GiftBoldDuotone as GiftBoldDuotoneIcon, GiftBoldDuotone as SiGiftBoldDuotone };
+export default GiftBoldDuotone;
 export type { GiftBoldDuotoneProps };

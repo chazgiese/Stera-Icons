@@ -16,4 +16,5 @@ LabelRegular.displayName = 'LabelRegular';
 
 // Triple export pattern (lucide-react style)
 export { LabelRegular, LabelRegular as LabelRegularIcon, LabelRegular as SiLabelRegular };
+export default LabelRegular;
 export type { LabelRegularProps };

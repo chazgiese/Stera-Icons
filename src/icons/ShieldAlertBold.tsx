@@ -17,4 +17,5 @@ ShieldAlertBold.displayName = 'ShieldAlertBold';
 
 // Triple export pattern (lucide-react style)
 export { ShieldAlertBold, ShieldAlertBold as ShieldAlertBoldIcon, ShieldAlertBold as SiShieldAlertBold };
+export default ShieldAlertBold;
 export type { ShieldAlertBoldProps };

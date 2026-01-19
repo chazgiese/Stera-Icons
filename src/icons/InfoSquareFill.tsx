@@ -16,4 +16,5 @@ InfoSquareFill.displayName = 'InfoSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { InfoSquareFill, InfoSquareFill as InfoSquareFillIcon, InfoSquareFill as SiInfoSquareFill };
+export default InfoSquareFill;
 export type { InfoSquareFillProps };

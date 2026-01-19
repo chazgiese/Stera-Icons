@@ -17,4 +17,5 @@ FastForwardBoldDuotone.displayName = 'FastForwardBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FastForwardBoldDuotone, FastForwardBoldDuotone as FastForwardBoldDuotoneIcon, FastForwardBoldDuotone as SiFastForwardBoldDuotone };
+export default FastForwardBoldDuotone;
 export type { FastForwardBoldDuotoneProps };

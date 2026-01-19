@@ -35,3 +35,4 @@ EmoteNeutral.displayName = 'EmoteNeutral';
 
 // Triple export pattern (lucide-react style)
 export { EmoteNeutral, EmoteNeutral as EmoteNeutralIcon, EmoteNeutral as SiEmoteNeutral };
+export default EmoteNeutral;

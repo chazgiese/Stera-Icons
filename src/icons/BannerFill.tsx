@@ -16,4 +16,5 @@ BannerFill.displayName = 'BannerFill';
 
 // Triple export pattern (lucide-react style)
 export { BannerFill, BannerFill as BannerFillIcon, BannerFill as SiBannerFill };
+export default BannerFill;
 export type { BannerFillProps };

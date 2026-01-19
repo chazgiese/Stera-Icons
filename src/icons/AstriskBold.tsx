@@ -16,4 +16,5 @@ AstriskBold.displayName = 'AstriskBold';
 
 // Triple export pattern (lucide-react style)
 export { AstriskBold, AstriskBold as AstriskBoldIcon, AstriskBold as SiAstriskBold };
+export default AstriskBold;
 export type { AstriskBoldProps };

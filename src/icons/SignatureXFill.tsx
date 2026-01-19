@@ -17,4 +17,5 @@ SignatureXFill.displayName = 'SignatureXFill';
 
 // Triple export pattern (lucide-react style)
 export { SignatureXFill, SignatureXFill as SignatureXFillIcon, SignatureXFill as SiSignatureXFill };
+export default SignatureXFill;
 export type { SignatureXFillProps };

@@ -17,4 +17,5 @@ ChatBoxTextFillDuotone.displayName = 'ChatBoxTextFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxTextFillDuotone, ChatBoxTextFillDuotone as ChatBoxTextFillDuotoneIcon, ChatBoxTextFillDuotone as SiChatBoxTextFillDuotone };
+export default ChatBoxTextFillDuotone;
 export type { ChatBoxTextFillDuotoneProps };

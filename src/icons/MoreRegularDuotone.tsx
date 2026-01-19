@@ -16,4 +16,5 @@ MoreRegularDuotone.displayName = 'MoreRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MoreRegularDuotone, MoreRegularDuotone as MoreRegularDuotoneIcon, MoreRegularDuotone as SiMoreRegularDuotone };
+export default MoreRegularDuotone;
 export type { MoreRegularDuotoneProps };

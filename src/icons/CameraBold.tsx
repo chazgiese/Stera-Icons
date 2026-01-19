@@ -17,4 +17,5 @@ CameraBold.displayName = 'CameraBold';
 
 // Triple export pattern (lucide-react style)
 export { CameraBold, CameraBold as CameraBoldIcon, CameraBold as SiCameraBold };
+export default CameraBold;
 export type { CameraBoldProps };

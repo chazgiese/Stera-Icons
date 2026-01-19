@@ -17,4 +17,5 @@ MicroscopeBold.displayName = 'MicroscopeBold';
 
 // Triple export pattern (lucide-react style)
 export { MicroscopeBold, MicroscopeBold as MicroscopeBoldIcon, MicroscopeBold as SiMicroscopeBold };
+export default MicroscopeBold;
 export type { MicroscopeBoldProps };

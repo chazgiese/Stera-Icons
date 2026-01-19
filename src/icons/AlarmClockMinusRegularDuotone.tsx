@@ -17,4 +17,5 @@ AlarmClockMinusRegularDuotone.displayName = 'AlarmClockMinusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockMinusRegularDuotone, AlarmClockMinusRegularDuotone as AlarmClockMinusRegularDuotoneIcon, AlarmClockMinusRegularDuotone as SiAlarmClockMinusRegularDuotone };
+export default AlarmClockMinusRegularDuotone;
 export type { AlarmClockMinusRegularDuotoneProps };

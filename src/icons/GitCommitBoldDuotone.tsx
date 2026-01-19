@@ -17,4 +17,5 @@ GitCommitBoldDuotone.displayName = 'GitCommitBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { GitCommitBoldDuotone, GitCommitBoldDuotone as GitCommitBoldDuotoneIcon, GitCommitBoldDuotone as SiGitCommitBoldDuotone };
+export default GitCommitBoldDuotone;
 export type { GitCommitBoldDuotoneProps };

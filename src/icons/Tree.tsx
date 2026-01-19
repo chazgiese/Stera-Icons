@@ -35,3 +35,4 @@ Tree.displayName = 'Tree';
 
 // Triple export pattern (lucide-react style)
 export { Tree, Tree as TreeIcon, Tree as SiTree };
+export default Tree;

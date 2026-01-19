@@ -17,4 +17,5 @@ CylinderRegularDuotone.displayName = 'CylinderRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CylinderRegularDuotone, CylinderRegularDuotone as CylinderRegularDuotoneIcon, CylinderRegularDuotone as SiCylinderRegularDuotone };
+export default CylinderRegularDuotone;
 export type { CylinderRegularDuotoneProps };

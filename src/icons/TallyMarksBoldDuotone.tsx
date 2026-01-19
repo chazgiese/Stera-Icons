@@ -17,4 +17,5 @@ TallyMarksBoldDuotone.displayName = 'TallyMarksBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TallyMarksBoldDuotone, TallyMarksBoldDuotone as TallyMarksBoldDuotoneIcon, TallyMarksBoldDuotone as SiTallyMarksBoldDuotone };
+export default TallyMarksBoldDuotone;
 export type { TallyMarksBoldDuotoneProps };

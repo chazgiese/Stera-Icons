@@ -35,3 +35,4 @@ Pedestal.displayName = 'Pedestal';
 
 // Triple export pattern (lucide-react style)
 export { Pedestal, Pedestal as PedestalIcon, Pedestal as SiPedestal };
+export default Pedestal;

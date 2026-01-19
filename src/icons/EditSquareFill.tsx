@@ -16,4 +16,5 @@ EditSquareFill.displayName = 'EditSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { EditSquareFill, EditSquareFill as EditSquareFillIcon, EditSquareFill as SiEditSquareFill };
+export default EditSquareFill;
 export type { EditSquareFillProps };

@@ -16,4 +16,5 @@ MailRegular.displayName = 'MailRegular';
 
 // Triple export pattern (lucide-react style)
 export { MailRegular, MailRegular as MailRegularIcon, MailRegular as SiMailRegular };
+export default MailRegular;
 export type { MailRegularProps };

@@ -18,4 +18,5 @@ ScrollRegularDuotone.displayName = 'ScrollRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ScrollRegularDuotone, ScrollRegularDuotone as ScrollRegularDuotoneIcon, ScrollRegularDuotone as SiScrollRegularDuotone };
+export default ScrollRegularDuotone;
 export type { ScrollRegularDuotoneProps };

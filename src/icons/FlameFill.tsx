@@ -16,4 +16,5 @@ FlameFill.displayName = 'FlameFill';
 
 // Triple export pattern (lucide-react style)
 export { FlameFill, FlameFill as FlameFillIcon, FlameFill as SiFlameFill };
+export default FlameFill;
 export type { FlameFillProps };

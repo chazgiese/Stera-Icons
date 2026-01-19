@@ -17,4 +17,5 @@ FlaskRegularDuotone.displayName = 'FlaskRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { FlaskRegularDuotone, FlaskRegularDuotone as FlaskRegularDuotoneIcon, FlaskRegularDuotone as SiFlaskRegularDuotone };
+export default FlaskRegularDuotone;
 export type { FlaskRegularDuotoneProps };

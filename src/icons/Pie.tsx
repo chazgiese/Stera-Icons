@@ -35,3 +35,4 @@ Pie.displayName = 'Pie';
 
 // Triple export pattern (lucide-react style)
 export { Pie, Pie as PieIcon, Pie as SiPie };
+export default Pie;

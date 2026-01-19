@@ -17,4 +17,5 @@ ImagePanoramaRegularDuotone.displayName = 'ImagePanoramaRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ImagePanoramaRegularDuotone, ImagePanoramaRegularDuotone as ImagePanoramaRegularDuotoneIcon, ImagePanoramaRegularDuotone as SiImagePanoramaRegularDuotone };
+export default ImagePanoramaRegularDuotone;
 export type { ImagePanoramaRegularDuotoneProps };

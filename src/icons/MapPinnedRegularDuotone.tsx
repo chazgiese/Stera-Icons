@@ -18,4 +18,5 @@ MapPinnedRegularDuotone.displayName = 'MapPinnedRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MapPinnedRegularDuotone, MapPinnedRegularDuotone as MapPinnedRegularDuotoneIcon, MapPinnedRegularDuotone as SiMapPinnedRegularDuotone };
+export default MapPinnedRegularDuotone;
 export type { MapPinnedRegularDuotoneProps };

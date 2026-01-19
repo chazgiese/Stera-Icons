@@ -17,4 +17,5 @@ CloudXFillDuotone.displayName = 'CloudXFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CloudXFillDuotone, CloudXFillDuotone as CloudXFillDuotoneIcon, CloudXFillDuotone as SiCloudXFillDuotone };
+export default CloudXFillDuotone;
 export type { CloudXFillDuotoneProps };

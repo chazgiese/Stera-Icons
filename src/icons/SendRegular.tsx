@@ -16,4 +16,5 @@ SendRegular.displayName = 'SendRegular';
 
 // Triple export pattern (lucide-react style)
 export { SendRegular, SendRegular as SendRegularIcon, SendRegular as SiSendRegular };
+export default SendRegular;
 export type { SendRegularProps };

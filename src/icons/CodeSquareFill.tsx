@@ -16,4 +16,5 @@ CodeSquareFill.displayName = 'CodeSquareFill';
 
 // Triple export pattern (lucide-react style)
 export { CodeSquareFill, CodeSquareFill as CodeSquareFillIcon, CodeSquareFill as SiCodeSquareFill };
+export default CodeSquareFill;
 export type { CodeSquareFillProps };

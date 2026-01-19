@@ -17,4 +17,5 @@ PanelBottomFloatingFillDuotone.displayName = 'PanelBottomFloatingFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PanelBottomFloatingFillDuotone, PanelBottomFloatingFillDuotone as PanelBottomFloatingFillDuotoneIcon, PanelBottomFloatingFillDuotone as SiPanelBottomFloatingFillDuotone };
+export default PanelBottomFloatingFillDuotone;
 export type { PanelBottomFloatingFillDuotoneProps };

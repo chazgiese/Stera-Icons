@@ -17,4 +17,5 @@ MicroscopeFill.displayName = 'MicroscopeFill';
 
 // Triple export pattern (lucide-react style)
 export { MicroscopeFill, MicroscopeFill as MicroscopeFillIcon, MicroscopeFill as SiMicroscopeFill };
+export default MicroscopeFill;
 export type { MicroscopeFillProps };

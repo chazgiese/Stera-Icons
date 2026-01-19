@@ -17,4 +17,5 @@ SparkleBoldDuotone.displayName = 'SparkleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SparkleBoldDuotone, SparkleBoldDuotone as SparkleBoldDuotoneIcon, SparkleBoldDuotone as SiSparkleBoldDuotone };
+export default SparkleBoldDuotone;
 export type { SparkleBoldDuotoneProps };

@@ -16,4 +16,5 @@ PlugRegular.displayName = 'PlugRegular';
 
 // Triple export pattern (lucide-react style)
 export { PlugRegular, PlugRegular as PlugRegularIcon, PlugRegular as SiPlugRegular };
+export default PlugRegular;
 export type { PlugRegularProps };

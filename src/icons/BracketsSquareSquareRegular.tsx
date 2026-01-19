@@ -17,4 +17,5 @@ BracketsSquareSquareRegular.displayName = 'BracketsSquareSquareRegular';
 
 // Triple export pattern (lucide-react style)
 export { BracketsSquareSquareRegular, BracketsSquareSquareRegular as BracketsSquareSquareRegularIcon, BracketsSquareSquareRegular as SiBracketsSquareSquareRegular };
+export default BracketsSquareSquareRegular;
 export type { BracketsSquareSquareRegularProps };

@@ -17,4 +17,5 @@ ListMinusRegularDuotone.displayName = 'ListMinusRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListMinusRegularDuotone, ListMinusRegularDuotone as ListMinusRegularDuotoneIcon, ListMinusRegularDuotone as SiListMinusRegularDuotone };
+export default ListMinusRegularDuotone;
 export type { ListMinusRegularDuotoneProps };

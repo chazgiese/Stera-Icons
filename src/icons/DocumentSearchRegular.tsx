@@ -18,4 +18,5 @@ DocumentSearchRegular.displayName = 'DocumentSearchRegular';
 
 // Triple export pattern (lucide-react style)
 export { DocumentSearchRegular, DocumentSearchRegular as DocumentSearchRegularIcon, DocumentSearchRegular as SiDocumentSearchRegular };
+export default DocumentSearchRegular;
 export type { DocumentSearchRegularProps };

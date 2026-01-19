@@ -16,4 +16,5 @@ SignalLowRegular.displayName = 'SignalLowRegular';
 
 // Triple export pattern (lucide-react style)
 export { SignalLowRegular, SignalLowRegular as SignalLowRegularIcon, SignalLowRegular as SiSignalLowRegular };
+export default SignalLowRegular;
 export type { SignalLowRegularProps };

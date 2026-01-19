@@ -17,4 +17,5 @@ CpuAmdBold.displayName = 'CpuAmdBold';
 
 // Triple export pattern (lucide-react style)
 export { CpuAmdBold, CpuAmdBold as CpuAmdBoldIcon, CpuAmdBold as SiCpuAmdBold };
+export default CpuAmdBold;
 export type { CpuAmdBoldProps };

@@ -35,3 +35,4 @@ Keyboard.displayName = 'Keyboard';
 
 // Triple export pattern (lucide-react style)
 export { Keyboard, Keyboard as KeyboardIcon, Keyboard as SiKeyboard };
+export default Keyboard;

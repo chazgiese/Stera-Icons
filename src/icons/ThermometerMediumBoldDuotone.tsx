@@ -17,4 +17,5 @@ ThermometerMediumBoldDuotone.displayName = 'ThermometerMediumBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerMediumBoldDuotone, ThermometerMediumBoldDuotone as ThermometerMediumBoldDuotoneIcon, ThermometerMediumBoldDuotone as SiThermometerMediumBoldDuotone };
+export default ThermometerMediumBoldDuotone;
 export type { ThermometerMediumBoldDuotoneProps };

@@ -16,4 +16,5 @@ ListCheckSimpleRegular.displayName = 'ListCheckSimpleRegular';
 
 // Triple export pattern (lucide-react style)
 export { ListCheckSimpleRegular, ListCheckSimpleRegular as ListCheckSimpleRegularIcon, ListCheckSimpleRegular as SiListCheckSimpleRegular };
+export default ListCheckSimpleRegular;
 export type { ListCheckSimpleRegularProps };

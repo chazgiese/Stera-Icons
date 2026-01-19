@@ -16,4 +16,5 @@ GitBranchRegular.displayName = 'GitBranchRegular';
 
 // Triple export pattern (lucide-react style)
 export { GitBranchRegular, GitBranchRegular as GitBranchRegularIcon, GitBranchRegular as SiGitBranchRegular };
+export default GitBranchRegular;
 export type { GitBranchRegularProps };

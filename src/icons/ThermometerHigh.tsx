@@ -35,3 +35,4 @@ ThermometerHigh.displayName = 'ThermometerHigh';
 
 // Triple export pattern (lucide-react style)
 export { ThermometerHigh, ThermometerHigh as ThermometerHighIcon, ThermometerHigh as SiThermometerHigh };
+export default ThermometerHigh;

@@ -16,4 +16,5 @@ ChartBarAscBold.displayName = 'ChartBarAscBold';
 
 // Triple export pattern (lucide-react style)
 export { ChartBarAscBold, ChartBarAscBold as ChartBarAscBoldIcon, ChartBarAscBold as SiChartBarAscBold };
+export default ChartBarAscBold;
 export type { ChartBarAscBoldProps };

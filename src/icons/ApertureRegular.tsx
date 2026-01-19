@@ -16,4 +16,5 @@ ApertureRegular.displayName = 'ApertureRegular';
 
 // Triple export pattern (lucide-react style)
 export { ApertureRegular, ApertureRegular as ApertureRegularIcon, ApertureRegular as SiApertureRegular };
+export default ApertureRegular;
 export type { ApertureRegularProps };

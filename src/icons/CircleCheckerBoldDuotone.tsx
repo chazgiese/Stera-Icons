@@ -17,4 +17,5 @@ CircleCheckerBoldDuotone.displayName = 'CircleCheckerBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CircleCheckerBoldDuotone, CircleCheckerBoldDuotone as CircleCheckerBoldDuotoneIcon, CircleCheckerBoldDuotone as SiCircleCheckerBoldDuotone };
+export default CircleCheckerBoldDuotone;
 export type { CircleCheckerBoldDuotoneProps };

@@ -16,4 +16,5 @@ CandleRegular.displayName = 'CandleRegular';
 
 // Triple export pattern (lucide-react style)
 export { CandleRegular, CandleRegular as CandleRegularIcon, CandleRegular as SiCandleRegular };
+export default CandleRegular;
 export type { CandleRegularProps };

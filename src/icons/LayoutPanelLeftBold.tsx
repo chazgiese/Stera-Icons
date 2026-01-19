@@ -16,4 +16,5 @@ LayoutPanelLeftBold.displayName = 'LayoutPanelLeftBold';
 
 // Triple export pattern (lucide-react style)
 export { LayoutPanelLeftBold, LayoutPanelLeftBold as LayoutPanelLeftBoldIcon, LayoutPanelLeftBold as SiLayoutPanelLeftBold };
+export default LayoutPanelLeftBold;
 export type { LayoutPanelLeftBoldProps };

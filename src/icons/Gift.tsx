@@ -35,3 +35,4 @@ Gift.displayName = 'Gift';
 
 // Triple export pattern (lucide-react style)
 export { Gift, Gift as GiftIcon, Gift as SiGift };
+export default Gift;

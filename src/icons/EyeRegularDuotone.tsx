@@ -17,4 +17,5 @@ EyeRegularDuotone.displayName = 'EyeRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EyeRegularDuotone, EyeRegularDuotone as EyeRegularDuotoneIcon, EyeRegularDuotone as SiEyeRegularDuotone };
+export default EyeRegularDuotone;
 export type { EyeRegularDuotoneProps };

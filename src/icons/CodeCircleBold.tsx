@@ -17,4 +17,5 @@ CodeCircleBold.displayName = 'CodeCircleBold';
 
 // Triple export pattern (lucide-react style)
 export { CodeCircleBold, CodeCircleBold as CodeCircleBoldIcon, CodeCircleBold as SiCodeCircleBold };
+export default CodeCircleBold;
 export type { CodeCircleBoldProps };

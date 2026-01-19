@@ -17,4 +17,5 @@ PawPrintBoldDuotone.displayName = 'PawPrintBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PawPrintBoldDuotone, PawPrintBoldDuotone as PawPrintBoldDuotoneIcon, PawPrintBoldDuotone as SiPawPrintBoldDuotone };
+export default PawPrintBoldDuotone;
 export type { PawPrintBoldDuotoneProps };

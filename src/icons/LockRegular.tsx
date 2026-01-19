@@ -17,4 +17,5 @@ LockRegular.displayName = 'LockRegular';
 
 // Triple export pattern (lucide-react style)
 export { LockRegular, LockRegular as LockRegularIcon, LockRegular as SiLockRegular };
+export default LockRegular;
 export type { LockRegularProps };

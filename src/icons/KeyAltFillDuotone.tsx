@@ -17,4 +17,5 @@ KeyAltFillDuotone.displayName = 'KeyAltFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { KeyAltFillDuotone, KeyAltFillDuotone as KeyAltFillDuotoneIcon, KeyAltFillDuotone as SiKeyAltFillDuotone };
+export default KeyAltFillDuotone;
 export type { KeyAltFillDuotoneProps };

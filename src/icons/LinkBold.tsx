@@ -17,4 +17,5 @@ LinkBold.displayName = 'LinkBold';
 
 // Triple export pattern (lucide-react style)
 export { LinkBold, LinkBold as LinkBoldIcon, LinkBold as SiLinkBold };
+export default LinkBold;
 export type { LinkBoldProps };

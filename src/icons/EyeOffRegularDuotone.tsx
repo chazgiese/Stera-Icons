@@ -17,4 +17,5 @@ EyeOffRegularDuotone.displayName = 'EyeOffRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { EyeOffRegularDuotone, EyeOffRegularDuotone as EyeOffRegularDuotoneIcon, EyeOffRegularDuotone as SiEyeOffRegularDuotone };
+export default EyeOffRegularDuotone;
 export type { EyeOffRegularDuotoneProps };

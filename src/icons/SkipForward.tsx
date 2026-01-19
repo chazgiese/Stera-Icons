@@ -35,3 +35,4 @@ SkipForward.displayName = 'SkipForward';
 
 // Triple export pattern (lucide-react style)
 export { SkipForward, SkipForward as SkipForwardIcon, SkipForward as SiSkipForward };
+export default SkipForward;

@@ -17,4 +17,5 @@ CheckFillDuotone.displayName = 'CheckFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CheckFillDuotone, CheckFillDuotone as CheckFillDuotoneIcon, CheckFillDuotone as SiCheckFillDuotone };
+export default CheckFillDuotone;
 export type { CheckFillDuotoneProps };

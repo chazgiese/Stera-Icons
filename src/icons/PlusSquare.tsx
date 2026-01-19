@@ -35,3 +35,4 @@ PlusSquare.displayName = 'PlusSquare';
 
 // Triple export pattern (lucide-react style)
 export { PlusSquare, PlusSquare as PlusSquareIcon, PlusSquare as SiPlusSquare };
+export default PlusSquare;

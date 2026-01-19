@@ -16,4 +16,5 @@ ScrollBold.displayName = 'ScrollBold';
 
 // Triple export pattern (lucide-react style)
 export { ScrollBold, ScrollBold as ScrollBoldIcon, ScrollBold as SiScrollBold };
+export default ScrollBold;
 export type { ScrollBoldProps };

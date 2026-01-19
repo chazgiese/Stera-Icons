@@ -17,4 +17,5 @@ LayersSimpleFillDuotone.displayName = 'LayersSimpleFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { LayersSimpleFillDuotone, LayersSimpleFillDuotone as LayersSimpleFillDuotoneIcon, LayersSimpleFillDuotone as SiLayersSimpleFillDuotone };
+export default LayersSimpleFillDuotone;
 export type { LayersSimpleFillDuotoneProps };

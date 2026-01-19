@@ -17,4 +17,5 @@ ImageLandscapeRegular.displayName = 'ImageLandscapeRegular';
 
 // Triple export pattern (lucide-react style)
 export { ImageLandscapeRegular, ImageLandscapeRegular as ImageLandscapeRegularIcon, ImageLandscapeRegular as SiImageLandscapeRegular };
+export default ImageLandscapeRegular;
 export type { ImageLandscapeRegularProps };

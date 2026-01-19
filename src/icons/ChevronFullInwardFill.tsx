@@ -16,4 +16,5 @@ ChevronFullInwardFill.displayName = 'ChevronFullInwardFill';
 
 // Triple export pattern (lucide-react style)
 export { ChevronFullInwardFill, ChevronFullInwardFill as ChevronFullInwardFillIcon, ChevronFullInwardFill as SiChevronFullInwardFill };
+export default ChevronFullInwardFill;
 export type { ChevronFullInwardFillProps };

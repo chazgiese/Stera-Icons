@@ -17,4 +17,5 @@ PaintPaletteBoldDuotone.displayName = 'PaintPaletteBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PaintPaletteBoldDuotone, PaintPaletteBoldDuotone as PaintPaletteBoldDuotoneIcon, PaintPaletteBoldDuotone as SiPaintPaletteBoldDuotone };
+export default PaintPaletteBoldDuotone;
 export type { PaintPaletteBoldDuotoneProps };

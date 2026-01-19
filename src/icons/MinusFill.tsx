@@ -16,4 +16,5 @@ MinusFill.displayName = 'MinusFill';
 
 // Triple export pattern (lucide-react style)
 export { MinusFill, MinusFill as MinusFillIcon, MinusFill as SiMinusFill };
+export default MinusFill;
 export type { MinusFillProps };

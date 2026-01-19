@@ -35,3 +35,4 @@ ScanLine.displayName = 'ScanLine';
 
 // Triple export pattern (lucide-react style)
 export { ScanLine, ScanLine as ScanLineIcon, ScanLine as SiScanLine };
+export default ScanLine;

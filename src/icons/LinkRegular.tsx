@@ -17,4 +17,5 @@ LinkRegular.displayName = 'LinkRegular';
 
 // Triple export pattern (lucide-react style)
 export { LinkRegular, LinkRegular as LinkRegularIcon, LinkRegular as SiLinkRegular };
+export default LinkRegular;
 export type { LinkRegularProps };

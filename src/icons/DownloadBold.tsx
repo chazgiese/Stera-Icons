@@ -17,4 +17,5 @@ DownloadBold.displayName = 'DownloadBold';
 
 // Triple export pattern (lucide-react style)
 export { DownloadBold, DownloadBold as DownloadBoldIcon, DownloadBold as SiDownloadBold };
+export default DownloadBold;
 export type { DownloadBoldProps };

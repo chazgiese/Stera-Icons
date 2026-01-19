@@ -16,4 +16,5 @@ PlayFill.displayName = 'PlayFill';
 
 // Triple export pattern (lucide-react style)
 export { PlayFill, PlayFill as PlayFillIcon, PlayFill as SiPlayFill };
+export default PlayFill;
 export type { PlayFillProps };

@@ -17,4 +17,5 @@ MusicRegularDuotone.displayName = 'MusicRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { MusicRegularDuotone, MusicRegularDuotone as MusicRegularDuotoneIcon, MusicRegularDuotone as SiMusicRegularDuotone };
+export default MusicRegularDuotone;
 export type { MusicRegularDuotoneProps };

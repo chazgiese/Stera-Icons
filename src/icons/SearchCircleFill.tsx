@@ -17,4 +17,5 @@ SearchCircleFill.displayName = 'SearchCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { SearchCircleFill, SearchCircleFill as SearchCircleFillIcon, SearchCircleFill as SiSearchCircleFill };
+export default SearchCircleFill;
 export type { SearchCircleFillProps };

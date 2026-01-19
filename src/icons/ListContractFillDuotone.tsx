@@ -17,4 +17,5 @@ ListContractFillDuotone.displayName = 'ListContractFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ListContractFillDuotone, ListContractFillDuotone as ListContractFillDuotoneIcon, ListContractFillDuotone as SiListContractFillDuotone };
+export default ListContractFillDuotone;
 export type { ListContractFillDuotoneProps };

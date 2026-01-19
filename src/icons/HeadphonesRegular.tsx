@@ -16,4 +16,5 @@ HeadphonesRegular.displayName = 'HeadphonesRegular';
 
 // Triple export pattern (lucide-react style)
 export { HeadphonesRegular, HeadphonesRegular as HeadphonesRegularIcon, HeadphonesRegular as SiHeadphonesRegular };
+export default HeadphonesRegular;
 export type { HeadphonesRegularProps };

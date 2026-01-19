@@ -35,3 +35,4 @@ PencilRuler.displayName = 'PencilRuler';
 
 // Triple export pattern (lucide-react style)
 export { PencilRuler, PencilRuler as PencilRulerIcon, PencilRuler as SiPencilRuler };
+export default PencilRuler;

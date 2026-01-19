@@ -17,4 +17,5 @@ UserXBold.displayName = 'UserXBold';
 
 // Triple export pattern (lucide-react style)
 export { UserXBold, UserXBold as UserXBoldIcon, UserXBold as SiUserXBold };
+export default UserXBold;
 export type { UserXBoldProps };

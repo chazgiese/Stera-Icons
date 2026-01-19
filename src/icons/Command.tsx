@@ -35,3 +35,4 @@ Command.displayName = 'Command';
 
 // Triple export pattern (lucide-react style)
 export { Command, Command as CommandIcon, Command as SiCommand };
+export default Command;

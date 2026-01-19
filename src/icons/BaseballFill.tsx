@@ -16,4 +16,5 @@ BaseballFill.displayName = 'BaseballFill';
 
 // Triple export pattern (lucide-react style)
 export { BaseballFill, BaseballFill as BaseballFillIcon, BaseballFill as SiBaseballFill };
+export default BaseballFill;
 export type { BaseballFillProps };

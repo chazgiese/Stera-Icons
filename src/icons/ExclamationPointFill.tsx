@@ -16,4 +16,5 @@ ExclamationPointFill.displayName = 'ExclamationPointFill';
 
 // Triple export pattern (lucide-react style)
 export { ExclamationPointFill, ExclamationPointFill as ExclamationPointFillIcon, ExclamationPointFill as SiExclamationPointFill };
+export default ExclamationPointFill;
 export type { ExclamationPointFillProps };

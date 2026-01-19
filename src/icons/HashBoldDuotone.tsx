@@ -17,4 +17,5 @@ HashBoldDuotone.displayName = 'HashBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { HashBoldDuotone, HashBoldDuotone as HashBoldDuotoneIcon, HashBoldDuotone as SiHashBoldDuotone };
+export default HashBoldDuotone;
 export type { HashBoldDuotoneProps };

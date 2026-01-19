@@ -16,4 +16,5 @@ MedicalCrossBold.displayName = 'MedicalCrossBold';
 
 // Triple export pattern (lucide-react style)
 export { MedicalCrossBold, MedicalCrossBold as MedicalCrossBoldIcon, MedicalCrossBold as SiMedicalCrossBold };
+export default MedicalCrossBold;
 export type { MedicalCrossBoldProps };

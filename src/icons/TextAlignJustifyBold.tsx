@@ -16,4 +16,5 @@ TextAlignJustifyBold.displayName = 'TextAlignJustifyBold';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignJustifyBold, TextAlignJustifyBold as TextAlignJustifyBoldIcon, TextAlignJustifyBold as SiTextAlignJustifyBold };
+export default TextAlignJustifyBold;
 export type { TextAlignJustifyBoldProps };

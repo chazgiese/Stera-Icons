@@ -17,4 +17,5 @@ TreeFillDuotone.displayName = 'TreeFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { TreeFillDuotone, TreeFillDuotone as TreeFillDuotoneIcon, TreeFillDuotone as SiTreeFillDuotone };
+export default TreeFillDuotone;
 export type { TreeFillDuotoneProps };

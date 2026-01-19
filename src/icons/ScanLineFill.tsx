@@ -16,4 +16,5 @@ ScanLineFill.displayName = 'ScanLineFill';
 
 // Triple export pattern (lucide-react style)
 export { ScanLineFill, ScanLineFill as ScanLineFillIcon, ScanLineFill as SiScanLineFill };
+export default ScanLineFill;
 export type { ScanLineFillProps };

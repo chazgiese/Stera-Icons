@@ -17,4 +17,5 @@ UmbrellaFillDuotone.displayName = 'UmbrellaFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { UmbrellaFillDuotone, UmbrellaFillDuotone as UmbrellaFillDuotoneIcon, UmbrellaFillDuotone as SiUmbrellaFillDuotone };
+export default UmbrellaFillDuotone;
 export type { UmbrellaFillDuotoneProps };

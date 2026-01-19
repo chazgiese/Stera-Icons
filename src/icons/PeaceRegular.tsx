@@ -16,4 +16,5 @@ PeaceRegular.displayName = 'PeaceRegular';
 
 // Triple export pattern (lucide-react style)
 export { PeaceRegular, PeaceRegular as PeaceRegularIcon, PeaceRegular as SiPeaceRegular };
+export default PeaceRegular;
 export type { PeaceRegularProps };

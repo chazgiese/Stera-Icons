@@ -16,4 +16,5 @@ BoxesRegular.displayName = 'BoxesRegular';
 
 // Triple export pattern (lucide-react style)
 export { BoxesRegular, BoxesRegular as BoxesRegularIcon, BoxesRegular as SiBoxesRegular };
+export default BoxesRegular;
 export type { BoxesRegularProps };

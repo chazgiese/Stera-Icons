@@ -17,4 +17,5 @@ SignInFillDuotone.displayName = 'SignInFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { SignInFillDuotone, SignInFillDuotone as SignInFillDuotoneIcon, SignInFillDuotone as SiSignInFillDuotone };
+export default SignInFillDuotone;
 export type { SignInFillDuotoneProps };

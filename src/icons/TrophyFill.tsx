@@ -16,4 +16,5 @@ TrophyFill.displayName = 'TrophyFill';
 
 // Triple export pattern (lucide-react style)
 export { TrophyFill, TrophyFill as TrophyFillIcon, TrophyFill as SiTrophyFill };
+export default TrophyFill;
 export type { TrophyFillProps };

@@ -16,4 +16,5 @@ UmbrellaBold.displayName = 'UmbrellaBold';
 
 // Triple export pattern (lucide-react style)
 export { UmbrellaBold, UmbrellaBold as UmbrellaBoldIcon, UmbrellaBold as SiUmbrellaBold };
+export default UmbrellaBold;
 export type { UmbrellaBoldProps };

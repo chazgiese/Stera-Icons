@@ -17,4 +17,5 @@ IdVBold.displayName = 'IdVBold';
 
 // Triple export pattern (lucide-react style)
 export { IdVBold, IdVBold as IdVBoldIcon, IdVBold as SiIdVBold };
+export default IdVBold;
 export type { IdVBoldProps };

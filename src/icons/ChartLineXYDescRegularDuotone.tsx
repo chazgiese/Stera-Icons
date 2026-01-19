@@ -17,4 +17,5 @@ ChartLineXYDescRegularDuotone.displayName = 'ChartLineXYDescRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ChartLineXYDescRegularDuotone, ChartLineXYDescRegularDuotone as ChartLineXYDescRegularDuotoneIcon, ChartLineXYDescRegularDuotone as SiChartLineXYDescRegularDuotone };
+export default ChartLineXYDescRegularDuotone;
 export type { ChartLineXYDescRegularDuotoneProps };

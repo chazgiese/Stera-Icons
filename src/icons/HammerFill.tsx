@@ -16,4 +16,5 @@ HammerFill.displayName = 'HammerFill';
 
 // Triple export pattern (lucide-react style)
 export { HammerFill, HammerFill as HammerFillIcon, HammerFill as SiHammerFill };
+export default HammerFill;
 export type { HammerFillProps };

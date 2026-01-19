@@ -35,3 +35,4 @@ Wrench.displayName = 'Wrench';
 
 // Triple export pattern (lucide-react style)
 export { Wrench, Wrench as WrenchIcon, Wrench as SiWrench };
+export default Wrench;

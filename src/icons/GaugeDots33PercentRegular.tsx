@@ -17,4 +17,5 @@ GaugeDots33PercentRegular.displayName = 'GaugeDots33PercentRegular';
 
 // Triple export pattern (lucide-react style)
 export { GaugeDots33PercentRegular, GaugeDots33PercentRegular as GaugeDots33PercentRegularIcon, GaugeDots33PercentRegular as SiGaugeDots33PercentRegular };
+export default GaugeDots33PercentRegular;
 export type { GaugeDots33PercentRegularProps };

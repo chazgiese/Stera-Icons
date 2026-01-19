@@ -16,4 +16,5 @@ TestTubeFill.displayName = 'TestTubeFill';
 
 // Triple export pattern (lucide-react style)
 export { TestTubeFill, TestTubeFill as TestTubeFillIcon, TestTubeFill as SiTestTubeFill };
+export default TestTubeFill;
 export type { TestTubeFillProps };

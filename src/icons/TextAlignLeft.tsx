@@ -35,3 +35,4 @@ TextAlignLeft.displayName = 'TextAlignLeft';
 
 // Triple export pattern (lucide-react style)
 export { TextAlignLeft, TextAlignLeft as TextAlignLeftIcon, TextAlignLeft as SiTextAlignLeft };
+export default TextAlignLeft;

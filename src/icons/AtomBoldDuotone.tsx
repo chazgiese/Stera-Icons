@@ -17,4 +17,5 @@ AtomBoldDuotone.displayName = 'AtomBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { AtomBoldDuotone, AtomBoldDuotone as AtomBoldDuotoneIcon, AtomBoldDuotone as SiAtomBoldDuotone };
+export default AtomBoldDuotone;
 export type { AtomBoldDuotoneProps };

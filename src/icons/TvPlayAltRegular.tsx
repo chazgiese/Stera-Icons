@@ -17,4 +17,5 @@ TvPlayAltRegular.displayName = 'TvPlayAltRegular';
 
 // Triple export pattern (lucide-react style)
 export { TvPlayAltRegular, TvPlayAltRegular as TvPlayAltRegularIcon, TvPlayAltRegular as SiTvPlayAltRegular };
+export default TvPlayAltRegular;
 export type { TvPlayAltRegularProps };

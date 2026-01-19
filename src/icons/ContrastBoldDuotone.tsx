@@ -17,4 +17,5 @@ ContrastBoldDuotone.displayName = 'ContrastBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { ContrastBoldDuotone, ContrastBoldDuotone as ContrastBoldDuotoneIcon, ContrastBoldDuotone as SiContrastBoldDuotone };
+export default ContrastBoldDuotone;
 export type { ContrastBoldDuotoneProps };

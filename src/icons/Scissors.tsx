@@ -35,3 +35,4 @@ Scissors.displayName = 'Scissors';
 
 // Triple export pattern (lucide-react style)
 export { Scissors, Scissors as ScissorsIcon, Scissors as SiScissors };
+export default Scissors;

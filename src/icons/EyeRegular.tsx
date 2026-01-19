@@ -17,4 +17,5 @@ EyeRegular.displayName = 'EyeRegular';
 
 // Triple export pattern (lucide-react style)
 export { EyeRegular, EyeRegular as EyeRegularIcon, EyeRegular as SiEyeRegular };
+export default EyeRegular;
 export type { EyeRegularProps };

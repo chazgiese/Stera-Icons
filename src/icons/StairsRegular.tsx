@@ -16,4 +16,5 @@ StairsRegular.displayName = 'StairsRegular';
 
 // Triple export pattern (lucide-react style)
 export { StairsRegular, StairsRegular as StairsRegularIcon, StairsRegular as SiStairsRegular };
+export default StairsRegular;
 export type { StairsRegularProps };

@@ -18,4 +18,5 @@ VolleyballFill.displayName = 'VolleyballFill';
 
 // Triple export pattern (lucide-react style)
 export { VolleyballFill, VolleyballFill as VolleyballFillIcon, VolleyballFill as SiVolleyballFill };
+export default VolleyballFill;
 export type { VolleyballFillProps };

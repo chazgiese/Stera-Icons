@@ -16,4 +16,5 @@ LayoutGridCircleFill.displayName = 'LayoutGridCircleFill';
 
 // Triple export pattern (lucide-react style)
 export { LayoutGridCircleFill, LayoutGridCircleFill as LayoutGridCircleFillIcon, LayoutGridCircleFill as SiLayoutGridCircleFill };
+export default LayoutGridCircleFill;
 export type { LayoutGridCircleFillProps };

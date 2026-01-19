@@ -35,3 +35,4 @@ Code.displayName = 'Code';
 
 // Triple export pattern (lucide-react style)
 export { Code, Code as CodeIcon, Code as SiCode };
+export default Code;

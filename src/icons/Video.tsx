@@ -35,3 +35,4 @@ Video.displayName = 'Video';
 
 // Triple export pattern (lucide-react style)
 export { Video, Video as VideoIcon, Video as SiVideo };
+export default Video;

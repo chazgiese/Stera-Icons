@@ -17,4 +17,5 @@ ChatBoxTextRegular.displayName = 'ChatBoxTextRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxTextRegular, ChatBoxTextRegular as ChatBoxTextRegularIcon, ChatBoxTextRegular as SiChatBoxTextRegular };
+export default ChatBoxTextRegular;
 export type { ChatBoxTextRegularProps };

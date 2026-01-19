@@ -35,3 +35,4 @@ PauseCircle.displayName = 'PauseCircle';
 
 // Triple export pattern (lucide-react style)
 export { PauseCircle, PauseCircle as PauseCircleIcon, PauseCircle as SiPauseCircle };
+export default PauseCircle;

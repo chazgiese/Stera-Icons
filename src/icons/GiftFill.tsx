@@ -16,4 +16,5 @@ GiftFill.displayName = 'GiftFill';
 
 // Triple export pattern (lucide-react style)
 export { GiftFill, GiftFill as GiftFillIcon, GiftFill as SiGiftFill };
+export default GiftFill;
 export type { GiftFillProps };

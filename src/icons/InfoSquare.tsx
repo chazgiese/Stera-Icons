@@ -35,3 +35,4 @@ InfoSquare.displayName = 'InfoSquare';
 
 // Triple export pattern (lucide-react style)
 export { InfoSquare, InfoSquare as InfoSquareIcon, InfoSquare as SiInfoSquare };
+export default InfoSquare;

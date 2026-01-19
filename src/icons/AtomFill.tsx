@@ -17,4 +17,5 @@ AtomFill.displayName = 'AtomFill';
 
 // Triple export pattern (lucide-react style)
 export { AtomFill, AtomFill as AtomFillIcon, AtomFill as SiAtomFill };
+export default AtomFill;
 export type { AtomFillProps };

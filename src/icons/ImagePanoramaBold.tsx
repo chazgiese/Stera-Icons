@@ -17,4 +17,5 @@ ImagePanoramaBold.displayName = 'ImagePanoramaBold';
 
 // Triple export pattern (lucide-react style)
 export { ImagePanoramaBold, ImagePanoramaBold as ImagePanoramaBoldIcon, ImagePanoramaBold as SiImagePanoramaBold };
+export default ImagePanoramaBold;
 export type { ImagePanoramaBoldProps };

@@ -16,4 +16,5 @@ SlidersVFill.displayName = 'SlidersVFill';
 
 // Triple export pattern (lucide-react style)
 export { SlidersVFill, SlidersVFill as SlidersVFillIcon, SlidersVFill as SiSlidersVFill };
+export default SlidersVFill;
 export type { SlidersVFillProps };

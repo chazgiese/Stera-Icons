@@ -17,4 +17,5 @@ PauseCircleBoldDuotone.displayName = 'PauseCircleBoldDuotone';
 
 // Triple export pattern (lucide-react style)
 export { PauseCircleBoldDuotone, PauseCircleBoldDuotone as PauseCircleBoldDuotoneIcon, PauseCircleBoldDuotone as SiPauseCircleBoldDuotone };
+export default PauseCircleBoldDuotone;
 export type { PauseCircleBoldDuotoneProps };

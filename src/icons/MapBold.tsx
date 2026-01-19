@@ -16,4 +16,5 @@ MapBold.displayName = 'MapBold';
 
 // Triple export pattern (lucide-react style)
 export { MapBold, MapBold as MapBoldIcon, MapBold as SiMapBold };
+export default MapBold;
 export type { MapBoldProps };

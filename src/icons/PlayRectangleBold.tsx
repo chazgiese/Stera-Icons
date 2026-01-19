@@ -17,4 +17,5 @@ PlayRectangleBold.displayName = 'PlayRectangleBold';
 
 // Triple export pattern (lucide-react style)
 export { PlayRectangleBold, PlayRectangleBold as PlayRectangleBoldIcon, PlayRectangleBold as SiPlayRectangleBold };
+export default PlayRectangleBold;
 export type { PlayRectangleBoldProps };

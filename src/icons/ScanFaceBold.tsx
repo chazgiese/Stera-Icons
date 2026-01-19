@@ -18,4 +18,5 @@ ScanFaceBold.displayName = 'ScanFaceBold';
 
 // Triple export pattern (lucide-react style)
 export { ScanFaceBold, ScanFaceBold as ScanFaceBoldIcon, ScanFaceBold as SiScanFaceBold };
+export default ScanFaceBold;
 export type { ScanFaceBoldProps };

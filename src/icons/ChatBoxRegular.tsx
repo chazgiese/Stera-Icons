@@ -16,4 +16,5 @@ ChatBoxRegular.displayName = 'ChatBoxRegular';
 
 // Triple export pattern (lucide-react style)
 export { ChatBoxRegular, ChatBoxRegular as ChatBoxRegularIcon, ChatBoxRegular as SiChatBoxRegular };
+export default ChatBoxRegular;
 export type { ChatBoxRegularProps };

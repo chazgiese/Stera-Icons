@@ -16,4 +16,5 @@ AlignHorizontalLeftFill.displayName = 'AlignHorizontalLeftFill';
 
 // Triple export pattern (lucide-react style)
 export { AlignHorizontalLeftFill, AlignHorizontalLeftFill as AlignHorizontalLeftFillIcon, AlignHorizontalLeftFill as SiAlignHorizontalLeftFill };
+export default AlignHorizontalLeftFill;
 export type { AlignHorizontalLeftFillProps };

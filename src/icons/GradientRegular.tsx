@@ -17,4 +17,5 @@ GradientRegular.displayName = 'GradientRegular';
 
 // Triple export pattern (lucide-react style)
 export { GradientRegular, GradientRegular as GradientRegularIcon, GradientRegular as SiGradientRegular };
+export default GradientRegular;
 export type { GradientRegularProps };

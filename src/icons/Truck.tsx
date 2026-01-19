@@ -35,3 +35,4 @@ Truck.displayName = 'Truck';
 
 // Triple export pattern (lucide-react style)
 export { Truck, Truck as TruckIcon, Truck as SiTruck };
+export default Truck;

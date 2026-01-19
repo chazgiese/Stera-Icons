@@ -17,4 +17,5 @@ DatabaseRegularDuotone.displayName = 'DatabaseRegularDuotone';
 
 // Triple export pattern (lucide-react style)
 export { DatabaseRegularDuotone, DatabaseRegularDuotone as DatabaseRegularDuotoneIcon, DatabaseRegularDuotone as SiDatabaseRegularDuotone };
+export default DatabaseRegularDuotone;
 export type { DatabaseRegularDuotoneProps };

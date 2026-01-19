@@ -18,4 +18,5 @@ AlarmClockPlusRegular.displayName = 'AlarmClockPlusRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlarmClockPlusRegular, AlarmClockPlusRegular as AlarmClockPlusRegularIcon, AlarmClockPlusRegular as SiAlarmClockPlusRegular };
+export default AlarmClockPlusRegular;
 export type { AlarmClockPlusRegularProps };

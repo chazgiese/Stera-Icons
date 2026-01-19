@@ -17,4 +17,5 @@ AlertDiamondRegular.displayName = 'AlertDiamondRegular';
 
 // Triple export pattern (lucide-react style)
 export { AlertDiamondRegular, AlertDiamondRegular as AlertDiamondRegularIcon, AlertDiamondRegular as SiAlertDiamondRegular };
+export default AlertDiamondRegular;
 export type { AlertDiamondRegularProps };

@@ -16,4 +16,5 @@ TextStrikethroughBold.displayName = 'TextStrikethroughBold';
 
 // Triple export pattern (lucide-react style)
 export { TextStrikethroughBold, TextStrikethroughBold as TextStrikethroughBoldIcon, TextStrikethroughBold as SiTextStrikethroughBold };
+export default TextStrikethroughBold;
 export type { TextStrikethroughBoldProps };

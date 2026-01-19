@@ -17,4 +17,5 @@ CursorFillDuotone.displayName = 'CursorFillDuotone';
 
 // Triple export pattern (lucide-react style)
 export { CursorFillDuotone, CursorFillDuotone as CursorFillDuotoneIcon, CursorFillDuotone as SiCursorFillDuotone };
+export default CursorFillDuotone;
 export type { CursorFillDuotoneProps };

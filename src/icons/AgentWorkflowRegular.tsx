@@ -18,4 +18,5 @@ AgentWorkflowRegular.displayName = 'AgentWorkflowRegular';
 
 // Triple export pattern (lucide-react style)
 export { AgentWorkflowRegular, AgentWorkflowRegular as AgentWorkflowRegularIcon, AgentWorkflowRegular as SiAgentWorkflowRegular };
+export default AgentWorkflowRegular;
 export type { AgentWorkflowRegularProps };

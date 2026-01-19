@@ -16,4 +16,5 @@ BoundingBoxBold.displayName = 'BoundingBoxBold';
 
 // Triple export pattern (lucide-react style)
 export { BoundingBoxBold, BoundingBoxBold as BoundingBoxBoldIcon, BoundingBoxBold as SiBoundingBoxBold };
+export default BoundingBoxBold;
 export type { BoundingBoxBoldProps };
