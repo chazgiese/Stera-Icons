@@ -31,13 +31,6 @@ pnpm changeset
 
 **Example changeset creation:**
 ```bash
-🦋  Which packages would you like to include?
-  ◯ stera-icons
-  ◯ stera-icons-react-demo
-
-# Select stera-icons
-✔ stera-icons
-
 🦋  What kind of change is this for stera-icons?
   ◯ patch
   ◯ minor  ← Select this for new icons
@@ -233,7 +226,7 @@ Has pending changesets: false
 **Solution:**
 1. Check changeset directory: `ls .changeset/`
 2. Verify changeset file has correct format
-3. Ensure changeset mentions "stera-icons"
+3. Ensure changeset file has correct format
 
 ### Problem: Wrong version estimated
 
@@ -332,7 +325,7 @@ git push               # GitHub Action handles the rest
 ```bash
 # 1. Create changeset for new icons
 pnpm changeset
-# Select: stera-icons, minor, "Add new social media icons"
+# Select: minor, "Add new social media icons"
 
 # 2. Verify changeset detected
 node scripts/hash-versioning.js info

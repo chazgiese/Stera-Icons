@@ -15,7 +15,8 @@ import {
   validateVariantData,
   isValidWeight,
   generateTripleExport,
-  generateTripleExportWithPath
+  generateTripleExportWithPath,
+  generateAliasedReExport
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
 import { parsePathAttributes, extractPathsFromSvg } from './icon-build/svg-parser.js';
@@ -70,8 +71,9 @@ async function buildIcons(iconsExportPath) {
   
   const takenSlugs = new Set();
   const metadata = [];
-  const wrapperExports = [];
-  const directVariantExports = [];
+  const wrapperExports = [];           // For dynamic-variants.ts (wrapper components)
+  const baseNameExports = [];          // For index.ts (Regular variants aliased as base names)
+  const directVariantExports = [];     // For index.ts (all variants with their own names)
   const namingConflicts = [];
   
   // Load existing metadata to track version history
@@ -317,18 +319,32 @@ async function buildIcons(iconsExportPath) {
     const wrapperPath = join(iconsDir, `${baseComponentName}.tsx`);
     writeFileSync(wrapperPath, wrapperCode);
     
-    // Add to wrapper exports with triple aliasing
+    // Add to wrapper exports for dynamic-variants.ts (with triple aliasing)
     wrapperExports.push(generateTripleExportWithPath(baseComponentName, `./icons/${baseComponentName}`));
+    
+    // Add base name export: Regular variant aliased as base name (Search → SearchRegular)
+    // This makes `import { Search } from 'stera-icons'` give the efficient Regular variant
+    const regularVariant = iconData.variants.find(v => v.weight === 'regular' && !v.duotone);
+    if (regularVariant) {
+      baseNameExports.push(generateAliasedReExport(
+        baseComponentName,                    // Target name: Search
+        regularVariant.componentName,         // Source component: SearchRegular
+        `./icons/${regularVariant.fileName}`  // Import path: ./icons/SearchRegular
+      ));
+    }
   }
   
   // Finish wrapper progress line
   console.log(''); // Newline after progress indicator
   console.log(`  ✅ Generated ${wrapperExports.length} wrapper components`);
   
-  // Generate main index file with both wrapper and direct variant exports
+  // Generate main index file with efficient defaults
+  // Base names (Search) → Regular variants (SearchRegular) for optimal bundle size
   const indexContent = `// Auto-generated file - do not edit manually
-// Stera Icons - Modern React icon library with triple-aliased exports
-// Import patterns: { Search }, { SearchIcon }, { SiSearch }
+// Stera Icons - Modern React icon library with efficient defaults
+// 
+// Base icon names (Search, Home, etc.) resolve to Regular variants (~300 bytes each)
+// For dynamic variant switching at runtime, use: import { Search } from 'stera-icons/dynamic-variants'
 
 // Export types
 export type { 
@@ -348,22 +364,37 @@ export type {
 export { mergeClasses, hasA11yProp, toKebabCase, toCamelCase, toPascalCase } from './utils';
 
 // =============================================================================
-// DYNAMIC WRAPPER COMPONENTS (convenience, includes all 6 variants per icon)
-// Use these when you need to switch weights/duotone at runtime
+// BASE ICON NAMES → REGULAR VARIANTS (efficient defaults, ~300 bytes each)
+// import { Search } from 'stera-icons' gives you SearchRegular
 // All icons available with 3 aliases: Base, Icon suffix, Si prefix
 // =============================================================================
-${wrapperExports.join('\n')}
+${baseNameExports.join('\n')}
 
 // =============================================================================
-// DIRECT VARIANT EXPORTS (optimal bundle size, ~300 bytes each)
-// Use these for maximum tree-shaking - import only the exact variant you need
-// All variants available with 3 aliases: Base, Icon suffix, Si prefix
-// Example: import { SearchBold, SearchBoldIcon, SiSearchBold } from 'stera-icons';
+// DIRECT VARIANT EXPORTS (all variants with explicit names, ~300 bytes each)
+// Use these when you need a specific weight or duotone variant
+// Example: import { SearchBold, SearchFillDuotone } from 'stera-icons';
 // =============================================================================
 ${directVariantExports.join('\n')}
 `;
   
   writeFileSync(join(__dirname, '..', 'src', 'index.ts'), indexContent);
+  
+  // Generate dynamic-variants.ts for users who need runtime variant switching
+  const dynamicVariantsContent = `// Auto-generated file - do not edit manually
+// Dynamic wrapper components for runtime variant switching
+// 
+// Use these when you need to change icon weight/duotone at runtime via props.
+// Note: Each wrapper includes all 6 variants (~1KB per icon vs ~300 bytes for direct imports)
+// 
+// Example:
+//   import { Search } from 'stera-icons/dynamic-variants';
+//   <Search weight="bold" duotone />
+
+${wrapperExports.join('\n')}
+`;
+  
+  writeFileSync(join(__dirname, '..', 'src', 'dynamic-variants.ts'), dynamicVariantsContent);
   
   // Generate metadata JSON
   writeFileSync(
@@ -513,7 +544,7 @@ export default dynamicIconImports;
   
   console.log(`\n📊 Build Summary:`);
   console.log(`  ✅ Generated ${metadata.length} direct variant components (IconBase-based)`);
-  console.log(`  🔗 Generated ${wrapperExports.length} dynamic wrapper components (convenience)`);
+  console.log(`  🔗 Generated ${wrapperExports.length} dynamic wrapper components (in dynamic-variants.ts)`);
   console.log(`  📦 Using wildcard exports (./icons/*) for ${totalComponents} components`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
@@ -521,10 +552,11 @@ export default dynamicIconImports;
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
-  console.log(`\n🎯 Import patterns (all with triple aliasing):`);
-  console.log(`  • Barrel imports: import { SiSearch, SearchBold } from 'stera-icons';`);
-  console.log(`  • Subpath imports (lucide-react pattern): import { Search } from 'stera-icons/icons/Search';`);
-  console.log(`  • Variant subpath: import { SearchBold } from 'stera-icons/icons/SearchBold';`);
+  console.log(`\n🎯 Import patterns (efficient defaults):`);
+  console.log(`  • Base names: import { Search } from 'stera-icons' → SearchRegular (~300 bytes)`);
+  console.log(`  • Explicit variants: import { SearchBold } from 'stera-icons' (~300 bytes)`);
+  console.log(`  • Dynamic variants: import { Search } from 'stera-icons/dynamic-variants' (~1KB)`);
+  console.log(`  • Subpath imports: import { Search } from 'stera-icons/icons/Search'`);
 }
 
 // Main execution

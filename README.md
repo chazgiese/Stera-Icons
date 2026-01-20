@@ -26,37 +26,54 @@ npm install stera-icons
 ## Quick Start
 
 ```tsx
-import { SearchBold, SiHome } from 'stera-icons';
+import { Search, Home } from 'stera-icons';
 
 function App() {
   return (
     <>
-      <SearchBold size={24} color="blue" />
-      <SiHome size={32} />
+      <Search size={24} color="blue" />
+      <Home size={32} />
     </>
   );
 }
 ```
 
+Base icon names (`Search`, `Home`, etc.) give you the Regular variant with optimal bundle size (~300 bytes each).
+
 ## Usage
 
-### Direct Import (Recommended)
+### Simple Import (Recommended)
 
 ```tsx
-import { SearchBold, HomeFill } from 'stera-icons';
+import { Search, Home, User } from 'stera-icons';
 
-<SearchBold size={24} />
-<HomeFill />
+<Search size={24} />
+<Home />
+<User color="gray" />
 ```
 
-Fully tree-shakeable—only ~300 bytes per icon variant in your bundle.
+### Explicit Variant Imports
 
-### Aliased Imports (Prevent Name Collisions)
-
-All icons support 3 naming styles:
+Need a specific weight or duotone style? Import it directly
 
 ```tsx
-// Base name
+import { SearchBold, HomeFill, UserRegularDuotone } from 'stera-icons';
+
+<SearchBold size={24} />           {/* Bold weight */}
+<HomeFill />                       {/* Fill weight */}
+<UserRegularDuotone color="blue" /> {/* Regular + Duotone */}
+```
+
+Each icon has 6 variants available:
+- `SearchRegular`, `SearchBold`, `SearchFill`
+- `SearchRegularDuotone`, `SearchBoldDuotone`, `SearchFillDuotone`
+
+### Triple Aliasing (Prevent Name Collisions)
+
+All icons support 3 naming styles to avoid conflicts with your codebase:
+
+```tsx
+// Base name (gives you Regular variant)
 import { Search } from 'stera-icons';
 
 // Icon suffix style
@@ -68,48 +85,35 @@ import { SiSearch, SiHome, SiUser } from 'stera-icons';
 
 All aliases point to the same component with zero bundle size overhead.
 
-### Variant Imports
+### Dynamic Variants (Runtime Switching)
 
-Each icon has 6 variants available:
-
-```tsx
-import { SearchRegular, SearchBold, SearchFill } from 'stera-icons';
-import { SearchRegularDuotone, SearchBoldDuotone, SearchFillDuotone } from 'stera-icons';
-
-// All variants also support triple aliasing
-import { SiSearchBold, SiSearchRegularDuotone } from 'stera-icons';
-```
-
-### Dynamic Variants (Convenience)
-
-Use wrapper components when you need to switch variants at runtime (~1KB per icon, includes all 6 variants):
+Need to switch icon weight or duotone at runtime? Use the dynamic variants entry point
 
 ```tsx
-import { Search } from 'stera-icons';
+import { Search } from 'stera-icons/dynamic-variants';
 
 <Search />                        {/* Regular */}
 <Search weight="bold" />          {/* Bold */}
 <Search weight="fill" duotone />  {/* Fill + Duotone */}
 ```
 
+**Note:** Dynamic variants include all 6 variants per icon (~1KB each vs ~300 bytes for direct imports). Only use this when you need runtime variant switching.
+
 ### Subpath Imports
 
-For even better tree-shaking and smaller bundles, import directly from icon paths:
+For maximum tree-shaking control, import directly from icon paths
 
 ```tsx
-// Import individual icons
 import { Search } from 'stera-icons/icons/Search';
 import { SearchBold } from 'stera-icons/icons/SearchBold';
-import { SiHome } from 'stera-icons/icons/SiHome';
 
 <Search size={24} />
 <SearchBold size={24} />
-<SiHome size={24} />
 ```
 
 ### Dynamic Icon Loading
 
-**New!** Load icons dynamically at runtime - perfect for CMS-driven content, icon pickers, or when icon names come from APIs:
+**New!** Load icons dynamically at runtime - perfect for CMS-driven content, icon pickers, or when icon names come from APIs
 
 ```tsx
 import { DynamicIcon, iconNames } from 'stera-icons/dynamic';
@@ -147,8 +151,10 @@ function IconPicker() {
 |------|------|---------|-------------|
 | `size` | `number \| string` | `24` | Icon size in pixels |
 | `color` | `string` | `'currentColor'` | Icon color |
-| `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight (wrapper only) |
-| `duotone` | `boolean` | `false` | Use duotone variant (wrapper only) |
+| `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight (dynamic variants only) |
+| `duotone` | `boolean` | `false` | Use duotone variant (dynamic variants only) |
+
+The `weight` and `duotone` props are only available when importing from `stera-icons/dynamic-variants`. For regular imports, choose the specific variant you need (e.g., `SearchBold`, `HomeFillDuotone`).
 
 All standard SVG props are also supported.
 
@@ -226,8 +232,10 @@ import type {
   IconNode,       // Icon data structure
 } from 'stera-icons';
 
+import { Search } from 'stera-icons';
+
 // Use in your components
-const MyComponent: React.FC<IconProps> = (props) => {
+const MyComponent: React.FC<Omit<IconProps, 'weight' | 'duotone'>> = (props) => {
   return <Search {...props} />;
 };
 ```
@@ -253,12 +261,15 @@ function CustomIcon(props: IconBaseProps) {
 
 Stera Icons is optimized for minimal bundle impact:
 
-- **Direct variant import:** ~300 bytes (e.g., `SearchBold`)
-- **Wrapper component:** ~1KB (e.g., `Search` with all 6 variants)
-- **Dynamic loading:** ~2KB + lazy-loaded icons on demand
-- **Base imports only:** ~500 bytes (IconBase + utilities)
+| Import Pattern | Bundle Size | Example |
+|---------------|-------------|---------|
+| Base name import | ~300 bytes | `import { Search } from 'stera-icons'` |
+| Explicit variant | ~300 bytes | `import { SearchBold } from 'stera-icons'` |
+| Dynamic variant | ~1KB | `import { Search } from 'stera-icons/dynamic-variants'` |
+| Dynamic loading | ~2KB + lazy | `import { DynamicIcon } from 'stera-icons/dynamic'` |
+| Base utilities | ~500 bytes | `import { IconBase } from 'stera-icons/base'` |
 
-All measurements are gzipped and minified.
+All measurements are gzipped and minified. The default import pattern (`import { Search }`) is optimized for the smallest possible bundle size.
 
 ## Browser Support
 
@@ -269,10 +280,6 @@ Stera Icons supports all browsers that support React 16.8+:
 - Safari (latest)
 - Edge (latest)
 - React Native (via react-native-svg wrapper)
-
-## Contributing
-
-Contributions are welcome! Please see our [contributing guidelines](https://github.com/chazgiese/Stera-Icons/blob/main/CONTRIBUTING.md).
 
 ## License
 

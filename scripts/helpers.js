@@ -198,3 +198,18 @@ export function generateTripleExportWithPath(componentName, importPath) {
   const aliases = generateAliases(componentName);
   return `export { ${aliases.base}, ${aliases.iconSuffix}, ${aliases.siPrefix} } from '${importPath}';`;
 }
+
+/**
+ * Generate aliased re-export statement where a source component is exported with a different name
+ * Used to export Regular variants with base names (e.g., SearchRegular as Search)
+ * @param {string} baseName - The target export name (e.g., "Search")
+ * @param {string} sourceComponent - The actual component name (e.g., "SearchRegular")
+ * @param {string} importPath - The import path (e.g., "./icons/SearchRegular")
+ * @returns {string} - Full aliased export statement with path
+ * @example
+ * generateAliasedReExport("Search", "SearchRegular", "./icons/SearchRegular")
+ * // Returns: "export { SearchRegular as Search, SearchRegular as SearchIcon, SearchRegular as SiSearch } from './icons/SearchRegular';"
+ */
+export function generateAliasedReExport(baseName, sourceComponent, importPath) {
+  return `export { ${sourceComponent} as ${baseName}, ${sourceComponent} as ${baseName}Icon, ${sourceComponent} as Si${baseName} } from '${importPath}';`;
+}

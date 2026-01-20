@@ -5,7 +5,7 @@
 ```bash
 # 1. Create changeset (ALWAYS FIRST)
 pnpm changeset
-# Select: stera-icons → minor → "Add new icons"
+# Select: minor → "Add new icons"
 
 # 2. Verify version detection
 node scripts/hash-versioning.js info
@@ -92,7 +92,7 @@ pnpm build
 ```bash
 # ✅ Step 1: Create changeset
 pnpm changeset
-# Select package, bump type, description
+# Select bump type and provide description
 
 # ✅ Step 2: Build icons (if applicable)
 node scripts/build-icons.js icons-export.json

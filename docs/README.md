@@ -11,9 +11,6 @@ This directory contains documentation for contributing to and maintaining the St
 ### For Maintainers
 - **[ICON_VERSIONING.md](ICON_VERSIONING.md)** - Deep dive into how icon versioning works, troubleshooting, and maintenance
 
-### Setup
-- **[../SETUP.md](../SETUP.md)** - Project setup and installation instructions (root level)
-
 ## 🎯 Quick Navigation
 
 ### Adding New Icons

@@ -24,6 +24,11 @@
       "import": "./dist/dynamic.mjs",
       "require": "./dist/dynamic.cjs"
     },
+    "./dynamic-variants": {
+      "types": "./dist/dynamic-variants.d.ts",
+      "import": "./dist/dynamic-variants.mjs",
+      "require": "./dist/dynamic-variants.cjs"
+    },
     "./icons/*": {
       "types": "./dist/icons/*.d.ts",
       "import": "./dist/icons/*.mjs",
