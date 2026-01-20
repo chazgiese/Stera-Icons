@@ -332,6 +332,17 @@ async function buildIcons(iconsExportPath) {
         `./icons/${regularVariant.fileName}`  // Import path: ./icons/SearchRegular
       ));
     }
+    
+    // Add duotone shorthand: Regular duotone variant aliased as base name + Duotone (SearchDuotone → SearchRegularDuotone)
+    // This makes `import { SearchDuotone } from 'stera-icons'` give the efficient Regular duotone variant
+    const regularDuotoneVariant = iconData.variants.find(v => v.weight === 'regular' && v.duotone);
+    if (regularDuotoneVariant) {
+      baseNameExports.push(generateAliasedReExport(
+        `${baseComponentName}Duotone`,              // Target name: SearchDuotone
+        regularDuotoneVariant.componentName,        // Source component: SearchRegularDuotone
+        `./icons/${regularDuotoneVariant.fileName}` // Import path: ./icons/SearchRegularDuotone
+      ));
+    }
   }
   
   // Finish wrapper progress line
