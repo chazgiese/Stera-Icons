@@ -1,5 +1,15 @@
 # @stera/icons
 
+## 8.0.4
+
+### Patch Changes
+
+- 3f27e5f: Add duotone shorthand aliases so omitting weight defaults to Regular for duotone icons
+
+  - `HomeDuotone` now imports `HomeRegularDuotone`
+  - Follows the existing pattern where `Home` imports `HomeRegular`
+  - All three alias forms supported: `HomeDuotone`, `HomeDuotoneIcon`, `SiHomeDuotone`
+
 ## 8.0.3
 
 ### Patch Changes
