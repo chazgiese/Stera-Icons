@@ -1,3 +1,5 @@
+"use client";
+
 import { forwardRef, useState, useEffect, ComponentType, ReactNode } from 'react';
 import type { IconProps } from './types';
 
@@ -67,25 +69,26 @@ export async function getIconComponent(
 /**
  * DynamicIcon - Lazy-loads icon components at runtime.
  * 
- * Useful for applications that need to render icons based on dynamic data
- * (e.g., from a CMS, API, or user input) without importing all icons upfront.
+ * Ideal for rendering a small number of icons whose names are determined at runtime
+ * (e.g., from a database, CMS, or user input).
  * 
- * **Performance Note**: This component uses dynamic imports which add a small
- * runtime overhead. For optimal performance, prefer direct imports when you
- * know the icon at build time:
+ * **When to use:** Icon names come from external data sources and aren't known at build time.
+ * 
+ * **When NOT to use:** For displaying many icons at once (like an icon gallery), use direct
+ * imports instead - each DynamicIcon triggers an individual network request.
  * 
  * @example
- * // ✅ Best: Direct import (no runtime overhead)
+ * // ✅ Best: Direct import when icon is known at build time
  * import { SearchBold } from 'stera-icons';
  * <SearchBold size={24} />
  * 
  * @example
- * // ✅ Good: Dynamic when needed
+ * // ✅ Good: Dynamic when icon name comes from external data
  * import { DynamicIcon } from 'stera-icons/dynamic';
- * <DynamicIcon name="search" weight="bold" />
+ * <DynamicIcon name={iconNameFromCMS} weight="bold" />
  * 
  * @example
- * // With fallback
+ * // With fallback while loading
  * <DynamicIcon 
  *   name={iconName} 
  *   fallback={<Loader />}

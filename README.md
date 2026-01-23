@@ -115,12 +115,12 @@ import { SearchBold } from 'stera-icons/icons/SearchBold';
 
 ### Dynamic Icon Loading
 
-Load icons dynamically at runtime - perfect for CMS-driven content, icon pickers, or when icon names come from APIs
+Load icons dynamically at runtime when icon names come from external data sources like a CMS or API.
 
 ```tsx
-import { DynamicIcon, iconNames } from 'stera-icons/dynamic';
+import { DynamicIcon } from 'stera-icons/dynamic';
 
-// Load icon by name
+// Load icon by name from external data
 function IconDisplay({ iconName }) {
   return (
     <DynamicIcon 
@@ -132,20 +132,11 @@ function IconDisplay({ iconName }) {
     />
   );
 }
-
-// Build an icon picker
-function IconPicker() {
-  return (
-    <div>
-      {iconNames.map(name => (
-        <DynamicIcon key={name} name={name} size={24} />
-      ))}
-    </div>
-  );
-}
 ```
 
-**Performance Note:** Dynamic loading adds ~2KB + small runtime overhead. For optimal bundle size, prefer direct imports when you know the icon at build time.
+**When to use:** Dynamic imports are ideal when you need to render a small number of icons whose names are determined at runtime (e.g., from a database, CMS, or user input).
+
+**When NOT to use:** For displaying many icons at once (like an icon gallery), use direct imports instead - dynamic imports trigger individual network requests per icon.
 
 ## Props
 
