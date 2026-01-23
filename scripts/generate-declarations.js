@@ -22,7 +22,7 @@ const __dirname = dirname(__filename);
 
 const PACKAGE_DIR = join(__dirname, '..');
 const SRC_DIR = join(PACKAGE_DIR, 'src');
-const DIST_DIR = join(PACKAGE_DIR, 'dist');
+const DIST_DIR = join(PACKAGE_DIR, 'dist', 'esm');
 
 /**
  * Generate types.d.ts from src/types.ts (enhanced with new types)
@@ -185,6 +185,25 @@ export type { DynamicIconProps as DynamicIconPropsType };
 }
 
 /**
+ * Generate dynamicIconImports.d.ts - dynamic icon imports map
+ */
+function generateDynamicIconImportsDeclaration() {
+  const dynamicIconImportsContent = `import type { ComponentType } from 'react';
+import type { IconProps } from './types';
+
+export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
+
+export declare const dynamicIconImports: DynamicIconImports;
+
+export declare const iconNames: string[];
+
+export default dynamicIconImports;
+`;
+
+  return dynamicIconImportsContent;
+}
+
+/**
  * Generate dynamic-variants.d.ts - wrapper components with weight/duotone props
  */
 function generateDynamicVariantsDeclaration() {
@@ -317,36 +336,41 @@ function main() {
   // Generate types.d.ts
   const typesDeclaration = generateTypesDeclaration();
   writeFileSync(join(DIST_DIR, 'types.d.ts'), typesDeclaration);
-  console.log('  ✅ Generated dist/types.d.ts');
+  console.log('  ✅ Generated dist/esm/types.d.ts');
   
   // Generate IconBase.d.ts
   const iconBaseDeclaration = generateIconBaseDeclaration();
   writeFileSync(join(DIST_DIR, 'IconBase.d.ts'), iconBaseDeclaration);
-  console.log('  ✅ Generated dist/IconBase.d.ts');
+  console.log('  ✅ Generated dist/esm/IconBase.d.ts');
   
   // Generate base.d.ts (separate entry point for IconBase)
   const baseDeclaration = generateBaseDeclaration();
   writeFileSync(join(DIST_DIR, 'base.d.ts'), baseDeclaration);
-  console.log('  ✅ Generated dist/base.d.ts');
+  console.log('  ✅ Generated dist/esm/base.d.ts');
   
   // Generate dynamic.d.ts (dynamic icon loading entry point)
   const dynamicDeclaration = generateDynamicDeclaration();
   writeFileSync(join(DIST_DIR, 'dynamic.d.ts'), dynamicDeclaration);
-  console.log('  ✅ Generated dist/dynamic.d.ts');
+  console.log('  ✅ Generated dist/esm/dynamic.d.ts');
+  
+  // Generate dynamicIconImports.d.ts (dynamic icon imports map)
+  const dynamicIconImportsDeclaration = generateDynamicIconImportsDeclaration();
+  writeFileSync(join(DIST_DIR, 'dynamicIconImports.d.ts'), dynamicIconImportsDeclaration);
+  console.log('  ✅ Generated dist/esm/dynamicIconImports.d.ts');
   
   // Generate dynamic-variants.d.ts (wrapper components with weight/duotone props)
   const dynamicVariantsDeclaration = generateDynamicVariantsDeclaration();
   writeFileSync(join(DIST_DIR, 'dynamic-variants.d.ts'), dynamicVariantsDeclaration);
-  console.log('  ✅ Generated dist/dynamic-variants.d.ts');
+  console.log('  ✅ Generated dist/esm/dynamic-variants.d.ts');
   
-  // Generate index.d.ts
+  // Generate stera-icons.d.ts (main barrel export)
   const indexDeclaration = generateIndexDeclaration();
-  writeFileSync(join(DIST_DIR, 'index.d.ts'), indexDeclaration);
+  writeFileSync(join(DIST_DIR, 'stera-icons.d.ts'), indexDeclaration);
   
   // Count exports
   const exportCount = (indexDeclaration.match(/^export\s*\{/gm) || []).length;
   const typeExportCount = (indexDeclaration.match(/^export\s+type\s*\{/gm) || []).length;
-  console.log(`  ✅ Generated dist/index.d.ts (${exportCount} component exports, ${typeExportCount} type exports)`);
+  console.log(`  ✅ Generated dist/esm/stera-icons.d.ts (${exportCount} component exports, ${typeExportCount} type exports)`);
   
   console.log('✨ Declaration generation complete!');
 }

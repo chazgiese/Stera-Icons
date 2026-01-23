@@ -50,7 +50,21 @@ The `.gitignore` is configured to track metadata while ignoring other build arti
 dist/                                    # Ignore all dist files
 !dist/icons.meta.json                    # But track metadata
 !dist/name_map.json                      # And name mapping
+
+# Auto-generated source files (regenerated on build)
+src/index.ts
+src/dynamic-variants.ts
+src/dynamicIconImports.ts
 ```
+
+**Why auto-generated files are gitignored:**
+- These files are created during the build process from icon data
+- `src/index.ts` - Main barrel export (~783KB)
+- `src/dynamic-variants.ts` - Dynamic wrapper components (~61KB)
+- `src/dynamicIconImports.ts` - Dynamic import map (~315KB)
+- **Total:** ~1.1MB removed from git history
+- Files are automatically regenerated on `npm run build`
+- Prevents massive diffs when icons are added/modified
 
 ## Version Detection Algorithm
 

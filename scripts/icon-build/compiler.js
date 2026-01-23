@@ -13,11 +13,12 @@ import { ESBUILD_ESM_CONFIG, ESBUILD_CJS_CONFIG, TYPE_DEFS } from './config.js';
  * Compile icon components to ESM and CJS formats
  * @param {Object} params - Compilation parameters
  * @param {Array<Object>} params.entryPoints - Array of {in, out} objects for esbuild
- * @param {string} params.outDir - Output directory path
+ * @param {string} params.esmOutDir - ESM output directory path
+ * @param {string} params.cjsOutDir - CJS output directory path
  * @param {string} params.srcDir - Source directory path (for absWorkingDir)
  * @returns {Promise<{esmTime: number, cjsTime: number}>} - Compilation times
  */
-export async function compileIcons({ entryPoints, outDir, srcDir }) {
+export async function compileIcons({ entryPoints, esmOutDir, cjsOutDir, srcDir }) {
   // Batch compile ESM versions
   console.log('⚡ Compiling ESM bundles (batched)...');
   const esmStartTime = Date.now();
@@ -25,7 +26,7 @@ export async function compileIcons({ entryPoints, outDir, srcDir }) {
     await build({
       ...ESBUILD_ESM_CONFIG,
       entryPoints,
-      outdir: outDir,
+      outdir: esmOutDir,
       absWorkingDir: srcDir,
     });
     const esmTime = Date.now() - esmStartTime;
@@ -37,7 +38,7 @@ export async function compileIcons({ entryPoints, outDir, srcDir }) {
     await build({
       ...ESBUILD_CJS_CONFIG,
       entryPoints,
-      outdir: outDir,
+      outdir: cjsOutDir,
       absWorkingDir: srcDir,
     });
     const cjsTime = Date.now() - cjsStartTime;

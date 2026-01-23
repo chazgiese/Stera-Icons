@@ -26,6 +26,7 @@ export const ESBUILD_CONFIG = {
   target: 'es2020',
   jsx: 'automatic',
   resolveExtensions: ['.tsx', '.ts', '.jsx', '.js'],
+  sourcemap: true,
 };
 
 /**
@@ -34,7 +35,7 @@ export const ESBUILD_CONFIG = {
 export const ESBUILD_ESM_CONFIG = {
   ...ESBUILD_CONFIG,
   format: 'esm',
-  outExtension: { '.js': '.mjs' },
+  outExtension: { '.js': '.js' },
 };
 
 /**
@@ -43,7 +44,7 @@ export const ESBUILD_ESM_CONFIG = {
 export const ESBUILD_CJS_CONFIG = {
   ...ESBUILD_CONFIG,
   format: 'cjs',
-  outExtension: { '.js': '.cjs' },
+  outExtension: { '.js': '.js' },
   banner: { js: '"use strict";' },
 };
 

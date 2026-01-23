@@ -488,9 +488,14 @@ export default dynamicIconImports;
   
   // Compile individual icon components for subpath exports (BATCHED for performance)
   console.log('\n📦 Preparing icon components for compilation...');
-  const distIconsDir = join(distDir, 'icons');
-  if (!existsSync(distIconsDir)) {
-    mkdirSync(distIconsDir, { recursive: true });
+  const distEsmIconsDir = join(distDir, 'esm', 'icons');
+  const distCjsIconsDir = join(distDir, 'cjs', 'icons');
+  
+  if (!existsSync(distEsmIconsDir)) {
+    mkdirSync(distEsmIconsDir, { recursive: true });
+  }
+  if (!existsSync(distCjsIconsDir)) {
+    mkdirSync(distCjsIconsDir, { recursive: true });
   }
   
   const packageJsonPath = join(__dirname, '..', 'package.json');
@@ -510,34 +515,37 @@ export default dynamicIconImports;
   // Combine all entry points for a single batched build
   const allEntryPoints = [...wrapperEntryPoints, ...variantEntryPoints];
   
-  // Compile icons to ESM and CJS
+  // Compile icons to ESM and CJS in separate directories
   await compileIcons({
     entryPoints: allEntryPoints,
-    outDir: distIconsDir,
+    esmOutDir: distEsmIconsDir,
+    cjsOutDir: distCjsIconsDir,
     srcDir
   });
   
-  // Generate TypeScript declarations
-  generateWrapperDeclarations(wrapperComponents, distIconsDir);
-  generateVariantDeclarations(variantComponents, distIconsDir);
+  // Generate TypeScript declarations (in ESM directory)
+  generateWrapperDeclarations(wrapperComponents, distEsmIconsDir);
+  generateVariantDeclarations(variantComponents, distEsmIconsDir);
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
   // Update package.json with wildcard exports (following lucide-react pattern)
   // Preserve existing exports (./base, ./dynamic, etc.) and only update ./icons/*
   const existingExports = packageJson.exports?.['.'] || {
-    types: './dist/index.d.ts',
-    import: './dist/index.mjs',
-    require: './dist/index.cjs'
+    types: './dist/esm/stera-icons.d.ts',
+    import: './dist/esm/stera-icons.js',
+    require: './dist/cjs/stera-icons.js',
+    default: './dist/esm/stera-icons.js'
   };
   
   packageJson.exports = {
     ...packageJson.exports, // Preserve all existing exports
     '.': existingExports,
     './icons/*': {
-      types: './dist/icons/*.d.ts',
-      import: './dist/icons/*.mjs',
-      require: './dist/icons/*.cjs'
+      types: './dist/esm/icons/*.d.ts',
+      import: './dist/esm/icons/*.js',
+      require: './dist/cjs/icons/*.js',
+      default: './dist/esm/icons/*.js'
     }
   };
   
@@ -561,7 +569,8 @@ export default dynamicIconImports;
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
-  console.log(`  📁 Individual bundles written to: ${distIconsDir}`);
+  console.log(`  📁 ESM bundles written to: ${distEsmIconsDir}`);
+  console.log(`  📁 CJS bundles written to: ${distCjsIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
   console.log(`\n🎯 Import patterns (efficient defaults):`);
   console.log(`  • Base names: import { Search } from 'stera-icons' → SearchRegular (~300 bytes)`);

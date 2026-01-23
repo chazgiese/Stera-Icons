@@ -3,40 +3,49 @@
   "version": "8.0.4",
   "type": "module",
   "description": "A lightweight, tree-shakeable React icon library",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/stera-icons.js",
+  "module": "./dist/esm/stera-icons.js",
+  "types": "./dist/esm/stera-icons.d.ts",
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "types": "./dist/esm/stera-icons.d.ts",
+      "import": "./dist/esm/stera-icons.js",
+      "require": "./dist/cjs/stera-icons.js",
+      "default": "./dist/esm/stera-icons.js"
     },
     "./package.json": "./package.json",
     "./base": {
-      "types": "./dist/base.d.ts",
-      "import": "./dist/base.mjs",
-      "require": "./dist/base.cjs"
+      "types": "./dist/esm/base.d.ts",
+      "import": "./dist/esm/base.js",
+      "require": "./dist/cjs/base.js",
+      "default": "./dist/esm/base.js"
     },
     "./dynamic": {
-      "types": "./dist/dynamic.d.ts",
-      "import": "./dist/dynamic.mjs",
-      "require": "./dist/dynamic.cjs"
+      "types": "./dist/esm/dynamic.d.ts",
+      "import": "./dist/esm/dynamic.js",
+      "require": "./dist/cjs/dynamic.js",
+      "default": "./dist/esm/dynamic.js"
     },
     "./dynamic-variants": {
-      "types": "./dist/dynamic-variants.d.ts",
-      "import": "./dist/dynamic-variants.mjs",
-      "require": "./dist/dynamic-variants.cjs"
+      "types": "./dist/esm/dynamic-variants.d.ts",
+      "import": "./dist/esm/dynamic-variants.js",
+      "require": "./dist/cjs/dynamic-variants.js",
+      "default": "./dist/esm/dynamic-variants.js"
     },
     "./icons/*": {
-      "types": "./dist/icons/*.d.ts",
-      "import": "./dist/icons/*.mjs",
-      "require": "./dist/icons/*.cjs"
+      "types": "./dist/esm/icons/*.d.ts",
+      "import": "./dist/esm/icons/*.js",
+      "require": "./dist/cjs/icons/*.js",
+      "default": "./dist/esm/icons/*.js"
     }
   },
   "files": [
     "dist",
+    "dynamic.mjs",
+    "dynamic.d.ts",
+    "dynamicIconImports.mjs",
+    "dynamicIconImports.d.ts",
     "README.md"
   ],
   "scripts": {
@@ -97,7 +106,6 @@
   "license": "MIT",
   "packageManager": "pnpm@10.20.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=10.0.0"
+    "node": ">=18.0.0"
   }
 }

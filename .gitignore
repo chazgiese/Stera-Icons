@@ -90,3 +90,8 @@ temp/
 
 # Changeset
 # .changeset/ - This should be committed to track changes
+
+# Auto-generated source files (regenerated on build)
+src/index.ts
+src/dynamic-variants.ts
+src/dynamicIconImports.ts
