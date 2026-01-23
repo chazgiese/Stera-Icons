@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextAlignCenterRegular } from './TextAlignCenterRegular';
-import { TextAlignCenterRegularDuotone } from './TextAlignCenterRegularDuotone';
-import { TextAlignCenterBold } from './TextAlignCenterBold';
-import { TextAlignCenterBoldDuotone } from './TextAlignCenterBoldDuotone';
-import { TextAlignCenterFill } from './TextAlignCenterFill';
-import { TextAlignCenterFillDuotone } from './TextAlignCenterFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextAlignCenterRegular } from './TextAlignCenterRegular.js';
+import { TextAlignCenterRegularDuotone } from './TextAlignCenterRegularDuotone.js';
+import { TextAlignCenterBold } from './TextAlignCenterBold.js';
+import { TextAlignCenterBoldDuotone } from './TextAlignCenterBoldDuotone.js';
+import { TextAlignCenterFill } from './TextAlignCenterFill.js';
+import { TextAlignCenterFillDuotone } from './TextAlignCenterFillDuotone.js';
 
 export interface TextAlignCenterProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

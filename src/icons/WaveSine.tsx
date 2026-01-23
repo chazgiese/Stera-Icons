@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WaveSineRegular } from './WaveSineRegular';
-import { WaveSineRegularDuotone } from './WaveSineRegularDuotone';
-import { WaveSineBold } from './WaveSineBold';
-import { WaveSineBoldDuotone } from './WaveSineBoldDuotone';
-import { WaveSineFill } from './WaveSineFill';
-import { WaveSineFillDuotone } from './WaveSineFillDuotone';
+import type { IconProps } from '../types.js';
+import { WaveSineRegular } from './WaveSineRegular.js';
+import { WaveSineRegularDuotone } from './WaveSineRegularDuotone.js';
+import { WaveSineBold } from './WaveSineBold.js';
+import { WaveSineBoldDuotone } from './WaveSineBoldDuotone.js';
+import { WaveSineFill } from './WaveSineFill.js';
+import { WaveSineFillDuotone } from './WaveSineFillDuotone.js';
 
 export interface WaveSineProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

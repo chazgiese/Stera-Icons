@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ImageLandscapeRegular } from './ImageLandscapeRegular';
-import { ImageLandscapeRegularDuotone } from './ImageLandscapeRegularDuotone';
-import { ImageLandscapeBold } from './ImageLandscapeBold';
-import { ImageLandscapeBoldDuotone } from './ImageLandscapeBoldDuotone';
-import { ImageLandscapeFill } from './ImageLandscapeFill';
-import { ImageLandscapeFillDuotone } from './ImageLandscapeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ImageLandscapeRegular } from './ImageLandscapeRegular.js';
+import { ImageLandscapeRegularDuotone } from './ImageLandscapeRegularDuotone.js';
+import { ImageLandscapeBold } from './ImageLandscapeBold.js';
+import { ImageLandscapeBoldDuotone } from './ImageLandscapeBoldDuotone.js';
+import { ImageLandscapeFill } from './ImageLandscapeFill.js';
+import { ImageLandscapeFillDuotone } from './ImageLandscapeFillDuotone.js';
 
 export interface ImageLandscapeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

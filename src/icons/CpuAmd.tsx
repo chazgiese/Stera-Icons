@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CpuAmdRegular } from './CpuAmdRegular';
-import { CpuAmdRegularDuotone } from './CpuAmdRegularDuotone';
-import { CpuAmdBold } from './CpuAmdBold';
-import { CpuAmdBoldDuotone } from './CpuAmdBoldDuotone';
-import { CpuAmdFill } from './CpuAmdFill';
-import { CpuAmdFillDuotone } from './CpuAmdFillDuotone';
+import type { IconProps } from '../types.js';
+import { CpuAmdRegular } from './CpuAmdRegular.js';
+import { CpuAmdRegularDuotone } from './CpuAmdRegularDuotone.js';
+import { CpuAmdBold } from './CpuAmdBold.js';
+import { CpuAmdBoldDuotone } from './CpuAmdBoldDuotone.js';
+import { CpuAmdFill } from './CpuAmdFill.js';
+import { CpuAmdFillDuotone } from './CpuAmdFillDuotone.js';
 
 export interface CpuAmdProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

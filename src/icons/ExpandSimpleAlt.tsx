@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ExpandSimpleAltRegular } from './ExpandSimpleAltRegular';
-import { ExpandSimpleAltRegularDuotone } from './ExpandSimpleAltRegularDuotone';
-import { ExpandSimpleAltBold } from './ExpandSimpleAltBold';
-import { ExpandSimpleAltBoldDuotone } from './ExpandSimpleAltBoldDuotone';
-import { ExpandSimpleAltFill } from './ExpandSimpleAltFill';
-import { ExpandSimpleAltFillDuotone } from './ExpandSimpleAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { ExpandSimpleAltRegular } from './ExpandSimpleAltRegular.js';
+import { ExpandSimpleAltRegularDuotone } from './ExpandSimpleAltRegularDuotone.js';
+import { ExpandSimpleAltBold } from './ExpandSimpleAltBold.js';
+import { ExpandSimpleAltBoldDuotone } from './ExpandSimpleAltBoldDuotone.js';
+import { ExpandSimpleAltFill } from './ExpandSimpleAltFill.js';
+import { ExpandSimpleAltFillDuotone } from './ExpandSimpleAltFillDuotone.js';
 
 export interface ExpandSimpleAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

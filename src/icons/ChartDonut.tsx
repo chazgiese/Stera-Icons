@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartDonutRegular } from './ChartDonutRegular';
-import { ChartDonutRegularDuotone } from './ChartDonutRegularDuotone';
-import { ChartDonutBold } from './ChartDonutBold';
-import { ChartDonutBoldDuotone } from './ChartDonutBoldDuotone';
-import { ChartDonutFill } from './ChartDonutFill';
-import { ChartDonutFillDuotone } from './ChartDonutFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartDonutRegular } from './ChartDonutRegular.js';
+import { ChartDonutRegularDuotone } from './ChartDonutRegularDuotone.js';
+import { ChartDonutBold } from './ChartDonutBold.js';
+import { ChartDonutBoldDuotone } from './ChartDonutBoldDuotone.js';
+import { ChartDonutFill } from './ChartDonutFill.js';
+import { ChartDonutFillDuotone } from './ChartDonutFillDuotone.js';
 
 export interface ChartDonutProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DocumentRegular } from './DocumentRegular';
-import { DocumentRegularDuotone } from './DocumentRegularDuotone';
-import { DocumentBold } from './DocumentBold';
-import { DocumentBoldDuotone } from './DocumentBoldDuotone';
-import { DocumentFill } from './DocumentFill';
-import { DocumentFillDuotone } from './DocumentFillDuotone';
+import type { IconProps } from '../types.js';
+import { DocumentRegular } from './DocumentRegular.js';
+import { DocumentRegularDuotone } from './DocumentRegularDuotone.js';
+import { DocumentBold } from './DocumentBold.js';
+import { DocumentBoldDuotone } from './DocumentBoldDuotone.js';
+import { DocumentFill } from './DocumentFill.js';
+import { DocumentFillDuotone } from './DocumentFillDuotone.js';
 
 export interface DocumentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

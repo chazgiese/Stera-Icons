@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TicketRegular } from './TicketRegular';
-import { TicketRegularDuotone } from './TicketRegularDuotone';
-import { TicketBold } from './TicketBold';
-import { TicketBoldDuotone } from './TicketBoldDuotone';
-import { TicketFill } from './TicketFill';
-import { TicketFillDuotone } from './TicketFillDuotone';
+import type { IconProps } from '../types.js';
+import { TicketRegular } from './TicketRegular.js';
+import { TicketRegularDuotone } from './TicketRegularDuotone.js';
+import { TicketBold } from './TicketBold.js';
+import { TicketBoldDuotone } from './TicketBoldDuotone.js';
+import { TicketFill } from './TicketFill.js';
+import { TicketFillDuotone } from './TicketFillDuotone.js';
 
 export interface TicketProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

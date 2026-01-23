@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MailOpenRegular } from './MailOpenRegular';
-import { MailOpenRegularDuotone } from './MailOpenRegularDuotone';
-import { MailOpenBold } from './MailOpenBold';
-import { MailOpenBoldDuotone } from './MailOpenBoldDuotone';
-import { MailOpenFill } from './MailOpenFill';
-import { MailOpenFillDuotone } from './MailOpenFillDuotone';
+import type { IconProps } from '../types.js';
+import { MailOpenRegular } from './MailOpenRegular.js';
+import { MailOpenRegularDuotone } from './MailOpenRegularDuotone.js';
+import { MailOpenBold } from './MailOpenBold.js';
+import { MailOpenBoldDuotone } from './MailOpenBoldDuotone.js';
+import { MailOpenFill } from './MailOpenFill.js';
+import { MailOpenFillDuotone } from './MailOpenFillDuotone.js';
 
 export interface MailOpenProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

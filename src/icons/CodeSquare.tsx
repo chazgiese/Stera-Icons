@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CodeSquareRegular } from './CodeSquareRegular';
-import { CodeSquareRegularDuotone } from './CodeSquareRegularDuotone';
-import { CodeSquareBold } from './CodeSquareBold';
-import { CodeSquareBoldDuotone } from './CodeSquareBoldDuotone';
-import { CodeSquareFill } from './CodeSquareFill';
-import { CodeSquareFillDuotone } from './CodeSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { CodeSquareRegular } from './CodeSquareRegular.js';
+import { CodeSquareRegularDuotone } from './CodeSquareRegularDuotone.js';
+import { CodeSquareBold } from './CodeSquareBold.js';
+import { CodeSquareBoldDuotone } from './CodeSquareBoldDuotone.js';
+import { CodeSquareFill } from './CodeSquareFill.js';
+import { CodeSquareFillDuotone } from './CodeSquareFillDuotone.js';
 
 export interface CodeSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ToyBrickRegular } from './ToyBrickRegular';
-import { ToyBrickRegularDuotone } from './ToyBrickRegularDuotone';
-import { ToyBrickBold } from './ToyBrickBold';
-import { ToyBrickBoldDuotone } from './ToyBrickBoldDuotone';
-import { ToyBrickFill } from './ToyBrickFill';
-import { ToyBrickFillDuotone } from './ToyBrickFillDuotone';
+import type { IconProps } from '../types.js';
+import { ToyBrickRegular } from './ToyBrickRegular.js';
+import { ToyBrickRegularDuotone } from './ToyBrickRegularDuotone.js';
+import { ToyBrickBold } from './ToyBrickBold.js';
+import { ToyBrickBoldDuotone } from './ToyBrickBoldDuotone.js';
+import { ToyBrickFill } from './ToyBrickFill.js';
+import { ToyBrickFillDuotone } from './ToyBrickFillDuotone.js';
 
 export interface ToyBrickProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

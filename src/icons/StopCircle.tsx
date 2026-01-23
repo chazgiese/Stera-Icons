@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { StopCircleRegular } from './StopCircleRegular';
-import { StopCircleRegularDuotone } from './StopCircleRegularDuotone';
-import { StopCircleBold } from './StopCircleBold';
-import { StopCircleBoldDuotone } from './StopCircleBoldDuotone';
-import { StopCircleFill } from './StopCircleFill';
-import { StopCircleFillDuotone } from './StopCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { StopCircleRegular } from './StopCircleRegular.js';
+import { StopCircleRegularDuotone } from './StopCircleRegularDuotone.js';
+import { StopCircleBold } from './StopCircleBold.js';
+import { StopCircleBoldDuotone } from './StopCircleBoldDuotone.js';
+import { StopCircleFill } from './StopCircleFill.js';
+import { StopCircleFillDuotone } from './StopCircleFillDuotone.js';
 
 export interface StopCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CheckSquareRegular } from './CheckSquareRegular';
-import { CheckSquareRegularDuotone } from './CheckSquareRegularDuotone';
-import { CheckSquareBold } from './CheckSquareBold';
-import { CheckSquareBoldDuotone } from './CheckSquareBoldDuotone';
-import { CheckSquareFill } from './CheckSquareFill';
-import { CheckSquareFillDuotone } from './CheckSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { CheckSquareRegular } from './CheckSquareRegular.js';
+import { CheckSquareRegularDuotone } from './CheckSquareRegularDuotone.js';
+import { CheckSquareBold } from './CheckSquareBold.js';
+import { CheckSquareBoldDuotone } from './CheckSquareBoldDuotone.js';
+import { CheckSquareFill } from './CheckSquareFill.js';
+import { CheckSquareFillDuotone } from './CheckSquareFillDuotone.js';
 
 export interface CheckSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

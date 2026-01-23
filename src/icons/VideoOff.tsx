@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { VideoOffRegular } from './VideoOffRegular';
-import { VideoOffRegularDuotone } from './VideoOffRegularDuotone';
-import { VideoOffBold } from './VideoOffBold';
-import { VideoOffBoldDuotone } from './VideoOffBoldDuotone';
-import { VideoOffFill } from './VideoOffFill';
-import { VideoOffFillDuotone } from './VideoOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { VideoOffRegular } from './VideoOffRegular.js';
+import { VideoOffRegularDuotone } from './VideoOffRegularDuotone.js';
+import { VideoOffBold } from './VideoOffBold.js';
+import { VideoOffBoldDuotone } from './VideoOffBoldDuotone.js';
+import { VideoOffFill } from './VideoOffFill.js';
+import { VideoOffFillDuotone } from './VideoOffFillDuotone.js';
 
 export interface VideoOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

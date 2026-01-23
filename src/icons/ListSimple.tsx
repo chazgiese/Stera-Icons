@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ListSimpleRegular } from './ListSimpleRegular';
-import { ListSimpleRegularDuotone } from './ListSimpleRegularDuotone';
-import { ListSimpleBold } from './ListSimpleBold';
-import { ListSimpleBoldDuotone } from './ListSimpleBoldDuotone';
-import { ListSimpleFill } from './ListSimpleFill';
-import { ListSimpleFillDuotone } from './ListSimpleFillDuotone';
+import type { IconProps } from '../types.js';
+import { ListSimpleRegular } from './ListSimpleRegular.js';
+import { ListSimpleRegularDuotone } from './ListSimpleRegularDuotone.js';
+import { ListSimpleBold } from './ListSimpleBold.js';
+import { ListSimpleBoldDuotone } from './ListSimpleBoldDuotone.js';
+import { ListSimpleFill } from './ListSimpleFill.js';
+import { ListSimpleFillDuotone } from './ListSimpleFillDuotone.js';
 
 export interface ListSimpleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

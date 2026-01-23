@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextStrikethroughRegular } from './TextStrikethroughRegular';
-import { TextStrikethroughRegularDuotone } from './TextStrikethroughRegularDuotone';
-import { TextStrikethroughBold } from './TextStrikethroughBold';
-import { TextStrikethroughBoldDuotone } from './TextStrikethroughBoldDuotone';
-import { TextStrikethroughFill } from './TextStrikethroughFill';
-import { TextStrikethroughFillDuotone } from './TextStrikethroughFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextStrikethroughRegular } from './TextStrikethroughRegular.js';
+import { TextStrikethroughRegularDuotone } from './TextStrikethroughRegularDuotone.js';
+import { TextStrikethroughBold } from './TextStrikethroughBold.js';
+import { TextStrikethroughBoldDuotone } from './TextStrikethroughBoldDuotone.js';
+import { TextStrikethroughFill } from './TextStrikethroughFill.js';
+import { TextStrikethroughFillDuotone } from './TextStrikethroughFillDuotone.js';
 
 export interface TextStrikethroughProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

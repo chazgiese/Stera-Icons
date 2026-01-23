@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HandRightRegular } from './HandRightRegular';
-import { HandRightRegularDuotone } from './HandRightRegularDuotone';
-import { HandRightBold } from './HandRightBold';
-import { HandRightBoldDuotone } from './HandRightBoldDuotone';
-import { HandRightFill } from './HandRightFill';
-import { HandRightFillDuotone } from './HandRightFillDuotone';
+import type { IconProps } from '../types.js';
+import { HandRightRegular } from './HandRightRegular.js';
+import { HandRightRegularDuotone } from './HandRightRegularDuotone.js';
+import { HandRightBold } from './HandRightBold.js';
+import { HandRightBoldDuotone } from './HandRightBoldDuotone.js';
+import { HandRightFill } from './HandRightFill.js';
+import { HandRightFillDuotone } from './HandRightFillDuotone.js';
 
 export interface HandRightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

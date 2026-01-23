@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CoolSRegular } from './CoolSRegular';
-import { CoolSRegularDuotone } from './CoolSRegularDuotone';
-import { CoolSBold } from './CoolSBold';
-import { CoolSBoldDuotone } from './CoolSBoldDuotone';
-import { CoolSFill } from './CoolSFill';
-import { CoolSFillDuotone } from './CoolSFillDuotone';
+import type { IconProps } from '../types.js';
+import { CoolSRegular } from './CoolSRegular.js';
+import { CoolSRegularDuotone } from './CoolSRegularDuotone.js';
+import { CoolSBold } from './CoolSBold.js';
+import { CoolSBoldDuotone } from './CoolSBoldDuotone.js';
+import { CoolSFill } from './CoolSFill.js';
+import { CoolSFillDuotone } from './CoolSFillDuotone.js';
 
 export interface CoolSProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrainRegular } from './BrainRegular';
-import { BrainRegularDuotone } from './BrainRegularDuotone';
-import { BrainBold } from './BrainBold';
-import { BrainBoldDuotone } from './BrainBoldDuotone';
-import { BrainFill } from './BrainFill';
-import { BrainFillDuotone } from './BrainFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrainRegular } from './BrainRegular.js';
+import { BrainRegularDuotone } from './BrainRegularDuotone.js';
+import { BrainBold } from './BrainBold.js';
+import { BrainBoldDuotone } from './BrainBoldDuotone.js';
+import { BrainFill } from './BrainFill.js';
+import { BrainFillDuotone } from './BrainFillDuotone.js';
 
 export interface BrainProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

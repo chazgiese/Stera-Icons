@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MenuRegular } from './MenuRegular';
-import { MenuRegularDuotone } from './MenuRegularDuotone';
-import { MenuBold } from './MenuBold';
-import { MenuBoldDuotone } from './MenuBoldDuotone';
-import { MenuFill } from './MenuFill';
-import { MenuFillDuotone } from './MenuFillDuotone';
+import type { IconProps } from '../types.js';
+import { MenuRegular } from './MenuRegular.js';
+import { MenuRegularDuotone } from './MenuRegularDuotone.js';
+import { MenuBold } from './MenuBold.js';
+import { MenuBoldDuotone } from './MenuBoldDuotone.js';
+import { MenuFill } from './MenuFill.js';
+import { MenuFillDuotone } from './MenuFillDuotone.js';
 
 export interface MenuProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

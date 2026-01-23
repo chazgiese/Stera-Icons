@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AtomOrbitRegular } from './AtomOrbitRegular';
-import { AtomOrbitRegularDuotone } from './AtomOrbitRegularDuotone';
-import { AtomOrbitBold } from './AtomOrbitBold';
-import { AtomOrbitBoldDuotone } from './AtomOrbitBoldDuotone';
-import { AtomOrbitFill } from './AtomOrbitFill';
-import { AtomOrbitFillDuotone } from './AtomOrbitFillDuotone';
+import type { IconProps } from '../types.js';
+import { AtomOrbitRegular } from './AtomOrbitRegular.js';
+import { AtomOrbitRegularDuotone } from './AtomOrbitRegularDuotone.js';
+import { AtomOrbitBold } from './AtomOrbitBold.js';
+import { AtomOrbitBoldDuotone } from './AtomOrbitBoldDuotone.js';
+import { AtomOrbitFill } from './AtomOrbitFill.js';
+import { AtomOrbitFillDuotone } from './AtomOrbitFillDuotone.js';
 
 export interface AtomOrbitProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

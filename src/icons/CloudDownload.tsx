@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CloudDownloadRegular } from './CloudDownloadRegular';
-import { CloudDownloadRegularDuotone } from './CloudDownloadRegularDuotone';
-import { CloudDownloadBold } from './CloudDownloadBold';
-import { CloudDownloadBoldDuotone } from './CloudDownloadBoldDuotone';
-import { CloudDownloadFill } from './CloudDownloadFill';
-import { CloudDownloadFillDuotone } from './CloudDownloadFillDuotone';
+import type { IconProps } from '../types.js';
+import { CloudDownloadRegular } from './CloudDownloadRegular.js';
+import { CloudDownloadRegularDuotone } from './CloudDownloadRegularDuotone.js';
+import { CloudDownloadBold } from './CloudDownloadBold.js';
+import { CloudDownloadBoldDuotone } from './CloudDownloadBoldDuotone.js';
+import { CloudDownloadFill } from './CloudDownloadFill.js';
+import { CloudDownloadFillDuotone } from './CloudDownloadFillDuotone.js';
 
 export interface CloudDownloadProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

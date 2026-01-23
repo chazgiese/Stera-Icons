@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CityRegular } from './CityRegular';
-import { CityRegularDuotone } from './CityRegularDuotone';
-import { CityBold } from './CityBold';
-import { CityBoldDuotone } from './CityBoldDuotone';
-import { CityFill } from './CityFill';
-import { CityFillDuotone } from './CityFillDuotone';
+import type { IconProps } from '../types.js';
+import { CityRegular } from './CityRegular.js';
+import { CityRegularDuotone } from './CityRegularDuotone.js';
+import { CityBold } from './CityBold.js';
+import { CityBoldDuotone } from './CityBoldDuotone.js';
+import { CityFill } from './CityFill.js';
+import { CityFillDuotone } from './CityFillDuotone.js';
 
 export interface CityProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

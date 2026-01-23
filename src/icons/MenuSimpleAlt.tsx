@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MenuSimpleAltRegular } from './MenuSimpleAltRegular';
-import { MenuSimpleAltRegularDuotone } from './MenuSimpleAltRegularDuotone';
-import { MenuSimpleAltBold } from './MenuSimpleAltBold';
-import { MenuSimpleAltBoldDuotone } from './MenuSimpleAltBoldDuotone';
-import { MenuSimpleAltFill } from './MenuSimpleAltFill';
-import { MenuSimpleAltFillDuotone } from './MenuSimpleAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { MenuSimpleAltRegular } from './MenuSimpleAltRegular.js';
+import { MenuSimpleAltRegularDuotone } from './MenuSimpleAltRegularDuotone.js';
+import { MenuSimpleAltBold } from './MenuSimpleAltBold.js';
+import { MenuSimpleAltBoldDuotone } from './MenuSimpleAltBoldDuotone.js';
+import { MenuSimpleAltFill } from './MenuSimpleAltFill.js';
+import { MenuSimpleAltFillDuotone } from './MenuSimpleAltFillDuotone.js';
 
 export interface MenuSimpleAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

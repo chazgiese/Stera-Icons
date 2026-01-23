@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { KeyholeRegular } from './KeyholeRegular';
-import { KeyholeRegularDuotone } from './KeyholeRegularDuotone';
-import { KeyholeBold } from './KeyholeBold';
-import { KeyholeBoldDuotone } from './KeyholeBoldDuotone';
-import { KeyholeFill } from './KeyholeFill';
-import { KeyholeFillDuotone } from './KeyholeFillDuotone';
+import type { IconProps } from '../types.js';
+import { KeyholeRegular } from './KeyholeRegular.js';
+import { KeyholeRegularDuotone } from './KeyholeRegularDuotone.js';
+import { KeyholeBold } from './KeyholeBold.js';
+import { KeyholeBoldDuotone } from './KeyholeBoldDuotone.js';
+import { KeyholeFill } from './KeyholeFill.js';
+import { KeyholeFillDuotone } from './KeyholeFillDuotone.js';
 
 export interface KeyholeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

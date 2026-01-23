@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CheckRegular } from './CheckRegular';
-import { CheckRegularDuotone } from './CheckRegularDuotone';
-import { CheckBold } from './CheckBold';
-import { CheckBoldDuotone } from './CheckBoldDuotone';
-import { CheckFill } from './CheckFill';
-import { CheckFillDuotone } from './CheckFillDuotone';
+import type { IconProps } from '../types.js';
+import { CheckRegular } from './CheckRegular.js';
+import { CheckRegularDuotone } from './CheckRegularDuotone.js';
+import { CheckBold } from './CheckBold.js';
+import { CheckBoldDuotone } from './CheckBoldDuotone.js';
+import { CheckFill } from './CheckFill.js';
+import { CheckFillDuotone } from './CheckFillDuotone.js';
 
 export interface CheckProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

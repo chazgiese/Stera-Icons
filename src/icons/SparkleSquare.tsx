@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SparkleSquareRegular } from './SparkleSquareRegular';
-import { SparkleSquareRegularDuotone } from './SparkleSquareRegularDuotone';
-import { SparkleSquareBold } from './SparkleSquareBold';
-import { SparkleSquareBoldDuotone } from './SparkleSquareBoldDuotone';
-import { SparkleSquareFill } from './SparkleSquareFill';
-import { SparkleSquareFillDuotone } from './SparkleSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { SparkleSquareRegular } from './SparkleSquareRegular.js';
+import { SparkleSquareRegularDuotone } from './SparkleSquareRegularDuotone.js';
+import { SparkleSquareBold } from './SparkleSquareBold.js';
+import { SparkleSquareBoldDuotone } from './SparkleSquareBoldDuotone.js';
+import { SparkleSquareFill } from './SparkleSquareFill.js';
+import { SparkleSquareFillDuotone } from './SparkleSquareFillDuotone.js';
 
 export interface SparkleSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

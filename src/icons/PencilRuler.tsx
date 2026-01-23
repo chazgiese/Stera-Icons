@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PencilRulerRegular } from './PencilRulerRegular';
-import { PencilRulerRegularDuotone } from './PencilRulerRegularDuotone';
-import { PencilRulerBold } from './PencilRulerBold';
-import { PencilRulerBoldDuotone } from './PencilRulerBoldDuotone';
-import { PencilRulerFill } from './PencilRulerFill';
-import { PencilRulerFillDuotone } from './PencilRulerFillDuotone';
+import type { IconProps } from '../types.js';
+import { PencilRulerRegular } from './PencilRulerRegular.js';
+import { PencilRulerRegularDuotone } from './PencilRulerRegularDuotone.js';
+import { PencilRulerBold } from './PencilRulerBold.js';
+import { PencilRulerBoldDuotone } from './PencilRulerBoldDuotone.js';
+import { PencilRulerFill } from './PencilRulerFill.js';
+import { PencilRulerFillDuotone } from './PencilRulerFillDuotone.js';
 
 export interface PencilRulerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

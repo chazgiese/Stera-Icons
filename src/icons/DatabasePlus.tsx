@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DatabasePlusRegular } from './DatabasePlusRegular';
-import { DatabasePlusRegularDuotone } from './DatabasePlusRegularDuotone';
-import { DatabasePlusBold } from './DatabasePlusBold';
-import { DatabasePlusBoldDuotone } from './DatabasePlusBoldDuotone';
-import { DatabasePlusFill } from './DatabasePlusFill';
-import { DatabasePlusFillDuotone } from './DatabasePlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { DatabasePlusRegular } from './DatabasePlusRegular.js';
+import { DatabasePlusRegularDuotone } from './DatabasePlusRegularDuotone.js';
+import { DatabasePlusBold } from './DatabasePlusBold.js';
+import { DatabasePlusBoldDuotone } from './DatabasePlusBoldDuotone.js';
+import { DatabasePlusFill } from './DatabasePlusFill.js';
+import { DatabasePlusFillDuotone } from './DatabasePlusFillDuotone.js';
 
 export interface DatabasePlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

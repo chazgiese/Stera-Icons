@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CommentBubbleRegular } from './CommentBubbleRegular';
-import { CommentBubbleRegularDuotone } from './CommentBubbleRegularDuotone';
-import { CommentBubbleBold } from './CommentBubbleBold';
-import { CommentBubbleBoldDuotone } from './CommentBubbleBoldDuotone';
-import { CommentBubbleFill } from './CommentBubbleFill';
-import { CommentBubbleFillDuotone } from './CommentBubbleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CommentBubbleRegular } from './CommentBubbleRegular.js';
+import { CommentBubbleRegularDuotone } from './CommentBubbleRegularDuotone.js';
+import { CommentBubbleBold } from './CommentBubbleBold.js';
+import { CommentBubbleBoldDuotone } from './CommentBubbleBoldDuotone.js';
+import { CommentBubbleFill } from './CommentBubbleFill.js';
+import { CommentBubbleFillDuotone } from './CommentBubbleFillDuotone.js';
 
 export interface CommentBubbleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

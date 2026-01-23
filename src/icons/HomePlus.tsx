@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HomePlusRegular } from './HomePlusRegular';
-import { HomePlusRegularDuotone } from './HomePlusRegularDuotone';
-import { HomePlusBold } from './HomePlusBold';
-import { HomePlusBoldDuotone } from './HomePlusBoldDuotone';
-import { HomePlusFill } from './HomePlusFill';
-import { HomePlusFillDuotone } from './HomePlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { HomePlusRegular } from './HomePlusRegular.js';
+import { HomePlusRegularDuotone } from './HomePlusRegularDuotone.js';
+import { HomePlusBold } from './HomePlusBold.js';
+import { HomePlusBoldDuotone } from './HomePlusBoldDuotone.js';
+import { HomePlusFill } from './HomePlusFill.js';
+import { HomePlusFillDuotone } from './HomePlusFillDuotone.js';
 
 export interface HomePlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

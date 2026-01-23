@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CopyRegular } from './CopyRegular';
-import { CopyRegularDuotone } from './CopyRegularDuotone';
-import { CopyBold } from './CopyBold';
-import { CopyBoldDuotone } from './CopyBoldDuotone';
-import { CopyFill } from './CopyFill';
-import { CopyFillDuotone } from './CopyFillDuotone';
+import type { IconProps } from '../types.js';
+import { CopyRegular } from './CopyRegular.js';
+import { CopyRegularDuotone } from './CopyRegularDuotone.js';
+import { CopyBold } from './CopyBold.js';
+import { CopyBoldDuotone } from './CopyBoldDuotone.js';
+import { CopyFill } from './CopyFill.js';
+import { CopyFillDuotone } from './CopyFillDuotone.js';
 
 export interface CopyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

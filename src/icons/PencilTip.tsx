@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PencilTipRegular } from './PencilTipRegular';
-import { PencilTipRegularDuotone } from './PencilTipRegularDuotone';
-import { PencilTipBold } from './PencilTipBold';
-import { PencilTipBoldDuotone } from './PencilTipBoldDuotone';
-import { PencilTipFill } from './PencilTipFill';
-import { PencilTipFillDuotone } from './PencilTipFillDuotone';
+import type { IconProps } from '../types.js';
+import { PencilTipRegular } from './PencilTipRegular.js';
+import { PencilTipRegularDuotone } from './PencilTipRegularDuotone.js';
+import { PencilTipBold } from './PencilTipBold.js';
+import { PencilTipBoldDuotone } from './PencilTipBoldDuotone.js';
+import { PencilTipFill } from './PencilTipFill.js';
+import { PencilTipFillDuotone } from './PencilTipFillDuotone.js';
 
 export interface PencilTipProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

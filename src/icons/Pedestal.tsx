@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PedestalRegular } from './PedestalRegular';
-import { PedestalRegularDuotone } from './PedestalRegularDuotone';
-import { PedestalBold } from './PedestalBold';
-import { PedestalBoldDuotone } from './PedestalBoldDuotone';
-import { PedestalFill } from './PedestalFill';
-import { PedestalFillDuotone } from './PedestalFillDuotone';
+import type { IconProps } from '../types.js';
+import { PedestalRegular } from './PedestalRegular.js';
+import { PedestalRegularDuotone } from './PedestalRegularDuotone.js';
+import { PedestalBold } from './PedestalBold.js';
+import { PedestalBoldDuotone } from './PedestalBoldDuotone.js';
+import { PedestalFill } from './PedestalFill.js';
+import { PedestalFillDuotone } from './PedestalFillDuotone.js';
 
 export interface PedestalProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

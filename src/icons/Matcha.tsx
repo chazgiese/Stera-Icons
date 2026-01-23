@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MatchaRegular } from './MatchaRegular';
-import { MatchaRegularDuotone } from './MatchaRegularDuotone';
-import { MatchaBold } from './MatchaBold';
-import { MatchaBoldDuotone } from './MatchaBoldDuotone';
-import { MatchaFill } from './MatchaFill';
-import { MatchaFillDuotone } from './MatchaFillDuotone';
+import type { IconProps } from '../types.js';
+import { MatchaRegular } from './MatchaRegular.js';
+import { MatchaRegularDuotone } from './MatchaRegularDuotone.js';
+import { MatchaBold } from './MatchaBold.js';
+import { MatchaBoldDuotone } from './MatchaBoldDuotone.js';
+import { MatchaFill } from './MatchaFill.js';
+import { MatchaFillDuotone } from './MatchaFillDuotone.js';
 
 export interface MatchaProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

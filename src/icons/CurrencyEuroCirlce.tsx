@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CurrencyEuroCirlceRegular } from './CurrencyEuroCirlceRegular';
-import { CurrencyEuroCirlceRegularDuotone } from './CurrencyEuroCirlceRegularDuotone';
-import { CurrencyEuroCirlceBold } from './CurrencyEuroCirlceBold';
-import { CurrencyEuroCirlceBoldDuotone } from './CurrencyEuroCirlceBoldDuotone';
-import { CurrencyEuroCirlceFill } from './CurrencyEuroCirlceFill';
-import { CurrencyEuroCirlceFillDuotone } from './CurrencyEuroCirlceFillDuotone';
+import type { IconProps } from '../types.js';
+import { CurrencyEuroCirlceRegular } from './CurrencyEuroCirlceRegular.js';
+import { CurrencyEuroCirlceRegularDuotone } from './CurrencyEuroCirlceRegularDuotone.js';
+import { CurrencyEuroCirlceBold } from './CurrencyEuroCirlceBold.js';
+import { CurrencyEuroCirlceBoldDuotone } from './CurrencyEuroCirlceBoldDuotone.js';
+import { CurrencyEuroCirlceFill } from './CurrencyEuroCirlceFill.js';
+import { CurrencyEuroCirlceFillDuotone } from './CurrencyEuroCirlceFillDuotone.js';
 
 export interface CurrencyEuroCirlceProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

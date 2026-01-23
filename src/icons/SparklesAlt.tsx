@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SparklesAltRegular } from './SparklesAltRegular';
-import { SparklesAltRegularDuotone } from './SparklesAltRegularDuotone';
-import { SparklesAltBold } from './SparklesAltBold';
-import { SparklesAltBoldDuotone } from './SparklesAltBoldDuotone';
-import { SparklesAltFill } from './SparklesAltFill';
-import { SparklesAltFillDuotone } from './SparklesAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { SparklesAltRegular } from './SparklesAltRegular.js';
+import { SparklesAltRegularDuotone } from './SparklesAltRegularDuotone.js';
+import { SparklesAltBold } from './SparklesAltBold.js';
+import { SparklesAltBoldDuotone } from './SparklesAltBoldDuotone.js';
+import { SparklesAltFill } from './SparklesAltFill.js';
+import { SparklesAltFillDuotone } from './SparklesAltFillDuotone.js';
 
 export interface SparklesAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

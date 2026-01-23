@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BatteryFullRegular } from './BatteryFullRegular';
-import { BatteryFullRegularDuotone } from './BatteryFullRegularDuotone';
-import { BatteryFullBold } from './BatteryFullBold';
-import { BatteryFullBoldDuotone } from './BatteryFullBoldDuotone';
-import { BatteryFullFill } from './BatteryFullFill';
-import { BatteryFullFillDuotone } from './BatteryFullFillDuotone';
+import type { IconProps } from '../types.js';
+import { BatteryFullRegular } from './BatteryFullRegular.js';
+import { BatteryFullRegularDuotone } from './BatteryFullRegularDuotone.js';
+import { BatteryFullBold } from './BatteryFullBold.js';
+import { BatteryFullBoldDuotone } from './BatteryFullBoldDuotone.js';
+import { BatteryFullFill } from './BatteryFullFill.js';
+import { BatteryFullFillDuotone } from './BatteryFullFillDuotone.js';
 
 export interface BatteryFullProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

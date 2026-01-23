@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SortAscendingRegular } from './SortAscendingRegular';
-import { SortAscendingRegularDuotone } from './SortAscendingRegularDuotone';
-import { SortAscendingBold } from './SortAscendingBold';
-import { SortAscendingBoldDuotone } from './SortAscendingBoldDuotone';
-import { SortAscendingFill } from './SortAscendingFill';
-import { SortAscendingFillDuotone } from './SortAscendingFillDuotone';
+import type { IconProps } from '../types.js';
+import { SortAscendingRegular } from './SortAscendingRegular.js';
+import { SortAscendingRegularDuotone } from './SortAscendingRegularDuotone.js';
+import { SortAscendingBold } from './SortAscendingBold.js';
+import { SortAscendingBoldDuotone } from './SortAscendingBoldDuotone.js';
+import { SortAscendingFill } from './SortAscendingFill.js';
+import { SortAscendingFillDuotone } from './SortAscendingFillDuotone.js';
 
 export interface SortAscendingProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

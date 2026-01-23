@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PercentCircleRegular } from './PercentCircleRegular';
-import { PercentCircleRegularDuotone } from './PercentCircleRegularDuotone';
-import { PercentCircleBold } from './PercentCircleBold';
-import { PercentCircleBoldDuotone } from './PercentCircleBoldDuotone';
-import { PercentCircleFill } from './PercentCircleFill';
-import { PercentCircleFillDuotone } from './PercentCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { PercentCircleRegular } from './PercentCircleRegular.js';
+import { PercentCircleRegularDuotone } from './PercentCircleRegularDuotone.js';
+import { PercentCircleBold } from './PercentCircleBold.js';
+import { PercentCircleBoldDuotone } from './PercentCircleBoldDuotone.js';
+import { PercentCircleFill } from './PercentCircleFill.js';
+import { PercentCircleFillDuotone } from './PercentCircleFillDuotone.js';
 
 export interface PercentCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

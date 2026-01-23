@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MailXRegular } from './MailXRegular';
-import { MailXRegularDuotone } from './MailXRegularDuotone';
-import { MailXBold } from './MailXBold';
-import { MailXBoldDuotone } from './MailXBoldDuotone';
-import { MailXFill } from './MailXFill';
-import { MailXFillDuotone } from './MailXFillDuotone';
+import type { IconProps } from '../types.js';
+import { MailXRegular } from './MailXRegular.js';
+import { MailXRegularDuotone } from './MailXRegularDuotone.js';
+import { MailXBold } from './MailXBold.js';
+import { MailXBoldDuotone } from './MailXBoldDuotone.js';
+import { MailXFill } from './MailXFill.js';
+import { MailXFillDuotone } from './MailXFillDuotone.js';
 
 export interface MailXProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

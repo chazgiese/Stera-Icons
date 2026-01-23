@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AstriskAltRegular } from './AstriskAltRegular';
-import { AstriskAltRegularDuotone } from './AstriskAltRegularDuotone';
-import { AstriskAltBold } from './AstriskAltBold';
-import { AstriskAltBoldDuotone } from './AstriskAltBoldDuotone';
-import { AstriskAltFill } from './AstriskAltFill';
-import { AstriskAltFillDuotone } from './AstriskAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { AstriskAltRegular } from './AstriskAltRegular.js';
+import { AstriskAltRegularDuotone } from './AstriskAltRegularDuotone.js';
+import { AstriskAltBold } from './AstriskAltBold.js';
+import { AstriskAltBoldDuotone } from './AstriskAltBoldDuotone.js';
+import { AstriskAltFill } from './AstriskAltFill.js';
+import { AstriskAltFillDuotone } from './AstriskAltFillDuotone.js';
 
 export interface AstriskAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

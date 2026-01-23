@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CubeDashRegular } from './CubeDashRegular';
-import { CubeDashRegularDuotone } from './CubeDashRegularDuotone';
-import { CubeDashBold } from './CubeDashBold';
-import { CubeDashBoldDuotone } from './CubeDashBoldDuotone';
-import { CubeDashFill } from './CubeDashFill';
-import { CubeDashFillDuotone } from './CubeDashFillDuotone';
+import type { IconProps } from '../types.js';
+import { CubeDashRegular } from './CubeDashRegular.js';
+import { CubeDashRegularDuotone } from './CubeDashRegularDuotone.js';
+import { CubeDashBold } from './CubeDashBold.js';
+import { CubeDashBoldDuotone } from './CubeDashBoldDuotone.js';
+import { CubeDashFill } from './CubeDashFill.js';
+import { CubeDashFillDuotone } from './CubeDashFillDuotone.js';
 
 export interface CubeDashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartWaterfallXRegular } from './ChartWaterfallXRegular';
-import { ChartWaterfallXRegularDuotone } from './ChartWaterfallXRegularDuotone';
-import { ChartWaterfallXBold } from './ChartWaterfallXBold';
-import { ChartWaterfallXBoldDuotone } from './ChartWaterfallXBoldDuotone';
-import { ChartWaterfallXFill } from './ChartWaterfallXFill';
-import { ChartWaterfallXFillDuotone } from './ChartWaterfallXFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartWaterfallXRegular } from './ChartWaterfallXRegular.js';
+import { ChartWaterfallXRegularDuotone } from './ChartWaterfallXRegularDuotone.js';
+import { ChartWaterfallXBold } from './ChartWaterfallXBold.js';
+import { ChartWaterfallXBoldDuotone } from './ChartWaterfallXBoldDuotone.js';
+import { ChartWaterfallXFill } from './ChartWaterfallXFill.js';
+import { ChartWaterfallXFillDuotone } from './ChartWaterfallXFillDuotone.js';
 
 export interface ChartWaterfallXProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

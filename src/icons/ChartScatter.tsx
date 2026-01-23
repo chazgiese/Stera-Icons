@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartScatterRegular } from './ChartScatterRegular';
-import { ChartScatterRegularDuotone } from './ChartScatterRegularDuotone';
-import { ChartScatterBold } from './ChartScatterBold';
-import { ChartScatterBoldDuotone } from './ChartScatterBoldDuotone';
-import { ChartScatterFill } from './ChartScatterFill';
-import { ChartScatterFillDuotone } from './ChartScatterFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartScatterRegular } from './ChartScatterRegular.js';
+import { ChartScatterRegularDuotone } from './ChartScatterRegularDuotone.js';
+import { ChartScatterBold } from './ChartScatterBold.js';
+import { ChartScatterBoldDuotone } from './ChartScatterBoldDuotone.js';
+import { ChartScatterFill } from './ChartScatterFill.js';
+import { ChartScatterFillDuotone } from './ChartScatterFillDuotone.js';
 
 export interface ChartScatterProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

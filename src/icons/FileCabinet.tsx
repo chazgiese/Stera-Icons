@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FileCabinetRegular } from './FileCabinetRegular';
-import { FileCabinetRegularDuotone } from './FileCabinetRegularDuotone';
-import { FileCabinetBold } from './FileCabinetBold';
-import { FileCabinetBoldDuotone } from './FileCabinetBoldDuotone';
-import { FileCabinetFill } from './FileCabinetFill';
-import { FileCabinetFillDuotone } from './FileCabinetFillDuotone';
+import type { IconProps } from '../types.js';
+import { FileCabinetRegular } from './FileCabinetRegular.js';
+import { FileCabinetRegularDuotone } from './FileCabinetRegularDuotone.js';
+import { FileCabinetBold } from './FileCabinetBold.js';
+import { FileCabinetBoldDuotone } from './FileCabinetBoldDuotone.js';
+import { FileCabinetFill } from './FileCabinetFill.js';
+import { FileCabinetFillDuotone } from './FileCabinetFillDuotone.js';
 
 export interface FileCabinetProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

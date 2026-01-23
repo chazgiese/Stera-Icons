@@ -2,8 +2,7 @@
   "name": "stera-icons",
   "version": "8.0.5",
   "type": "module",
-  "description": "A lightweight, tree-shakeable React icon library",
-  "main": "./dist/cjs/stera-icons.js",
+  "description": "A lightweight, tree-shakeable React icon library (ESM-only)",
   "module": "./dist/esm/stera-icons.js",
   "types": "./dist/esm/stera-icons.d.ts",
   "sideEffects": false,
@@ -11,41 +10,42 @@
     ".": {
       "types": "./dist/esm/stera-icons.d.ts",
       "import": "./dist/esm/stera-icons.js",
-      "require": "./dist/cjs/stera-icons.js",
       "default": "./dist/esm/stera-icons.js"
     },
     "./package.json": "./package.json",
     "./base": {
       "types": "./dist/esm/base.d.ts",
       "import": "./dist/esm/base.js",
-      "require": "./dist/cjs/base.js",
       "default": "./dist/esm/base.js"
+    },
+    "./types": {
+      "types": "./dist/esm/types.d.ts",
+      "import": "./dist/esm/types.js",
+      "default": "./dist/esm/types.js"
+    },
+    "./utils": {
+      "types": "./dist/esm/utils.d.ts",
+      "import": "./dist/esm/utils.js",
+      "default": "./dist/esm/utils.js"
     },
     "./dynamic": {
       "types": "./dist/esm/dynamic.d.ts",
       "import": "./dist/esm/dynamic.js",
-      "require": "./dist/cjs/dynamic.js",
       "default": "./dist/esm/dynamic.js"
     },
     "./dynamic-variants": {
       "types": "./dist/esm/dynamic-variants.d.ts",
       "import": "./dist/esm/dynamic-variants.js",
-      "require": "./dist/cjs/dynamic-variants.js",
       "default": "./dist/esm/dynamic-variants.js"
     },
     "./icons/*": {
       "types": "./dist/esm/icons/*.d.ts",
       "import": "./dist/esm/icons/*.js",
-      "require": "./dist/cjs/icons/*.js",
       "default": "./dist/esm/icons/*.js"
     }
   },
   "files": [
     "dist",
-    "dynamic.mjs",
-    "dynamic.d.ts",
-    "dynamicIconImports.mjs",
-    "dynamicIconImports.d.ts",
     "README.md"
   ],
   "scripts": {
@@ -85,6 +85,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
     "jsdom": "^23.0.0",
+    "lucide-react": "^0.563.0",
     "react": "^18.2.0",
     "svgo": "^3.0.0",
     "tsup": "^8.0.0",

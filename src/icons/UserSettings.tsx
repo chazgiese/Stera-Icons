@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UserSettingsRegular } from './UserSettingsRegular';
-import { UserSettingsRegularDuotone } from './UserSettingsRegularDuotone';
-import { UserSettingsBold } from './UserSettingsBold';
-import { UserSettingsBoldDuotone } from './UserSettingsBoldDuotone';
-import { UserSettingsFill } from './UserSettingsFill';
-import { UserSettingsFillDuotone } from './UserSettingsFillDuotone';
+import type { IconProps } from '../types.js';
+import { UserSettingsRegular } from './UserSettingsRegular.js';
+import { UserSettingsRegularDuotone } from './UserSettingsRegularDuotone.js';
+import { UserSettingsBold } from './UserSettingsBold.js';
+import { UserSettingsBoldDuotone } from './UserSettingsBoldDuotone.js';
+import { UserSettingsFill } from './UserSettingsFill.js';
+import { UserSettingsFillDuotone } from './UserSettingsFillDuotone.js';
 
 export interface UserSettingsProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

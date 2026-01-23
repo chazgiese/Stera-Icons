@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HourglassEmptyRegular } from './HourglassEmptyRegular';
-import { HourglassEmptyRegularDuotone } from './HourglassEmptyRegularDuotone';
-import { HourglassEmptyBold } from './HourglassEmptyBold';
-import { HourglassEmptyBoldDuotone } from './HourglassEmptyBoldDuotone';
-import { HourglassEmptyFill } from './HourglassEmptyFill';
-import { HourglassEmptyFillDuotone } from './HourglassEmptyFillDuotone';
+import type { IconProps } from '../types.js';
+import { HourglassEmptyRegular } from './HourglassEmptyRegular.js';
+import { HourglassEmptyRegularDuotone } from './HourglassEmptyRegularDuotone.js';
+import { HourglassEmptyBold } from './HourglassEmptyBold.js';
+import { HourglassEmptyBoldDuotone } from './HourglassEmptyBoldDuotone.js';
+import { HourglassEmptyFill } from './HourglassEmptyFill.js';
+import { HourglassEmptyFillDuotone } from './HourglassEmptyFillDuotone.js';
 
 export interface HourglassEmptyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

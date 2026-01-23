@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WarehouseRegular } from './WarehouseRegular';
-import { WarehouseRegularDuotone } from './WarehouseRegularDuotone';
-import { WarehouseBold } from './WarehouseBold';
-import { WarehouseBoldDuotone } from './WarehouseBoldDuotone';
-import { WarehouseFill } from './WarehouseFill';
-import { WarehouseFillDuotone } from './WarehouseFillDuotone';
+import type { IconProps } from '../types.js';
+import { WarehouseRegular } from './WarehouseRegular.js';
+import { WarehouseRegularDuotone } from './WarehouseRegularDuotone.js';
+import { WarehouseBold } from './WarehouseBold.js';
+import { WarehouseBoldDuotone } from './WarehouseBoldDuotone.js';
+import { WarehouseFill } from './WarehouseFill.js';
+import { WarehouseFillDuotone } from './WarehouseFillDuotone.js';
 
 export interface WarehouseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CylinderRegular } from './CylinderRegular';
-import { CylinderRegularDuotone } from './CylinderRegularDuotone';
-import { CylinderBold } from './CylinderBold';
-import { CylinderBoldDuotone } from './CylinderBoldDuotone';
-import { CylinderFill } from './CylinderFill';
-import { CylinderFillDuotone } from './CylinderFillDuotone';
+import type { IconProps } from '../types.js';
+import { CylinderRegular } from './CylinderRegular.js';
+import { CylinderRegularDuotone } from './CylinderRegularDuotone.js';
+import { CylinderBold } from './CylinderBold.js';
+import { CylinderBoldDuotone } from './CylinderBoldDuotone.js';
+import { CylinderFill } from './CylinderFill.js';
+import { CylinderFillDuotone } from './CylinderFillDuotone.js';
 
 export interface CylinderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

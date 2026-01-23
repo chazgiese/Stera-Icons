@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MoreVRegular } from './MoreVRegular';
-import { MoreVRegularDuotone } from './MoreVRegularDuotone';
-import { MoreVBold } from './MoreVBold';
-import { MoreVBoldDuotone } from './MoreVBoldDuotone';
-import { MoreVFill } from './MoreVFill';
-import { MoreVFillDuotone } from './MoreVFillDuotone';
+import type { IconProps } from '../types.js';
+import { MoreVRegular } from './MoreVRegular.js';
+import { MoreVRegularDuotone } from './MoreVRegularDuotone.js';
+import { MoreVBold } from './MoreVBold.js';
+import { MoreVBoldDuotone } from './MoreVBoldDuotone.js';
+import { MoreVFill } from './MoreVFill.js';
+import { MoreVFillDuotone } from './MoreVFillDuotone.js';
 
 export interface MoreVProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

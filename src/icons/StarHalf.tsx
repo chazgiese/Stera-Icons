@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { StarHalfRegular } from './StarHalfRegular';
-import { StarHalfRegularDuotone } from './StarHalfRegularDuotone';
-import { StarHalfBold } from './StarHalfBold';
-import { StarHalfBoldDuotone } from './StarHalfBoldDuotone';
-import { StarHalfFill } from './StarHalfFill';
-import { StarHalfFillDuotone } from './StarHalfFillDuotone';
+import type { IconProps } from '../types.js';
+import { StarHalfRegular } from './StarHalfRegular.js';
+import { StarHalfRegularDuotone } from './StarHalfRegularDuotone.js';
+import { StarHalfBold } from './StarHalfBold.js';
+import { StarHalfBoldDuotone } from './StarHalfBoldDuotone.js';
+import { StarHalfFill } from './StarHalfFill.js';
+import { StarHalfFillDuotone } from './StarHalfFillDuotone.js';
 
 export interface StarHalfProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

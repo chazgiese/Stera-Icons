@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DocumentSearchRegular } from './DocumentSearchRegular';
-import { DocumentSearchRegularDuotone } from './DocumentSearchRegularDuotone';
-import { DocumentSearchBold } from './DocumentSearchBold';
-import { DocumentSearchBoldDuotone } from './DocumentSearchBoldDuotone';
-import { DocumentSearchFill } from './DocumentSearchFill';
-import { DocumentSearchFillDuotone } from './DocumentSearchFillDuotone';
+import type { IconProps } from '../types.js';
+import { DocumentSearchRegular } from './DocumentSearchRegular.js';
+import { DocumentSearchRegularDuotone } from './DocumentSearchRegularDuotone.js';
+import { DocumentSearchBold } from './DocumentSearchBold.js';
+import { DocumentSearchBoldDuotone } from './DocumentSearchBoldDuotone.js';
+import { DocumentSearchFill } from './DocumentSearchFill.js';
+import { DocumentSearchFillDuotone } from './DocumentSearchFillDuotone.js';
 
 export interface DocumentSearchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

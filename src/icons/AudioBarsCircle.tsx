@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AudioBarsCircleRegular } from './AudioBarsCircleRegular';
-import { AudioBarsCircleRegularDuotone } from './AudioBarsCircleRegularDuotone';
-import { AudioBarsCircleBold } from './AudioBarsCircleBold';
-import { AudioBarsCircleBoldDuotone } from './AudioBarsCircleBoldDuotone';
-import { AudioBarsCircleFill } from './AudioBarsCircleFill';
-import { AudioBarsCircleFillDuotone } from './AudioBarsCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { AudioBarsCircleRegular } from './AudioBarsCircleRegular.js';
+import { AudioBarsCircleRegularDuotone } from './AudioBarsCircleRegularDuotone.js';
+import { AudioBarsCircleBold } from './AudioBarsCircleBold.js';
+import { AudioBarsCircleBoldDuotone } from './AudioBarsCircleBoldDuotone.js';
+import { AudioBarsCircleFill } from './AudioBarsCircleFill.js';
+import { AudioBarsCircleFillDuotone } from './AudioBarsCircleFillDuotone.js';
 
 export interface AudioBarsCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

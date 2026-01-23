@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScrewdriverRegular } from './ScrewdriverRegular';
-import { ScrewdriverRegularDuotone } from './ScrewdriverRegularDuotone';
-import { ScrewdriverBold } from './ScrewdriverBold';
-import { ScrewdriverBoldDuotone } from './ScrewdriverBoldDuotone';
-import { ScrewdriverFill } from './ScrewdriverFill';
-import { ScrewdriverFillDuotone } from './ScrewdriverFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScrewdriverRegular } from './ScrewdriverRegular.js';
+import { ScrewdriverRegularDuotone } from './ScrewdriverRegularDuotone.js';
+import { ScrewdriverBold } from './ScrewdriverBold.js';
+import { ScrewdriverBoldDuotone } from './ScrewdriverBoldDuotone.js';
+import { ScrewdriverFill } from './ScrewdriverFill.js';
+import { ScrewdriverFillDuotone } from './ScrewdriverFillDuotone.js';
 
 export interface ScrewdriverProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WrenchRegular } from './WrenchRegular';
-import { WrenchRegularDuotone } from './WrenchRegularDuotone';
-import { WrenchBold } from './WrenchBold';
-import { WrenchBoldDuotone } from './WrenchBoldDuotone';
-import { WrenchFill } from './WrenchFill';
-import { WrenchFillDuotone } from './WrenchFillDuotone';
+import type { IconProps } from '../types.js';
+import { WrenchRegular } from './WrenchRegular.js';
+import { WrenchRegularDuotone } from './WrenchRegularDuotone.js';
+import { WrenchBold } from './WrenchBold.js';
+import { WrenchBoldDuotone } from './WrenchBoldDuotone.js';
+import { WrenchFill } from './WrenchFill.js';
+import { WrenchFillDuotone } from './WrenchFillDuotone.js';
 
 export interface WrenchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChevronSquareUpRegular } from './ChevronSquareUpRegular';
-import { ChevronSquareUpRegularDuotone } from './ChevronSquareUpRegularDuotone';
-import { ChevronSquareUpBold } from './ChevronSquareUpBold';
-import { ChevronSquareUpBoldDuotone } from './ChevronSquareUpBoldDuotone';
-import { ChevronSquareUpFill } from './ChevronSquareUpFill';
-import { ChevronSquareUpFillDuotone } from './ChevronSquareUpFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChevronSquareUpRegular } from './ChevronSquareUpRegular.js';
+import { ChevronSquareUpRegularDuotone } from './ChevronSquareUpRegularDuotone.js';
+import { ChevronSquareUpBold } from './ChevronSquareUpBold.js';
+import { ChevronSquareUpBoldDuotone } from './ChevronSquareUpBoldDuotone.js';
+import { ChevronSquareUpFill } from './ChevronSquareUpFill.js';
+import { ChevronSquareUpFillDuotone } from './ChevronSquareUpFillDuotone.js';
 
 export interface ChevronSquareUpProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

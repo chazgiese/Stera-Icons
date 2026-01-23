@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlashRegular } from './FlashRegular';
-import { FlashRegularDuotone } from './FlashRegularDuotone';
-import { FlashBold } from './FlashBold';
-import { FlashBoldDuotone } from './FlashBoldDuotone';
-import { FlashFill } from './FlashFill';
-import { FlashFillDuotone } from './FlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlashRegular } from './FlashRegular.js';
+import { FlashRegularDuotone } from './FlashRegularDuotone.js';
+import { FlashBold } from './FlashBold.js';
+import { FlashBoldDuotone } from './FlashBoldDuotone.js';
+import { FlashFill } from './FlashFill.js';
+import { FlashFillDuotone } from './FlashFillDuotone.js';
 
 export interface FlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ArrowULeftTopRegular } from './ArrowULeftTopRegular';
-import { ArrowULeftTopRegularDuotone } from './ArrowULeftTopRegularDuotone';
-import { ArrowULeftTopBold } from './ArrowULeftTopBold';
-import { ArrowULeftTopBoldDuotone } from './ArrowULeftTopBoldDuotone';
-import { ArrowULeftTopFill } from './ArrowULeftTopFill';
-import { ArrowULeftTopFillDuotone } from './ArrowULeftTopFillDuotone';
+import type { IconProps } from '../types.js';
+import { ArrowULeftTopRegular } from './ArrowULeftTopRegular.js';
+import { ArrowULeftTopRegularDuotone } from './ArrowULeftTopRegularDuotone.js';
+import { ArrowULeftTopBold } from './ArrowULeftTopBold.js';
+import { ArrowULeftTopBoldDuotone } from './ArrowULeftTopBoldDuotone.js';
+import { ArrowULeftTopFill } from './ArrowULeftTopFill.js';
+import { ArrowULeftTopFillDuotone } from './ArrowULeftTopFillDuotone.js';
 
 export interface ArrowULeftTopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

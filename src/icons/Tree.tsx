@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TreeRegular } from './TreeRegular';
-import { TreeRegularDuotone } from './TreeRegularDuotone';
-import { TreeBold } from './TreeBold';
-import { TreeBoldDuotone } from './TreeBoldDuotone';
-import { TreeFill } from './TreeFill';
-import { TreeFillDuotone } from './TreeFillDuotone';
+import type { IconProps } from '../types.js';
+import { TreeRegular } from './TreeRegular.js';
+import { TreeRegularDuotone } from './TreeRegularDuotone.js';
+import { TreeBold } from './TreeBold.js';
+import { TreeBoldDuotone } from './TreeBoldDuotone.js';
+import { TreeFill } from './TreeFill.js';
+import { TreeFillDuotone } from './TreeFillDuotone.js';
 
 export interface TreeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlameRegular } from './FlameRegular';
-import { FlameRegularDuotone } from './FlameRegularDuotone';
-import { FlameBold } from './FlameBold';
-import { FlameBoldDuotone } from './FlameBoldDuotone';
-import { FlameFill } from './FlameFill';
-import { FlameFillDuotone } from './FlameFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlameRegular } from './FlameRegular.js';
+import { FlameRegularDuotone } from './FlameRegularDuotone.js';
+import { FlameBold } from './FlameBold.js';
+import { FlameBoldDuotone } from './FlameBoldDuotone.js';
+import { FlameFill } from './FlameFill.js';
+import { FlameFillDuotone } from './FlameFillDuotone.js';
 
 export interface FlameProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

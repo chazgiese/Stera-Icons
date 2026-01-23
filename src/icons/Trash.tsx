@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TrashRegular } from './TrashRegular';
-import { TrashRegularDuotone } from './TrashRegularDuotone';
-import { TrashBold } from './TrashBold';
-import { TrashBoldDuotone } from './TrashBoldDuotone';
-import { TrashFill } from './TrashFill';
-import { TrashFillDuotone } from './TrashFillDuotone';
+import type { IconProps } from '../types.js';
+import { TrashRegular } from './TrashRegular.js';
+import { TrashRegularDuotone } from './TrashRegularDuotone.js';
+import { TrashBold } from './TrashBold.js';
+import { TrashBoldDuotone } from './TrashBoldDuotone.js';
+import { TrashFill } from './TrashFill.js';
+import { TrashFillDuotone } from './TrashFillDuotone.js';
 
 export interface TrashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

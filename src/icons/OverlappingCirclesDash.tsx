@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { OverlappingCirclesDashRegular } from './OverlappingCirclesDashRegular';
-import { OverlappingCirclesDashRegularDuotone } from './OverlappingCirclesDashRegularDuotone';
-import { OverlappingCirclesDashBold } from './OverlappingCirclesDashBold';
-import { OverlappingCirclesDashBoldDuotone } from './OverlappingCirclesDashBoldDuotone';
-import { OverlappingCirclesDashFill } from './OverlappingCirclesDashFill';
-import { OverlappingCirclesDashFillDuotone } from './OverlappingCirclesDashFillDuotone';
+import type { IconProps } from '../types.js';
+import { OverlappingCirclesDashRegular } from './OverlappingCirclesDashRegular.js';
+import { OverlappingCirclesDashRegularDuotone } from './OverlappingCirclesDashRegularDuotone.js';
+import { OverlappingCirclesDashBold } from './OverlappingCirclesDashBold.js';
+import { OverlappingCirclesDashBoldDuotone } from './OverlappingCirclesDashBoldDuotone.js';
+import { OverlappingCirclesDashFill } from './OverlappingCirclesDashFill.js';
+import { OverlappingCirclesDashFillDuotone } from './OverlappingCirclesDashFillDuotone.js';
 
 export interface OverlappingCirclesDashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

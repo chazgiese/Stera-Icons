@@ -7,19 +7,19 @@
 import { build } from 'esbuild';
 import { writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { ESBUILD_ESM_CONFIG, ESBUILD_CJS_CONFIG, TYPE_DEFS } from './config.js';
+import { ESBUILD_ESM_CONFIG, TYPE_DEFS } from './config.js';
 
 /**
- * Compile icon components to ESM and CJS formats
+ * Compile icon components to ESM format only
+ * CJS removed - ESM-only for smaller package size
  * @param {Object} params - Compilation parameters
  * @param {Array<Object>} params.entryPoints - Array of {in, out} objects for esbuild
  * @param {string} params.esmOutDir - ESM output directory path
- * @param {string} params.cjsOutDir - CJS output directory path
  * @param {string} params.srcDir - Source directory path (for absWorkingDir)
- * @returns {Promise<{esmTime: number, cjsTime: number}>} - Compilation times
+ * @returns {Promise<{esmTime: number}>} - Compilation time
  */
-export async function compileIcons({ entryPoints, esmOutDir, cjsOutDir, srcDir }) {
-  // Batch compile ESM versions
+export async function compileIcons({ entryPoints, esmOutDir, srcDir }) {
+  // Batch compile ESM versions only
   console.log('⚡ Compiling ESM bundles (batched)...');
   const esmStartTime = Date.now();
   try {
@@ -32,19 +32,7 @@ export async function compileIcons({ entryPoints, esmOutDir, cjsOutDir, srcDir }
     const esmTime = Date.now() - esmStartTime;
     console.log(`  ✅ ESM compilation complete (${esmTime}ms)`);
     
-    // Batch compile CJS versions
-    console.log('⚡ Compiling CJS bundles (batched)...');
-    const cjsStartTime = Date.now();
-    await build({
-      ...ESBUILD_CJS_CONFIG,
-      entryPoints,
-      outdir: cjsOutDir,
-      absWorkingDir: srcDir,
-    });
-    const cjsTime = Date.now() - cjsStartTime;
-    console.log(`  ✅ CJS compilation complete (${cjsTime}ms)`);
-    
-    return { esmTime, cjsTime };
+    return { esmTime };
   } catch (error) {
     console.error(`  ❌ Compilation failed: ${error.message}`);
     throw error;

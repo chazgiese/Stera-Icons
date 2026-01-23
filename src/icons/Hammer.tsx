@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HammerRegular } from './HammerRegular';
-import { HammerRegularDuotone } from './HammerRegularDuotone';
-import { HammerBold } from './HammerBold';
-import { HammerBoldDuotone } from './HammerBoldDuotone';
-import { HammerFill } from './HammerFill';
-import { HammerFillDuotone } from './HammerFillDuotone';
+import type { IconProps } from '../types.js';
+import { HammerRegular } from './HammerRegular.js';
+import { HammerRegularDuotone } from './HammerRegularDuotone.js';
+import { HammerBold } from './HammerBold.js';
+import { HammerBoldDuotone } from './HammerBoldDuotone.js';
+import { HammerFill } from './HammerFill.js';
+import { HammerFillDuotone } from './HammerFillDuotone.js';
 
 export interface HammerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

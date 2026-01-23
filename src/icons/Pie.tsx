@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PieRegular } from './PieRegular';
-import { PieRegularDuotone } from './PieRegularDuotone';
-import { PieBold } from './PieBold';
-import { PieBoldDuotone } from './PieBoldDuotone';
-import { PieFill } from './PieFill';
-import { PieFillDuotone } from './PieFillDuotone';
+import type { IconProps } from '../types.js';
+import { PieRegular } from './PieRegular.js';
+import { PieRegularDuotone } from './PieRegularDuotone.js';
+import { PieBold } from './PieBold.js';
+import { PieBoldDuotone } from './PieBoldDuotone.js';
+import { PieFill } from './PieFill.js';
+import { PieFillDuotone } from './PieFillDuotone.js';
 
 export interface PieProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

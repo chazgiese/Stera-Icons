@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanSearchRegular } from './ScanSearchRegular';
-import { ScanSearchRegularDuotone } from './ScanSearchRegularDuotone';
-import { ScanSearchBold } from './ScanSearchBold';
-import { ScanSearchBoldDuotone } from './ScanSearchBoldDuotone';
-import { ScanSearchFill } from './ScanSearchFill';
-import { ScanSearchFillDuotone } from './ScanSearchFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanSearchRegular } from './ScanSearchRegular.js';
+import { ScanSearchRegularDuotone } from './ScanSearchRegularDuotone.js';
+import { ScanSearchBold } from './ScanSearchBold.js';
+import { ScanSearchBoldDuotone } from './ScanSearchBoldDuotone.js';
+import { ScanSearchFill } from './ScanSearchFill.js';
+import { ScanSearchFillDuotone } from './ScanSearchFillDuotone.js';
 
 export interface ScanSearchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

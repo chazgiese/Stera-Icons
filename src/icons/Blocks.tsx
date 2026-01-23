@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BlocksRegular } from './BlocksRegular';
-import { BlocksRegularDuotone } from './BlocksRegularDuotone';
-import { BlocksBold } from './BlocksBold';
-import { BlocksBoldDuotone } from './BlocksBoldDuotone';
-import { BlocksFill } from './BlocksFill';
-import { BlocksFillDuotone } from './BlocksFillDuotone';
+import type { IconProps } from '../types.js';
+import { BlocksRegular } from './BlocksRegular.js';
+import { BlocksRegularDuotone } from './BlocksRegularDuotone.js';
+import { BlocksBold } from './BlocksBold.js';
+import { BlocksBoldDuotone } from './BlocksBoldDuotone.js';
+import { BlocksFill } from './BlocksFill.js';
+import { BlocksFillDuotone } from './BlocksFillDuotone.js';
 
 export interface BlocksProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

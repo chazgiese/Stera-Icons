@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BracketsSquareRegular } from './BracketsSquareRegular';
-import { BracketsSquareRegularDuotone } from './BracketsSquareRegularDuotone';
-import { BracketsSquareBold } from './BracketsSquareBold';
-import { BracketsSquareBoldDuotone } from './BracketsSquareBoldDuotone';
-import { BracketsSquareFill } from './BracketsSquareFill';
-import { BracketsSquareFillDuotone } from './BracketsSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { BracketsSquareRegular } from './BracketsSquareRegular.js';
+import { BracketsSquareRegularDuotone } from './BracketsSquareRegularDuotone.js';
+import { BracketsSquareBold } from './BracketsSquareBold.js';
+import { BracketsSquareBoldDuotone } from './BracketsSquareBoldDuotone.js';
+import { BracketsSquareFill } from './BracketsSquareFill.js';
+import { BracketsSquareFillDuotone } from './BracketsSquareFillDuotone.js';
 
 export interface BracketsSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

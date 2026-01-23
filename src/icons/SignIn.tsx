@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SignInRegular } from './SignInRegular';
-import { SignInRegularDuotone } from './SignInRegularDuotone';
-import { SignInBold } from './SignInBold';
-import { SignInBoldDuotone } from './SignInBoldDuotone';
-import { SignInFill } from './SignInFill';
-import { SignInFillDuotone } from './SignInFillDuotone';
+import type { IconProps } from '../types.js';
+import { SignInRegular } from './SignInRegular.js';
+import { SignInRegularDuotone } from './SignInRegularDuotone.js';
+import { SignInBold } from './SignInBold.js';
+import { SignInBoldDuotone } from './SignInBoldDuotone.js';
+import { SignInFill } from './SignInFill.js';
+import { SignInFillDuotone } from './SignInFillDuotone.js';
 
 export interface SignInProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

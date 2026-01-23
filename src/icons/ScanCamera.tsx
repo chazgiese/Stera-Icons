@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanCameraRegular } from './ScanCameraRegular';
-import { ScanCameraRegularDuotone } from './ScanCameraRegularDuotone';
-import { ScanCameraBold } from './ScanCameraBold';
-import { ScanCameraBoldDuotone } from './ScanCameraBoldDuotone';
-import { ScanCameraFill } from './ScanCameraFill';
-import { ScanCameraFillDuotone } from './ScanCameraFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanCameraRegular } from './ScanCameraRegular.js';
+import { ScanCameraRegularDuotone } from './ScanCameraRegularDuotone.js';
+import { ScanCameraBold } from './ScanCameraBold.js';
+import { ScanCameraBoldDuotone } from './ScanCameraBoldDuotone.js';
+import { ScanCameraFill } from './ScanCameraFill.js';
+import { ScanCameraFillDuotone } from './ScanCameraFillDuotone.js';
 
 export interface ScanCameraProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

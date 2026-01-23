@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GridRegular } from './GridRegular';
-import { GridRegularDuotone } from './GridRegularDuotone';
-import { GridBold } from './GridBold';
-import { GridBoldDuotone } from './GridBoldDuotone';
-import { GridFill } from './GridFill';
-import { GridFillDuotone } from './GridFillDuotone';
+import type { IconProps } from '../types.js';
+import { GridRegular } from './GridRegular.js';
+import { GridRegularDuotone } from './GridRegularDuotone.js';
+import { GridBold } from './GridBold.js';
+import { GridBoldDuotone } from './GridBoldDuotone.js';
+import { GridFill } from './GridFill.js';
+import { GridFillDuotone } from './GridFillDuotone.js';
 
 export interface GridProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

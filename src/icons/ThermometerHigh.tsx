@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ThermometerHighRegular } from './ThermometerHighRegular';
-import { ThermometerHighRegularDuotone } from './ThermometerHighRegularDuotone';
-import { ThermometerHighBold } from './ThermometerHighBold';
-import { ThermometerHighBoldDuotone } from './ThermometerHighBoldDuotone';
-import { ThermometerHighFill } from './ThermometerHighFill';
-import { ThermometerHighFillDuotone } from './ThermometerHighFillDuotone';
+import type { IconProps } from '../types.js';
+import { ThermometerHighRegular } from './ThermometerHighRegular.js';
+import { ThermometerHighRegularDuotone } from './ThermometerHighRegularDuotone.js';
+import { ThermometerHighBold } from './ThermometerHighBold.js';
+import { ThermometerHighBoldDuotone } from './ThermometerHighBoldDuotone.js';
+import { ThermometerHighFill } from './ThermometerHighFill.js';
+import { ThermometerHighFillDuotone } from './ThermometerHighFillDuotone.js';
 
 export interface ThermometerHighProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

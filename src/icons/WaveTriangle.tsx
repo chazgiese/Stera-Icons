@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WaveTriangleRegular } from './WaveTriangleRegular';
-import { WaveTriangleRegularDuotone } from './WaveTriangleRegularDuotone';
-import { WaveTriangleBold } from './WaveTriangleBold';
-import { WaveTriangleBoldDuotone } from './WaveTriangleBoldDuotone';
-import { WaveTriangleFill } from './WaveTriangleFill';
-import { WaveTriangleFillDuotone } from './WaveTriangleFillDuotone';
+import type { IconProps } from '../types.js';
+import { WaveTriangleRegular } from './WaveTriangleRegular.js';
+import { WaveTriangleRegularDuotone } from './WaveTriangleRegularDuotone.js';
+import { WaveTriangleBold } from './WaveTriangleBold.js';
+import { WaveTriangleBoldDuotone } from './WaveTriangleBoldDuotone.js';
+import { WaveTriangleFill } from './WaveTriangleFill.js';
+import { WaveTriangleFillDuotone } from './WaveTriangleFillDuotone.js';
 
 export interface WaveTriangleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

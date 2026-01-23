@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleSlashRegular } from './CircleSlashRegular';
-import { CircleSlashRegularDuotone } from './CircleSlashRegularDuotone';
-import { CircleSlashBold } from './CircleSlashBold';
-import { CircleSlashBoldDuotone } from './CircleSlashBoldDuotone';
-import { CircleSlashFill } from './CircleSlashFill';
-import { CircleSlashFillDuotone } from './CircleSlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleSlashRegular } from './CircleSlashRegular.js';
+import { CircleSlashRegularDuotone } from './CircleSlashRegularDuotone.js';
+import { CircleSlashBold } from './CircleSlashBold.js';
+import { CircleSlashBoldDuotone } from './CircleSlashBoldDuotone.js';
+import { CircleSlashFill } from './CircleSlashFill.js';
+import { CircleSlashFillDuotone } from './CircleSlashFillDuotone.js';
 
 export interface CircleSlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

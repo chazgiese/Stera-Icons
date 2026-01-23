@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CardHolderRegular } from './CardHolderRegular';
-import { CardHolderRegularDuotone } from './CardHolderRegularDuotone';
-import { CardHolderBold } from './CardHolderBold';
-import { CardHolderBoldDuotone } from './CardHolderBoldDuotone';
-import { CardHolderFill } from './CardHolderFill';
-import { CardHolderFillDuotone } from './CardHolderFillDuotone';
+import type { IconProps } from '../types.js';
+import { CardHolderRegular } from './CardHolderRegular.js';
+import { CardHolderRegularDuotone } from './CardHolderRegularDuotone.js';
+import { CardHolderBold } from './CardHolderBold.js';
+import { CardHolderBoldDuotone } from './CardHolderBoldDuotone.js';
+import { CardHolderFill } from './CardHolderFill.js';
+import { CardHolderFillDuotone } from './CardHolderFillDuotone.js';
 
 export interface CardHolderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

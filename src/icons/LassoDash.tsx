@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LassoDashRegular } from './LassoDashRegular';
-import { LassoDashRegularDuotone } from './LassoDashRegularDuotone';
-import { LassoDashBold } from './LassoDashBold';
-import { LassoDashBoldDuotone } from './LassoDashBoldDuotone';
-import { LassoDashFill } from './LassoDashFill';
-import { LassoDashFillDuotone } from './LassoDashFillDuotone';
+import type { IconProps } from '../types.js';
+import { LassoDashRegular } from './LassoDashRegular.js';
+import { LassoDashRegularDuotone } from './LassoDashRegularDuotone.js';
+import { LassoDashBold } from './LassoDashBold.js';
+import { LassoDashBoldDuotone } from './LassoDashBoldDuotone.js';
+import { LassoDashFill } from './LassoDashFill.js';
+import { LassoDashFillDuotone } from './LassoDashFillDuotone.js';
 
 export interface LassoDashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

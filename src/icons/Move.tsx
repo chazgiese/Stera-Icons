@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MoveRegular } from './MoveRegular';
-import { MoveRegularDuotone } from './MoveRegularDuotone';
-import { MoveBold } from './MoveBold';
-import { MoveBoldDuotone } from './MoveBoldDuotone';
-import { MoveFill } from './MoveFill';
-import { MoveFillDuotone } from './MoveFillDuotone';
+import type { IconProps } from '../types.js';
+import { MoveRegular } from './MoveRegular.js';
+import { MoveRegularDuotone } from './MoveRegularDuotone.js';
+import { MoveBold } from './MoveBold.js';
+import { MoveBoldDuotone } from './MoveBoldDuotone.js';
+import { MoveFill } from './MoveFill.js';
+import { MoveFillDuotone } from './MoveFillDuotone.js';
 
 export interface MoveProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

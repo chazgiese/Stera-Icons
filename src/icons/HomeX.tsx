@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HomeXRegular } from './HomeXRegular';
-import { HomeXRegularDuotone } from './HomeXRegularDuotone';
-import { HomeXBold } from './HomeXBold';
-import { HomeXBoldDuotone } from './HomeXBoldDuotone';
-import { HomeXFill } from './HomeXFill';
-import { HomeXFillDuotone } from './HomeXFillDuotone';
+import type { IconProps } from '../types.js';
+import { HomeXRegular } from './HomeXRegular.js';
+import { HomeXRegularDuotone } from './HomeXRegularDuotone.js';
+import { HomeXBold } from './HomeXBold.js';
+import { HomeXBoldDuotone } from './HomeXBoldDuotone.js';
+import { HomeXFill } from './HomeXFill.js';
+import { HomeXFillDuotone } from './HomeXFillDuotone.js';
 
 export interface HomeXProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

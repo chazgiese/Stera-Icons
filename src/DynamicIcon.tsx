@@ -10,11 +10,12 @@ import type { IconProps } from './types';
  * @property duotone - Enable duotone variant (default: false)
  * @property onError - Optional callback function called when icon fails to load
  */
-export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone'> {
+export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone' | 'onError'> {
   name: string;
   fallback?: ComponentType | ReactNode;
   weight?: 'regular' | 'bold' | 'fill';
   duotone?: boolean;
+  /** Callback function called when icon fails to load */
   onError?: (error: Error) => void;
 }
 

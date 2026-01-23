@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SkipForwardRegular } from './SkipForwardRegular';
-import { SkipForwardRegularDuotone } from './SkipForwardRegularDuotone';
-import { SkipForwardBold } from './SkipForwardBold';
-import { SkipForwardBoldDuotone } from './SkipForwardBoldDuotone';
-import { SkipForwardFill } from './SkipForwardFill';
-import { SkipForwardFillDuotone } from './SkipForwardFillDuotone';
+import type { IconProps } from '../types.js';
+import { SkipForwardRegular } from './SkipForwardRegular.js';
+import { SkipForwardRegularDuotone } from './SkipForwardRegularDuotone.js';
+import { SkipForwardBold } from './SkipForwardBold.js';
+import { SkipForwardBoldDuotone } from './SkipForwardBoldDuotone.js';
+import { SkipForwardFill } from './SkipForwardFill.js';
+import { SkipForwardFillDuotone } from './SkipForwardFillDuotone.js';
 
 export interface SkipForwardProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AccessibilityRegular } from './AccessibilityRegular';
-import { AccessibilityRegularDuotone } from './AccessibilityRegularDuotone';
-import { AccessibilityBold } from './AccessibilityBold';
-import { AccessibilityBoldDuotone } from './AccessibilityBoldDuotone';
-import { AccessibilityFill } from './AccessibilityFill';
-import { AccessibilityFillDuotone } from './AccessibilityFillDuotone';
+import type { IconProps } from '../types.js';
+import { AccessibilityRegular } from './AccessibilityRegular.js';
+import { AccessibilityRegularDuotone } from './AccessibilityRegularDuotone.js';
+import { AccessibilityBold } from './AccessibilityBold.js';
+import { AccessibilityBoldDuotone } from './AccessibilityBoldDuotone.js';
+import { AccessibilityFill } from './AccessibilityFill.js';
+import { AccessibilityFillDuotone } from './AccessibilityFillDuotone.js';
 
 export interface AccessibilityProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

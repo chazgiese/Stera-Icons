@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MedalStarRegular } from './MedalStarRegular';
-import { MedalStarRegularDuotone } from './MedalStarRegularDuotone';
-import { MedalStarBold } from './MedalStarBold';
-import { MedalStarBoldDuotone } from './MedalStarBoldDuotone';
-import { MedalStarFill } from './MedalStarFill';
-import { MedalStarFillDuotone } from './MedalStarFillDuotone';
+import type { IconProps } from '../types.js';
+import { MedalStarRegular } from './MedalStarRegular.js';
+import { MedalStarRegularDuotone } from './MedalStarRegularDuotone.js';
+import { MedalStarBold } from './MedalStarBold.js';
+import { MedalStarBoldDuotone } from './MedalStarBoldDuotone.js';
+import { MedalStarFill } from './MedalStarFill.js';
+import { MedalStarFillDuotone } from './MedalStarFillDuotone.js';
 
 export interface MedalStarProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanLineRegular } from './ScanLineRegular';
-import { ScanLineRegularDuotone } from './ScanLineRegularDuotone';
-import { ScanLineBold } from './ScanLineBold';
-import { ScanLineBoldDuotone } from './ScanLineBoldDuotone';
-import { ScanLineFill } from './ScanLineFill';
-import { ScanLineFillDuotone } from './ScanLineFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanLineRegular } from './ScanLineRegular.js';
+import { ScanLineRegularDuotone } from './ScanLineRegularDuotone.js';
+import { ScanLineBold } from './ScanLineBold.js';
+import { ScanLineBoldDuotone } from './ScanLineBoldDuotone.js';
+import { ScanLineFill } from './ScanLineFill.js';
+import { ScanLineFillDuotone } from './ScanLineFillDuotone.js';
 
 export interface ScanLineProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

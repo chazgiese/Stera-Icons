@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CloudUploadRegular } from './CloudUploadRegular';
-import { CloudUploadRegularDuotone } from './CloudUploadRegularDuotone';
-import { CloudUploadBold } from './CloudUploadBold';
-import { CloudUploadBoldDuotone } from './CloudUploadBoldDuotone';
-import { CloudUploadFill } from './CloudUploadFill';
-import { CloudUploadFillDuotone } from './CloudUploadFillDuotone';
+import type { IconProps } from '../types.js';
+import { CloudUploadRegular } from './CloudUploadRegular.js';
+import { CloudUploadRegularDuotone } from './CloudUploadRegularDuotone.js';
+import { CloudUploadBold } from './CloudUploadBold.js';
+import { CloudUploadBoldDuotone } from './CloudUploadBoldDuotone.js';
+import { CloudUploadFill } from './CloudUploadFill.js';
+import { CloudUploadFillDuotone } from './CloudUploadFillDuotone.js';
 
 export interface CloudUploadProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CurveBezierRegular } from './CurveBezierRegular';
-import { CurveBezierRegularDuotone } from './CurveBezierRegularDuotone';
-import { CurveBezierBold } from './CurveBezierBold';
-import { CurveBezierBoldDuotone } from './CurveBezierBoldDuotone';
-import { CurveBezierFill } from './CurveBezierFill';
-import { CurveBezierFillDuotone } from './CurveBezierFillDuotone';
+import type { IconProps } from '../types.js';
+import { CurveBezierRegular } from './CurveBezierRegular.js';
+import { CurveBezierRegularDuotone } from './CurveBezierRegularDuotone.js';
+import { CurveBezierBold } from './CurveBezierBold.js';
+import { CurveBezierBoldDuotone } from './CurveBezierBoldDuotone.js';
+import { CurveBezierFill } from './CurveBezierFill.js';
+import { CurveBezierFillDuotone } from './CurveBezierFillDuotone.js';
 
 export interface CurveBezierProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

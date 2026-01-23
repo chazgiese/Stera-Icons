@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DuplicatePlusRegular } from './DuplicatePlusRegular';
-import { DuplicatePlusRegularDuotone } from './DuplicatePlusRegularDuotone';
-import { DuplicatePlusBold } from './DuplicatePlusBold';
-import { DuplicatePlusBoldDuotone } from './DuplicatePlusBoldDuotone';
-import { DuplicatePlusFill } from './DuplicatePlusFill';
-import { DuplicatePlusFillDuotone } from './DuplicatePlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { DuplicatePlusRegular } from './DuplicatePlusRegular.js';
+import { DuplicatePlusRegularDuotone } from './DuplicatePlusRegularDuotone.js';
+import { DuplicatePlusBold } from './DuplicatePlusBold.js';
+import { DuplicatePlusBoldDuotone } from './DuplicatePlusBoldDuotone.js';
+import { DuplicatePlusFill } from './DuplicatePlusFill.js';
+import { DuplicatePlusFillDuotone } from './DuplicatePlusFillDuotone.js';
 
 export interface DuplicatePlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

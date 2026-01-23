@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DatabaseXRegular } from './DatabaseXRegular';
-import { DatabaseXRegularDuotone } from './DatabaseXRegularDuotone';
-import { DatabaseXBold } from './DatabaseXBold';
-import { DatabaseXBoldDuotone } from './DatabaseXBoldDuotone';
-import { DatabaseXFill } from './DatabaseXFill';
-import { DatabaseXFillDuotone } from './DatabaseXFillDuotone';
+import type { IconProps } from '../types.js';
+import { DatabaseXRegular } from './DatabaseXRegular.js';
+import { DatabaseXRegularDuotone } from './DatabaseXRegularDuotone.js';
+import { DatabaseXBold } from './DatabaseXBold.js';
+import { DatabaseXBoldDuotone } from './DatabaseXBoldDuotone.js';
+import { DatabaseXFill } from './DatabaseXFill.js';
+import { DatabaseXFillDuotone } from './DatabaseXFillDuotone.js';
 
 export interface DatabaseXProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

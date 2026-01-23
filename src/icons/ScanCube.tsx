@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanCubeRegular } from './ScanCubeRegular';
-import { ScanCubeRegularDuotone } from './ScanCubeRegularDuotone';
-import { ScanCubeBold } from './ScanCubeBold';
-import { ScanCubeBoldDuotone } from './ScanCubeBoldDuotone';
-import { ScanCubeFill } from './ScanCubeFill';
-import { ScanCubeFillDuotone } from './ScanCubeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanCubeRegular } from './ScanCubeRegular.js';
+import { ScanCubeRegularDuotone } from './ScanCubeRegularDuotone.js';
+import { ScanCubeBold } from './ScanCubeBold.js';
+import { ScanCubeBoldDuotone } from './ScanCubeBoldDuotone.js';
+import { ScanCubeFill } from './ScanCubeFill.js';
+import { ScanCubeFillDuotone } from './ScanCubeFillDuotone.js';
 
 export interface ScanCubeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

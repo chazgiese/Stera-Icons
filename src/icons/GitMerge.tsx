@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitMergeRegular } from './GitMergeRegular';
-import { GitMergeRegularDuotone } from './GitMergeRegularDuotone';
-import { GitMergeBold } from './GitMergeBold';
-import { GitMergeBoldDuotone } from './GitMergeBoldDuotone';
-import { GitMergeFill } from './GitMergeFill';
-import { GitMergeFillDuotone } from './GitMergeFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitMergeRegular } from './GitMergeRegular.js';
+import { GitMergeRegularDuotone } from './GitMergeRegularDuotone.js';
+import { GitMergeBold } from './GitMergeBold.js';
+import { GitMergeBoldDuotone } from './GitMergeBoldDuotone.js';
+import { GitMergeFill } from './GitMergeFill.js';
+import { GitMergeFillDuotone } from './GitMergeFillDuotone.js';
 
 export interface GitMergeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

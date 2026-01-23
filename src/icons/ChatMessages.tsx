@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatMessagesRegular } from './ChatMessagesRegular';
-import { ChatMessagesRegularDuotone } from './ChatMessagesRegularDuotone';
-import { ChatMessagesBold } from './ChatMessagesBold';
-import { ChatMessagesBoldDuotone } from './ChatMessagesBoldDuotone';
-import { ChatMessagesFill } from './ChatMessagesFill';
-import { ChatMessagesFillDuotone } from './ChatMessagesFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatMessagesRegular } from './ChatMessagesRegular.js';
+import { ChatMessagesRegularDuotone } from './ChatMessagesRegularDuotone.js';
+import { ChatMessagesBold } from './ChatMessagesBold.js';
+import { ChatMessagesBoldDuotone } from './ChatMessagesBoldDuotone.js';
+import { ChatMessagesFill } from './ChatMessagesFill.js';
+import { ChatMessagesFillDuotone } from './ChatMessagesFillDuotone.js';
 
 export interface ChatMessagesProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

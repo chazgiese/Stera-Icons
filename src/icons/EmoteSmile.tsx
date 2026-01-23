@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EmoteSmileRegular } from './EmoteSmileRegular';
-import { EmoteSmileRegularDuotone } from './EmoteSmileRegularDuotone';
-import { EmoteSmileBold } from './EmoteSmileBold';
-import { EmoteSmileBoldDuotone } from './EmoteSmileBoldDuotone';
-import { EmoteSmileFill } from './EmoteSmileFill';
-import { EmoteSmileFillDuotone } from './EmoteSmileFillDuotone';
+import type { IconProps } from '../types.js';
+import { EmoteSmileRegular } from './EmoteSmileRegular.js';
+import { EmoteSmileRegularDuotone } from './EmoteSmileRegularDuotone.js';
+import { EmoteSmileBold } from './EmoteSmileBold.js';
+import { EmoteSmileBoldDuotone } from './EmoteSmileBoldDuotone.js';
+import { EmoteSmileFill } from './EmoteSmileFill.js';
+import { EmoteSmileFillDuotone } from './EmoteSmileFillDuotone.js';
 
 export interface EmoteSmileProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

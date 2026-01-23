@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AtSignRegular } from './AtSignRegular';
-import { AtSignRegularDuotone } from './AtSignRegularDuotone';
-import { AtSignBold } from './AtSignBold';
-import { AtSignBoldDuotone } from './AtSignBoldDuotone';
-import { AtSignFill } from './AtSignFill';
-import { AtSignFillDuotone } from './AtSignFillDuotone';
+import type { IconProps } from '../types.js';
+import { AtSignRegular } from './AtSignRegular.js';
+import { AtSignRegularDuotone } from './AtSignRegularDuotone.js';
+import { AtSignBold } from './AtSignBold.js';
+import { AtSignBoldDuotone } from './AtSignBoldDuotone.js';
+import { AtSignFill } from './AtSignFill.js';
+import { AtSignFillDuotone } from './AtSignFillDuotone.js';
 
 export interface AtSignProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

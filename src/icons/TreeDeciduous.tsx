@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TreeDeciduousRegular } from './TreeDeciduousRegular';
-import { TreeDeciduousRegularDuotone } from './TreeDeciduousRegularDuotone';
-import { TreeDeciduousBold } from './TreeDeciduousBold';
-import { TreeDeciduousBoldDuotone } from './TreeDeciduousBoldDuotone';
-import { TreeDeciduousFill } from './TreeDeciduousFill';
-import { TreeDeciduousFillDuotone } from './TreeDeciduousFillDuotone';
+import type { IconProps } from '../types.js';
+import { TreeDeciduousRegular } from './TreeDeciduousRegular.js';
+import { TreeDeciduousRegularDuotone } from './TreeDeciduousRegularDuotone.js';
+import { TreeDeciduousBold } from './TreeDeciduousBold.js';
+import { TreeDeciduousBoldDuotone } from './TreeDeciduousBoldDuotone.js';
+import { TreeDeciduousFill } from './TreeDeciduousFill.js';
+import { TreeDeciduousFillDuotone } from './TreeDeciduousFillDuotone.js';
 
 export interface TreeDeciduousProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

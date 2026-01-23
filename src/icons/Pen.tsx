@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PenRegular } from './PenRegular';
-import { PenRegularDuotone } from './PenRegularDuotone';
-import { PenBold } from './PenBold';
-import { PenBoldDuotone } from './PenBoldDuotone';
-import { PenFill } from './PenFill';
-import { PenFillDuotone } from './PenFillDuotone';
+import type { IconProps } from '../types.js';
+import { PenRegular } from './PenRegular.js';
+import { PenRegularDuotone } from './PenRegularDuotone.js';
+import { PenBold } from './PenBold.js';
+import { PenBoldDuotone } from './PenBoldDuotone.js';
+import { PenFill } from './PenFill.js';
+import { PenFillDuotone } from './PenFillDuotone.js';
 
 export interface PenProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

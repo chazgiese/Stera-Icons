@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowSplitArrowDownRegular } from './FlowSplitArrowDownRegular';
-import { FlowSplitArrowDownRegularDuotone } from './FlowSplitArrowDownRegularDuotone';
-import { FlowSplitArrowDownBold } from './FlowSplitArrowDownBold';
-import { FlowSplitArrowDownBoldDuotone } from './FlowSplitArrowDownBoldDuotone';
-import { FlowSplitArrowDownFill } from './FlowSplitArrowDownFill';
-import { FlowSplitArrowDownFillDuotone } from './FlowSplitArrowDownFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowSplitArrowDownRegular } from './FlowSplitArrowDownRegular.js';
+import { FlowSplitArrowDownRegularDuotone } from './FlowSplitArrowDownRegularDuotone.js';
+import { FlowSplitArrowDownBold } from './FlowSplitArrowDownBold.js';
+import { FlowSplitArrowDownBoldDuotone } from './FlowSplitArrowDownBoldDuotone.js';
+import { FlowSplitArrowDownFill } from './FlowSplitArrowDownFill.js';
+import { FlowSplitArrowDownFillDuotone } from './FlowSplitArrowDownFillDuotone.js';
 
 export interface FlowSplitArrowDownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

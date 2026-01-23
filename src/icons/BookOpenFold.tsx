@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BookOpenFoldRegular } from './BookOpenFoldRegular';
-import { BookOpenFoldRegularDuotone } from './BookOpenFoldRegularDuotone';
-import { BookOpenFoldBold } from './BookOpenFoldBold';
-import { BookOpenFoldBoldDuotone } from './BookOpenFoldBoldDuotone';
-import { BookOpenFoldFill } from './BookOpenFoldFill';
-import { BookOpenFoldFillDuotone } from './BookOpenFoldFillDuotone';
+import type { IconProps } from '../types.js';
+import { BookOpenFoldRegular } from './BookOpenFoldRegular.js';
+import { BookOpenFoldRegularDuotone } from './BookOpenFoldRegularDuotone.js';
+import { BookOpenFoldBold } from './BookOpenFoldBold.js';
+import { BookOpenFoldBoldDuotone } from './BookOpenFoldBoldDuotone.js';
+import { BookOpenFoldFill } from './BookOpenFoldFill.js';
+import { BookOpenFoldFillDuotone } from './BookOpenFoldFillDuotone.js';
 
 export interface BookOpenFoldProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

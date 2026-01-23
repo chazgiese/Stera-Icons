@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RobotHumanoidRegular } from './RobotHumanoidRegular';
-import { RobotHumanoidRegularDuotone } from './RobotHumanoidRegularDuotone';
-import { RobotHumanoidBold } from './RobotHumanoidBold';
-import { RobotHumanoidBoldDuotone } from './RobotHumanoidBoldDuotone';
-import { RobotHumanoidFill } from './RobotHumanoidFill';
-import { RobotHumanoidFillDuotone } from './RobotHumanoidFillDuotone';
+import type { IconProps } from '../types.js';
+import { RobotHumanoidRegular } from './RobotHumanoidRegular.js';
+import { RobotHumanoidRegularDuotone } from './RobotHumanoidRegularDuotone.js';
+import { RobotHumanoidBold } from './RobotHumanoidBold.js';
+import { RobotHumanoidBoldDuotone } from './RobotHumanoidBoldDuotone.js';
+import { RobotHumanoidFill } from './RobotHumanoidFill.js';
+import { RobotHumanoidFillDuotone } from './RobotHumanoidFillDuotone.js';
 
 export interface RobotHumanoidProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

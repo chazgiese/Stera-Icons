@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RectangleDashedRegular } from './RectangleDashedRegular';
-import { RectangleDashedRegularDuotone } from './RectangleDashedRegularDuotone';
-import { RectangleDashedBold } from './RectangleDashedBold';
-import { RectangleDashedBoldDuotone } from './RectangleDashedBoldDuotone';
-import { RectangleDashedFill } from './RectangleDashedFill';
-import { RectangleDashedFillDuotone } from './RectangleDashedFillDuotone';
+import type { IconProps } from '../types.js';
+import { RectangleDashedRegular } from './RectangleDashedRegular.js';
+import { RectangleDashedRegularDuotone } from './RectangleDashedRegularDuotone.js';
+import { RectangleDashedBold } from './RectangleDashedBold.js';
+import { RectangleDashedBoldDuotone } from './RectangleDashedBoldDuotone.js';
+import { RectangleDashedFill } from './RectangleDashedFill.js';
+import { RectangleDashedFillDuotone } from './RectangleDashedFillDuotone.js';
 
 export interface RectangleDashedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

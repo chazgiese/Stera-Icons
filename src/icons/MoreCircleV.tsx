@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MoreCircleVRegular } from './MoreCircleVRegular';
-import { MoreCircleVRegularDuotone } from './MoreCircleVRegularDuotone';
-import { MoreCircleVBold } from './MoreCircleVBold';
-import { MoreCircleVBoldDuotone } from './MoreCircleVBoldDuotone';
-import { MoreCircleVFill } from './MoreCircleVFill';
-import { MoreCircleVFillDuotone } from './MoreCircleVFillDuotone';
+import type { IconProps } from '../types.js';
+import { MoreCircleVRegular } from './MoreCircleVRegular.js';
+import { MoreCircleVRegularDuotone } from './MoreCircleVRegularDuotone.js';
+import { MoreCircleVBold } from './MoreCircleVBold.js';
+import { MoreCircleVBoldDuotone } from './MoreCircleVBoldDuotone.js';
+import { MoreCircleVFill } from './MoreCircleVFill.js';
+import { MoreCircleVFillDuotone } from './MoreCircleVFillDuotone.js';
 
 export interface MoreCircleVProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

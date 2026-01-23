@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HashCircleRegular } from './HashCircleRegular';
-import { HashCircleRegularDuotone } from './HashCircleRegularDuotone';
-import { HashCircleBold } from './HashCircleBold';
-import { HashCircleBoldDuotone } from './HashCircleBoldDuotone';
-import { HashCircleFill } from './HashCircleFill';
-import { HashCircleFillDuotone } from './HashCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { HashCircleRegular } from './HashCircleRegular.js';
+import { HashCircleRegularDuotone } from './HashCircleRegularDuotone.js';
+import { HashCircleBold } from './HashCircleBold.js';
+import { HashCircleBoldDuotone } from './HashCircleBoldDuotone.js';
+import { HashCircleFill } from './HashCircleFill.js';
+import { HashCircleFillDuotone } from './HashCircleFillDuotone.js';
 
 export interface HashCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

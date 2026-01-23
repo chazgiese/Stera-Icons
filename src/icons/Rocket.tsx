@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RocketRegular } from './RocketRegular';
-import { RocketRegularDuotone } from './RocketRegularDuotone';
-import { RocketBold } from './RocketBold';
-import { RocketBoldDuotone } from './RocketBoldDuotone';
-import { RocketFill } from './RocketFill';
-import { RocketFillDuotone } from './RocketFillDuotone';
+import type { IconProps } from '../types.js';
+import { RocketRegular } from './RocketRegular.js';
+import { RocketRegularDuotone } from './RocketRegularDuotone.js';
+import { RocketBold } from './RocketBold.js';
+import { RocketBoldDuotone } from './RocketBoldDuotone.js';
+import { RocketFill } from './RocketFill.js';
+import { RocketFillDuotone } from './RocketFillDuotone.js';
 
 export interface RocketProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

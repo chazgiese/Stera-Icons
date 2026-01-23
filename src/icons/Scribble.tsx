@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScribbleRegular } from './ScribbleRegular';
-import { ScribbleRegularDuotone } from './ScribbleRegularDuotone';
-import { ScribbleBold } from './ScribbleBold';
-import { ScribbleBoldDuotone } from './ScribbleBoldDuotone';
-import { ScribbleFill } from './ScribbleFill';
-import { ScribbleFillDuotone } from './ScribbleFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScribbleRegular } from './ScribbleRegular.js';
+import { ScribbleRegularDuotone } from './ScribbleRegularDuotone.js';
+import { ScribbleBold } from './ScribbleBold.js';
+import { ScribbleBoldDuotone } from './ScribbleBoldDuotone.js';
+import { ScribbleFill } from './ScribbleFill.js';
+import { ScribbleFillDuotone } from './ScribbleFillDuotone.js';
 
 export interface ScribbleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

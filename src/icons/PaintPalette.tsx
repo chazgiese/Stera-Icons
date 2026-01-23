@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PaintPaletteRegular } from './PaintPaletteRegular';
-import { PaintPaletteRegularDuotone } from './PaintPaletteRegularDuotone';
-import { PaintPaletteBold } from './PaintPaletteBold';
-import { PaintPaletteBoldDuotone } from './PaintPaletteBoldDuotone';
-import { PaintPaletteFill } from './PaintPaletteFill';
-import { PaintPaletteFillDuotone } from './PaintPaletteFillDuotone';
+import type { IconProps } from '../types.js';
+import { PaintPaletteRegular } from './PaintPaletteRegular.js';
+import { PaintPaletteRegularDuotone } from './PaintPaletteRegularDuotone.js';
+import { PaintPaletteBold } from './PaintPaletteBold.js';
+import { PaintPaletteBoldDuotone } from './PaintPaletteBoldDuotone.js';
+import { PaintPaletteFill } from './PaintPaletteFill.js';
+import { PaintPaletteFillDuotone } from './PaintPaletteFillDuotone.js';
 
 export interface PaintPaletteProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

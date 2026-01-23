@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertSquareRegular } from './AlertSquareRegular';
-import { AlertSquareRegularDuotone } from './AlertSquareRegularDuotone';
-import { AlertSquareBold } from './AlertSquareBold';
-import { AlertSquareBoldDuotone } from './AlertSquareBoldDuotone';
-import { AlertSquareFill } from './AlertSquareFill';
-import { AlertSquareFillDuotone } from './AlertSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertSquareRegular } from './AlertSquareRegular.js';
+import { AlertSquareRegularDuotone } from './AlertSquareRegularDuotone.js';
+import { AlertSquareBold } from './AlertSquareBold.js';
+import { AlertSquareBoldDuotone } from './AlertSquareBoldDuotone.js';
+import { AlertSquareFill } from './AlertSquareFill.js';
+import { AlertSquareFillDuotone } from './AlertSquareFillDuotone.js';
 
 export interface AlertSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WaveSquareRegular } from './WaveSquareRegular';
-import { WaveSquareRegularDuotone } from './WaveSquareRegularDuotone';
-import { WaveSquareBold } from './WaveSquareBold';
-import { WaveSquareBoldDuotone } from './WaveSquareBoldDuotone';
-import { WaveSquareFill } from './WaveSquareFill';
-import { WaveSquareFillDuotone } from './WaveSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { WaveSquareRegular } from './WaveSquareRegular.js';
+import { WaveSquareRegularDuotone } from './WaveSquareRegularDuotone.js';
+import { WaveSquareBold } from './WaveSquareBold.js';
+import { WaveSquareBoldDuotone } from './WaveSquareBoldDuotone.js';
+import { WaveSquareFill } from './WaveSquareFill.js';
+import { WaveSquareFillDuotone } from './WaveSquareFillDuotone.js';
 
 export interface WaveSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

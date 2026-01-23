@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ForkKnifeRegular } from './ForkKnifeRegular';
-import { ForkKnifeRegularDuotone } from './ForkKnifeRegularDuotone';
-import { ForkKnifeBold } from './ForkKnifeBold';
-import { ForkKnifeBoldDuotone } from './ForkKnifeBoldDuotone';
-import { ForkKnifeFill } from './ForkKnifeFill';
-import { ForkKnifeFillDuotone } from './ForkKnifeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ForkKnifeRegular } from './ForkKnifeRegular.js';
+import { ForkKnifeRegularDuotone } from './ForkKnifeRegularDuotone.js';
+import { ForkKnifeBold } from './ForkKnifeBold.js';
+import { ForkKnifeBoldDuotone } from './ForkKnifeBoldDuotone.js';
+import { ForkKnifeFill } from './ForkKnifeFill.js';
+import { ForkKnifeFillDuotone } from './ForkKnifeFillDuotone.js';
 
 export interface ForkKnifeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

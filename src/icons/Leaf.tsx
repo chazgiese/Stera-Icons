@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LeafRegular } from './LeafRegular';
-import { LeafRegularDuotone } from './LeafRegularDuotone';
-import { LeafBold } from './LeafBold';
-import { LeafBoldDuotone } from './LeafBoldDuotone';
-import { LeafFill } from './LeafFill';
-import { LeafFillDuotone } from './LeafFillDuotone';
+import type { IconProps } from '../types.js';
+import { LeafRegular } from './LeafRegular.js';
+import { LeafRegularDuotone } from './LeafRegularDuotone.js';
+import { LeafBold } from './LeafBold.js';
+import { LeafBoldDuotone } from './LeafBoldDuotone.js';
+import { LeafFill } from './LeafFill.js';
+import { LeafFillDuotone } from './LeafFillDuotone.js';
 
 export interface LeafProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

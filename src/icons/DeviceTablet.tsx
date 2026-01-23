@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DeviceTabletRegular } from './DeviceTabletRegular';
-import { DeviceTabletRegularDuotone } from './DeviceTabletRegularDuotone';
-import { DeviceTabletBold } from './DeviceTabletBold';
-import { DeviceTabletBoldDuotone } from './DeviceTabletBoldDuotone';
-import { DeviceTabletFill } from './DeviceTabletFill';
-import { DeviceTabletFillDuotone } from './DeviceTabletFillDuotone';
+import type { IconProps } from '../types.js';
+import { DeviceTabletRegular } from './DeviceTabletRegular.js';
+import { DeviceTabletRegularDuotone } from './DeviceTabletRegularDuotone.js';
+import { DeviceTabletBold } from './DeviceTabletBold.js';
+import { DeviceTabletBoldDuotone } from './DeviceTabletBoldDuotone.js';
+import { DeviceTabletFill } from './DeviceTabletFill.js';
+import { DeviceTabletFillDuotone } from './DeviceTabletFillDuotone.js';
 
 export interface DeviceTabletProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

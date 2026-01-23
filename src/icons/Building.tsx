@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BuildingRegular } from './BuildingRegular';
-import { BuildingRegularDuotone } from './BuildingRegularDuotone';
-import { BuildingBold } from './BuildingBold';
-import { BuildingBoldDuotone } from './BuildingBoldDuotone';
-import { BuildingFill } from './BuildingFill';
-import { BuildingFillDuotone } from './BuildingFillDuotone';
+import type { IconProps } from '../types.js';
+import { BuildingRegular } from './BuildingRegular.js';
+import { BuildingRegularDuotone } from './BuildingRegularDuotone.js';
+import { BuildingBold } from './BuildingBold.js';
+import { BuildingBoldDuotone } from './BuildingBoldDuotone.js';
+import { BuildingFill } from './BuildingFill.js';
+import { BuildingFillDuotone } from './BuildingFillDuotone.js';
 
 export interface BuildingProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

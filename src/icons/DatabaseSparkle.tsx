@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DatabaseSparkleRegular } from './DatabaseSparkleRegular';
-import { DatabaseSparkleRegularDuotone } from './DatabaseSparkleRegularDuotone';
-import { DatabaseSparkleBold } from './DatabaseSparkleBold';
-import { DatabaseSparkleBoldDuotone } from './DatabaseSparkleBoldDuotone';
-import { DatabaseSparkleFill } from './DatabaseSparkleFill';
-import { DatabaseSparkleFillDuotone } from './DatabaseSparkleFillDuotone';
+import type { IconProps } from '../types.js';
+import { DatabaseSparkleRegular } from './DatabaseSparkleRegular.js';
+import { DatabaseSparkleRegularDuotone } from './DatabaseSparkleRegularDuotone.js';
+import { DatabaseSparkleBold } from './DatabaseSparkleBold.js';
+import { DatabaseSparkleBoldDuotone } from './DatabaseSparkleBoldDuotone.js';
+import { DatabaseSparkleFill } from './DatabaseSparkleFill.js';
+import { DatabaseSparkleFillDuotone } from './DatabaseSparkleFillDuotone.js';
 
 export interface DatabaseSparkleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

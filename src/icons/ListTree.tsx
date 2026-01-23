@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ListTreeRegular } from './ListTreeRegular';
-import { ListTreeRegularDuotone } from './ListTreeRegularDuotone';
-import { ListTreeBold } from './ListTreeBold';
-import { ListTreeBoldDuotone } from './ListTreeBoldDuotone';
-import { ListTreeFill } from './ListTreeFill';
-import { ListTreeFillDuotone } from './ListTreeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ListTreeRegular } from './ListTreeRegular.js';
+import { ListTreeRegularDuotone } from './ListTreeRegularDuotone.js';
+import { ListTreeBold } from './ListTreeBold.js';
+import { ListTreeBoldDuotone } from './ListTreeBoldDuotone.js';
+import { ListTreeFill } from './ListTreeFill.js';
+import { ListTreeFillDuotone } from './ListTreeFillDuotone.js';
 
 export interface ListTreeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

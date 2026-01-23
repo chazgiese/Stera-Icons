@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SendHRegular } from './SendHRegular';
-import { SendHRegularDuotone } from './SendHRegularDuotone';
-import { SendHBold } from './SendHBold';
-import { SendHBoldDuotone } from './SendHBoldDuotone';
-import { SendHFill } from './SendHFill';
-import { SendHFillDuotone } from './SendHFillDuotone';
+import type { IconProps } from '../types.js';
+import { SendHRegular } from './SendHRegular.js';
+import { SendHRegularDuotone } from './SendHRegularDuotone.js';
+import { SendHBold } from './SendHBold.js';
+import { SendHBoldDuotone } from './SendHBoldDuotone.js';
+import { SendHFill } from './SendHFill.js';
+import { SendHFillDuotone } from './SendHFillDuotone.js';
 
 export interface SendHProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

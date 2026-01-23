@@ -1,6 +1,6 @@
 import { memo, forwardRef } from 'react';
-import { IconBase } from '../IconBase';
-import type { IconBaseProps } from '../IconBase';
+import { IconBase } from '../base.js';
+import type { IconBaseProps } from '../base.js';
 
 type QuestionMarkRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 

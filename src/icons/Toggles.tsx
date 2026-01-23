@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TogglesRegular } from './TogglesRegular';
-import { TogglesRegularDuotone } from './TogglesRegularDuotone';
-import { TogglesBold } from './TogglesBold';
-import { TogglesBoldDuotone } from './TogglesBoldDuotone';
-import { TogglesFill } from './TogglesFill';
-import { TogglesFillDuotone } from './TogglesFillDuotone';
+import type { IconProps } from '../types.js';
+import { TogglesRegular } from './TogglesRegular.js';
+import { TogglesRegularDuotone } from './TogglesRegularDuotone.js';
+import { TogglesBold } from './TogglesBold.js';
+import { TogglesBoldDuotone } from './TogglesBoldDuotone.js';
+import { TogglesFill } from './TogglesFill.js';
+import { TogglesFillDuotone } from './TogglesFillDuotone.js';
 
 export interface TogglesProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

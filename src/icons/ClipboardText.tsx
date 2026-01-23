@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ClipboardTextRegular } from './ClipboardTextRegular';
-import { ClipboardTextRegularDuotone } from './ClipboardTextRegularDuotone';
-import { ClipboardTextBold } from './ClipboardTextBold';
-import { ClipboardTextBoldDuotone } from './ClipboardTextBoldDuotone';
-import { ClipboardTextFill } from './ClipboardTextFill';
-import { ClipboardTextFillDuotone } from './ClipboardTextFillDuotone';
+import type { IconProps } from '../types.js';
+import { ClipboardTextRegular } from './ClipboardTextRegular.js';
+import { ClipboardTextRegularDuotone } from './ClipboardTextRegularDuotone.js';
+import { ClipboardTextBold } from './ClipboardTextBold.js';
+import { ClipboardTextBoldDuotone } from './ClipboardTextBoldDuotone.js';
+import { ClipboardTextFill } from './ClipboardTextFill.js';
+import { ClipboardTextFillDuotone } from './ClipboardTextFillDuotone.js';
 
 export interface ClipboardTextProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

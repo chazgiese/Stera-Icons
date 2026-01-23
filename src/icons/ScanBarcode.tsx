@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanBarcodeRegular } from './ScanBarcodeRegular';
-import { ScanBarcodeRegularDuotone } from './ScanBarcodeRegularDuotone';
-import { ScanBarcodeBold } from './ScanBarcodeBold';
-import { ScanBarcodeBoldDuotone } from './ScanBarcodeBoldDuotone';
-import { ScanBarcodeFill } from './ScanBarcodeFill';
-import { ScanBarcodeFillDuotone } from './ScanBarcodeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanBarcodeRegular } from './ScanBarcodeRegular.js';
+import { ScanBarcodeRegularDuotone } from './ScanBarcodeRegularDuotone.js';
+import { ScanBarcodeBold } from './ScanBarcodeBold.js';
+import { ScanBarcodeBoldDuotone } from './ScanBarcodeBoldDuotone.js';
+import { ScanBarcodeFill } from './ScanBarcodeFill.js';
+import { ScanBarcodeFillDuotone } from './ScanBarcodeFillDuotone.js';
 
 export interface ScanBarcodeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

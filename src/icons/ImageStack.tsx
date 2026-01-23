@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ImageStackRegular } from './ImageStackRegular';
-import { ImageStackRegularDuotone } from './ImageStackRegularDuotone';
-import { ImageStackBold } from './ImageStackBold';
-import { ImageStackBoldDuotone } from './ImageStackBoldDuotone';
-import { ImageStackFill } from './ImageStackFill';
-import { ImageStackFillDuotone } from './ImageStackFillDuotone';
+import type { IconProps } from '../types.js';
+import { ImageStackRegular } from './ImageStackRegular.js';
+import { ImageStackRegularDuotone } from './ImageStackRegularDuotone.js';
+import { ImageStackBold } from './ImageStackBold.js';
+import { ImageStackBoldDuotone } from './ImageStackBoldDuotone.js';
+import { ImageStackFill } from './ImageStackFill.js';
+import { ImageStackFillDuotone } from './ImageStackFillDuotone.js';
 
 export interface ImageStackProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

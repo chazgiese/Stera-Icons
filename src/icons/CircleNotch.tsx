@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleNotchRegular } from './CircleNotchRegular';
-import { CircleNotchRegularDuotone } from './CircleNotchRegularDuotone';
-import { CircleNotchBold } from './CircleNotchBold';
-import { CircleNotchBoldDuotone } from './CircleNotchBoldDuotone';
-import { CircleNotchFill } from './CircleNotchFill';
-import { CircleNotchFillDuotone } from './CircleNotchFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleNotchRegular } from './CircleNotchRegular.js';
+import { CircleNotchRegularDuotone } from './CircleNotchRegularDuotone.js';
+import { CircleNotchBold } from './CircleNotchBold.js';
+import { CircleNotchBoldDuotone } from './CircleNotchBoldDuotone.js';
+import { CircleNotchFill } from './CircleNotchFill.js';
+import { CircleNotchFillDuotone } from './CircleNotchFillDuotone.js';
 
 export interface CircleNotchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

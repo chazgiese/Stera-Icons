@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SignalHighRegular } from './SignalHighRegular';
-import { SignalHighRegularDuotone } from './SignalHighRegularDuotone';
-import { SignalHighBold } from './SignalHighBold';
-import { SignalHighBoldDuotone } from './SignalHighBoldDuotone';
-import { SignalHighFill } from './SignalHighFill';
-import { SignalHighFillDuotone } from './SignalHighFillDuotone';
+import type { IconProps } from '../types.js';
+import { SignalHighRegular } from './SignalHighRegular.js';
+import { SignalHighRegularDuotone } from './SignalHighRegularDuotone.js';
+import { SignalHighBold } from './SignalHighBold.js';
+import { SignalHighBoldDuotone } from './SignalHighBoldDuotone.js';
+import { SignalHighFill } from './SignalHighFill.js';
+import { SignalHighFillDuotone } from './SignalHighFillDuotone.js';
 
 export interface SignalHighProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

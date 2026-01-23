@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBubbleAlertRegular } from './ChatBubbleAlertRegular';
-import { ChatBubbleAlertRegularDuotone } from './ChatBubbleAlertRegularDuotone';
-import { ChatBubbleAlertBold } from './ChatBubbleAlertBold';
-import { ChatBubbleAlertBoldDuotone } from './ChatBubbleAlertBoldDuotone';
-import { ChatBubbleAlertFill } from './ChatBubbleAlertFill';
-import { ChatBubbleAlertFillDuotone } from './ChatBubbleAlertFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBubbleAlertRegular } from './ChatBubbleAlertRegular.js';
+import { ChatBubbleAlertRegularDuotone } from './ChatBubbleAlertRegularDuotone.js';
+import { ChatBubbleAlertBold } from './ChatBubbleAlertBold.js';
+import { ChatBubbleAlertBoldDuotone } from './ChatBubbleAlertBoldDuotone.js';
+import { ChatBubbleAlertFill } from './ChatBubbleAlertFill.js';
+import { ChatBubbleAlertFillDuotone } from './ChatBubbleAlertFillDuotone.js';
 
 export interface ChatBubbleAlertProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

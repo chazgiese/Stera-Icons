@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TriangleDownRegular } from './TriangleDownRegular';
-import { TriangleDownRegularDuotone } from './TriangleDownRegularDuotone';
-import { TriangleDownBold } from './TriangleDownBold';
-import { TriangleDownBoldDuotone } from './TriangleDownBoldDuotone';
-import { TriangleDownFill } from './TriangleDownFill';
-import { TriangleDownFillDuotone } from './TriangleDownFillDuotone';
+import type { IconProps } from '../types.js';
+import { TriangleDownRegular } from './TriangleDownRegular.js';
+import { TriangleDownRegularDuotone } from './TriangleDownRegularDuotone.js';
+import { TriangleDownBold } from './TriangleDownBold.js';
+import { TriangleDownBoldDuotone } from './TriangleDownBoldDuotone.js';
+import { TriangleDownFill } from './TriangleDownFill.js';
+import { TriangleDownFillDuotone } from './TriangleDownFillDuotone.js';
 
 export interface TriangleDownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

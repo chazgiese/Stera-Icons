@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LabelRegular } from './LabelRegular';
-import { LabelRegularDuotone } from './LabelRegularDuotone';
-import { LabelBold } from './LabelBold';
-import { LabelBoldDuotone } from './LabelBoldDuotone';
-import { LabelFill } from './LabelFill';
-import { LabelFillDuotone } from './LabelFillDuotone';
+import type { IconProps } from '../types.js';
+import { LabelRegular } from './LabelRegular.js';
+import { LabelRegularDuotone } from './LabelRegularDuotone.js';
+import { LabelBold } from './LabelBold.js';
+import { LabelBoldDuotone } from './LabelBoldDuotone.js';
+import { LabelFill } from './LabelFill.js';
+import { LabelFillDuotone } from './LabelFillDuotone.js';
 
 export interface LabelProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UserMinusRegular } from './UserMinusRegular';
-import { UserMinusRegularDuotone } from './UserMinusRegularDuotone';
-import { UserMinusBold } from './UserMinusBold';
-import { UserMinusBoldDuotone } from './UserMinusBoldDuotone';
-import { UserMinusFill } from './UserMinusFill';
-import { UserMinusFillDuotone } from './UserMinusFillDuotone';
+import type { IconProps } from '../types.js';
+import { UserMinusRegular } from './UserMinusRegular.js';
+import { UserMinusRegularDuotone } from './UserMinusRegularDuotone.js';
+import { UserMinusBold } from './UserMinusBold.js';
+import { UserMinusBoldDuotone } from './UserMinusBoldDuotone.js';
+import { UserMinusFill } from './UserMinusFill.js';
+import { UserMinusFillDuotone } from './UserMinusFillDuotone.js';
 
 export interface UserMinusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

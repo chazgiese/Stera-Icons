@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ApertureRegular } from './ApertureRegular';
-import { ApertureRegularDuotone } from './ApertureRegularDuotone';
-import { ApertureBold } from './ApertureBold';
-import { ApertureBoldDuotone } from './ApertureBoldDuotone';
-import { ApertureFill } from './ApertureFill';
-import { ApertureFillDuotone } from './ApertureFillDuotone';
+import type { IconProps } from '../types.js';
+import { ApertureRegular } from './ApertureRegular.js';
+import { ApertureRegularDuotone } from './ApertureRegularDuotone.js';
+import { ApertureBold } from './ApertureBold.js';
+import { ApertureBoldDuotone } from './ApertureBoldDuotone.js';
+import { ApertureFill } from './ApertureFill.js';
+import { ApertureFillDuotone } from './ApertureFillDuotone.js';
 
 export interface ApertureProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

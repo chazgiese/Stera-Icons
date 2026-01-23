@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartPieAltRegular } from './ChartPieAltRegular';
-import { ChartPieAltRegularDuotone } from './ChartPieAltRegularDuotone';
-import { ChartPieAltBold } from './ChartPieAltBold';
-import { ChartPieAltBoldDuotone } from './ChartPieAltBoldDuotone';
-import { ChartPieAltFill } from './ChartPieAltFill';
-import { ChartPieAltFillDuotone } from './ChartPieAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartPieAltRegular } from './ChartPieAltRegular.js';
+import { ChartPieAltRegularDuotone } from './ChartPieAltRegularDuotone.js';
+import { ChartPieAltBold } from './ChartPieAltBold.js';
+import { ChartPieAltBoldDuotone } from './ChartPieAltBoldDuotone.js';
+import { ChartPieAltFill } from './ChartPieAltFill.js';
+import { ChartPieAltFillDuotone } from './ChartPieAltFillDuotone.js';
 
 export interface ChartPieAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SpinnerRegular } from './SpinnerRegular';
-import { SpinnerRegularDuotone } from './SpinnerRegularDuotone';
-import { SpinnerBold } from './SpinnerBold';
-import { SpinnerBoldDuotone } from './SpinnerBoldDuotone';
-import { SpinnerFill } from './SpinnerFill';
-import { SpinnerFillDuotone } from './SpinnerFillDuotone';
+import type { IconProps } from '../types.js';
+import { SpinnerRegular } from './SpinnerRegular.js';
+import { SpinnerRegularDuotone } from './SpinnerRegularDuotone.js';
+import { SpinnerBold } from './SpinnerBold.js';
+import { SpinnerBoldDuotone } from './SpinnerBoldDuotone.js';
+import { SpinnerFill } from './SpinnerFill.js';
+import { SpinnerFillDuotone } from './SpinnerFillDuotone.js';
 
 export interface SpinnerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CirclesThreeRegular } from './CirclesThreeRegular';
-import { CirclesThreeRegularDuotone } from './CirclesThreeRegularDuotone';
-import { CirclesThreeBold } from './CirclesThreeBold';
-import { CirclesThreeBoldDuotone } from './CirclesThreeBoldDuotone';
-import { CirclesThreeFill } from './CirclesThreeFill';
-import { CirclesThreeFillDuotone } from './CirclesThreeFillDuotone';
+import type { IconProps } from '../types.js';
+import { CirclesThreeRegular } from './CirclesThreeRegular.js';
+import { CirclesThreeRegularDuotone } from './CirclesThreeRegularDuotone.js';
+import { CirclesThreeBold } from './CirclesThreeBold.js';
+import { CirclesThreeBoldDuotone } from './CirclesThreeBoldDuotone.js';
+import { CirclesThreeFill } from './CirclesThreeFill.js';
+import { CirclesThreeFillDuotone } from './CirclesThreeFillDuotone.js';
 
 export interface CirclesThreeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

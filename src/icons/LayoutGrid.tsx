@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayoutGridRegular } from './LayoutGridRegular';
-import { LayoutGridRegularDuotone } from './LayoutGridRegularDuotone';
-import { LayoutGridBold } from './LayoutGridBold';
-import { LayoutGridBoldDuotone } from './LayoutGridBoldDuotone';
-import { LayoutGridFill } from './LayoutGridFill';
-import { LayoutGridFillDuotone } from './LayoutGridFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayoutGridRegular } from './LayoutGridRegular.js';
+import { LayoutGridRegularDuotone } from './LayoutGridRegularDuotone.js';
+import { LayoutGridBold } from './LayoutGridBold.js';
+import { LayoutGridBoldDuotone } from './LayoutGridBoldDuotone.js';
+import { LayoutGridFill } from './LayoutGridFill.js';
+import { LayoutGridFillDuotone } from './LayoutGridFillDuotone.js';
 
 export interface LayoutGridProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

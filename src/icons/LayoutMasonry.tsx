@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayoutMasonryRegular } from './LayoutMasonryRegular';
-import { LayoutMasonryRegularDuotone } from './LayoutMasonryRegularDuotone';
-import { LayoutMasonryBold } from './LayoutMasonryBold';
-import { LayoutMasonryBoldDuotone } from './LayoutMasonryBoldDuotone';
-import { LayoutMasonryFill } from './LayoutMasonryFill';
-import { LayoutMasonryFillDuotone } from './LayoutMasonryFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayoutMasonryRegular } from './LayoutMasonryRegular.js';
+import { LayoutMasonryRegularDuotone } from './LayoutMasonryRegularDuotone.js';
+import { LayoutMasonryBold } from './LayoutMasonryBold.js';
+import { LayoutMasonryBoldDuotone } from './LayoutMasonryBoldDuotone.js';
+import { LayoutMasonryFill } from './LayoutMasonryFill.js';
+import { LayoutMasonryFillDuotone } from './LayoutMasonryFillDuotone.js';
 
 export interface LayoutMasonryProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

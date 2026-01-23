@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextFieldRegular } from './TextFieldRegular';
-import { TextFieldRegularDuotone } from './TextFieldRegularDuotone';
-import { TextFieldBold } from './TextFieldBold';
-import { TextFieldBoldDuotone } from './TextFieldBoldDuotone';
-import { TextFieldFill } from './TextFieldFill';
-import { TextFieldFillDuotone } from './TextFieldFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextFieldRegular } from './TextFieldRegular.js';
+import { TextFieldRegularDuotone } from './TextFieldRegularDuotone.js';
+import { TextFieldBold } from './TextFieldBold.js';
+import { TextFieldBoldDuotone } from './TextFieldBoldDuotone.js';
+import { TextFieldFill } from './TextFieldFill.js';
+import { TextFieldFillDuotone } from './TextFieldFillDuotone.js';
 
 export interface TextFieldProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleDotsRegular } from './CircleDotsRegular';
-import { CircleDotsRegularDuotone } from './CircleDotsRegularDuotone';
-import { CircleDotsBold } from './CircleDotsBold';
-import { CircleDotsBoldDuotone } from './CircleDotsBoldDuotone';
-import { CircleDotsFill } from './CircleDotsFill';
-import { CircleDotsFillDuotone } from './CircleDotsFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleDotsRegular } from './CircleDotsRegular.js';
+import { CircleDotsRegularDuotone } from './CircleDotsRegularDuotone.js';
+import { CircleDotsBold } from './CircleDotsBold.js';
+import { CircleDotsBoldDuotone } from './CircleDotsBoldDuotone.js';
+import { CircleDotsFill } from './CircleDotsFill.js';
+import { CircleDotsFillDuotone } from './CircleDotsFillDuotone.js';
 
 export interface CircleDotsProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartLineBarRegular } from './ChartLineBarRegular';
-import { ChartLineBarRegularDuotone } from './ChartLineBarRegularDuotone';
-import { ChartLineBarBold } from './ChartLineBarBold';
-import { ChartLineBarBoldDuotone } from './ChartLineBarBoldDuotone';
-import { ChartLineBarFill } from './ChartLineBarFill';
-import { ChartLineBarFillDuotone } from './ChartLineBarFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartLineBarRegular } from './ChartLineBarRegular.js';
+import { ChartLineBarRegularDuotone } from './ChartLineBarRegularDuotone.js';
+import { ChartLineBarBold } from './ChartLineBarBold.js';
+import { ChartLineBarBoldDuotone } from './ChartLineBarBoldDuotone.js';
+import { ChartLineBarFill } from './ChartLineBarFill.js';
+import { ChartLineBarFillDuotone } from './ChartLineBarFillDuotone.js';
 
 export interface ChartLineBarProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

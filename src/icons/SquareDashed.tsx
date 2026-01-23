@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SquareDashedRegular } from './SquareDashedRegular';
-import { SquareDashedRegularDuotone } from './SquareDashedRegularDuotone';
-import { SquareDashedBold } from './SquareDashedBold';
-import { SquareDashedBoldDuotone } from './SquareDashedBoldDuotone';
-import { SquareDashedFill } from './SquareDashedFill';
-import { SquareDashedFillDuotone } from './SquareDashedFillDuotone';
+import type { IconProps } from '../types.js';
+import { SquareDashedRegular } from './SquareDashedRegular.js';
+import { SquareDashedRegularDuotone } from './SquareDashedRegularDuotone.js';
+import { SquareDashedBold } from './SquareDashedBold.js';
+import { SquareDashedBoldDuotone } from './SquareDashedBoldDuotone.js';
+import { SquareDashedFill } from './SquareDashedFill.js';
+import { SquareDashedFillDuotone } from './SquareDashedFillDuotone.js';
 
 export interface SquareDashedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

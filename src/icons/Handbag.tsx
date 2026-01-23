@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HandbagRegular } from './HandbagRegular';
-import { HandbagRegularDuotone } from './HandbagRegularDuotone';
-import { HandbagBold } from './HandbagBold';
-import { HandbagBoldDuotone } from './HandbagBoldDuotone';
-import { HandbagFill } from './HandbagFill';
-import { HandbagFillDuotone } from './HandbagFillDuotone';
+import type { IconProps } from '../types.js';
+import { HandbagRegular } from './HandbagRegular.js';
+import { HandbagRegularDuotone } from './HandbagRegularDuotone.js';
+import { HandbagBold } from './HandbagBold.js';
+import { HandbagBoldDuotone } from './HandbagBoldDuotone.js';
+import { HandbagFill } from './HandbagFill.js';
+import { HandbagFillDuotone } from './HandbagFillDuotone.js';
 
 export interface HandbagProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

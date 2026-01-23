@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlignVerticalTopRegular } from './AlignVerticalTopRegular';
-import { AlignVerticalTopRegularDuotone } from './AlignVerticalTopRegularDuotone';
-import { AlignVerticalTopBold } from './AlignVerticalTopBold';
-import { AlignVerticalTopBoldDuotone } from './AlignVerticalTopBoldDuotone';
-import { AlignVerticalTopFill } from './AlignVerticalTopFill';
-import { AlignVerticalTopFillDuotone } from './AlignVerticalTopFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlignVerticalTopRegular } from './AlignVerticalTopRegular.js';
+import { AlignVerticalTopRegularDuotone } from './AlignVerticalTopRegularDuotone.js';
+import { AlignVerticalTopBold } from './AlignVerticalTopBold.js';
+import { AlignVerticalTopBoldDuotone } from './AlignVerticalTopBoldDuotone.js';
+import { AlignVerticalTopFill } from './AlignVerticalTopFill.js';
+import { AlignVerticalTopFillDuotone } from './AlignVerticalTopFillDuotone.js';
 
 export interface AlignVerticalTopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

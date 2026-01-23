@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertOctagonRegular } from './AlertOctagonRegular';
-import { AlertOctagonRegularDuotone } from './AlertOctagonRegularDuotone';
-import { AlertOctagonBold } from './AlertOctagonBold';
-import { AlertOctagonBoldDuotone } from './AlertOctagonBoldDuotone';
-import { AlertOctagonFill } from './AlertOctagonFill';
-import { AlertOctagonFillDuotone } from './AlertOctagonFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertOctagonRegular } from './AlertOctagonRegular.js';
+import { AlertOctagonRegularDuotone } from './AlertOctagonRegularDuotone.js';
+import { AlertOctagonBold } from './AlertOctagonBold.js';
+import { AlertOctagonBoldDuotone } from './AlertOctagonBoldDuotone.js';
+import { AlertOctagonFill } from './AlertOctagonFill.js';
+import { AlertOctagonFillDuotone } from './AlertOctagonFillDuotone.js';
 
 export interface AlertOctagonProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

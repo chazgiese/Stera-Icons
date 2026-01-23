@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TrophyRegular } from './TrophyRegular';
-import { TrophyRegularDuotone } from './TrophyRegularDuotone';
-import { TrophyBold } from './TrophyBold';
-import { TrophyBoldDuotone } from './TrophyBoldDuotone';
-import { TrophyFill } from './TrophyFill';
-import { TrophyFillDuotone } from './TrophyFillDuotone';
+import type { IconProps } from '../types.js';
+import { TrophyRegular } from './TrophyRegular.js';
+import { TrophyRegularDuotone } from './TrophyRegularDuotone.js';
+import { TrophyBold } from './TrophyBold.js';
+import { TrophyBoldDuotone } from './TrophyBoldDuotone.js';
+import { TrophyFill } from './TrophyFill.js';
+import { TrophyFillDuotone } from './TrophyFillDuotone.js';
 
 export interface TrophyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

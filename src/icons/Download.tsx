@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DownloadRegular } from './DownloadRegular';
-import { DownloadRegularDuotone } from './DownloadRegularDuotone';
-import { DownloadBold } from './DownloadBold';
-import { DownloadBoldDuotone } from './DownloadBoldDuotone';
-import { DownloadFill } from './DownloadFill';
-import { DownloadFillDuotone } from './DownloadFillDuotone';
+import type { IconProps } from '../types.js';
+import { DownloadRegular } from './DownloadRegular.js';
+import { DownloadRegularDuotone } from './DownloadRegularDuotone.js';
+import { DownloadBold } from './DownloadBold.js';
+import { DownloadBoldDuotone } from './DownloadBoldDuotone.js';
+import { DownloadFill } from './DownloadFill.js';
+import { DownloadFillDuotone } from './DownloadFillDuotone.js';
 
 export interface DownloadProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

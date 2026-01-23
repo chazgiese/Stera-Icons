@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ConnectionRegular } from './ConnectionRegular';
-import { ConnectionRegularDuotone } from './ConnectionRegularDuotone';
-import { ConnectionBold } from './ConnectionBold';
-import { ConnectionBoldDuotone } from './ConnectionBoldDuotone';
-import { ConnectionFill } from './ConnectionFill';
-import { ConnectionFillDuotone } from './ConnectionFillDuotone';
+import type { IconProps } from '../types.js';
+import { ConnectionRegular } from './ConnectionRegular.js';
+import { ConnectionRegularDuotone } from './ConnectionRegularDuotone.js';
+import { ConnectionBold } from './ConnectionBold.js';
+import { ConnectionBoldDuotone } from './ConnectionBoldDuotone.js';
+import { ConnectionFill } from './ConnectionFill.js';
+import { ConnectionFillDuotone } from './ConnectionFillDuotone.js';
 
 export interface ConnectionProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { Home3dRegular } from './Home3dRegular';
-import { Home3dRegularDuotone } from './Home3dRegularDuotone';
-import { Home3dBold } from './Home3dBold';
-import { Home3dBoldDuotone } from './Home3dBoldDuotone';
-import { Home3dFill } from './Home3dFill';
-import { Home3dFillDuotone } from './Home3dFillDuotone';
+import type { IconProps } from '../types.js';
+import { Home3dRegular } from './Home3dRegular.js';
+import { Home3dRegularDuotone } from './Home3dRegularDuotone.js';
+import { Home3dBold } from './Home3dBold.js';
+import { Home3dBoldDuotone } from './Home3dBoldDuotone.js';
+import { Home3dFill } from './Home3dFill.js';
+import { Home3dFillDuotone } from './Home3dFillDuotone.js';
 
 export interface Home3dProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

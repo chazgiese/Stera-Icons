@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ArchiveRegular } from './ArchiveRegular';
-import { ArchiveRegularDuotone } from './ArchiveRegularDuotone';
-import { ArchiveBold } from './ArchiveBold';
-import { ArchiveBoldDuotone } from './ArchiveBoldDuotone';
-import { ArchiveFill } from './ArchiveFill';
-import { ArchiveFillDuotone } from './ArchiveFillDuotone';
+import type { IconProps } from '../types.js';
+import { ArchiveRegular } from './ArchiveRegular.js';
+import { ArchiveRegularDuotone } from './ArchiveRegularDuotone.js';
+import { ArchiveBold } from './ArchiveBold.js';
+import { ArchiveBoldDuotone } from './ArchiveBoldDuotone.js';
+import { ArchiveFill } from './ArchiveFill.js';
+import { ArchiveFillDuotone } from './ArchiveFillDuotone.js';
 
 export interface ArchiveProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

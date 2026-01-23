@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBoxRegular } from './ChatBoxRegular';
-import { ChatBoxRegularDuotone } from './ChatBoxRegularDuotone';
-import { ChatBoxBold } from './ChatBoxBold';
-import { ChatBoxBoldDuotone } from './ChatBoxBoldDuotone';
-import { ChatBoxFill } from './ChatBoxFill';
-import { ChatBoxFillDuotone } from './ChatBoxFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBoxRegular } from './ChatBoxRegular.js';
+import { ChatBoxRegularDuotone } from './ChatBoxRegularDuotone.js';
+import { ChatBoxBold } from './ChatBoxBold.js';
+import { ChatBoxBoldDuotone } from './ChatBoxBoldDuotone.js';
+import { ChatBoxFill } from './ChatBoxFill.js';
+import { ChatBoxFillDuotone } from './ChatBoxFillDuotone.js';
 
 export interface ChatBoxProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

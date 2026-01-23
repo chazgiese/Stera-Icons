@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { QuestionMarkRegular } from './QuestionMarkRegular';
-import { QuestionMarkRegularDuotone } from './QuestionMarkRegularDuotone';
-import { QuestionMarkBold } from './QuestionMarkBold';
-import { QuestionMarkBoldDuotone } from './QuestionMarkBoldDuotone';
-import { QuestionMarkFill } from './QuestionMarkFill';
-import { QuestionMarkFillDuotone } from './QuestionMarkFillDuotone';
+import type { IconProps } from '../types.js';
+import { QuestionMarkRegular } from './QuestionMarkRegular.js';
+import { QuestionMarkRegularDuotone } from './QuestionMarkRegularDuotone.js';
+import { QuestionMarkBold } from './QuestionMarkBold.js';
+import { QuestionMarkBoldDuotone } from './QuestionMarkBoldDuotone.js';
+import { QuestionMarkFill } from './QuestionMarkFill.js';
+import { QuestionMarkFillDuotone } from './QuestionMarkFillDuotone.js';
 
 export interface QuestionMarkProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

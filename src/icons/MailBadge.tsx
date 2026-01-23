@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MailBadgeRegular } from './MailBadgeRegular';
-import { MailBadgeRegularDuotone } from './MailBadgeRegularDuotone';
-import { MailBadgeBold } from './MailBadgeBold';
-import { MailBadgeBoldDuotone } from './MailBadgeBoldDuotone';
-import { MailBadgeFill } from './MailBadgeFill';
-import { MailBadgeFillDuotone } from './MailBadgeFillDuotone';
+import type { IconProps } from '../types.js';
+import { MailBadgeRegular } from './MailBadgeRegular.js';
+import { MailBadgeRegularDuotone } from './MailBadgeRegularDuotone.js';
+import { MailBadgeBold } from './MailBadgeBold.js';
+import { MailBadgeBoldDuotone } from './MailBadgeBoldDuotone.js';
+import { MailBadgeFill } from './MailBadgeFill.js';
+import { MailBadgeFillDuotone } from './MailBadgeFillDuotone.js';
 
 export interface MailBadgeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

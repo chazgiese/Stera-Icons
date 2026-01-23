@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HomeHeartRegular } from './HomeHeartRegular';
-import { HomeHeartRegularDuotone } from './HomeHeartRegularDuotone';
-import { HomeHeartBold } from './HomeHeartBold';
-import { HomeHeartBoldDuotone } from './HomeHeartBoldDuotone';
-import { HomeHeartFill } from './HomeHeartFill';
-import { HomeHeartFillDuotone } from './HomeHeartFillDuotone';
+import type { IconProps } from '../types.js';
+import { HomeHeartRegular } from './HomeHeartRegular.js';
+import { HomeHeartRegularDuotone } from './HomeHeartRegularDuotone.js';
+import { HomeHeartBold } from './HomeHeartBold.js';
+import { HomeHeartBoldDuotone } from './HomeHeartBoldDuotone.js';
+import { HomeHeartFill } from './HomeHeartFill.js';
+import { HomeHeartFillDuotone } from './HomeHeartFillDuotone.js';
 
 export interface HomeHeartProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

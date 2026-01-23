@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MacWindowCursorRegular } from './MacWindowCursorRegular';
-import { MacWindowCursorRegularDuotone } from './MacWindowCursorRegularDuotone';
-import { MacWindowCursorBold } from './MacWindowCursorBold';
-import { MacWindowCursorBoldDuotone } from './MacWindowCursorBoldDuotone';
-import { MacWindowCursorFill } from './MacWindowCursorFill';
-import { MacWindowCursorFillDuotone } from './MacWindowCursorFillDuotone';
+import type { IconProps } from '../types.js';
+import { MacWindowCursorRegular } from './MacWindowCursorRegular.js';
+import { MacWindowCursorRegularDuotone } from './MacWindowCursorRegularDuotone.js';
+import { MacWindowCursorBold } from './MacWindowCursorBold.js';
+import { MacWindowCursorBoldDuotone } from './MacWindowCursorBoldDuotone.js';
+import { MacWindowCursorFill } from './MacWindowCursorFill.js';
+import { MacWindowCursorFillDuotone } from './MacWindowCursorFillDuotone.js';
 
 export interface MacWindowCursorProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

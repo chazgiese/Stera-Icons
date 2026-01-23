@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowSplitSquareDownRegular } from './FlowSplitSquareDownRegular';
-import { FlowSplitSquareDownRegularDuotone } from './FlowSplitSquareDownRegularDuotone';
-import { FlowSplitSquareDownBold } from './FlowSplitSquareDownBold';
-import { FlowSplitSquareDownBoldDuotone } from './FlowSplitSquareDownBoldDuotone';
-import { FlowSplitSquareDownFill } from './FlowSplitSquareDownFill';
-import { FlowSplitSquareDownFillDuotone } from './FlowSplitSquareDownFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowSplitSquareDownRegular } from './FlowSplitSquareDownRegular.js';
+import { FlowSplitSquareDownRegularDuotone } from './FlowSplitSquareDownRegularDuotone.js';
+import { FlowSplitSquareDownBold } from './FlowSplitSquareDownBold.js';
+import { FlowSplitSquareDownBoldDuotone } from './FlowSplitSquareDownBoldDuotone.js';
+import { FlowSplitSquareDownFill } from './FlowSplitSquareDownFill.js';
+import { FlowSplitSquareDownFillDuotone } from './FlowSplitSquareDownFillDuotone.js';
 
 export interface FlowSplitSquareDownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

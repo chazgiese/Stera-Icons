@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BannerRegular } from './BannerRegular';
-import { BannerRegularDuotone } from './BannerRegularDuotone';
-import { BannerBold } from './BannerBold';
-import { BannerBoldDuotone } from './BannerBoldDuotone';
-import { BannerFill } from './BannerFill';
-import { BannerFillDuotone } from './BannerFillDuotone';
+import type { IconProps } from '../types.js';
+import { BannerRegular } from './BannerRegular.js';
+import { BannerRegularDuotone } from './BannerRegularDuotone.js';
+import { BannerBold } from './BannerBold.js';
+import { BannerBoldDuotone } from './BannerBoldDuotone.js';
+import { BannerFill } from './BannerFill.js';
+import { BannerFillDuotone } from './BannerFillDuotone.js';
 
 export interface BannerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

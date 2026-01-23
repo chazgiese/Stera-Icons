@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlignHorizontalCenterRegular } from './AlignHorizontalCenterRegular';
-import { AlignHorizontalCenterRegularDuotone } from './AlignHorizontalCenterRegularDuotone';
-import { AlignHorizontalCenterBold } from './AlignHorizontalCenterBold';
-import { AlignHorizontalCenterBoldDuotone } from './AlignHorizontalCenterBoldDuotone';
-import { AlignHorizontalCenterFill } from './AlignHorizontalCenterFill';
-import { AlignHorizontalCenterFillDuotone } from './AlignHorizontalCenterFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlignHorizontalCenterRegular } from './AlignHorizontalCenterRegular.js';
+import { AlignHorizontalCenterRegularDuotone } from './AlignHorizontalCenterRegularDuotone.js';
+import { AlignHorizontalCenterBold } from './AlignHorizontalCenterBold.js';
+import { AlignHorizontalCenterBoldDuotone } from './AlignHorizontalCenterBoldDuotone.js';
+import { AlignHorizontalCenterFill } from './AlignHorizontalCenterFill.js';
+import { AlignHorizontalCenterFillDuotone } from './AlignHorizontalCenterFillDuotone.js';
 
 export interface AlignHorizontalCenterProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

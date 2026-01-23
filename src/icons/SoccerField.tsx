@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SoccerFieldRegular } from './SoccerFieldRegular';
-import { SoccerFieldRegularDuotone } from './SoccerFieldRegularDuotone';
-import { SoccerFieldBold } from './SoccerFieldBold';
-import { SoccerFieldBoldDuotone } from './SoccerFieldBoldDuotone';
-import { SoccerFieldFill } from './SoccerFieldFill';
-import { SoccerFieldFillDuotone } from './SoccerFieldFillDuotone';
+import type { IconProps } from '../types.js';
+import { SoccerFieldRegular } from './SoccerFieldRegular.js';
+import { SoccerFieldRegularDuotone } from './SoccerFieldRegularDuotone.js';
+import { SoccerFieldBold } from './SoccerFieldBold.js';
+import { SoccerFieldBoldDuotone } from './SoccerFieldBoldDuotone.js';
+import { SoccerFieldFill } from './SoccerFieldFill.js';
+import { SoccerFieldFillDuotone } from './SoccerFieldFillDuotone.js';
 
 export interface SoccerFieldProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

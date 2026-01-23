@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EmoteFrownRegular } from './EmoteFrownRegular';
-import { EmoteFrownRegularDuotone } from './EmoteFrownRegularDuotone';
-import { EmoteFrownBold } from './EmoteFrownBold';
-import { EmoteFrownBoldDuotone } from './EmoteFrownBoldDuotone';
-import { EmoteFrownFill } from './EmoteFrownFill';
-import { EmoteFrownFillDuotone } from './EmoteFrownFillDuotone';
+import type { IconProps } from '../types.js';
+import { EmoteFrownRegular } from './EmoteFrownRegular.js';
+import { EmoteFrownRegularDuotone } from './EmoteFrownRegularDuotone.js';
+import { EmoteFrownBold } from './EmoteFrownBold.js';
+import { EmoteFrownBoldDuotone } from './EmoteFrownBoldDuotone.js';
+import { EmoteFrownFill } from './EmoteFrownFill.js';
+import { EmoteFrownFillDuotone } from './EmoteFrownFillDuotone.js';
 
 export interface EmoteFrownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

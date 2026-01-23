@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SoccerBallRegular } from './SoccerBallRegular';
-import { SoccerBallRegularDuotone } from './SoccerBallRegularDuotone';
-import { SoccerBallBold } from './SoccerBallBold';
-import { SoccerBallBoldDuotone } from './SoccerBallBoldDuotone';
-import { SoccerBallFill } from './SoccerBallFill';
-import { SoccerBallFillDuotone } from './SoccerBallFillDuotone';
+import type { IconProps } from '../types.js';
+import { SoccerBallRegular } from './SoccerBallRegular.js';
+import { SoccerBallRegularDuotone } from './SoccerBallRegularDuotone.js';
+import { SoccerBallBold } from './SoccerBallBold.js';
+import { SoccerBallBoldDuotone } from './SoccerBallBoldDuotone.js';
+import { SoccerBallFill } from './SoccerBallFill.js';
+import { SoccerBallFillDuotone } from './SoccerBallFillDuotone.js';
 
 export interface SoccerBallProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

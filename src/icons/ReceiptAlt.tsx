@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ReceiptAltRegular } from './ReceiptAltRegular';
-import { ReceiptAltRegularDuotone } from './ReceiptAltRegularDuotone';
-import { ReceiptAltBold } from './ReceiptAltBold';
-import { ReceiptAltBoldDuotone } from './ReceiptAltBoldDuotone';
-import { ReceiptAltFill } from './ReceiptAltFill';
-import { ReceiptAltFillDuotone } from './ReceiptAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { ReceiptAltRegular } from './ReceiptAltRegular.js';
+import { ReceiptAltRegularDuotone } from './ReceiptAltRegularDuotone.js';
+import { ReceiptAltBold } from './ReceiptAltBold.js';
+import { ReceiptAltBoldDuotone } from './ReceiptAltBoldDuotone.js';
+import { ReceiptAltFill } from './ReceiptAltFill.js';
+import { ReceiptAltFillDuotone } from './ReceiptAltFillDuotone.js';
 
 export interface ReceiptAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

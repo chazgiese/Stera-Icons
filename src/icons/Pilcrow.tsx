@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PilcrowRegular } from './PilcrowRegular';
-import { PilcrowRegularDuotone } from './PilcrowRegularDuotone';
-import { PilcrowBold } from './PilcrowBold';
-import { PilcrowBoldDuotone } from './PilcrowBoldDuotone';
-import { PilcrowFill } from './PilcrowFill';
-import { PilcrowFillDuotone } from './PilcrowFillDuotone';
+import type { IconProps } from '../types.js';
+import { PilcrowRegular } from './PilcrowRegular.js';
+import { PilcrowRegularDuotone } from './PilcrowRegularDuotone.js';
+import { PilcrowBold } from './PilcrowBold.js';
+import { PilcrowBoldDuotone } from './PilcrowBoldDuotone.js';
+import { PilcrowFill } from './PilcrowFill.js';
+import { PilcrowFillDuotone } from './PilcrowFillDuotone.js';
 
 export interface PilcrowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

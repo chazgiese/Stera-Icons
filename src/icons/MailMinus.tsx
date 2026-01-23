@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MailMinusRegular } from './MailMinusRegular';
-import { MailMinusRegularDuotone } from './MailMinusRegularDuotone';
-import { MailMinusBold } from './MailMinusBold';
-import { MailMinusBoldDuotone } from './MailMinusBoldDuotone';
-import { MailMinusFill } from './MailMinusFill';
-import { MailMinusFillDuotone } from './MailMinusFillDuotone';
+import type { IconProps } from '../types.js';
+import { MailMinusRegular } from './MailMinusRegular.js';
+import { MailMinusRegularDuotone } from './MailMinusRegularDuotone.js';
+import { MailMinusBold } from './MailMinusBold.js';
+import { MailMinusBoldDuotone } from './MailMinusBoldDuotone.js';
+import { MailMinusFill } from './MailMinusFill.js';
+import { MailMinusFillDuotone } from './MailMinusFillDuotone.js';
 
 export interface MailMinusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

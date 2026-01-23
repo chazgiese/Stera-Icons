@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AngleAcuteRegular } from './AngleAcuteRegular';
-import { AngleAcuteRegularDuotone } from './AngleAcuteRegularDuotone';
-import { AngleAcuteBold } from './AngleAcuteBold';
-import { AngleAcuteBoldDuotone } from './AngleAcuteBoldDuotone';
-import { AngleAcuteFill } from './AngleAcuteFill';
-import { AngleAcuteFillDuotone } from './AngleAcuteFillDuotone';
+import type { IconProps } from '../types.js';
+import { AngleAcuteRegular } from './AngleAcuteRegular.js';
+import { AngleAcuteRegularDuotone } from './AngleAcuteRegularDuotone.js';
+import { AngleAcuteBold } from './AngleAcuteBold.js';
+import { AngleAcuteBoldDuotone } from './AngleAcuteBoldDuotone.js';
+import { AngleAcuteFill } from './AngleAcuteFill.js';
+import { AngleAcuteFillDuotone } from './AngleAcuteFillDuotone.js';
 
 export interface AngleAcuteProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

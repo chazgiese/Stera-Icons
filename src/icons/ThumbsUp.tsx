@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ThumbsUpRegular } from './ThumbsUpRegular';
-import { ThumbsUpRegularDuotone } from './ThumbsUpRegularDuotone';
-import { ThumbsUpBold } from './ThumbsUpBold';
-import { ThumbsUpBoldDuotone } from './ThumbsUpBoldDuotone';
-import { ThumbsUpFill } from './ThumbsUpFill';
-import { ThumbsUpFillDuotone } from './ThumbsUpFillDuotone';
+import type { IconProps } from '../types.js';
+import { ThumbsUpRegular } from './ThumbsUpRegular.js';
+import { ThumbsUpRegularDuotone } from './ThumbsUpRegularDuotone.js';
+import { ThumbsUpBold } from './ThumbsUpBold.js';
+import { ThumbsUpBoldDuotone } from './ThumbsUpBoldDuotone.js';
+import { ThumbsUpFill } from './ThumbsUpFill.js';
+import { ThumbsUpFillDuotone } from './ThumbsUpFillDuotone.js';
 
 export interface ThumbsUpProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

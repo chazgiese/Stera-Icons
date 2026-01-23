@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleDivideRegular } from './CircleDivideRegular';
-import { CircleDivideRegularDuotone } from './CircleDivideRegularDuotone';
-import { CircleDivideBold } from './CircleDivideBold';
-import { CircleDivideBoldDuotone } from './CircleDivideBoldDuotone';
-import { CircleDivideFill } from './CircleDivideFill';
-import { CircleDivideFillDuotone } from './CircleDivideFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleDivideRegular } from './CircleDivideRegular.js';
+import { CircleDivideRegularDuotone } from './CircleDivideRegularDuotone.js';
+import { CircleDivideBold } from './CircleDivideBold.js';
+import { CircleDivideBoldDuotone } from './CircleDivideBoldDuotone.js';
+import { CircleDivideFill } from './CircleDivideFill.js';
+import { CircleDivideFillDuotone } from './CircleDivideFillDuotone.js';
 
 export interface CircleDivideProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

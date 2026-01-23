@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextSparkleRegular } from './TextSparkleRegular';
-import { TextSparkleRegularDuotone } from './TextSparkleRegularDuotone';
-import { TextSparkleBold } from './TextSparkleBold';
-import { TextSparkleBoldDuotone } from './TextSparkleBoldDuotone';
-import { TextSparkleFill } from './TextSparkleFill';
-import { TextSparkleFillDuotone } from './TextSparkleFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextSparkleRegular } from './TextSparkleRegular.js';
+import { TextSparkleRegularDuotone } from './TextSparkleRegularDuotone.js';
+import { TextSparkleBold } from './TextSparkleBold.js';
+import { TextSparkleBoldDuotone } from './TextSparkleBoldDuotone.js';
+import { TextSparkleFill } from './TextSparkleFill.js';
+import { TextSparkleFillDuotone } from './TextSparkleFillDuotone.js';
 
 export interface TextSparkleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

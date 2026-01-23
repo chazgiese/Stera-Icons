@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EyeOffRegular } from './EyeOffRegular';
-import { EyeOffRegularDuotone } from './EyeOffRegularDuotone';
-import { EyeOffBold } from './EyeOffBold';
-import { EyeOffBoldDuotone } from './EyeOffBoldDuotone';
-import { EyeOffFill } from './EyeOffFill';
-import { EyeOffFillDuotone } from './EyeOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { EyeOffRegular } from './EyeOffRegular.js';
+import { EyeOffRegularDuotone } from './EyeOffRegularDuotone.js';
+import { EyeOffBold } from './EyeOffBold.js';
+import { EyeOffBoldDuotone } from './EyeOffBoldDuotone.js';
+import { EyeOffFill } from './EyeOffFill.js';
+import { EyeOffFillDuotone } from './EyeOffFillDuotone.js';
 
 export interface EyeOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertDiamondRegular } from './AlertDiamondRegular';
-import { AlertDiamondRegularDuotone } from './AlertDiamondRegularDuotone';
-import { AlertDiamondBold } from './AlertDiamondBold';
-import { AlertDiamondBoldDuotone } from './AlertDiamondBoldDuotone';
-import { AlertDiamondFill } from './AlertDiamondFill';
-import { AlertDiamondFillDuotone } from './AlertDiamondFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertDiamondRegular } from './AlertDiamondRegular.js';
+import { AlertDiamondRegularDuotone } from './AlertDiamondRegularDuotone.js';
+import { AlertDiamondBold } from './AlertDiamondBold.js';
+import { AlertDiamondBoldDuotone } from './AlertDiamondBoldDuotone.js';
+import { AlertDiamondFill } from './AlertDiamondFill.js';
+import { AlertDiamondFillDuotone } from './AlertDiamondFillDuotone.js';
 
 export interface AlertDiamondProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

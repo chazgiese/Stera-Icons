@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BluetoothRegular } from './BluetoothRegular';
-import { BluetoothRegularDuotone } from './BluetoothRegularDuotone';
-import { BluetoothBold } from './BluetoothBold';
-import { BluetoothBoldDuotone } from './BluetoothBoldDuotone';
-import { BluetoothFill } from './BluetoothFill';
-import { BluetoothFillDuotone } from './BluetoothFillDuotone';
+import type { IconProps } from '../types.js';
+import { BluetoothRegular } from './BluetoothRegular.js';
+import { BluetoothRegularDuotone } from './BluetoothRegularDuotone.js';
+import { BluetoothBold } from './BluetoothBold.js';
+import { BluetoothBoldDuotone } from './BluetoothBoldDuotone.js';
+import { BluetoothFill } from './BluetoothFill.js';
+import { BluetoothFillDuotone } from './BluetoothFillDuotone.js';
 
 export interface BluetoothProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

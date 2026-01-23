@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SortNarrowRegular } from './SortNarrowRegular';
-import { SortNarrowRegularDuotone } from './SortNarrowRegularDuotone';
-import { SortNarrowBold } from './SortNarrowBold';
-import { SortNarrowBoldDuotone } from './SortNarrowBoldDuotone';
-import { SortNarrowFill } from './SortNarrowFill';
-import { SortNarrowFillDuotone } from './SortNarrowFillDuotone';
+import type { IconProps } from '../types.js';
+import { SortNarrowRegular } from './SortNarrowRegular.js';
+import { SortNarrowRegularDuotone } from './SortNarrowRegularDuotone.js';
+import { SortNarrowBold } from './SortNarrowBold.js';
+import { SortNarrowBoldDuotone } from './SortNarrowBoldDuotone.js';
+import { SortNarrowFill } from './SortNarrowFill.js';
+import { SortNarrowFillDuotone } from './SortNarrowFillDuotone.js';
 
 export interface SortNarrowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

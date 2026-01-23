@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TvRegular } from './TvRegular';
-import { TvRegularDuotone } from './TvRegularDuotone';
-import { TvBold } from './TvBold';
-import { TvBoldDuotone } from './TvBoldDuotone';
-import { TvFill } from './TvFill';
-import { TvFillDuotone } from './TvFillDuotone';
+import type { IconProps } from '../types.js';
+import { TvRegular } from './TvRegular.js';
+import { TvRegularDuotone } from './TvRegularDuotone.js';
+import { TvBold } from './TvBold.js';
+import { TvBoldDuotone } from './TvBoldDuotone.js';
+import { TvFill } from './TvFill.js';
+import { TvFillDuotone } from './TvFillDuotone.js';
 
 export interface TvProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

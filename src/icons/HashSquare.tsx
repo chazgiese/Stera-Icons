@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HashSquareRegular } from './HashSquareRegular';
-import { HashSquareRegularDuotone } from './HashSquareRegularDuotone';
-import { HashSquareBold } from './HashSquareBold';
-import { HashSquareBoldDuotone } from './HashSquareBoldDuotone';
-import { HashSquareFill } from './HashSquareFill';
-import { HashSquareFillDuotone } from './HashSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { HashSquareRegular } from './HashSquareRegular.js';
+import { HashSquareRegularDuotone } from './HashSquareRegularDuotone.js';
+import { HashSquareBold } from './HashSquareBold.js';
+import { HashSquareBoldDuotone } from './HashSquareBoldDuotone.js';
+import { HashSquareFill } from './HashSquareFill.js';
+import { HashSquareFillDuotone } from './HashSquareFillDuotone.js';
 
 export interface HashSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

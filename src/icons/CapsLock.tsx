@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CapsLockRegular } from './CapsLockRegular';
-import { CapsLockRegularDuotone } from './CapsLockRegularDuotone';
-import { CapsLockBold } from './CapsLockBold';
-import { CapsLockBoldDuotone } from './CapsLockBoldDuotone';
-import { CapsLockFill } from './CapsLockFill';
-import { CapsLockFillDuotone } from './CapsLockFillDuotone';
+import type { IconProps } from '../types.js';
+import { CapsLockRegular } from './CapsLockRegular.js';
+import { CapsLockRegularDuotone } from './CapsLockRegularDuotone.js';
+import { CapsLockBold } from './CapsLockBold.js';
+import { CapsLockBoldDuotone } from './CapsLockBoldDuotone.js';
+import { CapsLockFill } from './CapsLockFill.js';
+import { CapsLockFillDuotone } from './CapsLockFillDuotone.js';
 
 export interface CapsLockProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

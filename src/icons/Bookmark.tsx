@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BookmarkRegular } from './BookmarkRegular';
-import { BookmarkRegularDuotone } from './BookmarkRegularDuotone';
-import { BookmarkBold } from './BookmarkBold';
-import { BookmarkBoldDuotone } from './BookmarkBoldDuotone';
-import { BookmarkFill } from './BookmarkFill';
-import { BookmarkFillDuotone } from './BookmarkFillDuotone';
+import type { IconProps } from '../types.js';
+import { BookmarkRegular } from './BookmarkRegular.js';
+import { BookmarkRegularDuotone } from './BookmarkRegularDuotone.js';
+import { BookmarkBold } from './BookmarkBold.js';
+import { BookmarkBoldDuotone } from './BookmarkBoldDuotone.js';
+import { BookmarkFill } from './BookmarkFill.js';
+import { BookmarkFillDuotone } from './BookmarkFillDuotone.js';
 
 export interface BookmarkProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

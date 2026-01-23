@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowDiagramRegular } from './FlowDiagramRegular';
-import { FlowDiagramRegularDuotone } from './FlowDiagramRegularDuotone';
-import { FlowDiagramBold } from './FlowDiagramBold';
-import { FlowDiagramBoldDuotone } from './FlowDiagramBoldDuotone';
-import { FlowDiagramFill } from './FlowDiagramFill';
-import { FlowDiagramFillDuotone } from './FlowDiagramFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowDiagramRegular } from './FlowDiagramRegular.js';
+import { FlowDiagramRegularDuotone } from './FlowDiagramRegularDuotone.js';
+import { FlowDiagramBold } from './FlowDiagramBold.js';
+import { FlowDiagramBoldDuotone } from './FlowDiagramBoldDuotone.js';
+import { FlowDiagramFill } from './FlowDiagramFill.js';
+import { FlowDiagramFillDuotone } from './FlowDiagramFillDuotone.js';
 
 export interface FlowDiagramProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

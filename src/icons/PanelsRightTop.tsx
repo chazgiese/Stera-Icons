@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PanelsRightTopRegular } from './PanelsRightTopRegular';
-import { PanelsRightTopRegularDuotone } from './PanelsRightTopRegularDuotone';
-import { PanelsRightTopBold } from './PanelsRightTopBold';
-import { PanelsRightTopBoldDuotone } from './PanelsRightTopBoldDuotone';
-import { PanelsRightTopFill } from './PanelsRightTopFill';
-import { PanelsRightTopFillDuotone } from './PanelsRightTopFillDuotone';
+import type { IconProps } from '../types.js';
+import { PanelsRightTopRegular } from './PanelsRightTopRegular.js';
+import { PanelsRightTopRegularDuotone } from './PanelsRightTopRegularDuotone.js';
+import { PanelsRightTopBold } from './PanelsRightTopBold.js';
+import { PanelsRightTopBoldDuotone } from './PanelsRightTopBoldDuotone.js';
+import { PanelsRightTopFill } from './PanelsRightTopFill.js';
+import { PanelsRightTopFillDuotone } from './PanelsRightTopFillDuotone.js';
 
 export interface PanelsRightTopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

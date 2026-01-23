@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ToggleOffRegular } from './ToggleOffRegular';
-import { ToggleOffRegularDuotone } from './ToggleOffRegularDuotone';
-import { ToggleOffBold } from './ToggleOffBold';
-import { ToggleOffBoldDuotone } from './ToggleOffBoldDuotone';
-import { ToggleOffFill } from './ToggleOffFill';
-import { ToggleOffFillDuotone } from './ToggleOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { ToggleOffRegular } from './ToggleOffRegular.js';
+import { ToggleOffRegularDuotone } from './ToggleOffRegularDuotone.js';
+import { ToggleOffBold } from './ToggleOffBold.js';
+import { ToggleOffBoldDuotone } from './ToggleOffBoldDuotone.js';
+import { ToggleOffFill } from './ToggleOffFill.js';
+import { ToggleOffFillDuotone } from './ToggleOffFillDuotone.js';
 
 export interface ToggleOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

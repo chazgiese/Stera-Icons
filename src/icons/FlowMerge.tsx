@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowMergeRegular } from './FlowMergeRegular';
-import { FlowMergeRegularDuotone } from './FlowMergeRegularDuotone';
-import { FlowMergeBold } from './FlowMergeBold';
-import { FlowMergeBoldDuotone } from './FlowMergeBoldDuotone';
-import { FlowMergeFill } from './FlowMergeFill';
-import { FlowMergeFillDuotone } from './FlowMergeFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowMergeRegular } from './FlowMergeRegular.js';
+import { FlowMergeRegularDuotone } from './FlowMergeRegularDuotone.js';
+import { FlowMergeBold } from './FlowMergeBold.js';
+import { FlowMergeBoldDuotone } from './FlowMergeBoldDuotone.js';
+import { FlowMergeFill } from './FlowMergeFill.js';
+import { FlowMergeFillDuotone } from './FlowMergeFillDuotone.js';
 
 export interface FlowMergeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

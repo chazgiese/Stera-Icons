@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BriefcaseRegular } from './BriefcaseRegular';
-import { BriefcaseRegularDuotone } from './BriefcaseRegularDuotone';
-import { BriefcaseBold } from './BriefcaseBold';
-import { BriefcaseBoldDuotone } from './BriefcaseBoldDuotone';
-import { BriefcaseFill } from './BriefcaseFill';
-import { BriefcaseFillDuotone } from './BriefcaseFillDuotone';
+import type { IconProps } from '../types.js';
+import { BriefcaseRegular } from './BriefcaseRegular.js';
+import { BriefcaseRegularDuotone } from './BriefcaseRegularDuotone.js';
+import { BriefcaseBold } from './BriefcaseBold.js';
+import { BriefcaseBoldDuotone } from './BriefcaseBoldDuotone.js';
+import { BriefcaseFill } from './BriefcaseFill.js';
+import { BriefcaseFillDuotone } from './BriefcaseFillDuotone.js';
 
 export interface BriefcaseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

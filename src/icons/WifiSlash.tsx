@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WifiSlashRegular } from './WifiSlashRegular';
-import { WifiSlashRegularDuotone } from './WifiSlashRegularDuotone';
-import { WifiSlashBold } from './WifiSlashBold';
-import { WifiSlashBoldDuotone } from './WifiSlashBoldDuotone';
-import { WifiSlashFill } from './WifiSlashFill';
-import { WifiSlashFillDuotone } from './WifiSlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { WifiSlashRegular } from './WifiSlashRegular.js';
+import { WifiSlashRegularDuotone } from './WifiSlashRegularDuotone.js';
+import { WifiSlashBold } from './WifiSlashBold.js';
+import { WifiSlashBoldDuotone } from './WifiSlashBoldDuotone.js';
+import { WifiSlashFill } from './WifiSlashFill.js';
+import { WifiSlashFillDuotone } from './WifiSlashFillDuotone.js';
 
 export interface WifiSlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

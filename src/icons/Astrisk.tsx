@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AstriskRegular } from './AstriskRegular';
-import { AstriskRegularDuotone } from './AstriskRegularDuotone';
-import { AstriskBold } from './AstriskBold';
-import { AstriskBoldDuotone } from './AstriskBoldDuotone';
-import { AstriskFill } from './AstriskFill';
-import { AstriskFillDuotone } from './AstriskFillDuotone';
+import type { IconProps } from '../types.js';
+import { AstriskRegular } from './AstriskRegular.js';
+import { AstriskRegularDuotone } from './AstriskRegularDuotone.js';
+import { AstriskBold } from './AstriskBold.js';
+import { AstriskBoldDuotone } from './AstriskBoldDuotone.js';
+import { AstriskFill } from './AstriskFill.js';
+import { AstriskFillDuotone } from './AstriskFillDuotone.js';
 
 export interface AstriskProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

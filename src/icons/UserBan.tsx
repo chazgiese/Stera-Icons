@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UserBanRegular } from './UserBanRegular';
-import { UserBanRegularDuotone } from './UserBanRegularDuotone';
-import { UserBanBold } from './UserBanBold';
-import { UserBanBoldDuotone } from './UserBanBoldDuotone';
-import { UserBanFill } from './UserBanFill';
-import { UserBanFillDuotone } from './UserBanFillDuotone';
+import type { IconProps } from '../types.js';
+import { UserBanRegular } from './UserBanRegular.js';
+import { UserBanRegularDuotone } from './UserBanRegularDuotone.js';
+import { UserBanBold } from './UserBanBold.js';
+import { UserBanBoldDuotone } from './UserBanBoldDuotone.js';
+import { UserBanFill } from './UserBanFill.js';
+import { UserBanFillDuotone } from './UserBanFillDuotone.js';
 
 export interface UserBanProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

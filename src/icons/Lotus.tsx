@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LotusRegular } from './LotusRegular';
-import { LotusRegularDuotone } from './LotusRegularDuotone';
-import { LotusBold } from './LotusBold';
-import { LotusBoldDuotone } from './LotusBoldDuotone';
-import { LotusFill } from './LotusFill';
-import { LotusFillDuotone } from './LotusFillDuotone';
+import type { IconProps } from '../types.js';
+import { LotusRegular } from './LotusRegular.js';
+import { LotusRegularDuotone } from './LotusRegularDuotone.js';
+import { LotusBold } from './LotusBold.js';
+import { LotusBoldDuotone } from './LotusBoldDuotone.js';
+import { LotusFill } from './LotusFill.js';
+import { LotusFillDuotone } from './LotusFillDuotone.js';
 
 export interface LotusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

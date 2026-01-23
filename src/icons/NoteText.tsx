@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { NoteTextRegular } from './NoteTextRegular';
-import { NoteTextRegularDuotone } from './NoteTextRegularDuotone';
-import { NoteTextBold } from './NoteTextBold';
-import { NoteTextBoldDuotone } from './NoteTextBoldDuotone';
-import { NoteTextFill } from './NoteTextFill';
-import { NoteTextFillDuotone } from './NoteTextFillDuotone';
+import type { IconProps } from '../types.js';
+import { NoteTextRegular } from './NoteTextRegular.js';
+import { NoteTextRegularDuotone } from './NoteTextRegularDuotone.js';
+import { NoteTextBold } from './NoteTextBold.js';
+import { NoteTextBoldDuotone } from './NoteTextBoldDuotone.js';
+import { NoteTextFill } from './NoteTextFill.js';
+import { NoteTextFillDuotone } from './NoteTextFillDuotone.js';
 
 export interface NoteTextProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

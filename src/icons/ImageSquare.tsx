@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ImageSquareRegular } from './ImageSquareRegular';
-import { ImageSquareRegularDuotone } from './ImageSquareRegularDuotone';
-import { ImageSquareBold } from './ImageSquareBold';
-import { ImageSquareBoldDuotone } from './ImageSquareBoldDuotone';
-import { ImageSquareFill } from './ImageSquareFill';
-import { ImageSquareFillDuotone } from './ImageSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { ImageSquareRegular } from './ImageSquareRegular.js';
+import { ImageSquareRegularDuotone } from './ImageSquareRegularDuotone.js';
+import { ImageSquareBold } from './ImageSquareBold.js';
+import { ImageSquareBoldDuotone } from './ImageSquareBoldDuotone.js';
+import { ImageSquareFill } from './ImageSquareFill.js';
+import { ImageSquareFillDuotone } from './ImageSquareFillDuotone.js';
 
 export interface ImageSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

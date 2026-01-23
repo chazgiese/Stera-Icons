@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BookClosedRegular } from './BookClosedRegular';
-import { BookClosedRegularDuotone } from './BookClosedRegularDuotone';
-import { BookClosedBold } from './BookClosedBold';
-import { BookClosedBoldDuotone } from './BookClosedBoldDuotone';
-import { BookClosedFill } from './BookClosedFill';
-import { BookClosedFillDuotone } from './BookClosedFillDuotone';
+import type { IconProps } from '../types.js';
+import { BookClosedRegular } from './BookClosedRegular.js';
+import { BookClosedRegularDuotone } from './BookClosedRegularDuotone.js';
+import { BookClosedBold } from './BookClosedBold.js';
+import { BookClosedBoldDuotone } from './BookClosedBoldDuotone.js';
+import { BookClosedFill } from './BookClosedFill.js';
+import { BookClosedFillDuotone } from './BookClosedFillDuotone.js';
 
 export interface BookClosedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

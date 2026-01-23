@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlaylistRegular } from './PlaylistRegular';
-import { PlaylistRegularDuotone } from './PlaylistRegularDuotone';
-import { PlaylistBold } from './PlaylistBold';
-import { PlaylistBoldDuotone } from './PlaylistBoldDuotone';
-import { PlaylistFill } from './PlaylistFill';
-import { PlaylistFillDuotone } from './PlaylistFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlaylistRegular } from './PlaylistRegular.js';
+import { PlaylistRegularDuotone } from './PlaylistRegularDuotone.js';
+import { PlaylistBold } from './PlaylistBold.js';
+import { PlaylistBoldDuotone } from './PlaylistBoldDuotone.js';
+import { PlaylistFill } from './PlaylistFill.js';
+import { PlaylistFillDuotone } from './PlaylistFillDuotone.js';
 
 export interface PlaylistProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

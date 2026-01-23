@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MusicRegular } from './MusicRegular';
-import { MusicRegularDuotone } from './MusicRegularDuotone';
-import { MusicBold } from './MusicBold';
-import { MusicBoldDuotone } from './MusicBoldDuotone';
-import { MusicFill } from './MusicFill';
-import { MusicFillDuotone } from './MusicFillDuotone';
+import type { IconProps } from '../types.js';
+import { MusicRegular } from './MusicRegular.js';
+import { MusicRegularDuotone } from './MusicRegularDuotone.js';
+import { MusicBold } from './MusicBold.js';
+import { MusicBoldDuotone } from './MusicBoldDuotone.js';
+import { MusicFill } from './MusicFill.js';
+import { MusicFillDuotone } from './MusicFillDuotone.js';
 
 export interface MusicProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

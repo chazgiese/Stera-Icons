@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FolderOpenRegular } from './FolderOpenRegular';
-import { FolderOpenRegularDuotone } from './FolderOpenRegularDuotone';
-import { FolderOpenBold } from './FolderOpenBold';
-import { FolderOpenBoldDuotone } from './FolderOpenBoldDuotone';
-import { FolderOpenFill } from './FolderOpenFill';
-import { FolderOpenFillDuotone } from './FolderOpenFillDuotone';
+import type { IconProps } from '../types.js';
+import { FolderOpenRegular } from './FolderOpenRegular.js';
+import { FolderOpenRegularDuotone } from './FolderOpenRegularDuotone.js';
+import { FolderOpenBold } from './FolderOpenBold.js';
+import { FolderOpenBoldDuotone } from './FolderOpenBoldDuotone.js';
+import { FolderOpenFill } from './FolderOpenFill.js';
+import { FolderOpenFillDuotone } from './FolderOpenFillDuotone.js';
 
 export interface FolderOpenProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

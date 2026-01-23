@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CalendarMinusRegular } from './CalendarMinusRegular';
-import { CalendarMinusRegularDuotone } from './CalendarMinusRegularDuotone';
-import { CalendarMinusBold } from './CalendarMinusBold';
-import { CalendarMinusBoldDuotone } from './CalendarMinusBoldDuotone';
-import { CalendarMinusFill } from './CalendarMinusFill';
-import { CalendarMinusFillDuotone } from './CalendarMinusFillDuotone';
+import type { IconProps } from '../types.js';
+import { CalendarMinusRegular } from './CalendarMinusRegular.js';
+import { CalendarMinusRegularDuotone } from './CalendarMinusRegularDuotone.js';
+import { CalendarMinusBold } from './CalendarMinusBold.js';
+import { CalendarMinusBoldDuotone } from './CalendarMinusBoldDuotone.js';
+import { CalendarMinusFill } from './CalendarMinusFill.js';
+import { CalendarMinusFillDuotone } from './CalendarMinusFillDuotone.js';
 
 export interface CalendarMinusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

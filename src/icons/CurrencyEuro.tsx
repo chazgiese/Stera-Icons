@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CurrencyEuroRegular } from './CurrencyEuroRegular';
-import { CurrencyEuroRegularDuotone } from './CurrencyEuroRegularDuotone';
-import { CurrencyEuroBold } from './CurrencyEuroBold';
-import { CurrencyEuroBoldDuotone } from './CurrencyEuroBoldDuotone';
-import { CurrencyEuroFill } from './CurrencyEuroFill';
-import { CurrencyEuroFillDuotone } from './CurrencyEuroFillDuotone';
+import type { IconProps } from '../types.js';
+import { CurrencyEuroRegular } from './CurrencyEuroRegular.js';
+import { CurrencyEuroRegularDuotone } from './CurrencyEuroRegularDuotone.js';
+import { CurrencyEuroBold } from './CurrencyEuroBold.js';
+import { CurrencyEuroBoldDuotone } from './CurrencyEuroBoldDuotone.js';
+import { CurrencyEuroFill } from './CurrencyEuroFill.js';
+import { CurrencyEuroFillDuotone } from './CurrencyEuroFillDuotone.js';
 
 export interface CurrencyEuroProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

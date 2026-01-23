@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LineWeightRegular } from './LineWeightRegular';
-import { LineWeightRegularDuotone } from './LineWeightRegularDuotone';
-import { LineWeightBold } from './LineWeightBold';
-import { LineWeightBoldDuotone } from './LineWeightBoldDuotone';
-import { LineWeightFill } from './LineWeightFill';
-import { LineWeightFillDuotone } from './LineWeightFillDuotone';
+import type { IconProps } from '../types.js';
+import { LineWeightRegular } from './LineWeightRegular.js';
+import { LineWeightRegularDuotone } from './LineWeightRegularDuotone.js';
+import { LineWeightBold } from './LineWeightBold.js';
+import { LineWeightBoldDuotone } from './LineWeightBoldDuotone.js';
+import { LineWeightFill } from './LineWeightFill.js';
+import { LineWeightFillDuotone } from './LineWeightFillDuotone.js';
 
 export interface LineWeightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

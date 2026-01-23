@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ImagePanoramaRegular } from './ImagePanoramaRegular';
-import { ImagePanoramaRegularDuotone } from './ImagePanoramaRegularDuotone';
-import { ImagePanoramaBold } from './ImagePanoramaBold';
-import { ImagePanoramaBoldDuotone } from './ImagePanoramaBoldDuotone';
-import { ImagePanoramaFill } from './ImagePanoramaFill';
-import { ImagePanoramaFillDuotone } from './ImagePanoramaFillDuotone';
+import type { IconProps } from '../types.js';
+import { ImagePanoramaRegular } from './ImagePanoramaRegular.js';
+import { ImagePanoramaRegularDuotone } from './ImagePanoramaRegularDuotone.js';
+import { ImagePanoramaBold } from './ImagePanoramaBold.js';
+import { ImagePanoramaBoldDuotone } from './ImagePanoramaBoldDuotone.js';
+import { ImagePanoramaFill } from './ImagePanoramaFill.js';
+import { ImagePanoramaFillDuotone } from './ImagePanoramaFillDuotone.js';
 
 export interface ImagePanoramaProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TallyMarksRegular } from './TallyMarksRegular';
-import { TallyMarksRegularDuotone } from './TallyMarksRegularDuotone';
-import { TallyMarksBold } from './TallyMarksBold';
-import { TallyMarksBoldDuotone } from './TallyMarksBoldDuotone';
-import { TallyMarksFill } from './TallyMarksFill';
-import { TallyMarksFillDuotone } from './TallyMarksFillDuotone';
+import type { IconProps } from '../types.js';
+import { TallyMarksRegular } from './TallyMarksRegular.js';
+import { TallyMarksRegularDuotone } from './TallyMarksRegularDuotone.js';
+import { TallyMarksBold } from './TallyMarksBold.js';
+import { TallyMarksBoldDuotone } from './TallyMarksBoldDuotone.js';
+import { TallyMarksFill } from './TallyMarksFill.js';
+import { TallyMarksFillDuotone } from './TallyMarksFillDuotone.js';
 
 export interface TallyMarksProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

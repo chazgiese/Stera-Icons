@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MacWindowRegular } from './MacWindowRegular';
-import { MacWindowRegularDuotone } from './MacWindowRegularDuotone';
-import { MacWindowBold } from './MacWindowBold';
-import { MacWindowBoldDuotone } from './MacWindowBoldDuotone';
-import { MacWindowFill } from './MacWindowFill';
-import { MacWindowFillDuotone } from './MacWindowFillDuotone';
+import type { IconProps } from '../types.js';
+import { MacWindowRegular } from './MacWindowRegular.js';
+import { MacWindowRegularDuotone } from './MacWindowRegularDuotone.js';
+import { MacWindowBold } from './MacWindowBold.js';
+import { MacWindowBoldDuotone } from './MacWindowBoldDuotone.js';
+import { MacWindowFill } from './MacWindowFill.js';
+import { MacWindowFillDuotone } from './MacWindowFillDuotone.js';
 
 export interface MacWindowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

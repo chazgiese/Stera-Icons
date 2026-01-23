@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EditSquareRegular } from './EditSquareRegular';
-import { EditSquareRegularDuotone } from './EditSquareRegularDuotone';
-import { EditSquareBold } from './EditSquareBold';
-import { EditSquareBoldDuotone } from './EditSquareBoldDuotone';
-import { EditSquareFill } from './EditSquareFill';
-import { EditSquareFillDuotone } from './EditSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { EditSquareRegular } from './EditSquareRegular.js';
+import { EditSquareRegularDuotone } from './EditSquareRegularDuotone.js';
+import { EditSquareBold } from './EditSquareBold.js';
+import { EditSquareBoldDuotone } from './EditSquareBoldDuotone.js';
+import { EditSquareFill } from './EditSquareFill.js';
+import { EditSquareFillDuotone } from './EditSquareFillDuotone.js';
 
 export interface EditSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

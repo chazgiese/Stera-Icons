@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WristWatchRegular } from './WristWatchRegular';
-import { WristWatchRegularDuotone } from './WristWatchRegularDuotone';
-import { WristWatchBold } from './WristWatchBold';
-import { WristWatchBoldDuotone } from './WristWatchBoldDuotone';
-import { WristWatchFill } from './WristWatchFill';
-import { WristWatchFillDuotone } from './WristWatchFillDuotone';
+import type { IconProps } from '../types.js';
+import { WristWatchRegular } from './WristWatchRegular.js';
+import { WristWatchRegularDuotone } from './WristWatchRegularDuotone.js';
+import { WristWatchBold } from './WristWatchBold.js';
+import { WristWatchBoldDuotone } from './WristWatchBoldDuotone.js';
+import { WristWatchFill } from './WristWatchFill.js';
+import { WristWatchFillDuotone } from './WristWatchFillDuotone.js';
 
 export interface WristWatchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

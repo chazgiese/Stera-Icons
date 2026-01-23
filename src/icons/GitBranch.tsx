@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitBranchRegular } from './GitBranchRegular';
-import { GitBranchRegularDuotone } from './GitBranchRegularDuotone';
-import { GitBranchBold } from './GitBranchBold';
-import { GitBranchBoldDuotone } from './GitBranchBoldDuotone';
-import { GitBranchFill } from './GitBranchFill';
-import { GitBranchFillDuotone } from './GitBranchFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitBranchRegular } from './GitBranchRegular.js';
+import { GitBranchRegularDuotone } from './GitBranchRegularDuotone.js';
+import { GitBranchBold } from './GitBranchBold.js';
+import { GitBranchBoldDuotone } from './GitBranchBoldDuotone.js';
+import { GitBranchFill } from './GitBranchFill.js';
+import { GitBranchFillDuotone } from './GitBranchFillDuotone.js';
 
 export interface GitBranchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { KeyRegular } from './KeyRegular';
-import { KeyRegularDuotone } from './KeyRegularDuotone';
-import { KeyBold } from './KeyBold';
-import { KeyBoldDuotone } from './KeyBoldDuotone';
-import { KeyFill } from './KeyFill';
-import { KeyFillDuotone } from './KeyFillDuotone';
+import type { IconProps } from '../types.js';
+import { KeyRegular } from './KeyRegular.js';
+import { KeyRegularDuotone } from './KeyRegularDuotone.js';
+import { KeyBold } from './KeyBold.js';
+import { KeyBoldDuotone } from './KeyBoldDuotone.js';
+import { KeyFill } from './KeyFill.js';
+import { KeyFillDuotone } from './KeyFillDuotone.js';
 
 export interface KeyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

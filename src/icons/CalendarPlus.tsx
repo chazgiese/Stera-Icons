@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CalendarPlusRegular } from './CalendarPlusRegular';
-import { CalendarPlusRegularDuotone } from './CalendarPlusRegularDuotone';
-import { CalendarPlusBold } from './CalendarPlusBold';
-import { CalendarPlusBoldDuotone } from './CalendarPlusBoldDuotone';
-import { CalendarPlusFill } from './CalendarPlusFill';
-import { CalendarPlusFillDuotone } from './CalendarPlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { CalendarPlusRegular } from './CalendarPlusRegular.js';
+import { CalendarPlusRegularDuotone } from './CalendarPlusRegularDuotone.js';
+import { CalendarPlusBold } from './CalendarPlusBold.js';
+import { CalendarPlusBoldDuotone } from './CalendarPlusBoldDuotone.js';
+import { CalendarPlusFill } from './CalendarPlusFill.js';
+import { CalendarPlusFillDuotone } from './CalendarPlusFillDuotone.js';
 
 export interface CalendarPlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

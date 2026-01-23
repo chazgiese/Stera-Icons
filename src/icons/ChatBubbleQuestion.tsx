@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBubbleQuestionRegular } from './ChatBubbleQuestionRegular';
-import { ChatBubbleQuestionRegularDuotone } from './ChatBubbleQuestionRegularDuotone';
-import { ChatBubbleQuestionBold } from './ChatBubbleQuestionBold';
-import { ChatBubbleQuestionBoldDuotone } from './ChatBubbleQuestionBoldDuotone';
-import { ChatBubbleQuestionFill } from './ChatBubbleQuestionFill';
-import { ChatBubbleQuestionFillDuotone } from './ChatBubbleQuestionFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBubbleQuestionRegular } from './ChatBubbleQuestionRegular.js';
+import { ChatBubbleQuestionRegularDuotone } from './ChatBubbleQuestionRegularDuotone.js';
+import { ChatBubbleQuestionBold } from './ChatBubbleQuestionBold.js';
+import { ChatBubbleQuestionBoldDuotone } from './ChatBubbleQuestionBoldDuotone.js';
+import { ChatBubbleQuestionFill } from './ChatBubbleQuestionFill.js';
+import { ChatBubbleQuestionFillDuotone } from './ChatBubbleQuestionFillDuotone.js';
 
 export interface ChatBubbleQuestionProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitPullRequestClosedRegular } from './GitPullRequestClosedRegular';
-import { GitPullRequestClosedRegularDuotone } from './GitPullRequestClosedRegularDuotone';
-import { GitPullRequestClosedBold } from './GitPullRequestClosedBold';
-import { GitPullRequestClosedBoldDuotone } from './GitPullRequestClosedBoldDuotone';
-import { GitPullRequestClosedFill } from './GitPullRequestClosedFill';
-import { GitPullRequestClosedFillDuotone } from './GitPullRequestClosedFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitPullRequestClosedRegular } from './GitPullRequestClosedRegular.js';
+import { GitPullRequestClosedRegularDuotone } from './GitPullRequestClosedRegularDuotone.js';
+import { GitPullRequestClosedBold } from './GitPullRequestClosedBold.js';
+import { GitPullRequestClosedBoldDuotone } from './GitPullRequestClosedBoldDuotone.js';
+import { GitPullRequestClosedFill } from './GitPullRequestClosedFill.js';
+import { GitPullRequestClosedFillDuotone } from './GitPullRequestClosedFillDuotone.js';
 
 export interface GitPullRequestClosedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

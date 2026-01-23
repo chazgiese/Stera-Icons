@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ImagePileRegular } from './ImagePileRegular';
-import { ImagePileRegularDuotone } from './ImagePileRegularDuotone';
-import { ImagePileBold } from './ImagePileBold';
-import { ImagePileBoldDuotone } from './ImagePileBoldDuotone';
-import { ImagePileFill } from './ImagePileFill';
-import { ImagePileFillDuotone } from './ImagePileFillDuotone';
+import type { IconProps } from '../types.js';
+import { ImagePileRegular } from './ImagePileRegular.js';
+import { ImagePileRegularDuotone } from './ImagePileRegularDuotone.js';
+import { ImagePileBold } from './ImagePileBold.js';
+import { ImagePileBoldDuotone } from './ImagePileBoldDuotone.js';
+import { ImagePileFill } from './ImagePileFill.js';
+import { ImagePileFillDuotone } from './ImagePileFillDuotone.js';
 
 export interface ImagePileProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MicroscopeRegular } from './MicroscopeRegular';
-import { MicroscopeRegularDuotone } from './MicroscopeRegularDuotone';
-import { MicroscopeBold } from './MicroscopeBold';
-import { MicroscopeBoldDuotone } from './MicroscopeBoldDuotone';
-import { MicroscopeFill } from './MicroscopeFill';
-import { MicroscopeFillDuotone } from './MicroscopeFillDuotone';
+import type { IconProps } from '../types.js';
+import { MicroscopeRegular } from './MicroscopeRegular.js';
+import { MicroscopeRegularDuotone } from './MicroscopeRegularDuotone.js';
+import { MicroscopeBold } from './MicroscopeBold.js';
+import { MicroscopeBoldDuotone } from './MicroscopeBoldDuotone.js';
+import { MicroscopeFill } from './MicroscopeFill.js';
+import { MicroscopeFillDuotone } from './MicroscopeFillDuotone.js';
 
 export interface MicroscopeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

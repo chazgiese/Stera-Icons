@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlignVerticalCenterRegular } from './AlignVerticalCenterRegular';
-import { AlignVerticalCenterRegularDuotone } from './AlignVerticalCenterRegularDuotone';
-import { AlignVerticalCenterBold } from './AlignVerticalCenterBold';
-import { AlignVerticalCenterBoldDuotone } from './AlignVerticalCenterBoldDuotone';
-import { AlignVerticalCenterFill } from './AlignVerticalCenterFill';
-import { AlignVerticalCenterFillDuotone } from './AlignVerticalCenterFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlignVerticalCenterRegular } from './AlignVerticalCenterRegular.js';
+import { AlignVerticalCenterRegularDuotone } from './AlignVerticalCenterRegularDuotone.js';
+import { AlignVerticalCenterBold } from './AlignVerticalCenterBold.js';
+import { AlignVerticalCenterBoldDuotone } from './AlignVerticalCenterBoldDuotone.js';
+import { AlignVerticalCenterFill } from './AlignVerticalCenterFill.js';
+import { AlignVerticalCenterFillDuotone } from './AlignVerticalCenterFillDuotone.js';
 
 export interface AlignVerticalCenterProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

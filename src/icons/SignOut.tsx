@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SignOutRegular } from './SignOutRegular';
-import { SignOutRegularDuotone } from './SignOutRegularDuotone';
-import { SignOutBold } from './SignOutBold';
-import { SignOutBoldDuotone } from './SignOutBoldDuotone';
-import { SignOutFill } from './SignOutFill';
-import { SignOutFillDuotone } from './SignOutFillDuotone';
+import type { IconProps } from '../types.js';
+import { SignOutRegular } from './SignOutRegular.js';
+import { SignOutRegularDuotone } from './SignOutRegularDuotone.js';
+import { SignOutBold } from './SignOutBold.js';
+import { SignOutBoldDuotone } from './SignOutBoldDuotone.js';
+import { SignOutFill } from './SignOutFill.js';
+import { SignOutFillDuotone } from './SignOutFillDuotone.js';
 
 export interface SignOutProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

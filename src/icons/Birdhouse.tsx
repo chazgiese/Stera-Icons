@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BirdhouseRegular } from './BirdhouseRegular';
-import { BirdhouseRegularDuotone } from './BirdhouseRegularDuotone';
-import { BirdhouseBold } from './BirdhouseBold';
-import { BirdhouseBoldDuotone } from './BirdhouseBoldDuotone';
-import { BirdhouseFill } from './BirdhouseFill';
-import { BirdhouseFillDuotone } from './BirdhouseFillDuotone';
+import type { IconProps } from '../types.js';
+import { BirdhouseRegular } from './BirdhouseRegular.js';
+import { BirdhouseRegularDuotone } from './BirdhouseRegularDuotone.js';
+import { BirdhouseBold } from './BirdhouseBold.js';
+import { BirdhouseBoldDuotone } from './BirdhouseBoldDuotone.js';
+import { BirdhouseFill } from './BirdhouseFill.js';
+import { BirdhouseFillDuotone } from './BirdhouseFillDuotone.js';
 
 export interface BirdhouseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

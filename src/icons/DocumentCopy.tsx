@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DocumentCopyRegular } from './DocumentCopyRegular';
-import { DocumentCopyRegularDuotone } from './DocumentCopyRegularDuotone';
-import { DocumentCopyBold } from './DocumentCopyBold';
-import { DocumentCopyBoldDuotone } from './DocumentCopyBoldDuotone';
-import { DocumentCopyFill } from './DocumentCopyFill';
-import { DocumentCopyFillDuotone } from './DocumentCopyFillDuotone';
+import type { IconProps } from '../types.js';
+import { DocumentCopyRegular } from './DocumentCopyRegular.js';
+import { DocumentCopyRegularDuotone } from './DocumentCopyRegularDuotone.js';
+import { DocumentCopyBold } from './DocumentCopyBold.js';
+import { DocumentCopyBoldDuotone } from './DocumentCopyBoldDuotone.js';
+import { DocumentCopyFill } from './DocumentCopyFill.js';
+import { DocumentCopyFillDuotone } from './DocumentCopyFillDuotone.js';
 
 export interface DocumentCopyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlaskRegular } from './FlaskRegular';
-import { FlaskRegularDuotone } from './FlaskRegularDuotone';
-import { FlaskBold } from './FlaskBold';
-import { FlaskBoldDuotone } from './FlaskBoldDuotone';
-import { FlaskFill } from './FlaskFill';
-import { FlaskFillDuotone } from './FlaskFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlaskRegular } from './FlaskRegular.js';
+import { FlaskRegularDuotone } from './FlaskRegularDuotone.js';
+import { FlaskBold } from './FlaskBold.js';
+import { FlaskBoldDuotone } from './FlaskBoldDuotone.js';
+import { FlaskFill } from './FlaskFill.js';
+import { FlaskFillDuotone } from './FlaskFillDuotone.js';
 
 export interface FlaskProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

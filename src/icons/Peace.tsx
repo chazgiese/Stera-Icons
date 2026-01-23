@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PeaceRegular } from './PeaceRegular';
-import { PeaceRegularDuotone } from './PeaceRegularDuotone';
-import { PeaceBold } from './PeaceBold';
-import { PeaceBoldDuotone } from './PeaceBoldDuotone';
-import { PeaceFill } from './PeaceFill';
-import { PeaceFillDuotone } from './PeaceFillDuotone';
+import type { IconProps } from '../types.js';
+import { PeaceRegular } from './PeaceRegular.js';
+import { PeaceRegularDuotone } from './PeaceRegularDuotone.js';
+import { PeaceBold } from './PeaceBold.js';
+import { PeaceBoldDuotone } from './PeaceBoldDuotone.js';
+import { PeaceFill } from './PeaceFill.js';
+import { PeaceFillDuotone } from './PeaceFillDuotone.js';
 
 export interface PeaceProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

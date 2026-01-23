@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MailPlusRegular } from './MailPlusRegular';
-import { MailPlusRegularDuotone } from './MailPlusRegularDuotone';
-import { MailPlusBold } from './MailPlusBold';
-import { MailPlusBoldDuotone } from './MailPlusBoldDuotone';
-import { MailPlusFill } from './MailPlusFill';
-import { MailPlusFillDuotone } from './MailPlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { MailPlusRegular } from './MailPlusRegular.js';
+import { MailPlusRegularDuotone } from './MailPlusRegularDuotone.js';
+import { MailPlusBold } from './MailPlusBold.js';
+import { MailPlusBoldDuotone } from './MailPlusBoldDuotone.js';
+import { MailPlusFill } from './MailPlusFill.js';
+import { MailPlusFillDuotone } from './MailPlusFillDuotone.js';
 
 export interface MailPlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

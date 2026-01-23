@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { InfoCircleRegular } from './InfoCircleRegular';
-import { InfoCircleRegularDuotone } from './InfoCircleRegularDuotone';
-import { InfoCircleBold } from './InfoCircleBold';
-import { InfoCircleBoldDuotone } from './InfoCircleBoldDuotone';
-import { InfoCircleFill } from './InfoCircleFill';
-import { InfoCircleFillDuotone } from './InfoCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { InfoCircleRegular } from './InfoCircleRegular.js';
+import { InfoCircleRegularDuotone } from './InfoCircleRegularDuotone.js';
+import { InfoCircleBold } from './InfoCircleBold.js';
+import { InfoCircleBoldDuotone } from './InfoCircleBoldDuotone.js';
+import { InfoCircleFill } from './InfoCircleFill.js';
+import { InfoCircleFillDuotone } from './InfoCircleFillDuotone.js';
 
 export interface InfoCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

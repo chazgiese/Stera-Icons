@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CodeCircleRegular } from './CodeCircleRegular';
-import { CodeCircleRegularDuotone } from './CodeCircleRegularDuotone';
-import { CodeCircleBold } from './CodeCircleBold';
-import { CodeCircleBoldDuotone } from './CodeCircleBoldDuotone';
-import { CodeCircleFill } from './CodeCircleFill';
-import { CodeCircleFillDuotone } from './CodeCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CodeCircleRegular } from './CodeCircleRegular.js';
+import { CodeCircleRegularDuotone } from './CodeCircleRegularDuotone.js';
+import { CodeCircleBold } from './CodeCircleBold.js';
+import { CodeCircleBoldDuotone } from './CodeCircleBoldDuotone.js';
+import { CodeCircleFill } from './CodeCircleFill.js';
+import { CodeCircleFillDuotone } from './CodeCircleFillDuotone.js';
 
 export interface CodeCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

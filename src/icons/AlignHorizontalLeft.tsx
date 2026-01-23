@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlignHorizontalLeftRegular } from './AlignHorizontalLeftRegular';
-import { AlignHorizontalLeftRegularDuotone } from './AlignHorizontalLeftRegularDuotone';
-import { AlignHorizontalLeftBold } from './AlignHorizontalLeftBold';
-import { AlignHorizontalLeftBoldDuotone } from './AlignHorizontalLeftBoldDuotone';
-import { AlignHorizontalLeftFill } from './AlignHorizontalLeftFill';
-import { AlignHorizontalLeftFillDuotone } from './AlignHorizontalLeftFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlignHorizontalLeftRegular } from './AlignHorizontalLeftRegular.js';
+import { AlignHorizontalLeftRegularDuotone } from './AlignHorizontalLeftRegularDuotone.js';
+import { AlignHorizontalLeftBold } from './AlignHorizontalLeftBold.js';
+import { AlignHorizontalLeftBoldDuotone } from './AlignHorizontalLeftBoldDuotone.js';
+import { AlignHorizontalLeftFill } from './AlignHorizontalLeftFill.js';
+import { AlignHorizontalLeftFillDuotone } from './AlignHorizontalLeftFillDuotone.js';
 
 export interface AlignHorizontalLeftProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

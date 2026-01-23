@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ForwardRegular } from './ForwardRegular';
-import { ForwardRegularDuotone } from './ForwardRegularDuotone';
-import { ForwardBold } from './ForwardBold';
-import { ForwardBoldDuotone } from './ForwardBoldDuotone';
-import { ForwardFill } from './ForwardFill';
-import { ForwardFillDuotone } from './ForwardFillDuotone';
+import type { IconProps } from '../types.js';
+import { ForwardRegular } from './ForwardRegular.js';
+import { ForwardRegularDuotone } from './ForwardRegularDuotone.js';
+import { ForwardBold } from './ForwardBold.js';
+import { ForwardBoldDuotone } from './ForwardBoldDuotone.js';
+import { ForwardFill } from './ForwardFill.js';
+import { ForwardFillDuotone } from './ForwardFillDuotone.js';
 
 export interface ForwardProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SwatchBookRegular } from './SwatchBookRegular';
-import { SwatchBookRegularDuotone } from './SwatchBookRegularDuotone';
-import { SwatchBookBold } from './SwatchBookBold';
-import { SwatchBookBoldDuotone } from './SwatchBookBoldDuotone';
-import { SwatchBookFill } from './SwatchBookFill';
-import { SwatchBookFillDuotone } from './SwatchBookFillDuotone';
+import type { IconProps } from '../types.js';
+import { SwatchBookRegular } from './SwatchBookRegular.js';
+import { SwatchBookRegularDuotone } from './SwatchBookRegularDuotone.js';
+import { SwatchBookBold } from './SwatchBookBold.js';
+import { SwatchBookBoldDuotone } from './SwatchBookBoldDuotone.js';
+import { SwatchBookFill } from './SwatchBookFill.js';
+import { SwatchBookFillDuotone } from './SwatchBookFillDuotone.js';
 
 export interface SwatchBookProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

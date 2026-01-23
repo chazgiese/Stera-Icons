@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlignVerticalBottomRegular } from './AlignVerticalBottomRegular';
-import { AlignVerticalBottomRegularDuotone } from './AlignVerticalBottomRegularDuotone';
-import { AlignVerticalBottomBold } from './AlignVerticalBottomBold';
-import { AlignVerticalBottomBoldDuotone } from './AlignVerticalBottomBoldDuotone';
-import { AlignVerticalBottomFill } from './AlignVerticalBottomFill';
-import { AlignVerticalBottomFillDuotone } from './AlignVerticalBottomFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlignVerticalBottomRegular } from './AlignVerticalBottomRegular.js';
+import { AlignVerticalBottomRegularDuotone } from './AlignVerticalBottomRegularDuotone.js';
+import { AlignVerticalBottomBold } from './AlignVerticalBottomBold.js';
+import { AlignVerticalBottomBoldDuotone } from './AlignVerticalBottomBoldDuotone.js';
+import { AlignVerticalBottomFill } from './AlignVerticalBottomFill.js';
+import { AlignVerticalBottomFillDuotone } from './AlignVerticalBottomFillDuotone.js';
 
 export interface AlignVerticalBottomProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

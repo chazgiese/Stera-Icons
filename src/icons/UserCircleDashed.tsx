@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UserCircleDashedRegular } from './UserCircleDashedRegular';
-import { UserCircleDashedRegularDuotone } from './UserCircleDashedRegularDuotone';
-import { UserCircleDashedBold } from './UserCircleDashedBold';
-import { UserCircleDashedBoldDuotone } from './UserCircleDashedBoldDuotone';
-import { UserCircleDashedFill } from './UserCircleDashedFill';
-import { UserCircleDashedFillDuotone } from './UserCircleDashedFillDuotone';
+import type { IconProps } from '../types.js';
+import { UserCircleDashedRegular } from './UserCircleDashedRegular.js';
+import { UserCircleDashedRegularDuotone } from './UserCircleDashedRegularDuotone.js';
+import { UserCircleDashedBold } from './UserCircleDashedBold.js';
+import { UserCircleDashedBoldDuotone } from './UserCircleDashedBoldDuotone.js';
+import { UserCircleDashedFill } from './UserCircleDashedFill.js';
+import { UserCircleDashedFillDuotone } from './UserCircleDashedFillDuotone.js';
 
 export interface UserCircleDashedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

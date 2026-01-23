@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CoinRegular } from './CoinRegular';
-import { CoinRegularDuotone } from './CoinRegularDuotone';
-import { CoinBold } from './CoinBold';
-import { CoinBoldDuotone } from './CoinBoldDuotone';
-import { CoinFill } from './CoinFill';
-import { CoinFillDuotone } from './CoinFillDuotone';
+import type { IconProps } from '../types.js';
+import { CoinRegular } from './CoinRegular.js';
+import { CoinRegularDuotone } from './CoinRegularDuotone.js';
+import { CoinBold } from './CoinBold.js';
+import { CoinBoldDuotone } from './CoinBoldDuotone.js';
+import { CoinFill } from './CoinFill.js';
+import { CoinFillDuotone } from './CoinFillDuotone.js';
 
 export interface CoinProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextAlignLeftRegular } from './TextAlignLeftRegular';
-import { TextAlignLeftRegularDuotone } from './TextAlignLeftRegularDuotone';
-import { TextAlignLeftBold } from './TextAlignLeftBold';
-import { TextAlignLeftBoldDuotone } from './TextAlignLeftBoldDuotone';
-import { TextAlignLeftFill } from './TextAlignLeftFill';
-import { TextAlignLeftFillDuotone } from './TextAlignLeftFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextAlignLeftRegular } from './TextAlignLeftRegular.js';
+import { TextAlignLeftRegularDuotone } from './TextAlignLeftRegularDuotone.js';
+import { TextAlignLeftBold } from './TextAlignLeftBold.js';
+import { TextAlignLeftBoldDuotone } from './TextAlignLeftBoldDuotone.js';
+import { TextAlignLeftFill } from './TextAlignLeftFill.js';
+import { TextAlignLeftFillDuotone } from './TextAlignLeftFillDuotone.js';
 
 export interface TextAlignLeftProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

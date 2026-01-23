@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ExclamationPointRegular } from './ExclamationPointRegular';
-import { ExclamationPointRegularDuotone } from './ExclamationPointRegularDuotone';
-import { ExclamationPointBold } from './ExclamationPointBold';
-import { ExclamationPointBoldDuotone } from './ExclamationPointBoldDuotone';
-import { ExclamationPointFill } from './ExclamationPointFill';
-import { ExclamationPointFillDuotone } from './ExclamationPointFillDuotone';
+import type { IconProps } from '../types.js';
+import { ExclamationPointRegular } from './ExclamationPointRegular.js';
+import { ExclamationPointRegularDuotone } from './ExclamationPointRegularDuotone.js';
+import { ExclamationPointBold } from './ExclamationPointBold.js';
+import { ExclamationPointBoldDuotone } from './ExclamationPointBoldDuotone.js';
+import { ExclamationPointFill } from './ExclamationPointFill.js';
+import { ExclamationPointFillDuotone } from './ExclamationPointFillDuotone.js';
 
 export interface ExclamationPointProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

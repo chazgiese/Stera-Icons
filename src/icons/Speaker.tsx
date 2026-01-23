@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SpeakerRegular } from './SpeakerRegular';
-import { SpeakerRegularDuotone } from './SpeakerRegularDuotone';
-import { SpeakerBold } from './SpeakerBold';
-import { SpeakerBoldDuotone } from './SpeakerBoldDuotone';
-import { SpeakerFill } from './SpeakerFill';
-import { SpeakerFillDuotone } from './SpeakerFillDuotone';
+import type { IconProps } from '../types.js';
+import { SpeakerRegular } from './SpeakerRegular.js';
+import { SpeakerRegularDuotone } from './SpeakerRegularDuotone.js';
+import { SpeakerBold } from './SpeakerBold.js';
+import { SpeakerBoldDuotone } from './SpeakerBoldDuotone.js';
+import { SpeakerFill } from './SpeakerFill.js';
+import { SpeakerFillDuotone } from './SpeakerFillDuotone.js';
 
 export interface SpeakerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

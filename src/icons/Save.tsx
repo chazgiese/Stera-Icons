@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SaveRegular } from './SaveRegular';
-import { SaveRegularDuotone } from './SaveRegularDuotone';
-import { SaveBold } from './SaveBold';
-import { SaveBoldDuotone } from './SaveBoldDuotone';
-import { SaveFill } from './SaveFill';
-import { SaveFillDuotone } from './SaveFillDuotone';
+import type { IconProps } from '../types.js';
+import { SaveRegular } from './SaveRegular.js';
+import { SaveRegularDuotone } from './SaveRegularDuotone.js';
+import { SaveBold } from './SaveBold.js';
+import { SaveBoldDuotone } from './SaveBoldDuotone.js';
+import { SaveFill } from './SaveFill.js';
+import { SaveFillDuotone } from './SaveFillDuotone.js';
 
 export interface SaveProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

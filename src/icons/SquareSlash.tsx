@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SquareSlashRegular } from './SquareSlashRegular';
-import { SquareSlashRegularDuotone } from './SquareSlashRegularDuotone';
-import { SquareSlashBold } from './SquareSlashBold';
-import { SquareSlashBoldDuotone } from './SquareSlashBoldDuotone';
-import { SquareSlashFill } from './SquareSlashFill';
-import { SquareSlashFillDuotone } from './SquareSlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { SquareSlashRegular } from './SquareSlashRegular.js';
+import { SquareSlashRegularDuotone } from './SquareSlashRegularDuotone.js';
+import { SquareSlashBold } from './SquareSlashBold.js';
+import { SquareSlashBoldDuotone } from './SquareSlashBoldDuotone.js';
+import { SquareSlashFill } from './SquareSlashFill.js';
+import { SquareSlashFillDuotone } from './SquareSlashFillDuotone.js';
 
 export interface SquareSlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

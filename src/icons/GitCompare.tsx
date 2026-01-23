@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitCompareRegular } from './GitCompareRegular';
-import { GitCompareRegularDuotone } from './GitCompareRegularDuotone';
-import { GitCompareBold } from './GitCompareBold';
-import { GitCompareBoldDuotone } from './GitCompareBoldDuotone';
-import { GitCompareFill } from './GitCompareFill';
-import { GitCompareFillDuotone } from './GitCompareFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitCompareRegular } from './GitCompareRegular.js';
+import { GitCompareRegularDuotone } from './GitCompareRegularDuotone.js';
+import { GitCompareBold } from './GitCompareBold.js';
+import { GitCompareBoldDuotone } from './GitCompareBoldDuotone.js';
+import { GitCompareFill } from './GitCompareFill.js';
+import { GitCompareFillDuotone } from './GitCompareFillDuotone.js';
 
 export interface GitCompareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

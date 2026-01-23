@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GaugeLines33PercentRegular } from './GaugeLines33PercentRegular';
-import { GaugeLines33PercentRegularDuotone } from './GaugeLines33PercentRegularDuotone';
-import { GaugeLines33PercentBold } from './GaugeLines33PercentBold';
-import { GaugeLines33PercentBoldDuotone } from './GaugeLines33PercentBoldDuotone';
-import { GaugeLines33PercentFill } from './GaugeLines33PercentFill';
-import { GaugeLines33PercentFillDuotone } from './GaugeLines33PercentFillDuotone';
+import type { IconProps } from '../types.js';
+import { GaugeLines33PercentRegular } from './GaugeLines33PercentRegular.js';
+import { GaugeLines33PercentRegularDuotone } from './GaugeLines33PercentRegularDuotone.js';
+import { GaugeLines33PercentBold } from './GaugeLines33PercentBold.js';
+import { GaugeLines33PercentBoldDuotone } from './GaugeLines33PercentBoldDuotone.js';
+import { GaugeLines33PercentFill } from './GaugeLines33PercentFill.js';
+import { GaugeLines33PercentFillDuotone } from './GaugeLines33PercentFillDuotone.js';
 
 export interface GaugeLines33PercentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

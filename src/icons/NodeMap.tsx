@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { NodeMapRegular } from './NodeMapRegular';
-import { NodeMapRegularDuotone } from './NodeMapRegularDuotone';
-import { NodeMapBold } from './NodeMapBold';
-import { NodeMapBoldDuotone } from './NodeMapBoldDuotone';
-import { NodeMapFill } from './NodeMapFill';
-import { NodeMapFillDuotone } from './NodeMapFillDuotone';
+import type { IconProps } from '../types.js';
+import { NodeMapRegular } from './NodeMapRegular.js';
+import { NodeMapRegularDuotone } from './NodeMapRegularDuotone.js';
+import { NodeMapBold } from './NodeMapBold.js';
+import { NodeMapBoldDuotone } from './NodeMapBoldDuotone.js';
+import { NodeMapFill } from './NodeMapFill.js';
+import { NodeMapFillDuotone } from './NodeMapFillDuotone.js';
 
 export interface NodeMapProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

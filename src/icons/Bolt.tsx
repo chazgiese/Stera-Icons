@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BoltRegular } from './BoltRegular';
-import { BoltRegularDuotone } from './BoltRegularDuotone';
-import { BoltBold } from './BoltBold';
-import { BoltBoldDuotone } from './BoltBoldDuotone';
-import { BoltFill } from './BoltFill';
-import { BoltFillDuotone } from './BoltFillDuotone';
+import type { IconProps } from '../types.js';
+import { BoltRegular } from './BoltRegular.js';
+import { BoltRegularDuotone } from './BoltRegularDuotone.js';
+import { BoltBold } from './BoltBold.js';
+import { BoltBoldDuotone } from './BoltBoldDuotone.js';
+import { BoltFill } from './BoltFill.js';
+import { BoltFillDuotone } from './BoltFillDuotone.js';
 
 export interface BoltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

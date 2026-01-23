@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DiamondRegular } from './DiamondRegular';
-import { DiamondRegularDuotone } from './DiamondRegularDuotone';
-import { DiamondBold } from './DiamondBold';
-import { DiamondBoldDuotone } from './DiamondBoldDuotone';
-import { DiamondFill } from './DiamondFill';
-import { DiamondFillDuotone } from './DiamondFillDuotone';
+import type { IconProps } from '../types.js';
+import { DiamondRegular } from './DiamondRegular.js';
+import { DiamondRegularDuotone } from './DiamondRegularDuotone.js';
+import { DiamondBold } from './DiamondBold.js';
+import { DiamondBoldDuotone } from './DiamondBoldDuotone.js';
+import { DiamondFill } from './DiamondFill.js';
+import { DiamondFillDuotone } from './DiamondFillDuotone.js';
 
 export interface DiamondProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

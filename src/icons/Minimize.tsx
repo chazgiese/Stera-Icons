@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MinimizeRegular } from './MinimizeRegular';
-import { MinimizeRegularDuotone } from './MinimizeRegularDuotone';
-import { MinimizeBold } from './MinimizeBold';
-import { MinimizeBoldDuotone } from './MinimizeBoldDuotone';
-import { MinimizeFill } from './MinimizeFill';
-import { MinimizeFillDuotone } from './MinimizeFillDuotone';
+import type { IconProps } from '../types.js';
+import { MinimizeRegular } from './MinimizeRegular.js';
+import { MinimizeRegularDuotone } from './MinimizeRegularDuotone.js';
+import { MinimizeBold } from './MinimizeBold.js';
+import { MinimizeBoldDuotone } from './MinimizeBoldDuotone.js';
+import { MinimizeFill } from './MinimizeFill.js';
+import { MinimizeFillDuotone } from './MinimizeFillDuotone.js';
 
 export interface MinimizeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

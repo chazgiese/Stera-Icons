@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HexagonRegular } from './HexagonRegular';
-import { HexagonRegularDuotone } from './HexagonRegularDuotone';
-import { HexagonBold } from './HexagonBold';
-import { HexagonBoldDuotone } from './HexagonBoldDuotone';
-import { HexagonFill } from './HexagonFill';
-import { HexagonFillDuotone } from './HexagonFillDuotone';
+import type { IconProps } from '../types.js';
+import { HexagonRegular } from './HexagonRegular.js';
+import { HexagonRegularDuotone } from './HexagonRegularDuotone.js';
+import { HexagonBold } from './HexagonBold.js';
+import { HexagonBoldDuotone } from './HexagonBoldDuotone.js';
+import { HexagonFill } from './HexagonFill.js';
+import { HexagonFillDuotone } from './HexagonFillDuotone.js';
 
 export interface HexagonProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrickWallRegular } from './BrickWallRegular';
-import { BrickWallRegularDuotone } from './BrickWallRegularDuotone';
-import { BrickWallBold } from './BrickWallBold';
-import { BrickWallBoldDuotone } from './BrickWallBoldDuotone';
-import { BrickWallFill } from './BrickWallFill';
-import { BrickWallFillDuotone } from './BrickWallFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrickWallRegular } from './BrickWallRegular.js';
+import { BrickWallRegularDuotone } from './BrickWallRegularDuotone.js';
+import { BrickWallBold } from './BrickWallBold.js';
+import { BrickWallBoldDuotone } from './BrickWallBoldDuotone.js';
+import { BrickWallFill } from './BrickWallFill.js';
+import { BrickWallFillDuotone } from './BrickWallFillDuotone.js';
 
 export interface BrickWallProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

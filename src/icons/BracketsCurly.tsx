@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BracketsCurlyRegular } from './BracketsCurlyRegular';
-import { BracketsCurlyRegularDuotone } from './BracketsCurlyRegularDuotone';
-import { BracketsCurlyBold } from './BracketsCurlyBold';
-import { BracketsCurlyBoldDuotone } from './BracketsCurlyBoldDuotone';
-import { BracketsCurlyFill } from './BracketsCurlyFill';
-import { BracketsCurlyFillDuotone } from './BracketsCurlyFillDuotone';
+import type { IconProps } from '../types.js';
+import { BracketsCurlyRegular } from './BracketsCurlyRegular.js';
+import { BracketsCurlyRegularDuotone } from './BracketsCurlyRegularDuotone.js';
+import { BracketsCurlyBold } from './BracketsCurlyBold.js';
+import { BracketsCurlyBoldDuotone } from './BracketsCurlyBoldDuotone.js';
+import { BracketsCurlyFill } from './BracketsCurlyFill.js';
+import { BracketsCurlyFillDuotone } from './BracketsCurlyFillDuotone.js';
 
 export interface BracketsCurlyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

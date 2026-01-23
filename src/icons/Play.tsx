@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlayRegular } from './PlayRegular';
-import { PlayRegularDuotone } from './PlayRegularDuotone';
-import { PlayBold } from './PlayBold';
-import { PlayBoldDuotone } from './PlayBoldDuotone';
-import { PlayFill } from './PlayFill';
-import { PlayFillDuotone } from './PlayFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlayRegular } from './PlayRegular.js';
+import { PlayRegularDuotone } from './PlayRegularDuotone.js';
+import { PlayBold } from './PlayBold.js';
+import { PlayBoldDuotone } from './PlayBoldDuotone.js';
+import { PlayFill } from './PlayFill.js';
+import { PlayFillDuotone } from './PlayFillDuotone.js';
 
 export interface PlayProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TennisBallRegular } from './TennisBallRegular';
-import { TennisBallRegularDuotone } from './TennisBallRegularDuotone';
-import { TennisBallBold } from './TennisBallBold';
-import { TennisBallBoldDuotone } from './TennisBallBoldDuotone';
-import { TennisBallFill } from './TennisBallFill';
-import { TennisBallFillDuotone } from './TennisBallFillDuotone';
+import type { IconProps } from '../types.js';
+import { TennisBallRegular } from './TennisBallRegular.js';
+import { TennisBallRegularDuotone } from './TennisBallRegularDuotone.js';
+import { TennisBallBold } from './TennisBallBold.js';
+import { TennisBallBoldDuotone } from './TennisBallBoldDuotone.js';
+import { TennisBallFill } from './TennisBallFill.js';
+import { TennisBallFillDuotone } from './TennisBallFillDuotone.js';
 
 export interface TennisBallProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

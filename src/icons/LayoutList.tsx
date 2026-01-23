@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayoutListRegular } from './LayoutListRegular';
-import { LayoutListRegularDuotone } from './LayoutListRegularDuotone';
-import { LayoutListBold } from './LayoutListBold';
-import { LayoutListBoldDuotone } from './LayoutListBoldDuotone';
-import { LayoutListFill } from './LayoutListFill';
-import { LayoutListFillDuotone } from './LayoutListFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayoutListRegular } from './LayoutListRegular.js';
+import { LayoutListRegularDuotone } from './LayoutListRegularDuotone.js';
+import { LayoutListBold } from './LayoutListBold.js';
+import { LayoutListBoldDuotone } from './LayoutListBoldDuotone.js';
+import { LayoutListFill } from './LayoutListFill.js';
+import { LayoutListFillDuotone } from './LayoutListFillDuotone.js';
 
 export interface LayoutListProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

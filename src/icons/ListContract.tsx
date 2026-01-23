@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ListContractRegular } from './ListContractRegular';
-import { ListContractRegularDuotone } from './ListContractRegularDuotone';
-import { ListContractBold } from './ListContractBold';
-import { ListContractBoldDuotone } from './ListContractBoldDuotone';
-import { ListContractFill } from './ListContractFill';
-import { ListContractFillDuotone } from './ListContractFillDuotone';
+import type { IconProps } from '../types.js';
+import { ListContractRegular } from './ListContractRegular.js';
+import { ListContractRegularDuotone } from './ListContractRegularDuotone.js';
+import { ListContractBold } from './ListContractBold.js';
+import { ListContractBoldDuotone } from './ListContractBoldDuotone.js';
+import { ListContractFill } from './ListContractFill.js';
+import { ListContractFillDuotone } from './ListContractFillDuotone.js';
 
 export interface ListContractProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CursorOgRegular } from './CursorOgRegular';
-import { CursorOgRegularDuotone } from './CursorOgRegularDuotone';
-import { CursorOgBold } from './CursorOgBold';
-import { CursorOgBoldDuotone } from './CursorOgBoldDuotone';
-import { CursorOgFill } from './CursorOgFill';
-import { CursorOgFillDuotone } from './CursorOgFillDuotone';
+import type { IconProps } from '../types.js';
+import { CursorOgRegular } from './CursorOgRegular.js';
+import { CursorOgRegularDuotone } from './CursorOgRegularDuotone.js';
+import { CursorOgBold } from './CursorOgBold.js';
+import { CursorOgBoldDuotone } from './CursorOgBoldDuotone.js';
+import { CursorOgFill } from './CursorOgFill.js';
+import { CursorOgFillDuotone } from './CursorOgFillDuotone.js';
 
 export interface CursorOgProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

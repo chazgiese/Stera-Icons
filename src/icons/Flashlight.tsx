@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlashlightRegular } from './FlashlightRegular';
-import { FlashlightRegularDuotone } from './FlashlightRegularDuotone';
-import { FlashlightBold } from './FlashlightBold';
-import { FlashlightBoldDuotone } from './FlashlightBoldDuotone';
-import { FlashlightFill } from './FlashlightFill';
-import { FlashlightFillDuotone } from './FlashlightFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlashlightRegular } from './FlashlightRegular.js';
+import { FlashlightRegularDuotone } from './FlashlightRegularDuotone.js';
+import { FlashlightBold } from './FlashlightBold.js';
+import { FlashlightBoldDuotone } from './FlashlightBoldDuotone.js';
+import { FlashlightFill } from './FlashlightFill.js';
+import { FlashlightFillDuotone } from './FlashlightFillDuotone.js';
 
 export interface FlashlightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

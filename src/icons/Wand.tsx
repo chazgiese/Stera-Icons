@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WandRegular } from './WandRegular';
-import { WandRegularDuotone } from './WandRegularDuotone';
-import { WandBold } from './WandBold';
-import { WandBoldDuotone } from './WandBoldDuotone';
-import { WandFill } from './WandFill';
-import { WandFillDuotone } from './WandFillDuotone';
+import type { IconProps } from '../types.js';
+import { WandRegular } from './WandRegular.js';
+import { WandRegularDuotone } from './WandRegularDuotone.js';
+import { WandBold } from './WandBold.js';
+import { WandBoldDuotone } from './WandBoldDuotone.js';
+import { WandFill } from './WandFill.js';
+import { WandFillDuotone } from './WandFillDuotone.js';
 
 export interface WandProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

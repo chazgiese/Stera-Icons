@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayoutGridCirclePlusRegular } from './LayoutGridCirclePlusRegular';
-import { LayoutGridCirclePlusRegularDuotone } from './LayoutGridCirclePlusRegularDuotone';
-import { LayoutGridCirclePlusBold } from './LayoutGridCirclePlusBold';
-import { LayoutGridCirclePlusBoldDuotone } from './LayoutGridCirclePlusBoldDuotone';
-import { LayoutGridCirclePlusFill } from './LayoutGridCirclePlusFill';
-import { LayoutGridCirclePlusFillDuotone } from './LayoutGridCirclePlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayoutGridCirclePlusRegular } from './LayoutGridCirclePlusRegular.js';
+import { LayoutGridCirclePlusRegularDuotone } from './LayoutGridCirclePlusRegularDuotone.js';
+import { LayoutGridCirclePlusBold } from './LayoutGridCirclePlusBold.js';
+import { LayoutGridCirclePlusBoldDuotone } from './LayoutGridCirclePlusBoldDuotone.js';
+import { LayoutGridCirclePlusFill } from './LayoutGridCirclePlusFill.js';
+import { LayoutGridCirclePlusFillDuotone } from './LayoutGridCirclePlusFillDuotone.js';
 
 export interface LayoutGridCirclePlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

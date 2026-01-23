@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MinusCircleRegular } from './MinusCircleRegular';
-import { MinusCircleRegularDuotone } from './MinusCircleRegularDuotone';
-import { MinusCircleBold } from './MinusCircleBold';
-import { MinusCircleBoldDuotone } from './MinusCircleBoldDuotone';
-import { MinusCircleFill } from './MinusCircleFill';
-import { MinusCircleFillDuotone } from './MinusCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { MinusCircleRegular } from './MinusCircleRegular.js';
+import { MinusCircleRegularDuotone } from './MinusCircleRegularDuotone.js';
+import { MinusCircleBold } from './MinusCircleBold.js';
+import { MinusCircleBoldDuotone } from './MinusCircleBoldDuotone.js';
+import { MinusCircleFill } from './MinusCircleFill.js';
+import { MinusCircleFillDuotone } from './MinusCircleFillDuotone.js';
 
 export interface MinusCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

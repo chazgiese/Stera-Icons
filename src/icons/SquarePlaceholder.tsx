@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SquarePlaceholderRegular } from './SquarePlaceholderRegular';
-import { SquarePlaceholderRegularDuotone } from './SquarePlaceholderRegularDuotone';
-import { SquarePlaceholderBold } from './SquarePlaceholderBold';
-import { SquarePlaceholderBoldDuotone } from './SquarePlaceholderBoldDuotone';
-import { SquarePlaceholderFill } from './SquarePlaceholderFill';
-import { SquarePlaceholderFillDuotone } from './SquarePlaceholderFillDuotone';
+import type { IconProps } from '../types.js';
+import { SquarePlaceholderRegular } from './SquarePlaceholderRegular.js';
+import { SquarePlaceholderRegularDuotone } from './SquarePlaceholderRegularDuotone.js';
+import { SquarePlaceholderBold } from './SquarePlaceholderBold.js';
+import { SquarePlaceholderBoldDuotone } from './SquarePlaceholderBoldDuotone.js';
+import { SquarePlaceholderFill } from './SquarePlaceholderFill.js';
+import { SquarePlaceholderFillDuotone } from './SquarePlaceholderFillDuotone.js';
 
 export interface SquarePlaceholderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

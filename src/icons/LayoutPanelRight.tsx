@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayoutPanelRightRegular } from './LayoutPanelRightRegular';
-import { LayoutPanelRightRegularDuotone } from './LayoutPanelRightRegularDuotone';
-import { LayoutPanelRightBold } from './LayoutPanelRightBold';
-import { LayoutPanelRightBoldDuotone } from './LayoutPanelRightBoldDuotone';
-import { LayoutPanelRightFill } from './LayoutPanelRightFill';
-import { LayoutPanelRightFillDuotone } from './LayoutPanelRightFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayoutPanelRightRegular } from './LayoutPanelRightRegular.js';
+import { LayoutPanelRightRegularDuotone } from './LayoutPanelRightRegularDuotone.js';
+import { LayoutPanelRightBold } from './LayoutPanelRightBold.js';
+import { LayoutPanelRightBoldDuotone } from './LayoutPanelRightBoldDuotone.js';
+import { LayoutPanelRightFill } from './LayoutPanelRightFill.js';
+import { LayoutPanelRightFillDuotone } from './LayoutPanelRightFillDuotone.js';
 
 export interface LayoutPanelRightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

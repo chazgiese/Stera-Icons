@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlugRegular } from './PlugRegular';
-import { PlugRegularDuotone } from './PlugRegularDuotone';
-import { PlugBold } from './PlugBold';
-import { PlugBoldDuotone } from './PlugBoldDuotone';
-import { PlugFill } from './PlugFill';
-import { PlugFillDuotone } from './PlugFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlugRegular } from './PlugRegular.js';
+import { PlugRegularDuotone } from './PlugRegularDuotone.js';
+import { PlugBold } from './PlugBold.js';
+import { PlugBoldDuotone } from './PlugBoldDuotone.js';
+import { PlugFill } from './PlugFill.js';
+import { PlugFillDuotone } from './PlugFillDuotone.js';
 
 export interface PlugProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ToolboxRegular } from './ToolboxRegular';
-import { ToolboxRegularDuotone } from './ToolboxRegularDuotone';
-import { ToolboxBold } from './ToolboxBold';
-import { ToolboxBoldDuotone } from './ToolboxBoldDuotone';
-import { ToolboxFill } from './ToolboxFill';
-import { ToolboxFillDuotone } from './ToolboxFillDuotone';
+import type { IconProps } from '../types.js';
+import { ToolboxRegular } from './ToolboxRegular.js';
+import { ToolboxRegularDuotone } from './ToolboxRegularDuotone.js';
+import { ToolboxBold } from './ToolboxBold.js';
+import { ToolboxBoldDuotone } from './ToolboxBoldDuotone.js';
+import { ToolboxFill } from './ToolboxFill.js';
+import { ToolboxFillDuotone } from './ToolboxFillDuotone.js';
 
 export interface ToolboxProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

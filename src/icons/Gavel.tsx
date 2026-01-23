@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GavelRegular } from './GavelRegular';
-import { GavelRegularDuotone } from './GavelRegularDuotone';
-import { GavelBold } from './GavelBold';
-import { GavelBoldDuotone } from './GavelBoldDuotone';
-import { GavelFill } from './GavelFill';
-import { GavelFillDuotone } from './GavelFillDuotone';
+import type { IconProps } from '../types.js';
+import { GavelRegular } from './GavelRegular.js';
+import { GavelRegularDuotone } from './GavelRegularDuotone.js';
+import { GavelBold } from './GavelBold.js';
+import { GavelBoldDuotone } from './GavelBoldDuotone.js';
+import { GavelFill } from './GavelFill.js';
+import { GavelFillDuotone } from './GavelFillDuotone.js';
 
 export interface GavelProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

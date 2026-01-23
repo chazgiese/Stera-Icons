@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { StoreRegular } from './StoreRegular';
-import { StoreRegularDuotone } from './StoreRegularDuotone';
-import { StoreBold } from './StoreBold';
-import { StoreBoldDuotone } from './StoreBoldDuotone';
-import { StoreFill } from './StoreFill';
-import { StoreFillDuotone } from './StoreFillDuotone';
+import type { IconProps } from '../types.js';
+import { StoreRegular } from './StoreRegular.js';
+import { StoreRegularDuotone } from './StoreRegularDuotone.js';
+import { StoreBold } from './StoreBold.js';
+import { StoreBoldDuotone } from './StoreBoldDuotone.js';
+import { StoreFill } from './StoreFill.js';
+import { StoreFillDuotone } from './StoreFillDuotone.js';
 
 export interface StoreProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

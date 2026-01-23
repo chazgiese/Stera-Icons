@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SlashRegular } from './SlashRegular';
-import { SlashRegularDuotone } from './SlashRegularDuotone';
-import { SlashBold } from './SlashBold';
-import { SlashBoldDuotone } from './SlashBoldDuotone';
-import { SlashFill } from './SlashFill';
-import { SlashFillDuotone } from './SlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { SlashRegular } from './SlashRegular.js';
+import { SlashRegularDuotone } from './SlashRegularDuotone.js';
+import { SlashBold } from './SlashBold.js';
+import { SlashBoldDuotone } from './SlashBoldDuotone.js';
+import { SlashFill } from './SlashFill.js';
+import { SlashFillDuotone } from './SlashFillDuotone.js';
 
 export interface SlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

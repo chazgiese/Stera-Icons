@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SearchCircleRegular } from './SearchCircleRegular';
-import { SearchCircleRegularDuotone } from './SearchCircleRegularDuotone';
-import { SearchCircleBold } from './SearchCircleBold';
-import { SearchCircleBoldDuotone } from './SearchCircleBoldDuotone';
-import { SearchCircleFill } from './SearchCircleFill';
-import { SearchCircleFillDuotone } from './SearchCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { SearchCircleRegular } from './SearchCircleRegular.js';
+import { SearchCircleRegularDuotone } from './SearchCircleRegularDuotone.js';
+import { SearchCircleBold } from './SearchCircleBold.js';
+import { SearchCircleBoldDuotone } from './SearchCircleBoldDuotone.js';
+import { SearchCircleFill } from './SearchCircleFill.js';
+import { SearchCircleFillDuotone } from './SearchCircleFillDuotone.js';
 
 export interface SearchCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MapRegular } from './MapRegular';
-import { MapRegularDuotone } from './MapRegularDuotone';
-import { MapBold } from './MapBold';
-import { MapBoldDuotone } from './MapBoldDuotone';
-import { MapFill } from './MapFill';
-import { MapFillDuotone } from './MapFillDuotone';
+import type { IconProps } from '../types.js';
+import { MapRegular } from './MapRegular.js';
+import { MapRegularDuotone } from './MapRegularDuotone.js';
+import { MapBold } from './MapBold.js';
+import { MapBoldDuotone } from './MapBoldDuotone.js';
+import { MapFill } from './MapFill.js';
+import { MapFillDuotone } from './MapFillDuotone.js';
 
 export interface MapProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

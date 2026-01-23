@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HeadphonesRegular } from './HeadphonesRegular';
-import { HeadphonesRegularDuotone } from './HeadphonesRegularDuotone';
-import { HeadphonesBold } from './HeadphonesBold';
-import { HeadphonesBoldDuotone } from './HeadphonesBoldDuotone';
-import { HeadphonesFill } from './HeadphonesFill';
-import { HeadphonesFillDuotone } from './HeadphonesFillDuotone';
+import type { IconProps } from '../types.js';
+import { HeadphonesRegular } from './HeadphonesRegular.js';
+import { HeadphonesRegularDuotone } from './HeadphonesRegularDuotone.js';
+import { HeadphonesBold } from './HeadphonesBold.js';
+import { HeadphonesBoldDuotone } from './HeadphonesBoldDuotone.js';
+import { HeadphonesFill } from './HeadphonesFill.js';
+import { HeadphonesFillDuotone } from './HeadphonesFillDuotone.js';
 
 export interface HeadphonesProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

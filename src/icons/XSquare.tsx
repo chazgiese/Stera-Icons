@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { XSquareRegular } from './XSquareRegular';
-import { XSquareRegularDuotone } from './XSquareRegularDuotone';
-import { XSquareBold } from './XSquareBold';
-import { XSquareBoldDuotone } from './XSquareBoldDuotone';
-import { XSquareFill } from './XSquareFill';
-import { XSquareFillDuotone } from './XSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { XSquareRegular } from './XSquareRegular.js';
+import { XSquareRegularDuotone } from './XSquareRegularDuotone.js';
+import { XSquareBold } from './XSquareBold.js';
+import { XSquareBoldDuotone } from './XSquareBoldDuotone.js';
+import { XSquareFill } from './XSquareFill.js';
+import { XSquareFillDuotone } from './XSquareFillDuotone.js';
 
 export interface XSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

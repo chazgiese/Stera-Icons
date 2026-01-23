@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitPullRequestDraftRegular } from './GitPullRequestDraftRegular';
-import { GitPullRequestDraftRegularDuotone } from './GitPullRequestDraftRegularDuotone';
-import { GitPullRequestDraftBold } from './GitPullRequestDraftBold';
-import { GitPullRequestDraftBoldDuotone } from './GitPullRequestDraftBoldDuotone';
-import { GitPullRequestDraftFill } from './GitPullRequestDraftFill';
-import { GitPullRequestDraftFillDuotone } from './GitPullRequestDraftFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitPullRequestDraftRegular } from './GitPullRequestDraftRegular.js';
+import { GitPullRequestDraftRegularDuotone } from './GitPullRequestDraftRegularDuotone.js';
+import { GitPullRequestDraftBold } from './GitPullRequestDraftBold.js';
+import { GitPullRequestDraftBoldDuotone } from './GitPullRequestDraftBoldDuotone.js';
+import { GitPullRequestDraftFill } from './GitPullRequestDraftFill.js';
+import { GitPullRequestDraftFillDuotone } from './GitPullRequestDraftFillDuotone.js';
 
 export interface GitPullRequestDraftProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

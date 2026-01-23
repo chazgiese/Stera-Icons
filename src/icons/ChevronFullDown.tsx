@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChevronFullDownRegular } from './ChevronFullDownRegular';
-import { ChevronFullDownRegularDuotone } from './ChevronFullDownRegularDuotone';
-import { ChevronFullDownBold } from './ChevronFullDownBold';
-import { ChevronFullDownBoldDuotone } from './ChevronFullDownBoldDuotone';
-import { ChevronFullDownFill } from './ChevronFullDownFill';
-import { ChevronFullDownFillDuotone } from './ChevronFullDownFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChevronFullDownRegular } from './ChevronFullDownRegular.js';
+import { ChevronFullDownRegularDuotone } from './ChevronFullDownRegularDuotone.js';
+import { ChevronFullDownBold } from './ChevronFullDownBold.js';
+import { ChevronFullDownBoldDuotone } from './ChevronFullDownBoldDuotone.js';
+import { ChevronFullDownFill } from './ChevronFullDownFill.js';
+import { ChevronFullDownFillDuotone } from './ChevronFullDownFillDuotone.js';
 
 export interface ChevronFullDownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

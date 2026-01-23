@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextBRegular } from './TextBRegular';
-import { TextBRegularDuotone } from './TextBRegularDuotone';
-import { TextBBold } from './TextBBold';
-import { TextBBoldDuotone } from './TextBBoldDuotone';
-import { TextBFill } from './TextBFill';
-import { TextBFillDuotone } from './TextBFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextBRegular } from './TextBRegular.js';
+import { TextBRegularDuotone } from './TextBRegularDuotone.js';
+import { TextBBold } from './TextBBold.js';
+import { TextBBoldDuotone } from './TextBBoldDuotone.js';
+import { TextBFill } from './TextBFill.js';
+import { TextBFillDuotone } from './TextBFillDuotone.js';
 
 export interface TextBProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

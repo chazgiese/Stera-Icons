@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanEyeRegular } from './ScanEyeRegular';
-import { ScanEyeRegularDuotone } from './ScanEyeRegularDuotone';
-import { ScanEyeBold } from './ScanEyeBold';
-import { ScanEyeBoldDuotone } from './ScanEyeBoldDuotone';
-import { ScanEyeFill } from './ScanEyeFill';
-import { ScanEyeFillDuotone } from './ScanEyeFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanEyeRegular } from './ScanEyeRegular.js';
+import { ScanEyeRegularDuotone } from './ScanEyeRegularDuotone.js';
+import { ScanEyeBold } from './ScanEyeBold.js';
+import { ScanEyeBoldDuotone } from './ScanEyeBoldDuotone.js';
+import { ScanEyeFill } from './ScanEyeFill.js';
+import { ScanEyeFillDuotone } from './ScanEyeFillDuotone.js';
 
 export interface ScanEyeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

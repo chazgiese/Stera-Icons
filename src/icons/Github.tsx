@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GithubRegular } from './GithubRegular';
-import { GithubRegularDuotone } from './GithubRegularDuotone';
-import { GithubBold } from './GithubBold';
-import { GithubBoldDuotone } from './GithubBoldDuotone';
-import { GithubFill } from './GithubFill';
-import { GithubFillDuotone } from './GithubFillDuotone';
+import type { IconProps } from '../types.js';
+import { GithubRegular } from './GithubRegular.js';
+import { GithubRegularDuotone } from './GithubRegularDuotone.js';
+import { GithubBold } from './GithubBold.js';
+import { GithubBoldDuotone } from './GithubBoldDuotone.js';
+import { GithubFill } from './GithubFill.js';
+import { GithubFillDuotone } from './GithubFillDuotone.js';
 
 export interface GithubProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

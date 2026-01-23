@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleDashRegular } from './CircleDashRegular';
-import { CircleDashRegularDuotone } from './CircleDashRegularDuotone';
-import { CircleDashBold } from './CircleDashBold';
-import { CircleDashBoldDuotone } from './CircleDashBoldDuotone';
-import { CircleDashFill } from './CircleDashFill';
-import { CircleDashFillDuotone } from './CircleDashFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleDashRegular } from './CircleDashRegular.js';
+import { CircleDashRegularDuotone } from './CircleDashRegularDuotone.js';
+import { CircleDashBold } from './CircleDashBold.js';
+import { CircleDashBoldDuotone } from './CircleDashBoldDuotone.js';
+import { CircleDashFill } from './CircleDashFill.js';
+import { CircleDashFillDuotone } from './CircleDashFillDuotone.js';
 
 export interface CircleDashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

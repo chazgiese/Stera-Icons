@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LineSegmentRegular } from './LineSegmentRegular';
-import { LineSegmentRegularDuotone } from './LineSegmentRegularDuotone';
-import { LineSegmentBold } from './LineSegmentBold';
-import { LineSegmentBoldDuotone } from './LineSegmentBoldDuotone';
-import { LineSegmentFill } from './LineSegmentFill';
-import { LineSegmentFillDuotone } from './LineSegmentFillDuotone';
+import type { IconProps } from '../types.js';
+import { LineSegmentRegular } from './LineSegmentRegular.js';
+import { LineSegmentRegularDuotone } from './LineSegmentRegularDuotone.js';
+import { LineSegmentBold } from './LineSegmentBold.js';
+import { LineSegmentBoldDuotone } from './LineSegmentBoldDuotone.js';
+import { LineSegmentFill } from './LineSegmentFill.js';
+import { LineSegmentFillDuotone } from './LineSegmentFillDuotone.js';
 
 export interface LineSegmentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

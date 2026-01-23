@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ShareRegular } from './ShareRegular';
-import { ShareRegularDuotone } from './ShareRegularDuotone';
-import { ShareBold } from './ShareBold';
-import { ShareBoldDuotone } from './ShareBoldDuotone';
-import { ShareFill } from './ShareFill';
-import { ShareFillDuotone } from './ShareFillDuotone';
+import type { IconProps } from '../types.js';
+import { ShareRegular } from './ShareRegular.js';
+import { ShareRegularDuotone } from './ShareRegularDuotone.js';
+import { ShareBold } from './ShareBold.js';
+import { ShareBoldDuotone } from './ShareBoldDuotone.js';
+import { ShareFill } from './ShareFill.js';
+import { ShareFillDuotone } from './ShareFillDuotone.js';
 
 export interface ShareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

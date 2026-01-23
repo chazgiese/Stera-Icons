@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PauseCircleRegular } from './PauseCircleRegular';
-import { PauseCircleRegularDuotone } from './PauseCircleRegularDuotone';
-import { PauseCircleBold } from './PauseCircleBold';
-import { PauseCircleBoldDuotone } from './PauseCircleBoldDuotone';
-import { PauseCircleFill } from './PauseCircleFill';
-import { PauseCircleFillDuotone } from './PauseCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { PauseCircleRegular } from './PauseCircleRegular.js';
+import { PauseCircleRegularDuotone } from './PauseCircleRegularDuotone.js';
+import { PauseCircleBold } from './PauseCircleBold.js';
+import { PauseCircleBoldDuotone } from './PauseCircleBoldDuotone.js';
+import { PauseCircleFill } from './PauseCircleFill.js';
+import { PauseCircleFillDuotone } from './PauseCircleFillDuotone.js';
 
 export interface PauseCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

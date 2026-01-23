@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WineGlassRegular } from './WineGlassRegular';
-import { WineGlassRegularDuotone } from './WineGlassRegularDuotone';
-import { WineGlassBold } from './WineGlassBold';
-import { WineGlassBoldDuotone } from './WineGlassBoldDuotone';
-import { WineGlassFill } from './WineGlassFill';
-import { WineGlassFillDuotone } from './WineGlassFillDuotone';
+import type { IconProps } from '../types.js';
+import { WineGlassRegular } from './WineGlassRegular.js';
+import { WineGlassRegularDuotone } from './WineGlassRegularDuotone.js';
+import { WineGlassBold } from './WineGlassBold.js';
+import { WineGlassBoldDuotone } from './WineGlassBoldDuotone.js';
+import { WineGlassFill } from './WineGlassFill.js';
+import { WineGlassFillDuotone } from './WineGlassFillDuotone.js';
 
 export interface WineGlassProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

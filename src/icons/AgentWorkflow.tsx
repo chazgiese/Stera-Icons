@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AgentWorkflowRegular } from './AgentWorkflowRegular';
-import { AgentWorkflowRegularDuotone } from './AgentWorkflowRegularDuotone';
-import { AgentWorkflowBold } from './AgentWorkflowBold';
-import { AgentWorkflowBoldDuotone } from './AgentWorkflowBoldDuotone';
-import { AgentWorkflowFill } from './AgentWorkflowFill';
-import { AgentWorkflowFillDuotone } from './AgentWorkflowFillDuotone';
+import type { IconProps } from '../types.js';
+import { AgentWorkflowRegular } from './AgentWorkflowRegular.js';
+import { AgentWorkflowRegularDuotone } from './AgentWorkflowRegularDuotone.js';
+import { AgentWorkflowBold } from './AgentWorkflowBold.js';
+import { AgentWorkflowBoldDuotone } from './AgentWorkflowBoldDuotone.js';
+import { AgentWorkflowFill } from './AgentWorkflowFill.js';
+import { AgentWorkflowFillDuotone } from './AgentWorkflowFillDuotone.js';
 
 export interface AgentWorkflowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

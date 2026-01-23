@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FolderRegular } from './FolderRegular';
-import { FolderRegularDuotone } from './FolderRegularDuotone';
-import { FolderBold } from './FolderBold';
-import { FolderBoldDuotone } from './FolderBoldDuotone';
-import { FolderFill } from './FolderFill';
-import { FolderFillDuotone } from './FolderFillDuotone';
+import type { IconProps } from '../types.js';
+import { FolderRegular } from './FolderRegular.js';
+import { FolderRegularDuotone } from './FolderRegularDuotone.js';
+import { FolderBold } from './FolderBold.js';
+import { FolderBoldDuotone } from './FolderBoldDuotone.js';
+import { FolderFill } from './FolderFill.js';
+import { FolderFillDuotone } from './FolderFillDuotone.js';
 
 export interface FolderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

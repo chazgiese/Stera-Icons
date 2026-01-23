@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CloudRegular } from './CloudRegular';
-import { CloudRegularDuotone } from './CloudRegularDuotone';
-import { CloudBold } from './CloudBold';
-import { CloudBoldDuotone } from './CloudBoldDuotone';
-import { CloudFill } from './CloudFill';
-import { CloudFillDuotone } from './CloudFillDuotone';
+import type { IconProps } from '../types.js';
+import { CloudRegular } from './CloudRegular.js';
+import { CloudRegularDuotone } from './CloudRegularDuotone.js';
+import { CloudBold } from './CloudBold.js';
+import { CloudBoldDuotone } from './CloudBoldDuotone.js';
+import { CloudFill } from './CloudFill.js';
+import { CloudFillDuotone } from './CloudFillDuotone.js';
 
 export interface CloudProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

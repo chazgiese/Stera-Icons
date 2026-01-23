@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { YinYangRegular } from './YinYangRegular';
-import { YinYangRegularDuotone } from './YinYangRegularDuotone';
-import { YinYangBold } from './YinYangBold';
-import { YinYangBoldDuotone } from './YinYangBoldDuotone';
-import { YinYangFill } from './YinYangFill';
-import { YinYangFillDuotone } from './YinYangFillDuotone';
+import type { IconProps } from '../types.js';
+import { YinYangRegular } from './YinYangRegular.js';
+import { YinYangRegularDuotone } from './YinYangRegularDuotone.js';
+import { YinYangBold } from './YinYangBold.js';
+import { YinYangBoldDuotone } from './YinYangBoldDuotone.js';
+import { YinYangFill } from './YinYangFill.js';
+import { YinYangFillDuotone } from './YinYangFillDuotone.js';
 
 export interface YinYangProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

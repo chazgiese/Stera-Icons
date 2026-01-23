@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBoxAlertRegular } from './ChatBoxAlertRegular';
-import { ChatBoxAlertRegularDuotone } from './ChatBoxAlertRegularDuotone';
-import { ChatBoxAlertBold } from './ChatBoxAlertBold';
-import { ChatBoxAlertBoldDuotone } from './ChatBoxAlertBoldDuotone';
-import { ChatBoxAlertFill } from './ChatBoxAlertFill';
-import { ChatBoxAlertFillDuotone } from './ChatBoxAlertFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBoxAlertRegular } from './ChatBoxAlertRegular.js';
+import { ChatBoxAlertRegularDuotone } from './ChatBoxAlertRegularDuotone.js';
+import { ChatBoxAlertBold } from './ChatBoxAlertBold.js';
+import { ChatBoxAlertBoldDuotone } from './ChatBoxAlertBoldDuotone.js';
+import { ChatBoxAlertFill } from './ChatBoxAlertFill.js';
+import { ChatBoxAlertFillDuotone } from './ChatBoxAlertFillDuotone.js';
 
 export interface ChatBoxAlertProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

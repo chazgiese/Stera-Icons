@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BubbleRegular } from './BubbleRegular';
-import { BubbleRegularDuotone } from './BubbleRegularDuotone';
-import { BubbleBold } from './BubbleBold';
-import { BubbleBoldDuotone } from './BubbleBoldDuotone';
-import { BubbleFill } from './BubbleFill';
-import { BubbleFillDuotone } from './BubbleFillDuotone';
+import type { IconProps } from '../types.js';
+import { BubbleRegular } from './BubbleRegular.js';
+import { BubbleRegularDuotone } from './BubbleRegularDuotone.js';
+import { BubbleBold } from './BubbleBold.js';
+import { BubbleBoldDuotone } from './BubbleBoldDuotone.js';
+import { BubbleFill } from './BubbleFill.js';
+import { BubbleFillDuotone } from './BubbleFillDuotone.js';
 
 export interface BubbleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

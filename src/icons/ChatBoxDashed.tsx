@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBoxDashedRegular } from './ChatBoxDashedRegular';
-import { ChatBoxDashedRegularDuotone } from './ChatBoxDashedRegularDuotone';
-import { ChatBoxDashedBold } from './ChatBoxDashedBold';
-import { ChatBoxDashedBoldDuotone } from './ChatBoxDashedBoldDuotone';
-import { ChatBoxDashedFill } from './ChatBoxDashedFill';
-import { ChatBoxDashedFillDuotone } from './ChatBoxDashedFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBoxDashedRegular } from './ChatBoxDashedRegular.js';
+import { ChatBoxDashedRegularDuotone } from './ChatBoxDashedRegularDuotone.js';
+import { ChatBoxDashedBold } from './ChatBoxDashedBold.js';
+import { ChatBoxDashedBoldDuotone } from './ChatBoxDashedBoldDuotone.js';
+import { ChatBoxDashedFill } from './ChatBoxDashedFill.js';
+import { ChatBoxDashedFillDuotone } from './ChatBoxDashedFillDuotone.js';
 
 export interface ChatBoxDashedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

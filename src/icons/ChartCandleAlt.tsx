@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartCandleAltRegular } from './ChartCandleAltRegular';
-import { ChartCandleAltRegularDuotone } from './ChartCandleAltRegularDuotone';
-import { ChartCandleAltBold } from './ChartCandleAltBold';
-import { ChartCandleAltBoldDuotone } from './ChartCandleAltBoldDuotone';
-import { ChartCandleAltFill } from './ChartCandleAltFill';
-import { ChartCandleAltFillDuotone } from './ChartCandleAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartCandleAltRegular } from './ChartCandleAltRegular.js';
+import { ChartCandleAltRegularDuotone } from './ChartCandleAltRegularDuotone.js';
+import { ChartCandleAltBold } from './ChartCandleAltBold.js';
+import { ChartCandleAltBoldDuotone } from './ChartCandleAltBoldDuotone.js';
+import { ChartCandleAltFill } from './ChartCandleAltFill.js';
+import { ChartCandleAltFillDuotone } from './ChartCandleAltFillDuotone.js';
 
 export interface ChartCandleAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

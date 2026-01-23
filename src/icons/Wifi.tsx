@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WifiRegular } from './WifiRegular';
-import { WifiRegularDuotone } from './WifiRegularDuotone';
-import { WifiBold } from './WifiBold';
-import { WifiBoldDuotone } from './WifiBoldDuotone';
-import { WifiFill } from './WifiFill';
-import { WifiFillDuotone } from './WifiFillDuotone';
+import type { IconProps } from '../types.js';
+import { WifiRegular } from './WifiRegular.js';
+import { WifiRegularDuotone } from './WifiRegularDuotone.js';
+import { WifiBold } from './WifiBold.js';
+import { WifiBoldDuotone } from './WifiBoldDuotone.js';
+import { WifiFill } from './WifiFill.js';
+import { WifiFillDuotone } from './WifiFillDuotone.js';
 
 export interface WifiProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

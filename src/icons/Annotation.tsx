@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AnnotationRegular } from './AnnotationRegular';
-import { AnnotationRegularDuotone } from './AnnotationRegularDuotone';
-import { AnnotationBold } from './AnnotationBold';
-import { AnnotationBoldDuotone } from './AnnotationBoldDuotone';
-import { AnnotationFill } from './AnnotationFill';
-import { AnnotationFillDuotone } from './AnnotationFillDuotone';
+import type { IconProps } from '../types.js';
+import { AnnotationRegular } from './AnnotationRegular.js';
+import { AnnotationRegularDuotone } from './AnnotationRegularDuotone.js';
+import { AnnotationBold } from './AnnotationBold.js';
+import { AnnotationBoldDuotone } from './AnnotationBoldDuotone.js';
+import { AnnotationFill } from './AnnotationFill.js';
+import { AnnotationFillDuotone } from './AnnotationFillDuotone.js';
 
 export interface AnnotationProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

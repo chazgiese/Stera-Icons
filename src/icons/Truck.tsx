@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TruckRegular } from './TruckRegular';
-import { TruckRegularDuotone } from './TruckRegularDuotone';
-import { TruckBold } from './TruckBold';
-import { TruckBoldDuotone } from './TruckBoldDuotone';
-import { TruckFill } from './TruckFill';
-import { TruckFillDuotone } from './TruckFillDuotone';
+import type { IconProps } from '../types.js';
+import { TruckRegular } from './TruckRegular.js';
+import { TruckRegularDuotone } from './TruckRegularDuotone.js';
+import { TruckBold } from './TruckBold.js';
+import { TruckBoldDuotone } from './TruckBoldDuotone.js';
+import { TruckFill } from './TruckFill.js';
+import { TruckFillDuotone } from './TruckFillDuotone.js';
 
 export interface TruckProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

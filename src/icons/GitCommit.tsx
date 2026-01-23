@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitCommitRegular } from './GitCommitRegular';
-import { GitCommitRegularDuotone } from './GitCommitRegularDuotone';
-import { GitCommitBold } from './GitCommitBold';
-import { GitCommitBoldDuotone } from './GitCommitBoldDuotone';
-import { GitCommitFill } from './GitCommitFill';
-import { GitCommitFillDuotone } from './GitCommitFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitCommitRegular } from './GitCommitRegular.js';
+import { GitCommitRegularDuotone } from './GitCommitRegularDuotone.js';
+import { GitCommitBold } from './GitCommitBold.js';
+import { GitCommitBoldDuotone } from './GitCommitBoldDuotone.js';
+import { GitCommitFill } from './GitCommitFill.js';
+import { GitCommitFillDuotone } from './GitCommitFillDuotone.js';
 
 export interface GitCommitProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

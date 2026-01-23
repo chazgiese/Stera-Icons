@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TvPlayAltRegular } from './TvPlayAltRegular';
-import { TvPlayAltRegularDuotone } from './TvPlayAltRegularDuotone';
-import { TvPlayAltBold } from './TvPlayAltBold';
-import { TvPlayAltBoldDuotone } from './TvPlayAltBoldDuotone';
-import { TvPlayAltFill } from './TvPlayAltFill';
-import { TvPlayAltFillDuotone } from './TvPlayAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { TvPlayAltRegular } from './TvPlayAltRegular.js';
+import { TvPlayAltRegularDuotone } from './TvPlayAltRegularDuotone.js';
+import { TvPlayAltBold } from './TvPlayAltBold.js';
+import { TvPlayAltBoldDuotone } from './TvPlayAltBoldDuotone.js';
+import { TvPlayAltFill } from './TvPlayAltFill.js';
+import { TvPlayAltFillDuotone } from './TvPlayAltFillDuotone.js';
 
 export interface TvPlayAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

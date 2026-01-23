@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DollarBillRegular } from './DollarBillRegular';
-import { DollarBillRegularDuotone } from './DollarBillRegularDuotone';
-import { DollarBillBold } from './DollarBillBold';
-import { DollarBillBoldDuotone } from './DollarBillBoldDuotone';
-import { DollarBillFill } from './DollarBillFill';
-import { DollarBillFillDuotone } from './DollarBillFillDuotone';
+import type { IconProps } from '../types.js';
+import { DollarBillRegular } from './DollarBillRegular.js';
+import { DollarBillRegularDuotone } from './DollarBillRegularDuotone.js';
+import { DollarBillBold } from './DollarBillBold.js';
+import { DollarBillBoldDuotone } from './DollarBillBoldDuotone.js';
+import { DollarBillFill } from './DollarBillFill.js';
+import { DollarBillFillDuotone } from './DollarBillFillDuotone.js';
 
 export interface DollarBillProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

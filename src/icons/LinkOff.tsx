@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LinkOffRegular } from './LinkOffRegular';
-import { LinkOffRegularDuotone } from './LinkOffRegularDuotone';
-import { LinkOffBold } from './LinkOffBold';
-import { LinkOffBoldDuotone } from './LinkOffBoldDuotone';
-import { LinkOffFill } from './LinkOffFill';
-import { LinkOffFillDuotone } from './LinkOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { LinkOffRegular } from './LinkOffRegular.js';
+import { LinkOffRegularDuotone } from './LinkOffRegularDuotone.js';
+import { LinkOffBold } from './LinkOffBold.js';
+import { LinkOffBoldDuotone } from './LinkOffBoldDuotone.js';
+import { LinkOffFill } from './LinkOffFill.js';
+import { LinkOffFillDuotone } from './LinkOffFillDuotone.js';
 
 export interface LinkOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

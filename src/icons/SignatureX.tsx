@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SignatureXRegular } from './SignatureXRegular';
-import { SignatureXRegularDuotone } from './SignatureXRegularDuotone';
-import { SignatureXBold } from './SignatureXBold';
-import { SignatureXBoldDuotone } from './SignatureXBoldDuotone';
-import { SignatureXFill } from './SignatureXFill';
-import { SignatureXFillDuotone } from './SignatureXFillDuotone';
+import type { IconProps } from '../types.js';
+import { SignatureXRegular } from './SignatureXRegular.js';
+import { SignatureXRegularDuotone } from './SignatureXRegularDuotone.js';
+import { SignatureXBold } from './SignatureXBold.js';
+import { SignatureXBoldDuotone } from './SignatureXBoldDuotone.js';
+import { SignatureXFill } from './SignatureXFill.js';
+import { SignatureXFillDuotone } from './SignatureXFillDuotone.js';
 
 export interface SignatureXProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SeedlingRegular } from './SeedlingRegular';
-import { SeedlingRegularDuotone } from './SeedlingRegularDuotone';
-import { SeedlingBold } from './SeedlingBold';
-import { SeedlingBoldDuotone } from './SeedlingBoldDuotone';
-import { SeedlingFill } from './SeedlingFill';
-import { SeedlingFillDuotone } from './SeedlingFillDuotone';
+import type { IconProps } from '../types.js';
+import { SeedlingRegular } from './SeedlingRegular.js';
+import { SeedlingRegularDuotone } from './SeedlingRegularDuotone.js';
+import { SeedlingBold } from './SeedlingBold.js';
+import { SeedlingBoldDuotone } from './SeedlingBoldDuotone.js';
+import { SeedlingFill } from './SeedlingFill.js';
+import { SeedlingFillDuotone } from './SeedlingFillDuotone.js';
 
 export interface SeedlingProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowBranchRegular } from './FlowBranchRegular';
-import { FlowBranchRegularDuotone } from './FlowBranchRegularDuotone';
-import { FlowBranchBold } from './FlowBranchBold';
-import { FlowBranchBoldDuotone } from './FlowBranchBoldDuotone';
-import { FlowBranchFill } from './FlowBranchFill';
-import { FlowBranchFillDuotone } from './FlowBranchFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowBranchRegular } from './FlowBranchRegular.js';
+import { FlowBranchRegularDuotone } from './FlowBranchRegularDuotone.js';
+import { FlowBranchBold } from './FlowBranchBold.js';
+import { FlowBranchBoldDuotone } from './FlowBranchBoldDuotone.js';
+import { FlowBranchFill } from './FlowBranchFill.js';
+import { FlowBranchFillDuotone } from './FlowBranchFillDuotone.js';
 
 export interface FlowBranchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

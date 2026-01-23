@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertTriangleRegular } from './AlertTriangleRegular';
-import { AlertTriangleRegularDuotone } from './AlertTriangleRegularDuotone';
-import { AlertTriangleBold } from './AlertTriangleBold';
-import { AlertTriangleBoldDuotone } from './AlertTriangleBoldDuotone';
-import { AlertTriangleFill } from './AlertTriangleFill';
-import { AlertTriangleFillDuotone } from './AlertTriangleFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertTriangleRegular } from './AlertTriangleRegular.js';
+import { AlertTriangleRegularDuotone } from './AlertTriangleRegularDuotone.js';
+import { AlertTriangleBold } from './AlertTriangleBold.js';
+import { AlertTriangleBoldDuotone } from './AlertTriangleBoldDuotone.js';
+import { AlertTriangleFill } from './AlertTriangleFill.js';
+import { AlertTriangleFillDuotone } from './AlertTriangleFillDuotone.js';
 
 export interface AlertTriangleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

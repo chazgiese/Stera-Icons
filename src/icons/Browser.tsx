@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrowserRegular } from './BrowserRegular';
-import { BrowserRegularDuotone } from './BrowserRegularDuotone';
-import { BrowserBold } from './BrowserBold';
-import { BrowserBoldDuotone } from './BrowserBoldDuotone';
-import { BrowserFill } from './BrowserFill';
-import { BrowserFillDuotone } from './BrowserFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrowserRegular } from './BrowserRegular.js';
+import { BrowserRegularDuotone } from './BrowserRegularDuotone.js';
+import { BrowserBold } from './BrowserBold.js';
+import { BrowserBoldDuotone } from './BrowserBoldDuotone.js';
+import { BrowserFill } from './BrowserFill.js';
+import { BrowserFillDuotone } from './BrowserFillDuotone.js';
 
 export interface BrowserProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

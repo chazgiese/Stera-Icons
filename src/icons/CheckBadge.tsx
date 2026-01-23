@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CheckBadgeRegular } from './CheckBadgeRegular';
-import { CheckBadgeRegularDuotone } from './CheckBadgeRegularDuotone';
-import { CheckBadgeBold } from './CheckBadgeBold';
-import { CheckBadgeBoldDuotone } from './CheckBadgeBoldDuotone';
-import { CheckBadgeFill } from './CheckBadgeFill';
-import { CheckBadgeFillDuotone } from './CheckBadgeFillDuotone';
+import type { IconProps } from '../types.js';
+import { CheckBadgeRegular } from './CheckBadgeRegular.js';
+import { CheckBadgeRegularDuotone } from './CheckBadgeRegularDuotone.js';
+import { CheckBadgeBold } from './CheckBadgeBold.js';
+import { CheckBadgeBoldDuotone } from './CheckBadgeBoldDuotone.js';
+import { CheckBadgeFill } from './CheckBadgeFill.js';
+import { CheckBadgeFillDuotone } from './CheckBadgeFillDuotone.js';
 
 export interface CheckBadgeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

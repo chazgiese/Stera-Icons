@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TestTubeRegular } from './TestTubeRegular';
-import { TestTubeRegularDuotone } from './TestTubeRegularDuotone';
-import { TestTubeBold } from './TestTubeBold';
-import { TestTubeBoldDuotone } from './TestTubeBoldDuotone';
-import { TestTubeFill } from './TestTubeFill';
-import { TestTubeFillDuotone } from './TestTubeFillDuotone';
+import type { IconProps } from '../types.js';
+import { TestTubeRegular } from './TestTubeRegular.js';
+import { TestTubeRegularDuotone } from './TestTubeRegularDuotone.js';
+import { TestTubeBold } from './TestTubeBold.js';
+import { TestTubeBoldDuotone } from './TestTubeBoldDuotone.js';
+import { TestTubeFill } from './TestTubeFill.js';
+import { TestTubeFillDuotone } from './TestTubeFillDuotone.js';
 
 export interface TestTubeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

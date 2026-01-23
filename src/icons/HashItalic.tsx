@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HashItalicRegular } from './HashItalicRegular';
-import { HashItalicRegularDuotone } from './HashItalicRegularDuotone';
-import { HashItalicBold } from './HashItalicBold';
-import { HashItalicBoldDuotone } from './HashItalicBoldDuotone';
-import { HashItalicFill } from './HashItalicFill';
-import { HashItalicFillDuotone } from './HashItalicFillDuotone';
+import type { IconProps } from '../types.js';
+import { HashItalicRegular } from './HashItalicRegular.js';
+import { HashItalicRegularDuotone } from './HashItalicRegularDuotone.js';
+import { HashItalicBold } from './HashItalicBold.js';
+import { HashItalicBoldDuotone } from './HashItalicBoldDuotone.js';
+import { HashItalicFill } from './HashItalicFill.js';
+import { HashItalicFillDuotone } from './HashItalicFillDuotone.js';
 
 export interface HashItalicProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

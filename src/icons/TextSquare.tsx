@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextSquareRegular } from './TextSquareRegular';
-import { TextSquareRegularDuotone } from './TextSquareRegularDuotone';
-import { TextSquareBold } from './TextSquareBold';
-import { TextSquareBoldDuotone } from './TextSquareBoldDuotone';
-import { TextSquareFill } from './TextSquareFill';
-import { TextSquareFillDuotone } from './TextSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextSquareRegular } from './TextSquareRegular.js';
+import { TextSquareRegularDuotone } from './TextSquareRegularDuotone.js';
+import { TextSquareBold } from './TextSquareBold.js';
+import { TextSquareBoldDuotone } from './TextSquareBoldDuotone.js';
+import { TextSquareFill } from './TextSquareFill.js';
+import { TextSquareFillDuotone } from './TextSquareFillDuotone.js';
 
 export interface TextSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

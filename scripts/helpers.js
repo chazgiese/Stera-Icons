@@ -213,3 +213,27 @@ export function generateTripleExportWithPath(componentName, importPath) {
 export function generateAliasedReExport(baseName, sourceComponent, importPath) {
   return `export { ${sourceComponent} as ${baseName}, ${sourceComponent} as ${baseName}Icon, ${sourceComponent} as Si${baseName} } from '${importPath}';`;
 }
+
+/**
+ * Convert source import path to dist-compatible path with .js extension
+ * @param {string} sourcePath - Source path (e.g., "./icons/Search")
+ * @returns {string} - Dist path (e.g., "./icons/Search.js")
+ */
+export function toDistPath(sourcePath) {
+  return sourcePath + '.js';
+}
+
+/**
+ * Generate triple export for dist (with .js extension)
+ */
+export function generateTripleExportWithPathDist(componentName, importPath) {
+  const aliases = generateAliases(componentName);
+  return `export { ${aliases.base}, ${aliases.iconSuffix}, ${aliases.siPrefix} } from '${importPath}.js';`;
+}
+
+/**
+ * Generate aliased re-export for dist (with .js extension)
+ */
+export function generateAliasedReExportDist(baseName, sourceComponent, importPath) {
+  return `export { ${sourceComponent} as ${baseName}, ${sourceComponent} as ${baseName}Icon, ${sourceComponent} as Si${baseName} } from '${importPath}.js';`;
+}

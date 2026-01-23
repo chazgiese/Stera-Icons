@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UploadRegular } from './UploadRegular';
-import { UploadRegularDuotone } from './UploadRegularDuotone';
-import { UploadBold } from './UploadBold';
-import { UploadBoldDuotone } from './UploadBoldDuotone';
-import { UploadFill } from './UploadFill';
-import { UploadFillDuotone } from './UploadFillDuotone';
+import type { IconProps } from '../types.js';
+import { UploadRegular } from './UploadRegular.js';
+import { UploadRegularDuotone } from './UploadRegularDuotone.js';
+import { UploadBold } from './UploadBold.js';
+import { UploadBoldDuotone } from './UploadBoldDuotone.js';
+import { UploadFill } from './UploadFill.js';
+import { UploadFillDuotone } from './UploadFillDuotone.js';
 
 export interface UploadProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

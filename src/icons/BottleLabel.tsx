@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BottleLabelRegular } from './BottleLabelRegular';
-import { BottleLabelRegularDuotone } from './BottleLabelRegularDuotone';
-import { BottleLabelBold } from './BottleLabelBold';
-import { BottleLabelBoldDuotone } from './BottleLabelBoldDuotone';
-import { BottleLabelFill } from './BottleLabelFill';
-import { BottleLabelFillDuotone } from './BottleLabelFillDuotone';
+import type { IconProps } from '../types.js';
+import { BottleLabelRegular } from './BottleLabelRegular.js';
+import { BottleLabelRegularDuotone } from './BottleLabelRegularDuotone.js';
+import { BottleLabelBold } from './BottleLabelBold.js';
+import { BottleLabelBoldDuotone } from './BottleLabelBoldDuotone.js';
+import { BottleLabelFill } from './BottleLabelFill.js';
+import { BottleLabelFillDuotone } from './BottleLabelFillDuotone.js';
 
 export interface BottleLabelProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

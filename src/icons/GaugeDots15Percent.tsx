@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GaugeDots15PercentRegular } from './GaugeDots15PercentRegular';
-import { GaugeDots15PercentRegularDuotone } from './GaugeDots15PercentRegularDuotone';
-import { GaugeDots15PercentBold } from './GaugeDots15PercentBold';
-import { GaugeDots15PercentBoldDuotone } from './GaugeDots15PercentBoldDuotone';
-import { GaugeDots15PercentFill } from './GaugeDots15PercentFill';
-import { GaugeDots15PercentFillDuotone } from './GaugeDots15PercentFillDuotone';
+import type { IconProps } from '../types.js';
+import { GaugeDots15PercentRegular } from './GaugeDots15PercentRegular.js';
+import { GaugeDots15PercentRegularDuotone } from './GaugeDots15PercentRegularDuotone.js';
+import { GaugeDots15PercentBold } from './GaugeDots15PercentBold.js';
+import { GaugeDots15PercentBoldDuotone } from './GaugeDots15PercentBoldDuotone.js';
+import { GaugeDots15PercentFill } from './GaugeDots15PercentFill.js';
+import { GaugeDots15PercentFillDuotone } from './GaugeDots15PercentFillDuotone.js';
 
 export interface GaugeDots15PercentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

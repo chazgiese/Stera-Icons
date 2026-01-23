@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { StopwatchRegular } from './StopwatchRegular';
-import { StopwatchRegularDuotone } from './StopwatchRegularDuotone';
-import { StopwatchBold } from './StopwatchBold';
-import { StopwatchBoldDuotone } from './StopwatchBoldDuotone';
-import { StopwatchFill } from './StopwatchFill';
-import { StopwatchFillDuotone } from './StopwatchFillDuotone';
+import type { IconProps } from '../types.js';
+import { StopwatchRegular } from './StopwatchRegular.js';
+import { StopwatchRegularDuotone } from './StopwatchRegularDuotone.js';
+import { StopwatchBold } from './StopwatchBold.js';
+import { StopwatchBoldDuotone } from './StopwatchBoldDuotone.js';
+import { StopwatchFill } from './StopwatchFill.js';
+import { StopwatchFillDuotone } from './StopwatchFillDuotone.js';
 
 export interface StopwatchProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlayCircleRegular } from './PlayCircleRegular';
-import { PlayCircleRegularDuotone } from './PlayCircleRegularDuotone';
-import { PlayCircleBold } from './PlayCircleBold';
-import { PlayCircleBoldDuotone } from './PlayCircleBoldDuotone';
-import { PlayCircleFill } from './PlayCircleFill';
-import { PlayCircleFillDuotone } from './PlayCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlayCircleRegular } from './PlayCircleRegular.js';
+import { PlayCircleRegularDuotone } from './PlayCircleRegularDuotone.js';
+import { PlayCircleBold } from './PlayCircleBold.js';
+import { PlayCircleBoldDuotone } from './PlayCircleBoldDuotone.js';
+import { PlayCircleFill } from './PlayCircleFill.js';
+import { PlayCircleFillDuotone } from './PlayCircleFillDuotone.js';
 
 export interface PlayCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

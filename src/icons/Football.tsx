@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FootballRegular } from './FootballRegular';
-import { FootballRegularDuotone } from './FootballRegularDuotone';
-import { FootballBold } from './FootballBold';
-import { FootballBoldDuotone } from './FootballBoldDuotone';
-import { FootballFill } from './FootballFill';
-import { FootballFillDuotone } from './FootballFillDuotone';
+import type { IconProps } from '../types.js';
+import { FootballRegular } from './FootballRegular.js';
+import { FootballRegularDuotone } from './FootballRegularDuotone.js';
+import { FootballBold } from './FootballBold.js';
+import { FootballBoldDuotone } from './FootballBoldDuotone.js';
+import { FootballFill } from './FootballFill.js';
+import { FootballFillDuotone } from './FootballFillDuotone.js';
 
 export interface FootballProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

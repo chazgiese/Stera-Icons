@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EmoteGrinRegular } from './EmoteGrinRegular';
-import { EmoteGrinRegularDuotone } from './EmoteGrinRegularDuotone';
-import { EmoteGrinBold } from './EmoteGrinBold';
-import { EmoteGrinBoldDuotone } from './EmoteGrinBoldDuotone';
-import { EmoteGrinFill } from './EmoteGrinFill';
-import { EmoteGrinFillDuotone } from './EmoteGrinFillDuotone';
+import type { IconProps } from '../types.js';
+import { EmoteGrinRegular } from './EmoteGrinRegular.js';
+import { EmoteGrinRegularDuotone } from './EmoteGrinRegularDuotone.js';
+import { EmoteGrinBold } from './EmoteGrinBold.js';
+import { EmoteGrinBoldDuotone } from './EmoteGrinBoldDuotone.js';
+import { EmoteGrinFill } from './EmoteGrinFill.js';
+import { EmoteGrinFillDuotone } from './EmoteGrinFillDuotone.js';
 
 export interface EmoteGrinProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

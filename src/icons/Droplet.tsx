@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DropletRegular } from './DropletRegular';
-import { DropletRegularDuotone } from './DropletRegularDuotone';
-import { DropletBold } from './DropletBold';
-import { DropletBoldDuotone } from './DropletBoldDuotone';
-import { DropletFill } from './DropletFill';
-import { DropletFillDuotone } from './DropletFillDuotone';
+import type { IconProps } from '../types.js';
+import { DropletRegular } from './DropletRegular.js';
+import { DropletRegularDuotone } from './DropletRegularDuotone.js';
+import { DropletBold } from './DropletBold.js';
+import { DropletBoldDuotone } from './DropletBoldDuotone.js';
+import { DropletFill } from './DropletFill.js';
+import { DropletFillDuotone } from './DropletFillDuotone.js';
 
 export interface DropletProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

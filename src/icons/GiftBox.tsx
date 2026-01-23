@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GiftBoxRegular } from './GiftBoxRegular';
-import { GiftBoxRegularDuotone } from './GiftBoxRegularDuotone';
-import { GiftBoxBold } from './GiftBoxBold';
-import { GiftBoxBoldDuotone } from './GiftBoxBoldDuotone';
-import { GiftBoxFill } from './GiftBoxFill';
-import { GiftBoxFillDuotone } from './GiftBoxFillDuotone';
+import type { IconProps } from '../types.js';
+import { GiftBoxRegular } from './GiftBoxRegular.js';
+import { GiftBoxRegularDuotone } from './GiftBoxRegularDuotone.js';
+import { GiftBoxBold } from './GiftBoxBold.js';
+import { GiftBoxBoldDuotone } from './GiftBoxBoldDuotone.js';
+import { GiftBoxFill } from './GiftBoxFill.js';
+import { GiftBoxFillDuotone } from './GiftBoxFillDuotone.js';
 
 export interface GiftBoxProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

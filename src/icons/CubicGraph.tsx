@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CubicGraphRegular } from './CubicGraphRegular';
-import { CubicGraphRegularDuotone } from './CubicGraphRegularDuotone';
-import { CubicGraphBold } from './CubicGraphBold';
-import { CubicGraphBoldDuotone } from './CubicGraphBoldDuotone';
-import { CubicGraphFill } from './CubicGraphFill';
-import { CubicGraphFillDuotone } from './CubicGraphFillDuotone';
+import type { IconProps } from '../types.js';
+import { CubicGraphRegular } from './CubicGraphRegular.js';
+import { CubicGraphRegularDuotone } from './CubicGraphRegularDuotone.js';
+import { CubicGraphBold } from './CubicGraphBold.js';
+import { CubicGraphBoldDuotone } from './CubicGraphBoldDuotone.js';
+import { CubicGraphFill } from './CubicGraphFill.js';
+import { CubicGraphFillDuotone } from './CubicGraphFillDuotone.js';
 
 export interface CubicGraphProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

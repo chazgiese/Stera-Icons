@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DevicePhoneRegular } from './DevicePhoneRegular';
-import { DevicePhoneRegularDuotone } from './DevicePhoneRegularDuotone';
-import { DevicePhoneBold } from './DevicePhoneBold';
-import { DevicePhoneBoldDuotone } from './DevicePhoneBoldDuotone';
-import { DevicePhoneFill } from './DevicePhoneFill';
-import { DevicePhoneFillDuotone } from './DevicePhoneFillDuotone';
+import type { IconProps } from '../types.js';
+import { DevicePhoneRegular } from './DevicePhoneRegular.js';
+import { DevicePhoneRegularDuotone } from './DevicePhoneRegularDuotone.js';
+import { DevicePhoneBold } from './DevicePhoneBold.js';
+import { DevicePhoneBoldDuotone } from './DevicePhoneBoldDuotone.js';
+import { DevicePhoneFill } from './DevicePhoneFill.js';
+import { DevicePhoneFillDuotone } from './DevicePhoneFillDuotone.js';
 
 export interface DevicePhoneProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

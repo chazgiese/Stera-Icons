@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { QuestionMarkCircleRegular } from './QuestionMarkCircleRegular';
-import { QuestionMarkCircleRegularDuotone } from './QuestionMarkCircleRegularDuotone';
-import { QuestionMarkCircleBold } from './QuestionMarkCircleBold';
-import { QuestionMarkCircleBoldDuotone } from './QuestionMarkCircleBoldDuotone';
-import { QuestionMarkCircleFill } from './QuestionMarkCircleFill';
-import { QuestionMarkCircleFillDuotone } from './QuestionMarkCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { QuestionMarkCircleRegular } from './QuestionMarkCircleRegular.js';
+import { QuestionMarkCircleRegularDuotone } from './QuestionMarkCircleRegularDuotone.js';
+import { QuestionMarkCircleBold } from './QuestionMarkCircleBold.js';
+import { QuestionMarkCircleBoldDuotone } from './QuestionMarkCircleBoldDuotone.js';
+import { QuestionMarkCircleFill } from './QuestionMarkCircleFill.js';
+import { QuestionMarkCircleFillDuotone } from './QuestionMarkCircleFillDuotone.js';
 
 export interface QuestionMarkCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

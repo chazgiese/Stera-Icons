@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FinderRegular } from './FinderRegular';
-import { FinderRegularDuotone } from './FinderRegularDuotone';
-import { FinderBold } from './FinderBold';
-import { FinderBoldDuotone } from './FinderBoldDuotone';
-import { FinderFill } from './FinderFill';
-import { FinderFillDuotone } from './FinderFillDuotone';
+import type { IconProps } from '../types.js';
+import { FinderRegular } from './FinderRegular.js';
+import { FinderRegularDuotone } from './FinderRegularDuotone.js';
+import { FinderBold } from './FinderBold.js';
+import { FinderBoldDuotone } from './FinderBoldDuotone.js';
+import { FinderFill } from './FinderFill.js';
+import { FinderFillDuotone } from './FinderFillDuotone.js';
 
 export interface FinderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

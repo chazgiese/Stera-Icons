@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TrendUpRegular } from './TrendUpRegular';
-import { TrendUpRegularDuotone } from './TrendUpRegularDuotone';
-import { TrendUpBold } from './TrendUpBold';
-import { TrendUpBoldDuotone } from './TrendUpBoldDuotone';
-import { TrendUpFill } from './TrendUpFill';
-import { TrendUpFillDuotone } from './TrendUpFillDuotone';
+import type { IconProps } from '../types.js';
+import { TrendUpRegular } from './TrendUpRegular.js';
+import { TrendUpRegularDuotone } from './TrendUpRegularDuotone.js';
+import { TrendUpBold } from './TrendUpBold.js';
+import { TrendUpBoldDuotone } from './TrendUpBoldDuotone.js';
+import { TrendUpFill } from './TrendUpFill.js';
+import { TrendUpFillDuotone } from './TrendUpFillDuotone.js';
 
 export interface TrendUpProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

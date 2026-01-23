@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BackslashRegular } from './BackslashRegular';
-import { BackslashRegularDuotone } from './BackslashRegularDuotone';
-import { BackslashBold } from './BackslashBold';
-import { BackslashBoldDuotone } from './BackslashBoldDuotone';
-import { BackslashFill } from './BackslashFill';
-import { BackslashFillDuotone } from './BackslashFillDuotone';
+import type { IconProps } from '../types.js';
+import { BackslashRegular } from './BackslashRegular.js';
+import { BackslashRegularDuotone } from './BackslashRegularDuotone.js';
+import { BackslashBold } from './BackslashBold.js';
+import { BackslashBoldDuotone } from './BackslashBoldDuotone.js';
+import { BackslashFill } from './BackslashFill.js';
+import { BackslashFillDuotone } from './BackslashFillDuotone.js';
 
 export interface BackslashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

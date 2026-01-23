@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HashRegular } from './HashRegular';
-import { HashRegularDuotone } from './HashRegularDuotone';
-import { HashBold } from './HashBold';
-import { HashBoldDuotone } from './HashBoldDuotone';
-import { HashFill } from './HashFill';
-import { HashFillDuotone } from './HashFillDuotone';
+import type { IconProps } from '../types.js';
+import { HashRegular } from './HashRegular.js';
+import { HashRegularDuotone } from './HashRegularDuotone.js';
+import { HashBold } from './HashBold.js';
+import { HashBoldDuotone } from './HashBoldDuotone.js';
+import { HashFill } from './HashFill.js';
+import { HashFillDuotone } from './HashFillDuotone.js';
 
 export interface HashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MicOffRegular } from './MicOffRegular';
-import { MicOffRegularDuotone } from './MicOffRegularDuotone';
-import { MicOffBold } from './MicOffBold';
-import { MicOffBoldDuotone } from './MicOffBoldDuotone';
-import { MicOffFill } from './MicOffFill';
-import { MicOffFillDuotone } from './MicOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { MicOffRegular } from './MicOffRegular.js';
+import { MicOffRegularDuotone } from './MicOffRegularDuotone.js';
+import { MicOffBold } from './MicOffBold.js';
+import { MicOffBoldDuotone } from './MicOffBoldDuotone.js';
+import { MicOffFill } from './MicOffFill.js';
+import { MicOffFillDuotone } from './MicOffFillDuotone.js';
 
 export interface MicOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

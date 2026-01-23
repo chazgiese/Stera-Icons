@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TelescopeRegular } from './TelescopeRegular';
-import { TelescopeRegularDuotone } from './TelescopeRegularDuotone';
-import { TelescopeBold } from './TelescopeBold';
-import { TelescopeBoldDuotone } from './TelescopeBoldDuotone';
-import { TelescopeFill } from './TelescopeFill';
-import { TelescopeFillDuotone } from './TelescopeFillDuotone';
+import type { IconProps } from '../types.js';
+import { TelescopeRegular } from './TelescopeRegular.js';
+import { TelescopeRegularDuotone } from './TelescopeRegularDuotone.js';
+import { TelescopeBold } from './TelescopeBold.js';
+import { TelescopeBoldDuotone } from './TelescopeBoldDuotone.js';
+import { TelescopeFill } from './TelescopeFill.js';
+import { TelescopeFillDuotone } from './TelescopeFillDuotone.js';
 
 export interface TelescopeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

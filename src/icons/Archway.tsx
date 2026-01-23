@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ArchwayRegular } from './ArchwayRegular';
-import { ArchwayRegularDuotone } from './ArchwayRegularDuotone';
-import { ArchwayBold } from './ArchwayBold';
-import { ArchwayBoldDuotone } from './ArchwayBoldDuotone';
-import { ArchwayFill } from './ArchwayFill';
-import { ArchwayFillDuotone } from './ArchwayFillDuotone';
+import type { IconProps } from '../types.js';
+import { ArchwayRegular } from './ArchwayRegular.js';
+import { ArchwayRegularDuotone } from './ArchwayRegularDuotone.js';
+import { ArchwayBold } from './ArchwayBold.js';
+import { ArchwayBoldDuotone } from './ArchwayBoldDuotone.js';
+import { ArchwayFill } from './ArchwayFill.js';
+import { ArchwayFillDuotone } from './ArchwayFillDuotone.js';
 
 export interface ArchwayProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -16,7 +16,9 @@ import {
   isValidWeight,
   generateTripleExport,
   generateTripleExportWithPath,
-  generateAliasedReExport
+  generateAliasedReExport,
+  generateTripleExportWithPathDist,
+  generateAliasedReExportDist
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
 import { parsePathAttributes, extractPathsFromSvg } from './icon-build/svg-parser.js';
@@ -74,6 +76,10 @@ async function buildIcons(iconsExportPath) {
   const wrapperExports = [];           // For dynamic-variants.ts (wrapper components)
   const baseNameExports = [];          // For index.ts (Regular variants aliased as base names)
   const directVariantExports = [];     // For index.ts (all variants with their own names)
+  // Dist versions (with .js extensions for ESM)
+  const wrapperExportsDist = [];
+  const baseNameExportsDist = [];
+  const directVariantExportsDist = [];
   const namingConflicts = [];
   
   // Load existing metadata to track version history
@@ -191,6 +197,7 @@ async function buildIcons(iconsExportPath) {
       
       // Add to direct variant exports with triple aliasing
       directVariantExports.push(generateTripleExportWithPath(componentName, `./icons/${fileName}`));
+      directVariantExportsDist.push(generateTripleExportWithPathDist(componentName, `./icons/${componentName}`));
       
       // Use hash-based versioning to determine icon status (O(1) Map lookup)
       const metadataKey = `${parsedIconName}|${weight}|${duotone}|${baseComponentName}`;
@@ -292,7 +299,8 @@ async function buildIcons(iconsExportPath) {
     
     for (const variantInfo of iconData.variants) {
       const { weight, duotone, componentName, fileName } = variantInfo;
-      imports.push(`import { ${componentName} } from './${fileName}';`);
+      // Use .js extension for ESM compatibility
+      imports.push(`import { ${componentName} } from './${fileName}.js';`);
       componentMap.set(`${weight}-${duotone}`, componentName);
     }
     
@@ -321,6 +329,7 @@ async function buildIcons(iconsExportPath) {
     
     // Add to wrapper exports for dynamic-variants.ts (with triple aliasing)
     wrapperExports.push(generateTripleExportWithPath(baseComponentName, `./icons/${baseComponentName}`));
+    wrapperExportsDist.push(generateTripleExportWithPathDist(baseComponentName, `./icons/${baseComponentName}`));
     
     // Add base name export: Regular variant aliased as base name (Search → SearchRegular)
     // This makes `import { Search } from 'stera-icons'` give the efficient Regular variant
@@ -330,6 +339,11 @@ async function buildIcons(iconsExportPath) {
         baseComponentName,                    // Target name: Search
         regularVariant.componentName,         // Source component: SearchRegular
         `./icons/${regularVariant.fileName}`  // Import path: ./icons/SearchRegular
+      ));
+      baseNameExportsDist.push(generateAliasedReExportDist(
+        baseComponentName,
+        regularVariant.componentName,
+        `./icons/${regularVariant.componentName}`  // Use componentName for dist
       ));
     }
     
@@ -341,6 +355,11 @@ async function buildIcons(iconsExportPath) {
         `${baseComponentName}Duotone`,              // Target name: SearchDuotone
         regularDuotoneVariant.componentName,        // Source component: SearchRegularDuotone
         `./icons/${regularDuotoneVariant.fileName}` // Import path: ./icons/SearchRegularDuotone
+      ));
+      baseNameExportsDist.push(generateAliasedReExportDist(
+        `${baseComponentName}Duotone`,
+        regularDuotoneVariant.componentName,
+        `./icons/${regularDuotoneVariant.componentName}`  // Use componentName for dist
       ));
     }
   }
@@ -406,6 +425,40 @@ ${wrapperExports.join('\n')}
 `;
   
   writeFileSync(join(__dirname, '..', 'src', 'dynamic-variants.ts'), dynamicVariantsContent);
+  
+  // Generate dist barrel files (ESM with .js extensions)
+  // These are re-export files that don't bundle icons inline
+  console.log('\n📦 Generating dist barrel files...');
+  const distEsmDir = join(distDir, 'esm');
+  if (!existsSync(distEsmDir)) {
+    mkdirSync(distEsmDir, { recursive: true });
+  }
+  
+  // Generate dist/esm/stera-icons.js (main entry point with re-exports)
+  const indexDistContent = `// Auto-generated - ESM barrel with re-exports
+// Import paths use .js extension for ESM compatibility
+
+// Export types
+export * from './types.js';
+
+// Export utility functions
+export { mergeClasses, hasA11yProp, toKebabCase, toCamelCase, toPascalCase } from './utils.js';
+
+// Base icon names (re-exports to individual icon files)
+${baseNameExportsDist.join('\n')}
+
+// Direct variant exports
+${directVariantExportsDist.join('\n')}
+`;
+  writeFileSync(join(distEsmDir, 'stera-icons.js'), indexDistContent);
+  
+  // Generate dist/esm/dynamic-variants.js
+  const dynamicVariantsDistContent = `// Auto-generated - ESM barrel with re-exports
+${wrapperExportsDist.join('\n')}
+`;
+  writeFileSync(join(distEsmDir, 'dynamic-variants.js'), dynamicVariantsDistContent);
+  
+  console.log('  ✅ Generated dist barrel files');
   
   // Generate metadata JSON
   writeFileSync(
@@ -473,6 +526,33 @@ export default dynamicIconImports;
     dynamicImportsContent
   );
   
+  // Generate dist version of dynamicIconImports.js
+  const dynamicImportsEntriesDist = Array.from(dynamicImportsMap.entries())
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([key, componentName]) => `  '${key}': () => import('./icons/${componentName}.js')`)
+    .join(',\n');
+  
+  const dynamicImportsDistContent = `// Auto-generated - ESM with .js extensions
+export const dynamicIconImports = {
+${dynamicImportsEntriesDist}
+};
+
+export const iconNames = Object.keys(dynamicIconImports);
+export default dynamicIconImports;
+`;
+  writeFileSync(join(distEsmDir, 'dynamicIconImports.js'), dynamicImportsDistContent);
+  
+  // Generate dist version of dynamic.js
+  const dynamicDistContent = `// Auto-generated - ESM entry point for dynamic icon loading
+import { createDynamicIcon, getIconNames } from './DynamicIcon.js';
+import { dynamicIconImports } from './dynamicIconImports.js';
+
+export const DynamicIcon = createDynamicIcon(dynamicIconImports);
+export { dynamicIconImports };
+export const iconNames = getIconNames(dynamicIconImports);
+`;
+  writeFileSync(join(distEsmDir, 'dynamic.js'), dynamicDistContent);
+  
   console.log(`  ✅ Generated dynamic imports map with ${dynamicImportsMap.size} entries`);
   
   // Check for naming conflicts and exit with error if any found
@@ -487,15 +567,12 @@ export default dynamicIconImports;
   }
   
   // Compile individual icon components for subpath exports (BATCHED for performance)
+  // ESM-only build - CJS removed for smaller package size
   console.log('\n📦 Preparing icon components for compilation...');
   const distEsmIconsDir = join(distDir, 'esm', 'icons');
-  const distCjsIconsDir = join(distDir, 'cjs', 'icons');
   
   if (!existsSync(distEsmIconsDir)) {
     mkdirSync(distEsmIconsDir, { recursive: true });
-  }
-  if (!existsSync(distCjsIconsDir)) {
-    mkdirSync(distCjsIconsDir, { recursive: true });
   }
   
   const packageJsonPath = join(__dirname, '..', 'package.json');
@@ -515,11 +592,10 @@ export default dynamicIconImports;
   // Combine all entry points for a single batched build
   const allEntryPoints = [...wrapperEntryPoints, ...variantEntryPoints];
   
-  // Compile icons to ESM and CJS in separate directories
+  // Compile icons to ESM only
   await compileIcons({
     entryPoints: allEntryPoints,
     esmOutDir: distEsmIconsDir,
-    cjsOutDir: distCjsIconsDir,
     srcDir
   });
   
@@ -529,12 +605,11 @@ export default dynamicIconImports;
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
-  // Update package.json with wildcard exports (following lucide-react pattern)
+  // Update package.json with wildcard exports (ESM-only)
   // Preserve existing exports (./base, ./dynamic, etc.) and only update ./icons/*
   const existingExports = packageJson.exports?.['.'] || {
     types: './dist/esm/stera-icons.d.ts',
     import: './dist/esm/stera-icons.js',
-    require: './dist/cjs/stera-icons.js',
     default: './dist/esm/stera-icons.js'
   };
   
@@ -544,7 +619,6 @@ export default dynamicIconImports;
     './icons/*': {
       types: './dist/esm/icons/*.d.ts',
       import: './dist/esm/icons/*.js',
-      require: './dist/cjs/icons/*.js',
       default: './dist/esm/icons/*.js'
     }
   };
@@ -570,7 +644,6 @@ export default dynamicIconImports;
   console.log(`  ✅ Unchanged icons: ${unchangedIcons}`);
   console.log(`  📁 Components written to: ${iconsDir}`);
   console.log(`  📁 ESM bundles written to: ${distEsmIconsDir}`);
-  console.log(`  📁 CJS bundles written to: ${distCjsIconsDir}`);
   console.log(`  📊 Metadata written to: ${join(distDir, 'icons.meta.json')}`);
   console.log(`\n🎯 Import patterns (efficient defaults):`);
   console.log(`  • Base names: import { Search } from 'stera-icons' → SearchRegular (~300 bytes)`);

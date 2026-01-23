@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBubbleCheckRegular } from './ChatBubbleCheckRegular';
-import { ChatBubbleCheckRegularDuotone } from './ChatBubbleCheckRegularDuotone';
-import { ChatBubbleCheckBold } from './ChatBubbleCheckBold';
-import { ChatBubbleCheckBoldDuotone } from './ChatBubbleCheckBoldDuotone';
-import { ChatBubbleCheckFill } from './ChatBubbleCheckFill';
-import { ChatBubbleCheckFillDuotone } from './ChatBubbleCheckFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBubbleCheckRegular } from './ChatBubbleCheckRegular.js';
+import { ChatBubbleCheckRegularDuotone } from './ChatBubbleCheckRegularDuotone.js';
+import { ChatBubbleCheckBold } from './ChatBubbleCheckBold.js';
+import { ChatBubbleCheckBoldDuotone } from './ChatBubbleCheckBoldDuotone.js';
+import { ChatBubbleCheckFill } from './ChatBubbleCheckFill.js';
+import { ChatBubbleCheckFillDuotone } from './ChatBubbleCheckFillDuotone.js';
 
 export interface ChatBubbleCheckProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

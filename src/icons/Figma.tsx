@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FigmaRegular } from './FigmaRegular';
-import { FigmaRegularDuotone } from './FigmaRegularDuotone';
-import { FigmaBold } from './FigmaBold';
-import { FigmaBoldDuotone } from './FigmaBoldDuotone';
-import { FigmaFill } from './FigmaFill';
-import { FigmaFillDuotone } from './FigmaFillDuotone';
+import type { IconProps } from '../types.js';
+import { FigmaRegular } from './FigmaRegular.js';
+import { FigmaRegularDuotone } from './FigmaRegularDuotone.js';
+import { FigmaBold } from './FigmaBold.js';
+import { FigmaBoldDuotone } from './FigmaBoldDuotone.js';
+import { FigmaFill } from './FigmaFill.js';
+import { FigmaFillDuotone } from './FigmaFillDuotone.js';
 
 export interface FigmaProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

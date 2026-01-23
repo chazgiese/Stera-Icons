@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BracketsSquareCircleRegular } from './BracketsSquareCircleRegular';
-import { BracketsSquareCircleRegularDuotone } from './BracketsSquareCircleRegularDuotone';
-import { BracketsSquareCircleBold } from './BracketsSquareCircleBold';
-import { BracketsSquareCircleBoldDuotone } from './BracketsSquareCircleBoldDuotone';
-import { BracketsSquareCircleFill } from './BracketsSquareCircleFill';
-import { BracketsSquareCircleFillDuotone } from './BracketsSquareCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { BracketsSquareCircleRegular } from './BracketsSquareCircleRegular.js';
+import { BracketsSquareCircleRegularDuotone } from './BracketsSquareCircleRegularDuotone.js';
+import { BracketsSquareCircleBold } from './BracketsSquareCircleBold.js';
+import { BracketsSquareCircleBoldDuotone } from './BracketsSquareCircleBoldDuotone.js';
+import { BracketsSquareCircleFill } from './BracketsSquareCircleFill.js';
+import { BracketsSquareCircleFillDuotone } from './BracketsSquareCircleFillDuotone.js';
 
 export interface BracketsSquareCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

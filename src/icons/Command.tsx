@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CommandRegular } from './CommandRegular';
-import { CommandRegularDuotone } from './CommandRegularDuotone';
-import { CommandBold } from './CommandBold';
-import { CommandBoldDuotone } from './CommandBoldDuotone';
-import { CommandFill } from './CommandFill';
-import { CommandFillDuotone } from './CommandFillDuotone';
+import type { IconProps } from '../types.js';
+import { CommandRegular } from './CommandRegular.js';
+import { CommandRegularDuotone } from './CommandRegularDuotone.js';
+import { CommandBold } from './CommandBold.js';
+import { CommandBoldDuotone } from './CommandBoldDuotone.js';
+import { CommandFill } from './CommandFill.js';
+import { CommandFillDuotone } from './CommandFillDuotone.js';
 
 export interface CommandProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

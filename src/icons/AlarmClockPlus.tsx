@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlarmClockPlusRegular } from './AlarmClockPlusRegular';
-import { AlarmClockPlusRegularDuotone } from './AlarmClockPlusRegularDuotone';
-import { AlarmClockPlusBold } from './AlarmClockPlusBold';
-import { AlarmClockPlusBoldDuotone } from './AlarmClockPlusBoldDuotone';
-import { AlarmClockPlusFill } from './AlarmClockPlusFill';
-import { AlarmClockPlusFillDuotone } from './AlarmClockPlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlarmClockPlusRegular } from './AlarmClockPlusRegular.js';
+import { AlarmClockPlusRegularDuotone } from './AlarmClockPlusRegularDuotone.js';
+import { AlarmClockPlusBold } from './AlarmClockPlusBold.js';
+import { AlarmClockPlusBoldDuotone } from './AlarmClockPlusBoldDuotone.js';
+import { AlarmClockPlusFill } from './AlarmClockPlusFill.js';
+import { AlarmClockPlusFillDuotone } from './AlarmClockPlusFillDuotone.js';
 
 export interface AlarmClockPlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

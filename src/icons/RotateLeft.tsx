@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RotateLeftRegular } from './RotateLeftRegular';
-import { RotateLeftRegularDuotone } from './RotateLeftRegularDuotone';
-import { RotateLeftBold } from './RotateLeftBold';
-import { RotateLeftBoldDuotone } from './RotateLeftBoldDuotone';
-import { RotateLeftFill } from './RotateLeftFill';
-import { RotateLeftFillDuotone } from './RotateLeftFillDuotone';
+import type { IconProps } from '../types.js';
+import { RotateLeftRegular } from './RotateLeftRegular.js';
+import { RotateLeftRegularDuotone } from './RotateLeftRegularDuotone.js';
+import { RotateLeftBold } from './RotateLeftBold.js';
+import { RotateLeftBoldDuotone } from './RotateLeftBoldDuotone.js';
+import { RotateLeftFill } from './RotateLeftFill.js';
+import { RotateLeftFillDuotone } from './RotateLeftFillDuotone.js';
 
 export interface RotateLeftProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

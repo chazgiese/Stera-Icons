@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CircleCheckerRegular } from './CircleCheckerRegular';
-import { CircleCheckerRegularDuotone } from './CircleCheckerRegularDuotone';
-import { CircleCheckerBold } from './CircleCheckerBold';
-import { CircleCheckerBoldDuotone } from './CircleCheckerBoldDuotone';
-import { CircleCheckerFill } from './CircleCheckerFill';
-import { CircleCheckerFillDuotone } from './CircleCheckerFillDuotone';
+import type { IconProps } from '../types.js';
+import { CircleCheckerRegular } from './CircleCheckerRegular.js';
+import { CircleCheckerRegularDuotone } from './CircleCheckerRegularDuotone.js';
+import { CircleCheckerBold } from './CircleCheckerBold.js';
+import { CircleCheckerBoldDuotone } from './CircleCheckerBoldDuotone.js';
+import { CircleCheckerFill } from './CircleCheckerFill.js';
+import { CircleCheckerFillDuotone } from './CircleCheckerFillDuotone.js';
 
 export interface CircleCheckerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

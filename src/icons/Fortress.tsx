@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FortressRegular } from './FortressRegular';
-import { FortressRegularDuotone } from './FortressRegularDuotone';
-import { FortressBold } from './FortressBold';
-import { FortressBoldDuotone } from './FortressBoldDuotone';
-import { FortressFill } from './FortressFill';
-import { FortressFillDuotone } from './FortressFillDuotone';
+import type { IconProps } from '../types.js';
+import { FortressRegular } from './FortressRegular.js';
+import { FortressRegularDuotone } from './FortressRegularDuotone.js';
+import { FortressBold } from './FortressBold.js';
+import { FortressBoldDuotone } from './FortressBoldDuotone.js';
+import { FortressFill } from './FortressFill.js';
+import { FortressFillDuotone } from './FortressFillDuotone.js';
 
 export interface FortressProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

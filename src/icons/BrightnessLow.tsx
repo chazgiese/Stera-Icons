@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrightnessLowRegular } from './BrightnessLowRegular';
-import { BrightnessLowRegularDuotone } from './BrightnessLowRegularDuotone';
-import { BrightnessLowBold } from './BrightnessLowBold';
-import { BrightnessLowBoldDuotone } from './BrightnessLowBoldDuotone';
-import { BrightnessLowFill } from './BrightnessLowFill';
-import { BrightnessLowFillDuotone } from './BrightnessLowFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrightnessLowRegular } from './BrightnessLowRegular.js';
+import { BrightnessLowRegularDuotone } from './BrightnessLowRegularDuotone.js';
+import { BrightnessLowBold } from './BrightnessLowBold.js';
+import { BrightnessLowBoldDuotone } from './BrightnessLowBoldDuotone.js';
+import { BrightnessLowFill } from './BrightnessLowFill.js';
+import { BrightnessLowFillDuotone } from './BrightnessLowFillDuotone.js';
 
 export interface BrightnessLowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

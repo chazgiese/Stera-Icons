@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CalendarFoldRegular } from './CalendarFoldRegular';
-import { CalendarFoldRegularDuotone } from './CalendarFoldRegularDuotone';
-import { CalendarFoldBold } from './CalendarFoldBold';
-import { CalendarFoldBoldDuotone } from './CalendarFoldBoldDuotone';
-import { CalendarFoldFill } from './CalendarFoldFill';
-import { CalendarFoldFillDuotone } from './CalendarFoldFillDuotone';
+import type { IconProps } from '../types.js';
+import { CalendarFoldRegular } from './CalendarFoldRegular.js';
+import { CalendarFoldRegularDuotone } from './CalendarFoldRegularDuotone.js';
+import { CalendarFoldBold } from './CalendarFoldBold.js';
+import { CalendarFoldBoldDuotone } from './CalendarFoldBoldDuotone.js';
+import { CalendarFoldFill } from './CalendarFoldFill.js';
+import { CalendarFoldFillDuotone } from './CalendarFoldFillDuotone.js';
 
 export interface CalendarFoldProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ShieldBanRegular } from './ShieldBanRegular';
-import { ShieldBanRegularDuotone } from './ShieldBanRegularDuotone';
-import { ShieldBanBold } from './ShieldBanBold';
-import { ShieldBanBoldDuotone } from './ShieldBanBoldDuotone';
-import { ShieldBanFill } from './ShieldBanFill';
-import { ShieldBanFillDuotone } from './ShieldBanFillDuotone';
+import type { IconProps } from '../types.js';
+import { ShieldBanRegular } from './ShieldBanRegular.js';
+import { ShieldBanRegularDuotone } from './ShieldBanRegularDuotone.js';
+import { ShieldBanBold } from './ShieldBanBold.js';
+import { ShieldBanBoldDuotone } from './ShieldBanBoldDuotone.js';
+import { ShieldBanFill } from './ShieldBanFill.js';
+import { ShieldBanFillDuotone } from './ShieldBanFillDuotone.js';
 
 export interface ShieldBanProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

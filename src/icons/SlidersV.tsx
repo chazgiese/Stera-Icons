@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SlidersVRegular } from './SlidersVRegular';
-import { SlidersVRegularDuotone } from './SlidersVRegularDuotone';
-import { SlidersVBold } from './SlidersVBold';
-import { SlidersVBoldDuotone } from './SlidersVBoldDuotone';
-import { SlidersVFill } from './SlidersVFill';
-import { SlidersVFillDuotone } from './SlidersVFillDuotone';
+import type { IconProps } from '../types.js';
+import { SlidersVRegular } from './SlidersVRegular.js';
+import { SlidersVRegularDuotone } from './SlidersVRegularDuotone.js';
+import { SlidersVBold } from './SlidersVBold.js';
+import { SlidersVBoldDuotone } from './SlidersVBoldDuotone.js';
+import { SlidersVFill } from './SlidersVFill.js';
+import { SlidersVFillDuotone } from './SlidersVFillDuotone.js';
 
 export interface SlidersVProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

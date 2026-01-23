@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ContrastRegular } from './ContrastRegular';
-import { ContrastRegularDuotone } from './ContrastRegularDuotone';
-import { ContrastBold } from './ContrastBold';
-import { ContrastBoldDuotone } from './ContrastBoldDuotone';
-import { ContrastFill } from './ContrastFill';
-import { ContrastFillDuotone } from './ContrastFillDuotone';
+import type { IconProps } from '../types.js';
+import { ContrastRegular } from './ContrastRegular.js';
+import { ContrastRegularDuotone } from './ContrastRegularDuotone.js';
+import { ContrastBold } from './ContrastBold.js';
+import { ContrastBoldDuotone } from './ContrastBoldDuotone.js';
+import { ContrastFill } from './ContrastFill.js';
+import { ContrastFillDuotone } from './ContrastFillDuotone.js';
 
 export interface ContrastProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

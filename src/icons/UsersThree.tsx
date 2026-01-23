@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UsersThreeRegular } from './UsersThreeRegular';
-import { UsersThreeRegularDuotone } from './UsersThreeRegularDuotone';
-import { UsersThreeBold } from './UsersThreeBold';
-import { UsersThreeBoldDuotone } from './UsersThreeBoldDuotone';
-import { UsersThreeFill } from './UsersThreeFill';
-import { UsersThreeFillDuotone } from './UsersThreeFillDuotone';
+import type { IconProps } from '../types.js';
+import { UsersThreeRegular } from './UsersThreeRegular.js';
+import { UsersThreeRegularDuotone } from './UsersThreeRegularDuotone.js';
+import { UsersThreeBold } from './UsersThreeBold.js';
+import { UsersThreeBoldDuotone } from './UsersThreeBoldDuotone.js';
+import { UsersThreeFill } from './UsersThreeFill.js';
+import { UsersThreeFillDuotone } from './UsersThreeFillDuotone.js';
 
 export interface UsersThreeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

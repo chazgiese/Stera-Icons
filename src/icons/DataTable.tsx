@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DataTableRegular } from './DataTableRegular';
-import { DataTableRegularDuotone } from './DataTableRegularDuotone';
-import { DataTableBold } from './DataTableBold';
-import { DataTableBoldDuotone } from './DataTableBoldDuotone';
-import { DataTableFill } from './DataTableFill';
-import { DataTableFillDuotone } from './DataTableFillDuotone';
+import type { IconProps } from '../types.js';
+import { DataTableRegular } from './DataTableRegular.js';
+import { DataTableRegularDuotone } from './DataTableRegularDuotone.js';
+import { DataTableBold } from './DataTableBold.js';
+import { DataTableBoldDuotone } from './DataTableBoldDuotone.js';
+import { DataTableFill } from './DataTableFill.js';
+import { DataTableFillDuotone } from './DataTableFillDuotone.js';
 
 export interface DataTableProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

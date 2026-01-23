@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AirplaneRegular } from './AirplaneRegular';
-import { AirplaneRegularDuotone } from './AirplaneRegularDuotone';
-import { AirplaneBold } from './AirplaneBold';
-import { AirplaneBoldDuotone } from './AirplaneBoldDuotone';
-import { AirplaneFill } from './AirplaneFill';
-import { AirplaneFillDuotone } from './AirplaneFillDuotone';
+import type { IconProps } from '../types.js';
+import { AirplaneRegular } from './AirplaneRegular.js';
+import { AirplaneRegularDuotone } from './AirplaneRegularDuotone.js';
+import { AirplaneBold } from './AirplaneBold.js';
+import { AirplaneBoldDuotone } from './AirplaneBoldDuotone.js';
+import { AirplaneFill } from './AirplaneFill.js';
+import { AirplaneFillDuotone } from './AirplaneFillDuotone.js';
 
 export interface AirplaneProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

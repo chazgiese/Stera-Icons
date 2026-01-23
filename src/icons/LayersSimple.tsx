@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayersSimpleRegular } from './LayersSimpleRegular';
-import { LayersSimpleRegularDuotone } from './LayersSimpleRegularDuotone';
-import { LayersSimpleBold } from './LayersSimpleBold';
-import { LayersSimpleBoldDuotone } from './LayersSimpleBoldDuotone';
-import { LayersSimpleFill } from './LayersSimpleFill';
-import { LayersSimpleFillDuotone } from './LayersSimpleFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayersSimpleRegular } from './LayersSimpleRegular.js';
+import { LayersSimpleRegularDuotone } from './LayersSimpleRegularDuotone.js';
+import { LayersSimpleBold } from './LayersSimpleBold.js';
+import { LayersSimpleBoldDuotone } from './LayersSimpleBoldDuotone.js';
+import { LayersSimpleFill } from './LayersSimpleFill.js';
+import { LayersSimpleFillDuotone } from './LayersSimpleFillDuotone.js';
 
 export interface LayersSimpleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartBarAscRegular } from './ChartBarAscRegular';
-import { ChartBarAscRegularDuotone } from './ChartBarAscRegularDuotone';
-import { ChartBarAscBold } from './ChartBarAscBold';
-import { ChartBarAscBoldDuotone } from './ChartBarAscBoldDuotone';
-import { ChartBarAscFill } from './ChartBarAscFill';
-import { ChartBarAscFillDuotone } from './ChartBarAscFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartBarAscRegular } from './ChartBarAscRegular.js';
+import { ChartBarAscRegularDuotone } from './ChartBarAscRegularDuotone.js';
+import { ChartBarAscBold } from './ChartBarAscBold.js';
+import { ChartBarAscBoldDuotone } from './ChartBarAscBoldDuotone.js';
+import { ChartBarAscFill } from './ChartBarAscFill.js';
+import { ChartBarAscFillDuotone } from './ChartBarAscFillDuotone.js';
 
 export interface ChartBarAscProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

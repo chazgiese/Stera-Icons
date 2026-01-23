@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MoonStarRegular } from './MoonStarRegular';
-import { MoonStarRegularDuotone } from './MoonStarRegularDuotone';
-import { MoonStarBold } from './MoonStarBold';
-import { MoonStarBoldDuotone } from './MoonStarBoldDuotone';
-import { MoonStarFill } from './MoonStarFill';
-import { MoonStarFillDuotone } from './MoonStarFillDuotone';
+import type { IconProps } from '../types.js';
+import { MoonStarRegular } from './MoonStarRegular.js';
+import { MoonStarRegularDuotone } from './MoonStarRegularDuotone.js';
+import { MoonStarBold } from './MoonStarBold.js';
+import { MoonStarBoldDuotone } from './MoonStarBoldDuotone.js';
+import { MoonStarFill } from './MoonStarFill.js';
+import { MoonStarFillDuotone } from './MoonStarFillDuotone.js';
 
 export interface MoonStarProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

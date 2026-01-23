@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SpiralRegular } from './SpiralRegular';
-import { SpiralRegularDuotone } from './SpiralRegularDuotone';
-import { SpiralBold } from './SpiralBold';
-import { SpiralBoldDuotone } from './SpiralBoldDuotone';
-import { SpiralFill } from './SpiralFill';
-import { SpiralFillDuotone } from './SpiralFillDuotone';
+import type { IconProps } from '../types.js';
+import { SpiralRegular } from './SpiralRegular.js';
+import { SpiralRegularDuotone } from './SpiralRegularDuotone.js';
+import { SpiralBold } from './SpiralBold.js';
+import { SpiralBoldDuotone } from './SpiralBoldDuotone.js';
+import { SpiralFill } from './SpiralFill.js';
+import { SpiralFillDuotone } from './SpiralFillDuotone.js';
 
 export interface SpiralProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

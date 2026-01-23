@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ListCheckRegular } from './ListCheckRegular';
-import { ListCheckRegularDuotone } from './ListCheckRegularDuotone';
-import { ListCheckBold } from './ListCheckBold';
-import { ListCheckBoldDuotone } from './ListCheckBoldDuotone';
-import { ListCheckFill } from './ListCheckFill';
-import { ListCheckFillDuotone } from './ListCheckFillDuotone';
+import type { IconProps } from '../types.js';
+import { ListCheckRegular } from './ListCheckRegular.js';
+import { ListCheckRegularDuotone } from './ListCheckRegularDuotone.js';
+import { ListCheckBold } from './ListCheckBold.js';
+import { ListCheckBoldDuotone } from './ListCheckBoldDuotone.js';
+import { ListCheckFill } from './ListCheckFill.js';
+import { ListCheckFillDuotone } from './ListCheckFillDuotone.js';
 
 export interface ListCheckProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

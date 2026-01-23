@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { InfoSquareRegular } from './InfoSquareRegular';
-import { InfoSquareRegularDuotone } from './InfoSquareRegularDuotone';
-import { InfoSquareBold } from './InfoSquareBold';
-import { InfoSquareBoldDuotone } from './InfoSquareBoldDuotone';
-import { InfoSquareFill } from './InfoSquareFill';
-import { InfoSquareFillDuotone } from './InfoSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { InfoSquareRegular } from './InfoSquareRegular.js';
+import { InfoSquareRegularDuotone } from './InfoSquareRegularDuotone.js';
+import { InfoSquareBold } from './InfoSquareBold.js';
+import { InfoSquareBoldDuotone } from './InfoSquareBoldDuotone.js';
+import { InfoSquareFill } from './InfoSquareFill.js';
+import { InfoSquareFillDuotone } from './InfoSquareFillDuotone.js';
 
 export interface InfoSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

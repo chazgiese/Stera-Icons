@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TargetRegular } from './TargetRegular';
-import { TargetRegularDuotone } from './TargetRegularDuotone';
-import { TargetBold } from './TargetBold';
-import { TargetBoldDuotone } from './TargetBoldDuotone';
-import { TargetFill } from './TargetFill';
-import { TargetFillDuotone } from './TargetFillDuotone';
+import type { IconProps } from '../types.js';
+import { TargetRegular } from './TargetRegular.js';
+import { TargetRegularDuotone } from './TargetRegularDuotone.js';
+import { TargetBold } from './TargetBold.js';
+import { TargetBoldDuotone } from './TargetBoldDuotone.js';
+import { TargetFill } from './TargetFill.js';
+import { TargetFillDuotone } from './TargetFillDuotone.js';
 
 export interface TargetProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

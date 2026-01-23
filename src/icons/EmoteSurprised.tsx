@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EmoteSurprisedRegular } from './EmoteSurprisedRegular';
-import { EmoteSurprisedRegularDuotone } from './EmoteSurprisedRegularDuotone';
-import { EmoteSurprisedBold } from './EmoteSurprisedBold';
-import { EmoteSurprisedBoldDuotone } from './EmoteSurprisedBoldDuotone';
-import { EmoteSurprisedFill } from './EmoteSurprisedFill';
-import { EmoteSurprisedFillDuotone } from './EmoteSurprisedFillDuotone';
+import type { IconProps } from '../types.js';
+import { EmoteSurprisedRegular } from './EmoteSurprisedRegular.js';
+import { EmoteSurprisedRegularDuotone } from './EmoteSurprisedRegularDuotone.js';
+import { EmoteSurprisedBold } from './EmoteSurprisedBold.js';
+import { EmoteSurprisedBoldDuotone } from './EmoteSurprisedBoldDuotone.js';
+import { EmoteSurprisedFill } from './EmoteSurprisedFill.js';
+import { EmoteSurprisedFillDuotone } from './EmoteSurprisedFillDuotone.js';
 
 export interface EmoteSurprisedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

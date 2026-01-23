@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ThumbsDownRegular } from './ThumbsDownRegular';
-import { ThumbsDownRegularDuotone } from './ThumbsDownRegularDuotone';
-import { ThumbsDownBold } from './ThumbsDownBold';
-import { ThumbsDownBoldDuotone } from './ThumbsDownBoldDuotone';
-import { ThumbsDownFill } from './ThumbsDownFill';
-import { ThumbsDownFillDuotone } from './ThumbsDownFillDuotone';
+import type { IconProps } from '../types.js';
+import { ThumbsDownRegular } from './ThumbsDownRegular.js';
+import { ThumbsDownRegularDuotone } from './ThumbsDownRegularDuotone.js';
+import { ThumbsDownBold } from './ThumbsDownBold.js';
+import { ThumbsDownBoldDuotone } from './ThumbsDownBoldDuotone.js';
+import { ThumbsDownFill } from './ThumbsDownFill.js';
+import { ThumbsDownFillDuotone } from './ThumbsDownFillDuotone.js';
 
 export interface ThumbsDownProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

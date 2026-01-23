@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TimerRegular } from './TimerRegular';
-import { TimerRegularDuotone } from './TimerRegularDuotone';
-import { TimerBold } from './TimerBold';
-import { TimerBoldDuotone } from './TimerBoldDuotone';
-import { TimerFill } from './TimerFill';
-import { TimerFillDuotone } from './TimerFillDuotone';
+import type { IconProps } from '../types.js';
+import { TimerRegular } from './TimerRegular.js';
+import { TimerRegularDuotone } from './TimerRegularDuotone.js';
+import { TimerBold } from './TimerBold.js';
+import { TimerBoldDuotone } from './TimerBoldDuotone.js';
+import { TimerFill } from './TimerFill.js';
+import { TimerFillDuotone } from './TimerFillDuotone.js';
 
 export interface TimerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

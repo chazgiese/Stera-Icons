@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChevronsLeftRightEllipsisRegular } from './ChevronsLeftRightEllipsisRegular';
-import { ChevronsLeftRightEllipsisRegularDuotone } from './ChevronsLeftRightEllipsisRegularDuotone';
-import { ChevronsLeftRightEllipsisBold } from './ChevronsLeftRightEllipsisBold';
-import { ChevronsLeftRightEllipsisBoldDuotone } from './ChevronsLeftRightEllipsisBoldDuotone';
-import { ChevronsLeftRightEllipsisFill } from './ChevronsLeftRightEllipsisFill';
-import { ChevronsLeftRightEllipsisFillDuotone } from './ChevronsLeftRightEllipsisFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChevronsLeftRightEllipsisRegular } from './ChevronsLeftRightEllipsisRegular.js';
+import { ChevronsLeftRightEllipsisRegularDuotone } from './ChevronsLeftRightEllipsisRegularDuotone.js';
+import { ChevronsLeftRightEllipsisBold } from './ChevronsLeftRightEllipsisBold.js';
+import { ChevronsLeftRightEllipsisBoldDuotone } from './ChevronsLeftRightEllipsisBoldDuotone.js';
+import { ChevronsLeftRightEllipsisFill } from './ChevronsLeftRightEllipsisFill.js';
+import { ChevronsLeftRightEllipsisFillDuotone } from './ChevronsLeftRightEllipsisFillDuotone.js';
 
 export interface ChevronsLeftRightEllipsisProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChevronFullCircleRightRegular } from './ChevronFullCircleRightRegular';
-import { ChevronFullCircleRightRegularDuotone } from './ChevronFullCircleRightRegularDuotone';
-import { ChevronFullCircleRightBold } from './ChevronFullCircleRightBold';
-import { ChevronFullCircleRightBoldDuotone } from './ChevronFullCircleRightBoldDuotone';
-import { ChevronFullCircleRightFill } from './ChevronFullCircleRightFill';
-import { ChevronFullCircleRightFillDuotone } from './ChevronFullCircleRightFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChevronFullCircleRightRegular } from './ChevronFullCircleRightRegular.js';
+import { ChevronFullCircleRightRegularDuotone } from './ChevronFullCircleRightRegularDuotone.js';
+import { ChevronFullCircleRightBold } from './ChevronFullCircleRightBold.js';
+import { ChevronFullCircleRightBoldDuotone } from './ChevronFullCircleRightBoldDuotone.js';
+import { ChevronFullCircleRightFill } from './ChevronFullCircleRightFill.js';
+import { ChevronFullCircleRightFillDuotone } from './ChevronFullCircleRightFillDuotone.js';
 
 export interface ChevronFullCircleRightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

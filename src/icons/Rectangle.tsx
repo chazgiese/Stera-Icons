@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RectangleRegular } from './RectangleRegular';
-import { RectangleRegularDuotone } from './RectangleRegularDuotone';
-import { RectangleBold } from './RectangleBold';
-import { RectangleBoldDuotone } from './RectangleBoldDuotone';
-import { RectangleFill } from './RectangleFill';
-import { RectangleFillDuotone } from './RectangleFillDuotone';
+import type { IconProps } from '../types.js';
+import { RectangleRegular } from './RectangleRegular.js';
+import { RectangleRegularDuotone } from './RectangleRegularDuotone.js';
+import { RectangleBold } from './RectangleBold.js';
+import { RectangleBoldDuotone } from './RectangleBoldDuotone.js';
+import { RectangleFill } from './RectangleFill.js';
+import { RectangleFillDuotone } from './RectangleFillDuotone.js';
 
 export interface RectangleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

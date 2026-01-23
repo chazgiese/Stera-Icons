@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ExpandRegular } from './ExpandRegular';
-import { ExpandRegularDuotone } from './ExpandRegularDuotone';
-import { ExpandBold } from './ExpandBold';
-import { ExpandBoldDuotone } from './ExpandBoldDuotone';
-import { ExpandFill } from './ExpandFill';
-import { ExpandFillDuotone } from './ExpandFillDuotone';
+import type { IconProps } from '../types.js';
+import { ExpandRegular } from './ExpandRegular.js';
+import { ExpandRegularDuotone } from './ExpandRegularDuotone.js';
+import { ExpandBold } from './ExpandBold.js';
+import { ExpandBoldDuotone } from './ExpandBoldDuotone.js';
+import { ExpandFill } from './ExpandFill.js';
+import { ExpandFillDuotone } from './ExpandFillDuotone.js';
 
 export interface ExpandProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

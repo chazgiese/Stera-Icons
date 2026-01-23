@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DeleteRegular } from './DeleteRegular';
-import { DeleteRegularDuotone } from './DeleteRegularDuotone';
-import { DeleteBold } from './DeleteBold';
-import { DeleteBoldDuotone } from './DeleteBoldDuotone';
-import { DeleteFill } from './DeleteFill';
-import { DeleteFillDuotone } from './DeleteFillDuotone';
+import type { IconProps } from '../types.js';
+import { DeleteRegular } from './DeleteRegular.js';
+import { DeleteRegularDuotone } from './DeleteRegularDuotone.js';
+import { DeleteBold } from './DeleteBold.js';
+import { DeleteBoldDuotone } from './DeleteBoldDuotone.js';
+import { DeleteFill } from './DeleteFill.js';
+import { DeleteFillDuotone } from './DeleteFillDuotone.js';
 
 export interface DeleteProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

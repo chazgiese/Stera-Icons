@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SignalZeroRegular } from './SignalZeroRegular';
-import { SignalZeroRegularDuotone } from './SignalZeroRegularDuotone';
-import { SignalZeroBold } from './SignalZeroBold';
-import { SignalZeroBoldDuotone } from './SignalZeroBoldDuotone';
-import { SignalZeroFill } from './SignalZeroFill';
-import { SignalZeroFillDuotone } from './SignalZeroFillDuotone';
+import type { IconProps } from '../types.js';
+import { SignalZeroRegular } from './SignalZeroRegular.js';
+import { SignalZeroRegularDuotone } from './SignalZeroRegularDuotone.js';
+import { SignalZeroBold } from './SignalZeroBold.js';
+import { SignalZeroBoldDuotone } from './SignalZeroBoldDuotone.js';
+import { SignalZeroFill } from './SignalZeroFill.js';
+import { SignalZeroFillDuotone } from './SignalZeroFillDuotone.js';
 
 export interface SignalZeroProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

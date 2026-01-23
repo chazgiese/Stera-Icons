@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { WineBottleLabelRegular } from './WineBottleLabelRegular';
-import { WineBottleLabelRegularDuotone } from './WineBottleLabelRegularDuotone';
-import { WineBottleLabelBold } from './WineBottleLabelBold';
-import { WineBottleLabelBoldDuotone } from './WineBottleLabelBoldDuotone';
-import { WineBottleLabelFill } from './WineBottleLabelFill';
-import { WineBottleLabelFillDuotone } from './WineBottleLabelFillDuotone';
+import type { IconProps } from '../types.js';
+import { WineBottleLabelRegular } from './WineBottleLabelRegular.js';
+import { WineBottleLabelRegularDuotone } from './WineBottleLabelRegularDuotone.js';
+import { WineBottleLabelBold } from './WineBottleLabelBold.js';
+import { WineBottleLabelBoldDuotone } from './WineBottleLabelBoldDuotone.js';
+import { WineBottleLabelFill } from './WineBottleLabelFill.js';
+import { WineBottleLabelFillDuotone } from './WineBottleLabelFillDuotone.js';
 
 export interface WineBottleLabelProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

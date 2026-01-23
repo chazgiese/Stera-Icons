@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { XCircleRegular } from './XCircleRegular';
-import { XCircleRegularDuotone } from './XCircleRegularDuotone';
-import { XCircleBold } from './XCircleBold';
-import { XCircleBoldDuotone } from './XCircleBoldDuotone';
-import { XCircleFill } from './XCircleFill';
-import { XCircleFillDuotone } from './XCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { XCircleRegular } from './XCircleRegular.js';
+import { XCircleRegularDuotone } from './XCircleRegularDuotone.js';
+import { XCircleBold } from './XCircleBold.js';
+import { XCircleBoldDuotone } from './XCircleBoldDuotone.js';
+import { XCircleFill } from './XCircleFill.js';
+import { XCircleFillDuotone } from './XCircleFillDuotone.js';
 
 export interface XCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

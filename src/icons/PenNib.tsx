@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PenNibRegular } from './PenNibRegular';
-import { PenNibRegularDuotone } from './PenNibRegularDuotone';
-import { PenNibBold } from './PenNibBold';
-import { PenNibBoldDuotone } from './PenNibBoldDuotone';
-import { PenNibFill } from './PenNibFill';
-import { PenNibFillDuotone } from './PenNibFillDuotone';
+import type { IconProps } from '../types.js';
+import { PenNibRegular } from './PenNibRegular.js';
+import { PenNibRegularDuotone } from './PenNibRegularDuotone.js';
+import { PenNibBold } from './PenNibBold.js';
+import { PenNibBoldDuotone } from './PenNibBoldDuotone.js';
+import { PenNibFill } from './PenNibFill.js';
+import { PenNibFillDuotone } from './PenNibFillDuotone.js';
 
 export interface PenNibProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

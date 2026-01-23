@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrainCircuitRegular } from './BrainCircuitRegular';
-import { BrainCircuitRegularDuotone } from './BrainCircuitRegularDuotone';
-import { BrainCircuitBold } from './BrainCircuitBold';
-import { BrainCircuitBoldDuotone } from './BrainCircuitBoldDuotone';
-import { BrainCircuitFill } from './BrainCircuitFill';
-import { BrainCircuitFillDuotone } from './BrainCircuitFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrainCircuitRegular } from './BrainCircuitRegular.js';
+import { BrainCircuitRegularDuotone } from './BrainCircuitRegularDuotone.js';
+import { BrainCircuitBold } from './BrainCircuitBold.js';
+import { BrainCircuitBoldDuotone } from './BrainCircuitBoldDuotone.js';
+import { BrainCircuitFill } from './BrainCircuitFill.js';
+import { BrainCircuitFillDuotone } from './BrainCircuitFillDuotone.js';
 
 export interface BrainCircuitProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

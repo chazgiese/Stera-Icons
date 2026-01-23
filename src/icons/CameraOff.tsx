@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CameraOffRegular } from './CameraOffRegular';
-import { CameraOffRegularDuotone } from './CameraOffRegularDuotone';
-import { CameraOffBold } from './CameraOffBold';
-import { CameraOffBoldDuotone } from './CameraOffBoldDuotone';
-import { CameraOffFill } from './CameraOffFill';
-import { CameraOffFillDuotone } from './CameraOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { CameraOffRegular } from './CameraOffRegular.js';
+import { CameraOffRegularDuotone } from './CameraOffRegularDuotone.js';
+import { CameraOffBold } from './CameraOffBold.js';
+import { CameraOffBoldDuotone } from './CameraOffBoldDuotone.js';
+import { CameraOffFill } from './CameraOffFill.js';
+import { CameraOffFillDuotone } from './CameraOffFillDuotone.js';
 
 export interface CameraOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

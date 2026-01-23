@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CanRegular } from './CanRegular';
-import { CanRegularDuotone } from './CanRegularDuotone';
-import { CanBold } from './CanBold';
-import { CanBoldDuotone } from './CanBoldDuotone';
-import { CanFill } from './CanFill';
-import { CanFillDuotone } from './CanFillDuotone';
+import type { IconProps } from '../types.js';
+import { CanRegular } from './CanRegular.js';
+import { CanRegularDuotone } from './CanRegularDuotone.js';
+import { CanBold } from './CanBold.js';
+import { CanBoldDuotone } from './CanBoldDuotone.js';
+import { CanFill } from './CanFill.js';
+import { CanFillDuotone } from './CanFillDuotone.js';
 
 export interface CanProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

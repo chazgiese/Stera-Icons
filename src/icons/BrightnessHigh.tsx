@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BrightnessHighRegular } from './BrightnessHighRegular';
-import { BrightnessHighRegularDuotone } from './BrightnessHighRegularDuotone';
-import { BrightnessHighBold } from './BrightnessHighBold';
-import { BrightnessHighBoldDuotone } from './BrightnessHighBoldDuotone';
-import { BrightnessHighFill } from './BrightnessHighFill';
-import { BrightnessHighFillDuotone } from './BrightnessHighFillDuotone';
+import type { IconProps } from '../types.js';
+import { BrightnessHighRegular } from './BrightnessHighRegular.js';
+import { BrightnessHighRegularDuotone } from './BrightnessHighRegularDuotone.js';
+import { BrightnessHighBold } from './BrightnessHighBold.js';
+import { BrightnessHighBoldDuotone } from './BrightnessHighBoldDuotone.js';
+import { BrightnessHighFill } from './BrightnessHighFill.js';
+import { BrightnessHighFillDuotone } from './BrightnessHighFillDuotone.js';
 
 export interface BrightnessHighProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

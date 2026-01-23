@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { UmbrellaRegular } from './UmbrellaRegular';
-import { UmbrellaRegularDuotone } from './UmbrellaRegularDuotone';
-import { UmbrellaBold } from './UmbrellaBold';
-import { UmbrellaBoldDuotone } from './UmbrellaBoldDuotone';
-import { UmbrellaFill } from './UmbrellaFill';
-import { UmbrellaFillDuotone } from './UmbrellaFillDuotone';
+import type { IconProps } from '../types.js';
+import { UmbrellaRegular } from './UmbrellaRegular.js';
+import { UmbrellaRegularDuotone } from './UmbrellaRegularDuotone.js';
+import { UmbrellaBold } from './UmbrellaBold.js';
+import { UmbrellaBoldDuotone } from './UmbrellaBoldDuotone.js';
+import { UmbrellaFill } from './UmbrellaFill.js';
+import { UmbrellaFillDuotone } from './UmbrellaFillDuotone.js';
 
 export interface UmbrellaProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

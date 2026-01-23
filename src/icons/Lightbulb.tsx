@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LightbulbRegular } from './LightbulbRegular';
-import { LightbulbRegularDuotone } from './LightbulbRegularDuotone';
-import { LightbulbBold } from './LightbulbBold';
-import { LightbulbBoldDuotone } from './LightbulbBoldDuotone';
-import { LightbulbFill } from './LightbulbFill';
-import { LightbulbFillDuotone } from './LightbulbFillDuotone';
+import type { IconProps } from '../types.js';
+import { LightbulbRegular } from './LightbulbRegular.js';
+import { LightbulbRegularDuotone } from './LightbulbRegularDuotone.js';
+import { LightbulbBold } from './LightbulbBold.js';
+import { LightbulbBoldDuotone } from './LightbulbBoldDuotone.js';
+import { LightbulbFill } from './LightbulbFill.js';
+import { LightbulbFillDuotone } from './LightbulbFillDuotone.js';
 
 export interface LightbulbProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BankRegular } from './BankRegular';
-import { BankRegularDuotone } from './BankRegularDuotone';
-import { BankBold } from './BankBold';
-import { BankBoldDuotone } from './BankBoldDuotone';
-import { BankFill } from './BankFill';
-import { BankFillDuotone } from './BankFillDuotone';
+import type { IconProps } from '../types.js';
+import { BankRegular } from './BankRegular.js';
+import { BankRegularDuotone } from './BankRegularDuotone.js';
+import { BankBold } from './BankBold.js';
+import { BankBoldDuotone } from './BankBoldDuotone.js';
+import { BankFill } from './BankFill.js';
+import { BankFillDuotone } from './BankFillDuotone.js';
 
 export interface BankProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

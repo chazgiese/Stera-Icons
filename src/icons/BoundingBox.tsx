@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BoundingBoxRegular } from './BoundingBoxRegular';
-import { BoundingBoxRegularDuotone } from './BoundingBoxRegularDuotone';
-import { BoundingBoxBold } from './BoundingBoxBold';
-import { BoundingBoxBoldDuotone } from './BoundingBoxBoldDuotone';
-import { BoundingBoxFill } from './BoundingBoxFill';
-import { BoundingBoxFillDuotone } from './BoundingBoxFillDuotone';
+import type { IconProps } from '../types.js';
+import { BoundingBoxRegular } from './BoundingBoxRegular.js';
+import { BoundingBoxRegularDuotone } from './BoundingBoxRegularDuotone.js';
+import { BoundingBoxBold } from './BoundingBoxBold.js';
+import { BoundingBoxBoldDuotone } from './BoundingBoxBoldDuotone.js';
+import { BoundingBoxFill } from './BoundingBoxFill.js';
+import { BoundingBoxFillDuotone } from './BoundingBoxFillDuotone.js';
 
 export interface BoundingBoxProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

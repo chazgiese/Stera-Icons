@@ -37,9 +37,11 @@ export function generatePathJsx(paths) {
  * @returns {string} - Complete component code
  */
 export function generateVariantComponent({ componentName, kebabIconName, pathJsx }) {
+  // Import with .js extension for ESM compatibility
+  // TypeScript resolves .js to .ts during compilation
   return `import { memo, forwardRef } from 'react';
-import { IconBase } from '../IconBase';
-import type { IconBaseProps } from '../IconBase';
+import { IconBase } from '../base.js';
+import type { IconBaseProps } from '../base.js';
 
 type ${componentName}Props = Omit<IconBaseProps, 'children'>;
 
@@ -80,7 +82,7 @@ export function generateWrapperComponent({
   regularVariantName
 }) {
   return `import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
+import type { IconProps } from '../types.js';
 ${imports.join('\n')}
 
 export interface ${baseComponentName}Props extends IconProps {

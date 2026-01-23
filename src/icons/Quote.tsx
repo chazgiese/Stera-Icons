@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { QuoteRegular } from './QuoteRegular';
-import { QuoteRegularDuotone } from './QuoteRegularDuotone';
-import { QuoteBold } from './QuoteBold';
-import { QuoteBoldDuotone } from './QuoteBoldDuotone';
-import { QuoteFill } from './QuoteFill';
-import { QuoteFillDuotone } from './QuoteFillDuotone';
+import type { IconProps } from '../types.js';
+import { QuoteRegular } from './QuoteRegular.js';
+import { QuoteRegularDuotone } from './QuoteRegularDuotone.js';
+import { QuoteBold } from './QuoteBold.js';
+import { QuoteBoldDuotone } from './QuoteBoldDuotone.js';
+import { QuoteFill } from './QuoteFill.js';
+import { QuoteFillDuotone } from './QuoteFillDuotone.js';
 
 export interface QuoteProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

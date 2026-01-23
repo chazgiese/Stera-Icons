@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CameraRegular } from './CameraRegular';
-import { CameraRegularDuotone } from './CameraRegularDuotone';
-import { CameraBold } from './CameraBold';
-import { CameraBoldDuotone } from './CameraBoldDuotone';
-import { CameraFill } from './CameraFill';
-import { CameraFillDuotone } from './CameraFillDuotone';
+import type { IconProps } from '../types.js';
+import { CameraRegular } from './CameraRegular.js';
+import { CameraRegularDuotone } from './CameraRegularDuotone.js';
+import { CameraBold } from './CameraBold.js';
+import { CameraBoldDuotone } from './CameraBoldDuotone.js';
+import { CameraFill } from './CameraFill.js';
+import { CameraFillDuotone } from './CameraFillDuotone.js';
 
 export interface CameraProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

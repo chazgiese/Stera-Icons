@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SquareRegular } from './SquareRegular';
-import { SquareRegularDuotone } from './SquareRegularDuotone';
-import { SquareBold } from './SquareBold';
-import { SquareBoldDuotone } from './SquareBoldDuotone';
-import { SquareFill } from './SquareFill';
-import { SquareFillDuotone } from './SquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { SquareRegular } from './SquareRegular.js';
+import { SquareRegularDuotone } from './SquareRegularDuotone.js';
+import { SquareBold } from './SquareBold.js';
+import { SquareBoldDuotone } from './SquareBoldDuotone.js';
+import { SquareFill } from './SquareFill.js';
+import { SquareFillDuotone } from './SquareFillDuotone.js';
 
 export interface SquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

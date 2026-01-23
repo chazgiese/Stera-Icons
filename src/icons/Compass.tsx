@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CompassRegular } from './CompassRegular';
-import { CompassRegularDuotone } from './CompassRegularDuotone';
-import { CompassBold } from './CompassBold';
-import { CompassBoldDuotone } from './CompassBoldDuotone';
-import { CompassFill } from './CompassFill';
-import { CompassFillDuotone } from './CompassFillDuotone';
+import type { IconProps } from '../types.js';
+import { CompassRegular } from './CompassRegular.js';
+import { CompassRegularDuotone } from './CompassRegularDuotone.js';
+import { CompassBold } from './CompassBold.js';
+import { CompassBoldDuotone } from './CompassBoldDuotone.js';
+import { CompassFill } from './CompassFill.js';
+import { CompassFillDuotone } from './CompassFillDuotone.js';
 
 export interface CompassProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

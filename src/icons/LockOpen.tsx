@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LockOpenRegular } from './LockOpenRegular';
-import { LockOpenRegularDuotone } from './LockOpenRegularDuotone';
-import { LockOpenBold } from './LockOpenBold';
-import { LockOpenBoldDuotone } from './LockOpenBoldDuotone';
-import { LockOpenFill } from './LockOpenFill';
-import { LockOpenFillDuotone } from './LockOpenFillDuotone';
+import type { IconProps } from '../types.js';
+import { LockOpenRegular } from './LockOpenRegular.js';
+import { LockOpenRegularDuotone } from './LockOpenRegularDuotone.js';
+import { LockOpenBold } from './LockOpenBold.js';
+import { LockOpenBoldDuotone } from './LockOpenBoldDuotone.js';
+import { LockOpenFill } from './LockOpenFill.js';
+import { LockOpenFillDuotone } from './LockOpenFillDuotone.js';
 
 export interface LockOpenProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

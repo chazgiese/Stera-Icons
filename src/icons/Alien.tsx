@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlienRegular } from './AlienRegular';
-import { AlienRegularDuotone } from './AlienRegularDuotone';
-import { AlienBold } from './AlienBold';
-import { AlienBoldDuotone } from './AlienBoldDuotone';
-import { AlienFill } from './AlienFill';
-import { AlienFillDuotone } from './AlienFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlienRegular } from './AlienRegular.js';
+import { AlienRegularDuotone } from './AlienRegularDuotone.js';
+import { AlienBold } from './AlienBold.js';
+import { AlienBoldDuotone } from './AlienBoldDuotone.js';
+import { AlienFill } from './AlienFill.js';
+import { AlienFillDuotone } from './AlienFillDuotone.js';
 
 export interface AlienProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

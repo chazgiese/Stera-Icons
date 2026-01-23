@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CodeRegular } from './CodeRegular';
-import { CodeRegularDuotone } from './CodeRegularDuotone';
-import { CodeBold } from './CodeBold';
-import { CodeBoldDuotone } from './CodeBoldDuotone';
-import { CodeFill } from './CodeFill';
-import { CodeFillDuotone } from './CodeFillDuotone';
+import type { IconProps } from '../types.js';
+import { CodeRegular } from './CodeRegular.js';
+import { CodeRegularDuotone } from './CodeRegularDuotone.js';
+import { CodeBold } from './CodeBold.js';
+import { CodeBoldDuotone } from './CodeBoldDuotone.js';
+import { CodeFill } from './CodeFill.js';
+import { CodeFillDuotone } from './CodeFillDuotone.js';
 
 export interface CodeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

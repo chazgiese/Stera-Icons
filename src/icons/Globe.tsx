@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GlobeRegular } from './GlobeRegular';
-import { GlobeRegularDuotone } from './GlobeRegularDuotone';
-import { GlobeBold } from './GlobeBold';
-import { GlobeBoldDuotone } from './GlobeBoldDuotone';
-import { GlobeFill } from './GlobeFill';
-import { GlobeFillDuotone } from './GlobeFillDuotone';
+import type { IconProps } from '../types.js';
+import { GlobeRegular } from './GlobeRegular.js';
+import { GlobeRegularDuotone } from './GlobeRegularDuotone.js';
+import { GlobeBold } from './GlobeBold.js';
+import { GlobeBoldDuotone } from './GlobeBoldDuotone.js';
+import { GlobeFill } from './GlobeFill.js';
+import { GlobeFillDuotone } from './GlobeFillDuotone.js';
 
 export interface GlobeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PushPinRegular } from './PushPinRegular';
-import { PushPinRegularDuotone } from './PushPinRegularDuotone';
-import { PushPinBold } from './PushPinBold';
-import { PushPinBoldDuotone } from './PushPinBoldDuotone';
-import { PushPinFill } from './PushPinFill';
-import { PushPinFillDuotone } from './PushPinFillDuotone';
+import type { IconProps } from '../types.js';
+import { PushPinRegular } from './PushPinRegular.js';
+import { PushPinRegularDuotone } from './PushPinRegularDuotone.js';
+import { PushPinBold } from './PushPinBold.js';
+import { PushPinBoldDuotone } from './PushPinBoldDuotone.js';
+import { PushPinFill } from './PushPinFill.js';
+import { PushPinFillDuotone } from './PushPinFillDuotone.js';
 
 export interface PushPinProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LockPasswordOpenRegular } from './LockPasswordOpenRegular';
-import { LockPasswordOpenRegularDuotone } from './LockPasswordOpenRegularDuotone';
-import { LockPasswordOpenBold } from './LockPasswordOpenBold';
-import { LockPasswordOpenBoldDuotone } from './LockPasswordOpenBoldDuotone';
-import { LockPasswordOpenFill } from './LockPasswordOpenFill';
-import { LockPasswordOpenFillDuotone } from './LockPasswordOpenFillDuotone';
+import type { IconProps } from '../types.js';
+import { LockPasswordOpenRegular } from './LockPasswordOpenRegular.js';
+import { LockPasswordOpenRegularDuotone } from './LockPasswordOpenRegularDuotone.js';
+import { LockPasswordOpenBold } from './LockPasswordOpenBold.js';
+import { LockPasswordOpenBoldDuotone } from './LockPasswordOpenBoldDuotone.js';
+import { LockPasswordOpenFill } from './LockPasswordOpenFill.js';
+import { LockPasswordOpenFillDuotone } from './LockPasswordOpenFillDuotone.js';
 
 export interface LockPasswordOpenProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

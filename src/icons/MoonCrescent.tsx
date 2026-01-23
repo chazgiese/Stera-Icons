@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MoonCrescentRegular } from './MoonCrescentRegular';
-import { MoonCrescentRegularDuotone } from './MoonCrescentRegularDuotone';
-import { MoonCrescentBold } from './MoonCrescentBold';
-import { MoonCrescentBoldDuotone } from './MoonCrescentBoldDuotone';
-import { MoonCrescentFill } from './MoonCrescentFill';
-import { MoonCrescentFillDuotone } from './MoonCrescentFillDuotone';
+import type { IconProps } from '../types.js';
+import { MoonCrescentRegular } from './MoonCrescentRegular.js';
+import { MoonCrescentRegularDuotone } from './MoonCrescentRegularDuotone.js';
+import { MoonCrescentBold } from './MoonCrescentBold.js';
+import { MoonCrescentBoldDuotone } from './MoonCrescentBoldDuotone.js';
+import { MoonCrescentFill } from './MoonCrescentFill.js';
+import { MoonCrescentFillDuotone } from './MoonCrescentFillDuotone.js';
 
 export interface MoonCrescentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

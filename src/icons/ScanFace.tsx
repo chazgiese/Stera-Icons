@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanFaceRegular } from './ScanFaceRegular';
-import { ScanFaceRegularDuotone } from './ScanFaceRegularDuotone';
-import { ScanFaceBold } from './ScanFaceBold';
-import { ScanFaceBoldDuotone } from './ScanFaceBoldDuotone';
-import { ScanFaceFill } from './ScanFaceFill';
-import { ScanFaceFillDuotone } from './ScanFaceFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanFaceRegular } from './ScanFaceRegular.js';
+import { ScanFaceRegularDuotone } from './ScanFaceRegularDuotone.js';
+import { ScanFaceBold } from './ScanFaceBold.js';
+import { ScanFaceBoldDuotone } from './ScanFaceBoldDuotone.js';
+import { ScanFaceFill } from './ScanFaceFill.js';
+import { ScanFaceFillDuotone } from './ScanFaceFillDuotone.js';
 
 export interface ScanFaceProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

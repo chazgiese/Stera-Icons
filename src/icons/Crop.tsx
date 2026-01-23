@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CropRegular } from './CropRegular';
-import { CropRegularDuotone } from './CropRegularDuotone';
-import { CropBold } from './CropBold';
-import { CropBoldDuotone } from './CropBoldDuotone';
-import { CropFill } from './CropFill';
-import { CropFillDuotone } from './CropFillDuotone';
+import type { IconProps } from '../types.js';
+import { CropRegular } from './CropRegular.js';
+import { CropRegularDuotone } from './CropRegularDuotone.js';
+import { CropBold } from './CropBold.js';
+import { CropBoldDuotone } from './CropBoldDuotone.js';
+import { CropFill } from './CropFill.js';
+import { CropFillDuotone } from './CropFillDuotone.js';
 
 export interface CropProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

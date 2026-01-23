@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BarricadeRegular } from './BarricadeRegular';
-import { BarricadeRegularDuotone } from './BarricadeRegularDuotone';
-import { BarricadeBold } from './BarricadeBold';
-import { BarricadeBoldDuotone } from './BarricadeBoldDuotone';
-import { BarricadeFill } from './BarricadeFill';
-import { BarricadeFillDuotone } from './BarricadeFillDuotone';
+import type { IconProps } from '../types.js';
+import { BarricadeRegular } from './BarricadeRegular.js';
+import { BarricadeRegularDuotone } from './BarricadeRegularDuotone.js';
+import { BarricadeBold } from './BarricadeBold.js';
+import { BarricadeBoldDuotone } from './BarricadeBoldDuotone.js';
+import { BarricadeFill } from './BarricadeFill.js';
+import { BarricadeFillDuotone } from './BarricadeFillDuotone.js';
 
 export interface BarricadeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

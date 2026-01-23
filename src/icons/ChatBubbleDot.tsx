@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChatBubbleDotRegular } from './ChatBubbleDotRegular';
-import { ChatBubbleDotRegularDuotone } from './ChatBubbleDotRegularDuotone';
-import { ChatBubbleDotBold } from './ChatBubbleDotBold';
-import { ChatBubbleDotBoldDuotone } from './ChatBubbleDotBoldDuotone';
-import { ChatBubbleDotFill } from './ChatBubbleDotFill';
-import { ChatBubbleDotFillDuotone } from './ChatBubbleDotFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChatBubbleDotRegular } from './ChatBubbleDotRegular.js';
+import { ChatBubbleDotRegularDuotone } from './ChatBubbleDotRegularDuotone.js';
+import { ChatBubbleDotBold } from './ChatBubbleDotBold.js';
+import { ChatBubbleDotBoldDuotone } from './ChatBubbleDotBoldDuotone.js';
+import { ChatBubbleDotFill } from './ChatBubbleDotFill.js';
+import { ChatBubbleDotFillDuotone } from './ChatBubbleDotFillDuotone.js';
 
 export interface ChatBubbleDotProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

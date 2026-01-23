@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FilmStripRegular } from './FilmStripRegular';
-import { FilmStripRegularDuotone } from './FilmStripRegularDuotone';
-import { FilmStripBold } from './FilmStripBold';
-import { FilmStripBoldDuotone } from './FilmStripBoldDuotone';
-import { FilmStripFill } from './FilmStripFill';
-import { FilmStripFillDuotone } from './FilmStripFillDuotone';
+import type { IconProps } from '../types.js';
+import { FilmStripRegular } from './FilmStripRegular.js';
+import { FilmStripRegularDuotone } from './FilmStripRegularDuotone.js';
+import { FilmStripBold } from './FilmStripBold.js';
+import { FilmStripBoldDuotone } from './FilmStripBoldDuotone.js';
+import { FilmStripFill } from './FilmStripFill.js';
+import { FilmStripFillDuotone } from './FilmStripFillDuotone.js';
 
 export interface FilmStripProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

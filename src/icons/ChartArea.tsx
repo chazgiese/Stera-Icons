@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartAreaRegular } from './ChartAreaRegular';
-import { ChartAreaRegularDuotone } from './ChartAreaRegularDuotone';
-import { ChartAreaBold } from './ChartAreaBold';
-import { ChartAreaBoldDuotone } from './ChartAreaBoldDuotone';
-import { ChartAreaFill } from './ChartAreaFill';
-import { ChartAreaFillDuotone } from './ChartAreaFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartAreaRegular } from './ChartAreaRegular.js';
+import { ChartAreaRegularDuotone } from './ChartAreaRegularDuotone.js';
+import { ChartAreaBold } from './ChartAreaBold.js';
+import { ChartAreaBoldDuotone } from './ChartAreaBoldDuotone.js';
+import { ChartAreaFill } from './ChartAreaFill.js';
+import { ChartAreaFillDuotone } from './ChartAreaFillDuotone.js';
 
 export interface ChartAreaProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

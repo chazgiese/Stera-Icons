@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { StairsRegular } from './StairsRegular';
-import { StairsRegularDuotone } from './StairsRegularDuotone';
-import { StairsBold } from './StairsBold';
-import { StairsBoldDuotone } from './StairsBoldDuotone';
-import { StairsFill } from './StairsFill';
-import { StairsFillDuotone } from './StairsFillDuotone';
+import type { IconProps } from '../types.js';
+import { StairsRegular } from './StairsRegular.js';
+import { StairsRegularDuotone } from './StairsRegularDuotone.js';
+import { StairsBold } from './StairsBold.js';
+import { StairsBoldDuotone } from './StairsBoldDuotone.js';
+import { StairsFill } from './StairsFill.js';
+import { StairsFillDuotone } from './StairsFillDuotone.js';
 
 export interface StairsProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

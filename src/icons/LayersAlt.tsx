@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayersAltRegular } from './LayersAltRegular';
-import { LayersAltRegularDuotone } from './LayersAltRegularDuotone';
-import { LayersAltBold } from './LayersAltBold';
-import { LayersAltBoldDuotone } from './LayersAltBoldDuotone';
-import { LayersAltFill } from './LayersAltFill';
-import { LayersAltFillDuotone } from './LayersAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayersAltRegular } from './LayersAltRegular.js';
+import { LayersAltRegularDuotone } from './LayersAltRegularDuotone.js';
+import { LayersAltBold } from './LayersAltBold.js';
+import { LayersAltBoldDuotone } from './LayersAltBoldDuotone.js';
+import { LayersAltFill } from './LayersAltFill.js';
+import { LayersAltFillDuotone } from './LayersAltFillDuotone.js';
 
 export interface LayersAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

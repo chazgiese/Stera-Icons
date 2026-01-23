@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ReplyRegular } from './ReplyRegular';
-import { ReplyRegularDuotone } from './ReplyRegularDuotone';
-import { ReplyBold } from './ReplyBold';
-import { ReplyBoldDuotone } from './ReplyBoldDuotone';
-import { ReplyFill } from './ReplyFill';
-import { ReplyFillDuotone } from './ReplyFillDuotone';
+import type { IconProps } from '../types.js';
+import { ReplyRegular } from './ReplyRegular.js';
+import { ReplyRegularDuotone } from './ReplyRegularDuotone.js';
+import { ReplyBold } from './ReplyBold.js';
+import { ReplyBoldDuotone } from './ReplyBoldDuotone.js';
+import { ReplyFill } from './ReplyFill.js';
+import { ReplyFillDuotone } from './ReplyFillDuotone.js';
 
 export interface ReplyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

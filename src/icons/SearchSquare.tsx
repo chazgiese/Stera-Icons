@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SearchSquareRegular } from './SearchSquareRegular';
-import { SearchSquareRegularDuotone } from './SearchSquareRegularDuotone';
-import { SearchSquareBold } from './SearchSquareBold';
-import { SearchSquareBoldDuotone } from './SearchSquareBoldDuotone';
-import { SearchSquareFill } from './SearchSquareFill';
-import { SearchSquareFillDuotone } from './SearchSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { SearchSquareRegular } from './SearchSquareRegular.js';
+import { SearchSquareRegularDuotone } from './SearchSquareRegularDuotone.js';
+import { SearchSquareBold } from './SearchSquareBold.js';
+import { SearchSquareBoldDuotone } from './SearchSquareBoldDuotone.js';
+import { SearchSquareFill } from './SearchSquareFill.js';
+import { SearchSquareFillDuotone } from './SearchSquareFillDuotone.js';
 
 export interface SearchSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

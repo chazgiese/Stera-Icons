@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { Clock6Regular } from './Clock6Regular';
-import { Clock6RegularDuotone } from './Clock6RegularDuotone';
-import { Clock6Bold } from './Clock6Bold';
-import { Clock6BoldDuotone } from './Clock6BoldDuotone';
-import { Clock6Fill } from './Clock6Fill';
-import { Clock6FillDuotone } from './Clock6FillDuotone';
+import type { IconProps } from '../types.js';
+import { Clock6Regular } from './Clock6Regular.js';
+import { Clock6RegularDuotone } from './Clock6RegularDuotone.js';
+import { Clock6Bold } from './Clock6Bold.js';
+import { Clock6BoldDuotone } from './Clock6BoldDuotone.js';
+import { Clock6Fill } from './Clock6Fill.js';
+import { Clock6FillDuotone } from './Clock6FillDuotone.js';
 
 export interface Clock6Props extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

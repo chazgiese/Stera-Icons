@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ShuffleRegular } from './ShuffleRegular';
-import { ShuffleRegularDuotone } from './ShuffleRegularDuotone';
-import { ShuffleBold } from './ShuffleBold';
-import { ShuffleBoldDuotone } from './ShuffleBoldDuotone';
-import { ShuffleFill } from './ShuffleFill';
-import { ShuffleFillDuotone } from './ShuffleFillDuotone';
+import type { IconProps } from '../types.js';
+import { ShuffleRegular } from './ShuffleRegular.js';
+import { ShuffleRegularDuotone } from './ShuffleRegularDuotone.js';
+import { ShuffleBold } from './ShuffleBold.js';
+import { ShuffleBoldDuotone } from './ShuffleBoldDuotone.js';
+import { ShuffleFill } from './ShuffleFill.js';
+import { ShuffleFillDuotone } from './ShuffleFillDuotone.js';
 
 export interface ShuffleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

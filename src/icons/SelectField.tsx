@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SelectFieldRegular } from './SelectFieldRegular';
-import { SelectFieldRegularDuotone } from './SelectFieldRegularDuotone';
-import { SelectFieldBold } from './SelectFieldBold';
-import { SelectFieldBoldDuotone } from './SelectFieldBoldDuotone';
-import { SelectFieldFill } from './SelectFieldFill';
-import { SelectFieldFillDuotone } from './SelectFieldFillDuotone';
+import type { IconProps } from '../types.js';
+import { SelectFieldRegular } from './SelectFieldRegular.js';
+import { SelectFieldRegularDuotone } from './SelectFieldRegularDuotone.js';
+import { SelectFieldBold } from './SelectFieldBold.js';
+import { SelectFieldBoldDuotone } from './SelectFieldBoldDuotone.js';
+import { SelectFieldFill } from './SelectFieldFill.js';
+import { SelectFieldFillDuotone } from './SelectFieldFillDuotone.js';
 
 export interface SelectFieldProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

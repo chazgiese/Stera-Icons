@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ConnectionAltRegular } from './ConnectionAltRegular';
-import { ConnectionAltRegularDuotone } from './ConnectionAltRegularDuotone';
-import { ConnectionAltBold } from './ConnectionAltBold';
-import { ConnectionAltBoldDuotone } from './ConnectionAltBoldDuotone';
-import { ConnectionAltFill } from './ConnectionAltFill';
-import { ConnectionAltFillDuotone } from './ConnectionAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { ConnectionAltRegular } from './ConnectionAltRegular.js';
+import { ConnectionAltRegularDuotone } from './ConnectionAltRegularDuotone.js';
+import { ConnectionAltBold } from './ConnectionAltBold.js';
+import { ConnectionAltBoldDuotone } from './ConnectionAltBoldDuotone.js';
+import { ConnectionAltFill } from './ConnectionAltFill.js';
+import { ConnectionAltFillDuotone } from './ConnectionAltFillDuotone.js';
 
 export interface ConnectionAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

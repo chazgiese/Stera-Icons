@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertHexagonRegular } from './AlertHexagonRegular';
-import { AlertHexagonRegularDuotone } from './AlertHexagonRegularDuotone';
-import { AlertHexagonBold } from './AlertHexagonBold';
-import { AlertHexagonBoldDuotone } from './AlertHexagonBoldDuotone';
-import { AlertHexagonFill } from './AlertHexagonFill';
-import { AlertHexagonFillDuotone } from './AlertHexagonFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertHexagonRegular } from './AlertHexagonRegular.js';
+import { AlertHexagonRegularDuotone } from './AlertHexagonRegularDuotone.js';
+import { AlertHexagonBold } from './AlertHexagonBold.js';
+import { AlertHexagonBoldDuotone } from './AlertHexagonBoldDuotone.js';
+import { AlertHexagonFill } from './AlertHexagonFill.js';
+import { AlertHexagonFillDuotone } from './AlertHexagonFillDuotone.js';
 
 export interface AlertHexagonProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

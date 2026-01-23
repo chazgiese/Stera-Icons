@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AudioBarsSquareRegular } from './AudioBarsSquareRegular';
-import { AudioBarsSquareRegularDuotone } from './AudioBarsSquareRegularDuotone';
-import { AudioBarsSquareBold } from './AudioBarsSquareBold';
-import { AudioBarsSquareBoldDuotone } from './AudioBarsSquareBoldDuotone';
-import { AudioBarsSquareFill } from './AudioBarsSquareFill';
-import { AudioBarsSquareFillDuotone } from './AudioBarsSquareFillDuotone';
+import type { IconProps } from '../types.js';
+import { AudioBarsSquareRegular } from './AudioBarsSquareRegular.js';
+import { AudioBarsSquareRegularDuotone } from './AudioBarsSquareRegularDuotone.js';
+import { AudioBarsSquareBold } from './AudioBarsSquareBold.js';
+import { AudioBarsSquareBoldDuotone } from './AudioBarsSquareBoldDuotone.js';
+import { AudioBarsSquareFill } from './AudioBarsSquareFill.js';
+import { AudioBarsSquareFillDuotone } from './AudioBarsSquareFillDuotone.js';
 
 export interface AudioBarsSquareProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

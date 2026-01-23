@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SnowflakeRegular } from './SnowflakeRegular';
-import { SnowflakeRegularDuotone } from './SnowflakeRegularDuotone';
-import { SnowflakeBold } from './SnowflakeBold';
-import { SnowflakeBoldDuotone } from './SnowflakeBoldDuotone';
-import { SnowflakeFill } from './SnowflakeFill';
-import { SnowflakeFillDuotone } from './SnowflakeFillDuotone';
+import type { IconProps } from '../types.js';
+import { SnowflakeRegular } from './SnowflakeRegular.js';
+import { SnowflakeRegularDuotone } from './SnowflakeRegularDuotone.js';
+import { SnowflakeBold } from './SnowflakeBold.js';
+import { SnowflakeBoldDuotone } from './SnowflakeBoldDuotone.js';
+import { SnowflakeFill } from './SnowflakeFill.js';
+import { SnowflakeFillDuotone } from './SnowflakeFillDuotone.js';
 
 export interface SnowflakeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

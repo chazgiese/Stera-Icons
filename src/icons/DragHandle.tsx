@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DragHandleRegular } from './DragHandleRegular';
-import { DragHandleRegularDuotone } from './DragHandleRegularDuotone';
-import { DragHandleBold } from './DragHandleBold';
-import { DragHandleBoldDuotone } from './DragHandleBoldDuotone';
-import { DragHandleFill } from './DragHandleFill';
-import { DragHandleFillDuotone } from './DragHandleFillDuotone';
+import type { IconProps } from '../types.js';
+import { DragHandleRegular } from './DragHandleRegular.js';
+import { DragHandleRegularDuotone } from './DragHandleRegularDuotone.js';
+import { DragHandleBold } from './DragHandleBold.js';
+import { DragHandleBoldDuotone } from './DragHandleBoldDuotone.js';
+import { DragHandleFill } from './DragHandleFill.js';
+import { DragHandleFillDuotone } from './DragHandleFillDuotone.js';
 
 export interface DragHandleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

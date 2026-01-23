@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CrosshairRegular } from './CrosshairRegular';
-import { CrosshairRegularDuotone } from './CrosshairRegularDuotone';
-import { CrosshairBold } from './CrosshairBold';
-import { CrosshairBoldDuotone } from './CrosshairBoldDuotone';
-import { CrosshairFill } from './CrosshairFill';
-import { CrosshairFillDuotone } from './CrosshairFillDuotone';
+import type { IconProps } from '../types.js';
+import { CrosshairRegular } from './CrosshairRegular.js';
+import { CrosshairRegularDuotone } from './CrosshairRegularDuotone.js';
+import { CrosshairBold } from './CrosshairBold.js';
+import { CrosshairBoldDuotone } from './CrosshairBoldDuotone.js';
+import { CrosshairFill } from './CrosshairFill.js';
+import { CrosshairFillDuotone } from './CrosshairFillDuotone.js';
 
 export interface CrosshairProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

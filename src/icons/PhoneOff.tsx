@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PhoneOffRegular } from './PhoneOffRegular';
-import { PhoneOffRegularDuotone } from './PhoneOffRegularDuotone';
-import { PhoneOffBold } from './PhoneOffBold';
-import { PhoneOffBoldDuotone } from './PhoneOffBoldDuotone';
-import { PhoneOffFill } from './PhoneOffFill';
-import { PhoneOffFillDuotone } from './PhoneOffFillDuotone';
+import type { IconProps } from '../types.js';
+import { PhoneOffRegular } from './PhoneOffRegular.js';
+import { PhoneOffRegularDuotone } from './PhoneOffRegularDuotone.js';
+import { PhoneOffBold } from './PhoneOffBold.js';
+import { PhoneOffBoldDuotone } from './PhoneOffBoldDuotone.js';
+import { PhoneOffFill } from './PhoneOffFill.js';
+import { PhoneOffFillDuotone } from './PhoneOffFillDuotone.js';
 
 export interface PhoneOffProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EmoteNeutralRegular } from './EmoteNeutralRegular';
-import { EmoteNeutralRegularDuotone } from './EmoteNeutralRegularDuotone';
-import { EmoteNeutralBold } from './EmoteNeutralBold';
-import { EmoteNeutralBoldDuotone } from './EmoteNeutralBoldDuotone';
-import { EmoteNeutralFill } from './EmoteNeutralFill';
-import { EmoteNeutralFillDuotone } from './EmoteNeutralFillDuotone';
+import type { IconProps } from '../types.js';
+import { EmoteNeutralRegular } from './EmoteNeutralRegular.js';
+import { EmoteNeutralRegularDuotone } from './EmoteNeutralRegularDuotone.js';
+import { EmoteNeutralBold } from './EmoteNeutralBold.js';
+import { EmoteNeutralBoldDuotone } from './EmoteNeutralBoldDuotone.js';
+import { EmoteNeutralFill } from './EmoteNeutralFill.js';
+import { EmoteNeutralFillDuotone } from './EmoteNeutralFillDuotone.js';
 
 export interface EmoteNeutralProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

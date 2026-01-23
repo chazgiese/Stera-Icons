@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ContactBookRegular } from './ContactBookRegular';
-import { ContactBookRegularDuotone } from './ContactBookRegularDuotone';
-import { ContactBookBold } from './ContactBookBold';
-import { ContactBookBoldDuotone } from './ContactBookBoldDuotone';
-import { ContactBookFill } from './ContactBookFill';
-import { ContactBookFillDuotone } from './ContactBookFillDuotone';
+import type { IconProps } from '../types.js';
+import { ContactBookRegular } from './ContactBookRegular.js';
+import { ContactBookRegularDuotone } from './ContactBookRegularDuotone.js';
+import { ContactBookBold } from './ContactBookBold.js';
+import { ContactBookBoldDuotone } from './ContactBookBoldDuotone.js';
+import { ContactBookFill } from './ContactBookFill.js';
+import { ContactBookFillDuotone } from './ContactBookFillDuotone.js';
 
 export interface ContactBookProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

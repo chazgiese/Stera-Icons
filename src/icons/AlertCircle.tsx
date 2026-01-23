@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AlertCircleRegular } from './AlertCircleRegular';
-import { AlertCircleRegularDuotone } from './AlertCircleRegularDuotone';
-import { AlertCircleBold } from './AlertCircleBold';
-import { AlertCircleBoldDuotone } from './AlertCircleBoldDuotone';
-import { AlertCircleFill } from './AlertCircleFill';
-import { AlertCircleFillDuotone } from './AlertCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { AlertCircleRegular } from './AlertCircleRegular.js';
+import { AlertCircleRegularDuotone } from './AlertCircleRegularDuotone.js';
+import { AlertCircleBold } from './AlertCircleBold.js';
+import { AlertCircleBoldDuotone } from './AlertCircleBoldDuotone.js';
+import { AlertCircleFill } from './AlertCircleFill.js';
+import { AlertCircleFillDuotone } from './AlertCircleFillDuotone.js';
 
 export interface AlertCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PoundSterlingCircleRegular } from './PoundSterlingCircleRegular';
-import { PoundSterlingCircleRegularDuotone } from './PoundSterlingCircleRegularDuotone';
-import { PoundSterlingCircleBold } from './PoundSterlingCircleBold';
-import { PoundSterlingCircleBoldDuotone } from './PoundSterlingCircleBoldDuotone';
-import { PoundSterlingCircleFill } from './PoundSterlingCircleFill';
-import { PoundSterlingCircleFillDuotone } from './PoundSterlingCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { PoundSterlingCircleRegular } from './PoundSterlingCircleRegular.js';
+import { PoundSterlingCircleRegularDuotone } from './PoundSterlingCircleRegularDuotone.js';
+import { PoundSterlingCircleBold } from './PoundSterlingCircleBold.js';
+import { PoundSterlingCircleBoldDuotone } from './PoundSterlingCircleBoldDuotone.js';
+import { PoundSterlingCircleFill } from './PoundSterlingCircleFill.js';
+import { PoundSterlingCircleFillDuotone } from './PoundSterlingCircleFillDuotone.js';
 
 export interface PoundSterlingCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CurveEaseRegular } from './CurveEaseRegular';
-import { CurveEaseRegularDuotone } from './CurveEaseRegularDuotone';
-import { CurveEaseBold } from './CurveEaseBold';
-import { CurveEaseBoldDuotone } from './CurveEaseBoldDuotone';
-import { CurveEaseFill } from './CurveEaseFill';
-import { CurveEaseFillDuotone } from './CurveEaseFillDuotone';
+import type { IconProps } from '../types.js';
+import { CurveEaseRegular } from './CurveEaseRegular.js';
+import { CurveEaseRegularDuotone } from './CurveEaseRegularDuotone.js';
+import { CurveEaseBold } from './CurveEaseBold.js';
+import { CurveEaseBoldDuotone } from './CurveEaseBoldDuotone.js';
+import { CurveEaseFill } from './CurveEaseFill.js';
+import { CurveEaseFillDuotone } from './CurveEaseFillDuotone.js';
 
 export interface CurveEaseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

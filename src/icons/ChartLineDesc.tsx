@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartLineDescRegular } from './ChartLineDescRegular';
-import { ChartLineDescRegularDuotone } from './ChartLineDescRegularDuotone';
-import { ChartLineDescBold } from './ChartLineDescBold';
-import { ChartLineDescBoldDuotone } from './ChartLineDescBoldDuotone';
-import { ChartLineDescFill } from './ChartLineDescFill';
-import { ChartLineDescFillDuotone } from './ChartLineDescFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartLineDescRegular } from './ChartLineDescRegular.js';
+import { ChartLineDescRegularDuotone } from './ChartLineDescRegularDuotone.js';
+import { ChartLineDescBold } from './ChartLineDescBold.js';
+import { ChartLineDescBoldDuotone } from './ChartLineDescBoldDuotone.js';
+import { ChartLineDescFill } from './ChartLineDescFill.js';
+import { ChartLineDescFillDuotone } from './ChartLineDescFillDuotone.js';
 
 export interface ChartLineDescProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

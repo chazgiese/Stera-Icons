@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CreditCardAltRegular } from './CreditCardAltRegular';
-import { CreditCardAltRegularDuotone } from './CreditCardAltRegularDuotone';
-import { CreditCardAltBold } from './CreditCardAltBold';
-import { CreditCardAltBoldDuotone } from './CreditCardAltBoldDuotone';
-import { CreditCardAltFill } from './CreditCardAltFill';
-import { CreditCardAltFillDuotone } from './CreditCardAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { CreditCardAltRegular } from './CreditCardAltRegular.js';
+import { CreditCardAltRegularDuotone } from './CreditCardAltRegularDuotone.js';
+import { CreditCardAltBold } from './CreditCardAltBold.js';
+import { CreditCardAltBoldDuotone } from './CreditCardAltBoldDuotone.js';
+import { CreditCardAltFill } from './CreditCardAltFill.js';
+import { CreditCardAltFillDuotone } from './CreditCardAltFillDuotone.js';
 
 export interface CreditCardAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

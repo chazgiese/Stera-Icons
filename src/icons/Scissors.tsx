@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScissorsRegular } from './ScissorsRegular';
-import { ScissorsRegularDuotone } from './ScissorsRegularDuotone';
-import { ScissorsBold } from './ScissorsBold';
-import { ScissorsBoldDuotone } from './ScissorsBoldDuotone';
-import { ScissorsFill } from './ScissorsFill';
-import { ScissorsFillDuotone } from './ScissorsFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScissorsRegular } from './ScissorsRegular.js';
+import { ScissorsRegularDuotone } from './ScissorsRegularDuotone.js';
+import { ScissorsBold } from './ScissorsBold.js';
+import { ScissorsBoldDuotone } from './ScissorsBoldDuotone.js';
+import { ScissorsFill } from './ScissorsFill.js';
+import { ScissorsFillDuotone } from './ScissorsFillDuotone.js';
 
 export interface ScissorsProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

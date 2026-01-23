@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ArrowURightTopRegular } from './ArrowURightTopRegular';
-import { ArrowURightTopRegularDuotone } from './ArrowURightTopRegularDuotone';
-import { ArrowURightTopBold } from './ArrowURightTopBold';
-import { ArrowURightTopBoldDuotone } from './ArrowURightTopBoldDuotone';
-import { ArrowURightTopFill } from './ArrowURightTopFill';
-import { ArrowURightTopFillDuotone } from './ArrowURightTopFillDuotone';
+import type { IconProps } from '../types.js';
+import { ArrowURightTopRegular } from './ArrowURightTopRegular.js';
+import { ArrowURightTopRegularDuotone } from './ArrowURightTopRegularDuotone.js';
+import { ArrowURightTopBold } from './ArrowURightTopBold.js';
+import { ArrowURightTopBoldDuotone } from './ArrowURightTopBoldDuotone.js';
+import { ArrowURightTopFill } from './ArrowURightTopFill.js';
+import { ArrowURightTopFillDuotone } from './ArrowURightTopFillDuotone.js';
 
 export interface ArrowURightTopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

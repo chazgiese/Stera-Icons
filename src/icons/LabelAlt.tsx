@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LabelAltRegular } from './LabelAltRegular';
-import { LabelAltRegularDuotone } from './LabelAltRegularDuotone';
-import { LabelAltBold } from './LabelAltBold';
-import { LabelAltBoldDuotone } from './LabelAltBoldDuotone';
-import { LabelAltFill } from './LabelAltFill';
-import { LabelAltFillDuotone } from './LabelAltFillDuotone';
+import type { IconProps } from '../types.js';
+import { LabelAltRegular } from './LabelAltRegular.js';
+import { LabelAltRegularDuotone } from './LabelAltRegularDuotone.js';
+import { LabelAltBold } from './LabelAltBold.js';
+import { LabelAltBoldDuotone } from './LabelAltBoldDuotone.js';
+import { LabelAltFill } from './LabelAltFill.js';
+import { LabelAltFillDuotone } from './LabelAltFillDuotone.js';
 
 export interface LabelAltProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

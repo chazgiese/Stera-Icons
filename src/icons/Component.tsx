@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ComponentRegular } from './ComponentRegular';
-import { ComponentRegularDuotone } from './ComponentRegularDuotone';
-import { ComponentBold } from './ComponentBold';
-import { ComponentBoldDuotone } from './ComponentBoldDuotone';
-import { ComponentFill } from './ComponentFill';
-import { ComponentFillDuotone } from './ComponentFillDuotone';
+import type { IconProps } from '../types.js';
+import { ComponentRegular } from './ComponentRegular.js';
+import { ComponentRegularDuotone } from './ComponentRegularDuotone.js';
+import { ComponentBold } from './ComponentBold.js';
+import { ComponentBoldDuotone } from './ComponentBoldDuotone.js';
+import { ComponentFill } from './ComponentFill.js';
+import { ComponentFillDuotone } from './ComponentFillDuotone.js';
 
 export interface ComponentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

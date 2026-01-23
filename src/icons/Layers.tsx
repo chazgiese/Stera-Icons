@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LayersRegular } from './LayersRegular';
-import { LayersRegularDuotone } from './LayersRegularDuotone';
-import { LayersBold } from './LayersBold';
-import { LayersBoldDuotone } from './LayersBoldDuotone';
-import { LayersFill } from './LayersFill';
-import { LayersFillDuotone } from './LayersFillDuotone';
+import type { IconProps } from '../types.js';
+import { LayersRegular } from './LayersRegular.js';
+import { LayersRegularDuotone } from './LayersRegularDuotone.js';
+import { LayersBold } from './LayersBold.js';
+import { LayersBoldDuotone } from './LayersBoldDuotone.js';
+import { LayersFill } from './LayersFill.js';
+import { LayersFillDuotone } from './LayersFillDuotone.js';
 
 export interface LayersProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

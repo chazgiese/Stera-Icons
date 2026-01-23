@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DeviceLaptopRegular } from './DeviceLaptopRegular';
-import { DeviceLaptopRegularDuotone } from './DeviceLaptopRegularDuotone';
-import { DeviceLaptopBold } from './DeviceLaptopBold';
-import { DeviceLaptopBoldDuotone } from './DeviceLaptopBoldDuotone';
-import { DeviceLaptopFill } from './DeviceLaptopFill';
-import { DeviceLaptopFillDuotone } from './DeviceLaptopFillDuotone';
+import type { IconProps } from '../types.js';
+import { DeviceLaptopRegular } from './DeviceLaptopRegular.js';
+import { DeviceLaptopRegularDuotone } from './DeviceLaptopRegularDuotone.js';
+import { DeviceLaptopBold } from './DeviceLaptopBold.js';
+import { DeviceLaptopBoldDuotone } from './DeviceLaptopBoldDuotone.js';
+import { DeviceLaptopFill } from './DeviceLaptopFill.js';
+import { DeviceLaptopFillDuotone } from './DeviceLaptopFillDuotone.js';
 
 export interface DeviceLaptopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HeartRegular } from './HeartRegular';
-import { HeartRegularDuotone } from './HeartRegularDuotone';
-import { HeartBold } from './HeartBold';
-import { HeartBoldDuotone } from './HeartBoldDuotone';
-import { HeartFill } from './HeartFill';
-import { HeartFillDuotone } from './HeartFillDuotone';
+import type { IconProps } from '../types.js';
+import { HeartRegular } from './HeartRegular.js';
+import { HeartRegularDuotone } from './HeartRegularDuotone.js';
+import { HeartBold } from './HeartBold.js';
+import { HeartBoldDuotone } from './HeartBoldDuotone.js';
+import { HeartFill } from './HeartFill.js';
+import { HeartFillDuotone } from './HeartFillDuotone.js';
 
 export interface HeartProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

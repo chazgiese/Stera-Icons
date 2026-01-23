@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SparkleCircleRegular } from './SparkleCircleRegular';
-import { SparkleCircleRegularDuotone } from './SparkleCircleRegularDuotone';
-import { SparkleCircleBold } from './SparkleCircleBold';
-import { SparkleCircleBoldDuotone } from './SparkleCircleBoldDuotone';
-import { SparkleCircleFill } from './SparkleCircleFill';
-import { SparkleCircleFillDuotone } from './SparkleCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { SparkleCircleRegular } from './SparkleCircleRegular.js';
+import { SparkleCircleRegularDuotone } from './SparkleCircleRegularDuotone.js';
+import { SparkleCircleBold } from './SparkleCircleBold.js';
+import { SparkleCircleBoldDuotone } from './SparkleCircleBoldDuotone.js';
+import { SparkleCircleFill } from './SparkleCircleFill.js';
+import { SparkleCircleFillDuotone } from './SparkleCircleFillDuotone.js';
 
 export interface SparkleCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

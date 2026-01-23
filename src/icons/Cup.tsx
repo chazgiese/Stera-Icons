@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CupRegular } from './CupRegular';
-import { CupRegularDuotone } from './CupRegularDuotone';
-import { CupBold } from './CupBold';
-import { CupBoldDuotone } from './CupBoldDuotone';
-import { CupFill } from './CupFill';
-import { CupFillDuotone } from './CupFillDuotone';
+import type { IconProps } from '../types.js';
+import { CupRegular } from './CupRegular.js';
+import { CupRegularDuotone } from './CupRegularDuotone.js';
+import { CupBold } from './CupBold.js';
+import { CupBoldDuotone } from './CupBoldDuotone.js';
+import { CupFill } from './CupFill.js';
+import { CupFillDuotone } from './CupFillDuotone.js';
 
 export interface CupProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

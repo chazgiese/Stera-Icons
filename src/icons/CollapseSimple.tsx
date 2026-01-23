@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CollapseSimpleRegular } from './CollapseSimpleRegular';
-import { CollapseSimpleRegularDuotone } from './CollapseSimpleRegularDuotone';
-import { CollapseSimpleBold } from './CollapseSimpleBold';
-import { CollapseSimpleBoldDuotone } from './CollapseSimpleBoldDuotone';
-import { CollapseSimpleFill } from './CollapseSimpleFill';
-import { CollapseSimpleFillDuotone } from './CollapseSimpleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CollapseSimpleRegular } from './CollapseSimpleRegular.js';
+import { CollapseSimpleRegularDuotone } from './CollapseSimpleRegularDuotone.js';
+import { CollapseSimpleBold } from './CollapseSimpleBold.js';
+import { CollapseSimpleBoldDuotone } from './CollapseSimpleBoldDuotone.js';
+import { CollapseSimpleFill } from './CollapseSimpleFill.js';
+import { CollapseSimpleFillDuotone } from './CollapseSimpleFillDuotone.js';
 
 export interface CollapseSimpleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

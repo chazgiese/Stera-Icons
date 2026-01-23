@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EyeRegular } from './EyeRegular';
-import { EyeRegularDuotone } from './EyeRegularDuotone';
-import { EyeBold } from './EyeBold';
-import { EyeBoldDuotone } from './EyeBoldDuotone';
-import { EyeFill } from './EyeFill';
-import { EyeFillDuotone } from './EyeFillDuotone';
+import type { IconProps } from '../types.js';
+import { EyeRegular } from './EyeRegular.js';
+import { EyeRegularDuotone } from './EyeRegularDuotone.js';
+import { EyeBold } from './EyeBold.js';
+import { EyeBoldDuotone } from './EyeBoldDuotone.js';
+import { EyeFill } from './EyeFill.js';
+import { EyeFillDuotone } from './EyeFillDuotone.js';
 
 export interface EyeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

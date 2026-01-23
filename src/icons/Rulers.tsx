@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RulersRegular } from './RulersRegular';
-import { RulersRegularDuotone } from './RulersRegularDuotone';
-import { RulersBold } from './RulersBold';
-import { RulersBoldDuotone } from './RulersBoldDuotone';
-import { RulersFill } from './RulersFill';
-import { RulersFillDuotone } from './RulersFillDuotone';
+import type { IconProps } from '../types.js';
+import { RulersRegular } from './RulersRegular.js';
+import { RulersRegularDuotone } from './RulersRegularDuotone.js';
+import { RulersBold } from './RulersBold.js';
+import { RulersBoldDuotone } from './RulersBoldDuotone.js';
+import { RulersFill } from './RulersFill.js';
+import { RulersFillDuotone } from './RulersFillDuotone.js';
 
 export interface RulersProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

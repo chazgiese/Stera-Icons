@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BladeKunaiRegular } from './BladeKunaiRegular';
-import { BladeKunaiRegularDuotone } from './BladeKunaiRegularDuotone';
-import { BladeKunaiBold } from './BladeKunaiBold';
-import { BladeKunaiBoldDuotone } from './BladeKunaiBoldDuotone';
-import { BladeKunaiFill } from './BladeKunaiFill';
-import { BladeKunaiFillDuotone } from './BladeKunaiFillDuotone';
+import type { IconProps } from '../types.js';
+import { BladeKunaiRegular } from './BladeKunaiRegular.js';
+import { BladeKunaiRegularDuotone } from './BladeKunaiRegularDuotone.js';
+import { BladeKunaiBold } from './BladeKunaiBold.js';
+import { BladeKunaiBoldDuotone } from './BladeKunaiBoldDuotone.js';
+import { BladeKunaiFill } from './BladeKunaiFill.js';
+import { BladeKunaiFillDuotone } from './BladeKunaiFillDuotone.js';
 
 export interface BladeKunaiProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

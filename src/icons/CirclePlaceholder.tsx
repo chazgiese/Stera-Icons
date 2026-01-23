@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CirclePlaceholderRegular } from './CirclePlaceholderRegular';
-import { CirclePlaceholderRegularDuotone } from './CirclePlaceholderRegularDuotone';
-import { CirclePlaceholderBold } from './CirclePlaceholderBold';
-import { CirclePlaceholderBoldDuotone } from './CirclePlaceholderBoldDuotone';
-import { CirclePlaceholderFill } from './CirclePlaceholderFill';
-import { CirclePlaceholderFillDuotone } from './CirclePlaceholderFillDuotone';
+import type { IconProps } from '../types.js';
+import { CirclePlaceholderRegular } from './CirclePlaceholderRegular.js';
+import { CirclePlaceholderRegularDuotone } from './CirclePlaceholderRegularDuotone.js';
+import { CirclePlaceholderBold } from './CirclePlaceholderBold.js';
+import { CirclePlaceholderBoldDuotone } from './CirclePlaceholderBoldDuotone.js';
+import { CirclePlaceholderFill } from './CirclePlaceholderFill.js';
+import { CirclePlaceholderFillDuotone } from './CirclePlaceholderFillDuotone.js';
 
 export interface CirclePlaceholderProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

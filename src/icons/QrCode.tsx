@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { QrCodeRegular } from './QrCodeRegular';
-import { QrCodeRegularDuotone } from './QrCodeRegularDuotone';
-import { QrCodeBold } from './QrCodeBold';
-import { QrCodeBoldDuotone } from './QrCodeBoldDuotone';
-import { QrCodeFill } from './QrCodeFill';
-import { QrCodeFillDuotone } from './QrCodeFillDuotone';
+import type { IconProps } from '../types.js';
+import { QrCodeRegular } from './QrCodeRegular.js';
+import { QrCodeRegularDuotone } from './QrCodeRegularDuotone.js';
+import { QrCodeBold } from './QrCodeBold.js';
+import { QrCodeBoldDuotone } from './QrCodeBoldDuotone.js';
+import { QrCodeFill } from './QrCodeFill.js';
+import { QrCodeFillDuotone } from './QrCodeFillDuotone.js';
 
 export interface QrCodeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

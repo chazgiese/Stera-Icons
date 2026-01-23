@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlaskFullRegular } from './FlaskFullRegular';
-import { FlaskFullRegularDuotone } from './FlaskFullRegularDuotone';
-import { FlaskFullBold } from './FlaskFullBold';
-import { FlaskFullBoldDuotone } from './FlaskFullBoldDuotone';
-import { FlaskFullFill } from './FlaskFullFill';
-import { FlaskFullFillDuotone } from './FlaskFullFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlaskFullRegular } from './FlaskFullRegular.js';
+import { FlaskFullRegularDuotone } from './FlaskFullRegularDuotone.js';
+import { FlaskFullBold } from './FlaskFullBold.js';
+import { FlaskFullBoldDuotone } from './FlaskFullBoldDuotone.js';
+import { FlaskFullFill } from './FlaskFullFill.js';
+import { FlaskFullFillDuotone } from './FlaskFullFillDuotone.js';
 
 export interface FlaskFullProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

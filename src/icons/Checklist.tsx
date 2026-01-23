@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChecklistRegular } from './ChecklistRegular';
-import { ChecklistRegularDuotone } from './ChecklistRegularDuotone';
-import { ChecklistBold } from './ChecklistBold';
-import { ChecklistBoldDuotone } from './ChecklistBoldDuotone';
-import { ChecklistFill } from './ChecklistFill';
-import { ChecklistFillDuotone } from './ChecklistFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChecklistRegular } from './ChecklistRegular.js';
+import { ChecklistRegularDuotone } from './ChecklistRegularDuotone.js';
+import { ChecklistBold } from './ChecklistBold.js';
+import { ChecklistBoldDuotone } from './ChecklistBoldDuotone.js';
+import { ChecklistFill } from './ChecklistFill.js';
+import { ChecklistFillDuotone } from './ChecklistFillDuotone.js';
 
 export interface ChecklistProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

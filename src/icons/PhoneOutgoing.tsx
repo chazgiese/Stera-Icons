@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PhoneOutgoingRegular } from './PhoneOutgoingRegular';
-import { PhoneOutgoingRegularDuotone } from './PhoneOutgoingRegularDuotone';
-import { PhoneOutgoingBold } from './PhoneOutgoingBold';
-import { PhoneOutgoingBoldDuotone } from './PhoneOutgoingBoldDuotone';
-import { PhoneOutgoingFill } from './PhoneOutgoingFill';
-import { PhoneOutgoingFillDuotone } from './PhoneOutgoingFillDuotone';
+import type { IconProps } from '../types.js';
+import { PhoneOutgoingRegular } from './PhoneOutgoingRegular.js';
+import { PhoneOutgoingRegularDuotone } from './PhoneOutgoingRegularDuotone.js';
+import { PhoneOutgoingBold } from './PhoneOutgoingBold.js';
+import { PhoneOutgoingBoldDuotone } from './PhoneOutgoingBoldDuotone.js';
+import { PhoneOutgoingFill } from './PhoneOutgoingFill.js';
+import { PhoneOutgoingFillDuotone } from './PhoneOutgoingFillDuotone.js';
 
 export interface PhoneOutgoingProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

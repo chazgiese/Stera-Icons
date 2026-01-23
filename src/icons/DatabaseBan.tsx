@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DatabaseBanRegular } from './DatabaseBanRegular';
-import { DatabaseBanRegularDuotone } from './DatabaseBanRegularDuotone';
-import { DatabaseBanBold } from './DatabaseBanBold';
-import { DatabaseBanBoldDuotone } from './DatabaseBanBoldDuotone';
-import { DatabaseBanFill } from './DatabaseBanFill';
-import { DatabaseBanFillDuotone } from './DatabaseBanFillDuotone';
+import type { IconProps } from '../types.js';
+import { DatabaseBanRegular } from './DatabaseBanRegular.js';
+import { DatabaseBanRegularDuotone } from './DatabaseBanRegularDuotone.js';
+import { DatabaseBanBold } from './DatabaseBanBold.js';
+import { DatabaseBanBoldDuotone } from './DatabaseBanBoldDuotone.js';
+import { DatabaseBanFill } from './DatabaseBanFill.js';
+import { DatabaseBanFillDuotone } from './DatabaseBanFillDuotone.js';
 
 export interface DatabaseBanProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { XRegular } from './XRegular';
-import { XRegularDuotone } from './XRegularDuotone';
-import { XBold } from './XBold';
-import { XBoldDuotone } from './XBoldDuotone';
-import { XFill } from './XFill';
-import { XFillDuotone } from './XFillDuotone';
+import type { IconProps } from '../types.js';
+import { XRegular } from './XRegular.js';
+import { XRegularDuotone } from './XRegularDuotone.js';
+import { XBold } from './XBold.js';
+import { XBoldDuotone } from './XBoldDuotone.js';
+import { XFill } from './XFill.js';
+import { XFillDuotone } from './XFillDuotone.js';
 
 export interface XProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

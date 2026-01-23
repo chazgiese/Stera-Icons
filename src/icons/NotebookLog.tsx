@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { NotebookLogRegular } from './NotebookLogRegular';
-import { NotebookLogRegularDuotone } from './NotebookLogRegularDuotone';
-import { NotebookLogBold } from './NotebookLogBold';
-import { NotebookLogBoldDuotone } from './NotebookLogBoldDuotone';
-import { NotebookLogFill } from './NotebookLogFill';
-import { NotebookLogFillDuotone } from './NotebookLogFillDuotone';
+import type { IconProps } from '../types.js';
+import { NotebookLogRegular } from './NotebookLogRegular.js';
+import { NotebookLogRegularDuotone } from './NotebookLogRegularDuotone.js';
+import { NotebookLogBold } from './NotebookLogBold.js';
+import { NotebookLogBoldDuotone } from './NotebookLogBoldDuotone.js';
+import { NotebookLogFill } from './NotebookLogFill.js';
+import { NotebookLogFillDuotone } from './NotebookLogFillDuotone.js';
 
 export interface NotebookLogProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

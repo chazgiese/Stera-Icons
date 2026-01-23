@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CursorClickRegular } from './CursorClickRegular';
-import { CursorClickRegularDuotone } from './CursorClickRegularDuotone';
-import { CursorClickBold } from './CursorClickBold';
-import { CursorClickBoldDuotone } from './CursorClickBoldDuotone';
-import { CursorClickFill } from './CursorClickFill';
-import { CursorClickFillDuotone } from './CursorClickFillDuotone';
+import type { IconProps } from '../types.js';
+import { CursorClickRegular } from './CursorClickRegular.js';
+import { CursorClickRegularDuotone } from './CursorClickRegularDuotone.js';
+import { CursorClickBold } from './CursorClickBold.js';
+import { CursorClickBoldDuotone } from './CursorClickBoldDuotone.js';
+import { CursorClickFill } from './CursorClickFill.js';
+import { CursorClickFillDuotone } from './CursorClickFillDuotone.js';
 
 export interface CursorClickProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

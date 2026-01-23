@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PawPrintRegular } from './PawPrintRegular';
-import { PawPrintRegularDuotone } from './PawPrintRegularDuotone';
-import { PawPrintBold } from './PawPrintBold';
-import { PawPrintBoldDuotone } from './PawPrintBoldDuotone';
-import { PawPrintFill } from './PawPrintFill';
-import { PawPrintFillDuotone } from './PawPrintFillDuotone';
+import type { IconProps } from '../types.js';
+import { PawPrintRegular } from './PawPrintRegular.js';
+import { PawPrintRegularDuotone } from './PawPrintRegularDuotone.js';
+import { PawPrintBold } from './PawPrintBold.js';
+import { PawPrintBoldDuotone } from './PawPrintBoldDuotone.js';
+import { PawPrintFill } from './PawPrintFill.js';
+import { PawPrintFillDuotone } from './PawPrintFillDuotone.js';
 
 export interface PawPrintProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

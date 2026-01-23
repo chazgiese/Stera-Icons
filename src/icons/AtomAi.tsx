@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AtomAiRegular } from './AtomAiRegular';
-import { AtomAiRegularDuotone } from './AtomAiRegularDuotone';
-import { AtomAiBold } from './AtomAiBold';
-import { AtomAiBoldDuotone } from './AtomAiBoldDuotone';
-import { AtomAiFill } from './AtomAiFill';
-import { AtomAiFillDuotone } from './AtomAiFillDuotone';
+import type { IconProps } from '../types.js';
+import { AtomAiRegular } from './AtomAiRegular.js';
+import { AtomAiRegularDuotone } from './AtomAiRegularDuotone.js';
+import { AtomAiBold } from './AtomAiBold.js';
+import { AtomAiBoldDuotone } from './AtomAiBoldDuotone.js';
+import { AtomAiFill } from './AtomAiFill.js';
+import { AtomAiFillDuotone } from './AtomAiFillDuotone.js';
 
 export interface AtomAiProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { OptionKeyRegular } from './OptionKeyRegular';
-import { OptionKeyRegularDuotone } from './OptionKeyRegularDuotone';
-import { OptionKeyBold } from './OptionKeyBold';
-import { OptionKeyBoldDuotone } from './OptionKeyBoldDuotone';
-import { OptionKeyFill } from './OptionKeyFill';
-import { OptionKeyFillDuotone } from './OptionKeyFillDuotone';
+import type { IconProps } from '../types.js';
+import { OptionKeyRegular } from './OptionKeyRegular.js';
+import { OptionKeyRegularDuotone } from './OptionKeyRegularDuotone.js';
+import { OptionKeyBold } from './OptionKeyBold.js';
+import { OptionKeyBoldDuotone } from './OptionKeyBoldDuotone.js';
+import { OptionKeyFill } from './OptionKeyFill.js';
+import { OptionKeyFillDuotone } from './OptionKeyFillDuotone.js';
 
 export interface OptionKeyProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

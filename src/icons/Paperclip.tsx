@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PaperclipRegular } from './PaperclipRegular';
-import { PaperclipRegularDuotone } from './PaperclipRegularDuotone';
-import { PaperclipBold } from './PaperclipBold';
-import { PaperclipBoldDuotone } from './PaperclipBoldDuotone';
-import { PaperclipFill } from './PaperclipFill';
-import { PaperclipFillDuotone } from './PaperclipFillDuotone';
+import type { IconProps } from '../types.js';
+import { PaperclipRegular } from './PaperclipRegular.js';
+import { PaperclipRegularDuotone } from './PaperclipRegularDuotone.js';
+import { PaperclipBold } from './PaperclipBold.js';
+import { PaperclipBoldDuotone } from './PaperclipBoldDuotone.js';
+import { PaperclipFill } from './PaperclipFill.js';
+import { PaperclipFillDuotone } from './PaperclipFillDuotone.js';
 
 export interface PaperclipProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

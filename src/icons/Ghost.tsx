@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GhostRegular } from './GhostRegular';
-import { GhostRegularDuotone } from './GhostRegularDuotone';
-import { GhostBold } from './GhostBold';
-import { GhostBoldDuotone } from './GhostBoldDuotone';
-import { GhostFill } from './GhostFill';
-import { GhostFillDuotone } from './GhostFillDuotone';
+import type { IconProps } from '../types.js';
+import { GhostRegular } from './GhostRegular.js';
+import { GhostRegularDuotone } from './GhostRegularDuotone.js';
+import { GhostBold } from './GhostBold.js';
+import { GhostBoldDuotone } from './GhostBoldDuotone.js';
+import { GhostFill } from './GhostFill.js';
+import { GhostFillDuotone } from './GhostFillDuotone.js';
 
 export interface GhostProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

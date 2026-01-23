@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FrameRegular } from './FrameRegular';
-import { FrameRegularDuotone } from './FrameRegularDuotone';
-import { FrameBold } from './FrameBold';
-import { FrameBoldDuotone } from './FrameBoldDuotone';
-import { FrameFill } from './FrameFill';
-import { FrameFillDuotone } from './FrameFillDuotone';
+import type { IconProps } from '../types.js';
+import { FrameRegular } from './FrameRegular.js';
+import { FrameRegularDuotone } from './FrameRegularDuotone.js';
+import { FrameBold } from './FrameBold.js';
+import { FrameBoldDuotone } from './FrameBoldDuotone.js';
+import { FrameFill } from './FrameFill.js';
+import { FrameFillDuotone } from './FrameFillDuotone.js';
 
 export interface FrameProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

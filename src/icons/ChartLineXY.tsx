@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChartLineXYRegular } from './ChartLineXYRegular';
-import { ChartLineXYRegularDuotone } from './ChartLineXYRegularDuotone';
-import { ChartLineXYBold } from './ChartLineXYBold';
-import { ChartLineXYBoldDuotone } from './ChartLineXYBoldDuotone';
-import { ChartLineXYFill } from './ChartLineXYFill';
-import { ChartLineXYFillDuotone } from './ChartLineXYFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChartLineXYRegular } from './ChartLineXYRegular.js';
+import { ChartLineXYRegularDuotone } from './ChartLineXYRegularDuotone.js';
+import { ChartLineXYBold } from './ChartLineXYBold.js';
+import { ChartLineXYBoldDuotone } from './ChartLineXYBoldDuotone.js';
+import { ChartLineXYFill } from './ChartLineXYFill.js';
+import { ChartLineXYFillDuotone } from './ChartLineXYFillDuotone.js';
 
 export interface ChartLineXYProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

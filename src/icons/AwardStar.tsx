@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AwardStarRegular } from './AwardStarRegular';
-import { AwardStarRegularDuotone } from './AwardStarRegularDuotone';
-import { AwardStarBold } from './AwardStarBold';
-import { AwardStarBoldDuotone } from './AwardStarBoldDuotone';
-import { AwardStarFill } from './AwardStarFill';
-import { AwardStarFillDuotone } from './AwardStarFillDuotone';
+import type { IconProps } from '../types.js';
+import { AwardStarRegular } from './AwardStarRegular.js';
+import { AwardStarRegularDuotone } from './AwardStarRegularDuotone.js';
+import { AwardStarBold } from './AwardStarBold.js';
+import { AwardStarBoldDuotone } from './AwardStarBoldDuotone.js';
+import { AwardStarFill } from './AwardStarFill.js';
+import { AwardStarFillDuotone } from './AwardStarFillDuotone.js';
 
 export interface AwardStarProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

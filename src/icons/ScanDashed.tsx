@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScanDashedRegular } from './ScanDashedRegular';
-import { ScanDashedRegularDuotone } from './ScanDashedRegularDuotone';
-import { ScanDashedBold } from './ScanDashedBold';
-import { ScanDashedBoldDuotone } from './ScanDashedBoldDuotone';
-import { ScanDashedFill } from './ScanDashedFill';
-import { ScanDashedFillDuotone } from './ScanDashedFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScanDashedRegular } from './ScanDashedRegular.js';
+import { ScanDashedRegularDuotone } from './ScanDashedRegularDuotone.js';
+import { ScanDashedBold } from './ScanDashedBold.js';
+import { ScanDashedBoldDuotone } from './ScanDashedBoldDuotone.js';
+import { ScanDashedFill } from './ScanDashedFill.js';
+import { ScanDashedFillDuotone } from './ScanDashedFillDuotone.js';
 
 export interface ScanDashedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

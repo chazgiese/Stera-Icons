@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ListExpandRegular } from './ListExpandRegular';
-import { ListExpandRegularDuotone } from './ListExpandRegularDuotone';
-import { ListExpandBold } from './ListExpandBold';
-import { ListExpandBoldDuotone } from './ListExpandBoldDuotone';
-import { ListExpandFill } from './ListExpandFill';
-import { ListExpandFillDuotone } from './ListExpandFillDuotone';
+import type { IconProps } from '../types.js';
+import { ListExpandRegular } from './ListExpandRegular.js';
+import { ListExpandRegularDuotone } from './ListExpandRegularDuotone.js';
+import { ListExpandBold } from './ListExpandBold.js';
+import { ListExpandBoldDuotone } from './ListExpandBoldDuotone.js';
+import { ListExpandFill } from './ListExpandFill.js';
+import { ListExpandFillDuotone } from './ListExpandFillDuotone.js';
 
 export interface ListExpandProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { MedicalCrossRegular } from './MedicalCrossRegular';
-import { MedicalCrossRegularDuotone } from './MedicalCrossRegularDuotone';
-import { MedicalCrossBold } from './MedicalCrossBold';
-import { MedicalCrossBoldDuotone } from './MedicalCrossBoldDuotone';
-import { MedicalCrossFill } from './MedicalCrossFill';
-import { MedicalCrossFillDuotone } from './MedicalCrossFillDuotone';
+import type { IconProps } from '../types.js';
+import { MedicalCrossRegular } from './MedicalCrossRegular.js';
+import { MedicalCrossRegularDuotone } from './MedicalCrossRegularDuotone.js';
+import { MedicalCrossBold } from './MedicalCrossBold.js';
+import { MedicalCrossBoldDuotone } from './MedicalCrossBoldDuotone.js';
+import { MedicalCrossFill } from './MedicalCrossFill.js';
+import { MedicalCrossFillDuotone } from './MedicalCrossFillDuotone.js';
 
 export interface MedicalCrossProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

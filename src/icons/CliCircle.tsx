@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CliCircleRegular } from './CliCircleRegular';
-import { CliCircleRegularDuotone } from './CliCircleRegularDuotone';
-import { CliCircleBold } from './CliCircleBold';
-import { CliCircleBoldDuotone } from './CliCircleBoldDuotone';
-import { CliCircleFill } from './CliCircleFill';
-import { CliCircleFillDuotone } from './CliCircleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CliCircleRegular } from './CliCircleRegular.js';
+import { CliCircleRegularDuotone } from './CliCircleRegularDuotone.js';
+import { CliCircleBold } from './CliCircleBold.js';
+import { CliCircleBoldDuotone } from './CliCircleBoldDuotone.js';
+import { CliCircleFill } from './CliCircleFill.js';
+import { CliCircleFillDuotone } from './CliCircleFillDuotone.js';
 
 export interface CliCircleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

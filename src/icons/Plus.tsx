@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlusRegular } from './PlusRegular';
-import { PlusRegularDuotone } from './PlusRegularDuotone';
-import { PlusBold } from './PlusBold';
-import { PlusBoldDuotone } from './PlusBoldDuotone';
-import { PlusFill } from './PlusFill';
-import { PlusFillDuotone } from './PlusFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlusRegular } from './PlusRegular.js';
+import { PlusRegularDuotone } from './PlusRegularDuotone.js';
+import { PlusBold } from './PlusBold.js';
+import { PlusBoldDuotone } from './PlusBoldDuotone.js';
+import { PlusFill } from './PlusFill.js';
+import { PlusFillDuotone } from './PlusFillDuotone.js';
 
 export interface PlusProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

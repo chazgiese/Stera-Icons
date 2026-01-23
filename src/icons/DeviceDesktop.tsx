@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DeviceDesktopRegular } from './DeviceDesktopRegular';
-import { DeviceDesktopRegularDuotone } from './DeviceDesktopRegularDuotone';
-import { DeviceDesktopBold } from './DeviceDesktopBold';
-import { DeviceDesktopBoldDuotone } from './DeviceDesktopBoldDuotone';
-import { DeviceDesktopFill } from './DeviceDesktopFill';
-import { DeviceDesktopFillDuotone } from './DeviceDesktopFillDuotone';
+import type { IconProps } from '../types.js';
+import { DeviceDesktopRegular } from './DeviceDesktopRegular.js';
+import { DeviceDesktopRegularDuotone } from './DeviceDesktopRegularDuotone.js';
+import { DeviceDesktopBold } from './DeviceDesktopBold.js';
+import { DeviceDesktopBoldDuotone } from './DeviceDesktopBoldDuotone.js';
+import { DeviceDesktopFill } from './DeviceDesktopFill.js';
+import { DeviceDesktopFillDuotone } from './DeviceDesktopFillDuotone.js';
 
 export interface DeviceDesktopProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

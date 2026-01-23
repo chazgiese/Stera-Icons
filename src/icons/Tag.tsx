@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TagRegular } from './TagRegular';
-import { TagRegularDuotone } from './TagRegularDuotone';
-import { TagBold } from './TagBold';
-import { TagBoldDuotone } from './TagBoldDuotone';
-import { TagFill } from './TagFill';
-import { TagFillDuotone } from './TagFillDuotone';
+import type { IconProps } from '../types.js';
+import { TagRegular } from './TagRegular.js';
+import { TagRegularDuotone } from './TagRegularDuotone.js';
+import { TagBold } from './TagBold.js';
+import { TagBoldDuotone } from './TagBoldDuotone.js';
+import { TagFill } from './TagFill.js';
+import { TagFillDuotone } from './TagFillDuotone.js';
 
 export interface TagProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CandleRegular } from './CandleRegular';
-import { CandleRegularDuotone } from './CandleRegularDuotone';
-import { CandleBold } from './CandleBold';
-import { CandleBoldDuotone } from './CandleBoldDuotone';
-import { CandleFill } from './CandleFill';
-import { CandleFillDuotone } from './CandleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CandleRegular } from './CandleRegular.js';
+import { CandleRegularDuotone } from './CandleRegularDuotone.js';
+import { CandleBold } from './CandleBold.js';
+import { CandleBoldDuotone } from './CandleBoldDuotone.js';
+import { CandleFill } from './CandleFill.js';
+import { CandleFillDuotone } from './CandleFillDuotone.js';
 
 export interface CandleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

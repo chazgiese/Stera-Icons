@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CubePackageSimpleRegular } from './CubePackageSimpleRegular';
-import { CubePackageSimpleRegularDuotone } from './CubePackageSimpleRegularDuotone';
-import { CubePackageSimpleBold } from './CubePackageSimpleBold';
-import { CubePackageSimpleBoldDuotone } from './CubePackageSimpleBoldDuotone';
-import { CubePackageSimpleFill } from './CubePackageSimpleFill';
-import { CubePackageSimpleFillDuotone } from './CubePackageSimpleFillDuotone';
+import type { IconProps } from '../types.js';
+import { CubePackageSimpleRegular } from './CubePackageSimpleRegular.js';
+import { CubePackageSimpleRegularDuotone } from './CubePackageSimpleRegularDuotone.js';
+import { CubePackageSimpleBold } from './CubePackageSimpleBold.js';
+import { CubePackageSimpleBoldDuotone } from './CubePackageSimpleBoldDuotone.js';
+import { CubePackageSimpleFill } from './CubePackageSimpleFill.js';
+import { CubePackageSimpleFillDuotone } from './CubePackageSimpleFillDuotone.js';
 
 export interface CubePackageSimpleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

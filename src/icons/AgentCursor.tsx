@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AgentCursorRegular } from './AgentCursorRegular';
-import { AgentCursorRegularDuotone } from './AgentCursorRegularDuotone';
-import { AgentCursorBold } from './AgentCursorBold';
-import { AgentCursorBoldDuotone } from './AgentCursorBoldDuotone';
-import { AgentCursorFill } from './AgentCursorFill';
-import { AgentCursorFillDuotone } from './AgentCursorFillDuotone';
+import type { IconProps } from '../types.js';
+import { AgentCursorRegular } from './AgentCursorRegular.js';
+import { AgentCursorRegularDuotone } from './AgentCursorRegularDuotone.js';
+import { AgentCursorBold } from './AgentCursorBold.js';
+import { AgentCursorBoldDuotone } from './AgentCursorBoldDuotone.js';
+import { AgentCursorFill } from './AgentCursorFill.js';
+import { AgentCursorFillDuotone } from './AgentCursorFillDuotone.js';
 
 export interface AgentCursorProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

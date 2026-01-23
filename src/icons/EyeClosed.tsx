@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { EyeClosedRegular } from './EyeClosedRegular';
-import { EyeClosedRegularDuotone } from './EyeClosedRegularDuotone';
-import { EyeClosedBold } from './EyeClosedBold';
-import { EyeClosedBoldDuotone } from './EyeClosedBoldDuotone';
-import { EyeClosedFill } from './EyeClosedFill';
-import { EyeClosedFillDuotone } from './EyeClosedFillDuotone';
+import type { IconProps } from '../types.js';
+import { EyeClosedRegular } from './EyeClosedRegular.js';
+import { EyeClosedRegularDuotone } from './EyeClosedRegularDuotone.js';
+import { EyeClosedBold } from './EyeClosedBold.js';
+import { EyeClosedBoldDuotone } from './EyeClosedBoldDuotone.js';
+import { EyeClosedFill } from './EyeClosedFill.js';
+import { EyeClosedFillDuotone } from './EyeClosedFillDuotone.js';
 
 export interface EyeClosedProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

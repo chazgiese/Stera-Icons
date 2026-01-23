@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RepeatRegular } from './RepeatRegular';
-import { RepeatRegularDuotone } from './RepeatRegularDuotone';
-import { RepeatBold } from './RepeatBold';
-import { RepeatBoldDuotone } from './RepeatBoldDuotone';
-import { RepeatFill } from './RepeatFill';
-import { RepeatFillDuotone } from './RepeatFillDuotone';
+import type { IconProps } from '../types.js';
+import { RepeatRegular } from './RepeatRegular.js';
+import { RepeatRegularDuotone } from './RepeatRegularDuotone.js';
+import { RepeatBold } from './RepeatBold.js';
+import { RepeatBoldDuotone } from './RepeatBoldDuotone.js';
+import { RepeatFill } from './RepeatFill.js';
+import { RepeatFillDuotone } from './RepeatFillDuotone.js';
 
 export interface RepeatProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

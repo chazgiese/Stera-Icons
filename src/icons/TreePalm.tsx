@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TreePalmRegular } from './TreePalmRegular';
-import { TreePalmRegularDuotone } from './TreePalmRegularDuotone';
-import { TreePalmBold } from './TreePalmBold';
-import { TreePalmBoldDuotone } from './TreePalmBoldDuotone';
-import { TreePalmFill } from './TreePalmFill';
-import { TreePalmFillDuotone } from './TreePalmFillDuotone';
+import type { IconProps } from '../types.js';
+import { TreePalmRegular } from './TreePalmRegular.js';
+import { TreePalmRegularDuotone } from './TreePalmRegularDuotone.js';
+import { TreePalmBold } from './TreePalmBold.js';
+import { TreePalmBoldDuotone } from './TreePalmBoldDuotone.js';
+import { TreePalmFill } from './TreePalmFill.js';
+import { TreePalmFillDuotone } from './TreePalmFillDuotone.js';
 
 export interface TreePalmProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

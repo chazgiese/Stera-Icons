@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PlayRectangleRegular } from './PlayRectangleRegular';
-import { PlayRectangleRegularDuotone } from './PlayRectangleRegularDuotone';
-import { PlayRectangleBold } from './PlayRectangleBold';
-import { PlayRectangleBoldDuotone } from './PlayRectangleBoldDuotone';
-import { PlayRectangleFill } from './PlayRectangleFill';
-import { PlayRectangleFillDuotone } from './PlayRectangleFillDuotone';
+import type { IconProps } from '../types.js';
+import { PlayRectangleRegular } from './PlayRectangleRegular.js';
+import { PlayRectangleRegularDuotone } from './PlayRectangleRegularDuotone.js';
+import { PlayRectangleBold } from './PlayRectangleBold.js';
+import { PlayRectangleBoldDuotone } from './PlayRectangleBoldDuotone.js';
+import { PlayRectangleFill } from './PlayRectangleFill.js';
+import { PlayRectangleFillDuotone } from './PlayRectangleFillDuotone.js';
 
 export interface PlayRectangleProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

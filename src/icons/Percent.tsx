@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PercentRegular } from './PercentRegular';
-import { PercentRegularDuotone } from './PercentRegularDuotone';
-import { PercentBold } from './PercentBold';
-import { PercentBoldDuotone } from './PercentBoldDuotone';
-import { PercentFill } from './PercentFill';
-import { PercentFillDuotone } from './PercentFillDuotone';
+import type { IconProps } from '../types.js';
+import { PercentRegular } from './PercentRegular.js';
+import { PercentRegularDuotone } from './PercentRegularDuotone.js';
+import { PercentBold } from './PercentBold.js';
+import { PercentBoldDuotone } from './PercentBoldDuotone.js';
+import { PercentFill } from './PercentFill.js';
+import { PercentFillDuotone } from './PercentFillDuotone.js';
 
 export interface PercentProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

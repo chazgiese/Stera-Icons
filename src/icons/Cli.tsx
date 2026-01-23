@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CliRegular } from './CliRegular';
-import { CliRegularDuotone } from './CliRegularDuotone';
-import { CliBold } from './CliBold';
-import { CliBoldDuotone } from './CliBoldDuotone';
-import { CliFill } from './CliFill';
-import { CliFillDuotone } from './CliFillDuotone';
+import type { IconProps } from '../types.js';
+import { CliRegular } from './CliRegular.js';
+import { CliRegularDuotone } from './CliRegularDuotone.js';
+import { CliBold } from './CliBold.js';
+import { CliBoldDuotone } from './CliBoldDuotone.js';
+import { CliFill } from './CliFill.js';
+import { CliFillDuotone } from './CliFillDuotone.js';
 
 export interface CliProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

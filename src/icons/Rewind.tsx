@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RewindRegular } from './RewindRegular';
-import { RewindRegularDuotone } from './RewindRegularDuotone';
-import { RewindBold } from './RewindBold';
-import { RewindBoldDuotone } from './RewindBoldDuotone';
-import { RewindFill } from './RewindFill';
-import { RewindFillDuotone } from './RewindFillDuotone';
+import type { IconProps } from '../types.js';
+import { RewindRegular } from './RewindRegular.js';
+import { RewindRegularDuotone } from './RewindRegularDuotone.js';
+import { RewindBold } from './RewindBold.js';
+import { RewindBoldDuotone } from './RewindBoldDuotone.js';
+import { RewindFill } from './RewindFill.js';
+import { RewindFillDuotone } from './RewindFillDuotone.js';
 
 export interface RewindProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

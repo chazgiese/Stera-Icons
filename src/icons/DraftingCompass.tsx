@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DraftingCompassRegular } from './DraftingCompassRegular';
-import { DraftingCompassRegularDuotone } from './DraftingCompassRegularDuotone';
-import { DraftingCompassBold } from './DraftingCompassBold';
-import { DraftingCompassBoldDuotone } from './DraftingCompassBoldDuotone';
-import { DraftingCompassFill } from './DraftingCompassFill';
-import { DraftingCompassFillDuotone } from './DraftingCompassFillDuotone';
+import type { IconProps } from '../types.js';
+import { DraftingCompassRegular } from './DraftingCompassRegular.js';
+import { DraftingCompassRegularDuotone } from './DraftingCompassRegularDuotone.js';
+import { DraftingCompassBold } from './DraftingCompassBold.js';
+import { DraftingCompassBoldDuotone } from './DraftingCompassBoldDuotone.js';
+import { DraftingCompassFill } from './DraftingCompassFill.js';
+import { DraftingCompassFillDuotone } from './DraftingCompassFillDuotone.js';
 
 export interface DraftingCompassProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

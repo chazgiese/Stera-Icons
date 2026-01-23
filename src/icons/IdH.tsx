@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { IdHRegular } from './IdHRegular';
-import { IdHRegularDuotone } from './IdHRegularDuotone';
-import { IdHBold } from './IdHBold';
-import { IdHBoldDuotone } from './IdHBoldDuotone';
-import { IdHFill } from './IdHFill';
-import { IdHFillDuotone } from './IdHFillDuotone';
+import type { IconProps } from '../types.js';
+import { IdHRegular } from './IdHRegular.js';
+import { IdHRegularDuotone } from './IdHRegularDuotone.js';
+import { IdHBold } from './IdHBold.js';
+import { IdHBoldDuotone } from './IdHBoldDuotone.js';
+import { IdHFill } from './IdHFill.js';
+import { IdHFillDuotone } from './IdHFillDuotone.js';
 
 export interface IdHProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

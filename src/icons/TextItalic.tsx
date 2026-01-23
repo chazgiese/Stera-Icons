@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextItalicRegular } from './TextItalicRegular';
-import { TextItalicRegularDuotone } from './TextItalicRegularDuotone';
-import { TextItalicBold } from './TextItalicBold';
-import { TextItalicBoldDuotone } from './TextItalicBoldDuotone';
-import { TextItalicFill } from './TextItalicFill';
-import { TextItalicFillDuotone } from './TextItalicFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextItalicRegular } from './TextItalicRegular.js';
+import { TextItalicRegularDuotone } from './TextItalicRegularDuotone.js';
+import { TextItalicBold } from './TextItalicBold.js';
+import { TextItalicBoldDuotone } from './TextItalicBoldDuotone.js';
+import { TextItalicFill } from './TextItalicFill.js';
+import { TextItalicFillDuotone } from './TextItalicFillDuotone.js';
 
 export interface TextItalicProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

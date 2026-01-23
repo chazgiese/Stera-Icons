@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SunriseRegular } from './SunriseRegular';
-import { SunriseRegularDuotone } from './SunriseRegularDuotone';
-import { SunriseBold } from './SunriseBold';
-import { SunriseBoldDuotone } from './SunriseBoldDuotone';
-import { SunriseFill } from './SunriseFill';
-import { SunriseFillDuotone } from './SunriseFillDuotone';
+import type { IconProps } from '../types.js';
+import { SunriseRegular } from './SunriseRegular.js';
+import { SunriseRegularDuotone } from './SunriseRegularDuotone.js';
+import { SunriseBold } from './SunriseBold.js';
+import { SunriseBoldDuotone } from './SunriseBoldDuotone.js';
+import { SunriseFill } from './SunriseFill.js';
+import { SunriseFillDuotone } from './SunriseFillDuotone.js';
 
 export interface SunriseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

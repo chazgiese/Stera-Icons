@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlagRegular } from './FlagRegular';
-import { FlagRegularDuotone } from './FlagRegularDuotone';
-import { FlagBold } from './FlagBold';
-import { FlagBoldDuotone } from './FlagBoldDuotone';
-import { FlagFill } from './FlagFill';
-import { FlagFillDuotone } from './FlagFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlagRegular } from './FlagRegular.js';
+import { FlagRegularDuotone } from './FlagRegularDuotone.js';
+import { FlagBold } from './FlagBold.js';
+import { FlagBoldDuotone } from './FlagBoldDuotone.js';
+import { FlagFill } from './FlagFill.js';
+import { FlagFillDuotone } from './FlagFillDuotone.js';
 
 export interface FlagProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

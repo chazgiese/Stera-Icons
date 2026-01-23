@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { RouteArrowRegular } from './RouteArrowRegular';
-import { RouteArrowRegularDuotone } from './RouteArrowRegularDuotone';
-import { RouteArrowBold } from './RouteArrowBold';
-import { RouteArrowBoldDuotone } from './RouteArrowBoldDuotone';
-import { RouteArrowFill } from './RouteArrowFill';
-import { RouteArrowFillDuotone } from './RouteArrowFillDuotone';
+import type { IconProps } from '../types.js';
+import { RouteArrowRegular } from './RouteArrowRegular.js';
+import { RouteArrowRegularDuotone } from './RouteArrowRegularDuotone.js';
+import { RouteArrowBold } from './RouteArrowBold.js';
+import { RouteArrowBoldDuotone } from './RouteArrowBoldDuotone.js';
+import { RouteArrowFill } from './RouteArrowFill.js';
+import { RouteArrowFillDuotone } from './RouteArrowFillDuotone.js';
 
 export interface RouteArrowProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

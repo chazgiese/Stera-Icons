@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ActivityRegular } from './ActivityRegular';
-import { ActivityRegularDuotone } from './ActivityRegularDuotone';
-import { ActivityBold } from './ActivityBold';
-import { ActivityBoldDuotone } from './ActivityBoldDuotone';
-import { ActivityFill } from './ActivityFill';
-import { ActivityFillDuotone } from './ActivityFillDuotone';
+import type { IconProps } from '../types.js';
+import { ActivityRegular } from './ActivityRegular.js';
+import { ActivityRegularDuotone } from './ActivityRegularDuotone.js';
+import { ActivityBold } from './ActivityBold.js';
+import { ActivityBoldDuotone } from './ActivityBoldDuotone.js';
+import { ActivityFill } from './ActivityFill.js';
+import { ActivityFillDuotone } from './ActivityFillDuotone.js';
 
 export interface ActivityProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

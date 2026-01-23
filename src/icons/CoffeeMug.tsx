@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CoffeeMugRegular } from './CoffeeMugRegular';
-import { CoffeeMugRegularDuotone } from './CoffeeMugRegularDuotone';
-import { CoffeeMugBold } from './CoffeeMugBold';
-import { CoffeeMugBoldDuotone } from './CoffeeMugBoldDuotone';
-import { CoffeeMugFill } from './CoffeeMugFill';
-import { CoffeeMugFillDuotone } from './CoffeeMugFillDuotone';
+import type { IconProps } from '../types.js';
+import { CoffeeMugRegular } from './CoffeeMugRegular.js';
+import { CoffeeMugRegularDuotone } from './CoffeeMugRegularDuotone.js';
+import { CoffeeMugBold } from './CoffeeMugBold.js';
+import { CoffeeMugBoldDuotone } from './CoffeeMugBoldDuotone.js';
+import { CoffeeMugFill } from './CoffeeMugFill.js';
+import { CoffeeMugFillDuotone } from './CoffeeMugFillDuotone.js';
 
 export interface CoffeeMugProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

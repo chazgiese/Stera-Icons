@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { VolleyballRegular } from './VolleyballRegular';
-import { VolleyballRegularDuotone } from './VolleyballRegularDuotone';
-import { VolleyballBold } from './VolleyballBold';
-import { VolleyballBoldDuotone } from './VolleyballBoldDuotone';
-import { VolleyballFill } from './VolleyballFill';
-import { VolleyballFillDuotone } from './VolleyballFillDuotone';
+import type { IconProps } from '../types.js';
+import { VolleyballRegular } from './VolleyballRegular.js';
+import { VolleyballRegularDuotone } from './VolleyballRegularDuotone.js';
+import { VolleyballBold } from './VolleyballBold.js';
+import { VolleyballBoldDuotone } from './VolleyballBoldDuotone.js';
+import { VolleyballFill } from './VolleyballFill.js';
+import { VolleyballFillDuotone } from './VolleyballFillDuotone.js';
 
 export interface VolleyballProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

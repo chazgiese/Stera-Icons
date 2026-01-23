@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BellRegular } from './BellRegular';
-import { BellRegularDuotone } from './BellRegularDuotone';
-import { BellBold } from './BellBold';
-import { BellBoldDuotone } from './BellBoldDuotone';
-import { BellFill } from './BellFill';
-import { BellFillDuotone } from './BellFillDuotone';
+import type { IconProps } from '../types.js';
+import { BellRegular } from './BellRegular.js';
+import { BellRegularDuotone } from './BellRegularDuotone.js';
+import { BellBold } from './BellBold.js';
+import { BellBoldDuotone } from './BellBoldDuotone.js';
+import { BellFill } from './BellFill.js';
+import { BellFillDuotone } from './BellFillDuotone.js';
 
 export interface BellProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

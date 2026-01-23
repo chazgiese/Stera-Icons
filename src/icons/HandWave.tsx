@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { HandWaveRegular } from './HandWaveRegular';
-import { HandWaveRegularDuotone } from './HandWaveRegularDuotone';
-import { HandWaveBold } from './HandWaveBold';
-import { HandWaveBoldDuotone } from './HandWaveBoldDuotone';
-import { HandWaveFill } from './HandWaveFill';
-import { HandWaveFillDuotone } from './HandWaveFillDuotone';
+import type { IconProps } from '../types.js';
+import { HandWaveRegular } from './HandWaveRegular.js';
+import { HandWaveRegularDuotone } from './HandWaveRegularDuotone.js';
+import { HandWaveBold } from './HandWaveBold.js';
+import { HandWaveBoldDuotone } from './HandWaveBoldDuotone.js';
+import { HandWaveFill } from './HandWaveFill.js';
+import { HandWaveFillDuotone } from './HandWaveFillDuotone.js';
 
 export interface HandWaveProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

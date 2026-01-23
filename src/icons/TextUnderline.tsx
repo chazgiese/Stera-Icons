@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { TextUnderlineRegular } from './TextUnderlineRegular';
-import { TextUnderlineRegularDuotone } from './TextUnderlineRegularDuotone';
-import { TextUnderlineBold } from './TextUnderlineBold';
-import { TextUnderlineBoldDuotone } from './TextUnderlineBoldDuotone';
-import { TextUnderlineFill } from './TextUnderlineFill';
-import { TextUnderlineFillDuotone } from './TextUnderlineFillDuotone';
+import type { IconProps } from '../types.js';
+import { TextUnderlineRegular } from './TextUnderlineRegular.js';
+import { TextUnderlineRegularDuotone } from './TextUnderlineRegularDuotone.js';
+import { TextUnderlineBold } from './TextUnderlineBold.js';
+import { TextUnderlineBoldDuotone } from './TextUnderlineBoldDuotone.js';
+import { TextUnderlineFill } from './TextUnderlineFill.js';
+import { TextUnderlineFillDuotone } from './TextUnderlineFillDuotone.js';
 
 export interface TextUnderlineProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GradientRegular } from './GradientRegular';
-import { GradientRegularDuotone } from './GradientRegularDuotone';
-import { GradientBold } from './GradientBold';
-import { GradientBoldDuotone } from './GradientBoldDuotone';
-import { GradientFill } from './GradientFill';
-import { GradientFillDuotone } from './GradientFillDuotone';
+import type { IconProps } from '../types.js';
+import { GradientRegular } from './GradientRegular.js';
+import { GradientRegularDuotone } from './GradientRegularDuotone.js';
+import { GradientBold } from './GradientBold.js';
+import { GradientBoldDuotone } from './GradientBoldDuotone.js';
+import { GradientFill } from './GradientFill.js';
+import { GradientFillDuotone } from './GradientFillDuotone.js';
 
 export interface GradientProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

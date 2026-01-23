@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ShieldHalfRegular } from './ShieldHalfRegular';
-import { ShieldHalfRegularDuotone } from './ShieldHalfRegularDuotone';
-import { ShieldHalfBold } from './ShieldHalfBold';
-import { ShieldHalfBoldDuotone } from './ShieldHalfBoldDuotone';
-import { ShieldHalfFill } from './ShieldHalfFill';
-import { ShieldHalfFillDuotone } from './ShieldHalfFillDuotone';
+import type { IconProps } from '../types.js';
+import { ShieldHalfRegular } from './ShieldHalfRegular.js';
+import { ShieldHalfRegularDuotone } from './ShieldHalfRegularDuotone.js';
+import { ShieldHalfBold } from './ShieldHalfBold.js';
+import { ShieldHalfBoldDuotone } from './ShieldHalfBoldDuotone.js';
+import { ShieldHalfFill } from './ShieldHalfFill.js';
+import { ShieldHalfFillDuotone } from './ShieldHalfFillDuotone.js';
 
 export interface ShieldHalfProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

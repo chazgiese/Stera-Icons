@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CalendarSlashRegular } from './CalendarSlashRegular';
-import { CalendarSlashRegularDuotone } from './CalendarSlashRegularDuotone';
-import { CalendarSlashBold } from './CalendarSlashBold';
-import { CalendarSlashBoldDuotone } from './CalendarSlashBoldDuotone';
-import { CalendarSlashFill } from './CalendarSlashFill';
-import { CalendarSlashFillDuotone } from './CalendarSlashFillDuotone';
+import type { IconProps } from '../types.js';
+import { CalendarSlashRegular } from './CalendarSlashRegular.js';
+import { CalendarSlashRegularDuotone } from './CalendarSlashRegularDuotone.js';
+import { CalendarSlashBold } from './CalendarSlashBold.js';
+import { CalendarSlashBoldDuotone } from './CalendarSlashBoldDuotone.js';
+import { CalendarSlashFill } from './CalendarSlashFill.js';
+import { CalendarSlashFillDuotone } from './CalendarSlashFillDuotone.js';
 
 export interface CalendarSlashProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

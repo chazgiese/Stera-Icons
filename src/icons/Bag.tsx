@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BagRegular } from './BagRegular';
-import { BagRegularDuotone } from './BagRegularDuotone';
-import { BagBold } from './BagBold';
-import { BagBoldDuotone } from './BagBoldDuotone';
-import { BagFill } from './BagFill';
-import { BagFillDuotone } from './BagFillDuotone';
+import type { IconProps } from '../types.js';
+import { BagRegular } from './BagRegular.js';
+import { BagRegularDuotone } from './BagRegularDuotone.js';
+import { BagBold } from './BagBold.js';
+import { BagBoldDuotone } from './BagBoldDuotone.js';
+import { BagFill } from './BagFill.js';
+import { BagFillDuotone } from './BagFillDuotone.js';
 
 export interface BagProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

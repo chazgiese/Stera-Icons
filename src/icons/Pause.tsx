@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PauseRegular } from './PauseRegular';
-import { PauseRegularDuotone } from './PauseRegularDuotone';
-import { PauseBold } from './PauseBold';
-import { PauseBoldDuotone } from './PauseBoldDuotone';
-import { PauseFill } from './PauseFill';
-import { PauseFillDuotone } from './PauseFillDuotone';
+import type { IconProps } from '../types.js';
+import { PauseRegular } from './PauseRegular.js';
+import { PauseRegularDuotone } from './PauseRegularDuotone.js';
+import { PauseBold } from './PauseBold.js';
+import { PauseBoldDuotone } from './PauseBoldDuotone.js';
+import { PauseFill } from './PauseFill.js';
+import { PauseFillDuotone } from './PauseFillDuotone.js';
 
 export interface PauseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

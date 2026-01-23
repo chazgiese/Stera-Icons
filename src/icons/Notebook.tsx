@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { NotebookRegular } from './NotebookRegular';
-import { NotebookRegularDuotone } from './NotebookRegularDuotone';
-import { NotebookBold } from './NotebookBold';
-import { NotebookBoldDuotone } from './NotebookBoldDuotone';
-import { NotebookFill } from './NotebookFill';
-import { NotebookFillDuotone } from './NotebookFillDuotone';
+import type { IconProps } from '../types.js';
+import { NotebookRegular } from './NotebookRegular.js';
+import { NotebookRegularDuotone } from './NotebookRegularDuotone.js';
+import { NotebookBold } from './NotebookBold.js';
+import { NotebookBoldDuotone } from './NotebookBoldDuotone.js';
+import { NotebookFill } from './NotebookFill.js';
+import { NotebookFillDuotone } from './NotebookFillDuotone.js';
 
 export interface NotebookProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

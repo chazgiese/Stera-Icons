@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ChevronsLeftRegular } from './ChevronsLeftRegular';
-import { ChevronsLeftRegularDuotone } from './ChevronsLeftRegularDuotone';
-import { ChevronsLeftBold } from './ChevronsLeftBold';
-import { ChevronsLeftBoldDuotone } from './ChevronsLeftBoldDuotone';
-import { ChevronsLeftFill } from './ChevronsLeftFill';
-import { ChevronsLeftFillDuotone } from './ChevronsLeftFillDuotone';
+import type { IconProps } from '../types.js';
+import { ChevronsLeftRegular } from './ChevronsLeftRegular.js';
+import { ChevronsLeftRegularDuotone } from './ChevronsLeftRegularDuotone.js';
+import { ChevronsLeftBold } from './ChevronsLeftBold.js';
+import { ChevronsLeftBoldDuotone } from './ChevronsLeftBoldDuotone.js';
+import { ChevronsLeftFill } from './ChevronsLeftFill.js';
+import { ChevronsLeftFillDuotone } from './ChevronsLeftFillDuotone.js';
 
 export interface ChevronsLeftProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

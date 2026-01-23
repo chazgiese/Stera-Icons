@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { FlowerRegular } from './FlowerRegular';
-import { FlowerRegularDuotone } from './FlowerRegularDuotone';
-import { FlowerBold } from './FlowerBold';
-import { FlowerBoldDuotone } from './FlowerBoldDuotone';
-import { FlowerFill } from './FlowerFill';
-import { FlowerFillDuotone } from './FlowerFillDuotone';
+import type { IconProps } from '../types.js';
+import { FlowerRegular } from './FlowerRegular.js';
+import { FlowerRegularDuotone } from './FlowerRegularDuotone.js';
+import { FlowerBold } from './FlowerBold.js';
+import { FlowerBoldDuotone } from './FlowerBoldDuotone.js';
+import { FlowerFill } from './FlowerFill.js';
+import { FlowerFillDuotone } from './FlowerFillDuotone.js';
 
 export interface FlowerProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

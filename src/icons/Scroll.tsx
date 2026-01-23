@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ScrollRegular } from './ScrollRegular';
-import { ScrollRegularDuotone } from './ScrollRegularDuotone';
-import { ScrollBold } from './ScrollBold';
-import { ScrollBoldDuotone } from './ScrollBoldDuotone';
-import { ScrollFill } from './ScrollFill';
-import { ScrollFillDuotone } from './ScrollFillDuotone';
+import type { IconProps } from '../types.js';
+import { ScrollRegular } from './ScrollRegular.js';
+import { ScrollRegularDuotone } from './ScrollRegularDuotone.js';
+import { ScrollBold } from './ScrollBold.js';
+import { ScrollBoldDuotone } from './ScrollBoldDuotone.js';
+import { ScrollFill } from './ScrollFill.js';
+import { ScrollFillDuotone } from './ScrollFillDuotone.js';
 
 export interface ScrollProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

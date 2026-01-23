@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BasketballRegular } from './BasketballRegular';
-import { BasketballRegularDuotone } from './BasketballRegularDuotone';
-import { BasketballBold } from './BasketballBold';
-import { BasketballBoldDuotone } from './BasketballBoldDuotone';
-import { BasketballFill } from './BasketballFill';
-import { BasketballFillDuotone } from './BasketballFillDuotone';
+import type { IconProps } from '../types.js';
+import { BasketballRegular } from './BasketballRegular.js';
+import { BasketballRegularDuotone } from './BasketballRegularDuotone.js';
+import { BasketballBold } from './BasketballBold.js';
+import { BasketballBoldDuotone } from './BasketballBoldDuotone.js';
+import { BasketballFill } from './BasketballFill.js';
+import { BasketballFillDuotone } from './BasketballFillDuotone.js';
 
 export interface BasketballProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

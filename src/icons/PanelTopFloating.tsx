@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { PanelTopFloatingRegular } from './PanelTopFloatingRegular';
-import { PanelTopFloatingRegularDuotone } from './PanelTopFloatingRegularDuotone';
-import { PanelTopFloatingBold } from './PanelTopFloatingBold';
-import { PanelTopFloatingBoldDuotone } from './PanelTopFloatingBoldDuotone';
-import { PanelTopFloatingFill } from './PanelTopFloatingFill';
-import { PanelTopFloatingFillDuotone } from './PanelTopFloatingFillDuotone';
+import type { IconProps } from '../types.js';
+import { PanelTopFloatingRegular } from './PanelTopFloatingRegular.js';
+import { PanelTopFloatingRegularDuotone } from './PanelTopFloatingRegularDuotone.js';
+import { PanelTopFloatingBold } from './PanelTopFloatingBold.js';
+import { PanelTopFloatingBoldDuotone } from './PanelTopFloatingBoldDuotone.js';
+import { PanelTopFloatingFill } from './PanelTopFloatingFill.js';
+import { PanelTopFloatingFillDuotone } from './PanelTopFloatingFillDuotone.js';
 
 export interface PanelTopFloatingProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

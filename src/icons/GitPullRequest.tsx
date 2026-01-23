@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { GitPullRequestRegular } from './GitPullRequestRegular';
-import { GitPullRequestRegularDuotone } from './GitPullRequestRegularDuotone';
-import { GitPullRequestBold } from './GitPullRequestBold';
-import { GitPullRequestBoldDuotone } from './GitPullRequestBoldDuotone';
-import { GitPullRequestFill } from './GitPullRequestFill';
-import { GitPullRequestFillDuotone } from './GitPullRequestFillDuotone';
+import type { IconProps } from '../types.js';
+import { GitPullRequestRegular } from './GitPullRequestRegular.js';
+import { GitPullRequestRegularDuotone } from './GitPullRequestRegularDuotone.js';
+import { GitPullRequestBold } from './GitPullRequestBold.js';
+import { GitPullRequestBoldDuotone } from './GitPullRequestBoldDuotone.js';
+import { GitPullRequestFill } from './GitPullRequestFill.js';
+import { GitPullRequestFillDuotone } from './GitPullRequestFillDuotone.js';
 
 export interface GitPullRequestProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

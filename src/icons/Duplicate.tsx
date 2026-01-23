@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { DuplicateRegular } from './DuplicateRegular';
-import { DuplicateRegularDuotone } from './DuplicateRegularDuotone';
-import { DuplicateBold } from './DuplicateBold';
-import { DuplicateBoldDuotone } from './DuplicateBoldDuotone';
-import { DuplicateFill } from './DuplicateFill';
-import { DuplicateFillDuotone } from './DuplicateFillDuotone';
+import type { IconProps } from '../types.js';
+import { DuplicateRegular } from './DuplicateRegular.js';
+import { DuplicateRegularDuotone } from './DuplicateRegularDuotone.js';
+import { DuplicateBold } from './DuplicateBold.js';
+import { DuplicateBoldDuotone } from './DuplicateBoldDuotone.js';
+import { DuplicateFill } from './DuplicateFill.js';
+import { DuplicateFillDuotone } from './DuplicateFillDuotone.js';
 
 export interface DuplicateProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

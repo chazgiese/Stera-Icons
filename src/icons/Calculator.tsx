@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CalculatorRegular } from './CalculatorRegular';
-import { CalculatorRegularDuotone } from './CalculatorRegularDuotone';
-import { CalculatorBold } from './CalculatorBold';
-import { CalculatorBoldDuotone } from './CalculatorBoldDuotone';
-import { CalculatorFill } from './CalculatorFill';
-import { CalculatorFillDuotone } from './CalculatorFillDuotone';
+import type { IconProps } from '../types.js';
+import { CalculatorRegular } from './CalculatorRegular.js';
+import { CalculatorRegularDuotone } from './CalculatorRegularDuotone.js';
+import { CalculatorBold } from './CalculatorBold.js';
+import { CalculatorBoldDuotone } from './CalculatorBoldDuotone.js';
+import { CalculatorFill } from './CalculatorFill.js';
+import { CalculatorFillDuotone } from './CalculatorFillDuotone.js';
 
 export interface CalculatorProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

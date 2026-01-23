@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { AngleObtuseRegular } from './AngleObtuseRegular';
-import { AngleObtuseRegularDuotone } from './AngleObtuseRegularDuotone';
-import { AngleObtuseBold } from './AngleObtuseBold';
-import { AngleObtuseBoldDuotone } from './AngleObtuseBoldDuotone';
-import { AngleObtuseFill } from './AngleObtuseFill';
-import { AngleObtuseFillDuotone } from './AngleObtuseFillDuotone';
+import type { IconProps } from '../types.js';
+import { AngleObtuseRegular } from './AngleObtuseRegular.js';
+import { AngleObtuseRegularDuotone } from './AngleObtuseRegularDuotone.js';
+import { AngleObtuseBold } from './AngleObtuseBold.js';
+import { AngleObtuseBoldDuotone } from './AngleObtuseBoldDuotone.js';
+import { AngleObtuseFill } from './AngleObtuseFill.js';
+import { AngleObtuseFillDuotone } from './AngleObtuseFillDuotone.js';
 
 export interface AngleObtuseProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

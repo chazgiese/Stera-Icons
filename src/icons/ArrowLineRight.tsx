@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { ArrowLineRightRegular } from './ArrowLineRightRegular';
-import { ArrowLineRightRegularDuotone } from './ArrowLineRightRegularDuotone';
-import { ArrowLineRightBold } from './ArrowLineRightBold';
-import { ArrowLineRightBoldDuotone } from './ArrowLineRightBoldDuotone';
-import { ArrowLineRightFill } from './ArrowLineRightFill';
-import { ArrowLineRightFillDuotone } from './ArrowLineRightFillDuotone';
+import type { IconProps } from '../types.js';
+import { ArrowLineRightRegular } from './ArrowLineRightRegular.js';
+import { ArrowLineRightRegularDuotone } from './ArrowLineRightRegularDuotone.js';
+import { ArrowLineRightBold } from './ArrowLineRightBold.js';
+import { ArrowLineRightBoldDuotone } from './ArrowLineRightBoldDuotone.js';
+import { ArrowLineRightFill } from './ArrowLineRightFill.js';
+import { ArrowLineRightFillDuotone } from './ArrowLineRightFillDuotone.js';
 
 export interface ArrowLineRightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

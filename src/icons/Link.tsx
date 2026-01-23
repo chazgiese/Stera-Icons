@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { LinkRegular } from './LinkRegular';
-import { LinkRegularDuotone } from './LinkRegularDuotone';
-import { LinkBold } from './LinkBold';
-import { LinkBoldDuotone } from './LinkBoldDuotone';
-import { LinkFill } from './LinkFill';
-import { LinkFillDuotone } from './LinkFillDuotone';
+import type { IconProps } from '../types.js';
+import { LinkRegular } from './LinkRegular.js';
+import { LinkRegularDuotone } from './LinkRegularDuotone.js';
+import { LinkBold } from './LinkBold.js';
+import { LinkBoldDuotone } from './LinkBoldDuotone.js';
+import { LinkFill } from './LinkFill.js';
+import { LinkFillDuotone } from './LinkFillDuotone.js';
 
 export interface LinkProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { SidebarRightRegular } from './SidebarRightRegular';
-import { SidebarRightRegularDuotone } from './SidebarRightRegularDuotone';
-import { SidebarRightBold } from './SidebarRightBold';
-import { SidebarRightBoldDuotone } from './SidebarRightBoldDuotone';
-import { SidebarRightFill } from './SidebarRightFill';
-import { SidebarRightFillDuotone } from './SidebarRightFillDuotone';
+import type { IconProps } from '../types.js';
+import { SidebarRightRegular } from './SidebarRightRegular.js';
+import { SidebarRightRegularDuotone } from './SidebarRightRegularDuotone.js';
+import { SidebarRightBold } from './SidebarRightBold.js';
+import { SidebarRightBoldDuotone } from './SidebarRightBoldDuotone.js';
+import { SidebarRightFill } from './SidebarRightFill.js';
+import { SidebarRightFillDuotone } from './SidebarRightFillDuotone.js';
 
 export interface SidebarRightProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

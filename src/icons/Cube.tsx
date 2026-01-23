@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { CubeRegular } from './CubeRegular';
-import { CubeRegularDuotone } from './CubeRegularDuotone';
-import { CubeBold } from './CubeBold';
-import { CubeBoldDuotone } from './CubeBoldDuotone';
-import { CubeFill } from './CubeFill';
-import { CubeFillDuotone } from './CubeFillDuotone';
+import type { IconProps } from '../types.js';
+import { CubeRegular } from './CubeRegular.js';
+import { CubeRegularDuotone } from './CubeRegularDuotone.js';
+import { CubeBold } from './CubeBold.js';
+import { CubeBoldDuotone } from './CubeBoldDuotone.js';
+import { CubeFill } from './CubeFill.js';
+import { CubeFillDuotone } from './CubeFillDuotone.js';
 
 export interface CubeProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';

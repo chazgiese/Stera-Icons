@@ -1,11 +1,11 @@
 import { forwardRef, memo } from 'react';
-import type { IconProps } from '../types';
-import { BoxesRegular } from './BoxesRegular';
-import { BoxesRegularDuotone } from './BoxesRegularDuotone';
-import { BoxesBold } from './BoxesBold';
-import { BoxesBoldDuotone } from './BoxesBoldDuotone';
-import { BoxesFill } from './BoxesFill';
-import { BoxesFillDuotone } from './BoxesFillDuotone';
+import type { IconProps } from '../types.js';
+import { BoxesRegular } from './BoxesRegular.js';
+import { BoxesRegularDuotone } from './BoxesRegularDuotone.js';
+import { BoxesBold } from './BoxesBold.js';
+import { BoxesBoldDuotone } from './BoxesBoldDuotone.js';
+import { BoxesFill } from './BoxesFill.js';
+import { BoxesFillDuotone } from './BoxesFillDuotone.js';
 
 export interface BoxesProps extends IconProps {
   weight?: 'regular' | 'bold' | 'fill';
