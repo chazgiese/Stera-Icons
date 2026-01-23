@@ -3,11 +3,11 @@
 [![npm version](https://img.shields.io/npm/v/stera-icons.svg)](https://www.npmjs.com/package/stera-icons)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern, lightweight React icon library with 700+ icons. All icons available in 6 variants with triple-aliased exports for maximum flexibility.
+A modern, lightweight React icon library with 760+ icons. All icons available in 6 variants with triple-aliased exports for maximum flexibility.
 
 ## ✨ Features
 
-- 🎨 **700+ Icons** - Comprehensive icon set in 6 variants (Regular, Bold, Fill × Duotone/Standard)
+- 🎨 **760+ Icons** - Comprehensive icon set in 6 variants (Regular, Bold, Fill × Duotone/Standard)
 - 🌲 **Tree-Shakeable** - Only ~300 bytes per icon variant in your bundle
 - 🎯 **Triple Aliasing** - Import icons with base name, Icon suffix, or Si prefix
 - 🚀 **Dynamic Loading** - Lazy-load icons at runtime for large applications
@@ -15,13 +15,15 @@ A modern, lightweight React icon library with 700+ icons. All icons available in
 - 🎨 **CSS Classes** - Automatic icon-specific classes for easy styling
 - 📦 **Subpath Exports** - Import directly from icon paths for optimal tree-shaking
 - 🔧 **TypeScript** - Full type definitions with comprehensive JSDoc
-- ⚛️ **React 16.8+** - Works with all modern React versions
+- ⚛️ **React 17+** - Works with all modern React versions
 
 ## Installation
 
 ```bash
 npm install stera-icons
 ```
+
+> Requires Node.js 18+ and React 17+. ESM-only (no CommonJS).
 
 ## Quick Start
 
@@ -113,7 +115,7 @@ import { SearchBold } from 'stera-icons/icons/SearchBold';
 
 ### Dynamic Icon Loading
 
-**New!** Load icons dynamically at runtime - perfect for CMS-driven content, icon pickers, or when icon names come from APIs
+Load icons dynamically at runtime - perfect for CMS-driven content, icon pickers, or when icon names come from APIs
 
 ```tsx
 import { DynamicIcon, iconNames } from 'stera-icons/dynamic';
@@ -204,59 +206,6 @@ All icons include automatic CSS classes for easy targeting:
 }
 ```
 
-## Advanced Usage
-
-### Utility Functions
-
-Access internal utilities for advanced use cases:
-
-```tsx
-import { mergeClasses, toKebabCase, toPascalCase } from 'stera-icons';
-
-const classes = mergeClasses('icon', 'active', undefined, 'large');
-// => "icon active large"
-
-const kebab = toKebabCase('SearchBold'); // => "search-bold"
-const pascal = toPascalCase('search-icon'); // => "SearchIcon"
-```
-
-### TypeScript Types
-
-Full type definitions for advanced usage:
-
-```tsx
-import type { 
-  IconProps,      // Base icon props interface
-  IconWeight,     // 'regular' | 'bold' | 'fill'
-  SteraIcon,      // Icon component type
-  IconNode,       // Icon data structure
-} from 'stera-icons';
-
-import { Search } from 'stera-icons';
-
-// Use in your components
-const MyComponent: React.FC<Omit<IconProps, 'weight' | 'duotone'>> = (props) => {
-  return <Search {...props} />;
-};
-```
-
-### IconBase Component
-
-For advanced use cases, access the base icon component:
-
-```tsx
-import { IconBase } from 'stera-icons/base';
-import type { IconBaseProps } from 'stera-icons/base';
-
-function CustomIcon(props: IconBaseProps) {
-  return (
-    <IconBase {...props} iconName="custom">
-      <path d="M12 2L2 22h20L12 2z" fill="currentColor" />
-    </IconBase>
-  );
-}
-```
-
 ## Bundle Size
 
 Stera Icons is optimized for minimal bundle impact:
@@ -270,16 +219,6 @@ Stera Icons is optimized for minimal bundle impact:
 | Base utilities | ~500 bytes | `import { IconBase } from 'stera-icons/base'` |
 
 All measurements are gzipped and minified. The default import pattern (`import { Search }`) is optimized for the smallest possible bundle size.
-
-## Browser Support
-
-Stera Icons supports all browsers that support React 16.8+:
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- React Native (via react-native-svg wrapper)
 
 ## License
 
