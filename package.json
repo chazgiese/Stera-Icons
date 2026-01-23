@@ -38,6 +38,11 @@
       "import": "./dist/esm/dynamic-variants.js",
       "default": "./dist/esm/dynamic-variants.js"
     },
+    "./dynamicIconImports": {
+      "types": "./dist/esm/dynamicIconImports.d.ts",
+      "import": "./dist/esm/dynamicIconImports.js",
+      "default": "./dist/esm/dynamicIconImports.js"
+    },
     "./icons/*": {
       "types": "./dist/esm/icons/*.d.ts",
       "import": "./dist/esm/icons/*.js",
@@ -46,7 +51,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rm -f dist/*.{cjs,mjs,d.ts,d.cts} && tsup && node scripts/generate-declarations.js && node scripts/build-icons.js icons-export.json",
@@ -64,7 +70,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": ">=17.0.0"
+    "react": ">=17.0.2"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.23.0",
@@ -85,7 +91,6 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
     "jsdom": "^23.0.0",
-    "lucide-react": "^0.563.0",
     "react": "^18.2.0",
     "svgo": "^3.0.0",
     "tsup": "^8.0.0",

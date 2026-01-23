@@ -158,7 +158,7 @@ export type { IconBaseProps } from './IconBase';
 function generateDynamicDeclaration() {
   const dynamicContent = `import type { ComponentType, ReactNode } from 'react';
 import type { IconProps } from './types';
-import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
+import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone'> {
   name: string;
@@ -170,8 +170,8 @@ export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone'> 
 
 export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
 
-export declare const DynamicIcon: MemoExoticComponent<
-  ForwardRefExoticComponent<DynamicIconProps & RefAttributes<SVGSVGElement>>
+export declare const DynamicIcon: ForwardRefExoticComponent<
+  DynamicIconProps & RefAttributes<SVGSVGElement>
 >;
 
 export declare const dynamicIconImports: DynamicIconImports;

@@ -1,4 +1,6 @@
 import { defineConfig } from 'tsup';
+import { readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
 
 // ESM-only build - CJS removed for smaller package size
 // Modern bundlers and Node.js 18+ handle ESM natively
@@ -27,5 +29,23 @@ export default defineConfig({
     return {
       js: '.js',
     };
+  },
+  // Add "use client" directive after build for Next.js App Router compatibility
+  // This is done in onSuccess because rollup strips directive during bundling
+  async onSuccess() {
+    const clientComponents = ['DynamicIcon.js', 'IconBase.js'];
+    const distDir = 'dist/esm';
+    
+    for (const file of clientComponents) {
+      const filePath = join(distDir, file);
+      try {
+        const content = readFileSync(filePath, 'utf-8');
+        if (!content.startsWith('"use client"')) {
+          writeFileSync(filePath, `"use client";\n${content}`);
+        }
+      } catch {
+        // File might not exist yet, skip
+      }
+    }
   },
 });
