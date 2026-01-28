@@ -153,14 +153,15 @@ try {
 
 This prevents the entire build from failing when individual icons have issues (like truncated SVG content from export problems).
 
-## New Icon Variants
+## Icon Variants
 
-The system now supports 5 icon variants:
+The system supports 6 icon variants (3 weights × 2 duotone states):
 - **Regular**: Standard outline style
 - **Bold**: Thicker stroke weight
-- **Filled**: Solid fill style
-- **Filltone**: Filled style with opacity overlay
-- **Linetone**: Outline style with opacity overlay
+- **Fill**: Solid fill style
+- **RegularDuotone**: Regular style with opacity overlay
+- **BoldDuotone**: Bold style with opacity overlay
+- **FillDuotone**: Fill style with opacity overlay
 
 All variants are processed and tracked independently in the metadata, allowing for granular version control per variant.
 
@@ -199,6 +200,67 @@ const modifiedIcons = metadata.filter(item => {
 const unchangedIcons = metadata.length - newIcons - modifiedIcons;
 ```
 
+## Safety Features
+
+### Build Safety Check
+
+The build script includes a safety check to prevent accidentally resetting version history. If no existing metadata is found when processing more than 10 icons, the build will abort:
+
+```
+⚠️  WARNING: No existing metadata found!
+⚠️  You are about to mark ALL 768 icons as NEW.
+⚠️  This will reset version history for all icons.
+
+   If this is intentional (e.g., first build), use --force to proceed.
+   If this is NOT intentional, check that dist/icons.meta.json exists.
+
+❌ Build aborted. Use --force to override this safety check.
+```
+
+**To bypass this check (use with caution):**
+```bash
+node scripts/build-icons.js icons-export.json --force
+```
+
+### Automatic Metadata Backups
+
+Before overwriting metadata, the build script automatically creates a timestamped backup in `.metadata-backups/`:
+
+```
+📦 Backed up metadata to .metadata-backups/icons.meta.2026-01-26T10-30-45-123Z.json
+```
+
+- Backups are stored in the project root (not in `dist/`)
+- Only the last 5 backups are kept (older ones are automatically cleaned up)
+- Backups are gitignored and not published to npm
+
+**To restore from a backup:**
+```bash
+# List available backups
+ls -la .metadata-backups/
+
+# Restore a specific backup
+cp .metadata-backups/icons.meta.2026-01-26T10-30-45-123Z.json dist/icons.meta.json
+```
+
+### Version History Restoration Script
+
+If version history is accidentally lost, use the restoration script:
+
+```bash
+# Dry run (preview what will be restored)
+node scripts/restore-version-history.js --dry-run
+
+# Actually restore
+node scripts/restore-version-history.js
+```
+
+This script:
+1. Loads old metadata from git history (commit `b137c98a`)
+2. Matches icons by `variantComponentName`
+3. Restores `versionAdded`, `dateAdded`, and `lastModified` fields
+4. Preserves current `svgHash` and other fields
+
 ## Troubleshooting
 
 ### Problem: All icons showing as "new"
@@ -219,27 +281,39 @@ git ls-files dist/icons.meta.json
 
 **Solutions:**
 
-1. **Metadata was deleted**: Restore from git
+1. **Build was blocked by safety check**: The build script now prevents this scenario. If you see the safety warning, do NOT use `--force` unless you're certain.
+
+2. **Metadata was deleted**: Restore from backup or git
    ```bash
+   # From backup (if available)
+   ls .metadata-backups/
+   cp .metadata-backups/icons.meta.<latest>.json dist/icons.meta.json
+   
+   # Or from git
    git checkout HEAD -- dist/icons.meta.json
    ```
 
-2. **Metadata not committed**: Check git status
+3. **Metadata not committed**: Check git status
    ```bash
    git status dist/icons.meta.json
    git add dist/icons.meta.json
    git commit -m "chore: track icon metadata"
    ```
 
-3. **Gitignore blocking**: Verify gitignore configuration
+4. **Gitignore blocking**: Verify gitignore configuration
    ```bash
    git check-ignore -v dist/icons.meta.json
    # Should show: (no output, meaning it's not ignored)
    ```
 
-4. **Fresh clone without metadata**: Restore from git history
+5. **Fresh clone without metadata**: Restore from git history
    ```bash
    git checkout HEAD -- dist/icons.meta.json
+   ```
+
+6. **Version history completely lost**: Use the restoration script
+   ```bash
+   node scripts/restore-version-history.js
    ```
 
 ### Problem: Wrong version assigned to new icons
@@ -391,3 +465,4 @@ diff <(jq -S . meta-before.json) <(jq -S . meta-after.json)
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Command reference
 - **`scripts/hash-versioning.js`** - Hash-based version detection implementation
 - **`scripts/metadata-utils.js`** - Metadata utilities implementation
+- **`scripts/restore-version-history.js`** - Version history restoration script

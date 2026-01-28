@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, copyFileSync, readdirSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { optimize } from 'svgo';
@@ -92,6 +92,29 @@ async function buildIcons(iconsExportPath) {
     } catch (error) {
       console.log('⚠️  Could not load existing metadata, starting fresh');
     }
+  } else {
+    console.log('⚠️  No existing metadata file found');
+  }
+  
+  // Safety check: Warn if no existing metadata when processing many icons
+  // This prevents accidentally resetting version history
+  const totalIconsToProcess = iconsExport.icons.length;
+  if (existingMetadata.length === 0 && totalIconsToProcess > 10) {
+    console.error('');
+    console.error('⚠️  WARNING: No existing metadata found!');
+    console.error(`⚠️  You are about to mark ALL ${totalIconsToProcess} icons as NEW.`);
+    console.error('⚠️  This will reset version history for all icons.');
+    console.error('');
+    console.error('   If this is intentional (e.g., first build), use --force to proceed.');
+    console.error('   If this is NOT intentional, check that dist/icons.meta.json exists.');
+    console.error('');
+    
+    if (!process.argv.includes('--force')) {
+      console.error('❌ Build aborted. Use --force to override this safety check.');
+      process.exit(1);
+    }
+    
+    console.log('⚠️  --force flag detected, proceeding with build...');
   }
   
   // Create a Map for O(1) metadata lookup (instead of O(n) find calls)
@@ -459,6 +482,35 @@ ${wrapperExportsDist.join('\n')}
   writeFileSync(join(distEsmDir, 'dynamic-variants.js'), dynamicVariantsDistContent);
   
   console.log('  ✅ Generated dist barrel files');
+  
+  // Backup existing metadata before overwriting
+  const backupDir = join(__dirname, '..', '.metadata-backups');
+  if (existsSync(existingMetadataPath)) {
+    // Create backup directory if needed
+    if (!existsSync(backupDir)) {
+      mkdirSync(backupDir, { recursive: true });
+    }
+    
+    // Create timestamped backup
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const backupPath = join(backupDir, `icons.meta.${timestamp}.json`);
+    copyFileSync(existingMetadataPath, backupPath);
+    console.log(`📦 Backed up metadata to .metadata-backups/icons.meta.${timestamp}.json`);
+    
+    // Cleanup old backups (keep last 5)
+    const backupFiles = readdirSync(backupDir)
+      .filter(f => f.startsWith('icons.meta.') && f.endsWith('.json'))
+      .sort()
+      .reverse();
+    
+    if (backupFiles.length > 5) {
+      const filesToDelete = backupFiles.slice(5);
+      for (const file of filesToDelete) {
+        unlinkSync(join(backupDir, file));
+      }
+      console.log(`🧹 Cleaned up ${filesToDelete.length} old backup(s)`);
+    }
+  }
   
   // Generate metadata JSON
   writeFileSync(

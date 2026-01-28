@@ -9,6 +9,9 @@ dist/
 build/
 *.tsbuildinfo
 
+# Metadata backups (local safety backups, not tracked)
+.metadata-backups/
+
 # Environment variables
 .env
 .env.local
