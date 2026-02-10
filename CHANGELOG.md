@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.0.9
+
+### Patch Changes
+
+- dd011dd: Update the proportions of almost nearly all icons
+
 ## 8.0.8
 
 ### Patch Changes
