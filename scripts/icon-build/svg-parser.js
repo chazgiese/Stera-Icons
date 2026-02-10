@@ -5,6 +5,18 @@
  */
 
 /**
+ * Convert circle geometry to SVG path data
+ * @param {number} cx - Center x coordinate
+ * @param {number} cy - Center y coordinate
+ * @param {number} r - Radius
+ * @returns {string} - Path data string representing the circle
+ */
+function circleToPathD(cx, cy, r) {
+  // Two semicircular arcs forming a complete circle
+  return `M${cx - r},${cy}a${r},${r},0,1,0,${r * 2},0a${r},${r},0,1,0,${-(r * 2)},0z`;
+}
+
+/**
  * Parse path attributes string into an object with camelCase keys
  * @param {string} attrsString - Raw SVG path attributes string
  * @returns {Object} - Object with camelCase keys and attribute values
@@ -34,8 +46,9 @@ export function parsePathAttributes(attrsString) {
 export function extractPathsFromSvg(svgString) {
   const paths = [];
   
-  // Track paths we've already processed (to avoid duplicates)
+  // Track paths and circles we've already processed (to avoid duplicates)
   const processedPathStrings = new Set();
+  const processedCircleStrings = new Set();
   
   // Handle paths inside opacity groups: <g ... opacity="X" ...><path .../></g>
   // This is used by duotone icons to apply 40% opacity to secondary paths
@@ -63,6 +76,27 @@ export function extractPathsFromSvg(svgString) {
         paths.push(attrs);
         processedPathStrings.add(pathMatch[0]); // Track to avoid duplicates
       }
+      
+      // Extract circles within this opacity group
+      const circleRegex = /<circle\s+([^>]*)\/>/g;
+      let circleMatch;
+      while ((circleMatch = circleRegex.exec(groupContent)) !== null) {
+        const attrs = parsePathAttributes(circleMatch[1]);
+        // Apply group opacity (multiply if circle has its own opacity)
+        const circleOpacity = attrs.opacity ? parseFloat(attrs.opacity) : 1;
+        attrs.opacity = String(parseFloat(groupOpacity) * circleOpacity);
+        // Convert circle to path
+        const cx = parseFloat(attrs.cx || 0);
+        const cy = parseFloat(attrs.cy || 0);
+        const r = parseFloat(attrs.r || 0);
+        attrs.d = circleToPathD(cx, cy, r);
+        // Remove circle-specific attributes (not valid on path)
+        delete attrs.cx;
+        delete attrs.cy;
+        delete attrs.r;
+        paths.push(attrs);
+        processedCircleStrings.add(circleMatch[0]); // Track to avoid duplicates
+      }
     }
   }
   
@@ -72,6 +106,25 @@ export function extractPathsFromSvg(svgString) {
   while ((match = pathRegex.exec(svgString)) !== null) {
     if (!processedPathStrings.has(match[0])) {
       paths.push(parsePathAttributes(match[1]));
+    }
+  }
+  
+  // Extract remaining circles not inside opacity groups
+  const circleRegex = /<circle\s+([^>]*)\/>/g;
+  let circleMatch;
+  while ((circleMatch = circleRegex.exec(svgString)) !== null) {
+    if (!processedCircleStrings.has(circleMatch[0])) {
+      const attrs = parsePathAttributes(circleMatch[1]);
+      // Convert circle to path
+      const cx = parseFloat(attrs.cx || 0);
+      const cy = parseFloat(attrs.cy || 0);
+      const r = parseFloat(attrs.r || 0);
+      attrs.d = circleToPathD(cx, cy, r);
+      // Remove circle-specific attributes (not valid on path)
+      delete attrs.cx;
+      delete attrs.cy;
+      delete attrs.r;
+      paths.push(attrs);
     }
   }
   
