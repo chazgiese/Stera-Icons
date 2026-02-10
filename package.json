@@ -1,6 +1,6 @@
 {
   "name": "stera-icons",
-  "version": "8.0.9",
+  "version": "8.0.10",
   "type": "module",
   "description": "A lightweight, tree-shakeable React icon library (ESM-only)",
   "module": "./dist/esm/stera-icons.js",
