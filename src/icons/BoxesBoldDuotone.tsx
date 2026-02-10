@@ -7,8 +7,8 @@ type BoxesBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BoxesBoldDuotone = memo(
   forwardRef<SVGSVGElement, BoxesBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="boxes-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M22.5 12.56a1 1 0 0 1 .5.87v5.71a1 1 0 0 1-.5.87l-5 2.86a1 1 0 0 1-1 0L12 20.29l-4.5 2.58a1 1 0 0 1-1 0L1.5 20a1 1 0 0 1-.5-.87v-5.71a1 1 0 0 1 .5-.87L6 9.99v.58c0 .36.2.7.5.87l.5.28L4 13.42 7 15.14l2.98-1.7 1.52.87a1 1 0 0 0 1 0l1.52-.87 2.98 1.7 2.98-1.7-2.98-1.7.5-.29a1 1 0 0 0 .5-.87V10zm-19.5 6 3 1.72v-3.41l-3-1.72zm5-1.7v3.42l3-1.72v-3.4zm5 1.7 3 1.72v-3.41l-3-1.72zm5-1.7v3.42l3-1.72v-3.4z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M11.62 1.07a1 1 0 0 1 .88.06l5 2.86c.3.18.5.5.5.87v5.71a1 1 0 0 1-.5.87l-5 2.86a1 1 0 0 1-1 0l-5-2.86a1 1 0 0 1-.5-.87V4.86a1 1 0 0 1 .5-.87l5-2.86zM8 10l3 1.72V8.29L8 6.58zm5-1.7v3.42l3-1.72V6.58zM9.01 4.86 12 6.56l2.98-1.7L12 3.16z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M21.5 12.42a1 1 0 0 1 .5.87v5.14a1 1 0 0 1-.5.87L17 21.87a1 1 0 0 1-1 0l-4-2.29-4 2.29a1 1 0 0 1-1 0L2.5 19.3a1 1 0 0 1-.5-.87v-5.14a1 1 0 0 1 .5-.87l4-2.29v.58c0 .36.2.7.5.87l.5.29L5 13.29 7.5 14.7l2.48-1.41 1.52.86a1 1 0 0 0 1 0l1.52-.86 2.48 1.41 2.48-1.41-2.48-1.42.5-.29a1 1 0 0 0 .5-.87v-.58zM4 17.85l2.5 1.43v-2.84L4 15zm4.5-1.41v2.84l2.5-1.43V15zm4.5 1.4 2.5 1.44v-2.84L13 15zm4.5-1.4v2.84l2.5-1.43V15z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M11.62 2.07a1 1 0 0 1 .88.06L17 4.7c.3.18.5.51.5.87v5.14a1 1 0 0 1-.5.87l-4.5 2.57a1 1 0 0 1-1 0L7 11.58a1 1 0 0 1-.5-.87V5.57A1 1 0 0 1 7 4.7l4.5-2.57zM8.5 10.13l2.5 1.43V8.72L8.5 7.3zm4.5-1.4v2.83l2.5-1.43V7.3zM9.51 5.56 12 7l2.48-1.42L12 4.15z" clipRule="evenodd" />
     </IconBase>
   ))
 );

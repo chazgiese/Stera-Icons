@@ -7,8 +7,8 @@ type LayoutGridCirclePlusFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const LayoutGridCirclePlusFillDuotone = memo(
   forwardRef<SVGSVGElement, LayoutGridCirclePlusFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="layout-grid-circle-plus-fill-duotone" {...props}>
-      <path fill="currentColor" d="M6.5 13a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9M6.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9M17.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9" />
-        <path fill="currentColor" d="M17.5 13a1 1 0 0 1 1 1v2.5H21a1 1 0 1 1 0 2h-2.5V21a1 1 0 1 1-2 0v-2.5H14a1 1 0 1 1 0-2h2.5V14a1 1 0 0 1 1-1" opacity={.4} />
+      <path fill="currentColor" d="M17.13 12.75a1 1 0 0 1 1 1v2.38h2.37a1 1 0 1 1 0 2h-2.37v2.37a1 1 0 1 1-2 0v-2.37h-2.38a1 1 0 1 1 0-2h2.38v-2.38a1 1 0 0 1 1-1" opacity={.4} />
+        <path fill="currentColor" d="M6.88 12.88a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5M6.88 2.63a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5M17.13 2.63a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5" />
     </IconBase>
   ))
 );

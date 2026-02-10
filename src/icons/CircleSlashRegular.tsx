@@ -7,7 +7,7 @@ type CircleSlashRegularProps = Omit<IconBaseProps, 'children'>;
 const CircleSlashRegular = memo(
   forwardRef<SVGSVGElement, CircleSlashRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-slash" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M4.4 4.4a10.75 10.75 0 1 1 15.2 15.2A10.75 10.75 0 0 1 4.4 4.4M4.95 6A9.25 9.25 0 0 0 18 19.05zm13.6-.55A9.25 9.25 0 0 0 6 4.96l13.04 13.03a9.25 9.25 0 0 0-.5-12.53" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M5.1 5.1a9.75 9.75 0 1 1 13.8 13.8A9.75 9.75 0 0 1 5.1 5.1m.56 1.62a8.25 8.25 0 0 0 11.62 11.62zm12.17-.55a8.25 8.25 0 0 0-11.1-.5l11.6 11.6a8.25 8.25 0 0 0-.5-11.1" clipRule="evenodd" />
     </IconBase>
   ))
 );

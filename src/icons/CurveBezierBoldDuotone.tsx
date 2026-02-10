@@ -7,9 +7,9 @@ type CurveBezierBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CurveBezierBoldDuotone = memo(
   forwardRef<SVGSVGElement, CurveBezierBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="curve-bezier-bold-duotone" {...props}>
-      <path d="M9.17 5a3 3 0 0 0 .46 2.84 8 8 0 0 0-1.85 1.8 14 14 0 0 0-2.5 5.65 3 3 0 0 0-2-.2A16 16 0 0 1 6.2 8.42Q6.8 7.63 7.49 7H4.73a2 2 0 0 0 0-2zM19.27 5a2 2 0 0 0 0 2h-2.76q.7.64 1.3 1.42a16 16 0 0 1 2.9 6.67 3 3 0 0 0-1.99.2 14 14 0 0 0-2.5-5.65 8 8 0 0 0-1.85-1.8A3 3 0 0 0 14.83 5z" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M4 15a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M20 15a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M12 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
-        <path fill="currentColor" d="M3 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4M21 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path d="M9.17 6a3 3 0 0 0 .45 2.82 9 9 0 0 0-3.43 5.43 3 3 0 0 0-2.01-.13A11.4 11.4 0 0 1 7.46 8H5.73a2 2 0 0 0 0-2zM18.27 6a2 2 0 0 0 0 2h-1.73a11.4 11.4 0 0 1 3.28 6.12 3 3 0 0 0-2 .13 9 9 0 0 0-3.44-5.43A3 3 0 0 0 14.83 6z" opacity={0.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M5 14a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M19 14a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M12 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
+        <path fill="currentColor" d="M4 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4M20 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
     </IconBase>
   ))
 );

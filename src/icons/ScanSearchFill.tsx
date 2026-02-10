@@ -7,9 +7,9 @@ type ScanSearchFillProps = Omit<IconBaseProps, 'children'>;
 const ScanSearchFill = memo(
   forwardRef<SVGSVGElement, ScanSearchFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="scan-search-fill" {...props}>
-      <path fill="currentColor" d="M3 16a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3v-2a1 1 0 0 1 1-1M21 16a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1" />
-        <path fill="currentColor" fillRule="evenodd" d="M11 5.5a5.5 5.5 0 0 1 4.92 7.95l1.82 1.81a1.75 1.75 0 1 1-2.48 2.48l-1.81-1.82q-1.12.57-2.45.58a5.5 5.5 0 1 1 0-11m0 3a2.5 2.5 0 1 0 1.72 4.31l.04-.05.05-.04A2.5 2.5 0 0 0 11 8.5" clipRule="evenodd" />
-        <path fill="currentColor" d="M7 2a1 1 0 0 1 0 2H5a1 1 0 0 0-1 1v2a1 1 0 0 1-2 0V5a3 3 0 0 1 3-3zM19 2a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0V5a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z" />
+      <path fill="currentColor" d="M3.5 15a1 1 0 0 1 1 1v2c0 .83.67 1.5 1.5 1.5h2a1 1 0 1 1 0 2H6A3.5 3.5 0 0 1 2.5 18v-2a1 1 0 0 1 1-1M20.5 15a1 1 0 0 1 1 1v2a3.5 3.5 0 0 1-3.5 3.5h-2a1 1 0 1 1 0-2h2c.83 0 1.5-.67 1.5-1.5v-2a1 1 0 0 1 1-1" />
+        <path fill="currentColor" fillRule="evenodd" d="M11.04 5.75a5.3 5.3 0 0 1 4.77 7.58l1.68 1.68A1.75 1.75 0 0 1 15 17.5l-1.68-1.68q-1.05.5-2.3.52a5.29 5.29 0 0 1 0-10.58m0 3a2.29 2.29 0 1 0 0 4.58 2.29 2.29 0 0 0 0-4.58" clipRule="evenodd" />
+        <path fill="currentColor" d="M8 2.5a1 1 0 0 1 0 2H6c-.83 0-1.5.67-1.5 1.5v2a1 1 0 0 1-2 0V6A3.5 3.5 0 0 1 6 2.5zM18 2.5A3.5 3.5 0 0 1 21.5 6v2a1 1 0 1 1-2 0V6c0-.83-.67-1.5-1.5-1.5h-2a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
 );

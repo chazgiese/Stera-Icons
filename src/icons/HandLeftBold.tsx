@@ -7,7 +7,7 @@ type HandLeftBoldProps = Omit<IconBaseProps, 'children'>;
 const HandLeftBold = memo(
   forwardRef<SVGSVGElement, HandLeftBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="hand-left-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M10 1a3 3 0 0 1 2.53 1.39A3 3 0 0 1 17 5v4.38a3 3 0 0 1 5.02 3.25l-1.16 2.97A9 9 0 0 1 3 14V7a3 3 0 0 1 4-2.83V4a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1v7.5a1 1 0 0 1-2 0V7a1 1 0 0 0-2 0v7a7 7 0 0 0 13.93 1.06l.03-.1 1.22-3.12.07-.13.04-.1a1 1 0 0 0-1.78-.9l-1.65 2.8A1 1 0 0 1 15 13V5a1 1 0 0 0-2 0v6a1 1 0 0 1-2 0V4a1 1 0 0 0-1-1" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M10.27 2c.96 0 1.8.48 2.3 1.22q.6-.31 1.3-.32a2.8 2.8 0 0 1 2.8 2.8v3.67a2.8 2.8 0 0 1 4.52 3.22l-1.05 2.68A8.2 8.2 0 0 1 3.87 13.8V7.5a2.8 2.8 0 0 1 3.6-2.68V4.8a2.8 2.8 0 0 1 2.8-2.8m0 2a.8.8 0 0 0-.8.8v6.75a1 1 0 0 1-2 0V7.5a.8.8 0 0 0-1.6 0v6.3a6.2 6.2 0 0 0 12.34.92l.03-.1 1.1-2.8q.03-.08.07-.13a.8.8 0 0 0-1.39-.8l-1.49 2.52a1 1 0 0 1-1.86-.51V5.7a.8.8 0 0 0-1.6-.08v5.48a1 1 0 0 1-2 0V4.8a.8.8 0 0 0-.8-.8" clipRule="evenodd" />
     </IconBase>
   ))
 );

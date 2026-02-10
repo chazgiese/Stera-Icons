@@ -7,8 +7,8 @@ type ChatBubbleAlertFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChatBubbleAlertFillDuotone = memo(
   forwardRef<SVGSVGElement, ChatBubbleAlertFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chat-bubble-alert-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1c5.96 0 11 4.32 11 9.89s-5.04 9.89-11 9.89q-1.73 0-3.3-.46l-3.2 1.6a2 2 0 0 1-2.83-2.27l.55-2.22.03-.1.01-.03v-.01c0-.09-.07-.43-.53-1.08A9 9 0 0 1 1 10.89C1 5.32 6.04 1 12 1m0 11.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m0-6.25a1 1 0 0 0-1 1v3.1a1 1 0 0 0 2 0V7.5a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M12 12.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 6.5a1 1 0 0 1 1 1v3.1a1 1 0 0 1-2 0V7.5a1 1 0 0 1 1-1" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2c5.4 0 10 3.92 10 9s-4.6 9-10 9q-1.16 0-2.24-.23L6 21.27a2 2 0 0 1-2.72-2.15l.46-3.02-.02-.05A8.4 8.4 0 0 1 2 11c0-5.08 4.6-9 10-9m0 10.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m0-6.25a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12 12.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 6.5a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type CursorTextAltRegularProps = Omit<IconBaseProps, 'children'>;
 const CursorTextAltRegular = memo(
   forwardRef<SVGSVGElement, CursorTextAltRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-text-alt" {...props}>
-      <path fill="currentColor" d="M8 1.25c1.68 0 3.16.87 4 2.19a4.8 4.8 0 0 1 4-2.19h1a.75.75 0 0 1 0 1.5h-1A3.25 3.25 0 0 0 12.75 6v5.25H15a.75.75 0 0 1 0 1.5h-2.25V18c0 1.8 1.46 3.25 3.25 3.25h1a.75.75 0 0 1 0 1.5h-1a4.7 4.7 0 0 1-4-2.19 4.7 4.7 0 0 1-4 2.19H7a.75.75 0 0 1 0-1.5h1c1.8 0 3.25-1.46 3.25-3.25v-5.25H9a.75.75 0 0 1 0-1.5h2.25V6c0-1.8-1.46-3.25-3.25-3.25H7a.75.75 0 0 1 0-1.5z" />
+      <path fill="currentColor" d="M9 2.75c1.23 0 2.32.59 3 1.5a3.7 3.7 0 0 1 3-1.5h1a.75.75 0 0 1 0 1.5h-1c-1.24 0-2.25 1-2.25 2.25v4.75h1.75a.75.75 0 0 1 0 1.5h-1.75v4.75c0 1.24 1 2.25 2.25 2.25h1a.75.75 0 0 1 0 1.5h-1a3.7 3.7 0 0 1-3-1.5 3.7 3.7 0 0 1-3 1.5H8a.75.75 0 0 1 0-1.5h1c1.24 0 2.25-1 2.25-2.25v-4.75H9.5a.75.75 0 0 1 0-1.5h1.75V6.5c0-1.24-1-2.25-2.25-2.25H8a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))
 );

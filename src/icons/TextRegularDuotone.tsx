@@ -7,8 +7,8 @@ type TextRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextRegularDuotone = memo(
   forwardRef<SVGSVGElement, TextRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-duotone" {...props}>
-      <path fill="currentColor" d="M14 3.75c-.69 0-1.25.56-1.25 1.25v14c0 .69.56 1.25 1.25 1.25h-4c.69 0 1.25-.56 1.25-1.25V5c0-.69-.56-1.25-1.25-1.25z" opacity={.4} />
-        <path fill="currentColor" d="M15 20.25a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM18 2.25A2.75 2.75 0 0 1 20.75 5v1a.75.75 0 0 1-1.5 0V5c0-.69-.56-1.25-1.25-1.25H6c-.69 0-1.25.56-1.25 1.25v1a.75.75 0 0 1-1.5 0V5A2.75 2.75 0 0 1 6 2.25z" />
+      <path fill="currentColor" d="M14 4.75c-.69 0-1.25.56-1.25 1.25v12c0 .69.56 1.25 1.25 1.25h-4c.69 0 1.25-.56 1.25-1.25V6c0-.69-.56-1.25-1.25-1.25z" opacity={.4} />
+        <path fill="currentColor" d="M15 19.25a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM17 3.25A2.75 2.75 0 0 1 19.75 6a.75.75 0 0 1-1.5 0c0-.69-.56-1.25-1.25-1.25H7c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0A2.75 2.75 0 0 1 7 3.25z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type BladeSwordFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BladeSwordFillDuotone = memo(
   forwardRef<SVGSVGElement, BladeSwordFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="blade-sword-fill-duotone" {...props}>
-      <path fill="currentColor" d="M2.47 2.47a.8.8 0 0 1 .71-.2l4 1q.2.06.35.2l9.3 9.3-4.07 4.05-9.29-9.29a1 1 0 0 1-.17-.25l-.03-.1-1-4a.8.8 0 0 1 .2-.71" opacity={.4} />
-        <path fill="currentColor" d="M18.3 11.3a1 1 0 1 1 1.4 1.4L18 14.42v2.18l2.04 2.04 1.22.4q.28.1.49.3l.28.29c.49.48.49 1.28 0 1.76l-.65.65c-.45.46-1.18.49-1.67.09l-.1-.09-.27-.28q-.16-.15-.25-.36l-.06-.13-.4-1.22L16.59 18H14.4l-1.7 1.7a1 1 0 0 1-1.42-1.4z" />
+      <path fill="currentColor" d="M3.47 3.47a.8.8 0 0 1 .71-.2l3.46.87q.2.05.35.2l8.2 8.19-3.66 3.65L4.33 8a1 1 0 0 1-.16-.25l-.03-.1-.87-3.46a.8.8 0 0 1 .2-.71" opacity={.4} />
+        <path fill="currentColor" d="M17.38 11.33a1 1 0 1 1 1.41 1.41l-1.43 1.44v1.76l1.7 1.7 1.03.35q.27.09.47.3l.24.24c.48.47.48 1.24 0 1.72l-.56.55-.09.09c-.44.36-1.09.36-1.53 0l-.1-.09-.24-.24q-.15-.16-.24-.34l-.05-.13-.34-1.03-1.7-1.7h-1.77l-1.44 1.44a1 1 0 0 1-1.41-1.42z" />
     </IconBase>
   ))
 );

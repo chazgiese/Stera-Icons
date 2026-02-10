@@ -7,8 +7,8 @@ type ChevronFullCircleDownRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChevronFullCircleDownRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChevronFullCircleDownRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chevron-full-circle-down-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M15.48 9.5a1 1 0 0 1 .78 1.63l-3.48 4.34a1 1 0 0 1-1.56 0l-3.48-4.35a1 1 0 0 1 .78-1.62z" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.99 9.75a1 1 0 0 1 .79 1.61l-2.99 3.85a1 1 0 0 1-1.58 0l-2.99-3.85a1 1 0 0 1 .8-1.61z" />
     </IconBase>
   ))
 );

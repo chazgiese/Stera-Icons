@@ -7,7 +7,7 @@ type BladeSwordRegularProps = Omit<IconBaseProps, 'children'>;
 const BladeSwordRegular = memo(
   forwardRef<SVGSVGElement, BladeSwordRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="blade-sword" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M2.47 2.47a.8.8 0 0 1 .71-.2l4 1q.2.05.35.2L17 12.94l1.47-1.47a.75.75 0 1 1 1.06 1.06l-1.78 1.78v2.38l2.15 2.15 1.28.43a1 1 0 0 1 .4.24l.27.28a1 1 0 0 1 0 1.42l-.64.64a1 1 0 0 1-1.34.07l-.08-.07-.28-.28a1 1 0 0 1-.24-.39l-.43-1.28-2.15-2.15H14.3l-1.78 1.78a.75.75 0 0 1-1.06-1.06L12.94 17 3.47 7.53a1 1 0 0 1-.17-.25l-.03-.1-1-4a.8.8 0 0 1 .2-.71m2.2 4.15L14 15.94 15.94 14 6.62 4.68l-2.59-.65z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M3.72 3.72a.8.8 0 0 1 .71-.2l3.46.87q.2.05.35.2l8.12 8.11 1.2-1.2a.75.75 0 1 1 1.06 1.06l-1.51 1.51v1.98l1.82 1.81 1.08.36q.21.07.37.24l.25.24c.37.38.38 1 0 1.37l-.56.56-.07.06a1 1 0 0 1-1.22 0l-.08-.06-.24-.25a1 1 0 0 1-.2-.27l-.04-.1-.36-1.09-1.81-1.81h-1.98l-1.5 1.5a.75.75 0 0 1-1.07-1.05l1.2-1.2L4.6 8.24a1 1 0 0 1-.17-.25l-.03-.1-.87-3.46a.8.8 0 0 1 .2-.71m2.07 3.6 7.97 7.98 1.54-1.54L7.33 5.8l-2.05-.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

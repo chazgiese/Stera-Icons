@@ -7,8 +7,8 @@ type ClipboardTextFillProps = Omit<IconBaseProps, 'children'>;
 const ClipboardTextFill = memo(
   forwardRef<SVGSVGElement, ClipboardTextFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="clipboard-text-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M6.75 3.75a2.5 2.5 0 0 0 2.5 2.5h5.5a2.5 2.5 0 0 0 2.5-2.5V3h.5C19.55 3 21 4.46 21 6.25v13.5c0 1.8-1.46 3.25-3.25 3.25H6.25A3.25 3.25 0 0 1 3 19.75V6.25C3 4.45 4.46 3 6.25 3h.5zM8.5 13.88a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74zm0-3.5a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74z" clipRule="evenodd" />
-        <path fill="currentColor" d="M14.75 1.25a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1h-5.5a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1z" />
+      <path fill="currentColor" fillRule="evenodd" d="M16.96 4.03q.66.04 1.27.32.92.5 1.42 1.42.28.61.32 1.27.04.64.03 1.56v8.8q0 .91-.03 1.56-.04.66-.32 1.27-.5.92-1.42 1.42-.61.28-1.27.32-.64.04-1.56.03H8.6q-.91 0-1.56-.03a3 3 0 0 1-1.27-.32c-.6-.32-1.1-.81-1.42-1.42q-.28-.61-.32-1.27Q4 18.32 4 17.4V8.6q0-.91.03-1.56.04-.66.32-1.27c.32-.6.81-1.1 1.42-1.42q.61-.28 1.27-.32l.34-.02v.74a2.37 2.37 0 0 0 2.37 2.38h4.5a2.37 2.37 0 0 0 2.38-2.38v-.74zM9 13.88a.88.88 0 0 0 0 1.74h6a.88.88 0 0 0 0-1.74zm0-3.5a.88.88 0 0 0 0 1.74h6a.88.88 0 0 0 0-1.74z" clipRule="evenodd" />
+        <path fill="currentColor" d="M14.25 2.13c.62 0 1.13.5 1.13 1.12v1.5c0 .62-.5 1.13-1.13 1.13h-4.5c-.62 0-1.12-.5-1.12-1.13v-1.5c0-.62.5-1.12 1.12-1.12z" />
     </IconBase>
   ))
 );

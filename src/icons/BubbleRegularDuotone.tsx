@@ -7,8 +7,8 @@ type BubbleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BubbleRegularDuotone = memo(
   forwardRef<SVGSVGElement, BubbleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bubble-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M10.81 4.97q.46-.09.84.17.37.27.46.76c.05.3-.02.62-.19.86-.17.25-.44.4-.73.43l-.3.04a5.1 5.1 0 0 0-4.07 3.9.76.76 0 0 1-.85.57.8.8 0 0 1-.48-.29.8.8 0 0 1-.15-.53l.07-.42a7 7 0 0 1 5.4-5.49" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M10.74 5.4q.45-.11.83.15.38.28.46.76c.06.31-.01.63-.18.87q-.28.38-.74.43-.13 0-.26.03a4.5 4.5 0 0 0-3.61 3.41.8.8 0 0 1-.32.45.8.8 0 0 1-.54.13.8.8 0 0 1-.47-.3.8.8 0 0 1-.15-.53l.06-.38a6.4 6.4 0 0 1 4.92-5.03" />
     </IconBase>
   ))
 );

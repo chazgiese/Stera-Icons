@@ -7,8 +7,8 @@ type CursorFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CursorFillDuotone = memo(
   forwardRef<SVGSVGElement, CursorFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-fill-duotone" {...props}>
-      <path fill="currentColor" d="M5.19 4.26 20.9 9.5q.07.02.08.05l.02.09q0 .06-.03.08 0 .02-.07.05l-7.5 2.2a1 1 0 0 0-.63.56l-.05.12-2.2 7.5-.05.08-.09.02-.08-.02q-.03 0-.05-.08L5 4.45v-.09l.03-.07.07-.04z" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M3.11 5.07a2.14 2.14 0 0 1 2.71-2.7L21.53 7.6c2 .66 1.94 3.5-.07 4.09l-6.97 2.05-2.05 6.97a2.14 2.14 0 0 1-4.1.08zm2-.81-.07.04-.04.06v.08l5.25 15.71q.02.08.05.08l.08.02.1-.02.04-.08 2.2-7.5.05-.12a1 1 0 0 1 .63-.55l7.5-2.2q.07-.03.07-.06l.03-.08-.02-.1q-.01-.01-.08-.04L5.2 4.26z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M3.1 5.66A2.02 2.02 0 0 1 5.67 3.1l13.96 4.65a2.02 2.02 0 0 1-.07 3.85l-6.14 1.8-1.8 6.14a2.02 2.02 0 0 1-3.85.07zM5 5v.01L9.66 19l.01.01h.02v-.01l1.96-6.66.04-.12a1 1 0 0 1 .64-.56l6.66-1.96.01-.02-.01-.01L5.02 5z" clipRule="evenodd" />
+        <path fill="currentColor" d="M5.02 5 19 9.66l.01.01v.01h-.01l-6.66 1.97a1 1 0 0 0-.64.56l-.04.12-1.96 6.66-.02.01-.01-.01L5 5.02V5z" opacity={.4} />
     </IconBase>
   ))
 );

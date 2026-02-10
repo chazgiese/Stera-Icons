@@ -7,8 +7,8 @@ type BannerFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BannerFillDuotone = memo(
   forwardRef<SVGSVGElement, BannerFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="banner-fill-duotone" {...props}>
-      <path fill="currentColor" d="M19.75 15.68c0 1.7-.91 3.28-2.4 4.12L13 22.3a2 2 0 0 1-1.98 0l-4.37-2.5a4.8 4.8 0 0 1-2.39-4.12V4h15.5z" opacity={.4} />
-        <path fill="currentColor" d="M21.5 2a1 1 0 0 1 0 2h-19a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M19 15.86a5 5 0 0 1-2.23 4.16l-3.52 2.35c-.76.5-1.74.5-2.5 0l-3.52-2.35A5 5 0 0 1 5 15.86V5h14z" opacity={.4} />
+        <path fill="currentColor" d="M20 3a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

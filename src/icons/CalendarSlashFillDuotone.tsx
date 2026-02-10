@@ -7,10 +7,8 @@ type CalendarSlashFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CalendarSlashFillDuotone = memo(
   forwardRef<SVGSVGElement, CalendarSlashFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="calendar-slash-fill-duotone" {...props}>
-      <path d="M12.97 17.78a2.25 2.25 0 0 1-3-3zM11.03 13.72a2.25 2.25 0 0 1 3 3z" opacity={0.4} />
-        <path fillRule="evenodd" d="M21.5 10.4v4.2q.02 1.65-.06 2.7a5 5 0 0 1-.48 1.97 5 5 0 0 1-2.19 2.19c-.6.3-1.23.42-1.96.48q-1.06.08-2.71.06H9.9q-1.65.02-2.7-.06a5 5 0 0 1-1.97-.48 5 5 0 0 1-2.19-2.19c-.3-.6-.42-1.23-.48-1.96q-.07-1.06-.06-2.71V10h19zm-6.85 2.7a3.75 3.75 0 1 0-5.3 5.3 3.75 3.75 0 0 0 5.3-5.3" clipRule="evenodd" opacity={0.4} />
-        <path fill="currentColor" d="M16 1a1 1 0 0 1 1 1v1.09c.73.07 1.28.2 1.77.45a5 5 0 0 1 2.19 2.19c.47.93.53 2.12.54 4.27h-19c0-2.15.07-3.34.54-4.27a5 5 0 0 1 2.19-2.19A5 5 0 0 1 7 3.1V2a1 1 0 0 1 2 0v1h6V2a1 1 0 0 1 1-1" />
-        <path fill="currentColor" fillRule="evenodd" d="M9.35 13.1a3.75 3.75 0 1 1 5.3 5.3 3.75 3.75 0 0 1-5.3-5.3m.62 1.68a2.25 2.25 0 0 0 3 3zm3.62-.62c-.7-.7-1.72-.84-2.56-.44l3 3c.4-.84.25-1.87-.44-2.56" clipRule="evenodd" />
+      <path fill="currentColor" d="M15.5 1a1 1 0 0 1 1 1v1.03l.48.07a5 5 0 0 1 3.92 3.92c.1.51.1 1.1.1 1.98a1 1 0 0 1-1 1H5v4.5c0 1.47.01 1.98.13 2.37a3 3 0 0 0 2 2c.39.12.9.13 2.37.13a1 1 0 1 1 0 2c-1.32 0-2.2.01-2.95-.21a5 5 0 0 1-3.34-3.34C3 16.71 3 15.82 3 14.5V8.88q.01-.66.06-1.19c.06-.73.18-1.37.49-1.96a5 5 0 0 1 2.18-2.19q.8-.39 1.77-.46V2a1 1 0 0 1 2 0v1h5V2a1 1 0 0 1 1-1" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12.61 12.61a5.5 5.5 0 1 1 7.78 7.78 5.5 5.5 0 0 1-7.78-7.78m.81 2.23a3.5 3.5 0 0 0 4.74 4.74zm5.56-.82a3.5 3.5 0 0 0-4.14-.6l4.74 4.74a3.5 3.5 0 0 0-.6-4.14" clipRule="evenodd" />
     </IconBase>
   ))
 );

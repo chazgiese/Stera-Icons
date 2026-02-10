@@ -7,8 +7,8 @@ type CompassFillProps = Omit<IconBaseProps, 'children'>;
 const CompassFill = memo(
   forwardRef<SVGSVGElement, CompassFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="compass-fill" {...props}>
-      <path fill="currentColor" d="M12 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m5.2 5.8a1 1 0 0 0-1.06-.23l-6.5 2.5a1 1 0 0 0-.57.57l-2.5 6.5a1 1 0 0 0 1.29 1.3l6.5-2.5a1 1 0 0 0 .57-.58l2.5-6.5a1 1 0 0 0-.22-1.07" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 10.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m4.7 5.3a1 1 0 0 0-1.02-.25l-6 2a1 1 0 0 0-.59.53l-.04.1-2 6a1 1 0 0 0 1.27 1.27l6-2a1 1 0 0 0 .63-.63l2-6a1 1 0 0 0-.24-1.03" clipRule="evenodd" />
     </IconBase>
   ))
 );

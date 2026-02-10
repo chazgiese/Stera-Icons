@@ -7,7 +7,7 @@ type ChartBarRowDescBoldProps = Omit<IconBaseProps, 'children'>;
 const ChartBarRowDescBold = memo(
   forwardRef<SVGSVGElement, ChartBarRowDescBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-bar-row-desc-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M4 23a1 1 0 0 0 1-1h5.75c1.24 0 2.25-1 2.25-2.25v-3.5l-.01-.25h1.76c1.24 0 2.25-1 2.25-2.25v-3.5l-.01-.25h1.76C19.99 10 21 9 21 7.75v-3.5C21 3.01 20 2 18.75 2H5v-.1A1 1 0 0 0 3 2v20a1 1 0 0 0 1 1M5 8V4h13.75c.14 0 .25.11.25.25v3.5c0 .14-.11.25-.25.25zm0 2h9.75q.23.02.25.25v3.5q-.02.23-.25.25H5zm0 6h5.75q.23.02.25.25v3.5q-.02.23-.25.25H5z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M5 2a1 1 0 0 1 1 1h11.75C18.99 3 20 4 20 5.25v2.83c0 1.25-1 2.25-2.25 2.25h-1.26l.01.25v2.84c0 1.24-1 2.25-2.25 2.25h-1.26l.01.25v2.83c0 1.24-1 2.25-2.25 2.25H6a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1m1 13.67V19h4.75q.23-.02.25-.25v-2.83a.25.25 0 0 0-.25-.25zm0-2h8.25q.23-.02.25-.25v-2.84a.25.25 0 0 0-.25-.25H6zm0-5.34h11.75q.23-.01.25-.25V5.25a.25.25 0 0 0-.25-.25H6z" clipRule="evenodd" />
     </IconBase>
   ))
 );

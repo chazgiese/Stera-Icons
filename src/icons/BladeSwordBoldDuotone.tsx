@@ -7,8 +7,8 @@ type BladeSwordBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BladeSwordBoldDuotone = memo(
   forwardRef<SVGSVGElement, BladeSwordBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="blade-sword-bold-duotone" {...props}>
-      <path fill="currentColor" d="M2.3 2.3a1 1 0 0 1 .94-.27l4 1a1 1 0 0 1 .47.26L17 12.6l-1.41 1.4-9.1-9.09-2.12-.53.53 2.12 9.1 9.1L12.59 17l-9.3-9.3a1 1 0 0 1-.22-.33l-.04-.13-1-4a1 1 0 0 1 .26-.95" opacity={.4} />
-        <path fill="currentColor" d="M18.3 11.3a1 1 0 1 1 1.4 1.4L18 14.42v2.18l2.04 2.04 1.22.4q.28.1.49.3l.28.29c.49.48.49 1.28 0 1.76l-.65.65c-.45.46-1.18.49-1.67.09l-.1-.09-.27-.28q-.16-.15-.25-.36l-.06-.13-.4-1.22L16.59 18H14.4l-1.7 1.7a1 1 0 0 1-1.42-1.4z" />
+      <path fill="currentColor" d="M3.54 3.54a1 1 0 0 1 .95-.26l3.46.86a1 1 0 0 1 .47.27l7.94 7.94-1.42 1.41L7.2 6.02l-1.58-.4.4 1.58 7.74 7.74-1.41 1.42-7.94-7.94a1 1 0 0 1-.22-.34l-.05-.13-.86-3.46a1 1 0 0 1 .26-.95" opacity={.4} />
+        <path fill="currentColor" d="M17.38 11.33a1 1 0 1 1 1.41 1.41l-1.43 1.44v1.76l1.7 1.7 1.03.35q.27.09.47.3l.24.24c.48.47.48 1.24 0 1.72l-.56.55-.09.09c-.44.36-1.09.36-1.53 0l-.1-.09-.24-.24q-.15-.16-.24-.34l-.05-.13-.34-1.03-1.7-1.7h-1.77l-1.44 1.44a1 1 0 0 1-1.41-1.42z" />
     </IconBase>
   ))
 );

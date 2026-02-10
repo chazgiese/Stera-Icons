@@ -7,7 +7,7 @@ type ChartAreaRegularProps = Omit<IconBaseProps, 'children'>;
 const ChartAreaRegular = memo(
   forwardRef<SVGSVGElement, ChartAreaRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-area" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M21.97 4.47a.75.75 0 0 1 1.28.53v12.75a2 2 0 0 1-2 2H1.5a.75.75 0 0 1-.53-1.28l8-8 .11-.1a.75.75 0 0 1 .95.1L13 13.44zm-8.44 10.56c-.3.3-.77.3-1.06 0L9.5 12.06l-6.19 6.19h17.94a.5.5 0 0 0 .5-.5V6.81z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M21.46 4.48a.75.75 0 0 1 1.29.52v12.93c0 1-.82 1.82-1.82 1.82H2a.75.75 0 0 1-.54-1.27l7.62-8 .05-.05a.75.75 0 0 1 1.03.05l2.8 2.93zm-7.97 10.54a.75.75 0 0 1-1.08 0l-2.8-2.93-5.86 6.16h17.18c.18 0 .32-.14.32-.32V6.88z" clipRule="evenodd" />
     </IconBase>
   ))
 );

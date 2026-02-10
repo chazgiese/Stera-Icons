@@ -7,7 +7,7 @@ type UserCircleRegularProps = Omit<IconBaseProps, 'children'>;
 const UserCircleRegular = memo(
   forwardRef<SVGSVGElement, UserCircleRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="user-circle" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 14.5A7.2 7.2 0 0 0 5.96 19a9.2 9.2 0 0 0 12.08 0A7.2 7.2 0 0 0 12 15.75m0-13a9.25 9.25 0 0 0-7.12 15.16 8.8 8.8 0 0 1 4.2-3.16 4.74 4.74 0 1 1 5.83 0c1.71.6 3.17 1.72 4.2 3.16A9.25 9.25 0 0 0 12 2.75m0 5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 13.2a6.4 6.4 0 0 0-5.34 2.84 8.2 8.2 0 0 0 10.68 0A6.4 6.4 0 0 0 12 15.45m0-11.7a8.25 8.25 0 0 0-6.4 13.44 8 8 0 0 1 3.62-2.74 4.34 4.34 0 1 1 5.55 0 8 8 0 0 1 3.64 2.74A8.25 8.25 0 0 0 12 3.75m0 4.5a2.85 2.85 0 1 0 0 5.7 2.85 2.85 0 0 0 0-5.7" clipRule="evenodd" />
     </IconBase>
   ))
 );

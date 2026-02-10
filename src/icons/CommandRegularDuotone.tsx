@@ -7,8 +7,8 @@ type CommandRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CommandRegularDuotone = memo(
   forwardRef<SVGSVGElement, CommandRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="command-duotone" {...props}>
-      <path d="M15.75 14.25H18A3.75 3.75 0 1 1 14.25 18V9.75h1.5zm0 3.75A2.25 2.25 0 1 0 18 15.75h-2.25zM6 2.25A3.75 3.75 0 0 1 9.75 6v8.25h-1.5v-4.5H6a3.75 3.75 0 1 1 0-7.5m0 1.5a2.25 2.25 0 0 0 0 4.5h2.25V6c0-1.24-1-2.25-2.25-2.25" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M14.25 15.75h-4.5V18A3.75 3.75 0 1 1 6 14.25h8.25zm-8.25 0A2.25 2.25 0 1 0 8.25 18v-2.25zM18 2.25a3.75 3.75 0 1 1 0 7.5H9.75v-1.5h4.5V6A3.75 3.75 0 0 1 18 2.25m0 1.5c-1.24 0-2.25 1-2.25 2.25v2.25H18a2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
+      <path d="M15.42 13.92h1.91a3.42 3.42 0 1 1-3.41 3.41V10h1.5zm0 3.41a1.92 1.92 0 1 0 1.91-1.91h-1.91zM6.67 3.25a3.4 3.4 0 0 1 3.41 3.42V14h-1.5v-3.92H6.67a3.42 3.42 0 1 1 0-6.83m0 1.5a1.92 1.92 0 0 0 0 3.83h1.91V6.67c0-1.06-.85-1.92-1.91-1.92" opacity={0.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M14 15.42h-3.92v1.91a3.42 3.42 0 1 1-3.41-3.41H14zm-7.33 0a1.92 1.92 0 1 0 1.91 1.91v-1.91zM17.33 3.25a3.42 3.42 0 0 1 0 6.83H10v-1.5h3.92V6.67a3.4 3.4 0 0 1 3.41-3.42m0 1.5c-1.06 0-1.91.86-1.91 1.92v1.91h1.91a1.92 1.92 0 1 0 0-3.83" clipRule="evenodd" />
     </IconBase>
   ))
 );

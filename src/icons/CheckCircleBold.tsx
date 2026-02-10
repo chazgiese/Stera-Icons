@@ -7,8 +7,8 @@ type CheckCircleBoldProps = Omit<IconBaseProps, 'children'>;
 const CheckCircleBold = memo(
   forwardRef<SVGSVGElement, CheckCircleBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="check-circle-bold" {...props}>
-      <path fill="currentColor" d="M16.3 8.3a1 1 0 1 1 1.4 1.4l-6.34 6.35q-.16.17-.33.32a1.5 1.5 0 0 1-1.58.24c-.25-.1-.41-.27-.52-.39q-.16-.16-.28-.36L6.2 12.6a1 1 0 1 1 1.6-1.2l2.3 3.08z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M15.26 8.57a1 1 0 0 1 1.48 1.36l-4.88 5.32-.32.33c-.12.1-.3.25-.55.34a1.5 1.5 0 0 1-1.54-.4l-.3-.33-1.92-2.3a1 1 0 0 1 1.54-1.28l1.77 2.12z" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

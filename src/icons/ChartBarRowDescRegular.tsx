@@ -7,7 +7,7 @@ type ChartBarRowDescRegularProps = Omit<IconBaseProps, 'children'>;
 const ChartBarRowDescRegular = memo(
   forwardRef<SVGSVGElement, ChartBarRowDescRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-bar-row-desc" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M4 22.75c.41 0 .75-.34.75-.75v-.25h6a2 2 0 0 0 2-2v-3.5a2 2 0 0 0-.07-.5h2.07a2 2 0 0 0 2-2v-3.5a2 2 0 0 0-.07-.5h2.07a2 2 0 0 0 2-2v-3.5a2 2 0 0 0-2-2h-14V2a.75.75 0 0 0-1.5 0v20c0 .41.34.75.75.75m.75-14.5v-4.5h14c.28 0 .5.22.5.5v3.5a.5.5 0 0 1-.5.5zm0 1.5h10c.28 0 .5.22.5.5v3.5a.5.5 0 0 1-.5.5h-10zm0 6h6c.28 0 .5.22.5.5v3.5a.5.5 0 0 1-.5.5h-6z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M5 2.25c.41 0 .75.34.75.75v.25h12a2 2 0 0 1 2 2v2.83a2 2 0 0 1-2 2h-1.57a2 2 0 0 1 .07.5v2.84a2 2 0 0 1-2 2h-1.57a2 2 0 0 1 .07.5v2.83a2 2 0 0 1-2 2h-5V21a.75.75 0 0 1-1.5 0V3c0-.41.34-.75.75-.75m.75 13.17v3.83h5a.5.5 0 0 0 .5-.5v-2.83a.5.5 0 0 0-.5-.5zm0-1.5h8.5a.5.5 0 0 0 .5-.5v-2.84a.5.5 0 0 0-.5-.5h-8.5zm0-5.34h12a.5.5 0 0 0 .5-.5V5.25a.5.5 0 0 0-.5-.5h-12z" clipRule="evenodd" />
     </IconBase>
   ))
 );

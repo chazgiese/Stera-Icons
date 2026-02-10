@@ -7,7 +7,7 @@ type CursorFillProps = Omit<IconBaseProps, 'children'>;
 const CursorFill = memo(
   forwardRef<SVGSVGElement, CursorFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-fill" {...props}>
-      <path fill="currentColor" d="M3.11 5.07a2.14 2.14 0 0 1 2.71-2.7L21.53 7.6c2 .66 1.94 3.5-.07 4.09l-6.97 2.05-2.05 6.97a2.14 2.14 0 0 1-4.1.08z" />
+      <path fill="currentColor" d="M3.1 5.66A2.02 2.02 0 0 1 5.67 3.1l13.96 4.65a2.02 2.02 0 0 1-.07 3.85l-6.14 1.8-1.8 6.14a2.02 2.02 0 0 1-3.85.07z" />
     </IconBase>
   ))
 );

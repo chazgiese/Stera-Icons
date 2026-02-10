@@ -7,7 +7,7 @@ type HeartFillProps = Omit<IconBaseProps, 'children'>;
 const HeartFill = memo(
   forwardRef<SVGSVGElement, HeartFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="heart-fill" {...props}>
-      <path fill="currentColor" d="M16.76 2A6.3 6.3 0 0 1 23 8.34a9.6 9.6 0 0 1-1.9 5.4c-2.48 3.55-5.95 5.98-8.47 8.04a1 1 0 0 1-1.26 0c-2.52-2.06-5.99-4.5-8.47-8.03A9.6 9.6 0 0 1 1 8.34 6.3 6.3 0 0 1 7.24 2c1.91 0 3.62.88 4.76 2.25A6.2 6.2 0 0 1 16.76 2" />
+      <path fill="currentColor" d="M16.29 3.25A5.73 5.73 0 0 1 22 9a8.6 8.6 0 0 1-1.73 4.87c-2.25 3.17-5.38 5.34-7.64 7.16a1 1 0 0 1-1.26 0c-2.26-1.82-5.4-4-7.64-7.16A8.6 8.6 0 0 1 2 9a5.73 5.73 0 0 1 5.71-5.75c1.71 0 3.24.76 4.29 1.95a5.7 5.7 0 0 1 4.29-1.95" />
     </IconBase>
   ))
 );

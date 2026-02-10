@@ -7,8 +7,8 @@ type PeaceRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PeaceRegularDuotone = memo(
   forwardRef<SVGSVGElement, PeaceRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="peace-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="m12 2.75.75.03v8.91l6.3 6.3q-.5.57-1.06 1.06l-5.24-5.24v7.4a9 9 0 0 1-1.5 0v-7.4l-5.24 5.24a9 9 0 0 1-1.06-1.06l6.3-6.3v-8.9q.38-.04.75-.04" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12 3.75q.38 0 .75.04v7.9l5.59 5.59a8 8 0 0 1-1.06 1.06l-4.53-4.53v6.4a8 8 0 0 1-1.5 0v-6.4l-4.53 4.53a8 8 0 0 1-1.06-1.06l5.59-5.6v-7.9z" />
     </IconBase>
   ))
 );

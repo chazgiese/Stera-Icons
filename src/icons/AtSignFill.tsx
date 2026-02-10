@@ -7,7 +7,7 @@ type AtSignFillProps = Omit<IconBaseProps, 'children'>;
 const AtSignFill = memo(
   forwardRef<SVGSVGElement, AtSignFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="at-sign-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 .5a11.5 11.5 0 0 1 11.44 12.65c-.3 3.03-2.24 5.1-4.66 5.08a4 4 0 0 1-3.38-1.9 5.5 5.5 0 1 1-.68-9.1 1.5 1.5 0 0 1 2.78.77v5c0 .96.26 1.53.51 1.83.24.3.53.4.79.4.43 0 1.46-.41 1.66-2.38q.04-.42.04-.85a8.5 8.5 0 1 0-4.25 7.36 1.5 1.5 0 0 1 1.5 2.6A11.5 11.5 0 1 1 12 .5m0 9a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 1.5a10.5 10.5 0 0 1 10.45 11.55c-.28 2.78-2.07 4.72-4.35 4.7a3.7 3.7 0 0 1-3.08-1.64 5.1 5.1 0 1 1-.62-8.6 1.5 1.5 0 0 1 2.7.89v4.5c0 .84.23 1.32.43 1.55s.4.3.59.3c.29 0 1.17-.28 1.34-2q.04-.37.04-.75a7.5 7.5 0 1 0-5 7.07 1.5 1.5 0 0 1 1 2.83q-1.66.6-3.5.6a10.5 10.5 0 1 1 0-21m0 8.4a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2" clipRule="evenodd" />
     </IconBase>
   ))
 );

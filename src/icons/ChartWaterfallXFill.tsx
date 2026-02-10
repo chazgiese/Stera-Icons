@@ -7,7 +7,7 @@ type ChartWaterfallXFillProps = Omit<IconBaseProps, 'children'>;
 const ChartWaterfallXFill = memo(
   forwardRef<SVGSVGElement, ChartWaterfallXFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-waterfall-x-fill" {...props}>
-      <path fill="currentColor" d="M22 19a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zM6 7.85c.97 0 1.75.79 1.75 1.75v6c0 .97-.78 1.75-1.75 1.75H4c-.97 0-1.75-.78-1.75-1.75v-6c0-.96.78-1.75 1.75-1.75zM20 3.25c.97 0 1.75.78 1.75 1.75v8c0 .97-.78 1.75-1.75 1.75h-2c-.97 0-1.75-.78-1.75-1.75V5c0-.97.78-1.75 1.75-1.75zM13 6.25c.97 0 1.75.78 1.75 1.75v4c0 .97-.78 1.75-1.75 1.75h-2c-.97 0-1.75-.78-1.75-1.75V8c0-.97.78-1.75 1.75-1.75z" />
+      <path fill="currentColor" d="M21 19a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM6.33 7.63c1.04 0 1.88.83 1.88 1.87v6c0 1.04-.84 1.88-1.88 1.88H5a1.9 1.9 0 0 1-1.87-1.88v-6c0-1.04.83-1.87 1.87-1.87zM19 3.13c1.04 0 1.88.83 1.88 1.87v8c0 1.04-.84 1.88-1.88 1.88h-1.33A1.9 1.9 0 0 1 15.79 13V5c0-1.04.84-1.87 1.88-1.87zM12.67 6.13c1.04 0 1.87.83 1.87 1.87v4c0 1.04-.83 1.88-1.87 1.88h-1.34A1.87 1.87 0 0 1 9.46 12V8c0-1.04.83-1.87 1.87-1.87z" />
     </IconBase>
   ))
 );

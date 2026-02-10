@@ -7,9 +7,8 @@ type AnnotationFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AnnotationFillDuotone = memo(
   forwardRef<SVGSVGElement, AnnotationFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="annotation-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M14.6 2q1.65-.02 2.7.06c.74.06 1.38.18 1.97.48a5 5 0 0 1 2.19 2.19c.3.6.42 1.23.48 1.96q.08 1.06.06 2.71v3.2q.02 1.65-.06 2.7a5 5 0 0 1-.48 1.97 5 5 0 0 1-2.19 2.19c-.6.3-1.23.42-1.96.48q-1.06.08-2.71.06H8.87A4 4 0 0 0 4 15.13V9.4q-.01-1.65.06-2.7c.06-.74.18-1.38.48-1.97a5 5 0 0 1 2.19-2.19c.6-.3 1.23-.42 1.96-.48Q9.75 1.99 11.4 2zM10 12a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zm0-4a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M5 16a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
-        <path fill="currentColor" d="M13 12a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2zM16 8a1 1 0 1 1 0 2h-6a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M5.5 15.75a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5M13 11.25a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5zM16 7.75a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1 0-1.5z" />
+        <path fill="currentColor" fillRule="evenodd" d="M14.1 2.75q1.64-.02 2.69.06 1.05.06 1.87.46c.89.45 1.62 1.18 2.07 2.07.28.55.4 1.16.46 1.87q.07 1.04.06 2.69v2.2q.02 1.64-.06 2.69a5 5 0 0 1-.46 1.87 4.8 4.8 0 0 1-2.07 2.07c-.55.28-1.16.4-1.87.46q-1.04.07-2.69.06H8.14a2.75 2.75 0 0 0-3.39-3.4V9.9q-.01-1.64.06-2.69t.46-1.87a4.8 4.8 0 0 1 2.07-2.07c.55-.28 1.16-.4 1.87-.46q1.04-.07 2.69-.06zm-4.1 8.5a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5zm0-3.5a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z" clipRule="evenodd" opacity={.4} />
     </IconBase>
   ))
 );

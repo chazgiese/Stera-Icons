@@ -7,8 +7,8 @@ type TennisBallRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TennisBallRegularDuotone = memo(
   forwardRef<SVGSVGElement, TennisBallRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="tennis-ball-duotone" {...props}>
-      <path d="M6.07 4.9a10.7 10.7 0 0 1 0 14.2A9 9 0 0 1 5 18.04 9.2 9.2 0 0 0 5 5.96 9 9 0 0 1 6.07 4.9M17.93 4.9q.57.48 1.07 1.06a9.2 9.2 0 0 0 0 12.08 9 9 0 0 1-1.07 1.06 10.7 10.7 0 0 1 0-14.2" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" />
+      <path d="M6.83 5.57a9.7 9.7 0 0 1 0 12.86 8 8 0 0 1-1.08-1.05 8.2 8.2 0 0 0 0-10.76 8 8 0 0 1 1.08-1.05M17.17 5.57q.6.48 1.08 1.05a8.2 8.2 0 0 0 0 10.76 8 8 0 0 1-1.08 1.05 9.7 9.7 0 0 1 0-12.86" opacity={0.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -521,7 +521,7 @@ export { MedalStar, MedalStarIcon, SiMedalStar } from './icons/MedalStar';
 export { MedicalCross, MedicalCrossIcon, SiMedicalCross } from './icons/MedicalCross';
 export { Menu, MenuIcon, SiMenu } from './icons/Menu';
 export { MenuAlt, MenuAltIcon, SiMenuAlt } from './icons/MenuAlt';
-export { MenuSimpleAlt, MenuSimpleAltIcon, SiMenuSimpleAlt } from './icons/MenuSimpleAlt';
+export { MenuSimple, MenuSimpleIcon, SiMenuSimple } from './icons/MenuSimple';
 export { Mic, MicIcon, SiMic } from './icons/Mic';
 export { MicOff, MicOffIcon, SiMicOff } from './icons/MicOff';
 export { Microscope, MicroscopeIcon, SiMicroscope } from './icons/Microscope';

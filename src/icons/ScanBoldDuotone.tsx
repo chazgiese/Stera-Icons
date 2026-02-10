@@ -7,8 +7,8 @@ type ScanBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ScanBoldDuotone = memo(
   forwardRef<SVGSVGElement, ScanBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="scan-bold-duotone" {...props}>
-      <path d="M3 16a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3v-2a1 1 0 0 1 1-1M19 2a3 3 0 0 1 3 3v2a1 1 0 1 1-2 0V5a1 1 0 0 0-1-1h-2a1 1 0 1 1 0-2z" opacity={0.4} />
-        <path fill="currentColor" d="M21 16a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1M7 2a1 1 0 0 1 0 2H5a1 1 0 0 0-1 1v2a1 1 0 0 1-2 0V5a3 3 0 0 1 3-3z" />
+      <path d="M4 14.5a1 1 0 0 1 1 1v1.75c0 .97.78 1.75 1.75 1.75H8.5a1 1 0 1 1 0 2H6.75A3.75 3.75 0 0 1 3 17.25V15.5a1 1 0 0 1 1-1M17.25 3A3.75 3.75 0 0 1 21 6.75V8.5a1 1 0 1 1-2 0V6.75C19 5.78 18.22 5 17.25 5H15.5a1 1 0 1 1 0-2z" opacity={0.4} />
+        <path fill="currentColor" d="M20 14.5a1 1 0 0 1 1 1v1.75A3.75 3.75 0 0 1 17.25 21H15.5a1 1 0 1 1 0-2h1.75c.97 0 1.75-.78 1.75-1.75V15.5a1 1 0 0 1 1-1M8.5 3a1 1 0 0 1 0 2H6.75C5.78 5 5 5.78 5 6.75V8.5a1 1 0 0 1-2 0V6.75A3.75 3.75 0 0 1 6.75 3z" />
     </IconBase>
   ))
 );

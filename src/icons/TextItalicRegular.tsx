@@ -7,7 +7,7 @@ type TextItalicRegularProps = Omit<IconBaseProps, 'children'>;
 const TextItalicRegular = memo(
   forwardRef<SVGSVGElement, TextItalicRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-italic" {...props}>
-      <path fill="currentColor" d="M20 2.25a.75.75 0 0 1 0 1.5h-3.56c-.53 0-1 .34-1.18.85l-4.9 14.68c-.15.48.21.97.72.97H14a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5h3.56c.54 0 1.01-.34 1.18-.85l4.9-14.68a.75.75 0 0 0-.72-.97H10a.75.75 0 0 1 0-1.5z" />
+      <path fill="currentColor" d="M19 3.25a.75.75 0 0 1 0 1.5h-1.92c-.94 0-1.78.58-2.1 1.46l-4.26 11.35c-.31.82.3 1.69 1.17 1.69H14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1 0-1.5h1.92c.94 0 1.78-.58 2.1-1.46l4.26-11.35c.31-.82-.3-1.69-1.17-1.69H10a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))
 );

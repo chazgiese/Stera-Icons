@@ -7,8 +7,8 @@ type PoundSterlingCircleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PoundSterlingCircleFillDuotone = memo(
   forwardRef<SVGSVGElement, PoundSterlingCircleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="pound-sterling-circle-fill-duotone" {...props}>
-      <path fill="currentColor" d="M11.93 5.8a4.4 4.4 0 0 1 4.35 2.16 1 1 0 0 1-1.7 1.06c-.65-1.04-1.62-1.36-2.37-1.25S11 8.37 11 9.04v1.75h2.14a1 1 0 0 1 0 2H11v1.76q-.02.68-.31 1.2H16a1 1 0 1 1 0 2H8a1 1 0 0 1-.46-1.89l.08-.03.23-.11q.24-.13.55-.35c.44-.34.6-.63.6-.82v-1.76H8a1 1 0 0 1 0-2h1V9.04c0-1.86 1.4-3.03 2.93-3.25" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m4.28 6.96a4.4 4.4 0 0 0-4.35-2.17C10.4 6.01 9 7.18 9 9.04v1.75H8a1 1 0 0 0 0 2h1v1.76c0 .19-.16.48-.6.82a4 4 0 0 1-.78.45l-.08.04A1 1 0 0 0 8 17.75h8a1 1 0 1 0 0-2h-5.31q.29-.52.31-1.2v-1.76h2.14a1 1 0 0 0 0-2H11V9.04c0-.67.46-1.16 1.21-1.27.75-.1 1.72.2 2.37 1.25a1 1 0 0 0 1.7-1.06" clipRule="evenodd" opacity={.4} />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m3.86 6.3a3.95 3.95 0 0 0-3.94-2.01c-1.41.2-2.67 1.3-2.67 3.02v1.48H8.5a1 1 0 0 0 0 2h.75v1.48c0 .13-.11.37-.49.66a4 4 0 0 1-.61.38l-.04.02a1 1 0 0 0 .39 1.92h7a1 1 0 1 0 0-2h-4.47q.2-.44.22-.98v-1.48H13a1 1 0 0 0 0-2h-1.75V9.3c0-.57.37-.96.96-1.04s1.39.16 1.93 1.06a1 1 0 1 0 1.72-1.03" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M11.92 6.29c1.4-.21 2.98.44 3.94 2a1 1 0 0 1-1.72 1.04c-.54-.9-1.34-1.15-1.93-1.06-.6.08-.96.47-.96 1.04v1.48H13a1 1 0 0 1 0 2h-1.75v1.48q-.01.55-.22.98h4.47a1 1 0 1 1 0 2h-7a1 1 0 0 1-.4-1.92h.01l.04-.02a3 3 0 0 0 .61-.38c.38-.29.49-.53.49-.66v-1.48H8.5a1 1 0 1 1 0-2h.75V9.3a3 3 0 0 1 2.67-3.02" />
     </IconBase>
   ))
 );

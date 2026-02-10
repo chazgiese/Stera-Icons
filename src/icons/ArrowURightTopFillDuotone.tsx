@@ -7,8 +7,8 @@ type ArrowURightTopFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowURightTopFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowURightTopFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-u-right-top-fill-duotone" {...props}>
-      <path fill="currentColor" d="M17 6v2H8.5a5.5 5.5 0 1 0 0 11H16a1 1 0 1 1 0 2H8.5a7.5 7.5 0 0 1 0-15z" opacity={.4} />
-        <path fill="currentColor" d="M18.7 2.3A1 1 0 0 0 17 3v8a1 1 0 0 0 1.7.7l4-4a1 1 0 0 0 .07-1.33l-.06-.08z" />
+      <path fill="currentColor" d="M15 9h-4.5a4.5 4.5 0 1 0 0 9H15a1 1 0 1 1 0 2h-4.5a6.5 6.5 0 1 1 0-13H15z" opacity={.4} />
+        <path fill="currentColor" d="M15.62 3.08a1 1 0 0 1 1.09.21l4 4 .06.08a1 1 0 0 1-.06 1.34l-4 4A1 1 0 0 1 15 12V4a1 1 0 0 1 .62-.92" />
     </IconBase>
   ))
 );

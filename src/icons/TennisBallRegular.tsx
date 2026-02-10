@@ -7,7 +7,7 @@ type TennisBallRegularProps = Omit<IconBaseProps, 'children'>;
 const TennisBallRegular = memo(
   forwardRef<SVGSVGElement, TennisBallRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="tennis-ball" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25A10.7 10.7 0 0 1 22.75 12 10.7 10.7 0 0 1 12 22.75 10.7 10.7 0 0 1 1.25 12 10.7 10.7 0 0 1 12 1.25m0 1.5A9.2 9.2 0 0 0 6.07 4.9a10.7 10.7 0 0 1 0 14.2 9.2 9.2 0 0 0 11.86 0 10.7 10.7 0 0 1 0-14.2A9.2 9.2 0 0 0 12 2.75m-7 3.2a9.2 9.2 0 0 0 0 12.1 9.2 9.2 0 0 0 0-12.1m14 0a9.2 9.2 0 0 0 0 12.1 9.2 9.2 0 0 0 0-12.1" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5c-1.96 0-3.76.68-5.17 1.82a9.7 9.7 0 0 1 0 12.86 8.2 8.2 0 0 0 10.34 0 9.7 9.7 0 0 1 0-12.86A8.2 8.2 0 0 0 12 3.75M5.75 6.62a8.2 8.2 0 0 0 0 10.76 8.2 8.2 0 0 0 0-10.76m12.5 0a8.2 8.2 0 0 0 0 10.76 8.2 8.2 0 0 0 0-10.76" clipRule="evenodd" />
     </IconBase>
   ))
 );

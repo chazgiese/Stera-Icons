@@ -7,7 +7,7 @@ type CommentBubbleRegularProps = Omit<IconBaseProps, 'children'>;
 const CommentBubbleRegular = memo(
   forwardRef<SVGSVGElement, CommentBubbleRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="comment-bubble" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5H5.57q-.72.02-1.18-.07a2.8 2.8 0 0 1-2.07-2.07q-.09-.47-.07-1.18V12A9.75 9.75 0 0 1 12 2.25m0 1.5A8.25 8.25 0 0 0 3.75 12v6.43c0 .57 0 .73.03.85.1.47.47.83.94.94.12.03.28.03.85.03H12a8.25 8.25 0 1 0 0-16.5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.75a9.25 9.25 0 1 1 0 18.5H5.93q-.54.01-.9-.04a2.75 2.75 0 0 1-2.24-2.25q-.05-.35-.04-.89V12c0-5.1 4.14-9.25 9.25-9.25m0 1.5A7.75 7.75 0 0 0 4.25 12v6.07c0 .43 0 .55.02.64.09.52.5.93 1.02 1.02.09.02.21.02.64.02H12a7.75 7.75 0 0 0 0-15.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

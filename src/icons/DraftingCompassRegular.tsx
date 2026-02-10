@@ -7,8 +7,8 @@ type DraftingCompassRegularProps = Omit<IconBaseProps, 'children'>;
 const DraftingCompassRegular = memo(
   forwardRef<SVGSVGElement, DraftingCompassRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="drafting-compass" {...props}>
-      <path fill="currentColor" d="M4.67 16.76a.75.75 0 0 1 1.28.78l-2.3 3.85a.75.75 0 0 1-1.3-.78z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a3.75 3.75 0 0 1 2.53 6.51l7.11 11.85a.75.75 0 0 1-1.28.78l-3.49-5.8A10.75 10.75 0 0 1 2.32 10.7a.75.75 0 0 1 1.35-.66 9.25 9.25 0 0 0 12.43 4.25l-2.85-4.75a3.7 3.7 0 0 1-2.5 0l-1.7 2.85a.75.75 0 0 1-1.3-.78l1.72-2.85A3.74 3.74 0 0 1 12 2.25m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
+      <path fill="currentColor" d="M5.24 15.94a.75.75 0 0 1 1.29.77l-1.88 3.17a.75.75 0 0 1-1.3-.76z" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2.75a3.25 3.25 0 0 1 2.26 5.59l6.39 10.78a.75.75 0 0 1-1.3.76l-3.04-5.13q-1.97.98-4.31 1a9.8 9.8 0 0 1-8.67-5.28.75.75 0 0 1 1.34-.69 8.25 8.25 0 0 0 10.87 3.67L12.97 9.1a3.3 3.3 0 0 1-1.94 0L9.6 11.54a.75.75 0 0 1-1.3-.76l1.45-2.44A3.24 3.24 0 0 1 12 2.75m0 1.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

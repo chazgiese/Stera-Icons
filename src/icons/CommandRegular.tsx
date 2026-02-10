@@ -7,7 +7,7 @@ type CommandRegularProps = Omit<IconBaseProps, 'children'>;
 const CommandRegular = memo(
   forwardRef<SVGSVGElement, CommandRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="command" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M18 2.25a3.75 3.75 0 1 1 0 7.5h-2.25v4.5H18A3.75 3.75 0 1 1 14.25 18v-2.25h-4.5V18A3.75 3.75 0 1 1 6 14.25h2.25v-4.5H6A3.75 3.75 0 1 1 9.75 6v2.25h4.5V6A3.75 3.75 0 0 1 18 2.25M6 15.75A2.25 2.25 0 1 0 8.25 18v-2.25zM15.75 18A2.25 2.25 0 1 0 18 15.75h-2.25zm-6-3.75h4.5v-4.5h-4.5zM6 3.75a2.25 2.25 0 0 0 0 4.5h2.25V6c0-1.24-1-2.25-2.25-2.25m12 0c-1.24 0-2.25 1-2.25 2.25v2.25H18a2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M17.33 3.25a3.42 3.42 0 0 1 0 6.83h-1.91v3.84h1.91a3.42 3.42 0 1 1-3.41 3.41v-1.91h-3.84v1.91a3.42 3.42 0 1 1-3.41-3.41h1.91v-3.84H6.67a3.42 3.42 0 1 1 3.41-3.41v1.91h3.84V6.67a3.4 3.4 0 0 1 3.41-3.42M6.67 15.42a1.92 1.92 0 1 0 1.91 1.91v-1.91zm8.75 1.91a1.92 1.92 0 1 0 1.91-1.91h-1.91zm-5.34-3.41h3.84v-3.84h-3.84zM6.67 4.75a1.92 1.92 0 0 0 0 3.83h1.91V6.67c0-1.06-.85-1.92-1.91-1.92m10.66 0c-1.05 0-1.91.86-1.91 1.92v1.91h1.91a1.92 1.92 0 0 0 0-3.83" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ShieldHalfRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ShieldHalfRegularDuotone = memo(
   forwardRef<SVGSVGElement, ShieldHalfRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-half-duotone" {...props}>
-      <path fill="currentColor" d="M12.75 3.08v17.7l-.75.38-.75-.37V3.09L12 2.8z" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M11.74 1.3a.8.8 0 0 1 .52 0l8 3c.3.1.49.39.49.7v5.58c0 4.83-2.73 9.25-7.05 11.4l-1.36.7q-.34.15-.68 0l-1.36-.7a12.8 12.8 0 0 1-7.05-11.4V5c0-.31.2-.6.49-.7zM4.75 5.52v5.06c0 4.27 2.4 8.16 6.22 10.07l1.03.51 1.03-.51c3.81-1.91 6.22-5.8 6.22-10.07V5.52L12 2.8z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M11.74 1.92a.8.8 0 0 1 .52 0l7.5 2.82c.3.1.49.38.49.7v5.23a12 12 0 0 1-6.63 10.74l-1.28.64q-.34.15-.68 0l-1.28-.64a12 12 0 0 1-6.63-10.74V5.44c0-.32.2-.6.49-.7zM5.25 5.96v4.71a10.5 10.5 0 0 0 5.8 9.4l.95.47.95-.48a10.5 10.5 0 0 0 5.8-9.39V5.96L12 3.43z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12.75 3.7v16.46l-.75.38-.75-.38V3.71l.75-.28z" />
     </IconBase>
   ))
 );

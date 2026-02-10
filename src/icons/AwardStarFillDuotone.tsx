@@ -7,8 +7,8 @@ type AwardStarFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AwardStarFillDuotone = memo(
   forwardRef<SVGSVGElement, AwardStarFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="award-star-fill-duotone" {...props}>
-      <path fill="currentColor" d="M13 13.34V17a4 4 0 0 1 4 4H7a4 4 0 0 1 4-4v-3.66l1-.59z" opacity={.4} />
-        <path fill="currentColor" d="M17.5 21a1 1 0 0 1 0 2h-11a1 1 0 0 1 0-2zM11.06 1.76a1.1 1.1 0 0 1 1.88 0l.08.16 1.43 3.31 3.6.34a1.1 1.1 0 0 1 .64 1.93l-2.72 2.38.8 3.52a1.1 1.1 0 0 1-1.65 1.2L12 12.74 8.88 14.6a1.1 1.1 0 0 1-1.64-1.2l.8-3.51L5.3 7.5a1.1 1.1 0 0 1 .63-1.93l3.61-.34 1.43-3.31z" />
+      <path fill="currentColor" d="M17.5 20a1 1 0 1 1 0 2h-11a1 1 0 0 1 0-2zM11.12 2.73c.4-.64 1.36-.64 1.77 0l.07.15 1.17 2.7 2.93.27c.91.08 1.3 1.22.6 1.83L15.44 9.6l.65 2.86c.2.9-.77 1.6-1.56 1.13L12 12.1l-2.53 1.5a1.05 1.05 0 0 1-1.56-1.13l.65-2.86-2.21-1.93c-.7-.61-.32-1.75.59-1.83l2.93-.27 1.17-2.7z" />
+        <path fill="currentColor" d="M13 12.7V16a4 4 0 0 1 4 4H7a4 4 0 0 1 4-4v-3.3l1-.6z" opacity={.4} />
     </IconBase>
   ))
 );

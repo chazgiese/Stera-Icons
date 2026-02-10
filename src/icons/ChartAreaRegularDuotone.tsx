@@ -7,8 +7,8 @@ type ChartAreaRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartAreaRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChartAreaRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-area-duotone" {...props}>
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m1.5 19 8-8 3.5 3.5L22.5 5" />
-        <path fill="currentColor" d="m23.24 4.87.01.13v12.75a2 2 0 0 1-2 2H1.5l-.13-.01c.23.04.48-.03.66-.21l1.28-1.28h17.94a.5.5 0 0 0 .5-.5V6.81l1.28-1.28a.8.8 0 0 0 .2-.66" opacity={.4} />
+      <path fill="currentColor" d="M22.75 5v12.93c0 1-.82 1.82-1.82 1.82H2.02q.3 0 .52-.23l1.21-1.27h17.18c.18 0 .32-.14.32-.32V6.88l1.3-1.36q.2-.24.2-.53z" opacity={.4} />
+        <path fill="currentColor" d="M21.46 4.48a.75.75 0 0 1 1.08 1.04l-9.04 9.5a.75.75 0 0 1-1.1 0l-2.78-2.93-7.08 7.43a.75.75 0 0 1-1.08-1.04l7.62-8 .05-.05a.75.75 0 0 1 1.03.05l2.8 2.93z" />
     </IconBase>
   ))
 );

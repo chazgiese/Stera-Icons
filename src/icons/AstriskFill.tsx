@@ -7,7 +7,7 @@ type AstriskFillProps = Omit<IconBaseProps, 'children'>;
 const AstriskFill = memo(
   forwardRef<SVGSVGElement, AstriskFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="astrisk-fill" {...props}>
-      <path fill="currentColor" d="M12 .5c.83 0 1.5.67 1.5 1.5v7.4l6.41-3.7a1.5 1.5 0 0 1 1.5 2.6l-6.4 3.7 6.4 3.7a1.5 1.5 0 0 1-1.5 2.6l-6.41-3.71V22a1.5 1.5 0 0 1-3 0v-7.4l-6.4 3.7a1.5 1.5 0 0 1-1.5-2.6L9 12 2.6 8.3a1.5 1.5 0 0 1 1.5-2.6l6.4 3.7V2c0-.83.67-1.5 1.5-1.5" />
+      <path fill="currentColor" d="M12 1.5c.83 0 1.5.67 1.5 1.5v5.53c0 .39.42.63.75.44l4.8-2.77a1.5 1.5 0 0 1 1.5 2.6l-4.8 2.76a.5.5 0 0 0 0 .87l4.8 2.77a1.5 1.5 0 0 1-1.5 2.6l-4.8-2.78a.5.5 0 0 0-.75.44V21a1.5 1.5 0 1 1-3 0v-5.54a.5.5 0 0 0-.75-.43l-4.8 2.76a1.5 1.5 0 0 1-1.5-2.6l4.8-2.76a.5.5 0 0 0 0-.87L3.46 8.79a1.5 1.5 0 0 1 1.5-2.6l4.79 2.77a.5.5 0 0 0 .75-.43V3c0-.83.67-1.5 1.5-1.5" />
     </IconBase>
   ))
 );

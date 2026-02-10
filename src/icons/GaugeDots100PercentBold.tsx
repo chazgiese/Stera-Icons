@@ -7,8 +7,8 @@ type GaugeDots100PercentBoldProps = Omit<IconBaseProps, 'children'>;
 const GaugeDots100PercentBold = memo(
   forwardRef<SVGSVGElement, GaugeDots100PercentBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="gauge-dots-100-percent-bold" {...props}>
-      <path fill="currentColor" d="M7.4 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M10.59 10.59a2 2 0 0 1 2.82 0l.06.05c.33.39 1.42 1.84 2.39 3.15l1.74 2.35.11.16.04.04v.01a1 1 0 0 1-1.4 1.4l-.05-.04-.16-.11-.57-.42-1.78-1.32a105 105 0 0 1-3.2-2.45 2 2 0 0 1 0-2.82M5.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M7.4 5.9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 5.9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M7.05 14.83a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M10.59 10.59a2 2 0 0 1 2.88.05c.34.4 1.26 1.7 2.05 2.82l1.51 2.17.03.04.05.08a1 1 0 0 1-1.44 1.32l-.04-.04-.14-.1-2.03-1.41a60 60 0 0 1-2.87-2.1 2 2 0 0 1 0-2.83M6.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M17.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M7.05 7.05a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M14.83 7.05a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M12 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

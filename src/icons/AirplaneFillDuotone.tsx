@@ -7,8 +7,8 @@ type AirplaneFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AirplaneFillDuotone = memo(
   forwardRef<SVGSVGElement, AirplaneFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="airplane-fill-duotone" {...props}>
-      <path fill="currentColor" d="m20.88 13.12.77-.76a.5.5 0 0 0 0-.71l-.77-.77a3 3 0 0 0-2.12-.88H10l-4.5.15-1.14-2.02c-.22-.39-.64-.63-1.09-.63h-.71a.5.5 0 0 0-.5.55L2.5 12l-.44 3.94c-.03.3.2.56.5.56h.71c.45 0 .87-.24 1.09-.63l1.14-2.02L10 14h8.76a3 3 0 0 0 2.12-.88" opacity={.4} />
-        <path fill="currentColor" d="M10.6 3.84 15 10h-5L7.3 3.7a.5.5 0 0 1 .46-.7h1.21a2 2 0 0 1 1.63.84M10.6 20.16 15 14h-5l-2.7 6.3c-.14.33.1.7.46.7h1.21a2 2 0 0 0 1.63-.84" />
+      <path d="M10.2 14.05h4.63l-3.89 5.35c-.38.54-1 .85-1.66.85h-1.1a.7.7 0 0 1-.64-.98l2.28-5.23zM9.28 3.75c.66 0 1.28.31 1.66.85l3.89 5.35h-4.64l-.37.01-2.28-5.23a.7.7 0 0 1 .65-.98z" opacity={0.4} />
+        <path fill="currentColor" d="M4.14 7.7c.5 0 .96.27 1.2.7l.95 1.68 3.9-.13h7.89c.78 0 1.53.31 2.09.86l1 1.01a.25.25 0 0 1 0 .36l-1 1c-.56.56-1.3.87-2.09.87H10.2l-3.9-.13-.95 1.68c-.24.43-.7.7-1.2.7H3.5a.7.7 0 0 1-.7-.78L3.2 12l-.4-3.52a.7.7 0 0 1 .7-.78z" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type CursorTextAltBoldProps = Omit<IconBaseProps, 'children'>;
 const CursorTextAltBold = memo(
   forwardRef<SVGSVGElement, CursorTextAltBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-text-alt-bold" {...props}>
-      <path fill="currentColor" d="M8 1a5 5 0 0 1 4 2 5 5 0 0 1 4-2h1a1 1 0 1 1 0 2h-1a3 3 0 0 0-3 3v5h2a1 1 0 1 1 0 2h-2v5a3 3 0 0 0 3 3h1a1 1 0 1 1 0 2h-1a5 5 0 0 1-4-2 5 5 0 0 1-4 2H7a1 1 0 1 1 0-2h1a3 3 0 0 0 3-3v-5H9a1 1 0 1 1 0-2h2V6a3 3 0 0 0-3-3H7a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M9 2.5c1.2 0 2.27.52 3 1.36a4 4 0 0 1 3-1.36h1a1 1 0 1 1 0 2h-1a2 2 0 0 0-2 2V11h1.5a1 1 0 1 1 0 2H13v4.5c0 1.1.9 2 2 2h1a1 1 0 1 1 0 2h-1c-1.2 0-2.27-.53-3-1.36a4 4 0 0 1-3 1.36H8a1 1 0 1 1 0-2h1a2 2 0 0 0 2-2V13H9.5a1 1 0 1 1 0-2H11V6.5a2 2 0 0 0-2-2H8a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

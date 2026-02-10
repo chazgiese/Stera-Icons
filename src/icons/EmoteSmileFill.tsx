@@ -7,7 +7,7 @@ type EmoteSmileFillProps = Omit<IconBaseProps, 'children'>;
 const EmoteSmileFill = memo(
   forwardRef<SVGSVGElement, EmoteSmileFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="emote-smile-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22M8.8 14.4a1 1 0 0 0-1.6 1.2 6 6 0 0 0 9.6 0 1 1 0 0 0-1.6-1.2 4 4 0 0 1-6.4 0m-.3-6.65a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5m7 0a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m4.38 11.72a1 1 0 0 0-1.4.15A3.8 3.8 0 0 1 12 15.25a3.8 3.8 0 0 1-2.97-1.38 1 1 0 0 0-1.56 1.26A5.8 5.8 0 0 0 12 17.25a5.8 5.8 0 0 0 4.53-2.12 1 1 0 0 0-.15-1.4M9 8.25a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
     </IconBase>
   ))
 );

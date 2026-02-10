@@ -7,7 +7,7 @@ type ScanTextBoldProps = Omit<IconBaseProps, 'children'>;
 const ScanTextBold = memo(
   forwardRef<SVGSVGElement, ScanTextBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="scan-text-bold" {...props}>
-      <path fill="currentColor" d="M3 16a1 1 0 0 1 1 1v2.5c0 .28.22.5.5.5H7a1 1 0 1 1 0 2H4.5A2.5 2.5 0 0 1 2 19.5V17a1 1 0 0 1 1-1M21 16a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 1-2.5 2.5H17a1 1 0 1 1 0-2h2.5a.5.5 0 0 0 .5-.5V17a1 1 0 0 1 1-1M13 14.5a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2zM17 11a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2zM17 7.5a1 1 0 1 1 0 2H7a1 1 0 0 1 0-2zM7 2a1 1 0 0 1 0 2H4.5a.5.5 0 0 0-.5.5V7a1 1 0 0 1-2 0V4.5A2.5 2.5 0 0 1 4.5 2zM19.5 2A2.5 2.5 0 0 1 22 4.5V7a1 1 0 1 1-2 0V4.5a.5.5 0 0 0-.5-.5H17a1 1 0 1 1 0-2z" />
+      <path fill="currentColor" d="M3.5 15a1 1 0 0 1 1 1v2c0 .83.67 1.5 1.5 1.5h2a1 1 0 1 1 0 2H6A3.5 3.5 0 0 1 2.5 18v-2a1 1 0 0 1 1-1M20.5 15a1 1 0 0 1 1 1v2a3.5 3.5 0 0 1-3.5 3.5h-2a1 1 0 1 1 0-2h2c.83 0 1.5-.67 1.5-1.5v-2a1 1 0 0 1 1-1M12.5 13a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 9a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM8 2.5a1 1 0 0 1 0 2H6c-.83 0-1.5.67-1.5 1.5v2a1 1 0 0 1-2 0V6A3.5 3.5 0 0 1 6 2.5zM18 2.5A3.5 3.5 0 0 1 21.5 6v2a1 1 0 1 1-2 0V6c0-.83-.67-1.5-1.5-1.5h-2a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
 );

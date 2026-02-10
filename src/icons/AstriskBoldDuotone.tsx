@@ -7,8 +7,8 @@ type AstriskBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AstriskBoldDuotone = memo(
   forwardRef<SVGSVGElement, AstriskBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="astrisk-bold-duotone" {...props}>
-      <path d="M11 12.57v1.16l-7.16 4.13a1 1 0 0 1-1-1.73L10 11.99zM21.17 16.13a1 1 0 1 1-1 1.73L13 13.72v-1.15l1-.58zM12 1a1 1 0 0 1 1 1v8.26l-1 .58-1-.58V2a1 1 0 0 1 1-1" opacity={0.4} />
-        <path fill="currentColor" d="M20.16 6.13a1 1 0 0 1 1 1.73L13 12.57V22a1 1 0 1 1-2 0v-9.43l-8.15-4.7a1 1 0 0 1 1-1.74l8.15 4.7z" />
+      <path d="M13 13.72V21a1 1 0 0 1-2 0v-7.28l1-.57zM3.35 7a1 1 0 0 1 1.36-.37L11 10.26v1.15L10 12 3.71 8.36A1 1 0 0 1 3.35 7M19.3 6.63a1 1 0 0 1 1 1.73L14 12l-1-.58v-1.15z" opacity={0.4} />
+        <path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v8.41l7.3 4.22a1 1 0 0 1-1 1.73L12 13.15l-7.29 4.21a1 1 0 0 1-1-1.73l7.3-4.22V3a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

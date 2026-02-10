@@ -7,8 +7,8 @@ type ActivityFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ActivityFillDuotone = memo(
   forwardRef<SVGSVGElement, ActivityFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="activity-fill-duotone" {...props}>
-      <path fill="currentColor" d="M22 10.5a1.5 1.5 0 0 1 0 3h-2.92l-2.66 7.97a1.5 1.5 0 0 1-2.84 0l-3-9 2.84-.94L15 16.26l1.3-3.88.07-.2c.43-1.01 1.42-1.68 2.53-1.68z" opacity={.4} />
-        <path fill="currentColor" d="M9 1.5c.65 0 1.22.41 1.42 1.03l3 9-2.84.94L9 7.74l-1.3 3.88a2.75 2.75 0 0 1-2.6 1.88H2a1.5 1.5 0 0 1 0-3h2.92l2.66-7.97.04-.12A1.5 1.5 0 0 1 9 1.5" />
+      <path fill="currentColor" d="M21 10.5a1.5 1.5 0 0 1 0 3h-2.46l-2.64 7.03a1.5 1.5 0 0 1-2.83-.08l-2.5-8 2.86-.9 1.2 3.83 1.16-3.1a2.75 2.75 0 0 1 2.58-1.78z" opacity={.4} />
+        <path fill="currentColor" d="M9.54 2.5c.64.02 1.2.44 1.4 1.05l2.5 8-2.87.9-1.2-3.83-1.16 3.1a2.75 2.75 0 0 1-2.58 1.78H3a1.5 1.5 0 0 1 0-3h2.46L8.1 3.47l.04-.1c.25-.54.8-.89 1.4-.87" />
     </IconBase>
   ))
 );

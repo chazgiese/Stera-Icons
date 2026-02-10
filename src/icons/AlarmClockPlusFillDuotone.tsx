@@ -7,8 +7,8 @@ type AlarmClockPlusFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AlarmClockPlusFillDuotone = memo(
   forwardRef<SVGSVGElement, AlarmClockPlusFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="alarm-clock-plus-fill-duotone" {...props}>
-      <path fill="currentColor" d="M5.74 19.47q.72.7 1.59 1.22l-1.55 1.93a1 1 0 0 1-1.56-1.25zM19.78 21.37a1 1 0 0 1-1.56 1.25l-1.55-1.93q.87-.53 1.58-1.22zM5.25 1.33a2.5 2.5 0 0 1 3.42.92l.04.1a1 1 0 0 1-.41 1.27l-2.6 1.5a1 1 0 0 1-1.36-.37 2.5 2.5 0 0 1 .91-3.42M15.34 2.25a2.5 2.5 0 0 1 4.33 2.5l-.06.09a1 1 0 0 1-1.31.28l-2.6-1.5a1 1 0 0 1-.36-1.37M12 8.5a1 1 0 0 1 1 1V12h2.5a1 1 0 1 1 0 2H13v2.5a1 1 0 1 1-2 0V14H8.5a1 1 0 1 1 0-2H11V9.5a1 1 0 0 1 1-1" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 4a9 9 0 1 1 0 18 9 9 0 0 1 0-18m0 4.5a1 1 0 0 0-1 1V12H8.5a1 1 0 1 0 0 2H11v2.5a1 1 0 1 0 2 0V14h2.5a1 1 0 1 0 0-2H13V9.5a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
+      <path fill="currentColor" fillRule="evenodd" d="M12 4a8.5 8.5 0 1 1 0 17 8.5 8.5 0 0 1 0-17m0 4.5a1 1 0 0 0-1 1v2H9a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-2a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M6.28 18.78a9 9 0 0 0 1.62 1.17l-1.07 1.6a1 1 0 0 1-1.66-1.1zM18.83 20.45a1 1 0 0 1-1.66 1.1l-1.07-1.6a9 9 0 0 0 1.62-1.17zM12 8.5a1 1 0 0 1 1 1v2h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 1-1M5.5 1.24a2.5 2.5 0 0 1 3.41.92 1 1 0 0 1-.36 1.36l-2.6 1.5a1 1 0 0 1-1.37-.36 2.5 2.5 0 0 1 .92-3.42M15.08 2.16a2.5 2.5 0 0 1 4.33 2.5 1 1 0 0 1-1.36.36l-2.6-1.5a1 1 0 0 1-.37-1.36" />
     </IconBase>
   ))
 );

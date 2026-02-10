@@ -7,7 +7,7 @@ type TrendDownBoldProps = Omit<IconBaseProps, 'children'>;
 const TrendDownBold = memo(
   forwardRef<SVGSVGElement, TrendDownBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="trend-down-bold" {...props}>
-      <path fill="currentColor" d="M.8 4.3a1 1 0 0 1 1.4 0l7.3 7.29 2.8-2.8a1 1 0 0 1 1.4 0l7.8 7.8V13a1 1 0 0 1 2 0v6l-.03.24-.01.05-.02.04a1 1 0 0 1-.53.58l-.03.01-.05.02-.04.02h-.05l-.05.02h-.02l-.17.02h-6a1 1 0 0 1 0-2h3.59L13 10.91l-2.8 2.8a1 1 0 0 1-1.33.06l-.08-.06-8-8a1 1 0 0 1 0-1.42" />
+      <path fill="currentColor" d="M1.79 5.05a1 1 0 0 1 1.41-.01l6.54 6.45 2.46-2.43a1 1 0 0 1 1.4 0l6.9 6.8v-2.61a1 1 0 0 1 2 0v5a1 1 0 0 1-.04.29l-.02.04-.08.17q0 .03-.03.05l-.02.03a1 1 0 0 1-.34.3 1 1 0 0 1-.47.12h-5a1 1 0 0 1 0-2h2.56l-6.16-6.08-2.46 2.43a1 1 0 0 1-1.33.07l-.07-.07L1.8 6.46a1 1 0 0 1-.01-1.41" />
     </IconBase>
   ))
 );

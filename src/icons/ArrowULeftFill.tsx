@@ -7,7 +7,7 @@ type ArrowULeftFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowULeftFill = memo(
   forwardRef<SVGSVGElement, ArrowULeftFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-u-left-fill" {...props}>
-      <path fill="currentColor" d="M15.5 3a7.5 7.5 0 0 1 0 15H7v3a1 1 0 0 1-1.7.7l-4-4-.07-.07-.1-.13v-.01a1 1 0 0 1 .16-1.2l4-4A1 1 0 0 1 7 13v3h8.5a5.5 5.5 0 1 0 0-11H8a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M13.5 4a6.5 6.5 0 1 1 0 13H9v3a1 1 0 0 1-1.7.7l-4-4-.07-.07a1 1 0 0 1 .06-1.34l4-4A1 1 0 0 1 9 12v3h4.5a4.5 4.5 0 1 0 0-9H9a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ContrastBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ContrastBoldDuotone = memo(
   forwardRef<SVGSVGElement, ContrastBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="contrast-bold-duotone" {...props}>
-      <path fill="currentColor" d="M12 3a9 9 0 1 1 0 18z" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 4a8 8 0 1 1 0 16z" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

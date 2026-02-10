@@ -7,8 +7,8 @@ type BladeKunaiFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BladeKunaiFillDuotone = memo(
   forwardRef<SVGSVGElement, BladeKunaiFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="blade-kunai-fill-duotone" {...props}>
-      <path d="m14.67 12.08-.68 4.08a1 1 0 0 1-.51.72l-11 6a1 1 0 0 1-1.36-1.36l6-11 .06-.1a1 1 0 0 1 .66-.4l4.08-.69zM17.3 5.29a3 3 0 0 0 1.4 1.42L15.42 10 14 8.59z" opacity={0.4} />
-        <path fill="currentColor" d="M11.8 7.8a1 1 0 0 1 1.4 0l3 3a1 1 0 1 1-1.4 1.4l-3-3a1 1 0 0 1 0-1.4M20 1a3 3 0 1 1 0 6 3 3 0 0 1 0-6" />
+      <path d="m11.74 9.56 2.7 2.7.03.02-.58 3.48a1 1 0 0 1-.51.72l-9.9 5.4a1 1 0 0 1-1.36-1.36l5.4-9.9.06-.1a1 1 0 0 1 .66-.4l3.48-.59zM16.64 5.94a2.8 2.8 0 0 0 1.42 1.41L15.2 10.2 13.8 8.79z" opacity={0.4} />
+        <path fill="currentColor" d="M11.74 8.14a1 1 0 0 1 1.42 0l2.7 2.7a1 1 0 0 1-1.42 1.42l-2.7-2.7a1 1 0 0 1 0-1.42M19.2 2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6" />
     </IconBase>
   ))
 );

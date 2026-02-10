@@ -7,8 +7,8 @@ type TextStrikethroughBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextStrikethroughBoldDuotone = memo(
   forwardRef<SVGSVGElement, TextStrikethroughBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-strikethrough-bold-duotone" {...props}>
-      <path d="M17.74 13a5.5 5.5 0 0 1-4.24 9H7a1 1 0 1 1 0-2h6.5a3.5 3.5 0 1 0 0-7zM17 2a1 1 0 1 1 0 2h-5.5a3.5 3.5 0 0 0-.14 7h-4.1a5.5 5.5 0 0 1 4.25-9z" opacity={0.4} />
-        <path fill="currentColor" d="M22 11a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2z" />
+      <path d="M18 13a5 5 0 0 1-4 8H7a1 1 0 1 1 0-2h7a3 3 0 1 0 0-6zM17 3a1 1 0 1 1 0 2h-6a3 3 0 0 0 0 6H7a5 5 0 0 1 4-8z" opacity={0.4} />
+        <path fill="currentColor" d="M21 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
 );

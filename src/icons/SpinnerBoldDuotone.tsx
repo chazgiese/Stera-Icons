@@ -7,8 +7,8 @@ type SpinnerBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SpinnerBoldDuotone = memo(
   forwardRef<SVGSVGElement, SpinnerBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="spinner-bold-duotone" {...props}>
-      <path d="M6.34 16.25a1 1 0 0 1 1.41 1.41l-2.12 2.12a1 1 0 0 1-1.41-1.41zM16.24 16.25a1 1 0 0 1 1.41 0l2.12 2.12a1 1 0 0 1-1.4 1.41l-2.13-2.12a1 1 0 0 1 0-1.41M4.22 4.22a1 1 0 0 1 1.41 0l2.12 2.12a1 1 0 1 1-1.41 1.42L4.22 5.64a1 1 0 0 1 0-1.42M18.36 4.22a1 1 0 0 1 1.41 1.42l-2.12 2.12a1 1 0 0 1-1.41-1.42z" opacity={0.4} />
-        <path fill="currentColor" d="M12 18a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1M5 11a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zM22 11a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2zM12 1a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1" />
+      <path d="M6.84 15.75a1 1 0 1 1 1.4 1.41l-1.9 1.91a1 1 0 0 1-1.41-1.41zM15.74 15.75a1 1 0 0 1 1.42 0l1.9 1.91a1 1 0 0 1-1.4 1.41l-1.92-1.9a1 1 0 0 1 0-1.42M4.93 4.93a1 1 0 0 1 1.41 0l1.9 1.9a1 1 0 0 1-1.4 1.42l-1.91-1.9a1 1 0 0 1 0-1.42M17.65 4.93a1 1 0 0 1 1.42 1.41l-1.91 1.91a1 1 0 0 1-1.42-1.41z" opacity={0.4} />
+        <path fill="currentColor" d="M12 17.3a1 1 0 0 1 1 1V21a1 1 0 1 1-2 0v-2.7a1 1 0 0 1 1-1M5.7 11a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zM21 11a1 1 0 1 1 0 2h-2.7a1 1 0 0 1 0-2zM12 2a1 1 0 0 1 1 1v2.7a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

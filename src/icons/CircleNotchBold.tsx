@@ -7,7 +7,7 @@ type CircleNotchBoldProps = Omit<IconBaseProps, 'children'>;
 const CircleNotchBold = memo(
   forwardRef<SVGSVGElement, CircleNotchBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-notch-bold" {...props}>
-      <path fill="currentColor" d="M18.36 4.22a1 1 0 0 1 1.42 0 11 11 0 1 1-15.56 0 1 1 0 0 1 1.42 1.42 9 9 0 1 0 12.72 0 1 1 0 0 1 0-1.42" />
+      <path fill="currentColor" d="M17.66 4.93a1 1 0 0 1 1.41 0 10 10 0 1 1-14.14 0 1 1 0 0 1 1.41 1.41 8 8 0 1 0 11.32 0 1 1 0 0 1 0-1.41" />
     </IconBase>
   ))
 );

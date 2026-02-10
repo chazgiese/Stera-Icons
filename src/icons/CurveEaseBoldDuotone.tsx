@@ -7,10 +7,8 @@ type CurveEaseBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CurveEaseBoldDuotone = memo(
   forwardRef<SVGSVGElement, CurveEaseBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="curve-ease-bold-duotone" {...props}>
-      <path d="M10.94 18a1 1 0 1 1 0 2h-.44a1 1 0 1 1 0-2zM14 18a1 1 0 0 1 0 2h-.44a1 1 0 1 1 0-2zM10.54 4a1 1 0 0 1 0 2H10a1 1 0 0 1 0-2h.54M13.6 4a1 1 0 0 1 0 2h-.54a1 1 0 1 1 0-2h.54" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M19 16a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
-        <path fill="currentColor" d="M21 4a1 1 0 1 1 0 2c-4.04 0-6.4 3-8.7 6.55-1.1 1.7-2.22 3.54-3.46 4.93C7.58 18.88 6.04 20 4 20h-.09.05H3a1 1 0 0 1 0-2H4c1.21 0 2.25-.64 3.34-1.85 1.1-1.24 2.1-2.9 3.27-4.7C12.87 8 15.77 4 21 4" />
-        <path fill="currentColor" fillRule="evenodd" d="M5 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
+      <path d="M11.03 17a1 1 0 1 1 0 2H11a1 1 0 1 1 0-2zM14 17a1 1 0 0 1 0 2h-.03a1 1 0 1 1 0-2zM10.03 5a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2zM13 5a1 1 0 1 1 0 2h-.03a1 1 0 1 1 0-2z" opacity={0.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M19 15a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2M20 5a1 1 0 1 1 0 2c-3.54 0-5.6 2.53-7.65 5.56-.98 1.45-1.98 3.05-3.09 4.24C8.13 18.03 6.73 19 4.9 19H4a1 1 0 0 1 0-2h.9c1.04 0 1.95-.53 2.9-1.55.97-1.06 1.84-2.46 2.9-4.01C12.7 8.47 15.3 5 20 5M4.76 19h.02l-.03-.01zm-.21999999999999997-1.94h-.01zM5 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
     </IconBase>
   ))
 );

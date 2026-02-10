@@ -7,8 +7,8 @@ type ArrowSquareDownRightFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowSquareDownRightFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowSquareDownRightFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-square-down-right-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M13 2q2.05-.02 3.37.07c.9.07 1.65.23 2.35.58a6 6 0 0 1 2.63 2.63c.35.7.5 1.46.58 2.35q.09 1.32.07 3.37v2q.02 2.05-.07 3.37c-.07.9-.23 1.65-.58 2.35a6 6 0 0 1-2.63 2.63c-.7.35-1.46.5-2.35.58q-1.32.09-3.37.07h-2q-2.05.02-3.37-.07a6 6 0 0 1-2.35-.58 6 6 0 0 1-2.63-2.63 6 6 0 0 1-.58-2.35Q1.98 15.05 2 13v-2q-.02-2.05.07-3.37c.07-.9.23-1.65.58-2.35a6 6 0 0 1 2.63-2.63c.7-.35 1.46-.5 2.35-.58Q8.95 1.98 11 2zM8.7 7.3a1 1 0 1 0-1.4 1.4l6.29 6.3H9a1 1 0 0 0 0 2h7a1 1 0 0 0 1-1V9a1 1 0 0 0-2 0v4.59z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M8.7 7.3a1 1 0 1 0-1.4 1.4l6.29 6.3H9a1 1 0 1 0 0 2h7a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4.59z" />
+      <path fill="currentColor" fillRule="evenodd" d="M13.6 3q1.65-.02 2.7.06c.74.06 1.38.18 1.97.48a5 5 0 0 1 2.19 2.19c.3.6.42 1.23.48 1.96q.08 1.06.06 2.71v3.2q.02 1.65-.06 2.7a5 5 0 0 1-.48 1.97 5 5 0 0 1-2.19 2.19c-.6.3-1.23.42-1.96.48q-1.06.08-2.71.06h-3.2q-1.65.02-2.7-.06a5 5 0 0 1-1.97-.48 5 5 0 0 1-2.19-2.19c-.3-.6-.42-1.23-.48-1.96Q2.99 15.25 3 13.6v-3.2q-.02-1.65.06-2.7c.06-.74.18-1.38.48-1.97a5 5 0 0 1 2.19-2.19c.6-.3 1.23-.42 1.96-.48Q8.75 2.99 10.4 3zm1.23 5.17a1 1 0 0 0-1 1v3.24L9.88 8.46a1 1 0 1 0-1.42 1.42l3.95 3.95H9.17a1 1 0 0 0 0 2h5.66a1 1 0 0 0 1-1V9.17a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.83 8.17a1 1 0 0 1 1 1v5.66a1 1 0 0 1-1 1H9.17a1 1 0 1 1 0-2h3.24L8.46 9.88a1 1 0 1 1 1.42-1.42l3.95 3.95V9.17a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type CursorPointerBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CursorPointerBoldDuotone = memo(
   forwardRef<SVGSVGElement, CursorPointerBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-pointer-bold-duotone" {...props}>
-      <path fill="currentColor" d="M20.99 14.46A9 9 0 0 1 3.14 15.6l.04.1a1 1 0 0 0 1.92-.52A7 7 0 0 0 19 14v.1a1 1 0 0 0 2-.1z" opacity={.4} />
-        <path fill="currentColor" d="M10 1a3 3 0 0 1 3 3v2.17a3 3 0 0 1 3.53 1.22Q17.18 7 18 7a3 3 0 0 1 3 3v4a1 1 0 1 1-2 0v-4a1 1 0 1 0-2 0v1.5a1 1 0 1 1-2 0V9a1 1 0 1 0-2 0v2a1 1 0 1 1-2 0V4a1 1 0 1 0-2 0v9a1 1 0 0 1-1.86.5l-1.65-2.79a1 1 0 0 0-1.37-.37 1 1 0 0 0-.41 1.28l.04.09.07.13 1.22 3.12a1 1 0 1 1-1.86.73l-1.2-3.06A3 3 0 0 1 7 9.38V4a3 3 0 0 1 3-3" />
+      <path fill="currentColor" d="M5.83 14.82a6.2 6.2 0 0 0 12.3-.7l.01-.32a1 1 0 1 0 2 0 8.2 8.2 0 0 1-16.26 1.47l.03.09a1 1 0 0 0 1.92-.54" opacity={.4} />
+        <path fill="currentColor" d="M10.14 2a2.8 2.8 0 0 1 2.8 2.8v1.82a2.8 2.8 0 0 1 3.11 1.1q.59-.31 1.3-.32a2.8 2.8 0 0 1 2.8 2.8v3.6a1 1 0 0 1-2 0v-3.6a.8.8 0 0 0-1.6 0v1.35a1 1 0 0 1-2 0V9.3a.8.8 0 0 0-1.6-.08v1.88a1 1 0 0 1-2 0V4.8a.8.8 0 0 0-1.6 0v8.1a1 1 0 0 1-1.87.5L6 10.9v-.01a.8.8 0 0 0-1.1-.3.8.8 0 0 0-.3 1.1l.07.13 1.1 2.8a1 1 0 0 1-1.86.74l-1.08-2.77a2.8 2.8 0 0 1 4.51-3.22V4.8a2.8 2.8 0 0 1 2.8-2.8" />
     </IconBase>
   ))
 );

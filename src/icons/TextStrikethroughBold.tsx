@@ -7,7 +7,7 @@ type TextStrikethroughBoldProps = Omit<IconBaseProps, 'children'>;
 const TextStrikethroughBold = memo(
   forwardRef<SVGSVGElement, TextStrikethroughBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-strikethrough-bold" {...props}>
-      <path fill="currentColor" d="M17 2a1 1 0 1 1 0 2h-5.5a3.5 3.5 0 0 0-.14 7H22a1 1 0 1 1 0 2h-4.26a5.5 5.5 0 0 1-4.24 9H7a1 1 0 1 1 0-2h6.5a3.5 3.5 0 1 0 0-7H2a1 1 0 1 1 0-2h5.25a5.5 5.5 0 0 1 4.25-9z" />
+      <path fill="currentColor" d="M17 3a1 1 0 1 1 0 2h-6a3 3 0 0 0 0 6h10a1 1 0 1 1 0 2h-3a5 5 0 0 1-4 8H7a1 1 0 1 1 0-2h7a3 3 0 1 0 0-6H3a1 1 0 1 1 0-2h4a5 5 0 0 1 4-8z" />
     </IconBase>
   ))
 );

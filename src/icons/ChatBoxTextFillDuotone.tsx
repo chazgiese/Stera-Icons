@@ -7,8 +7,8 @@ type ChatBoxTextFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChatBoxTextFillDuotone = memo(
   forwardRef<SVGSVGElement, ChatBoxTextFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chat-box-text-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M17.2 2q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57q.05.82.04 2.05v3.8q.02 1.65-.06 2.7a5 5 0 0 1-.48 1.97 5 5 0 0 1-2.19 2.19c-.6.3-1.23.42-1.96.48q-1.06.08-2.71.06h-.3l-5.36 3.57c-.78.52-1.8.03-1.93-.86L8 21.53V19q-1.37.01-2.3-.06a5 5 0 0 1-1.97-.48 5 5 0 0 1-2.19-2.19c-.3-.6-.42-1.23-.48-1.96Q.98 13.25 1 11.6V7.8q-.01-1.23.04-2.05a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q5.57 2 6.8 2zM8 11.5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2zm0-4a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M12 11.5a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 7.5a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" fillRule="evenodd" d="M14.6 3q1.65-.02 2.7.06c.74.06 1.38.18 1.97.48a5 5 0 0 1 2.19 2.19c.3.6.42 1.23.48 1.96q.08 1.06.06 2.71v.6q.01 1.37-.04 2.26-.04.9-.34 1.65a5 5 0 0 1-2.7 2.7c-.52.22-1.05.3-1.66.35q-.8.05-1.96.04l-4.5 3q-.29.2-.55.35c-.17.09-.47.24-.84.21a1.5 1.5 0 0 1-1.1-.59c-.23-.3-.28-.63-.3-.81L8 19.5V18q-.72 0-1.26-.04a5 5 0 0 1-1.65-.34 5 5 0 0 1-2.7-2.7 5 5 0 0 1-.35-1.66Q1.99 12.37 2 11v-.6q-.02-1.65.06-2.7c.06-.74.18-1.38.48-1.97a5 5 0 0 1 2.19-2.19c.6-.3 1.23-.42 1.96-.48Q7.75 2.99 9.4 3zm-6.1 8.25a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2zm0-3.5a1 1 0 0 0 0 2h7a1 1 0 1 0 0-2z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12 11.25a1 1 0 1 1 0 2H8.5a1 1 0 1 1 0-2zM15.5 7.75a1 1 0 1 1 0 2h-7a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

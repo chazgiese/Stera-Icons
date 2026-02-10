@@ -7,7 +7,7 @@ type TextStrikethroughRegularProps = Omit<IconBaseProps, 'children'>;
 const TextStrikethroughRegular = memo(
   forwardRef<SVGSVGElement, TextStrikethroughRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-strikethrough" {...props}>
-      <path fill="currentColor" d="M17 2.25a.75.75 0 0 1 0 1.5h-5.5a3.75 3.75 0 0 0-.15 7.5H22a.75.75 0 0 1 0 1.5h-4.83a5.23 5.23 0 0 1-3.67 9H7a.75.75 0 0 1 0-1.5h6.5a3.75 3.75 0 1 0 0-7.5H2a.75.75 0 0 1 0-1.5h5.82a5.23 5.23 0 0 1 3.68-9z" />
+      <path fill="currentColor" d="M17 3.25a.75.75 0 0 1 0 1.5h-6a3.25 3.25 0 1 0 0 6.5h10a.75.75 0 0 1 0 1.5h-3.54a4.73 4.73 0 0 1-3.46 8H7a.75.75 0 0 1 0-1.5h7a3.25 3.25 0 0 0 0-6.5H3a.75.75 0 0 1 0-1.5h4.54a4.73 4.73 0 0 1 3.46-8z" />
     </IconBase>
   ))
 );

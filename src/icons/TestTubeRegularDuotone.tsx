@@ -7,8 +7,8 @@ type TestTubeRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TestTubeRegularDuotone = memo(
   forwardRef<SVGSVGElement, TestTubeRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="test-tube-duotone" {...props}>
-      <path fill="currentColor" d="M15.75 19a3.75 3.75 0 1 1-7.5 0V2.75h1.5V19a2.25 2.25 0 0 0 4.5 0V2.75h1.5z" opacity={.4} />
-        <path fill="currentColor" d="M16.5 1.25a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1 0-1.5z" />
+      <path fill="currentColor" d="M16.5 3.75a.75.75 0 0 0-.75.75V18a3.75 3.75 0 1 1-7.5 0V4.5a.75.75 0 0 0-.75-.75h2.25V18a2.25 2.25 0 0 0 4.5 0V3.75z" opacity={.4} />
+        <path fill="currentColor" d="M16.5 2.25a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))
 );

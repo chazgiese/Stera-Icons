@@ -7,8 +7,8 @@ type UserCircleBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const UserCircleBoldDuotone = memo(
   forwardRef<SVGSVGElement, UserCircleBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="user-circle-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M19.12 17.5a9 9 0 0 1-1.4 1.45 7 7 0 0 0-11.43 0q-.8-.64-1.41-1.45a9 9 0 0 1 3.72-2.84A4.99 4.99 0 0 1 12 6a5 5 0 0 1 3.4 8.66 9 9 0 0 1 3.72 2.84M12 8a3 3 0 1 0 0 6 3 3 0 0 0 0-6" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12 6.5a4.6 4.6 0 0 1 3.24 7.86 8 8 0 0 1 3.17 2.43q-.61.82-1.4 1.45a6.2 6.2 0 0 0-10.01 0q-.8-.64-1.41-1.45a8 8 0 0 1 3.17-2.42A4.59 4.59 0 0 1 12 6.5m0 2a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2" clipRule="evenodd" />
     </IconBase>
   ))
 );

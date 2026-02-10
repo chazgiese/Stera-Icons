@@ -7,8 +7,8 @@ type EmoteGrinBoldProps = Omit<IconBaseProps, 'children'>;
 const EmoteGrinBold = memo(
   forwardRef<SVGSVGElement, EmoteGrinBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="emote-grin-bold" {...props}>
-      <path fill="currentColor" d="M16 14a1 1 0 0 1 .8 1.6 6 6 0 0 1-9.6 0A1 1 0 0 1 8 14zM8.5 7.75a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5M15.5 7.75a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M15.75 13.5a1 1 0 0 1 .82 1.58A5.6 5.6 0 0 1 12 17.5a5.6 5.6 0 0 1-4.57-2.42 1 1 0 0 1 .82-1.58zM9 8.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M15 8.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

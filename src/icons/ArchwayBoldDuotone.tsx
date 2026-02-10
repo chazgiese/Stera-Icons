@@ -7,8 +7,8 @@ type ArchwayBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArchwayBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArchwayBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="archway-bold-duotone" {...props}>
-      <path fill="currentColor" d="M19.83 21.83A4 4 0 0 1 17 23H7a4 4 0 0 1-2.83-1.17L5.6 20.4A2 2 0 0 0 7 21h10a2 2 0 0 0 1.41-.59z" opacity={.4} />
-        <path fill="currentColor" d="M12 1a9 9 0 0 1 9 9v9c0 1.1-.45 2.1-1.17 2.83L18.4 20.4A2 2 0 0 0 19 19v-9a7 7 0 1 0-14 0v9a2 2 0 0 0 .59 1.41l-1.42 1.42A4 4 0 0 1 3 19v-9a9 9 0 0 1 9-9" />
+      <path fill="currentColor" d="M17.82 21.56c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H9.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4l.91-1.78c.16.08.38.15.82.18.45.04 1.03.04 1.89.04h4.4c.86 0 1.44 0 1.89-.04.44-.03.66-.1.82-.18z" opacity={.4} />
+        <path fill="currentColor" d="M12 2a8 8 0 0 1 8 8v6.2q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74l-.91-1.78a2 2 0 0 0 .87-.87c.08-.16.15-.38.18-.82.04-.45.04-1.03.04-1.89V10a6 6 0 0 0-12 0v6.2c0 .86 0 1.44.04 1.89.03.44.1.66.18.82q.3.57.87.87l-.9 1.78a4 4 0 0 1-1.75-1.74 4 4 0 0 1-.4-1.57Q4 17.43 4 16.2V10a8 8 0 0 1 8-8" />
     </IconBase>
   ))
 );

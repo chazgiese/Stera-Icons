@@ -7,8 +7,8 @@ type CirclePlaceholderRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CirclePlaceholderRegularDuotone = memo(
   forwardRef<SVGSVGElement, CirclePlaceholderRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-placeholder-duotone" {...props}>
-      <path d="M13.67 21.1q-.81.15-1.67.15h-.3L2.76 12.3l-.01-.3q0-.86.15-1.67zM17.6 19.36q-.61.47-1.3.83L3.81 7.69q.36-.68.83-1.29zM20.19 16.3q-.36.69-.83 1.3L6.4 4.63q.61-.47 1.3-.83zM12.3 2.76l8.94 8.94.01.3a9 9 0 0 1-.15 1.67L10.33 2.9A9 9 0 0 1 12 2.75z" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" />
+      <path d="M13.53 20.1a8 8 0 0 1-2 .14l-7.77-7.78a8 8 0 0 1 .13-2zM17.04 18.53q-.61.48-1.3.82L4.64 8.25q.36-.67.83-1.3zM19.35 15.74q-.34.7-.82 1.3L6.96 5.47q.6-.48 1.3-.82zM10.47 3.9a8 8 0 0 1 1.99-.14l7.78 7.78q.05 1-.13 2z" opacity={0.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M5.1 5.1a9.75 9.75 0 1 1 13.8 13.8A9.75 9.75 0 0 1 5.1 5.1m12.73 1.07A8.25 8.25 0 1 0 6.17 17.84 8.25 8.25 0 0 0 17.83 6.17" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ArrowCircleDownRightRegularProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleDownRightRegular = memo(
   forwardRef<SVGSVGElement, ArrowCircleDownRightRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-circle-down-right" {...props}>
-      <path fill="currentColor" d="M7.93 7.93c.3-.29.77-.29 1.06 0l5.8 5.8V8.46a.75.75 0 1 1 1.5 0v7.08a.75.75 0 0 1-.75.75H8.46a.75.75 0 0 1 0-1.5h5.26l-5.79-5.8a.75.75 0 0 1 0-1.06" />
-        <path fill="currentColor" fillRule="evenodd" d="M4.4 4.4a10.75 10.75 0 1 1 15.2 15.2A10.75 10.75 0 0 1 4.4 4.4m1.06 1.06a9.25 9.25 0 1 0 13.08 13.08A9.25 9.25 0 0 0 5.46 5.46" clipRule="evenodd" />
+      <path fill="currentColor" d="M14.83 8.42c.41 0 .75.34.75.75v5.66a.75.75 0 0 1-.75.75H9.17a.75.75 0 1 1 0-1.5h3.85L8.64 9.7A.75.75 0 0 1 9.7 8.64l4.38 4.38V9.17c0-.41.33-.75.75-.75" />
+        <path fill="currentColor" fillRule="evenodd" d="M5.1 5.1a9.75 9.75 0 1 1 13.8 13.8A9.75 9.75 0 0 1 5.1 5.1m12.73 1.07A8.25 8.25 0 1 0 6.17 17.84 8.25 8.25 0 0 0 17.83 6.17" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type ChartLineDescBoldProps = Omit<IconBaseProps, 'children'>;
 const ChartLineDescBold = memo(
   forwardRef<SVGSVGElement, ChartLineDescBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-line-desc-bold" {...props}>
-      <path fill="currentColor" d="M22 19a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2zM2.4 3.2a1 1 0 0 1 1.4.2l5.5 7.33 5.25-2.62a1 1 0 0 1 1.23.27l6 7.5a1 1 0 0 1-1.56 1.25l-5.5-6.87-5.27 2.63a1 1 0 0 1-1.25-.29l-6-8a1 1 0 0 1 .2-1.4" />
+      <path fill="currentColor" d="M21 18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zM3.36 4.23a1 1 0 0 1 1.4.13l4.86 5.82 4.64-2.1a1 1 0 0 1 1.04.14l.11.12 5.34 6a1 1 0 1 1-1.5 1.32l-4.84-5.45-4.67 2.1a1 1 0 0 1-1.17-.27l-5.34-6.4a1 1 0 0 1 .13-1.4" />
     </IconBase>
   ))
 );

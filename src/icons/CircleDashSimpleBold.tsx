@@ -7,7 +7,7 @@ type CircleDashSimpleBoldProps = Omit<IconBaseProps, 'children'>;
 const CircleDashSimpleBold = memo(
   forwardRef<SVGSVGElement, CircleDashSimpleBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-dash-simple-bold" {...props}>
-      <path fill="currentColor" d="M16.5 19.8a1 1 0 0 1 1 1.73 11 11 0 0 1-11 0 1 1 0 0 1 1-1.73 9 9 0 0 0 9 0M2.47 6.5a1 1 0 0 1 1.73 1 9 9 0 0 0 0 9 1 1 0 0 1-1.73 1 11 11 0 0 1 0-11M20.16 6.13a1 1 0 0 1 1.37.37 11 11 0 0 1 0 11 1 1 0 0 1-1.73-1 9 9 0 0 0 0-9 1 1 0 0 1 .36-1.37M12 1c2 0 3.88.54 5.5 1.47a1 1 0 0 1-1 1.73 9 9 0 0 0-9 0 1 1 0 0 1-1-1.73C8.12 1.54 10 1 12 1" />
+      <path fill="currentColor" d="M16 18.93a1 1 0 0 1 1 1.73 10 10 0 0 1-10 0 1 1 0 0 1 1-1.73 8 8 0 0 0 8 0M3.34 7a1 1 0 0 1 1.73 1 8 8 0 0 0 0 8 1 1 0 0 1-1.73 1 10 10 0 0 1 0-10M19.3 6.63a1 1 0 0 1 1.36.37 10 10 0 0 1 0 10 1 1 0 0 1-1.73-1 8 8 0 0 0 0-8 1 1 0 0 1 .36-1.37M12 2c1.82 0 3.53.49 5 1.34a1 1 0 0 1-1 1.73 8 8 0 0 0-8 0 1 1 0 0 1-1-1.73A10 10 0 0 1 12 2" />
     </IconBase>
   ))
 );

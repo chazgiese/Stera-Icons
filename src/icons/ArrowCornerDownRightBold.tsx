@@ -7,7 +7,7 @@ type ArrowCornerDownRightBoldProps = Omit<IconBaseProps, 'children'>;
 const ArrowCornerDownRightBold = memo(
   forwardRef<SVGSVGElement, ArrowCornerDownRightBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-corner-down-right-bold" {...props}>
-      <path fill="currentColor" d="M3 3a1 1 0 0 0-1 1v8a4 4 0 0 0 4 4h12.59l-3.3 3.3a1 1 0 1 0 1.42 1.4l5-5 .06-.07.1-.13v-.01a1 1 0 0 0-.16-1.2l-5-5a1 1 0 1 0-1.42 1.42L18.6 14H6a2 2 0 0 1-2-2V4a1 1 0 0 0-1-1" />
+      <path fill="currentColor" d="M5 4a1 1 0 0 1 1 1v8c0 1.1.9 2 2 2h9.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 .16 1.19l-.1.14-.06.08-4 4a1 1 0 1 1-1.42-1.42L17.6 17H8a4 4 0 0 1-4-4V5a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

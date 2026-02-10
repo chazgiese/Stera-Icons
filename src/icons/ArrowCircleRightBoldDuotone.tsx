@@ -7,8 +7,8 @@ type ArrowCircleRightBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleRightBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArrowCircleRightBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-circle-right-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M1 12a11 11 0 1 1 22 0 11 11 0 0 1-22 0m2 0a9 9 0 1 0 18 0 9 9 0 0 0-18 0" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M6 12a1 1 0 0 1 1-1h7.59l-3.3-3.3a1 1 0 1 1 1.42-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 1 1-1.42-1.4l3.3-3.3H7a1 1 0 0 1-1-1" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M11.3 7.3a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l2.29-2.3H8a1 1 0 0 1 0-2h5.59l-2.3-2.3a1 1 0 0 1 0-1.4" />
     </IconBase>
   ))
 );

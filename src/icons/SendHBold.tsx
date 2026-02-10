@@ -7,7 +7,7 @@ type SendHBoldProps = Omit<IconBaseProps, 'children'>;
 const SendHBold = memo(
   forwardRef<SVGSVGElement, SendHBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="send-h-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M2.03 4.98a2.25 2.25 0 0 1 2.98-3.1l16.2 8.1a2.25 2.25 0 0 1 0 4.03l-16.2 8.1a2.25 2.25 0 0 1-2.98-3.09L5.86 12zm1.93-1.33q-.07 0-.13.08a.3.3 0 0 0-.08.13q-.01.06.04.16L7.59 11H14a1 1 0 0 1 0 2H7.6l-3.81 6.98a.2.2 0 0 0-.04.16q.01.06.08.13.06.07.13.08.06.02.16-.03l16.2-8.1a.25.25 0 0 0 0-.44l-16.2-8.1a.2.2 0 0 0-.16-.03" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M2.86 5.66c-1-1.84.96-3.87 2.83-2.93l14.72 7.36a2.14 2.14 0 0 1 0 3.82L5.7 21.27a2.14 2.14 0 0 1-2.83-2.93L6.32 12zM4.7 4.5l-.07.04-.05.08.02.08L8.05 11H13a1 1 0 0 1 0 2H8.05L4.6 19.3l-.02.08q0 .03.05.08.03.04.07.04l.08-.01 14.73-7.37.06-.05.02-.07-.02-.07-.06-.05L4.79 4.5q-.06-.03-.08-.01" clipRule="evenodd" />
     </IconBase>
   ))
 );

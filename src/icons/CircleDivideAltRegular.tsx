@@ -7,7 +7,7 @@ type CircleDivideAltRegularProps = Omit<IconBaseProps, 'children'>;
 const CircleDivideAltRegular = memo(
   forwardRef<SVGSVGElement, CircleDivideAltRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-divide-alt" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m-9.22 11.5a9.25 9.25 0 0 0 18.44 0zm9.22-10a9.25 9.25 0 0 0-9.22 8.5h18.44A9.25 9.25 0 0 0 12 2.75" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m-8.21 10.5a8.25 8.25 0 0 0 16.42 0zm8.21-9c-4.3 0-7.83 3.3-8.21 7.5H20.2A8.25 8.25 0 0 0 12 3.75" clipRule="evenodd" />
     </IconBase>
   ))
 );

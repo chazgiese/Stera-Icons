@@ -7,7 +7,7 @@ type TallyMarksBoldProps = Omit<IconBaseProps, 'children'>;
 const TallyMarksBold = memo(
   forwardRef<SVGSVGElement, TallyMarksBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="tally-marks-bold" {...props}>
-      <path fill="currentColor" d="M6 3a1 1 0 0 0-1 1v11.03l-3.51 2.11a1 1 0 0 0 1.02 1.72L5 17.36V20a1 1 0 1 0 2 0v-3.84l2-1.2V20a1 1 0 1 0 2 0v-6.24l2-1.2V20a1 1 0 1 0 2 0v-8.63l2-1.2V20a1 1 0 1 0 2 0V8.97l3.52-2.11a1 1 0 0 0-1.03-1.72L19 6.64V4a1 1 0 0 0-2 0v3.83l-2 1.2V4a1 1 0 0 0-2 0v6.23l-2 1.2V4a1 1 0 0 0-2 0v8.63l-2 1.2V4a1 1 0 0 0-1-1" />
+      <path fill="currentColor" d="M18 4a1 1 0 0 1 1 1v1.55l1.48-.9a1 1 0 0 1 1.04 1.7L19 8.9V19a1 1 0 1 1-2 0v-8.88l-2 1.22V19a1 1 0 1 1-2 0v-6.44l-2 1.22V19a1 1 0 1 1-2 0v-4l-2 1.23V19a1 1 0 1 1-2 0v-1.55l-1.48.9a1 1 0 0 1-1.04-1.7L5 15.1V5a1 1 0 0 1 2 0v8.88l2-1.22V5a1 1 0 0 1 2 0v6.44l2-1.22V5a1 1 0 0 1 2 0v4l2-1.23V5a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type MailBadgeFillProps = Omit<IconBaseProps, 'children'>;
 const MailBadgeFill = memo(
   forwardRef<SVGSVGElement, MailBadgeFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="mail-badge-fill" {...props}>
-      <path fill="currentColor" d="m1.38 7.78 7.5 6a5 5 0 0 0 6.24 0l5.39-4.3A4.6 4.6 0 0 0 23 9.02V17a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V7.5z" />
-        <path fill="currentColor" d="M16.97 3a4.5 4.5 0 0 0 1.38 5.64l-4.48 3.58a3 3 0 0 1-3.74 0l-7.5-6-.02-.01-.01-.01-1.22-.91A4 4 0 0 1 5 3zM21 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6" />
+      <path fill="currentColor" d="M8.53 12.73a5.9 5.9 0 0 0 6.94 0l3.7-2.67A4.8 4.8 0 0 0 22 10v4.19q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H7.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57Q2 15.43 2 14.2V9.8q0-1.03.03-1.77z" />
+        <path fill="currentColor" d="M16 4a4.7 4.7 0 0 0 1.26 4.97L14.3 11.1a3.9 3.9 0 0 1-4.6 0L2.56 5.95a4 4 0 0 1 1.62-1.51c.49-.25 1-.35 1.57-.4Q6.57 4 7.8 4zM20.5 2.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6" />
     </IconBase>
   ))
 );

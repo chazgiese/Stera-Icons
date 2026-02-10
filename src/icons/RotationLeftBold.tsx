@@ -7,7 +7,7 @@ type RotationLeftBoldProps = Omit<IconBaseProps, 'children'>;
 const RotationLeftBold = memo(
   forwardRef<SVGSVGElement, RotationLeftBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="rotation-left-bold" {...props}>
-      <path d="M5.64 5.64a1 1 0 0 1 1.41 1.41A7 7 0 0 0 11.75 19h.84l-1.3-1.3a1 1 0 1 1 1.42-1.4l3 3a1 1 0 0 1 0 1.4l-3 3a1 1 0 1 1-1.42-1.4l1.3-1.3h-.9199999999999999A9 9 0 0 1 5.64 5.63M11.3.3a1 1 0 1 1 1.4 1.4L11.42 3h.9199999999999999a9 9 0 0 1 6.03 15.36 1 1 0 0 1-1.41-1.41 7 7 0 0 0-4.7-11.94L12 5h-.59l1.3 1.3a1 1 0 0 1-1.42 1.4l-3-3a1 1 0 0 1 0-1.4z" />
+      <path fill="currentColor" d="M5.82 6.92a1 1 0 0 1 1.55 1.27A6 6 0 0 0 12 18h.59l-1.3-1.3a1 1 0 0 1 1.42-1.4l3 3a1 1 0 0 1 0 1.4l-3 3a1 1 0 0 1-1.42-1.4l1.3-1.3h-.87a8 8 0 0 1-5.9-13.08M11.3 1.3a1 1 0 0 1 1.4 1.4L11.42 4h.87a8 8 0 0 1 5.88 13.1 1 1 0 0 1-1.54-1.28A6 6 0 0 0 12.22 6h-.8099999999999999l1.3 1.3a1 1 0 1 1-1.42 1.4l-3-3a1 1 0 0 1 0-1.4z" />
     </IconBase>
   ))
 );

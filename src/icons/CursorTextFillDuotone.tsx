@@ -7,8 +7,8 @@ type CursorTextFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CursorTextFillDuotone = memo(
   forwardRef<SVGSVGElement, CursorTextFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-text-fill-duotone" {...props}>
-      <path d="M13.5 17.5A2.5 2.5 0 0 0 16 20h1a1.5 1.5 0 0 1 0 3h-1c-1.58 0-3-.66-4-1.73a5.5 5.5 0 0 0 1.5-3.77M8 1c1.58 0 3 .66 4 1.73a5.5 5.5 0 0 0-1.5 3.77A2.5 2.5 0 0 0 8 4H7a1.5 1.5 0 1 1 0-3z" opacity={0.4} />
-        <path fill="currentColor" d="M17 1a1.5 1.5 0 0 1 0 3h-1a2.5 2.5 0 0 0-2.5 2.5v11A5.5 5.5 0 0 1 8 23H7a1.5 1.5 0 0 1 0-3h1a2.5 2.5 0 0 0 2.5-2.5v-11A5.5 5.5 0 0 1 16 1z" />
+      <path d="M13.5 17.5c0 .83.67 1.5 1.5 1.5h1a1.5 1.5 0 0 1 0 3h-1c-1.15 0-2.2-.43-3-1.15a4.5 4.5 0 0 0 1.5-3.35M9 2c1.15 0 2.2.43 3 1.15a4.5 4.5 0 0 0-1.5 3.35C10.5 5.67 9.83 5 9 5H8a1.5 1.5 0 1 1 0-3z" opacity={0.4} />
+        <path fill="currentColor" d="M16 2a1.5 1.5 0 0 1 0 3h-1c-.83 0-1.5.67-1.5 1.5v11A4.5 4.5 0 0 1 9 22H8a1.5 1.5 0 0 1 0-3h1c.83 0 1.5-.67 1.5-1.5v-11A4.5 4.5 0 0 1 15 2z" />
     </IconBase>
   ))
 );

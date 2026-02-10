@@ -7,8 +7,8 @@ type BellDotBoldProps = Omit<IconBaseProps, 'children'>;
 const BellDotBold = memo(
   forwardRef<SVGSVGElement, BellDotBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="bell-dot-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1q.48 0 .95.05a1 1 0 0 1-.2 1.99L12 3a7 7 0 0 0-7 7v2.45a3 3 0 0 1-.43 1.54l-.9 1.5A1 1 0 0 0 4.54 17h14.94a1 1 0 0 0 .86-1.51l-.9-1.5a3 3 0 0 1-.43-1.54v-.26a1 1 0 1 1 2 0v.26a1 1 0 0 0 .14.51l.9 1.5A3 3 0 0 1 19.47 19H16.9a5 5 0 0 1-9.8 0H4.53a3 3 0 0 1-2.57-4.54l.9-1.5a1 1 0 0 0 .14-.51V10a9 9 0 0 1 9-9M9.17 19a3 3 0 0 0 5.66 0z" clipRule="evenodd" />
-        <path fill="currentColor" d="M18 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8" />
+      <path fill="currentColor" fillRule="evenodd" d="M12.3 2a1 1 0 0 1-.09 2H12C9.28 4 7 6.33 7 9.3v.38a7 7 0 0 1-1.18 3.89l-.92 1.38a1 1 0 0 0 .84 1.55h12.52a1 1 0 0 0 .83-1.55l-.91-1.38a7 7 0 0 1-.78-1.55 1 1 0 0 1 1.89-.67 5 5 0 0 0 .55 1.1l.92 1.39a3 3 0 0 1-2.5 4.66H16.4a4.5 4.5 0 0 1-8.78 0H5.74a3 3 0 0 1-2.5-4.66l.92-1.38A5 5 0 0 0 5 9.68V9.3C5 5.31 8.09 2 12 2zM9.71 18.5a2.5 2.5 0 0 0 4.58 0z" clipRule="evenodd" />
+        <path fill="currentColor" d="M16.5 3a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
     </IconBase>
   ))
 );

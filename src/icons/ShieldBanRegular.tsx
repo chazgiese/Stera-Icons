@@ -7,7 +7,7 @@ type ShieldBanRegularProps = Omit<IconBaseProps, 'children'>;
 const ShieldBanRegular = memo(
   forwardRef<SVGSVGElement, ShieldBanRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-ban" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M11.74 1.3a.8.8 0 0 1 .52 0l8 3c.3.1.49.39.49.7v5.58c0 4.83-2.73 9.25-7.05 11.4l-1.36.7q-.34.15-.68 0l-1.36-.7a12.8 12.8 0 0 1-7.05-11.4V4.9l.04-.13v-.02a1 1 0 0 1 .16-.25v-.01l.03-.03.17-.12.05-.03.04-.01zm-6.99 9.28c0 4.27 2.4 8.16 6.22 10.07l1.03.51 1.03-.51a11 11 0 0 0 4.06-3.44L4.75 6.63zm.7-5.32L17.9 15.93a11 11 0 0 0 1.35-5.35V5.52L12 2.8z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M11.74 1.92a.8.8 0 0 1 .52 0l7.5 2.82c.3.1.49.38.49.7v5.23a12 12 0 0 1-6.63 10.74l-1.28.64q-.34.15-.68 0l-1.28-.64a12 12 0 0 1-6.63-10.74V5.43l.02-.11a.8.8 0 0 1 .47-.59zm-6.49 8.75a10.5 10.5 0 0 0 5.8 9.4l.95.47.95-.48c1.51-.76 2.8-1.86 3.76-3.18L5.25 7.06zm.7-4.98 11.57 9.9c.8-1.48 1.23-3.17 1.23-4.92V5.96L12 3.43z" clipRule="evenodd" />
     </IconBase>
   ))
 );

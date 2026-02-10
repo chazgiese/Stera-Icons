@@ -7,9 +7,9 @@ type GaugeDots66PercentBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GaugeDots66PercentBoldDuotone = memo(
   forwardRef<SVGSVGElement, GaugeDots66PercentBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="gauge-dots-66-percent-bold-duotone" {...props}>
-      <path d="M7.4 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M16.6 15.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M5.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M7.4 5.9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" opacity={0.4} />
-        <path fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" opacity={0.4} />
-        <path fill="currentColor" d="M16.36 6.24a1 1 0 0 1 1.4 1.4l-.01.02-.04.04-.11.16a574 574 0 0 1-4.13 5.5l-.06.05a2 2 0 0 1-2.82-2.82l.05-.06a105 105 0 0 1 3.15-2.39l1.78-1.32.57-.42.16-.11.04-.04z" />
+      <path d="M7.05 14.83a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M14.83 14.83a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M6.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M17.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M7.05 7.05a1.5 1.5 0 1 1 2.12 2.12 1.5 1.5 0 0 1-2.12-2.12M12 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" opacity={0.4} />
+        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" opacity={0.4} />
+        <path fill="currentColor" d="M15.75 6.89a1 1 0 0 1 1.32 1.44l-.04.04-.1.14-.33.5-1.08 1.54a60 60 0 0 1-2.1 2.86 2 2 0 1 1-2.78-2.88c.4-.34 1.7-1.26 2.82-2.05l2.03-1.42.14-.1.04-.02z" />
     </IconBase>
   ))
 );

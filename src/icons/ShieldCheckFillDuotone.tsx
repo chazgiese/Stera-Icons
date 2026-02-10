@@ -7,8 +7,9 @@ type ShieldCheckFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ShieldCheckFillDuotone = memo(
   forwardRef<SVGSVGElement, ShieldCheckFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-check-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M11.73 1.04a1 1 0 0 1 .62.02l8 3A1 1 0 0 1 21 5v5.58a13 13 0 0 1-7.19 11.63l-1.36.68a1 1 0 0 1-.9 0l-1.36-.68A13 13 0 0 1 3 10.58V5a1 1 0 0 1 .65-.94l8-3zm4.85 7.75a1 1 0 0 0-1.41 0l-4.69 4.69-1.55-2.08a1 1 0 0 0-1.6 1.2l1.7 2.26q.12.19.28.36c.1.12.27.28.52.4a1.5 1.5 0 0 0 1.57-.25l.34-.32 4.84-4.84a1 1 0 0 0 0-1.42" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M15.17 8.8a1 1 0 0 1 1.41 1.4l-4.85 4.85q-.15.17-.33.32a1.5 1.5 0 0 1-1.58.24c-.24-.1-.4-.27-.51-.39q-.15-.17-.29-.36l-1.7-2.26a1 1 0 1 1 1.6-1.2l1.56 2.08z" />
+      <path fill="currentColor" fillRule="evenodd" d="M18.5 6.13v4.54c0 3.88-2.2 7.43-5.67 9.17l-.83.42-.83-.42a10.3 10.3 0 0 1-5.67-9.17V6.13L12 3.7zm-2.77 3.19a1 1 0 0 0-1.41-.05l-3.47 3.26-1.07-1.34a1 1 0 1 0-1.56 1.25l1.2 1.5q.13.18.28.34.15.18.5.37.48.2.98.06c.25-.06.43-.19.55-.28l.33-.3 3.62-3.4a1 1 0 0 0 .05-1.41" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.32 9.27a1 1 0 1 1 1.36 1.46l-3.62 3.4-.33.3a1.5 1.5 0 0 1-1.52.22c-.24-.1-.4-.26-.51-.37q-.15-.17-.28-.33l-1.2-1.5a1 1 0 0 1 1.56-1.26l1.07 1.34z" />
+        <path fill="currentColor" fillRule="evenodd" d="M11.73 1.66a1 1 0 0 1 .62.03l7.5 2.81a1 1 0 0 1 .65.94v5.23c0 4.64-2.62 8.88-6.77 10.96l-1.28.64a1 1 0 0 1-.9 0l-1.28-.64A12.3 12.3 0 0 1 3.5 10.67V5.44a1 1 0 0 1 .65-.94l7.5-2.81zM5.5 6.13v4.54c0 3.88 2.2 7.43 5.67 9.17l.83.42.83-.42a10.3 10.3 0 0 0 5.67-9.17V6.13L12 3.7z" clipRule="evenodd" />
     </IconBase>
   ))
 );

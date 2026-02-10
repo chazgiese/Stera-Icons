@@ -7,8 +7,8 @@ type SkipForwardFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SkipForwardFillDuotone = memo(
   forwardRef<SVGSVGElement, SkipForwardFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="skip-forward-fill-duotone" {...props}>
-      <path fill="currentColor" d="M20 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1" opacity={.4} />
-        <path fill="currentColor" d="M4.86 2.84c.45-.04.84.13 1.12.28q.45.24 1.03.62l9.44 6.07q.51.32.87.6c.23.18.51.43.67.81a2 2 0 0 1 0 1.56c-.16.38-.44.63-.67.81q-.36.28-.87.6L7 20.26q-.59.38-1.03.62c-.28.15-.67.32-1.12.28a2 2 0 0 1-1.46-.8 2 2 0 0 1-.37-1.1q-.04-.49-.03-1.2V5.94q0-.7.03-1.2c.03-.32.1-.74.37-1.1a2 2 0 0 1 1.46-.8" />
+      <path fill="currentColor" d="M19.5 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1" opacity={.4} />
+        <path fill="currentColor" d="M5.55 3.87c.38.02.71.17.96.3q.45.26 1.03.66l7.02 4.67q.61.4 1.03.73c.24.19.5.43.67.76l.07.15.07.2c.15.5.13 1.04-.07 1.52-.17.4-.47.7-.74.91q-.42.33-1.03.73l-7.02 4.67q-.58.4-1.03.65c-.28.16-.67.34-1.13.3a2 2 0 0 1-1.47-.78 2 2 0 0 1-.38-1.11q-.04-.51-.03-1.22V7q0-.7.03-1.22c.03-.32.1-.74.38-1.1a2 2 0 0 1 1.47-.8z" />
     </IconBase>
   ))
 );

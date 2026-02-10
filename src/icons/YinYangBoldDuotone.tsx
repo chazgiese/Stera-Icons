@@ -7,8 +7,8 @@ type YinYangBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const YinYangBoldDuotone = memo(
   forwardRef<SVGSVGElement, YinYangBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="yin-yang-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1h.31A11 11 0 1 1 12 1m5.66 4A6 6 0 0 1 12 13a4 4 0 0 0-.21 8H12a9 9 0 0 0 5.66-16M12 3a9 9 0 0 0-5.66 16A6 6 0 0 1 12 11a4 4 0 0 0 .21-8z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M12 15.25a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5M12 5.25a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2h.29A10 10 0 1 1 12 2m5.3 4a5.5 5.5 0 0 1-5.3 7 3.5 3.5 0 1 0 0 7 8 8 0 0 0 5.3-14M12 4a8 8 0 0 0-5.3 14 5.5 5.5 0 0 1 5.3-7 3.5 3.5 0 1 0 0-7" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12 14.83a1.67 1.67 0 1 1 0 3.34 1.67 1.67 0 0 1 0-3.34M12 5.83a1.67 1.67 0 1 1 0 3.34 1.67 1.67 0 0 1 0-3.34" />
     </IconBase>
   ))
 );

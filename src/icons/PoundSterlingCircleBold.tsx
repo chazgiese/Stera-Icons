@@ -7,8 +7,8 @@ type PoundSterlingCircleBoldProps = Omit<IconBaseProps, 'children'>;
 const PoundSterlingCircleBold = memo(
   forwardRef<SVGSVGElement, PoundSterlingCircleBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="pound-sterling-circle-bold" {...props}>
-      <path fill="currentColor" d="M11.93 5.79a4.4 4.4 0 0 1 4.35 2.17 1 1 0 1 1-1.7 1.06c-.65-1.05-1.62-1.36-2.37-1.25-.75.1-1.21.6-1.21 1.27v1.75h2.14a1 1 0 0 1 0 2H11v1.76q-.02.68-.31 1.2H16a1 1 0 1 1 0 2H8a1 1 0 0 1-.46-1.89l.08-.03.23-.12q.24-.12.55-.34c.44-.34.6-.63.6-.82v-1.76H8a1 1 0 0 1 0-2h1V9.04c0-1.86 1.4-3.03 2.93-3.25" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M11.92 6.29c1.4-.21 2.98.44 3.94 2a1 1 0 0 1-1.72 1.04c-.54-.9-1.34-1.15-1.93-1.06-.6.08-.96.47-.96 1.04v1.48H13a1 1 0 0 1 0 2h-1.75v1.48q-.01.55-.22.98h4.47a1 1 0 1 1 0 2h-7a1 1 0 0 1-.4-1.92h.01l.04-.02a3 3 0 0 0 .61-.38c.38-.29.49-.53.49-.66v-1.48H8.5a1 1 0 0 1 0-2h.75V9.3a3 3 0 0 1 2.67-3.02" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

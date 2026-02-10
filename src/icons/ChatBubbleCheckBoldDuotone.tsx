@@ -7,8 +7,8 @@ type ChatBubbleCheckBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChatBubbleCheckBoldDuotone = memo(
   forwardRef<SVGSVGElement, ChatBubbleCheckBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chat-bubble-check-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1c5.96 0 11 4.32 11 9.89s-5.04 9.89-11 9.89q-1.73 0-3.3-.46l-3.2 1.6a2 2 0 0 1-2.83-2.27l.55-2.22.03-.1.01-.03v-.01c0-.09-.07-.43-.53-1.08A9 9 0 0 1 1 10.89C1 5.32 6.04 1 12 1m0 2c-5.08 0-9 3.64-9 7.89 0 1.52.5 2.95 1.36 4.16.8 1.14.97 1.97.88 2.54l-.05.25-.01.03-.01.03v.01l-.56 2.22 3.55-1.77.09-.04a1 1 0 0 1 .66-.02q1.45.46 3.09.48c5.08 0 9-3.64 9-7.9C21 6.65 17.08 3 12 3" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M15.17 7.8a1 1 0 1 1 1.41 1.4l-4.85 4.85q-.15.17-.33.32a1.5 1.5 0 0 1-1.58.24c-.24-.1-.41-.27-.51-.39q-.15-.17-.29-.36l-1.7-2.26a1 1 0 1 1 1.6-1.2l1.56 2.08z" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2c5.4 0 10 3.92 10 9s-4.6 9-10 9q-1.16 0-2.24-.23L6 21.27a2 2 0 0 1-2.72-2.15l.46-3.02-.02-.05A8.4 8.4 0 0 1 2 11c0-5.08 4.6-9 10-9m0 2c-4.53 0-8 3.24-8 7 0 1.41.48 2.73 1.31 3.84.32.43.5.98.4 1.56l-.46 3.02L9.3 17.8a1 1 0 0 1 .6-.04q1 .23 2.1.24c4.53 0 8-3.24 8-7s-3.47-7-8-7" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.8 8.05a1 1 0 0 1 1.4 1.4l-4.3 4.35q-.16.16-.34.31c-.12.1-.3.25-.57.32a1.5 1.5 0 0 1-1.53-.46l-.28-.37-1.48-1.98a1 1 0 0 1 1.6-1.2l1.34 1.8z" />
     </IconBase>
   ))
 );

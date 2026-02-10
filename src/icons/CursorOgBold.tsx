@@ -7,7 +7,7 @@ type CursorOgBoldProps = Omit<IconBaseProps, 'children'>;
 const CursorOgBold = memo(
   forwardRef<SVGSVGElement, CursorOgBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-og-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M6.59 1.54a1 1 0 0 1 1.07.16l12.76 11.24a1 1 0 0 1-.53 1.74l-3.84.52 1.92 4.24a1 1 0 0 1-.5 1.32l-3.64 1.65a1 1 0 0 1-1.33-.5l-1.91-4.24-2.93 2.54A1 1 0 0 1 6 19.46V2.45a1 1 0 0 1 .59-.91M8 17.26l2.29-1.98.09-.08a1 1 0 0 1 1.47.42l2.06 4.56 1.83-.83-2.06-4.55a1 1 0 0 1 .78-1.4l3-.41L8 4.66z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M6.59 2.09a1 1 0 0 1 1.07.16l12 10.62a1 1 0 0 1-.53 1.74l-3.53.48 1.77 3.94a1 1 0 0 1-.5 1.32l-3.43 1.56a1 1 0 0 1-1.32-.5l-1.77-3.94-2.69 2.35A1 1 0 0 1 6 19.07V3a1 1 0 0 1 .59-.91M8 16.87l2.05-1.79.1-.07a1 1 0 0 1 1.47.41l1.91 4.25 1.6-.73-1.9-4.25a1 1 0 0 1 .77-1.4l2.7-.37L8 5.22z" clipRule="evenodd" />
     </IconBase>
   ))
 );

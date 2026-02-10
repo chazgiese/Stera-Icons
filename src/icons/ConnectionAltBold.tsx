@@ -7,9 +7,9 @@ type ConnectionAltBoldProps = Omit<IconBaseProps, 'children'>;
 const ConnectionAltBold = memo(
   forwardRef<SVGSVGElement, ConnectionAltBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="connection-alt-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M6.5 13a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
-        <path fill="currentColor" fillRule="evenodd" d="M6.5 2A4.5 4.5 0 0 1 11 6.43c.07 4.65 1.92 6.5 6.57 6.57A4.5 4.5 0 1 1 13 17.57c-.07-4.65-1.92-6.5-6.57-6.57a4.5 4.5 0 0 1 .07-9m11 13a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M6.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
-        <path fill="currentColor" fillRule="evenodd" d="M17.5 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M7 12.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5m0 2a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
+        <path fill="currentColor" fillRule="evenodd" d="M7 2.75c2.28 0 4.14 1.8 4.25 4.05.2 4.2 1.74 5.76 5.95 5.95a4.25 4.25 0 1 1-4.45 4.45l-.02-.39c-.27-3.91-1.86-5.37-5.93-5.56a4.25 4.25 0 0 1 .2-8.5m10 12a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5m-10-10a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
+        <path fill="currentColor" fillRule="evenodd" d="M17 2.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5m0 2a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

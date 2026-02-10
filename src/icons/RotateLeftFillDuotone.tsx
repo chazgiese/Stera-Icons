@@ -7,8 +7,8 @@ type RotateLeftFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const RotateLeftFillDuotone = memo(
   forwardRef<SVGSVGElement, RotateLeftFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="rotate-left-fill-duotone" {...props}>
-      <path fill="currentColor" d="M12 4a9 9 0 1 1-9 9 1 1 0 1 1 2 0 7 7 0 1 0 7-7z" opacity={.4} />
-        <path fill="currentColor" d="M10.3.3A1 1 0 0 1 12 1v8a1 1 0 0 1-1.7.7l-4-4a1 1 0 0 1 0-1.4z" />
+      <path fill="currentColor" d="M12 5a8.5 8.5 0 1 1-8.5 8.5 1 1 0 1 1 2 0A6.5 6.5 0 1 0 12 7h-.5V5z" opacity={.4} />
+        <path fill="currentColor" d="M9.8 1.8a1 1 0 0 1 1.7.7v7a1 1 0 0 1-1.7.7L6.3 6.7a1 1 0 0 1 0-1.4z" />
     </IconBase>
   ))
 );

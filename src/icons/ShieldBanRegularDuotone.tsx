@@ -7,8 +7,8 @@ type ShieldBanRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ShieldBanRegularDuotone = memo(
   forwardRef<SVGSVGElement, ShieldBanRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-ban-duotone" {...props}>
-      <path fill="currentColor" d="M17.9 15.92q-.36.68-.8 1.29L4.74 6.63V5.52l.7-.26z" opacity={.4} />
-        <path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="m4 5 8-3 8 3v5.58a12 12 0 0 1-6.63 10.74L12 22l-1.37-.68A12 12 0 0 1 4 10.58z" />
+      <path fill="currentColor" fillRule="evenodd" d="M11.74 1.92a.8.8 0 0 1 .52 0l7.5 2.82c.3.1.49.38.49.7v5.23a12 12 0 0 1-6.63 10.74l-1.28.64q-.34.15-.68 0l-1.28-.64a12 12 0 0 1-6.63-10.74V5.44c0-.32.2-.6.49-.7zM5.25 5.96v4.71a10.5 10.5 0 0 0 5.8 9.4l.95.47.95-.48a10.5 10.5 0 0 0 5.8-9.39V5.96L12 3.43z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M17.52 15.6q-.36.68-.8 1.28L5.24 7.06v-1.1l.7-.27z" />
     </IconBase>
   ))
 );

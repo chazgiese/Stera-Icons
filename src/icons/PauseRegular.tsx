@@ -7,7 +7,7 @@ type PauseRegularProps = Omit<IconBaseProps, 'children'>;
 const PauseRegular = memo(
   forwardRef<SVGSVGElement, PauseRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="pause" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M8 2.25A2.75 2.75 0 0 1 10.75 5v14A2.75 2.75 0 0 1 8 21.75H6A2.75 2.75 0 0 1 3.25 19V5A2.75 2.75 0 0 1 6 2.25zm-2 1.5c-.69 0-1.25.56-1.25 1.25v14c0 .69.56 1.25 1.25 1.25h2c.69 0 1.25-.56 1.25-1.25V5c0-.69-.56-1.25-1.25-1.25zM18 2.25A2.75 2.75 0 0 1 20.75 5v14A2.75 2.75 0 0 1 18 21.75h-2A2.75 2.75 0 0 1 13.25 19V5A2.75 2.75 0 0 1 16 2.25zm-2 1.5c-.69 0-1.25.56-1.25 1.25v14c0 .69.56 1.25 1.25 1.25h2c.69 0 1.25-.56 1.25-1.25V5c0-.69-.56-1.25-1.25-1.25z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M8.75 2.75a2 2 0 0 1 2 2v14.5a2 2 0 0 1-2 2h-2.5a2 2 0 0 1-2-2V4.75c0-1.1.9-2 2-2zm-2.5 1.5a.5.5 0 0 0-.5.5v14.5c0 .28.22.5.5.5h2.5a.5.5 0 0 0 .5-.5V4.75a.5.5 0 0 0-.5-.5zM17.75 2.75a2 2 0 0 1 2 2v14.5a2 2 0 0 1-2 2h-2.5a2 2 0 0 1-2-2V4.75c0-1.1.9-2 2-2zm-2.5 1.5a.5.5 0 0 0-.5.5v14.5c0 .28.22.5.5.5h2.5a.5.5 0 0 0 .5-.5V4.75a.5.5 0 0 0-.5-.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

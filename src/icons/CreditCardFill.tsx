@@ -7,8 +7,8 @@ type CreditCardFillProps = Omit<IconBaseProps, 'children'>;
 const CreditCardFill = memo(
   forwardRef<SVGSVGElement, CreditCardFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="credit-card-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M23 15.2q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H6.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57Q1 16.43 1 15.2V10h22zM11 15a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2zm5 0a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clipRule="evenodd" />
-        <path fill="currentColor" d="M17.2 3q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57Q23 7.29 23 8H1q0-.72.04-1.25a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q5.57 3 6.8 3z" />
+      <path fill="currentColor" fillRule="evenodd" d="M22 14.2q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H7.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57Q2 15.43 2 14.2v-3.7h20zm-11.5.43a.88.88 0 0 0 0 1.74h1a.87.87 0 1 0 0-1.75zm4 0a.88.88 0 0 0 0 1.74h3a.87.87 0 1 0 0-1.75z" clipRule="evenodd" />
+        <path fill="currentColor" d="M16.2 4q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57l.03.75H2.01q0-.4.03-.75a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q6.57 4 7.8 4z" />
     </IconBase>
   ))
 );

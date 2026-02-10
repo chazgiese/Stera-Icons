@@ -7,7 +7,7 @@ type StarHalfRegularProps = Omit<IconBaseProps, 'children'>;
 const StarHalfRegular = memo(
   forwardRef<SVGSVGElement, StarHalfRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="star-half" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M10.79 2.04a1.32 1.32 0 0 1 2.37-.1l.05.1 2.37 5.49 5.97.55c1.15.1 1.62 1.53.75 2.3l-4.5 3.94 1.31 5.82c.26 1.14-.97 2-1.95 1.42L12 18.51l-5.16 3.05a1.32 1.32 0 0 1-1.95-1.42l1.31-5.82-4.5-3.94c-.87-.77-.4-2.2.75-2.3l5.97-.55zM12 17q.26 0 .51.1l.16.08 4.89 2.89-1.25-5.52c-.1-.47.05-.96.42-1.28l4.26-3.73-5.65-.52c-.48-.04-.9-.34-1.1-.79L12 3.02z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="m12 2.25.16.01c.39.05.75.27.95.66l.05.09 2.11 4.86 5.33.5c1.1.1 1.56 1.45.72 2.19l-4.02 3.5 1.18 5.15c.24 1.1-.94 1.91-1.87 1.36L12 17.87l-4.6 2.7c-.94.55-2.12-.26-1.88-1.36l1.18-5.16-4.02-3.5c-.84-.73-.38-2.09.72-2.19l5.33-.49 2.11-4.86.05-.1c.23-.44.67-.66 1.11-.66m0 14.08q.34 0 .64.17L16.9 19l-1.09-4.76c-.1-.45.06-.92.4-1.22l3.7-3.22-4.9-.45a1.3 1.3 0 0 1-1.04-.75L12 4.1z" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type NotebookLogFillProps = Omit<IconBaseProps, 'children'>;
 const NotebookLogFill = memo(
   forwardRef<SVGSVGElement, NotebookLogFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="notebook-log-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M15.2 1q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57q.05.82.04 2.05v10.4q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H8.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57A17 17 0 0 1 3 18h.5a1 1 0 1 0 0-2H3v-3h.5a1 1 0 1 0 0-2H3V8h.5a1 1 0 1 0 0-2H3q0-.72.04-1.25a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q7.57 1 8.8 1zM9 12a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zm0-4a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" clipRule="evenodd" />
-        <path fill="currentColor" d="M3 18h-.5a1 1 0 1 1 0-2H3zM3 13h-.5a1 1 0 1 1 0-2H3zM3 8h-.5a1 1 0 1 1 0-2H3z" />
+      <path fill="currentColor" fillRule="evenodd" d="M14.2 2q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57q.05.82.04 2.05v8.4q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H9.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57l-.03-.75H5a1 1 0 1 0 0-2H4V13h1a1 1 0 1 0 0-2H4V8.5h1a1 1 0 1 0 0-2h-.99q0-.4.03-.75a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q8.57 2 9.8 2zM9.5 12.13a.88.88 0 0 0 0 1.74H12a.87.87 0 1 0 0-1.74zm0-4a.88.88 0 0 0 0 1.74h5a.88.88 0 0 0 0-1.74z" clipRule="evenodd" />
+        <path fill="currentColor" d="M4 17.5H3a1 1 0 1 1 0-2h1zM4 13H3a1 1 0 1 1 0-2h1zM4 8.5H3a1 1 0 1 1 0-2h1z" />
     </IconBase>
   ))
 );

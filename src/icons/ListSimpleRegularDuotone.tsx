@@ -7,8 +7,8 @@ type ListSimpleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ListSimpleRegularDuotone = memo(
   forwardRef<SVGSVGElement, ListSimpleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-simple-duotone" {...props}>
-      <path d="M22 14.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM22 7.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5z" opacity={0.4} />
-        <path fill="currentColor" d="M5 13.5c.28 0 .5.22.5.5v3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-3c0-.28.22-.5.5-.5zM5 6.5c.28 0 .5.22.5.5v3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7c0-.28.22-.5.5-.5z" />
+      <path d="M21 14.75a.75.75 0 0 1 0 1.5H10a.75.75 0 0 1 0-1.5zM21 7.75a.75.75 0 0 1 0 1.5H10a.75.75 0 0 1 0-1.5z" opacity={0.4} />
+        <path fill="currentColor" d="M6 13.25c.41 0 .75.34.75.75v3c0 .41-.34.75-.75.75H3a.75.75 0 0 1-.75-.75v-3c0-.41.34-.75.75-.75zM6 6.25c.41 0 .75.34.75.75v3c0 .41-.34.75-.75.75H3a.75.75 0 0 1-.75-.75V7c0-.41.34-.75.75-.75z" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type ListBoldProps = Omit<IconBaseProps, 'children'>;
 const ListBold = memo(
   forwardRef<SVGSVGElement, ListBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-bold" {...props}>
-      <path fill="currentColor" d="M4.1 16c.5.06.9.48.9 1v2.1a1 1 0 0 1-1 .9H2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2.1M22 17a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM4.1 10c.5.06.9.48.9 1v2.1a1 1 0 0 1-1 .9H2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2.1M22 11a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM4.1 4c.5.06.9.48.9 1v2.1A1 1 0 0 1 4 8H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h2.1M22 5a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M6 16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM20 17a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM6 10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM20 11a1 1 0 0 1 0 2H10a1 1 0 1 1 0-2zM6 4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM20 5a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

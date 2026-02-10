@@ -7,7 +7,7 @@ type WaveSquareBoldProps = Omit<IconBaseProps, 'children'>;
 const WaveSquareBold = memo(
   forwardRef<SVGSVGElement, WaveSquareBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="wave-square-bold" {...props}>
-      <path fill="currentColor" d="M10.75 3C11.99 3 13 4 13 5.25v13.5q.02.23.25.25h7.5q.23-.02.25-.25V12a1 1 0 1 1 2 0v6.75c0 1.24-1 2.25-2.25 2.25h-7.5C12.01 21 11 20 11 18.75V5.25a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25V12a1 1 0 0 1-2 0V5.25C1 4.01 2 3 3.25 3z" />
+      <path fill="currentColor" d="M10.75 4C11.99 4 13 5 13 6.25v11.5q.02.23.25.25h6.5q.23-.02.25-.25V12a1 1 0 1 1 2 0v5.75c0 1.24-1 2.25-2.25 2.25h-6.5C12.01 20 11 19 11 17.75V6.25a.25.25 0 0 0-.25-.25h-6.5a.25.25 0 0 0-.25.25V12a1 1 0 1 1-2 0V6.25C2 5.01 3 4 4.25 4z" />
     </IconBase>
   ))
 );

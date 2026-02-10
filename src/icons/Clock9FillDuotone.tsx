@@ -7,8 +7,8 @@ type Clock9FillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const Clock9FillDuotone = memo(
   forwardRef<SVGSVGElement, Clock9FillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="clock-9-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 4a1 1 0 0 0-1 1v5H8a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M12 5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H8a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 4a1 1 0 0 0-1 1v4H8a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M12 6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H8a1 1 0 1 1 0-2h3V7a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

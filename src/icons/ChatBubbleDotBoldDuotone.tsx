@@ -7,8 +7,8 @@ type ChatBubbleDotBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChatBubbleDotBoldDuotone = memo(
   forwardRef<SVGSVGElement, ChatBubbleDotBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chat-bubble-dot-bold-duotone" {...props}>
-      <path fill="currentColor" d="M12 1q.66 0 1.3.07a1 1 0 0 1-.2 1.99Q12.54 3 12 3c-5.08 0-9 3.64-9 7.89 0 1.52.5 2.95 1.36 4.16.8 1.14.97 1.97.88 2.54l-.05.25-.01.03-.01.03v.01l-.56 2.22 3.55-1.77.09-.04a1 1 0 0 1 .66-.02q1.45.46 3.09.48c5.08 0 9-3.64 9-7.9v-.1a1 1 0 0 1 2-.02v.13c0 5.57-5.04 9.89-11 9.89q-1.73 0-3.3-.46l-3.2 1.6a2 2 0 0 1-2.83-2.27l.55-2.22.03-.1.01-.03v-.01c0-.09-.07-.43-.53-1.08A9 9 0 0 1 1 10.89C1 5.32 6.04 1 12 1" opacity={.4} />
-        <path fill="currentColor" d="M19 1a4 4 0 1 1 0 8 4 4 0 0 1 0-8" />
+      <path fill="currentColor" d="M12 2q.87 0 1.7.13a1 1 0 1 1-.31 1.98Q12.71 4 12 4c-4.53 0-8 3.24-8 7 0 1.41.48 2.73 1.31 3.84.32.43.5.98.4 1.56l-.46 3.02L9.3 17.8a1 1 0 0 1 .6-.04q1 .23 2.1.24c4.53 0 8-3.24 8-7q0-.26-.02-.5a1 1 0 0 1 2-.17L22 11c0 5.08-4.6 9-10 9q-1.16 0-2.24-.23L6 21.27a2 2 0 0 1-2.72-2.15l.46-3.02-.02-.05A8.4 8.4 0 0 1 2 11c0-5.08 4.6-9 10-9" opacity={.4} />
+        <path fill="currentColor" d="M18.5 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ChartBarDescBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartBarDescBoldDuotone = memo(
   forwardRef<SVGSVGElement, ChartBarDescBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-bar-desc-bold-duotone" {...props}>
-      <path fill="currentColor" d="M4.25 3C3.01 3 2 4 2 5.25V19h2V5.25c0-.14.11-.25.25-.25h3.5c.14 0 .25.11.25.25V19h2V9.25q.02-.23.25-.25h3.5q.23.02.25.25V19h2v-5.75q.02-.23.25-.25h3.5q.23.02.25.25V19h2v-5.75c0-1.24-1-2.25-2.25-2.25h-3.5l-.25.01V9.25C16 8.01 15 7 13.75 7h-3.5l-.25.01V5.25C10 4.01 9 3 7.75 3z" opacity={.4} />
-        <path fill="currentColor" d="M2 19a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2z" />
+      <path fill="currentColor" d="M8.08 6c.14 0 .25.11.25.25V18h2V9.75c0-.14.12-.25.25-.25h2.84c.13 0 .25.11.25.25V18h2v-4.75q.01-.23.25-.25h2.83q.23.02.25.25V18h2v-4.75c0-1.24-1-2.25-2.25-2.25h-2.83l-.25.01V9.75c0-1.24-1.01-2.25-2.25-2.25h-2.84l-.25.01V6.25c0-1.24-1-2.25-2.25-2.25H5.25C4.01 4 3 5 3 6.25V18h2V6.25c0-.14.11-.25.25-.25z" opacity={.4} />
+        <path fill="currentColor" d="M3 18a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2z" />
     </IconBase>
   ))
 );

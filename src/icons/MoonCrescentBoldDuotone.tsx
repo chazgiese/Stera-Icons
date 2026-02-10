@@ -7,8 +7,8 @@ type MoonCrescentBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MoonCrescentBoldDuotone = memo(
   forwardRef<SVGSVGElement, MoonCrescentBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="moon-crescent-bold-duotone" {...props}>
-      <path fill="currentColor" d="M8.22 1.97a1 1 0 1 1 1.78.91 9 9 0 0 0 10.6 12.73 1 1 0 0 1 .58 1.92A11 11 0 0 1 8.22 1.97" opacity={.4} />
-        <path fill="currentColor" d="M21.77 17.05A11 11 0 1 1 8.8 1.47a1 1 0 0 0-.58.5q-.57 1.1-.89 2.33a9 9 0 1 0 11.4 13.67q1.26-.08 2.45-.44a1 1 0 0 0 .59-.48" />
+      <path d="M19.94 14.76a1 1 0 0 0-.66.55q-.42.9-1.04 1.69H18A10 10 0 0 1 8.21 4.95q.88-.46 1.84-.71a1 1 0 0 0 .67-.55 8 8 0 0 0 9.22 11.08M9.98 2.29" opacity={0.4} />
+        <path fill="currentColor" d="M9.57 2.3a1 1 0 1 1 .48 1.94 8 8 0 1 0 9.23 11.07 1 1 0 0 1 1.82.83A10 10 0 1 1 9.57 2.3" />
     </IconBase>
   ))
 );

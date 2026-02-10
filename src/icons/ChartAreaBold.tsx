@@ -7,7 +7,7 @@ type ChartAreaBoldProps = Omit<IconBaseProps, 'children'>;
 const ChartAreaBold = memo(
   forwardRef<SVGSVGElement, ChartAreaBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-area-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M21.8 4.3a1 1 0 0 1 1.7.7v12.75c0 1.24-1 2.25-2.25 2.25H1.5a1 1 0 0 1-.7-1.7l8-8 .07-.07a1 1 0 0 1 1.34.06L13 13.1zm-8.1 10.9a1 1 0 0 1-1.4 0l-2.8-2.79L3.91 18h17.34q.23-.02.25-.25V7.41z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M21.28 4.31A1 1 0 0 1 23 5v12.93c0 1.14-.93 2.07-2.07 2.07H2a1 1 0 0 1-.72-1.69l7.61-8 .08-.07a1 1 0 0 1 1.37.07l2.61 2.74zm-7.6 10.88a1 1 0 0 1-1.45 0l-2.61-2.74L4.33 18h16.6q.06 0 .07-.07V7.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

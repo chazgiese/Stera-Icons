@@ -7,8 +7,8 @@ type ArrowCircleDownLeftBoldProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleDownLeftBold = memo(
   forwardRef<SVGSVGElement, ArrowCircleDownLeftBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-circle-down-left-bold" {...props}>
-      <path fill="currentColor" d="M16.24 7.76a1 1 0 0 1 0 1.41l-5.36 5.37h4.66a1 1 0 1 1 0 2H8.46a1 1 0 0 1-1-1V8.46a1 1 0 1 1 2 0v4.66l5.37-5.36a1 1 0 0 1 1.41 0" />
-        <path fill="currentColor" fillRule="evenodd" d="M19.78 4.22A11 11 0 1 1 4.22 19.78 11 11 0 0 1 19.78 4.22m-1.42 1.42A9 9 0 1 0 5.64 18.36 9 9 0 0 0 18.36 5.64" clipRule="evenodd" />
+      <path fill="currentColor" d="M14.12 8.46a1 1 0 0 1 1.42 1.42l-3.95 3.95h3.24a1 1 0 0 1 0 2H9.17a1 1 0 0 1-1-1V9.17a1 1 0 0 1 2 0v3.24z" />
+        <path fill="currentColor" fillRule="evenodd" d="M4.93 4.93a10 10 0 1 1 14.14 14.14A10 10 0 0 1 4.93 4.93m12.73 1.41A8 8 0 1 0 6.34 17.66 8 8 0 0 0 17.66 6.34" clipRule="evenodd" />
     </IconBase>
   ))
 );

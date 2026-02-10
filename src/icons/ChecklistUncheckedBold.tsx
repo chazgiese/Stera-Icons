@@ -7,10 +7,10 @@ type ChecklistUncheckedBoldProps = Omit<IconBaseProps, 'children'>;
 const ChecklistUncheckedBold = memo(
   forwardRef<SVGSVGElement, ChecklistUncheckedBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="checklist-unchecked-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M5 13a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
-        <path fill="currentColor" d="M22 16a1 1 0 1 1 0 2H12a1 1 0 1 1 0-2z" />
-        <path fill="currentColor" fillRule="evenodd" d="M5 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
-        <path fill="currentColor" d="M22 6a1 1 0 1 1 0 2H12a1 1 0 1 1 0-2z" />
+      <path fill="currentColor" fillRule="evenodd" d="M6 13a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
+        <path fill="currentColor" d="M20 15a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2z" />
+        <path fill="currentColor" fillRule="evenodd" d="M6 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6m0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
+        <path fill="currentColor" d="M20 7a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
 );

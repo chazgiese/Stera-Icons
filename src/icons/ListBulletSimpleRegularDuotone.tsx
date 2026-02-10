@@ -7,8 +7,8 @@ type ListBulletSimpleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ListBulletSimpleRegularDuotone = memo(
   forwardRef<SVGSVGElement, ListBulletSimpleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-bullet-simple-duotone" {...props}>
-      <path d="M22 14.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5zM22 7.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5z" opacity={0.4} />
-        <path fill="currentColor" d="M3.5 13.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4M3.5 6.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path d="M21 14.75a.75.75 0 0 1 0 1.5H10a.75.75 0 0 1 0-1.5zM21 7.75a.75.75 0 0 1 0 1.5H10a.75.75 0 0 1 0-1.5z" opacity={0.4} />
+        <path fill="currentColor" d="M4.5 13.25a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5M4.5 6.25a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5" />
     </IconBase>
   ))
 );

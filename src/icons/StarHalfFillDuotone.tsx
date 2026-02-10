@@ -7,8 +7,8 @@ type StarHalfFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const StarHalfFillDuotone = memo(
   forwardRef<SVGSVGElement, StarHalfFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="star-half-fill-duotone" {...props}>
-      <path fill="currentColor" d="M17.03 21.78 12 18.81V1c.58 0 1.17.32 1.44.95l2.31 5.34 5.83.54a1.57 1.57 0 0 1 .88 2.74l-4.39 3.84 1.29 5.68a1.57 1.57 0 0 1-2.33 1.69" opacity={.4} />
-        <path fill="currentColor" d="M6.97 21.78 12 18.81V1c-.58 0-1.17.32-1.44.95L8.25 7.29l-5.83.54a1.57 1.57 0 0 0-.88 2.74l4.39 3.84-1.29 5.68a1.57 1.57 0 0 0 2.33 1.69" />
+      <path fill="currentColor" d="m12 18.16 4.48 2.63c1.12.66 2.54-.32 2.24-1.63l-1.14-5.02 3.9-3.4a1.5 1.5 0 0 0-.85-2.63l-5.19-.47L13.4 2.9l-.06-.11c-.28-.53-.8-.8-1.33-.8z" opacity={.4} />
+        <path fill="currentColor" d="m12 18.16-4.48 2.63c-1.12.66-2.54-.32-2.24-1.63l1.14-5.02-3.9-3.4a1.5 1.5 0 0 1 .85-2.63l5.19-.47L10.6 2.9l.06-.11c.28-.53.8-.8 1.33-.8z" />
     </IconBase>
   ))
 );

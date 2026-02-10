@@ -7,7 +7,7 @@ type BracketsSquareCircleFillProps = Omit<IconBaseProps, 'children'>;
 const BracketsSquareCircleFill = memo(
   forwardRef<SVGSVGElement, BracketsSquareCircleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="brackets-square-circle-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22M8.4 6.5a1.9 1.9 0 0 0-1.9 1.9v7.2c0 1.05.85 1.9 1.9 1.9H9a1 1 0 1 0 0-2h-.5v-7H9a1 1 0 1 0 0-2zm6.6 0a1 1 0 1 0 0 2h.5v7H15a1 1 0 1 0 0 2h.6a1.9 1.9 0 0 0 1.9-1.9V8.4a1.9 1.9 0 0 0-1.9-1.9z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M8.9 7.75c-.9 0-1.65.74-1.65 1.66v5.18c0 .92.74 1.66 1.66 1.66h.59a.75.75 0 0 0 0-1.5h-.6a.16.16 0 0 1-.15-.16V9.41q.01-.15.16-.16h.59a.75.75 0 0 0 0-1.5zm5.6 0a.75.75 0 0 0 0 1.5h.6q.13.01.15.16v5.18q-.01.15-.16.16h-.59a.75.75 0 0 0 0 1.5h.6c.9 0 1.65-.74 1.65-1.66V9.41c0-.92-.74-1.66-1.66-1.66z" clipRule="evenodd" />
     </IconBase>
   ))
 );

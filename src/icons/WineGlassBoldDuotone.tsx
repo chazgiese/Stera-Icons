@@ -7,9 +7,8 @@ type WineGlassBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const WineGlassBoldDuotone = memo(
   forwardRef<SVGSVGElement, WineGlassBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="wine-glass-bold-duotone" {...props}>
-      <path d="M16 21a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z" opacity={0.4} />
-        <path fillRule="evenodd" d="M17.56 1h.05l.18.04h.01l.03.02.2.09.03.02a1 1 0 0 1 .24.24l.03.03a1 1 0 0 1 .15.38l.01.04.02.1a22 22 0 0 1 .23 1.68C18.87 4.76 19 6.3 19 8A7 7 0 1 1 5 8a39 39 0 0 1 .5-6.05l.01-.1v-.03a1 1 0 0 1 .16-.38l.03-.03a1 1 0 0 1 .69-.4h.05L6.48 1h11.08M7.24 3.87A37 37 0 0 0 7 8a5 5 0 0 0 10 0 37 37 0 0 0-.36-5H7.36z" clipRule="evenodd" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M11 14.93V19a2 2 0 0 1-2 2h6a2 2 0 0 1-2-2v-4.07a7 7 0 0 1-2 0" clipRule="evenodd" />
+      <path fill="currentColor" d="M13 18c0 1.1.9 2 2 2h1.1a1 1 0 0 1-.1 2H8a1 1 0 1 1 0-2h1a2 2 0 0 0 2-2v-4.06a8 8 0 0 0 2 0z" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="m17.5 2 .16.01h.02l.07.02.03.01.16.06.02.01.06.03.02.02.05.03.04.03.02.02.05.05.03.03.03.03.04.05.02.02.05.1.1.26v.01l.01.03.08.4q.08.4.18 1.1c.13.94.26 2.24.26 3.68 0 3.48-3.31 6-7 6s-7-2.52-7-6a27 27 0 0 1 .52-5.18v-.03a1 1 0 0 1 .1-.27l.02-.03a1 1 0 0 1 .33-.34q.02 0 .05-.03l.03-.01.04-.02.08-.04h.03l.06-.02.16-.03H17.5M7.33 4A23 23 0 0 0 7 8c0 2.05 2.06 4 5 4s5-1.95 5-4a25 25 0 0 0-.33-4z" clipRule="evenodd" />
     </IconBase>
   ))
 );

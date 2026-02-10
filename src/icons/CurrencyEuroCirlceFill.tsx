@@ -7,7 +7,7 @@ type CurrencyEuroCirlceFillProps = Omit<IconBaseProps, 'children'>;
 const CurrencyEuroCirlceFill = memo(
   forwardRef<SVGSVGElement, CurrencyEuroCirlceFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="currency-euro-cirlce-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m1.5 5c-1.51 0-2.95.34-4 1.39A5 5 0 0 0 8.32 9.5H7.5a1 1 0 1 0 0 2h.51a12 12 0 0 0 0 1H7.5a1 1 0 1 0 0 2h.81q.37 1.27 1.2 2.11C10.55 17.66 11.99 18 13.5 18H15a1 1 0 1 0 0-2h-1.5c-1.25 0-2.06-.28-2.58-.8q-.27-.26-.48-.7H13a1 1 0 1 0 0-2h-2.99a10 10 0 0 1 0-1H13a1 1 0 1 0 0-2h-2.56q.21-.44.48-.7c.52-.52 1.33-.8 2.58-.8H15a1 1 0 1 0 0-2z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m1.25 4.63c-1.46 0-2.73.29-3.58 1.29a4 4 0 0 0-.87 1.96H8a.88.88 0 0 0 0 1.74h.63v.76H8a.88.88 0 0 0 0 1.74h.8q.22 1.17.87 1.96c.85 1 2.12 1.3 3.58 1.3h1.25a.88.88 0 0 0 0-1.75h-1.25c-1.29 0-1.9-.27-2.24-.68q-.24-.29-.4-.82h1.89a.88.88 0 0 0 0-1.76h-2.12v-.74h2.12a.88.88 0 0 0 0-1.76h-1.9q.17-.54.41-.82c.35-.4.95-.68 2.24-.68h1.25a.88.88 0 0 0 0-1.74z" clipRule="evenodd" />
     </IconBase>
   ))
 );

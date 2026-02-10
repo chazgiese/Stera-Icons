@@ -7,10 +7,10 @@ type ChecklistUncheckedRegularProps = Omit<IconBaseProps, 'children'>;
 const ChecklistUncheckedRegular = memo(
   forwardRef<SVGSVGElement, ChecklistUncheckedRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="checklist-unchecked" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M5 13.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
-        <path fill="currentColor" d="M22 16.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1 0-1.5z" />
-        <path fill="currentColor" fillRule="evenodd" d="M5 3.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5m0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" clipRule="evenodd" />
-        <path fill="currentColor" d="M22 6.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1 0-1.5z" />
+      <path fill="currentColor" fillRule="evenodd" d="M6 13.25a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5" clipRule="evenodd" />
+        <path fill="currentColor" d="M20 15.25a.75.75 0 0 1 0 1.5h-8a.75.75 0 0 1 0-1.5z" />
+        <path fill="currentColor" fillRule="evenodd" d="M6 5.25a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5" clipRule="evenodd" />
+        <path fill="currentColor" d="M20 7.25a.75.75 0 0 1 0 1.5h-8a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))
 );

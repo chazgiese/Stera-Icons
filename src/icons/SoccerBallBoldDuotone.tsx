@@ -7,8 +7,8 @@ type SoccerBallBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SoccerBallBoldDuotone = memo(
   forwardRef<SVGSVGElement, SoccerBallBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="soccer-ball-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="m20.93 10.87-.98-.82.37-1.49a9 9 0 0 0-1.46-2.39l-.87 3.47-2.27.73L13 8.04V5.55l2.77-1.73a9 9 0 0 0-2.58-.74L12 3.82l-1.19-.74q-1.36.18-2.58.74L11 5.55v2.49l-2.72 2.33L6 9.64l-.87-3.47a9 9 0 0 0-1.46 2.4l.37 1.48-.98.82a9 9 0 0 0 .05 2.58l2.27-1.91 2.37.77 1.1 2.56-1.4 1.93-3.21-.23q.71 1.2 1.74 2.13l1.26.09.45 1.12q1.18.64 2.53.92l-1.15-2.86L10.5 16h2.98l1.43 1.97-1.15 2.86q1.35-.28 2.53-.92l.45-1.12 1.26-.1a9 9 0 0 0 1.74-2.12l-3.2.23-1.4-1.93 1.09-2.56 2.37-.77 2.27 1.9a9 9 0 0 0 .05-2.57m-11.22.91.95 2.22h2.68l.95-2.22L12 9.82z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12.77 4.04q1.4.14 2.63.72L13 6.26v2.13l2.37 2.03 1.94-.63.75-3a8 8 0 0 1 1.45 2.45l-.24.97.63.53a8 8 0 0 1-.01 2.6l-1.96-1.64-2.04.66-.95 2.21 1.2 1.64 2.78-.2a8 8 0 0 1-1.8 2.14l-.78.05-.27.69q-1.18.7-2.55.96l1-2.46-1.23-1.69h-2.58l-1.23 1.69 1 2.46a8 8 0 0 1-2.55-.96l-.27-.69-.78-.05a8 8 0 0 1-1.8-2.13l2.79.2 1.19-1.65-.95-2.21-2.04-.66-1.96 1.64a8 8 0 0 1-.01-2.6l.63-.53-.24-.97a8 8 0 0 1 1.45-2.46l.75 3.01 1.94.63L11 8.4V6.25l-2.4-1.5q1.23-.57 2.63-.71l.77.48zm-2.71 7.8.8 1.86h2.28l.8-1.87L12 10.17z" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ChartLineXYRegularProps = Omit<IconBaseProps, 'children'>;
 const ChartLineXYRegular = memo(
   forwardRef<SVGSVGElement, ChartLineXYRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-line-x-y" {...props}>
-      <path fill="currentColor" d="M2 3a1 1 0 0 1 1 1v12.8c0 .58 0 .95.02 1.23.03.27.06.37.09.42a1 1 0 0 0 .44.44c.05.03.15.06.42.09.28.02.65.02 1.23.02H22a1 1 0 1 1 0 2H5.2q-.81 0-1.4-.03c-.4-.03-.78-.1-1.16-.3a3 3 0 0 1-1.31-1.3c-.2-.39-.27-.78-.3-1.17Q.99 17.6 1 16.8V4a1 1 0 0 1 1-1" />
-        <path fill="currentColor" d="M19.2 5.41a1 1 0 1 1 1.6 1.18l-4.66 6.4a1 1 0 0 1-1.3.28l-3.6-2-4.47 5.37a1 1 0 0 1-1.54-1.28l5-6a1 1 0 0 1 1.25-.23l3.56 1.97z" />
+      <path fill="currentColor" d="M3 4.25c.41 0 .75.34.75.75v10.8q0 .83.02 1.25c.03.29.07.43.12.52q.18.35.54.54c.1.05.23.1.52.12s.68.02 1.25.02H21a.75.75 0 0 1 0 1.5H6.2q-.82 0-1.37-.03a3 3 0 0 1-1.08-.27 2.8 2.8 0 0 1-1.2-1.2 3 3 0 0 1-.27-1.08q-.04-.55-.03-1.37V5c0-.41.34-.75.75-.75" />
+        <path fill="currentColor" d="M19.4 5.55a.75.75 0 0 1 1.2.9l-4.33 5.76a.75.75 0 0 1-.96.21l-3.5-1.88-4.24 4.95a.75.75 0 0 1-1.14-.98l4.64-5.4.1-.09a.8.8 0 0 1 .83-.08l3.45 1.85z" />
     </IconBase>
   ))
 );

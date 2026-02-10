@@ -7,8 +7,8 @@ type YinYangFillProps = Omit<IconBaseProps, 'children'>;
 const YinYangFill = memo(
   forwardRef<SVGSVGElement, YinYangFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="yin-yang-fill" {...props}>
-      <path fill="currentColor" d="M12 5.25a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 0 0-5.05 17l-.28-.6-.03-.08-.1-.26-.01-.04-.16-.61-.02-.07v-.08l-.05-.23v-.09l-.03-.26v-.06l-.01-.07-.01-.3A5.75 5.75 0 0 1 12 11.25a4.25 4.25 0 0 0 0-8.5m0 12.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 5.83a1.67 1.67 0 1 1 0 3.34 1.67 1.67 0 0 1 0-3.34" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2.25h.29l.21.01a9.75 9.75 0 0 1-.79 19.48h-.21A9.75 9.75 0 0 1 12 2.25m0 1.5a8.25 8.25 0 0 0-4.75 15l-.2-.5-.04-.1-.04-.15-.03-.12-.04-.14-.03-.14-.02-.1-.04-.2v-.05a5.25 5.25 0 0 1 5.19-6 3.75 3.75 0 0 0 0-7.5m0 11.07a1.68 1.68 0 1 0 0 3.35 1.68 1.68 0 0 0 0-3.35" clipRule="evenodd" />
     </IconBase>
   ))
 );

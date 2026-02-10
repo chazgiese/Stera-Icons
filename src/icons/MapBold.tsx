@@ -7,7 +7,7 @@ type MapBoldProps = Omit<IconBaseProps, 'children'>;
 const MapBold = memo(
   forwardRef<SVGSVGElement, MapBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="map-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="m8.72 3 .08.01.06.01.06.01.07.03.06.02.05.02.06.03h.01l.01.01 6.15 3.7 6.16-3.7A1 1 0 0 1 23 4v12a1 1 0 0 1-.49.86l-6.66 4h-.01l-.01.01-.04.02-.08.03-.03.01-.1.04-.06.01h-.05l-.08.02h-.11l-.08-.01-.05-.01-.07-.01-.1-.04h-.02l-.08-.04-.04-.02h-.01l-.01-.01-6.15-3.7-6.16 3.7A1 1 0 0 1 1 20V8a1 1 0 0 1 .49-.86l6.66-4h.01l.01-.01.07-.03.04-.02.06-.02.07-.03.07-.01.05-.01h.08L8.65 3h.07M3 8.57v9.66l4.67-2.8V5.77zm6.67 6.86 4.66 2.8V8.57l-4.66-2.8zm6.66-6.86v9.66l4.67-2.8V5.77z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M9.05 4h.08l.2.06q.03 0 .05.02l.12.06 5.5 3.2 5.5-3.2A1 1 0 0 1 22 5v10.5a1 1 0 0 1-.5.86l-6 3.5-.24.1-.08.02-.05.01h-.31l-.08-.02-.24-.1L9 16.65l-5.5 3.2A1 1 0 0 1 2 19V8.5a1 1 0 0 1 .5-.86l6-3.5.11-.06.06-.02.2-.05h.08L9 4zM4 9.07v8.19l4-2.34V6.74zm6 5.85 4 2.34V9.07l-4-2.33zm6-5.85v8.19l4-2.34V6.74z" clipRule="evenodd" />
     </IconBase>
   ))
 );

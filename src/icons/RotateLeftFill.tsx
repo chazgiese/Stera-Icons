@@ -7,7 +7,7 @@ type RotateLeftFillProps = Omit<IconBaseProps, 'children'>;
 const RotateLeftFill = memo(
   forwardRef<SVGSVGElement, RotateLeftFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="rotate-left-fill" {...props}>
-      <path fill="currentColor" d="M10.47.47a.75.75 0 0 1 1.28.53v3H12a9 9 0 1 1-9 9 1 1 0 0 1 2 0 7 7 0 1 0 7-7h-.25v3a.75.75 0 0 1-1.28.53l-4-4a.75.75 0 0 1 0-1.06z" />
+      <path fill="currentColor" d="M9.8 1.8a1 1 0 0 1 1.7.7V5h.5a8.5 8.5 0 1 1-8.5 8.5 1 1 0 1 1 2 0A6.5 6.5 0 1 0 12 7h-.5v2.5a1 1 0 0 1-1.7.7L6.3 6.7a1 1 0 0 1 0-1.4z" />
     </IconBase>
   ))
 );

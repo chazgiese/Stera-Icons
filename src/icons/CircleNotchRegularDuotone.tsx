@@ -7,8 +7,8 @@ type CircleNotchRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CircleNotchRegularDuotone = memo(
   forwardRef<SVGSVGElement, CircleNotchRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-notch-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12.53 1.26A10.8 10.8 0 0 1 19.6 4.4a.75.75 0 0 0-1.06 1.06 9.25 9.25 0 0 0-13.08 0A.75.75 0 0 0 4.4 4.4a10.8 10.8 0 0 1 7.07-3.14l.53-.01z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M18.54 4.4c.3-.3.77-.3 1.06 0a10.75 10.75 0 1 1-15.2 0 .75.75 0 0 1 1.06 1.06 9.25 9.25 0 1 0 13.08 0 .75.75 0 0 1 0-1.06" />
+      <path fill="currentColor" d="M12 2.25a9.8 9.8 0 0 1 6.9 2.86.75.75 0 0 0-1.07 1.06 8.25 8.25 0 0 0-11.66 0A.75.75 0 1 0 5.1 5.1 9.8 9.8 0 0 1 12 2.25" opacity={.4} />
+        <path fill="currentColor" d="M17.83 5.1c.3-.29.77-.29 1.06 0a9.75 9.75 0 1 1-13.78 0 .75.75 0 0 1 1.06 1.07 8.25 8.25 0 1 0 11.66 0 .75.75 0 0 1 0-1.06" />
     </IconBase>
   ))
 );

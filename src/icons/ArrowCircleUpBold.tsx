@@ -7,8 +7,8 @@ type ArrowCircleUpBoldProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleUpBold = memo(
   forwardRef<SVGSVGElement, ArrowCircleUpBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-circle-up-bold" {...props}>
-      <path fill="currentColor" d="M12 18a1 1 0 0 1-1-1V9.41l-3.3 3.3a1 1 0 1 1-1.4-1.42l5-5a1 1 0 0 1 1.4 0l5 5a1 1 0 1 1-1.4 1.42L13 9.4V17a1 1 0 0 1-1 1" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 23a11 11 0 1 1 0-22 11 11 0 0 1 0 22m0-2a9 9 0 1 0 0-18 9 9 0 0 0 0 18" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 7a1 1 0 0 1 .7.3l4 4a1 1 0 0 1-1.4 1.4L13 10.43V16a1 1 0 0 1-2 0v-5.59l-2.3 2.3a1 1 0 0 1-1.4-1.42l4-4A1 1 0 0 1 12 7" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

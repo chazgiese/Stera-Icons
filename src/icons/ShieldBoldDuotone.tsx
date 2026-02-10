@@ -7,8 +7,8 @@ type ShieldBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ShieldBoldDuotone = memo(
   forwardRef<SVGSVGElement, ShieldBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-bold-duotone" {...props}>
-      <path d="M11.73 1.04a1 1 0 0 1 .62.02l8 3A1 1 0 0 0 19 5v.7l-7-2.63-7 2.62V5a1 1 0 0 0-1.37-.93h.02l8-3zM3.22 4.38" opacity={0.4} />
-        <path fill="currentColor" d="M20 4a1 1 0 0 1 1 1v5.58a13 13 0 0 1-7.19 11.63l-1.36.68a1 1 0 0 1-.9 0l-1.36-.68A13 13 0 0 1 3 10.58V5a1 1 0 0 1 2 0v5.58a11 11 0 0 0 6.08 9.84l.92.46.92-.46A11 11 0 0 0 19 10.58V5a1 1 0 0 1 1-1" />
+      <path fill="currentColor" d="M11.73 1.66a1 1 0 0 1 .62.03l7.5 2.81h.01a1 1 0 0 0-1.36.94v.7L12 3.68 5.5 6.13v-.7a1 1 0 0 0-1.36-.92l7.5-2.82z" opacity={.4} />
+        <path fill="currentColor" d="M19.5 4.44a1 1 0 0 1 1 1v5.23c0 4.64-2.62 8.88-6.77 10.96l-1.28.64a1 1 0 0 1-.9 0l-1.28-.64A12.3 12.3 0 0 1 3.5 10.67V5.44a1 1 0 0 1 2 0v5.23c0 3.88 2.2 7.43 5.67 9.17l.83.42.83-.42a10.3 10.3 0 0 0 5.67-9.17V5.44a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

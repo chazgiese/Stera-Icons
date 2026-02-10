@@ -7,7 +7,7 @@ type TruckBoldProps = Omit<IconBaseProps, 'children'>;
 const TruckBold = memo(
   forwardRef<SVGSVGElement, TruckBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="truck-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M13 3a3 3 0 0 1 3 3h1.93c.65 0 1.27.28 1.7.77l2.63 3a3 3 0 0 1 .74 1.98v4c0 1.24-1 2.25-2.25 2.25h-.29a3.5 3.5 0 0 1-6.92 0h-3.08a3.5 3.5 0 0 1-6.93-.04A3 3 0 0 1 1 15V6a3 3 0 0 1 3-3zM7 16a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m10 0a1.5 1.5 0 0 0-1.5 1.5A1.5 1.5 0 1 0 17 16M4 5a1 1 0 0 0-1 1v9c0 .5.37.91.84.99a3.5 3.5 0 0 1 6.32.01h3.68l.16-.3V6a1 1 0 0 0-1-1zm12 9.15A3.5 3.5 0 0 1 20.16 16h.59q.23-.02.25-.25v-4a1 1 0 0 0-.25-.66l-2.63-3a.3.3 0 0 0-.19-.09H16z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 3.5a3 3 0 0 1 3 3h2.04c.53 0 1.05.2 1.46.54l2.45 2.1A3 3 0 0 1 22 11.42v3.83c0 1.24-1 2.25-2.25 2.25h-.29a3.5 3.5 0 0 1-6.92 0h-2.08a3.5 3.5 0 0 1-6.96-.4A3 3 0 0 1 2 14.5v-8a3 3 0 0 1 3-3zm-5 12a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m9 0a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 1 0 1.5-1.5M5 5.5a1 1 0 0 0-1 1v8a1 1 0 0 0 .13.5 3.5 3.5 0 0 1 6.03.5h2.68l.16-.3V6.5a1 1 0 0 0-1-1zm10 8.15a3.5 3.5 0 0 1 4.16 1.85h.59q.23-.02.25-.25v-3.83a1 1 0 0 0-.35-.76l-2.45-2.1a.3.3 0 0 0-.16-.06H15z" clipRule="evenodd" />
     </IconBase>
   ))
 );

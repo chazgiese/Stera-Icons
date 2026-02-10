@@ -7,7 +7,7 @@ type CurrencyEuroBoldProps = Omit<IconBaseProps, 'children'>;
 const CurrencyEuroBold = memo(
   forwardRef<SVGSVGElement, CurrencyEuroBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="currency-euro-bold" {...props}>
-      <path fill="currentColor" d="M18 2a1 1 0 1 1 0 2h-2.5c-2.15 0-3.7.52-4.74 1.65A6.6 6.6 0 0 0 9.26 9H16a1 1 0 1 1 0 2H9.03a20 20 0 0 0 0 2H16a1 1 0 1 1 0 2H9.25c.3 1.54.83 2.62 1.5 3.35C11.8 19.48 13.36 20 15.5 20H18a1 1 0 1 1 0 2h-2.5c-2.45 0-4.65-.6-6.21-2.29A9 9 0 0 1 7.22 15H4a1 1 0 1 1 0-2h3.02a23 23 0 0 1 0-2H4a1 1 0 1 1 0-2h3.22q.47-3 2.07-4.71C10.85 2.6 13.05 2 15.5 2z" />
+      <path fill="currentColor" d="M17 3a1 1 0 1 1 0 2h-2.25q-2.87-.01-4.2 1.43c-.54.58-.98 1.4-1.25 2.57H15a1 1 0 1 1 0 2H9.03a18 18 0 0 0 0 2H15a1 1 0 1 1 0 2H9.3a5.5 5.5 0 0 0 1.25 2.57Q11.9 19 14.75 19H17a1 1 0 1 1 0 2h-2.25c-2.22 0-4.23-.54-5.66-2.07A7.7 7.7 0 0 1 7.26 15H5a1 1 0 1 1 0-2h2.03a20 20 0 0 1 0-2H5a1 1 0 1 1 0-2h2.26a7.7 7.7 0 0 1 1.83-3.93C10.52 3.54 12.53 3 14.75 3z" />
     </IconBase>
   ))
 );

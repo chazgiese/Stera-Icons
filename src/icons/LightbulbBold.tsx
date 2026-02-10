@@ -7,7 +7,7 @@ type LightbulbBoldProps = Omit<IconBaseProps, 'children'>;
 const LightbulbBold = memo(
   forwardRef<SVGSVGElement, LightbulbBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="lightbulb-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a7 7 0 0 1 6.24 10.17q-.39.76-.8 1.47-.39.7-.73 1.4a6 6 0 0 0-.71 2.62V19a3 3 0 0 1-2.21 2.9 2 2 0 0 1-3.58 0A3 3 0 0 1 8 19v-2.34c0-.86-.28-1.71-.71-2.63a25 25 0 0 0-.74-1.4q-.4-.7-.79-1.46A7 7 0 0 1 12 1m-2 18a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2h-4zm2-16a5 5 0 0 0-4.46 7.27q.36.66.76 1.4.41.72.8 1.5.4.86.68 1.83h4.44q.27-.98.69-1.83.37-.78.79-1.5.41-.74.76-1.4.52-1.03.54-2.27a5 5 0 0 0-5-5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a6.5 6.5 0 0 1 5.26 10.32c-.87 1.2-1.51 2.2-1.51 3.25V18a3 3 0 0 1-1.92 2.8 2 2 0 0 1-3.67 0A3 3 0 0 1 8.25 18v-2.43c0-1.05-.64-2.06-1.51-3.25A6.5 6.5 0 0 1 12 2m-1.75 16a1 1 0 0 0 1 1h1.5a1 1 0 0 0 1-1v-1.5h-3.5zM12 4a4.5 4.5 0 0 0-3.64 7.14 10 10 0 0 1 1.76 3.36h3.76a10 10 0 0 1 1.76-3.36A4.5 4.5 0 0 0 12 4" clipRule="evenodd" />
     </IconBase>
   ))
 );

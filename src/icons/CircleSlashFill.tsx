@@ -7,7 +7,7 @@ type CircleSlashFillProps = Omit<IconBaseProps, 'children'>;
 const CircleSlashFill = memo(
   forwardRef<SVGSVGElement, CircleSlashFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-slash-fill" {...props}>
-      <path fill="currentColor" d="M19.04 20.45A11 11 0 0 1 3.54 4.96zM4.96 3.55a11 11 0 0 1 15.5 15.49z" />
+      <path fill="currentColor" d="M18.33 19.74A10 10 0 0 1 4.26 5.67zM5.67 4.26a10 10 0 0 1 14.07 14.07z" />
     </IconBase>
   ))
 );

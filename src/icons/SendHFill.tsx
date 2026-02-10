@@ -7,7 +7,7 @@ type SendHFillProps = Omit<IconBaseProps, 'children'>;
 const SendHFill = memo(
   forwardRef<SVGSVGElement, SendHFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="send-h-fill" {...props}>
-      <path fill="currentColor" d="M2.03 4.98a2.25 2.25 0 0 1 2.98-3.1l16.2 8.1a2.25 2.25 0 0 1 0 4.03l-16.2 8.1a2.25 2.25 0 0 1-2.98-3.09L5.32 13H14a1 1 0 0 0 0-2H5.32z" />
+      <path fill="currentColor" d="M2.86 5.66c-1-1.84.96-3.87 2.83-2.93l14.72 7.36a2.14 2.14 0 0 1 0 3.82L5.7 21.27a2.14 2.14 0 0 1-2.83-2.93L5.76 13H13a1 1 0 0 0 0-2H5.77z" />
     </IconBase>
   ))
 );

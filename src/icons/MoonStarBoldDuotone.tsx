@@ -7,8 +7,8 @@ type MoonStarBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MoonStarBoldDuotone = memo(
   forwardRef<SVGSVGElement, MoonStarBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="moon-star-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M8.82 1.47A1 1 0 0 1 10 2.88a9 9 0 0 0 10.6 12.73 1 1 0 0 1 1.18 1.42A11 11 0 1 1 8.82 1.47M7.33 4.3a9 9 0 1 0 11.4 13.67A10.97 10.97 0 0 1 7.32 4.3" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M18.21 1.94c.09-.28.5-.28.58 0l.14.47a4 4 0 0 0 2.66 2.66l.47.14a.3.3 0 0 1 0 .58l-.47.14a4 4 0 0 0-2.66 2.66l-.14.47a.3.3 0 0 1-.58 0l-.14-.47a4 4 0 0 0-2.66-2.66l-.47-.14c-.28-.09-.28-.49 0-.58l.47-.14a4 4 0 0 0 2.66-2.66z" />
+      <path fill="currentColor" fillRule="evenodd" d="M9.57 2.3a1 1 0 0 1 1.15 1.39 8 8 0 0 0 9.23 11.07 1 1 0 0 1 1.15 1.39A10 10 0 1 1 9.57 2.3M8.2 4.95A8 8 0 1 0 18.24 17H18A10 10 0 0 1 8.21 4.95" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M17.02 3.57a.5.5 0 0 1 .96 0l.26.86a2 2 0 0 0 1.33 1.33l.86.26a.5.5 0 0 1 0 .96l-.86.26a2 2 0 0 0-1.33 1.33l-.26.86a.5.5 0 0 1-.96 0l-.26-.86a2 2 0 0 0-1.33-1.33l-.86-.26a.5.5 0 0 1 0-.96l.86-.26a2 2 0 0 0 1.33-1.33z" />
     </IconBase>
   ))
 );

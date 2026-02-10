@@ -7,8 +7,8 @@ type SendVFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SendVFillDuotone = memo(
   forwardRef<SVGSVGElement, SendVFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="send-v-fill-duotone" {...props}>
-      <path fill="currentColor" d="M9.99 2.79a2.25 2.25 0 0 1 4.02 0l8.1 16.2a2.25 2.25 0 0 1-3.09 2.98L13 18.69V10a1 1 0 0 0-2 0v8.68l-6.02 3.29a2.25 2.25 0 0 1-3.1-2.98z" opacity={.4} />
-        <path fill="currentColor" d="M12 9a1 1 0 0 1 1 1v8.69l-1-.55-1 .55V10a1 1 0 0 1 1-1" />
+      <path fill="currentColor" d="M5.66 21.23a2.14 2.14 0 0 1-2.93-2.83l7.36-14.72a2.14 2.14 0 0 1 3.82 0l7.36 14.72a2.14 2.14 0 0 1-2.93 2.83L13 18.33v-7.24a1 1 0 0 0-2 0v7.23z" opacity={.4} />
+        <path fill="currentColor" d="M11 11.1a1 1 0 1 1 2 0v7.22l-1-.54-1 .54z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type HashCircleRegularProps = Omit<IconBaseProps, 'children'>;
 const HashCircleRegular = memo(
   forwardRef<SVGSVGElement, HashCircleRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="hash-circle" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M14 6.25c.41 0 .75.34.75.75v2.25H17a.75.75 0 0 1 0 1.5h-2.25v2.5H17a.75.75 0 0 1 0 1.5h-2.25V17a.75.75 0 0 1-1.5 0v-2.25h-2.5V17a.75.75 0 0 1-1.5 0v-2.25H7a.75.75 0 0 1 0-1.5h2.25v-2.5H7a.75.75 0 0 1 0-1.5h2.25V7a.75.75 0 0 1 1.5 0v2.25h2.5V7c0-.41.34-.75.75-.75m-3.25 7h2.5v-2.5h-2.5z" clipRule="evenodd" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1.25a10.75 10.75 0 1 1 0 21.5 10.75 10.75 0 0 1 0-21.5m0 1.5a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M14 6.75c.41 0 .75.34.75.75v1.75h1.75a.75.75 0 0 1 0 1.5h-1.75v2.5h1.75a.75.75 0 0 1 0 1.5h-1.75v1.75a.75.75 0 0 1-1.5 0v-1.75h-2.5v1.75a.75.75 0 0 1-1.5 0v-1.75H7.5a.75.75 0 0 1 0-1.5h1.75v-2.5H7.5a.75.75 0 0 1 0-1.5h1.75V7.5a.75.75 0 0 1 1.5 0v1.75h2.5V7.5c0-.41.34-.75.75-.75m-3.25 6.5h2.5v-2.5h-2.5z" clipRule="evenodd" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

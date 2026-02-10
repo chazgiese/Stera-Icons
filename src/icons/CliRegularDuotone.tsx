@@ -7,8 +7,8 @@ type CliRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CliRegularDuotone = memo(
   forwardRef<SVGSVGElement, CliRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cli-duotone" {...props}>
-      <path fill="currentColor" d="M22 18.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1 0-1.5z" opacity={.4} />
-        <path fill="currentColor" d="M2.47 4.47c.3-.3.77-.3 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 0 1-1.06-1.06L8.94 12 2.47 5.53a.75.75 0 0 1 0-1.06" />
+      <path fill="currentColor" d="M20 17.75a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1 0-1.5z" opacity={.4} />
+        <path fill="currentColor" d="M3.47 4.97c.3-.3.77-.3 1.06 0l6 6c.3.3.3.77 0 1.06l-6 6a.75.75 0 0 1-1.06-1.06l5.47-5.47-5.47-5.47a.75.75 0 0 1 0-1.06" />
     </IconBase>
   ))
 );

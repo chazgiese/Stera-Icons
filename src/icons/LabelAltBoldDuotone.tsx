@@ -7,8 +7,8 @@ type LabelAltBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const LabelAltBoldDuotone = memo(
   forwardRef<SVGSVGElement, LabelAltBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="label-alt-bold-duotone" {...props}>
-      <path fill="currentColor" d="M20.75 3a2.25 2.25 0 0 1 1.9 3.44l-3.14 5.03a1 1 0 0 0 0 1.06l3.14 5.03a2.25 2.25 0 0 1-1.9 3.44H9a1 1 0 0 0 0-2h11.75c.2 0 .31-.22.2-.38l-3.14-5.03a3 3 0 0 1 0-3.18l3.15-5.03a.25.25 0 0 0-.21-.38H9a1 1 0 0 0 0-2z" opacity={.4} />
-        <path fill="currentColor" d="M9 3a1 1 0 0 1 0 2h-.78a3 3 0 0 0-2.55 1.41l-3.16 5.06a1 1 0 0 0 0 1.06l3.16 5.06A3 3 0 0 0 8.22 19H9a1 1 0 0 1 0 2h-.78a5 5 0 0 1-4.24-2.35L.8 13.59a3 3 0 0 1 0-3.18l3.17-5.06A5 5 0 0 1 8.22 3z" />
+      <path fill="currentColor" d="M20.06 4a2 2 0 0 1 1.62 3.16l-3.04 4.26a1 1 0 0 0 0 1.16l3.04 4.26A2 2 0 0 1 20.06 20H8.03a3 3 0 0 1-2.44-1.26l-1.9-2.66a1 1 0 1 0 1.62-1.16l1.9 2.66a1 1 0 0 0 .82.42h12.03l-3.04-4.26a3 3 0 0 1 0-3.48L20.06 6H8.03a1 1 0 0 0-.81.42l-1.9 2.66a1 1 0 1 0-1.63-1.16l1.9-2.66A3 3 0 0 1 8.03 4z" opacity={.4} />
+        <path fill="currentColor" d="M3.69 7.92A1 1 0 1 1 5.3 9.08l-1.67 2.34a1 1 0 0 0 0 1.16l1.67 2.34a1 1 0 1 1-1.62 1.16l-1.67-2.34a3 3 0 0 1 0-3.48z" />
     </IconBase>
   ))
 );

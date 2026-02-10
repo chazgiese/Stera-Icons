@@ -7,7 +7,7 @@ type BracketsCurlyCircleFillProps = Omit<IconBaseProps, 'children'>;
 const BracketsCurlyCircleFill = memo(
   forwardRef<SVGSVGElement, BracketsCurlyCircleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="brackets-curly-circle-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22M8.9 6.5A1.9 1.9 0 0 0 7 8.4v1.52c0 .51-.33.97-.82 1.13a1 1 0 0 0 0 1.9c.5.16.82.62.82 1.13v1.51c0 1.06.85 1.91 1.9 1.91h.6a1 1 0 1 0 0-2H9v-1.42c0-.78-.29-1.51-.77-2.08.48-.57.77-1.3.77-2.08V8.5h.5a1 1 0 1 0 0-2zm5.6 0a1 1 0 1 0 0 2h.5v1.42c0 .78.29 1.51.77 2.08-.48.57-.77 1.3-.77 2.08v1.42h-.5a1 1 0 1 0 0 2h.6a1.9 1.9 0 0 0 1.9-1.9v-1.52c0-.51.33-.97.82-1.13a1 1 0 0 0 0-1.9A1.2 1.2 0 0 1 17 9.92V8.4a1.9 1.9 0 0 0-1.9-1.91z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M8.9 7.25c-.91 0-1.65.74-1.65 1.64V10c0 .6-.4 1.12-.96 1.3a.75.75 0 0 0 0 1.43c.57.17.96.7.96 1.29v1.1c0 .9.74 1.64 1.64 1.64h.61a.75.75 0 0 0 0-1.5h-.6a.14.14 0 0 1-.15-.14V14c0-.77-.31-1.49-.83-2.01.52-.52.83-1.24.83-2V8.9q.01-.14.14-.15h.61a.75.75 0 0 0 0-1.5zm5.6 0a.75.75 0 0 0 0 1.5h.6q.14.01.15.14V10c0 .77.31 1.49.83 2.01a2.8 2.8 0 0 0-.83 2v1.1q-.01.14-.14.15h-.61a.75.75 0 0 0 0 1.5h.6c.92 0 1.65-.73 1.65-1.64V14c0-.6.4-1.12.96-1.3a.75.75 0 0 0 0-1.43c-.57-.17-.96-.7-.96-1.29V8.9c0-.9-.73-1.64-1.64-1.64z" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type SendHBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SendHBoldDuotone = memo(
   forwardRef<SVGSVGElement, SendHBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="send-h-bold-duotone" {...props}>
-      <path fill="currentColor" d="M14 11a1 1 0 1 1 0 2H7.6l.28-.52a1 1 0 0 0 0-.96L7.59 11z" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M2.03 4.98a2.25 2.25 0 0 1 2.98-3.1l16.2 8.1a2.25 2.25 0 0 1 0 4.03l-16.2 8.1a2.25 2.25 0 0 1-2.98-3.09L5.86 12zm1.93-1.33q-.07 0-.13.08a.3.3 0 0 0-.08.13q-.01.06.04.16l4.09 7.5a1 1 0 0 1 0 .96l-4.1 7.5a.2.2 0 0 0-.03.16q.01.06.08.13.06.07.13.08.06.02.16-.03l16.2-8.1a.25.25 0 0 0 0-.44l-16.2-8.1a.2.2 0 0 0-.16-.03" clipRule="evenodd" />
+      <path fill="currentColor" d="M13 11a1 1 0 1 1 0 2H8.05l.28-.52a1 1 0 0 0 0-.96L8.05 11z" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M2.86 5.66c-1-1.84.96-3.87 2.83-2.93l14.72 7.36a2.14 2.14 0 0 1 0 3.82L5.7 21.27a2.14 2.14 0 0 1-2.83-2.93L6.3 12zM4.7 4.5l-.07.04-.05.08.02.08 3.72 6.82a1 1 0 0 1 0 .96L4.61 19.3l-.02.08q0 .03.05.08.03.04.07.04l.08-.01 14.73-7.37.06-.05.02-.07-.02-.07-.06-.05L4.79 4.5q-.06-.03-.08-.01" clipRule="evenodd" />
     </IconBase>
   ))
 );

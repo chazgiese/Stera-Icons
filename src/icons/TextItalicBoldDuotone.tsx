@@ -7,8 +7,8 @@ type TextItalicBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextItalicBoldDuotone = memo(
   forwardRef<SVGSVGElement, TextItalicBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-italic-bold-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M17.16 4a2 2 0 0 0-1.9 1.37l-.19.57-4.23 12.7-.01.04a1 1 0 0 0 .94 1.32H6.84a2 2 0 0 0 1.9-1.37l4.28-12.86.15-.46A1 1 0 0 0 12.23 4z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M14 20a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 2a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M17.08 5a2 2 0 0 0-1.87 1.3l-.29.75-3.91 10.45-.06.15a1 1 0 0 0 .94 1.35H6.92a2 2 0 0 0 1.87-1.3l4.26-11.35A1 1 0 0 0 12.11 5z" opacity={.4} />
+        <path fill="currentColor" d="M14 19a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2zM19 3a1 1 0 1 1 0 2h-9a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

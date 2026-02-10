@@ -7,7 +7,7 @@ type CliBoldProps = Omit<IconBaseProps, 'children'>;
 const CliBold = memo(
   forwardRef<SVGSVGElement, CliBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="cli-bold" {...props}>
-      <path fill="currentColor" d="M2.3 4.3a1 1 0 0 1 1.4 0l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.4-1.4L8.58 12l-6.3-6.3a1 1 0 0 1 0-1.4M22 18a1 1 0 0 1 0 2H12a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" d="M20 17.5a1 1 0 0 1 0 2h-9a1 1 0 0 1 0-2zM3.3 4.8a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-1.4-1.4l5.29-5.3-5.3-5.3a1 1 0 0 1 0-1.4" />
     </IconBase>
   ))
 );

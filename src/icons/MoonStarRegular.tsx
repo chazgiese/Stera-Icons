@@ -7,8 +7,8 @@ type MoonStarRegularProps = Omit<IconBaseProps, 'children'>;
 const MoonStarRegular = memo(
   forwardRef<SVGSVGElement, MoonStarRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="moon-star" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M8.9 1.7a.75.75 0 0 1 .88 1.07 9.25 9.25 0 0 0 10.9 13.09.75.75 0 0 1 .88 1.06A10.75 10.75 0 1 1 8.89 1.7M7.73 3.8a9.25 9.25 0 1 0 11.24 14.28l.32-.4A10.74 10.74 0 0 1 7.63 4.17z" clipRule="evenodd" />
-        <path fill="currentColor" d="M18.21 1.94a.3.3 0 0 1 .58 0l.14.47a4 4 0 0 0 2.66 2.66l.47.14a.3.3 0 0 1 0 .58l-.47.14a4 4 0 0 0-2.66 2.66l-.14.47a.3.3 0 0 1-.58 0l-.14-.47a4 4 0 0 0-2.66-2.66l-.47-.14c-.28-.09-.28-.49 0-.58l.47-.14a4 4 0 0 0 2.66-2.66z" />
+      <path fill="currentColor" fillRule="evenodd" d="M9.63 2.54a.75.75 0 0 1 .86 1.04A8.25 8.25 0 0 0 20.01 15a.75.75 0 0 1 .86 1.04A9.75 9.75 0 1 1 9.63 2.54M8.58 4.5a8.25 8.25 0 1 0 10.18 12.23A9.72 9.72 0 0 1 8.58 4.49" clipRule="evenodd" />
+        <path fill="currentColor" d="M17.02 3.57a.5.5 0 0 1 .96 0l.26.86a2 2 0 0 0 1.33 1.33l.86.26a.5.5 0 0 1 0 .96l-.86.26a2 2 0 0 0-1.33 1.33l-.26.86a.5.5 0 0 1-.96 0l-.26-.86a2 2 0 0 0-1.33-1.33l-.86-.26a.5.5 0 0 1 0-.96l.86-.26a2 2 0 0 0 1.33-1.33z" />
     </IconBase>
   ))
 );

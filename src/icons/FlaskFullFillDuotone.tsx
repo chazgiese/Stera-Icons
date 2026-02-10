@@ -7,8 +7,8 @@ type FlaskFullFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlaskFullFillDuotone = memo(
   forwardRef<SVGSVGElement, FlaskFullFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="flask-full-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M15 8.85a3 3 0 0 0 .46 1.6l4.98 7.96A3 3 0 0 1 17.89 23H6.11a3 3 0 0 1-2.55-4.59l4.98-7.97A3 3 0 0 0 9 8.85V3h6zm.12 4.37a5 5 0 0 0-3.42.78 2.9 2.9 0 0 1-2.75.25l-.62-.27-3.21 5.52a1 1 0 0 0 .86 1.5h12.04a1 1 0 0 0 .86-1.5l-3.65-6.26z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M11.7 14a5 5 0 0 1 3.42-.78l.11.02 3.65 6.26a1 1 0 0 1-.86 1.5H5.98a1 1 0 0 1-.86-1.5l3.21-5.52.62.27c.9.38 1.94.29 2.75-.25M15.5 1a1 1 0 0 1 0 2h-7a1 1 0 0 1 0-2z" />
+      <path fill="currentColor" fillRule="evenodd" d="M14.75 8.98q0 .82.4 1.56l3.9 7.14c1 1.84-.33 4.07-2.42 4.07H7.37a2.75 2.75 0 0 1-2.41-4.07l3.9-7.14q.38-.74.39-1.56V4h5.5zm-.26 3.94a3 3 0 0 0-1.81.53 4.7 4.7 0 0 1-3.61.67.54.54 0 0 0-.6.25l-2.2 4.03c-.45.83.15 1.85 1.1 1.85h9.26c.95 0 1.55-1.02 1.1-1.85l-2.85-5.23a.5.5 0 0 0-.4-.25" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.49 12.92q.25.01.39.25l2.85 5.23c.45.83-.15 1.85-1.1 1.85H7.37a1.25 1.25 0 0 1-1.1-1.85l2.2-4.03c.11-.21.36-.3.6-.25 1.23.27 2.53.04 3.6-.67a3 3 0 0 1 1.82-.53M15 2a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

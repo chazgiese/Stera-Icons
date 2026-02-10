@@ -7,8 +7,8 @@ type WaveTriangleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const WaveTriangleRegularDuotone = memo(
   forwardRef<SVGSVGElement, WaveTriangleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="wave-triangle-duotone" {...props}>
-      <path fill="currentColor" d="M21.34 11.65a.75.75 0 1 1 1.32.7l-3.9 7.33a2 2 0 0 1-3.53 0l-3.9-7.33 1.33-.7 3.9 7.33c.19.35.7.35.88 0z" opacity={.4} />
-        <path fill="currentColor" d="M5.23 4.31a2 2 0 0 1 3.54 0l3.9 7.34-1.33.7-3.9-7.33a.5.5 0 0 0-.88 0l-3.9 7.33a.75.75 0 1 1-1.32-.7z" />
+      <path fill="currentColor" d="M20.37 11.6a.75.75 0 0 1 1.26.8l-4.5 7a.75.75 0 0 1-1.2.08l-.06-.08-4.5-7 1.26-.8 3.87 6.01z" opacity={.4} />
+        <path fill="currentColor" d="M7.5 4.25c.26 0 .5.13.63.34l4.5 7-1.26.81L7.5 6.38 3.63 12.4a.75.75 0 0 1-1.26-.8l4.5-7 .06-.08a.8.8 0 0 1 .57-.27" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type FlaskRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlaskRegularDuotone = memo(
   forwardRef<SVGSVGElement, FlaskRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="flask-duotone" {...props}>
-      <path fill="currentColor" d="M15.5 1.25a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1 0-1.5z" />
-        <path fill="currentColor" d="M15.25 8.92q0 .87.44 1.64l4.7 8.05a2.75 2.75 0 0 1-2.37 4.14H5.98a2.75 2.75 0 0 1-2.37-4.14l4.7-8.05q.44-.77.44-1.64V2.75h1.5v6.17c0 .84-.22 1.67-.65 2.4l-4.7 8.05c-.48.83.12 1.88 1.08 1.88h12.04c.96 0 1.56-1.05 1.08-1.88l-4.7-8.06a5 5 0 0 1-.65-2.4V2.76h1.5z" opacity={.4} />
+      <path fill="currentColor" d="M14.75 8.98q0 .82.4 1.56l3.9 7.14c1 1.84-.33 4.07-2.42 4.07H7.37a2.75 2.75 0 0 1-2.41-4.07l3.9-7.14q.38-.74.39-1.56V3.75h1.5v5.23q0 1.22-.58 2.27l-3.9 7.15c-.45.83.15 1.85 1.1 1.85h9.26c.95 0 1.55-1.02 1.1-1.85l-3.9-7.15a5 5 0 0 1-.58-2.27V3.75h1.5z" opacity={.4} />
+        <path fill="currentColor" d="M15 2.25a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))
 );

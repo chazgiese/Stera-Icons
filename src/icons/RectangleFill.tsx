@@ -7,7 +7,7 @@ type RectangleFillProps = Omit<IconBaseProps, 'children'>;
 const RectangleFill = memo(
   forwardRef<SVGSVGElement, RectangleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="rectangle-fill" {...props}>
-      <path fill="currentColor" d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5z" />
+      <path fill="currentColor" d="M15.4 3.5q1.44-.01 2.38.05a5 5 0 0 1 1.76.44 4.5 4.5 0 0 1 1.97 1.97q.39.8.44 1.76.06.94.05 2.38v3.8q.01 1.44-.05 2.38a5 5 0 0 1-.44 1.76 4.5 4.5 0 0 1-1.97 1.97 5 5 0 0 1-1.76.44q-.94.06-2.38.05H8.6q-1.44.01-2.38-.05A5 5 0 0 1 4.46 20a4.5 4.5 0 0 1-1.97-1.97 5 5 0 0 1-.44-1.76Q2 15.34 2 13.9v-3.8q-.01-1.44.05-2.38a5 5 0 0 1 .44-1.76 4.5 4.5 0 0 1 1.97-1.97 5 5 0 0 1 1.76-.44q.94-.06 2.38-.05z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type AtSignFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const AtSignFillDuotone = memo(
   forwardRef<SVGSVGElement, AtSignFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="at-sign-fill-duotone" {...props}>
-      <path fill="currentColor" d="M12 .5a11.5 11.5 0 0 1 11.44 12.65c-.28 2.88-2.04 4.88-4.32 5.07a1.5 1.5 0 0 0-.24-3c.44-.03 1.4-.5 1.58-2.37q.04-.42.04-.85a8.5 8.5 0 1 0-4.25 7.36 1.5 1.5 0 0 1 1.5 2.6A11.5 11.5 0 1 1 12 .5" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M16 6.5c.83 0 1.5.67 1.5 1.5v5c0 1.01.29 1.59.55 1.87q.4.4.83.36a1.5 1.5 0 1 1 .24 2.99 4 4 0 0 1-3.73-1.9 5.5 5.5 0 1 1-.67-9.1A1.5 1.5 0 0 1 16 6.5m-4 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 1.5a10.5 10.5 0 0 1 10.45 11.55 5.4 5.4 0 0 1-2.12 4c-1.17.81-2.64.94-3.9.3a1.5 1.5 0 0 0 1.5-2.6l-.14-.07c.22.11.52.12.83-.1.31-.2.73-.74.84-1.83q.04-.37.04-.75a7.5 7.5 0 1 0-5 7.07 1.5 1.5 0 0 1 1 2.83q-1.66.6-3.5.6a10.5 10.5 0 1 1 0-21" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M15.6 6.9c.83 0 1.5.67 1.5 1.5v4.5c0 1.22.47 1.65.7 1.78a1.5 1.5 0 0 1-1.41 2.65q-.83-.45-1.37-1.22a5.1 5.1 0 1 1-.62-8.6c.28-.37.71-.61 1.2-.61m-3.6 3a2.1 2.1 0 1 0 2.09 2.31l.01-.21-.01-.21A2.1 2.1 0 0 0 12 9.9" clipRule="evenodd" />
     </IconBase>
   ))
 );

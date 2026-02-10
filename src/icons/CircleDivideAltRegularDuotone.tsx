@@ -7,8 +7,8 @@ type CircleDivideAltRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CircleDivideAltRegularDuotone = memo(
   forwardRef<SVGSVGElement, CircleDivideAltRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-divide-alt-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M22.75 12a10.75 10.75 0 1 1-21.5 0 10.75 10.75 0 0 1 21.5 0m-1.5 0a9.25 9.25 0 1 0-18.5 0 9.25 9.25 0 0 0 18.5 0" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="m21.25 12-.03.75H2.78a9 9 0 0 1 0-1.5h18.44z" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+        <path fill="currentColor" d="M20.21 11.25a8 8 0 0 1 0 1.5H3.8a8 8 0 0 1 0-1.5z" opacity={.4} />
     </IconBase>
   ))
 );

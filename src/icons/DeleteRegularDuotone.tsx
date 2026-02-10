@@ -7,8 +7,8 @@ type DeleteRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const DeleteRegularDuotone = memo(
   forwardRef<SVGSVGElement, DeleteRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="delete-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M18 3.25A4.75 4.75 0 0 1 22.75 8v8A4.75 4.75 0 0 1 18 20.75H9.22a4.8 4.8 0 0 1-4.03-2.23l-3.16-5.06a2.8 2.8 0 0 1 0-2.92l3.16-5.06a4.8 4.8 0 0 1 4.03-2.23zm-8.78 1.5c-1.12 0-2.17.58-2.76 1.53L3.3 11.34c-.25.4-.25.92 0 1.32l3.16 5.06c.6.95 1.64 1.53 2.76 1.53H18c1.8 0 3.25-1.46 3.25-3.25V8c0-1.8-1.45-3.25-3.25-3.25z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M15.47 8.47a.75.75 0 1 1 1.06 1.06L14.06 12l2.47 2.47a.75.75 0 1 1-1.06 1.06L13 13.06l-2.47 2.47a.75.75 0 1 1-1.06-1.06L11.94 12 9.47 9.53a.75.75 0 1 1 1.06-1.06L13 10.94z" />
+      <path fill="currentColor" fillRule="evenodd" d="M17 4.25A4.75 4.75 0 0 1 21.75 9v6A4.75 4.75 0 0 1 17 19.75H9.06a4.8 4.8 0 0 1-3.87-1.99L2.22 13.6a2.75 2.75 0 0 1 0-3.2l2.97-4.16a4.8 4.8 0 0 1 3.87-1.99zm-7.94 1.5c-1.05 0-2.04.5-2.65 1.36l-2.97 4.16a1.25 1.25 0 0 0 0 1.46l2.97 4.16c.61.85 1.6 1.36 2.65 1.36H17c1.8 0 3.25-1.46 3.25-3.25V9c0-1.8-1.45-3.25-3.25-3.25z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M14.97 8.97a.75.75 0 1 1 1.06 1.06L14.06 12l1.97 1.97a.75.75 0 1 1-1.06 1.06L13 13.06l-1.97 1.97a.75.75 0 1 1-1.06-1.06L11.94 12l-1.97-1.97a.75.75 0 1 1 1.06-1.06L13 10.94z" />
     </IconBase>
   ))
 );

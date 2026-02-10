@@ -7,10 +7,9 @@ type TennisBallFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TennisBallFillDuotone = memo(
   forwardRef<SVGSVGElement, TennisBallFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="tennis-ball-fill-duotone" {...props}>
-      <path d="M4.62 3.84A10.96 10.96 0 0 1 19 3.51a10.98 10.98 0 0 0 0 16.98 10.96 10.96 0 0 1-14 0A10.98 10.98 0 0 0 5 3.5z" opacity={0.4} />
-        <path d="M3.57 4.93a8.98 8.98 0 0 1 0 14.14 10.95 10.95 0 0 1 0-14.14M20.43 4.93a10.95 10.95 0 0 1 0 14.14 8.98 8.98 0 0 1 0-14.14" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M20.43 4.93q-.65-.77-1.43-1.42a10.98 10.98 0 0 0 0 16.98q.78-.64 1.43-1.42a8.98 8.98 0 0 1 0-14.14m-16.86 0Q4.22 4.16 5 3.51A10.98 10.98 0 0 1 5 20.5q-.78-.64-1.43-1.42a8.98 8.98 0 0 0 0-14.14" clipRule="evenodd" />
-        <path fill="currentColor" fillRule="evenodd" d="M5 20.49A10.98 10.98 0 0 0 5 3.5q-.78.64-1.43 1.42a8.98 8.98 0 0 1 0 14.14q.65.77 1.43 1.42M19 3.51a10.98 10.98 0 0 0 0 16.98q.78-.64 1.43-1.42a8.98 8.98 0 0 1 0-14.14q-.65-.77-1.43-1.42" clipRule="evenodd" />
+      <path d="M12 2c2.37 0 4.54.82 6.25 2.2a9.98 9.98 0 0 0 0 15.6 9.96 9.96 0 0 1-12.5 0 9.98 9.98 0 0 0 0-15.6A10 10 0 0 1 12 2" opacity={0.4} />
+        <path d="M4.31 5.6a8 8 0 0 1 0 12.8 9.96 9.96 0 0 1 0-12.8M19.69 5.6a9.96 9.96 0 0 1 0 12.8 8 8 0 0 1 0-12.8" opacity={0.4} />
+        <path fill="currentColor" d="M5.75 4.2a9.98 9.98 0 0 1 0 15.6q-.79-.63-1.44-1.4a8 8 0 0 0 0-12.8q.64-.77 1.44-1.4M18.25 4.2q.79.63 1.44 1.4a8 8 0 0 0 0 12.8q-.64.77-1.44 1.4a9.98 9.98 0 0 1 0-15.6" />
     </IconBase>
   ))
 );

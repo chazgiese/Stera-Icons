@@ -7,8 +7,8 @@ type TreePalmFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TreePalmFillDuotone = memo(
   forwardRef<SVGSVGElement, TreePalmFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="tree-palm-fill-duotone" {...props}>
-      <path fill="currentColor" d="M14.28 1.82a6 6 0 0 1 7.47 1.15 1 1 0 0 1-.25 1.53l-3.88 2.25q.57.2 1.1.5a6 6 0 0 1 2.74 7.06 1 1 0 0 1-1.45.56L12 10.22l-8 4.65a1 1 0 0 1-1.46-.56 6 6 0 0 1 3.83-7.56L2.5 4.5a1 1 0 0 1-.25-1.53 6 6 0 0 1 7.47-1.15c1 .58 1.76 1.4 2.28 2.33a6 6 0 0 1 2.28-2.33" opacity={.4} />
-        <path fill="currentColor" d="M13.13 10.88c.11 2.7 0 6.36-2.21 11.51a1 1 0 1 1-1.84-.78 22.6 22.6 0 0 0 2.04-10.88l.88-.5z" />
+      <path fill="currentColor" d="M13.96 2.77a5.3 5.3 0 0 1 6.8 1.08 1 1 0 0 1-.25 1.51l-3.3 1.98q.42.15.83.4a5.7 5.7 0 0 1 2.48 6.56 1 1 0 0 1-1.47.56L12 10.64l-7.05 4.22a1 1 0 0 1-1.47-.56A5.67 5.67 0 0 1 6.8 7.34L3.5 5.36a1 1 0 0 1-.25-1.51 5.3 5.3 0 0 1 6.8-1.08c.84.5 1.5 1.2 1.96 1.98a5.6 5.6 0 0 1 1.96-1.98" opacity={.4} />
+        <path fill="currentColor" d="M13 11.23c.05 2.46-.18 5.72-2.08 10.16a1 1 0 0 1-1.84-.78 21 21 0 0 0 1.9-9.36l1.02-.6z" />
     </IconBase>
   ))
 );

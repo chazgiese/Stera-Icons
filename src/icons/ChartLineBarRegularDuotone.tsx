@@ -7,8 +7,8 @@ type ChartLineBarRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartLineBarRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChartLineBarRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-line-bar-duotone" {...props}>
-      <path d="M5 17.75c.41 0 .75.34.75.75V20a.75.75 0 0 1-1.5 0v-1.5c0-.41.34-.75.75-.75M9 13.75c.41 0 .75.34.75.75V20a.75.75 0 0 1-1.5 0v-5.5c0-.41.34-.75.75-.75M13 15.5c.41 0 .75.34.75.75V20a.75.75 0 0 1-1.5 0v-3.75c0-.41.34-.75.75-.75M17 12.75c.41 0 .75.34.75.75V20a.75.75 0 0 1-1.5 0v-6.5c0-.41.34-.75.75-.75M21 8.5c.41 0 .75.34.75.75V20a.75.75 0 0 1-1.5 0V9.25c0-.41.34-.75.75-.75" opacity={0.4} />
-        <path fill="currentColor" d="M21.46 3.48a.75.75 0 0 1 1.08 1.04l-9 9.5a.75.75 0 0 1-1.07.01L9.5 11.06l-6.97 6.97a.75.75 0 1 1-1.06-1.06l7.5-7.5.11-.1a.75.75 0 0 1 .95.1l2.95 2.95z" />
+      <path d="M5 17.5a1 1 0 0 1 1 1v.5a1 1 0 0 1-2 0v-.5a1 1 0 0 1 1-1M9 14a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1M13 15a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1M17 13a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1M21 9a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1" opacity={0.4} />
+        <path fill="currentColor" d="M20.31 4.28a1 1 0 1 1 1.38 1.44l-8.1 7.74a1 1 0 0 1-1.36.02l-2.48-2.24-6.08 5.5a1 1 0 0 1-1.34-1.48l6.75-6.11a1 1 0 0 1 1.34 0l2.46 2.22z" />
     </IconBase>
   ))
 );

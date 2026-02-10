@@ -7,8 +7,8 @@ type CursorTextAltBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CursorTextAltBoldDuotone = memo(
   forwardRef<SVGSVGElement, CursorTextAltBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-text-alt-bold-duotone" {...props}>
-      <path d="M13 18a3 3 0 0 0 3 3h1a1 1 0 1 1 0 2h-1a5 5 0 0 1-4-2c.63-.84 1-1.87 1-3M13 11h2a1 1 0 1 1 0 2h-2zM11 13H9a1 1 0 1 1 0-2h2zM8 1a5 5 0 0 1 4 2c-.63.84-1 1.87-1 3a3 3 0 0 0-3-3H7a1 1 0 0 1 0-2z" opacity={0.4} />
-        <path fill="currentColor" d="M17 1a1 1 0 1 1 0 2h-1a3 3 0 0 0-3 3v12a5 5 0 0 1-5 5H7a1 1 0 1 1 0-2h1a3 3 0 0 0 3-3V6a5 5 0 0 1 5-5z" />
+      <path d="M13 17.5c0 1.1.9 2 2 2h1a1 1 0 1 1 0 2h-1c-1.2 0-2.27-.53-3-1.36.62-.7 1-1.63 1-2.64M13 11h1.5a1 1 0 1 1 0 2H13zM11 13H9.5a1 1 0 1 1 0-2H11zM9 2.5c1.2 0 2.27.52 3 1.36-.62.7-1 1.63-1 2.64a2 2 0 0 0-2-2H8a1 1 0 0 1 0-2z" opacity={0.4} />
+        <path fill="currentColor" d="M16 2.5a1 1 0 1 1 0 2h-1a2 2 0 0 0-2 2v11a4 4 0 0 1-4 4H8a1 1 0 1 1 0-2h1a2 2 0 0 0 2-2v-11a4 4 0 0 1 4-4z" />
     </IconBase>
   ))
 );

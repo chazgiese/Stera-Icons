@@ -7,7 +7,7 @@ type ArrowCornerUpRightRegularProps = Omit<IconBaseProps, 'children'>;
 const ArrowCornerUpRightRegular = memo(
   forwardRef<SVGSVGElement, ArrowCornerUpRightRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-corner-up-right" {...props}>
-      <path fill="currentColor" d="M3 20.75a.75.75 0 0 1-.75-.75v-8A3.75 3.75 0 0 1 6 8.25h13.19l-3.72-3.72a.75.75 0 1 1 1.06-1.06l5 5 .1.11.05.11.02.05.03.09v.04l.01.04.01.09q0 .32-.22.53l-5 5a.75.75 0 1 1-1.06-1.06l3.72-3.72H6c-1.24 0-2.25 1-2.25 2.25v8c0 .41-.34.75-.75.75" />
+      <path fill="currentColor" d="M15.47 3.47c.3-.3.77-.3 1.06 0l4 4 .1.11a.75.75 0 0 1-.1.95l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H8c-1.24 0-2.25 1-2.25 2.25v8a.75.75 0 0 1-1.5 0v-8A3.75 3.75 0 0 1 8 7.25h10.19l-2.72-2.72a.75.75 0 0 1 0-1.06" />
     </IconBase>
   ))
 );

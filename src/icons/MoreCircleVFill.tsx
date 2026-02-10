@@ -7,7 +7,7 @@ type MoreCircleVFillProps = Omit<IconBaseProps, 'children'>;
 const MoreCircleVFill = memo(
   forwardRef<SVGSVGElement, MoreCircleVFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="more-circle-v-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0m-9.5-5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m0 5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m0 5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 13a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M12 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
     </IconBase>
   ))
 );

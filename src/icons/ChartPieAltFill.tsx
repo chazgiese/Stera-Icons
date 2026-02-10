@@ -7,8 +7,8 @@ type ChartPieAltFillProps = Omit<IconBaseProps, 'children'>;
 const ChartPieAltFill = memo(
   forwardRef<SVGSVGElement, ChartPieAltFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-pie-alt-fill" {...props}>
-      <path fill="currentColor" d="M7.6 1.92a1 1 0 1 1 .8 1.83 9 9 0 0 0 6.89 16.63 1 1 0 0 1 .73 1.86Q14.14 23 12 23A11 11 0 0 1 7.6 1.92" />
-        <path fill="currentColor" d="M21.62 9.1a.8.8 0 0 1 1.13.55 11 11 0 0 1-2.97 10.13 1 1 0 0 1-1.42 0l-6.12-6.13a.45.45 0 0 1 .14-.73zM12 1c3.89 0 7.3 2.02 9.26 5.06.27.43.07 1-.4 1.19l-9.24 3.83a.45.45 0 0 1-.62-.42V2a1 1 0 0 1 1-1" />
+      <path fill="currentColor" d="M8.11 2.79a1 1 0 0 1 .78 1.84 8 8 0 0 0 6.12 14.79 1 1 0 1 1 .75 1.85A10 10 0 0 1 8.11 2.79" />
+        <path fill="currentColor" d="M20.6 9.53a1 1 0 0 1 1.26.8 10 10 0 0 1-2.79 8.74 1 1 0 0 1-1.41 0l-4.84-4.83a1 1 0 0 1 .33-1.63l7.34-3.04zM12 2a10 10 0 0 1 8.16 4.21 1 1 0 0 1-.44 1.5l-7.34 3.05A1 1 0 0 1 11 9.83V3a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

@@ -7,9 +7,8 @@ type GlobeBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GlobeBoldDuotone = memo(
   forwardRef<SVGSVGElement, GlobeBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="globe-bold-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 3q1.16 0 2.24.28A16 16 0 0 1 16.8 11h4.14a9 9 0 0 1 0 2H16.8a16 16 0 0 1-2.56 7.72 9 9 0 0 1-4.48 0A16 16 0 0 1 7.2 13H3.06a9 9 0 0 1 0-2H7.2a16 16 0 0 1 2.56-7.72A9 9 0 0 1 12 3M9.2 13a14 14 0 0 0 2.8 7.43A14 14 0 0 0 14.8 13zM12 3.57A14 14 0 0 0 9.2 11h5.6A14 14 0 0 0 12 3.57" clipRule="evenodd" opacity={0.4} />
-        <path d="M11.95 1h.01M12.04 1" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 0 1 0 20 1 1 0 0 0 .73-1.69q-.39-.4-.73-.84a12.1 12.1 0 0 0 0-14.94q.34-.44.73-.84A1 1 0 0 0 12 2m4.54 11c-.16 2.33-.9 4.62-2.22 6.66A8 8 0 0 0 19.94 13zm-2.22-8.66A14 14 0 0 1 16.54 11h3.4a8 8 0 0 0-5.62-6.66" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a1 1 0 0 1 .73 1.69A12 12 0 0 0 9.46 11h5.08q.08 1 0 2H9.46c.22 2.65 1.3 5.24 3.27 7.31A1 1 0 0 1 12 22a10 10 0 0 1 0-20M4.06 13a8 8 0 0 0 5.62 6.66A14 14 0 0 1 7.46 13zm5.62-8.66A8 8 0 0 0 4.06 11h3.4c.16-2.33.9-4.63 2.22-6.66" clipRule="evenodd" />
     </IconBase>
   ))
 );

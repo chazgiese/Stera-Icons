@@ -7,7 +7,7 @@ type WaveTriangleBoldProps = Omit<IconBaseProps, 'children'>;
 const WaveTriangleBold = memo(
   forwardRef<SVGSVGElement, WaveTriangleBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="wave-triangle-bold" {...props}>
-      <path fill="currentColor" d="M5.01 4.2A2.25 2.25 0 0 1 9 4.2l7.79 14.66c.1.18.35.18.44 0l3.9-7.33a1 1 0 1 1 1.76.94l-3.9 7.33a2.25 2.25 0 0 1-3.97 0l-3.9-7.33v-.01L7.22 5.13a.25.25 0 0 0-.44 0l-3.9 7.34a1 1 0 1 1-1.76-.94z" />
+      <path fill="currentColor" d="M7.5 4a1 1 0 0 1 .84.46l8.16 12.69 3.66-5.7a1 1 0 0 1 1.68 1.09l-4.5 7a1 1 0 0 1-1.6.1l-.08-.1L7.5 6.84l-3.66 5.7a1 1 0 0 1-1.68-1.08l4.5-7 .07-.1A1 1 0 0 1 7.5 4" />
     </IconBase>
   ))
 );

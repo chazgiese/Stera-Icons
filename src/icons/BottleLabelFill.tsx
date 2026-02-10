@@ -7,7 +7,7 @@ type BottleLabelFillProps = Omit<IconBaseProps, 'children'>;
 const BottleLabelFill = memo(
   forwardRef<SVGSVGElement, BottleLabelFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="bottle-label-fill" {...props}>
-      <path fill="currentColor" d="M16.25 21a2 2 0 0 1-2 2h-4.5a2 2 0 0 1-2-2v-2h8.5zM16.25 17h-8.5v-3h8.5zM13.5 1a1 1 0 0 1 .13 1.99l.54 4.33a1 1 0 0 0 .21.5l1.21 1.5a3 3 0 0 1 .66 1.88v.8h-8.5v-.8a3 3 0 0 1 .66-1.87l1.2-1.51a1 1 0 0 0 .22-.5l.54-4.33A1 1 0 0 1 10.5 1z" />
+      <path fill="currentColor" d="M16.25 19.75c0 1.24-1 2.25-2.25 2.25h-4c-1.24 0-2.25-1-2.25-2.25V18h8.5zM16.25 16h-8.5v-2h8.5zM13.75 2a1 1 0 0 1 .1 2v.05l.34 3.76q.04.3.22.53l1.18 1.49a3 3 0 0 1 .66 1.87v.3h-8.5v-.3a3 3 0 0 1 .66-1.87l1.18-1.49a1 1 0 0 0 .22-.53l.34-3.76V4a1 1 0 0 1 .1-2z" />
     </IconBase>
   ))
 );

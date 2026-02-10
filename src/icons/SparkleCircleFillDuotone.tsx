@@ -7,8 +7,8 @@ type SparkleCircleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SparkleCircleFillDuotone = memo(
   forwardRef<SVGSVGElement, SparkleCircleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="sparkle-circle-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m.27 4.54a.3.3 0 0 0-.54 0l-1.47 2.93a4 4 0 0 1-1.79 1.8l-2.93 1.46a.3.3 0 0 0 0 .54l2.93 1.47a4 4 0 0 1 1.8 1.79l1.46 2.93a.3.3 0 0 0 .54 0l1.47-2.93a4 4 0 0 1 1.79-1.8l2.93-1.46a.3.3 0 0 0 0-.54l-2.93-1.47a4 4 0 0 1-1.8-1.79z" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M11.73 5.54a.3.3 0 0 1 .54 0l1.47 2.93a4 4 0 0 0 1.79 1.8l2.93 1.46a.3.3 0 0 1 0 .54l-2.93 1.47a4 4 0 0 0-1.8 1.79l-1.46 2.93a.3.3 0 0 1-.54 0l-1.47-2.93a4 4 0 0 0-1.79-1.8l-2.93-1.46a.3.3 0 0 1 0-.54l2.93-1.47a4 4 0 0 0 1.8-1.79z" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m.62 5.57c-.18-.61-1.06-.61-1.24 0l-.26.87a4 4 0 0 1-2.68 2.68l-.87.26c-.61.18-.61 1.06 0 1.24l.87.26a4 4 0 0 1 2.68 2.68l.26.86a.65.65 0 0 0 1.24 0l.26-.86a4 4 0 0 1 2.68-2.68l.86-.26a.65.65 0 0 0 0-1.24l-.86-.26a4 4 0 0 1-2.68-2.68z" clipRule="evenodd" opacity={.4} />
+        <path fill="currentColor" d="M11.38 7.57a.65.65 0 0 1 1.24 0l.26.87a4 4 0 0 0 2.68 2.68l.86.26a.65.65 0 0 1 0 1.24l-.86.26a4 4 0 0 0-2.68 2.68l-.26.86a.65.65 0 0 1-1.24 0l-.26-.86a4 4 0 0 0-2.68-2.68l-.87-.26a.65.65 0 0 1 0-1.24l.87-.26a4 4 0 0 0 2.68-2.68z" />
     </IconBase>
   ))
 );

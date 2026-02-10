@@ -7,7 +7,7 @@ type GlobeBoldProps = Omit<IconBaseProps, 'children'>;
 const GlobeBold = memo(
   forwardRef<SVGSVGElement, GlobeBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="globe-bold" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 0 1 .05 22h-.09A11 11 0 0 1 12 1M3.06 13a9 9 0 0 0 6.7 7.72A16 16 0 0 1 7.2 13zm13.74 0a16 16 0 0 1-2.56 7.72 9 9 0 0 0 6.7-7.72zm-7.6 0a14 14 0 0 0 2.8 7.43A14 14 0 0 0 14.8 13zm.55-9.72A9 9 0 0 0 3.05 11H7.2a16 16 0 0 1 2.55-7.72m2.25.29A14 14 0 0 0 9.2 11h5.6A14 14 0 0 0 12 3.57m2.24-.29A16 16 0 0 1 16.8 11h4.14a9 9 0 0 0-6.7-7.72" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M4.06 13a8 8 0 0 0 5.62 6.66A14 14 0 0 1 7.46 13zm12.48 0c-.16 2.33-.9 4.62-2.22 6.66A8 8 0 0 0 19.94 13zm-7.08 0c.2 2.3 1.04 4.56 2.54 6.47A12 12 0 0 0 14.54 13zm.22-8.66A8 8 0 0 0 4.06 11h3.4c.16-2.33.9-4.63 2.22-6.66m2.32.2A12 12 0 0 0 9.46 11h5.08A12 12 0 0 0 12 4.53m2.32-.2A14 14 0 0 1 16.54 11h3.4a8 8 0 0 0-5.62-6.66" clipRule="evenodd" />
     </IconBase>
   ))
 );

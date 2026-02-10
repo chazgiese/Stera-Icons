@@ -7,8 +7,8 @@ type TrendUpRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TrendUpRegularDuotone = memo(
   forwardRef<SVGSVGElement, TrendUpRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="trend-up-duotone" {...props}>
-      <path fill="currentColor" d="M21.75 5.75v1.06l-8.22 8.22c-.3.3-.77.3-1.06 0L9.5 12.06l-7.47 7.47a.75.75 0 0 1-1.06-1.06l8-8 .11-.1a.75.75 0 0 1 .95.1L13 13.44l7.69-7.69z" opacity={.4} />
-        <path fill="currentColor" d="M22.5 4.25c.41 0 .75.34.75.75v6a.75.75 0 0 1-1.5 0V5.75H16.5a.75.75 0 0 1 0-1.5z" />
+      <path fill="currentColor" d="M1.97 18.78c.29.3.76.3 1.06 0l6.7-6.62 2.65 2.6c.29.3.76.3 1.05 0l7.32-7.22V6.5h-1.08l-6.77 6.68-2.64-2.6a.75.75 0 0 0-1.05 0l-7.24 7.14c-.3.29-.3.76 0 1.06" opacity={.4} />
+        <path fill="currentColor" d="M21.5 11.5c.41 0 .75-.34.75-.75v-5A.75.75 0 0 0 21.5 5h-5a.75.75 0 0 0 0 1.5h4.25v4.25c0 .41.34.75.75.75" />
     </IconBase>
   ))
 );

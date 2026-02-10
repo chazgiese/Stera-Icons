@@ -7,8 +7,8 @@ type SendVRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SendVRegularDuotone = memo(
   forwardRef<SVGSVGElement, SendVRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="send-v-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M10.21 2.9a2 2 0 0 1 3.58 0l8.1 16.2a2 2 0 0 1-2.75 2.65L12 17.85l-7.14 3.9A2 2 0 0 1 2.1 19.1zm2.24.67a.5.5 0 0 0-.9 0l-8.1 16.2a.5.5 0 0 0 .69.66l7.5-4.09.09-.04q.32-.11.63.04l7.5 4.1a.5.5 0 0 0 .69-.67z" clipRule="evenodd" />
-        <path fill="currentColor" d="M12 9.25c.41 0 .75.34.75.75v6.55l-.4-.2a.8.8 0 0 0-.62-.05l-.09.04-.39.21V10c0-.41.34-.75.75-.75" opacity={.4} />
+      <path fill="currentColor" fillRule="evenodd" d="M5.54 21.02a1.89 1.89 0 0 1-2.59-2.5l7.36-14.73a1.89 1.89 0 0 1 3.38 0l7.36 14.73a1.89 1.89 0 0 1-2.59 2.5L12 17.49zm-1.25-1.83c-.17.33.2.69.53.5l6.82-3.71c.22-.12.5-.12.72 0l6.82 3.72c.33.18.7-.18.53-.51L12.35 4.46a.39.39 0 0 0-.7 0z" clipRule="evenodd" />
+        <path fill="currentColor" d="M11.25 11.1a.75.75 0 0 1 1.5 0v5.1l-.4-.22a.8.8 0 0 0-.7 0l-.4.21z" opacity={.4} />
     </IconBase>
   ))
 );

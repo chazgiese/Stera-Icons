@@ -7,7 +7,7 @@ type AwardStarFillProps = Omit<IconBaseProps, 'children'>;
 const AwardStarFill = memo(
   forwardRef<SVGSVGElement, AwardStarFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="award-star-fill" {...props}>
-      <path fill="currentColor" d="M11.06 1.76a1.1 1.1 0 0 1 1.88 0l.08.16 1.43 3.31 3.6.34a1.1 1.1 0 0 1 .64 1.93l-2.72 2.38.8 3.52a1.1 1.1 0 0 1-1.65 1.2L13 13.33v3.91A3.75 3.75 0 0 1 16.75 21h.75a1 1 0 1 1 0 2h-11a1 1 0 0 1 0-2h.75A3.75 3.75 0 0 1 11 17.25v-3.9l-2.12 1.24a1.1 1.1 0 0 1-1.64-1.2l.8-3.51L5.3 7.5a1.1 1.1 0 0 1 .63-1.93l3.61-.34 1.43-3.31z" />
+      <path fill="currentColor" fillRule="evenodd" d="M11.12 2.73c.4-.64 1.36-.64 1.77 0l.07.15 1.17 2.7 2.93.27c.91.08 1.3 1.22.6 1.83L15.44 9.6l.65 2.86c.2.9-.77 1.6-1.56 1.13L13 12.7V16h.2a4 4 0 0 1 3.8 4h.5a1 1 0 1 1 0 2h-11a1 1 0 0 1 0-2H7a4 4 0 0 1 3.8-4h.2v-3.3l-1.53.9a1.05 1.05 0 0 1-1.56-1.13l.65-2.86-2.21-1.93c-.7-.61-.32-1.75.59-1.83l2.93-.27 1.17-2.7zM11 18a2 2 0 0 0-2 2h6a2 2 0 0 0-2-2z" clipRule="evenodd" />
     </IconBase>
   ))
 );

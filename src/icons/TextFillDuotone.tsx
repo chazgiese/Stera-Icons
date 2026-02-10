@@ -7,8 +7,8 @@ type TextFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextFillDuotone = memo(
   forwardRef<SVGSVGElement, TextFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-fill-duotone" {...props}>
-      <path fill="currentColor" d="M15 19.5a1.5 1.5 0 0 1 0 3H9a1.5 1.5 0 0 1 0-3zM18 1.5A3.5 3.5 0 0 1 21.5 5v1a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0-.5.5v1a1.5 1.5 0 1 1-3 0V5A3.5 3.5 0 0 1 6 1.5z" />
-        <path fill="currentColor" fillRule="evenodd" d="M14 4.5h-4c.28 0 .5.22.5.5v14a.5.5 0 0 1-.5.5h4a.5.5 0 0 1-.5-.5V5c0-.28.22-.5.5-.5" clipRule="evenodd" opacity={.4} />
+      <path fill="currentColor" d="M14 5.5a.5.5 0 0 0-.5.5v12c0 .28.22.5.5.5h-4a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5z" opacity={.4} />
+        <path fill="currentColor" d="M15 18.5a1.5 1.5 0 0 1 0 3H9a1.5 1.5 0 0 1 0-3zM17 2.5A3.5 3.5 0 0 1 20.5 6a1.5 1.5 0 0 1-3 0 .5.5 0 0 0-.5-.5H7a.5.5 0 0 0-.5.5 1.5 1.5 0 1 1-3 0A3.5 3.5 0 0 1 7 2.5z" />
     </IconBase>
   ))
 );

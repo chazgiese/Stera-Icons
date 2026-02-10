@@ -7,7 +7,7 @@ type PeaceFillProps = Omit<IconBaseProps, 'children'>;
 const PeaceFill = memo(
   forwardRef<SVGSVGElement, PeaceFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="peace-fill" {...props}>
-      <path fill="currentColor" d="M11 22.95a11 11 0 0 1-6.04-2.5L11 14.41zM19.04 20.45a11 11 0 0 1-6.04 2.5v-8.54zM11 11.59l-7.45 7.45a11 11 0 0 1 7.45-18zM13 1.05a11 11 0 0 1 7.45 17.99L13 11.59z" />
+      <path fill="currentColor" d="M11 21.95c-2.01-.2-3.85-1-5.33-2.21l.04-.03L11 14.4zM18.3 19.7q0 .03.03.04a10 10 0 0 1-5.33 2.2v-7.53zM11 11.59l-6.7 6.7-.04.04A10 10 0 0 1 11 2.05zM13 2.05a10 10 0 0 1 6.74 16.28l-.03-.04L13 11.6z" />
     </IconBase>
   ))
 );

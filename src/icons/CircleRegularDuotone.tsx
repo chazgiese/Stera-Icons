@@ -7,8 +7,8 @@ type CircleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CircleRegularDuotone = memo(
   forwardRef<SVGSVGElement, CircleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-duotone" {...props}>
-      <path fill="currentColor" d="M12 1.25c5.94 0 10.75 4.81 10.75 10.75h-1.5a9.25 9.25 0 0 0-18.5 0h-1.5C1.25 6.06 6.06 1.25 12 1.25" />
-        <path fill="currentColor" d="M2.75 12a9.25 9.25 0 0 0 18.5 0h1.5a10.75 10.75 0 1 1-21.5 0z" opacity={.4} />
+      <path fill="currentColor" d="M12 3.75a8.25 8.25 0 1 0 0 16.5v1.5a9.75 9.75 0 1 1 0-19.5z" />
+        <path fill="currentColor" d="M12 2.25a9.75 9.75 0 1 1 0 19.5v-1.5a8.25 8.25 0 0 0 0-16.5z" opacity={.4} />
     </IconBase>
   ))
 );

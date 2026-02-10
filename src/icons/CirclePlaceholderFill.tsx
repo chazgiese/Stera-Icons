@@ -7,7 +7,7 @@ type CirclePlaceholderFillProps = Omit<IconBaseProps, 'children'>;
 const CirclePlaceholderFill = memo(
   forwardRef<SVGSVGElement, CirclePlaceholderFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-placeholder-fill" {...props}>
-      <path fill="currentColor" d="M4.22 4.22q.54-.54 1.14-.98l15.4 15.4a11 11 0 0 1-2.12 2.12L3.24 5.36q.44-.6.98-1.14M16.9 21.85q-1.55.76-3.22 1.02L1.13 10.32q.25-1.67 1.02-3.22zM7.1 2.15q1.55-.76 3.22-1.02l12.55 12.55q-.26 1.67-1.02 3.22zM10.93 22.95a10.95 10.95 0 0 1-9.88-9.88zM13.07 1.05a10.95 10.95 0 0 1 9.88 9.88z" />
+      <path fill="currentColor" d="M11.22 21.97a9.96 9.96 0 0 1-9.19-9.2zM16.44 20.96q-1.23.6-2.54.86L2.18 10.1q.26-1.32.86-2.54zM19.87 18.17a10 10 0 0 1-1.7 1.7L4.13 5.83a10 10 0 0 1 1.7-1.7zM21.82 13.9a10 10 0 0 1-.86 2.54L7.56 3.04q1.22-.6 2.54-.86zM12.78 2.03a9.96 9.96 0 0 1 9.19 9.19z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type CurrencyEuroCirlceBoldProps = Omit<IconBaseProps, 'children'>;
 const CurrencyEuroCirlceBold = memo(
   forwardRef<SVGSVGElement, CurrencyEuroCirlceBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="currency-euro-cirlce-bold" {...props}>
-      <path fill="currentColor" d="M15 6a1 1 0 1 1 0 2h-1.5c-1.25 0-2.06.28-2.58.8q-.27.26-.48.7H13a1 1 0 1 1 0 2h-2.99a10 10 0 0 0 0 1H13a1 1 0 1 1 0 2h-2.56q.21.44.48.7c.52.52 1.33.8 2.58.8H15a1 1 0 1 1 0 2h-1.5c-1.51 0-2.95-.34-4-1.39a5 5 0 0 1-1.19-2.11H7.5a1 1 0 1 1 0-2h.51a12 12 0 0 1 0-1H7.5a1 1 0 1 1 0-2h.81q.37-1.27 1.2-2.11C10.55 6.34 11.99 6 13.5 6z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M14.5 6.5a1 1 0 1 1 0 2h-1.25c-1.27 0-1.84.27-2.14.63q-.2.22-.34.62h1.73a1 1 0 1 1 0 2h-2v.5h2a1 1 0 1 1 0 2h-1.73q.15.4.34.62c.3.36.87.63 2.14.63h1.25a1 1 0 1 1 0 2h-1.25c-1.48 0-2.79-.3-3.67-1.34a4.3 4.3 0 0 1-.88-1.91H8a1 1 0 1 1 0-2h.5v-.5H8a1 1 0 1 1 0-2h.7q.24-1.13.88-1.91c.88-1.04 2.2-1.34 3.67-1.34z" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type SparkleCircleBoldProps = Omit<IconBaseProps, 'children'>;
 const SparkleCircleBold = memo(
   forwardRef<SVGSVGElement, SparkleCircleBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="sparkle-circle-bold" {...props}>
-      <path fill="currentColor" d="M11.73 6.54a.3.3 0 0 1 .54 0L13.4 8.8a4 4 0 0 0 1.8 1.79l2.26 1.13a.3.3 0 0 1 0 .54L15.2 13.4a4 4 0 0 0-1.79 1.8l-1.13 2.26a.3.3 0 0 1-.54 0L10.6 15.2a4 4 0 0 0-1.8-1.79l-2.26-1.13a.3.3 0 0 1 0-.54L8.8 10.6a4 4 0 0 0 1.79-1.8z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22m0 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18" clipRule="evenodd" />
+      <path fill="currentColor" d="M11.38 7.58c.18-.62 1.06-.62 1.24 0l.26.86a4 4 0 0 0 2.68 2.68l.86.26c.62.18.62 1.06 0 1.24l-.86.26a4 4 0 0 0-2.68 2.68l-.26.86c-.18.62-1.06.62-1.24 0l-.26-.86a4 4 0 0 0-2.68-2.68l-.86-.26c-.62-.18-.62-1.06 0-1.24l.86-.26a4 4 0 0 0 2.68-2.68z" />
+        <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>
   ))
 );

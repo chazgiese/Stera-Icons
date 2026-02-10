@@ -7,7 +7,7 @@ type TrendDownRegularProps = Omit<IconBaseProps, 'children'>;
 const TrendDownRegular = memo(
   forwardRef<SVGSVGElement, TrendDownRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="trend-down" {...props}>
-      <path fill="currentColor" d="M.97 4.47c.3-.3.77-.3 1.06 0l7.47 7.47 2.97-2.97c.3-.3.77-.3 1.06 0l8.22 8.22V13a.75.75 0 1 1 1.5 0v6a1 1 0 0 1-.14.43 1 1 0 0 1-.32.26l-.1.03-.04.01h-.02l-.13.02h-6a.75.75 0 0 1 0-1.5h4.19L13 10.56l-2.97 2.97a.75.75 0 0 1-.95.1l-.11-.1-8-8a.75.75 0 0 1 0-1.06" />
+      <path fill="currentColor" d="M1.97 5.22c.29-.3.76-.3 1.06 0l6.7 6.62 2.65-2.6a.75.75 0 0 1 1.05 0l7.32 7.22v-3.21a.75.75 0 1 1 1.5 0v5l-.01.13v.01l-.02.07-.03.07q0 .05-.04.08 0 .03-.03.05v.02a1 1 0 0 1-.2.19l-.13.07-.05.01a1 1 0 0 1-.24.05h-5a.75.75 0 0 1 0-1.5h3.17l-6.77-6.68-2.64 2.6a.75.75 0 0 1-1.05 0L1.97 6.29a.75.75 0 0 1 0-1.06" />
     </IconBase>
   ))
 );

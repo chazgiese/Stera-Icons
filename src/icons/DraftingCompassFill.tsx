@@ -7,7 +7,7 @@ type DraftingCompassFillProps = Omit<IconBaseProps, 'children'>;
 const DraftingCompassFill = memo(
   forwardRef<SVGSVGElement, DraftingCompassFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="drafting-compass-fill" {...props}>
-      <path fill="currentColor" d="M4.45 16.63a1 1 0 0 1 1.72 1.03l-2.31 3.85a1 1 0 0 1-1.72-1.02zM12 2.25a3.75 3.75 0 0 1 2.72 6.33l7.14 11.9a1 1 0 0 1-1.72 1.03l-3.36-5.6Q14.58 16.98 12 17a11 11 0 0 1-9.9-6.2 1 1 0 0 1 1.8-.87 9 9 0 0 0 11.84 4.26L13 9.6a4 4 0 0 1-2 0l-1.74 2.9a1 1 0 0 1-1.72-1.02l1.74-2.9A3.74 3.74 0 0 1 12 2.24" />
+      <path fill="currentColor" d="M5.02 15.82a1 1 0 0 1 1.72 1.02L4.86 20a1 1 0 0 1-1.72-1.02zM12 2.5a3.5 3.5 0 0 1 2.57 5.87l2.87 4.86.01.01 3.41 5.75a1 1 0 1 1-1.72 1.02l-2.93-4.94q-1.93.91-4.21.93a10 10 0 0 1-8.89-5.41 1 1 0 0 1 1.78-.92 8 8 0 0 0 10.3 3.67l-2.34-3.95a3.5 3.5 0 0 1-1.7 0L9.8 11.67a1 1 0 0 1-1.72-1.02l1.35-2.28A3.49 3.49 0 0 1 12 2.5" />
     </IconBase>
   ))
 );

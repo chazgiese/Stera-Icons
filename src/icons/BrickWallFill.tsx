@@ -7,7 +7,7 @@ type BrickWallFillProps = Omit<IconBaseProps, 'children'>;
 const BrickWallFill = memo(
   forwardRef<SVGSVGElement, BrickWallFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="brick-wall-fill" {...props}>
-      <path fill="currentColor" d="M6 21H3.25C2.01 21 1 20 1 18.75v-2.42h5zM16 21H8v-4.67h8zM23 18.75c0 1.24-1 2.25-2.25 2.25H18v-4.67h5zM11 14.33H1V9.67h10zM23 14.33H13V9.67h10zM6 7.67H1V5.25C1 4.01 2 3 3.25 3H6zM16 7.67H8V3h8zM20.75 3C21.99 3 23 4 23 5.25v2.42h-5V3z" />
+      <path fill="currentColor" d="M7 20h-.8q-.81 0-1.4-.03c-.4-.03-.78-.1-1.16-.3a3 3 0 0 1-1.31-1.3c-.2-.39-.27-.78-.3-1.17Q1.99 16.69 2 16h5zM15 20H9v-4h6zM22 16q0 .69-.03 1.2c-.03.4-.1.78-.3 1.16a3 3 0 0 1-1.3 1.31c-.39.2-.78.27-1.17.3q-.59.04-1.4.03H17v-4zM11 14H2v-4h9zM22 14h-9v-4h9zM7 8H2q0-.69.03-1.2c.03-.4.1-.78.3-1.16a3 3 0 0 1 1.3-1.31c.39-.2.78-.27 1.17-.3Q5.4 3.99 6.2 4H7zM15 8H9V4h6zM17.8 4q.81 0 1.4.03c.4.03.78.1 1.16.3a3 3 0 0 1 1.31 1.3c.2.39.27.78.3 1.17q.04.51.03 1.2h-5V4z" />
     </IconBase>
   ))
 );

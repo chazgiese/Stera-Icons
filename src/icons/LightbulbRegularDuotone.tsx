@@ -7,8 +7,8 @@ type LightbulbRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const LightbulbRegularDuotone = memo(
   forwardRef<SVGSVGElement, LightbulbRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="lightbulb-duotone" {...props}>
-      <path fill="currentColor" d="M12 1.25a6.75 6.75 0 0 1 6.02 9.81q-.33.64-.68 1.26c-.56 1-1.08 1.93-1.36 2.9a.75.75 0 0 0-.72-.97h-.54c.35-.95.85-1.84 1.3-2.66q.36-.62.66-1.21.55-1.08.57-2.38a5.25 5.25 0 1 0-9.93 2.38q.3.6.65 1.2c.46.83.96 1.72 1.3 2.67h-.53a.75.75 0 0 0-.72.96c-.28-.96-.8-1.89-1.36-2.9q-.35-.6-.68-1.25A6.75 6.75 0 0 1 12 1.25" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M15.26 14.25a.75.75 0 0 1 .72.96q-.23.73-.23 1.45V19c0 1.3-.91 2.4-2.14 2.68a1.75 1.75 0 0 1-3.22 0A2.75 2.75 0 0 1 8.25 19v-2.34q0-.72-.23-1.45a.75.75 0 0 1 .72-.96zm-5.58 1.5q.07.45.07.9V19c0 .69.56 1.25 1.25 1.25h2c.69 0 1.25-.56 1.25-1.25v-2.34q0-.46.07-.91z" clipRule="evenodd" />
+      <path fill="currentColor" d="M12 2.25a6.25 6.25 0 0 1 5.06 9.92c-.86 1.19-1.56 2.25-1.56 3.4v-.07a.75.75 0 0 0-.75-.75h-.67a9 9 0 0 1 1.76-3.46 4.75 4.75 0 1 0-7.69 0c.69.94 1.51 2.1 1.77 3.46h-.67a.75.75 0 0 0-.75.75v.07c0-1.15-.7-2.21-1.56-3.4A6.25 6.25 0 0 1 12 2.25" opacity={.4} />
+        <path fill="currentColor" fillRule="evenodd" d="M14.75 14.75c.41 0 .75.34.75.75V18c0 1.2-.78 2.23-1.86 2.6a1.75 1.75 0 0 1-3.28 0A2.75 2.75 0 0 1 8.5 18v-2.5a.75.75 0 0 1 .75-.75zM10 18c0 .69.56 1.25 1.25 1.25h1.5c.69 0 1.25-.56 1.25-1.25v-1.75h-4z" clipRule="evenodd" />
     </IconBase>
   ))
 );

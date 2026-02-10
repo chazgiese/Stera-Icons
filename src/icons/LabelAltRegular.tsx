@@ -7,7 +7,7 @@ type LabelAltRegularProps = Omit<IconBaseProps, 'children'>;
 const LabelAltRegular = memo(
   forwardRef<SVGSVGElement, LabelAltRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="label-alt" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M20.75 3.25a2 2 0 0 1 1.7 3.06l-3.15 5.03c-.25.4-.25.92 0 1.32l3.14 5.03a2 2 0 0 1-1.7 3.06H7.12c-.95 0-1.83-.49-2.33-1.3l-3.75-6a2.8 2.8 0 0 1 0-2.9l3.75-6c.5-.81 1.38-1.3 2.33-1.3zM7.1 4.75c-.43 0-.83.22-1.06.59l-3.75 6c-.25.4-.25.92 0 1.32l3.75 6c.23.37.63.59 1.06.59h13.64a.5.5 0 0 0 .42-.76l-3.14-5.03a2.8 2.8 0 0 1 0-2.92l3.14-5.03a.5.5 0 0 0-.42-.76z" clipRule="evenodd" />
+      <path fill="currentColor" fillRule="evenodd" d="M20.06 4.25c1.42 0 2.25 1.6 1.42 2.77l-3.04 4.25a1.25 1.25 0 0 0 0 1.46l3.04 4.25c.83 1.16 0 2.77-1.42 2.77H8.03c-.89 0-1.72-.43-2.24-1.15l-3.57-5a2.75 2.75 0 0 1 0-3.2l3.57-5a2.8 2.8 0 0 1 2.24-1.15zM8.03 5.75c-.4 0-.78.2-1.02.52l-3.57 5a1.25 1.25 0 0 0 0 1.46l3.57 5c.24.32.62.52 1.02.52h12.03c.2 0 .32-.23.2-.4l-3.04-4.25a2.75 2.75 0 0 1 0-3.2l3.04-4.25c.12-.17 0-.4-.2-.4z" clipRule="evenodd" />
     </IconBase>
   ))
 );
