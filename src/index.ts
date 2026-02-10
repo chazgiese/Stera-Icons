@@ -36,6 +36,8 @@ export { AgentWorkflowRegular as AgentWorkflow, AgentWorkflowRegular as AgentWor
 export { AgentWorkflowRegularDuotone as AgentWorkflowDuotone, AgentWorkflowRegularDuotone as AgentWorkflowDuotoneIcon, AgentWorkflowRegularDuotone as SiAgentWorkflowDuotone } from './icons/AgentWorkflowRegularDuotone';
 export { AirplaneRegular as Airplane, AirplaneRegular as AirplaneIcon, AirplaneRegular as SiAirplane } from './icons/AirplaneRegular';
 export { AirplaneRegularDuotone as AirplaneDuotone, AirplaneRegularDuotone as AirplaneDuotoneIcon, AirplaneRegularDuotone as SiAirplaneDuotone } from './icons/AirplaneRegularDuotone';
+export { AlarmClockRegular as AlarmClock, AlarmClockRegular as AlarmClockIcon, AlarmClockRegular as SiAlarmClock } from './icons/AlarmClockRegular';
+export { AlarmClockRegularDuotone as AlarmClockDuotone, AlarmClockRegularDuotone as AlarmClockDuotoneIcon, AlarmClockRegularDuotone as SiAlarmClockDuotone } from './icons/AlarmClockRegularDuotone';
 export { AlarmClockMinusRegular as AlarmClockMinus, AlarmClockMinusRegular as AlarmClockMinusIcon, AlarmClockMinusRegular as SiAlarmClockMinus } from './icons/AlarmClockMinusRegular';
 export { AlarmClockMinusRegularDuotone as AlarmClockMinusDuotone, AlarmClockMinusRegularDuotone as AlarmClockMinusDuotoneIcon, AlarmClockMinusRegularDuotone as SiAlarmClockMinusDuotone } from './icons/AlarmClockMinusRegularDuotone';
 export { AlarmClockPlusRegular as AlarmClockPlus, AlarmClockPlusRegular as AlarmClockPlusIcon, AlarmClockPlusRegular as SiAlarmClockPlus } from './icons/AlarmClockPlusRegular';
@@ -1596,6 +1598,12 @@ export { AirplaneBold, AirplaneBoldIcon, SiAirplaneBold } from './icons/Airplane
 export { AirplaneBoldDuotone, AirplaneBoldDuotoneIcon, SiAirplaneBoldDuotone } from './icons/AirplaneBoldDuotone';
 export { AirplaneFill, AirplaneFillIcon, SiAirplaneFill } from './icons/AirplaneFill';
 export { AirplaneFillDuotone, AirplaneFillDuotoneIcon, SiAirplaneFillDuotone } from './icons/AirplaneFillDuotone';
+export { AlarmClockRegular, AlarmClockRegularIcon, SiAlarmClockRegular } from './icons/AlarmClockRegular';
+export { AlarmClockRegularDuotone, AlarmClockRegularDuotoneIcon, SiAlarmClockRegularDuotone } from './icons/AlarmClockRegularDuotone';
+export { AlarmClockBold, AlarmClockBoldIcon, SiAlarmClockBold } from './icons/AlarmClockBold';
+export { AlarmClockBoldDuotone, AlarmClockBoldDuotoneIcon, SiAlarmClockBoldDuotone } from './icons/AlarmClockBoldDuotone';
+export { AlarmClockFill, AlarmClockFillIcon, SiAlarmClockFill } from './icons/AlarmClockFill';
+export { AlarmClockFillDuotone, AlarmClockFillDuotoneIcon, SiAlarmClockFillDuotone } from './icons/AlarmClockFillDuotone';
 export { AlarmClockMinusRegular, AlarmClockMinusRegularIcon, SiAlarmClockMinusRegular } from './icons/AlarmClockMinusRegular';
 export { AlarmClockMinusRegularDuotone, AlarmClockMinusRegularDuotoneIcon, SiAlarmClockMinusRegularDuotone } from './icons/AlarmClockMinusRegularDuotone';
 export { AlarmClockMinusBold, AlarmClockMinusBoldIcon, SiAlarmClockMinusBold } from './icons/AlarmClockMinusBold';

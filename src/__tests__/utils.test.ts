@@ -97,7 +97,7 @@ describe('Utility Functions', () => {
         className: 'icon', 
         color: 'red', 
         size: 24,
-        onClick: () => {},
+        onClick: () => { /* noop */ },
       })).toBe(false);
     });
 

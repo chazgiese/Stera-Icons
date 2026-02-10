@@ -114,7 +114,6 @@ export const createDynamicIcon = (dynamicIconImports: DynamicIconImports) => {
           })
           .catch((err: Error) => {
             if (!cancelled) {
-              console.error(err.message);
               setError(err);
               onError?.(err);
             }
