@@ -7,8 +7,8 @@ type CommentBubbleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CommentBubbleFillDuotone = memo(
   forwardRef<SVGSVGElement, CommentBubbleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="comment-bubble-fill-duotone" {...props}>
-      <path fill="currentColor" d="M12 4.5a7.5 7.5 0 0 1 0 15H5.93l-.6-.01a1 1 0 0 1-.82-.82l-.01-.6V12A7.5 7.5 0 0 1 12 4.5" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M12 2.5a9.5 9.5 0 0 1 0 19H5.93q-.53.01-.93-.04A3 3 0 0 1 2.54 19q-.05-.4-.04-.93V12A9.5 9.5 0 0 1 12 2.5m0 2A7.5 7.5 0 0 0 4.5 12v6.07l.01.6a1 1 0 0 0 .82.82l.6.01H12a7.5 7.5 0 0 0 0-15" clipRule="evenodd" />
+      <path d="M12 4.5a7.5 7.5 0 0 1 0 15H5.93l-.6-.01a1 1 0 0 1-.82-.82l-.01-.6V12A7.5 7.5 0 0 1 12 4.5" opacity={.4} />
+        <path fillRule="evenodd" d="M12 2.5a9.5 9.5 0 0 1 0 19H5.93q-.53.01-.93-.04A3 3 0 0 1 2.54 19q-.05-.4-.04-.93V12A9.5 9.5 0 0 1 12 2.5m0 2A7.5 7.5 0 0 0 4.5 12v6.07l.01.6a1 1 0 0 0 .82.82l.6.01H12a7.5 7.5 0 0 0 0-15" clipRule="evenodd" />
     </IconBase>
   ))
 );

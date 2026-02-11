@@ -7,9 +7,9 @@ type TargetRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TargetRegularDuotone = memo(
   forwardRef<SVGSVGElement, TargetRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="target-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 5.75a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5m0 1.5a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M12 9.63a2.37 2.37 0 1 1 0 4.74 2.37 2.37 0 0 1 0-4.74" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 5.75a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5m0 1.5a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5" clipRule="evenodd" opacity={.4} />
+        <path d="M12 9.63a2.37 2.37 0 1 1 0 4.74 2.37 2.37 0 0 1 0-4.74" />
+        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -20,7 +20,7 @@ describe('Icon Components', () => {
       const path = container.querySelector('path');
       expect(path).toBeInTheDocument();
       expect(path).toHaveAttribute('d');
-      expect(path).toHaveAttribute('fill', 'currentColor');
+      expect(path).not.toHaveAttribute('fill');
     });
 
     it('applies icon-specific CSS class', () => {

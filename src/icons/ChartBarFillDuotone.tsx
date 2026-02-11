@@ -8,7 +8,7 @@ const ChartBarFillDuotone = memo(
   forwardRef<SVGSVGElement, ChartBarFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-bar-fill-duotone" {...props}>
       <path d="M7.25 5c.69 0 1.25.56 1.25 1.25V18h-5V6.25C3.5 5.56 4.06 5 4.75 5zM13.25 12c.69 0 1.25.56 1.25 1.25V18h-5v-4.75c0-.69.56-1.25 1.25-1.25zM19.25 8c.69 0 1.25.56 1.25 1.25V18h-5V9.25c0-.69.56-1.25 1.25-1.25z" opacity={0.4} />
-        <path fill="currentColor" d="M21 18a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
+        <path d="M21 18a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
     </IconBase>
   ))
 );

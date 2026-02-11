@@ -7,7 +7,7 @@ type CircleRegularProps = Omit<IconBaseProps, 'children'>;
 const CircleRegular = memo(
   forwardRef<SVGSVGElement, CircleRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

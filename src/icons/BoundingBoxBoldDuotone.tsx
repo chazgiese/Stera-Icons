@@ -8,7 +8,7 @@ const BoundingBoxBoldDuotone = memo(
   forwardRef<SVGSVGElement, BoundingBoxBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bounding-box-bold-duotone" {...props}>
       <path d="M15 19H9v-2h6zM19 15h-2V9h2zM7 15H5V9h2zM15 7H9V5h6z" opacity={0.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M8 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm-3 4h2v-2H5zM20 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm-3 4h2v-2h-2zM8 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM5 7h2V5H5zM20 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm-3 4h2V5h-2z" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M8 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm-3 4h2v-2H5zM20 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm-3 4h2v-2h-2zM8 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM5 7h2V5H5zM20 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm-3 4h2V5h-2z" clipRule="evenodd" />
     </IconBase>
   ))
 );

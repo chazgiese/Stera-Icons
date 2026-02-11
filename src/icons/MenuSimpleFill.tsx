@@ -7,7 +7,7 @@ type MenuSimpleFillProps = Omit<IconBaseProps, 'children'>;
 const MenuSimpleFill = memo(
   forwardRef<SVGSVGElement, MenuSimpleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="menu-simple-fill" {...props}>
-      <path fill="currentColor" d="M14 14.5a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zM20 6.5a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+      <path d="M14 14.5a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zM20 6.5a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
     </IconBase>
   ))
 );

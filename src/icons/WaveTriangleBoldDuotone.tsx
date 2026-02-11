@@ -7,8 +7,8 @@ type WaveTriangleBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const WaveTriangleBoldDuotone = memo(
   forwardRef<SVGSVGElement, WaveTriangleBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="wave-triangle-bold-duotone" {...props}>
-      <path fill="currentColor" d="M20.16 11.46a1 1 0 0 1 1.68 1.08l-4.5 7a1 1 0 0 1-1.6.1l-.08-.1-4.5-7 1.68-1.08 3.66 5.69z" opacity={.4} />
-        <path fill="currentColor" d="M7.5 4a1 1 0 0 1 .84.46l4.5 7-1.68 1.08-3.66-5.7-3.66 5.7a1 1 0 0 1-1.68-1.08l4.5-7 .07-.1A1 1 0 0 1 7.5 4" />
+      <path d="M20.16 11.46a1 1 0 0 1 1.68 1.08l-4.5 7a1 1 0 0 1-1.6.1l-.08-.1-4.5-7 1.68-1.08 3.66 5.69z" opacity={.4} />
+        <path d="M7.5 4a1 1 0 0 1 .84.46l4.5 7-1.68 1.08-3.66-5.7-3.66 5.7a1 1 0 0 1-1.68-1.08l4.5-7 .07-.1A1 1 0 0 1 7.5 4" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type TextUnderlineBoldProps = Omit<IconBaseProps, 'children'>;
 const TextUnderlineBold = memo(
   forwardRef<SVGSVGElement, TextUnderlineBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-underline-bold" {...props}>
-      <path fill="currentColor" d="M18 19a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2zM17.5 3a1 1 0 0 1 1 1v7a6.5 6.5 0 1 1-13 0V4a1 1 0 0 1 2 0v7a4.5 4.5 0 1 0 9 0V4a1 1 0 0 1 1-1" />
+      <path d="M18 19a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2zM17.5 3a1 1 0 0 1 1 1v7a6.5 6.5 0 1 1-13 0V4a1 1 0 0 1 2 0v7a4.5 4.5 0 1 0 9 0V4a1 1 0 0 1 1-1" />
     </IconBase>
   ))
 );

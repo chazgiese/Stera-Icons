@@ -7,8 +7,8 @@ type BluetoothFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BluetoothFillDuotone = memo(
   forwardRef<SVGSVGElement, BluetoothFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bluetooth-fill-duotone" {...props}>
-      <path fill="currentColor" d="M4.8 7.1a1.5 1.5 0 0 1 2.1-.3l3.6 2.7v6l-3.6 2.7a1.5 1.5 0 0 1-1.8-2.4l4.4-3.3-4.4-3.3a1.5 1.5 0 0 1-.3-2.1" opacity={.4} />
-        <path fill="currentColor" fillRule="evenodd" d="M11.33 1.66a1.5 1.5 0 0 1 1.57.14l6 4.5a1.5 1.5 0 0 1 0 2.4L14.5 12l4.4 3.3a1.5 1.5 0 0 1 0 2.4l-6 4.5a1.5 1.5 0 0 1-2.4-1.2V3c0-.57.32-1.09.83-1.34M13.5 18l2-1.5-2-1.5zm0-9 2-1.5-2-1.5z" clipRule="evenodd" />
+      <path d="M4.8 7.1a1.5 1.5 0 0 1 2.1-.3l3.6 2.7v6l-3.6 2.7a1.5 1.5 0 0 1-1.8-2.4l4.4-3.3-4.4-3.3a1.5 1.5 0 0 1-.3-2.1" opacity={.4} />
+        <path fillRule="evenodd" d="M11.33 1.66a1.5 1.5 0 0 1 1.57.14l6 4.5a1.5 1.5 0 0 1 0 2.4L14.5 12l4.4 3.3a1.5 1.5 0 0 1 0 2.4l-6 4.5a1.5 1.5 0 0 1-2.4-1.2V3c0-.57.32-1.09.83-1.34M13.5 18l2-1.5-2-1.5zm0-9 2-1.5-2-1.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

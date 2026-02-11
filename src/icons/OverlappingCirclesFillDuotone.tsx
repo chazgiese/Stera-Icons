@@ -8,7 +8,7 @@ const OverlappingCirclesFillDuotone = memo(
   forwardRef<SVGSVGElement, OverlappingCirclesFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="overlapping-circles-fill-duotone" {...props}>
       <path d="M8.5 4.5c1.26 0 2.46.31 3.5.87a7.5 7.5 0 0 0 0 13.26A7.5 7.5 0 1 1 8.5 4.5M15.5 4.5A7.5 7.5 0 1 1 12 18.63a7.5 7.5 0 0 0 0-13.26 7.5 7.5 0 0 1 3.5-.87" opacity={0.4} />
-        <path fill="currentColor" d="M12 5.37a7.5 7.5 0 0 1 0 13.26 7.5 7.5 0 0 1 0-13.26" />
+        <path d="M12 5.37a7.5 7.5 0 0 1 0 13.26 7.5 7.5 0 0 1 0-13.26" />
     </IconBase>
   ))
 );

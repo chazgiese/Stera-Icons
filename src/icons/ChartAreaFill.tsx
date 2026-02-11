@@ -7,7 +7,7 @@ type ChartAreaFillProps = Omit<IconBaseProps, 'children'>;
 const ChartAreaFill = memo(
   forwardRef<SVGSVGElement, ChartAreaFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-area-fill" {...props}>
-      <path fill="currentColor" d="M21.28 4.31A1 1 0 0 1 23 5v12.93c0 1.14-.93 2.07-2.07 2.07H2a1 1 0 0 1-.72-1.69l7.61-8 .08-.07a1 1 0 0 1 1.37.07l2.61 2.74z" />
+      <path d="M21.28 4.31A1 1 0 0 1 23 5v12.93c0 1.14-.93 2.07-2.07 2.07H2a1 1 0 0 1-.72-1.69l7.61-8 .08-.07a1 1 0 0 1 1.37.07l2.61 2.74z" />
     </IconBase>
   ))
 );

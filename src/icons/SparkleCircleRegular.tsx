@@ -7,8 +7,8 @@ type SparkleCircleRegularProps = Omit<IconBaseProps, 'children'>;
 const SparkleCircleRegular = memo(
   forwardRef<SVGSVGElement, SparkleCircleRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="sparkle-circle" {...props}>
-      <path fill="currentColor" d="M11.38 7.58c.18-.62 1.06-.62 1.24 0l.26.86a4 4 0 0 0 2.68 2.68l.86.26c.62.18.62 1.06 0 1.24l-.86.26a4 4 0 0 0-2.68 2.68l-.26.86c-.18.62-1.06.62-1.24 0l-.26-.86a4 4 0 0 0-2.68-2.68l-.86-.26c-.62-.18-.62-1.06 0-1.24l.86-.26a4 4 0 0 0 2.68-2.68z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path d="M11.38 7.58c.18-.62 1.06-.62 1.24 0l.26.86a4 4 0 0 0 2.68 2.68l.86.26c.62.18.62 1.06 0 1.24l-.86.26a4 4 0 0 0-2.68 2.68l-.26.86c-.18.62-1.06.62-1.24 0l-.26-.86a4 4 0 0 0-2.68-2.68l-.86-.26c-.62-.18-.62-1.06 0-1.24l.86-.26a4 4 0 0 0 2.68-2.68z" />
+        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -31,23 +31,16 @@ export default {
       name: 'removeUselessStrokeAndFill',
     },
     {
-      name: 'convertColors',
-      params: {
-        currentColor: true,
-      },
-    },
-    {
       name: 'sortAttrs',
     },
-    // Ensure fill is set to currentColor for proper theming
+    // Remove fill attributes from paths/circles so they inherit
+    // fill from the parent <svg> element set by IconBase
     {
-      name: 'addAttributesToSVGElement',
+      name: 'removeAttrs',
       params: {
-        attributes: [
-          {
-            fill: 'currentColor',
-          },
-        ],
+        attrs: ['fill'],
+        elemSeparator: ',',
+        preserveCurrentColor: false,
       },
     },
   ],

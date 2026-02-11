@@ -7,7 +7,7 @@ type ClockFillProps = Omit<IconBaseProps, 'children'>;
 const ClockFill = memo(
   forwardRef<SVGSVGElement, ClockFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="clock-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .3.7l2.82 2.84a1 1 0 1 0 1.42-1.42L13 11.6V7a1 1 0 0 0-1-1" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .3.7l2.82 2.84a1 1 0 1 0 1.42-1.42L13 11.6V7a1 1 0 0 0-1-1" clipRule="evenodd" />
     </IconBase>
   ))
 );

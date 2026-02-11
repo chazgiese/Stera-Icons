@@ -7,8 +7,8 @@ type MenuSimpleBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MenuSimpleBoldDuotone = memo(
   forwardRef<SVGSVGElement, MenuSimpleBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="menu-simple-bold-duotone" {...props}>
-      <path fill="currentColor" d="M14 15a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z" opacity={.4} />
-        <path fill="currentColor" d="M20 7a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
+      <path d="M14 15a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z" opacity={.4} />
+        <path d="M20 7a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );

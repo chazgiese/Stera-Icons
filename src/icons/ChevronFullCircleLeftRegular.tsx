@@ -7,8 +7,8 @@ type ChevronFullCircleLeftRegularProps = Omit<IconBaseProps, 'children'>;
 const ChevronFullCircleLeftRegular = memo(
   forwardRef<SVGSVGElement, ChevronFullCircleLeftRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="chevron-full-circle-left" {...props}>
-      <path fill="currentColor" d="M12.64 8.22a1 1 0 0 1 1.61.8v5.97a1 1 0 0 1-1.61.79l-3.85-3a1 1 0 0 1 0-1.57z" />
-        <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path d="M12.64 8.22a1 1 0 0 1 1.61.8v5.97a1 1 0 0 1-1.61.79l-3.85-3a1 1 0 0 1 0-1.57z" />
+        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type SlashFillProps = Omit<IconBaseProps, 'children'>;
 const SlashFill = memo(
   forwardRef<SVGSVGElement, SlashFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="slash-fill" {...props}>
-      <path fill="currentColor" d="M18.88 2a1.5 1.5 0 0 1 2.24 2l-16 18a1.5 1.5 0 0 1-2.24-2z" />
+      <path d="M18.88 2a1.5 1.5 0 0 1 2.24 2l-16 18a1.5 1.5 0 0 1-2.24-2z" />
     </IconBase>
   ))
 );

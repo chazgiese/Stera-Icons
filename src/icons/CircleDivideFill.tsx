@@ -7,7 +7,7 @@ type CircleDivideFillProps = Omit<IconBaseProps, 'children'>;
 const CircleDivideFill = memo(
   forwardRef<SVGSVGElement, CircleDivideFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-divide-fill" {...props}>
-      <path fill="currentColor" d="M11 21.95a10 10 0 0 1 0-19.9zM13 2.05a10 10 0 0 1 0 19.9z" />
+      <path d="M11 21.95a10 10 0 0 1 0-19.9zM13 2.05a10 10 0 0 1 0 19.9z" />
     </IconBase>
   ))
 );

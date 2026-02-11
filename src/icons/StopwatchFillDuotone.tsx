@@ -7,8 +7,8 @@ type StopwatchFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const StopwatchFillDuotone = memo(
   forwardRef<SVGSVGElement, StopwatchFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="stopwatch-fill-duotone" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 4.5a8.5 8.5 0 1 1 0 17 8.5 8.5 0 0 1 0-17m3.89 4.61a1 1 0 0 0-1.42 0l-2.16 2.17q-.15-.03-.31-.03a1.75 1.75 0 1 0 1.72 1.44l2.17-2.16a1 1 0 0 0 0-1.42" clipRule="evenodd" opacity={.4} />
-        <path fill="currentColor" d="M14 1.5a1 1 0 1 1 0 2h-4a1 1 0 0 1 0-2zM14.47 9.11a1 1 0 0 1 1.42 1.42l-2.17 2.16q.03.15.03.31a1.75 1.75 0 1 1-1.44-1.72z" />
+      <path fillRule="evenodd" d="M12 4.5a8.5 8.5 0 1 1 0 17 8.5 8.5 0 0 1 0-17m3.89 4.61a1 1 0 0 0-1.42 0l-2.16 2.17q-.15-.03-.31-.03a1.75 1.75 0 1 0 1.72 1.44l2.17-2.16a1 1 0 0 0 0-1.42" clipRule="evenodd" opacity={.4} />
+        <path d="M14 1.5a1 1 0 1 1 0 2h-4a1 1 0 0 1 0-2zM14.47 9.11a1 1 0 0 1 1.42 1.42l-2.17 2.16q.03.15.03.31a1.75 1.75 0 1 1-1.44-1.72z" />
     </IconBase>
   ))
 );

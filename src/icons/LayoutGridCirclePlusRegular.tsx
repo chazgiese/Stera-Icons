@@ -7,9 +7,9 @@ type LayoutGridCirclePlusRegularProps = Omit<IconBaseProps, 'children'>;
 const LayoutGridCirclePlusRegular = memo(
   forwardRef<SVGSVGElement, LayoutGridCirclePlusRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="layout-grid-circle-plus" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M6.88 13a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25" clipRule="evenodd" />
-        <path fill="currentColor" d="M17.13 13c.4 0 .75.34.75.75v2.63h2.62a.75.75 0 0 1 0 1.5h-2.62v2.62a.75.75 0 0 1-1.5 0v-2.62h-2.63a.75.75 0 0 1 0-1.5h2.63v-2.63c0-.41.33-.75.75-.75" />
-        <path fill="currentColor" fillRule="evenodd" d="M6.88 2.75a4.13 4.13 0 1 1 0 8.25 4.13 4.13 0 0 1 0-8.25m0 1.5a2.62 2.62 0 1 0 0 5.25 2.62 2.62 0 0 0 0-5.25M17.13 2.75a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M6.88 13a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25" clipRule="evenodd" />
+        <path d="M17.13 13c.4 0 .75.34.75.75v2.63h2.62a.75.75 0 0 1 0 1.5h-2.62v2.62a.75.75 0 0 1-1.5 0v-2.62h-2.63a.75.75 0 0 1 0-1.5h2.63v-2.63c0-.41.33-.75.75-.75" />
+        <path fillRule="evenodd" d="M6.88 2.75a4.13 4.13 0 1 1 0 8.25 4.13 4.13 0 0 1 0-8.25m0 1.5a2.62 2.62 0 1 0 0 5.25 2.62 2.62 0 0 0 0-5.25M17.13 2.75a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

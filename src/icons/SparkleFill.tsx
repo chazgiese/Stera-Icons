@@ -7,7 +7,7 @@ type SparkleFillProps = Omit<IconBaseProps, 'children'>;
 const SparkleFill = memo(
   forwardRef<SVGSVGElement, SparkleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="sparkle-fill" {...props}>
-      <path fill="currentColor" d="M12 1a1 1 0 0 1 .96.7l1.09 3.6a7 7 0 0 0 4.66 4.65l3.58 1.1a1 1 0 0 1 0 1.9l-3.58 1.1a7 7 0 0 0-4.66 4.66l-1.1 3.58a1 1 0 0 1-1.9 0l-1.1-3.58a7 7 0 0 0-4.66-4.66l-3.58-1.1a1 1 0 0 1 0-1.9l3.58-1.1A7 7 0 0 0 9.95 5.3l1.1-3.58A1 1 0 0 1 12 1" />
+      <path d="M12 1a1 1 0 0 1 .96.7l1.09 3.6a7 7 0 0 0 4.66 4.65l3.58 1.1a1 1 0 0 1 0 1.9l-3.58 1.1a7 7 0 0 0-4.66 4.66l-1.1 3.58a1 1 0 0 1-1.9 0l-1.1-3.58a7 7 0 0 0-4.66-4.66l-3.58-1.1a1 1 0 0 1 0-1.9l3.58-1.1A7 7 0 0 0 9.95 5.3l1.1-3.58A1 1 0 0 1 12 1" />
     </IconBase>
   ))
 );

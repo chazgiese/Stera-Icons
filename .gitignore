@@ -20,6 +20,7 @@ build/
 .env.production.local
 
 # IDE
+.cursor/
 .vscode/
 .idea/
 *.swp

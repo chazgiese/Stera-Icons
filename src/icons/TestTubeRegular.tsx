@@ -7,7 +7,7 @@ type TestTubeRegularProps = Omit<IconBaseProps, 'children'>;
 const TestTubeRegular = memo(
   forwardRef<SVGSVGElement, TestTubeRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="test-tube" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M16.5 2.25a.75.75 0 0 1 .08 1.5h-.08a.75.75 0 0 0-.75.75V18a3.75 3.75 0 1 1-7.5 0V4.5c0-.39-.3-.7-.67-.75h-.16a.75.75 0 0 1 .08-1.5zM9.75 18a2.25 2.25 0 0 0 4.5 0V3.75h-4.5z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M16.5 2.25a.75.75 0 0 1 .08 1.5h-.08a.75.75 0 0 0-.75.75V18a3.75 3.75 0 1 1-7.5 0V4.5c0-.39-.3-.7-.67-.75h-.16a.75.75 0 0 1 .08-1.5zM9.75 18a2.25 2.25 0 0 0 4.5 0V3.75h-4.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

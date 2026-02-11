@@ -7,7 +7,7 @@ type MoonCrescentFillProps = Omit<IconBaseProps, 'children'>;
 const MoonCrescentFill = memo(
   forwardRef<SVGSVGElement, MoonCrescentFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="moon-crescent-fill" {...props}>
-      <path fill="currentColor" d="M9.57 2.3a1 1 0 0 1 1.15 1.39 8 8 0 0 0 9.23 11.07 1 1 0 0 1 1.15 1.39A10 10 0 1 1 9.57 2.3" />
+      <path d="M9.57 2.3a1 1 0 0 1 1.15 1.39 8 8 0 0 0 9.23 11.07 1 1 0 0 1 1.15 1.39A10 10 0 1 1 9.57 2.3" />
     </IconBase>
   ))
 );

@@ -1,21 +1,17 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts', 'src/base.ts', 'src/icons/*.tsx'],
-  format: ['esm', 'cjs'],
-  dts: true,
+  entry: ['src/base.ts', 'src/types.ts', 'src/utils.ts', 'src/IconBase.tsx', 'src/icons/*.tsx'],
+  format: ['esm'],
+  dts: false,
   splitting: false,
   sourcemap: true, // Keep source maps for development
-  clean: true,
-  external: ['react'],
+  clean: false, // Don't clean dist to preserve production build artifacts
+  external: ['react', 'react/jsx-runtime'],
   treeshake: true,
   minify: false, // No minification for development
-  outDir: 'dist',
-  esbuildOptions: (options, context) => {
-    if (context.format === 'cjs') {
-      options.banner = {
-        js: '"use strict";',
-      };
-    }
+  outDir: 'dist/esm',
+  outExtension() {
+    return { js: '.js' };
   },
 });

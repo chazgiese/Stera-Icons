@@ -7,7 +7,7 @@ type ContrastRegularProps = Omit<IconBaseProps, 'children'>;
 const ContrastRegular = memo(
   forwardRef<SVGSVGElement, ContrastRegularProps>((props, ref) => (
     <IconBase ref={ref} iconName="contrast" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

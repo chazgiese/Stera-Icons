@@ -7,7 +7,7 @@ type PauseCircleFillProps = Omit<IconBaseProps, 'children'>;
 const PauseCircleFill = memo(
   forwardRef<SVGSVGElement, PauseCircleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="pause-circle-fill" {...props}>
-      <path fill="currentColor" fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm5 0a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm5 0a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" clipRule="evenodd" />
     </IconBase>
   ))
 );

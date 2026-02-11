@@ -7,7 +7,7 @@ type MenuBoldProps = Omit<IconBaseProps, 'children'>;
 const MenuBold = memo(
   forwardRef<SVGSVGElement, MenuBoldProps>((props, ref) => (
     <IconBase ref={ref} iconName="menu-bold" {...props}>
-      <path fill="currentColor" d="M20 17a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 5a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
+      <path d="M20 17a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 5a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
     </IconBase>
   ))
 );
