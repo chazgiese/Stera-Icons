@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.0.12
+
+### Patch Changes
+
+- 9c43cb4: Icon component updates, remove deprecated Astrisk typo icons, and build/config improvements
+
 ## 8.0.11
 
 ### Patch Changes
