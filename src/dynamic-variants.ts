@@ -82,8 +82,8 @@ export { ArrowUpRight, ArrowUpRightIcon, SiArrowUpRight } from './icons/ArrowUpR
 export { ArrowUpRightDownLeft, ArrowUpRightDownLeftIcon, SiArrowUpRightDownLeft } from './icons/ArrowUpRightDownLeft';
 export { ArrowsLeftRight, ArrowsLeftRightIcon, SiArrowsLeftRight } from './icons/ArrowsLeftRight';
 export { ArrowsUpDown, ArrowsUpDownIcon, SiArrowsUpDown } from './icons/ArrowsUpDown';
-export { Astrisk, AstriskIcon, SiAstrisk } from './icons/Astrisk';
-export { AstriskAlt, AstriskAltIcon, SiAstriskAlt } from './icons/AstriskAlt';
+export { Asterisk, AsteriskIcon, SiAsterisk } from './icons/Asterisk';
+export { AsteriskAlt, AsteriskAltIcon, SiAsteriskAlt } from './icons/AsteriskAlt';
 export { AtSign, AtSignIcon, SiAtSign } from './icons/AtSign';
 export { Atom, AtomIcon, SiAtom } from './icons/Atom';
 export { AtomAi, AtomAiIcon, SiAtomAi } from './icons/AtomAi';

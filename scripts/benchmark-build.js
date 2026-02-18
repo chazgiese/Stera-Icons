@@ -10,6 +10,7 @@
  */
 
 import { readFileSync, existsSync } from 'fs';
+import { execSync } from 'child_process';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -105,16 +106,26 @@ async function runBenchmark() {
   console.log(`📅 Export date: ${iconsExport.exportedAt}`);
   console.log();
   
-  // Run the build and measure time
+  // Run the build as a subprocess to avoid side-effect imports
   console.log('🏃 Running build...\n');
   
+  const buildCmd = `node ${join(__dirname, 'build-icons.js')} ${iconsExportPath}`;
   const startTime = Date.now();
   
   try {
-    // Import and run the build function
-    const { default: buildModule } = await import('./build-icons.js');
+    const output = execSync(buildCmd, {
+      cwd: join(__dirname, '..'),
+      encoding: 'utf8',
+      stdio: ['inherit', 'pipe', 'pipe'],
+      maxBuffer: 50 * 1024 * 1024
+    });
     
     const totalTime = Date.now() - startTime;
+    
+    // Print build output
+    if (output) process.stdout.write(output);
+    
+    const timings = parseBuildOutput(output);
     
     console.log();
     console.log('=' .repeat(60));
@@ -123,6 +134,10 @@ async function runBenchmark() {
     console.log();
     console.log(`⏱️  Total Build Time: ${formatDuration(totalTime)}`);
     
+    if (timings.esmCompilation) {
+      console.log(`📦 ESM Compilation: ${formatDuration(timings.esmCompilation)}`);
+    }
+    
     const metrics = calculatePerIconMetrics(totalTime, iconCount);
     if (metrics) {
       console.log(`📈 Time per Icon: ${metrics.timePerIcon}ms`);
@@ -130,14 +145,12 @@ async function runBenchmark() {
     }
     
     console.log();
-    console.log('💡 Performance Tips:');
-    console.log('  - Use incremental builds for faster rebuilds');
-    console.log('  - Cache is enabled by default for SVGO optimization');
-    console.log('  - Parallel compilation is enabled for esbuild');
-    console.log();
     
   } catch (error) {
-    console.error('❌ Build failed:', error.message);
+    const totalTime = Date.now() - startTime;
+    if (error.stdout) process.stdout.write(error.stdout);
+    if (error.stderr) process.stderr.write(error.stderr);
+    console.error(`\n❌ Build failed after ${formatDuration(totalTime)}`);
     process.exit(1);
   }
 }

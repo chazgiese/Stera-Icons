@@ -55,19 +55,20 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "rm -f dist/*.{cjs,mjs,d.ts,d.cts} && tsup && node scripts/generate-declarations.js && node scripts/build-icons.js icons-export.json",
+    "build": "rm -f dist/*.cjs dist/*.mjs dist/*.d.ts dist/*.d.cts && tsup && node scripts/build-icons.js icons-export.json && node scripts/generate-declarations.js",
     "build:icons": "node scripts/build-icons.js icons-export.json",
     "build:dev": "tsup --config tsup.config.dev.ts",
-    "dev": "tsup --watch --config tsup.config.dev.ts",
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192' tsup --watch --config tsup.config.dev.ts",
+    "dev:demo": "pnpm --filter stera-icons-react-demo dev",
     "test": "vitest",
     "test:tree-shaking": "node scripts/verify-tree-shaking.js",
     "analyze:bundle": "node scripts/analyze-bundle-size.js",
     "benchmark": "node scripts/benchmark-build.js icons-export.json",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint": "eslint src/",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "changeset publish",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
     "react": ">=17.0.2"

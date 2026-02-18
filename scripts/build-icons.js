@@ -14,14 +14,13 @@ import {
   mapWeightName,
   validateVariantData,
   isValidWeight,
-  generateTripleExport,
   generateTripleExportWithPath,
   generateAliasedReExport,
   generateTripleExportWithPathDist,
   generateAliasedReExportDist
 } from './helpers.js';
 import { HashVersioning } from './hash-versioning.js';
-import { parsePathAttributes, extractPathsFromSvg } from './icon-build/svg-parser.js';
+import { extractPathsFromSvg } from './icon-build/svg-parser.js';
 import { generatePathJsx, generateVariantComponent, generateWrapperComponent, buildSelectionLogic } from './icon-build/jsx-generator.js';
 import { compileIcons, generateWrapperDeclarations, generateVariantDeclarations, collectEntryPoints } from './icon-build/compiler.js';
 import { PROGRESS_INTERVAL } from './icon-build/config.js';
@@ -87,8 +86,16 @@ async function buildIcons(iconsExportPath) {
   let existingMetadata = [];
   if (existsSync(existingMetadataPath)) {
     try {
-      existingMetadata = JSON.parse(readFileSync(existingMetadataPath, 'utf8'));
-      console.log(`📋 Loaded existing metadata for ${existingMetadata.length} icon variants`);
+      const parsed = JSON.parse(readFileSync(existingMetadataPath, 'utf8'));
+      
+      if (!Array.isArray(parsed)) {
+        console.log('⚠️  Existing metadata is not an array, starting fresh');
+      } else if (parsed.length > 0 && (!parsed[0].name || !parsed[0].weight || parsed[0].duotone === undefined || !parsed[0].componentName)) {
+        console.log('⚠️  Existing metadata entries missing required fields, starting fresh');
+      } else {
+        existingMetadata = parsed;
+        console.log(`📋 Loaded existing metadata for ${existingMetadata.length} icon variants`);
+      }
     } catch (error) {
       console.log('⚠️  Could not load existing metadata, starting fresh');
     }
@@ -509,6 +516,28 @@ ${wrapperExportsDist.join('\n')}
         unlinkSync(join(backupDir, file));
       }
       console.log(`🧹 Cleaned up ${filesToDelete.length} old backup(s)`);
+    }
+  }
+  
+  // Post-build integrity check: detect accidental full version history resets
+  if (existingMetadata.length > 0 && metadata.length > 10) {
+    const allSameVersion = metadata.every(item => item.versionAdded === currentVersion);
+    if (allSameVersion) {
+      console.error('');
+      console.error('⚠️  WARNING: All icons have versionAdded set to the current build version!');
+      console.error('⚠️  This indicates a full version history reset — existing metadata was not matched.');
+      console.error(`⚠️  Existing metadata had ${existingMetadata.length} entries, but none were matched.`);
+      console.error('');
+      console.error('   This usually means the metadata lookup keys have changed.');
+      console.error('   If this is intentional, use --force to proceed.');
+      console.error('');
+      
+      if (!process.argv.includes('--force')) {
+        console.error('❌ Build aborted to protect version history. Use --force to override.');
+        process.exit(1);
+      }
+      
+      console.log('⚠️  --force flag detected, proceeding with reset...');
     }
   }
   

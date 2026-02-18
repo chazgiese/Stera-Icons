@@ -77,7 +77,6 @@ jobs:
           else
             echo "No icons-export.json found, skipping icon build"
           fi
-        continue-on-error: true
         
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

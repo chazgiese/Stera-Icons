@@ -73,7 +73,6 @@ export default [
       '*.cjs',
       'samples/',
       'scripts/',
-      'dist/',
     ],
   },
 ];

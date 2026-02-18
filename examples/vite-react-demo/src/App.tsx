@@ -37,7 +37,7 @@ function App() {
         <h2>Triple Aliasing Examples</h2>
         <div className="variant-grid">
           <div className="variant-item">
-            <Home size={48} />
+            <Home color="#0000FF" size={48} />
             <span>Home (base)</span>
           </div>
           <div className="variant-item">
