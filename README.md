@@ -7,15 +7,15 @@ A modern, lightweight React icon library with 760+ icons. All icons available in
 
 ## ✨ Features
 
-- 🎨 **760+ Icons** - Comprehensive icon set in 6 variants (Regular, Bold, Fill × Duotone/Standard)
-- 🌲 **Tree-Shakeable** - Only ~300 bytes per icon variant in your bundle
-- 🎯 **Triple Aliasing** - Import icons with base name, Icon suffix, or Si prefix
-- 🚀 **Dynamic Loading** - Lazy-load icons at runtime for large applications
-- ♿ **Accessible** - Auto `aria-hidden` for decorative icons
-- 🎨 **CSS Classes** - Automatic icon-specific classes for easy styling
-- 📦 **Subpath Exports** - Import directly from icon paths for optimal tree-shaking
-- 🔧 **TypeScript** - Full type definitions with comprehensive JSDoc
-- ⚛️ **React 17+** - Works with all modern React versions
+- **760+ Icons** - Comprehensive icon set in 6 variants (Regular, Bold, Fill × Duotone/Standard)
+- **Tree-Shakeable** - Only ~300 bytes per icon variant in your bundle
+- **Triple Aliasing** - Import icons with base name, Icon suffix, or Si prefix
+- **Dynamic Loading** - Lazy-load icons at runtime for large applications
+- **Accessible** - Auto `aria-hidden` for decorative icons
+- **CSS Classes** - Automatic icon-specific classes for easy styling
+- **Subpath Exports** - Import directly from icon paths for optimal tree-shaking
+- **TypeScript** - Full type definitions with comprehensive JSDoc
+- **React 17+** - Works with all modern React versions
 
 ## Installation
 
@@ -142,7 +142,7 @@ function IconDisplay({ iconName }) {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `size` | `number \| string` | `24` | Icon size in pixels |
+| `size` | `number \| string` | — | When set, applies `width`/`height` SVG attributes. Omit to let CSS control size freely (e.g. Tailwind `size-6`, `w-4 h-4`). |
 | `color` | `string` | `'currentColor'` | Icon color |
 | `weight` | `'regular' \| 'bold' \| 'fill'` | `'regular'` | Icon weight (dynamic variants only) |
 | `duotone` | `boolean` | `false` | Use duotone variant (dynamic variants only) |
@@ -173,10 +173,25 @@ Stera Icons follows ARIA best practices:
 
 ## Styling with CSS
 
+### Sizing with CSS
+
+When no `size` prop is provided, icons have no `width` or `height` SVG attributes, giving CSS full control:
+
+```tsx
+// CSS controls the size — no conflicting SVG attributes
+<Search className="size-6" />    // Tailwind: 24px
+<Search className="w-4 h-4" />   // Tailwind: 16px
+
+// Explicit size prop sets width/height SVG attributes directly
+<Search size={32} />             // renders width="32" height="32"
+```
+
+### Icon Classes
+
 All icons include automatic CSS classes for easy targeting:
 
 ```tsx
-<SearchBold size={24} className="my-icon" />
+<SearchBold className="my-icon" />
 // Renders with classes: "stera stera-search-bold my-icon"
 ```
 

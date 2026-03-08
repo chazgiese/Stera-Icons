@@ -25,7 +25,7 @@ const IconBase = memo(
   forwardRef<SVGSVGElement, IconBaseProps>(
     (
       {
-        size = 24,
+        size,
         color = 'currentColor',
         className,
         'aria-label': ariaLabel,
@@ -52,8 +52,7 @@ const IconBase = memo(
         <svg
           fill={color}
           viewBox="0 0 24 24"
-          width={size}
-          height={size}
+          {...(size !== undefined ? { width: size, height: size } : {})}
           className={iconClasses}
           aria-label={ariaLabel}
           aria-hidden={computedAriaHidden}

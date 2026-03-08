@@ -13,8 +13,8 @@ describe('IconBase', () => {
     
     const svg = container.querySelector('svg');
     expect(svg).toBeInTheDocument();
-    expect(svg).toHaveAttribute('width', '24');
-    expect(svg).toHaveAttribute('height', '24');
+    expect(svg).not.toHaveAttribute('width');
+    expect(svg).not.toHaveAttribute('height');
     expect(svg).toHaveAttribute('fill', 'currentColor');
     expect(svg).toHaveAttribute('viewBox', '0 0 24 24');
   });
@@ -41,6 +41,18 @@ describe('IconBase', () => {
     const svg = container.querySelector('svg');
     expect(svg).toHaveAttribute('width', '2rem');
     expect(svg).toHaveAttribute('height', '2rem');
+  });
+
+  it('renders width and height attributes when size={24} is explicitly passed', () => {
+    const { container } = render(
+      <IconBase size={24}>
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).toHaveAttribute('width', '24');
+    expect(svg).toHaveAttribute('height', '24');
   });
 
   it('accepts custom color', () => {
