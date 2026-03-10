@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.0.14
+
+### Patch Changes
+
+- c108b65: Add JSDoc `@component` and `@tags` annotations to all generated type declarations for LLM discoverability
+
 ## 8.0.13
 
 ### Patch Changes
