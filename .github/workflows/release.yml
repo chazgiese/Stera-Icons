@@ -27,9 +27,6 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Install latest npm
-        run: npm install -g npm@latest
-          
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -40,28 +37,19 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-      - name: Configure npm
-        run: |
-          npm config set registry https://registry.npmjs.org/
-          
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         
       - name: Build
         run: pnpm build
         
-      - name: Verify npm package access
-        run: |
-          npm view stera-icons --json || echo "Package not found or access denied"
-        
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm changeset publish
+          publish: pnpm changeset publish --provenance
           version: pnpm changeset version
           title: "Version Packages"
-          commit: "chore: version packages"
+          commit: "release: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
