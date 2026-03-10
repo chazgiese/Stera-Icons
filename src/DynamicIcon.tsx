@@ -62,7 +62,7 @@ export async function getIconComponent(
   
   throw new Error(
     `[stera-icons]: Icon "${name}" with weight "${weight}"${duotone ? ' (duotone)' : ''} not found. ` +
-    `Available icons can be found at https://github.com/chazgiese/Stera-Icons`
+    `Available icons can be found at https://github.com/hauntedjpeg/Stera-Icons`
   );
 }
 

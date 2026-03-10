@@ -228,4 +228,4 @@ All measurements are gzipped and minified. The default import pattern (`import {
 
 ## License
 
-MIT © [Chaz Giese](https://github.com/chazgiese)
+MIT © [Chaz Giese](https://github.com/hauntedjpeg)

@@ -64,4 +64,4 @@ jobs:
           commit: "chore: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # NPM_TOKEN not needed - trusted publishing handles authentication
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
