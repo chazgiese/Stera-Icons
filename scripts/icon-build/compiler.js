@@ -43,12 +43,14 @@ export async function compileIcons({ entryPoints, esmOutDir, srcDir }) {
  * Generate TypeScript declarations for wrapper components
  * @param {Array<string>} componentNames - Array of component names
  * @param {string} outDir - Output directory path
+ * @param {Map<string, string[]>} [tagsByComponent] - Map of component name → tags
  */
-export function generateWrapperDeclarations(componentNames, outDir) {
+export function generateWrapperDeclarations(componentNames, outDir, tagsByComponent) {
   console.log('📝 Generating TypeScript definitions...');
-  
+
   for (const componentName of componentNames) {
-    const typesContent = TYPE_DEFS.wrapper(componentName);
+    const tags = tagsByComponent?.get(componentName);
+    const typesContent = TYPE_DEFS.wrapper(componentName, tags);
     writeFileSync(join(outDir, `${componentName}.d.ts`), typesContent);
   }
 }
@@ -57,10 +59,12 @@ export function generateWrapperDeclarations(componentNames, outDir) {
  * Generate TypeScript declarations for variant components
  * @param {Array<string>} componentNames - Array of component names
  * @param {string} outDir - Output directory path
+ * @param {Map<string, string[]>} [tagsByComponent] - Map of component name → tags
  */
-export function generateVariantDeclarations(componentNames, outDir) {
+export function generateVariantDeclarations(componentNames, outDir, tagsByComponent) {
   for (const componentName of componentNames) {
-    const typesContent = TYPE_DEFS.variant(componentName);
+    const tags = tagsByComponent?.get(componentName);
+    const typesContent = TYPE_DEFS.variant(componentName, tags);
     writeFileSync(join(outDir, `${componentName}.d.ts`), typesContent);
   }
   

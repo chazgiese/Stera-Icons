@@ -47,8 +47,23 @@ export const PROGRESS_INTERVAL = 100;
  * TypeScript type definitions template
  * Paths are relative from dist/esm/icons/ to dist/esm/
  */
+/**
+ * Build a JSDoc block with @component and @tags annotations.
+ * @param {string} componentName - The Si-prefixed component name
+ * @param {string[]} [tags] - Array of intent/usage keywords
+ * @returns {string} JSDoc block or empty string if no tags
+ */
+function buildJSDoc(componentName, tags) {
+  if (!tags || tags.length === 0) return '';
+  return `/**
+ * @component Si${componentName}
+ * @tags ${tags.join(', ')}
+ */
+`;
+}
+
 export const TYPE_DEFS = {
-  wrapper: (componentName) => `import type { IconProps } from '../types.js';
+  wrapper: (componentName, tags) => `${buildJSDoc(componentName, tags)}import type { IconProps } from '../types.js';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export interface ${componentName}Props extends IconProps {
@@ -60,8 +75,8 @@ export declare const ${componentName}: MemoExoticComponent<ForwardRefExoticCompo
 export declare const ${componentName}Icon: typeof ${componentName};
 export declare const Si${componentName}: typeof ${componentName};
 `,
-  
-  variant: (componentName) => `import type { IconBaseProps } from '../base.js';
+
+  variant: (componentName, tags) => `${buildJSDoc(componentName, tags)}import type { IconBaseProps } from '../base.js';
 import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export type ${componentName}Props = Omit<IconBaseProps, 'children'>;

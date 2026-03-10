@@ -680,9 +680,19 @@ export const iconNames = getIconNames(dynamicIconImports);
     srcDir
   });
   
+  // Build tags lookup for TypeScript declaration JSDoc
+  const tagsByComponent = new Map();
+  for (const [baseName, iconData] of iconsByBaseName) {
+    const wrapperName = baseName.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join('');
+    tagsByComponent.set(wrapperName, iconData.tags);
+    for (const variantInfo of iconData.variants) {
+      tagsByComponent.set(variantInfo.componentName, iconData.tags);
+    }
+  }
+
   // Generate TypeScript declarations (in ESM directory)
-  generateWrapperDeclarations(wrapperComponents, distEsmIconsDir);
-  generateVariantDeclarations(variantComponents, distEsmIconsDir);
+  generateWrapperDeclarations(wrapperComponents, distEsmIconsDir, tagsByComponent);
+  generateVariantDeclarations(variantComponents, distEsmIconsDir, tagsByComponent);
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
