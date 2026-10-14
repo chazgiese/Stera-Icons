@@ -10,7 +10,18 @@ export interface IconEntry {
   name: string;
   kebabName: string;
   tags: string[];
+  // Category ids from categories.json, primary first
+  categories: string[];
   variants: Record<string, Pick<VariantInfo, "componentName">>;
+}
+
+// One entry of packages/icons/categories.json, copied to data/categories.json
+export interface IconCategory {
+  id: string;
+  title: string;
+  description: string;
+  // Kebab name of the icon that represents the category
+  icon: string;
 }
 
 export interface IconData extends IconEntry {

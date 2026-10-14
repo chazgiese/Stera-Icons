@@ -48,7 +48,7 @@ const inputGroupAddonVariants = cva(
         "inline-start":
           "order-first py-2.5 pl-2.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:py-3.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:pl-3.5 group-has-[[data-slot=input-group-control][data-size=sm]]/input-group:py-2 group-has-[[data-slot=input-group-control][data-size=sm]]/input-group:pl-2 has-[>button]:-ml-1 has-[>kbd]:ml-[-0.15rem]",
         "inline-end":
-          "order-last py-2.5 pr-2.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:py-3.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:pr-3.5 group-has-[[data-slot=input-group-control][data-size=sm]]/input-group:py-2 group-has-[[data-slot=input-group-control][data-size=sm]]/input-group:pr-2 has-[>button]:-mr-1 has-[>kbd]:mr-[-0.15rem]",
+          "order-last py-2.5 pr-2.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:py-3.5 group-has-[[data-slot=input-group-control][data-size=lg]]/input-group:pr-3.5 group-has-[[data-slot=input-group-control][data-size=sm]]/input-group:py-2 has-[>kbd]:mr-[-0.15rem]",
         "block-start":
           "order-first w-full justify-start px-2.5 pt-2 group-has-[>input]/input-group:pt-2 [.border-b]:pb-2",
         "block-end":

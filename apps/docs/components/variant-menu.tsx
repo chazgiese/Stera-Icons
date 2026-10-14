@@ -2,11 +2,12 @@
 
 import { useIconVariant } from "@/hooks/useIconVariant";
 import type { IconWeight } from "@/utils/iconCodeSnippets";
-import { Button } from "@/components/ui/button";
+import { InputGroupButton } from "@/components/ui/input-group";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
+  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
@@ -28,20 +29,31 @@ export function VariantMenu() {
 
   return (
     <DropdownMenu>
+      {/* Lives inside the search pill's inline-end addon, see search-input.tsx */}
       <DropdownMenuTrigger
-        render={<Button variant="outline" size="icon-lg" aria-label="Icon variant" />}
+        render={
+          <InputGroupButton
+            variant="ghost"
+            size="icon-sm"
+            className="rounded-full hover:bg-surface-muted-hover"
+            aria-label="Icon variant"
+          />
+        }
       >
         <SiLayoutGridCircle weight={weight} duotone={duotone} />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        sideOffset={8}
+        alignOffset={-6}
+        sideOffset={12}
         className="min-w-52 rounded-3xl p-1.5"
       >
         <DropdownMenuRadioGroup
           value={weight}
           onValueChange={(value) => setVariant(value as IconWeight, duotone)}
         >
+          {/* Base UI group labels must sit inside a group, so this also names the radio group */}
+          <DropdownMenuLabel className="px-3.5">Variants</DropdownMenuLabel>
           {WEIGHTS.map(({ value, label }) => (
             <DropdownMenuRadioItem key={value} value={value} className={itemClassName}>
               {label}

@@ -1,8 +1,29 @@
 /* Base layer defaults. */
 
+/* Height of the sticky navbar (p-4 + h-11 controls). Keep in sync with components/navbar.tsx.
+   Used by anything that sits below it: sticky sidebars, scroll-margin on anchor targets, scroll spy. */
+@theme {
+  --spacing-navbar: 4.75rem;
+}
+
+@utility glass {
+  background: var(--color-alpha-2);
+  border: 1px solid var(--color-alpha-1);
+  /* Written via Tailwind's inset-shadow so the shadows live in its shared box-shadow stack
+     and survive ring-* utilities (e.g. the focus ring), which rewrite box-shadow entirely. */
+  @apply inset-shadow-[0_4px_0_-3px_var(--color-alpha-5),0_-32px_14px_-26px_var(--color-alpha-3)] backdrop-blur-sm;
+}
+
 @layer base {
   * {
     @apply border-border;
+  }
+  /* Anchor navigation (e.g. the category sidebar) glides to its target instead of
+     jumping. Programmatic scrolls opt out with `behavior: "instant"` where needed. */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
   body {
     @apply bg-surface text-text antialiased;

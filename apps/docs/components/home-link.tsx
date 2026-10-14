@@ -13,7 +13,7 @@ export function HomeLink() {
   return (
     <>
       <Button
-        variant="outline"
+        variant="ghost"
         size="icon-lg"
         className="sm:hidden"
         aria-label="Stera Icons"
@@ -23,7 +23,7 @@ export function HomeLink() {
         <SiAsteriskAlt />
       </Button>
       <Button
-        variant="outline"
+        variant="ghost"
         size="lg"
         className="max-sm:hidden"
         nativeButton={false}

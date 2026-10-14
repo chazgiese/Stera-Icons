@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import {
   InputGroup,
   InputGroupAddon,
@@ -8,6 +8,7 @@ import {
   InputGroupInput,
 } from "@/components/ui/input-group";
 import { useSearchQuery, useSetSearchQuery } from "@/components/search-provider";
+import { VariantMenu } from "@/components/variant-menu";
 import { SiSearch, SiX } from "stera-icons";
 
 export function SearchInput() {
@@ -16,21 +17,10 @@ export function SearchInput() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <InputGroup className="w-48 sm:w-64 rounded-full border-none shadow-none bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-2 to-alpha-1 inset-ring inset-ring-alpha-2 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-2 backdrop-blur-sm text-text transition-colors hover:from-alpha-2 hover:to-alpha-2 has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:from-alpha-2 has-[[data-slot=input-group-control]:focus-visible]:to-alpha-2">
-      <InputGroupAddon className="[&>svg]:text-text">
-        <SiSearch />
-      </InputGroupAddon>
-      <InputGroupInput
-        ref={inputRef}
-        type="text"
-        size="lg"
-        aria-label="Search icons"
-        placeholder="Search icons"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      {query && (
-        <InputGroupAddon align="inline-end" className="pr-3!">
+    <InputGroup className="w-56 sm:w-72 rounded-full glass shadow-none transition-colors has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-alpha-3">
+      {/* Fixed-width slot so swapping the icon for the clear button never shifts the input text */}
+      <InputGroupAddon className="w-11 justify-center pl-0! has-[>button]:ml-0 [&>svg]:text-text">
+        {query ? (
           <InputGroupButton
             variant="ghost"
             size="icon-sm"
@@ -43,8 +33,36 @@ export function SearchInput() {
           >
             <SiX />
           </InputGroupButton>
-        </InputGroupAddon>
-      )}
+        ) : (
+          <SiSearch />
+        )}
+      </InputGroupAddon>
+      <InputGroupInput
+        ref={inputRef}
+        type="text"
+        size="lg"
+        aria-label="Search icons"
+        placeholder="Search icons"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <InputGroupAddon align="inline-end" className="pr-1.5!">
+        {/* useIconVariant reads useSearchParams, so the menu needs a Suspense
+            boundary. The fallback reserves the same space to avoid a layout shift */}
+        <Suspense
+          fallback={
+            <InputGroupButton
+              variant="ghost"
+              size="icon-sm"
+              className="rounded-full"
+              disabled
+              aria-hidden
+            />
+          }
+        >
+          <VariantMenu />
+        </Suspense>
+      </InputGroupAddon>
     </InputGroup>
   );
 }

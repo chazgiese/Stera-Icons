@@ -18,13 +18,15 @@ const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
 const iconGroups = new Map();
 
 metadata.forEach(entry => {
-  const { componentName, name: kebabName, weight, duotone, tags, variantComponentName, fileName, versionAdded } = entry;
+  const { componentName, name: kebabName, weight, duotone, tags, categories, variantComponentName, fileName, versionAdded } = entry;
 
   if (!iconGroups.has(componentName)) {
     iconGroups.set(componentName, {
       name: componentName,
       kebabName,
       tags: new Set(),
+      // Category ids, primary first. Every variant of an icon carries the same list
+      categories: Array.isArray(categories) ? categories : [],
       weights: new Set(),
       supportsDuotone: false,
       variants: {},
@@ -62,6 +64,7 @@ iconGroups.forEach(group => {
     kebabName: group.kebabName,
     componentName: group.name,
     tags: Array.from(group.tags),
+    categories: group.categories,
     weights: Array.from(group.weights).sort(),
     supportsDuotone: group.supportsDuotone,
     variants: group.variants,
@@ -80,6 +83,36 @@ if (!fs.existsSync(dataDir)) {
 const iconsJsonPath = path.join(dataDir, 'icons.json');
 fs.writeFileSync(iconsJsonPath, JSON.stringify(icons, null, 2));
 console.log(`✅ Generated ${iconsJsonPath}`);
+
+// Write categories.json
+// The source of truth is packages/icons/categories.json, the closed list the icon build validates against
+const categoriesPath = path.resolve(__dirname, '../../../packages/icons/categories.json');
+
+if (!fs.existsSync(categoriesPath)) {
+  console.error('❌ packages/icons/categories.json not found.');
+  process.exit(1);
+}
+
+const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
+const categoryIds = new Set(categories.map(c => c.id));
+const kebabNames = new Set(icons.map(i => i.kebabName));
+
+for (const category of categories) {
+  if (!kebabNames.has(category.icon)) {
+    console.error(`❌ Category "${category.id}" uses unknown icon "${category.icon}".`);
+    process.exit(1);
+  }
+}
+for (const icon of icons) {
+  if (!categoryIds.has(icon.categories[0])) {
+    console.error(`❌ Icon "${icon.kebabName}" has no primary category defined in categories.json.`);
+    process.exit(1);
+  }
+}
+
+const categoriesJsonPath = path.join(dataDir, 'categories.json');
+fs.writeFileSync(categoriesJsonPath, JSON.stringify(categories, null, 2));
+console.log(`✅ Generated ${categoriesJsonPath} with ${categories.length} categories`);
 
 // Write llms.json (served at /llms.txt and /llms-full.txt)
 // The source of truth is packages/icons/llms.txt, which also ships in the npm package

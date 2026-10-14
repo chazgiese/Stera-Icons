@@ -1,10 +1,17 @@
 import "server-only";
 import iconData from "@/data/icons.json";
-import type { IconData, IconEntry } from "@/lib/types";
+import categoryData from "@/data/categories.json";
+import type { IconCategory, IconData, IconEntry } from "@/lib/types";
 
-export type { IconData, IconEntry };
+export type { IconCategory, IconData, IconEntry };
 
 const data = iconData as IconData[];
+const categories = categoryData as IconCategory[];
+
+// In display order, as defined in packages/icons/categories.json
+export function getCategories(): IconCategory[] {
+  return categories;
+}
 
 export interface IconSummary {
   name: string;
@@ -76,6 +83,7 @@ export function getAllIconEntries(): IconEntry[] {
     name: icon.name,
     kebabName: icon.kebabName,
     tags: icon.tags,
+    categories: icon.categories,
     variants: Object.fromEntries(
       Object.entries(icon.variants).map(([key, variant]) => [
         key,

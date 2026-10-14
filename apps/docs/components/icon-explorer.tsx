@@ -1,14 +1,19 @@
 "use client"
 
-import { useMemo, useCallback } from "react"
+import { useMemo, useCallback, useDeferredValue } from "react"
 import { useSearchParams } from "next/navigation"
-import type { IconEntry } from "@/lib/types"
-import { IconGrid } from "@/components/icon-grid"
+import type { IconCategory, IconEntry } from "@/lib/types"
+import { CategorySections } from "@/components/category-sections"
+import { CategorySidebar } from "@/components/category-sidebar"
 import { IconDetailDrawer } from "@/components/icon-detail-drawer"
-import { useSetSearchQuery } from "@/components/search-provider"
+import { ScrollSpyProvider } from "@/components/scroll-spy"
+import { useSearchQuery, useSetSearchQuery } from "@/components/search-provider"
+import { useCategorizedIcons } from "@/hooks/use-categorized-icons"
+import { useIconVariant } from "@/hooks/useIconVariant"
 
 interface IconExplorerProps {
   icons: IconEntry[];
+  categories: IconCategory[];
 }
 
 // Reads the URL when called rather than from useSearchParams, so the handlers
@@ -21,12 +26,23 @@ function setIconParam(kebabName: string | null) {
     params.delete("icon");
   }
   const qs = params.toString();
-  window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  // Keep the #category fragment so a deep link survives opening the drawer
+  window.history.replaceState(
+    null,
+    "",
+    `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`
+  );
 }
 
-export function IconExplorer({ icons }: IconExplorerProps) {
+export function IconExplorer({ icons, categories }: IconExplorerProps) {
   const searchParams = useSearchParams();
   const setQuery = useSetSearchQuery();
+  const { weight, duotone } = useIconVariant();
+
+  // Deferred so rendering the results never blocks typing in the search input
+  const query = useDeferredValue(useSearchQuery());
+  const { sections, counts } = useCategorizedIcons(icons, categories, query);
+  const categoryIds = useMemo(() => categories.map((c) => c.id), [categories]);
 
   // The URL query param is the source of truth for the open drawer
   const iconParam = searchParams.get("icon");
@@ -49,17 +65,32 @@ export function IconExplorer({ icons }: IconExplorerProps) {
   const handleTagClick = useCallback((tag: string) => {
     setQuery(tag);
     setIconParam(null);
-    window.scrollTo({ top: 0 });
+    // Instant: the results replace the page under the scroll, so gliding there
+    // would animate over content that's already gone
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [setQuery]);
 
   return (
-    <>
-      <IconGrid icons={icons} onIconClick={handleIconClick} />
-      <IconDetailDrawer
-        icon={selectedIcon}
-        onClose={handleDrawerClose}
-        onTagClick={handleTagClick}
+    <ScrollSpyProvider order={categoryIds}>
+      <CategorySidebar
+        categories={categories}
+        counts={counts}
+        weight={weight}
+        duotone={duotone}
       />
-    </>
+      <main className="min-w-0 flex-1 px-4 py-4">
+        <CategorySections
+          sections={sections}
+          weight={weight}
+          duotone={duotone}
+          onIconClick={handleIconClick}
+        />
+        <IconDetailDrawer
+          icon={selectedIcon}
+          onClose={handleDrawerClose}
+          onTagClick={handleTagClick}
+        />
+      </main>
+    </ScrollSpyProvider>
   );
 }

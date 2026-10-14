@@ -18,11 +18,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## How icon data gets here
 
-`scripts/generate-icons.mjs` runs before `dev` and `build`. It reads `packages/icons/dist/icons.meta.json` and `packages/icons/llms.txt` and writes to `data/` (gitignored):
+`scripts/generate-icons.mjs` runs before `dev` and `build`. It reads `packages/icons/dist/icons.meta.json`, `packages/icons/categories.json` and `packages/icons/llms.txt` and writes to `data/` (gitignored):
 
 | File | Contents |
 |------|----------|
-| `data/icons.json` | One entry per icon: names, tags, variants |
+| `data/icons.json` | One entry per icon: names, tags, categories, variants |
+| `data/categories.json` | The category list from `packages/icons/categories.json`, in display order |
 | `data/icon-components.tsx` | Map from kebab name to component, from `stera-icons/dynamic-variants` |
 | `data/llms.json` | The text of `packages/icons/llms.txt` |
 

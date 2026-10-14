@@ -29,7 +29,12 @@ export function useIconVariant() {
         params.set('variant', next.key);
       }
       const qs = params.toString();
-      window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
+      // Keep the #category fragment so a deep link survives a variant change
+      window.history.replaceState(
+        null,
+        '',
+        `${window.location.pathname}${qs ? `?${qs}` : ''}${window.location.hash}`
+      );
     },
     []
   );

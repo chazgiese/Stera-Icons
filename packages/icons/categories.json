@@ -3,31 +3,31 @@
     "id": "interface",
     "title": "Interface & actions",
     "description": "Core UI controls and actions: add, remove, search, edit, settings, toggles, cursors, and scanning.",
-    "icon": "settings"
+    "icon": "cursor"
   },
   {
     "id": "arrows",
     "title": "Arrows",
     "description": "Arrows, chevrons, and other directional indicators for navigation, movement, and rotation.",
-    "icon": "arrow-right"
+    "icon": "arrow-circle-right"
   },
   {
     "id": "layout",
     "title": "Layout",
     "description": "Windows, panels, sidebars, grids, and controls that arrange or resize content.",
-    "icon": "layout-grid"
+    "icon": "layout-panel-left"
   },
   {
     "id": "text",
     "title": "Text & editing",
     "description": "Typography, text formatting, lists, quotes, and writing controls.",
-    "icon": "text"
+    "icon": "text-square"
   },
   {
     "id": "files",
     "title": "Files & documents",
     "description": "Documents, folders, notes, books, clipboards, and file transfer.",
-    "icon": "document"
+    "icon": "folder-tree"
   },
   {
     "id": "communication",
@@ -45,7 +45,7 @@
     "id": "media",
     "title": "Media",
     "description": "Audio, video, images, photography, and playback controls.",
-    "icon": "play"
+    "icon": "image-pile"
   },
   {
     "id": "time",
@@ -57,7 +57,7 @@
     "id": "people",
     "title": "People & account",
     "description": "Users, teams, identity, sign-in, gestures, and facial expressions.",
-    "icon": "user"
+    "icon": "users"
   },
   {
     "id": "security",
@@ -75,13 +75,13 @@
     "id": "development",
     "title": "Development",
     "description": "Code, terminals, git, databases, servers, workflows, and integrations.",
-    "icon": "code"
+    "icon": "cli-square"
   },
   {
     "id": "ai",
     "title": "AI",
     "description": "Artificial intelligence, agents, sparkles, and AI-assisted variants of other icons.",
-    "icon": "sparkles"
+    "icon": "sparkle"
   },
   {
     "id": "charts",
@@ -129,24 +129,24 @@
     "id": "food",
     "title": "Food & drink",
     "description": "Food, drinks, and dining.",
-    "icon": "fork-knife"
+    "icon": "carrot"
   },
   {
     "id": "science",
     "title": "Science & health",
     "description": "Science, lab equipment, medicine, and the body.",
-    "icon": "flask"
+    "icon": "microscope"
   },
   {
     "id": "games",
     "title": "Sports, games & awards",
     "description": "Sports, games, characters, trophies, and achievements.",
-    "icon": "trophy"
+    "icon": "gamepad"
   },
   {
     "id": "tools",
     "title": "Tools & objects",
     "description": "Hand tools and everyday physical objects.",
-    "icon": "wrench"
+    "icon": "tools"
   }
 ]

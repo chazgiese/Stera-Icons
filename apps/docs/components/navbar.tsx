@@ -4,31 +4,29 @@ import { HomeLink } from "@/components/home-link"
 import { NAV_LINKS } from "@/components/nav-links"
 import { NavMenu } from "@/components/nav-menu"
 import { SearchInput } from "@/components/search-input"
-import { VariantMenu } from "@/components/variant-menu"
-import { Suspense } from "react"
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50">
-      <div className="mx-auto flex items-center justify-between p-4 sm:px-4">
+    // The ::before gradient fades page content as it scrolls under the navbar.
+    // It is a fixed overlay rather than a scroll-fade mask so it shows whether
+    // or not the page overflows. z-index -1 keeps it behind the nav's controls
+    // but above the page, since the sticky z-50 nav is its own stacking context
+    <nav className="sticky top-0 z-50 before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-linear-to-b before:from-surface before:to-transparent">
+      {/* Three columns so the search pill is centered regardless of the outer groups' widths */}
+      <div className="mx-auto grid grid-cols-[1fr_auto_1fr] items-center p-4 sm:px-4">
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 justify-self-start">
           <HomeLink />
         </div>
 
-        <div className="flex items-center gap-2">
-          <SearchInput />
-          <Suspense>
-            <VariantMenu />
-          </Suspense>
-        </div>
+        <SearchInput />
 
-        <div className="flex bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-2 to-alpha-1 border-none inset-ring inset-ring-alpha-2 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm rounded-full p-1 max-sm:hidden">
+        <div className="justify-self-end flex max-sm:hidden">
           {NAV_LINKS.map(({ label, href, icon: Icon, internal }) => (
             <Button
               key={href}
               variant="ghost"
-              size="icon"
+              size="icon-lg"
               aria-label={label}
               nativeButton={false}
               render={internal ? <Link href={href} /> : <a href={href} target="_blank" rel="noopener noreferrer" />}
@@ -38,7 +36,7 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="sm:hidden">
+        <div className="justify-self-end sm:hidden">
           <NavMenu />
         </div>
 

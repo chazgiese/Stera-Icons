@@ -14,7 +14,7 @@ export const IconCard = memo(function IconCard({ icon, weight, duotone, onIconCl
   return (
     <button
       onClick={() => onIconClick(icon)}
-      className="group flex flex-col justify-center items-center gap-2 p-2 aspect-square rounded-2xl transition-colors hover:bg-surface-muted cursor-pointer text-text-subtle"
+      className="group flex flex-col justify-center items-center gap-2 p-2 aspect-square rounded-2xl transition-colors bg-surface-subtle hover:bg-surface-subtle-hover cursor-pointer text-text-subtle"
     >
       <IconRenderer
         iconName={icon.kebabName}

@@ -2,6 +2,9 @@
 
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
+// TEMPORARY: dark mode is forced for every visitor. To restore system theme
+// detection, remove `forcedTheme` and restore `defaultTheme="system"` and
+// `enableSystem`.
 function ThemeProvider({
   children,
   ...props
@@ -9,8 +12,9 @@ function ThemeProvider({
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
+      forcedTheme="dark"
+      defaultTheme="dark"
+      enableSystem={false}
       disableTransitionOnChange
       storageKey=""
       {...props}
