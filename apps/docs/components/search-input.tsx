@@ -41,8 +41,9 @@ export function SearchInput() {
         ref={inputRef}
         type="text"
         size="lg"
+        className="pl-0!"
         aria-label="Search icons"
-        placeholder="Search icons"
+        placeholder="Search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
