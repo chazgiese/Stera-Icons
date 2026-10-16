@@ -5,8 +5,10 @@
   "scripts": {
     "build": "pnpm --filter stera-icons build",
     "build:icons": "pnpm --filter stera-icons build:icons",
+    "build:plugin": "pnpm --filter @stera/figma-plugin build",
     "dev": "pnpm --filter stera-icons dev",
     "dev:docs": "pnpm --filter docs dev",
+    "dev:plugin": "pnpm --filter @stera/figma-plugin dev",
     "test": "pnpm --filter stera-icons test",
     "lint": "pnpm --filter stera-icons lint",
     "changeset": "changeset",

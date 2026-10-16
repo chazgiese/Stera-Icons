@@ -2,6 +2,8 @@
 
 An icon library with personality and discipline. Available for Figma and React.
 
+This repo holds the `stera-icons` npm package (`packages/icons`), the [stera.sh](https://stera.sh) docs site (`apps/docs`) and the Figma plugin that exports the icon file (`apps/figma-plugin`).
+
 Browse icons and documentation at [stera.sh](https://stera.sh).
 
 ## Stats

@@ -9,6 +9,26 @@
 pnpm install
 ```
 
+## Exporting Icons from Figma
+
+`packages/icons/icons-export.json` is produced by the Figma plugin in [`apps/figma-plugin`](apps/figma-plugin/README.md). The plugin cannot write to disk, so the export is a download you copy into place.
+
+```bash
+# 1. Build the plugin (once, and after any change to it)
+pnpm build:plugin
+
+# 2. In Figma Desktop (once): Plugins → Development → Import plugin from manifest...
+#    and pick apps/figma-plugin/manifest.json
+
+# 3. Open the Stera Icons file on the icons page, run the plugin,
+#    click "Run Pre-Checks", then "Export Icons"
+
+# 4. Copy the download over the committed file
+cp ~/Downloads/icons-export.json packages/icons/icons-export.json
+```
+
+Then follow the steps below.
+
 ## Adding Icons
 
 Follow the **changeset-first** workflow — create the changeset *before* adding icons so new icons get the correct version metadata.
@@ -20,7 +40,8 @@ pnpm changeset
 # 2. Verify the pending version is detected
 node packages/icons/scripts/hash-versioning.js info
 
-# 3. Add your icons to packages/icons/icons-export.json
+# 3. Export from Figma and copy the file to packages/icons/icons-export.json
+#    (see "Exporting Icons from Figma" above)
 
 # 4. Build icons
 pnpm build:icons
@@ -85,6 +106,8 @@ All commands run from the monorepo root:
 | `pnpm build:icons` | Build icon components and metadata only |
 | `pnpm dev` | Watch mode for development |
 | `pnpm dev:docs` | Run the docs site locally (run `pnpm build` first) |
+| `pnpm build:plugin` | Build the Figma exporter plugin into `apps/figma-plugin/dist` |
+| `pnpm dev:plugin` | Rebuild the Figma plugin on change |
 | `pnpm test` | Run tests in watch mode |
 | `pnpm --filter stera-icons exec vitest run` | Run tests once |
 | `pnpm lint` | Lint the icons package |
@@ -122,13 +145,14 @@ Releases are fully automated via GitHub Actions — **never run `pnpm changeset 
 | `minor` | 3.1.0 → 3.2.0 | **New icons** (most common) |
 | `major` | 3.1.0 → 4.0.0 | Breaking changes, icon removals, renames without an alias |
 
-Changes to anything that ships in the npm package need a changeset, including `packages/icons/README.md` and `packages/icons/llms.txt`. Changes to `apps/docs` do not.
+Changes to anything that ships in the npm package need a changeset, including `packages/icons/README.md` and `packages/icons/llms.txt`. Changes to `apps/docs` and `apps/figma-plugin` do not.
 
 ## Important Files
 
 | File | Purpose |
 |------|---------|
 | `packages/icons/icons-export.json` | Icon definitions (SVG data from Figma) |
+| `apps/figma-plugin/` | Figma plugin that produces `icons-export.json` |
 | `packages/icons/icon-aliases.json` | Deprecated aliases for renamed icons |
 | `packages/icons/dist/icons.meta.json` | Version history per icon — **must be committed** |
 | `.changeset/*.md` | Pending version bumps |

@@ -76,6 +76,30 @@ importers:
         specifier: ^5
         version: 5.9.3
 
+  apps/figma-plugin:
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.39.5
+        version: 9.39.5
+      '@figma/plugin-typings':
+        specifier: ^1.117.0
+        version: 1.142.0
+      esbuild:
+        specifier: ^0.28.2
+        version: 0.28.2
+      eslint:
+        specifier: ^9.39.5
+        version: 9.39.5(jiti@2.6.1)
+      globals:
+        specifier: ^17.13.0
+        version: 17.13.0
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+      typescript-eslint:
+        specifier: ^8.71.1
+        version: 8.71.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)
+
   packages/icons:
     devDependencies:
       '@eslint/js':
@@ -745,6 +769,9 @@ packages:
     peerDependenciesMeta:
       '@noble/hashes':
         optional: true
+
+  '@figma/plugin-typings@1.142.0':
+    resolution: {integrity: sha512-Loa9P4bUZi/pQejic8OYQSU4Zz9izJdIiDUkkKddq5Bfc5JPRV6pCeg3C8owovbX9lKshaFym86PlMhKZgLeBw==}
 
   '@floating-ui/core@1.8.0':
     resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
@@ -4244,6 +4271,8 @@ snapshots:
       levn: 0.4.1
 
   '@exodus/bytes@1.16.0': {}
+
+  '@figma/plugin-typings@1.142.0': {}
 
   '@floating-ui/core@1.8.0':
     dependencies:

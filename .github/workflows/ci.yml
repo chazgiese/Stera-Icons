@@ -45,6 +45,15 @@ jobs:
       - name: Build
         run: pnpm --filter stera-icons build
 
+      - name: Typecheck Figma plugin
+        run: pnpm --filter @stera/figma-plugin typecheck
+
+      - name: Lint Figma plugin
+        run: pnpm --filter @stera/figma-plugin lint
+
+      - name: Build Figma plugin
+        run: pnpm --filter @stera/figma-plugin build
+
   build-icons:
     name: Build Icons
     runs-on: ubuntu-latest
