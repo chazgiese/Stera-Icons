@@ -8,9 +8,10 @@
  *
  * The build re-exports the new icon under every old export name, marks those
  * exports @deprecated, and fails once the version being built reaches `removeIn`.
+ * It also writes entries itself when it detects a rename (see renames.js).
  */
 
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { toPascalCase } from '../helpers.js';
 
@@ -51,6 +52,27 @@ export function loadAliases(packageDir) {
   return Object.entries(parsed)
     .map(([name, alias]) => ({ name, ...alias }))
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * icon-aliases.json as text: one alias per line, sorted by name, trailing newline
+ * @param {Array<{name: string, to: string, since: string, removeIn: string}>} aliases
+ * @returns {string}
+ */
+export function serializeAliases(aliases) {
+  const lines = [...aliases]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(({ name, to, since, removeIn }) => `  "${name}": { "to": "${to}", "since": "${since}", "removeIn": "${removeIn}" }`);
+  return lines.length === 0 ? '{}\n' : `{\n${lines.join(',\n')}\n}\n`;
+}
+
+/**
+ * Write icon-aliases.json
+ * @param {string} packageDir - Path to packages/icons
+ * @param {Array<{name: string, to: string, since: string, removeIn: string}>} aliases
+ */
+export function writeAliases(packageDir, aliases) {
+  writeFileSync(join(packageDir, ALIASES_FILE), serializeAliases(aliases));
 }
 
 /**

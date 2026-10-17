@@ -11,7 +11,9 @@ describe('Icon Validation', () => {
     expect(Array.isArray(metadata)).toBe(true);
     
     // Validate metadata structure
-    metadata.forEach((icon: { name: string; weight: string; duotone: boolean; tags: string[]; componentName: string; fileName: string }) => {
+    metadata.forEach((icon: { id: string; name: string; weight: string; duotone: boolean; tags: string[]; componentName: string; fileName: string }) => {
+      expect(icon).toHaveProperty('id');
+      expect(icon.id).toMatch(/^[0-9a-f]{40}$/);
       expect(icon).toHaveProperty('name');
       expect(icon).toHaveProperty('weight');
       expect(icon).toHaveProperty('duotone');
@@ -26,6 +28,15 @@ describe('Icon Validation', () => {
       expect(typeof icon.componentName).toBe('string');
       expect(typeof icon.fileName).toBe('string');
     });
+  });
+
+  it('should give every icon one id and every id one icon', () => {
+    const metadata: { id: string; name: string }[] = JSON.parse(readFileSync(join(__dirname, '../../dist/icons.meta.json'), 'utf8'));
+    const names = new Set(metadata.map(icon => icon.name));
+    const ids = new Set(metadata.map(icon => icon.id));
+    const pairs = new Set(metadata.map(icon => `${icon.id}|${icon.name}`));
+    expect(ids.size).toBe(names.size);
+    expect(pairs.size).toBe(names.size);
   });
 
 });

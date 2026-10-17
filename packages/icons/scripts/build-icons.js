@@ -25,8 +25,9 @@ import { extractPathsFromSvg } from './icon-build/svg-parser.js';
 import { generatePathJsx, generateVariantComponent, generateWrapperComponent, buildSelectionLogic } from './icon-build/jsx-generator.js';
 import { compileIcons, generateWrapperDeclarations, generateVariantDeclarations, collectEntryPoints } from './icon-build/compiler.js';
 import { PROGRESS_INTERVAL } from './icon-build/config.js';
-import { ALIASES_FILE, loadAliases, validateAliases, generateAliasDeclaration, generateAliasModule } from './icon-build/aliases.js';
+import { ALIASES_FILE, loadAliases, writeAliases, validateAliases, generateAliasDeclaration, generateAliasModule } from './icon-build/aliases.js';
 import { CATEGORIES_FILE, loadCategories, parseCategories, validateCategories, validateIconCategories } from './icon-build/categories.js';
+import { validateIconsExport, createMetadataIndex, detectRenames, applyRenames, findRemovedIcons, findRecreatedIcons } from './icon-build/renames.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -35,17 +36,84 @@ const __dirname = dirname(__filename);
 const svgoConfig = (await import('./svgo.config.js')).default;
 
 /**
+ * Print a build failure and exit
+ * @param {string} title - What went wrong
+ * @param {string[]} details - One line per problem
+ */
+function fail(title, details = []) {
+  console.error(`\n❌ BUILD FAILED: ${title}`);
+  details.forEach((detail, index) => console.error(`  ${index + 1}. ${detail}`));
+  process.exit(1);
+}
+
+/**
+ * Load dist/icons.meta.json, the version history of every icon variant
+ * @param {string} metadataPath
+ * @returns {Array<Object>} - Empty when the file is missing or unusable
+ */
+function loadExistingMetadata(metadataPath) {
+  if (!existsSync(metadataPath)) {
+    console.log('⚠️  No existing metadata file found');
+    return [];
+  }
+  try {
+    const parsed = JSON.parse(readFileSync(metadataPath, 'utf8'));
+    if (!Array.isArray(parsed)) {
+      console.log('⚠️  Existing metadata is not an array, starting fresh');
+      return [];
+    }
+    if (parsed.length > 0 && (!parsed[0].name || !parsed[0].weight || parsed[0].duotone === undefined || !parsed[0].componentName)) {
+      console.log('⚠️  Existing metadata entries missing required fields, starting fresh');
+      return [];
+    }
+    console.log(`📋 Loaded existing metadata for ${parsed.length} icon variants`);
+    return parsed;
+  } catch {
+    console.log('⚠️  Could not load existing metadata, starting fresh');
+    return [];
+  }
+}
+
+/**
  * Main function to build icon components from Figma export
  * @param {string} iconsExportPath - Path to icons-export.json file
  * @returns {Promise<void>}
  */
 async function buildIcons(iconsExportPath) {
   console.log('🚀 Building Stera Icons with optimized IconBase architecture...');
-  
+
   // Read the icons export JSON
   const iconsExport = JSON.parse(readFileSync(iconsExportPath, 'utf8'));
   console.log(`📦 Processing ${iconsExport.totalIcons} icons from ${iconsExport.exportedAt}`);
-  
+
+  const exportErrors = validateIconsExport(iconsExport);
+  if (exportErrors.length > 0) {
+    fail(
+      `${iconsExportPath} is not a usable export. Re-export it with the Figma plugin (apps/figma-plugin) and copy it over packages/icons/icons-export.json`,
+      exportErrors
+    );
+  }
+
+  const packageDir = join(__dirname, '..');
+  const iconsDir = join(packageDir, 'src', 'icons');
+  const distDir = join(packageDir, 'dist');
+
+  // Icons by id and build name: what renames, aliases and categories are checked against
+  const exportedIcons = iconsExport.icons.map(icon => ({ id: icon.id, name: normalizeSlug(parseIconName(icon.name)) }));
+  const exportedIconNames = new Set(exportedIcons.map(icon => icon.name));
+
+  // Check the category definitions and each icon's categories the same way,
+  // before anything is written
+  const categories = loadCategories(packageDir);
+  const categoryErrors = [
+    ...validateCategories(categories, exportedIconNames),
+    ...validateIconCategories(iconsExport.icons, categories)
+  ];
+  if (categoryErrors.length > 0) {
+    fail(`Found ${categoryErrors.length} problem(s) with icon categories (${CATEGORIES_FILE}):`, categoryErrors);
+  }
+  console.log(`🗂️  Loaded ${categories.length} categories from ${CATEGORIES_FILE}`);
+
   // Get version information using the hash-based versioning
   const hashVersioning = new HashVersioning(join(__dirname, '..'));
   const versionInfo = hashVersioning.getVersionForIcons();
@@ -58,36 +126,82 @@ async function buildIcons(iconsExportPath) {
   }
   console.log(`📅 Build date: ${currentDate}`);
   
-  // Load deprecated aliases for renamed icons, and stop before touching any
-  // files if one is invalid or has reached the version it is removed in
-  const aliases = loadAliases(join(__dirname, '..'));
-  const exportedIconNames = new Set(iconsExport.icons.map(icon => normalizeSlug(parseIconName(icon.name))));
+  // Load existing metadata to track version history
+  const existingMetadataPath = join(distDir, 'icons.meta.json');
+  const existingMetadata = loadExistingMetadata(existingMetadataPath);
+
+  // Safety check: Warn if no existing metadata when processing many icons
+  // This prevents accidentally resetting version history
+  const totalIconsToProcess = iconsExport.icons.length;
+  if (existingMetadata.length === 0 && totalIconsToProcess > 10) {
+    console.error('');
+    console.error('⚠️  WARNING: No existing metadata found!');
+    console.error(`⚠️  You are about to mark ALL ${totalIconsToProcess} icons as NEW.`);
+    console.error('⚠️  This will reset version history for all icons.');
+    console.error('');
+    console.error('   If this is intentional (e.g., first build), use --force to proceed.');
+    console.error('   If this is NOT intentional, check that dist/icons.meta.json exists.');
+    console.error('');
+
+    if (!process.argv.includes('--force')) {
+      console.error('❌ Build aborted. Use --force to override this safety check.');
+      process.exit(1);
+    }
+
+    console.log('⚠️  --force flag detected, proceeding with build...');
+  }
+
+  const metadataIndex = createMetadataIndex(existingMetadata);
+
+  // Renames: an exported icon whose id the metadata knows under another name.
+  // Each one gets a deprecated alias, written to icon-aliases.json before the
+  // aliases are validated so the new entry is checked and generated in this build
+  let aliases = loadAliases(packageDir);
+
+  const { renames, alreadyAliased, errors: renameErrors } = detectRenames(exportedIcons, existingMetadata, aliases);
+  if (renameErrors.length > 0) {
+    fail(`Found ${renameErrors.length} rename(s) that cannot be aliased automatically:`, renameErrors);
+  }
+  if (renames.length > 0) {
+    const describe = ({ from, to }) => `${from} → ${to}`;
+    const bump = hashVersioning.getPendingBump();
+    if (bump !== 'minor' && bump !== 'major') {
+      fail(
+        `${renames.length} renamed icon(s) detected (${renames.map(describe).join(', ')}) but no minor or major changeset is pending. ` +
+        `Run \`pnpm changeset\` first, so the alias gets the version the rename ships in`
+      );
+    }
+    const removeIn = hashVersioning.bumpVersion(currentVersion, 'major');
+    const applied = applyRenames(aliases, renames, { since: currentVersion, removeIn });
+    aliases = applied.aliases;
+    writeAliases(packageDir, aliases);
+    console.log(`\n🔀 Renamed icon(s) detected. Aliases written to ${ALIASES_FILE} (since ${currentVersion}, removed in ${removeIn}):`);
+    applied.added.forEach(alias => console.log(`  ${alias.name} → ${alias.to}`));
+    applied.retargeted.forEach(({ name, from, to }) => console.log(`  ${name} → ${to} (was → ${from})`));
+    console.log('  List the renames in the changeset body (old name → new name)');
+  }
+  alreadyAliased.forEach(({ from, to }) => console.log(`🔀 ${from} → ${to} is already aliased in ${ALIASES_FILE}`));
+
+  const removedIcons = findRemovedIcons(exportedIcons, existingMetadata);
+  if (removedIcons.length > 0) {
+    console.log(`\n⚠️  Removed icon(s), no longer in the export: ${removedIcons.map(icon => icon.name).join(', ')}`);
+    console.log('   Removing an icon is a breaking change: list it in a major changeset');
+  }
+  const recreatedIcons = findRecreatedIcons(exportedIcons, existingMetadata);
+  if (recreatedIcons.length > 0) {
+    console.log(`\n⚠️  Recreated component set(s), same name under a new id: ${recreatedIcons.map(icon => icon.name).join(', ')}`);
+    console.log('   Their version history is kept by name and the new id is stored');
+  }
+
+  // Stop before touching any files if an alias is invalid or has reached the version it is removed in
   const aliasErrors = validateAliases(aliases, exportedIconNames, currentVersion);
   if (aliasErrors.length > 0) {
-    console.error(`\n❌ BUILD FAILED: Found ${aliasErrors.length} problem(s) in ${ALIASES_FILE}:`);
-    aliasErrors.forEach((error, index) => console.error(`  ${index + 1}. ${error}`));
-    process.exit(1);
+    fail(`Found ${aliasErrors.length} problem(s) in ${ALIASES_FILE}:`, aliasErrors);
   }
   if (aliases.length > 0) {
     console.log(`🔀 Loaded ${aliases.length} deprecated alias(es) from ${ALIASES_FILE}`);
   }
-  
-  // Check the category definitions and each icon's categories the same way
-  const categories = loadCategories(join(__dirname, '..'));
-  const categoryErrors = [
-    ...validateCategories(categories, exportedIconNames),
-    ...validateIconCategories(iconsExport.icons, categories)
-  ];
-  if (categoryErrors.length > 0) {
-    console.error(`\n❌ BUILD FAILED: Found ${categoryErrors.length} problem(s) with icon categories (${CATEGORIES_FILE}):`);
-    categoryErrors.forEach((error, index) => console.error(`  ${index + 1}. ${error}`));
-    process.exit(1);
-  }
-  console.log(`🗂️  Loaded ${categories.length} categories from ${CATEGORIES_FILE}`);
-  
-  const iconsDir = join(__dirname, '..', 'src', 'icons');
-  const distDir = join(__dirname, '..', 'dist');
-  
+
   // Clean up existing files to ensure only current icons are present
   console.log('🧹 Cleaning up existing icon files...');
   if (existsSync(iconsDir)) {
@@ -116,57 +230,7 @@ async function buildIcons(iconsExportPath) {
   const aliasWrapperExportsDist = [];
   const aliasFiles = [];               // Per-icon files for dist/esm/icons
   const namingConflicts = [];
-  
-  // Load existing metadata to track version history
-  const existingMetadataPath = join(distDir, 'icons.meta.json');
-  let existingMetadata = [];
-  if (existsSync(existingMetadataPath)) {
-    try {
-      const parsed = JSON.parse(readFileSync(existingMetadataPath, 'utf8'));
-      
-      if (!Array.isArray(parsed)) {
-        console.log('⚠️  Existing metadata is not an array, starting fresh');
-      } else if (parsed.length > 0 && (!parsed[0].name || !parsed[0].weight || parsed[0].duotone === undefined || !parsed[0].componentName)) {
-        console.log('⚠️  Existing metadata entries missing required fields, starting fresh');
-      } else {
-        existingMetadata = parsed;
-        console.log(`📋 Loaded existing metadata for ${existingMetadata.length} icon variants`);
-      }
-    } catch (error) {
-      console.log('⚠️  Could not load existing metadata, starting fresh');
-    }
-  } else {
-    console.log('⚠️  No existing metadata file found');
-  }
-  
-  // Safety check: Warn if no existing metadata when processing many icons
-  // This prevents accidentally resetting version history
-  const totalIconsToProcess = iconsExport.icons.length;
-  if (existingMetadata.length === 0 && totalIconsToProcess > 10) {
-    console.error('');
-    console.error('⚠️  WARNING: No existing metadata found!');
-    console.error(`⚠️  You are about to mark ALL ${totalIconsToProcess} icons as NEW.`);
-    console.error('⚠️  This will reset version history for all icons.');
-    console.error('');
-    console.error('   If this is intentional (e.g., first build), use --force to proceed.');
-    console.error('   If this is NOT intentional, check that dist/icons.meta.json exists.');
-    console.error('');
-    
-    if (!process.argv.includes('--force')) {
-      console.error('❌ Build aborted. Use --force to override this safety check.');
-      process.exit(1);
-    }
-    
-    console.log('⚠️  --force flag detected, proceeding with build...');
-  }
-  
-  // Create a Map for O(1) metadata lookup (instead of O(n) find calls)
-  const existingMetadataMap = new Map();
-  for (const item of existingMetadata) {
-    const key = `${item.name}|${item.weight}|${item.duotone}|${item.componentName}`;
-    existingMetadataMap.set(key, item);
-  }
-  
+
   // Track icons by base name for wrapper generation
   const iconsByBaseName = new Map();
   
@@ -262,9 +326,8 @@ async function buildIcons(iconsExportPath) {
       directVariantExports.push(generateTripleExportWithPath(componentName, `./icons/${fileName}`));
       directVariantExportsDist.push(generateTripleExportWithPathDist(componentName, `./icons/${componentName}`));
       
-      // Use hash-based versioning to determine icon status (O(1) Map lookup)
-      const metadataKey = `${parsedIconName}|${weight}|${duotone}|${baseComponentName}`;
-      const existingItem = existingMetadataMap.get(metadataKey);
+      // Use hash-based versioning to determine icon status
+      const existingItem = metadataIndex.find(icon.id, parsedIconName, weight, duotone);
       
       const currentSvgHash = variantData.hash;
       
@@ -315,6 +378,7 @@ async function buildIcons(iconsExportPath) {
       
       // Add to metadata
       metadata.push({
+        id: icon.id,
         name: parsedIconName,
         weight,
         duotone,
@@ -818,11 +882,10 @@ export const iconNames = getIconNames(dynamicIconImports);
   writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
   console.log(`  ✅ Using wildcard exports pattern (./icons/*)`);
   
-  // Calculate summary statistics (using O(1) Map lookup)
+  // Calculate summary statistics
   const newIcons = metadata.filter(item => item.versionAdded === currentVersion).length;
   const modifiedIcons = metadata.filter(item => {
-    const key = `${item.name}|${item.weight}|${item.duotone}|${item.componentName}`;
-    const existing = existingMetadataMap.get(key);
+    const existing = metadataIndex.find(item.id, item.name, item.weight, item.duotone);
     return existing && existing.svgHash && item.svgHash !== existing.svgHash;
   }).length;
   const unchangedIcons = metadata.length - newIcons - modifiedIcons;

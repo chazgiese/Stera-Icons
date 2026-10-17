@@ -35,37 +35,30 @@ export class HashVersioning {
   }
 
   /**
-   * Get the next version from pending changesets
+   * The highest bump among the pending changesets
+   * @returns {'major' | 'minor' | 'patch' | null} - null when no changeset is pending
    */
-  getNextVersionFromChangesets() {
+  getPendingBump() {
     const changesetDir = join(this.projectRoot, '.changeset');
-    
     if (!existsSync(changesetDir)) {
       return null;
     }
 
     const changesetFiles = readdirSync(changesetDir).filter(f => f.endsWith('.md'));
-    
     if (changesetFiles.length === 0) {
       return null;
     }
 
-    let maxBump = 'patch'; // patch, minor, major
-    
-    // Parse each changeset file to determine the bump type
-    for (const file of changesetFiles) {
-      const content = readFileSync(join(changesetDir, file), 'utf8');
-      const bumpType = this.parseChangesetBump(content);
-      
-      if (bumpType === 'major') {
-        maxBump = 'major';
-      } else if (bumpType === 'minor' && maxBump !== 'major') {
-        maxBump = 'minor';
-      }
-    }
+    const bumps = changesetFiles.map(file => this.parseChangesetBump(readFileSync(join(changesetDir, file), 'utf8')));
+    return ['major', 'minor', 'patch'].find(bump => bumps.includes(bump));
+  }
 
-    const currentVersion = this.getCurrentVersion();
-    return this.bumpVersion(currentVersion, maxBump);
+  /**
+   * Get the next version from pending changesets
+   */
+  getNextVersionFromChangesets() {
+    const bump = this.getPendingBump();
+    return bump ? this.bumpVersion(this.getCurrentVersion(), bump) : null;
   }
 
   /**

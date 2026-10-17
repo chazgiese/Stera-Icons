@@ -15,6 +15,7 @@ interface IconVariant {
 }
 
 interface IconData {
+  id: string;        // Stable icon id: the Figma component set key. Survives renames; the build detects renames with it
   name: string;
   tags: string[];
   categories: string[];
@@ -45,15 +46,22 @@ interface PreCheckResult {
 // CONSTANTS
 // ============================================================================
 
-const SCHEMA_VERSION = "2.0.0";
+const SCHEMA_VERSION = "3.0.0";
 const ALLOWED_WEIGHTS = ["Regular", "Bold", "Fill"];
 const DUOTONE_VALUES = [false, true];
 const REQUIRED_VIEWBOX = "0 0 24 24";
 
-// Shape tags that are considered for deduplication
+// Shape tags that are considered for deduplication and attribute ordering
 const SHAPE_TAGS = new Set([
   'path', 'rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon'
 ]);
+
+// Attribute order written for shape elements. Figma does not keep its attribute order stable
+// between releases (fill-rule and clip-rule moved from before d to after it), and the hash is
+// computed on the string, so the order is fixed here. It matches what Figma wrote before the
+// move, which keeps the hashes of existing icons unchanged. Attributes not listed keep their
+// relative order after the listed ones
+const SHAPE_ATTRIBUTE_ORDER = ['opacity', 'fill-rule', 'clip-rule', 'd', 'cx', 'cy', 'r', 'width', 'height', 'fill'];
 
 // Attributes that suggest styling, references, or hooks and should not be deduplicated
 const RISKY_ATTRIBUTES = new Set([
@@ -71,6 +79,10 @@ const CATEGORY_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 // Pre-check metadata
 const PRE_CHECK_METADATA = {
+  componentSets: {
+    checkId: 'componentSets',
+    label: 'Checking that every icon is a component set...'
+  },
   duplicateNames: {
     checkId: 'duplicateNames',
     label: 'Checking for duplicate names...'
@@ -108,7 +120,7 @@ const SHAPE_NODE_TYPES = new Set([
 function getComponentBaseName(component: ComponentNode): string {
   // If component is part of a component set, use the set's name
   if (component.parent && component.parent.type === 'COMPONENT_SET') {
-    return (component.parent as any).name;
+    return component.parent.name;
   }
   // Otherwise, extract base name from the component name
   return extractBaseName(component.name);
@@ -239,18 +251,29 @@ async function mapWithConcurrency<T, R>(
   return results;
 }
 
-function collectComponentSetChildIds(componentSets: any[]): Set<string> {
-  const ids = new Set<string>();
-  for (const componentSet of componentSets) {
-    if ('children' in componentSet) {
-      for (const child of componentSet.children) {
-        if (child.type === 'COMPONENT') {
-          ids.add((child as any).id);
-        }
-      }
-    }
-  }
-  return ids;
+/**
+ * The variant components of a component set
+ */
+function getVariantComponents(componentSet: ComponentSetNode): ComponentNode[] {
+  return componentSet.children.filter((child): child is ComponentNode => child.type === 'COMPONENT');
+}
+
+interface PageComponents {
+  componentSets: ComponentSetNode[];
+  looseComponents: ComponentNode[];   // Components outside any set. Icons must be sets, so the pre-checks reject these
+  allComponents: ComponentNode[];     // Set variants and loose components: everything the layer checks and fixes look at
+}
+
+/**
+ * Collects the component sets and components on a page, the same lists that the
+ * pre-checks, the fix handlers and the export work from
+ */
+function collectPageComponents(page: PageNode): PageComponents {
+  const { components, componentSets } = getComponentsFromPage(page);
+  const setChildIds = new Set(componentSets.flatMap(componentSet => getVariantComponents(componentSet).map(child => child.id)));
+  const looseComponents = components.filter(component => !setChildIds.has(component.id));
+  const allComponents = [...componentSets.flatMap(getVariantComponents), ...looseComponents];
+  return { componentSets, looseComponents, allComponents };
 }
 
 // ============================================================================
@@ -422,12 +445,42 @@ function normalizeSVG(svgString: string): string {
     
     // Normalize attribute spacing
     normalized = normalized.replace(/\s+/g, ' ').trim();
-    
-    return normalized;
+
+    return orderShapeAttributes(normalized);
   } catch (error) {
     console.error('Error normalizing SVG:', error);
     return svgString;
   }
+}
+
+/**
+ * Rewrites every shape element with its attributes in SHAPE_ATTRIBUTE_ORDER.
+ * An element whose attributes cannot be parsed back exactly is left untouched.
+ */
+function orderShapeAttributes(svgString: string): string {
+  const shapeRe = new RegExp(`<(${Array.from(SHAPE_TAGS).join('|')})\\b([^>]*?)(/?)>`, 'g');
+  const attrRe = /([A-Za-z_:][\w:.-]*)="[^"]*"/g;
+  const rank = (name: string) => {
+    const index = SHAPE_ATTRIBUTE_ORDER.indexOf(name);
+    return index === -1 ? SHAPE_ATTRIBUTE_ORDER.length : index;
+  };
+
+  return svgString.replace(shapeRe, (element: string, tag: string, attrSrc: string, selfClose: string) => {
+    const attrs: Array<{ name: string; raw: string }> = [];
+    let m: RegExpExecArray | null;
+    attrRe.lastIndex = 0;
+    while ((m = attrRe.exec(attrSrc))) {
+      attrs.push({ name: m[1], raw: m[0] });
+    }
+    if (attrs.map(attr => attr.raw).join(' ') !== attrSrc.trim()) {
+      return element;
+    }
+    const ordered = attrs
+      .map((attr, index) => ({ ...attr, index }))
+      .sort((a, b) => rank(a.name) - rank(b.name) || a.index - b.index)
+      .map(attr => attr.raw);
+    return `<${tag}${ordered.length ? ' ' + ordered.join(' ') : ''}${selfClose}>`;
+  });
 }
 
 /**
@@ -611,25 +664,19 @@ function validateSVG(svgString: string, variant: { weight: string; duotone: bool
 /**
  * Gets all components and component sets from a page
  */
-function getComponentsFromPage(page: PageNode): { components: ComponentNode[], componentSets: any[] } {
+function getComponentsFromPage(page: PageNode): { components: ComponentNode[], componentSets: ComponentSetNode[] } {
   const components: ComponentNode[] = [];
-  const componentSets: any[] = [];
-  
-  function traverse(node: any) {
+  const componentSets: ComponentSetNode[] = [];
+
+  function traverse(node: BaseNode) {
     if (node.type === 'COMPONENT') {
-      components.push(node as ComponentNode);
+      components.push(node);
     } else if (node.type === 'COMPONENT_SET') {
       // Handle component sets (variants)
       componentSets.push(node);
-      if ('children' in node) {
-        for (const child of node.children) {
-          if (child.type === 'COMPONENT') {
-            components.push(child as ComponentNode);
-          }
-        }
-      }
+      components.push(...getVariantComponents(node));
     }
-    
+
     if ('children' in node) {
       for (const child of node.children) {
         traverse(child);
@@ -678,45 +725,49 @@ function getIconDescription(firstComponent: ComponentNode): string {
 }
 
 /**
- * Groups components by their base name for processing individual components
+ * Pre-check: Every icon must be a component set. The set's key is the icon's stable id,
+ * so a loose component has no identity the build can track
  */
-function groupComponentsByBaseName(components: ComponentNode[]): { [baseName: string]: ComponentNode[] } {
-  const groups: { [baseName: string]: ComponentNode[] } = {};
-  
-  components.forEach(component => {
-    const baseName = extractBaseName(component.name);
-    if (!groups[baseName]) {
-      groups[baseName] = [];
-    }
-    groups[baseName].push(component);
-  });
-  
-  return groups;
+function runComponentSetsCheck(componentSets: ComponentSetNode[], looseComponents: ComponentNode[]): PreCheckResult {
+  const MAX_ERRORS = 10;
+  const offending: Array<{ name: string; id: string }> = [
+    ...looseComponents.map(component => ({ name: component.name, id: component.id })),
+    ...componentSets.filter(componentSet => !componentSet.key).map(componentSet => ({ name: `${componentSet.name}: missing component key`, id: componentSet.id }))
+  ];
+
+  if (offending.length === 0) {
+    return {
+      checkId: PRE_CHECK_METADATA.componentSets.checkId,
+      label: 'All icons are component sets',
+      passed: true
+    };
+  }
+
+  const offendingComponents = offending.slice(0, MAX_ERRORS);
+  const moreCount = offending.length > MAX_ERRORS ? ` (and ${offending.length - MAX_ERRORS} more)` : '';
+  // "Component sets with errors:" is what the UI looks for to render the offending components as links
+  const errorMessage = `Every icon must be a component set with Weight and Duotone variants; combine loose components as variants. Component sets with errors: ${offendingComponents.map(({ name }) => name).join(', ')}${moreCount}`;
+
+  return {
+    checkId: PRE_CHECK_METADATA.componentSets.checkId,
+    label: 'Loose components detected',
+    passed: false,
+    message: errorMessage,
+    offendingComponents
+  };
 }
 
 /**
- * Checks for duplicate icon names across component sets and individual components
- * Returns an array of duplicate names found
+ * Checks for duplicate icon names across component sets, compared as the
+ * kebab-case names the export emits. Keys are unique by construction; names
+ * must be too, because the name is the icon's public API
  */
-function checkForDuplicateNames(
-  componentSets: any[],
-  components: ComponentNode[],
-  precomputedChildIds?: Set<string>
-): string[] {
+function checkForDuplicateNames(componentSets: ComponentSetNode[]): string[] {
   const nameCounts = new Map<string, number>();
-  const bumpCount = (rawName?: string) => {
-    if (!rawName) return;
-    const baseName = extractBaseName(rawName);
-    nameCounts.set(baseName, (nameCounts.get(baseName) || 0) + 1);
-  };
-
-  componentSets.forEach(componentSet => bumpCount((componentSet as any).name));
-
-  const componentSetChildIds = precomputedChildIds !== undefined ? precomputedChildIds : collectComponentSetChildIds(componentSets);
-
-  components
-    .filter(comp => !componentSetChildIds.has((comp as any).id))
-    .forEach(component => bumpCount(component.name));
+  for (const componentSet of componentSets) {
+    const name = toKebabCase(componentSet.name);
+    nameCounts.set(name, (nameCounts.get(name) ?? 0) + 1);
+  }
 
   return Array.from(nameCounts.entries())
     .filter(([, count]) => count > 1)
@@ -726,12 +777,8 @@ function checkForDuplicateNames(
 /**
  * Pre-check: Runs duplicate names check and returns a PreCheckResult
  */
-function runDuplicateNamesCheck(
-  componentSets: any[],
-  components: ComponentNode[],
-  componentSetChildIds: Set<string>
-): PreCheckResult {
-  const duplicateNames = checkForDuplicateNames(componentSets, components, componentSetChildIds);
+function runDuplicateNamesCheck(componentSets: ComponentSetNode[]): PreCheckResult {
+  const duplicateNames = checkForDuplicateNames(componentSets);
   
   if (duplicateNames.length === 0) {
     return {
@@ -756,28 +803,18 @@ function runDuplicateNamesCheck(
 /**
  * Pre-check: Verifies the trailing [category, ...] list in each icon description is well-formed
  */
-function runCategoriesCheck(componentSets: any[], individualComponents: ComponentNode[]): PreCheckResult {
+function runCategoriesCheck(componentSets: ComponentSetNode[]): PreCheckResult {
   const offending: Array<{ name: string; id: string }> = [];
   const MAX_ERRORS = 10;
 
-  const checkIcon = (baseName: string, firstComponent: ComponentNode | undefined, nodeId: string) => {
-    if (!firstComponent) return;
-    const problem = findCategoryProblem(getIconDescription(firstComponent));
-    if (problem) {
-      offending.push({ name: `${baseName}: ${problem}`, id: nodeId });
-    }
-  };
-
   // Same icons, and same first component, that the export reads descriptions from
   for (const componentSet of componentSets) {
-    const firstComponent = 'children' in componentSet
-      ? componentSet.children.find((child: any) => child.type === 'COMPONENT')
-      : undefined;
-    checkIcon((componentSet as any).name, firstComponent, (componentSet as any).id);
-  }
-
-  for (const [baseName, group] of Object.entries(groupComponentsByBaseName(individualComponents))) {
-    checkIcon(baseName, group[0], (group[0] as any).id);
+    const [firstComponent] = getVariantComponents(componentSet);
+    if (!firstComponent) continue;
+    const problem = findCategoryProblem(getIconDescription(firstComponent));
+    if (problem) {
+      offending.push({ name: `${componentSet.name}: ${problem}`, id: componentSet.id });
+    }
   }
 
   if (offending.length === 0) {
@@ -1079,7 +1116,9 @@ function fixLayerNames(components: ComponentNode[]): { fixedComponents: Array<{ 
 /**
  * Processes a group of components into icon data
  */
-async function processIconGroup(baseName: string, components: ComponentNode[]): Promise<IconData> {
+async function processIconGroup(componentSet: ComponentSetNode, components: ComponentNode[]): Promise<IconData> {
+  const baseName = componentSet.name;
+
   // Get tags from the first component (they should be the same for all variants)
   const firstComponent = components[0];
   
@@ -1177,6 +1216,7 @@ async function processIconGroup(baseName: string, components: ComponentNode[]): 
   });
   
   return {
+    id: componentSet.key,
     name: toKebabCase(baseName), // Convert to kebab-case
     tags,
     categories,
@@ -1243,25 +1283,10 @@ figma.ui.onmessage = async (msg: any) => {
       }
       
       // Re-scan the page to get current components
-      const { components, componentSets } = getComponentsFromPage(currentPage);
-      const componentSetChildIds = collectComponentSetChildIds(componentSets);
-      const individualComponents = components.filter(comp => !componentSetChildIds.has((comp as any).id));
-      const allComponentsToCheck: ComponentNode[] = [];
-      
-      componentSets.forEach(componentSet => {
-        if ('children' in componentSet) {
-          for (const child of componentSet.children) {
-            if (child.type === 'COMPONENT') {
-              allComponentsToCheck.push(child as ComponentNode);
-            }
-          }
-        }
-      });
-      
-      allComponentsToCheck.push(...individualComponents);
-      
+      const { allComponents } = collectPageComponents(currentPage);
+
       // Fix the constraints
-      const result = fixConstraints(allComponentsToCheck);
+      const result = fixConstraints(allComponents);
       
       // Send result back to UI
       figma.ui.postMessage({
@@ -1279,24 +1304,9 @@ figma.ui.onmessage = async (msg: any) => {
         throw new Error('No current page found.');
       }
 
-      const { components, componentSets } = getComponentsFromPage(currentPage);
-      const componentSetChildIds = collectComponentSetChildIds(componentSets);
-      const individualComponents = components.filter(comp => !componentSetChildIds.has((comp as any).id));
-      const allComponentsToCheck: ComponentNode[] = [];
+      const { allComponents } = collectPageComponents(currentPage);
 
-      componentSets.forEach(componentSet => {
-        if ('children' in componentSet) {
-          for (const child of componentSet.children) {
-            if (child.type === 'COMPONENT') {
-              allComponentsToCheck.push(child as ComponentNode);
-            }
-          }
-        }
-      });
-
-      allComponentsToCheck.push(...individualComponents);
-
-      const result = fixLayerNames(allComponentsToCheck);
+      const result = fixLayerNames(allComponents);
 
       figma.ui.postMessage({
         type: 'layer-names-fixed',
@@ -1323,77 +1333,56 @@ figma.ui.onmessage = async (msg: any) => {
 
 /**
  * Run pre-checks on the current page
- * Returns component data if all checks pass, or null if any check fails
+ * Returns the component sets to export if all checks pass, or null if any check fails
  */
-async function runPreChecks(): Promise<{
-  componentSets: any[];
-  components: ComponentNode[];
-  individualComponents: ComponentNode[];
-  allComponentsToCheck: ComponentNode[];
-  componentSetChildIds: Set<string>;
-} | null> {
+async function runPreChecks(): Promise<{ componentSets: ComponentSetNode[] } | null> {
   const currentPage = figma.currentPage;
   if (!currentPage) {
     throw new Error('No current page found. Please select a page with your icon components.');
   }
 
   // Send initial status
-  figma.ui.postMessage({ 
-    type: 'status', 
-    message: 'Scanning page for icon components...' 
+  figma.ui.postMessage({
+    type: 'status',
+    message: 'Scanning page for icon components...'
   });
 
-  // Get all components and component sets from the current page
-  const { components, componentSets } = getComponentsFromPage(currentPage);
-  
-  if (components.length === 0 && componentSets.length === 0) {
+  // Loose components are collected too, so the layer checks and fixes cover them
+  // while the designer turns them into component sets
+  const { componentSets, looseComponents, allComponents } = collectPageComponents(currentPage);
+
+  if (allComponents.length === 0 && componentSets.length === 0) {
     throw new Error(`No components or component sets found on the current page "${currentPage.name}". Please add some icon components to this page.`);
   }
-
-  const componentSetChildIds = collectComponentSetChildIds(componentSets);
-
-  // Get list of all component nodes to check (same list that will be exported)
-  const individualComponents = components.filter(comp => !componentSetChildIds.has((comp as any).id));
-  const allComponentsToCheck: ComponentNode[] = [];
-  
-  // Add all components from component sets
-  componentSets.forEach(componentSet => {
-    if ('children' in componentSet) {
-      for (const child of componentSet.children) {
-        if (child.type === 'COMPONENT') {
-          allComponentsToCheck.push(child as ComponentNode);
-        }
-      }
-    }
-  });
-  
-  // Add individual components
-  allComponentsToCheck.push(...individualComponents);
 
   // Resize window to accommodate checklist
   figma.ui.resize(280, 432);
 
   // Run all pre-checks sequentially
   const checks = [
-    { 
+    {
+      metadata: PRE_CHECK_METADATA.componentSets,
+      run: () => runComponentSetsCheck(componentSets, looseComponents)
+    },
+    {
       metadata: PRE_CHECK_METADATA.duplicateNames,
-      run: () => runDuplicateNamesCheck(componentSets, components, componentSetChildIds)
+      run: () => runDuplicateNamesCheck(componentSets)
     },
-    { 
+    {
       metadata: PRE_CHECK_METADATA.categories,
-      run: () => runCategoriesCheck(componentSets, individualComponents)
+      run: () => runCategoriesCheck(componentSets)
     },
-    { 
+    {
       metadata: PRE_CHECK_METADATA.layerNames,
-      run: () => runLayerNamesCheck(allComponentsToCheck)
+      run: () => runLayerNamesCheck(allComponents)
     },
-    { 
+    {
       metadata: PRE_CHECK_METADATA.fillsOnly,
-      run: () => runFillsOnlyCheck(allComponentsToCheck)
+      run: () => runFillsOnlyCheck(allComponents)
     },
-    { 
+    {
       metadata: PRE_CHECK_METADATA.constraints,
-      run: () => runConstraintsCheck(allComponentsToCheck)
+      run: () => runConstraintsCheck(allComponents)
     }
   ];
 
@@ -1437,13 +1426,7 @@ async function runPreChecks(): Promise<{
   }
   
   // Return the collected data for export
-  return {
-    componentSets,
-    components,
-    individualComponents,
-    allComponentsToCheck,
-    componentSetChildIds
-  };
+  return { componentSets };
 }
 
 async function exportIcons(): Promise<void> {
@@ -1455,121 +1438,46 @@ async function exportIcons(): Promise<void> {
     return;
   }
   
-  // Extract the component data from pre-check result
-  const { componentSets, components, individualComponents } = preCheckResult;
-  
-  // Calculate total items to process
-  const totalItems = componentSets.length + components.length;
-  
-  // Send progress update with total count
-  figma.ui.postMessage({ 
-    type: 'status', 
-    message: `Found ${totalItems} icon components to process...` 
+  const { componentSets } = preCheckResult;
+
+  figma.ui.postMessage({
+    type: 'status',
+    message: `Processing ${componentSets.length} component sets...`
   });
-  
 
   const iconsData: IconData[] = [];
   let processedCount = 0;
 
-  // Process component sets first (these are the main icon groups)
-  figma.ui.postMessage({ 
-    type: 'status', 
-    message: `Processing ${componentSets.length} component sets...` 
-  });
-  
   for (let index = 0; index < componentSets.length; index++) {
     const componentSet = componentSets[index];
     try {
-      const setName = (componentSet as any).name;
-      
       // Update status for current item being processed
-      figma.ui.postMessage({ 
-        type: 'progress', 
-        message: `Processing component set: ${setName} (${processedCount + 1}/${componentSets.length})` 
+      figma.ui.postMessage({
+        type: 'progress',
+        message: `Processing component set: ${componentSet.name} (${processedCount + 1}/${componentSets.length})`
       });
-      
-      // Get all variant components from this set
-      const variantComponents: ComponentNode[] = [];
-      if ('children' in componentSet) {
-        for (const child of componentSet.children) {
-          if (child.type === 'COMPONENT') {
-            variantComponents.push(child as ComponentNode);
-          }
-        }
-      }
-      
+
+      const variantComponents = getVariantComponents(componentSet);
+
       if (variantComponents.length > 0) {
-        const iconData = await processIconGroup(setName, variantComponents);
+        const iconData = await processIconGroup(componentSet, variantComponents);
         iconsData.push(iconData);
         processedCount++;
-        
-        // Update progress with percentage
-        const percentage = Math.round((processedCount / componentSets.length) * 50); // 50% for component sets
-        figma.ui.postMessage({ 
-          type: 'progress', 
-          message: `Processed ${processedCount}/${componentSets.length} component sets (${percentage}%)` 
+
+        // Update progress with percentage; the last 10% is the JSON generation
+        const percentage = Math.round((processedCount / componentSets.length) * 90);
+        figma.ui.postMessage({
+          type: 'progress',
+          message: `Processed ${processedCount}/${componentSets.length} component sets (${percentage}%)`
         });
       }
     } catch (error) {
-      console.error(`Failed to process component set ${(componentSet as any).name}:`, error);
+      console.error(`Failed to process component set ${componentSet.name}:`, error);
     }
 
     // Yield every few component sets to keep the Figma tab responsive
     if ((index + 1) % 3 === 0) {
       await yieldToFigma();
-    }
-  }
-
-  // Process individual components (not part of component sets)
-  // Already filtered earlier in pre-checks
-  
-  if (individualComponents.length > 0) {
-    figma.ui.postMessage({ 
-      type: 'status', 
-      message: `Processing ${individualComponents.length} individual components...` 
-    });
-    
-    const iconGroups = groupComponentsByBaseName(individualComponents);
-
-    const totalGroups = Object.keys(iconGroups).length;
-    let individualProcessedCount = 0;
-
-    const entries = Object.entries(iconGroups);
-
-    for (let i = 0; i < entries.length; i++) {
-      const [baseName, componentGroup] = entries[i];
-      try {
-        
-        // Update status for current group being processed
-        figma.ui.postMessage({ 
-          type: 'progress', 
-          message: `Processing group: ${baseName} (${individualProcessedCount + 1}/${totalGroups})` 
-        });
-        
-        const iconData = await processIconGroup(baseName, componentGroup);
-        iconsData.push(iconData);
-        processedCount++;
-        individualProcessedCount++;
-        
-        // Update progress with percentage (50-90% for individual components)
-        const basePercentage = 50; // Start from 50%
-        const individualPercentage = Math.round((individualProcessedCount / totalGroups) * 40); // 40% for individual components
-        const totalPercentage = basePercentage + individualPercentage;
-        
-        figma.ui.postMessage({ 
-          type: 'progress', 
-          message: `Processed ${individualProcessedCount}/${totalGroups} individual groups (${totalPercentage}%)` 
-        });
-      } catch (error) {
-        console.error(`Failed to process icon group ${baseName}:`, error);
-        // Continue with other groups even if one fails
-      }
-
-      // Yield periodically so large numbers of individual components
-      // don't lock up the Figma UI.
-      if ((i + 1) % 5 === 0) {
-        await yieldToFigma();
-      }
     }
   }
 

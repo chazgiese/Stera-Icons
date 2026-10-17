@@ -41,28 +41,30 @@ The plugin appears as **Stera Icon Exporter** under Development plugins. If you 
 
 ## Figma file conventions
 
-Icons are component sets with two variant properties:
+Every icon is a component set with two variant properties:
 
 - **Weight**: `Regular`, `Bold` or `Fill`
 - **Duotone**: `True` or `False`
 
-This yields 6 variants per icon: Regular (×2 duotone states), Bold (×2), Fill (×2).
+This yields 6 variants per icon: Regular (×2 duotone states), Bold (×2), Fill (×2). Loose components outside a set fail the pre-checks; combine them as variants first.
 
+- The component set's key is exported as the icon's stable `id`. The icons build uses it to recognise an icon across renames, so rename a set in place. Deleting and recreating a set, or pasting it in from another file, gives it a new key, and the build then treats it as a new icon.
 - Name the component set in kebab-case, e.g. `arrow-left`, `bubble`. Other names are converted.
 - Put comma-separated tags in the component description. They are lowercased, deduped and sorted.
 - Optionally end the description with up to 3 categories in brackets, e.g. `arrow, direction, right, [navigation, arrows]`. Categories are lowercase kebab-case and the first one is the primary. The ids must exist in `packages/icons/categories.json`; the plugin checks the syntax, the icons build checks the ids.
 
-Pre-checks also require that shape layers are named `Vector`, that icons use fills only (no strokes), that constraints are `Scale`/`Scale`, and that no two icons share a name.
+Pre-checks also require that every icon is a component set, that shape layers are named `Vector`, that icons use fills only (no strokes), that constraints are `Scale`/`Scale`, and that no two icons share a name.
 
 ## Output format
 
 ```json
 {
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "3.0.0",
   "exportedAt": "2024-01-15T10:30:00.000Z",
   "totalIcons": 2,
   "icons": [
     {
+      "id": "0123456789abcdef0123456789abcdef01234567",
       "name": "arrow-right",
       "tags": ["arrow", "direction", "navigation", "right"],
       "categories": ["navigation", "arrows"],
@@ -90,10 +92,11 @@ Pre-checks also require that shape layers are named `Vector`, that icons use fil
 
 ### Fields
 
-- **`schemaVersion`**: Schema version (currently `2.0.0`)
+- **`schemaVersion`**: Schema version (currently `3.0.0`; the icons build rejects older exports)
 - **`exportedAt`**: ISO timestamp of when the export was generated
 - **`totalIcons`**: Total count of exported icons
-- **`icons`**: Array of icon objects, sorted alphabetically by name
+- **`icons`**: Array of icon objects, sorted alphabetically by name. Keys are in the order `id`, `name`, `tags`, `categories`, `variants`
+- **`id`**: Stable icon id, the Figma component set key. It is independent of the name and the artwork; the icons build matches icons by it, so a changed name under the same id is a rename
 - **`name`**: Kebab-case icon name (e.g., "arrow-right")
 - **`tags`**: Array of lowercase, deduped, alphabetized tags
 - **`categories`**: Array of lowercase categories from the trailing `[...]` in the description, in authored order (first is primary); `[]` when none
@@ -101,7 +104,7 @@ Pre-checks also require that shape layers are named `Vector`, that icons use fil
 - **`variant.weight`**: One of `"Regular"`, `"Bold"`, or `"Fill"`
 - **`variant.duotone`**: Boolean (`true` or `false`)
 - **`svg`**: Normalized, minified SVG string
-- **`hash`**: Deterministic hash of the normalized SVG. The icons build uses it to detect changed icons, so the hashing must never change
+- **`hash`**: Deterministic hash of the normalized SVG. The icons build uses it to detect changed artwork, so the hashing must never change. Normalization writes shape attributes in a fixed order (`opacity`, `fill-rule`, `clip-rule`, `d`, `cx`, `cy`, `r`, `width`, `height`, `fill`), because Figma's own attribute order changes between releases and would otherwise change every hash
 
 ### Validation rules
 

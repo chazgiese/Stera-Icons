@@ -34,7 +34,7 @@ Never hand-edit a generated file. Change the source or the generator, then rebui
 | File | Kind | In git |
 |------|------|--------|
 | `packages/icons/icons-export.json` | **Source.** Figma export; the only source of icon artwork, names, tags and categories | yes |
-| `packages/icons/icon-aliases.json` | **Source.** Deprecated aliases that keep the old names of renamed icons working | yes |
+| `packages/icons/icon-aliases.json` | **Source.** Deprecated aliases that keep the old names of renamed icons working. The build also writes to it when it detects a rename; commit the result | yes |
 | `packages/icons/categories.json` | **Source.** The closed list of icon categories. The build rejects any category on an icon that is not defined here | yes |
 | `packages/icons/src/{IconBase,DynamicIcon}.tsx`, `src/{base,dynamic,types,utils}.ts`, `src/__tests__/` | **Source** | yes |
 | `packages/icons/scripts/` | **Source.** The build pipeline | yes |
@@ -48,6 +48,8 @@ Never hand-edit a generated file. Change the source or the generator, then rebui
 Things to know about the build:
 
 - `icons-export.json` is about 10 MB. Never read it whole; query it with `node -e` or `jq`.
+- Every icon has three distinct fields with one job each: `id` (the Figma component set key, stable across renames) is the icon's identity, `name` is the public API, and the per-variant `hash` only detects artwork changes. `id` is carried into every `icons.meta.json` entry, and the build matches metadata by it.
+- The build requires a schema `3.0.0` export, with an `id` on every icon. An older export fails with a message to re-export from the plugin.
 - `build-icons.js` deletes and regenerates `src/icons/` on every run, and rewrites the `exports` field of `packages/icons/package.json`.
 - The `.d.ts` files in `dist/esm` are written from templates in `scripts/generate-declarations.js`, not emitted from source. If you change a public type in `src/`, update the matching template.
 - After a build, `git status` should show only files you meant to change.
@@ -66,15 +68,17 @@ Order matters. The changeset must exist before the build, because the build read
 
 ### Renaming an icon
 
-To keep the old name working for a grace period, add it to `packages/icons/icon-aliases.json` before the build:
+Rename the component set in place in Figma and follow the steps above with a `minor` changeset. The build sees a known `id` under a new name and writes the alias into `packages/icons/icon-aliases.json` itself:
 
 ```json
 "old-name": { "to": "new-name", "since": "8.8.0", "removeIn": "9.0.0" }
 ```
 
-- `since` is the version the rename ships in. `removeIn` is the next major.
+- `since` is the version the rename ships in (from the pending changeset). `removeIn` is the next major. The build fails if a rename is detected without a pending `minor` or `major` changeset.
 - The build re-exports the new icon under every old export name (marked `@deprecated`), writes `stera-icons/icons/<OldName>` files, and makes `DynamicIcon` accept the old name. Aliases are left out of `icons.meta.json`, `iconNames` and the docs site.
-- The build fails once the version being built reaches `removeIn`. Delete the entry then, and list the removed name in that release's changeset.
+- A rename cannot be aliased when another icon took the old name in the same export, or when the new name is itself a deprecated alias. The build fails and says what to change.
+- The build fails once the version being built reaches `removeIn`. Delete the entry then, and list the removed name in that release's changeset. That is the only hand edit the file needs.
+- An icon whose id and name both leave the export is a removal; the build warns and the removal needs a `major` changeset.
 
 ### Docs to update after an icon change
 

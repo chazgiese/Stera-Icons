@@ -60,13 +60,19 @@ git push
 
 ### Renaming Icons
 
-To keep the old name of a renamed icon working for a grace period, add it to `packages/icons/icon-aliases.json` before building:
+Every icon has a stable `id` in the export, the key of its Figma component set, so the build recognises a renamed icon on its own. Rename the component set in place in Figma, then follow the usual steps: `pnpm changeset` (`minor`), export, `pnpm build:icons`. The build detects that a known id now has a new name and writes the deprecated alias into `packages/icons/icon-aliases.json`:
 
 ```json
 "old-name": { "to": "new-name", "since": "8.8.0", "removeIn": "9.0.0" }
 ```
 
-`since` is the version the rename ships in and `removeIn` is the next major. The build re-exports the new icon under every old export name, marked `@deprecated`, and `DynamicIcon` keeps accepting the old name. The build fails once the version being built reaches `removeIn`: delete the entry then, and list the removed name in that release's changeset.
+`since` is the version the rename ships in and `removeIn` is the next major. Commit the file, and list the rename in the changeset body (old name → new name). The build re-exports the new icon under every old export name, marked `@deprecated`, and `DynamicIcon` keeps accepting the old name.
+
+- The build fails if a rename is detected and no `minor` or `major` changeset is pending, because the alias needs the version the rename ships in.
+- If the renamed icon is the `icon` of a category in `packages/icons/categories.json`, update that reference; the build fails until it points at an existing icon.
+- The build fails once the version being built reaches `removeIn`. Delete the entry then, and list the removed name in that release's changeset. That is the only reason to edit the file by hand.
+- An icon whose id and name both disappear from the export is a removal. The build warns about it; removals need a `major` changeset.
+- Deleting and recreating a component set in Figma gives it a new key. The build keeps the icon's history by name, stores the new id and warns, so it is not silent.
 
 ### Docs to Update
 
@@ -78,7 +84,7 @@ Most icon docs regenerate on their own: the `@tags` in `index.d.ts`, `icons.meta
 | Count crosses a hundred (e.g. 900) | The `800+` figure in `packages/icons/llms.txt` and `packages/icons/README.md` |
 | An icon used as a doc example is renamed or removed | Every mention in `packages/icons/llms.txt`, `packages/icons/README.md` and `apps/docs/components/docs-content.tsx` |
 | An icon is added whose name the docs say does not exist (`SiClose`, `SiEdit`, `SiGear`, `SiCog`) | The "do not guess" examples in the same files, and `DOCUMENTED_AS_MISSING` in the test |
-| Any rename or removal | A migration note in the changeset (old name → new name) |
+| Any rename or removal | A migration note in the changeset (old name → new name). The build prints the renames it found |
 
 `packages/icons/src/__tests__/docs.test.ts` checks the first four rows.
 

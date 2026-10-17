@@ -128,7 +128,7 @@ Measured with esbuild, minified, React external:
 
 - Online: https://stera.sh/llms-full.txt lists every icon as `kebab-name | component | tags`.
 - In an installed project: search node_modules/stera-icons/dist/esm/index.d.ts. Each export has JSDoc @tags with intent and aliases, e.g. searching "kebab" or "overflow" finds SiMore, and "gear" finds SiSettings.
-- Machine-readable: node_modules/stera-icons/dist/icons.meta.json is an array with one entry per variant (name, componentName, variantComponentName, weight, duotone, tags, versionAdded). Read it from disk: it is not an importable entry point.
+- Machine-readable: node_modules/stera-icons/dist/icons.meta.json is an array with one entry per variant (id, name, componentName, variantComponentName, weight, duotone, tags, versionAdded). `id` is the icon's stable identity across renames; `name` is what you import by. Read it from disk: it is not an importable entry point.
 
 ## Versioning
 

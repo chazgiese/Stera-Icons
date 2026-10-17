@@ -68,6 +68,8 @@ export type SteraIcon = ForwardRefExoticComponent<
 >;
 
 export interface IconMetadata {
+  /** Stable icon id: the Figma component set key. It survives renames; the name is the public API */
+  id: string;
   name: string;
   weight: 'regular' | 'bold' | 'fill';
   duotone: boolean;
@@ -87,6 +89,8 @@ export interface IconsExport {
   exportedAt: string;
   totalIcons: number;
   icons: Array<{
+    /** Stable icon id: the Figma component set key */
+    id: string;
     name: string;
     tags: string[];
     categories: string[];
