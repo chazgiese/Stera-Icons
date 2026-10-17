@@ -76,6 +76,8 @@ function InputGroupAddon({
       onClick={(e) => {
         onClick?.(e)
         if (e.defaultPrevented) return
+        // Clicks in portaled content (menus, popovers) still bubble here through the React tree
+        if (!e.currentTarget.contains(e.target as Node)) return
         if ((e.target as HTMLElement).closest("button")) return
         e.currentTarget.parentElement
           ?.querySelector<HTMLElement>("[data-slot=input-group-control]")
