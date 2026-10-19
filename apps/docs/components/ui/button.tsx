@@ -10,15 +10,15 @@ const buttonVariants = cva(
     // Group
     "group/button",
     // Base
-    "inline-flex shrink-0 items-center justify-center rounded-full border border-transparent transition-all outline-none select-none",
+    "inline-flex shrink-0 items-center justify-center rounded-full transition-all outline-none select-none",
     // Text
     "st-body-md-strong whitespace-nowrap",
     // Focus
-    "focus-visible:border-border-strongest focus-visible:ring-3 focus-visible:ring-ring",
+    "focus-visible:inset-ring focus-visible:inset-ring-border-strongest focus-visible:ring-3 focus-visible:ring-ring",
     // Disabled
     "disabled:pointer-events-none disabled:opacity-50",
     // Invalid
-    "aria-invalid:border-border-danger-strong aria-invalid:ring-3 aria-invalid:ring-ring-danger",
+    "aria-invalid:inset-ring aria-invalid:inset-ring-border-danger-strong aria-invalid:ring-3 aria-invalid:ring-ring-danger",
     // Other
     "active:translate-y-px [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
@@ -26,17 +26,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         brand:
-          "border-surface-brand bg-surface-brand text-text-onbrand hover:border-border-brand-strong hover:bg-surface-brand-hover focus-visible:border-border-brand-strong focus-visible:ring-ring-brand",
+          "bg-surface-brand text-text-onbrand hover:inset-ring hover:inset-ring-border-brand-strong hover:bg-surface-brand-hover focus-visible:inset-ring-border-brand-strong focus-visible:ring-ring-brand",
         accent:
-          "border-surface-accent bg-surface-accent text-text-onaccent hover:border-border-accent-strong hover:bg-surface-accent-hover",
+          "bg-surface-accent text-text-onaccent hover:inset-ring hover:inset-ring-border-accent-strong hover:bg-surface-accent-hover",
         outline:
-          "bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-2 to-alpha-1 border-none inset-ring inset-ring-alpha-2 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-2 backdrop-blur-sm text-text hover:to-alpha-2 aria-expanded:to-alpha-3 transition-colors",
+          "bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-2 to-alpha-1 inset-ring inset-ring-alpha-2 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-2 backdrop-blur-sm text-text hover:to-alpha-2 aria-expanded:to-alpha-3 transition-colors",
         subtle:
-          "border-none bg-surface-muted text-text-subtle hover:bg-surface-muted-hover aria-expanded:bg-surface-muted-hover aria-expanded:text-text",
+          "bg-surface-muted text-text-subtle hover:bg-surface-muted-hover aria-expanded:bg-surface-muted-hover aria-expanded:text-text",
         ghost:
           "hover:glass hover:text-text aria-expanded:bg-alpha-3 aria-expanded:text-text",
         danger:
-          "border-surface-danger-subtle bg-surface-danger-subtle text-text-danger hover:border-surface-danger-subtle-hover hover:bg-surface-danger-subtle-hover focus-visible:border-border-danger-strong focus-visible:ring-ring-danger",
+          "bg-surface-danger-subtle text-text-danger hover:bg-surface-danger-subtle-hover focus-visible:inset-ring-border-danger-strong focus-visible:ring-ring-danger",
         link: "gap-1 text-text underline-offset-4 hover:underline",
       },
       size: {

@@ -41,7 +41,7 @@ function DropdownMenuContent({
           data-slot="dropdown-menu-content"
           className={cn(
             // Base
-            "overflow-x-hidden overflow-y-auto rounded-xl p-1 text-text bg-surface-subtle/60 bg-origin-border bg-linear-to-b from-alpha-1 to-alpha-2 border-none inset-ring inset-ring-alpha-1 inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm duration-100 outline-none",
+            "overflow-x-hidden overflow-y-auto rounded-xl p-1 text-text bg-surface-subtle/60 bg-origin-border bg-linear-to-b from-alpha-1 to-alpha-2 inset-ring inset-ring-alpha-1 inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm duration-100 outline-none",
             // Position
             "origin-(--transform-origin)",
             // Sizing
@@ -248,7 +248,7 @@ function DropdownMenuSubContent({
       data-slot="dropdown-menu-sub-content"
       className={cn(
         // Base
-        "rounded-xl bg-surface p-1 text-text shadow-lg ring-1 ring-border duration-100",
+        "rounded-xl bg-surface p-1 text-text shadow-lg inset-ring inset-ring-border duration-100",
         // Sizing
         "max-w-56 min-w-24",
         // Animation

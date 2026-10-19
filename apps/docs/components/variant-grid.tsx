@@ -58,8 +58,8 @@ export function VariantGrid({ icon, selected, onSelect, className, ref }: Varian
             title={variant.label}
             onClick={() => onSelect(variant.key)}
             className={cn(
-              'flex aspect-square cursor-pointer items-center justify-center rounded-3xl text-text-subtle outline-none transition-colors',
-              'hover:border-border-strong hover:border focus-visible:ring-3 focus-visible:ring-ring',
+              'flex aspect-square cursor-pointer items-center justify-center rounded-3xl text-text-subtle outline-none transition-[color,background-color,box-shadow]',
+              'hover:inset-ring hover:inset-ring-border-strong focus-visible:ring-3 focus-visible:ring-ring',
               isSelected && 'bg-surface-muted text-text'
             )}
           >

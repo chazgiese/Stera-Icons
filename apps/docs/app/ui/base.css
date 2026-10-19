@@ -8,10 +8,24 @@
 
 @utility glass {
   background: var(--color-alpha-2);
-  border: 1px solid var(--color-alpha-1);
   /* Written via Tailwind's inset-shadow so the shadows live in its shared box-shadow stack
      and survive ring-* utilities (e.g. the focus ring), which rewrite box-shadow entirely. */
-  @apply inset-shadow-[0_4px_0_-3px_var(--color-alpha-5),0_-32px_14px_-26px_var(--color-alpha-3)] backdrop-blur-sm;
+  @apply inset-ring inset-ring-alpha-1 inset-shadow-[0_4px_0_-3px_var(--color-alpha-5),0_-32px_14px_-26px_var(--color-alpha-3)] backdrop-blur-sm;
+}
+
+/* Outlines on controls are drawn with inset-ring, a box-shadow, and forced-colors mode
+   drops box-shadows. Restore them as outlines, which that mode keeps. Unlayered so it
+   wins over outline-none. */
+@media (forced-colors: active) {
+  [data-slot="button"],
+  [data-slot="chip"],
+  [data-slot="toggle"],
+  [data-slot="input"],
+  [data-slot="textarea"],
+  [data-slot="input-group"] {
+    outline: 1px solid CanvasText;
+    outline-offset: -1px;
+  }
 }
 
 @layer base {

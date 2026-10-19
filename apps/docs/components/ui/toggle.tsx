@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils"
 const toggleVariants = cva(
   [
     // Base
-    "inline-flex shrink-0 items-center justify-center rounded-xl border border-transparent text-sm font-medium whitespace-nowrap transition-all outline-none select-none",
+    "inline-flex shrink-0 items-center justify-center rounded-xl text-sm font-medium whitespace-nowrap transition-all outline-none select-none",
     // Focus
-    "focus-visible:border-border-strongest focus-visible:ring-3 focus-visible:ring-ring",
+    "focus-visible:inset-ring focus-visible:inset-ring-border-strongest focus-visible:ring-3 focus-visible:ring-ring",
     // Disabled
     "disabled:pointer-events-none disabled:opacity-50",
     // Invalid
-    "aria-invalid:border-border-danger-strong aria-invalid:ring-3 aria-invalid:ring-ring-danger",
+    "aria-invalid:inset-ring aria-invalid:inset-ring-border-danger-strong aria-invalid:ring-3 aria-invalid:ring-ring-danger",
     // Other
     "group/toggle active:translate-y-px [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
@@ -22,7 +22,7 @@ const toggleVariants = cva(
         default:
           "hover:bg-surface-hover hover:text-text aria-pressed:bg-surface-subtle",
         outline:
-          "border border-border bg-surface hover:bg-surface-hover aria-pressed:bg-surface-subtle",
+          "inset-ring inset-ring-border bg-surface hover:bg-surface-hover aria-pressed:bg-surface-subtle",
       },
       size: {
         xs: "h-6 gap-1.5 rounded-lg px-2 has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 [&_svg:not([class*='size-'])]:size-3",

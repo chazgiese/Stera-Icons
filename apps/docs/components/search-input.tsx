@@ -17,7 +17,7 @@ export function SearchInput() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <InputGroup className="w-56 sm:w-72 rounded-full glass shadow-none transition-colors has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-alpha-3">
+    <InputGroup className="w-56 sm:w-72 rounded-full glass inset-ring-alpha-1 shadow-none transition-colors has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-alpha-3">
       {/* Fixed-width slot so swapping the icon for the clear button never shifts the input text */}
       <InputGroupAddon className="w-11 justify-center pl-0! has-[>button]:ml-0 [&>svg]:text-text">
         {query ? (

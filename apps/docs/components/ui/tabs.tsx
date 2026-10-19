@@ -113,11 +113,10 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
     <TabsPrimitive.Tab
       data-slot="tabs-trigger"
       className={cn(
-        // Base — highlight lives on the shared TabsIndicator; trigger keeps its own
-        // transparent border so layout stays stable when the indicator's border appears.
-        "relative z-10 inline-flex items-center justify-center border border-transparent whitespace-nowrap text-text-subtle transition-all group-data-[orientation=vertical]/tabs:justify-start",
+        // Base — highlight lives on the shared TabsIndicator
+        "relative z-10 inline-flex items-center justify-center whitespace-nowrap text-text-subtle transition-all group-data-[orientation=vertical]/tabs:justify-start",
         // Sizing
-        "h-[calc(100%-1px)] flex-1 group-data-[orientation=vertical]/tabs:w-full",
+        "h-full flex-1 group-data-[orientation=vertical]/tabs:w-full",
         // SM (Default)
         "rounded-[10px] group-data-[size=sm]/tabs-list:gap-1.5 group-data-[size=sm]/tabs-list:px-2.5 group-data-[size=sm]/tabs-list:py-1.5 group-data-[size=sm]/tabs-list:[&_svg:not([class*='size-'])]:size-4",
         // MD
@@ -127,7 +126,7 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
         // Active — only the text color changes on the trigger itself
         "data-active:text-text",
         // Other
-        "hover:text-text focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+        "hover:text-text outline-none focus-visible:ring-3 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
         className
       )}
       {...props}

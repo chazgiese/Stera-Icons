@@ -7,13 +7,13 @@ import { cn } from "@/lib/utils"
 const inputVariants = cva(
   [
     // Base
-    "rounded-xl border border-border bg-surface px-3 py-1 st-body-md file:border-0 file:bg-transparent aria-invalid:border-border-danger-strong",
+    "rounded-xl inset-ring inset-ring-border bg-surface px-3 py-1 st-body-md file:bg-transparent aria-invalid:inset-ring-border-danger-strong",
     // Sizing
     "w-full min-w-0",
     // Focus
-    "focus-visible:border-border-brand-strong focus-visible:ring-3 focus-visible:ring-ring-brand",
+    "focus-visible:inset-ring-border-brand-strong focus-visible:ring-3 focus-visible:ring-ring-brand",
     // Disabled
-    "disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-border-strong disabled:bg-surface-disabled disabled:text-text-subtlest",
+    "disabled:pointer-events-none disabled:cursor-not-allowed disabled:inset-ring-border-strong disabled:bg-surface-disabled disabled:text-text-subtlest",
     // Invalid
     "aria-invalid:ring-3 aria-invalid:ring-ring-danger",
     // Other
