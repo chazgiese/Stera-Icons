@@ -36,7 +36,7 @@ interface IconDetailProps {
 }
 
 export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regular' }: IconDetailProps) {
-  const { copied, copyToClipboard } = useCopyToClipboard();
+  const { copied, copyToClipboard, resetCopied } = useCopyToClipboard();
   const setQuery = useSetSearchQuery();
   const [selectedVariant, setSelectedVariant] = useState<VariantKey>(
     icon.variants[initialVariant] ? initialVariant : 'regular'
@@ -62,6 +62,32 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
     const filename = getSVGFilename(icon.name, weight, duotone);
     downloadSVG(svgData, filename);
   };
+
+  // A bare button inside the heading, so the title copies on click without
+  // changing the heading's layout or its role as the dialog's name. The
+  // tooltip is controlled, so it only appears as confirmation after a copy.
+  // Escape and outside presses dismiss it early instead of being swallowed
+  const title = (
+    <Tooltip
+      open={copied === 'name'}
+      onOpenChange={(open, { reason }) => {
+        if (!open && (reason === 'escape-key' || reason === 'outside-press')) resetCopied();
+      }}
+    >
+      <TooltipTrigger
+        render={
+          <button
+            type="button"
+            className="outline-none transition-colors hover:text-text focus-visible:ring-3 focus-visible:ring-ring"
+            onClick={() => copyToClipboard(prettyName, 'name')}
+          />
+        }
+      >
+        {prettyName}
+      </TooltipTrigger>
+      <TooltipContent side="bottom">Copied</TooltipContent>
+    </Tooltip>
+  );
 
   const actions = (
     <div className="flex items-center text-text-subtle bg-surface-muted rounded-full p-1">
@@ -164,7 +190,7 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
     return (
       <>
         <DrawerHeader className="flex-row items-center gap-4 pl-5 pr-2.5 py-2.5">
-          <DrawerTitle className="flex-1">{prettyName}</DrawerTitle>
+          <DrawerTitle className="flex-1">{title}</DrawerTitle>
           {actions}
         </DrawerHeader>
         <DrawerContent className="px-5 pt-4 pb-5">
@@ -177,7 +203,7 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
   return (
     <div className="flex flex-col gap-8">
       <div className="flex items-center gap-4 pr-2.5 py-2.5">
-        <h1 className="st-display-sm text-text flex-1">{prettyName}</h1>
+        <h1 className="st-display-sm text-text flex-1">{title}</h1>
         {actions}
       </div>
       {body}

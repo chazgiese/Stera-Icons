@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/code-block";
+import { InstallCommand } from "@/components/install-command";
 import {
   Table,
   TableBody,
@@ -7,29 +8,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function DocsContent() {
   return (
     <>
       <section className="mb-10">
         <h2 className="st-heading-md text-text mb-4">Installation</h2>
-        <Tabs defaultValue="npm">
-          <TabsList size="sm">
-            <TabsTrigger value="npm">npm</TabsTrigger>
-            <TabsTrigger value="pnpm">pnpm</TabsTrigger>
-            <TabsTrigger value="yarn">yarn</TabsTrigger>
-          </TabsList>
-          <TabsContent value="npm">
-            <CodeBlock code="npm install stera-icons" language="bash" />
-          </TabsContent>
-          <TabsContent value="pnpm">
-            <CodeBlock code="pnpm add stera-icons" language="bash" />
-          </TabsContent>
-          <TabsContent value="yarn">
-            <CodeBlock code="yarn add stera-icons" language="bash" />
-          </TabsContent>
-        </Tabs>
+        <InstallCommand />
       </section>
 
       <section className="mb-10">
