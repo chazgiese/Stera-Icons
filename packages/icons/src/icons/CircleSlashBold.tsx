@@ -7,7 +7,7 @@ type CircleSlashBoldProps = Omit<IconBaseProps, 'children'>;
 const CircleSlashBold = memo(
   forwardRef<SVGSVGElement, CircleSlashBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M4.93 4.93c3.9-3.9 10.24-3.9 14.14 0s3.9 10.24 0 14.14-10.24 3.9-14.14 0-3.9-10.24 0-14.14m.75 2.17c-2.44 3.13-2.22 7.67.66 10.56 2.89 2.88 7.43 3.1 10.56.66zm11.98-.76c-2.89-2.88-7.43-3.1-10.56-.66l11.22 11.23c2.44-3.14 2.22-7.68-.66-10.57" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M4.57 4.58c4.1-4.1 10.75-4.1 14.85 0s4.1 10.74 0 14.84-10.74 4.1-14.85 0-4.1-10.74 0-14.84m.75 2.16C2.7 10.08 2.91 14.93 6 18s7.93 3.3 11.27.66zm12.69-.75c-3.08-3.08-7.93-3.3-11.27-.66l11.93 11.93c2.64-3.34 2.42-8.19-.66-11.27" clipRule="evenodd" />
     </IconBase>
   ))
 );

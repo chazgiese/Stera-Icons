@@ -7,8 +7,8 @@ type CircleSlashFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CircleSlashFillDuotone = memo(
   forwardRef<SVGSVGElement, CircleSlashFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18.33 19.57c-3.88 3.26-9.67 3.06-13.31-.59s-3.85-9.44-.6-13.32zM5.66 4.43c3.88-3.26 9.67-3.06 13.32.59s3.85 9.43.6 13.31z" opacity={0.4} />
-        <path d="M19.57 18.34q-.27.33-.59.64-.3.3-.64.6L4.43 5.65q.27-.33.59-.64.3-.3.64-.6z" />
+      <path d="M18.6 19.84c-1.78 1.5-4.08 2.41-6.6 2.41-5.66 0-10.25-4.59-10.25-10.25 0-2.52.9-4.82 2.41-6.6zM12 1.75c5.66 0 10.25 4.59 10.25 10.25 0 2.52-.9 4.82-2.41 6.6L5.4 4.16c1.78-1.5 4.08-2.41 6.6-2.41" opacity={0.4} />
+        <path d="M19.84 18.6q-.57.67-1.24 1.24L4.16 5.4q.57-.67 1.24-1.24z" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type ContrastFillProps = Omit<IconBaseProps, 'children'>;
 const ContrastFill = memo(
   forwardRef<SVGSVGElement, ContrastFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2.13c5.45 0 9.88 4.42 9.88 9.87s-4.43 9.88-9.88 9.88S2.13 17.45 2.13 12 6.55 2.13 12 2.13m0 18c4.49 0 8.13-3.64 8.13-8.13S16.49 3.88 12 3.88z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 1.75c5.66 0 10.25 4.59 10.25 10.25S17.66 22.25 12 22.25 1.75 17.66 1.75 12 6.34 1.75 12 1.75m0 19c4.83 0 8.75-3.92 8.75-8.75S16.83 3.25 12 3.25z" clipRule="evenodd" />
     </IconBase>
   ))
 );

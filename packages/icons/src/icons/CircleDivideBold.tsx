@@ -7,7 +7,7 @@ type CircleDivideBoldProps = Omit<IconBaseProps, 'children'>;
 const CircleDivideBold = memo(
   forwardRef<SVGSVGElement, CircleDivideBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m-1 2.06c-3.95.5-7 3.86-7 7.94s3.05 7.44 7 7.94zm2 15.88c3.95-.5 7-3.86 7-7.94s-3.05-7.44-7-7.94z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 1.5c5.8 0 10.5 4.7 10.5 10.5S17.8 22.5 12 22.5 1.5 17.8 1.5 12 6.2 1.5 12 1.5m-1 2.06c-4.22.5-7.5 4.08-7.5 8.44s3.28 7.94 7.5 8.44zm2 16.88c4.22-.5 7.5-4.08 7.5-8.44S17.22 4.05 13 3.56z" clipRule="evenodd" />
     </IconBase>
   ))
 );

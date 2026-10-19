@@ -7,8 +7,8 @@ type ContrastFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ContrastFillDuotone = memo(
   forwardRef<SVGSVGElement, ContrastFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M2.13 12c0 5.45 4.42 9.88 9.87 9.88V2.13c-5.45 0-9.87 4.42-9.87 9.87" opacity={.4} />
-        <path d="M21.88 12c0 5.45-4.43 9.88-9.88 9.88V2.13c5.45 0 9.88 4.42 9.88 9.87" />
+      <path d="M1.75 12c0 5.66 4.59 10.25 10.25 10.25V1.75C6.34 1.75 1.75 6.34 1.75 12" opacity={.4} />
+        <path d="M22.25 12c0 5.66-4.59 10.25-10.25 10.25V1.75c5.66 0 10.25 4.59 10.25 10.25" />
     </IconBase>
   ))
 );
