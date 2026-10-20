@@ -19,7 +19,7 @@ function InputGroup({ className, ...props }: React.ComponentProps<"div">) {
         // Sizing
         "h-9 w-full min-w-0 has-[[data-slot=input-group-control][data-size=lg]]:h-11 has-[[data-slot=input-group-control][data-size=sm]]:h-8",
         // Focus
-        "has-[[data-slot=input-group-control]:focus-visible]:inset-ring-border-brand-strong in-data-[slot=combobox-content]:focus-within:inset-ring-inherit in-data-[slot=combobox-content]:focus-within:ring-0 has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring-brand",
+        "has-[[data-slot=input-group-control]:focus-visible]:inset-ring-alpha-3 in-data-[slot=combobox-content]:focus-within:inset-ring-inherit in-data-[slot=combobox-content]:focus-within:ring-0 has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring-alpha-3",
         // Disabled
         "has-[[data-slot=input-group-control]:disabled]:pointer-events-none has-[[data-slot=input-group-control]:disabled]:cursor-not-allowed has-[[data-slot=input-group-control]:disabled]:inset-ring-border-strong has-[[data-slot=input-group-control]:disabled]:bg-surface-disabled has-[[data-slot=input-group-control]:disabled]:text-text-subtlest",
         // Invalid

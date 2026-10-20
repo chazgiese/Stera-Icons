@@ -36,7 +36,7 @@ export function CategorySidebar({ categories, counts, weight, duotone }: Categor
   return (
     <aside className="sticky top-0 -mt-navbar hidden h-svh shrink-0 md:block">
       <Sidebar collapsible="none" className="h-full bg-transparent">
-        <SidebarContent className="scroll-fade-b scroll-pt-navbar pt-navbar pb-4">
+        <SidebarContent className="scroll-fade-b scroll-pt-navbar pt-navbar pb-12ç">
           <SidebarGroup>
             <SidebarGroupLabel>Categories</SidebarGroupLabel>
             <SidebarGroupContent>

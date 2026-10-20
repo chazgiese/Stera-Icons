@@ -78,7 +78,7 @@ export function IconExplorer({ icons, categories }: IconExplorerProps) {
         weight={weight}
         duotone={duotone}
       />
-      <main className="min-w-0 flex-1 px-4 py-4">
+      <main className="min-w-0 flex-1 px-4 py-4 pb-24">
         <CategorySections
           sections={sections}
           weight={weight}
